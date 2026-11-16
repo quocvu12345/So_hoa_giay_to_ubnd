@@ -1,0 +1,81 @@
+{
+  "id": "dvc-01a01e76-0ec8-7286-b5f1-c0a1ccefea1f",
+  "procedure_code": "1.116441",
+  "name": "(Hà Nội) Chuyển hình thức giao đất, cho thuê đất (cấp xã)",
+  "domain": "Đất đai",
+  "managing_agency": "UBND Thành phố Hà Nội",
+  "inventory_date": null,
+  "scope": "hanoi",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.478222+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "01a01e76-0ec8-7286-b5f1-c0a1ccefea1f",
+      "code": "1.116441",
+      "name": "(Hà Nội) Chuyển hình thức giao đất, cho thuê đất (cấp xã)",
+      "state": "ACTIVE",
+      "type": "SPECIFIC",
+      "is_ward": true,
+      "updated_at_source": 1787306781613,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/01a01e76-0ec8-7286-b5f1-c0a1ccefea1f",
+      "raw_path": "evidence/dvc/details/01a01e76-0ec8-7286-b5f1-c0a1ccefea1f.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Đơn đề nghị chuyển hình thức giao đất/cho thuê đất theo Mẫu 03 (Bản chính).",
+          "component_code": "MD03.105.2026",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "01a01e46-2ddc-752e-b1d0-44c6ef49b61a",
+              "fileName": "Mẫu 03.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/01a01e46-2ddc-752e-b1d0-44c6ef49b61a/Mẫu 03.docx"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Một trong các giấy chứng nhận quy định tại khoản 21 Điều 3, khoản 3 Điều 256 Luật Đất đai hoặc một trong các loại giấy tờ quy định tại Điều 137 Luật Đất đai hoặc quyết định giao đất, quyết định cho thuê đất, quyết định cho phép chuyển mục đích sử dụng đất của cơ quan nhà nước có thẩm quyền theo quy định của pháp luật về đất đai qua các thời kỳ (Bản chính).",
+          "component_code": "34.TH1.TPHS01.105.2026",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019ff533-7029-723b-a6dd-556109d230f3",
+          "name": "Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất",
+          "code": "KQ-H36.000002"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019fe63e-5ffc-73a2-9971-335d80f4d73f",
+          "name": "Luật số 43/2024/QH15 ngày 29/6/2024 sửa đổi, bổ sung một số điều của Luật Đất đai số 31/2024/QH15, Luật Nhà ở số 27/2023/QH15, Luật Kinh doanh bất động sản số 29/2023/QH15 và Luật Các tổ chức tín dụng số 32/2024/QH15",
+          "code": "43/2024/QH15 ngày 29/6/2024"
+        },
+        {
+          "id": "019ed88c-73bf-73ed-a2c9-ebbe831f989d",
+          "name": "quy định chi tiết và hướng dẫn một số điều của Nghị quyết số 254/2025/QH15 của Quốc hội quy định một số cơ chế, chính sách tháo gỡ khó khăn vướng mắc trong tổ chức thi hành Luật Đất đai",
+          "code": "49/2026/NĐ-CP"
+        },
+        {
+          "id": "019eab71-e707-70af-996a-4e5b8b36e53e",
+          "name": "Luật Đất đai số 31/2024/QH15 ngày 18/01/2024 được sửa đổi bổ sung  một số điều bởi Luật số 43/2024/QH15, Luật số 47/2024/QH15 và Luật số 58/2024/QH15 của Quốc hội.",
+          "code": "31/2024/QH15 "
+        }
+      ]
+    }
+  ]
+}

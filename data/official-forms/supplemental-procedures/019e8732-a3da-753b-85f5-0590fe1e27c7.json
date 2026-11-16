@@ -1,0 +1,53 @@
+{
+  "id": "dvc-019e8732-a3da-753b-85f5-0590fe1e27c7",
+  "procedure_code": "1.115148",
+  "name": "Thủ tục tính hoặc tính lại tiền sử dụng đất theo quy định tại các điểm a, b, c và d khoản 2 Điều 12 Nghị định số  50/2026/NĐ-CP ngày 31/01/2026 của Chính phủ",
+  "domain": "Tài chính đất đai",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.486303+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019e8732-a3da-753b-85f5-0590fe1e27c7",
+      "code": "1.115148",
+      "name": "Thủ tục tính hoặc tính lại tiền sử dụng đất theo quy định tại các điểm a, b, c và d khoản 2 Điều 12 Nghị định số  50/2026/NĐ-CP ngày 31/01/2026 của Chính phủ",
+      "state": "ACTIVE",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1780561161148,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019e8732-a3da-753b-85f5-0590fe1e27c7",
+      "raw_path": "evidence/dvc/details/019e8732-a3da-753b-85f5-0590fe1e27c7.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Văn bản đề nghị tính hoặc tính lại tiền sử dụng đất",
+          "component_code": "TP-G12.00011111",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019e8730-324d-711b-a6f7-359ba778b634",
+          "name": "Thông báo nộp tiền sử dụng đất hoặc thông báo điều chỉnh thông báo nộp tiền sử dụng đất gửi cho người sử dụng đất.",
+          "code": "TP-G12.00011112"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019e8731-a144-730f-9660-6392ade03300",
+          "name": "Quy định chi tiết một số điều của Nghị quyết số 254/2025/QH15 ngày 11 tháng 12 năm 2025 của Quốc hội quy định một số cơ chế, chính sách tháo gỡ khó khăn, vướng mắc trong tổ chức thi hành Luật Đất đai về tiền sử dụng đất, tiền thuê đất",
+          "code": "Nghị định số 50/2026/NĐ-CP"
+        }
+      ]
+    }
+  ]
+}

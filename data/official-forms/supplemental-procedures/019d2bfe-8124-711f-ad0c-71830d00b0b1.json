@@ -1,0 +1,228 @@
+{
+  "id": "dvc-019d2bfe-8124-711f-ad0c-71830d00b0b1",
+  "procedure_code": "1.012888",
+  "name": "Công nhận Ban quản trị nhà chung cư",
+  "domain": "Nhà ở và công sở",
+  "managing_agency": "Bộ xây dựng (Giao thông vận tải cũ)",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.864416+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfe-8124-711f-ad0c-71830d00b0b1",
+      "code": "1.012888",
+      "name": "Công nhận Ban quản trị nhà chung cư",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1776484262106,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfe-8124-711f-ad0c-71830d00b0b1",
+      "raw_path": "evidence/dvc/details/019d2bfe-8124-711f-ad0c-71830d00b0b1.json",
+      "components": [
+        {
+          "section": "Hồ sơ gồm bản sao kèm bản chính đối chiếu hoặc bản sao được chứng thực hoặc bản sao điện tử có giá thị pháp lý các giấy tờ sau:",
+          "position": 1,
+          "name": "1. Đối với Ban quản trị được bầu tại Hội nghị nhà chung cư lần đầu thì hồ sơ đề nghị công nhận Ban quản trị bao gồm:",
+          "component_code": "000.00.00.G17-KQ002453",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Hồ sơ gồm bản sao kèm bản chính đối chiếu hoặc bản sao được chứng thực hoặc bản sao điện tử có giá thị pháp lý các giấy tờ sau:",
+          "position": 2,
+          "name": "- Văn bản đề nghị của chủ đầu tư, trong đó nêu rõ tên Ban quản trị đã được Hội nghị nhà chung cư thông qua; nếu thành lập Ban quản trị của tòa nhà chung cư thì tên Ban quản trị được đặt theo tên hoặc số tòa nhà; nếu thành lập Ban quản trị của cụm nhà chung cư thì tên Ban quản trị do Hội nghị nhà chung cư quyết định.",
+          "component_code": "000.00.00.G17-KQ002465",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Hồ sơ gồm bản sao kèm bản chính đối chiếu hoặc bản sao được chứng thực hoặc bản sao điện tử có giá thị pháp lý các giấy tờ sau:",
+          "position": 3,
+          "name": "- Biên bản họp Hội nghị nhà chung cư về việc bầu Ban quản trị.",
+          "component_code": "000.00.00.G17-KQ002461",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Hồ sơ gồm bản sao kèm bản chính đối chiếu hoặc bản sao được chứng thực hoặc bản sao điện tử có giá thị pháp lý các giấy tờ sau:",
+          "position": 4,
+          "name": "- Danh sách các thành viên Ban quản trị, trong đó nêu chức danh Trưởng ban, Phó ban quản trị.",
+          "component_code": "000.00.00.G17-KQ002459",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Hồ sơ gồm bản sao kèm bản chính đối chiếu hoặc bản sao được chứng thực hoặc bản sao điện tử có giá thị pháp lý các giấy tờ sau:",
+          "position": 5,
+          "name": "- Quy chế hoạt động của Ban quản trị đã được Hội nghị nhà chung cư thông qua.",
+          "component_code": "000.00.00.G17-KQ002468",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Hồ sơ gồm bản sao kèm bản chính đối chiếu hoặc bản sao được chứng thực hoặc bản sao điện tử có giá thị pháp lý các giấy tờ sau:",
+          "position": 6,
+          "name": "2. Trường hợp bầu lại Ban quản trị khi hết nhiệm kỳ, bầu Ban quản trị mới do bị miễn nhiệm, bãi nhiệm theo quy định hoặc bầu thay thế thành viên Ban quản trị, bầu thay thế Trưởng ban, bầu thay thế Phó ban quản trị không phải là đại diện của chủ đầu tư hoặc do chủ đầu tư không cử đại diện thay thế thì hồ sơ đề nghị công nhận Ban quản trị bao gồm:",
+          "component_code": "000.00.00.G17-KQ002464",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Hồ sơ gồm bản sao kèm bản chính đối chiếu hoặc bản sao được chứng thực hoặc bản sao điện tử có giá thị pháp lý các giấy tờ sau:",
+          "position": 7,
+          "name": "- Văn bản đề nghị của Ban quản trị được bầu.",
+          "component_code": "000.00.00.G17-KQ002466",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Hồ sơ gồm bản sao kèm bản chính đối chiếu hoặc bản sao được chứng thực hoặc bản sao điện tử có giá thị pháp lý các giấy tờ sau:",
+          "position": 8,
+          "name": "- Danh sách các thành viên Ban quản trị, trong đó nêu chức danh Trưởng ban, Phó ban quản trị;",
+          "component_code": "000.00.00.G17-KQ002456",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Hồ sơ gồm bản sao kèm bản chính đối chiếu hoặc bản sao được chứng thực hoặc bản sao điện tử có giá thị pháp lý các giấy tờ sau:",
+          "position": 9,
+          "name": "- Bản gốc quyết định công nhận Ban quản trị;",
+          "component_code": "000.00.00.G17-KQ002460",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Hồ sơ gồm bản sao kèm bản chính đối chiếu hoặc bản sao được chứng thực hoặc bản sao điện tử có giá thị pháp lý các giấy tờ sau:",
+          "position": 10,
+          "name": "- Quy chế hoạt động của Ban quản trị đã được Hội nghị nhà chung cư thông qua (nếu có sửa đổi, bổ sung quy chế này)",
+          "component_code": "000.00.00.G17-KQ002457",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Hồ sơ gồm bản sao kèm bản chính đối chiếu hoặc bản sao được chứng thực hoặc bản sao điện tử có giá thị pháp lý các giấy tờ sau:",
+          "position": 11,
+          "name": "- Biên bản họp Hội nghị nhà chung cư về việc bầu lại, bầu thay thế Ban quản trị hoặc thành viên Ban quản trị hoặc bầu thay thế Trưởng ban, Phó ban quản trị; trường hợp bầu thay thế thành viên Ban quản trị theo hình thức xin ý kiến các chủ sở hữu căn hộ thì phải có biên bản theo quy định tại điểm b khoản 3 Điều 26 của Quy chế Quản lý, sử dụng nhà chung cư ban hành kèm theo Thông tư số 05/2024/TT-BXD ngày 31/7/2024 của Bộ trưởng Bộ Xây dựng.",
+          "component_code": "000.00.00.G17-KQ002454",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Hồ sơ gồm bản sao kèm bản chính đối chiếu hoặc bản sao được chứng thực hoặc bản sao điện tử có giá thị pháp lý các giấy tờ sau:",
+          "position": 12,
+          "name": "3. Trường hợp tách Ban quản trị cụm nhà chung cư theo quy định tại khoản 2 Điều 27 của Quy chế Quản lý, sử dụng nhà chung cư ban hành kèm theo Thông tư số 05/2024/TT-BXD ngày 31/7/2024 của Bộ trưởng Bộ Xây dựng thì hồ sơ đề nghị công nhận Ban quản trị được quy định như sau:",
+          "component_code": "000.00.00.G17-KQ002462",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Hồ sơ gồm bản sao kèm bản chính đối chiếu hoặc bản sao được chứng thực hoặc bản sao điện tử có giá thị pháp lý các giấy tờ sau:",
+          "position": 13,
+          "name": "- Trường hợp đề nghị công nhận Ban quản trị của tòa nhà sau khi tách khỏi cụm nhà chung cư thì hồ sơ bao gồm các giấy tờ quy định tại khoản 1 Điều 22 của Quy chế Quản lý, sử dụng nhà chung cư ban hành kèm theo Thông tư số 05/2024/TT-BXD ngày 31/7/2024 của Bộ trưởng Bộ Xây dựng kèm theo biên bản thống nhất tách khỏi cụm nhà chung cư của đại diện các chủ sở hữu nhà chung cư theo quy định tại điểm a khoản 2 Điều 27 của Quy chế Quản lý, sử dụng nhà chung cư ban hành kèm theo Thông tư số 05/2024/TT-BXD ngày 31/7/2024 của Bộ trưởng Bộ Xây dựng; trường hợp thuộc diện quy định tại điểm c khoản 2 Điều 27 của Quy chế Quản lý, sử dụng nhà chung cư ban hành kèm theo Thông tư số 05/2024/TT- BXD ngày 31/7/2024 của Bộ trưởng Bộ Xây dựng thì phải có thêm bản gốc quyết định công nhận Ban quản trị.",
+          "component_code": "000.00.00.G17-KQ002458",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Hồ sơ gồm bản sao kèm bản chính đối chiếu hoặc bản sao được chứng thực hoặc bản sao điện tử có giá thị pháp lý các giấy tờ sau:",
+          "position": 14,
+          "name": "- Trường hợp đề nghị công nhận Ban quản trị của cụm nhà chung cư sau khi có tòa nhà tách khỏi cụm thì hồ sơ bao gồm văn bản đề nghị của Ban quản trị cụm nhà chung cư, bản gốc quyết định công nhận Ban quản trị cụm nhà chung cư, danh sách các thành viên Ban quản trị cụm nhà chung cư còn lại (ghi rõ họ, tên và chức danh trong Ban quản trị); trường hợp phải bầu lại Trưởng ban quản trị cụm nhà chung cư theo quy định tại điểm b khoản 2 Điều 27 của Quy chế Quản lý, sử dụng nhà chung cư ban hành kèm theo Thông tư số 05/2024/TT-BXD ngày 31/7/2024 của Bộ trưởng Bộ Xây dựng thì phải kèm theo biên bản họp Hội nghị nhà chung cư về việc bầu Trưởng ban và danh sách người được bầu.",
+          "component_code": "000.00.00.G17-KQ002467",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Hồ sơ gồm bản sao kèm bản chính đối chiếu hoặc bản sao được chứng thực hoặc bản sao điện tử có giá thị pháp lý các giấy tờ sau:",
+          "position": 15,
+          "name": "4. Trường hợp nhập Ban quản trị theo quy định tại khoản 3 Điều 27 của Quy chế Quản lý, sử dụng nhà chung cư ban hành kèm theo Thông tư số 05/2024/TT-BXD ngày 31/7/2024 của Bộ trưởng Bộ Xây dựng thì hồ sơ đề nghị công nhận Ban quản trị cụm nhà chung cư được quy định như sau: - - Trường hợp đề nghị công nhận Ban quản trị cụm nhà chung cư sau khi nhập các Ban quản trị của các tòa nhà thì hồ sơ bao gồm các giấy tờ quy định tại khoản 1 Điều 22 của Quy chế Quản lý, sử dụng nhà chung cư ban hành kèm theo Thông tư số 05/2024/TT-BXD ngày 31/7/2024 của Bộ trưởng Bộ Xây dựng, biên bản đề nghị tập thể của đại diện các chủ sở hữu nhà chung cư theo quy định tại điểm a khoản 3 Điều 27 của Quy chế Quản lý, sử dụng nhà chung cư ban hành kèm theo Thông tư số 05/2024/TT-BXD ngày 31/7/2024 của Bộ trưởng Bộ Xây dựng và bản gốc các quyết định công nhận các Ban quản trị tòa nhà chung cư.",
+          "component_code": "000.00.00.G17-KQ002455",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Hồ sơ gồm bản sao kèm bản chính đối chiếu hoặc bản sao được chứng thực hoặc bản sao điện tử có giá thị pháp lý các giấy tờ sau:",
+          "position": 16,
+          "name": "- Trường hợp đề nghị công nhận Ban quản trị cụm nhà chung cư do nhập Ban quản trị của tòa nhà vào Ban quản trị của cụm nhà chung cư thì hồ sơ bao gồm văn bản đề nghị của Ban quản trị cụm nhà chung cư kèm theo các biên bản họp quy định tại điểm b khoản 3 Điều 27 của Quy chế Quản lý, sử dụng nhà chung cư ban hành kèm theo Thông tư số 05/2024/TT-BXD ngày 31/7/2024 của Bộ trưởng Bộ Xây dựng, danh sách các thành viên Ban quản trị của cụm (bao gồm cả thành viên mới của tòa nhà nhập vào cụm) và bản gốc quyết định công nhận Ban quản trị tòa nhà, cụm nhà chung cư.",
+          "component_code": "000.00.00.G17-KQ002463",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c7a-7554-ace4-04464b5e5cc3",
+          "name": "Quyết định công nhận Ban quản trị nhà chung cư.",
+          "code": "KQ.G17.000193"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d84-71c5-b672-6d9bdd44c1c7",
+          "name": "Luật Nhà ở số 27/2023/QH15",
+          "code": "27/2023/QH15"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afe0-f487cdca0b67",
+          "name": "Thông tư số 05/2024/TT-BXD ngày 31 tháng 7 năm 2024 của Bộ trưởng Bộ Xây dựng về quy định chi tiết một số điều của Luật Nhà ở;",
+          "code": "05/2024/TT-BXD"
+        },
+        {
+          "id": "019d2bb3-5d7f-719e-b473-046c990c04b2",
+          "name": "Nghị định số 95/2024/NĐ-CP ngày 24 tháng 7 năm 2024 của Chính phủ về quy định chi tiết một số điều của Luật Nhà ở;",
+          "code": "95/2024/NĐ-CP"
+        }
+      ]
+    }
+  ]
+}

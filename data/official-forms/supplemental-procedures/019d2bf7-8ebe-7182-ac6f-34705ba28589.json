@@ -1,0 +1,91 @@
+{
+  "id": "dvc-019d2bf7-8ebe-7182-ac6f-34705ba28589",
+  "procedure_code": "1.012566",
+  "name": "Xác nhận số chứng minh nhân dân 09 số, số định danh cá nhân (thực hiện tại cấp xã)",
+  "domain": "Cấp, quản lý căn cước",
+  "managing_agency": "Bộ Công an",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:18.035510+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bf7-8ebe-7182-ac6f-34705ba28589",
+      "code": "1.012566",
+      "name": "Xác nhận số chứng minh nhân dân 09 số, số định danh cá nhân (thực hiện tại cấp xã)",
+      "state": "ACTIVE",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1777468875874,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf7-8ebe-7182-ac6f-34705ba28589",
+      "raw_path": "evidence/dvc/details/019d2bf7-8ebe-7182-ac6f-34705ba28589.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Phiếu đề nghị giải quyết thủ tục về căn cước (Mẫu DC02 ban hành kèm theo Thông tư số 17/2024/TT-BCA của Bộ Công an)",
+          "component_code": "000.00.00.G01-KQ002927",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019dce0d-886c-7126-8452-7f1193d0a1a8",
+              "fileName": "Mẫu DC02 Phiếu đề nghị giải quyết thủ tục về căn cước.doc",
+              "bucketName": "dvc",
+              "filePath": "configuring/019dce0d-886c-7126-8452-7f1193d0a1a8/Mẫu DC02 Phiếu đề nghị giải quyết thủ tục về căn cước.doc"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Giấy chứng minh nhân dân 09 số (nếu có).",
+          "component_code": "000.00.00.G01-KQ002938",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c37-76e8-b48c-542820659d20",
+          "name": "Giấy xác nhận số chứng minh nhân dân 09 số, số định danh cá nhân (mẫu CC04 ban hành kèm theo Thông tư số 17/2024/TT-BCA ngày 15/5/2024 của Bộ Công an)",
+          "code": "KQ.G01.000060"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7f-719e-b470-9fafa6161ec1",
+          "name": "Nghị định của Chính phủ: Quy định chi tiết một số điều và biện pháp thi hành Luật Căn cước",
+          "code": "70/2024/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7b-7049-8fc6-542542c39cd2",
+          "name": "Thông tư quy định quy định về quy trình cấp, cấp đổi, cấp lại thẻ căn cước, giấy chứng nhận căn cước",
+          "code": "18/2024/TT-BCA"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b672-609c23fcf9d1",
+          "name": "Luật Căn cước",
+          "code": "26/2023/QH15"
+        },
+        {
+          "id": "019d2bb3-5d7b-7049-8fc6-519d6a3ee863",
+          "name": "Thông tư quy định chi tiết một số điều và biện pháp thi hành Luật Căn cước",
+          "code": "17/2024/TT-BCA"
+        },
+        {
+          "id": "019d2bb3-5d7b-7049-8fc6-48bfec01b8f7",
+          "name": "Thông tư 16/2024/TT-BCA quy định về mẫu thẻ căn cước, mẫu giấy chứng nhận căn cước",
+          "code": "16/2024/TT-BCA"
+        }
+      ]
+    }
+  ]
+}

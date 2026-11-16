@@ -1,0 +1,144 @@
+{
+  "id": "hn87-178",
+  "ordinal": "178",
+  "procedure_code": "1.010733",
+  "name": "Thẩm định báo cáo đánh giá tác động môi trường (Cấp tỉnh)",
+  "domain": "Môi trường (Bộ Nông nghiệp và Môi trường)",
+  "department_id": "ktdt",
+  "department": "Phòng Kinh tế, Hạ tầng và Đô thị",
+  "authority_as_published": "Giám đốc Sở; Chủ tịch UBND cấp xã",
+  "execution_level_as_published": "Cấp tỉnh, cấp xã",
+  "receiving_location_as_published": "Chi nhánh TTPVHCC",
+  "inventory_date": "2026-04-27",
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "source_urls": [
+    "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfa-5f49-714d-b0b9-32154e480511"
+  ],
+  "current_dvc_match": false,
+  "lifecycle": null,
+  "scope": "hanoi_commune_notice_2026_04_27",
+  "scope_note": "Mốc kiểm kê cấp xã Hà Nội; áp dụng từng thủ tục tại Từ Liêm còn phải theo thẩm quyền/ủy quyền hiện hành.",
+  "status": "has_fillable_templates",
+  "components": [
+    {
+      "id": "hn87-178-c001",
+      "code": "G10-KQ007914",
+      "name": "Văn bản đề nghị phê duyệt kết quả thẩm định báo cáo đánh giá tác động môi trường (mẫu số 09a Phụ lục II ban hành kèm theo Thông tư số 02/2022/TT-BTNMT, được sửa đổi, bổ sung tại Thông tư số 07/2025/TT-BTNMT)",
+      "section": "Hồ sơ nộp lại sau khi họp hội đồng/thẩm định bằng lấy ý kiến  ",
+      "role": "applicant_form",
+      "scenario_status": "alternative_case_not_selected",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfa-5f49-714d-b0b9-32154e480511",
+      "source_detail_id": "019d2bfa-5f49-714d-b0b9-32154e480511",
+      "embedded_other_requirements": false,
+      "template_candidates": [
+        "template-79cb70cd9a36e5d3"
+      ],
+      "template_selection_method": "first_matching_source_attachment",
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-178-c002",
+      "code": "G10-KQ007915",
+      "name": "Báo cáo đánh giá tác động môi trường được đóng quyển, chủ dự án ký vào phía dưới của từng trang kể cả phụ lục kèm theo tệp văn bản điện tử định dạng đuôi “.doc” chứa nội dung của báo cáo và tệp văn bản điện tử định dạng đuôi “.pdf” chứa nội dung đã quét (scan) của toàn bộ báo cáo, bao gồm cả phụ lục (nếu nộp trực tiếp) hoặc tệp văn bản điện tử của toàn bộ báo cáo, bao gồm cả phụ lục được chủ dự án ký số (nếu nộp trực tuyến).",
+      "section": "Hồ sơ nộp lại sau khi họp hội đồng/thẩm định bằng lấy ý kiến  ",
+      "role": "applicant_prepared",
+      "scenario_status": "alternative_case_not_selected",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfa-5f49-714d-b0b9-32154e480511",
+      "source_detail_id": "019d2bfa-5f49-714d-b0b9-32154e480511",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-178-c003",
+      "code": "G10-KQ007913",
+      "name": "Văn bản đề nghị thẩm định báo cáo đánh giá tác động môi trường (mẫu số 02 Phụ lục II ban hành kèm theo Thông tư số 09/2026/TT-BNNMT ngày 29 tháng 01 năm 2026 của Bộ trưởng Bộ Nông nghiệp và Môi trường sửa đổi, bổ sung một số điều của Thông tư số 02/2022/TT-BTNMT ngày 10 tháng 01 năm 2022 của Bộ trưởng Bộ Tài nguyên và Môi trường quy định chi tiết thi hành một số điều của Luật Bảo vệ môi trường được sửa đổi, bổ sung bởi Thông tư số 07/2025/TT-BTNMT ngày 28 tháng 02 năm 2025 và Thông tư số 07/2025/TT-BNNMT ngày 16 tháng 6 năm 2025)",
+      "section": "Hồ sơ đề nghị thẩm định (Điều 4 Thông tư số 09/2026/TT-BNNMT)",
+      "role": "applicant_form",
+      "scenario_status": "selected_for_test",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfa-5f49-714d-b0b9-32154e480511",
+      "source_detail_id": "019d2bfa-5f49-714d-b0b9-32154e480511",
+      "embedded_other_requirements": false,
+      "template_candidates": [
+        "template-06c5647e44bed624"
+      ],
+      "template_selection_method": "first_matching_source_attachment",
+      "selected_template_id": "template-06c5647e44bed624",
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-178-c004",
+      "code": "G10-KQ007912",
+      "name": "Báo cáo đánh giá tác động môi trường của dự án đầu tư (mẫu số 04 Phụ lục V ban hành kèm theo Thông tư số 22/2026/TT-BNNMT ngày 19 tháng 5 năm 2026 của Bộ trưởng Bộ Nông nghiệp và Môi trường sửa đổi, bổ sung một số Thông tư liên quan phân cấp, cắt giảm, đơn giản hóa thủ tục hành chính thuộc phạm vi quản lý nhà nước của Bộ Nông nghiệp và Môi trường).",
+      "section": "Hồ sơ đề nghị thẩm định (Điều 4 Thông tư số 09/2026/TT-BNNMT)",
+      "role": "applicant_prepared",
+      "scenario_status": "selected_for_test",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfa-5f49-714d-b0b9-32154e480511",
+      "source_detail_id": "019d2bfa-5f49-714d-b0b9-32154e480511",
+      "embedded_other_requirements": false,
+      "template_candidates": [
+        "template-b7b34585527c611f"
+      ],
+      "template_selection_method": "first_matching_source_attachment",
+      "selected_template_id": "template-b7b34585527c611f",
+      "selection_requires_review": false
+    }
+  ],
+  "service_cases": [
+    {
+      "id": "019d2da7-c2f7-709e-b5f1-b749fa2b95b9",
+      "code": "1.010733.01",
+      "name": "Thẩm định báo cáo đánh giá tác động môi trường (Cấp tỉnh) (1.010733)",
+      "source_processing_time": {
+        "qty": 45,
+        "type": "DAY"
+      },
+      "has_case_specific_components": false
+    }
+  ],
+  "selected_template_ids": [
+    "template-06c5647e44bed624",
+    "template-b7b34585527c611f"
+  ],
+  "source_component_groups": [
+    {
+      "name": "Hồ sơ nộp lại sau khi họp hội đồng/thẩm định bằng lấy ý kiến  ",
+      "component_count": 2,
+      "source_detail_id": "019d2bfa-5f49-714d-b0b9-32154e480511"
+    },
+    {
+      "name": "Hồ sơ đề nghị thẩm định (Điều 4 Thông tư số 09/2026/TT-BNNMT)",
+      "component_count": 2,
+      "source_detail_id": "019d2bfa-5f49-714d-b0b9-32154e480511"
+    }
+  ],
+  "conditional_component_groups": [
+    "Hồ sơ đề nghị thẩm định (Điều 4 Thông tư số 09/2026/TT-BNNMT)",
+    "Hồ sơ nộp lại sau khi họp hội đồng/thẩm định bằng lấy ý kiến  "
+  ],
+  "default_test_scenario": {
+    "channel": "direct",
+    "applicant_submits_self": true,
+    "authorized": false,
+    "special_case_flags": [],
+    "selected_conditional_group": "Hồ sơ đề nghị thẩm định (Điều 4 Thông tư số 09/2026/TT-BNNMT)",
+    "case_selection_method": "first_published_condition_with_available_template_for_test",
+    "case_status": "scenario_for_testing_not_a_legal_eligibility_decision"
+  },
+  "requirement_note": "required_as_published được giữ nguyên; false không chứng minh giấy tờ luôn tùy chọn. Các nhóm executionCases có thể là mục giấy tờ/hướng dẫn, không phải các phương án loại trừ nhau."
+}

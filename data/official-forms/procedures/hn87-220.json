@@ -1,0 +1,80 @@
+{
+  "ordinal": "220",
+  "managing_agency": "Sở Công Thương",
+  "procedure_code": "1.012569",
+  "name": "Thu hồi tài sản kết cấu hạ tầng chợ",
+  "domain": "Phát triển và quản lý chợ",
+  "ministry_decision": "1752/QĐ-BCT ngày 19/6/2025",
+  "hanoi_decision": "QĐ 931/QĐ-TTPVHCC ngày 27/6/2025",
+  "workflow_decision": "1125/QĐ-TTPVHCC ngày 01/08/2025",
+  "fees": "Không quy định",
+  "execution_level": "Cấp tỉnh, cấp xã",
+  "competent_authority": "UBND thành phố; UBND cấp xã",
+  "delegation_decision": "",
+  "delegation_expiry": "",
+  "receiving_location": "Điểm hỗ trợ DVC số",
+  "id": "hn87-220",
+  "source_page": 9,
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "inventory_date": "2026-04-27",
+  "checked_at": "2026-11-12T22:24:36.114465+07:00",
+  "details": [
+    {
+      "id": "019d2bf7-fc53-748c-8af0-461a97b5f80b",
+      "code": "1.012569",
+      "name": "Thu hồi tài sản kết cấu hạ tầng chợ",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1776322097105,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf7-fc53-748c-8af0-461a97b5f80b",
+      "raw_path": "evidence/dvc/details/019d2bf7-fc53-748c-8af0-461a97b5f80b.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Danh mục tài sản đề nghị thu hồi (tên tài sản, địa chỉ, loại hình công trình, năm xây dựng, năm đưa vào sử dụng, diện tích, số điểm kinh  doanh tại chợ, giá trị tài sản): 01 bản chính.Hồ sơ có liên quan khác (nếu có): 01 bản sao.",
+          "component_code": "000.00.00.G02-KQ004838",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Văn bản đề nghị thu hồi tài sản (trong đó xác định cụ thể tài sản thu hồi thuộc trường hợp nào theo quy định tại các điểm b, c, d, đ và e khoản 1 Điều  28 Nghị định số Nghị định số 60/2024/NĐ-CP): 01 bản chính",
+          "component_code": "000.00.00.G02-KQ004837",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c39-7291-ba49-0542c3eb2312",
+          "name": "Quyết định thu hồi tài sản kết cấu hạ tầng chợ",
+          "code": "KQ.G02.000350"
+        },
+        {
+          "id": "019d2bb2-1c3a-7502-a83f-c66832f3ce81",
+          "name": "văn bản hồi đáp trong trường hợp đề nghị thu hồi tài sản kết cấu hạ tầng chợ không phù hợp (nêu rõ lý do)",
+          "code": "KQ.G02.000459"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7f-719e-b46f-85e5bc589b94",
+          "name": "Nghị định số 60/2024/NĐ-CP",
+          "code": "60/2024/NĐ-CP"
+        }
+      ]
+    }
+  ],
+  "lookup_status": "retrieved",
+  "currency_status": "snapshot_requires_later_amendment_check",
+  "errors": []
+}

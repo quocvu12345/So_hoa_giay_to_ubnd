@@ -1,0 +1,45 @@
+# Worker AI trên Linux (AI-09). Cài: sao vào /etc/systemd/system/, tạo người dùng hệ thống `hoso-ai`, đặt /etc/hoso/ai-worker.env (chmod 640, chủ root:hoso-ai),
+# rồi `systemctl daemon-reload && systemctl enable --now hoso-ai-worker`. Đường dẫn dưới đây là mặc định đề xuất; đổi cho khớp máy thật.
+[Unit]
+Description=Hồ sơ số · worker AI (OCR và gợi ý trường)
+After=network-online.target postgresql.service
+Wants=network-online.target
+StartLimitIntervalSec=600
+StartLimitBurst=5
+
+[Service]
+Type=simple
+User=hoso-ai
+Group=hoso-ai
+WorkingDirectory=/opt/hoso/ai-worker
+# Cấu hình (kể cả mật khẩu role hoso_ai_worker) nằm ngoài repo.
+EnvironmentFile=/etc/hoso/ai-worker.env
+Environment=PYTHONPATH=/opt/hoso/ai-worker/src:/opt/hoso PYTHONUNBUFFERED=1
+ExecStart=/opt/hoso/ai-worker/venv/bin/python -m hoso_ai run
+# Nhận SIGTERM thì hoàn tất trang đang đọc rồi thoát; chờ tối đa 180 giây trước khi SIGKILL.
+KillSignal=SIGTERM
+TimeoutStopSec=180
+# Thoát bất thường thì chạy lại sau 30 giây; thoát có chủ ý (mã 0) hoặc thiếu cấu hình (78) thì không chạy lại.
+Restart=on-failure
+RestartSec=30
+RestartPreventExitStatus=78
+
+# Hạn chế quyền: chỉ ghi vào thư mục làm việc, chỉ đọc kho tệp; không cần quyền nâng cao.
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=true
+PrivateTmp=true
+PrivateDevices=true
+ProtectKernelTunables=true
+ProtectControlGroups=true
+RestrictSUIDSGID=true
+RestrictAddressFamilies=AF_UNIX AF_INET AF_INET6
+LockPersonality=true
+ReadWritePaths=/var/lib/hoso/ai-work
+ReadOnlyPaths=/var/lib/hoso/blobs /opt/hoso
+# Giới hạn bộ nhớ để mô hình lỗi không làm sập cả máy; chỉnh theo phần cứng.
+MemoryMax=12G
+TasksMax=256
+
+[Install]
+WantedBy=multi-user.target

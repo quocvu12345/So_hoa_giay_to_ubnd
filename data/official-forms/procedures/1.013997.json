@@ -1,0 +1,70 @@
+{
+  "ordinal": "146",
+  "managing_agency": "Sở Nông nghiệp Môi trường",
+  "procedure_code": "1.013997",
+  "name": "Hỗ trợ cơ sở sản xuất bị thiệt hại do dịch bệnh động vật (cơ sở sản xuất không thuộc lực lượng vũ trang nhân dân)",
+  "domain": "Thú y (Bộ Nông nghiệp và Môi trường)",
+  "ministry_decision": "2313/QĐ-BNNMT ngày 23/6/2025",
+  "hanoi_decision": "253/QĐ-TTPVHCC ngày 01/3/2025",
+  "workflow_decision": "383/QĐ-TTPVHCC ngày 30/3/2026",
+  "fees": "Không quy định",
+  "execution_level": "Cấp Xã",
+  "competent_authority": "UBND cấp xã",
+  "delegation_decision": "",
+  "delegation_expiry": "",
+  "receiving_location": "Điểm hỗ trợ DVC số",
+  "source_page": 6,
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "inventory_date": "2026-04-27",
+  "checked_at": "2026-11-12T22:23:49.721495+07:00",
+  "details": [
+    {
+      "id": "019d2bfa-8686-732b-b2d5-e6a422f1b242",
+      "code": "1.013997",
+      "name": "Hỗ trợ cơ sở sản xuất bị thiệt hại do dịch bệnh động vật (cơ sở sản xuất không thuộc lực lượng vũ trang nhân dân)",
+      "state": "ACTIVE",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1776773151771,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfa-8686-732b-b2d5-e6a422f1b242",
+      "raw_path": "evidence/dvc/details/019d2bfa-8686-732b-b2d5-e6a422f1b242.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Đơn đề nghị hỗ trợ theo từng loại hình cơ sở sản xuất theo Mẫu số 2a, Mẫu số 2b quy định tại Phụ lục ban hành kèm theo Nghị định 116/2025/NĐ-CP.",
+          "component_code": "000.00.00.G10-KQ006226",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019dafe1-c173-72e3-bb27-7b04269b0bd0",
+              "fileName": "250605_116_Nghidinh_PCDB_PL.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019dafe1-c173-72e3-bb27-7b04269b0bd0/250605_116_Nghidinh_PCDB_PL.docx"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c6c-7279-86b7-d12db4569189",
+          "name": "Quyết định về việc hỗ trợ đối với các cơ sở sản xuất bị thiệt hại do dịch bệnh động vật",
+          "code": "KQ.G10.000938"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d86-7760-a63d-a8b18eabd72e",
+          "name": "116/2025/NĐ-CP",
+          "code": "116/2025/NĐ-CP"
+        }
+      ]
+    }
+  ],
+  "lookup_status": "retrieved",
+  "currency_status": "snapshot_requires_later_amendment_check",
+  "errors": []
+}

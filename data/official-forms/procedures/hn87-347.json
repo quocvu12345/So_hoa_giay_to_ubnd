@@ -1,0 +1,97 @@
+{
+  "ordinal": "347",
+  "managing_agency": "Sở Xây dựng",
+  "procedure_code": "1.009453",
+  "name": "Thỏa thuận thông số kỹ thuật xây dựng bến khách ngang sông, bến thủy nội địa phục vụ thi công công trình chính",
+  "domain": "Hàng hải và đường thủy nội địa",
+  "ministry_decision": "870/QĐ-BXD ngày 19/6/2025",
+  "hanoi_decision": "QĐ 933/TTPVHCC ngày 27/06/2025",
+  "workflow_decision": "1104/QĐ-TTPVHCC ngày 25/07/2025",
+  "fees": "Không quy định",
+  "execution_level": "Cấp xã",
+  "competent_authority": "UBND cấp xã",
+  "delegation_decision": "",
+  "delegation_expiry": "",
+  "receiving_location": "Điểm hỗ trợ DVC số",
+  "id": "hn87-347",
+  "source_page": 13,
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "inventory_date": "2026-04-27",
+  "checked_at": "2026-11-12T22:24:56.409732+07:00",
+  "details": [
+    {
+      "id": "019d2bfe-6969-7309-beb8-559700c3087e",
+      "code": "1.009453",
+      "name": "Cho ý kiến về thông số kỹ thuật xây dựng bến khách ngang sông, kết cấu hạ tầng đường thủy nội địa phục vụ thi công công trình, dự án và bến dân sinh",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1785147285098,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfe-6969-7309-beb8-559700c3087e",
+      "raw_path": "evidence/dvc/details/019d2bfe-6969-7309-beb8-559700c3087e.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "- Bản vẽ mặt bằng vị trí dự kiến xây dựng bến thủy nội địa: Thể hiện địa danh, vị trí công trình lân cận, vùng đất, vùng nước trước bến, lý trình (km) sông, kênh, rạch.",
+          "component_code": "000.00.00.G04-KQ3260",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "- Đơn đề nghị thỏa thuận xây dựng bến thủy nội địa theo Mẫu số 10 tại Phụ lục ban hành kèm theo Nghị định số 08/2021/NĐ-CP",
+          "component_code": "000.00.00.G04-KQ3259",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019f7328-a327-765a-b204-eb1f4f745921",
+              "fileName": "000.00.00.G04-KQ3259.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f7328-a327-765a-b204-eb1f4f745921/000.00.00.G04-KQ3259.docx"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "id": "019d966f-c5ee-7719-afa3-cc1b5a8c0ab0",
+          "name": "Văn bản thỏa thuận thông số kỹ thuật xây dựng bến.",
+          "code": "000.00.00.G04-KQ3347"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7e-72d1-afe7-618d550793cd",
+          "name": "Sửa đổi, bổ sung một số điều của Nghị định số 08/2021/NĐ-CP ngày 28 tháng 01 năm 2021 của Chính phủ quy định về quản lý hoạt động đường thủy nội địa",
+          "code": "06/2024/NĐ-CP"
+        },
+        {
+          "id": "019df74b-16d5-72ef-81f7-3f224a29c89e",
+          "name": "Nghị quyết số 24/2026/NQ-CP ngày 29/4/2026 của Chính phủ cắt giảm, phân cấp, đơn giản hóa thủ tục hành chính, điều kiện kinh doanh lĩnh vực quốc phòng, nội vụ, tài chính, xây dựng, ngoại giao, tư pháp, ngân hàng.",
+          "code": "24/2026/NQ-CP "
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afe7-a8368c489fef",
+          "name": "Quy định về quản lý hoạt động đường thủy nội địa",
+          "code": "08/2021/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afea-f01696ee65ca",
+          "name": "Quy định về phân định thẩm quyền của chính quyền địa phương 02 cấp trong lĩnh vực quản lý nhà nước của Bộ Xây dựng",
+          "code": "140/2025/NĐ-CP"
+        }
+      ]
+    }
+  ],
+  "lookup_status": "retrieved",
+  "currency_status": "snapshot_requires_later_amendment_check",
+  "errors": []
+}

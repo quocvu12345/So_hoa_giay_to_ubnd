@@ -1,0 +1,204 @@
+{
+  "id": "dvc-019d9098-17f7-74b8-a942-7892a634e0b5",
+  "procedure_code": "1.014943",
+  "name": "THỦ TỤC CÔNG NHẬN QUỸ ĐỦ ĐIỀU KIỆN HOẠT ĐỘNG VÀ CÔNG NHẬN HỘI ĐỒNG QUẢN LÝ QUỸ; CÔNG NHẬN HỘI ĐỒNG QUẢN LÝ QUỸ KHI THAY ĐỔI, BỔ SUNG THÀNH VIÊN HOẶC HẾT NHIỆM KỲ (Cấp xã)",
+  "domain": "Quản lý nhà nước về hội, quỹ",
+  "managing_agency": "Bộ Nội vụ",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.846866+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d9098-17f7-74b8-a942-7892a634e0b5",
+      "code": "1.014943",
+      "name": "THỦ TỤC CÔNG NHẬN QUỸ ĐỦ ĐIỀU KIỆN HOẠT ĐỘNG VÀ CÔNG NHẬN HỘI ĐỒNG QUẢN LÝ QUỸ; CÔNG NHẬN HỘI ĐỒNG QUẢN LÝ QUỸ KHI THAY ĐỔI, BỔ SUNG THÀNH VIÊN HOẶC HẾT NHIỆM KỲ (Cấp xã)",
+      "state": "ACTIVE",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1776677765078,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d9098-17f7-74b8-a942-7892a634e0b5",
+      "raw_path": "evidence/dvc/details/019d9098-17f7-74b8-a942-7892a634e0b5.json",
+      "components": [
+        {
+          "section": "* Hồ sơ đề nghị công nhận quỹ đủ điều kiện hoạt động và công nhận Hội đồng quản lý quỹ:",
+          "position": 1,
+          "name": "- Tài liệu chứng minh việc hoàn tất các thủ tục công bố về việc thành lập quỹ và chuyển tiền vào tài khoản quỹ, chuyển quyền sở hữu tài sản đóng góp thành lập quỹ;",
+          "component_code": "G09-KQ002122",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "* Hồ sơ đề nghị công nhận quỹ đủ điều kiện hoạt động và công nhận Hội đồng quản lý quỹ:",
+          "position": 2,
+          "name": "- Danh sách, địa chỉ, số điện thoại liên hệ, sơ yếu lý lịch cá nhân (theo mẫu kèm theo Nghị định 03/2026/NĐ-CP) không quá 06 tháng tính đến ngày nộp hồ sơ.",
+          "component_code": "G09-KQ003543",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019d945c-93b9-743f-b973-9cb086cd0645",
+              "fileName": "Mau so 19.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d945c-93b9-743f-b973-9cb086cd0645/Mau so 19.docx"
+            }
+          ]
+        },
+        {
+          "section": "* Hồ sơ đề nghị công nhận quỹ đủ điều kiện hoạt động và công nhận Hội đồng quản lý quỹ:",
+          "position": 3,
+          "name": "Trường hợp cán bộ, công chức, viên chức tham gia Hội đồng quản lý quỹ, người đã nghỉ hưu được cấp có thẩm quyền theo quy định về phân cấp quản lý cán bộ đồng ý giới thiệu bầu Chủ tịch Hội đồng quản lý quỹ.",
+          "component_code": "G09-KQ003544",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "* Hồ sơ đề nghị công nhận quỹ đủ điều kiện hoạt động và công nhận Hội đồng quản lý quỹ:",
+          "position": 4,
+          "name": "Trường hợp thành viên Hội đồng quản lý quỹ là người nước ngoài, sơ yếu lý lịch cá nhân (hoặc văn bản có nội dung tương tự) có xác nhận của cơ quan có thẩm quyền của nước người đó mang quốc tịch, đã được dịch thuật và hợp pháp hóa lãnh sự.",
+          "component_code": "G09-KQ003545",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "* Hồ sơ đề nghị công nhận quỹ đủ điều kiện hoạt động và công nhận Hội đồng quản lý quỹ:",
+          "position": 5,
+          "name": "- Văn bản liên quan đến việc bầu thành viên và các chức danh Hội đồng quản lý quỹ",
+          "component_code": "G09-KQ002449",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "* Hồ sơ đề nghị công nhận Hội đồng quản lý quỹ khi thay đổi, bổ sung thành viên hoặc hết nhiệm kỳ:",
+          "position": 1,
+          "name": "- Văn bản nêu rõ lý do thay đổi, bổ sung thành viên Hội đồng quản lý quỹ hoặc công nhận Hội đồng quản lý quỹ nhiệm kỳ tiếp theo;",
+          "component_code": "G09-KQ002124",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "* Hồ sơ đề nghị công nhận Hội đồng quản lý quỹ khi thay đổi, bổ sung thành viên hoặc hết nhiệm kỳ:",
+          "position": 2,
+          "name": "- Danh sách, địa chỉ, số điện thoại liên hệ, sơ yếu lý lịch cá nhân (theo mẫu kèm theo Nghị định 03/2026/NĐ-CP) không quá 06 tháng tính đến ngày nộp hồ sơ.",
+          "component_code": "G09-KQ003543",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019d945c-93b9-743f-b973-9cb086cd0645",
+              "fileName": "Mau so 19.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d945c-93b9-743f-b973-9cb086cd0645/Mau so 19.docx"
+            }
+          ]
+        },
+        {
+          "section": "* Hồ sơ đề nghị công nhận Hội đồng quản lý quỹ khi thay đổi, bổ sung thành viên hoặc hết nhiệm kỳ:",
+          "position": 3,
+          "name": "Trường hợp cán bộ, công chức, viên chức tham gia Hội đồng quản lý quỹ, người đã nghỉ hưu được cấp có thẩm quyền theo quy định về phân cấp quản lý cán bộ đồng ý giới thiệu bầu Chủ tịch Hội đồng quản lý quỹ.",
+          "component_code": "G09-KQ003544",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "* Hồ sơ đề nghị công nhận Hội đồng quản lý quỹ khi thay đổi, bổ sung thành viên hoặc hết nhiệm kỳ:",
+          "position": 4,
+          "name": "Trường hợp thành viên Hội đồng quản lý quỹ là người nước ngoài, sơ yếu lý lịch cá nhân (hoặc văn bản có nội dung tương tự) có xác nhận của cơ quan có thẩm quyền của nước người đó mang quốc tịch, đã được dịch thuật và hợp pháp hóa lãnh sự.",
+          "component_code": "G09-KQ003545",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "* Hồ sơ đề nghị công nhận Hội đồng quản lý quỹ khi thay đổi, bổ sung thành viên hoặc hết nhiệm kỳ:",
+          "position": 5,
+          "name": "- Văn bản bầu thành viên Hội đồng quản lý quỹ; văn bản bầu chức danh Chủ tịch, Phó Chủ tịch Hội đồng quản lý quỹ;",
+          "component_code": "G09-KQ002126",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "- Trường hợp công nhận Hội đồng quản lý quỹ nhiệm kỳ tiếp theo:",
+          "position": 1,
+          "name": "+ Văn bản của Ban sáng lập quỹ đề cử Hội đồng quản lý quỹ, trường hợp sáng lập viên không đề cử thì có văn bản của Hội đồng quản lý quỹ nhiệm kỳ trước bầu ra Hội đồng quản lý quỹ nhiệm kỳ tiếp theo;",
+          "component_code": "G09-KQ003547",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "- Trường hợp công nhận Hội đồng quản lý quỹ nhiệm kỳ tiếp theo:",
+          "position": 2,
+          "name": "+ Báo cáo tổng kết nhiệm kỳ tổ chức, hoạt động của quỹ;",
+          "component_code": "G09-KQ003548",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "- Trường hợp công nhận Hội đồng quản lý quỹ nhiệm kỳ tiếp theo:",
+          "position": 3,
+          "name": "+ Báo cáo tổng kết nhiệm kỳ tổ chức, hoạt động của quỹ;",
+          "component_code": "G09-KQ003548",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d9081-d0af-7661-960c-5f2b2bb6327c",
+          "name": "Quyết định công nhận Hội đồng quản lý quỹ khi thay đổi, bổ sung thành viên hoặc hết nhiệm kỳ.",
+          "code": "KQ.G09.000532"
+        },
+        {
+          "id": "019d9082-379f-70c9-94a9-96a5a357a27b",
+          "name": "Quyết định công nhận quỹ đủ điều kiện hoạt động và công nhận Hội đồng quản lý quỹ.",
+          "code": "KQ.G09.000531"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d89ff-5856-76d2-90d1-9790a555ebca",
+          "name": "Nghị định Về tổ chức, hoạt động của quỹ xã hội, quỹ từ thiện",
+          "code": "03/2026/NĐ-CP"
+        }
+      ]
+    }
+  ]
+}

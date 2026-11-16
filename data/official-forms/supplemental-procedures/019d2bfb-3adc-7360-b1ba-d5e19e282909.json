@@ -1,0 +1,122 @@
+{
+  "id": "dvc-019d2bfb-3adc-7360-b1ba-d5e19e282909",
+  "procedure_code": "2.001396",
+  "name": "Trợ cấp hàng tháng đối với thanh niên xung phong đã hoàn thành nhiệm vụ trong kháng chiến",
+  "domain": "Người có công",
+  "managing_agency": "Bộ Nội vụ",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.985554+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfb-3adc-7360-b1ba-d5e19e282909",
+      "code": "2.001396",
+      "name": "Trợ cấp hàng tháng đối với thanh niên xung phong đã hoàn thành nhiệm vụ trong kháng chiến",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1776416016911,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-3adc-7360-b1ba-d5e19e282909",
+      "raw_path": "evidence/dvc/details/019d2bfb-3adc-7360-b1ba-d5e19e282909.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "(3) Giấy chứng nhận sức khỏe của Bệnh viện hoặc Trung tâm y tế khu vực trở lên (bản chính).",
+          "component_code": "G09-KQ002729",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "(1) Một trong các giấy tờ sau đây chứng minh là thanh niên xung phong (là bản chính hoặc bản sao có chứng thực của Ủy ban nhân dân cấp xã): - Lý lịch cán bộ hoặc lý lịch đảng viên khai trước ngày 24 tháng 9 năm 1999; - Giấy tờ do cơ quan có thẩm quyền cấp trước khi thanh niên xung phong trở về địa phương như: Giấy chứng nhận hoàn thành nhiệm vụ của đơn vị quản lý thanh niên xung phong; Giấy chuyển thương, chuyển viện, phiếu sức khoẻ; Giấy khen trong thời gian tham gia lực lượng thanh niên xung phong; Giấy chứng nhận tham gia thanh niên xung phong; Giấy điều động công tác, bổ nhiệm, giao nhiệm vụ; - Trường hợp thanh niên xung phong không còn một trong các giấy tờ quy định tại điểm a và b khoản 1 Điều 12 Thông tư số 09/2025/TT-BNV thì phải nộp bản khai có chứng thực của Ủy ban nhân dân cấp xã nơi đăng ký hộ khẩu thường trú trước khi tham gia thanh niên xung phong (bản chính). Ủy ban nhân dân cấp xã có trách nhiệm xác nhận bản khai đối với đối tượng là người địa phương đi thanh niên xung phong nhưng hiện đang đăng ký hộ khẩu thường trú ở địa phương khác (nội dung xác nhận theo Mẫu số 08 Phụ lục I ban hành kèm theo điểm a và b khoản 1 Điều 12 Thông tư số 09/2025/TT-BNV).",
+          "component_code": "G09-KQ002727",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 3,
+          "name": "2) Bản khai cá nhân đề nghị hưởng trợ cấp hàng tháng lập theo Mẫu số 07 Phụ lục I ban hành kèm theo Thông tư số 09/2025/TT-BNV",
+          "component_code": "G09-KQ002728",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019d717a-951d-708e-94e1-3d269e969058",
+              "fileName": "Mauso07_TT09_2025.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d717a-951d-708e-94e1-3d269e969058/Mauso07_TT09_2025.docx"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c4d-7725-9d9c-c526b99c125a",
+          "name": "Quyết định về việc giải quyết chế độ trợ cấp hàng tháng đối với thanh niên xung phong",
+          "code": "KQ.G09.000452"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7f-719e-b46e-3b82195c2d48",
+          "name": "Nghị định số 45/2025/NĐ-CP ngày 28/02/2025 của Chính phủ quy định tổ chức các cơ quan chuyên môn thuộc Ủy ban nhân dân tỉnh, thành phố trực thuộc trung ương và Ủy ban nhân dân huyện, quận, thị xã, thành phố thuộc tỉnh, thành phố thuộc thành phố trực thuộc trung ương",
+          "code": "45/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7d-7398-be46-59b9b0aa1881",
+          "name": "Quy định về phân định thẩm quyền và phân cấp thực hiện nhiệm vụ quản lý nhà nước trong lĩnh vực nội vụ",
+          "code": "09/2025/TT-BNV"
+        },
+        {
+          "id": "019d2bb3-5d7f-719e-b474-93996f3f00db",
+          "name": "Nghị định số 25/2025/NĐ-CP ngày 21 tháng 02 năm 2025 của Chính phủ quy định chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của Bộ Nội vụ",
+          "code": "Nghị định số 25/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7f-719e-b46c-6243b2efe083",
+          "name": "Hướng dẫn Pháp lệnh ưu đãi người có công với cách mạng",
+          "code": "31/2013/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b671-f40a5ee32475",
+          "name": "Nghị quyết số 190/2025/QH15 của Quốc hội: Quy định về xử lý một số vấn đề liên quan đến sắp xếp tổ chức bộ máy nhà nước",
+          "code": "190/2025/NQ-QH15"
+        },
+        {
+          "id": "019d2bb3-5d7c-71ab-9f06-668846832011",
+          "name": "Sửa đổi, bổ sung, bãi bỏ một số điều của các Thông tư, Thông tư liên tịch có quy định liên quan đến việc nộp, xuất trình sổ hộ khẩu giấy, sổ tạm trú giấy hoặc giấy tờ có yêu cầu xác nhận nơi cư trú khi thực hiện thủ tục hành chính thuộc lĩnh vực quản lý nhà nước của Bộ Lao động - Thương binh và Xã hội",
+          "code": "08/2023/TT-BLĐTBXH"
+        },
+        {
+          "id": "019d2bb3-5d7c-71ab-9f06-5dc7ab94620d",
+          "name": "Thông tư liên tịch 08/2012/TTLT-BLĐTBXH-BNV-BTC - Hướng dẫn thực hiện chế độ trợ cấp đối với thanh niên xung phong đã hoàn thành nhiệm vụ trong kháng chiến theo Quyết định số 40/2011/QĐ-TTg ngày 27 tháng 7 năm 2011 của Thủ tướng Chính phủ",
+          "code": "08/2012/TTLT-BLĐTBXH-BNV-BTC"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b671-34c90df98b21",
+          "name": "Sửa đổi, bổ sung một số điều của Pháp lệnh ưu đãi người có công với cách mạng",
+          "code": "04/2012/UBTVQH13"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b678-a80fd50d5545",
+          "name": "Quyết định 40/2011/QĐ-TTg - Quy định về chế độ đối với thanh niên xung phong đã hoàn thành nhiệm vụ trong kháng chiến",
+          "code": "40/2011/QĐ-TTg"
+        }
+      ]
+    }
+  ]
+}

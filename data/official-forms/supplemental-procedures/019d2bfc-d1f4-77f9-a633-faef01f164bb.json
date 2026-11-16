@@ -1,0 +1,107 @@
+{
+  "id": "dvc-019d2bfc-d1f4-77f9-a633-faef01f164bb",
+  "procedure_code": "1.014736",
+  "name": "Lựa chọn, phê duyệt dự án phát triển sản xuất liên kết theo chuỗi giá trị",
+  "domain": "Quản lý chương trình mục tiêu quốc gia",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.914594+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfc-d1f4-77f9-a633-faef01f164bb",
+      "code": "1.014736",
+      "name": "Lựa chọn, phê duyệt dự án phát triển sản xuất liên kết theo chuỗi giá trị",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1793098684216,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-d1f4-77f9-a633-faef01f164bb",
+      "raw_path": "evidence/dvc/details/019d2bfc-d1f4-77f9-a633-faef01f164bb.json",
+      "components": [
+        {
+          "section": "Số lượng hồ sơ: Ủy ban nhân dân cấp tỉnh quy định",
+          "position": 1,
+          "name": "Đơn đề nghị theo Mẫu số 01 tại Phụ lục XII ban hành kèm theo Nghị định số 387/2026/NĐ-CP của Chính phủ",
+          "component_code": "G12.A4.000001",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "01a17cf2-79f4-72ed-a527-7acc71c3bf94",
+              "fileName": "Mẫu số 01 NĐ 387.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/01a17cf2-79f4-72ed-a527-7acc71c3bf94/Mẫu số 01 NĐ 387.docx"
+            }
+          ]
+        },
+        {
+          "section": "Số lượng hồ sơ: Ủy ban nhân dân cấp tỉnh quy định",
+          "position": 2,
+          "name": "Nội dung dự án theo Mẫu số 02 tại Phụ lục XII ban hành kèm theo Nghị định số 387/2026/NĐ-CP của Chính phủ",
+          "component_code": "G12.A4.000002",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "01a17cf2-d670-71ee-a389-e7c4feaa4ce1",
+              "fileName": "Mẫu số 02 NĐ 387.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/01a17cf2-d670-71ee-a389-e7c4feaa4ce1/Mẫu số 02 NĐ 387.docx"
+            }
+          ]
+        },
+        {
+          "section": "Số lượng hồ sơ: Ủy ban nhân dân cấp tỉnh quy định",
+          "position": 3,
+          "name": "Bản thỏa thuận cử đơn vị làm chủ trì liên kết theo Mẫu số 03 tại Phụ lục XII ban hành kèm theo Nghị định số 387/2026/NĐ-CP của Chính phủ",
+          "component_code": "G12.A4.000003",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "01a17cf3-788d-72af-8823-d84516df1ab9",
+              "fileName": "Mẫu số 03 NĐ 387.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/01a17cf3-788d-72af-8823-d84516df1ab9/Mẫu số 03 NĐ 387.docx"
+            }
+          ]
+        },
+        {
+          "section": "Số lượng hồ sơ: Ủy ban nhân dân cấp tỉnh quy định",
+          "position": 4,
+          "name": "Cam kết về tiêu chuẩn chất lượng sản phẩm, hàng hóa, dịch vụ; bản sao hợp đồng liên kết có chứng thực; văn bản khác theo quy định của Ủy ban nhân dân cấp tỉnh",
+          "component_code": "G12.A4.000004",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c73-70ac-aa1a-1f9cd97193ab",
+          "name": "Quyết định phê duyệt dự án phát triển sản xuất liên kết theo chuỗi giá trị",
+          "code": "KQ.G12.001193"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "01a17cf6-5202-714e-afe8-9404c891c083",
+          "name": "Nghị định số 387/2026/NĐ-CP ngày 12/10/2026 của Chính phủ quy định nội dung, cơ chế, chính sách thực hiện Chương trình mục tiêu quốc gia phát triển văn hóa - xã hội, nông thôn, dân tộc và miền núi giai đoạn 2026 - 2035",
+          "code": "Nghị định số 387/2026/NĐ-CP"
+        }
+      ]
+    }
+  ]
+}

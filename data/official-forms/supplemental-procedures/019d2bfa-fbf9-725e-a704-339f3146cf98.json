@@ -1,0 +1,93 @@
+{
+  "id": "dvc-019d2bfa-fbf9-725e-a704-339f3146cf98",
+  "procedure_code": "1.010788",
+  "name": "Công nhận và giải quyết chế độ ưu đãi người hoạt động cách mạng",
+  "domain": "Người có công",
+  "managing_agency": "Bộ Nội vụ",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:18.004293+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfa-fbf9-725e-a704-339f3146cf98",
+      "code": "1.010788",
+      "name": "Công nhận và giải quyết chế độ ưu đãi người hoạt động cách mạng",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1779853291936,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfa-fbf9-725e-a704-339f3146cf98",
+      "raw_path": "evidence/dvc/details/019d2bfa-fbf9-725e-a704-339f3146cf98.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "b) Đối với người hoạt động cách mạng từ ngày 01 tháng 01 năm 1945 đến ngày khởi nghĩa tháng Tám năm 1945: - Bản khai theo Mẫu số 02 Phụ lục I Nghị định số 131/2021/NĐ-CP. - Người còn sống hoặc người đã hy sinh, từ trần từ ngày 01 tháng 01 năm 1995 trở về sau thì căn cứ vào bản sao được chứng thực từ một trong các giấy tờ có ghi nhận thời gian tham gia hoạt động cách mạng sau: + Lý lịch của cán bộ, đảng viên khai từ năm 1969 trở về trước do cơ quan, tổ chức có thẩm quyền quản lý. + Lý lịch đảng viên khai năm 1975, 1976 theo Thông tri số 297/TT-TW ngày 20 tháng 4 năm 1974 của Ban Bí thư Trung ương Đảng (khóa III) đối với người hoạt động cách mạng do cơ quan, tổ chức để thất lạc lý lịch khai từ năm 1969 trở về trước hoặc người hoạt động cách mạng được kết nạp vào Đảng sau năm 1969 hoặc người hoạt động liên tục ở các chiến trường B, C, K từ năm 1954 đến ngày 30 tháng 4 năm 1975. - Người đã hy sinh, từ trần từ trước ngày 01 tháng 01 năm 1995 thì căn cứ một trong các giấy tờ có ghi nhận thời gian tham gia hoạt động cách mạng sau: + Bản sao được chứng thực từ lý lịch theo quy định tại khoản 1 Điều 10 Nghị định số 131/2021/NĐ-CP, từ hồ sơ khen thưởng Huân chương Hồ Chí Minh, Huân chương Độc lập hoặc từ hồ sơ, tài liệu đang lưu giữ tại cơ quan lưu trữ của Đảng, Nhà nước, bảo tàng lịch sử từ cấp huyện trở lên. + Bản trích lục hồ sơ liệt sĩ. + Lịch sử đảng bộ từ cấp xã trở lên được các cơ quan có thẩm quyền thẩm định, phê duyệt và cấp phép xuất bản.",
+          "component_code": "G09-KQ003210171",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019d7129-e850-701a-9338-00d0d9b3030e",
+              "fileName": "Mus02Phlc1Nghnh131.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d7129-e850-701a-9338-00d0d9b3030e/Mus02Phlc1Nghnh131.docx"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "a) Đối với người hoạt động cách mạng trước ngày 01 tháng 01 năm 1945: - Bản khai theo Mẫu số 01 Phụ lục I Nghị định số 131/2021/NĐ-CP. - Người còn sống hoặc người đã hy sinh, từ trần sau ngày 30 tháng 6 năm 1999 thì căn cứ vào bản sao được chứng thực từ một trong các giấy tờ có ghi nhận thời gian tham gia hoạt động cách mạng sau: + Lý lịch của cán bộ, đảng viên khai từ năm 1962 trở về trước do cơ quan, tổ chức có thẩm quyền quản lý. + Lý lịch khai trong Cuộc vận động bảo vệ Đảng theo Chỉ thị số 90-CT/TW ngày 01 tháng 3 năm 1965 của Ban Bí thư Trung ương Đảng (khóa III). + Lý lịch đảng viên khai năm 1975, 1976 theo Thông tri số 297/TT-TW ngày 20 tháng 4 năm 1974 của Ban Bí thư Trung ương Đảng (khóa III) đối với người hoạt động cách mạng được kết nạp vào Đảng sau năm 1969 hoặc người hoạt động liên tục ở các chiến trường B, C, K từ năm 1954 đến ngày 30 tháng 4 năm 1975. - Người đã hy sinh, từ trần từ ngày 30 tháng 6 năm 1999 trở về trước thì căn cứ một trong các giấy tờ có ghi nhận thời gian tham gia hoạt động cách mạng sau: + Bản sao được chứng thực từ lý lịch theo quy định tại khoản 1 Điều 5 Nghị định 131/2021/NĐ-CP, từ hồ sơ khen thưởng Huân chương Sao vàng, Huân chương Hồ Chí Minh, Huân chương Độc lập hoặc từ hồ sơ, tài liệu đang lưu giữ tại cơ quan lưu trữ của Đảng, Nhà nước, bảo tàng lịch sử từ cấp huyện trở lên. + Bản trích lục hồ sơ liệt sĩ. + Lịch sử đảng bộ từ cấp xã trở lên được các cơ quan có thẩm quyền thẩm định, phê duyệt và cấp phép xuất bản.",
+          "component_code": "G09-KQ003210172",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019d712a-342b-71f6-bc00-c92593466fd0",
+              "fileName": "Mau so 01.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d712a-342b-71f6-bc00-c92593466fd0/Mau so 01.docx"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c4d-7725-9d9c-3a7eb404ec2e",
+          "name": "- Quyết định công nhận. - Quyết định cấp giấy chứng nhận và trợ cấp, phụ cấp ưu đãi. - Giấy chứng nhận người có công",
+          "code": "KQ.G09.000417"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7f-719e-b474-93996f3f00db",
+          "name": "Nghị định số 25/2025/NĐ-CP ngày 21 tháng 02 năm 2025 của Chính phủ quy định chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của Bộ Nội vụ",
+          "code": "Nghị định số 25/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b671-f40a5ee32475",
+          "name": "Nghị quyết số 190/2025/QH15 của Quốc hội: Quy định về xử lý một số vấn đề liên quan đến sắp xếp tổ chức bộ máy nhà nước",
+          "code": "190/2025/NQ-QH15"
+        },
+        {
+          "id": "019d2bb3-5d7f-719e-b474-516a799e2145",
+          "name": "QUY ĐỊNH CHI TIẾT VÀ BIỆN PHÁP THI HÀNH PHÁP LỆNH ƯU ĐÃI NGƯỜI CÓ CÔNG VỚI CÁCH MẠNG",
+          "code": "Nghị định số 131/2021/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d85-73da-8eba-20bc75de794b",
+          "name": "ƯU ĐÃI NGƯỜI CÓ CÔNG VỚI CÁCH MẠNG",
+          "code": "Pháp lệnh số: 02/2020/UBTVQH14"
+        }
+      ]
+    }
+  ]
+}

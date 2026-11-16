@@ -1,0 +1,285 @@
+{
+  "id": "dvc-019d2bfd-9dae-705f-a893-0c4e1f0c32a7",
+  "procedure_code": "2.001263",
+  "name": "Đăng ký việc nuôi con nuôi trong nước",
+  "domain": "Nuôi con nuôi",
+  "managing_agency": "Bộ Tư pháp",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.875232+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfd-9dae-705f-a893-0c4e1f0c32a7",
+      "code": "2.001263",
+      "name": "Đăng ký việc nuôi con nuôi trong nước",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1776763562727,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfd-9dae-705f-a893-0c4e1f0c32a7",
+      "raw_path": "evidence/dvc/details/019d2bfd-9dae-705f-a893-0c4e1f0c32a7.json",
+      "components": [
+        {
+          "section": "Hồ sơ của người nhận con nuôi: ",
+          "position": 1,
+          "name": "- Đơn  xin nhận  con nuôi;",
+          "component_code": "000.00.00.G15-KQ004721",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019d9545-52ce-71fc-bfe7-b5a589db9626",
+              "fileName": "1.nxinnhnconnui.doc",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d9545-52ce-71fc-bfe7-b5a589db9626/1.nxinnhnconnui.doc"
+            }
+          ]
+        },
+        {
+          "section": "Hồ sơ của người nhận con nuôi: ",
+          "position": 2,
+          "name": "- Giấy khám sức khỏe do bệnh viện đa khoa hoặc  phòng khám đa khoa hoặc Trung tâm y tế khu vực cấp có giá trị sử dụng nếu được cấp chưa quá 06 tháng, tính đến ngày nộp hồ sơ tại cơ quan có thẩm quyền (trừ trường hợp cha dượng nhận con riêng của vợ, mẹ kế nhận con riêng của chồng làm con nuôi hoặc cô, cậu, dì, chú, bác ruột nhận cháu làm con nuôi);",
+          "component_code": "000.00.00.G15-KQ004724",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Hồ sơ của người nhận con nuôi: ",
+          "position": 3,
+          "name": "- Văn  bản xác nhận hoàn cảnh gia đình, tình  trạng chỗ ở, điều kiện kinh tế do UBND cấp xã nơi người nhận con nuôi thường trú cấp có giá trị sử dụng nếu được cấp chưa quá 06 tháng, tính đến ngày nộp hồ sơ tại cơ quan có thẩm quyền (trừ trường hợp cha dượng nhận con riêng của vợ, mẹ kế nhận con riêng của chồng làm con nuôi hoặc cô, cậu, dì, chú, bác ruột nhận cháu làm con nuôi);",
+          "component_code": "000.00.00.G15-KQ004725",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019d954e-22a0-729f-954d-359531f0c775",
+              "fileName": "2.Vnbnxcnhnhoncnhgianhchiukinkinht (1).doc",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d954e-22a0-729f-954d-359531f0c775/2.Vnbnxcnhnhoncnhgianhchiukinkinht (1).doc"
+            }
+          ]
+        },
+        {
+          "section": "Hồ sơ của người nhận con nuôi: ",
+          "position": 4,
+          "name": "- Bản sao Hộ chiếu, Thẻ căn cước hoặc giấy tờ có giá trị thay thế;",
+          "component_code": "000.00.00.G15-003",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "Hồ sơ của người nhận con nuôi: ",
+          "position": 5,
+          "name": "- Văn bản xác nhận tình trạng hôn nhân: + Trường hợp người nhận con nuôi là cặp vợ chồng nhận con nuôi: Giấy chứng nhận kết hôn. + Trường hợp người nhận con nuôi là người độc thân nhận con nuôi: Cơ quan giải quyết thủ tục hành chính tra cứu thông tin về tình trạng hôn nhân của người nhận con nuôi trên Hệ thống thông tin giải quyết thủ tục hành chính cấp tỉnh thông qua kết nối với Cơ sở dữ liệu hộ tịch điện tử, Cơ sở dữ liệu quốc gia về dân cư.",
+          "component_code": "000.00.00.G15-004",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "Hồ sơ của người nhận con nuôi: ",
+          "position": 6,
+          "name": "- Đơn đăng ký nhu cầu nhận trẻ em làm con nuôi (đối với trường hợp người nhận con nuôi có nguyện vọng và đủ điều kiện nhận con nuôi theo quy định nhưng chưa tìm được trẻ em để nhận làm con nuôi).",
+          "component_code": "000.00.00.G15-005",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019d9b88-06e4-723c-a5e3-dac47d0a1685",
+              "fileName": "8.nngknhucunhntremlmconnuiRepaired.doc",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d9b88-06e4-723c-a5e3-dac47d0a1685/8.nngknhucunhntremlmconnuiRepaired.doc"
+            }
+          ]
+        },
+        {
+          "section": "Hồ sơ của người được nhận làm con nuôi: ",
+          "position": 1,
+          "name": "- Giấy khám sức khỏe do bệnh viện  đa khoa hoặc phòng khám  đa khoa hoặc Trung tâm y tế khu vực cấp;",
+          "component_code": "000.00.00.G15-KQ004728",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Hồ sơ của người được nhận làm con nuôi: ",
+          "position": 2,
+          "name": "- Quyết định tiếp nhận đối  với trẻ em  ở cơ sở nuôi dưỡng.",
+          "component_code": "000.00.00.G15-KQ004731",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Hồ sơ của người được nhận làm con nuôi: ",
+          "position": 3,
+          "name": "- 02 ảnh toàn  thân, nhìn thẳng chụp không  quá 06 tháng;",
+          "component_code": "000.00.00.G15-KQ004729",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Hồ sơ của người được nhận làm con nuôi: ",
+          "position": 4,
+          "name": "Biên bản xác nhận do Ủy ban nhân dân hoặc Công an cấp xã nơi phát hiện trẻ bị bỏ rơi lập đối với trẻ em bị bỏ rơi; Giấy chứng tử của cha đẻ, mẹ đẻ hoặc quyết định của Tòa án tuyên bố cha đẻ, mẹ đẻ của trẻ em là đã chết đối với trẻ em mồ côi; quyết định của Tòa án tuyên bố cha đẻ, mẹ đẻ của người được giới thiệu làm con nuôi mất tích đối với người được giới thiệu làm con nuôi mà cha đẻ, mẹ đẻ mất tích; quyết định của Tòa án tuyên bố cha đẻ, mẹ đẻ của người được giới thiệu làm con nuôi mất năng lực hành vi dân sự đối với người được giới   thiệu làm con  nuôi mà cha đẻ, mẹ đẻ mất năng lực hành vi dân sự;",
+          "component_code": "000.00.00.G15-KQ004730",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Hồ sơ của người được nhận làm con nuôi: ",
+          "position": 5,
+          "name": "- Giấy    khai sinh;",
+          "component_code": "000.00.00.G15-KQ004727",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Lưu ý",
+          "position": 1,
+          "name": "Các trường hợp phải chứng minh nơi cư trú của công dân bao gồm:",
+          "component_code": "000.00.00.G15-KQ004940",
+          "original_quantity": 0,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Lưu ý",
+          "position": 2,
+          "name": "+) Khi người nhận con nuôi đề nghị UBND cấp xã xác nhận Văn bản xác nhận hoàn cảnh gia đình, tình trạng chỗ ở, điều kiện kinh tế;",
+          "component_code": "000.00.00.G15-KQ004941",
+          "original_quantity": 0,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Lưu ý",
+          "position": 3,
+          "name": "+) Khi nộp hồ sơ tại UBND cấp xã, cần chứng minh nơi người được nhận làm con nuôi thường trú trong trường hợp trẻ em mồ côi không có người nuôi dưỡng hoặc trẻ em có cha mẹ đẻ, người thân thích nhưng không có khả năng nuôi dưỡng được nhận làm con nuôi;",
+          "component_code": "000.00.00.G15-KQ004942",
+          "original_quantity": 0,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Lưu ý",
+          "position": 4,
+          "name": "+) Khi nộp hồ sơ tại UBND cấp xã, cần chứng minh nơi cư trú của người nhận con nuôi hoặc của người được nhận làm con nuôi trong trường hợp cha dượng hoặc mẹ kế nhận con riêng của vợ hoặc chồng làm con nuôi; cô, cậu, dì, chú, bác ruột nhận cháu làm con nuôi.",
+          "component_code": "000.00.00.G15-KQ004943",
+          "original_quantity": 0,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Lưu ý",
+          "position": 5,
+          "name": "Đối với Văn bản xác nhận hoàn cảnh gia đình, tình trạng chỗ ở, điều kiện kinh tế của người nhận con nuôi: Trường hợp người nhận con nuôi có nơi thường trú và nơi tạm trú khác nhau, Ủy ban nhân dân cấp xã nơi người nhận con nuôi thường trú trực tiếp xác minh hoặc có văn bản đề nghị Ủy ban nhân dân cấp xã nơi tạm trú của người nhận con nuôi thực hiện xác minh, đánh giá hoàn cảnh gia đình, tình trạng chỗ ở, điều kiện kinh tế của người nhận con nuôi.",
+          "component_code": "000.00.00.G15-KQ005013",
+          "original_quantity": 0,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Lưu ý",
+          "position": 6,
+          "name": "Giấy tờ có trong hồ sơ của người nhận con nuôi và người được nhận làm con nuôi do cơ quan, tổ chức, người có thẩm quyền lập, cấp, xác nhận mà bị tẩy xoá, sửa chữa làm sai lệch nội dung hoặc thông tin trong các văn bản, giấy tờ được khai không đúng sự thật thì không có giá trị sử dụng. Người thực hiện hành vi tẩy xoá, sửa chữa làm sai lệch nội dung hoặc khai thông tin không đúng sự thật bị xử lý vi phạm theo quy định pháp luật.",
+          "component_code": "000.00.00.G15-KQ004334",
+          "original_quantity": 0,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c78-7725-a74f-624c812c944a",
+          "name": "Giấy chứng nhận nuôi con nuôi trong nước",
+          "code": "KQ.G15.000002"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7f-719e-b470-22af3c5ee091",
+          "name": "Nghị quyết số 66.7/2025/NQ-CP của Chính phủ: Quy định cắt giảm, đơn giản hóa thủ tục hành chính dựa trên dữ liệu",
+          "code": "66.7/2025/NQ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7d-7398-be52-aa6de2bf3b03",
+          "name": "BAN HÀNH, HƯỚNG DẪN VIỆC GHI CHÉP, SỬ DỤNG, QUẢN LÝ VÀ LƯU TRỮ SỔ, MẪU GIẤY TỜ, HỒ SƠ NUÔI CON NUÔI",
+          "code": "10/2020/TT-BTP"
+        },
+        {
+          "id": "019d2bb3-5d7d-7398-be52-75595513cbd8",
+          "name": "THÔNG TƯ  SỬA ĐỔI, BỔ SUNG MỘT SỐ ĐIỀU CỦA THÔNG TƯ SỐ 10/2020/TT-BTP NGÀY 28 THÁNG 12 NĂM 2020 CỦA BỘ TRƯỞNG BỘ TƯ PHÁP BAN HÀNH, HƯỚNG DẪN VIỆC GHI CHÉP, SỬ DỤNG, QUẢN LÝ VÀ LƯU TRỮ SỔ, MẪU GIẤY TỜ, HỒ SƠ NUÔI CON NUÔI",
+          "code": "07/2023/TT-BTP"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afe7-6431273ce2c4",
+          "name": "Nghị định số 06/2025/NĐ-CP ngày 08 tháng 01 năm 2025 của Chính phủ sửa đổi, bổ sung một số điều của các Nghị định về nuôi con nuôi",
+          "code": "06/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afe9-9d8e94b33af1",
+          "name": "Nghị định số 120/2025/NĐ-CP ngày 11/6/2025 của Chính phủ quy định về phân định thẩm quyền của chính quyền địa phương 02 cấp trong lĩnh vực quản lý nhà nước của Bộ Tư pháp.",
+          "code": "120/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afed-eab8548f2ce8",
+          "name": "Nghị định 24/2019/NĐ-CP",
+          "code": "24/2019/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afe8-3ac91da2e6b0",
+          "name": "Nghị định sửa đổi, bổ sung một số điều của các Nghị định liên quan đến việc nộp xuất trình sổ hộ khẩu, sổ tạm trú giấy khi thực hiện thủ tục hành chính, cung cấp dịch vụ công",
+          "code": "104/2022/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d86-7760-a642-cb60cc107a28",
+          "name": "Nghị định sửa đổi, bổ sung một số nghị định để cắt giảm, đơn giản hóa thủ tục hành chính, điều kiện kinh doanh  thuộc phạm vi quản lý của Bộ Tư pháp",
+          "code": "18/2026/NĐ-CP"
+        }
+      ]
+    }
+  ]
+}

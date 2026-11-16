@@ -1,0 +1,206 @@
+{
+  "id": "hn87-066",
+  "ordinal": "66",
+  "procedure_code": "2.001942",
+  "name": "Chuyển trẻ em đang được chăm sóc thay thế tại cơ sở trợ giúp xã hội đến cá nhân, gia đình nhận chăm sóc thay thế",
+  "domain": "Trẻ em",
+  "department_id": "vx",
+  "department": "Phòng Văn hóa - Xã hội",
+  "authority_as_published": "UBND cấp xã",
+  "execution_level_as_published": "Cấp Xã",
+  "receiving_location_as_published": "Điểm hỗ trợ DVC số",
+  "inventory_date": "2026-04-27",
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "source_urls": [
+    "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bff-545f-7218-a5f6-b4660489bb5e"
+  ],
+  "current_dvc_match": true,
+  "lifecycle": null,
+  "scope": "hanoi_commune_notice_2026_04_27",
+  "scope_note": "Mốc kiểm kê cấp xã Hà Nội; áp dụng từng thủ tục tại Từ Liêm còn phải theo thẩm quyền/ủy quyền hiện hành.",
+  "status": "has_fillable_templates",
+  "components": [
+    {
+      "id": "hn87-066-c001",
+      "code": "000.00.00.G18-KQ005300",
+      "name": "Giấy khám sức khỏe do cơ quan y tế cấp theo quy định của pháp luật",
+      "section": "",
+      "role": "needs_review",
+      "scenario_status": "requirement_needs_review",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bff-545f-7218-a5f6-b4660489bb5e",
+      "source_detail_id": "019d2bff-545f-7218-a5f6-b4660489bb5e",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-066-c002",
+      "code": "000.00.00.G18-KQ005303",
+      "name": "Biên bản xác nhận do Ủy ban nhân dân cấp xã hoặc Công an cấp xã nơi phát hiện trẻ em bị bỏ rơi",
+      "section": "",
+      "role": "agency_prepared",
+      "scenario_status": "agency_reserved",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bff-545f-7218-a5f6-b4660489bb5e",
+      "source_detail_id": "019d2bff-545f-7218-a5f6-b4660489bb5e",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-066-c003",
+      "code": "000.00.00.G18-KQ005301",
+      "name": "02 ảnh toàn thân, nhìn thẳng, kích cỡ 8 cm x 10 cm, chụp trong thời gian trước thời điểm lập hồ sơ không quá 06 tháng",
+      "section": "",
+      "role": "needs_review",
+      "scenario_status": "requirement_needs_review",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bff-545f-7218-a5f6-b4660489bb5e",
+      "source_detail_id": "019d2bff-545f-7218-a5f6-b4660489bb5e",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-066-c004",
+      "code": "000.00.00.G18-KQ005302",
+      "name": "Báo cáo đánh giá của người làm công tác bảo vệ trẻ em cấp xã về hoàn cảnh, tình trạng và nhu cầu, nguyện vọng của trẻ em (theo Mẫu số 10 ban hành kèm theo Nghị định số 56/2017/NĐ-CP)",
+      "section": "",
+      "role": "applicant_prepared",
+      "scenario_status": "selected_for_test",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bff-545f-7218-a5f6-b4660489bb5e",
+      "source_detail_id": "019d2bff-545f-7218-a5f6-b4660489bb5e",
+      "embedded_other_requirements": false,
+      "template_candidates": [
+        "template-502e16121049fc6f"
+      ],
+      "template_selection_method": "first_matching_source_attachment",
+      "selected_template_id": "template-502e16121049fc6f",
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-066-c005",
+      "code": "000.00.00.G18-KQ005298",
+      "name": "Hồ sơ trẻ em có nhu cầu tìm cá nhân, gia đình chăm sóc thay thế, gồm:",
+      "section": "",
+      "role": "needs_review",
+      "scenario_status": "requirement_needs_review",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bff-545f-7218-a5f6-b4660489bb5e",
+      "source_detail_id": "019d2bff-545f-7218-a5f6-b4660489bb5e",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-066-c006",
+      "code": "000.00.00.G18-KQ005304",
+      "name": "Bản sao Quyết định tạm thời cách ly trẻ em khỏi cha, mẹ, người chăm sóc trẻ em và áp dụng biện pháp chăm sóc thay thế của Chủ tịch Ủy ban nhân dân cấp xã",
+      "section": "",
+      "role": "supporting_submit",
+      "scenario_status": "selected_for_test",
+      "required_as_published": false,
+      "original_quantity": 0,
+      "copy_quantity": 1,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bff-545f-7218-a5f6-b4660489bb5e",
+      "source_detail_id": "019d2bff-545f-7218-a5f6-b4660489bb5e",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-066-c007",
+      "code": "000.00.00.G18-KQ005299",
+      "name": "Giấy chứng sinh hoặc giấy khai sinh hoặc chứng minh nhân dân hoặc căn cước công dân hoặc hộ chiếu (nếu có);",
+      "section": "",
+      "role": "supporting_submit",
+      "scenario_status": "conditional_needs_review",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bff-545f-7218-a5f6-b4660489bb5e",
+      "source_detail_id": "019d2bff-545f-7218-a5f6-b4660489bb5e",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-066-c008",
+      "code": "000.00.00.G18-KQ005297",
+      "name": "Danh sách trẻ em cần được chuyển hình thức chăm sóc thay thế.",
+      "section": "",
+      "role": "applicant_prepared",
+      "scenario_status": "selected_for_test",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 1,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bff-545f-7218-a5f6-b4660489bb5e",
+      "source_detail_id": "019d2bff-545f-7218-a5f6-b4660489bb5e",
+      "embedded_other_requirements": false,
+      "template_candidates": [
+        "template-d06eb49bb0abd8c1"
+      ],
+      "template_selection_method": "first_matching_source_attachment",
+      "selected_template_id": "template-d06eb49bb0abd8c1",
+      "selection_requires_review": false
+    }
+  ],
+  "service_cases": [
+    {
+      "id": "019dab8c-e785-752d-8387-20cfb3bbb049",
+      "code": "2.001942.01",
+      "name": "Chuyển trẻ em đang được chăm sóc thay thế tại cơ sở trợ giúp xã hội đến cá nhân, gia đình nhận chăm sóc thay thế",
+      "source_processing_time": {
+        "qty": 25,
+        "type": "WORKING_DAY"
+      },
+      "has_case_specific_components": false
+    }
+  ],
+  "selected_template_ids": [
+    "template-502e16121049fc6f",
+    "template-d06eb49bb0abd8c1"
+  ],
+  "source_component_groups": [
+    {
+      "name": "",
+      "component_count": 8,
+      "source_detail_id": "019d2bff-545f-7218-a5f6-b4660489bb5e"
+    }
+  ],
+  "conditional_component_groups": [],
+  "default_test_scenario": {
+    "channel": "direct",
+    "applicant_submits_self": true,
+    "authorized": false,
+    "special_case_flags": [],
+    "selected_conditional_group": null,
+    "case_selection_method": "ordinary_direct_submission",
+    "case_status": "scenario_for_testing_not_a_legal_eligibility_decision"
+  },
+  "requirement_note": "required_as_published được giữ nguyên; false không chứng minh giấy tờ luôn tùy chọn. Các nhóm executionCases có thể là mục giấy tờ/hướng dẫn, không phải các phương án loại trừ nhau."
+}

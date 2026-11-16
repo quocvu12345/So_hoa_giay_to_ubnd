@@ -1,0 +1,294 @@
+{
+  "id": "dvc-019d2bfc-d9ca-768c-a8f4-cc0dff5f41ed",
+  "procedure_code": "2.000720",
+  "name": "Đăng ký thay đổi nội dung đăng ký hộ kinh doanh",
+  "domain": "Thành lập và hoạt động doanh nghiệp (hộ kinh doanh)",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.912237+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfc-d9ca-768c-a8f4-cc0dff5f41ed",
+      "code": "2.000720",
+      "name": "Đăng ký thay đổi nội dung đăng ký hộ kinh doanh",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1785469382066,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-d9ca-768c-a8f4-cc0dff5f41ed",
+      "raw_path": "evidence/dvc/details/019d2bfc-d9ca-768c-a8f4-cc0dff5f41ed.json",
+      "components": [
+        {
+          "section": "Trường hợp nội dung đăng ký thay đổi về: tên hộ kinh doanh, địa chỉ trụ sở, vốn kinh doanh, ngành, nghề kinh doanh và nội dung đăng ký thuế của hộ kinh doanh, trừ phương pháp tính thuế thì hồ sơ gồm:",
+          "position": 1,
+          "name": "- Giấy đề nghị đăng ký thay đổi nội dung đăng ký hộ kinh doanh do chủ hộ kinh doanh ký theo Mẫu số 2, Phụ lục II, Thông tư số 68/2025/TT-BTC ngày 01/7/2025 của Bộ trưởng Bộ Tài chính;",
+          "component_code": "TP-G12.000113889",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019fa7ac-f3ef-73bf-a5f7-cfbcc92cf6c6",
+              "fileName": "Giấy đk thay đổi nd kinh doanh (mẫu 2).docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa7ac-f3ef-73bf-a5f7-cfbcc92cf6c6/Giấy đk thay đổi nd kinh doanh (mẫu 2).docx"
+            }
+          ]
+        },
+        {
+          "section": "Trường hợp nội dung đăng ký thay đổi về: tên hộ kinh doanh, địa chỉ trụ sở, vốn kinh doanh, ngành, nghề kinh doanh và nội dung đăng ký thuế của hộ kinh doanh, trừ phương pháp tính thuế thì hồ sơ gồm:",
+          "position": 2,
+          "name": "- Biên bản họp nhóm cá nhân tham gia hộ kinh doanh về việc đăng ký thay đổi nội dung đăng ký hộ kinh doanh đối với trường hợp hộ kinh doanh do nhóm cá nhân thành lập trước ngày Nghị định số 168/2025/NĐ-CP có hiệu lực thi hành.",
+          "component_code": "TP-G12.00011111114",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "* Trường hợp thay đổi chủ hộ kinh doanh do các thành viên hộ gia đình đăng ký hộ kinh doanh ủy quyền cho một trong các thành viên còn lại làm chủ hộ kinh doanh thì Hồ sơ gồm các giấy tờ sau:",
+          "position": 1,
+          "name": "- Giấy đề nghị đăng ký thay đổi nội dung đăng ký hộ kinh doanh theo Mẫu số 2, Phụ lục II, Thông tư số 68/2025/TT-BTC ngày 01/7/2025 của Bộ trưởng Bộ Tài chính;",
+          "component_code": "TP-G12.0001171444",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019fa7ae-c992-732f-872f-dcb99f7c49a3",
+              "fileName": "Giấy đk thay đổi nd kinh doanh (mẫu 2).docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa7ae-c992-732f-872f-dcb99f7c49a3/Giấy đk thay đổi nd kinh doanh (mẫu 2).docx"
+            }
+          ]
+        },
+        {
+          "section": "* Trường hợp thay đổi chủ hộ kinh doanh do các thành viên hộ gia đình đăng ký hộ kinh doanh ủy quyền cho một trong các thành viên còn lại làm chủ hộ kinh doanh thì Hồ sơ gồm các giấy tờ sau:",
+          "position": 2,
+          "name": "- Bản sao văn bản ủy quyền của các thành viên hộ gia đình cho một thành viên làm chủ hộ kinh doanh. Văn bản ủy quyền này phải được công chứng hoặc chứng thực theo quy định của pháp luật.",
+          "component_code": "TP-G12.000110000045",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "* Trường hợp hộ kinh doanh do thành viên hộ gia đình đăng ký thành lập thay đổi chủ hộ do chủ hộ chết hoặc bị Tòa án tuyên bố đã chết, mất tích, bị hạn chế hoặc mất năng lực hành vi dân sự, có khó khăn trong nhận thức, làm chủ hành vi, hồ sơ gồm:",
+          "position": 1,
+          "name": "- Giấy đề nghị đăng ký thay đổi nội dung đăng ký hộ kinh doanh theo Mẫu số 2, Phụ lục II, Thông tư số 68/2025/TT-BTC ngày 01/7/2025 của Bộ trưởng Bộ Tài chính;",
+          "component_code": "TP-G12.000111777",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019fa7af-b8f6-742c-b849-767afa8008a3",
+              "fileName": "Giấy đk thay đổi nd kinh doanh (mẫu 2).docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa7af-b8f6-742c-b849-767afa8008a3/Giấy đk thay đổi nd kinh doanh (mẫu 2).docx"
+            }
+          ]
+        },
+        {
+          "section": "* Trường hợp hộ kinh doanh do thành viên hộ gia đình đăng ký thành lập thay đổi chủ hộ do chủ hộ chết hoặc bị Tòa án tuyên bố đã chết, mất tích, bị hạn chế hoặc mất năng lực hành vi dân sự, có khó khăn trong nhận thức, làm chủ hành vi, hồ sơ gồm:",
+          "position": 2,
+          "name": "- Bản sao văn bản ủy quyền của các thành viên hộ gia đình cho một thành viên làm chủ hộ kinh doanh. Văn bản ủy quyền này phải được công chứng hoặc chứng thực theo quy định của pháp luật.",
+          "component_code": "TP-G12.00011189",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "* Trường hợp hộ kinh doanh do thành viên hộ gia đình đăng ký thành lập thay đổi chủ hộ do chủ hộ chết hoặc bị Tòa án tuyên bố đã chết, mất tích, bị hạn chế hoặc mất năng lực hành vi dân sự, có khó khăn trong nhận thức, làm chủ hành vi, hồ sơ gồm:",
+          "position": 3,
+          "name": "- Bản sao giấy chứng tử hoặc quyết định của Tòa án tuyên bố đã chết, mất tích, bị hạn chế hoặc mất năng lực hành vi dân sự, có khó khăn trong nhận thức, làm chủ hành vi.",
+          "component_code": "TP-G12.00011456",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "* Trường hợp hộ kinh doanh có hai thành viên mà thành viên là chủ hộ kinh doanh chết hoặc bị Tòa án tuyên bố đã chết, mất tích, bị hạn chế hoặc mất năng lực hành vi dân sự, có khó khăn trong nhận thức, làm chủ hành vi thì thành viên còn lại là chủ hộ kinh doanh, Hồ sơ gồm:",
+          "position": 1,
+          "name": "- Giấy đề nghị đăng ký thay đổi nội dung đăng ký hộ kinh doanh theo Mẫu số 2, Phụ lục II, Thông tư số 68/2025/TT-BTC ngày 01/7/2025 của Bộ trưởng Bộ Tài chính;",
+          "component_code": "TP-G12.0001134569",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019fa7b1-ae29-71d9-8fff-626e764f0c6a",
+              "fileName": "Giấy đk thay đổi nd kinh doanh (mẫu 2).docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa7b1-ae29-71d9-8fff-626e764f0c6a/Giấy đk thay đổi nd kinh doanh (mẫu 2).docx"
+            }
+          ]
+        },
+        {
+          "section": "* Trường hợp hộ kinh doanh có hai thành viên mà thành viên là chủ hộ kinh doanh chết hoặc bị Tòa án tuyên bố đã chết, mất tích, bị hạn chế hoặc mất năng lực hành vi dân sự, có khó khăn trong nhận thức, làm chủ hành vi thì thành viên còn lại là chủ hộ kinh doanh, Hồ sơ gồm:",
+          "position": 2,
+          "name": "- Bản sao giấy chứng tử hoặc quyết định của Tòa án tuyên bố đã chết, mất tích, bị hạn chế hoặc mất năng lực hành vi dân sự, có khó khăn trong nhận thức, làm chủ hành vi.",
+          "component_code": "TP-G12.0001111789",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "* Trường hợp thay đổi thành viên hộ gia đình đăng ký hộ kinh doanh, hộ kinh doanh gửi hồ sơ đăng ký thay đổi đến Cơ quan đăng ký kinh doanh cấp xã. Hồ sơ gồm:",
+          "position": 1,
+          "name": "- Giấy đề nghị đăng ký thay đổi nội dung đăng ký hộ kinh doanh theo Mẫu số 2, Phụ lục II, Thông tư số 68/2025/TT-BTC ngày 01/7/2025 của Bộ trưởng Bộ Tài chính;",
+          "component_code": "TP-G12.00014598",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019fa7b2-ab59-707d-be7e-cd17b40df1b7",
+              "fileName": "Giấy đk thay đổi nd kinh doanh (mẫu 2).docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa7b2-ab59-707d-be7e-cd17b40df1b7/Giấy đk thay đổi nd kinh doanh (mẫu 2).docx"
+            }
+          ]
+        },
+        {
+          "section": "* Trường hợp thay đổi thành viên hộ gia đình đăng ký hộ kinh doanh, hộ kinh doanh gửi hồ sơ đăng ký thay đổi đến Cơ quan đăng ký kinh doanh cấp xã. Hồ sơ gồm:",
+          "position": 2,
+          "name": "- Bản sao văn bản ủy quyền của thành viên mới cho chủ hộ kinh doanh trong trường hợp tiếp nhận thành viên mới. Văn bản ủy quyền này phải được công chứng hoặc chứng thực theo quy định của pháp luật.",
+          "component_code": "TP-G12.0001111471",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "* Trường hợp ủy quyền thực hiện thủ tục thì hồ sơ phải kèm theo một trong những giấy tờ sau: - Trường hợp ủy quyền cho cá nhân thực hiện thủ tục đăng ký hộ kinh doanh, kèm theo hồ sơ đăng ký hộ kinh doanh bao gồm:",
+          "position": 1,
+          "name": "Văn bản ủy quyền cho cá nhân thực hiện thủ tục liên quan đến đăng ký hộ kinh doanh. Văn bản ủy quyền này không bắt buộc phải công chứng, chứng thực.",
+          "component_code": "000.00.00.G12-345214",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "* Trường hợp ủy quyền thực hiện thủ tục thì hồ sơ phải kèm theo một trong những giấy tờ sau:- Trường hợp ủy quyền cho tổ chức thực hiện thủ tục đăng ký hộ kinh doanh, kèm theo hồ sơ bao gồm:",
+          "position": 1,
+          "name": "(i) Bản sao hợp đồng cung cấp dịch vụ với tổ chức làm dịch vụ thực hiện thủ tục liên quan đến đăng ký hộ kinh doanh;",
+          "component_code": "000.00.00.G12-18032400",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "* Trường hợp ủy quyền thực hiện thủ tục thì hồ sơ phải kèm theo một trong những giấy tờ sau:- Trường hợp ủy quyền cho tổ chức thực hiện thủ tục đăng ký hộ kinh doanh, kèm theo hồ sơ bao gồm:",
+          "position": 2,
+          "name": "(ii) Giấy giới thiệu của tổ chức đó cho cá nhân trực tiếp thực hiện thủ tục liên quan đến đăng ký hộ kinh doanh.",
+          "component_code": "000.00.00.G12-456123",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "- Trường hợp ủy quyền cho đơn vị cung cấp dịch vụ bưu chính công ích thực hiện thủ tục đăng ký hộ kinh doanh, hồ sơ bao gồm:",
+          "position": 1,
+          "name": "Bản sao phiếu gửi hồ sơ theo mẫu do doanh nghiệp cung ứng dịch vụ bưu chính công ích phát hành có chữ ký xác nhận của nhân viên bưu chính và chủ hộ kinh doanh.",
+          "component_code": "000.00.00.G12-432100",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "- Trường hợp ủy quyền cho đơn vị cung cấp dịch vụ bưu chính không phải là bưu chính công ích thực hiện thủ tục đăng ký hộ kinh doanh, hồ sơ bao gồm:",
+          "position": 1,
+          "name": "(i) Bản sao hợp đồng cung cấp dịch vụ với tổ chức làm dịch vụ thực hiện thủ tục liên quan đến đăng ký hộ kinh doanh;",
+          "component_code": "000.00.00.G12-543123",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "- Trường hợp ủy quyền cho đơn vị cung cấp dịch vụ bưu chính không phải là bưu chính công ích thực hiện thủ tục đăng ký hộ kinh doanh, hồ sơ bao gồm:",
+          "position": 2,
+          "name": "(ii) Giấy giới thiệu của tổ chức đó cho cá nhân trực tiếp thực hiện thủ tục liên quan đến đăng ký hộ kinh doanh. - Người ủy quyền và người được ủy quyền thực hiện thủ tục đăng ký hộ kinh doanh chịu trách nhiệm trước pháp luật về tính hợp pháp, trung thực và chính xác của việc ủy quyền. Người ủy quyền và người được ủy quyền phải thực hiện xác thực điện tử để được cấp đăng ký hộ kinh doanh khi thực hiện thủ tục đăng ký thành lập hộ kinh doanh, đăng ký thay đổi chủ hộ kinh doanh, đăng ký thay đổi thành viên hộ gia đình đăng ký hộ kinh doanh.  Trường hợp việc xác thực điện tử bị gián đoạn thì người ủy quyền thực hiện việc xác thực điện tử sau khi được cấp đăng ký hộ kinh doanh. Trường hợp người ủy quyền không xác nhận hoặc xác nhận không ủy quyền thực hiện thủ tục đăng ký hộ kinh doanh thì Cơ quan đăng ký kinh doanh cấp xã yêu cầu hộ kinh doanh báo cáo theo quy định tại khoản 6 Điều 22 Nghị định số 168/2026/NĐ-CP. Trường hợp chưa có tài khoản định danh điện tử để thực hiện xác thực điện tử thì hồ sơ đăng ký hộ kinh doanh phải kèm theo bản sao thẻ Căn cước hoặc thẻ Căn cước công dân còn hiệu lực của người ủy quyền.",
+          "component_code": "000.00.00.G12-657890",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019fa7ba-4736-76ab-b309-3736e776ac23",
+          "name": "Giấy chứng nhận đăng ký hộ kinh doanh",
+          "code": "KQ.G12.000815"
+        },
+        {
+          "id": "019fa7ba-e7ed-7029-b074-6b42d72ace93",
+          "name": "văn bản nội dung cần sửa đổi, bổ sung cho hộ kinh doanh.",
+          "code": "KQ.G12.000816"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7d-7398-be4e-87184807d6b6",
+          "name": "Thông tư số 68/2025/TT-BTC của Bộ Tài chính: Ban hành biểu mẫu sử dụng trong đăng ký doanh nghiệp, đăng ký hộ kinh doanh",
+          "code": "68/2025/TT-BTC"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afec-5e297320f06a",
+          "name": "Nghị định số 168/2025/NĐ-CP ngày 30 tháng 6 năm 2025 của Chính phủ về đăng ký doanh nghiệp",
+          "code": "168/2025/NĐ-CP"
+        },
+        {
+          "id": "019fa69e-1183-742e-afbc-44b9c703e395",
+          "name": "Nghị định số 296/2026/NĐ-CP ngày 23 tháng 7 năm 2026 của Chính phủ sửa đổi, bổ sung một số điều của Nghị định số 168/2025/NĐ-CP ngày 30 tháng 6 năm 2025 của Chính phủ về đăng ký doanh nghiệp (Nghị định số 296/2026/NĐ-CP)",
+          "code": "Nghị định số 296/2026/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d87-7195-a445-a84d5af06feb",
+          "name": "Luật sửa đổi, bổ sung một số điều của Luật Doanh nghiệp 2020",
+          "code": "76/2025/QH15"
+        },
+        {
+          "id": "019e390e-9094-746b-9b67-f7d43f5290fe",
+          "name": "Luật Doanh nghiệp",
+          "code": "Luật số: 59/2020/QH14"
+        },
+        {
+          "id": "019d2bb3-5d7d-7398-be4f-24cb929dcc49",
+          "name": "Thông tư Hướng dẫn về phí và lệ phí thuộc thẩm quyền quyết định của Hội đồng nhân dân tỉnh, thành phố trực thuộc Trung ương",
+          "code": "85/2019/TT-BTC"
+        }
+      ]
+    }
+  ]
+}

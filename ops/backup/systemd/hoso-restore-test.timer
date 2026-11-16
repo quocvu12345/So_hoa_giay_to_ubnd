@@ -1,0 +1,10 @@
+[Unit]
+Description=Hồ sơ số · diễn tập khôi phục hằng quý
+
+[Timer]
+OnCalendar=quarterly
+Persistent=true
+RandomizedDelaySec=1h
+
+[Install]
+WantedBy=timers.target

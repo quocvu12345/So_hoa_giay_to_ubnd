@@ -1,0 +1,77 @@
+{
+  "id": "dvc-019d2bfc-25da-751d-bf39-58863633e659",
+  "procedure_code": "1.007644",
+  "name": "Thủ tục hải quan đối với hàng hoá xuất khẩu, nhập khẩu là tài liệu, chứng từ không có giá trị thương mại gửi qua dịch vụ chuyển phát nhanh",
+  "domain": "Hải quan",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.958678+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfc-25da-751d-bf39-58863633e659",
+      "code": "1.007644",
+      "name": "Thủ tục hải quan đối với hàng hoá xuất khẩu, nhập khẩu là tài liệu, chứng từ không có giá trị thương mại gửi qua dịch vụ chuyển phát nhanh",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1794380630958,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-25da-751d-bf39-58863633e659",
+      "raw_path": "evidence/dvc/details/019d2bfc-25da-751d-bf39-58863633e659.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Tờ khai tài liệu, chứng từ không có giá trị thương mại theo các chỉ tiêu thông tin quy định tại phần A mục I Phụ lục IV ban hành kèm theo Thông tư số 142/2026/TT-BTC.",
+          "component_code": "000.00.00.G12-KQ7843",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "01a1c8b9-218c-7470-9a1f-973f4a5a4471",
+              "fileName": "Phụ lục IV.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/01a1c8b9-218c-7470-9a1f-973f4a5a4471/Phụ lục IV.docx"
+            },
+            {
+              "id": "01a1c8d0-64bc-74e0-900c-59c33635c47d",
+              "fileName": "Tờ khai tài liệu, chứng từ không có giá trị thương mại (1).docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/01a1c8d0-64bc-74e0-900c-59c33635c47d/Tờ khai tài liệu, chứng từ không có giá trị thương mại (1).docx"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Trường hợp khai tờ khai hải quan giấy, hồ sơ hải quan là tờ khai tài liệu, chứng từ không có giá trị thương mại theo Mẫu số HQ 01-TKTLCT Phụ lục I ban hành kèm theo Thông tư số 191/2015/TT-BTC",
+          "component_code": "000.00.00.G12-KQ7842",
+          "original_quantity": 2,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c70-724b-96e0-5c57f7f6612c",
+          "name": "Tờ khai hải quan có xác nhận thông quan",
+          "code": "KQ.G12.000362"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "01a1c4ee-85cd-72b0-a0d1-71be4519165d",
+          "name": "về sửa đổi, bổ sung một số điều của các Thông tư quy định thủ tục hải quan đối với hàng hóa xuất khẩu, nhập khẩu, quá cảnh gửi qua dịch vụ bưu chính của doanh nghiệp được chỉ định, dịch vụ chuyển phát nhanh quốc tế.",
+          "code": "142/2026/TT-BTC"
+        }
+      ]
+    }
+  ]
+}

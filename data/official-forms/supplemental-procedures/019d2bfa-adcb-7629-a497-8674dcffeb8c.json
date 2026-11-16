@@ -1,0 +1,121 @@
+{
+  "id": "dvc-019d2bfa-adcb-7629-a497-8674dcffeb8c",
+  "procedure_code": "2.001627",
+  "name": "Thẩm định quy trình vận hành đối với công trình thủy lợi lớn và công trình thủy lợi vừa do Chủ tịch UBND cấp tỉnh phân cấp cho Chủ tịch UBND cấp xã phê duyệt",
+  "domain": "Thủy lợi",
+  "managing_agency": "Bộ Nông nghiệp và Môi trường",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:18.008900+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfa-adcb-7629-a497-8674dcffeb8c",
+      "code": "2.001627",
+      "name": "Thẩm định quy trình vận hành đối với công trình thủy lợi lớn và công trình thủy lợi vừa do Chủ tịch UBND cấp tỉnh phân cấp cho Chủ tịch UBND cấp xã phê duyệt",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1777448067602,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfa-adcb-7629-a497-8674dcffeb8c",
+      "raw_path": "evidence/dvc/details/019d2bfa-adcb-7629-a497-8674dcffeb8c.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "- Tờ trình đề nghị phê duyệt quy trình vận hành được lập theo Mẫu 04 Phụ lục I Thông tư 08/2026/TT-BNNMT ngày 26/01/2026",
+          "component_code": "G10-KQ007850",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019d8afe-840d-75df-81ce-6e28f26699bc",
+              "fileName": "Mau so 04.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d8afe-840d-75df-81ce-6e28f26699bc/Mau so 04.docx"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "- Dự thảo quy trình vận hành công trình theo Mẫu 02 Phụ lục I Thông tư 08/2026/TT-BNNMT ngày 26/01/2026",
+          "component_code": "G10-KQ007851",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019d8aff-1fa4-778e-b997-9cd920df4b63",
+              "fileName": "Mau so 02.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d8aff-1fa4-778e-b997-9cd920df4b63/Mau so 02.docx"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 3,
+          "name": "- Báo cáo thuyết minh kết quả tính toán kỹ thuật;",
+          "component_code": "000.00.00.G10-KQ2082",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 4,
+          "name": "- Văn bản góp ý của tổ chức khai thác công trình thủy lợi, cơ quan, đơn vị liên quan;",
+          "component_code": "G10-KQ007981",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 5,
+          "name": "- Bản đồ hiện trạng công trình thủy lợi.",
+          "component_code": "000.00.00.G10-KQ2066",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c4d-7725-9d9f-db92eece6121",
+          "name": "Quyết định phê duyệt quy trình vận hành",
+          "code": "KQ.G10.000122"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d87-7195-a447-f9a5abcd2f43",
+          "name": "Luật sửa đổi, bổ sung một số điều của 15 luật trong lĩnh vực nông nghiệp và môi trường",
+          "code": "Luật số 146/2025/QH15"
+        },
+        {
+          "id": "019d2bb3-5d80-7608-8cd0-b5808a0fa91a",
+          "name": "Luật 08/2017/QH14",
+          "code": "08/2017/QH14"
+        },
+        {
+          "id": "019d2bb3-5d7c-71ab-9f08-fc8a906c596c",
+          "name": "Thông tư số 08/2026/TT-BNNMT ngày 26/01/2026",
+          "code": "08/2026"
+        }
+      ]
+    }
+  ]
+}

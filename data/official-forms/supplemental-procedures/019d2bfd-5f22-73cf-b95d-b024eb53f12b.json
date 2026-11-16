@@ -1,0 +1,228 @@
+{
+  "id": "dvc-019d2bfd-5f22-73cf-b95d-b024eb53f12b",
+  "procedure_code": "1.003005",
+  "name": "Giải quyết việc người nước ngoài cư trú ở khu vực biên giới nước láng giềng nhận trẻ em Việt Nam làm con nuôi",
+  "domain": "Nuôi con nuôi",
+  "managing_agency": "Bộ Tư pháp",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.888740+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfd-5f22-73cf-b95d-b024eb53f12b",
+      "code": "1.003005",
+      "name": "Giải quyết việc người nước ngoài cư trú ở khu vực biên giới nước láng giềng nhận trẻ em Việt Nam làm con nuôi",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1776763562023,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfd-5f22-73cf-b95d-b024eb53f12b",
+      "raw_path": "evidence/dvc/details/019d2bfd-5f22-73cf-b95d-b024eb53f12b.json",
+      "components": [
+        {
+          "section": "Hồ sơ của người nhận con nuôi:",
+          "position": 1,
+          "name": "-02 ảnh chụp toàn thân (Chụp  mới nhất, cỡ 9cm x 12cm hoặc 10 cm x 15 cm).",
+          "component_code": "000.00.00.G15-KQ004746",
+          "original_quantity": 2,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Hồ sơ của người nhận con nuôi:",
+          "position": 2,
+          "name": "-Bản sao  Hộ chiếu hoặc giấy tờ có giá trị thay thế;",
+          "component_code": "000.00.00.G15-KQ004741",
+          "original_quantity": 0,
+          "copy_quantity": 2,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Hồ sơ của người nhận con nuôi:",
+          "position": 3,
+          "name": "-Văn bản xác nhận về việc người nhận con  nuôi có đủ điều kiện nuôi con nuôi theo quy định của pháp luật nước đó;",
+          "component_code": "000.00.00.G15-KQ004743",
+          "original_quantity": 2,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Hồ sơ của người nhận con nuôi:",
+          "position": 4,
+          "name": "-Giấy  khám sức khỏe có giá trị sử dụng nếu được cấp  chưa quá 06 tháng, tính đến ngày nộp hồ sơ tại cơ quan có thẩm quyền;",
+          "component_code": "000.00.00.G15-KQ004745",
+          "original_quantity": 2,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Hồ sơ của người nhận con nuôi:",
+          "position": 5,
+          "name": "-Đơn  xin  nhận con nuôi;",
+          "component_code": "000.00.00.G15-KQ004740",
+          "original_quantity": 2,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019d9ad0-b3a3-716f-83b2-0545038ba6c2",
+              "fileName": "1.nxinnhnconnui.doc",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d9ad0-b3a3-716f-83b2-0545038ba6c2/1.nxinnhnconnui.doc"
+            }
+          ]
+        },
+        {
+          "section": "Hồ sơ của người nhận con nuôi:",
+          "position": 6,
+          "name": "-Văn bản xác  nhận  tình trạng hôn nhân;",
+          "component_code": "000.00.00.G15-KQ004744",
+          "original_quantity": 2,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Hồ sơ của người nhận con nuôi:",
+          "position": 7,
+          "name": "-Phiếu lý lịch tư pháp, có giá trị sử dụng nếu được cấp chưa  quá 12 tháng, tính đến ngày nộp hồ sơ tại cơ quan có thẩm quyền;",
+          "component_code": "000.00.00.G15-KQ004742",
+          "original_quantity": 2,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Hồ sơ của người được nhận làm con nuôi:",
+          "position": 1,
+          "name": "Biên bản xác nhận do Ủy ban nhân dân hoặc Công an cấp xã nơi phát hiện trẻ bị bỏ rơi lập đối với trẻ em bị bỏ rơi; Giấy chứng tử của cha đẻ, mẹ đẻ hoặc quyết định của Tòa án tuyên bố cha đẻ, mẹ đẻ của trẻ em là đã chết đối với trẻ em mồ côi; quyết định của Tòa án tuyên bố cha đẻ, mẹ đẻ của người được giới thiệu làm con nuôi mất tích đối với người được giới thiệu làm con nuôi mà cha đẻ, mẹ đẻ mất tích; quyết định của Tòa án tuyên bố cha đẻ, mẹ đẻ của người được giới thiệu làm con nuôi mất năng lực hành vi dân sự đối với người được  giới thiệu làm con  nuôi mà cha đẻ, mẹ  đẻ  mất   năng lực hành vi dân sự;",
+          "component_code": "000.00.00.G15-KQ004750",
+          "original_quantity": 2,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Hồ sơ của người được nhận làm con nuôi:",
+          "position": 2,
+          "name": "-Quyết định    tiếp nhận đối   với trẻ em ở cơ sở nuôi dưỡng.",
+          "component_code": "000.00.00.G15-KQ004751",
+          "original_quantity": 2,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Hồ sơ của người được nhận làm con nuôi:",
+          "position": 3,
+          "name": "-Giấy  khai  sinh;",
+          "component_code": "000.00.00.G15-KQ004747",
+          "original_quantity": 2,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Hồ sơ của người được nhận làm con nuôi:",
+          "position": 4,
+          "name": "-02 ảnh toàn thân, nhìn thẳng chụp  không quá 06 tháng;",
+          "component_code": "000.00.00.G15-KQ004749",
+          "original_quantity": 2,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Hồ sơ của người được nhận làm con nuôi:",
+          "position": 5,
+          "name": "-Giấy  khám sức khỏe do bệnh viện đa khoa hoặc phòng khám  đa khoa hoặc Trung tâm y tế khu vực cấp;",
+          "component_code": "000.00.00.G15-KQ004748",
+          "original_quantity": 2,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Lưu ý",
+          "position": 1,
+          "name": "Số lượng hồ sơ: 02 bộ đối với mỗi loại hồ sơ của người nhận con nuôi và hồ sơ của người được nhận làm con nuôi.",
+          "component_code": "000.00.00.G15-KQ004753",
+          "original_quantity": 0,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Lưu ý",
+          "position": 2,
+          "name": "Lưu ý: Giấy tờ có trong hồ sơ của người nhận con nuôi và người được nhận làm con nuôi do cơ quan, tổ chức, người có thẩm quyền lập, cấp, xác nhận mà bị tẩy xoá, sửa chữa làm sai lệch nội dung hoặc thông tin trong các văn bản, giấy tờ được khai không đúng sự thật thì không có giá trị sử dụng. Người thực hiện hành vi tẩy xoá, sửa chữa làm sai lệch nội dung hoặc khai thông tin không đúng sự thật bị xử lý vi phạm theo quy định pháp luật.",
+          "component_code": "000.00.00.G15-KQ004752",
+          "original_quantity": 0,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c78-7725-a74f-624c812c944a",
+          "name": "Giấy chứng nhận nuôi con nuôi trong nước",
+          "code": "KQ.G15.000002"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d86-7760-a642-cb60cc107a28",
+          "name": "Nghị định sửa đổi, bổ sung một số nghị định để cắt giảm, đơn giản hóa thủ tục hành chính, điều kiện kinh doanh  thuộc phạm vi quản lý của Bộ Tư pháp",
+          "code": "18/2026/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afe8-3ac91da2e6b0",
+          "name": "Nghị định sửa đổi, bổ sung một số điều của các Nghị định liên quan đến việc nộp xuất trình sổ hộ khẩu, sổ tạm trú giấy khi thực hiện thủ tục hành chính, cung cấp dịch vụ công",
+          "code": "104/2022/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7d-7398-be52-aa6de2bf3b03",
+          "name": "BAN HÀNH, HƯỚNG DẪN VIỆC GHI CHÉP, SỬ DỤNG, QUẢN LÝ VÀ LƯU TRỮ SỔ, MẪU GIẤY TỜ, HỒ SƠ NUÔI CON NUÔI",
+          "code": "10/2020/TT-BTP"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afe9-9d8e94b33af1",
+          "name": "Nghị định số 120/2025/NĐ-CP ngày 11/6/2025 của Chính phủ quy định về phân định thẩm quyền của chính quyền địa phương 02 cấp trong lĩnh vực quản lý nhà nước của Bộ Tư pháp.",
+          "code": "120/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afe7-6431273ce2c4",
+          "name": "Nghị định số 06/2025/NĐ-CP ngày 08 tháng 01 năm 2025 của Chính phủ sửa đổi, bổ sung một số điều của các Nghị định về nuôi con nuôi",
+          "code": "06/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7d-7398-be52-75595513cbd8",
+          "name": "THÔNG TƯ  SỬA ĐỔI, BỔ SUNG MỘT SỐ ĐIỀU CỦA THÔNG TƯ SỐ 10/2020/TT-BTP NGÀY 28 THÁNG 12 NĂM 2020 CỦA BỘ TRƯỞNG BỘ TƯ PHÁP BAN HÀNH, HƯỚNG DẪN VIỆC GHI CHÉP, SỬ DỤNG, QUẢN LÝ VÀ LƯU TRỮ SỔ, MẪU GIẤY TỜ, HỒ SƠ NUÔI CON NUÔI",
+          "code": "07/2023/TT-BTP"
+        }
+      ]
+    }
+  ]
+}

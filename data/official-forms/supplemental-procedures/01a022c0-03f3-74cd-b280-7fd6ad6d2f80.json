@@ -1,0 +1,110 @@
+{
+  "id": "dvc-01a022c0-03f3-74cd-b280-7fd6ad6d2f80",
+  "procedure_code": "1.116410",
+  "name": "Cấp, cấp đổi, cấp lại thẻ căn cước",
+  "domain": "Cấp, quản lý căn cước",
+  "managing_agency": "Bộ Công an",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.474833+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "01a022c0-03f3-74cd-b280-7fd6ad6d2f80",
+      "code": "1.116410",
+      "name": "Cấp, cấp đổi, cấp lại thẻ căn cước",
+      "state": "ACTIVE",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1787291673167,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/01a022c0-03f3-74cd-b280-7fd6ad6d2f80",
+      "raw_path": "evidence/dvc/details/01a022c0-03f3-74cd-b280-7fd6ad6d2f80.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Phiếu thu nhận thông tin căn cước (Mẫu CC01 ban hành kèm theo Thông tư số 118/2026/TT-BCA ngày 29/6/2026 của Bộ Công an). Phiếu được tạo lập khi trích xuất thông tin của công dân trong Cơ sở dữ liệu quốc gia về dân cư và in trong quá trình thu nhận hồ sơ căn cước để công dân kiểm tra và ký xác nhận",
+          "component_code": "000.00.00.G01-KQ003796",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Phiếu đề nghị giải quyết thủ tục về căn cước (Mẫu DC02 ban hành kèm theo Thông tư số 118/2026/TT-BCA ngày 29/6/2026 của Bộ Công an) trong đó nêu rõ mục đích, nội dung, phạm vi thông tin cần khai thác trong Cơ sở dữ liệu quốc gia về dân cư và cam đoan về việc chịu trách nhiệm trong sử dụng thông tin khi được khai thác và ý kiến đồng ý của chủ thể thông tin cần khai thác",
+          "component_code": "000.00.00.G01-KQ003792",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 3,
+          "name": "Trường hợp công dân chưa có thông tin trong cơ sở dữ liệu quốc gia về dân cư thì hồ sơ còn có Phiếu thu thập thông tin dân cư (Mẫu DC01 ban hành kèm theo Thông tư số 118/2026/TT-BCA ngày 29/6/2026 của Bộ Công an); Giấy tờ pháp lý chứa thông tin công dân.",
+          "component_code": "000.00.00.G01-KQ003791",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c36-71b8-ad26-aaa69add9344",
+          "name": "Thẻ căn cước",
+          "code": "KQ.G01.000023"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019f82b2-689c-7667-aa40-6ec8fb7fcd94",
+          "name": "Sửa đổi, bổ sung một số điều của 10 Luật có liên quan đến an ninh, trật tự",
+          "code": "118/2025/QH15"
+        },
+        {
+          "id": "01a0224a-0269-735f-84c1-54c2c0a3a716",
+          "name": "Thông tư số 61/2025/TT-BCA ngày 10/7/2025 của Bộ Công an quy định về quy trình cấp, cấp đổi, cấp lại thẻ căn cước, giấy chứng nhận căn cước được sửa đổi, bổ sung bởi Thông tư số 120/2026/TT-BCA ngày 29/6/2026 của Bộ Công an sửa đổi, bổ sung một số điều của Thông tư số 61/2025/TT-BCA",
+          "code": "61/2025/TT-BCA "
+        },
+        {
+          "id": "019d2bb3-5d7b-7049-8fc6-519d6a3ee863",
+          "name": "Thông tư quy định chi tiết một số điều và biện pháp thi hành Luật Căn cước",
+          "code": "17/2024/TT-BCA"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b672-609c23fcf9d1",
+          "name": "Luật Căn cước",
+          "code": "26/2023/QH15"
+        },
+        {
+          "id": "019d2bb3-5d7f-719e-b470-9fafa6161ec1",
+          "name": "Nghị định của Chính phủ: Quy định chi tiết một số điều và biện pháp thi hành Luật Căn cước",
+          "code": "70/2024/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7b-7049-8fc6-48bfec01b8f7",
+          "name": "Thông tư 16/2024/TT-BCA quy định về mẫu thẻ căn cước, mẫu giấy chứng nhận căn cước",
+          "code": "16/2024/TT-BCA"
+        },
+        {
+          "id": "019d2bb3-5d7d-7398-be4e-bcda95891167",
+          "name": "Thông tư số 73/2024/TT-BTC ngày 21/10/2024 của Bộ Tài chính quy định mức thu, miễn, chế độ thu, nộp lệ phí cấp đổi, cấp lại thẻ căn cước",
+          "code": "73/2024/TT-BTC"
+        },
+        {
+          "id": "019f64f0-3320-723c-ba5d-456399a53637",
+          "name": "Thông tư quy định mức thu, miễn một số khoản phí, lệ phí nhằm hỗ trợ cho doanh nghiệp, người dân.",
+          "code": "64/2025/TT-BTC "
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "id": "dvc-019d2bfa-8686-732b-b2d5-e6a422f1b242",
+  "procedure_code": "1.013997",
+  "name": "Hỗ trợ cơ sở sản xuất bị thiệt hại do dịch bệnh động vật (cơ sở sản xuất không thuộc lực lượng vũ trang nhân dân)",
+  "domain": "Thú y",
+  "managing_agency": "Bộ Nông nghiệp và Môi trường",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:18.012856+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfa-8686-732b-b2d5-e6a422f1b242",
+      "code": "1.013997",
+      "name": "Hỗ trợ cơ sở sản xuất bị thiệt hại do dịch bệnh động vật (cơ sở sản xuất không thuộc lực lượng vũ trang nhân dân)",
+      "state": "ACTIVE",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1776773151771,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfa-8686-732b-b2d5-e6a422f1b242",
+      "raw_path": "evidence/dvc/details/019d2bfa-8686-732b-b2d5-e6a422f1b242.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Đơn đề nghị hỗ trợ theo từng loại hình cơ sở sản xuất theo Mẫu số 2a, Mẫu số 2b quy định tại Phụ lục ban hành kèm theo Nghị định 116/2025/NĐ-CP.",
+          "component_code": "000.00.00.G10-KQ006226",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019dafe1-c173-72e3-bb27-7b04269b0bd0",
+              "fileName": "250605_116_Nghidinh_PCDB_PL.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019dafe1-c173-72e3-bb27-7b04269b0bd0/250605_116_Nghidinh_PCDB_PL.docx"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c6c-7279-86b7-d12db4569189",
+          "name": "Quyết định về việc hỗ trợ đối với các cơ sở sản xuất bị thiệt hại do dịch bệnh động vật",
+          "code": "KQ.G10.000938"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d86-7760-a63d-a8b18eabd72e",
+          "name": "116/2025/NĐ-CP",
+          "code": "116/2025/NĐ-CP"
+        }
+      ]
+    }
+  ]
+}

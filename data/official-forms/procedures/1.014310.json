@@ -1,0 +1,63 @@
+{
+  "ordinal": "82",
+  "managing_agency": "Sở Văn hóa thể thao",
+  "procedure_code": "1.014310",
+  "name": "Thủ tục hưởng trợ cấp sinh hoạt hàng tháng đối với Nghệ nhân nhân dân, Nghệ nhân ưu tú",
+  "domain": "Di sản văn hóa",
+  "ministry_decision": "3101/QĐ-BVHTTDL ngày 26/08/2025",
+  "hanoi_decision": "1259/QĐ-TTPVHCC ngày 08/9/2025",
+  "workflow_decision": "1266/QĐ-TTPVHCC ngày 09/9/2025",
+  "fees": "Không quy định",
+  "execution_level": "Cấp Xã",
+  "competent_authority": "UBND cấp xã",
+  "delegation_decision": "",
+  "delegation_expiry": "",
+  "receiving_location": "Điểm hỗ trợ DVC số",
+  "source_page": 3,
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "inventory_date": "2026-04-27",
+  "checked_at": "2026-11-12T22:23:40.783430+07:00",
+  "details": [
+    {
+      "id": "019d2bfd-f3cf-715c-b31f-4e822e37493b",
+      "code": "1.014310",
+      "name": "Thủ tục hưởng trợ cấp sinh hoạt hàng tháng đối với Nghệ nhân nhân dân, Nghệ nhân ưu tú",
+      "state": "ACTIVE",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1775886590547,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfd-f3cf-715c-b31f-4e822e37493b",
+      "raw_path": "evidence/dvc/details/019d2bfd-f3cf-715c-b31f-4e822e37493b.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "(1) Tờ khai của người đề nghị hưởng trợ cấp sinh hoạt hàng tháng theo Mẫu số 04 tại Phụ lục I ban hành kèm theo Nghị định số 215/2025/NĐ-CP ngày 04 tháng 8 năm 2025 của Chính phủ.",
+          "component_code": "G16-KQ002174",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c79-762e-8b2d-065cd0352101",
+          "name": "Quyết định hưởng trợ cấp sinh hoạt hàng tháng đối với Nghệ nhân nhân dân, Nghệ nhân ưu tú",
+          "code": "KQ.G16.000388"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d87-7195-a441-9fb7b3e0e577",
+          "name": "Luật số 45/2024/QH15 của Quốc hội: Luật Di sản văn hóa",
+          "code": "45/2024/QH15"
+        }
+      ]
+    }
+  ],
+  "lookup_status": "retrieved",
+  "currency_status": "snapshot_requires_later_amendment_check",
+  "errors": []
+}

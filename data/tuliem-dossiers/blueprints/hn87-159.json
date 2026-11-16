@@ -1,0 +1,141 @@
+{
+  "id": "hn87-159",
+  "ordinal": "159",
+  "procedure_code": "1.010092",
+  "name": "Trợ cấp tiền tuất, tai nạn (đối với trường hợp tai nạn suy giảm khả năng lao động từ 5% trở lên) cho lực lượng xung kích phòng chống thiên tai cấp xã chưa tham gia bảo hiểm xã hội",
+  "domain": "Quản lý Đê điều và Phòng, chống thiên tai (Bộ Nông nghiệp và Môi trường)",
+  "department_id": "ktdt",
+  "department": "Phòng Kinh tế, Hạ tầng và Đô thị",
+  "authority_as_published": "UBND cấp xã",
+  "execution_level_as_published": "Cấp Xã",
+  "receiving_location_as_published": "Điểm hỗ trợ DVC số",
+  "inventory_date": "2026-04-27",
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "source_urls": [
+    "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfa-5787-70e4-a42f-b3e1e9ca9435"
+  ],
+  "current_dvc_match": true,
+  "lifecycle": null,
+  "scope": "hanoi_commune_notice_2026_04_27",
+  "scope_note": "Mốc kiểm kê cấp xã Hà Nội; áp dụng từng thủ tục tại Từ Liêm còn phải theo thẩm quyền/ủy quyền hiện hành.",
+  "status": "has_fillable_templates",
+  "components": [
+    {
+      "id": "hn87-159-c001",
+      "code": "G10-KQ007824",
+      "name": "- Thành phần hồ sơ của người tham gia lực lượng xung kích phòng chống thiên tai cấp xã hoặc người đại diện hợp pháp gửi hồ sơ về UBND cấp xã bao gồm: Đơn đề nghị trợ cấp tai nạn theo mẫu quy định tại Phụ lục II Nghị định số 53/2026/NĐ-CP ngày 05/02/2026; Giấy ra viện; Trích sao hồ sơ bệnh án hoặc bản sao giấy chứng nhận thương tích do cơ sở y tế nơi đã cấp cứu, điều trị; Biên bản giám định mức suy giảm khả năng lao động của hội đồng giám định y khoa bệnh viện cấp tỉnh và tương đương trở lên; Biên bản điều tra của cơ quan công an (trường hợp bị tai nạn giao thông);",
+      "section": "a) Trường hợp tai nạn suy giảm khả năng lao động từ 5% trở lên",
+      "role": "applicant_form",
+      "scenario_status": "conditional_needs_review",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfa-5787-70e4-a42f-b3e1e9ca9435",
+      "source_detail_id": "019d2bfa-5787-70e4-a42f-b3e1e9ca9435",
+      "embedded_other_requirements": true,
+      "template_candidates": [
+        "template-35e91ec9fa0082c3"
+      ],
+      "template_selection_method": "first_matching_source_attachment",
+      "selected_template_id": "template-35e91ec9fa0082c3",
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-159-c002",
+      "code": "G10-KQ007825",
+      "name": "- Thành phần hồ sơ của UBND cấp xã lập gửi UBND cấp tỉnh bao gồm: Tờ trình; Hồ sơ hợp lệ của người tham gia lực lượng xung kích phòng chống thiên tai cấp xã hoặc người đại diện hợp pháp gửi UBND cấp xã..",
+      "section": "a) Trường hợp tai nạn suy giảm khả năng lao động từ 5% trở lên",
+      "role": "needs_review",
+      "scenario_status": "conditional_needs_review",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfa-5787-70e4-a42f-b3e1e9ca9435",
+      "source_detail_id": "019d2bfa-5787-70e4-a42f-b3e1e9ca9435",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-159-c003",
+      "code": "G10-KQ007827",
+      "name": "- Thành phần hồ sơ của UBND cấp xã lập gửi UBND cấp tỉnh bao gồm: Tờ trình; Hồ sơ hợp lệ của người đại diện hợp pháp của người tham gia lực lượng xung kích phòng chống thiên tai cấp xã gửi UBND cấp xã  .",
+      "section": "b) Trường hợp trợ cấp tiền tuất: ",
+      "role": "needs_review",
+      "scenario_status": "alternative_case_not_selected",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfa-5787-70e4-a42f-b3e1e9ca9435",
+      "source_detail_id": "019d2bfa-5787-70e4-a42f-b3e1e9ca9435",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-159-c004",
+      "code": "G10-KQ007826",
+      "name": "- Thành phần hồ sơ của người đại diện hợp pháp của người tham gia lực lượng xung kích phòng chống thiên tai cấp xã gửi hồ sơ về UBND cấp xã bao gồm: Đơn đề nghị trợ cấp tiền tuất theo mẫu quy định tại Phụ lục II ban hành kèm theo Nghị định số 53/2026/NĐ-CP ngày 05/02/2026 của Chính phủ; Giấy ra viện hoặc trích sao hồ sơ bệnh án hoặc Giấy báo tử hoặc cung cấp số, kí hiệu của giấy chứng tử hoặc trích lục khai tử trong đơn đề nghị (đối với giấy chứng tử, trích lục khai tử, nơi tiếp nhận hồ sơ sử dụng dữ liệu tương ứng có trong cơ sở dữ liệu hộ tịch điện tử); Biên bản điều tra của cơ quan công an (trường hợp bị tai nạn giao thông dẫn đến chết) ;",
+      "section": "b) Trường hợp trợ cấp tiền tuất: ",
+      "role": "applicant_form",
+      "scenario_status": "alternative_case_not_selected",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfa-5787-70e4-a42f-b3e1e9ca9435",
+      "source_detail_id": "019d2bfa-5787-70e4-a42f-b3e1e9ca9435",
+      "embedded_other_requirements": true,
+      "template_candidates": [
+        "template-c4d44f076f3d8e19"
+      ],
+      "template_selection_method": "first_matching_source_attachment",
+      "selected_template_id": null,
+      "selection_requires_review": false
+    }
+  ],
+  "service_cases": [
+    {
+      "id": "019d2dc5-c262-7300-8c26-a75fa77d04f3",
+      "code": "1.010092.01",
+      "name": "Trợ cấp tiền tuất, tai nạn (đối với trường hợp tai nạn suy giảm khả năng lao động từ 5% trở lên) cho lực lượng xung kích phòng chống thiên tai cấp xã chưa tham gia bảo hiểm xã hội",
+      "source_processing_time": {
+        "qty": 13,
+        "type": "WORKING_DAY"
+      },
+      "has_case_specific_components": false
+    }
+  ],
+  "selected_template_ids": [
+    "template-35e91ec9fa0082c3"
+  ],
+  "source_component_groups": [
+    {
+      "name": "a) Trường hợp tai nạn suy giảm khả năng lao động từ 5% trở lên",
+      "component_count": 2,
+      "source_detail_id": "019d2bfa-5787-70e4-a42f-b3e1e9ca9435"
+    },
+    {
+      "name": "b) Trường hợp trợ cấp tiền tuất: ",
+      "component_count": 2,
+      "source_detail_id": "019d2bfa-5787-70e4-a42f-b3e1e9ca9435"
+    }
+  ],
+  "conditional_component_groups": [
+    "a) Trường hợp tai nạn suy giảm khả năng lao động từ 5% trở lên",
+    "b) Trường hợp trợ cấp tiền tuất: "
+  ],
+  "default_test_scenario": {
+    "channel": "direct",
+    "applicant_submits_self": true,
+    "authorized": false,
+    "special_case_flags": [],
+    "selected_conditional_group": "a) Trường hợp tai nạn suy giảm khả năng lao động từ 5% trở lên",
+    "case_selection_method": "first_published_condition_with_available_template_for_test",
+    "case_status": "scenario_for_testing_not_a_legal_eligibility_decision"
+  },
+  "requirement_note": "required_as_published được giữ nguyên; false không chứng minh giấy tờ luôn tùy chọn. Các nhóm executionCases có thể là mục giấy tờ/hướng dẫn, không phải các phương án loại trừ nhau."
+}

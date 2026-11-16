@@ -1,0 +1,75 @@
+{
+  "id": "dvc-019d2bfb-cf79-74df-bb1f-3fd783777d04",
+  "procedure_code": "2.002761",
+  "name": "Thủ tục xác nhận cán bộ Quân đội nghỉ hưu mắc bệnh hiểm nghèo",
+  "domain": "Chính sách BQP",
+  "managing_agency": "Bộ Quốc phòng",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.978268+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfb-cf79-74df-bb1f-3fd783777d04",
+      "code": "2.002761",
+      "name": "Thủ tục xác nhận cán bộ Quân đội nghỉ hưu mắc bệnh hiểm nghèo",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1782891873783,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-cf79-74df-bb1f-3fd783777d04",
+      "raw_path": "evidence/dvc/details/019d2bfb-cf79-74df-bb1f-3fd783777d04.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Bản chính (bản giấy) hoặc bản sao điện tử Tóm tắt hồ sơ bệnh án điều trị bệnh hiểm nghèo của bệnh viện trong hoặc ngoài Quân đội",
+          "component_code": "000.00.00.G11-KQ003967",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Đơn đề nghị giám định để hưởng chế độ hỗ trợ mắc bệnh hiểm nghèo của đối tượng hoặc thân nhân đối tượng theo Mẫu số 01 tại Phụ lục ban hành kèm theo Nghị định số 343/2025/NĐ-CP",
+          "component_code": "000.00.00.G11-KQ003966",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 3,
+          "name": "Bản sao hoặc bản sao điện tử quyết định về việc hưởng chế độ hưu trí hằng tháng",
+          "component_code": "000.00.00.G11-KQ003968",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c6f-72b5-bd0b-3ece3fe8fac1",
+          "name": "Quyết định công nhận sĩ quan Quân đội nghỉ hưu mắc bệnh hiểm nghèo",
+          "code": "KQ.G11.000170"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d87-7195-a43f-58934e3266f5",
+          "name": "Nghị định số 343/2025/NĐ-CP của Chính phủ: Quy định chế độ an điều dưỡng, chăm sóc khi mắc bệnh hiểm nghèo, chế độ thông tin, hỗ trợ tang lễ khi từ trần đối với sĩ quan Quân đội nghỉ hưu",
+          "code": "343/2025/NĐ-CP"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "id": "dvc-019d2bfc-743e-74ab-995b-de0ab9d511b5",
+  "procedure_code": "1.009079",
+  "name": "Báo cáo quyết toán đối với hàng hóa đưa vào để bán tại cửa hàng miễn thuế",
+  "domain": "Hải quan",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.928223+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfc-743e-74ab-995b-de0ab9d511b5",
+      "code": "1.009079",
+      "name": "Báo cáo quyết toán đối với hàng hóa đưa vào để bán tại cửa hàng miễn thuế",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1785982946493,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-743e-74ab-995b-de0ab9d511b5",
+      "raw_path": "evidence/dvc/details/019d2bfc-743e-74ab-995b-de0ab9d511b5.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Báo cáo quyết toán theo Mẫu số 05/BCQT Phụ lục III ban hành kèm theo Nghị định số 273/2026/NĐ-CP (đối với trường hợp nộp trực tiếp).",
+          "component_code": "000.00.00.G12-KQ9867",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019fd4d9-80e0-76af-9aee-a0cadaec223c",
+              "fileName": "Mẫu số 05.BCQT.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fd4d9-80e0-76af-9aee-a0cadaec223c/Mẫu số 05.BCQT.docx"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Chỉ tiêu thông tin theo Mẫu số 05 Phụ lục II ban hành kèm theo Nghị định số 273/2026/NĐ-CP (đối với trường hợp nộp trực tuyến).",
+          "component_code": "000.00.00.G12-KQ12365",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c73-70ac-aa18-0be119d4e520",
+          "name": "Xác nhận của cơ quan hải quan trên hệ thống xử lý dữ liệu điện tử hải quan đối với việc doanh nghiệp hoàn thành báo cáo quyết toán.",
+          "code": "KQ.G12.001237"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019fc558-dd5c-7395-9a78-efc7e38e5c9f",
+          "name": "Về kinh doanh hàng miễn thuế",
+          "code": "273/2026/NĐ-CP"
+        }
+      ]
+    }
+  ]
+}

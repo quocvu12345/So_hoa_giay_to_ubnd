@@ -1,0 +1,112 @@
+{
+  "id": "dvc-019d2bfb-2afb-760c-ad34-6012e854bce3",
+  "procedure_code": "1.014318",
+  "name": "THỦ TỤC TUYỂN CHỌN TỔNG CÔNG TRÌNH SƯ DỰ ÁN",
+  "domain": "Lao động",
+  "managing_agency": "Bộ Nội vụ",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.987439+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfb-2afb-760c-ad34-6012e854bce3",
+      "code": "1.014318",
+      "name": "THỦ TỤC TUYỂN CHỌN TỔNG CÔNG TRÌNH SƯ DỰ ÁN",
+      "state": "ACTIVE",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1776141452259,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-2afb-760c-ad34-6012e854bce3",
+      "raw_path": "evidence/dvc/details/019d2bfb-2afb-760c-ad34-6012e854bce3.json",
+      "components": [
+        {
+          "section": "a) Hồ sơ đề cử, ứng cử, bao gồm:",
+          "position": 1,
+          "name": "Đề án triển khai hệ thống chiến lược, trong đó nêu ý tưởng thiết kế kiến trúc của hệ thống chiến lược, phương án công nghệ lựa chọn, các điều kiện về nguồn lực, tài chính, kỹ thuật, hợp tác.",
+          "component_code": "G09-KQ003097",
+          "original_quantity": 0,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "a) Hồ sơ đề cử, ứng cử, bao gồm:",
+          "position": 2,
+          "name": "Báo cáo mô tả năng lực chuyên môn, kinh nghiệm điều phối, các kết quả khoa học, công nghệ nổi bật;",
+          "component_code": "G09-KQ003096",
+          "original_quantity": 0,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "a) Hồ sơ đề cử, ứng cử, bao gồm:",
+          "position": 3,
+          "name": "Văn bản đề cử, ứng cử;",
+          "component_code": "G09-KQ003094",
+          "original_quantity": 0,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "a) Hồ sơ đề cử, ứng cử, bao gồm:",
+          "position": 4,
+          "name": "Lý lịch khoa học của ứng viên;",
+          "component_code": "G09-KQ003095",
+          "original_quantity": 0,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 1,
+          "name": "b) Số lượng: Không quy định.",
+          "component_code": "G09-KQ003098",
+          "original_quantity": 0,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c82-739b-8b9b-72f83b6f7af7",
+          "name": "Hợp đồng lao động.",
+          "code": "KQ.G09.000087"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d85-73da-8eba-0bd7fb6c4178",
+          "name": "Luật Cán bộ, Công chức",
+          "code": "80/2025/QH15"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b673-cd5811e270ee",
+          "name": "Luật Tổ chức Chính phủ 2025",
+          "code": "63/2025/QH15"
+        },
+        {
+          "id": "019d2bb3-5d85-73da-8eba-0eadc81b4d09",
+          "name": "Luật số 93/2025/QH15 của Quốc hội: Luật Khoa học, công nghệ và đổi mới sáng tạo",
+          "code": "93/2025/QH15"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afed-be642f7d11c6",
+          "name": "Nghị định số 231/2025/NĐ-CP của Chính phủ: Quy định về tuyển chọn, sử dụng Tổng công trình sư, Kiến trúc sư trưởng về khoa học, công nghệ, đổi mới sáng tạo và chuyển đổi số quốc gia",
+          "code": "231/2025/NĐ-CP"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,202 @@
+{
+  "id": "dvc-019d84cc-346b-761d-81a0-e21b5b938a48",
+  "procedure_code": "1.014964",
+  "name": "Thủ tục nhập cảnh, xuất cảnh, chuyển cảng đối với tàu quân sự nước ngoài đến lãnh hải, khu vực nội thuỷ ngoài vùng nước cảng biển.",
+  "domain": "Quản lý biên giới",
+  "managing_agency": "Bộ Quốc phòng",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.849601+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d84cc-346b-761d-81a0-e21b5b938a48",
+      "code": "1.014964",
+      "name": "Thủ tục nhập cảnh, xuất cảnh, chuyển cảng đối với tàu quân sự nước ngoài đến lãnh hải, khu vực nội thuỷ ngoài vùng nước cảng biển.",
+      "state": "ACTIVE",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1776247751162,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d84cc-346b-761d-81a0-e21b5b938a48",
+      "raw_path": "evidence/dvc/details/019d84cc-346b-761d-81a0-e21b5b938a48.json",
+      "components": [
+        {
+          "section": "Thành phần hồ sơ đối với tàu quân sự nước ngoài nhập cảnh:",
+          "position": 1,
+          "name": "- Bản khai chung (bản chính); - Danh sách thuyền viên (bản chính); - Bản kê khai hàng hoá (nếu có hàng hoá từ tàu lên bờ - bản chính); - Giấy khai báo y tế hàng hải (bản chính); - Giấy khai báo y tế mẫu vi sinh y học, sản phẩm sinh học, mô, bộ phận cơ thể người (nếu có - bản chính); - Giấy khai báo y tế, thi thể, hài cốt, tro cốt (nếu có - bản chính); - Bản khai kiểm dịch thực vật (nếu tàu phải kiểm dịch thực vật - bản chính); - Bản khai kiểm dịch động vật (nếu tàu phải kiểm dịch động vật - bản chính); - Chương trình hoạt động của tàu (bản sao).",
+          "component_code": "1.014964-TP1",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019d84c9-75d5-70b0-a03a-d3409a9c3718",
+              "fileName": "Giykhaiboythnghi.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d84c9-75d5-70b0-a03a-d3409a9c3718/Giykhaiboythnghi.docx"
+            },
+            {
+              "id": "019d84c9-7952-7528-be2b-c18dbefc17e3",
+              "fileName": "Bnkhaihngha.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d84c9-7952-7528-be2b-c18dbefc17e3/Bnkhaihngha.docx"
+            },
+            {
+              "id": "019d84c9-7b85-764d-a617-513e433778ca",
+              "fileName": "Danhschthuynvin.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d84c9-7b85-764d-a617-513e433778ca/Danhschthuynvin.docx"
+            },
+            {
+              "id": "019d84c9-7db9-73fc-bebe-f16b90256405",
+              "fileName": "Giyboytmuvisinhvtyhcsnphmsnhhcmbphncthngi.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d84c9-7db9-73fc-bebe-f16b90256405/Giyboytmuvisinhvtyhcsnphmsnhhcmbphncthngi.docx"
+            },
+            {
+              "id": "019d84c9-800a-723d-b5b4-b3f7b800504e",
+              "fileName": "Bnkhaikimdchthcvt.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d84c9-800a-723d-b5b4-b3f7b800504e/Bnkhaikimdchthcvt.docx"
+            },
+            {
+              "id": "019d84c9-824d-715c-815a-92923e853051",
+              "fileName": "Bnkhaikimdchngvt.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d84c9-824d-715c-815a-92923e853051/Bnkhaikimdchngvt.docx"
+            },
+            {
+              "id": "019d84c9-84a3-7563-8b46-38949ae2e74a",
+              "fileName": "Bnkhaichung.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d84c9-84a3-7563-8b46-38949ae2e74a/Bnkhaichung.docx"
+            },
+            {
+              "id": "019d84c9-86e3-7089-ba63-e90e900a65ab",
+              "fileName": "Giykhaiboytthithhicttroct.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d84c9-86e3-7089-ba63-e90e900a65ab/Giykhaiboytthithhicttroct.docx"
+            }
+          ]
+        },
+        {
+          "section": "Thành phần hồ sơ đối với tàu quân sự nước ngoài xuất cảnh:",
+          "position": 1,
+          "name": "Bản khai chung (bản chính); - Danh sách thuyền viên (nếu có thay đổi so với lúc nhập cảnh - bản chính); - Bản kê khai hàng hoá (nếu có hàng hoá từ bờ lên tàu - bản chính); - Giấy khai báo y tế mẫu vi sinh y học, sản phẩm sinh học, mô, bộ phận cơ thể người (nếu có - bản chính); - Giấy khai báo y tế, thi thể, hài cốt, tro cốt (nếu có - bản chính).",
+          "component_code": "1.014964-TP2",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019d84cd-21ab-7029-b533-b4d66bc861ce",
+              "fileName": "Bnkhaihngha (1).docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d84cd-21ab-7029-b533-b4d66bc861ce/Bnkhaihngha (1).docx"
+            },
+            {
+              "id": "019d84cd-230d-71da-ac96-0c7024ca428b",
+              "fileName": "Giyboytmuvisinhvtyhcsnphmsnhhcmbphncthngi (1).docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d84cd-230d-71da-ac96-0c7024ca428b/Giyboytmuvisinhvtyhcsnphmsnhhcmbphncthngi (1).docx"
+            },
+            {
+              "id": "019d84cd-2438-70a9-b6ab-24c2199f7195",
+              "fileName": "Danhschthuynvin (1).docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d84cd-2438-70a9-b6ab-24c2199f7195/Danhschthuynvin (1).docx"
+            },
+            {
+              "id": "019d84cd-2566-708f-b12d-bb27bd46c662",
+              "fileName": "Giykhaiboytthithhicttroct (1).docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d84cd-2566-708f-b12d-bb27bd46c662/Giykhaiboytthithhicttroct (1).docx"
+            },
+            {
+              "id": "019d84cd-269e-74eb-926c-7d6da240ebee",
+              "fileName": "Bnkhaichung (1).docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d84cd-269e-74eb-926c-7d6da240ebee/Bnkhaichung (1).docx"
+            }
+          ]
+        },
+        {
+          "section": "Thành phần hồ sơ đối với tàu quân sự nước ngoài chuyển cảng đi:",
+          "position": 1,
+          "name": "- Bản khai chung (bản chính); - Danh sách thuyền viên (nếu có thay đổi so với lúc nhập cảnh - bản chính); - Giấy phép đi bờ của thuyền viên nước ngoài (nếu có); - Giấy phép - Permit (nếu có);",
+          "component_code": "1.014964-TP3",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019d84ce-4952-769b-947d-ad856a931622",
+              "fileName": "Danhschthuynvin (2).docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d84ce-4952-769b-947d-ad856a931622/Danhschthuynvin (2).docx"
+            },
+            {
+              "id": "019d84ce-4aaf-72bb-88e7-ca8889792300",
+              "fileName": "Bnkhaichung (2).docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d84ce-4aaf-72bb-88e7-ca8889792300/Bnkhaichung (2).docx"
+            }
+          ]
+        },
+        {
+          "section": "Thành phần hồ sơ đối với tàu quân sự nước ngoài chuyển cảng đến:",
+          "position": 1,
+          "name": "- Bản khai chung (bản chính); - Danh sách thuyền viên (nếu có thay đổi so với lúc nhập cảnh - bản chính); - Hồ sơ tàu chuyển cảng của Biên phòng cửa khẩu cảng đi; - Giấy phép rời cảng của Cảng vụ hàng hải cảng đi; - Hồ sơ tàu chuyển cảng của Hải quan cửa khẩu cảng đi.",
+          "component_code": "1.014964-TP4",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019d84ce-e71f-75f9-8ed2-032908245d5d",
+              "fileName": "Danhschthuynvin (4).docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d84ce-e71f-75f9-8ed2-032908245d5d/Danhschthuynvin (4).docx"
+            },
+            {
+              "id": "019d84ce-e8a6-714a-a32a-7c099a706dfb",
+              "fileName": "Bnkhaichung (3).docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d84ce-e8a6-714a-a32a-7c099a706dfb/Bnkhaichung (3).docx"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "id": "019d84cc-200f-705b-bbd6-a03672d0e156",
+          "name": "Đóng dấu Kiểm chứng nhập cảnh, xuất cảnh hoặc xác nhận nhập cảnh, xuất cảnh, chuyển cảng",
+          "code": "KQ.G11.000417"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d84d3-c674-741e-b201-3c390551eede",
+          "name": "Nghị định quy định đối với tàu quân sự nước ngoài đến nước Cộng hòa xã hội chủ nghĩa Việt Nam và tàu quân sự nước Cộng hòa xã hội chủ nghĩa Việt Nam đi nước ngoài",
+          "code": "234/2025/NĐ-CP ngày 27/8/2025 của Chính phủ"
+        },
+        {
+          "id": "019d84d4-6ad3-71bf-b9bb-2f36ce274cee",
+          "name": "Quy định về trình tự, thủ tục cấp phép cho tàu quân sự nước ngoài đến Việt Nam và tàu quân sự Việt Nam đi nước ngoài; thủ tục nhập cảnh, xuất cảnh, chuyển cảng đối với tàu quân sự nước ngoài đến Việt Nam; nội dung và phạm vi bảo vệ của doanh nghiệp bảo vệ được thuê bảo vệ tàu quân sự nước ngoài đến Việt Nam để sửa chữa",
+          "code": "15/2026/TT-BQP ngày 12/02/2026 của Bộ trưởng Bộ quốc phòng"
+        },
+        {
+          "id": "019d2bb3-5d7f-719e-b46f-3623eee55f1d",
+          "name": "Nghị định quy định chi tiết một số điều của Bộ luật Hàng hải Việt Nam về quản lý hoạt động hàng hải",
+          "code": "58/2017/NĐ-CP"
+        }
+      ]
+    }
+  ]
+}

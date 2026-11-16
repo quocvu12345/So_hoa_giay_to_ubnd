@@ -1,0 +1,120 @@
+{
+  "ordinal": "131",
+  "managing_agency": "Sở Nông nghiệp Môi trường",
+  "procedure_code": "1.004223",
+  "name": "Cấp giấy phép khai thác nước dưới đất đối với công trình có quy mô dưới 5.000 m3/ngày đêm",
+  "domain": "Tài nguyên nước (Bộ Nông nghiệp và Môi trường)",
+  "ministry_decision": "248/QĐBNNMT ngày 20/01/2026",
+  "hanoi_decision": "233/QĐ-TTPVHCC ngày 14/02/2026",
+  "workflow_decision": "328/QĐ-TTPVHCC ngày 18/3/2026",
+  "fees": "Việc thu Phí, Lệ phí thực hiện theo quy định của Luật phí và lệ phí, các văn bản quy phạm pháp luật hướng dẫn Luật phí và lệ phí và theo quy định của Hội đồng nhân dân Thành phố (các khoản thuế, thu khác có liên quan thực hiện theo các quy định hiện hành)",
+  "execution_level": "Cấp tỉnh, cấp xã",
+  "competent_authority": "Giám đốc Sở; Chủ tịch UBND cấp xã",
+  "delegation_decision": "231/QĐ-UBND ngày 15/01/2026",
+  "delegation_expiry": "31/12/2028",
+  "receiving_location": "Điểm hỗ trợ DVC số; Chi nhánh TTPVHCC",
+  "source_page": 5,
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "inventory_date": "2026-04-27",
+  "checked_at": "2026-11-12T22:23:47.300599+07:00",
+  "details": [
+    {
+      "id": "019d2bfa-307e-73c8-b0e1-dc6add6341d7",
+      "code": "1.004223",
+      "name": "Cấp giấy phép khai thác nước dưới đất đối với công trình có quy mô dưới 5.000 m3/ngày đêm",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": false,
+      "updated_at_source": 1776161491495,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfa-307e-73c8-b0e1-dc6add6341d7",
+      "raw_path": "evidence/dvc/details/019d2bfa-307e-73c8-b0e1-dc6add6341d7.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "- Văn bản đề nghị cấp giấy phép theo Mẫu 03, Phụ lục I Nghị định số 23/2026/NĐ-CP.",
+          "component_code": "G10-KQ007197",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019d8b42-4546-76fb-92c6-6d4a5f64b9ed",
+              "fileName": "Mau03.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d8b42-4546-76fb-92c6-6d4a5f64b9ed/Mau03.docx"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "- Báo cáo kết quả thăm dò đánh giá trữ lượng nước dưới đất đối với công trình có quy mô từ 200 m3/ngày đêm trở lên theo Mẫu 38, Phụ lục I Nghị định số 23/2026/NĐ-CP hoặc báo cáo kết quả thi công giếng khai thác đối với công trình có quy mô nhỏ hơn 200 m3/ngày đêm trong trường hợp chưa có công trình khai thác theo Mẫu 39, Phụ lục I Nghị định số 23/2026/NĐ-CP; báo cáo hiện trạng khai thác đối với trường hợp công trình khai thác nước dưới đất đang hoạt động theo Mẫu 40, Phụ lục I Nghị định số 23/2026/NĐ-CP.",
+          "component_code": "G10-KQ007198",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019d8b42-b7d8-76b8-849a-1faa2f10744f",
+              "fileName": "Mau38.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d8b42-b7d8-76b8-849a-1faa2f10744f/Mau38.docx"
+            },
+            {
+              "id": "019d8b42-b9b0-71ef-a8dc-8ada32c7dc3a",
+              "fileName": "Mau39.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d8b42-b9b0-71ef-a8dc-8ada32c7dc3a/Mau39.docx"
+            },
+            {
+              "id": "019d8b42-bb21-76ca-bb53-4121175b05ea",
+              "fileName": "Mau40.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d8b42-bb21-76ca-bb53-4121175b05ea/Mau40.docx"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c6e-7797-a218-0648465d986e",
+          "name": "Kết quả của thủ tục Cấp giấy phép khai thác nước dưới đất đối với công trình có quy mô dưới 5.000m3/ngày đêm theo Mẫu 21",
+          "code": "KQ.G10.001260"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7c-71ab-9f09-83605f83efc1",
+          "name": "14/2025/TT-BNNMT",
+          "code": "14/2025/TT-BNNMT"
+        },
+        {
+          "id": "019d2bb3-5d7f-719e-b46e-eec5b78ade99",
+          "name": "QUY ĐỊNH VIỆC HÀNH NGHỀ KHOAN NƯỚC DƯỚI ĐẤT, KÊ KHAI, ĐĂNG KÝ, CẤP PHÉP, DỊCH VỤ TÀI NGUYÊN NƯỚC VÀ TIỀN CẤP QUYỀN KHAI THÁC TÀI NGUYÊN NƯỚC",
+          "code": "54/2024/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b672-7e4ed283bc69",
+          "name": "Luật",
+          "code": "28/2023/QH15"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afea-a2a2b09b2b47",
+          "name": "Nghị định Quy định phân quyền, phân cấp trong lĩnh vực nông nghiệp",
+          "code": "136/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7f-719e-b475-2553fc0ec21d",
+          "name": "Nghị định 23/2026/NĐ-CP ngày 17/01/2026 của Chính phủ sửa đổi, bổ sung một số điều của các Nghị định trong lĩnh vực tài nguyên nước.",
+          "code": "NĐ 23/2026/NĐ-CP"
+        }
+      ]
+    }
+  ],
+  "lookup_status": "retrieved",
+  "currency_status": "snapshot_requires_later_amendment_check",
+  "errors": []
+}

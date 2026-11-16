@@ -1,0 +1,123 @@
+{
+  "id": "dvc-019d2bfc-4d02-77dd-b29f-5451b7b5533f",
+  "procedure_code": "1.008312",
+  "name": "Khai thuế tài nguyên, khai quyết toán thuế tài nguyên đối với cơ sở khai thác tài nguyên",
+  "domain": "Thuế",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.947233+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfc-4d02-77dd-b29f-5451b7b5533f",
+      "code": "1.008312",
+      "name": "Khai thuế tài nguyên, khai quyết toán thuế tài nguyên đối với cơ sở khai thác tài nguyên",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1785399199079,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-4d02-77dd-b29f-5451b7b5533f",
+      "raw_path": "evidence/dvc/details/019d2bfc-4d02-77dd-b29f-5451b7b5533f.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Tờ khai thuế tài nguyên, khai quyết toán thuế tài nguyên mẫu số 01/TAIN tại Phụ lục I ban hành kèm theo Thông tư số 89/2026/TT-BTC ngày 30/6/2026 của Bộ Tài chính",
+          "component_code": "G12.0001134",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019fa6f5-a5f4-75ea-b044-72c0e487b9a7",
+              "fileName": "1. 01-TAIN.doc",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa6f5-a5f4-75ea-b044-72c0e487b9a7/1. 01-TAIN.doc"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Phụ lục bảng phân bổ số thuế tài nguyên phải nộp đối với hoạt động sản xuất thủy điện mẫu số 01-1/TAIN (áp dụng đối với cơ sở sản xuất thủy điện có hồ thủy điện nằm trên nhiều tỉnh) tại Phụ lục I ban hành kèm theo Thông tư số 89/2026/TT-BTC ngày 30/6/2026 của Bộ Tài chính",
+          "component_code": "G12.0001135",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019fa6f5-eafe-71cb-a79a-675f4545f91c",
+              "fileName": "2. 01-1.TAIN.doc",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa6f5-eafe-71cb-a79a-675f4545f91c/2. 01-1.TAIN.doc"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 3,
+          "name": "Từ 01/7/2026 đến thời điểm theo lộ trình của cơ quan thuế quy định tại khoản 2 Điều 99 Thông tư số 89/2026/TT-BTC thì các tờ khai số 01/TAIN, 02/TAIN thực hiện theo Mẫu ban hành kèm theo Thông tư số 80/2021/TT-BTC ngày 29/9/2021 của Bộ Tài chính (đã được sửa đổi, bổ sung)",
+          "component_code": "G12.001138",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019fa6f6-518b-70da-b938-f1a05d6d761e",
+              "fileName": "Mẫu 01-1 TAIN.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa6f6-518b-70da-b938-f1a05d6d761e/Mẫu 01-1 TAIN.docx"
+            },
+            {
+              "id": "019fa6f6-52fd-77d9-8ed6-d87dbc086202",
+              "fileName": "Mẫu số 01 TAIN.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa6f6-52fd-77d9-8ed6-d87dbc086202/Mẫu số 01 TAIN.docx"
+            },
+            {
+              "id": "019fa6f6-dd89-7451-b681-ad9dfce6e646",
+              "fileName": "02 TAIN TT 80.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa6f6-dd89-7451-b681-ad9dfce6e646/02 TAIN TT 80.docx"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c70-724b-96e1-59c6a510ec9f",
+          "name": "Hồ sơ gửi đến cơ quan thuế không có kết quả giải quyết.",
+          "code": "KQ.G12.000429"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019e5e83-1282-771d-9014-49799413a4e5",
+          "name": "Luật số 108/2025/QH15 của Quốc hội: Luật Quản lý thuế",
+          "code": "108/2025/QH15"
+        },
+        {
+          "id": "019f356e-75e3-7494-a2f3-672d8dce61a6",
+          "name": "QUY ĐỊNH CHI TIẾT MỘT SỐ ĐIỀU VÀ BIỆN PHÁP ĐỂ TỔ CHỨC, HƯỚNG DẪN THI HÀNH LUẬT QUẢN LÝ THUẾ",
+          "code": "252/2026/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afe9-653aac8276ee",
+          "name": "Nghị định số 118/2025/NĐ-CP của Chính phủ: Về thực hiện thủ tục hành chính theo cơ chế một cửa, một cửa liên thông tại Bộ phận Một cửa và Cổng Dịch vụ công quốc gia",
+          "code": "118/2025/NĐ-CP"
+        },
+        {
+          "id": "019f8db3-9765-740b-8b90-682677b9c421",
+          "name": "Thông tư quy định chi tiết một số điều của Luật Quản lý thuế và Nghị định số 252/2026/NĐ-CP của Chính phủ quy định chi tiết một số điều và biện pháp để tổ chức, hướng dẫn thi hành Luật Quản lý thuế",
+          "code": "89/2026/TT-BTC"
+        }
+      ]
+    }
+  ]
+}

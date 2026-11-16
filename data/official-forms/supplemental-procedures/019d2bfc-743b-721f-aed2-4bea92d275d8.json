@@ -1,0 +1,76 @@
+{
+  "id": "dvc-019d2bfc-743b-721f-aed2-4bea92d275d8",
+  "procedure_code": "1.009070",
+  "name": "Thủ tục đối với tiền mặt của doanh nghiệp kinh doanh hàng miễn thuế đưa vào, đưa ra khu cách ly, khu vực hạn chế",
+  "domain": "Hải quan",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.928484+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfc-743b-721f-aed2-4bea92d275d8",
+      "code": "1.009070",
+      "name": "Thủ tục đối với tiền mặt của doanh nghiệp kinh doanh hàng miễn thuế đưa vào, đưa ra khu cách ly, khu vực hạn chế",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1785982947220,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-743b-721f-aed2-4bea92d275d8",
+      "raw_path": "evidence/dvc/details/019d2bfc-743b-721f-aed2-4bea92d275d8.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Bảng kê lượng tiền mang vào/ra khu cách ly, khu hạn chế theo Mẫu số 03/BKTMVR Phụ lục III ban hành kèm theo Nghị định số 273/2026/NĐ-CP (đối với trường hợp nộp trực tiếp).",
+          "component_code": "000.00.00.G12-KQ9861",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019fd4d3-4578-741b-9101-58749e053663",
+              "fileName": "Mẫu số 03.BKTMVR.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fd4d3-4578-741b-9101-58749e053663/Mẫu số 03.BKTMVR.docx"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Chỉ tiêu thông tin theo Mẫu số 03 Phụ lục II ban hành kèm theo Nghị định số 273/2026/NĐ-CP (đối với trường hợp nộp trực tuyến).",
+          "component_code": "000.00.00.G12-45689",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019fd4d4-f979-70c5-a721-7babe3b68ef3",
+          "name": "Xác nhận trên 02 Bảng kê lượng tiền mang vào/ra khu cách ly, khu hạn chế do doanh nghiệp xuất trình.",
+          "code": "KQ.G12.001217"
+        },
+        {
+          "id": "019d2bb2-1c70-724b-96e1-3cd40d00966d",
+          "name": "Xác nhận của cơ quan hải quan trên hệ thống xử lý dữ liệu điện tử đối với tiền mặt đưa vào, đưa ra khu cách ly, khu hạn chế",
+          "code": "KQ.G12.000419"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019fc558-dd5c-7395-9a78-efc7e38e5c9f",
+          "name": "Về kinh doanh hàng miễn thuế",
+          "code": "273/2026/NĐ-CP"
+        }
+      ]
+    }
+  ]
+}

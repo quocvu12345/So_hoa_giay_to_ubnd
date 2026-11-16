@@ -1,0 +1,127 @@
+{
+  "id": "hn87-192",
+  "ordinal": "192",
+  "procedure_code": "1.012796",
+  "name": "Đính chính Giấy chứng nhận đã cấp lần đầu có sai sót",
+  "domain": "Đất đai (Bộ Nông nghiệp và Môi trường)",
+  "department_id": "ktdt",
+  "department": "Phòng Kinh tế, Hạ tầng và Đô thị",
+  "authority_as_published": "UBND cấp xã",
+  "execution_level_as_published": "Cấp Xã",
+  "receiving_location_as_published": "Điểm hỗ trợ DVC số",
+  "inventory_date": "2026-04-27",
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "source_urls": [
+    "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfa-76cb-741b-996e-33d1ef50be50"
+  ],
+  "current_dvc_match": true,
+  "lifecycle": null,
+  "scope": "hanoi_commune_notice_2026_04_27",
+  "scope_note": "Mốc kiểm kê cấp xã Hà Nội; áp dụng từng thủ tục tại Từ Liêm còn phải theo thẩm quyền/ủy quyền hiện hành.",
+  "status": "source_template_missing",
+  "components": [
+    {
+      "id": "hn87-192-c001",
+      "code": "000.00.00.G13-KQ3258",
+      "name": "Bản gốc Giấy chứng nhận đã cấp.",
+      "section": "",
+      "role": "supporting_submit",
+      "scenario_status": "selected_for_test",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 1,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfa-76cb-741b-996e-33d1ef50be50",
+      "source_detail_id": "019d2bfa-76cb-741b-996e-33d1ef50be50",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-192-c002",
+      "code": "000.00.00.G10-KQ006195",
+      "name": "Giấy tờ chứng minh sai sót thông tin của người được cấp Giấy chứng nhận so với thông tin tại thời điểm đề nghị đính chính hoặc sai sót thông tin về thửa đất, tài sản gắn liền với đất so với thông tin trên Giấy chứng nhận đã cấp.",
+      "section": "",
+      "role": "supporting_submit",
+      "scenario_status": "selected_for_test",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 1,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfa-76cb-741b-996e-33d1ef50be50",
+      "source_detail_id": "019d2bfa-76cb-741b-996e-33d1ef50be50",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-192-c003",
+      "code": "000.00.00.G10-KQ006196",
+      "name": "Văn bản về việc ủy quyền theo quy định của pháp luật về dân sự đối với trường hợp thực hiện thủ tục thông qua người đại diện.",
+      "section": "",
+      "role": "needs_review",
+      "scenario_status": "conditional_not_selected",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 1,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfa-76cb-741b-996e-33d1ef50be50",
+      "source_detail_id": "019d2bfa-76cb-741b-996e-33d1ef50be50",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-192-c004",
+      "code": "000.00.00.G10-KQ005897",
+      "name": "Đơn đăng ký biến động đất đai, tài sản gắn liền với đất theo Mẫu số 18",
+      "section": "",
+      "role": "applicant_form",
+      "scenario_status": "selected_for_test",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 1,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfa-76cb-741b-996e-33d1ef50be50",
+      "source_detail_id": "019d2bfa-76cb-741b-996e-33d1ef50be50",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    }
+  ],
+  "service_cases": [
+    {
+      "id": "019db442-12f1-725c-8fc2-925499bf4817",
+      "code": "1.012796.01",
+      "name": "Đính chính Giấy chứng nhận đã cấp lần đầu có sai sót",
+      "source_processing_time": {
+        "qty": 8,
+        "type": "WORKING_DAY"
+      },
+      "has_case_specific_components": false
+    }
+  ],
+  "selected_template_ids": [],
+  "source_component_groups": [
+    {
+      "name": "",
+      "component_count": 4,
+      "source_detail_id": "019d2bfa-76cb-741b-996e-33d1ef50be50"
+    }
+  ],
+  "conditional_component_groups": [],
+  "default_test_scenario": {
+    "channel": "direct",
+    "applicant_submits_self": true,
+    "authorized": false,
+    "special_case_flags": [],
+    "selected_conditional_group": null,
+    "case_selection_method": "ordinary_direct_submission",
+    "case_status": "scenario_for_testing_not_a_legal_eligibility_decision"
+  },
+  "requirement_note": "required_as_published được giữ nguyên; false không chứng minh giấy tờ luôn tùy chọn. Các nhóm executionCases có thể là mục giấy tờ/hướng dẫn, không phải các phương án loại trừ nhau."
+}

@@ -1,0 +1,102 @@
+{
+  "id": "dvc-019d2bf9-7474-73a4-a9bd-7f912937af1e",
+  "procedure_code": "1.014451",
+  "name": "Thủ tục đăng ký thực hiện nhiệm vụ đổi mới sáng tạo tài trợ, đặt hàng về đổi mới công nghệ; phát triển tài sản trí tuệ, nâng cao năng suất, chất lượng; hỗ trợ khởi nghiệp sáng tạo.",
+  "domain": "Hoạt động khoa học và công nghệ",
+  "managing_agency": "Bộ Khoa học và Công nghệ",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:18.023530+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bf9-7474-73a4-a9bd-7f912937af1e",
+      "code": "1.014451",
+      "name": "Thủ tục đăng ký thực hiện nhiệm vụ đổi mới sáng tạo tài trợ, đặt hàng về đổi mới công nghệ; phát triển tài sản trí tuệ, nâng cao năng suất, chất lượng; hỗ trợ khởi nghiệp sáng tạo.",
+      "state": "ACTIVE",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1793093082498,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf9-7474-73a4-a9bd-7f912937af1e",
+      "raw_path": "evidence/dvc/details/019d2bf9-7474-73a4-a9bd-7f912937af1e.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Tài liệu chứng minh tư cách pháp lý của tổ chức đề xuất: Quyết định thành lập hoặc Điều lệ hoạt động được cơ quan có thẩm quyền phê duyệt hoặc các tài liệu tương đương khác",
+          "component_code": "G06-KQ004539",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Các văn bản, hồ sơ tài liệu khác theo yêu cầu của cơ quan quản lý nhiệm vụ đổi mới sáng tạo",
+          "component_code": "G06-KQ004542",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 3,
+          "name": "Đơn đăng ký thực hiện nhiệm vụ theo Mẫu số I.1 Phụ lục I ban hành kèm theo Nghị định số 268/2025/NĐ-CP.",
+          "component_code": "G06-KQ004537",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 4,
+          "name": "Văn bản cam kết của tổ chức đề xuất về việc chỉ tiếp nhận duy nhất một nguồn kinh phí cho cùng một nội dung chi từ ngân sách nhà nước cho cùng nội dung nhiệm vụ đổi mới sáng tạo.",
+          "component_code": "G06-KQ004540",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 5,
+          "name": "Thuyết minh nhiệm vụ tương ứng theo Mẫu số I.2, I.3, I.4 và I.5 Phụ lục I ban hành kèm theo Nghị định số 268/2025/NĐ-CP.",
+          "component_code": "G06-KQ004538",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 6,
+          "name": "Hồ sơ dự án đầu tư đã được cấp có thẩm quyền phê duyệt ở giai đoạn quyết định đầu tư áp dụng đối với nhiệm vụ đổi mới công nghệ",
+          "component_code": "G06-KQ004541",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c41-7141-b6bb-3ec199c02936",
+          "name": "Quyết định phê duyệt nhiệm vụ theo Mẫu số I.13 Phụ lục I Nghị định số 268/2025/NĐ-CP",
+          "code": "KQ.G06.000845"
+        }
+      ],
+      "legal_bases": []
+    }
+  ]
+}

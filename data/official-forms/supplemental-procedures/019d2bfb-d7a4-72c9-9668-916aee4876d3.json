@@ -1,0 +1,266 @@
+{
+  "id": "dvc-019d2bfb-d7a4-72c9-9668-916aee4876d3",
+  "procedure_code": "1.002051",
+  "name": "Đăng ký, điều chỉnh đóng BHXH bắt buộc, BHYT, BHTN, bảo hiểm TNLĐ, BNN; cấp sổ BHXH, thẻ BHYT",
+  "domain": "Thu BHXH, BHYT, BHTN, BH tai nạn lao động, BNN",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.968941+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfb-d7a4-72c9-9668-916aee4876d3",
+      "code": "1.002051",
+      "name": "Đăng ký, điều chỉnh đóng BHXH bắt buộc, BHYT, BHTN, bảo hiểm TNLĐ, BNN; cấp sổ BHXH, thẻ BHYT",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1790764363698,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-d7a4-72c9-9668-916aee4876d3",
+      "raw_path": "evidence/dvc/details/019d2bfb-d7a4-72c9-9668-916aee4876d3.json",
+      "components": [
+        {
+          "section": "a) Hồ sơ đăng ký, điều chỉnh thông tin tham gia BHXH bắt buộc, BHYT, BHTN, bảo hiểm TNLĐ, BNN và cấp sổ BHXH, thẻ BHYT",
+          "position": 1,
+          "name": "Tờ khai đơn vị đăng ký, điều chỉnh thông tin tham gia BHXH, BHYT, BHTN (mẫu TK3-TS)",
+          "component_code": "TP.G12.000118",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "01a0ec17-23c6-730b-9e7d-a2a48ae164ba",
+              "fileName": "TK3-TS.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/01a0ec17-23c6-730b-9e7d-a2a48ae164ba/TK3-TS.docx"
+            }
+          ]
+        },
+        {
+          "section": "a) Hồ sơ đăng ký, điều chỉnh thông tin tham gia BHXH bắt buộc, BHYT, BHTN, bảo hiểm TNLĐ, BNN và cấp sổ BHXH, thẻ BHYT",
+          "position": 2,
+          "name": "Trường hợp đơn vị đồng thời thực hiện báo tăng, giảm, truy đóng khi thực hiện đăng ký hoặc điều chỉnh thông tin tham gia thì lập thêm hồ sơ theo quy định tại tiết b điểm 1.3 khoản này",
+          "component_code": "TP.G12.000119",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "b) Hồ sơ Báo tăng, báo giảm, điều chỉnh đóng, truy đóng BHXH, BHYT, BHTN, bảo hiểm TNLĐ, BNN",
+          "position": 1,
+          "name": "Danh sách tham gia, điều chỉnh đóng BHXH, BHYT, BHTN (Mẫu D02 - LT).",
+          "component_code": "TP.G12.000120",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "01a0ec17-6760-73d8-b6c9-e5210572d4a1",
+              "fileName": "D02-LT.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/01a0ec17-6760-73d8-b6c9-e5210572d4a1/D02-LT.docx"
+            }
+          ]
+        },
+        {
+          "section": "b) Hồ sơ Báo tăng, báo giảm, điều chỉnh đóng, truy đóng BHXH, BHYT, BHTN, bảo hiểm TNLĐ, BNN",
+          "position": 2,
+          "name": "Tờ khai đăng ký, điều chỉnh thông tin tham gia BHXH, BHYT (Mẫu TK1-TS) của người tham gia (đối với người tham gia lần đầu, thay đổi thông tin)",
+          "component_code": "TP.G12.000121",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "01a0ec17-a8e2-709b-bb8d-e910498f5a88",
+              "fileName": "TK1-TS.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/01a0ec17-a8e2-709b-bb8d-e910498f5a88/TK1-TS.docx"
+            }
+          ]
+        },
+        {
+          "section": "- Trường hợp đề nghị tạm dừng đóng vào quỹ hưu trí và tử tuất theo quy định tại Luật Phục hồi, phá sản số 142/2025/QH15",
+          "position": 1,
+          "name": "Tờ khai đơn vị đăng ký, điều chỉnh thông tin tham gia BHXH, BHYT, BHTN (Mẫu TK3-TS)",
+          "component_code": "TP.G12.000122",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "01a0ec18-0941-719a-b900-19bd87095548",
+              "fileName": "TK3-TS.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/01a0ec18-0941-719a-b900-19bd87095548/TK3-TS.docx"
+            }
+          ]
+        },
+        {
+          "section": "- Trường hợp đề nghị tạm dừng đóng vào quỹ hưu trí và tử tuất theo quy định tại Luật Phục hồi, phá sản số 142/2025/QH15",
+          "position": 2,
+          "name": "Danh sách tham gia, điều chỉnh đóng BHXH, BHYT, BHTN (Mẫu D02 - LT).",
+          "component_code": "TP.G12.000123",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "01a0ec18-3914-726b-83fd-cc7dc74c8b38",
+              "fileName": "D02-LT.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/01a0ec18-3914-726b-83fd-cc7dc74c8b38/D02-LT.docx"
+            }
+          ]
+        },
+        {
+          "section": "- Trường hợp đề nghị tạm dừng đóng vào quỹ hưu trí và tử tuất theo quy định tại Luật Phục hồi, phá sản số 142/2025/QH15",
+          "position": 3,
+          "name": "Quyết định công nhận nghị quyết của Hội nghị chủ nợ thông qua phương án phục hồi hoạt động kinh doanh (tính từ ngày Tòa án thụ lý đơn và không quá 12 tháng) để làm căn cứ giải quyết tạm dừng đóng vào quỹ hưu trí và tử tuất.",
+          "component_code": "TP.G12.000124",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "- Trường hợp tạm dừng đóng BHXH bắt buộc theo quy định tại Điều 37 Luật BHXH (Người sử dụng lao động gặp khó khăn phải tạm dừng sản xuất, kinh doanh dẫn đến việc NLĐ và người sử dụng lao động không có khả năng đóng BHXH)",
+          "position": 1,
+          "name": "Tờ khai đơn vị đăng ký, điều chỉnh thông tin tham gia BHXH, BHYT, BHTN (Mẫu TK3-TS)",
+          "component_code": "TP.G12.000122",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "01a0ec18-0941-719a-b900-19bd87095548",
+              "fileName": "TK3-TS.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/01a0ec18-0941-719a-b900-19bd87095548/TK3-TS.docx"
+            }
+          ]
+        },
+        {
+          "section": "- Trường hợp tạm dừng đóng BHXH bắt buộc theo quy định tại Điều 37 Luật BHXH (Người sử dụng lao động gặp khó khăn phải tạm dừng sản xuất, kinh doanh dẫn đến việc NLĐ và người sử dụng lao động không có khả năng đóng BHXH)",
+          "position": 2,
+          "name": "Danh sách tham gia, điều chỉnh đóng BHXH, BHYT, BHTN (Mẫu D02 - LT).",
+          "component_code": "TP.G12.000123",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "01a0ec18-3914-726b-83fd-cc7dc74c8b38",
+              "fileName": "D02-LT.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/01a0ec18-3914-726b-83fd-cc7dc74c8b38/D02-LT.docx"
+            }
+          ]
+        },
+        {
+          "section": "- Trường hợp tạm dừng đóng BHXH bắt buộc theo quy định tại Điều 37 Luật BHXH (Người sử dụng lao động gặp khó khăn phải tạm dừng sản xuất, kinh doanh dẫn đến việc NLĐ và người sử dụng lao động không có khả năng đóng BHXH)",
+          "position": 3,
+          "name": "Văn bản xác định số lao động thuộc đối tượng tham gia BHXH bắt buộc tạm thời nghỉ việc hoặc văn bản xác định giá trị tài sản bị thiệt hại của cơ quan có thẩm quyền.",
+          "component_code": "TP.G12.000125",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c72-75fa-a592-3e7315f09124",
+          "name": "Đối với trường hợp Đăng ký, điều chỉnh thông tin tham gia BHXH bắt buộc, BHYT, BHTN, bảo hiểm TNLĐ-BNN và cấp sổ BHXH, thẻ BHYT, báo tăng, báo giảm, điều chỉnh đóng, truy đóng cho người tham gia: sổ BHXH, thẻ BHYT",
+          "code": "KQ.G12.001165"
+        },
+        {
+          "id": "019d2bb2-1c72-75fa-a592-4375e21dd2da",
+          "name": "Thẻ BHYT Trường hợp Đăng ký đóng, cấp thẻ BHYT",
+          "code": "KQ.G12.001057"
+        },
+        {
+          "id": "019d2bb2-1c82-739b-8b99-5e1acdfdd80b",
+          "name": "Sổ bảo hiểm xã hội",
+          "code": "KQ.G12.001056"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7e-72d1-afeb-e5ff16f715c7",
+          "name": "Quy định chi tiết và hướng dẫn thi hành một số điều của Luật Bảo hiểm xã hội về bảo hiểm xã hội bắt buộc",
+          "code": "158/2025/NĐ-CP"
+        },
+        {
+          "id": "019e72e9-3b2a-77b9-9c29-023d914eb3dc",
+          "name": "Quy định về giao dịch điện tử trong lĩnh vực bảo hiểm xã hội và Cơ sở dữ liệu quốc gia về bảo hiểm",
+          "code": "164/2025/NĐ-CP "
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b672-49499e22ddad",
+          "name": "Luật 25/2008/QH12 - Bảo hiểm y tế",
+          "code": "25/2008/QH12"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b673-669988af5f4c",
+          "name": "Luật số 51/2024/QH15 ngày 27/11/2024 của Quốc hội sửa đổi, bổ sung một số điều của Luật Bảo hiểm y tế",
+          "code": "51/2024/QH15"
+        },
+        {
+          "id": "019d2bb3-5d86-7760-a645-1edb649db1d2",
+          "name": "Công bố thủ tục hành chính mới trong lĩnh vực Bảo hiểm y tế và bị bãi bỏ trong lĩnh vực Tài chính y tế tại Nghị định 188/2025/NĐ-CP thuộc phạm vi chức năng quản lý của Bộ Y tế",
+          "code": "2306/QĐ-BYT"
+        },
+        {
+          "id": "019d2bb3-5d87-7195-a440-f511123122ee",
+          "name": "Luật Bảo hiểm xã hội",
+          "code": "41/2024/QH15"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b674-ae46cb2804d7",
+          "name": "46/2014/QH13 Sửa đổi, bổ sung một số điều của Luật Bảo hiểm y tế",
+          "code": "Luật 46/2014/QH13"
+        },
+        {
+          "id": "019ff547-6a69-7038-a010-d5ec1e9fd252",
+          "name": "Nghị định 118/2025/NĐ-CP ngày 09/6/2025 của Chính phủ về thực hiện thủ tục hành chính theo cơ chế một cửa, một cửa liên thông tại Bộ phận Một cửa và Cổng Dịch vụ công quốc gia",
+          "code": "Nghị định 118/2025/NĐ-CP "
+        },
+        {
+          "id": "01a023be-84c8-77db-ade3-9c613cd83670",
+          "name": "Quy trình thu bảo hiểm xã hội, bảo hiểm y tế, bảo hiểm thất nghiệp; cấp sổ bảo hiểm xã hội, thẻ bảo hiểm y tế",
+          "code": "366/QĐ-BHXH"
+        },
+        {
+          "id": "01a0eb46-afe7-72ed-b43e-f41105ad120f",
+          "name": "QUY ĐỊNH VỀ VIỆC TẠO LẬP SỔ BẢO HIỂM XÃ HỘI, THẺ BẢO HIỂM Y TẾ BẢN ĐIỆN TỬ",
+          "code": "09/2026/TT-BTC"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afec-d63277407a6f",
+          "name": "Nghị định quy định chi tiết và hướng dẫn thi hành một số điều của Luật Bảo hiểm y tế (188/2025/NĐ-CP ngày 01/7/2025)",
+          "code": "188/2025/NĐ-CP"
+        },
+        {
+          "id": "019da52b-f9b7-751b-ab91-1ffc167541c0",
+          "name": "Luật Phục hồi, phá sản",
+          "code": "142/2025/QH15"
+        }
+      ]
+    }
+  ]
+}

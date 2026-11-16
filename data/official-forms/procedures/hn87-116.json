@@ -1,0 +1,118 @@
+{
+  "ordinal": "116",
+  "managing_agency": "Sở Nông nghiệp Môi trường",
+  "procedure_code": "1.012837",
+  "name": "Phê duyệt hỗ trợ kinh phí đào tạo, tập huấn để chuyển đổi từ chăn nuôi sang các nghề khác; chi phí cho cá nhân được đào tạo về kỹ thuật phối giống nhân tạo gia súc (trâu, bò); chi phí mua bình chứa Nitơ lỏng bảo quản tinh cho người làm dịch vụ phối giống nhân tạo gia súc (trâu, bò) đối với các chính sách sử dụng vốn sự nghiệp nguồn ngân sách nhà nước",
+  "domain": "Chăn nuôi (Bộ Nông nghiệp và Môi trường)",
+  "ministry_decision": "2303/QĐ-BNNMT ngày 23/06/2025",
+  "hanoi_decision": "592/QĐ-TTPVHCC ngày 09/4/2025",
+  "workflow_decision": "Đang cập nhật",
+  "fees": "Không quy định",
+  "execution_level": "Cấp Xã",
+  "competent_authority": "UBND cấp xã",
+  "delegation_decision": "",
+  "delegation_expiry": "",
+  "receiving_location": "Điểm hỗ trợ DVC số",
+  "id": "hn87-116",
+  "source_page": 4,
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "inventory_date": "2026-04-27",
+  "checked_at": "2026-11-12T22:24:34.535133+07:00",
+  "details": [
+    {
+      "id": "019d2bfa-7709-762d-a041-dfefe2e1e92d",
+      "code": "1.012837",
+      "name": "Phê duyệt hỗ trợ kinh phí đào tạo, tập huấn để chuyển đổi từ chăn nuôi sang các nghề khác; chi phí cho cá nhân được đào tạo về kỹ thuật phối giống nhân tạo gia súc (trâu, bò); chi phí mua bình chứa Nitơ lỏng bảo quản tinh cho người làm dịch vụ phối giống nhân tạo gia súc (trâu, bò) đối với các chính sách sử dụng vốn sự nghiệp nguồn ngân sách nhà nước",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1776755845636,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfa-7709-762d-a041-dfefe2e1e92d",
+      "raw_path": "evidence/dvc/details/019d2bfa-7709-762d-a041-dfefe2e1e92d.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "- Văn bản đề nghị hỗ trợ kinh phí theo Mẫu số 07 Phụ lục ban hành kèm theo Nghị định số 106/2024/NĐ-CP",
+          "component_code": "000.00.00.G10-KQ004820",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "- Giấy cam kết về thực hiện nghề đã được đào tạo chuyển đổi ít nhất 05 năm sau khi được nhận hỗ trợ (áp dụng đối với chuyển đổi ngành nghề khi thực hiện di dời cơ sở chăn nuôi);",
+          "component_code": "000.00.00.G10-KQ004823",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 3,
+          "name": "- Hoá đơn, chứng từ liên quan;",
+          "component_code": "000.00.00.G10-KQ004822",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 4,
+          "name": "- Bản cam kết thực hiện công tác phối giống nhân tạo gia súc trong thời gian ít nhất 05 năm sau khi được nhận hỗ trợ (áp dụng đối với đào tạo kỹ thuật phối giống nhân tạo gia súc).",
+          "component_code": "000.00.00.G10-KQ004824",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 5,
+          "name": "- Chứng chỉ hoàn thành khóa đào tạo, tập huấn do cơ sở đào tạo cấp;",
+          "component_code": "000.00.00.G10-KQ004821",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c4f-7269-8764-5f4b59ebf167",
+          "name": "Quyết định phê duyệt kinh phí hỗ trợ",
+          "code": "KQ.G10.000524"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7c-71ab-9f09-128575143057",
+          "name": " Quy định chi tiết một số Điều của Luật thú y",
+          "code": "Nghị định số 35/2016/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afea-45ea9b37796c",
+          "name": "Quy định phân định thẩm quyền của chính quyền địa phương 02 cấp trong lĩnh vực quản lý nhà nước của Bộ Nông nghiệp và Môi trường",
+          "code": "Nghị định số 131/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d86-7760-a63c-9a190ab6b09f",
+          "name": "106/2024/NĐ-CP",
+          "code": "106/2024/NĐ-CP"
+        }
+      ]
+    }
+  ],
+  "lookup_status": "retrieved",
+  "currency_status": "snapshot_requires_later_amendment_check",
+  "errors": []
+}

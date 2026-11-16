@@ -1,0 +1,107 @@
+{
+  "ordinal": "86",
+  "managing_agency": "Sở Văn hóa thể thao",
+  "procedure_code": "1.013791",
+  "name": "Thủ tục tiếp nhận hồ sơ đăng ký lễ hội quy mô cấp xã",
+  "domain": "Văn hóa",
+  "ministry_decision": "2069/QĐ-BVHTTDL ngày 19/06/2025",
+  "hanoi_decision": "959/QĐ-TTPVHCC ngày 27/6/2025",
+  "workflow_decision": "1122/QĐ-TTPVHCC ngày 31/7/2025",
+  "fees": "Không quy định",
+  "execution_level": "Cấp Xã",
+  "competent_authority": "UBND cấp xã",
+  "delegation_decision": "",
+  "delegation_expiry": "",
+  "receiving_location": "Điểm hỗ trợ DVC số",
+  "id": "hn87-086",
+  "source_page": 3,
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "inventory_date": "2026-04-27",
+  "checked_at": "2026-11-12T22:24:34.529888+07:00",
+  "details": [
+    {
+      "id": "019d2bfd-ec2b-7125-824c-c4bea27bd2c8",
+      "code": "1.013791",
+      "name": "Thủ tục tiếp nhận hồ sơ đăng ký lễ hội quy mô cấp xã",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1794449530982,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfd-ec2b-7125-824c-c4bea27bd2c8",
+      "raw_path": "evidence/dvc/details/019d2bfd-ec2b-7125-824c-c4bea27bd2c8.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "(2) Phương án bảo đảm an ninh trật tự, an toàn xã hội, phòng chống cháy nổ, bảo vệ môi trường.",
+          "component_code": "G16-KQ002095",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "(1) Văn bản đăng ký nêu rõ tên lễ hội, sự cần thiết, thời gian, địa điểm, quy mô, nội dung hoạt động lễ hội, dự kiến thành phần số lượng khách mời.",
+          "component_code": "G16-KQ002094",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 3,
+          "name": "(3) Dự kiến thành phần Ban tổ chức lễ hội.",
+          "component_code": "G16-KQ002096",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 4,
+          "name": "(4) Các tài liệu hoặc văn bản chứng minh về nguồn gốc lễ hội (đối với lễ hội truyền thống).",
+          "component_code": "G16-KQ002097",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c79-762e-8b2c-217a9b29f2f7",
+          "name": "Văn bản chấp thuận việc dịch tác phẩm từ tiếng nước ngoài sang tiếng Việt để giảng dạy, nghiên cứu không nhằm mục đích thương mại.",
+          "code": "KQ.G16.15-1.011657"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7e-72d1-afea-b0df1ec9673d",
+          "name": "Nghị định số 137/2025/NĐ-CP ngày 12/6/2025 của Chính phủ quy định về phân định thẩm quyền của chính quyền địa phương 02 cấp trong lĩnh vực văn hóa, thể thao và du lịch.",
+          "code": "137/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d86-7760-a63d-4cbe927965df",
+          "name": "Nghị định số 110/2018/NĐ-CP",
+          "code": "110/2018/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afea-b8678d4f7e8d",
+          "name": "Nghị định quy định về phân quyền, phân cấp trong lĩnh vực văn hóa, thể thao và du lịch",
+          "code": "138/2025/NĐ-CP"
+        }
+      ]
+    }
+  ],
+  "lookup_status": "retrieved",
+  "currency_status": "snapshot_requires_later_amendment_check",
+  "errors": []
+}

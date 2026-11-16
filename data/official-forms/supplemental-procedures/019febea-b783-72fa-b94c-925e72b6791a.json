@@ -1,0 +1,75 @@
+{
+  "id": "dvc-019febea-b783-72fa-b94c-925e72b6791a",
+  "procedure_code": "1.116215",
+  "name": "Công nhận hộ nghèo, hộ cận nghèo, hộ thoát nghèo trong năm theo chuẩn nghèo đa chiều quốc gia giai đoạn 2027-2030",
+  "domain": "Giảm nghèo",
+  "managing_agency": "Bộ Nông nghiệp và Môi trường",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.480749+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019febea-b783-72fa-b94c-925e72b6791a",
+      "code": "1.116215",
+      "name": "Công nhận hộ nghèo, hộ cận nghèo, hộ thoát nghèo trong năm theo chuẩn nghèo đa chiều quốc gia giai đoạn 2027-2030",
+      "state": "ACTIVE",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1788078873962,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019febea-b783-72fa-b94c-925e72b6791a",
+      "raw_path": "evidence/dvc/details/019febea-b783-72fa-b94c-925e72b6791a.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Giấy đề nghị rà soát, công nhận hộ nghèo, hộ cận nghèo, hộ thoát nghèo theo Mẫu số 01 ban hành kèm theo Thông tư số 25/2026/TT-BNNMT",
+          "component_code": "TP-G10.000090",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019fee94-f203-77c6-8ddf-842d12a874b8",
+              "fileName": "Mau so 1 - Giay de nghi ra soat cong nhan HN-HCN-HTN.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fee94-f203-77c6-8ddf-842d12a874b8/Mau so 1 - Giay de nghi ra soat cong nhan HN-HCN-HTN.docx"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "id": "019fee85-ac86-739e-be65-8a153d8fa8aa",
+          "name": "Quyết định của UBND cấp xã công nhận Danh sách hộ nghèo, hộ cận nghèo, hộ thoát nghèo theo Mẫu số 05 ban hành kèm theo Thông tư số 25/2026/TT-BNNMT",
+          "code": "KQ-G10.000023"
+        },
+        {
+          "id": "019fee86-9846-76f8-84be-ed5f96c8d9da",
+          "name": "Giấy chứng nhận hộ nghèo, hộ cận nghèo theo Mẫu số 06 ban hành kèm theo Thông tư số 25/2026/TT-BNNMT",
+          "code": "KQ-G10.000024"
+        },
+        {
+          "id": "019fee87-48b7-75c2-b4b5-53b826f0e953",
+          "name": "Văn bản trả lời, nêu rõ lý do đối với trường hợp không đủ điều kiện công nhận hộ nghèo, hộ cận nghèo, hộ thoát nghèo",
+          "code": "KQ-G10.000025"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019fef15-148d-764d-908d-9dcc229bebed",
+          "name": "Quy định chuẩn nghèo đa chiều quốc gia giai đoạn 2026 - 2030",
+          "code": "351/2025/NĐ-CP"
+        },
+        {
+          "id": "019fef15-dff7-77dd-8a92-58ca73731b57",
+          "name": "Hướng dẫn quy trình, phương pháp rà soát, công nhận hộ nghèo, hộ cận nghèo, hộ thoát nghèo theo chuẩn nghèo đa chiều quốc gia giai đoạn 2027-2030",
+          "code": "25/2026/TT-BNNMT"
+        }
+      ]
+    }
+  ]
+}

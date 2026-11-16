@@ -1,0 +1,60 @@
+{
+  "id": "dvc-01a0f02c-9907-7769-ad53-7aa49248d494",
+  "procedure_code": "1.116822",
+  "name": "Giải thể lớp độc lập tư thục (Theo đề nghị của tổ chức, cá nhân thành lập lớp)",
+  "domain": "Cơ sở giáo dục khác",
+  "managing_agency": "Bộ Giáo dục và Đào tạo",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.468079+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "01a0f02c-9907-7769-ad53-7aa49248d494",
+      "code": "1.116822",
+      "name": "Giải thể lớp độc lập tư thục (Theo đề nghị của tổ chức, cá nhân thành lập lớp)",
+      "state": "ACTIVE",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1790907958108,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/01a0f02c-9907-7769-ad53-7aa49248d494",
+      "raw_path": "evidence/dvc/details/01a0f02c-9907-7769-ad53-7aa49248d494.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Văn bản đề nghị giải thể lớp độc lập theo Mẫu số 06 Phụ lục kèm theo Nghị định số 360/2026/NĐ-CP, trong đó nêu rõ phương án xử lý tổ chức bộ máy, nhân sự, tài chính, tài sản, đất đai, trẻ em và các vấn đề khác có liên quan.",
+          "component_code": "TP-G03.0001129",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "01a0f02b-a8c7-762a-b2e9-ce99720b7e6d",
+              "fileName": "Mẫu số 06.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/01a0f02b-a8c7-762a-b2e9-ce99720b7e6d/Mẫu số 06.docx"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "id": "01a0f02c-6b02-7124-b526-3a42b80170cc",
+          "name": "Quyết định của Chủ tịch Ủy ban nhân dân cấp xã giải thể lớp độc lập tư thục (theo Mẫu số 08 Phụ lục kèm theo Nghị định số 360/2026/NĐ-CP).",
+          "code": "KQ-G03.00016"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "01a0eb27-0a75-75f9-a08c-6705f56edf6d",
+          "name": "Quy định về điều kiện đầu tư và hoạt động của cơ sở giáo dục mầm non, cơ sở giáo dục phổ thông, cơ sở giáo dục thường xuyên và cơ sở giáo dục khác thuộc hệ thống giáo dục quốc dân",
+          "code": "360/2026/NĐ-CP"
+        }
+      ]
+    }
+  ]
+}

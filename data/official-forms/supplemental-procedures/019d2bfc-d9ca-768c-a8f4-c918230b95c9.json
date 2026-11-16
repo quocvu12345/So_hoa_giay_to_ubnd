@@ -1,0 +1,121 @@
+{
+  "id": "dvc-019d2bfc-d9ca-768c-a8f4-c918230b95c9",
+  "procedure_code": "2.000755",
+  "name": "Giải quyết hưởng trợ cấp một lần đối với người đang hưởng lương hưu, trợ cấp BHXH hằng tháng ra nước ngoài để định cư",
+  "domain": "Thực hiện chính sách BHXH",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.912817+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfc-d9ca-768c-a8f4-c918230b95c9",
+      "code": "2.000755",
+      "name": "Giải quyết hưởng trợ cấp một lần đối với người đang hưởng lương hưu, trợ cấp BHXH hằng tháng ra nước ngoài để định cư",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1787504991989,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-d9ca-768c-a8f4-c918230b95c9",
+      "raw_path": "evidence/dvc/details/019d2bfc-d9ca-768c-a8f4-c918230b95c9.json",
+      "components": [
+        {
+          "section": "Theo quy định tại khoản 4 Điều 76 Luật BHXH năm 2024, gồm:",
+          "position": 1,
+          "name": "Văn bản đề nghị theo Mẫu số 14-HSB",
+          "component_code": "TP.G12.98.089",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "01a02de5-e51a-722c-b292-89c5fb20dec8",
+              "fileName": "14-HSB.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/01a02de5-e51a-722c-b292-89c5fb20dec8/14-HSB.docx"
+            }
+          ]
+        },
+        {
+          "section": "Theo quy định tại khoản 4 Điều 76 Luật BHXH năm 2024, gồm:",
+          "position": 2,
+          "name": "Trường hợp ra nước ngoài định cư, ngoài hồ sơ quy định tại tiết a, b nêu trên thì có thêm bản sao giấy xác nhận của cơ quan có thẩm quyền về việc thôi quốc tịch Việt Nam hoặc bản dịch tiếng Việt được chứng thực hoặc công chứng một trong các giấy tờ sau đây:\t\t\t - Hộ chiếu do nước ngoài cấp\t\t - Thị thực của cơ quan nước ngoài có thẩm quyền cấp có xác nhận việc cho phép nhập cảnh để định cư ở nước ngoài;\t\t\t - Thẻ thường trú dài hạn ở nước ngoài của cơ quan nước ngoài có thẩm quyền cấp;\t\t - Giấy tờ hợp pháp khác thể hiện việc định cư ở nước ngoài theo quy định của Chính phủ.",
+          "component_code": "TP.G12.98.098",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c82-739b-8b99-d6be7cc06c52",
+          "name": "Tiền trợ cấp",
+          "code": "KQ.G12.001151"
+        },
+        {
+          "id": "019d2bb2-1c82-739b-8b99-9818bf5320d1",
+          "name": "Quyết định về việc hưởng trợ cấp một lần",
+          "code": "KQ.G24.000027"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d87-7195-a440-f511123122ee",
+          "name": "Luật Bảo hiểm xã hội",
+          "code": "41/2024/QH15"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afeb-f6d50e5e6371",
+          "name": "Quy định chi tiết và hướng dẫn thi hành một số điều của Luật Bảo hiểm xã hội về bảo hiểm xã hội tự nguyện",
+          "code": "159/2025/NĐ-CP"
+        },
+        {
+          "id": "019e72eb-488d-760e-abb8-0a3bb6585c78",
+          "name": "SỬA ĐỔI, BỔ SUNG MỘT SỐ ĐIỀU CỦA QUY TRÌNH GIẢI QUYẾT HƯỞNG CÁC CHẾ ĐỘ BẢO HIỂM XÃ HỘI, CHI TRẢ CÁC CHẾ ĐỘ BẢO HIỂM XÃ HỘI, BẢO HIỂM THẤT NGHIỆP BAN HÀNH KÈM THEO QUYẾT ĐỊNH SỐ 2222/QĐ-BHXH NGÀY 29/7/2025 CỦA GIÁM ĐỐC BẢO HIỂM XÃ HỘI VIỆT NAM",
+          "code": "313/QĐ-BHXH "
+        },
+        {
+          "id": "019d2bb3-5d7c-71ab-9f07-f538ffa2f69d",
+          "name": "BAN HÀNH QUY TRÌNH GIẢI QUYẾT HƯỞNG CÁC CHẾ ĐỘ BẢO HIỂM XÃ HỘI, CHI TRẢ CÁC CHẾ ĐỘ BẢO HIỂM XÃ HỘI, BẢO HIỂM THẤT NGHIỆP",
+          "code": "2222/QĐ-BHXH"
+        },
+        {
+          "id": "019d2bb3-5d7d-7398-be46-85fda49d119e",
+          "name": "QUY ĐỊNH CHI TIẾT MỘT SỐ ĐIỀU CỦA LUẬT BẢO HIỂM XÃ HỘI VỀ BẢO HIỂM XÃ HỘI BẮT BUỘC",
+          "code": "12/2025/TT-BNV"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afeb-e5ff16f715c7",
+          "name": "Quy định chi tiết và hướng dẫn thi hành một số điều của Luật Bảo hiểm xã hội về bảo hiểm xã hội bắt buộc",
+          "code": "158/2025/NĐ-CP"
+        },
+        {
+          "id": "01a02e0e-719d-7317-8057-eba06fcb84d3",
+          "name": "Vv vướng mắc trong thực hiện chế độ BHXH",
+          "code": "4831/LĐTBXH-BHXH"
+        },
+        {
+          "id": "019d2bb3-5d86-7760-a63f-86fb70a72ee2",
+          "name": "Thông tư 136/2020/TT-BQP",
+          "code": "136/2020/TT-BQP"
+        },
+        {
+          "id": "019e72e9-3b2a-77b9-9c29-023d914eb3dc",
+          "name": "Quy định về giao dịch điện tử trong lĩnh vực bảo hiểm xã hội và Cơ sở dữ liệu quốc gia về bảo hiểm",
+          "code": "164/2025/NĐ-CP "
+        },
+        {
+          "id": "01a02e32-1e58-70b3-9ace-f98694c5cc92",
+          "name": "Quy định chi tiết và biện pháp thi hành một số điều của Luật Bảo hiểm xã hội về bảo hiểm xã hội bắt buộc đối với quân nhân, công an nhân dân, dân quân thường trực và người làm công tác cơ yếu hưởng lương như đối với quân nhân",
+          "code": "157/2025/NĐ-CP"
+        }
+      ]
+    }
+  ]
+}

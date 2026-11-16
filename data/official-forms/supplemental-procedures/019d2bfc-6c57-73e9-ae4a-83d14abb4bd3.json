@@ -1,0 +1,103 @@
+{
+  "id": "dvc-019d2bfc-6c57-73e9-ae4a-83d14abb4bd3",
+  "procedure_code": "1.008578",
+  "name": "Miễn thuế, giảm thuế theo Hiệp định thuế đối với nhà thầu nước ngoài có thu nhập phát sinh tại Việt Nam (trừ thu nhập từ hoạt động vận tải quốc tế và thu nhập từ tái bảo hiểm nước ngoài)",
+  "domain": "Thuế",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.935742+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfc-6c57-73e9-ae4a-83d14abb4bd3",
+      "code": "1.008578",
+      "name": "Miễn thuế, giảm thuế theo Hiệp định thuế đối với nhà thầu nước ngoài có thu nhập phát sinh tại Việt Nam (trừ thu nhập từ hoạt động vận tải quốc tế và thu nhập từ tái bảo hiểm nước ngoài)",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1785399198349,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-6c57-73e9-ae4a-83d14abb4bd3",
+      "raw_path": "evidence/dvc/details/019d2bfc-6c57-73e9-ae4a-83d14abb4bd3.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Văn bản đề nghị theo mẫu số 01/HTQT Phụ lục III ban hành kèm theo Thông tư số 89/2026/TT-BTC",
+          "component_code": "000.00.00.G12-00015450",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019fa805-e80c-7069-a586-72efce8dfc21",
+              "fileName": "01-HTQT -TT89.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa805-e80c-7069-a586-72efce8dfc21/01-HTQT -TT89.docx"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Bản chính hoặc bản sao có chứng thực Giấy chứng nhận cư trú do cơ quan thuế của nước cư trú cấp ghi rõ là đối tượng cư trú trong năm tính thuế nào đã được hợp pháp hóa lãnh sự. Trường hợp tại thời điểm nộp hồ sơ, nhà thầu nước ngoài chưa có Giấy chứng nhận cư trú tương ứng với năm đề nghị miễn, giảm thuế theo Hiệp định thuế, nhà thầu nước ngoài nộp cho cơ quan thuế bản chính hoặc bản sao có chứng thực Giấy chứng nhận cư trú của nước cư trú do cơ quan thuế cấp ngay trước năm thông báo thuộc diện miễn, giảm thuế theo Hiệp định thuế đã được hợp pháp hóa lãnh sự",
+          "component_code": "000.00.00.G12-00015446",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 3,
+          "name": "+ Bản sao hợp đồng (giấy hoặc điện tử) ký kết với các tổ chức, cá nhân tại Việt Nam có xác nhận của người nộp thuế; Đối với các nhà cung cấp nước ngoài, cơ quan thuế xem xét cho phép nộp hợp đồng mẫu ký với các đại lý và/hoặc cá nhân Việt Nam với điều kiện trên hợp đồng mẫu phải có đầy đủ thông tin về người cung cấp dịch vụ, thời gian, cách thức thực hiện, giá trị hợp đồng, phương thức thanh toán, nghĩa vụ và trách nhiệm của mỗi bên, kèm theo danh sách người sử dụng dịch vụ.",
+          "component_code": "000.00.00.G12-00015445",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 4,
+          "name": "Bản sao có chứng thực văn bản ủy quyền trong trường hợp người nộp thuế ủy quyền cho đại diện hợp pháp thực hiện thủ tục áp dụng Hiệp định thuế",
+          "component_code": "000.00.00.G12-00015443",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c71-7574-afe7-f63bc8a369b7",
+          "name": "Trường hợp xác định người nộp thuế không thuộc diện được miễn thuế, giảm thuế theo Hiệp định thuế hoặc Điều ước quốc tế khác, cơ quan thuế gửi người nộp thuế Thông báo mẫu số 03-1/MGTH Phụ lục III ban hành kèm theo Thông tư số 89/2026/TT-BTC ngày 30/6/2026 của Bộ Tài chính. Người nộp thuế có trách nhiệm khai chính xác, trung thực, đầy đủ các nội dung trong hồ sơ miễn thuế, giảm thuế theo Hiệp định thuế hoặc Điều ước quốc tế khác. Trường hợp qua kiểm tra phát hiện người nộp thuế không thuộc diện được miễn thuế, giảm thuế theo Hiệp định thuế hoặc Điều ước quốc tế khác thì người nộp thuế có trách nhiệm hoàn thành nghĩa vụ nộp thuế theo quy định.",
+          "code": "KQ.G12.000520"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019e5e83-1282-771d-9014-49799413a4e5",
+          "name": "Luật số 108/2025/QH15 của Quốc hội: Luật Quản lý thuế",
+          "code": "108/2025/QH15"
+        },
+        {
+          "id": "019f356e-75e3-7494-a2f3-672d8dce61a6",
+          "name": "QUY ĐỊNH CHI TIẾT MỘT SỐ ĐIỀU VÀ BIỆN PHÁP ĐỂ TỔ CHỨC, HƯỚNG DẪN THI HÀNH LUẬT QUẢN LÝ THUẾ",
+          "code": "252/2026/NĐ-CP"
+        },
+        {
+          "id": "019f8db3-9765-740b-8b90-682677b9c421",
+          "name": "Thông tư quy định chi tiết một số điều của Luật Quản lý thuế và Nghị định số 252/2026/NĐ-CP của Chính phủ quy định chi tiết một số điều và biện pháp để tổ chức, hướng dẫn thi hành Luật Quản lý thuế",
+          "code": "89/2026/TT-BTC"
+        }
+      ]
+    }
+  ]
+}

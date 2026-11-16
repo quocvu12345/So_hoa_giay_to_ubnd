@@ -1,0 +1,58 @@
+__pycache__/
+.pytest_cache/
+.DS_Store
+.env
+data/sam3/runtime/
+data/sam3/documents/
+artifacts/
+.venv/
+
+# Backend .NET
+backend/**/bin/
+backend/**/obj/
+backend/**/TestResults/
+*.user
+
+# Kho tệp và dữ liệu chạy local
+data/blobs/
+
+# Bí mật
+.env.local
+appsettings.*.local.json
+
+# Biến môi trường riêng; giữ tệp mẫu để cấu hình máy mới
+.env.*
+!.env.example
+!.env.sample
+
+# Thư viện và tệp sinh khi chạy công cụ
+node_modules/
+venv/
+*.py[cod]
+*.log
+
+# Bản sao lưu CSDL dev trước khi nâng cấp schema (chứa dữ liệu giả lập, không đưa lên git)
+data/db-backups/
+
+# Gói tải xuống và bộ dữ liệu lớn giữ trên máy, không lưu trong Git
+data/**/*.zip
+data/filled-samples/
+data/form-test-data/*
+!data/form-test-data/README.txt
+!data/form-test-data/schemas.json
+data/tuliem-dossiers/*
+!data/tuliem-dossiers/README.txt
+!data/tuliem-dossiers/catalogue.json
+!data/tuliem-dossiers/templates.json
+!data/tuliem-dossiers/blueprints/
+data/tuliem-dossiers-full/*
+!data/tuliem-dossiers-full/README.txt
+data/vietnamese-form-dataset/*
+!data/vietnamese-form-dataset/README.txt
+data/national-procedures/details/
+data/national-procedures/evidence/
+data/official-forms/evidence/
+data/official-forms/originals/
+data/official-forms/procedure-pdf/
+data/official-forms/templates/
+data/official-forms/index.html

@@ -1,0 +1,18 @@
+{
+  "baseline_count": 425,
+  "current_count": 733,
+  "checked_downloaded_files": 1887,
+  "formats": {
+    "word_ooxml": 931,
+    "pdf": 804,
+    "office_legacy": 124,
+    "json": 28
+  },
+  "errors": [],
+  "pdf_template_alternatives_verified": 2,
+  "lifecycle_evidence_records_verified": 32,
+  "unavailable_attachments": [
+    "Mẫu số 02.docx",
+    "Mu05.docx"
+  ]
+}

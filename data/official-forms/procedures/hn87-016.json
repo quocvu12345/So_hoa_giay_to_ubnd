@@ -1,0 +1,108 @@
+{
+  "ordinal": "16",
+  "managing_agency": "Sở Nội Vụ",
+  "procedure_code": "2.002307",
+  "name": "Giải quyết chế độ mai táng phí đối với cựu chiến binh",
+  "domain": "Người có công",
+  "ministry_decision": "320/QĐ-BNV ngày 08/4/2025",
+  "hanoi_decision": "963/QĐ-TTPVHCC ngày 27/6/2025",
+  "workflow_decision": "1053/QĐ-TTPVHCC ngày 11/7/2025",
+  "fees": "Không quy định",
+  "execution_level": "Cấp xã",
+  "competent_authority": "UBND cấp xã",
+  "delegation_decision": "3176/ QĐ-SNV ngày 20/6/2025",
+  "delegation_expiry": "28/02/2027",
+  "receiving_location": "Điểm hỗ trợ DVC số",
+  "id": "hn87-016",
+  "source_page": 1,
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "inventory_date": "2026-04-27",
+  "checked_at": "2026-11-12T22:24:34.511778+07:00",
+  "details": [
+    {
+      "id": "019d2bfb-4a4e-7368-a306-f665291850ca",
+      "code": "2.002307",
+      "name": "Giải quyết chế độ mai táng phí đối với cựu chiến binh",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1794210827200,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-4a4e-7368-a306-f665291850ca",
+      "raw_path": "evidence/dvc/details/019d2bfb-4a4e-7368-a306-f665291850ca.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "- Bản khai để giải quyết chế độ trợ cấp mai táng theo Mẫu số 01 Thông tư số 21/2026/TT-BNV ngày 22/9/2026 của Bộ trưởng Bộ Nội vụ (trường hợp các trường thông tin trong Bản khai có thể khai thác từ cơ sở dữ liệu, hệ thống thông tin thì cán bộ tiếp nhận hồ sơ/cá nhân/tổ chức không phải kê khai thông tin này vào Bản khai điện tử).",
+          "component_code": "G09-KQ1298",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "01a17713-fee4-71db-9123-20744089170a",
+              "fileName": "Mẫu số 01 Thông tư số 21.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/01a17713-fee4-71db-9123-20744089170a/Mẫu số 01 Thông tư số 21.docx"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "- Bản sao chứng thực giấy chứng tử hoặc trích lục khai tử. Trường hợp cơ quan tiếp nhận hồ sơ hoặc cá nhân, tổ chức khai thác được thông tin của giấy chứng tử hoặc trích lục khai tử từ các Cơ sở dữ liệu, hệ thống thông tin có liên quan thì cá nhân, tổ chức không phải nộp giấy tờ này. (Thay thế thành phần hồ sơ này khi Cơ sở dữ liệu hộ tịch điện tử đáp ứng điều kiện kết nối, khai thác và chia sẻ dữ liệu (Hệ thống tự động kết nối với CSDL hộ tịch điện tử để lấy thông tin Giấy chứng tử))",
+          "component_code": "G09-KQ00321065",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 3,
+          "name": "- Một trong các giấy tờ xác nhận là cựu chiến binh theo quy định tại khoản 7 Điều 2 Nghị định số 150/2006/NĐ-CP.",
+          "component_code": "G09-KQ00321066",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "01a13372-59f2-745b-b252-790fd56549a7",
+          "name": "Quyết định giải quyết chế độ trợ cấp mai táng.",
+          "code": "KQ.G09.0002107"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7c-71ab-9f06-4a5d029bc656",
+          "name": "HƯỚNG DẪN THỰC HIỆN CHẾ ĐỘ, CHÍNH SÁCH ĐỐI VỚI CỰU CHIẾN BINH THEO QUY ĐỊNH TẠI NGHỊ ĐỊNH SỐ 157/2016/NĐ-CP NGÀY 24 THÁNG 11 NĂM 2016 CỦA CHÍNH PHỦ SỬA ĐỔI, BỔ SUNG NGHỊ ĐỊNH SỐ 150/2006/NĐ-CP NGÀY 12 THÁNG 12 NĂM 2006 QUY ĐỊNH CHI TIẾT VÀ HƯỚNG DẪN THI HÀNH MỘT SỐ ĐIỀU PHÁP LỆNH CỰU CHIẾN BINH",
+          "code": "03/2020/TT-BLĐTBXH"
+        },
+        {
+          "id": "019d2bb3-5d86-7760-a640-cbc57c13ed7b",
+          "name": "Nghị định số 150/2006/NĐ-CP ngày 12/12/2006 của Chính phủ Quy định chi tiết và hướng dẫn thi hành một số điều Pháp lệnh Cựu chiến binh",
+          "code": "150/2006/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d86-7760-a641-125385dd5344",
+          "name": "Nghị định số 157/2016/NĐ-CP ngày 24/11/2016 của Chính phủ Sửa đổi, bổ sung Nghị định số 150/2006/NĐ-CP ngày 12/12/2006 Quy định chi tiết và hướng dẫn thi hành một số điều của Pháp lệnh Cựu chiến binh",
+          "code": "157/2016/NĐ-CP"
+        },
+        {
+          "id": "01a17709-d9c7-728b-9f87-84483cb9cf09",
+          "name": "Sửa đổi, bổ sung một số điều của Thông tư số 03/2020/TT-BLĐTBXH ngày 25 tháng 02 năm 2020 của Bộ trưởng Bộ Lao động - Thương binh và Xã hội hướng dẫn thực hiện chế độ, chính sách đối với cựu chiến binh theo quy định tại Nghị định số 157/2016/NĐ-CP ngày 24 tháng 11 năm 2016 của Chính phủ sửa đổi, bổ sung Nghị định số 150/2006/NĐ-CP ngày 12 tháng 12 năm 2006 quy định chi tiết và hướng dẫn thi hành một số điều Pháp lệnh Cựu chiến binh và Thông tư số 24/2009/TT-BLĐTBXH ngày 10 tháng 7 năm 2009 của Bộ trưởng Bộ Lao động - Thương binh và Xã hội hướng dẫn thực hiện Quyết định số 170/2008/QĐ-TTg ngày 18 tháng 12 năm 2008 của Thủ tướng Chính phủ về chế độ bảo hiểm y tế và trợ cấp mai táng đối với thanh niên xung phong thời kỳ kháng chiến chống Pháp",
+          "code": "21/2026/TT-BNV"
+        }
+      ]
+    }
+  ],
+  "lookup_status": "retrieved",
+  "currency_status": "snapshot_requires_later_amendment_check",
+  "errors": []
+}

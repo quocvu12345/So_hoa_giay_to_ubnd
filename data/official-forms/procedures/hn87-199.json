@@ -1,0 +1,108 @@
+{
+  "ordinal": "199",
+  "managing_agency": "Sở Công Thương",
+  "procedure_code": "3.000256",
+  "name": "Chuyển giao công trình điện là hạ tầng kỹ thuật sử dụng chung trong các dự án khu đô thị, khu dân cư và dự án khác do chủ đầu tư phải bàn giao lại cho nhà nước theo quy định của pháp luật",
+  "domain": "Quản lý công sản",
+  "ministry_decision": "337/QĐ-BTC ngày 27/02/2024",
+  "hanoi_decision": "2328/QĐ-UBND ngày 04/5/2025",
+  "workflow_decision": "5629/QĐ-UBND ngày 28/10/2024",
+  "fees": "Không quy định",
+  "execution_level": "Cấp tỉnh, cấp xã",
+  "competent_authority": "UBND thành phố; UBND cấp xã",
+  "delegation_decision": "",
+  "delegation_expiry": "",
+  "receiving_location": "Chi nhánh TTPVHCC",
+  "id": "hn87-199",
+  "source_page": 8,
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "inventory_date": "2026-04-27",
+  "checked_at": "2026-11-12T22:24:34.550815+07:00",
+  "details": [
+    {
+      "id": "019d2bfd-10a6-720a-94de-0c7622994b2d",
+      "code": "3.000256",
+      "name": "Chuyển giao công trình điện là hạ tầng kỹ thuật sử dụng chung trong các dự án khu đô thị, khu dân cư và dự án khác do chủ đầu tư phải bàn giao lại cho Nhà nước theo quy định của pháp luật",
+      "state": "ACTIVE",
+      "type": "STANDARD",
+      "is_ward": false,
+      "updated_at_source": 1775645828268,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfd-10a6-720a-94de-0c7622994b2d",
+      "raw_path": "evidence/dvc/details/019d2bfd-10a6-720a-94de-0c7622994b2d.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Các hồ sơ phục vụ quản lý, vận hành và bảo trì công trình theo quy định tại Phụ lục IX Nghị định số 06/2021/NĐ-CP ngày 26 tháng 01 năm 2021 của Chính phủ quy định chi tiết một số nội dung về quản lý chất lượng, thi công xây dựng và bảo trì công trình xây dựng",
+          "component_code": "000.00.00.G12-KQ013036",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Hồ sơ đất đai liên quan đến việc giao đất, cho thuê đất, chuyển mục đích sử dụng đất, công nhận quyền sử dụng đất gắn với công trình và các giấy tờ khác có liên quan (nếu có)",
+          "component_code": "000.00.00.G12-KQ013038",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 3,
+          "name": "Giấy chứng nhận thẩm duyệt thiết kế, văn bản thẩm duyệt thiết kế, văn bản chấp thuận kết quả nghiệm thu về phòng cháy, chữa cháy của cơ quan có thẩm quyền (nếu có); phương án chữa cháy, phương án phòng cháy theo quy định của pháp luật về phòng cháy, chữa cháy",
+          "component_code": "000.00.00.G12-KQ013039",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 4,
+          "name": "Văn bản phê duyệt quyết toán của cơ quan nhà nước có thẩm quyền (nếu có)",
+          "component_code": "000.00.00.G12-KQ013037",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 5,
+          "name": "Văn bản của chủ đầu tư đề nghị chuyển giao công trình điện theo Mẫu số 01 tại Phụ lục ban hành kèm theo Nghị định số 02/2024/NĐ-CP",
+          "component_code": "000.00.00.G12-KQ013040",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c71-7574-afea-6666806e1ca0",
+          "name": "Quyết định chuyển giao công trình điện",
+          "code": "KQ.G12.000258"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7e-72d1-afe6-ff19d4b15f44",
+          "name": "Nghị định 02/2024/NĐ-CP ngày 10 tháng 01 năm 2024 về việc chuyển giao công trình điện là tài sản công sang Tập đoàn Điện lực Việt Nam",
+          "code": "02/2024/NĐ-CP"
+        }
+      ]
+    }
+  ],
+  "lookup_status": "retrieved",
+  "currency_status": "snapshot_requires_later_amendment_check",
+  "errors": []
+}

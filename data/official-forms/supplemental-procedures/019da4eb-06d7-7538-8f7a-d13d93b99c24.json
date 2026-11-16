@@ -1,0 +1,122 @@
+{
+  "id": "dvc-019da4eb-06d7-7538-8f7a-d13d93b99c24",
+  "procedure_code": "1.015017",
+  "name": "Hỗ trợ mua máy cấy, hệ thống thiết bị gieo mạ phục vụ cơ giới hóa trong sản xuất lúa (Thực hiện theo khoản 2 Điều 8 Nghị quyết số 53/2025/NQ-HĐND ngày 26/11/2025)\n",
+  "domain": "Nông nghiệp",
+  "managing_agency": "Trung tâm phục vụ hành chính công Thành phố Hà Nội",
+  "inventory_date": null,
+  "scope": "hanoi",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.842715+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019da4eb-06d7-7538-8f7a-d13d93b99c24",
+      "code": "1.015017",
+      "name": "Hỗ trợ mua máy cấy, hệ thống thiết bị gieo mạ phục vụ cơ giới hóa trong sản xuất lúa (Thực hiện theo khoản 2 Điều 8 Nghị quyết số 53/2025/NQ-HĐND ngày 26/11/2025)\n",
+      "state": "ACTIVE",
+      "type": "SPECIFIC",
+      "is_ward": true,
+      "updated_at_source": 1776618005726,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019da4eb-06d7-7538-8f7a-d13d93b99c24",
+      "raw_path": "evidence/dvc/details/019da4eb-06d7-7538-8f7a-d13d93b99c24.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Đơn đề nghị hỗ trợ theo Mẫu số 02A của Phụ lục kèm theo Quyết định số 35/2026/QĐ-UBND ngày 30/3/2026",
+          "component_code": "ĐĐN-02A-35/2026/QĐ-UBND",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Bản chính hoặc bản chứng thực Hợp đồng, nghiệm thu, thanh lý hợp đồng mua máy móc, thiết bị. Tại hợp đồng mua máy móc, thiết bị hoặc hoá đơn phải ghi rõ: máy móc, thiết bị là mới, xuất xứ rõ ràng, đáp ứng được tiêu chuẩn cơ sở đã công bố hoặc tiêu chuẩn Việt Nam (nếu có);",
+          "component_code": "HĐ",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 3,
+          "name": "Bản gốc hoặc bản chứng thực, hóa đơn tài chính theo quy định của pháp luật. Tại hợp đồng mua máy móc, thiết bị hoặc hoá đơn phải ghi rõ: máy móc, thiết bị là mới, xuất xứ rõ ràng, đáp ứng được tiêu chuẩn cơ sở đã công bố hoặc tiêu chuẩn Việt Nam (nếu có);",
+          "component_code": "HĐTC",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 4,
+          "name": "Phương án sản xuất kinh doanh của tổ chức/cá nhân đề nghị hỗ trợ theo Mẫu số 03 của Phụ lục kèm theo Quyết định 35/2026/QĐ-UBND ngày 30/3/2026",
+          "component_code": "PASXKD",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 5,
+          "name": "Bản gốc hoặc bản chứng thực chứng thư thẩm định giá của cơ quan thẩm định giá hoặc báo giá/thông báo giá của đơn vị sản xuất, phân phối độc quyền",
+          "component_code": "CTTĐG",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019da3a7-5b85-7125-baf9-e8dd79dc1f3f",
+          "name": "Quyết định hỗ trợ",
+          "code": "QĐHT"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d85-73da-8eb9-eab0340fcb27",
+          "name": "Luật Thủ đô",
+          "code": "39/2024/QH15"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b675-2df9683f0484",
+          "name": "Luật trồng trọt",
+          "code": "Luật số: 31/2018/QH14"
+        },
+        {
+          "id": "019d2bb3-5d87-7195-a445-3789c9336cec",
+          "name": "Luật Tổ chức chính quyền địa phương",
+          "code": "72/2025/QH15"
+        },
+        {
+          "id": "019d93ed-6d8d-716d-b303-e8e215adf6a9",
+          "name": "sửa đổi bổ sung một số điều của 15 Luật trong lĩnh vực Nông nghiệp và Môi trường ",
+          "code": "Luật số 146/2025/QH15 "
+        },
+        {
+          "id": "019d9950-5f30-72b3-9aba-c16e4c2d68c2",
+          "name": "Quy định trình tự, thủ tục triển khai thực hiện Nghị quyết số 53/2025/NQHĐND ngày 26/11/2025 của Hội đồng nhân dân Thành phố quy định về một số chính sách phát triển nông nghiệp thành phố Hà Nội",
+          "code": "35/2026/QĐ-UBND"
+        },
+        {
+          "id": "019d9954-3c63-73ba-8ed0-2a37a75f887c",
+          "name": "Quy định về một số chính sách phát triển nông nghiệp thành phố Hà Nội\n(Thực hiện khoản 2 Điều 32 Luật Thủ đô)\n",
+          "code": "53/2025/NQ-HĐND "
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,319 @@
+{
+  "id": "hn87-202",
+  "ordinal": "202",
+  "procedure_code": "2.000535",
+  "name": "Cấp lại Giấy chứng nhận đủ điều kiện an toàn thực phẩm đối với cơ sở sản xuất, kinh doanh thực phẩm",
+  "domain": "An toàn thực phẩm",
+  "department_id": "vx",
+  "department": "Phòng Văn hóa - Xã hội",
+  "authority_as_published": "Sở, UBND cấp xã",
+  "execution_level_as_published": "Cấp tỉnh, cấp xã",
+  "receiving_location_as_published": "Chi nhánh TTPVHCC",
+  "inventory_date": "2026-04-27",
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "source_urls": [
+    "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf8-32f5-71a9-8925-3524dc3d03fd"
+  ],
+  "current_dvc_match": false,
+  "lifecycle": null,
+  "scope": "hanoi_commune_notice_2026_04_27",
+  "scope_note": "Mốc kiểm kê cấp xã Hà Nội; áp dụng từng thủ tục tại Từ Liêm còn phải theo thẩm quyền/ủy quyền hiện hành.",
+  "status": "has_fillable_templates",
+  "components": [
+    {
+      "id": "hn87-202-c001",
+      "code": "000.00.00.G02-KQ2971",
+      "name": "Đơn đề nghị cấp lại.",
+      "section": "a) Trường hợp đề nghị cấp lại Giấy chứng nhận do bị mất hoặc bị hỏng",
+      "role": "applicant_form",
+      "scenario_status": "conditional_needs_review",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf8-32f5-71a9-8925-3524dc3d03fd",
+      "source_detail_id": "019d2bf8-32f5-71a9-8925-3524dc3d03fd",
+      "embedded_other_requirements": false,
+      "template_candidates": [
+        "template-4faac835ac210288"
+      ],
+      "template_selection_method": "first_matching_source_attachment",
+      "selected_template_id": "template-4faac835ac210288",
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-202-c002",
+      "code": "000.00.00.G02-KQ2976",
+      "name": "- Giấy xác nhận đã được tập huấn kiến thức về an toàn thực phẩm của người trực tiếp sản xuất, kinh doanh thực phẩm có xác nhận của cơ sở.",
+      "section": "b) Trường hợp đề nghị cấp lại Giấy chứng nhận do cơ sở thay đổi địa điểm sản xuất, kinh doanh; thay đổi, bổ sung quy trình sản xuất, mặt hàng kinh doanh hoặc khi Giấy chứng nhận hết hiệu lực",
+      "role": "needs_review",
+      "scenario_status": "alternative_case_not_selected",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 1,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf8-32f5-71a9-8925-3524dc3d03fd",
+      "source_detail_id": "019d2bf8-32f5-71a9-8925-3524dc3d03fd",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-202-c003",
+      "code": "000.00.00.G02-KQ2973",
+      "name": "- Bảo sao Giấy chứng nhận đăng ký kinh doanh hoặc Giấy chứng nhận đăng ký doanh nghiệp hoặc Giấy chứng nhận đầu tư theo quy định của pháp luật;",
+      "section": "b) Trường hợp đề nghị cấp lại Giấy chứng nhận do cơ sở thay đổi địa điểm sản xuất, kinh doanh; thay đổi, bổ sung quy trình sản xuất, mặt hàng kinh doanh hoặc khi Giấy chứng nhận hết hiệu lực",
+      "role": "supporting_submit",
+      "scenario_status": "alternative_case_not_selected",
+      "required_as_published": false,
+      "original_quantity": 0,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf8-32f5-71a9-8925-3524dc3d03fd",
+      "source_detail_id": "019d2bf8-32f5-71a9-8925-3524dc3d03fd",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-202-c004",
+      "code": "000.00.00.G02-KQ006141",
+      "name": "Cơ quan giải quyết TTHC khai thác, sử dụng thông tin đã có trong Cơ sở dữ liệu quốc gia về đăng ký doanh nghiệp để thay thế thành phần hồ sơ Bản sao giấy chứng nhận đăng ký doanh nghiệp.  Trường hợp Cơ quan giải quyết TTHC không khai thác được hoặc khai thác không đầy đủ dữ liệu doanh nghiệp trên Cơ sở dữ liệu quốc gia về đăng ký doanh nghiệp, Cơ quan giải quyết TTHC yêu cầu doanh nghiệp bổ sung Bản sao Giấy chứng nhận đăng ký doanh nghiệp theo quy định tại Điều 8 Nghị quyết 66.7/2025/NQ-CP ngày 15/11/2025 của Chính phủ quy định cắt giảm, đơn giản hóa TTHC dựa trên dữ liệu",
+      "section": "b) Trường hợp đề nghị cấp lại Giấy chứng nhận do cơ sở thay đổi địa điểm sản xuất, kinh doanh; thay đổi, bổ sung quy trình sản xuất, mặt hàng kinh doanh hoặc khi Giấy chứng nhận hết hiệu lực",
+      "role": "supporting_submit",
+      "scenario_status": "alternative_case_not_selected",
+      "required_as_published": false,
+      "original_quantity": 0,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf8-32f5-71a9-8925-3524dc3d03fd",
+      "source_detail_id": "019d2bf8-32f5-71a9-8925-3524dc3d03fd",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-202-c005",
+      "code": "000.00.00.G02-KQ2975",
+      "name": "- Danh sách tổng hợp đủ sức khỏe do chủ cơ sở xác nhận hoặc giấy xác nhận đủ sức khỏe của chủ cơ sở và người trực tiếp sản xuất, kinh doanh thực phẩm do cơ sở y tế cấp huyện trở lên cấp;",
+      "section": "b) Trường hợp đề nghị cấp lại Giấy chứng nhận do cơ sở thay đổi địa điểm sản xuất, kinh doanh; thay đổi, bổ sung quy trình sản xuất, mặt hàng kinh doanh hoặc khi Giấy chứng nhận hết hiệu lực",
+      "role": "applicant_prepared",
+      "scenario_status": "alternative_case_not_selected",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 1,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf8-32f5-71a9-8925-3524dc3d03fd",
+      "source_detail_id": "019d2bf8-32f5-71a9-8925-3524dc3d03fd",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-202-c006",
+      "code": "000.00.00.G02-KQ2972",
+      "name": "- Đơn đề nghị cấp lại;",
+      "section": "b) Trường hợp đề nghị cấp lại Giấy chứng nhận do cơ sở thay đổi địa điểm sản xuất, kinh doanh; thay đổi, bổ sung quy trình sản xuất, mặt hàng kinh doanh hoặc khi Giấy chứng nhận hết hiệu lực",
+      "role": "applicant_form",
+      "scenario_status": "alternative_case_not_selected",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf8-32f5-71a9-8925-3524dc3d03fd",
+      "source_detail_id": "019d2bf8-32f5-71a9-8925-3524dc3d03fd",
+      "embedded_other_requirements": false,
+      "template_candidates": [
+        "template-4faac835ac210288"
+      ],
+      "template_selection_method": "first_matching_source_attachment",
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-202-c007",
+      "code": "000.00.00.G02-KQ2974",
+      "name": "- Bản thuyết minh về cơ sở vật chất, trang thiết bị, dụng cụ bảo đảm điều kiện vệ sinh an toàn thực phẩm;",
+      "section": "b) Trường hợp đề nghị cấp lại Giấy chứng nhận do cơ sở thay đổi địa điểm sản xuất, kinh doanh; thay đổi, bổ sung quy trình sản xuất, mặt hàng kinh doanh hoặc khi Giấy chứng nhận hết hiệu lực",
+      "role": "needs_review",
+      "scenario_status": "alternative_case_not_selected",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 1,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf8-32f5-71a9-8925-3524dc3d03fd",
+      "source_detail_id": "019d2bf8-32f5-71a9-8925-3524dc3d03fd",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-202-c008",
+      "code": "000.00.00.G02-KQ2978",
+      "name": "- Giấy chứng nhận cơ sở đủ điều kiện an toàn thực phẩm đã được cấp (bản sao có xác nhận của cơ sở);",
+      "section": "c) Trường hợp đề nghị cấp lại Giấy chứng nhận do thay đổi tên cơ sở nhưng không thay đổi chủ cơ sở, địa chỉ, địa điểm và toàn bộ quy trình sản xuất, mặt hàng kinh doanh",
+      "role": "supporting_submit",
+      "scenario_status": "alternative_case_not_selected",
+      "required_as_published": false,
+      "original_quantity": 0,
+      "copy_quantity": 1,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf8-32f5-71a9-8925-3524dc3d03fd",
+      "source_detail_id": "019d2bf8-32f5-71a9-8925-3524dc3d03fd",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-202-c009",
+      "code": "000.00.00.G02-KQ2977",
+      "name": "- Đơn đề nghị cấp lại;",
+      "section": "c) Trường hợp đề nghị cấp lại Giấy chứng nhận do thay đổi tên cơ sở nhưng không thay đổi chủ cơ sở, địa chỉ, địa điểm và toàn bộ quy trình sản xuất, mặt hàng kinh doanh",
+      "role": "applicant_form",
+      "scenario_status": "alternative_case_not_selected",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf8-32f5-71a9-8925-3524dc3d03fd",
+      "source_detail_id": "019d2bf8-32f5-71a9-8925-3524dc3d03fd",
+      "embedded_other_requirements": false,
+      "template_candidates": [
+        "template-4faac835ac210288"
+      ],
+      "template_selection_method": "first_matching_source_attachment",
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-202-c010",
+      "code": "000.00.00.G02-KQ2979",
+      "name": "- Tài liệu chứng minh sự thay đổi tên cơ sở.",
+      "section": "c) Trường hợp đề nghị cấp lại Giấy chứng nhận do thay đổi tên cơ sở nhưng không thay đổi chủ cơ sở, địa chỉ, địa điểm và toàn bộ quy trình sản xuất, mặt hàng kinh doanh",
+      "role": "needs_review",
+      "scenario_status": "alternative_case_not_selected",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 1,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf8-32f5-71a9-8925-3524dc3d03fd",
+      "source_detail_id": "019d2bf8-32f5-71a9-8925-3524dc3d03fd",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-202-c011",
+      "code": "000.00.00.G02-KQ2980",
+      "name": "- Đơn đề nghị cấp lại;",
+      "section": "d) Trường hợp đề nghị cấp lại Giấy chứng nhận do thay đổi chủ cơ sở nhưng không thay đổi tên cơ sở, địa chỉ, địa điểm và toàn bộ quy trình sản xuất, mặt hàng kinh doanh",
+      "role": "applicant_form",
+      "scenario_status": "alternative_case_not_selected",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf8-32f5-71a9-8925-3524dc3d03fd",
+      "source_detail_id": "019d2bf8-32f5-71a9-8925-3524dc3d03fd",
+      "embedded_other_requirements": false,
+      "template_candidates": [
+        "template-4faac835ac210288"
+      ],
+      "template_selection_method": "first_matching_source_attachment",
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-202-c012",
+      "code": "000.00.00.G02-KQ2981",
+      "name": "- Giấy chứng nhận cơ sở đủ điều kiện an toàn thực phẩm đã được cấp (bản sao có xác nhận của cơ sở);",
+      "section": "d) Trường hợp đề nghị cấp lại Giấy chứng nhận do thay đổi chủ cơ sở nhưng không thay đổi tên cơ sở, địa chỉ, địa điểm và toàn bộ quy trình sản xuất, mặt hàng kinh doanh",
+      "role": "supporting_submit",
+      "scenario_status": "alternative_case_not_selected",
+      "required_as_published": false,
+      "original_quantity": 0,
+      "copy_quantity": 1,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf8-32f5-71a9-8925-3524dc3d03fd",
+      "source_detail_id": "019d2bf8-32f5-71a9-8925-3524dc3d03fd",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-202-c013",
+      "code": "000.00.00.G02-KQ2982",
+      "name": "- Danh sách tổng hợp đủ sức khỏe do chủ cơ sở xác nhận hoặc giấy xác nhận đủ sức khỏe của chủ cơ sở và người trực tiếp sản xuất thực phẩm do cơ sở y tế cấp huyện trở lên cấp (bản sao có xác nhận của cơ sở).",
+      "section": "d) Trường hợp đề nghị cấp lại Giấy chứng nhận do thay đổi chủ cơ sở nhưng không thay đổi tên cơ sở, địa chỉ, địa điểm và toàn bộ quy trình sản xuất, mặt hàng kinh doanh",
+      "role": "applicant_prepared",
+      "scenario_status": "alternative_case_not_selected",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 1,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf8-32f5-71a9-8925-3524dc3d03fd",
+      "source_detail_id": "019d2bf8-32f5-71a9-8925-3524dc3d03fd",
+      "embedded_other_requirements": true,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    }
+  ],
+  "service_cases": [
+    {
+      "id": "019db1d9-1c5b-73b6-b5d0-e62d392148aa",
+      "code": "2.000535.01",
+      "name": "Cấp lại Giấy chứng nhận đủ điều kiện an toàn thực phẩm đối với cơ sở sản xuất, kinh doanh thực phẩm",
+      "source_processing_time": {
+        "qty": 3,
+        "type": "WORKING_DAY"
+      },
+      "has_case_specific_components": false
+    }
+  ],
+  "selected_template_ids": [
+    "template-4faac835ac210288"
+  ],
+  "source_component_groups": [
+    {
+      "name": "a) Trường hợp đề nghị cấp lại Giấy chứng nhận do bị mất hoặc bị hỏng",
+      "component_count": 1,
+      "source_detail_id": "019d2bf8-32f5-71a9-8925-3524dc3d03fd"
+    },
+    {
+      "name": "b) Trường hợp đề nghị cấp lại Giấy chứng nhận do cơ sở thay đổi địa điểm sản xuất, kinh doanh; thay đổi, bổ sung quy trình sản xuất, mặt hàng kinh doanh hoặc khi Giấy chứng nhận hết hiệu lực",
+      "component_count": 6,
+      "source_detail_id": "019d2bf8-32f5-71a9-8925-3524dc3d03fd"
+    },
+    {
+      "name": "c) Trường hợp đề nghị cấp lại Giấy chứng nhận do thay đổi tên cơ sở nhưng không thay đổi chủ cơ sở, địa chỉ, địa điểm và toàn bộ quy trình sản xuất, mặt hàng kinh doanh",
+      "component_count": 3,
+      "source_detail_id": "019d2bf8-32f5-71a9-8925-3524dc3d03fd"
+    },
+    {
+      "name": "d) Trường hợp đề nghị cấp lại Giấy chứng nhận do thay đổi chủ cơ sở nhưng không thay đổi tên cơ sở, địa chỉ, địa điểm và toàn bộ quy trình sản xuất, mặt hàng kinh doanh",
+      "component_count": 3,
+      "source_detail_id": "019d2bf8-32f5-71a9-8925-3524dc3d03fd"
+    }
+  ],
+  "conditional_component_groups": [
+    "a) Trường hợp đề nghị cấp lại Giấy chứng nhận do bị mất hoặc bị hỏng",
+    "b) Trường hợp đề nghị cấp lại Giấy chứng nhận do cơ sở thay đổi địa điểm sản xuất, kinh doanh; thay đổi, bổ sung quy trình sản xuất, mặt hàng kinh doanh hoặc khi Giấy chứng nhận hết hiệu lực",
+    "c) Trường hợp đề nghị cấp lại Giấy chứng nhận do thay đổi tên cơ sở nhưng không thay đổi chủ cơ sở, địa chỉ, địa điểm và toàn bộ quy trình sản xuất, mặt hàng kinh doanh",
+    "d) Trường hợp đề nghị cấp lại Giấy chứng nhận do thay đổi chủ cơ sở nhưng không thay đổi tên cơ sở, địa chỉ, địa điểm và toàn bộ quy trình sản xuất, mặt hàng kinh doanh"
+  ],
+  "default_test_scenario": {
+    "channel": "direct",
+    "applicant_submits_self": true,
+    "authorized": false,
+    "special_case_flags": [],
+    "selected_conditional_group": "a) Trường hợp đề nghị cấp lại Giấy chứng nhận do bị mất hoặc bị hỏng",
+    "case_selection_method": "first_published_condition_with_available_template_for_test",
+    "case_status": "scenario_for_testing_not_a_legal_eligibility_decision"
+  },
+  "requirement_note": "required_as_published được giữ nguyên; false không chứng minh giấy tờ luôn tùy chọn. Các nhóm executionCases có thể là mục giấy tờ/hướng dẫn, không phải các phương án loại trừ nhau."
+}

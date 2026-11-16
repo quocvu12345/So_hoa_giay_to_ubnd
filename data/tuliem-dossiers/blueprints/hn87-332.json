@@ -1,0 +1,141 @@
+{
+  "id": "hn87-332",
+  "ordinal": "332",
+  "procedure_code": "1.009465",
+  "name": "Chấp thuận phương án bảo đảm an toàn giao thông",
+  "domain": "Hàng hải và đường thủy nội địa",
+  "department_id": "chuyennganh",
+  "department": "Cơ quan chuyên ngành · cần xác định đơn vị phối hợp",
+  "authority_as_published": "Sở; UBND cấp xã",
+  "execution_level_as_published": "Cấp tỉnh, cấp xã",
+  "receiving_location_as_published": "Chi nhánh TTPVHCC",
+  "inventory_date": "2026-04-27",
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "source_urls": [
+    "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfe-6995-7036-9a0e-ed4c39b2f136"
+  ],
+  "current_dvc_match": true,
+  "lifecycle": null,
+  "scope": "hanoi_commune_notice_2026_04_27",
+  "scope_note": "Mốc kiểm kê cấp xã Hà Nội; áp dụng từng thủ tục tại Từ Liêm còn phải theo thẩm quyền/ủy quyền hiện hành.",
+  "status": "has_fillable_templates",
+  "components": [
+    {
+      "id": "hn87-332-c001",
+      "code": "000.00.00.G04-KQ3334",
+      "name": "- Phương án bảo đảm an toàn giao thông;",
+      "section": "",
+      "role": "applicant_prepared",
+      "scenario_status": "selected_for_test",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfe-6995-7036-9a0e-ed4c39b2f136",
+      "source_detail_id": "019d2bfe-6995-7036-9a0e-ed4c39b2f136",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-332-c002",
+      "code": "000.00.00.G04-KQ3335",
+      "name": "- Bản sao bản vẽ bố trí mặt bằng tổng thể của công trình, phạm vi khu vực tổ chức thi công công trình, tổ chức hoạt động.",
+      "section": "",
+      "role": "supporting_submit",
+      "scenario_status": "selected_for_test",
+      "required_as_published": false,
+      "original_quantity": 0,
+      "copy_quantity": 1,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfe-6995-7036-9a0e-ed4c39b2f136",
+      "source_detail_id": "019d2bfe-6995-7036-9a0e-ed4c39b2f136",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-332-c003",
+      "code": "000.00.00.G04-KQ3332",
+      "name": "- Đơn đề nghị chấp thuận phương án bảo đảm an toàn giao thông theo mẫu;",
+      "section": "",
+      "role": "applicant_form",
+      "scenario_status": "selected_for_test",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfe-6995-7036-9a0e-ed4c39b2f136",
+      "source_detail_id": "019d2bfe-6995-7036-9a0e-ed4c39b2f136",
+      "embedded_other_requirements": false,
+      "template_candidates": [
+        "template-5f1c90f892bf935a"
+      ],
+      "template_selection_method": "first_matching_source_attachment",
+      "selected_template_id": "template-5f1c90f892bf935a",
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-332-c004",
+      "code": "000.00.00.G04-KQ3333",
+      "name": "- Phương án thi công, thời gian, tiến độ thi công công trình, tổ chức hoạt động;",
+      "section": "",
+      "role": "applicant_prepared",
+      "scenario_status": "selected_for_test",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfe-6995-7036-9a0e-ed4c39b2f136",
+      "source_detail_id": "019d2bfe-6995-7036-9a0e-ed4c39b2f136",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    }
+  ],
+  "service_cases": [
+    {
+      "id": "019db156-02a1-77ee-8638-1a322824aaf8",
+      "code": "1.009465.01",
+      "name": "Chấp thuận phương án bảo đảm an toàn giao thông",
+      "source_processing_time": {
+        "qty": 5,
+        "type": "WORKING_DAY"
+      },
+      "has_case_specific_components": false
+    },
+    {
+      "id": "019fa312-073e-708f-ac2d-66d7f733f381",
+      "code": "1.009465.01",
+      "name": "Chấp thuận phương án bảo đảm an toàn giao thông",
+      "source_processing_time": {
+        "qty": 5,
+        "type": "WORKING_DAY"
+      },
+      "has_case_specific_components": false
+    }
+  ],
+  "selected_template_ids": [
+    "template-5f1c90f892bf935a"
+  ],
+  "source_component_groups": [
+    {
+      "name": "",
+      "component_count": 4,
+      "source_detail_id": "019d2bfe-6995-7036-9a0e-ed4c39b2f136"
+    }
+  ],
+  "conditional_component_groups": [],
+  "default_test_scenario": {
+    "channel": "direct",
+    "applicant_submits_self": true,
+    "authorized": false,
+    "special_case_flags": [],
+    "selected_conditional_group": null,
+    "case_selection_method": "ordinary_direct_submission",
+    "case_status": "scenario_for_testing_not_a_legal_eligibility_decision"
+  },
+  "requirement_note": "required_as_published được giữ nguyên; false không chứng minh giấy tờ luôn tùy chọn. Các nhóm executionCases có thể là mục giấy tờ/hướng dẫn, không phải các phương án loại trừ nhau."
+}

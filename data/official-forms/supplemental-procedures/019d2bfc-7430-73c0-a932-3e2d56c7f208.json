@@ -1,0 +1,98 @@
+{
+  "id": "dvc-019d2bfc-7430-73c0-a932-3e2d56c7f208",
+  "procedure_code": "1.009069",
+  "name": "Thủ tục đối với hàng hóa tiêu hủy, hàng mẫu, hàng thử, túi, bao bì nhập khẩu để đựng hàng miễn thuế",
+  "domain": "Hải quan",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.929324+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfc-7430-73c0-a932-3e2d56c7f208",
+      "code": "1.009069",
+      "name": "Thủ tục đối với hàng hóa tiêu hủy, hàng mẫu, hàng thử, túi, bao bì nhập khẩu để đựng hàng miễn thuế",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1785982946481,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-7430-73c0-a932-3e2d56c7f208",
+      "raw_path": "evidence/dvc/details/019d2bfc-7430-73c0-a932-3e2d56c7f208.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Biên bản về tình trạng hàng hóa để tiêu hủy",
+          "component_code": "000.00.00.G12-KQ9857",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Bảng kê hàng mẫu, hàng thử, túi, bao bì nhập khẩu theo Mẫu số 10/BKHMT Phụ lục III ban hành kèm theo Nghị định số 273/2026/NĐ-CP (đối với trường hợp nộp trực tiếp).",
+          "component_code": "000.00.00.G12-KQ9858",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019fd4c8-ade5-727f-a0fa-dda02f89c615",
+              "fileName": "Mẫu số 10.BKHMT.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fd4c8-ade5-727f-a0fa-dda02f89c615/Mẫu số 10.BKHMT.docx"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 3,
+          "name": "Văn bản thông báo về kế hoạch tiêu hủy",
+          "component_code": "000.00.00.G12-KQ9856",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 4,
+          "name": "Chỉ tiêu thông tin tại Mẫu số 10 Phụ lục II ban hành kèm theo Nghị định số 273/2026/NĐ-CP (đối với trường hợp nộp trực tuyến).",
+          "component_code": "000.00.00.G12-KQ452896",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c70-724b-96e1-36b8791f252d",
+          "name": "phản hồi từ hệ thống xử lý dữ liệu điện tử hải quan và xác nhận của cơ quan hải quan trên hệ thống xử lý dữ liệu điện tử hải quan về số liệu báo cáo.",
+          "code": "KQ.G12.000417"
+        },
+        {
+          "id": "019d2bb2-1c73-70ac-aa18-065b9d949aff",
+          "name": "Xác nhận của công chức hải quan trên biên bản về tình trạng hàng hóa để tiêu hủy",
+          "code": "KQ.G12.001236"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019fc558-dd5c-7395-9a78-efc7e38e5c9f",
+          "name": "Về kinh doanh hàng miễn thuế",
+          "code": "273/2026/NĐ-CP"
+        }
+      ]
+    }
+  ]
+}

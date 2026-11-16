@@ -1,0 +1,69 @@
+{
+  "id": "dvc-019d2bfc-ca47-71fd-8d44-936ad718138d",
+  "procedure_code": "1.013489",
+  "name": "Thủ tục thay đổi cửa khẩu xuất hoặc đưa trở lại kho ngoại quan đối với hàng hóa gửi kho ngoại quan đã đưa ra cửa khẩu xuất nhưng không xuất được hoặc chỉ xuất được một phần",
+  "domain": "Hải quan",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.917888+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfc-ca47-71fd-8d44-936ad718138d",
+      "code": "1.013489",
+      "name": "Thủ tục thay đổi cửa khẩu xuất hoặc đưa trở lại kho ngoại quan đối với hàng hóa gửi kho ngoại quan đã đưa ra cửa khẩu xuất nhưng không xuất được hoặc chỉ xuất được một phần",
+      "state": "ACTIVE",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1775639773085,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-ca47-71fd-8d44-936ad718138d",
+      "raw_path": "evidence/dvc/details/019d2bfc-ca47-71fd-8d44-936ad718138d.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Thông báo phê duyệt khai báo vận chuyển (khi xuất kho ngoại quan đưa ra cửa khẩu xuất)",
+          "component_code": "000.00.00.G12-KQ013499",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Văn bản đề nghị đưa hàng về kho ngoại quan để lưu giữ chờ xuất khẩu (nêu rõ tên, địa chỉ kho ngoại quan và thời gian dự kiến lưu giữ)",
+          "component_code": "000.00.00.G12-KQ013498",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 3,
+          "name": "Tờ khai vận chuyển độc lập",
+          "component_code": "000.00.00.G12-KQ013497",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c71-7574-afeb-337346eac4b5",
+          "name": "Văn bản thông báo việc hàng nhập kho ngoại quan",
+          "code": "KQ.G12.000612"
+        }
+      ],
+      "legal_bases": []
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "id": "dvc-019efcd4-c579-7490-91cc-39d538a137c5",
+  "procedure_code": "1.115243",
+  "name": "Gia hạn giấy phép xây dựng công trình trên đất nông nghiệp tại các vùng sản xuất nông nghiệp tập trung",
+  "domain": "Nông nghiệp",
+  "managing_agency": "UBND Thành phố Hà Nội",
+  "inventory_date": null,
+  "scope": "hanoi",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.485251+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019efcd4-c579-7490-91cc-39d538a137c5",
+      "code": "1.115243",
+      "name": "Gia hạn giấy phép xây dựng công trình trên đất nông nghiệp tại các vùng sản xuất nông nghiệp tập trung",
+      "state": "ACTIVE",
+      "type": "SPECIFIC",
+      "is_ward": true,
+      "updated_at_source": 1782373773264,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019efcd4-c579-7490-91cc-39d538a137c5",
+      "raw_path": "evidence/dvc/details/019efcd4-c579-7490-91cc-39d538a137c5.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Đơn đề nghị gia hạn giấy phép xây dựng theo Mẫu số 04 Phụ lục ban hành kèm theo Nghị quyết số 38/2025/NQ-HĐND",
+          "component_code": "758.2026.04",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019efda9-4ee8-71ca-82fb-fbcb7f7318db",
+              "fileName": "MẪU 04.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019efda9-4ee8-71ca-82fb-fbcb7f7318db/MẪU 04.docx"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Bản chính giấy phép xây dựng đã được cấp",
+          "component_code": "758.2026.05",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019efcd1-7c2e-75eb-925b-1e179fb0e646",
+          "name": "Giấy phép xây dựng gia hạn công trình trên đất nông nghiệp tại các vùng sản xuất nông nghiệp tập trung (Mẫu số 03 Phụ lục ban hành kèm theo Nghị quyết số 38/2025/NQ-HĐND)",
+          "code": "KQ.758.2026.02"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d84-71c5-b673-5a81207fc1db",
+          "name": "Luật Xây dựng",
+          "code": "50/2014/QH13"
+        },
+        {
+          "id": "019d2bb3-5d85-73da-8eb9-eab0340fcb27",
+          "name": "Luật Thủ đô",
+          "code": "39/2024/QH15"
+        },
+        {
+          "id": "019d2bb3-5d87-7195-a444-3572483f4e46",
+          "name": "Luật số 62/2020/QH14 của Quốc hội: Luật sửa đổi, bổ sung một số điều của Luật Xây dựng",
+          "code": "62/2020/QH14"
+        },
+        {
+          "id": "019efcc6-19f8-73a7-acc3-9b7d5f57cf2a",
+          "name": "Quy định điều kiện, trình tự, thủ tục cấp phép xây dựng, loại công trình và tỷ lệ diện tích đất nông nghiệp được sử dụng để xây dựng công trình trên đất nông nghiệp phục vụ trực tiếp cho sản xuất nông nghiệp, chế biến, bảo quản, trưng bày, giới thiệu sản phẩm, cảnh quan du lịch tại các vùng sản xuất nông nghiệp tập trung trên địa bàn thành phố Hà Nội (Thực hiện điểm b khoản 3 Điều 32 Luật Thủ đô)",
+          "code": "38/2025/NQ-HĐND"
+        },
+        {
+          "id": "019efcc7-f443-77bc-bfd6-6fe9f9415297",
+          "name": "Về việc quy định phân cấp phê duyệt Phương án phát triển vùng sản xuất nông nghiệp tập trung và cấp phép xây dựng công trình trên đất nông nghiệp tại các vùng sản xuất nông nghiệp tập trung trên địa bàn thành phố Hà Nội",
+          "code": "55/2026/QĐ-UBND"
+        },
+        {
+          "id": "019d2bb3-5d87-7195-a445-3789c9336cec",
+          "name": "Luật Tổ chức chính quyền địa phương",
+          "code": "72/2025/QH15"
+        }
+      ]
+    }
+  ]
+}

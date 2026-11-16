@@ -1,0 +1,163 @@
+{
+  "id": "hn87-278",
+  "ordinal": "278",
+  "procedure_code": "2.002165",
+  "name": "Giải quyết yêu cầu bồi thường tại cơ quan trực tiếp quản lý người thi hành công vụ gây thiệt hại (cấp xã)",
+  "domain": "Bồi thường nhà nước",
+  "department_id": "vp",
+  "department": "Văn phòng HĐND và UBND · tư pháp, hộ tịch",
+  "authority_as_published": "UBND cấp xã",
+  "execution_level_as_published": "Cấp xã",
+  "receiving_location_as_published": "Điểm hỗ trợ DVC số",
+  "inventory_date": "2026-04-27",
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "source_urls": [
+    "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfd-9e02-77dc-b8bb-e19988c9428f"
+  ],
+  "current_dvc_match": true,
+  "lifecycle": null,
+  "scope": "hanoi_commune_notice_2026_04_27",
+  "scope_note": "Mốc kiểm kê cấp xã Hà Nội; áp dụng từng thủ tục tại Từ Liêm còn phải theo thẩm quyền/ủy quyền hiện hành.",
+  "status": "source_template_missing",
+  "components": [
+    {
+      "id": "hn87-278-c001",
+      "code": "TP-G15.32-99971",
+      "name": "Văn bản yêu cầu bồi thường",
+      "section": "a.Trường hợp người bị thiệt hại trực tiếp yêu cầu bồi thường",
+      "role": "needs_review",
+      "scenario_status": "conditional_needs_review",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfd-9e02-77dc-b8bb-e19988c9428f",
+      "source_detail_id": "019d2bfd-9e02-77dc-b8bb-e19988c9428f",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-278-c002",
+      "code": "TP-G15.32-99970",
+      "name": "Văn bản làm căn cứ yêu cầu bồi thường (nếu có)",
+      "section": "a.Trường hợp người bị thiệt hại trực tiếp yêu cầu bồi thường",
+      "role": "needs_review",
+      "scenario_status": "conditional_needs_review",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfd-9e02-77dc-b8bb-e19988c9428f",
+      "source_detail_id": "019d2bfd-9e02-77dc-b8bb-e19988c9428f",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-278-c003",
+      "code": "TP-G15.32-99969",
+      "name": "- Văn bản xác nhận hoặc chứng minh quyền đại diện hợp pháp trong trường hợp người yêu cầu bồi thường là người đại diện của người bị thiệt hại",
+      "section": "b. Trường hợp người yêu cầu bồi thường là người thừa kế (nếu có nhiều người thừa kế thì những người thừa kế đó phải cử ra một người đại diện) hoặc là người đại diện của người bị thiệt hại thì ngoài các tài liệu quy định tại điểm B.II.2 Mục 1 Phụ lục I.6 Nghị quyết số 66.18/2026/NQ-CP, hồ sơ còn phải có các tài liệu sau đây:",
+      "role": "needs_review",
+      "scenario_status": "alternative_case_not_selected",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfd-9e02-77dc-b8bb-e19988c9428f",
+      "source_detail_id": "019d2bfd-9e02-77dc-b8bb-e19988c9428f",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-278-c004",
+      "code": "TP-G15.32-99968",
+      "name": "Văn bản xác nhận hoặc chứng minh quyền thừa kế hợp pháp của người yêu cầu bồi thường đối với trường hợp người bị thiệt hại chết",
+      "section": "b. Trường hợp người yêu cầu bồi thường là người thừa kế (nếu có nhiều người thừa kế thì những người thừa kế đó phải cử ra một người đại diện) hoặc là người đại diện của người bị thiệt hại thì ngoài các tài liệu quy định tại điểm B.II.2 Mục 1 Phụ lục I.6 Nghị quyết số 66.18/2026/NQ-CP, hồ sơ còn phải có các tài liệu sau đây:",
+      "role": "needs_review",
+      "scenario_status": "alternative_case_not_selected",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfd-9e02-77dc-b8bb-e19988c9428f",
+      "source_detail_id": "019d2bfd-9e02-77dc-b8bb-e19988c9428f",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-278-c005",
+      "code": "TP-G15.32-99967",
+      "name": "Trường hợp người yêu cầu bồi thường trực tiếp nộp hồ sơ thì các giấy tờ quy định tại điểm B.II.2.b và điểm B.II.3 Mục 1 Phụ lục I.6 Nghị quyết số 66.18/2026/NQ-CP là bản sao nhưng phải có bản chính để đối chiếu; trường hợp người yêu cầu bồi thường gửi hồ sơ qua dịch vụ bưu chính thì các giấy tờ quy định tại điểm B.II.2.b điểm B.II.3 Mục 1 Phụ lục I.6 Nghị quyết số 66.18/2026/NQ-CP là bản sao có chứng thực theo quy định của pháp luật về chứng thực; trường hợp người yêu cầu bồi thường nộp yêu cầu bồi thường trực tuyến trên Cổng Dịch vụ công quốc gia thì các giấy tờ quy định tại điểm B.II.2.b điểm B.II.3 Mục 1 Phụ lục I.6 Nghị quyết số 66.18/2026/NQ-CP là bản sao chứng thực điện tử",
+      "section": "b. Trường hợp người yêu cầu bồi thường là người thừa kế (nếu có nhiều người thừa kế thì những người thừa kế đó phải cử ra một người đại diện) hoặc là người đại diện của người bị thiệt hại thì ngoài các tài liệu quy định tại điểm B.II.2 Mục 1 Phụ lục I.6 Nghị quyết số 66.18/2026/NQ-CP, hồ sơ còn phải có các tài liệu sau đây:",
+      "role": "supporting_submit",
+      "scenario_status": "alternative_case_not_selected",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfd-9e02-77dc-b8bb-e19988c9428f",
+      "source_detail_id": "019d2bfd-9e02-77dc-b8bb-e19988c9428f",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    }
+  ],
+  "service_cases": [
+    {
+      "id": "019ef7b8-6f64-74c8-9f31-1d7443049e37",
+      "code": "2.002165.01",
+      "name": "Giải quyết yêu cầu bồi thường tại cơ quan trực tiếp quản lý người thi hành công vụ gây thiệt hại (cấp xã)",
+      "source_processing_time": {
+        "qty": 1,
+        "type": "OTHER"
+      },
+      "has_case_specific_components": false
+    },
+    {
+      "id": "019d2d8f-b034-72be-a155-02b4cda6b98f",
+      "code": "2.002165.01",
+      "name": "Giải quyết yêu cầu bồi thường tại cơ quan trực tiếp quản lý người thi hành công vụ gây thiệt hại (cấp xã)",
+      "source_processing_time": {
+        "qty": 1,
+        "type": "OTHER"
+      },
+      "has_case_specific_components": false
+    }
+  ],
+  "selected_template_ids": [],
+  "source_component_groups": [
+    {
+      "name": "a.Trường hợp người bị thiệt hại trực tiếp yêu cầu bồi thường",
+      "component_count": 2,
+      "source_detail_id": "019d2bfd-9e02-77dc-b8bb-e19988c9428f"
+    },
+    {
+      "name": "b. Trường hợp người yêu cầu bồi thường là người thừa kế (nếu có nhiều người thừa kế thì những người thừa kế đó phải cử ra một người đại diện) hoặc là người đại diện của người bị thiệt hại thì ngoài các tài liệu quy định tại điểm B.II.2 Mục 1 Phụ lục I.6 Nghị quyết số 66.18/2026/NQ-CP, hồ sơ còn phải có các tài liệu sau đây:",
+      "component_count": 3,
+      "source_detail_id": "019d2bfd-9e02-77dc-b8bb-e19988c9428f"
+    }
+  ],
+  "conditional_component_groups": [
+    "a.Trường hợp người bị thiệt hại trực tiếp yêu cầu bồi thường",
+    "b. Trường hợp người yêu cầu bồi thường là người thừa kế (nếu có nhiều người thừa kế thì những người thừa kế đó phải cử ra một người đại diện) hoặc là người đại diện của người bị thiệt hại thì ngoài các tài liệu quy định tại điểm B.II.2 Mục 1 Phụ lục I.6 Nghị quyết số 66.18/2026/NQ-CP, hồ sơ còn phải có các tài liệu sau đây:"
+  ],
+  "default_test_scenario": {
+    "channel": "direct",
+    "applicant_submits_self": true,
+    "authorized": false,
+    "special_case_flags": [],
+    "selected_conditional_group": "a.Trường hợp người bị thiệt hại trực tiếp yêu cầu bồi thường",
+    "case_selection_method": "first_published_condition_with_available_template_for_test",
+    "case_status": "scenario_for_testing_not_a_legal_eligibility_decision"
+  },
+  "requirement_note": "required_as_published được giữ nguyên; false không chứng minh giấy tờ luôn tùy chọn. Các nhóm executionCases có thể là mục giấy tờ/hướng dẫn, không phải các phương án loại trừ nhau."
+}

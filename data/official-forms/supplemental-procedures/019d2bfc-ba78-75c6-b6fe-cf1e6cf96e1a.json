@@ -1,0 +1,149 @@
+{
+  "id": "dvc-019d2bfc-ba78-75c6-b6fe-cf1e6cf96e1a",
+  "procedure_code": "1.011018",
+  "name": "Hoàn thuế giá trị gia tăng đối với ngân hàng thương mại là đại lý hoàn thuế giá trị gia tăng cho khách xuất cảnh",
+  "domain": "Thuế",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.924242+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfc-ba78-75c6-b6fe-cf1e6cf96e1a",
+      "code": "1.011018",
+      "name": "Hoàn thuế giá trị gia tăng đối với ngân hàng thương mại là đại lý hoàn thuế giá trị gia tăng cho khách xuất cảnh",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1785399203684,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-ba78-75c6-b6fe-cf1e6cf96e1a",
+      "raw_path": "evidence/dvc/details/019d2bfc-ba78-75c6-b6fe-cf1e6cf96e1a.json",
+      "components": [
+        {
+          "section": "Thành phần hồ sơ: theo Danh mục mẫu biểu tại phụ lục I ban hành kèm theo Thông tư số 80/2021/TT-BTC, gồm:",
+          "position": 1,
+          "name": "Bảng kê chứng từ hoàn thuế GTGT cho người nước ngoài xuất cảnh mẫu số 01-4/HT",
+          "component_code": "G12.00011677",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019fa327-3a93-729f-ab75-b7a6181e2800",
+              "fileName": "01-4-HT -89.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa327-3a93-729f-ab75-b7a6181e2800/01-4-HT -89.docx"
+            }
+          ]
+        },
+        {
+          "section": "Thành phần hồ sơ: theo Danh mục mẫu biểu tại phụ lục I ban hành kèm theo Thông tư số 80/2021/TT-BTC, gồm:",
+          "position": 2,
+          "name": "Văn bản đề nghị hoàn trả khoản thu ngân sách nhà nước theo mẫu số 01/HT Phụ lục III ban hành kèm theo Thông tư số 89/2026/TT-BTC",
+          "component_code": "G12.00015743",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019fa2f8-a909-727f-ba35-f6a5fe859498",
+              "fileName": "01-HT TT89.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa2f8-a909-727f-ba35-f6a5fe859498/01-HT TT89.docx"
+            }
+          ]
+        },
+        {
+          "section": "Tờ khai áp dụng từ 01/07/2026 đến trước thời điểm theo lộ trình của cơ quan thuế theo quy định tại khoản 2 Điều 99 Thông tư số 89/2026/TT-BTC",
+          "position": 1,
+          "name": "Giấy đề nghị hoàn trả khoản thu ngân sách nhà nước",
+          "component_code": "TP-G12.0001010",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019fa331-d838-7149-87e1-75b1d04bf8c2",
+              "fileName": "01-HT TT80.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa331-d838-7149-87e1-75b1d04bf8c2/01-HT TT80.docx"
+            }
+          ]
+        },
+        {
+          "section": "Tờ khai áp dụng từ 01/07/2026 đến trước thời điểm theo lộ trình của cơ quan thuế theo quy định tại khoản 2 Điều 99 Thông tư số 89/2026/TT-BTC",
+          "position": 2,
+          "name": "Bảng kê chứng từ hoàn thuế VAT cho người nước ngoài xuất cảnh",
+          "component_code": "TP-G12.0001011",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019fa332-0600-71b8-b4de-3915acc3b12a",
+              "fileName": "01-4-HT-80.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa332-0600-71b8-b4de-3915acc3b12a/01-4-HT-80.docx"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c73-70ac-aa18-5bff359b1ad7",
+          "name": "Thông báo về việc hồ sơ chưa đủ điều kiện hoàn thuế/không được hoàn thuế theo mẫu số 04/TB-HT Phụ lục I ban hành kèm theo Thông tư số 89/2026/TT-BTC",
+          "code": "KQ.G12.001321"
+        },
+        {
+          "id": "019d2bb2-1c73-70ac-aa18-5c98b4676b45",
+          "name": "Quyết định về việc thanh toán cho ngân hàng thương mại số tiền đã ứng trước để hoàn trả thuế giá trị gia tăng cho người nước ngoài xuất cảnh và phí dịch vụ hoàn thuế ngân hàng thương mại được hưởng theo mẫu số 02/QĐHT Phụ lục I ban hành kèm theo Thông tư số 89/2026/TT-BTC",
+          "code": "KQ.G12.001322"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019f8db3-9765-740b-8b90-682677b9c421",
+          "name": "Thông tư quy định chi tiết một số điều của Luật Quản lý thuế và Nghị định số 252/2026/NĐ-CP của Chính phủ quy định chi tiết một số điều và biện pháp để tổ chức, hướng dẫn thi hành Luật Quản lý thuế",
+          "code": "89/2026/TT-BTC"
+        },
+        {
+          "id": "019e5e83-1282-771d-9014-49799413a4e5",
+          "name": "Luật số 108/2025/QH15 của Quốc hội: Luật Quản lý thuế",
+          "code": "108/2025/QH15"
+        },
+        {
+          "id": "019f64ed-e026-7299-b5f2-ca44a3964050",
+          "name": "Nghị định về thực hiện thủ tục hành chính theo cơ chế một cửa, một cửa liên thông tại Bộ phận Một cửa và Cổng Dịch vụ công quốc gia.",
+          "code": "118/2025/NĐ-CP "
+        },
+        {
+          "id": "019d2bb3-5d86-7760-a643-2e14de6cf380",
+          "name": "Thông tư số 19/2021/TT-BTC ngày 18/3/2021 của Bộ Tài chính hướng dẫn Giao dịch điện tử trong lĩnh vực thuế",
+          "code": "19/2021/TT-BTC"
+        },
+        {
+          "id": "019f356e-75e3-7494-a2f3-672d8dce61a6",
+          "name": "QUY ĐỊNH CHI TIẾT MỘT SỐ ĐIỀU VÀ BIỆN PHÁP ĐỂ TỔ CHỨC, HƯỚNG DẪN THI HÀNH LUẬT QUẢN LÝ THUẾ",
+          "code": "252/2026/NĐ-CP"
+        },
+        {
+          "id": "019f3ab7-431a-7019-8e6e-7d8230de7234",
+          "name": "Quy định về hoàn thuế giá trị gia tăng đối với hàng hóa của người nước ngoài, người Việt Nam định cư ở nước ngoài mua tại Việt Nam mang theo khi xuất cảnh.",
+          "code": "84/2026/TT-BTC "
+        },
+        {
+          "id": "019d2bb3-5d87-7195-a442-104ae6dd177c",
+          "name": "Luật Thuế giá tri gia tăng năm 2024",
+          "code": "48/2024/QH15"
+        }
+      ]
+    }
+  ]
+}

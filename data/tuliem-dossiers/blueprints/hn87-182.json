@@ -1,0 +1,109 @@
+{
+  "id": "hn87-182",
+  "ordinal": "182",
+  "procedure_code": "1.010736",
+  "name": "Tham vấn trong đánh giá tác động môi trường (cấp xã) (1.010736)",
+  "domain": "Môi trường (Bộ Nông nghiệp và Môi trường)",
+  "department_id": "ktdt",
+  "department": "Phòng Kinh tế, Hạ tầng và Đô thị",
+  "authority_as_published": "UBND cấp xã",
+  "execution_level_as_published": "Cấp Xã",
+  "receiving_location_as_published": "Điểm hỗ trợ DVC số",
+  "inventory_date": "2026-04-27",
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "source_urls": [
+    "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfa-5f3e-764e-96a8-f159b09b08cf"
+  ],
+  "current_dvc_match": true,
+  "lifecycle": null,
+  "scope": "hanoi_commune_notice_2026_04_27",
+  "scope_note": "Mốc kiểm kê cấp xã Hà Nội; áp dụng từng thủ tục tại Từ Liêm còn phải theo thẩm quyền/ủy quyền hiện hành.",
+  "status": "source_template_missing",
+  "components": [
+    {
+      "id": "hn87-182-c001",
+      "code": "000.00.00.G10-KQ005335",
+      "name": "01 bản chính nội dung tham vấn trong quá trình thực hiện đánh giá tác động môi trường (Phụ lục VIa ban hành kèm theo Nghị định số 08/2022/NĐ-CP, được sửa đổi, bổ sung tại Nghị định số 05/2025/NĐ-CP).",
+      "section": "",
+      "role": "needs_review",
+      "scenario_status": "requirement_needs_review",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfa-5f3e-764e-96a8-f159b09b08cf",
+      "source_detail_id": "019d2bfa-5f3e-764e-96a8-f159b09b08cf",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-182-c002",
+      "code": "000.00.00.G10-KQ005336",
+      "name": "- Báo cáo đánh giá tác động môi trường.",
+      "section": "",
+      "role": "applicant_prepared",
+      "scenario_status": "selected_for_test",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfa-5f3e-764e-96a8-f159b09b08cf",
+      "source_detail_id": "019d2bfa-5f3e-764e-96a8-f159b09b08cf",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-182-c003",
+      "code": "000.00.00.G10-KQ005334",
+      "name": "01 bản chính văn bản lấy ý kiến tham vấn (mẫu quy định tại Phụ lục VI ban hành kèm theo Nghị định số 08/2022/NĐ-CP được sửa đổi, bổ sung tại Nghị định số 05/2025/NĐ-CP).",
+      "section": "",
+      "role": "needs_review",
+      "scenario_status": "requirement_needs_review",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfa-5f3e-764e-96a8-f159b09b08cf",
+      "source_detail_id": "019d2bfa-5f3e-764e-96a8-f159b09b08cf",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    }
+  ],
+  "service_cases": [
+    {
+      "id": "019d2cf4-98a1-709e-8b36-a2c14deed59f",
+      "code": "1.010736.01",
+      "name": "Tham vấn trong đánh giá tác động môi trường (cấp xã) (1.010736)",
+      "source_processing_time": {
+        "qty": 15,
+        "type": "DAY"
+      },
+      "has_case_specific_components": false
+    }
+  ],
+  "selected_template_ids": [],
+  "source_component_groups": [
+    {
+      "name": "",
+      "component_count": 3,
+      "source_detail_id": "019d2bfa-5f3e-764e-96a8-f159b09b08cf"
+    }
+  ],
+  "conditional_component_groups": [],
+  "default_test_scenario": {
+    "channel": "direct",
+    "applicant_submits_self": true,
+    "authorized": false,
+    "special_case_flags": [],
+    "selected_conditional_group": null,
+    "case_selection_method": "ordinary_direct_submission",
+    "case_status": "scenario_for_testing_not_a_legal_eligibility_decision"
+  },
+  "requirement_note": "required_as_published được giữ nguyên; false không chứng minh giấy tờ luôn tùy chọn. Các nhóm executionCases có thể là mục giấy tờ/hướng dẫn, không phải các phương án loại trừ nhau."
+}

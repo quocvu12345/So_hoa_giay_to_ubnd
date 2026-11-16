@@ -1,0 +1,140 @@
+{
+  "id": "dvc-019d2bfc-453e-70eb-8edd-8723aa382f7e",
+  "procedure_code": "1.007863",
+  "name": "Thủ tục hải quan đối với hàng hóa đưa ra đưa vào kho bảo thuế",
+  "domain": "Hải quan",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.949182+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfc-453e-70eb-8edd-8723aa382f7e",
+      "code": "1.007863",
+      "name": "Thủ tục hải quan đối với hàng hóa đưa ra đưa vào kho bảo thuế",
+      "state": "ACTIVE",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1775640274218,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-453e-70eb-8edd-8723aa382f7e",
+      "raw_path": "evidence/dvc/details/019d2bfc-453e-70eb-8edd-8723aa382f7e.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "+ Vận tải đơn hoặc các chứng từ vận tải khác có giá trị tương đương đối với trường hợp hàng hóa vận chuyển bằng đường biển, đường hàng không, đường sắt, vận tải đa phương thức theo quy định của pháp luật (trừ hàng hoá nhập khẩu qua cửa khẩu biên giới đường bộ, hàng hoá mua bán giữa khu phi thuế quan và nội địa, hàng hóa nhập khẩu do người nhập cảnh mang theo đường hành lý): 01 bản chụp;",
+          "component_code": "000.00.00.G12-KQ5889",
+          "original_quantity": 0,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "+ Giấy phép nhập khẩu đối với hàng hóa phải có giấy phép nhập khẩu; Giấy phép nhập khẩu theo hạn ngạch thuế quan: 01 bản chính nếu xuất khẩu một lần hoặc 01 bản chụp kèm theo Phiếu theo dõi trừ lùi nếu xuất khẩu nhiều lần;",
+          "component_code": "000.00.00.G12-KQ5890",
+          "original_quantity": 0,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 3,
+          "name": "+ Hóa đơn thương mại trong trường hợp người mua phải thanh toán cho người bán: 01 bản chụp;",
+          "component_code": "000.00.00.G12-KQ5888",
+          "original_quantity": 0,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 4,
+          "name": "+ Giấy thông báo miễn kiểm tra hoặc giấy thông báo kết quả kiểm tra của cơ quan kiểm tra chuyên ngành theo quy định của pháp luật: 01 bản chính.",
+          "component_code": "000.00.00.G12-KQ5967",
+          "original_quantity": 0,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 5,
+          "name": "+ Chứng từ chứng nhận xuất xứ hàng hóa (Giấy chứng nhận xuất xứ hàng hóa hoặc Chứng từ tự chứng nhận xuất xứ): 01 bản chính hoặc chứng từ dưới dạng dữ liệu điện tử.",
+          "component_code": "000.00.00.G12-KQ5894",
+          "original_quantity": 0,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 6,
+          "name": "+ Tờ khai trị giá: Người khai hải quan khai tờ khai trị giá theo mẫu, gửi đến Hệ thống dưới dạng dữ liệu điện tử hoặc nộp cho cơ quan hải quan 02 bản chính (đối với trường hợp khai trên tờ khai hải quan giấy). Các trường hợp phải khai tờ khai trị giá và mẫu tờ khai trị giá thực hiện theo Thông tư của Bộ Tài chính quy định về việc xác định trị giá hải quan đối với hàng hóa xuất khẩu, nhập khẩu;",
+          "component_code": "000.00.00.G12-KQ5893",
+          "original_quantity": 0,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 7,
+          "name": "Đối với chứng từ quy định tại điểm d, điểm đ khoản này, nếu áp dụng cơ chế một cửa quốc gia, cơ quan quản lý nhà nước chuyên ngành gửi giấy phép nhập khẩu, văn bản thông báo kết quả kiểm tra, miễn kiểm tra chuyên ngành dưới dạng điện tử thông qua Cổng thông tin một cửa quốc gia, người khai hải quan không phải nộp khi làm thủ tục hải quan;",
+          "component_code": "000.00.00.G12-KQ8510",
+          "original_quantity": 0,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 8,
+          "name": "+ Tờ khai hàng hóa nhập khẩu theo các chỉ tiêu thông tin tại Phụ lục II ban hành kèm Thông tư số 38/2015/TT-BTC. Trường hợp thực hiện trên tờ khai hải quan giấy theo quy định tại khoản 2 Điều 25 Nghị định số 08/2015/NĐ-CP, người khai hải quan khai và nộp 02 bản chính tờ khai hàng hóa nhập khẩu theo mẫu HQ/2015/NK Phụ lục IV ban hành kèm Thông tư số 38/2015/TT-BTC;",
+          "component_code": "000.00.00.G12-KQ5899",
+          "original_quantity": 0,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c70-724b-96e0-46e541515789",
+          "name": "Thông quan hàng hóa nhập khẩu, xuất khẩu",
+          "code": "KQ.G12.000584"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7d-7398-be4d-1c6dbc289d7a",
+          "name": "Quy định về thủ tục hải quan; kiểm tra, giám sát hải quan; thuế xuất khẩu thuế nhập khẩu và quản lý thuế đối vớỉ hàng hoá xuất khẩu, nhập khẩu.",
+          "code": "38/2015/TT-BTC"
+        },
+        {
+          "id": "019d2bb3-5d7d-7398-be4d-ff62cdf67da5",
+          "name": "Luật 54/2014/QH13",
+          "code": "54/2014/QH13"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afe7-9c25863596db",
+          "name": "Nghị định 08/2015/NĐ-CP",
+          "code": "08/2015/NĐ-CP"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "id": "dvc-019d2bfb-a0bd-74de-a76c-8411ce260748",
+  "procedure_code": "1.013562",
+  "name": "Thủ tục cấp Giấy phép đi bờ cho thuyền viên nước ngoài",
+  "domain": "Quản lý biên giới",
+  "managing_agency": "Bộ Quốc phòng",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.981173+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfb-a0bd-74de-a76c-8411ce260748",
+      "code": "1.013562",
+      "name": "Thủ tục cấp Giấy phép đi bờ cho thuyền viên nước ngoài",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1777598650946,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-a0bd-74de-a76c-8411ce260748",
+      "raw_path": "evidence/dvc/details/019d2bfb-a0bd-74de-a76c-8411ce260748.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Đơn đề nghị đi bờ của thuyền viên (trường hợp chưa đăng ký tại Bản khai chung)",
+          "component_code": "000.00.00.G11-KQ0775",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c6f-72b5-bd09-d1c93d63e0ee",
+          "name": "Giấy phép đi bờ của thuyền viên do Biên phòng cửa khẩu cảng cấp",
+          "code": "KQ.G11.000269"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7f-719e-b471-10f0667bd234",
+          "name": "Quy định về quản lý, bảo an ninh, trật tự tại cửa khẩu cảng",
+          "code": "77/2017/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d86-7760-a63f-a5b5e3fdfa27",
+          "name": "Thông tư 138/2016/TT-BTC",
+          "code": "138/2016/TT-BTC"
+        }
+      ]
+    }
+  ]
+}

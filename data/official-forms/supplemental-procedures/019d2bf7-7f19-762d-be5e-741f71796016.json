@@ -1,0 +1,84 @@
+{
+  "id": "dvc-019d2bf7-7f19-762d-be5e-741f71796016",
+  "procedure_code": "1.010041",
+  "name": "Xác nhận thông tin về cư trú",
+  "domain": "Đăng ký, quản lý cư trú",
+  "managing_agency": "Bộ Công an",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:18.037318+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bf7-7f19-762d-be5e-741f71796016",
+      "code": "1.010041",
+      "name": "Xác nhận thông tin về cư trú",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1790740833537,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf7-7f19-762d-be5e-741f71796016",
+      "raw_path": "evidence/dvc/details/019d2bf7-7f19-762d-be5e-741f71796016.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Tờ khai thay đổi thông tin cư trú (mẫu CT01 ban hành kèm theo Thông tư số 116/2026/TT-BCA).",
+          "component_code": "000.00.00.G01-KQ004635",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "- Công dân khai báo thông tin theo biểu mẫu điện tử được cung cấp sẵn, không đính kèm biểu mẫu CT01.  - Xác nhận thông tin về cư trú có thể cấp cho cá nhân hoặc cho hộ gia đình: + Trường hợp cấp cho hộ gia đình phải do chủ hộ đề xuất, trường hợp thành viên hộ gia đình đề xuất thì phải có ủy quyền hoặc đồng ý của chủ hộ trừ trường hợp chủ hộ chết, mất tích, không đủ năng lực hành vi dân sự hoặc đang chấp hành án phạt tù thì phải có ý kiến của các thành viên khác đủ năng lực hành vi dân sự trong hộ gia đình. + Trường hợp cá nhân đề nghị không cần chủ hộ đồng ý, trong đó công dân được cung cấp đầy đủ thông tin có liên quan đến hộ gia đình trong giai đoạn công dân là thành viên của hộ gia đình đó. - Trường hợp công dân không tự thực hiện thủ tục thì được ủy quyền cho người khác thực hiện, trừ trường hợp người giám hộ, người đại diện thực hiện thủ tục về cư trú cho người được giám hộ, người được đại diện thì không phải ủy quyền.",
+          "component_code": "000.00.00.G01-KQ004653",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c37-76e8-b48c-715c6b426d4a",
+          "name": "Phiếu từ chối tiếp nhận, giải quyết hồ sơ (lĩnh vực cư trú)",
+          "code": "KQ.G01.000067"
+        },
+        {
+          "id": "019d2bb2-1c37-76e8-b48c-5e7c15ec06af",
+          "name": "Xác nhận thông tin về cư trú (CT07)",
+          "code": "KQ.G01.000062"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d85-73da-8eb9-f36f498aefcf",
+          "name": "Luật Cư trú 2020",
+          "code": "68/2020/QH14"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afeb-c1c82d7e48fe",
+          "name": "Nghị định quy định chi tiết một số điều và biện pháp thi hành Luật Cư trú",
+          "code": "154/2024/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7b-7049-8fc6-cde21d6c7dad",
+          "name": "Thông tư số 54/2025/TT-BCA ngày 01/7/2025 của Bộ trưởng Bộ Công an quy định về quy trình đăng ký cư trú.",
+          "code": "54/2025/TT-BCA"
+        },
+        {
+          "id": "01a0e5f3-d1fa-700d-bd8d-74c957958c2e",
+          "name": "Thông tư số 116/2026/TT-BCA ngày 29/6/2026 của Bộ trưởng Bộ Công an quy định chi tiết một số điều và biện pháp thi hành Luật Cư trú",
+          "code": "116/2026/TT-BCA"
+        }
+      ]
+    }
+  ]
+}

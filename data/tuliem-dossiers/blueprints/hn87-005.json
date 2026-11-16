@@ -1,0 +1,109 @@
+{
+  "id": "hn87-005",
+  "ordinal": "5",
+  "procedure_code": "1.013745",
+  "name": "Xác nhận và giải quyết chế độ ưu đãi người có công với cách mạng và thân nhân",
+  "domain": "Người có công",
+  "department_id": "vx",
+  "department": "Phòng Văn hóa - Xã hội",
+  "authority_as_published": "TW",
+  "execution_level_as_published": "Liên thông TW",
+  "receiving_location_as_published": "Điểm hỗ trợ DVC số",
+  "inventory_date": "2026-04-27",
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "source_urls": [
+    "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-2325-700f-b8e3-a689476ea383"
+  ],
+  "current_dvc_match": true,
+  "lifecycle": null,
+  "scope": "hanoi_commune_notice_2026_04_27",
+  "scope_note": "Mốc kiểm kê cấp xã Hà Nội; áp dụng từng thủ tục tại Từ Liêm còn phải theo thẩm quyền/ủy quyền hiện hành.",
+  "status": "source_template_missing",
+  "components": [
+    {
+      "id": "hn87-005-c001",
+      "code": "G09-KQ003210143",
+      "name": "(ii) Các giấy tờ được cấp trong thời gian tại ngũ có ghi mắc bệnh kèm bệnh án điều trị tâm thần do bệnh cũ tái phát của bệnh viện cấp tỉnh hoặc tương đương trở lên. Trường hợp sau khi xuất ngũ mà bệnh cũ tái phát dẫn đến tâm thần làm mất năng lực hành vi thì căn cứ vào bệnh án điều trị của bệnh viện cấp tỉnh hoặc tương đương trở lên.",
+      "section": "",
+      "role": "needs_review",
+      "scenario_status": "conditional_needs_review",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-2325-700f-b8e3-a689476ea383",
+      "source_detail_id": "019d2bfb-2325-700f-b8e3-a689476ea383",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-005-c002",
+      "code": "G09-KQ003210144",
+      "name": "(iii) Quyết định phục viên hoặc quyết định xuất ngũ. Trường hợp không còn quyết định thì phải có giấy xác nhận của Bộ Chỉ huy quân sự cấp tỉnh hoặc cơ quan có thẩm quyền theo quy định của Bộ Công an.",
+      "section": "",
+      "role": "needs_review",
+      "scenario_status": "conditional_needs_review",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-2325-700f-b8e3-a689476ea383",
+      "source_detail_id": "019d2bfb-2325-700f-b8e3-a689476ea383",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-005-c003",
+      "code": "G09-KQ003210145",
+      "name": "(i) Một trong các giấy tờ sau:  Phiếu chuyển thương, chuyển viện; bản sao lý lịch đảng viên, lý lịch quân nhân, lý lịch công an nhân dân có ghi đầy đủ quá trình công tác; Giấy xác nhận hoạt động tại địa bàn có điều kiện kinh tế - xã hội đặc biệt khó khăn do Thủ trưởng cơ quan, đơn vị có thẩm quyền cấp căn cứ vào hồ sơ, lý lịch và địa bàn hoạt động; Quyết định giao đi làm nghĩa vụ quốc tế do Thủ trưởng cơ quan, đơn vị có thẩm quyền cấp; Trường hợp sau khi xuất ngũ mà bệnh cũ tái phát dẫn đến tâm thần làm mất năng lực hành vi thì căn cứ xác nhận của cơ quan có thẩm quyền theo quy định của Bộ Quốc phòng, Bộ Công an.",
+      "section": "",
+      "role": "supporting_submit",
+      "scenario_status": "conditional_needs_review",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-2325-700f-b8e3-a689476ea383",
+      "source_detail_id": "019d2bfb-2325-700f-b8e3-a689476ea383",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    }
+  ],
+  "service_cases": [
+    {
+      "id": "019dbe25-f36e-76fa-8634-123ef908e863",
+      "code": "1.013745.01",
+      "name": "Xác nhận và giải quyết chế độ ưu đãi người có công với cách mạng và thân nhân",
+      "source_processing_time": {
+        "qty": 30,
+        "type": "DAY"
+      },
+      "has_case_specific_components": false
+    }
+  ],
+  "selected_template_ids": [],
+  "source_component_groups": [
+    {
+      "name": "",
+      "component_count": 3,
+      "source_detail_id": "019d2bfb-2325-700f-b8e3-a689476ea383"
+    }
+  ],
+  "conditional_component_groups": [],
+  "default_test_scenario": {
+    "channel": "direct",
+    "applicant_submits_self": true,
+    "authorized": false,
+    "special_case_flags": [],
+    "selected_conditional_group": null,
+    "case_selection_method": "ordinary_direct_submission",
+    "case_status": "scenario_for_testing_not_a_legal_eligibility_decision"
+  },
+  "requirement_note": "required_as_published được giữ nguyên; false không chứng minh giấy tờ luôn tùy chọn. Các nhóm executionCases có thể là mục giấy tờ/hướng dẫn, không phải các phương án loại trừ nhau."
+}

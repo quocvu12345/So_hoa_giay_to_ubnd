@@ -1,0 +1,135 @@
+{
+  "ordinal": "48",
+  "managing_agency": "Sở Nội Vụ",
+  "procedure_code": "1.013707",
+  "name": "Thủ tục chia, tách; sát nhập; hợp nhất hội.",
+  "domain": "Hội",
+  "ministry_decision": "627/QĐ-BNV ngày 20/6/2025",
+  "hanoi_decision": "963/QĐ-TTPVHCC ngày 27/6/2025",
+  "workflow_decision": "1062/QĐ-TTPVHCC ngày 12/7/2025",
+  "fees": "Không quy định",
+  "execution_level": "Cấp xã",
+  "competent_authority": "UBND cấp xã",
+  "delegation_decision": "",
+  "delegation_expiry": "",
+  "receiving_location": "Điểm hỗ trợ DVC số",
+  "id": "hn87-048",
+  "source_page": 2,
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "inventory_date": "2026-04-27",
+  "checked_at": "2026-11-12T22:24:34.523021+07:00",
+  "details": [
+    {
+      "id": "019d2bfb-1b5d-701d-a936-e90dd356c586",
+      "code": "1.013707",
+      "name": "Chia, tách; sáp nhập; hợp nhất hội",
+      "state": "ACTIVE",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1776324066219,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-1b5d-701d-a936-e90dd356c586",
+      "raw_path": "evidence/dvc/details/019d2bfb-1b5d-701d-a936-e90dd356c586.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "- Văn bản xác nhận nơi dự kiến đặt trụ sở của hội hình thành mới do chia, tách; sáp nhập; hợp nhất hội..",
+          "component_code": "G09-KQ002429",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "- Đơn đề nghị chia, tách; sáp nhập; hợp nhất hội (theo mẫu)..",
+          "component_code": "G09-KQ002423",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 3,
+          "name": "- Đề án chia, tách; sáp nhập; hợp nhất hội..",
+          "component_code": "G09-KQ002424",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 4,
+          "name": "- Nghị quyết của Ban chấp hành hội về việc chia, tách; sáp nhập; hợp nhất hội..",
+          "component_code": "G09-KQ002425",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 5,
+          "name": "- Sơ yếu lý lịch cá nhân, phiếu lý lịch tư pháp số 1 (bản chính) không quá 06 tháng tính đến ngày nộp hồ sơ của nhân sự dự kiến là chủ tịch của hội mới..",
+          "component_code": "G09-KQ002428",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 6,
+          "name": "- Dự thảo điều lệ hội mới do chia, tách; sáp nhập; hợp nhất hội..",
+          "component_code": "G09-KQ002426",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 7,
+          "name": "- Danh sách ban chấp hành và ban kiểm tra của hội mới do chia, tách; sáp nhập; hợp nhất hội..",
+          "component_code": "G09-KQ002427",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c4c-77ab-bf6d-ea76588c6ea0",
+          "name": "Quyết định cho phép chia, tách; sáp nhập; hợp nhất hội",
+          "code": "KQ.G09.000186"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7e-72d1-afe9-f1533335aca7",
+          "name": "Nghị định số 126/2024/NĐ-CP của Chính phủ: Quy định về tổ chức, hoạt động và quản lý hội",
+          "code": "126/2024/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afea-1c153ca6400f",
+          "name": "Quy định về phân định thẩm quyền của chính quyền địa phương 02 cấp trong lĩnh vực quản lý nhà nước của Bộ Nội vụ",
+          "code": "129/2025/NĐ-CP"
+        }
+      ]
+    }
+  ],
+  "lookup_status": "retrieved",
+  "currency_status": "snapshot_requires_later_amendment_check",
+  "errors": []
+}

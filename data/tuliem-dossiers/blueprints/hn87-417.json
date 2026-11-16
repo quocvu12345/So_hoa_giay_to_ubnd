@@ -1,0 +1,215 @@
+{
+  "id": "hn87-417",
+  "ordinal": "417",
+  "procedure_code": "1.014035",
+  "name": "Dừng thực hiện thủ tục đăng ký hộ kinh doanh",
+  "domain": "Thành lập và hoạt động của hộ kinh doanh",
+  "department_id": "ktdt",
+  "department": "Phòng Kinh tế, Hạ tầng và Đô thị",
+  "authority_as_published": "UBND cấp xã",
+  "execution_level_as_published": "Cấp xã",
+  "receiving_location_as_published": "Điểm hỗ trợ DVC số",
+  "inventory_date": "2026-04-27",
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "source_urls": [
+    "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-ca6b-7492-af2b-d3147fc084c4"
+  ],
+  "current_dvc_match": true,
+  "lifecycle": null,
+  "scope": "hanoi_commune_notice_2026_04_27",
+  "scope_note": "Mốc kiểm kê cấp xã Hà Nội; áp dụng từng thủ tục tại Từ Liêm còn phải theo thẩm quyền/ủy quyền hiện hành.",
+  "status": "has_fillable_templates",
+  "components": [
+    {
+      "id": "hn87-417-c001",
+      "code": "000.00.00.G12-332212",
+      "name": "- Giấy đề nghị dừng thực hiện thủ tục đăng ký hộ kinh doanh theo Mẫu số 6, Phụ lục II, Thông tư số 68/2025/TT-BTC ngày 01/7/2025 của Bộ trưởng Bộ Tài chính.",
+      "section": "* Thành phần hồ sơ:",
+      "role": "applicant_form",
+      "scenario_status": "selected_for_test",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-ca6b-7492-af2b-d3147fc084c4",
+      "source_detail_id": "019d2bfc-ca6b-7492-af2b-d3147fc084c4",
+      "embedded_other_requirements": false,
+      "template_candidates": [
+        "template-49ed708b7e8b8a19"
+      ],
+      "template_selection_method": "first_matching_source_attachment",
+      "selected_template_id": "template-49ed708b7e8b8a19",
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-417-c002",
+      "code": "000.00.00.G12-333245",
+      "name": "Văn bản ủy quyền cho cá nhân thực hiện thủ tục liên quan đến đăng ký hộ kinh doanh. Văn bản ủy quyền này không bắt buộc phải công chứng, chứng thực.",
+      "section": "* Trường hợp ủy quyền thực hiện thủ tục thì hồ sơ phải kèm theo một trong những giấy tờ sau: - Trường hợp ủy quyền cho cá nhân thực hiện thủ tục đăng ký hộ kinh doanh, kèm theo hồ sơ đăng ký hộ kinh doanh bao gồm:",
+      "role": "applicant_prepared",
+      "scenario_status": "conditional_not_selected",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-ca6b-7492-af2b-d3147fc084c4",
+      "source_detail_id": "019d2bfc-ca6b-7492-af2b-d3147fc084c4",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-417-c003",
+      "code": "000.00.00.G12-2223456",
+      "name": "(i) Bản sao hợp đồng cung cấp dịch vụ với tổ chức làm dịch vụ thực hiện thủ tục liên quan đến đăng ký hộ kinh doanh;",
+      "section": "* Trường hợp ủy quyền thực hiện thủ tục thì hồ sơ phải kèm theo một trong những giấy tờ sau:- Trường hợp ủy quyền cho tổ chức thực hiện thủ tục đăng ký hộ kinh doanh, kèm theo hồ sơ bao gồm:",
+      "role": "supporting_submit",
+      "scenario_status": "conditional_not_selected",
+      "required_as_published": false,
+      "original_quantity": 0,
+      "copy_quantity": 1,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-ca6b-7492-af2b-d3147fc084c4",
+      "source_detail_id": "019d2bfc-ca6b-7492-af2b-d3147fc084c4",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-417-c004",
+      "code": "000.00.00.G12-33214",
+      "name": "(ii) Giấy giới thiệu của tổ chức đó cho cá nhân trực tiếp thực hiện thủ tục liên quan đến đăng ký hộ kinh doanh.",
+      "section": "* Trường hợp ủy quyền thực hiện thủ tục thì hồ sơ phải kèm theo một trong những giấy tờ sau:- Trường hợp ủy quyền cho tổ chức thực hiện thủ tục đăng ký hộ kinh doanh, kèm theo hồ sơ bao gồm:",
+      "role": "needs_review",
+      "scenario_status": "conditional_not_selected",
+      "required_as_published": false,
+      "original_quantity": 0,
+      "copy_quantity": 1,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-ca6b-7492-af2b-d3147fc084c4",
+      "source_detail_id": "019d2bfc-ca6b-7492-af2b-d3147fc084c4",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-417-c005",
+      "code": "000.00.00.G12-333124",
+      "name": "Bản sao phiếu gửi hồ sơ theo mẫu do doanh nghiệp cung ứng dịch vụ bưu chính công ích phát hành có chữ ký xác nhận của nhân viên bưu chính và chủ hộ kinh doanh.",
+      "section": "* Trường hợp ủy quyền thực hiện thủ tục thì hồ sơ phải kèm theo một trong những giấy tờ sau:- Trường hợp ủy quyền cho đơn vị cung cấp dịch vụ bưu chính công ích thực hiện thủ tục đăng ký hộ kinh doanh, hồ sơ bao gồm:",
+      "role": "supporting_submit",
+      "scenario_status": "conditional_not_selected",
+      "required_as_published": false,
+      "original_quantity": 0,
+      "copy_quantity": 1,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-ca6b-7492-af2b-d3147fc084c4",
+      "source_detail_id": "019d2bfc-ca6b-7492-af2b-d3147fc084c4",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-417-c006",
+      "code": "000.00.00.G12-22345",
+      "name": "(i) Bản sao hợp đồng cung cấp dịch vụ với tổ chức làm dịch vụ thực hiện thủ tục liên quan đến đăng ký hộ kinh doanh;",
+      "section": "* Trường hợp ủy quyền thực hiện thủ tục thì hồ sơ phải kèm theo một trong những giấy tờ sau:- Trường hợp ủy quyền cho đơn vị cung cấp dịch vụ bưu chính không phải là bưu chính công ích thực hiện thủ tục đăng ký hộ kinh doanh, hồ sơ bao gồm:",
+      "role": "supporting_submit",
+      "scenario_status": "conditional_not_selected",
+      "required_as_published": false,
+      "original_quantity": 0,
+      "copy_quantity": 1,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-ca6b-7492-af2b-d3147fc084c4",
+      "source_detail_id": "019d2bfc-ca6b-7492-af2b-d3147fc084c4",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-417-c007",
+      "code": "000.00.00.G12-133245",
+      "name": "(ii) Giấy giới thiệu của tổ chức đó cho cá nhân trực tiếp thực hiện thủ tục liên quan đến đăng ký hộ kinh doanh. - Người ủy quyền và người được ủy quyền thực hiện thủ tục đăng ký hộ kinh doanh chịu trách nhiệm trước pháp luật về tính hợp pháp, trung thực và chính xác của việc ủy quyền. Người ủy quyền và người được ủy quyền phải thực hiện xác thực điện tử để được cấp đăng ký hộ kinh doanh khi thực hiện thủ tục đăng ký thành lập hộ kinh doanh, đăng ký thay đổi chủ hộ kinh doanh, đăng ký thay đổi thành viên hộ gia đình đăng ký hộ kinh doanh.  Trường hợp việc xác thực điện tử bị gián đoạn thì người ủy quyền thực hiện việc xác thực điện tử sau khi được cấp đăng ký hộ kinh doanh. Trường hợp người ủy quyền không xác nhận hoặc xác nhận không ủy quyền thực hiện thủ tục đăng ký hộ kinh doanh thì Cơ quan đăng ký kinh doanh cấp xã yêu cầu hộ kinh doanh báo cáo theo quy định tại khoản 6 Điều 22 Nghị định số 168/2026/NĐ-CP. Trường hợp chưa có tài khoản định danh điện tử để thực hiện xác thực điện tử thì hồ sơ đăng ký hộ kinh doanh phải kèm theo bản sao thẻ Căn cước hoặc thẻ Căn cước công dân còn hiệu lực của người ủy quyền.",
+      "section": "* Trường hợp ủy quyền thực hiện thủ tục thì hồ sơ phải kèm theo một trong những giấy tờ sau:- Trường hợp ủy quyền cho đơn vị cung cấp dịch vụ bưu chính không phải là bưu chính công ích thực hiện thủ tục đăng ký hộ kinh doanh, hồ sơ bao gồm:",
+      "role": "instruction",
+      "scenario_status": "instruction_only",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-ca6b-7492-af2b-d3147fc084c4",
+      "source_detail_id": "019d2bfc-ca6b-7492-af2b-d3147fc084c4",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    }
+  ],
+  "service_cases": [
+    {
+      "id": "019d2d40-2f92-7340-a588-135b375b4348",
+      "code": "1.014035.01",
+      "name": "Dừng thực hiện thủ tục đăng ký hộ kinh doanh",
+      "source_processing_time": {
+        "qty": 3,
+        "type": "WORKING_DAY"
+      },
+      "has_case_specific_components": false
+    },
+    {
+      "id": "019fb11f-eafb-7276-86dd-1df9a236de38",
+      "code": "1.014035.01",
+      "name": "Dừng thực hiện thủ tục đăng ký hộ kinh doanh",
+      "source_processing_time": {
+        "qty": 3,
+        "type": "WORKING_DAY"
+      },
+      "has_case_specific_components": false
+    }
+  ],
+  "selected_template_ids": [
+    "template-49ed708b7e8b8a19"
+  ],
+  "source_component_groups": [
+    {
+      "name": "* Thành phần hồ sơ:",
+      "component_count": 1,
+      "source_detail_id": "019d2bfc-ca6b-7492-af2b-d3147fc084c4"
+    },
+    {
+      "name": "* Trường hợp ủy quyền thực hiện thủ tục thì hồ sơ phải kèm theo một trong những giấy tờ sau: - Trường hợp ủy quyền cho cá nhân thực hiện thủ tục đăng ký hộ kinh doanh, kèm theo hồ sơ đăng ký hộ kinh doanh bao gồm:",
+      "component_count": 1,
+      "source_detail_id": "019d2bfc-ca6b-7492-af2b-d3147fc084c4"
+    },
+    {
+      "name": "* Trường hợp ủy quyền thực hiện thủ tục thì hồ sơ phải kèm theo một trong những giấy tờ sau:- Trường hợp ủy quyền cho tổ chức thực hiện thủ tục đăng ký hộ kinh doanh, kèm theo hồ sơ bao gồm:",
+      "component_count": 2,
+      "source_detail_id": "019d2bfc-ca6b-7492-af2b-d3147fc084c4"
+    },
+    {
+      "name": "* Trường hợp ủy quyền thực hiện thủ tục thì hồ sơ phải kèm theo một trong những giấy tờ sau:- Trường hợp ủy quyền cho đơn vị cung cấp dịch vụ bưu chính công ích thực hiện thủ tục đăng ký hộ kinh doanh, hồ sơ bao gồm:",
+      "component_count": 1,
+      "source_detail_id": "019d2bfc-ca6b-7492-af2b-d3147fc084c4"
+    },
+    {
+      "name": "* Trường hợp ủy quyền thực hiện thủ tục thì hồ sơ phải kèm theo một trong những giấy tờ sau:- Trường hợp ủy quyền cho đơn vị cung cấp dịch vụ bưu chính không phải là bưu chính công ích thực hiện thủ tục đăng ký hộ kinh doanh, hồ sơ bao gồm:",
+      "component_count": 2,
+      "source_detail_id": "019d2bfc-ca6b-7492-af2b-d3147fc084c4"
+    }
+  ],
+  "conditional_component_groups": [],
+  "default_test_scenario": {
+    "channel": "direct",
+    "applicant_submits_self": true,
+    "authorized": false,
+    "special_case_flags": [],
+    "selected_conditional_group": null,
+    "case_selection_method": "ordinary_direct_submission",
+    "case_status": "scenario_for_testing_not_a_legal_eligibility_decision"
+  },
+  "requirement_note": "required_as_published được giữ nguyên; false không chứng minh giấy tờ luôn tùy chọn. Các nhóm executionCases có thể là mục giấy tờ/hướng dẫn, không phải các phương án loại trừ nhau."
+}

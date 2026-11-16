@@ -1,0 +1,163 @@
+{
+  "id": "hn87-205",
+  "ordinal": "205",
+  "procedure_code": "2.000609",
+  "name": "Thông báo tổ chức hội nghị, hội thảo, đào tạo về bán hàng đa cấp",
+  "domain": "Quản lý bán hàng đa cấp -> Quản lý hoạt động kinh doanh theo phương thức đa cấp",
+  "department_id": "ktdt",
+  "department": "Phòng Kinh tế, Hạ tầng và Đô thị",
+  "authority_as_published": "UBND cấp xã",
+  "execution_level_as_published": "Cấp xã",
+  "receiving_location_as_published": "Chi nhánh TTPVHCC",
+  "inventory_date": "2026-04-27",
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "source_urls": [
+    "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf8-3309-72b5-8647-fc6590fbe3e0"
+  ],
+  "current_dvc_match": false,
+  "lifecycle": null,
+  "scope": "hanoi_commune_notice_2026_04_27",
+  "scope_note": "Mốc kiểm kê cấp xã Hà Nội; áp dụng từng thủ tục tại Từ Liêm còn phải theo thẩm quyền/ủy quyền hiện hành.",
+  "status": "source_template_missing",
+  "components": [
+    {
+      "id": "hn87-205-c001",
+      "code": "DAC-34",
+      "name": "- Thông báo tổ chức hội nghị, hội thảo, đào tạo về bán hàng đa cấp theo Mẫu số 13 tại Phụ lục ban hành kèm theo Nghị định số 137/2026/NĐ-CP.",
+      "section": "",
+      "role": "agency_prepared",
+      "scenario_status": "agency_reserved",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf8-3309-72b5-8647-fc6590fbe3e0",
+      "source_detail_id": "019d2bf8-3309-72b5-8647-fc6590fbe3e0",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-205-c002",
+      "code": "DAC-35",
+      "name": "- Các nội dung chi tiết, tài liệu trình bày tại hội thảo, số lượng người tham gia dự kiến;",
+      "section": "",
+      "role": "needs_review",
+      "scenario_status": "requirement_needs_review",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf8-3309-72b5-8647-fc6590fbe3e0",
+      "source_detail_id": "019d2bf8-3309-72b5-8647-fc6590fbe3e0",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-205-c003",
+      "code": "DAC-36",
+      "name": "- Danh sách báo cáo viên tại hội nghị, hội thảo, đào tạo kèm theo hợp đồng ủy quyền của doanh nghiệp, trong đó quy định rõ quyền hạn, trách nhiệm, nội dung báo cáo của báo cáo viên;",
+      "section": "",
+      "role": "instruction",
+      "scenario_status": "instruction_only",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf8-3309-72b5-8647-fc6590fbe3e0",
+      "source_detail_id": "019d2bf8-3309-72b5-8647-fc6590fbe3e0",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-205-c004",
+      "code": "DAC-37",
+      "name": "- 01 văn bản ủy quyền trong trường hợp doanh nghiệp ủy quyền cho cá nhân thực hiện đào tạo hoặc tổ chức hội nghị, hội thảo;",
+      "section": "",
+      "role": "applicant_prepared",
+      "scenario_status": "conditional_not_selected",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf8-3309-72b5-8647-fc6590fbe3e0",
+      "source_detail_id": "019d2bf8-3309-72b5-8647-fc6590fbe3e0",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-205-c005",
+      "code": "DAC-38",
+      "name": "- Thông tin tài khoản hoặc đường dẫn truy cập vào hội nghị, hội thảo, đào tạo trong trường hợp tổ chức theo hình thức trực tuyến.",
+      "section": "",
+      "role": "needs_review",
+      "scenario_status": "conditional_needs_review",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf8-3309-72b5-8647-fc6590fbe3e0",
+      "source_detail_id": "019d2bf8-3309-72b5-8647-fc6590fbe3e0",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-205-c006",
+      "code": "DAC-39",
+      "name": "Doanh nghiệp bán hàng đa cấp có thể thông báo về việc tổ chức nhiều hội nghị, hội thảo, đào tạo về bán hàng đa cấp trong cùng một văn bản thông báo nhưng không quá 03 tháng kể từ ngày nộp hồ sơ thông báo.",
+      "section": "",
+      "role": "needs_review",
+      "scenario_status": "requirement_needs_review",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf8-3309-72b5-8647-fc6590fbe3e0",
+      "source_detail_id": "019d2bf8-3309-72b5-8647-fc6590fbe3e0",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    }
+  ],
+  "service_cases": [
+    {
+      "id": "019d2c99-c61f-727d-b4b8-6005f60ee454",
+      "code": "2.000609.01",
+      "name": "Thông báo tổ chức hội nghị, hội thảo, đào tạo về bán hàng đa cấp",
+      "source_processing_time": {
+        "qty": 5,
+        "type": "WORKING_DAY"
+      },
+      "has_case_specific_components": false
+    }
+  ],
+  "selected_template_ids": [],
+  "source_component_groups": [
+    {
+      "name": "",
+      "component_count": 6,
+      "source_detail_id": "019d2bf8-3309-72b5-8647-fc6590fbe3e0"
+    }
+  ],
+  "conditional_component_groups": [],
+  "default_test_scenario": {
+    "channel": "direct",
+    "applicant_submits_self": true,
+    "authorized": false,
+    "special_case_flags": [],
+    "selected_conditional_group": null,
+    "case_selection_method": "ordinary_direct_submission",
+    "case_status": "scenario_for_testing_not_a_legal_eligibility_decision"
+  },
+  "requirement_note": "required_as_published được giữ nguyên; false không chứng minh giấy tờ luôn tùy chọn. Các nhóm executionCases có thể là mục giấy tờ/hướng dẫn, không phải các phương án loại trừ nhau."
+}

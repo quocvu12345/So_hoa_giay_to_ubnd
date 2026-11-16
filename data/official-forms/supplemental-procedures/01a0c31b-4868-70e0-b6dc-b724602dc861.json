@@ -1,0 +1,121 @@
+{
+  "id": "dvc-01a0c31b-4868-70e0-b6dc-b724602dc861",
+  "procedure_code": "1.116678",
+  "name": "Quyết toán tiền cấp quyền khai thác khoáng sản thuộc thẩm quyền của Chủ tịch Ủy ban nhân dân cấp xã",
+  "domain": "Địa chất và khoáng sản",
+  "managing_agency": "Bộ Công thương",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.471615+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "01a0c31b-4868-70e0-b6dc-b724602dc861",
+      "code": "1.116678",
+      "name": "Quyết toán tiền cấp quyền khai thác khoáng sản thuộc thẩm quyền của Chủ tịch Ủy ban nhân dân cấp xã",
+      "state": "ACTIVE",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1790515514398,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/01a0c31b-4868-70e0-b6dc-b724602dc861",
+      "raw_path": "evidence/dvc/details/01a0c31b-4868-70e0-b6dc-b724602dc861.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Văn bản đề nghị quyết toán tiền cấp quyền khai thác khoáng sản",
+          "component_code": "TPHS.DCKS.53",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "01a0e182-44e3-710e-9b15-cb3e49cdaab3",
+              "fileName": "Mau 04_Phu luc II_58.2026.TT-BCT.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/01a0e182-44e3-710e-9b15-cb3e49cdaab3/Mau 04_Phu luc II_58.2026.TT-BCT.docx"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Bản kê khai thông tin quyết toán tiền cấp quyền khai thác khoáng sản",
+          "component_code": "TPHS.DCKS.54",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "01a0e182-bb4e-76b8-8949-1b77ce47431d",
+              "fileName": "Mau 05_Phu luc II_58.2026.TT-BCT.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/01a0e182-bb4e-76b8-8949-1b77ce47431d/Mau 05_Phu luc II_58.2026.TT-BCT.docx"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 3,
+          "name": "Báo cáo thống kê, kiểm kê trữ lượng, khối lượng khoáng sản đã khai thác, trữ lượng, khối lượng khoáng sản được phép khai thác còn lại hàng năm trong kỳ quyết toán",
+          "component_code": "TPHS.DCKS.150",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "01a0e2a3-c0b3-7574-9c4b-8f56fcdd4bac",
+              "fileName": "Mau 06_Phu luc V_54.2026.TT-BCT.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/01a0e2a3-c0b3-7574-9c4b-8f56fcdd4bac/Mau 06_Phu luc V_54.2026.TT-BCT.docx"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "id": "01a0e185-0f89-75d5-b983-bf687f7bcde5",
+          "name": "Thông báo quyết toán tiền cấp quyền khai thác khoáng sản",
+          "code": "KQ.G02.000625"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d85-73da-8eb8-298b0b3e5261",
+          "name": "Luật Địa chất và khoáng sản sửa đổi 2025",
+          "code": "147/2025/QH15"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b673-7f8ef38db354",
+          "name": "Luật Địa chất và Khoáng sản",
+          "code": "54/2024/QH15"
+        },
+        {
+          "id": "019d2bb3-5d86-7760-a643-57895d9499c0",
+          "name": "193/2025/NĐ-CP",
+          "code": "193/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b677-ebdeb83adab1",
+          "name": "Nghị định số 21/2026/NĐ-CP ngày 16/01/2026 của Chính phủ",
+          "code": "21/2026/NĐ-CP"
+        },
+        {
+          "id": "01a0d169-8318-727d-8919-9f1d8430cc63",
+          "name": "Về xử lý khó khăn, vướng mắc liên quan đến chức năng, nhiệm vụ, quyền hạn quản lý nhà nước về khu công nghiệp, địa chất, khoáng sản",
+          "code": "66.25/2026/NQ-CP"
+        },
+        {
+          "id": "01a0e0ed-dfa2-720b-9c4e-425e2087f320",
+          "name": "Quy định về phương pháp xác định chi phí đánh giá tiềm năng khoáng sản, thăm dò khoáng sản phải hoàn trả; mẫu văn bản trong hồ sơ xác định, phê duyệt chi phí đánh giá tiềm năng khoáng sản, thăm dò khoáng sản phải hoàn trả; mẫu văn bản trong hồ sơ xác định, phê duyệt, quyết toán tiền cấp quyền khai thác khoáng sản; mẫu văn bản trong đấu giá quyền khai thác khoáng sản",
+          "code": "58/2026/TT-BCT"
+        }
+      ]
+    }
+  ]
+}

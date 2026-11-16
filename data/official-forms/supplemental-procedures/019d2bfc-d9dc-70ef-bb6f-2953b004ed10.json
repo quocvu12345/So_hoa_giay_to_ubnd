@@ -1,0 +1,62 @@
+{
+  "id": "dvc-019d2bfc-d9dc-70ef-bb6f-2953b004ed10",
+  "procedure_code": "2.001201",
+  "name": "Thủ tục hải quan đối với hàng hóa từ kho ngoại quan đưa vào nội địa hoặc nhập khẩu vào khu phi thuế quan",
+  "domain": "Hải quan",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.909866+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfc-d9dc-70ef-bb6f-2953b004ed10",
+      "code": "2.001201",
+      "name": "Thủ tục hải quan đối với hàng hóa từ kho ngoại quan đưa vào nội địa hoặc nhập khẩu vào khu phi thuế quan",
+      "state": "ACTIVE",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1775639356720,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-d9dc-70ef-bb6f-2953b004ed10",
+      "raw_path": "evidence/dvc/details/019d2bfc-d9dc-70ef-bb6f-2953b004ed10.json",
+      "components": [
+        {
+          "section": "Thành phần hồ sơ",
+          "position": 1,
+          "name": "\tkhông quy định",
+          "component_code": "000.00.00.G13-KQ0520",
+          "original_quantity": 0,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7d-7398-be48-bda1f1f496c4",
+          "name": "Hướng dẫn thủ tục hải quan đối với hoạt động xuất, nhập xăng dầu, nguyên liệu để pha chế xăng dầu và hoạt động pha chế chuyển đổi chủng loại xăng dầu tại kho ngoại quan xăng dầu",
+          "code": "106/2016/TT-BTC"
+        },
+        {
+          "id": "019d2bb3-5d7d-7398-be4d-1c6dbc289d7a",
+          "name": "Quy định về thủ tục hải quan; kiểm tra, giám sát hải quan; thuế xuất khẩu thuế nhập khẩu và quản lý thuế đối vớỉ hàng hoá xuất khẩu, nhập khẩu.",
+          "code": "38/2015/TT-BTC"
+        },
+        {
+          "id": "019d2bb3-5d7d-7398-be4d-ff62cdf67da5",
+          "name": "Luật 54/2014/QH13",
+          "code": "54/2014/QH13"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afe7-9c25863596db",
+          "name": "Nghị định 08/2015/NĐ-CP",
+          "code": "08/2015/NĐ-CP"
+        }
+      ]
+    }
+  ]
+}

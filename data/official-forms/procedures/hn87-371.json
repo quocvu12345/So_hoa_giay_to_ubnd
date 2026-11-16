@@ -1,0 +1,71 @@
+{
+  "ordinal": "371",
+  "managing_agency": "Công an Thành phố",
+  "procedure_code": "3.000510",
+  "name": "Chế độ, chính sách đối với người được huy động, người tham gia phòng cháy, chữa cháy, cứu nạn, cứu hộ chưa tham gia bảo hiểm xã hội, bị chết",
+  "domain": "Phòng cháy, chữa cháy (Bộ Công an)",
+  "ministry_decision": "5461/QĐ-BCA-C07 ngày 27/6/2025",
+  "hanoi_decision": "1167/QĐ-TTPVHCC ngày 12/8/2025",
+  "workflow_decision": "129/QĐ-TTPVHCC ngày 28/01/2026",
+  "fees": "Không quy định",
+  "execution_level": "Cấp xã",
+  "competent_authority": "UBND cấp xã",
+  "delegation_decision": "",
+  "delegation_expiry": "",
+  "receiving_location": "Điểm hỗ trợ DVC số",
+  "id": "hn87-371",
+  "source_page": 15,
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "inventory_date": "2026-04-27",
+  "checked_at": "2026-11-12T22:25:01.003915+07:00",
+  "details": [
+    {
+      "id": "019d2bf7-cd22-7734-b958-0f32053a103c",
+      "code": "3.000510",
+      "name": "Chế độ, chính sách đối với người được huy động, người tham gia phòng cháy, chữa cháy, cứu nạn, cứu hộ chưa tham gia bảo hiểm xã hội bị chết",
+      "state": "ACTIVE",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1777390214577,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf7-cd22-7734-b958-0f32053a103c",
+      "raw_path": "evidence/dvc/details/019d2bf7-cd22-7734-b958-0f32053a103c.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Đơn đề nghị trợ cấp tiền tuất, tiền mai táng phí (Mẫu số PC22 kèm theo Nghị định số 105/2025/NĐ-CP ngày 15/5/2025 của Chính Phủ); giấy chứng tử hoặc trích lục khai tử.  Thông tin về thành phần hồ sơ khi đã được kết nối, chia sẻ, cập nhật trên cơ sở dữ liệu quốc gia hoặc cơ sở dữ liệu chuyên ngành thì cơ quan có thẩm quyền giải quyết phải khai thác trực tuyến để giải quyết mà không được yêu cầu người đề nghị cung cấp hồ sơ giấy.",
+          "component_code": "000.00.00.G01-KQ003464",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019dd042-1a90-7063-932f-3905482f11e4",
+              "fileName": "PC22.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019dd042-1a90-7063-932f-3905482f11e4/PC22.docx"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c38-75c9-8e11-d65d3d037f77",
+          "name": "Quyết định chi trả chế độ, chính sách",
+          "code": "KQ.G01.000232"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7e-72d1-afe8-5765f94fd23a",
+          "name": "quy định chi tiết một số điều và biện pháp thi hành luật phòng cháy, chữa cháy và cứu nạn, cứu hộ",
+          "code": "105/2025/NĐ-CP"
+        }
+      ]
+    }
+  ],
+  "lookup_status": "retrieved",
+  "currency_status": "snapshot_requires_later_amendment_check",
+  "errors": []
+}

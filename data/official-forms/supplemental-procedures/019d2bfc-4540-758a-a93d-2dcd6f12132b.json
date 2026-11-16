@@ -1,0 +1,199 @@
+{
+  "id": "dvc-019d2bfc-4540-758a-a93d-2dcd6f12132b",
+  "procedure_code": "1.007879",
+  "name": "Thủ tục hải quan đối với hàng hóa tạm xuất, tái nhập và hàng hóa tạm nhập, tái xuất.",
+  "domain": "Hải quan",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.949245+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfc-4540-758a-a93d-2dcd6f12132b",
+      "code": "1.007879",
+      "name": "Thủ tục hải quan đối với hàng hóa tạm xuất, tái nhập và hàng hóa tạm nhập, tái xuất.",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1775639213528,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-4540-758a-a93d-2dcd6f12132b",
+      "raw_path": "evidence/dvc/details/019d2bfc-4540-758a-a93d-2dcd6f12132b.json",
+      "components": [
+        {
+          "section": "Đối với hàng hóa tạm nhập, tái xuất:",
+          "position": 1,
+          "name": "+ Văn bản có xác nhận của cơ quan có thẩm quyền về tổ chức hoặc tham dự hội chợ, triển lãm (trừ tạm nhập, tái xuất để giới thiệu sản phẩm) đối với trường hợp quy định tại điểm d khoản 1 Điều này:",
+          "component_code": "000.00.00.G12-KQ014469",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Đối với hàng hóa tạm nhập, tái xuất:",
+          "position": 2,
+          "name": "+ Chứng từ vận tải trong trường hợp hàng hóa vận chuyển bằng đường biển, đường hàng không, đường sắt (nếu có):",
+          "component_code": "000.00.00.G12-KQ014466",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Đối với hàng hóa tạm nhập, tái xuất:",
+          "position": 3,
+          "name": "+ Văn bản về việc tham gia các công việc đối với trường hợp quy định tại điểm đ khoản 1 Điều này:",
+          "component_code": "000.00.00.G12-KQ014470",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Đối với hàng hóa tạm nhập, tái xuất:",
+          "position": 4,
+          "name": "-Đối với hàng hóa tạm nhập thì nộp bổ sung:",
+          "component_code": "000.00.00.G12-KQ014465",
+          "original_quantity": 0,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Đối với hàng hóa tạm nhập, tái xuất:",
+          "position": 5,
+          "name": "+ Hợp đồng cung ứng dịch vụ sửa chữa, bảo dưỡng tàu biển, tàu bay đối với trường hợp quy định tại điểm b khoản 1 Điều này:",
+          "component_code": "000.00.00.G12-KQ014468",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Đối với hàng hóa tạm nhập, tái xuất:",
+          "position": 6,
+          "name": "Tờ khai hải quan.....",
+          "component_code": "000.00.00.G12-KQ014464",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Đối với hàng hóa tạm nhập, tái xuất:",
+          "position": 7,
+          "name": "+ Giấy phép tạm nhập, tái xuất theo quy định của pháp luật; văn bản thông báo kết quả kiểm tra chuyên ngành theo quy định của pháp luật:",
+          "component_code": "000.00.00.G12-KQ014467",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Đối với hàng hóa tạm xuất, tái nhập:",
+          "position": 1,
+          "name": "+ Giấy phép tạm xuất, tái nhập theo quy định của pháp luật; văn bản thông báo kết quả kiểm tra chuyên ngành theo quy định của pháp luật:",
+          "component_code": "000.00.00.G12-KQ014473",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Đối với hàng hóa tạm xuất, tái nhập:",
+          "position": 2,
+          "name": "+ Văn bản có xác nhận của cơ quan có thẩm quyền về tổ chức hoặc tham dự hội chợ, triển lãm (trừ tạm xuất, tái nhập để giới thiệu sản phẩm):",
+          "component_code": "000.00.00.G12-KQ014474",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Đối với hàng hóa tạm xuất, tái nhập:",
+          "position": 3,
+          "name": "+ Đối với hàng hóa tái nhập thì nộp bổ sung chứng từ vận tải trong trường hợp hàng hóa vận chuyển bằng đường biển, đường hàng không, đường sắt (nếu có):",
+          "component_code": "000.00.00.G12-KQ014475",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Đối với hàng hóa tạm xuất, tái nhập:",
+          "position": 4,
+          "name": "-Đối với hàng hóa tạm xuất thì nộp bổ sung:",
+          "component_code": "000.00.00.G12-KQ014472",
+          "original_quantity": 0,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Đối với hàng hóa tạm xuất, tái nhập:",
+          "position": 5,
+          "name": "- Tờ khai hải quan...",
+          "component_code": "000.00.00.G12-KQ014471",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c70-724b-96df-ddc2578f60d3",
+          "name": "Xác nhận thông quan hàng hóa",
+          "code": "KQ.G12.000583"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7d-7398-be48-2ce7181d92a3",
+          "name": "Thông tư số 39/2018/TT-BTC ngày 20/4/2018 của Bộ Tài chính sửa đổi, bổ sung một số điều tại Thông tư số 38/2015/TT-BTC ngày 25/3/2015 của Bộ Tài chính quy định về thủ tục hải quan; kiểm tra, giám sát hải quan; thuế xuất khẩu, thuế nhập khẩu và quản lý thuế đối với hàng hóa xuất khẩu, nhập khẩu.",
+          "code": "39/2018/TT-BTC"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afe7-9c25863596db",
+          "name": "Nghị định 08/2015/NĐ-CP",
+          "code": "08/2015/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7d-7398-be49-b47412bcdb1d",
+          "name": "Thông tư quy định mức thu, chế độ thu, nộp, quản lý và sử dụng phí hải quan và lệ phí hàng hóa, phương tiện vận tải quá cảnh",
+          "code": "14/2021/TT-BTC"
+        },
+        {
+          "id": "019d2bb3-5d7d-7398-be4d-1c6dbc289d7a",
+          "name": "Quy định về thủ tục hải quan; kiểm tra, giám sát hải quan; thuế xuất khẩu thuế nhập khẩu và quản lý thuế đối vớỉ hàng hoá xuất khẩu, nhập khẩu.",
+          "code": "38/2015/TT-BTC"
+        },
+        {
+          "id": "019d2bb3-5d7d-7398-be4d-ff62cdf67da5",
+          "name": "Luật 54/2014/QH13",
+          "code": "54/2014/QH13"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afec-4c8f9cb859d2",
+          "name": "Nghị định số 167/2025/NĐ-CP ngày 30/6/2025 của Chính phủ",
+          "code": "167/2025"
+        }
+      ]
+    }
+  ]
+}

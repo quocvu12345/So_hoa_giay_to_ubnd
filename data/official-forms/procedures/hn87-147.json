@@ -1,0 +1,112 @@
+{
+  "ordinal": "147",
+  "managing_agency": "Sở Nông nghiệp Môi trường",
+  "procedure_code": "1.003956",
+  "name": "Công nhận và giao quyền quản lý cho tổ chức cộng đồng (thuộc địa bàn quản lý)",
+  "domain": "Thủy sản (Bộ Nông nghiệp và Môi trường)",
+  "ministry_decision": "53/QĐ-BNNMT ngày 09/01/2026",
+  "hanoi_decision": "253/QĐ-TTPVHCC ngày 01/3/2025",
+  "workflow_decision": "383/QĐ-TTPVHCC ngày 30/3/2026",
+  "fees": "Không quy định",
+  "execution_level": "Cấp Xã",
+  "competent_authority": "UBND cấp xã",
+  "delegation_decision": "",
+  "delegation_expiry": "",
+  "receiving_location": "Điểm hỗ trợ DVC số",
+  "id": "hn87-147",
+  "source_page": 6,
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "inventory_date": "2026-04-27",
+  "checked_at": "2026-11-12T22:24:34.540147+07:00",
+  "details": [
+    {
+      "id": "019d2bfa-3043-765f-bc87-ca61828f4c4e",
+      "code": "1.003956",
+      "name": "Công nhận và giao quyền quản lý cho tổ chức cộng đồng (thuộc địa bàn quản lý)",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1789722121059,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfa-3043-765f-bc87-ca61828f4c4e",
+      "raw_path": "evidence/dvc/details/019d2bfa-3043-765f-bc87-ca61828f4c4e.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Phương án bảo vệ và khai thác nguồn lợi thủy sản tại khu vực dự kiến thực hiện đồng quản lý theo Mẫu số 02 Phụ lục I ban hành kèm theo Thông tư số 88/2025/TT-BNNMT",
+          "component_code": "000.00.00.G10-KQ1350",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Quy chế hoạt động của tổ chức cộng đồng theo Mẫu số 03 Phụ lục I ban hành kèm theo Thông tư số 88/2025/TT-BNNMT ngày 31/12/2025",
+          "component_code": "000.00.00.G10-KQ1351",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 3,
+          "name": "Biên bản họp tổ chức cộng đồng theo Mẫu số 04 Phụ lục I ban hành kèm theo Thông tư số 88/2025/TT-BNNMT ngày 31/12/2025",
+          "component_code": "000.00.00.G10-KQ1353",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 4,
+          "name": "Đơn đề nghị công nhận và giao quyền quản lý cho tổ chức cộng đồng theo Mẫu số 01 Phụ lục I ban hành kèm theo Thông tư số 88/2025/TT-BNNMT",
+          "component_code": "000.00.00.G10-KQ1349",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c4d-7725-9d9f-ee394ad3fdae",
+          "name": "Quyết định công nhận và giao quyền quản lý cho tổ chức cộng đồng thực hiện đồng quản lý trong bảo vệ nguồn lợi thủy sản theo Mẫu số 01 Phụ lục V ban hành kèm theo Thông tư số 33/2026/TT-BNNMT ngày 04/8/2026",
+          "code": "KQ.G10.000127"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d84-71c5-b674-9b7cf87c6962",
+          "name": "Luật",
+          "code": "Luật 18/2017/QH14"
+        },
+        {
+          "id": "019d2bb3-5d87-7195-a447-f9a5abcd2f43",
+          "name": "Luật sửa đổi, bổ sung một số điều của 15 luật trong lĩnh vực nông nghiệp và môi trường",
+          "code": "Luật số 146/2025/QH15"
+        },
+        {
+          "id": "019d2bb3-5d7d-7398-be45-8b4bf0a0ffd9",
+          "name": "Thông tư",
+          "code": "88/2025/TT-BNNMT"
+        },
+        {
+          "id": "01a023d9-4d68-750f-bf76-29237527fa27",
+          "name": "sửa đổi, bổ sung một số Thông tư trong lĩnh vực thủy sản",
+          "code": "33/2026/TT-BNNMT"
+        }
+      ]
+    }
+  ],
+  "lookup_status": "retrieved",
+  "currency_status": "snapshot_requires_later_amendment_check",
+  "errors": []
+}

@@ -1,0 +1,116 @@
+{
+  "id": "dvc-019d2bfc-7431-706c-9709-e506c4412e00",
+  "procedure_code": "1.009057",
+  "name": "Thủ tục bán hàng miễn thuế cho đối tượng mua là người chờ xuất cảnh mua hàng tại cửa hàng miễn thuế trong nội địa, người xuất cảnh, quá cảnh, hành khách trên tàu bay xuất cảnh, hành khách đang thực hiện chuyến bay quốc tế đến Việt Nam, người nhập cảnh tại cửa khẩu sân bay quốc tế, thuyền viên mua hàng miễn thuế phục vụ nhu cầu cá nhân trong thời gian tàu neo đậu tại cảng biển Việt Nam",
+  "domain": "Hải quan",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.929189+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfc-7431-706c-9709-e506c4412e00",
+      "code": "1.009057",
+      "name": "Thủ tục bán hàng miễn thuế cho đối tượng mua là người chờ xuất cảnh mua hàng tại cửa hàng miễn thuế trong nội địa, người xuất cảnh, quá cảnh, hành khách trên tàu bay xuất cảnh, hành khách đang thực hiện chuyến bay quốc tế đến Việt Nam, người nhập cảnh tại cửa khẩu sân bay quốc tế, thuyền viên mua hàng miễn thuế phục vụ nhu cầu cá nhân trong thời gian tàu neo đậu tại cảng biển Việt Nam",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1785982947126,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-7431-706c-9709-e506c4412e00",
+      "raw_path": "evidence/dvc/details/019d2bfc-7431-706c-9709-e506c4412e00.json",
+      "components": [
+        {
+          "section": "Trường hợp bán hàng cho người chờ xuất cảnh mua hàng tại cửa hàng miễn thuế trong nội địa:",
+          "position": 1,
+          "name": "Chỉ tiêu thông tin theo Mẫu số 02 Phụ lục II ban hành kèm theo Nghị định số 273/2026/NĐ-CP (đối với trường hợp nộp trực tuyến).",
+          "component_code": "000.00.00.G12-KQ12590",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "Trường hợp bán hàng cho người chờ xuất cảnh mua hàng tại cửa hàng miễn thuế trong nội địa:",
+          "position": 2,
+          "name": "Phiếu giao hàng đối với khách mua hàng miễn thuế trong nội địa theo Mẫu số 02/PGH Phụ lục III ban hành kèm theo Nghị định số 273/2026/NĐ-CP (đối với trường hợp nộp trực tiếp).",
+          "component_code": "000.00.00.G12-KQ12592",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019fd019-369b-756f-a7c2-0ee5fd4fb59a",
+              "fileName": "Mẫu số 02.PGH.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fd019-369b-756f-a7c2-0ee5fd4fb59a/Mẫu số 02.PGH.docx"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 1,
+          "name": "Chỉ tiêu thông tin tại Mẫu số 12 Phụ lục II ban hành kèm theo Nghị định số 273/2026/NĐ-CP (đối với trường hợp nộp trực tuyến).",
+          "component_code": "000.00.00.G12-KQ12589",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "Trường hợp người nhập cảnh tại sân bay quốc tế và hành khách đang thực hiện chuyến bay quốc tế đến Việt Nam mua hàng miễn thuế vượt định mức miễn thuế theo quy định",
+          "position": 1,
+          "name": "Chỉ tiêu thông tin theo Mẫu số 01 Phụ lục II ban hành kèm theo Nghị định số 273/2026/NĐ-CP (đối với trường hợp nộp trực tuyến).",
+          "component_code": "000.00.00.G12-KQ12598",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "Trường hợp người nhập cảnh tại sân bay quốc tế và hành khách đang thực hiện chuyến bay quốc tế đến Việt Nam mua hàng miễn thuế vượt định mức miễn thuế theo quy định",
+          "position": 2,
+          "name": "Phiếu thông báo hàng vượt định mức của khách mua hàng miễn thuế theo Mẫu số 01/PTBHVĐM Phụ lục III ban hành kèm Nghị định số 273/2026/NĐ-CP (đối với trường hợp nộp trực tiếp).",
+          "component_code": "000.00.00.G12-KQ12596",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019fd01b-e61d-77ed-bbf1-217eb06f2aee",
+              "fileName": "Mẫu số 01.PTBHVĐM.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fd01b-e61d-77ed-bbf1-217eb06f2aee/Mẫu số 01.PTBHVĐM.docx"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c70-724b-96e1-24c65517136f",
+          "name": "Hệ thống xử lý dữ liệu điện tử tiếp nhận thông tin do doanh nghiệp gửi lên.",
+          "code": "KQ.G12.000412"
+        },
+        {
+          "id": "019fd017-8e4d-729d-b9be-009cd9eadcfa",
+          "name": "Xác nhận của Hải quan cửa khẩu xuất nơi người mua hàng xuất cảnh trên hệ thống xử lý dữ liệu điện tử hải quan.",
+          "code": "KQ.G12.000586"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019fc558-dd5c-7395-9a78-efc7e38e5c9f",
+          "name": "Về kinh doanh hàng miễn thuế",
+          "code": "273/2026/NĐ-CP"
+        }
+      ]
+    }
+  ]
+}

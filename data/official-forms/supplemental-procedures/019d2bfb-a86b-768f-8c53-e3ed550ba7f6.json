@@ -1,0 +1,83 @@
+{
+  "id": "dvc-019d2bfb-a86b-768f-8c53-e3ed550ba7f6",
+  "procedure_code": "1.013589",
+  "name": "Thủ tục sửa đổi, bổ sung hồ sơ biên phòng cửa khẩu biên giới đất liền",
+  "domain": "Quản lý biên giới",
+  "managing_agency": "Bộ Quốc phòng",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.979439+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfb-a86b-768f-8c53-e3ed550ba7f6",
+      "code": "1.013589",
+      "name": "Thủ tục sửa đổi, bổ sung hồ sơ biên phòng cửa khẩu biên giới đất liền",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1777598725666,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-a86b-768f-8c53-e3ed550ba7f6",
+      "raw_path": "evidence/dvc/details/019d2bfb-a86b-768f-8c53-e3ed550ba7f6.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Bản khai sửa đổi, bổ sung nội dung khai báo thủ tục biên phòng điện tử",
+          "component_code": "000.00.00.G11-KQ0741",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019dc9be-6d7e-775b-8332-a85220d69cee",
+              "fileName": "BnkhaisaibsungkhaiboTTBTivinginhnththc.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019dc9be-6d7e-775b-8332-a85220d69cee/BnkhaisaibsungkhaiboTTBTivinginhnththc.docx"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Yêu cầu sửa đổi, bổ sung nội dung khai báo thủ tục biên phòng điện tử",
+          "component_code": "000.00.00.G11-KQ0740",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019dc9be-841f-7689-b19e-a1a64346cd25",
+              "fileName": "YucusaibsungnidungkhaiboTTBPTivinhnththc.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019dc9be-841f-7689-b19e-a1a64346cd25/YucusaibsungnidungkhaiboTTBPTivinhnththc.docx"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c6f-72b5-bd09-5ea8f6eefca8",
+          "name": "Bản điện tử xác nhận hoàn thành khai báo thủ tục biên phòng điện tử đối với hồ sơ điện tử sửa đổi, bổ sung",
+          "code": "KQ.G11.000235"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d84-71c5-b678-72e8ac46ed62",
+          "name": "Quyết định số 31/2025/QĐ-TTg của Thủ tướng Chính phủ: Sửa đổi, bổ sung một số điều các Quyết định của Thủ tướng Chính phủ về thực hiện thủ tục biên phòng điện tử tại các cửa khẩu do Bộ Quốc phòng quản lý",
+          "code": "31/2025/QĐ-TTg"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b677-78013aa85151",
+          "name": "Quyết định 15/2019/QĐ-TTg - Về việc thực hiện thủ tục biên phòng điện tử tại các cửa khẩu do Bộ Quốc phòng quản lý",
+          "code": "15/2019/QĐ-TTg"
+        }
+      ]
+    }
+  ]
+}

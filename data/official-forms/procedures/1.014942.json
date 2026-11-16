@@ -1,0 +1,176 @@
+{
+  "ordinal": "38",
+  "managing_agency": "Sở Nội Vụ",
+  "procedure_code": "1.014942",
+  "name": "Thủ tục cấp giấy phép thành lập và công nhận điều lệ quỹ",
+  "domain": "Quỹ",
+  "ministry_decision": "217/QĐ-BNV ngày 09/3/2032",
+  "hanoi_decision": "372/QĐ-TTPVHCC ngày 30/3/2032",
+  "workflow_decision": "430/QĐ-TTPVHCC ngày 4/2/2032",
+  "fees": "Không quy định",
+  "execution_level": "Cấp xã",
+  "competent_authority": "UBND cấp xã",
+  "delegation_decision": "",
+  "delegation_expiry": "",
+  "receiving_location": "Điểm hỗ trợ DVC số",
+  "source_page": 2,
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "inventory_date": "2026-04-27",
+  "checked_at": "2026-11-12T22:23:34.617617+07:00",
+  "details": [
+    {
+      "id": "019d9011-449a-721b-a7b9-8d28d0929df2",
+      "code": "1.014942",
+      "name": "THỦ TỤC CẤP GIẤY PHÉP THÀNH LẬP VÀ CÔNG NHẬN ĐIỀU LỆ QUỸ (Cấp xã)",
+      "state": "ACTIVE",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1776677764121,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d9011-449a-721b-a7b9-8d28d0929df2",
+      "raw_path": "evidence/dvc/details/019d9011-449a-721b-a7b9-8d28d0929df2.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "- Đơn đề nghị thành lập quỹ (theo mẫu)",
+          "component_code": "G09-KQ002440",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019d9420-1f2d-7788-85ec-20f0e7a5de78",
+              "fileName": "Mau so 01.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d9420-1f2d-7788-85ec-20f0e7a5de78/Mau so 01.docx"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "- Dự thảo điều lệ quỹ (theo mẫu);",
+          "component_code": "G09-KQ002117",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019d9429-e6ed-76d7-8f7f-4605b4982164",
+              "fileName": "Mau so 02.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d9429-e6ed-76d7-8f7f-4605b4982164/Mau so 02.docx"
+            },
+            {
+              "id": "019d9429-ffe9-76bb-a741-b0ee52a115f3",
+              "fileName": "Mau so 03.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d9429-ffe9-76bb-a741-b0ee52a115f3/Mau so 03.docx"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 3,
+          "name": "- Dự thảo điều lệ quỹ (theo mẫu);",
+          "component_code": "G09-KQ002117",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019d9429-e6ed-76d7-8f7f-4605b4982164",
+              "fileName": "Mau so 02.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d9429-e6ed-76d7-8f7f-4605b4982164/Mau so 02.docx"
+            },
+            {
+              "id": "019d9429-ffe9-76bb-a741-b0ee52a115f3",
+              "fileName": "Mau so 03.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d9429-ffe9-76bb-a741-b0ee52a115f3/Mau so 03.docx"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 4,
+          "name": "- Tài liệu chứng minh tài sản đóng góp để thành lập quỹ",
+          "component_code": "G09-KQ002443",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 5,
+          "name": "- Sơ yếu lý lịch cá nhân (theo mẫu) của các sáng lập viên thành lập quỹ không quá 06 tháng tính đến ngày nộp hồ sơ và hồ sơ theo quy định tại Điều 13, 14 hoặc Điều 15 Nghị định số 03/2026/NĐ-CP;",
+          "component_code": "G09-KQ003540",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019d9459-187f-72ec-89c2-8be10e9e1ebb",
+              "fileName": "Mau so 19.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d9459-187f-72ec-89c2-8be10e9e1ebb/Mau so 19.docx"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 6,
+          "name": "- Văn bản bầu các chức danh Ban sáng lập quỹ (theo mẫu);",
+          "component_code": "G09-KQ003541",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019d9459-ca07-703c-8199-ca7bc22b7cdc",
+              "fileName": "Mau so 05.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d9459-ca07-703c-8199-ca7bc22b7cdc/Mau so 05.docx"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 7,
+          "name": "- Văn bản chứng minh quyền sử dụng hợp pháp theo quy định của pháp luật nơi dự kiến đặt trụ sở của quỹ (bản chính hoặc bản sao có chứng thực).",
+          "component_code": "G09-KQ003542",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c4c-77ab-bf6c-b580da94b93c",
+          "name": "Quyết định cấp giấy phép thành lập và công nhận điều lệ quỹ",
+          "code": "KQ.G09.000109"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d89ff-5856-76d2-90d1-9790a555ebca",
+          "name": "Nghị định Về tổ chức, hoạt động của quỹ xã hội, quỹ từ thiện",
+          "code": "03/2026/NĐ-CP"
+        }
+      ]
+    }
+  ],
+  "lookup_status": "retrieved",
+  "currency_status": "snapshot_requires_later_amendment_check",
+  "errors": []
+}

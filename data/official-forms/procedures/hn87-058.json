@@ -1,0 +1,102 @@
+{
+  "ordinal": "58",
+  "managing_agency": "Sở Nội Vụ",
+  "procedure_code": "1.010827",
+  "name": "Di chuyển hồ sơ khi người hưởng trợ cấp ưu đãi thay đổi nơi thường trú (Đối với trường hợp Người có công di chuyển trong Thành phố)",
+  "domain": "Người có công",
+  "ministry_decision": "320/QĐ-BNV ngày 08/4/2025",
+  "hanoi_decision": "95/QĐ-TTPVHCC ngày 21/01/2026",
+  "workflow_decision": "105/QĐ-TTPVHCC ngày 22/01/2026",
+  "fees": "Không quy định",
+  "execution_level": "Cấp xã",
+  "competent_authority": "UBND cấp xã",
+  "delegation_decision": "số 71/QĐ-SNV ngày 13/01/2026",
+  "delegation_expiry": "31/12/2028",
+  "receiving_location": "Điểm hỗ trợ DVC số",
+  "id": "hn87-058",
+  "source_page": 2,
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "inventory_date": "2026-04-27",
+  "checked_at": "2026-11-12T22:24:34.525192+07:00",
+  "details": [
+    {
+      "id": "019d2bfb-03d1-7738-83c0-e5b7b37f5bb0",
+      "code": "1.010827",
+      "name": "Di chuyển hồ sơ khi người hưởng trợ cấp ưu đãi thay đổi nơi thường trú",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": false,
+      "updated_at_source": 1776502062735,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-03d1-7738-83c0-e5b7b37f5bb0",
+      "raw_path": "evidence/dvc/details/019d2bfb-03d1-7738-83c0-e5b7b37f5bb0.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "- Đơn đề nghị theo Mẫu số 27 Phụ lục I Nghị định số 131/2021/NĐ-CP.",
+          "component_code": "G09-KQ003210236",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019d708f-aaa8-765b-aba2-5fdaefb6fa48",
+              "fileName": "Mus27PhlcINghnhs131.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d708f-aaa8-765b-aba2-5fdaefb6fa48/Mus27PhlcINghnhs131.docx"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "- Bản sao được chứng thực từ căn cước công dân hoặc giấy xác nhận của cơ quan đăng ký cư trú (Không yêu cầu cá nhân nộp, xuất trình thành phần hồ sơ là bản sao được chứng thực từ căn cước công dân mà các thông tin trong căn cước công dân đã có dữ liệu trong các cơ sở dữ liệu được cơ quan chủ quản cơ sở dữ liệu công bố).",
+          "component_code": "G09-KQ003210237",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c4d-7725-9d9c-8a3bdc38681c",
+          "name": "Phiếu báo di chuyển hồ sơ người có công",
+          "code": "KQ.G09.000437"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7f-719e-b46e-3b82195c2d48",
+          "name": "Nghị định số 45/2025/NĐ-CP ngày 28/02/2025 của Chính phủ quy định tổ chức các cơ quan chuyên môn thuộc Ủy ban nhân dân tỉnh, thành phố trực thuộc trung ương và Ủy ban nhân dân huyện, quận, thị xã, thành phố thuộc tỉnh, thành phố thuộc thành phố trực thuộc trung ương",
+          "code": "45/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b671-f40a5ee32475",
+          "name": "Nghị quyết số 190/2025/QH15 của Quốc hội: Quy định về xử lý một số vấn đề liên quan đến sắp xếp tổ chức bộ máy nhà nước",
+          "code": "190/2025/NQ-QH15"
+        },
+        {
+          "id": "019d2bb3-5d7f-719e-b474-93996f3f00db",
+          "name": "Nghị định số 25/2025/NĐ-CP ngày 21 tháng 02 năm 2025 của Chính phủ quy định chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của Bộ Nội vụ",
+          "code": "Nghị định số 25/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d85-73da-8eba-20bc75de794b",
+          "name": "ƯU ĐÃI NGƯỜI CÓ CÔNG VỚI CÁCH MẠNG",
+          "code": "Pháp lệnh số: 02/2020/UBTVQH14"
+        },
+        {
+          "id": "019d2bb3-5d7f-719e-b474-516a799e2145",
+          "name": "QUY ĐỊNH CHI TIẾT VÀ BIỆN PHÁP THI HÀNH PHÁP LỆNH ƯU ĐÃI NGƯỜI CÓ CÔNG VỚI CÁCH MẠNG",
+          "code": "Nghị định số 131/2021/NĐ-CP"
+        }
+      ]
+    }
+  ],
+  "lookup_status": "retrieved",
+  "currency_status": "snapshot_requires_later_amendment_check",
+  "errors": []
+}

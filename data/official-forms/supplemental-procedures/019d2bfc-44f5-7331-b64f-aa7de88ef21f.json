@@ -1,0 +1,69 @@
+{
+  "id": "dvc-019d2bfc-44f5-7331-b64f-aa7de88ef21f",
+  "procedure_code": "1.007847",
+  "name": "Thủ tục hải quan nhập khẩu kim cương thô",
+  "domain": "Hải quan",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.952658+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfc-44f5-7331-b64f-aa7de88ef21f",
+      "code": "1.007847",
+      "name": "Thủ tục hải quan nhập khẩu kim cương thô",
+      "state": "ACTIVE",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1775640274206,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-44f5-7331-b64f-aa7de88ef21f",
+      "raw_path": "evidence/dvc/details/019d2bfc-44f5-7331-b64f-aa7de88ef21f.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "- Một (01) bản sao Giấy chứng nhận KP ( Kimberley Process) do cơ quan có thẩm quyền của nước xuất khẩu cấp (bản sao này có chữ ký và đóng dấu xác nhận sao y bản chính của người đứng đầu hoặc người được uỷ quyền của thương nhân đồng thời có kèm bản chính để đối chiếu).",
+          "component_code": "000.00.00.G12-KQ8803",
+          "original_quantity": 0,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "- Các giấy tờ khác theo quy định của pháp luật về Hải quan.",
+          "component_code": "000.00.00.G12-KQ8804",
+          "original_quantity": 0,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c70-724b-96e0-46e541515789",
+          "name": "Thông quan hàng hóa nhập khẩu, xuất khẩu",
+          "code": "KQ.G12.000584"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7c-71ab-9efa-51c37cfe5eb1",
+          "name": "THÔNG TƯ LIÊN TỊCH  HƯỚNG DẪN VIỆC CẤP CHỨNG NHẬN VÀ THỦ TỤC NHẬP KHẨU, XUẤT KHẨU KIM CƯƠNG THÔ NHẰM THỰC THI CÁC QUY ĐỊNH CỦA QUY CHẾ CHỨNG NHẬN QUY TRÌNH KIMBERLEY",
+          "code": "14/2009/TTLT-BCT-BTC"
+        },
+        {
+          "id": "019d2bb3-5d7d-7398-be4d-1c6dbc289d7a",
+          "name": "Quy định về thủ tục hải quan; kiểm tra, giám sát hải quan; thuế xuất khẩu thuế nhập khẩu và quản lý thuế đối vớỉ hàng hoá xuất khẩu, nhập khẩu.",
+          "code": "38/2015/TT-BTC"
+        }
+      ]
+    }
+  ]
+}

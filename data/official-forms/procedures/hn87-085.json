@@ -1,0 +1,91 @@
+{
+  "ordinal": "85",
+  "managing_agency": "Sở Văn hóa thể thao",
+  "procedure_code": "1.013792",
+  "name": "Thủ tục cấp giấy chứng nhận đủ điều kiện hoạt động điểm cung cấp dịch vụ trò chơi điện tử công cộng",
+  "domain": "Phát thanh, truyền hình và thông tin điện tử",
+  "ministry_decision": "4508/QĐ-BVHTTDL ngày 28/11/2025",
+  "hanoi_decision": "1666/QĐ-TTPVHCC NGÀY 11/12/2025",
+  "workflow_decision": "1122/QĐ-TTPVHCC ngày 31/7/2025",
+  "fees": "Không quy định",
+  "execution_level": "Cấp Xã",
+  "competent_authority": "UBND cấp xã",
+  "delegation_decision": "",
+  "delegation_expiry": "",
+  "receiving_location": "Điểm hỗ trợ DVC số",
+  "id": "hn87-085",
+  "source_page": 3,
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "inventory_date": "2026-04-27",
+  "checked_at": "2026-11-12T22:24:34.529866+07:00",
+  "details": [
+    {
+      "id": "019d2bfd-ec30-74cf-b2d7-89358371679b",
+      "code": "1.013792",
+      "name": "Thủ tục cấp giấy chứng nhận đủ điều kiện hoạt động điểm cung cấp dịch vụ trò chơi điện tử công cộng",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1794297423988,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfd-ec30-74cf-b2d7-89358371679b",
+      "raw_path": "evidence/dvc/details/019d2bfd-ec30-74cf-b2d7-89358371679b.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "(2) Thông tin chứng minh nhân dân/căn cước/căn cước công dân của chủ điểm cung cấp dịch vụ trò chơi điện tử công cộng hoặc của cá nhân đại diện cho tổ chức, doanh nghiệp trực tiếp quản lý điểm cung cấp dịch vụ trò chơi điện tử công cộng được khai thác, sử dụng trên Cơ sở dữ liệu quốc gia về dân cư, không phải nộp bản sao hoặc xuất trình khi đã có thông tin dữ liệu.",
+          "component_code": "G16-KQ002463",
+          "original_quantity": 0,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "(3) Thông tin về giấy chứng nhận đăng ký kinh doanh/giấy chứng nhận đăng ký doanh nghiệp được khai thác, sử dụng trên Cơ sở dữ liệu quốc gia về đăng ký doanh nghiệp, không phải nộp kèm theo Đơn đề nghị khi đã có thông tin dữ liệu.",
+          "component_code": "G16-KQ002464",
+          "original_quantity": 0,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 3,
+          "name": "(1) Đơn đề nghị cấp giấy chứng nhận đủ điều kiện hoạt động điểm cung cấp dịch vụ trò chơi điện tử công cộng theo Mẫu số 51a hoặc mẫu số 51b tại Phụ lục ban hành kèm theo Nghị định số 147/2024/NĐ-CP.",
+          "component_code": "G16-KQ002098",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c79-762e-8b2c-e7a701520ea2",
+          "name": "Giấy chứng nhận đủ điều kiện hoạt động điểm cung cấp dịch vụ trò chơi điện tử công cộng.",
+          "code": "KQ.G16.000377"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7e-72d1-afea-b0df1ec9673d",
+          "name": "Nghị định số 137/2025/NĐ-CP ngày 12/6/2025 của Chính phủ quy định về phân định thẩm quyền của chính quyền địa phương 02 cấp trong lĩnh vực văn hóa, thể thao và du lịch.",
+          "code": "137/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afeb-4756e074bdea",
+          "name": "Nghị định số 147/2024/NĐ-CP của Chính phủ về quản lý, cung cấp, sử dụng dịch vụ internet và thông tin trên mạng",
+          "code": "147/2024/NĐ-CP"
+        }
+      ]
+    }
+  ],
+  "lookup_status": "retrieved",
+  "currency_status": "snapshot_requires_later_amendment_check",
+  "errors": []
+}

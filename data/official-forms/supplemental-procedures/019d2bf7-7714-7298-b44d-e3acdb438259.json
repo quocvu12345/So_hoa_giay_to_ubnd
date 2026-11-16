@@ -1,0 +1,84 @@
+{
+  "id": "dvc-019d2bf7-7714-7298-b44d-e3acdb438259",
+  "procedure_code": "1.004327",
+  "name": "Giải quyết tố cáo không thuộc lĩnh vực tố tụng hình sự của công dân đối với lực lượng Công an nhân dân thực hiện tại cấp xã (phải là cán bộ thuộc biên chế của lực lượng Công an)",
+  "domain": "Khiếu nại, tố cáo",
+  "managing_agency": "Bộ Công an",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:18.038288+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bf7-7714-7298-b44d-e3acdb438259",
+      "code": "1.004327",
+      "name": "Giải quyết tố cáo không thuộc lĩnh vực tố tụng hình sự của công dân đối với lực lượng Công an nhân dân thực hiện tại cấp xã (phải là cán bộ thuộc biên chế của lực lượng Công an)",
+      "state": "ACTIVE",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1777623332174,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf7-7714-7298-b44d-e3acdb438259",
+      "raw_path": "evidence/dvc/details/019d2bf7-7714-7298-b44d-e3acdb438259.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Nhóm 2 gồm các văn bản, tài liệu sau: Các biên bản làm việc; văn bản, tài liệu, chứng cứ thu thập được; văn bản giải trình của người bị tố cáo; các tài liệu khác có liên quan đến nội dung tố cáo",
+          "component_code": "000.00.00.G01-KQ1061",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Nhóm 1 gồm các văn bản, tài liệu sau: Đơn tố cáo hoặc Biên bản ghi nội dung tố cáo trực tiếp; Quyết định thụ lý, Quyết định thành lập Tổ xác minh; Kế hoạch xác minh tố cáo; Báo cáo kết quả thẩm tra, xác minh nội dung tố cáo;  Kết luận nội dung tố cáo; các văn bản thông báo, xử lý, kiến nghị xử lý tố cáo",
+          "component_code": "000.00.00.G01-KQ1060",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c7e-720f-afce-2626a4c62f4e",
+          "name": "Kết luận nội dung tố cáo và quyết định xử lý hành vi vi phạm bị tố cáo.",
+          "code": "KQ.G21.000011"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7b-7049-8fc6-25795293c6d8",
+          "name": "Thông tư 12/2015/TT-BCA - Quy định quy trình giải quyết tố cáo trong Công an nhân dân",
+          "code": "12/2015/TT-BCA"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b671-2a58f3b41002",
+          "name": "Luật 03/2011/QH13",
+          "code": "03/2011/QH13"
+        },
+        {
+          "id": "019d2bb3-5d7b-7049-8fc6-1902200cb007",
+          "name": "Thông tư 10/2014/TT-BCA - Quy định việc xử lý, giải quyết tố cáo và quản lý công tác giải quyết tố cáo trong công an nhân dân",
+          "code": "10/2014/TT-BCA"
+        },
+        {
+          "id": "019d2bb3-5d7f-719e-b470-fdeeb046c6e9",
+          "name": "Nghị định",
+          "code": "76/2012/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7f-719e-b472-92838301164e",
+          "name": "Nghị định 91/2013/NĐ-CP - Quy định về tố cáo và giải quyết tố cáo trong Công an nhân dân",
+          "code": "91/2013/NĐ-CP"
+        }
+      ]
+    }
+  ]
+}

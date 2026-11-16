@@ -1,0 +1,64 @@
+{
+  "id": "dvc-019d2bfc-740b-770b-be7e-58c3d347d527",
+  "procedure_code": "1.009055",
+  "name": "Thủ tục hải quan, kiểm tra, giám sát hải quan đối với hàng hóa luân chuyển giữa kho chứa hàng miễn thuế, cửa hàng miễn thuế",
+  "domain": "Hải quan",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.931319+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfc-740b-770b-be7e-58c3d347d527",
+      "code": "1.009055",
+      "name": "Thủ tục hải quan, kiểm tra, giám sát hải quan đối với hàng hóa luân chuyển giữa kho chứa hàng miễn thuế, cửa hàng miễn thuế",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1785982946492,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-740b-770b-be7e-58c3d347d527",
+      "raw_path": "evidence/dvc/details/019d2bfc-740b-770b-be7e-58c3d347d527.json",
+      "components": [
+        {
+          "section": "- Trường hợp kho chứa hàng miễn thuế đặt trong khu vực cách ly, khu vực hạn chế khác với địa điểm đặt cửa hàng miễn thuế: gửi thông tin hàng hóa về việc vận chuyển hàng hóa qua hệ thống xử lý dữ liệu điện tử. - Trường hợp kho chứa hàng miễn thuế không đặt tại vị trí cùng với cửa hàng miễn thuế, không đặt trong khu cách ly, khu vực hạn chế: thông tin (tên hàng, số lượng, tuyến đường vận chuyển) về việc vận chuyển hàng hóa đến hệ thống xử lý dữ liệu điện tử và 01 bản giấy về các thông tin về tên hàng, số lượng, tuyến đường vận chuyển dùng làm chứng từ lưu thông hàng hóa * Số lượng hồ sơ: 01 bộ",
+          "position": 1,
+          "name": "Văn bản về việc vận chuyển hàng hóa (đối với trường hợp nộp trực tiếp)",
+          "component_code": "000.00.00.G12-KQ9815",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "- Trường hợp kho chứa hàng miễn thuế đặt trong khu vực cách ly, khu vực hạn chế khác với địa điểm đặt cửa hàng miễn thuế: gửi thông tin hàng hóa về việc vận chuyển hàng hóa qua hệ thống xử lý dữ liệu điện tử. - Trường hợp kho chứa hàng miễn thuế không đặt tại vị trí cùng với cửa hàng miễn thuế, không đặt trong khu cách ly, khu vực hạn chế: thông tin (tên hàng, số lượng, tuyến đường vận chuyển) về việc vận chuyển hàng hóa đến hệ thống xử lý dữ liệu điện tử và 01 bản giấy về các thông tin về tên hàng, số lượng, tuyến đường vận chuyển dùng làm chứng từ lưu thông hàng hóa * Số lượng hồ sơ: 01 bộ",
+          "position": 2,
+          "name": "Chỉ tiêu thông tin theo Mẫu số 11 Phụ lục II ban hành kèm theo Nghị định số 273/2026/NĐ-CP (đối với trường hợp nộp trực tuyến).",
+          "component_code": "000.00.00.G12-KQ14758",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c70-724b-96e1-1ebf438c7089",
+          "name": "Phê duyệt của Hải quan trên hệ thống xử lý dữ liệu điện tử hải quan.",
+          "code": "KQ.G12.000410"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019fc558-dd5c-7395-9a78-efc7e38e5c9f",
+          "name": "Về kinh doanh hàng miễn thuế",
+          "code": "273/2026/NĐ-CP"
+        }
+      ]
+    }
+  ]
+}

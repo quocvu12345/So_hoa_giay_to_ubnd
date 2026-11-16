@@ -1,0 +1,145 @@
+{
+  "id": "dvc-019d2bfb-df2c-74f3-8af6-e92e1a0744ef",
+  "procedure_code": "1.003122",
+  "name": "Thủ tục hải quan đối với nguyên liệu nhập khẩu để sản xuất và pha chế xăng dầu, khí",
+  "domain": "Hải quan",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.965930+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfb-df2c-74f3-8af6-e92e1a0744ef",
+      "code": "1.003122",
+      "name": "Thủ tục hải quan đối với nguyên liệu nhập khẩu để sản xuất và pha chế xăng dầu, khí",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1775639328008,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-df2c-74f3-8af6-e92e1a0744ef",
+      "raw_path": "evidence/dvc/details/019d2bfb-df2c-74f3-8af6-e92e1a0744ef.json",
+      "components": [
+        {
+          "section": "\t - Tờ khai hàng hóa nhập khẩu theo các chỉ tiêu thông tin tại Phụ lục II ban hành kèm theo Thông tư số 38/2015/TT-BTC ngày 25/3/2015 của Bộ Tài chính.  Trường hợp thực hiện trên tờ khai hải quan giấy theo quy định tại khoản 2 Điều 25 Nghị định số 08/2015/NĐ-CP ngày 21/1/2015 của Chính phủ, người khai hải quan khai và nộp 02 bản chính tờ khai hàng hóa nhập khẩu theo mẫu HQ/2015/NK Phụ lục IV ban hành kèm theo Thông tư số 38/2015/TT-BTC;  - Hợp đồng mua nguyên liệu hoặc giấy tờ có giá trị pháp lý tương đương hợp đồng mua nguyên liệu: 01 bản chụp;  - Hóa đơn thương mại: 01 bản chính;  - Vận đơn hoặc các chứng từ vận tải khác có giá trị tương đương theo quy định của pháp luật: 01 bản chụp;  - Hợp đồng bán xăng dầu, khí (Hợp đồng khung; Hợp đồng nguyên tắc (nếu có) và Phụ lục hợp đồng (nếu có): 01 bản chụp;  - Bản đăng ký kế hoạch sản xuất, pha chế, nhập khẩu nguyên liệu và tiêu thụ  sản phẩm xăng dầu, khí của Thương nhân có xác nhận  của Bộ Công Thương: 01 bản chụp.  Trường hợp Thương nhân làm thủ tục lần đầu tại Chi cục Hải quan thì nộp thêm các giấy tờ sau:  - Giấy phép kinh doanh xuất khẩu, nhập khẩu xăng dầu do Bộ Công Thương cấp: 01 bản chụp;  - Giấy chứng nhận đủ điền kiện xuất khẩu khí hoặc văn bản có giá trị tương đương: 01 bản chụp.",
+          "position": 1,
+          "name": "Trường hợp Thương nhân làm thủ tục lần đầu tại Chi cục Hải quan thì nộp thêm các giấy tờ sau:  - Giấy phép kinh doanh xuất khẩu, nhập khẩu xăng dầu do Bộ Công Thương cấp: 01 bản chụp;",
+          "component_code": "000.00.00.G12-KQ3039",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "\t - Tờ khai hàng hóa nhập khẩu theo các chỉ tiêu thông tin tại Phụ lục II ban hành kèm theo Thông tư số 38/2015/TT-BTC ngày 25/3/2015 của Bộ Tài chính.  Trường hợp thực hiện trên tờ khai hải quan giấy theo quy định tại khoản 2 Điều 25 Nghị định số 08/2015/NĐ-CP ngày 21/1/2015 của Chính phủ, người khai hải quan khai và nộp 02 bản chính tờ khai hàng hóa nhập khẩu theo mẫu HQ/2015/NK Phụ lục IV ban hành kèm theo Thông tư số 38/2015/TT-BTC;  - Hợp đồng mua nguyên liệu hoặc giấy tờ có giá trị pháp lý tương đương hợp đồng mua nguyên liệu: 01 bản chụp;  - Hóa đơn thương mại: 01 bản chính;  - Vận đơn hoặc các chứng từ vận tải khác có giá trị tương đương theo quy định của pháp luật: 01 bản chụp;  - Hợp đồng bán xăng dầu, khí (Hợp đồng khung; Hợp đồng nguyên tắc (nếu có) và Phụ lục hợp đồng (nếu có): 01 bản chụp;  - Bản đăng ký kế hoạch sản xuất, pha chế, nhập khẩu nguyên liệu và tiêu thụ  sản phẩm xăng dầu, khí của Thương nhân có xác nhận  của Bộ Công Thương: 01 bản chụp.  Trường hợp Thương nhân làm thủ tục lần đầu tại Chi cục Hải quan thì nộp thêm các giấy tờ sau:  - Giấy phép kinh doanh xuất khẩu, nhập khẩu xăng dầu do Bộ Công Thương cấp: 01 bản chụp;  - Giấy chứng nhận đủ điền kiện xuất khẩu khí hoặc văn bản có giá trị tương đương: 01 bản chụp.",
+          "position": 2,
+          "name": "Hợp đồng bán xăng dầu, khí (Hợp đồng khung; Hợp đồng nguyên tắc (nếu có) và Phụ lục hợp đồng (nếu có): 01 bản chụp;",
+          "component_code": "000.00.00.G12-KQ3037",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "\t - Tờ khai hàng hóa nhập khẩu theo các chỉ tiêu thông tin tại Phụ lục II ban hành kèm theo Thông tư số 38/2015/TT-BTC ngày 25/3/2015 của Bộ Tài chính.  Trường hợp thực hiện trên tờ khai hải quan giấy theo quy định tại khoản 2 Điều 25 Nghị định số 08/2015/NĐ-CP ngày 21/1/2015 của Chính phủ, người khai hải quan khai và nộp 02 bản chính tờ khai hàng hóa nhập khẩu theo mẫu HQ/2015/NK Phụ lục IV ban hành kèm theo Thông tư số 38/2015/TT-BTC;  - Hợp đồng mua nguyên liệu hoặc giấy tờ có giá trị pháp lý tương đương hợp đồng mua nguyên liệu: 01 bản chụp;  - Hóa đơn thương mại: 01 bản chính;  - Vận đơn hoặc các chứng từ vận tải khác có giá trị tương đương theo quy định của pháp luật: 01 bản chụp;  - Hợp đồng bán xăng dầu, khí (Hợp đồng khung; Hợp đồng nguyên tắc (nếu có) và Phụ lục hợp đồng (nếu có): 01 bản chụp;  - Bản đăng ký kế hoạch sản xuất, pha chế, nhập khẩu nguyên liệu và tiêu thụ  sản phẩm xăng dầu, khí của Thương nhân có xác nhận  của Bộ Công Thương: 01 bản chụp.  Trường hợp Thương nhân làm thủ tục lần đầu tại Chi cục Hải quan thì nộp thêm các giấy tờ sau:  - Giấy phép kinh doanh xuất khẩu, nhập khẩu xăng dầu do Bộ Công Thương cấp: 01 bản chụp;  - Giấy chứng nhận đủ điền kiện xuất khẩu khí hoặc văn bản có giá trị tương đương: 01 bản chụp.",
+          "position": 3,
+          "name": "Hợp đồng mua nguyên liệu hoặc giấy tờ có giá trị pháp lý tương đương hợp đồng mua nguyên liệu: 01 bản chụp;",
+          "component_code": "000.00.00.G12-KQ3034",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "\t - Tờ khai hàng hóa nhập khẩu theo các chỉ tiêu thông tin tại Phụ lục II ban hành kèm theo Thông tư số 38/2015/TT-BTC ngày 25/3/2015 của Bộ Tài chính.  Trường hợp thực hiện trên tờ khai hải quan giấy theo quy định tại khoản 2 Điều 25 Nghị định số 08/2015/NĐ-CP ngày 21/1/2015 của Chính phủ, người khai hải quan khai và nộp 02 bản chính tờ khai hàng hóa nhập khẩu theo mẫu HQ/2015/NK Phụ lục IV ban hành kèm theo Thông tư số 38/2015/TT-BTC;  - Hợp đồng mua nguyên liệu hoặc giấy tờ có giá trị pháp lý tương đương hợp đồng mua nguyên liệu: 01 bản chụp;  - Hóa đơn thương mại: 01 bản chính;  - Vận đơn hoặc các chứng từ vận tải khác có giá trị tương đương theo quy định của pháp luật: 01 bản chụp;  - Hợp đồng bán xăng dầu, khí (Hợp đồng khung; Hợp đồng nguyên tắc (nếu có) và Phụ lục hợp đồng (nếu có): 01 bản chụp;  - Bản đăng ký kế hoạch sản xuất, pha chế, nhập khẩu nguyên liệu và tiêu thụ  sản phẩm xăng dầu, khí của Thương nhân có xác nhận  của Bộ Công Thương: 01 bản chụp.  Trường hợp Thương nhân làm thủ tục lần đầu tại Chi cục Hải quan thì nộp thêm các giấy tờ sau:  - Giấy phép kinh doanh xuất khẩu, nhập khẩu xăng dầu do Bộ Công Thương cấp: 01 bản chụp;  - Giấy chứng nhận đủ điền kiện xuất khẩu khí hoặc văn bản có giá trị tương đương: 01 bản chụp.",
+          "position": 4,
+          "name": "Trường hợp Thương nhân làm thủ tục lần đầu tại Chi cục Hải quan thì nộp thêm các giấy tờ sau:- Giấy chứng nhận đủ điền kiện xuất khẩu khí hoặc văn bản có giá trị tương đương: 01 bản chụp.",
+          "component_code": "000.00.00.G12-KQ3040",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "\t - Tờ khai hàng hóa nhập khẩu theo các chỉ tiêu thông tin tại Phụ lục II ban hành kèm theo Thông tư số 38/2015/TT-BTC ngày 25/3/2015 của Bộ Tài chính.  Trường hợp thực hiện trên tờ khai hải quan giấy theo quy định tại khoản 2 Điều 25 Nghị định số 08/2015/NĐ-CP ngày 21/1/2015 của Chính phủ, người khai hải quan khai và nộp 02 bản chính tờ khai hàng hóa nhập khẩu theo mẫu HQ/2015/NK Phụ lục IV ban hành kèm theo Thông tư số 38/2015/TT-BTC;  - Hợp đồng mua nguyên liệu hoặc giấy tờ có giá trị pháp lý tương đương hợp đồng mua nguyên liệu: 01 bản chụp;  - Hóa đơn thương mại: 01 bản chính;  - Vận đơn hoặc các chứng từ vận tải khác có giá trị tương đương theo quy định của pháp luật: 01 bản chụp;  - Hợp đồng bán xăng dầu, khí (Hợp đồng khung; Hợp đồng nguyên tắc (nếu có) và Phụ lục hợp đồng (nếu có): 01 bản chụp;  - Bản đăng ký kế hoạch sản xuất, pha chế, nhập khẩu nguyên liệu và tiêu thụ  sản phẩm xăng dầu, khí của Thương nhân có xác nhận  của Bộ Công Thương: 01 bản chụp.  Trường hợp Thương nhân làm thủ tục lần đầu tại Chi cục Hải quan thì nộp thêm các giấy tờ sau:  - Giấy phép kinh doanh xuất khẩu, nhập khẩu xăng dầu do Bộ Công Thương cấp: 01 bản chụp;  - Giấy chứng nhận đủ điền kiện xuất khẩu khí hoặc văn bản có giá trị tương đương: 01 bản chụp.",
+          "position": 5,
+          "name": "Vận đơn hoặc các chứng từ vận tải khác có giá trị tương đương theo quy định của pháp luật: 01 bản chụp;",
+          "component_code": "000.00.00.G12-KQ3036",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "\t - Tờ khai hàng hóa nhập khẩu theo các chỉ tiêu thông tin tại Phụ lục II ban hành kèm theo Thông tư số 38/2015/TT-BTC ngày 25/3/2015 của Bộ Tài chính.  Trường hợp thực hiện trên tờ khai hải quan giấy theo quy định tại khoản 2 Điều 25 Nghị định số 08/2015/NĐ-CP ngày 21/1/2015 của Chính phủ, người khai hải quan khai và nộp 02 bản chính tờ khai hàng hóa nhập khẩu theo mẫu HQ/2015/NK Phụ lục IV ban hành kèm theo Thông tư số 38/2015/TT-BTC;  - Hợp đồng mua nguyên liệu hoặc giấy tờ có giá trị pháp lý tương đương hợp đồng mua nguyên liệu: 01 bản chụp;  - Hóa đơn thương mại: 01 bản chính;  - Vận đơn hoặc các chứng từ vận tải khác có giá trị tương đương theo quy định của pháp luật: 01 bản chụp;  - Hợp đồng bán xăng dầu, khí (Hợp đồng khung; Hợp đồng nguyên tắc (nếu có) và Phụ lục hợp đồng (nếu có): 01 bản chụp;  - Bản đăng ký kế hoạch sản xuất, pha chế, nhập khẩu nguyên liệu và tiêu thụ  sản phẩm xăng dầu, khí của Thương nhân có xác nhận  của Bộ Công Thương: 01 bản chụp.  Trường hợp Thương nhân làm thủ tục lần đầu tại Chi cục Hải quan thì nộp thêm các giấy tờ sau:  - Giấy phép kinh doanh xuất khẩu, nhập khẩu xăng dầu do Bộ Công Thương cấp: 01 bản chụp;  - Giấy chứng nhận đủ điền kiện xuất khẩu khí hoặc văn bản có giá trị tương đương: 01 bản chụp.",
+          "position": 6,
+          "name": "Hóa đơn thương mại: 01 bản chính;",
+          "component_code": "000.00.00.G12-KQ3035",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "\t - Tờ khai hàng hóa nhập khẩu theo các chỉ tiêu thông tin tại Phụ lục II ban hành kèm theo Thông tư số 38/2015/TT-BTC ngày 25/3/2015 của Bộ Tài chính.  Trường hợp thực hiện trên tờ khai hải quan giấy theo quy định tại khoản 2 Điều 25 Nghị định số 08/2015/NĐ-CP ngày 21/1/2015 của Chính phủ, người khai hải quan khai và nộp 02 bản chính tờ khai hàng hóa nhập khẩu theo mẫu HQ/2015/NK Phụ lục IV ban hành kèm theo Thông tư số 38/2015/TT-BTC;  - Hợp đồng mua nguyên liệu hoặc giấy tờ có giá trị pháp lý tương đương hợp đồng mua nguyên liệu: 01 bản chụp;  - Hóa đơn thương mại: 01 bản chính;  - Vận đơn hoặc các chứng từ vận tải khác có giá trị tương đương theo quy định của pháp luật: 01 bản chụp;  - Hợp đồng bán xăng dầu, khí (Hợp đồng khung; Hợp đồng nguyên tắc (nếu có) và Phụ lục hợp đồng (nếu có): 01 bản chụp;  - Bản đăng ký kế hoạch sản xuất, pha chế, nhập khẩu nguyên liệu và tiêu thụ  sản phẩm xăng dầu, khí của Thương nhân có xác nhận  của Bộ Công Thương: 01 bản chụp.  Trường hợp Thương nhân làm thủ tục lần đầu tại Chi cục Hải quan thì nộp thêm các giấy tờ sau:  - Giấy phép kinh doanh xuất khẩu, nhập khẩu xăng dầu do Bộ Công Thương cấp: 01 bản chụp;  - Giấy chứng nhận đủ điền kiện xuất khẩu khí hoặc văn bản có giá trị tương đương: 01 bản chụp.",
+          "position": 7,
+          "name": "Tờ khai hàng hóa nhập khẩu theo các chỉ tiêu thông tin tại Phụ lục II ban hành kèm theo Thông tư số 38/2015/TT-BTC ngày 25/3/2015 của Bộ Tài chính.",
+          "component_code": "000.00.00.G12-KQ3033",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "\t - Tờ khai hàng hóa nhập khẩu theo các chỉ tiêu thông tin tại Phụ lục II ban hành kèm theo Thông tư số 38/2015/TT-BTC ngày 25/3/2015 của Bộ Tài chính.  Trường hợp thực hiện trên tờ khai hải quan giấy theo quy định tại khoản 2 Điều 25 Nghị định số 08/2015/NĐ-CP ngày 21/1/2015 của Chính phủ, người khai hải quan khai và nộp 02 bản chính tờ khai hàng hóa nhập khẩu theo mẫu HQ/2015/NK Phụ lục IV ban hành kèm theo Thông tư số 38/2015/TT-BTC;  - Hợp đồng mua nguyên liệu hoặc giấy tờ có giá trị pháp lý tương đương hợp đồng mua nguyên liệu: 01 bản chụp;  - Hóa đơn thương mại: 01 bản chính;  - Vận đơn hoặc các chứng từ vận tải khác có giá trị tương đương theo quy định của pháp luật: 01 bản chụp;  - Hợp đồng bán xăng dầu, khí (Hợp đồng khung; Hợp đồng nguyên tắc (nếu có) và Phụ lục hợp đồng (nếu có): 01 bản chụp;  - Bản đăng ký kế hoạch sản xuất, pha chế, nhập khẩu nguyên liệu và tiêu thụ  sản phẩm xăng dầu, khí của Thương nhân có xác nhận  của Bộ Công Thương: 01 bản chụp.  Trường hợp Thương nhân làm thủ tục lần đầu tại Chi cục Hải quan thì nộp thêm các giấy tờ sau:  - Giấy phép kinh doanh xuất khẩu, nhập khẩu xăng dầu do Bộ Công Thương cấp: 01 bản chụp;  - Giấy chứng nhận đủ điền kiện xuất khẩu khí hoặc văn bản có giá trị tương đương: 01 bản chụp.",
+          "position": 8,
+          "name": "Bản đăng ký kế hoạch sản xuất, pha chế, nhập khẩu nguyên liệu và tiêu thụ  sản phẩm xăng dầu, khí của Thương nhân có xác nhận  của Bộ Công Thương: 01 bản chụp.",
+          "component_code": "000.00.00.G12-KQ3038",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c70-724b-96df-ddc2578f60d3",
+          "name": "Xác nhận thông quan hàng hóa",
+          "code": "KQ.G12.000583"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7d-7398-be4e-8e22567edc3a",
+          "name": "Quy định thủ tục hải quan đối với xăng dầu, hóa chất, khí xuất khẩu, nhập khẩu, tạm nhập tái xuất, chuyển khẩu, quá cảnh; nguyên liệu nhập khẩu để sản xuất và pha chế hoặc gia công xuất khẩu xăng, dầu, khí; dầu thô xuất khẩu, nhập khẩu; hàng hóa xuất khẩu, nhập khẩu phục vụ hoạt động dầu khí",
+          "code": "69/2016/TT-BTC"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afe7-9c25863596db",
+          "name": "Nghị định 08/2015/NĐ-CP",
+          "code": "08/2015/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7d-7398-be4d-1c6dbc289d7a",
+          "name": "Quy định về thủ tục hải quan; kiểm tra, giám sát hải quan; thuế xuất khẩu thuế nhập khẩu và quản lý thuế đối vớỉ hàng hoá xuất khẩu, nhập khẩu.",
+          "code": "38/2015/TT-BTC"
+        },
+        {
+          "id": "019d2bb3-5d7d-7398-be4d-ff62cdf67da5",
+          "name": "Luật 54/2014/QH13",
+          "code": "54/2014/QH13"
+        }
+      ]
+    }
+  ]
+}

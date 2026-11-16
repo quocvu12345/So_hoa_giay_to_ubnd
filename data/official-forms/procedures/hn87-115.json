@@ -1,0 +1,90 @@
+{
+  "ordinal": "115",
+  "managing_agency": "Sở Nông nghiệp Môi trường",
+  "procedure_code": "1.012812",
+  "name": "Hòa giải tranh chấp đất đai",
+  "domain": "Đất đai (Bộ Nông nghiệp và Môi trường)",
+  "ministry_decision": "2304/QĐ-BNNMT ngày 23/06/2025",
+  "hanoi_decision": "956/QĐ-TTPVHCC ngày 27/6/2025",
+  "workflow_decision": "1489/QĐ-TTPVHC ngày 27/10/2025",
+  "fees": "Không quy định",
+  "execution_level": "Cấp Xã",
+  "competent_authority": "UBND cấp xã",
+  "delegation_decision": "",
+  "delegation_expiry": "",
+  "receiving_location": "Điểm hỗ trợ DVC số",
+  "id": "hn87-115",
+  "source_page": 4,
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "inventory_date": "2026-04-27",
+  "checked_at": "2026-11-12T22:24:34.534676+07:00",
+  "details": [
+    {
+      "id": "019d2bfa-76e6-7468-b6f2-3d412e902b88",
+      "code": "1.012812",
+      "name": "Hòa giải tranh chấp đất đai",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1776326787494,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfa-76e6-7468-b6f2-3d412e902b88",
+      "raw_path": "evidence/dvc/details/019d2bfa-76e6-7468-b6f2-3d412e902b88.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "- Các giấy tờ có liên quan đến việc sử dụng đất (bản phô tô hoặc có công chức hoặc có chứng thực).",
+          "component_code": "000.00.00.G13-KQ004620",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "- Đơn yêu cầu yêu cầu hòa giải tranh chấp đất đai (bản chính);",
+          "component_code": "000.00.00.G13-KQ004840",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c6d-743d-a39d-810a9ffdfc4d",
+          "name": "Biên bản hòa giải có chữ ký của Chủ tịch Hội đồng hòa giải, các bên tranh chấp có mặt tại buổi hòa giải, các thành viên tham gia hòa giải (có đóng dấu UBND cấp xã)",
+          "code": "KQ_TT16_DD"
+        },
+        {
+          "id": "019d2bb2-1c74-72d6-adba-2762fb4f027c",
+          "name": "- Biên bản hòa giải được gửi cho các bên tranh chấp và lưu tại UBND cấp xã.",
+          "code": "KQ.G13.000291"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7e-72d1-afe8-0a00a8be7fd7",
+          "name": "Nghị định 102/2024/NĐ-CP ngày 30/7/2024 của Chính phủ quy định chi tiết thi hành một số điều của Luật Đất đai.",
+          "code": "102/2024/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afe9-61a6469bc95c",
+          "name": "Thực hiện thủ tục hành chính theo cơ chế một cửa, một cửa liên thông tại Bộ phận Một cửa và cổng Dịch vụ công quốc gia",
+          "code": "118/2025/NĐ-C"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b673-29122897c8a3",
+          "name": "Luật số 43/2024/QH15 ngày 29/6/2024",
+          "code": "43/2024/QH15"
+        }
+      ]
+    }
+  ],
+  "lookup_status": "retrieved",
+  "currency_status": "snapshot_requires_later_amendment_check",
+  "errors": []
+}

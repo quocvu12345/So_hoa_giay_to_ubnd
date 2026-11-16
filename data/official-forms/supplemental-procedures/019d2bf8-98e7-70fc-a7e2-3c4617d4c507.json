@@ -1,0 +1,145 @@
+{
+  "id": "dvc-019d2bf8-98e7-70fc-a7e2-3c4617d4c507",
+  "procedure_code": "1.001622",
+  "name": "Hỗ trợ ăn trưa đối với trẻ em mẫu giáo",
+  "domain": "Giáo dục và Đào tạo thuộc hệ thống giáo dục quốc dân",
+  "managing_agency": "Bộ Giáo dục và Đào tạo",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:18.026572+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bf8-98e7-70fc-a7e2-3c4617d4c507",
+      "code": "1.001622",
+      "name": "Hỗ trợ ăn trưa đối với trẻ em mẫu giáo",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1779780813628,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf8-98e7-70fc-a7e2-3c4617d4c507",
+      "raw_path": "evidence/dvc/details/019d2bf8-98e7-70fc-a7e2-3c4617d4c507.json",
+      "components": [
+        {
+          "section": " Đối với trẻ em không có nguồn nuôi dưỡng được quy định tại khoản 1 Điều 5 Nghị định số 136/2013/NĐ-CP ngày 21 tháng 10 năm 2013 của Chính phủ quy định chính sách trợ giúp xã hội đối với đối tượng bảo trợ xã hội thì cha mẹ hoặc người chăm sóc, nuôi dưỡng trẻ em nộp một trong số các loại giấy tờ sau:",
+          "position": 1,
+          "name": "Bản sao kèm theo bản chính để đối chiếu hoặc bản sao có chứng thực Giấy chứng nhận nuôi con nuôi đối với trẻ mồ côi, bị bỏ rơi hoặc trẻ em thuộc các trường hợp khác quy định khoản 1 Điều 5 Nghị định số 136/2013/NĐ-CP ngày 21 tháng 10 năm 2013 của Chính phủ quy định chính sách trợ giúp xã hội đối với đối tượng bảo trợ xã hội",
+          "component_code": "TP-G03.1301",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": " Đối với trẻ em không có nguồn nuôi dưỡng được quy định tại khoản 1 Điều 5 Nghị định số 136/2013/NĐ-CP ngày 21 tháng 10 năm 2013 của Chính phủ quy định chính sách trợ giúp xã hội đối với đối tượng bảo trợ xã hội thì cha mẹ hoặc người chăm sóc, nuôi dưỡng trẻ em nộp một trong số các loại giấy tờ sau:",
+          "position": 2,
+          "name": "Bản sao kèm bản chính để đối chiếu hoặc bản sao có chứng thực Văn bản xác nhận của Ủy ban nhân dân cấp xã hoặc cơ sở bảo trợ xã hội về tình trạng trẻ mồ côi, bị bỏ rơi hoặc trẻ thuộc các trường hợp khác quy định tại khoản 1 Điều 5 Nghị định số 136/2013/NĐ-CP ngày 21 tháng 10 năm 2013 của Chính phủ quy định chính sách trợ giúp xã hội đối với đối tượng bảo trợ xã hội",
+          "component_code": "TP-G03.1300",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": " Đối với trẻ em không có nguồn nuôi dưỡng được quy định tại khoản 1 Điều 5 Nghị định số 136/2013/NĐ-CP ngày 21 tháng 10 năm 2013 của Chính phủ quy định chính sách trợ giúp xã hội đối với đối tượng bảo trợ xã hội thì cha mẹ hoặc người chăm sóc, nuôi dưỡng trẻ em nộp một trong số các loại giấy tờ sau:",
+          "position": 3,
+          "name": "Bản sao kèm bản chính để đối chiếu hoặc bản sao có chứng thực Quyết định về việc trợ cấp xã hội của Chủ tịch Ủy ban nhân dân cấp huyện",
+          "component_code": "TP-G03.1299",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Đối với trẻ em thuộc đối tượng là con liệt sĩ, con Anh hùng Lực lượng vũ trang nhân dân, con thương binh, con người hưởng chính sách như thương binh, con bệnh binh; con một số đối tượng chính sách khác theo quy định tại Pháp lệnh ưu đãi người có công với cách mạng (nếu có) ",
+          "position": 1,
+          "name": "Bản sao kèm theo bản chính để đối chiếu hoặc bản sao có chứng thực Giấy xác nhận của cơ quan quản lý đối tượng người có công và Giấy khai sinh của trẻ em. (Cơ quan giải quyết TTHC khai thác, sử dụng thông tin đã có trong Cơ sở dữ liệu quốc gia về dân cư, Cơ sở dữ liệu về hộ tịch để thay thế thành phần hồ sơ Bản sao Quyết định về việc trợ cấp xã hội, Bản sao xác nhận về tình trạng trẻ mồ côi, bị bỏ rơi hoặc trẻ thuộc các trường hợp khác quy định, Giấy chứng nhận nuôi con nuôi.  Trường hợp Cơ quan giải quyết TTHC không khai thác được hoặc khai thác không đầy đủ dữ liệu công dân trên Cơ sở dữ liệu quốc gia về về dân cư, Cơ sở dữ liệu về hộ tịch, Cơ quan giải quyết TTHC yêu cầu công dân bổ sung Bản sao Quyết định về việc trợ cấp xã hội, Bản sao xác nhận về tình trạng trẻ mồ côi, bị bỏ rơi hoặc trẻ thuộc các trường hợp khác quy định, Giấy chứng nhận nuôi con nuôi theo quy định tại Điều 8 Nghị quyết 66.7/2025/NQ-CP ngày 15/11/2025 của Chính phủ quy định cắt giảm, đơn giản hóa thủ tục hành chính dựa trên dữ liệu)",
+          "component_code": "TP-G03.1303",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Đối với trẻ em thuộc đối tượng là nhân khẩu trong gia đình thuộc diện hộ nghèo, cận nghèo theo quy định của Thủ tướng Chính phủ ",
+          "position": 1,
+          "name": "Bản sao và mang bản chính để đối chiếu hoặc bản sao có chứng thực Giấy chứng nhận hoặc Giấy xác nhận hộ nghèo, hộ cận nghèo do Ủy ban nhân dân cấp xã cấp",
+          "component_code": "TP-G03.1302",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Đối với trẻ em thuộc đối tượng là trẻ em khuyết tật học hòa nhập",
+          "position": 1,
+          "name": "Bản sao kèm theo bản chính để đối chiếu hoặc bản sao có chứng thực Giấy xác nhận khuyết tật do Ủy ban nhân dân cấp xã cấp hoặc Quyết định về việc trợ cấp xã hội của Chủ tịch Ủy ban nhân dân cấp huyện. (Cơ quan giải quyết TTHC khai thác, sử dụng thông tin đã có trong Cơ sở dữ liệu quốc gia về dân cư, Cơ sở dữ liệu về hộ tịch để thay thế thành phần hồ sơ Bản sao Quyết định về việc trợ cấp xã hội, Bản sao xác nhận về tình trạng trẻ mồ côi, bị bỏ rơi hoặc trẻ thuộc các trường hợp khác quy định, Giấy chứng nhận nuôi con nuôi.  Trường hợp Cơ quan giải quyết TTHC không khai thác được hoặc khai thác không đầy đủ dữ liệu công dân trên Cơ sở dữ liệu quốc gia về về dân cư, Cơ sở dữ liệu về hộ tịch, Cơ quan giải quyết TTHC yêu cầu công dân bổ sung Bản sao Quyết định về việc trợ cấp xã hội, Bản sao xác nhận về tình trạng trẻ mồ côi, bị bỏ rơi hoặc trẻ thuộc các trường hợp khác quy định, Giấy chứng nhận nuôi con nuôi theo quy định tại Điều 8 Nghị quyết 66.7/2025/NQ-CP ngày 15/11/2025 của Chính phủ quy định cắt giảm, đơn giản hóa thủ tục hành chính dựa trên dữ liệu)",
+          "component_code": "TP-G03.001474",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Đối với trẻ em thường trú ở thôn đặc biệt khó khăn, xã có điều kiện kinh tế - xã hội đặc biệt khó khăn, xã đặc biệt khó khăn vùng bãi ngang ven biển, hải đảo theo quy định của Thủ tướng Chính phủ thì cha mẹ hoặc người chăm sốc, nuôi dưỡng trẻ em :",
+          "position": 1,
+          "name": "Cung cấp thông tin về số định danh cá nhân của trẻ em hoặc của cha hoặc mẹ hoặc người chăm sóc, nuôi dưỡng trẻ em",
+          "component_code": "TP-G03.001493",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Đối với trẻ em thường trú ở thôn đặc biệt khó khăn, xã có điều kiện kinh tế - xã hội đặc biệt khó khăn, xã đặc biệt khó khăn vùng bãi ngang ven biển, hải đảo theo quy định của Thủ tướng Chính phủ thì cha mẹ hoặc người chăm sốc, nuôi dưỡng trẻ em :",
+          "position": 2,
+          "name": "Bản sao của một trong các loại giấy tờ: Thẻ Căn cước công dân, Chứng minh nhân dân, Giấy xác nhận thông tin về cư trú, Giấy thông báo số định danh cá nhân và thông tin công dân trong Cơ sở dữ liệu quốc gia về dân cư trong trường hợp cơ quan, tổ chức không thể khai thác được thông tin cư trú của công dân trong Cơ sở dữ liệu quốc gia về dân cư",
+          "component_code": "TP-G03.001494",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c3b-735b-85a8-619d209f5b22",
+          "name": "Danh sách trẻ em mẫu giáo được hỗ trợ ăn trưa do UBND cấp xã phê duyệt",
+          "code": "KQ-G03.000423"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7e-72d1-afe8-3ac91da2e6b0",
+          "name": "Nghị định sửa đổi, bổ sung một số điều của các Nghị định liên quan đến việc nộp xuất trình sổ hộ khẩu, sổ tạm trú giấy khi thực hiện thủ tục hành chính, cung cấp dịch vụ công",
+          "code": "104/2022/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7f-719e-b474-64d6cf9b4aac",
+          "name": "Nghị định số 142/2025/NĐ-CP của Chính phủ: Quy định về phân định thẩm quyền của chính quyền địa phương hai cấp trong lĩnh vực quản lý nhà nước của Bộ Giáo dục và Đào tạo",
+          "code": "Nghị định số 142/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d86-7760-a63c-7fbfbf53f196",
+          "name": "Nghị định 105/2020/NĐ-CP",
+          "code": "105/2020/NĐ-CP"
+        },
+        {
+          "id": "019e6244-62fd-7749-82da-b11cb7f9b577",
+          "name": "Nghị quyết 66.7/2025/NQ-CP ",
+          "code": "66.7/2025/NQ-CP "
+        }
+      ]
+    }
+  ]
+}

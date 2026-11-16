@@ -1,0 +1,451 @@
+{
+  "id": "dvc-01a01e6d-b675-72d4-9c2f-e30462fd7dda",
+  "procedure_code": "1.116438",
+  "name": "(Hà Nội) Đăng ký đất đai, tài sản gắn liền với đất, cấp Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất lần đầu đối với cá nhân, cộng đồng dân cư, hộ gia đình, người gốc Việt Nam định cư ở nước ngoài",
+  "domain": "Đất đai",
+  "managing_agency": "UBND Thành phố Hà Nội",
+  "inventory_date": null,
+  "scope": "hanoi",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.478553+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "01a01e6d-b675-72d4-9c2f-e30462fd7dda",
+      "code": "1.116438",
+      "name": "(Hà Nội) Đăng ký đất đai, tài sản gắn liền với đất, cấp Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất lần đầu đối với cá nhân, cộng đồng dân cư, hộ gia đình, người gốc Việt Nam định cư ở nước ngoài",
+      "state": "ACTIVE",
+      "type": "SPECIFIC",
+      "is_ward": true,
+      "updated_at_source": 1787306784441,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/01a01e6d-b675-72d4-9c2f-e30462fd7dda",
+      "raw_path": "evidence/dvc/details/01a01e6d-b675-72d4-9c2f-e30462fd7dda.json",
+      "components": [
+        {
+          "section": "a) Đối với trường hợp thực hiện thủ tục đăng ký, cấp Giấy chứng nhận cho hộ gia đình, cá nhân, cộng đồng dân cư:",
+          "position": 1,
+          "name": "Đơn đăng ký đất đai, tài sản gắn liền với đất theo Mẫu số 15 ban hành kèm theo Quyết định số 105/2026/QĐ-UBND của UBND Thành phố (Bản chính).",
+          "component_code": "MD15.105.2026",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "01a01e5e-ce74-7337-b918-a5275d8b92dc",
+              "fileName": "Mẫu số 15 (a,b,c,d).docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/01a01e5e-ce74-7337-b918-a5275d8b92dc/Mẫu số 15 (a,b,c,d).docx"
+            }
+          ]
+        },
+        {
+          "section": "a) Đối với trường hợp thực hiện thủ tục đăng ký, cấp Giấy chứng nhận cho hộ gia đình, cá nhân, cộng đồng dân cư:",
+          "position": 2,
+          "name": "Một trong các loại giấy tờ quy định tại Điều 137, khoản 1, khoản 5 Điều 148, khoản 1, khoản 5 Điều 149 Luật Đất đai, sơ đồ nhà ở, công trình xây dựng (Bản sao - nếu có).",
+          "component_code": "33.TH1.TPHS02.105.2026",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "a) Đối với trường hợp thực hiện thủ tục đăng ký, cấp Giấy chứng nhận cho hộ gia đình, cá nhân, cộng đồng dân cư:",
+          "position": 3,
+          "name": "Giấy tờ về việc nhận thừa kế quyền sử dụng đất theo quy định của pháp luật về dân sự đối với trường hợp nhận thừa kế quyền sử dụng đất chưa được cấp Giấy chứng nhận theo quy định pháp luật về đất đai (Bản sao).",
+          "component_code": "33.TH1.TPHS03.105.2026",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "a) Đối với trường hợp thực hiện thủ tục đăng ký, cấp Giấy chứng nhận cho hộ gia đình, cá nhân, cộng đồng dân cư:",
+          "position": 4,
+          "name": "Giấy tờ về việc nhận thừa kế quyền sử dụng đất theo quy định của pháp luật về dân sự và giấy tờ về việc chuyển quyền sử dụng đất đối với trường hợp quy định tại khoản 4 Điều 45 Luật Đất đai (Bản sao).",
+          "component_code": "33.TH1.TPHS04.105.2026",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "a) Đối với trường hợp thực hiện thủ tục đăng ký, cấp Giấy chứng nhận cho hộ gia đình, cá nhân, cộng đồng dân cư:",
+          "position": 5,
+          "name": "Giấy tờ về giao đất không đúng thẩm quyền hoặc giấy tờ về việc mua, nhận thanh lý, hóa giá, phân phối nhà ở, công trình xây dựng gắn liền với đất theo quy định tại Điều 140 Luật Đất đai (Bản sao - nếu có).",
+          "component_code": "33.TH1.TPHS05.105.2026",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "a) Đối với trường hợp thực hiện thủ tục đăng ký, cấp Giấy chứng nhận cho hộ gia đình, cá nhân, cộng đồng dân cư:",
+          "position": 6,
+          "name": "Giấy tờ liên quan đến xử phạt vi phạm hành chính trong lĩnh vực đất đai đối với trường hợp có vi phạm hành chính trong lĩnh vực đất đai (Bản sao - nếu có).",
+          "component_code": "33.TH1.TPHS06.105.2026",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "a) Đối với trường hợp thực hiện thủ tục đăng ký, cấp Giấy chứng nhận cho hộ gia đình, cá nhân, cộng đồng dân cư:",
+          "position": 7,
+          "name": "Hợp đồng hoặc văn bản thỏa thuận hoặc quyết định của Tòa án nhân dân về việc xác lập quyền đối với thửa đất liền kề kèm theo sơ đồ thể hiện vị trí, kích thước phần diện tích thửa đất liền kề được quyền sử dụng hạn chế đối với trường hợp có đăng ký quyền đối với thửa đất liền kề (Bản sao - nếu có).",
+          "component_code": "33.TH1.TPHS07.105.2026",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "a) Đối với trường hợp thực hiện thủ tục đăng ký, cấp Giấy chứng nhận cho hộ gia đình, cá nhân, cộng đồng dân cư:",
+          "position": 8,
+          "name": "Văn bản xác định các thành viên có chung quyền sử dụng đất của hộ gia đình đang sử dụng đất đối với trường hợp hộ gia đình đang sử dụng đất (Bản chính - nếu có).",
+          "component_code": "33.TH1.TPHS08.105.2026",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "a) Đối với trường hợp thực hiện thủ tục đăng ký, cấp Giấy chứng nhận cho hộ gia đình, cá nhân, cộng đồng dân cư:",
+          "position": 9,
+          "name": "Mảnh trích đo bản đồ địa chính thửa đất (Bản chính - nếu có).",
+          "component_code": "33.TH1.TPHS09.105.2026",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "a) Đối với trường hợp thực hiện thủ tục đăng ký, cấp Giấy chứng nhận cho hộ gia đình, cá nhân, cộng đồng dân cư:",
+          "position": 10,
+          "name": "Hồ sơ thiết kế xây dựng công trình đã được cơ quan chuyên môn về xây dựng thẩm định hoặc đã có văn bản chấp thuận kết quả nghiệm thu hoàn thành hạng mục công trình, công trình xây dựng theo quy định của pháp luật về xây dựng đối với trường hợp chứng nhận quyền sở hữu công trình xây dựng trên đất nông nghiệp mà chủ sở hữu công trình không có một trong các loại giấy tờ quy định tại Điều 149 Luật Đất đai hoặc công trình được miễn giấy phép xây dựng theo quy định của pháp luật về xây dựng (Bản sao - nếu có).",
+          "component_code": "33.TH1.TPHS10.105.2026",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "a) Đối với trường hợp thực hiện thủ tục đăng ký, cấp Giấy chứng nhận cho hộ gia đình, cá nhân, cộng đồng dân cư:",
+          "position": 11,
+          "name": "Quyết định xử phạt vi phạm hành chính trong lĩnh vực đất đai (Bản sao - nếu có); chứng từ nộp phạt của người sử dụng đất đối với trường hợp quy định tại điểm a khoản 6 Điều 25 Nghị định số 101/2024/NĐ-CP.",
+          "component_code": "33.TH1.TPHS11.105.2026",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "a) Đối với trường hợp thực hiện thủ tục đăng ký, cấp Giấy chứng nhận cho hộ gia đình, cá nhân, cộng đồng dân cư:",
+          "position": 12,
+          "name": "Chứng từ thực hiện nghĩa vụ tài chính, giấy tờ liên quan đến việc miễn, giảm nghĩa vụ tài chính về đất đai, tài sản gắn liền với đất (Bản sao - nếu có).",
+          "component_code": "33.TH1.TPHS12.105.2026",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "a) Đối với trường hợp thực hiện thủ tục đăng ký, cấp Giấy chứng nhận cho hộ gia đình, cá nhân, cộng đồng dân cư:",
+          "position": 13,
+          "name": "Giấy tờ về việc chuyển quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất có chữ ký của bên chuyển quyền và bên nhận chuyển quyền đối với trường hợp nhận chuyển quyền sử dụng đất, quyền sở hữu nhà ở, công trình xây dựng mà chưa thực hiện thủ tục chuyển quyền theo quy định của pháp luật (Bản chính - nếu có).",
+          "component_code": "33.TH1.TPHS13.105.2026",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "a) Đối với trường hợp thực hiện thủ tục đăng ký, cấp Giấy chứng nhận cho hộ gia đình, cá nhân, cộng đồng dân cư:",
+          "position": 14,
+          "name": "Giấy xác nhận của cơ quan có chức năng quản lý về xây dựng cấp huyện trước ngày 01 tháng 7 năm 2025 về đủ điều kiện tồn tại nhà ở, công trình xây dựng đó theo quy định của pháp luật về xây dựng đối với trường hợp hộ gia đình, cá nhân có nhu cầu cấp Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất đối với nhà ở, công trình xây dựng thuộc trường hợp phải xin phép xây dựng quy định tại khoản 3 Điều 148, khoản 3 Điều 149 Luật Đất đai (Bản sao - nếu có).",
+          "component_code": "33.TH1.TPHS14.105.2026",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "a) Đối với trường hợp thực hiện thủ tục đăng ký, cấp Giấy chứng nhận cho hộ gia đình, cá nhân, cộng đồng dân cư:",
+          "position": 15,
+          "name": "Văn bản thỏa thuận về việc cấp chung một Giấy chứng nhận đối với trường hợp có nhiều người chung quyền sử dụng đất, chung quyền sở hữu tài sản gắn liền với đất (Bản chính - nếu có).",
+          "component_code": "33.TH1.TPHS15.105.2026",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "a) Đối với trường hợp thực hiện thủ tục đăng ký, cấp Giấy chứng nhận cho hộ gia đình, cá nhân, cộng đồng dân cư:",
+          "position": 16,
+          "name": "Văn bản về việc đại diện theo quy định của pháp luật về dân sự đối với trường hợp thực hiện thủ tục đăng ký đất đai, tài sản gắn liền với đất thông qua người đại diện (Bản chính - nếu có).",
+          "component_code": "33.TH1.TPHS16.105.2026",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "b) Đối với trường hợp thực hiện thủ tục đăng ký, cấp Giấy chứng nhận lần đầu cho người gốc Việt Nam định cư ở nước ngoài do nhận thừa kế quyền sử dụng đất theo quy định tại điểm h khoản 1 Điều 28 Luật Đất đai:",
+          "position": 1,
+          "name": "Đơn đăng ký đất đai, tài sản gắn liền với đất theo Mẫu số 15 ban hành kèm theo Quyết định số 105/2026/QĐ-UBND của UBND Thành phố (Bản chính).",
+          "component_code": "MD15.105.2026",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "01a01e5e-ce74-7337-b918-a5275d8b92dc",
+              "fileName": "Mẫu số 15 (a,b,c,d).docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/01a01e5e-ce74-7337-b918-a5275d8b92dc/Mẫu số 15 (a,b,c,d).docx"
+            }
+          ]
+        },
+        {
+          "section": "b) Đối với trường hợp thực hiện thủ tục đăng ký, cấp Giấy chứng nhận lần đầu cho người gốc Việt Nam định cư ở nước ngoài do nhận thừa kế quyền sử dụng đất theo quy định tại điểm h khoản 1 Điều 28 Luật Đất đai:",
+          "position": 2,
+          "name": "Một trong các loại giấy tờ quy định tại Điều 137, khoản 4, khoản 5 Điều 148, khoản 4, khoản 5 Điều 149 Luật Đất đai (Bản sao - nếu có).",
+          "component_code": "33.TH2.TPHS01.105.2026",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "b) Đối với trường hợp thực hiện thủ tục đăng ký, cấp Giấy chứng nhận lần đầu cho người gốc Việt Nam định cư ở nước ngoài do nhận thừa kế quyền sử dụng đất theo quy định tại điểm h khoản 1 Điều 28 Luật Đất đai:",
+          "position": 3,
+          "name": "Giấy tờ về việc nhận thừa kế quyền sử dụng đất theo quy định của pháp luật về dân sự (Bản sao).",
+          "component_code": "33.TH2.TPHS02.105.2026",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "b) Đối với trường hợp thực hiện thủ tục đăng ký, cấp Giấy chứng nhận lần đầu cho người gốc Việt Nam định cư ở nước ngoài do nhận thừa kế quyền sử dụng đất theo quy định tại điểm h khoản 1 Điều 28 Luật Đất đai:",
+          "position": 4,
+          "name": "Mảnh trích đo bản đồ địa chính thửa đất (Bản chính - nếu có).",
+          "component_code": "33.TH2.TPHS03.105.2026",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "b) Đối với trường hợp thực hiện thủ tục đăng ký, cấp Giấy chứng nhận lần đầu cho người gốc Việt Nam định cư ở nước ngoài do nhận thừa kế quyền sử dụng đất theo quy định tại điểm h khoản 1 Điều 28 Luật Đất đai:",
+          "position": 5,
+          "name": "Hồ sơ thiết kế xây dựng công trình đã được cơ quan chuyên môn về xây dựng thẩm định hoặc đã có văn bản chấp thuận kết quả nghiệm thu hoàn thành hạng mục công trình, công trình xây dựng theo quy định của pháp luật về xây dựng đối với trường hợp chứng nhận quyền sở hữu công trình xây dựng trên đất nông nghiệp mà chủ sở hữu công trình không có một trong các loại giấy tờ quy định tại Điều 149 Luật Đất đai hoặc công trình được miễn giấy phép xây dựng theo quy định của pháp luật về xây dựng (Bản sao - nếu có).",
+          "component_code": "33.TH2.TPHS04.105.2026",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "b) Đối với trường hợp thực hiện thủ tục đăng ký, cấp Giấy chứng nhận lần đầu cho người gốc Việt Nam định cư ở nước ngoài do nhận thừa kế quyền sử dụng đất theo quy định tại điểm h khoản 1 Điều 28 Luật Đất đai:",
+          "position": 6,
+          "name": "Chứng từ thực hiện nghĩa vụ tài chính, giấy tờ liên quan đến việc miễn, giảm nghĩa vụ tài chính về đất đai, tài sản gắn liền với đất (Bản sao - nếu có).",
+          "component_code": "33.TH2.TPHS05.105.2026",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "b) Đối với trường hợp thực hiện thủ tục đăng ký, cấp Giấy chứng nhận lần đầu cho người gốc Việt Nam định cư ở nước ngoài do nhận thừa kế quyền sử dụng đất theo quy định tại điểm h khoản 1 Điều 28 Luật Đất đai:",
+          "position": 7,
+          "name": "Văn bản thỏa thuận về việc cấp chung một Giấy chứng nhận đối với trường hợp có nhiều người chung quyền sử dụng đất, chung quyền sở hữu tài sản gắn liền với đất (Bản chính - nếu có).",
+          "component_code": "33.TH2.TPHS06.105.2026",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "b) Đối với trường hợp thực hiện thủ tục đăng ký, cấp Giấy chứng nhận lần đầu cho người gốc Việt Nam định cư ở nước ngoài do nhận thừa kế quyền sử dụng đất theo quy định tại điểm h khoản 1 Điều 28 Luật Đất đai:",
+          "position": 8,
+          "name": "Văn bản về việc đại diện theo quy định của pháp luật về dân sự đối với trường hợp thực hiện thủ tục đăng ký đất đai, tài sản gắn liền với đất thông qua người đại diện (Bản chính - nếu có).",
+          "component_code": "33.TH2.TPHS07.105.2026",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "b) Đối với trường hợp thực hiện thủ tục đăng ký, cấp Giấy chứng nhận lần đầu cho người gốc Việt Nam định cư ở nước ngoài do nhận thừa kế quyền sử dụng đất theo quy định tại điểm h khoản 1 Điều 28 Luật Đất đai:",
+          "position": 9,
+          "name": "Văn bản về việc đại diện theo quy định của pháp luật về dân sự đối với trường hợp thực hiện thủ tục đăng ký đất đai, tài sản gắn liền với đất thông qua người đại diện (Bản chính - nếu có).",
+          "component_code": "33.TH1.TPHS16.105.2026",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "c) Đối với trường hợp thực hiện thủ tục cấp Giấy chứng nhận cho cá nhân, cộng đồng dân cư, hộ gia đình, người gốc Việt Nam định cư ở nước ngoài đã có Thông báo xác nhận kết quả đăng ký đất đai:",
+          "position": 1,
+          "name": "Đơn đăng ký đất đai, tài sản gắn liền với đất theo Mẫu số 15 ban hành kèm theo Quyết định số 105/2026/QĐ-UBND của UBND Thành phố (Bản chính).",
+          "component_code": "MD15.105.2026",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "01a01e5e-ce74-7337-b918-a5275d8b92dc",
+              "fileName": "Mẫu số 15 (a,b,c,d).docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/01a01e5e-ce74-7337-b918-a5275d8b92dc/Mẫu số 15 (a,b,c,d).docx"
+            }
+          ]
+        },
+        {
+          "section": "c) Đối với trường hợp thực hiện thủ tục cấp Giấy chứng nhận cho cá nhân, cộng đồng dân cư, hộ gia đình, người gốc Việt Nam định cư ở nước ngoài đã có Thông báo xác nhận kết quả đăng ký đất đai:",
+          "position": 2,
+          "name": "Thông báo xác nhận kết quả đăng ký đất đai.",
+          "component_code": "33.TH3.TPHS01.105.2026",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "d) Các tờ khai, đơn cam kết (Bản chính):",
+          "position": 1,
+          "name": "Tờ khai lệ phí trước bạ nhà, đất",
+          "component_code": "33.TH4.TPHS01.105.2026",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "01a01e6a-649a-7588-a1a1-2f4249c2b280",
+              "fileName": "TỜ KHAI LỆ PHÍ TRƯỚC BẠ.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/01a01e6a-649a-7588-a1a1-2f4249c2b280/TỜ KHAI LỆ PHÍ TRƯỚC BẠ.docx"
+            }
+          ]
+        },
+        {
+          "section": "d) Các tờ khai, đơn cam kết (Bản chính):",
+          "position": 2,
+          "name": "Tờ khai Thuế phi nông nghiệp",
+          "component_code": "33.TH4.TPHS02.105.2026",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "01a01e6a-f088-7497-bbfd-4d3b48f455fe",
+              "fileName": "TỜ KHAI THUẾ SỬ DỤNG ĐẤT PHI NÔNG NGHIỆP.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/01a01e6a-f088-7497-bbfd-4d3b48f455fe/TỜ KHAI THUẾ SỬ DỤNG ĐẤT PHI NÔNG NGHIỆP.docx"
+            }
+          ]
+        },
+        {
+          "section": "d) Các tờ khai, đơn cam kết (Bản chính):",
+          "position": 3,
+          "name": "Tờ khai tiền sử dụng đất",
+          "component_code": "33.TH4.TPHS03.105.2026",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "d) Các tờ khai, đơn cam kết (Bản chính):",
+          "position": 4,
+          "name": "Tờ khai thuế thu nhập cá nhân (đối với trường hợp phải nộp thuế thu nhập cá nhân)",
+          "component_code": "33.TH4.TPHS04.105.2026",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "01a01e6b-9513-77e9-a6e5-d0eb673526f8",
+              "fileName": "TỜ KHAI THUẾ THU NHẬP CÁ NHÂN.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/01a01e6b-9513-77e9-a6e5-d0eb673526f8/TỜ KHAI THUẾ THU NHẬP CÁ NHÂN.docx"
+            }
+          ]
+        },
+        {
+          "section": "d) Các tờ khai, đơn cam kết (Bản chính):",
+          "position": 5,
+          "name": "Đơn cam kết hạn mức, lựa chọn thửa đất duy nhất (đối với trường hợp xin miễn, giảm tiền sử dụng đất đối với diện tích trong hạn mức được công nhận vào mục đích đất ở).",
+          "component_code": "33.TH4.TPHS05.105.2026",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019ff93f-a39e-733c-a775-c801c9abe59e",
+          "name": "Thông báo xác nhận kết quả đăng ký đất đai",
+          "code": "KQ-H36.000037"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d84-71c5-b672-6d9bdd44c1c7",
+          "name": "Luật Nhà ở số 27/2023/QH15",
+          "code": "27/2023/QH15"
+        },
+        {
+          "id": "019ed88c-73bf-73ed-a2c9-ebbe831f989d",
+          "name": "quy định chi tiết và hướng dẫn một số điều của Nghị quyết số 254/2025/QH15 của Quốc hội quy định một số cơ chế, chính sách tháo gỡ khó khăn vướng mắc trong tổ chức thi hành Luật Đất đai",
+          "code": "49/2026/NĐ-CP"
+        },
+        {
+          "id": "019f55b2-3b31-71cd-bf85-9982cee170c3",
+          "name": "Luật Kinh doanh bất động sản",
+          "code": "29/2023/QH15"
+        },
+        {
+          "id": "019eab71-e707-70af-996a-4e5b8b36e53e",
+          "name": "Luật Đất đai số 31/2024/QH15 ngày 18/01/2024 được sửa đổi bổ sung  một số điều bởi Luật số 43/2024/QH15, Luật số 47/2024/QH15 và Luật số 58/2024/QH15 của Quốc hội.",
+          "code": "31/2024/QH15 "
+        }
+      ]
+    }
+  ]
+}

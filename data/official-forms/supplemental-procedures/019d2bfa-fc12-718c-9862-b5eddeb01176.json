@@ -1,0 +1,113 @@
+{
+  "id": "dvc-019d2bfa-fc12-718c-9862-b5eddeb01176",
+  "procedure_code": "1.010802",
+  "name": "Giải quyết chế độ ưu đãi đối với vợ hoặc chồng liệt sĩ lấy chồng hoặc vợ khác",
+  "domain": "Người có công",
+  "managing_agency": "Bộ Nội vụ",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:18.003247+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfa-fc12-718c-9862-b5eddeb01176",
+      "code": "1.010802",
+      "name": "Giải quyết chế độ ưu đãi đối với vợ hoặc chồng liệt sĩ lấy chồng hoặc vợ khác",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1779869020558,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfa-fc12-718c-9862-b5eddeb01176",
+      "raw_path": "evidence/dvc/details/019d2bfa-fc12-718c-9862-b5eddeb01176.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "- Trường hợp không chăm sóc được bố, mẹ liệt sĩ khi còn sống: + Các Biên bản đồng thuận của thân nhân liệt sĩ hoặc của những người thuộc hàng thừa kế thứ hai hoặc thứ ba của liệt sĩ.  + Một trong các giấy tờ chứng minh lý do không chăm sóc được bố, mẹ liệt sĩ vì hoạt động cách mạng: lý lịch cán bộ; lý lịch đảng viên; lý lịch quân nhân; hồ sơ bảo hiểm xã hội; các giấy tờ, tài liệu khác do cơ quan có thẩm quyền ban hành, xác nhận trong thời gian tham gia cách mạng.",
+          "component_code": "G09-KQ003210187",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "- Trường hợp chăm sóc bố, mẹ liệt sĩ khi còn sống: + Văn bản xác nhận của Ủy ban nhân dân cấp xã nơi bố, mẹ liệt sĩ thường trú khi còn sống + Biên bản họp đồng thuận của thân nhân liệt sĩ hoặc của những người thuộc hàng thừa kế thứ hai của liệt sĩ quy định tại điểm b khoản 1 Điều 651 Bộ luật Dân sự (ông nội, bà nội, ông ngoại, bà ngoại, anh ruột, chị ruột, em ruột của liệt sĩ; cháu ruột của liệt sĩ mà người chết là ông nội, bà nội, ông ngoại, bà ngoại) có xác nhận của Ủy ban nhân dân cấp xã nơi lập biên bản theo Mẫu số 80. + Biên bản họp đồng thuận của thân nhân liệt sĩ hoặc của những người thuộc hàng thừa kế thứ ba của liệt sĩ quy định tại điểm c khoản 1 Điều 651 Bộ luật Dân sự (cụ nội, cụ ngoại của người chết; bác ruột, chú ruột, cậu ruột, cô ruột, dì ruột của liệt sĩ; cháu ruột của người chết mà liệt sĩ là bác ruột, chú ruột, cậu ruột, cô ruột, dì ruột; chắt ruột của liệt sĩ mà liệt sĩ là cụ nội, cụ ngoại) nếu những người thuộc hàng thừa kế thứ hai của liệt sĩ không còn. + Văn bản đồng thuận có xác nhận về chữ ký và nơi thường trú của Ủy ban nhân dân cấp xã của những thành viên vắng mặt không dự họp.",
+          "component_code": "G09-KQ003210188",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 3,
+          "name": "- Đơn đề nghị Mẫu số 17 Phụ lục I Nghị định số 131/2021/NĐ-CP.",
+          "component_code": "G09-KQ003210189",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019d7160-2d5d-7479-a62f-4dbe91e40ddb",
+              "fileName": "Mus17PhlcINghnhs131.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d7160-2d5d-7479-a62f-4dbe91e40ddb/Mus17PhlcINghnhs131.docx"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 4,
+          "name": "- Trường hợp nuôi con liệt sĩ đến tuổi trưởng thành: Văn bản đồng thuận của con liệt sĩ có xác nhận về chữ ký và nơi thường trú của Ủy ban nhân dân cấp xã.",
+          "component_code": "G09-KQ003210190",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c4d-7725-9d9c-526e1421c729",
+          "name": "Quyết định về việc trợ cấp tuất hằng tháng đối với vợ hoặc chồng liệt sĩ đã lấy chồng hoặc vợ khác",
+          "code": "KQ.G09.000423"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7f-719e-b474-516a799e2145",
+          "name": "QUY ĐỊNH CHI TIẾT VÀ BIỆN PHÁP THI HÀNH PHÁP LỆNH ƯU ĐÃI NGƯỜI CÓ CÔNG VỚI CÁCH MẠNG",
+          "code": "Nghị định số 131/2021/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d85-73da-8eba-20bc75de794b",
+          "name": "ƯU ĐÃI NGƯỜI CÓ CÔNG VỚI CÁCH MẠNG",
+          "code": "Pháp lệnh số: 02/2020/UBTVQH14"
+        },
+        {
+          "id": "019d2bb3-5d7f-719e-b46e-3b82195c2d48",
+          "name": "Nghị định số 45/2025/NĐ-CP ngày 28/02/2025 của Chính phủ quy định tổ chức các cơ quan chuyên môn thuộc Ủy ban nhân dân tỉnh, thành phố trực thuộc trung ương và Ủy ban nhân dân huyện, quận, thị xã, thành phố thuộc tỉnh, thành phố thuộc thành phố trực thuộc trung ương",
+          "code": "45/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7f-719e-b474-93996f3f00db",
+          "name": "Nghị định số 25/2025/NĐ-CP ngày 21 tháng 02 năm 2025 của Chính phủ quy định chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của Bộ Nội vụ",
+          "code": "Nghị định số 25/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b671-f40a5ee32475",
+          "name": "Nghị quyết số 190/2025/QH15 của Quốc hội: Quy định về xử lý một số vấn đề liên quan đến sắp xếp tổ chức bộ máy nhà nước",
+          "code": "190/2025/NQ-QH15"
+        }
+      ]
+    }
+  ]
+}

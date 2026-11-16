@@ -1,0 +1,35 @@
+{
+  "id": "dvc-019fefca-f30a-7442-b538-7b00a377f1ce",
+  "procedure_code": "1.116216",
+  "name": "Đính chính Giấy chứng nhận 01",
+  "domain": "Hoạt động khoa học và công nghệ",
+  "managing_agency": "Bộ Công an",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.480693+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019fefca-f30a-7442-b538-7b00a377f1ce",
+      "code": "1.116216",
+      "name": "Đính chính Giấy chứng nhận 01",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1786434911183,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019fefca-f30a-7442-b538-7b00a377f1ce",
+      "raw_path": "evidence/dvc/details/019fefca-f30a-7442-b538-7b00a377f1ce.json",
+      "components": [],
+      "results": [
+        {
+          "id": "019feef1-7cda-74fe-acb4-1bd706ac8bed",
+          "name": "Văn bản trả lời người đề nghị và nêu rõ lý do trong trường hợp không phê duyệt",
+          "code": "KQ.G11.000022"
+        }
+      ],
+      "legal_bases": []
+    }
+  ]
+}

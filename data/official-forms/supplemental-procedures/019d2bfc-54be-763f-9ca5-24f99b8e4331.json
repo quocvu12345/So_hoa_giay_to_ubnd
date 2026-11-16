@@ -1,0 +1,200 @@
+{
+  "id": "dvc-019d2bfc-54be-763f-9ca5-24f99b8e4331",
+  "procedure_code": "1.008339",
+  "name": "Khai thuế đối với hãng hàng không nước ngoài/hãng vận tải nước ngoài",
+  "domain": "Thuế",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.943756+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfc-54be-763f-9ca5-24f99b8e4331",
+      "code": "1.008339",
+      "name": "Khai thuế đối với hãng hàng không nước ngoài/hãng vận tải nước ngoài",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1791965066077,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-54be-763f-9ca5-24f99b8e4331",
+      "raw_path": "evidence/dvc/details/019d2bfc-54be-763f-9ca5-24f99b8e4331.json",
+      "components": [
+        {
+          "section": "(i) Đối với khai thuế đối với hãng hàng không nước ngoài gồm:",
+          "position": 1,
+          "name": "Tờ khai thuế thu nhập doanh nghiệp đối với hãng hàng không nước ngoài theo mẫu số 01/HKNN ban hành kèm theo Thông tư số 89/2026/TT-BTC",
+          "component_code": "G12.0011854",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019facb7-5063-70fc-ad27-b6708da197ee",
+              "fileName": "7. 01.HKNN.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019facb7-5063-70fc-ad27-b6708da197ee/7. 01.HKNN.docx"
+            }
+          ]
+        },
+        {
+          "section": "(i) Đối với khai thuế đối với hãng hàng không nước ngoài gồm:",
+          "position": 2,
+          "name": "Bản sao hợp đồng nhà thầu, hợp đồng nhà thầu phụ (đối với lần khai thuế đầu tiên của hợp đồng nhà thầu)",
+          "component_code": "G12.0011855",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "(ii) Đối với khai thuế đối với hãng vận tải nước ngoài gồm:",
+          "position": 1,
+          "name": "Tờ khai quyết toán thuế TNDN đối với hãng vận tải nước ngoài theo Mẫu số 01/VTNN ban hành kèm theo Thông tư số 89/2026/TT-BTC",
+          "component_code": "G12.0011862",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019facb9-4712-755b-94c1-7c082d6e7e6d",
+              "fileName": "8. 01.VTNN.doc",
+              "bucketName": "dvc",
+              "filePath": "configuring/019facb9-4712-755b-94c1-7c082d6e7e6d/8. 01.VTNN.doc"
+            }
+          ]
+        },
+        {
+          "section": "(ii) Đối với khai thuế đối với hãng vận tải nước ngoài gồm:",
+          "position": 2,
+          "name": "Phụ lục bảng kê bảng kê thu nhập vận tải quốc tế (áp dụng đối với trường hợp hoán đổi/chia chỗ) theo mẫu số 01-2/VTNN",
+          "component_code": "G12.0008148",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019facbb-7045-75e9-a032-dc50275d1d91",
+              "fileName": "10. 01-2.VTNN.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019facbb-7045-75e9-a032-dc50275d1d91/10. 01-2.VTNN.docx"
+            }
+          ]
+        },
+        {
+          "section": "(ii) Đối với khai thuế đối với hãng vận tải nước ngoài gồm:",
+          "position": 3,
+          "name": "Phụ lục bảng kê thu nhập vận tải quốc tế (áp dụng đối với doanh nghiệp khai thác tàu) theo mẫu số 01-1/VTNN",
+          "component_code": "G12.0008147",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019facbc-0d04-7031-b7f2-316a6f6b360a",
+              "fileName": "9. 01-1.VTNN.doc",
+              "bucketName": "dvc",
+              "filePath": "configuring/019facbc-0d04-7031-b7f2-316a6f6b360a/9. 01-1.VTNN.doc"
+            }
+          ]
+        },
+        {
+          "section": "(ii) Đối với khai thuế đối với hãng vận tải nước ngoài gồm:",
+          "position": 4,
+          "name": "Phụ lục Bảng kê doanh thu lưu công-ten-nơ theo mẫu số 01-3/VTNN ban hành kèm theo Thông tư số 89/2026/TT-BTC",
+          "component_code": "G12.0008149",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019facbc-f097-773c-ba9e-8157ba10c1d2",
+              "fileName": "11. 01-3.VTNN.pdf",
+              "bucketName": "dvc",
+              "filePath": "configuring/019facbc-f097-773c-ba9e-8157ba10c1d2/11. 01-3.VTNN.pdf"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 1,
+          "name": "Từ 01/7/2026 đến thời điểm theo lộ trình của cơ quan thuế quy định tại khoản 2 Điều 99 Thông tư số 89/2026/TT-BTC thì các tờ khai 01/HKNN, 01/VTNN, 01-1/VTNN, 01-2/VTNN, 01-3/VTNN thực hiện theo mẫu ban hành kèm theo Thông tư số 80/2021/TT-BTC ngày 29/9/2021 của Bộ Tài chính (đã được sửa đổi, bổ sung)",
+          "component_code": "G12.0008150",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019facbf-24aa-700a-a204-7fe65e48af75",
+              "fileName": "01-3 VTNN TT 80.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019facbf-24aa-700a-a204-7fe65e48af75/01-3 VTNN TT 80.docx"
+            },
+            {
+              "id": "019facbf-2598-7710-ab5d-32ae5190953b",
+              "fileName": "01-2 VTNN TT 80.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019facbf-2598-7710-ab5d-32ae5190953b/01-2 VTNN TT 80.docx"
+            },
+            {
+              "id": "019facbf-2699-747b-8f5b-c6060f36fa39",
+              "fileName": "01-1 VTNN TT 80.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019facbf-2699-747b-8f5b-c6060f36fa39/01-1 VTNN TT 80.docx"
+            },
+            {
+              "id": "019facbf-27b9-750e-81de-bbf023f5531b",
+              "fileName": "01 VTNN TT 80.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019facbf-27b9-750e-81de-bbf023f5531b/01 VTNN TT 80.docx"
+            },
+            {
+              "id": "019facbf-28b2-72a5-9e5d-6f1d91e25cb9",
+              "fileName": "01 HKNN TT 80.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019facbf-28b2-72a5-9e5d-6f1d91e25cb9/01 HKNN TT 80.docx"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c70-724b-96e1-59c6a510ec9f",
+          "name": "Hồ sơ gửi đến cơ quan thuế không có kết quả giải quyết.",
+          "code": "KQ.G12.000429"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019e5e83-1282-771d-9014-49799413a4e5",
+          "name": "Luật số 108/2025/QH15 của Quốc hội: Luật Quản lý thuế",
+          "code": "108/2025/QH15"
+        },
+        {
+          "id": "019f64ed-e026-7299-b5f2-ca44a3964050",
+          "name": "Nghị định về thực hiện thủ tục hành chính theo cơ chế một cửa, một cửa liên thông tại Bộ phận Một cửa và Cổng Dịch vụ công quốc gia.",
+          "code": "118/2025/NĐ-CP "
+        },
+        {
+          "id": "019f8db3-9765-740b-8b90-682677b9c421",
+          "name": "Thông tư quy định chi tiết một số điều của Luật Quản lý thuế và Nghị định số 252/2026/NĐ-CP của Chính phủ quy định chi tiết một số điều và biện pháp để tổ chức, hướng dẫn thi hành Luật Quản lý thuế",
+          "code": "89/2026/TT-BTC"
+        },
+        {
+          "id": "019f356e-75e3-7494-a2f3-672d8dce61a6",
+          "name": "QUY ĐỊNH CHI TIẾT MỘT SỐ ĐIỀU VÀ BIỆN PHÁP ĐỂ TỔ CHỨC, HƯỚNG DẪN THI HÀNH LUẬT QUẢN LÝ THUẾ",
+          "code": "252/2026/NĐ-CP"
+        }
+      ]
+    }
+  ]
+}

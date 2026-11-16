@@ -1,0 +1,116 @@
+{
+  "id": "dvc-019d2bfa-9675-75dd-9810-3a861ae77af9",
+  "procedure_code": "1.014776",
+  "name": "Cấp, cấp lại mã số vùng trồng, mã số cơ sở đóng gói",
+  "domain": "Trồng trọt và Bảo vệ thực vật",
+  "managing_agency": "Bộ Nông nghiệp và Môi trường",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:18.012105+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfa-9675-75dd-9810-3a861ae77af9",
+      "code": "1.014776",
+      "name": "Cấp, cấp lại mã số vùng trồng, mã số cơ sở đóng gói",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1785905587032,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfa-9675-75dd-9810-3a861ae77af9",
+      "raw_path": "evidence/dvc/details/019d2bfa-9675-75dd-9810-3a861ae77af9.json",
+      "components": [
+        {
+          "section": "Đối với đề nghị cấp mã số vùng trồng hoặc đăng ký bổ sung thị trường xuất khẩu",
+          "position": 1,
+          "name": "Đơn đề nghị cấp mã số vùng trồng theo Phụ lục I ban hành kèm theo Nghị  quyết số 36/2026/NQ-CP",
+          "component_code": "TP-G10.000072",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019fd038-ec19-72f9-9dc3-a0c1ee37a02f",
+              "fileName": "Phu luc I-Don de nghi cap MSVT.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fd038-ec19-72f9-9dc3-a0c1ee37a02f/Phu luc I-Don de nghi cap MSVT.docx"
+            }
+          ]
+        },
+        {
+          "section": "Đối với đề nghị cấp mã số cơ sở đóng gói hoặc đăng ký bổ sung thị trường xuất khẩu",
+          "position": 1,
+          "name": "Đơn đề nghị cấp mã số cơ sở đóng gói theo Phụ lục II ban hành kèm theo  Nghị quyết số 36/2026/NQ-CP",
+          "component_code": "TP-G10.000073",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019fd039-2e70-7410-88f7-23c273e20075",
+              "fileName": "Phu luc II- Don de nghi cap MSCSDG.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fd039-2e70-7410-88f7-23c273e20075/Phu luc II- Don de nghi cap MSCSDG.docx"
+            }
+          ]
+        },
+        {
+          "section": "Đối với trường hợp đề nghị cấp lại mã số vùng trồng/mã số cơ sở đóng gói",
+          "position": 1,
+          "name": "Đơn đề nghị cấp lại mã số vùng trồng/mã số cơ sở đóng gói theo Phụ lục  V ban hành kèm theo Nghị quyết số 36/2026/NQ-CP",
+          "component_code": "TP-G10.000074",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019fd039-5c50-72a4-a7c3-e23193353c74",
+              "fileName": "Phu luc V - Don de nghi cap lai.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fd039-5c50-72a4-a7c3-e23193353c74/Phu luc V - Don de nghi cap lai.docx"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "id": "019fcffc-fcd5-758e-b878-24d196ff170c",
+          "name": "Thông báo cấp/cấp lại mã số vùng trồng theo Phụ lục III ban hành kèm  theo Nghị quyết số 36/2026/NQ-CP",
+          "code": "KQ-G10.000020"
+        },
+        {
+          "id": "019fcffd-5045-744e-ad35-acbd052c684b",
+          "name": "Thông báo cấp/cấp lại mã số cơ sở đóng gói theo Phụ lục IV ban hành  kèm theo Nghị quyết số 36/2026/NQ-CP",
+          "code": "KQ-G10.000021"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d84-71c5-b675-0c19e742b5d3",
+          "name": " Luật Trồng trọt ",
+          "code": "Luật số 31/2018/QH14"
+        },
+        {
+          "id": "019d2bb3-5d7f-719e-b475-59185b59bf2a",
+          "name": "Quy định nhập khẩu cây mang theo bầu đất và mã số vùng trồng, mã số cơ sở đóng gói",
+          "code": "số 38/2026/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d87-7195-a447-f9a5abcd2f43",
+          "name": "Luật sửa đổi, bổ sung một số điều của 15 luật trong lĩnh vực nông nghiệp và môi trường",
+          "code": "Luật số 146/2025/QH15"
+        },
+        {
+          "id": "019fd02f-6a3c-708e-8134-740f8ccdd5e3",
+          "name": "Quy định đơn giản hóa thủ tục hành chính về mã số vùng trồng, mã số cơ sở đóng gói ",
+          "code": "36/2026/NQ-CP"
+        }
+      ]
+    }
+  ]
+}

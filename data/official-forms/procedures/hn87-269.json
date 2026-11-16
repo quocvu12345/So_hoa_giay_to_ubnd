@@ -1,0 +1,127 @@
+{
+  "ordinal": "269",
+  "managing_agency": "Sở Giáo dục Đào tạo",
+  "procedure_code": "1.014996",
+  "name": "Chuyển đổi nhà trẻ, trường mẫu giáo, trường mầm non tư thục do nhà đầu tư trong nước và nhà đầu tư nước ngoài đề nghị thành lập sang nhà trẻ, trường mẫu giáo, trường mầm non tư thục hoạt động không vì lợi nhuận",
+  "domain": "Giáo dục mầm non",
+  "ministry_decision": "843/QĐ-BGDĐT ngày 09/4/2026",
+  "hanoi_decision": "Đang dự thảo",
+  "workflow_decision": "Đang dự thảo",
+  "fees": "Không quy định",
+  "execution_level": "Cấp xã",
+  "competent_authority": "UBND cấp xã",
+  "delegation_decision": "",
+  "delegation_expiry": "",
+  "receiving_location": "Điểm hỗ trợ DVC số",
+  "id": "hn87-269",
+  "source_page": 11,
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "inventory_date": "2026-04-27",
+  "checked_at": "2026-11-12T22:24:41.084665+07:00",
+  "details": [
+    {
+      "id": "019daf4b-78ed-72f0-a3df-fa5a240d8a0e",
+      "code": "1.014996",
+      "name": "Chuyển đổi nhà trẻ, trường mẫu giáo, trường mầm non tư thục do nhà đầu tư trong nước và nhà đầu tư nước ngoài đề nghị thành lập sang nhà trẻ, trường mẫu giáo, trường mầm non tư thục hoạt động không vì lợi nhuận",
+      "state": "ACTIVE",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1778223116229,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019daf4b-78ed-72f0-a3df-fa5a240d8a0e",
+      "raw_path": "evidence/dvc/details/019daf4b-78ed-72f0-a3df-fa5a240d8a0e.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Tờ trình đề nghị chuyển đổi sang nhà trẻ, trường mẫu giáo, trường mầm non tư thục hoạt động không vì lợi nhuận (theo Mẫu số 01 tại Phụ lục kèm theo Nghị định số 66/2026/NĐ-CP)",
+          "component_code": "TP-G03.002374",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019daf42-4049-73ff-9d1f-260ab510228e",
+              "fileName": "Mau 01.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019daf42-4049-73ff-9d1f-260ab510228e/Mau 01.docx"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Văn bản cam kết của các nhà đầu tư đại diện ít nhất 75% tổng số vốn góp đối với nhà trẻ, trường mẫu giáo, trường mầm non tư thục chuyển sang nhà trẻ, trường mẫu giáo, trường mầm non tư thục hoạt động không vì lợi nhuận, bảo đảm thực hiện hoạt động không vì lợi nhuận, không rút vốn, không hưởng lợi tức; phần lợi nhuận tích lũy hằng năm thuộc sở hữu chung hợp nhất không phân chia để tiếp tục đầu tư phát triển nhà trẻ, trường mẫu giáo, trường mầm non tư thục.",
+          "component_code": "TP-G03.1284",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 3,
+          "name": "Dự thảo quy chế tổ chức và hoạt động; dự thảo quy chế tài chính nội bộ của nhà trẻ, trường mẫu giáo, trường mầm non tư thục hoạt động không vì lợi nhuận.",
+          "component_code": "TP-G03.1285",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 4,
+          "name": "Bản sao kèm bản chính để đối chiếu hoặc bản sao điện tử hoặc bản sao điện tử có chứng thực từ bản chính hoặc bản sao được cấp từ sổ gốc hoặc bản sao được chứng thực từ bản chính của báo cáo kết quả kiểm toán; thỏa thuận giải quyết phần vốn góp cho nhà đầu tư không đồng ý chuyển đổi sang nhà trẻ, trường mẫu giáo, trường mầm non tư thục hoạt động không vì lợi nhuận (nếu có); các giấy tờ, tài liệu về đất đai, tài sản, tài chính, tổ chức và nhân sự của nhà trẻ, trường mẫu giáo, trường mầm non tư thục chuyển đổi sang nhà trẻ, trường mẫu giáo, trường mầm non tư thục hoạt động không vì lợi nhuận.  Trường hợp cơ quan có thẩm quyền khai thác được các thông tin trên từ Cơ sở dữ liệu chuyên ngành hoặc từ cơ quan nhà nước thì cơ sở giáo dục không cần phải cung cấp các văn bản trên và chỉ cần cung cấp thông tin để có cơ sở đối chiếu, khai thác dữ liệu.",
+          "component_code": "TP-G03.002377",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 5,
+          "name": "Báo cáo đánh giá tác động của việc chuyển đổi về nhân sự, tài chính, tài sản và phương án xử lý (theo Mẫu số 02 tại Phụ lục kèm theo Nghị định số 66/2026/NĐ-CP)",
+          "component_code": "TP-G03.002378",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019daf48-6802-73ac-ab66-49b9b1b42dd1",
+              "fileName": "Mau 02.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019daf48-6802-73ac-ab66-49b9b1b42dd1/Mau 02.docx"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 6,
+          "name": "Trường hợp hồ sơ có tài liệu bằng tiếng nước ngoài thì phải được dịch ra tiếng Việt; bản dịch phải được chứng thực theo quy định của pháp luật.",
+          "component_code": "TP-G03.002373",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019daf4b-4c96-76ce-a6cc-bec2d065b07d",
+          "name": "Quyết định của Chủ tịch Ủy ban nhân dân cấp xã về việc chuyển đổi nhà trẻ, trường mẫu giáo, trường mầm non tư thục do nhà đầu tư trong nước và nhà đầu tư nước ngoài đề nghị thành lập sang nhà trẻ, trường mẫu giáo, trường mầm non tư thục hoạt động không vì lợi nhuận",
+          "code": "KQ-G03.000490"
+        }
+      ],
+      "legal_bases": []
+    }
+  ],
+  "lookup_status": "retrieved",
+  "currency_status": "snapshot_requires_later_amendment_check",
+  "errors": []
+}

@@ -1,0 +1,141 @@
+{
+  "id": "hn87-148",
+  "ordinal": "148",
+  "procedure_code": "1.004498",
+  "name": "Sửa đổi, bổ sung nội dung quyết định công nhận và giao quyền quản lý cho tổ chức cộng đồng (thuộc địa bàn quản lý)",
+  "domain": "Thủy sản (Bộ Nông nghiệp và Môi trường)",
+  "department_id": "ktdt",
+  "department": "Phòng Kinh tế, Hạ tầng và Đô thị",
+  "authority_as_published": "UBND cấp xã",
+  "execution_level_as_published": "Cấp Xã",
+  "receiving_location_as_published": "Điểm hỗ trợ DVC số",
+  "inventory_date": "2026-04-27",
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "source_urls": [
+    "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfa-384d-7237-aed7-1af004e30b58"
+  ],
+  "current_dvc_match": true,
+  "lifecycle": null,
+  "scope": "hanoi_commune_notice_2026_04_27",
+  "scope_note": "Mốc kiểm kê cấp xã Hà Nội; áp dụng từng thủ tục tại Từ Liêm còn phải theo thẩm quyền/ủy quyền hiện hành.",
+  "status": "has_fillable_templates",
+  "components": [
+    {
+      "id": "hn87-148-c001",
+      "code": "000.00.00.H27-KQ0616",
+      "name": "Báo cáo đánh giá kết quả thực hiện và dự thảo quy chế mới đối với trường hợp sửa đổi, bổ sung Quy chế hoạt động của tổ chức cộng đồng;",
+      "section": "",
+      "role": "applicant_prepared",
+      "scenario_status": "conditional_needs_review",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 1,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfa-384d-7237-aed7-1af004e30b58",
+      "source_detail_id": "019d2bfa-384d-7237-aed7-1af004e30b58",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-148-c002",
+      "code": "000.00.00.G10-KQ1353",
+      "name": "Biên bản họp tổ chức cộng đồng theo Mẫu số 04 Phụ lục I ban hành kèm theo Thông tư số 88/2025/TT-BNNMT ngày 31/12/2025",
+      "section": "",
+      "role": "agency_prepared",
+      "scenario_status": "agency_reserved",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 1,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfa-384d-7237-aed7-1af004e30b58",
+      "source_detail_id": "019d2bfa-384d-7237-aed7-1af004e30b58",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-148-c003",
+      "code": "000.00.00.G10-KQ1688",
+      "name": "Báo cáo đánh giá kết quả thực hiện và dự thảo phương án bảo vệ và khai thác nguồn lợi thủy sản mới đối với trường hợp sửa đổi, bổ sung phương án bảo vệ và khai thác nguồn lợi thủy sản; vị trí, ranh giới khu vực địa lý được giao; phạm vi quyền được giao",
+      "section": "",
+      "role": "applicant_prepared",
+      "scenario_status": "conditional_needs_review",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 1,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfa-384d-7237-aed7-1af004e30b58",
+      "source_detail_id": "019d2bfa-384d-7237-aed7-1af004e30b58",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-148-c004",
+      "code": "TP-G10.000091",
+      "name": "Đơn đề nghị sửa đổi, bổ sung quyết định công nhận và giao quyền cho tổ chức cộng đồng",
+      "section": "",
+      "role": "applicant_form",
+      "scenario_status": "selected_for_test",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfa-384d-7237-aed7-1af004e30b58",
+      "source_detail_id": "019d2bfa-384d-7237-aed7-1af004e30b58",
+      "embedded_other_requirements": false,
+      "template_candidates": [
+        "template-04d2c6f9f21414c4"
+      ],
+      "template_selection_method": "first_matching_source_attachment",
+      "selected_template_id": "template-04d2c6f9f21414c4",
+      "selection_requires_review": false
+    }
+  ],
+  "service_cases": [
+    {
+      "id": "01a0b3c0-60b3-722f-b237-379e21a57f9a",
+      "code": "1.004498.01",
+      "name": "Sửa đổi, bổ sung nội dung quyết định công nhận và giao quyền quản lý cho tổ chức cộng đồng (thuộc địa bàn quản lý)",
+      "source_processing_time": {
+        "qty": 33,
+        "type": "WORKING_DAY"
+      },
+      "has_case_specific_components": false
+    },
+    {
+      "id": "019db429-9f87-74db-8e2b-4bd22f9f20a1",
+      "code": "1.004498.01",
+      "name": "Sửa đổi, bổ sung nội dung quyết định công nhận và giao quyền quản lý cho tổ chức cộng đồng (thuộc địa bàn quản lý)",
+      "source_processing_time": {
+        "qty": 33,
+        "type": "WORKING_DAY"
+      },
+      "has_case_specific_components": false
+    }
+  ],
+  "selected_template_ids": [
+    "template-04d2c6f9f21414c4"
+  ],
+  "source_component_groups": [
+    {
+      "name": "",
+      "component_count": 4,
+      "source_detail_id": "019d2bfa-384d-7237-aed7-1af004e30b58"
+    }
+  ],
+  "conditional_component_groups": [],
+  "default_test_scenario": {
+    "channel": "direct",
+    "applicant_submits_self": true,
+    "authorized": false,
+    "special_case_flags": [],
+    "selected_conditional_group": null,
+    "case_selection_method": "ordinary_direct_submission",
+    "case_status": "scenario_for_testing_not_a_legal_eligibility_decision"
+  },
+  "requirement_note": "required_as_published được giữ nguyên; false không chứng minh giấy tờ luôn tùy chọn. Các nhóm executionCases có thể là mục giấy tờ/hướng dẫn, không phải các phương án loại trừ nhau."
+}

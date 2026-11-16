@@ -1,0 +1,60 @@
+{
+  "id": "dvc-01a0f026-cc73-7378-83e9-be1aba81dbca",
+  "procedure_code": "1.116821",
+  "name": "Sáp nhập, chia, tách lớp độc lập tư thục",
+  "domain": "Cơ sở giáo dục khác",
+  "managing_agency": "Bộ Giáo dục và Đào tạo",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.468318+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "01a0f026-cc73-7378-83e9-be1aba81dbca",
+      "code": "1.116821",
+      "name": "Sáp nhập, chia, tách lớp độc lập tư thục",
+      "state": "ACTIVE",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1790907958118,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/01a0f026-cc73-7378-83e9-be1aba81dbca",
+      "raw_path": "evidence/dvc/details/01a0f026-cc73-7378-83e9-be1aba81dbca.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Văn bản đề nghị sáp nhập, chia, tách lớp độc lập theo Mẫu số 05 Phụ lục kèm theo Nghị định số 360/2026/NĐ-CP, trong đó thuyết minh phương án xử lý về nhân sự, tài chính, tài sản, đất đai, trẻ em và lộ trình bảo đảm hoạt động liên tục của lớp.",
+          "component_code": "TP-G03.0001128",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "01a0f025-e099-72af-a227-1dc5924b4eeb",
+              "fileName": "Mẫu số 05.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/01a0f025-e099-72af-a227-1dc5924b4eeb/Mẫu số 05.docx"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "id": "01a0f026-9789-719a-979b-59fe9388a162",
+          "name": "Quyết định của Chủ tịch Ủy ban nhân dân cấp xã sáp nhập, chia, tách lớp độc lập (theo Mẫu số 08 Phụ lục kèm theo Nghị định số 360/2026/NĐ-CP).",
+          "code": "KQ-G03.00015"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "01a0eb27-0a75-75f9-a08c-6705f56edf6d",
+          "name": "Quy định về điều kiện đầu tư và hoạt động của cơ sở giáo dục mầm non, cơ sở giáo dục phổ thông, cơ sở giáo dục thường xuyên và cơ sở giáo dục khác thuộc hệ thống giáo dục quốc dân",
+          "code": "360/2026/NĐ-CP"
+        }
+      ]
+    }
+  ]
+}

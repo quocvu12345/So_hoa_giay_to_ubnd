@@ -1,0 +1,71 @@
+{
+  "id": "dvc-01a0ec5d-8503-713e-b8ff-81f0e3a7d2d8",
+  "procedure_code": "1.116816",
+  "name": "Đổi tên trường mầm non, trường tiểu học, trường trung học cơ sở, trường phổ thông có nhiều cấp học trong đó có cấp học cao nhất là trung học cơ sở",
+  "domain": "Giáo dục và Đào tạo thuộc hệ thống giáo dục quốc dân",
+  "managing_agency": "Bộ Giáo dục và Đào tạo",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.469869+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "01a0ec5d-8503-713e-b8ff-81f0e3a7d2d8",
+      "code": "1.116816",
+      "name": "Đổi tên trường mầm non, trường tiểu học, trường trung học cơ sở, trường phổ thông có nhiều cấp học trong đó có cấp học cao nhất là trung học cơ sở",
+      "state": "ACTIVE",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1790907958134,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/01a0ec5d-8503-713e-b8ff-81f0e3a7d2d8",
+      "raw_path": "evidence/dvc/details/01a0ec5d-8503-713e-b8ff-81f0e3a7d2d8.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "a) Văn bản đề nghị đổi tên nhà trường theo Mẫu số 01 Phụ lục kèm theo Nghị định 360/2026/NĐ-CP.",
+          "component_code": "TP-G03.0001266",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "01a0ec5c-19e2-70da-9166-28f43cdd168f",
+              "fileName": "Mẫu số 01.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/01a0ec5c-19e2-70da-9166-28f43cdd168f/Mẫu số 01.docx"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "b) Ý kiến chấp thuận của cơ sở giáo dục đại học, trường cao đẳng (đối với trường thuộc cơ sở giáo dục đại học hoặc trường cao đẳng theo quy định tại Nghị định số 360/2026/NĐ-CP) hoặc nhà đầu tư thành lập trường dân lập, tư thục.",
+          "component_code": "TP-G03.0001166",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "01a0ec5d-1165-76fc-b418-1f664bc1e63a",
+          "name": "Quyết định của Chủ tịch Ủy ban nhân dân cấp xã cho phép đổi tên nhà trường (theo Mẫu số 08 Phụ lục kèm theo Nghị định số 360/2026/NĐ-CP).",
+          "code": "KQ-G03.0009"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "01a0eb27-0a75-75f9-a08c-6705f56edf6d",
+          "name": "Quy định về điều kiện đầu tư và hoạt động của cơ sở giáo dục mầm non, cơ sở giáo dục phổ thông, cơ sở giáo dục thường xuyên và cơ sở giáo dục khác thuộc hệ thống giáo dục quốc dân",
+          "code": "360/2026/NĐ-CP"
+        }
+      ]
+    }
+  ]
+}

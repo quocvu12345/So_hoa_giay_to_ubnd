@@ -1,0 +1,205 @@
+{
+  "id": "dvc-019d2bfc-7bcf-72ee-9254-1253e76b08ad",
+  "procedure_code": "1.009092",
+  "name": "Thủ tục hải quan đối với phương tiện thuỷ nội địa xuất cảnh, nhập cảnh và phương tiện qua lại khu vực cửa khẩu biên giới để giao nhận hàng hoá",
+  "domain": "Hải quan",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.925772+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfc-7bcf-72ee-9254-1253e76b08ad",
+      "code": "1.009092",
+      "name": "Thủ tục hải quan đối với phương tiện thuỷ nội địa xuất cảnh, nhập cảnh và phương tiện qua lại khu vực cửa khẩu biên giới để giao nhận hàng hoá",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1775639209938,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-7bcf-72ee-9254-1253e76b08ad",
+      "raw_path": "evidence/dvc/details/019d2bfc-7bcf-72ee-9254-1253e76b08ad.json",
+      "components": [
+        {
+          "section": "Hồ sơ hải quan nhập cảnh đối với phương tiện vận tải đường thủy nội địa nước ngoài tạm nhập và phương tiện vận tải đường thủy nội địa Việt Nam tái nhập",
+          "position": 1,
+          "name": "Tờ khai phương tiện vận tải đường thủy tạm nhập - tái xuất: Nộp 01 bản chính hoặc Tờ khai phương tiện vận tải đường sông tạm xuất - tái nhập có xác nhận tạm nhập của Chi cục Hải quan cửa khẩu làm thủ tục tạm xuất",
+          "component_code": "000.00.00.G12-KQ9909",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Hồ sơ hải quan nhập cảnh đối với phương tiện vận tải đường thủy nội địa nước ngoài tạm nhập và phương tiện vận tải đường thủy nội địa Việt Nam tái nhập",
+          "position": 2,
+          "name": "Danh sách hành khách trong trường hợp phương tiện vận tải đường thủy vận chuyển hành khách",
+          "component_code": "000.00.00.G12-KQ9914",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Hồ sơ hải quan nhập cảnh đối với phương tiện vận tải đường thủy nội địa nước ngoài tạm nhập và phương tiện vận tải đường thủy nội địa Việt Nam tái nhập",
+          "position": 3,
+          "name": "Bản khai hàng hóa trong trường hợp phương tiện vận tải đường thủy vận chuyển hàng hóa",
+          "component_code": "000.00.00.G12-KQ9913",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Hồ sơ hải quan nhập cảnh đối với phương tiện vận tải đường thủy nội địa nước ngoài tạm nhập và phương tiện vận tải đường thủy nội địa Việt Nam tái nhập",
+          "position": 4,
+          "name": "Danh sách thuyền viên, nhân viên làm việc trên phương tiện vận tải đường thủy (nếu có)",
+          "component_code": "000.00.00.G12-KQ014444",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Hồ sơ hải quan nhập cảnh đối với phương tiện vận tải đường thủy nội địa nước ngoài tạm nhập và phương tiện vận tải đường thủy nội địa Việt Nam tái nhập",
+          "position": 5,
+          "name": "Giấy phép vận tải đường thủy qua biên giới của cơ quan có thẩm quyền",
+          "component_code": "000.00.00.G12-KQ9907",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Hồ sơ hải quan nhập cảnh đối với phương tiện vận tải đường thủy nội địa nước ngoài tạm nhập và phương tiện vận tải đường thủy nội địa Việt Nam tái nhập",
+          "position": 6,
+          "name": "Bản khai hành lý thuyền viên, nhân viên làm việc trên phương tiện vận tải đường thủy",
+          "component_code": "000.00.00.G12-KQ9912",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Hồ sơ hải quan nhập cảnh đối với phương tiện vận tải đường thủy nội địa nước ngoài tạm nhập và phương tiện vận tải đường thủy nội địa Việt Nam tái nhập",
+          "position": 7,
+          "name": "Bản kê nguyên liệu, vật dụng dự trữ trên phương tiện vận tải đường thủy",
+          "component_code": "000.00.00.G12-KQ9911",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Hồ sơ hải quan xuất cảnh đối với phương tiện vận tải đường thủy nội địa nước ngoài tái xuất và phương tiện vận tải đường thủy nội địa Việt Nam tạm xuất",
+          "position": 1,
+          "name": "Tờ khai phương tiện vận tải đường thủy tạm xuất - tái nhập: Nộp 01 bản chính hoặc Tờ khai phương tiện vận tải đường thủy tạm nhập - tái xuất có xác nhận tạm nhập của Chi cục Hải quan cửa khẩu làm thủ tục tạm nhập",
+          "component_code": "000.00.00.G12-KQ9917",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Hồ sơ hải quan xuất cảnh đối với phương tiện vận tải đường thủy nội địa nước ngoài tái xuất và phương tiện vận tải đường thủy nội địa Việt Nam tạm xuất",
+          "position": 2,
+          "name": "Danh sách hành khách trong trường hợp phương tiện vận tải đường thủy vận chuyển hành khách",
+          "component_code": "000.00.00.G12-KQ9922",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Hồ sơ hải quan xuất cảnh đối với phương tiện vận tải đường thủy nội địa nước ngoài tái xuất và phương tiện vận tải đường thủy nội địa Việt Nam tạm xuất",
+          "position": 3,
+          "name": "Bản khai hàng hóa trong trường hợp phương tiện vận tải đường thủy vận chuyển hàng hóa",
+          "component_code": "000.00.00.G12-KQ9921",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Hồ sơ hải quan xuất cảnh đối với phương tiện vận tải đường thủy nội địa nước ngoài tái xuất và phương tiện vận tải đường thủy nội địa Việt Nam tạm xuất",
+          "position": 4,
+          "name": "Bản khai hành lý thuyền viên, nhân viên làm việc trên phương tiện vận tải đường thủy",
+          "component_code": "000.00.00.G12-KQ9920",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Hồ sơ hải quan xuất cảnh đối với phương tiện vận tải đường thủy nội địa nước ngoài tái xuất và phương tiện vận tải đường thủy nội địa Việt Nam tạm xuất",
+          "position": 5,
+          "name": "Bản kê nguyên liệu, vật dụng dự trữ trên tầu theo mẫu quy định của Bộ Tài chính",
+          "component_code": "000.00.00.G12-KQ9919",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Hồ sơ hải quan xuất cảnh đối với phương tiện vận tải đường thủy nội địa nước ngoài tái xuất và phương tiện vận tải đường thủy nội địa Việt Nam tạm xuất",
+          "position": 6,
+          "name": "Giấy phép vận tải đường thủy qua biên giới của cơ quan có thẩm quyền",
+          "component_code": "000.00.00.G12-KQ9915",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c70-724b-96df-ddc2578f60d3",
+          "name": "Xác nhận thông quan hàng hóa",
+          "code": "KQ.G12.000583"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7e-72d1-afe7-9c25863596db",
+          "name": "Nghị định 08/2015/NĐ-CP",
+          "code": "08/2015/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7d-7398-be4d-ff62cdf67da5",
+          "name": "Luật 54/2014/QH13",
+          "code": "54/2014/QH13"
+        },
+        {
+          "id": "019d2bb3-5d7d-7398-be49-b47412bcdb1d",
+          "name": "Thông tư quy định mức thu, chế độ thu, nộp, quản lý và sử dụng phí hải quan và lệ phí hàng hóa, phương tiện vận tải quá cảnh",
+          "code": "14/2021/TT-BTC"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afec-4c8f9cb859d2",
+          "name": "Nghị định số 167/2025/NĐ-CP ngày 30/6/2025 của Chính phủ",
+          "code": "167/2025"
+        },
+        {
+          "id": "019d2bb3-5d87-7195-a442-414b51a3c119",
+          "name": "Thông tư 50/2018/TT-BTC",
+          "code": "50/2018/TT-BTC"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "id": "dvc-01a0f65f-4713-7199-9b0c-d57f794ef14d",
+  "procedure_code": "1.116908",
+  "name": "Tiếp nhận đối tượng cần bảo vệ khẩn cấp vào cơ sở trợ giúp xã hội",
+  "domain": "Bảo trợ xã hội",
+  "managing_agency": "Bộ Y tế",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.464226+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "01a0f65f-4713-7199-9b0c-d57f794ef14d",
+      "code": "1.116908",
+      "name": "Tiếp nhận đối tượng cần bảo vệ khẩn cấp vào cơ sở trợ giúp xã hội",
+      "state": "ACTIVE",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1791017414705,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/01a0f65f-4713-7199-9b0c-d57f794ef14d",
+      "raw_path": "evidence/dvc/details/01a0f65f-4713-7199-9b0c-d57f794ef14d.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Tờ khai đề nghị chăm sóc, nuôi dưỡng tại cơ sở trợ giúp xã hội (theo Mẫu số 04 ban hành kèm theo Nghị định số 335/2026/NĐ-CP).",
+          "component_code": "000.00.00.G18-KQ00578",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Biên bản tiếp nhận có chữ ký của cá nhân hoặc đại diện cơ quan, đơn vị phát hiện ra đối tượng (nếu có), chính quyền (hoặc công an) cấp xã, đại diện cơ sở trợ giúp xã hội. Đối với đối tượng là nạn nhân của bạo lực gia đình, nạn nhân bị xâm hại tình dục, nạn nhân bị mua bán và nạn nhân bị cưỡng bức lao động, biên bản tiếp nhận có chữ ký của đối tượng (nếu có thể)",
+          "component_code": "000.00.00.G18-KQ00579",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c7c-74ea-bcd1-826725c09c84",
+          "name": "Quyết định trợ giúp đối tượng tại cơ sở trợ giúp xã hội hoặc chuyển đối tượng về gia đình, cộng đồng (BYT)",
+          "code": "KQ.G18.000332"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "01a0f5ba-70eb-7222-824e-83a91e1866e9",
+          "name": "Nghị định số 335/2026/NĐ-CP ngày 21/8/2026 của Chính phủ quy\nđịnh chính sách trợ giúp xã hội",
+          "code": "335/2026/NĐ-CP"
+        }
+      ]
+    }
+  ]
+}

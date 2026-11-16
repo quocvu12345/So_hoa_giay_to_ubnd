@@ -1,0 +1,132 @@
+{
+  "id": "dvc-019d2bfc-7bcb-7447-88f7-042450033ef4",
+  "procedure_code": "1.009097",
+  "name": "Thủ tục hải quan đối với hành lý của người nhập cảnh vượt quá định mức miễn thuế; hành lý của người xuất cảnh, nhập cảnh gửi trước, gửi sau chuyến đi",
+  "domain": "Hải quan",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.927411+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfc-7bcb-7447-88f7-042450033ef4",
+      "code": "1.009097",
+      "name": "Thủ tục hải quan đối với hành lý của người nhập cảnh vượt quá định mức miễn thuế; hành lý của người xuất cảnh, nhập cảnh gửi trước, gửi sau chuyến đi",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1793589101824,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-7bcb-7447-88f7-042450033ef4",
+      "raw_path": "evidence/dvc/details/019d2bfc-7bcb-7447-88f7-042450033ef4.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Chứng từ vận tải trong trường hợp hành lý của người nhập cảnh gửi trước, gửi sau chuyến đi",
+          "component_code": "000.00.00.G12-KQ9985",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Tờ khai hải quan theo mẫu do Bộ Tài chính ban hành",
+          "component_code": "000.00.00.G12-KQ9982",
+          "original_quantity": 2,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 3,
+          "name": "Giấy phép nhập khẩu, văn bản thông báo kết quả kiểm tra chuyên ngành theo quy định của pháp luật",
+          "component_code": "000.00.00.G12-KQ9986",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 4,
+          "name": "Tờ khai xuất nhập cảnh có xác nhận của Chi cục Hải quan nơi làm thủ tục nhập cảnh đối với người nhập cảnh",
+          "component_code": "000.00.00.G12-KQ9984",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 5,
+          "name": "Hộ chiếu hoặc giấy tờ thay thế hộ chiếu có dấu xác nhận của cơ quan xuất cảnh, nhập cảnh đối với người nhập cảnh",
+          "component_code": "000.00.00.G12-KQ9983",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c70-724b-96df-ddc2578f60d3",
+          "name": "Xác nhận thông quan hàng hóa",
+          "code": "KQ.G12.000583"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7d-7398-be49-b47412bcdb1d",
+          "name": "Thông tư quy định mức thu, chế độ thu, nộp, quản lý và sử dụng phí hải quan và lệ phí hàng hóa, phương tiện vận tải quá cảnh",
+          "code": "14/2021/TT-BTC"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afec-4c8f9cb859d2",
+          "name": "Nghị định số 167/2025/NĐ-CP ngày 30/6/2025 của Chính phủ",
+          "code": "167/2025"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b672-0af27f5afaf6",
+          "name": "Luật Giao dịch điện tử năm 2023",
+          "code": "20/2023/QH15"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afe7-9c25863596db",
+          "name": "Nghị định 08/2015/NĐ-CP",
+          "code": "08/2015/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d87-7195-a443-db1e211c2ddd",
+          "name": "Nghị định 59/2018/NĐ-CP",
+          "code": "59/2018/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7d-7398-be4d-1c6dbc289d7a",
+          "name": "Quy định về thủ tục hải quan; kiểm tra, giám sát hải quan; thuế xuất khẩu thuế nhập khẩu và quản lý thuế đối vớỉ hàng hoá xuất khẩu, nhập khẩu.",
+          "code": "38/2015/TT-BTC"
+        },
+        {
+          "id": "019d2bb3-5d7d-7398-be4d-ff62cdf67da5",
+          "name": "Luật 54/2014/QH13",
+          "code": "54/2014/QH13"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afea-78ea8c197f3a",
+          "name": "Quy định chi tiết một số điều và biện pháp thi hành Luật thuế xuất khẩu, thuế nhập khẩu",
+          "code": "134/2016/NĐ-CP"
+        }
+      ]
+    }
+  ]
+}

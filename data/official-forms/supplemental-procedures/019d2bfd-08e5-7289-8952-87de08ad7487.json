@@ -1,0 +1,222 @@
+{
+  "id": "dvc-019d2bfd-08e5-7289-8952-87de08ad7487",
+  "procedure_code": "3.000118",
+  "name": "Thủ tục thanh toán các khoản chi thường xuyên; chi chương trình mục tiêu quốc gia, chương trình mục tiêu từ nguồn sự nghiệp; chi dự trữ quốc gia từ nguồn chi thường xuyên; các khoản viện trợ không hoàn lại bằng tiền do phía Việt Nam thực hiện bố trí từ nguồn chi thường xuyên và các khoản chi khác từ nguồn chi thường xuyên.",
+  "domain": "Kho bạc Nhà nước",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.898521+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfd-08e5-7289-8952-87de08ad7487",
+      "code": "3.000118",
+      "name": "Thủ tục thanh toán các khoản chi thường xuyên; chi chương trình mục tiêu quốc gia, chương trình mục tiêu từ nguồn sự nghiệp; chi dự trữ quốc gia từ nguồn chi thường xuyên; các khoản viện trợ không hoàn lại bằng tiền do phía Việt Nam thực hiện bố trí từ nguồn chi thường xuyên và các khoản chi khác từ nguồn chi thường xuyên.",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1775636361002,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfd-08e5-7289-8952-87de08ad7487",
+      "raw_path": "evidence/dvc/details/019d2bfd-08e5-7289-8952-87de08ad7487.json",
+      "components": [
+        {
+          "section": " Hồ sơ đề nghị điều chỉnh số liệu ngân sách ",
+          "position": 1,
+          "name": "Giấy đề nghị điều chỉnh số liệu ngân sách.",
+          "component_code": "000.00.00.G12-KQ015922",
+          "original_quantity": 2,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Hồ sơ đề nghị nộp trả kinh phí ngân sách ",
+          "position": 1,
+          "name": "Giấy nộp trả kinh phí.",
+          "component_code": "000.00.00.G12-KQ015921",
+          "original_quantity": 2,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "a) Đối với khoản chi từ nguồn ngân sách nhà nước; nguồn thu hợp pháp khác của cơ quan nhà nước theo quy định của Chính phủ về chế độ tự chủ, tự chịu trách nhiệm về sử dụng biên chế và kinh phí quản lý hành chính đối với các cơ quan nhà nước; nguồn thu từ dịch vụ khám bệnh, chữa bệnh, dịch vụ y tế dự phòng, học phí của đơn vị sự nghiệp công tự bảo đảm một phần chi thường xuyên (đơn vị nhóm 3) và đơn vị sự nghiệp công do Nhà nước bảo đảm chi thường xuyên (đơn vị nhóm 4), nguồn thu phí được để lại theo pháp luật về phí, lệ phí của đơn vị sự nghiệp công lập theo quy định của Chính phủ về cơ chế tự chủ tài chính của đơn vị sự nghiệp công lập:",
+          "position": 1,
+          "name": "Đối với khoản chi mà đơn vị giao dịch ủy quyền cho Kho bạc Nhà nước thanh toán tự động định kỳ cho nhà cung cấp dịch vụ hoặc đơn vị được nhà cung cấp dịch vụ ủy quyền thu hộ (điện, nước, viễn thông), hồ sơ đề nghị thanh toán bao gồm:",
+          "component_code": "000.00.00.G12-KQ015908",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "a) Đối với khoản chi từ nguồn ngân sách nhà nước; nguồn thu hợp pháp khác của cơ quan nhà nước theo quy định của Chính phủ về chế độ tự chủ, tự chịu trách nhiệm về sử dụng biên chế và kinh phí quản lý hành chính đối với các cơ quan nhà nước; nguồn thu từ dịch vụ khám bệnh, chữa bệnh, dịch vụ y tế dự phòng, học phí của đơn vị sự nghiệp công tự bảo đảm một phần chi thường xuyên (đơn vị nhóm 3) và đơn vị sự nghiệp công do Nhà nước bảo đảm chi thường xuyên (đơn vị nhóm 4), nguồn thu phí được để lại theo pháp luật về phí, lệ phí của đơn vị sự nghiệp công lập theo quy định của Chính phủ về cơ chế tự chủ tài chính của đơn vị sự nghiệp công lập:",
+          "position": 2,
+          "name": "Đối với khoản chi được bố trí từ nguồn chi thường xuyên theo quy định tại Điều 40 Luật số 89/2025/QH15:",
+          "component_code": "000.00.00.G12-KQ015911",
+          "original_quantity": 0,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "a) Đối với khoản chi từ nguồn ngân sách nhà nước; nguồn thu hợp pháp khác của cơ quan nhà nước theo quy định của Chính phủ về chế độ tự chủ, tự chịu trách nhiệm về sử dụng biên chế và kinh phí quản lý hành chính đối với các cơ quan nhà nước; nguồn thu từ dịch vụ khám bệnh, chữa bệnh, dịch vụ y tế dự phòng, học phí của đơn vị sự nghiệp công tự bảo đảm một phần chi thường xuyên (đơn vị nhóm 3) và đơn vị sự nghiệp công do Nhà nước bảo đảm chi thường xuyên (đơn vị nhóm 4), nguồn thu phí được để lại theo pháp luật về phí, lệ phí của đơn vị sự nghiệp công lập theo quy định của Chính phủ về cơ chế tự chủ tài chính của đơn vị sự nghiệp công lập:",
+          "position": 3,
+          "name": "Đối với khoản chi ngoài khoản chi mà đơn vị giao dịch ủy quyền cho Kho bạc Nhà nước thanh toán tự động định kỳ và khoản chi được bố trí từ nguồn chi thường xuyên theo quy định tại Điều 40 Luật số 89/2025/QH15 nêu trên, hồ sơ đề nghị chi bao gồm:",
+          "component_code": "000.00.00.G12-KQ015913",
+          "original_quantity": 0,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "a) Đối với khoản chi từ nguồn ngân sách nhà nước; nguồn thu hợp pháp khác của cơ quan nhà nước theo quy định của Chính phủ về chế độ tự chủ, tự chịu trách nhiệm về sử dụng biên chế và kinh phí quản lý hành chính đối với các cơ quan nhà nước; nguồn thu từ dịch vụ khám bệnh, chữa bệnh, dịch vụ y tế dự phòng, học phí của đơn vị sự nghiệp công tự bảo đảm một phần chi thường xuyên (đơn vị nhóm 3) và đơn vị sự nghiệp công do Nhà nước bảo đảm chi thường xuyên (đơn vị nhóm 4), nguồn thu phí được để lại theo pháp luật về phí, lệ phí của đơn vị sự nghiệp công lập theo quy định của Chính phủ về cơ chế tự chủ tài chính của đơn vị sự nghiệp công lập:",
+          "position": 4,
+          "name": "Hồ sơ đề nghị thanh toán/tạm ứng/thanh toán tạm ứng (sau đây gọi tắt là hồ sơ đề nghị chi) thực hiện theo quy định của pháp luật về việc lập dự toán, quản lý, sử dụng và quyết toán chi thường xuyên để thực hiện các nhiệm vụ chi ngân sách nhà nước được bố trí từ hai nguồn chi đầu tư công và chi thường xuyên.",
+          "component_code": "000.00.00.G12-KQ015912",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "a) Đối với khoản chi từ nguồn ngân sách nhà nước; nguồn thu hợp pháp khác của cơ quan nhà nước theo quy định của Chính phủ về chế độ tự chủ, tự chịu trách nhiệm về sử dụng biên chế và kinh phí quản lý hành chính đối với các cơ quan nhà nước; nguồn thu từ dịch vụ khám bệnh, chữa bệnh, dịch vụ y tế dự phòng, học phí của đơn vị sự nghiệp công tự bảo đảm một phần chi thường xuyên (đơn vị nhóm 3) và đơn vị sự nghiệp công do Nhà nước bảo đảm chi thường xuyên (đơn vị nhóm 4), nguồn thu phí được để lại theo pháp luật về phí, lệ phí của đơn vị sự nghiệp công lập theo quy định của Chính phủ về cơ chế tự chủ tài chính của đơn vị sự nghiệp công lập:",
+          "position": 5,
+          "name": "Văn bản phê duyệt dự toán của cấp có thẩm quyền được gửi vào lần đầu tiên giao dịch với Kho bạc Nhà nước trong năm và từng lần bổ sung hoặc điều chỉnh dự toán;",
+          "component_code": "000.00.00.G12-KQ015914",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "a) Đối với khoản chi từ nguồn ngân sách nhà nước; nguồn thu hợp pháp khác của cơ quan nhà nước theo quy định của Chính phủ về chế độ tự chủ, tự chịu trách nhiệm về sử dụng biên chế và kinh phí quản lý hành chính đối với các cơ quan nhà nước; nguồn thu từ dịch vụ khám bệnh, chữa bệnh, dịch vụ y tế dự phòng, học phí của đơn vị sự nghiệp công tự bảo đảm một phần chi thường xuyên (đơn vị nhóm 3) và đơn vị sự nghiệp công do Nhà nước bảo đảm chi thường xuyên (đơn vị nhóm 4), nguồn thu phí được để lại theo pháp luật về phí, lệ phí của đơn vị sự nghiệp công lập theo quy định của Chính phủ về cơ chế tự chủ tài chính của đơn vị sự nghiệp công lập:",
+          "position": 6,
+          "name": "Chứng từ chuyển tiền (trường hợp thanh toán/tạm ứng/thanh toán tạm ứng khi số tiền đề nghị thanh toán tạm ứng lớn hơn số tiền đã tạm ứng), Giấy đề nghị thanh toán tạm ứng (trường hợp thanh toán tạm ứng), Danh sách thanh toán cho đối tượng thụ hưởng (trường hợp chi cho nhiều đối tượng thụ hưởng bằng chuyển khoản), Danh sách thanh toán cho lưu học sinh (trường hợp chi cho các lưu học sinh Việt Nam ở nước ngoài bằng chuyển khoản) được gửi từng lần đề nghị chi.",
+          "component_code": "000.00.00.G12-KQ015915",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "a) Đối với khoản chi từ nguồn ngân sách nhà nước; nguồn thu hợp pháp khác của cơ quan nhà nước theo quy định của Chính phủ về chế độ tự chủ, tự chịu trách nhiệm về sử dụng biên chế và kinh phí quản lý hành chính đối với các cơ quan nhà nước; nguồn thu từ dịch vụ khám bệnh, chữa bệnh, dịch vụ y tế dự phòng, học phí của đơn vị sự nghiệp công tự bảo đảm một phần chi thường xuyên (đơn vị nhóm 3) và đơn vị sự nghiệp công do Nhà nước bảo đảm chi thường xuyên (đơn vị nhóm 4), nguồn thu phí được để lại theo pháp luật về phí, lệ phí của đơn vị sự nghiệp công lập theo quy định của Chính phủ về cơ chế tự chủ tài chính của đơn vị sự nghiệp công lập:",
+          "position": 7,
+          "name": "Văn bản ủy quyền của đơn vị giao dịch cho Kho bạc Nhà nước về việc tự động trích tài khoản của đơn vị giao dịch tại Kho bạc Nhà nước để thanh toán định kỳ cho nhà cung cấp dịch vụ hoặc đơn vị được nhà cung cấp dịch vụ ủy quyền thu hộ theo giá trị dịch vụ mà đơn vị giao dịch đã sử dụng.",
+          "component_code": "000.00.00.G12-KQ015910",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "a) Đối với khoản chi từ nguồn ngân sách nhà nước; nguồn thu hợp pháp khác của cơ quan nhà nước theo quy định của Chính phủ về chế độ tự chủ, tự chịu trách nhiệm về sử dụng biên chế và kinh phí quản lý hành chính đối với các cơ quan nhà nước; nguồn thu từ dịch vụ khám bệnh, chữa bệnh, dịch vụ y tế dự phòng, học phí của đơn vị sự nghiệp công tự bảo đảm một phần chi thường xuyên (đơn vị nhóm 3) và đơn vị sự nghiệp công do Nhà nước bảo đảm chi thường xuyên (đơn vị nhóm 4), nguồn thu phí được để lại theo pháp luật về phí, lệ phí của đơn vị sự nghiệp công lập theo quy định của Chính phủ về cơ chế tự chủ tài chính của đơn vị sự nghiệp công lập:",
+          "position": 8,
+          "name": "Văn bản phê duyệt dự toán của cấp có thẩm quyền (gửi một lần vào lần đầu tiên giao dịch với Kho bạc Nhà nước trong năm và từng lần bổ sung hoặc điều chỉnh dự toán);",
+          "component_code": "000.00.00.G12-KQ015909",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "b) Đối với khoản chi từ các nguồn không được quy định tại điểm a mục 4.1 phần (4) thủ tục này:",
+          "position": 1,
+          "name": "Hồ sơ đề nghị chi là Ủy nhiệm chi (trừ trường hợp quy định tại điểm c mục 4.1 phần (4) thủ tục này.",
+          "component_code": "000.00.00.G12-KQ015916",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "c) Đối với khoản viện trợ không hoàn lại bằng tiền do phía Việt Nam thực hiện bố trí từ nguồn chi thường xuyên và chủ dự án mở tài khoản nhận viện trợ tại Kho bạc Nhà nước, hồ sơ đề nghị chi bao gồm: ",
+          "position": 1,
+          "name": "Văn bản giao dự toán viện trợ của cấp có thẩm quyền;",
+          "component_code": "000.00.00.G12-KQ015917",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "c) Đối với khoản viện trợ không hoàn lại bằng tiền do phía Việt Nam thực hiện bố trí từ nguồn chi thường xuyên và chủ dự án mở tài khoản nhận viện trợ tại Kho bạc Nhà nước, hồ sơ đề nghị chi bao gồm: ",
+          "position": 2,
+          "name": "Giấy đề nghị thanh toán tạm ứng số đã ghi thu, ghi chi (trường hợp thanh toán tạm ứng).",
+          "component_code": "000.00.00.G12-KQ015919",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "c) Đối với khoản viện trợ không hoàn lại bằng tiền do phía Việt Nam thực hiện bố trí từ nguồn chi thường xuyên và chủ dự án mở tài khoản nhận viện trợ tại Kho bạc Nhà nước, hồ sơ đề nghị chi bao gồm: ",
+          "position": 3,
+          "name": "Ủy nhiệm chi;",
+          "component_code": "000.00.00.G12-KQ015918",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "d) Hồ sơ đề nghị tạm cấp ngân sách",
+          "position": 1,
+          "name": "Giấy đề nghị tạm cấp dự toán ngân sách.",
+          "component_code": "000.00.00.G12-KQ015920",
+          "original_quantity": 2,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c73-70ac-aa18-780d95928f43",
+          "name": "Chứng từ báo Nợ của Kho bạc Nhà nước gửi đơn vị giao dịch và chứng từ báo Có của Kho bạc Nhà nước gửi đơn vị thụ hưởng (trường hợp đơn vị thụ hưởng mở tài khoản tại Kho bạc Nhà nước) đối với đề nghị thanh toán hoặc tạm ứng",
+          "code": "KQ.G12.000306"
+        },
+        {
+          "id": "019d2bb2-1c73-70ac-aa18-7dbd8989bd5f",
+          "name": "Xác nhận trên chứng từ chuyển tiền của đơn vị giao dịch và xác nhận trên 01 liên bảng thanh toán cho đối tượng thụ hưởng (có đóng dấu của KBNN) để đơn vị chuyển sang ngân hàng thực hiện chuyển tiền vào các tài khoản cá nhân của cán bộ, công chức, viên chức",
+          "code": "KQ.G12.001331"
+        },
+        {
+          "id": "019d2bb2-1c73-70ac-aa18-80f544b8bf5c",
+          "name": "Xác nhận của KBNN trực tiếp trên chứng từ chuyển tiền của đơn vị giao dịch",
+          "code": "KQ.G12.001332"
+        },
+        {
+          "id": "019d2bb2-1c73-70ac-aa18-7448c97aa478",
+          "name": "KBNN thông báo (bằng văn bản hoặc qua Trang thông tin dịch vụ công của KBNN) về việc từ chối chấp thuận thanh toán, tạm ứng hoặc chi từ tài khoản tiền gửi của đơn vị",
+          "code": "KQ.G12.001329"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7f-719e-b46c-e7d7a9d8616c",
+          "name": "Nghị định số 347/2025/NĐ-CP của Chính phủ: Quy định về thủ tục hành chính thuộc lĩnh vực Kho bạc Nhà nước",
+          "code": "347/2025/NĐ-CP"
+        }
+      ]
+    }
+  ]
+}

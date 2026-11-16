@@ -1,0 +1,150 @@
+{
+  "ordinal": "375",
+  "managing_agency": "Sở Quy hoạch Kiến trúc",
+  "procedure_code": "1.014158",
+  "name": "Phê duyệt quy hoạch, điều chỉnh quy hoạch đô thị và nông thôn do nhà đầu tư đã được lựa chọn để thực hiện dự án đầu tư tổ chức lập",
+  "domain": "Quy hoạch đô thị và nông thôn",
+  "ministry_decision": "1390/QĐ-BXD",
+  "hanoi_decision": "1261/QĐ-TTPVHCC",
+  "workflow_decision": "1474/QĐ-TTPVHCC",
+  "fees": "Không quy định",
+  "execution_level": "Cấp tỉnh, cấp xã",
+  "competent_authority": "UBND thành phố; Sở, Ban QL, UBND cấp xã",
+  "delegation_decision": "",
+  "delegation_expiry": "",
+  "receiving_location": "Điểm hỗ trợ DVC số; Chi nhánh TTPVHCC",
+  "id": "hn87-375",
+  "source_page": 15,
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "inventory_date": "2026-04-27",
+  "checked_at": "2026-11-12T22:25:02.059820+07:00",
+  "details": [
+    {
+      "id": "019d2bfe-9857-74ec-8c26-f832b4fce86b",
+      "code": "1.014158",
+      "name": "Thủ tục phê duyệt, chấp thuận quy hoạch, điều chỉnh quy hoạch đô thị và nông thôn do nhà đầu tư đã được lựa chọn để thực hiện dự án đầu tư tổ chức lập",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1779092812593,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfe-9857-74ec-8c26-f832b4fce86b",
+      "raw_path": "evidence/dvc/details/019d2bfe-9857-74ec-8c26-f832b4fce86b.json",
+      "components": [
+        {
+          "section": "a)\tĐối với quy hoạch, điều chỉnh quy hoạch đô thị và nông thôn:",
+          "position": 1,
+          "name": "+ Tờ trình đề nghị phê duyệt quy hoạch hoặc điều chỉnh quy hoạch đô thị và nông thôn;",
+          "component_code": "G17-KQ003326",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "a)\tĐối với quy hoạch, điều chỉnh quy hoạch đô thị và nông thôn:",
+          "position": 2,
+          "name": "+ Hồ sơ bản giấy: Thuyết minh; Dự thảo Quyết định của cấp có thẩm quyền phê duyệt quy hoạch; Các văn bản, tài liệu liên quan; Bản vẽ.",
+          "component_code": "G17-KQ003328",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "a)\tĐối với quy hoạch, điều chỉnh quy hoạch đô thị và nông thôn:",
+          "position": 3,
+          "name": "+ Báo cáo thẩm định quy hoạch hoặc điều chỉnh quy hoạch đô thị và nông thôn của cơ quan thẩm định.",
+          "component_code": "G17-KQ003327",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "a)\tĐối với quy hoạch, điều chỉnh quy hoạch đô thị và nông thôn:",
+          "position": 4,
+          "name": "+ Hồ sơ điện tử: Cơ sở dữ liệu số cơ bản là các tệp tin (file) bản vẽ và văn bản được in ấn thành một phần của hồ sơ quy hoạch bản giấy; Cơ sở dữ liệu số pháp lý bao gồm các tệp tin (file) được số hóa, quét (scan) từ hồ sơ bằng bản giấy hoặc chứng thực điện tử; Cơ sở dữ liệu số địa lý (GIS) quy hoạch đô thị và nông thôn bao gồm các tệp tin (file) được chuyển đổi thành dữ liệu địa lý từ cơ sở dữ liệu gốc.",
+          "component_code": "G17-KQ003325",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "b)\tĐối với quy hoạch tổng mặt bằng (quy hoạch chi tiết được lập theo quy trình rút gọn):",
+          "position": 1,
+          "name": "+ Hồ sơ bản giấy: Thuyết minh; Các văn bản, tài liệu liên quan; Bản vẽ.",
+          "component_code": "G17-KQ003330",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "b)\tĐối với quy hoạch tổng mặt bằng (quy hoạch chi tiết được lập theo quy trình rút gọn):",
+          "position": 2,
+          "name": "+ Văn bản của nhà đầu tư gửi cấp phê duyệt quy hoạch chi tiết hoặc cơ quan được phân cấp, ủy quyền để đề nghị chấp thuận.",
+          "component_code": "G17-KQ003329",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "b)\tĐối với quy hoạch tổng mặt bằng (quy hoạch chi tiết được lập theo quy trình rút gọn):",
+          "position": 3,
+          "name": "+ Hồ sơ điện tử: Cơ sở dữ liệu số cơ bản là các tệp tin (file) bản vẽ và văn bản được in ấn thành một phần của hồ sơ quy hoạch tổng mặt bằng bản giấy; Cơ sở dữ liệu số pháp lý bao gồm các tệp tin (file) được số hóa, quét (scan) từ hồ sơ bằng bản giấy hoặc chứng thực điện tử; Cơ sở dữ liệu số địa lý (GIS) quy hoạch đô thị và nông thôn bao gồm các tệp tin (file) được chuyển đổi thành dữ liệu địa lý từ cơ sở dữ liệu gốc.",
+          "component_code": "G17-KQ003331",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c7a-7554-ace6-6b7db1549264",
+          "name": "Quyết định phê duyệt quy hoạch, điều chỉnh quy hoạch; Văn bản chấp thuận quy hoạch tổng mặt bằng.",
+          "code": "KQ.G17.000347"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d87-7195-a445-3789c9336cec",
+          "name": "Luật Tổ chức chính quyền địa phương",
+          "code": "72/2025/QH15"
+        },
+        {
+          "id": "019d2bb3-5d87-7195-a441-ef586356e15f",
+          "name": "Luật Quy hoạch đô thị và nông thôn số 47/2024/QH15",
+          "code": "47/2024/QH15"
+        },
+        {
+          "id": "019d2bb3-5d86-7760-a640-47204b0a5904",
+          "name": "QUY ĐỊNH VỀ PHÂN ĐỊNH THẨM QUYỀN CỦA CHÍNH QUYỀN ĐỊA PHƯƠNG 02 CẤP, PHÂN QUYỀN, PHÂN CẤP TRONG LĨNH VỰC QUY HOẠCH ĐÔ THỊ VÀ NÔNG THÔN",
+          "code": "145/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d86-7760-a641-770a93c8811c",
+          "name": "Thông tư sửa đổi, bổ sung một số điều của Thông tư số 16/2025/TT-BXD ngày 30/6/2025 của Bộ trưởng Bộ Xây dựng quy định chi tiết một số điều của Luật Quy hoạch đô thị và nông thôn",
+          "code": "43/2025/TT-BXD"
+        },
+        {
+          "id": "019d2bb3-5d86-7760-a642-6690722ed369",
+          "name": "Quy định chi tiết một số điều của Luật Quy hoạch đô thị và nông thôn.",
+          "code": "178/2025/NĐ-CP"
+        }
+      ]
+    }
+  ],
+  "lookup_status": "retrieved",
+  "currency_status": "snapshot_requires_later_amendment_check",
+  "errors": []
+}

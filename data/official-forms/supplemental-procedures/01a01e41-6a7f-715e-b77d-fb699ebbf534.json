@@ -1,0 +1,128 @@
+{
+  "id": "dvc-01a01e41-6a7f-715e-b77d-fb699ebbf534",
+  "procedure_code": "1.116436",
+  "name": "(Hà Nội) Xác nhận tiếp tục sử dụng đất nông nghiệp",
+  "domain": "Đất đai",
+  "managing_agency": "UBND Thành phố Hà Nội",
+  "inventory_date": null,
+  "scope": "hanoi",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.479346+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "01a01e41-6a7f-715e-b77d-fb699ebbf534",
+      "code": "1.116436",
+      "name": "(Hà Nội) Xác nhận tiếp tục sử dụng đất nông nghiệp",
+      "state": "ACTIVE",
+      "type": "SPECIFIC",
+      "is_ward": true,
+      "updated_at_source": 1787306784538,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/01a01e41-6a7f-715e-b77d-fb699ebbf534",
+      "raw_path": "evidence/dvc/details/01a01e41-6a7f-715e-b77d-fb699ebbf534.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Văn bản đề nghị xác nhận lại thời hạn sử dụng đất theo Mẫu số 09 ban hành kèm theo Nghị định số 102/2024/NĐ-CP ngày 30/7/2024 của Chính phủ",
+          "component_code": "MD09.105.2026",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "01a01e50-364d-71d9-890f-f9833b047b77",
+              "fileName": "Mẫu Đơn xin xác nhận lại thời hạn sử dụng đất nông nghiệp.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/01a01e50-364d-71d9-890f-f9833b047b77/Mẫu Đơn xin xác nhận lại thời hạn sử dụng đất nông nghiệp.docx"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Bản gốc Giấy chứng nhận đã cấp;",
+          "component_code": "42.TH1.TPHS02.105.2026",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 3,
+          "name": "Văn bản về việc ủy quyền theo quy định của pháp luật về dân sự đối với trường hợp thực hiện thủ tục thông qua người đại diện (nếu có).",
+          "component_code": "44.TH1.TPHS04.105.2026",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 4,
+          "name": "Văn bản thỏa thuận xác định các thành viên có chung quyền sử dụng đất của hộ gia đình đối với trường hợp giấy chứng nhận đã cấp cho hộ gia đình (trường hợp có nhu cầu hoặc phải cấp đổi giấy chứng nhận).",
+          "component_code": "43.TH1.TPHS05.105.2026",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019ff940-f205-72d2-9339-31cf8671723e",
+          "name": "Giấy chứng nhận",
+          "code": "KQ-H36.000038"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d84-71c5-b673-29122897c8a3",
+          "name": "Luật số 43/2024/QH15 ngày 29/6/2024",
+          "code": "43/2024/QH15"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afeb-9ac6648a4b4f",
+          "name": "Quy định về phân định thẩm quyền của chính quyền địa phương 02 cấp, phân quyền, phân cấp trong lĩnh vực đất đai",
+          "code": "151/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b672-a3322a8748a6",
+          "name": "Luật Đất đai ngày 18/01/2024;",
+          "code": "31/2024/QH15"
+        },
+        {
+          "id": "019ed88c-73bf-73ed-a2c9-ebbe831f989d",
+          "name": "quy định chi tiết và hướng dẫn một số điều của Nghị quyết số 254/2025/QH15 của Quốc hội quy định một số cơ chế, chính sách tháo gỡ khó khăn vướng mắc trong tổ chức thi hành Luật Đất đai",
+          "code": "49/2026/NĐ-CP"
+        },
+        {
+          "id": "019fb0eb-7629-732a-ae85-4507d8b9cbc8",
+          "name": "Nghị định số 102/2024/NĐ-CP ngày 30/7/2024 của Chính phủ quy định chi tiết thi hành một số điều của Luật Đất đai",
+          "code": "102/2024/NĐ-CP "
+        },
+        {
+          "id": "019fdfab-0f98-7309-b6da-edcf4b3418a4",
+          "name": "Về việc phân cấp thực hiện một số nhiệm vụ trong lĩnh vực đất đai trên địa bàn thành phố Hà Nội",
+          "code": "33/2026/QĐ-UBND "
+        },
+        {
+          "id": "019ed4db-2c5b-775d-871e-85a6c8c26ba8",
+          "name": "quy định về điều tra cơ bản đất đai, đăng ký, cấp Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất và Hệ thống thông tin đất đai.",
+          "code": "101/2024/NĐ-CP"
+        },
+        {
+          "id": "019fdfab-9c87-71de-a747-04badf16fb31",
+          "name": "Về việc ban hành Quy định về điều chỉnh, sửa đổi, bổ sung, bãi bỏ một số nội dung của Quyết định số 33/2026/QĐ-UBND ngày 25/3/2026 của UBND Thành phố về việc phân cấp thực hiện một số nhiệm vụ trong lĩnh vực đất đai trên địa bàn thành phố Hà Nội; ban hành trình tự, thủ tục hành chính về đất đai trên địa bàn thành phố Hà Nội",
+          "code": "105/2026/QĐ-UBND"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "id": "dvc-019d2bfb-d777-72e9-84de-147abe18e3c4",
+  "procedure_code": "1.001742",
+  "name": "Thay đổi hình thức nhận, nơi nhận lương hưu, trợ cấp BHXH hằng tháng",
+  "domain": "Thực hiện chính sách BHXH",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.971958+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfb-d777-72e9-84de-147abe18e3c4",
+      "code": "1.001742",
+      "name": "Thay đổi hình thức nhận, nơi nhận lương hưu, trợ cấp BHXH hằng tháng",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1787504992105,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-d777-72e9-84de-147abe18e3c4",
+      "raw_path": "evidence/dvc/details/019d2bfb-d777-72e9-84de-147abe18e3c4.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Văn bản đề nghị (Mẫu số 14-HSB)",
+          "component_code": "TP-G12.0001300",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "01a023bf-e555-7313-baa1-59f3d0344a1c",
+              "fileName": "14 HSB.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/01a023bf-e555-7313-baa1-59f3d0344a1c/14 HSB.docx"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "id": "01a02f35-4782-747d-929b-3f3e91a7dbdb",
+          "name": "Đối tượng thực hiện thủ tục hành chính: Cá nhân",
+          "code": "KQ.G12.000142"
+        },
+        {
+          "id": "01a02f37-9dea-71dc-8aea-b45e9443fb4d",
+          "name": "Thông báo về việc tiếp nhận hồ sơ chờ hưởng lương hưu/trợ cấp hằng tháng (Mẫu số 15B-HSB)",
+          "code": "KQ.G12.000157"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7c-71ab-9f07-f538ffa2f69d",
+          "name": "BAN HÀNH QUY TRÌNH GIẢI QUYẾT HƯỞNG CÁC CHẾ ĐỘ BẢO HIỂM XÃ HỘI, CHI TRẢ CÁC CHẾ ĐỘ BẢO HIỂM XÃ HỘI, BẢO HIỂM THẤT NGHIỆP",
+          "code": "2222/QĐ-BHXH"
+        },
+        {
+          "id": "019d2bb3-5d7d-7398-be46-85fda49d119e",
+          "name": "QUY ĐỊNH CHI TIẾT MỘT SỐ ĐIỀU CỦA LUẬT BẢO HIỂM XÃ HỘI VỀ BẢO HIỂM XÃ HỘI BẮT BUỘC",
+          "code": "12/2025/TT-BNV"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afeb-e5ff16f715c7",
+          "name": "Quy định chi tiết và hướng dẫn thi hành một số điều của Luật Bảo hiểm xã hội về bảo hiểm xã hội bắt buộc",
+          "code": "158/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afeb-f6d50e5e6371",
+          "name": "Quy định chi tiết và hướng dẫn thi hành một số điều của Luật Bảo hiểm xã hội về bảo hiểm xã hội tự nguyện",
+          "code": "159/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d87-7195-a440-f511123122ee",
+          "name": "Luật Bảo hiểm xã hội",
+          "code": "41/2024/QH15"
+        },
+        {
+          "id": "019e72eb-488d-760e-abb8-0a3bb6585c78",
+          "name": "SỬA ĐỔI, BỔ SUNG MỘT SỐ ĐIỀU CỦA QUY TRÌNH GIẢI QUYẾT HƯỞNG CÁC CHẾ ĐỘ BẢO HIỂM XÃ HỘI, CHI TRẢ CÁC CHẾ ĐỘ BẢO HIỂM XÃ HỘI, BẢO HIỂM THẤT NGHIỆP BAN HÀNH KÈM THEO QUYẾT ĐỊNH SỐ 2222/QĐ-BHXH NGÀY 29/7/2025 CỦA GIÁM ĐỐC BẢO HIỂM XÃ HỘI VIỆT NAM",
+          "code": "313/QĐ-BHXH "
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,191 @@
+{
+  "id": "dvc-019d2bfc-648a-76fe-8449-2fecf69adced",
+  "procedure_code": "1.008543",
+  "name": "Khấu trừ số thuế đã nộp tại nước ngoài vào thuế phải nộp tại Việt Nam",
+  "domain": "Thuế",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.938143+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfc-648a-76fe-8449-2fecf69adced",
+      "code": "1.008543",
+      "name": "Khấu trừ số thuế đã nộp tại nước ngoài vào thuế phải nộp tại Việt Nam",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1785399201123,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-648a-76fe-8449-2fecf69adced",
+      "raw_path": "evidence/dvc/details/019d2bfc-648a-76fe-8449-2fecf69adced.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Hồ sơ cung cấp thông tin về số thuế thu nhập được khấu trừ theo Hiệp định thuế theo mẫu số 02/HTQT Phụ lục I ban hành kèm theo Thông tư số 89/2026/TT-BTC ngày 30/6/2026 của Bộ Tài chính",
+          "component_code": "G12.0001403",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019fad25-5c58-72ba-b99a-41fb45a6e92c",
+              "fileName": "1. 02.HTQT (revised).doc",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fad25-5c58-72ba-b99a-41fb45a6e92c/1. 02.HTQT (revised).doc"
+            }
+          ]
+        },
+        {
+          "section": "* Trường hợp người nộp thuế đã nộp thuế thu nhập tại nước ký kết Hiệp định với Việt Nam và được khấu trừ vào số thuế phải nộp tại Việt Nam theo quy định của Hiệp định thuế (khấu trừ trực tiếp):",
+          "position": 1,
+          "name": "Bản sao Tờ khai thuế thu nhập ở nước ngoài có xác nhận của người nộp thuế",
+          "component_code": "G12.0012061",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "* Trường hợp người nộp thuế đã nộp thuế thu nhập tại nước ký kết Hiệp định với Việt Nam và được khấu trừ vào số thuế phải nộp tại Việt Nam theo quy định của Hiệp định thuế (khấu trừ trực tiếp):",
+          "position": 2,
+          "name": "Bản sao Chứng từ nộp thuế ở nước ngoài có xác nhận của người nộp thuế",
+          "component_code": "G12.0012062",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "* Trường hợp người nộp thuế đã nộp thuế thu nhập tại nước ký kết Hiệp định với Việt Nam và được khấu trừ vào số thuế phải nộp tại Việt Nam theo quy định của Hiệp định thuế (khấu trừ trực tiếp):",
+          "position": 3,
+          "name": "Bản sao xác nhận của cơ quan thuế nước ngoài về số thuế đã nộp",
+          "component_code": "G12.0012063",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "* Trường hợp người nộp thuế có thu nhập thuộc đối tượng phải nộp thuế tại Nước ký kết Hiệp định thuế với Việt Nam, nhưng được miễn hoặc giảm thuế như một biện pháp ưu đãi đặc biệt theo quy định tại luật của nước ký kết đó thì được khấu trừ vào số thuế thu nhập phải nộp tại Việt Nam theo quy định của Hiệp định thuế đối với số thuế được hưởng ưu đãi miễn, giảm thuế tại nước ngoài:",
+          "position": 1,
+          "name": "Bản sao Tờ khai thuế thu nhập ở nước ngoài có xác nhận của người nộp thuế",
+          "component_code": "G12.0012061",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "* Trường hợp người nộp thuế có thu nhập thuộc đối tượng phải nộp thuế tại Nước ký kết Hiệp định thuế với Việt Nam, nhưng được miễn hoặc giảm thuế như một biện pháp ưu đãi đặc biệt theo quy định tại luật của nước ký kết đó thì được khấu trừ vào số thuế thu nhập phải nộp tại Việt Nam theo quy định của Hiệp định thuế đối với số thuế được hưởng ưu đãi miễn, giảm thuế tại nước ngoài:",
+          "position": 2,
+          "name": "Bản sao Đăng ký kinh doanh hoặc các chứng từ pháp lý xác nhận hoạt động kinh doanh tại nước ngoài có xác nhận của người nộp thuế",
+          "component_code": "G12.0012064",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "* Trường hợp người nộp thuế có thu nhập thuộc đối tượng phải nộp thuế tại Nước ký kết Hiệp định thuế với Việt Nam, nhưng được miễn hoặc giảm thuế như một biện pháp ưu đãi đặc biệt theo quy định tại luật của nước ký kết đó thì được khấu trừ vào số thuế thu nhập phải nộp tại Việt Nam theo quy định của Hiệp định thuế đối với số thuế được hưởng ưu đãi miễn, giảm thuế tại nước ngoài:",
+          "position": 3,
+          "name": "Bản chính hoặc bản sao có chứng thực thư xác nhận của Nhà chức trách có thẩm quyền nước ngoài về số thuế đã miễn, giảm và xác nhận việc đề nghị khấu trừ số thuế khoán là phù hợp với Hiệp định thuế và luật pháp của nước ký kết Hiệp định thuế có liên quan",
+          "component_code": "G12.0012065",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "* Trường hợp người nộp thuế đã nộp thuế thu nhập doanh nghiệp đối với thu nhập trước khi được chia cho đối tượng đó tại nước ký kết Hiệp định thuế với Việt Nam và được khấu trừ vào số thuế phải nộp tại Việt Nam theo quy định của Hiệp định thuế (khấu trừ gián tiếp):",
+          "position": 1,
+          "name": "Các tài liệu pháp lý chứng minh quan hệ và tỉ lệ góp vốn của đối tượng đề nghị khấu trừ",
+          "component_code": "G12.0003499",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "* Trường hợp người nộp thuế đã nộp thuế thu nhập doanh nghiệp đối với thu nhập trước khi được chia cho đối tượng đó tại nước ký kết Hiệp định thuế với Việt Nam và được khấu trừ vào số thuế phải nộp tại Việt Nam theo quy định của Hiệp định thuế (khấu trừ gián tiếp):",
+          "position": 2,
+          "name": "Bản sao Tờ khai thuế thu nhập ở nước ngoài của công ty chia lãi cổ phần mà đối tượng tham gia góp vốn có xác nhận của người nộp thuế",
+          "component_code": "G12.0003500",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "* Trường hợp người nộp thuế đã nộp thuế thu nhập doanh nghiệp đối với thu nhập trước khi được chia cho đối tượng đó tại nước ký kết Hiệp định thuế với Việt Nam và được khấu trừ vào số thuế phải nộp tại Việt Nam theo quy định của Hiệp định thuế (khấu trừ gián tiếp):",
+          "position": 3,
+          "name": "Bản sao Tờ khai thuế khấu trừ tại nguồn đối với tiền lãi cổ phần được chia có xác nhận của người nộp thuế",
+          "component_code": "G12.0003501",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "* Trường hợp người nộp thuế đã nộp thuế thu nhập doanh nghiệp đối với thu nhập trước khi được chia cho đối tượng đó tại nước ký kết Hiệp định thuế với Việt Nam và được khấu trừ vào số thuế phải nộp tại Việt Nam theo quy định của Hiệp định thuế (khấu trừ gián tiếp):",
+          "position": 4,
+          "name": "Bản sao Xác nhận của cơ quan thuế nước ngoài về số thuế đã nộp đối với tiền lãi cổ phần được chia và số thuế thu nhập công ty đã nộp trước khi chia lãi cổ phần",
+          "component_code": "G12.0003502",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 1,
+          "name": "Bản sao có chứng thực văn bản ủy quyền trong trường hợp người nộp thuế uỷ quyền cho đại diện hợp pháp thực hiện thủ tục áp dụng Hiệp định thuế",
+          "component_code": "G12.0003503",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c70-724b-96e1-59c6a510ec9f",
+          "name": "Hồ sơ gửi đến cơ quan thuế không có kết quả giải quyết.",
+          "code": "KQ.G12.000429"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019f356e-75e3-7494-a2f3-672d8dce61a6",
+          "name": "QUY ĐỊNH CHI TIẾT MỘT SỐ ĐIỀU VÀ BIỆN PHÁP ĐỂ TỔ CHỨC, HƯỚNG DẪN THI HÀNH LUẬT QUẢN LÝ THUẾ",
+          "code": "252/2026/NĐ-CP"
+        },
+        {
+          "id": "019e5e83-1282-771d-9014-49799413a4e5",
+          "name": "Luật số 108/2025/QH15 của Quốc hội: Luật Quản lý thuế",
+          "code": "108/2025/QH15"
+        },
+        {
+          "id": "019f8db3-9765-740b-8b90-682677b9c421",
+          "name": "Thông tư quy định chi tiết một số điều của Luật Quản lý thuế và Nghị định số 252/2026/NĐ-CP của Chính phủ quy định chi tiết một số điều và biện pháp để tổ chức, hướng dẫn thi hành Luật Quản lý thuế",
+          "code": "89/2026/TT-BTC"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "id": "hn87-235",
+  "ordinal": "235",
+  "procedure_code": "1.012965",
+  "name": "Cho phép trường trung học cơ sở, trường phổ thông có nhiều cấp học có cấp học cao nhất là trung học cơ sở hoạt động giáo dục",
+  "domain": "Giáo dục trung học",
+  "department_id": "vx",
+  "department": "Phòng Văn hóa - Xã hội",
+  "authority_as_published": "UBND cấp xã",
+  "execution_level_as_published": "Cấp xã",
+  "receiving_location_as_published": "Điểm hỗ trợ DVC số",
+  "inventory_date": "2026-04-27",
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "source_urls": [],
+  "current_dvc_match": false,
+  "lifecycle": {
+    "procedure_code": "1.012965",
+    "name": "Cho phép trường trung học cơ sở, trường phổ thông có nhiều cấp học có cấp học cao nhất là trung học cơ sở hoạt động giáo dục",
+    "status": "replaced",
+    "label": "Đã có thủ tục thay thế",
+    "note": "Bảng thủ tục thay thế của Bộ GDĐT nêu mã cũ và tên thủ tục mới. Phạm vi một số thủ tục được gộp hoặc thay đổi.",
+    "evidence": [
+      {
+        "name": "Quyết định 2855/QĐ-BGDĐT ngày 30/9/2026",
+        "scope": "national",
+        "url": "https://dienbien.tnu.edu.vn/uploads/files/moet/moet-20260930-2855-qd-bgddt-quyet-dinh-ve-viec-cong-bo-thu-tuc-hanh-chinh-ban-hanh-moi-thu-tuc-hanh-chinh-duoc-thay-the-trong-cac-linh-vuc-thuoc-pha-7d2614c76a.pdf",
+        "local_path": "originals/bgddt2855-2026.pdf",
+        "sha256": "cf008cbd7ff333f5130543272f2ec20791f46f6ead34f5680e6a2d75d45ef94e",
+        "page": 13
+      }
+    ],
+    "effective_from": null,
+    "effective_until": null,
+    "reviewed_on": "2026-11-13",
+    "use_old_form_for_synthetic_data": false,
+    "related_current_procedures": [
+      {
+        "code": "1.116843",
+        "name": "Cấp phép hoạt động giáo dục đối với trường tiểu học, trường trung học cơ sở và trường phổ thông có nhiều cấp học trong đó có cấp học cao nhất là trung học cơ sở",
+        "id": "01a0f18e-9c38-77a9-a9ac-657df2b2dd9a",
+        "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/01a0f18e-9c38-77a9-a9ac-657df2b2dd9a",
+        "mapping_basis": "Đối chiếu tên thủ tục thay thế trong quyết định với tên và căn cứ pháp lý trên DVC; mã mới lấy từ DVC, không sửa mã gốc."
+      }
+    ]
+  },
+  "scope": "hanoi_commune_notice_2026_04_27",
+  "scope_note": "Mốc kiểm kê cấp xã Hà Nội; áp dụng từng thủ tục tại Từ Liêm còn phải theo thẩm quyền/ủy quyền hiện hành.",
+  "status": "held_changed_procedure",
+  "components": [],
+  "service_cases": [],
+  "selected_template_ids": [],
+  "source_component_groups": [],
+  "conditional_component_groups": [],
+  "default_test_scenario": {
+    "channel": "direct",
+    "applicant_submits_self": true,
+    "authorized": false,
+    "special_case_flags": [],
+    "selected_conditional_group": null,
+    "case_selection_method": "ordinary_direct_submission",
+    "case_status": "scenario_for_testing_not_a_legal_eligibility_decision"
+  },
+  "requirement_note": "required_as_published được giữ nguyên; false không chứng minh giấy tờ luôn tùy chọn. Các nhóm executionCases có thể là mục giấy tờ/hướng dẫn, không phải các phương án loại trừ nhau."
+}

@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <ProjectReference Include="..\HoSoSo.Application\HoSoSo.Application.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" />
+    <PackageReference Include="EFCore.NamingConventions" />
+    <PackageReference Include="dbup-postgresql" />
+    <PackageReference Include="PdfPig" />
+    <PackageReference Include="BouncyCastle.Cryptography" />
+    <PackageReference Include="QRCoder" />
+    <PackageReference Include="PDFtoImage" />
+    <PackageReference Include="AWSSDK.S3" />
+  </ItemGroup>
+  <ItemGroup>
+    <!-- Font Be Vietnam Pro (SIL OFL 1.1, kèm OFL.txt) nhúng vào PDF do hệ thống tạo. -->
+    <EmbeddedResource Include="Resources\Fonts\*.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <InternalsVisibleTo Include="HoSoSo.Api.IntegrationTests" />
+  </ItemGroup>
+</Project>

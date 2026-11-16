@@ -1,0 +1,145 @@
+{
+  "id": "hn87-195",
+  "ordinal": "195",
+  "procedure_code": "-",
+  "name": "Hỗ trợ mua máy cấy, hệ thống thiết bị gieo mạ phục vụ cơ giới hóa trong sản xuất lúa (Thực hiện theo khoản 2 Điều 8 Nghị quyết số 53/2025/NQ-HĐND ngày 26/11/2025)",
+  "domain": "Nông nghiệp",
+  "department_id": "ktdt",
+  "department": "Phòng Kinh tế, Hạ tầng và Đô thị",
+  "authority_as_published": "UBND cấp xã",
+  "execution_level_as_published": "Cấp Xã",
+  "receiving_location_as_published": "Điểm hỗ trợ DVC số",
+  "inventory_date": "2026-04-27",
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "source_urls": [
+    "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019da4eb-06d7-7538-8f7a-d13d93b99c24"
+  ],
+  "current_dvc_match": true,
+  "lifecycle": null,
+  "scope": "hanoi_commune_notice_2026_04_27",
+  "scope_note": "Mốc kiểm kê cấp xã Hà Nội; áp dụng từng thủ tục tại Từ Liêm còn phải theo thẩm quyền/ủy quyền hiện hành.",
+  "status": "source_template_missing",
+  "components": [
+    {
+      "id": "hn87-195-c001",
+      "code": "ĐĐN-02A-35/2026/QĐ-UBND",
+      "name": "Đơn đề nghị hỗ trợ theo Mẫu số 02A của Phụ lục kèm theo Quyết định số 35/2026/QĐ-UBND ngày 30/3/2026",
+      "section": "",
+      "role": "applicant_form",
+      "scenario_status": "selected_for_test",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019da4eb-06d7-7538-8f7a-d13d93b99c24",
+      "source_detail_id": "019da4eb-06d7-7538-8f7a-d13d93b99c24",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-195-c002",
+      "code": "HĐ",
+      "name": "Bản chính hoặc bản chứng thực Hợp đồng, nghiệm thu, thanh lý hợp đồng mua máy móc, thiết bị. Tại hợp đồng mua máy móc, thiết bị hoặc hoá đơn phải ghi rõ: máy móc, thiết bị là mới, xuất xứ rõ ràng, đáp ứng được tiêu chuẩn cơ sở đã công bố hoặc tiêu chuẩn Việt Nam (nếu có);",
+      "section": "",
+      "role": "needs_review",
+      "scenario_status": "conditional_needs_review",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 1,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019da4eb-06d7-7538-8f7a-d13d93b99c24",
+      "source_detail_id": "019da4eb-06d7-7538-8f7a-d13d93b99c24",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-195-c003",
+      "code": "HĐTC",
+      "name": "Bản gốc hoặc bản chứng thực, hóa đơn tài chính theo quy định của pháp luật. Tại hợp đồng mua máy móc, thiết bị hoặc hoá đơn phải ghi rõ: máy móc, thiết bị là mới, xuất xứ rõ ràng, đáp ứng được tiêu chuẩn cơ sở đã công bố hoặc tiêu chuẩn Việt Nam (nếu có);",
+      "section": "",
+      "role": "needs_review",
+      "scenario_status": "conditional_needs_review",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 1,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019da4eb-06d7-7538-8f7a-d13d93b99c24",
+      "source_detail_id": "019da4eb-06d7-7538-8f7a-d13d93b99c24",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-195-c004",
+      "code": "PASXKD",
+      "name": "Phương án sản xuất kinh doanh của tổ chức/cá nhân đề nghị hỗ trợ theo Mẫu số 03 của Phụ lục kèm theo Quyết định 35/2026/QĐ-UBND ngày 30/3/2026",
+      "section": "",
+      "role": "applicant_prepared",
+      "scenario_status": "selected_for_test",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019da4eb-06d7-7538-8f7a-d13d93b99c24",
+      "source_detail_id": "019da4eb-06d7-7538-8f7a-d13d93b99c24",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-195-c005",
+      "code": "CTTĐG",
+      "name": "Bản gốc hoặc bản chứng thực chứng thư thẩm định giá của cơ quan thẩm định giá hoặc báo giá/thông báo giá của đơn vị sản xuất, phân phối độc quyền",
+      "section": "",
+      "role": "needs_review",
+      "scenario_status": "requirement_needs_review",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019da4eb-06d7-7538-8f7a-d13d93b99c24",
+      "source_detail_id": "019da4eb-06d7-7538-8f7a-d13d93b99c24",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    }
+  ],
+  "service_cases": [
+    {
+      "id": "019da8a4-cf83-71b4-902c-1f100b9e6f8b",
+      "code": "1.015017.01",
+      "name": "Hỗ trợ mua máy cấy, hệ thống thiết bị gieo mạ phục vụ cơ giới hóa trong sản xuất lúa (Thực hiện theo khoản 2 Điều 8 Nghị quyết số 53/2025/NQ-HĐND ngày 26/11/2025)",
+      "source_processing_time": {
+        "qty": 14,
+        "type": "WORKING_DAY"
+      },
+      "has_case_specific_components": false
+    }
+  ],
+  "selected_template_ids": [],
+  "source_component_groups": [
+    {
+      "name": "",
+      "component_count": 5,
+      "source_detail_id": "019da4eb-06d7-7538-8f7a-d13d93b99c24"
+    }
+  ],
+  "conditional_component_groups": [],
+  "default_test_scenario": {
+    "channel": "direct",
+    "applicant_submits_self": true,
+    "authorized": false,
+    "special_case_flags": [],
+    "selected_conditional_group": null,
+    "case_selection_method": "ordinary_direct_submission",
+    "case_status": "scenario_for_testing_not_a_legal_eligibility_decision"
+  },
+  "requirement_note": "required_as_published được giữ nguyên; false không chứng minh giấy tờ luôn tùy chọn. Các nhóm executionCases có thể là mục giấy tờ/hướng dẫn, không phải các phương án loại trừ nhau."
+}

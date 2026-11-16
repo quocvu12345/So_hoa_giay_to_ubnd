@@ -1,0 +1,145 @@
+{
+  "id": "hn87-394",
+  "ordinal": "394",
+  "procedure_code": "2.002228",
+  "name": "Thông báo chấm dứt hoạt động của tổ hợp tác",
+  "domain": "Thành lập và hoạt động của tổ hợp tác (Bộ Tài chính)",
+  "department_id": "ktdt",
+  "department": "Phòng Kinh tế, Hạ tầng và Đô thị",
+  "authority_as_published": "UBND cấp xã",
+  "execution_level_as_published": "Cấp xã",
+  "receiving_location_as_published": "Điểm hỗ trợ DVC số",
+  "inventory_date": "2026-04-27",
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "source_urls": [
+    "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-e975-702b-8e64-5692d3b7c41e"
+  ],
+  "current_dvc_match": true,
+  "lifecycle": null,
+  "scope": "hanoi_commune_notice_2026_04_27",
+  "scope_note": "Mốc kiểm kê cấp xã Hà Nội; áp dụng từng thủ tục tại Từ Liêm còn phải theo thẩm quyền/ủy quyền hiện hành.",
+  "status": "source_template_missing",
+  "components": [
+    {
+      "id": "hn87-394-c001",
+      "code": "TP-G12.0002025",
+      "name": "- Thông báo chấm dứt hoạt động tổ hợp tác không đăng ký (Mẫu số 3);",
+      "section": "",
+      "role": "agency_prepared",
+      "scenario_status": "agency_reserved",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-e975-702b-8e64-5692d3b7c41e",
+      "source_detail_id": "019d2bfc-e975-702b-8e64-5692d3b7c41e",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-394-c002",
+      "code": "TP-G12.0002026",
+      "name": "- Biên bản họp tổ hợp tác về việc chấm dứt hoạt động (đối với trường hợp tổ hợp tác chấm dứt theo sự thỏa thuận của các thành viên);",
+      "section": "",
+      "role": "agency_prepared",
+      "scenario_status": "agency_reserved",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-e975-702b-8e64-5692d3b7c41e",
+      "source_detail_id": "019d2bfc-e975-702b-8e64-5692d3b7c41e",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-394-c003",
+      "code": "TP-G12.0002027",
+      "name": "- Bản sao hoặc bản chính biên bản họp tổ hợp tác về việc bầu tổ trưởng (trường hợp tổ trưởng nộp hồ sơ);",
+      "section": "",
+      "role": "supporting_submit",
+      "scenario_status": "conditional_needs_review",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-e975-702b-8e64-5692d3b7c41e",
+      "source_detail_id": "019d2bfc-e975-702b-8e64-5692d3b7c41e",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-394-c004",
+      "code": "TP-G12.0002028",
+      "name": "- Bản sao hoặc bản chính văn bản ủy quyền của một trăm phần trăm (100%) tổng số thành viên tổ hợp tác đồng ý (trường hợp người đại diện theo ủy quyền của các thành viên tổ hợp tác nộp hồ sơ).",
+      "section": "",
+      "role": "supporting_submit",
+      "scenario_status": "conditional_not_selected",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-e975-702b-8e64-5692d3b7c41e",
+      "source_detail_id": "019d2bfc-e975-702b-8e64-5692d3b7c41e",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-394-c005",
+      "code": "TP-G12.0002029",
+      "name": "Đối với tổ hợp tác thành lập trước ngày Nghị định số 294/2026/NĐ-CP có hiệu lực thi hành mà đến thời điểm chấm dứt hoạt động chưa cập nhật thông tin thay đổi thành viên với Ủy ban nhân dân cấp xã theo quy định thì hồ sơ thông báo chấm dứt hoạt động tổ hợp tác phải kèm theo bản sao sổ ghi chép về việc đóng góp của thành viên tổ hợp tác",
+      "section": "",
+      "role": "supporting_submit",
+      "scenario_status": "conditional_needs_review",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-e975-702b-8e64-5692d3b7c41e",
+      "source_detail_id": "019d2bfc-e975-702b-8e64-5692d3b7c41e",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    }
+  ],
+  "service_cases": [
+    {
+      "id": "019f6e46-c557-738c-b7f5-c16d90b2639c",
+      "code": "2.002228.01",
+      "name": "Thông báo chấm dứt hoạt động của tổ hợp tác",
+      "source_processing_time": {
+        "qty": 1,
+        "type": "DAY"
+      },
+      "has_case_specific_components": false
+    }
+  ],
+  "selected_template_ids": [],
+  "source_component_groups": [
+    {
+      "name": "",
+      "component_count": 5,
+      "source_detail_id": "019d2bfc-e975-702b-8e64-5692d3b7c41e"
+    }
+  ],
+  "conditional_component_groups": [],
+  "default_test_scenario": {
+    "channel": "direct",
+    "applicant_submits_self": true,
+    "authorized": false,
+    "special_case_flags": [],
+    "selected_conditional_group": null,
+    "case_selection_method": "ordinary_direct_submission",
+    "case_status": "scenario_for_testing_not_a_legal_eligibility_decision"
+  },
+  "requirement_note": "required_as_published được giữ nguyên; false không chứng minh giấy tờ luôn tùy chọn. Các nhóm executionCases có thể là mục giấy tờ/hướng dẫn, không phải các phương án loại trừ nhau."
+}

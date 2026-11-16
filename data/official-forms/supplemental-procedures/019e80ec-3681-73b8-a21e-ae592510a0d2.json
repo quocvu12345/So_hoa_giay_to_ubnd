@@ -1,0 +1,68 @@
+{
+  "id": "dvc-019e80ec-3681-73b8-a21e-ae592510a0d2",
+  "procedure_code": "3.000576",
+  "name": "Thủ tục khai báo hoạt động phát hành xuất bản phẩm",
+  "domain": "Xuất Bản, In và Phát hành",
+  "managing_agency": "Bộ Văn hóa, Thể thao và Du lịch",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.486518+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019e80ec-3681-73b8-a21e-ae592510a0d2",
+      "code": "3.000576",
+      "name": "Thủ tục khai báo hoạt động phát hành xuất bản phẩm",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1794471545287,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019e80ec-3681-73b8-a21e-ae592510a0d2",
+      "raw_path": "evidence/dvc/details/019e80ec-3681-73b8-a21e-ae592510a0d2.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Tờ khai hoạt động phát hành xuất bản phẩm (theo Mẫu số 08 ban hành kèm theo Phụ lục I.9 tại Nghị quyết số 66.18/2026/NQ-CP).",
+          "component_code": "000.00.00.G16-KQ0096618",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019e80eb-a098-77d8-9cbf-8f52426b5549",
+          "name": "Xác nhận khai báo hoạt động phát hành xuất bản phẩm.",
+          "code": "G16-KQ00661810"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7c-71ab-9f04-ccd0480fc664",
+          "name": "23/2023/TT-BTTTT",
+          "code": "23/2023/TT-BTTTT"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afed-006a4d6d88d0",
+          "name": "Nghị định 195/2013/NĐ-CP",
+          "code": "195/2013/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7c-71ab-9f03-e8a624fc3eca",
+          "name": "Thông tư 01/2020/TT-BTTTT",
+          "code": "01/2020/TT-BTTTT"
+        },
+        {
+          "id": "019e67c8-49f0-74da-8ec4-788fb29ab4a9",
+          "name": "Nghị quyết số 66.18/2026/NQ-CP của Chính phủ: Phân quyền, cắt giảm, đơn giản hóa thủ tục hành chính, điều kiện kinh doanh",
+          "code": "66.18/2026/NQ-CP"
+        }
+      ]
+    }
+  ]
+}

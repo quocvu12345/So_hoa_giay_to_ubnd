@@ -1,0 +1,107 @@
+{
+  "id": "dvc-019d2bfb-2324-7555-8e56-024dcdb30038",
+  "procedure_code": "1.013750",
+  "name": "Thăm viếng mộ liệt sĩ.",
+  "domain": "Người có công",
+  "managing_agency": "Bộ Nội vụ",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.994566+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfb-2324-7555-8e56-024dcdb30038",
+      "code": "1.013750",
+      "name": "Thăm viếng mộ liệt sĩ.",
+      "state": "ACTIVE",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1776416014351,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-2324-7555-8e56-024dcdb30038",
+      "raw_path": "evidence/dvc/details/019d2bfb-2324-7555-8e56-024dcdb30038.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "- Đơn đề nghị theo Mẫu số 31 Phụ lục I Nghị định số 131/2021/NĐ-CP,",
+          "component_code": "G09-KQ003210140",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019d7548-f997-7778-b7f9-d58c4129d9f1",
+              "fileName": "Mauso31_ND131_2021.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d7548-f997-7778-b7f9-d58c4129d9f1/Mauso31_ND131_2021.docx"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "- Bản sao được chứng thực từ một trong các giấy tờ sau: giấy chứng nhận gia đình hoặc thân nhân liệt sĩ; quyết định trợ cấp thờ cúng liệt sĩ,",
+          "component_code": "G09-KQ003210141",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 3,
+          "name": "- Một trong các giấy tờ sau: + Giấy báo tin mộ liệt sĩ của Sở Lao động - Thương binh và Xã hội (nay là Sở Nội vụ) nơi quản lý mộ đối với trường hợp mộ liệt sĩ có đầy đủ thông tin.        + Đối với trường hợp chưa xác định được mộ cụ thể trong nghĩa trang liệt sĩ:         Giấy xác nhận do Sở Lao động - Thương binh và Xã hội (nay là Sở Nội vụ) nơi quản lý mộ về việc có tên trong danh sách quản lý của nghĩa trang.         Bản trích lục hồ sơ liệt sĩ do Sở Lao động - Thương binh và Xã hội (nay là Sở Nội vụ) nơi quản lý hồ sơ gốc cấp. Bản sao được chứng thực từ giấy xác nhận thông tin về nơi liệt sĩ hy sinh theo Mẫu số 44 Phụ lục I Nghị định số 131/2021/NĐ-CP,",
+          "component_code": "G09-KQ003210142",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c4d-7725-9d9c-d2f4af55f256",
+          "name": "Giấy giới thiệu thăm viếng mộ liệt sĩ và thực hiện chi hỗ trợ thăm viếng mộ liệt sĩ",
+          "code": "KQ.G09.000455"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d84-71c5-b671-f40a5ee32475",
+          "name": "Nghị quyết số 190/2025/QH15 của Quốc hội: Quy định về xử lý một số vấn đề liên quan đến sắp xếp tổ chức bộ máy nhà nước",
+          "code": "190/2025/NQ-QH15"
+        },
+        {
+          "id": "019d2bb3-5d7f-719e-b474-93996f3f00db",
+          "name": "Nghị định số 25/2025/NĐ-CP ngày 21 tháng 02 năm 2025 của Chính phủ quy định chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của Bộ Nội vụ",
+          "code": "Nghị định số 25/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7f-719e-b46e-3b82195c2d48",
+          "name": "Nghị định số 45/2025/NĐ-CP ngày 28/02/2025 của Chính phủ quy định tổ chức các cơ quan chuyên môn thuộc Ủy ban nhân dân tỉnh, thành phố trực thuộc trung ương và Ủy ban nhân dân huyện, quận, thị xã, thành phố thuộc tỉnh, thành phố thuộc thành phố trực thuộc trung ương",
+          "code": "45/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afea-1c153ca6400f",
+          "name": "Quy định về phân định thẩm quyền của chính quyền địa phương 02 cấp trong lĩnh vực quản lý nhà nước của Bộ Nội vụ",
+          "code": "129/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b671-1efb450f35ab",
+          "name": "Pháp lệnh ưu đãi người có công với cách mạng",
+          "code": "02/2020/UBTVQH14"
+        },
+        {
+          "id": "019d2bb3-5d86-7760-a63f-3570c1f2598e",
+          "name": "Nghị định 131/2021/NĐ-CP",
+          "code": "131/2021/NĐ-CP"
+        }
+      ]
+    }
+  ]
+}

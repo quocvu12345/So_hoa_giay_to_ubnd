@@ -1,0 +1,91 @@
+{
+  "id": "dvc-019d2bfa-fc36-74e9-9909-551c04aa6c27",
+  "procedure_code": "1.010825",
+  "name": "Bổ sung tình hình thân nhân trong hồ sơ liệt sĩ.",
+  "domain": "Người có công",
+  "managing_agency": "Bộ Nội vụ",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.999323+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfa-fc36-74e9-9909-551c04aa6c27",
+      "code": "1.010825",
+      "name": "Bổ sung tình hình thân nhân trong hồ sơ liệt sĩ.",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1776416016570,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfa-fc36-74e9-9909-551c04aa6c27",
+      "raw_path": "evidence/dvc/details/019d2bfa-fc36-74e9-9909-551c04aa6c27.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "- Đơn đề nghị theo Mẫu số 06 Phụ lục I Nghị định số 131/2021/NĐ-CP.",
+          "component_code": "G09-KQ003210230",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019d708b-7321-730f-a026-b741705946e6",
+              "fileName": "Mauso06_ND131_2021.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d708b-7321-730f-a026-b741705946e6/Mauso06_ND131_2021.docx"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "- Bản sao được chứng thực từ một trong các giấy tờ chứng minh mối quan hệ với liệt sĩ như sau:         + Đối với đề nghị bổ sung là cha đẻ mẹ đẻ, vợ hoặc chồng liệt sĩ:         Căn cước công dân, lý lịch cán bộ, lý lịch đảng viên, lý lịch quân nhân, giấy chứng nhận đăng ký kết hôn.        Các giấy tờ, tài liệu khác do cơ quan có thẩm quyền ban hành, xác nhận.         Văn bản đồng thuận của thân nhân liệt sĩ hoặc của những người thuộc quy định tại điểm b khoản 1 Điều 651 Bộ luật Dân sự. Trường hợp những người này không còn thì phải được những người thuộc quy định tại điểm c khoản 1 Điều 651 Bộ luật Dân sự có văn bản đồng thuận.         + Đối với đề nghị bổ sung là con liệt sĩ: Giấy khai sinh, trích lục khai sinh, quyết định công nhận việc nuôi con nuôi theo quy định của pháp luật; lý lịch cán bộ, lý lịch đảng viên, lý lịch quân nhân; các giấy tờ, tài liệu khác do cơ quan có thẩm quyền ban hành, xác nhận trước ngày 01 tháng 7 năm 2021.",
+          "component_code": "G09-KQ002690",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c4d-7725-9d9c-83497ed887f6",
+          "name": "Quyết định về việc bổ sung tình hình thân nhân liệt sĩ và trợ cấp ưu đãi.",
+          "code": "KQ.G09.000435"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7f-719e-b474-516a799e2145",
+          "name": "QUY ĐỊNH CHI TIẾT VÀ BIỆN PHÁP THI HÀNH PHÁP LỆNH ƯU ĐÃI NGƯỜI CÓ CÔNG VỚI CÁCH MẠNG",
+          "code": "Nghị định số 131/2021/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afea-1c153ca6400f",
+          "name": "Quy định về phân định thẩm quyền của chính quyền địa phương 02 cấp trong lĩnh vực quản lý nhà nước của Bộ Nội vụ",
+          "code": "129/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d85-73da-8eba-20bc75de794b",
+          "name": "ƯU ĐÃI NGƯỜI CÓ CÔNG VỚI CÁCH MẠNG",
+          "code": "Pháp lệnh số: 02/2020/UBTVQH14"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b671-f40a5ee32475",
+          "name": "Nghị quyết số 190/2025/QH15 của Quốc hội: Quy định về xử lý một số vấn đề liên quan đến sắp xếp tổ chức bộ máy nhà nước",
+          "code": "190/2025/NQ-QH15"
+        },
+        {
+          "id": "019d2bb3-5d7f-719e-b474-93996f3f00db",
+          "name": "Nghị định số 25/2025/NĐ-CP ngày 21 tháng 02 năm 2025 của Chính phủ quy định chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của Bộ Nội vụ",
+          "code": "Nghị định số 25/2025/NĐ-CP"
+        }
+      ]
+    }
+  ]
+}

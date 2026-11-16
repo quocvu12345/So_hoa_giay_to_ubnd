@@ -1,0 +1,123 @@
+{
+  "id": "hn87-031",
+  "ordinal": "31",
+  "procedure_code": "1.014197",
+  "name": "Cấp lại giấy xác nhận không thuộc diện cấp giấy phép lao động đối với người lao động nước ngoài làm việc tại Việt Nam",
+  "domain": "Việc làm",
+  "department_id": "vx",
+  "department": "Phòng Văn hóa - Xã hội",
+  "authority_as_published": "UBND cấp xã",
+  "execution_level_as_published": "Cấp xã",
+  "receiving_location_as_published": "Điểm hỗ trợ DVC số",
+  "inventory_date": "2026-04-27",
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "source_urls": [
+    "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-2af9-73cb-9dbc-1af8c5ddec7b"
+  ],
+  "current_dvc_match": true,
+  "lifecycle": null,
+  "scope": "hanoi_commune_notice_2026_04_27",
+  "scope_note": "Mốc kiểm kê cấp xã Hà Nội; áp dụng từng thủ tục tại Từ Liêm còn phải theo thẩm quyền/ủy quyền hiện hành.",
+  "status": "has_fillable_templates",
+  "components": [
+    {
+      "id": "hn87-031-c001",
+      "code": "G09-KQ003060",
+      "name": "(1) Văn bản đề nghị cấp lại giấy xác nhận không thuộc diện cấp giấy phép lao động của người sử dụng lao động theo Mẫu số 01 Phụ lục ban hành kèm theo Nghị định số 219/2025/NĐ-CP;",
+      "section": "",
+      "role": "applicant_form",
+      "scenario_status": "selected_for_test",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-2af9-73cb-9dbc-1af8c5ddec7b",
+      "source_detail_id": "019d2bfb-2af9-73cb-9dbc-1af8c5ddec7b",
+      "embedded_other_requirements": false,
+      "template_candidates": [
+        "template-b6fcba44e99320c3"
+      ],
+      "template_selection_method": "first_matching_source_attachment",
+      "selected_template_id": "template-b6fcba44e99320c3",
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-031-c002",
+      "code": "G09-KQ003061",
+      "name": "(2) Giấy tờ chứng minh việc thay đổi một trong các nội dung sau: họ và tên, quốc tịch, số hộ chiếu, địa điểm làm việc, đổi tên người sử dụng lao động mà không thay đổi mã số định danh của người sử dụng lao động;",
+      "section": "",
+      "role": "supporting_submit",
+      "scenario_status": "conditional_needs_review",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-2af9-73cb-9dbc-1af8c5ddec7b",
+      "source_detail_id": "019d2bfb-2af9-73cb-9dbc-1af8c5ddec7b",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-031-c003",
+      "code": "G09-KQ003062",
+      "name": "(3) Giấy xác nhận không thuộc diện cấp giấy phép lao động còn thời hạn, trừ trường hợp bị mất hoặc bị hư hỏng không sử dụng được.",
+      "section": "",
+      "role": "needs_review",
+      "scenario_status": "conditional_needs_review",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-2af9-73cb-9dbc-1af8c5ddec7b",
+      "source_detail_id": "019d2bfb-2af9-73cb-9dbc-1af8c5ddec7b",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    }
+  ],
+  "service_cases": [
+    {
+      "id": "019dbe8d-d9ff-75c0-a622-88a89a48a073",
+      "code": "1.014197.02",
+      "name": "Cấp lại giấy xác nhận không thuộc diện cấp giấy phép lao động đối với người lao động nước ngoài làm việc tại Việt Nam",
+      "source_processing_time": {
+        "qty": 3,
+        "type": "WORKING_DAY"
+      },
+      "has_case_specific_components": false
+    },
+    {
+      "id": "019d2d59-1273-7188-bb69-67c3da32165a",
+      "code": "1.014197.01",
+      "name": "Cấp lại giấy xác nhận không thuộc diện cấp giấy phép lao động đối với người lao động nước ngoài làm việc tại Việt Nam",
+      "source_processing_time": {
+        "qty": 3,
+        "type": "WORKING_DAY"
+      },
+      "has_case_specific_components": false
+    }
+  ],
+  "selected_template_ids": [
+    "template-b6fcba44e99320c3"
+  ],
+  "source_component_groups": [
+    {
+      "name": "",
+      "component_count": 3,
+      "source_detail_id": "019d2bfb-2af9-73cb-9dbc-1af8c5ddec7b"
+    }
+  ],
+  "conditional_component_groups": [],
+  "default_test_scenario": {
+    "channel": "direct",
+    "applicant_submits_self": true,
+    "authorized": false,
+    "special_case_flags": [],
+    "selected_conditional_group": null,
+    "case_selection_method": "ordinary_direct_submission",
+    "case_status": "scenario_for_testing_not_a_legal_eligibility_decision"
+  },
+  "requirement_note": "required_as_published được giữ nguyên; false không chứng minh giấy tờ luôn tùy chọn. Các nhóm executionCases có thể là mục giấy tờ/hướng dẫn, không phải các phương án loại trừ nhau."
+}

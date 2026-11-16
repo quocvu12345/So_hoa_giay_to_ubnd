@@ -1,0 +1,160 @@
+{
+  "id": "hn87-014",
+  "ordinal": "14",
+  "procedure_code": "1.004964",
+  "name": "Giải quyết chế độ trợ cấp một lần đối với người được cử làm chuyên gia sang giúp Lào, Căm-pu-chi-a",
+  "domain": "Người có công",
+  "department_id": "vx",
+  "department": "Phòng Văn hóa - Xã hội",
+  "authority_as_published": "Chủ tịch UBND cấp xã",
+  "execution_level_as_published": "Cấp xã",
+  "receiving_location_as_published": "Điểm hỗ trợ DVC số",
+  "inventory_date": "2026-04-27",
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "source_urls": [
+    "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfa-e4a2-75d8-86ea-b4887b227b25"
+  ],
+  "current_dvc_match": true,
+  "lifecycle": null,
+  "scope": "hanoi_commune_notice_2026_04_27",
+  "scope_note": "Mốc kiểm kê cấp xã Hà Nội; áp dụng từng thủ tục tại Từ Liêm còn phải theo thẩm quyền/ủy quyền hiện hành.",
+  "status": "has_fillable_templates",
+  "components": [
+    {
+      "id": "hn87-014-c001",
+      "code": "G09-KQ002732",
+      "name": "(3) Quyết định nghỉ hưu (bản chính hoặc bản sao của cơ quan có thẩm quyền) đối với người đã nghỉ hưu hoặc Quyết định nghỉ việc do mất sức lao động (bản chính hoặc bản sao của cơ quan có thẩm quyền) đối với người nghỉ việc do mất sức lao động của cơ quan có thẩm quyền mà tại Quyết định chưa có khoản trợ cấp theo quy định tại Khoản 7 Điều 2 Quyết định số 87-CT ngày 01 tháng 3 năm 1985 của Chủ tịch Hội đồng Bộ trưởng về chế độ, chính sách đối với cán bộ sang giúp Lào và Căm-pu-chi-a. Trường hợp thất lạc Quyết định nghỉ hưu hoặc Quyết định nghỉ việc do mất sức lao động thì người hưởng trợ cấp liên hệ với cơ quan Bảo hiểm xã hội cấp tỉnh nơi hưởng lương hưu hoặc hưởng trợ cấp mất sức lao động để sao lại Quyết định nghỉ hưu hoặc Quyết định nghỉ việc do mất sức lao động.,",
+      "section": "",
+      "role": "agency_prepared",
+      "scenario_status": "agency_reserved",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfa-e4a2-75d8-86ea-b4887b227b25",
+      "source_detail_id": "019d2bfa-e4a2-75d8-86ea-b4887b227b25",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-014-c002",
+      "code": "G09-KQ002733",
+      "name": "(4) Quyết định nghỉ việc chờ hưởng chế độ hưu trí đối với người nghỉ việc chờ hưởng chế độ hưu trí, Quyết định thôi việc đối với người đã thôi việc của cơ quan, đơn vị, doanh nghiệp nơi người hưởng trợ cấp nghỉ việc chờ hưởng chế độ hưu trí hoặc thôi việc và hồ sơ lý lịch khai trước khi nghỉ việc chờ hưởng chế độ hưu trí hoặc thôi việc có xác nhận của cơ quan quản lý (bản chính hoặc bản sao của cơ quan có thẩm quyền). Trường hợp không có Quyết định nghỉ việc chờ hưởng chế độ hưu trí thì thay thế bằng Giấy chứng nhận chờ hưởng chế độ hưu trí của cơ quan Bảo hiểm xã hội cấp tỉnh hoặc Sổ Bảo hiểm xã hội đã được cơ quan Bảo hiểm xã hội cấp tỉnh chốt sổ. Trường hợp không có Quyết định thôi việc thì thay thế bằng Quyết định chấm dứt hợp đồng lao động của cơ quan, đơn vị, doanh nghiệp nơi người hưởng trợ cấp thôi việc. (Không yêu cầu cá nhân nộp, xuất trình thành phần hồ sơ là Sổ Bảo hiểm xã hội mà các thông tin mà các thông tin về Bảo hiểm xã hội đã có dữ liệu trong các cơ sở dữ liệu được cơ quan chủ quản cơ sở dữ liệu công bố).,",
+      "section": "",
+      "role": "agency_prepared",
+      "scenario_status": "agency_reserved",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfa-e4a2-75d8-86ea-b4887b227b25",
+      "source_detail_id": "019d2bfa-e4a2-75d8-86ea-b4887b227b25",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-014-c003",
+      "code": "G09-KQ002730",
+      "name": "(1) Tờ khai của người hưởng trợ cấp (01 bản) lập theo Mẫu số 18 tại Phụ lục ban hành kèm theo Thông tư số 08/2023/TT-BLĐTBXH ngày 29/8/2023. Trường hợp người hưởng trợ cấp đã chết thì thân nhân trực tiếp của người hưởng trợ cấp lập Tờ khai của thân nhân người hưởng trợ cấp (01 bản) theo Mẫu số 19 tại Phụ lục ban hành kèm theo Thông tư số 08/2023/TT-BLĐTBXH ngày 29/8/2023. Trường hợp người hưởng trợ cấp đã chết có từ 02 thân nhân trực tiếp trở lên thì người đứng tên lập Tờ khai phải có Giấy ủy quyền hợp pháp của các thân nhân trực tiếp còn lại. Thân nhân trực tiếp của người hưởng trợ cấp bao gồm: vợ hoặc chồng, con đẻ, con nuôi, bố đẻ, mẹ đẻ hoặc người nuôi dưỡng hợp pháp của người hưởng trợ cấp.,",
+      "section": "",
+      "role": "applicant_form",
+      "scenario_status": "conditional_needs_review",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfa-e4a2-75d8-86ea-b4887b227b25",
+      "source_detail_id": "019d2bfa-e4a2-75d8-86ea-b4887b227b25",
+      "embedded_other_requirements": false,
+      "template_candidates": [
+        "template-7670a434ad223ab5",
+        "template-c6a2d53e4bf8aeea"
+      ],
+      "template_selection_method": "first_matching_source_attachment",
+      "selected_template_id": "template-7670a434ad223ab5",
+      "selection_requires_review": true
+    },
+    {
+      "id": "hn87-014-c004",
+      "code": "G09-KQ002731",
+      "name": "(2) Quyết định cử đi và Quyết định về nước của cơ quan có thẩm quyền (bản chính hoặc bản sao của cơ quan có thẩm quyền) đối với người được cử làm chuyên gia sang giúp Lào giai đoạn từ ngày 01 tháng 5 năm 1975 đến ngày 31 tháng 12 năm 1988, sang giúp Căm-pu-chi-a giai đoạn từ ngày 01 tháng 01 năm 1979 đến ngày 31 tháng 8 năm 1989. Trường hợp người hưởng trợ cấp bị thất lạc hoặc không có đủ Quyết định cử đi, Quyết định về nước nêu trên thì phải có Giấy xác nhận thời gian làm chuyên gia tại Lào, Căm-pu-chi-a theo quy định sau đây: i) Đối với người hưởng trợ cấp đang công tác tại cơ quan, tổ chức, đơn vị của Đảng, Nhà nước, Mặt trận Tổ quốc Việt Nam, tổ chức chính trị - xã hội thì Giấy xác nhận thời gian làm chuyên gia tại Lào, Căm-pu-chi-a của đối tượng phải do thủ trưởng cơ quan, tổ chức, đơn vị đang công tác căn cứ vào hồ sơ quản lý ký, đóng dấu xác nhận. ii) Đối với người hưởng trợ cấp không thuộc đối tượng quy định tại điểm a nêu trên thì phải có Giấy xác nhận thời gian làm chuyên gia tại Lào, Căm-pu-chi-a lập theo Mẫu số 02 ban hành kèm theo Thông tư liên tịch số 17/2014/TTLT-BLĐTBXH-BTC do thủ trưởng cơ quan, đơn vị trực tiếp cử đi ký, đóng dấu xác nhận. Trường hợp người hưởng trợ cấp do nhiều cơ quan, đơn vị khác nhau cử đi thì phải có Giấy xác nhận thời gian làm chuyên gia tại Lào, Căm-pu-chi-a do thủ trưởng của các cơ quan, đơn vị trực tiếp cử đi ký, đóng dấu xác nhận. Trường hợp cơ quan có thẩm quyền xác nhận đã sáp nhập hoặc giải thể thì thủ trưởng cơ quan, đơn vị mới được thành lập sau sáp nhập hoặc thủ trưởng cơ quan, đơn vị cấp trên trực tiếp của cơ quan đã giải thể xác nhận.,",
+      "section": "",
+      "role": "agency_prepared",
+      "scenario_status": "agency_reserved",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfa-e4a2-75d8-86ea-b4887b227b25",
+      "source_detail_id": "019d2bfa-e4a2-75d8-86ea-b4887b227b25",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-014-c005",
+      "code": "G09-KQ003309",
+      "name": "- Sổ bảo hiểm xã hội. (Thay thế thành phần hồ sơ “Sổ bảo hiểm xã hội” bằng dữ liệu từ CSDL quốc gia về bảo hiểm khi cơ sở dữ liệu này đủ điều kiện kết nối, khai thác, chia sẻ thông tin và có dữ liệu đáp ứng yêu cầu giải quyết thủ tục hành chính.)",
+      "section": "",
+      "role": "needs_review",
+      "scenario_status": "requirement_needs_review",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfa-e4a2-75d8-86ea-b4887b227b25",
+      "source_detail_id": "019d2bfa-e4a2-75d8-86ea-b4887b227b25",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    }
+  ],
+  "service_cases": [
+    {
+      "id": "01a1b00f-4726-771f-85b0-33ba33e90eb6",
+      "code": "1.004964.01",
+      "name": "Giải quyết chế độ trợ cấp một lần đối với người được cử làm chuyên gia sang giúp Lào, Căm-pu-chi-a",
+      "source_processing_time": {
+        "qty": 20,
+        "type": "WORKING_DAY"
+      },
+      "has_case_specific_components": false
+    },
+    {
+      "id": "019d2d60-91dc-7426-aead-6ce4631eeb34",
+      "code": "1.004964.01",
+      "name": "Giải quyết chế độ trợ cấp một lần đối với người được cử làm chuyên gia sang giúp Lào, Căm-pu-chi-a",
+      "source_processing_time": {
+        "qty": 20,
+        "type": "WORKING_DAY"
+      },
+      "has_case_specific_components": false
+    }
+  ],
+  "selected_template_ids": [
+    "template-7670a434ad223ab5"
+  ],
+  "source_component_groups": [
+    {
+      "name": "",
+      "component_count": 5,
+      "source_detail_id": "019d2bfa-e4a2-75d8-86ea-b4887b227b25"
+    }
+  ],
+  "conditional_component_groups": [],
+  "default_test_scenario": {
+    "channel": "direct",
+    "applicant_submits_self": true,
+    "authorized": false,
+    "special_case_flags": [],
+    "selected_conditional_group": null,
+    "case_selection_method": "ordinary_direct_submission",
+    "case_status": "scenario_for_testing_not_a_legal_eligibility_decision"
+  },
+  "requirement_note": "required_as_published được giữ nguyên; false không chứng minh giấy tờ luôn tùy chọn. Các nhóm executionCases có thể là mục giấy tờ/hướng dẫn, không phải các phương án loại trừ nhau."
+}

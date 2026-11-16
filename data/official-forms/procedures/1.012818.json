@@ -1,0 +1,99 @@
+{
+  "ordinal": "191",
+  "managing_agency": "Sở Nông nghiệp Môi trường",
+  "procedure_code": "1.012818",
+  "name": "Thu hồi Giấy chứng nhận đã cấp lần đầu không đúng quy định của pháp luật đất đai do người sử dụng đất, chủ sở hữu tài sản gắn liền với đất phát hiện và cấp lại Giấy chứng nhận sau khi thu hồi",
+  "domain": "Đất đai (Bộ Nông nghiệp và Môi trường)",
+  "ministry_decision": "445/QĐ-BNNMT ngày 02/02/2026",
+  "hanoi_decision": "956/QĐ-TTPVHCC ngày 27/6/2025",
+  "workflow_decision": "1077/QĐ-TTPVHC ngày 17/7/2025",
+  "fees": "Theo quy định của Luật phí và lệ phí và các văn bản quy phạm pháp luật hướng dẫn Luật phí và lệ phí.",
+  "execution_level": "Cấp Xã",
+  "competent_authority": "UBND cấp xã",
+  "delegation_decision": "",
+  "delegation_expiry": "",
+  "receiving_location": "Điểm hỗ trợ DVC số",
+  "source_page": 8,
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "inventory_date": "2026-04-27",
+  "checked_at": "2026-11-12T22:23:56.219743+07:00",
+  "details": [
+    {
+      "id": "019d2bfa-76e6-7468-b6f2-417e588578f5",
+      "code": "1.012818",
+      "name": "Thu hồi Giấy chứng nhận đã cấp lần đầu không đúng quy định của pháp luật đất đai do người sử dụng đất, chủ sở hữu tài sản gắn liền với đất phát hiện và cấp lại Giấy chứng nhận sau khi thu hồi",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1776326786988,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfa-76e6-7468-b6f2-417e588578f5",
+      "raw_path": "evidence/dvc/details/019d2bfa-76e6-7468-b6f2-417e588578f5.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "(2) Giấy chứng nhận đã cấp (bản gốc).",
+          "component_code": "000.00.00.G13-KQ004768",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "(1) Văn bản kiến nghị việc cấp Giấy chứng nhận không đúng quy định của pháp luật đất đai (bản chính)",
+          "component_code": "000.00.00.G13-KQ004767",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c6d-743d-a39d-65380884f765",
+          "name": "Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất.",
+          "code": "KQ.H37.080001"
+        },
+        {
+          "id": "019d2bb2-1c6d-743d-a39d-6ae2533998b6",
+          "name": "Quyết định thu hồi Giấy chứng nhận quyền sử dụng đất, Giấy chứng nhận quyền sở hữu nhà ở và quyền sử dụng đất ở, Giấy chứng nhận quyền sở hữu nhà ở, Giấy chứng nhận quyền sở hữu công trình xây dựng, Giấy chứng nhận quyền sử dụng đất, quyền sở hữu nhà ở và tài sản khác gắn liền với đất, Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất",
+          "code": "KQ.G10.001149"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d84-71c5-b672-a3322a8748a6",
+          "name": "Luật Đất đai ngày 18/01/2024;",
+          "code": "31/2024/QH15"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afe9-61a6469bc95c",
+          "name": "Thực hiện thủ tục hành chính theo cơ chế một cửa, một cửa liên thông tại Bộ phận Một cửa và cổng Dịch vụ công quốc gia",
+          "code": "118/2025/NĐ-C"
+        },
+        {
+          "id": "019d2bb3-5d87-7195-a448-2704415be2ca",
+          "name": "Nghị định 101/2024/NĐ-CP",
+          "code": "Nghị định 101/2024/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afeb-9ac6648a4b4f",
+          "name": "Quy định về phân định thẩm quyền của chính quyền địa phương 02 cấp, phân quyền, phân cấp trong lĩnh vực đất đai",
+          "code": "151/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b673-29122897c8a3",
+          "name": "Luật số 43/2024/QH15 ngày 29/6/2024",
+          "code": "43/2024/QH15"
+        }
+      ]
+    }
+  ],
+  "lookup_status": "retrieved",
+  "currency_status": "snapshot_requires_later_amendment_check",
+  "errors": []
+}

@@ -1,0 +1,91 @@
+{
+  "id": "dvc-019d2bfb-a877-716a-a3aa-bccd42e4ea77",
+  "procedure_code": "1.013592",
+  "name": "Thủ tục biên phòng cửa khẩu biên giới đất liền đối với người điều khiển, người đi trên phương tiện, phương tiện xuất cảnh, nhập cảnh",
+  "domain": "Quản lý biên giới",
+  "managing_agency": "Bộ Quốc phòng",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.979154+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfb-a877-716a-a3aa-bccd42e4ea77",
+      "code": "1.013592",
+      "name": "Thủ tục biên phòng cửa khẩu biên giới đất liền đối với người điều khiển, người đi trên phương tiện, phương tiện xuất cảnh, nhập cảnh",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1777598707508,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-a877-716a-a3aa-bccd42e4ea77",
+      "raw_path": "evidence/dvc/details/019d2bfb-a877-716a-a3aa-bccd42e4ea77.json",
+      "components": [
+        {
+          "section": "Thành phần hồ sơ nộp",
+          "position": 1,
+          "name": "Bản khai đối với người điều khiển, người đi trên phương tiện, phương tiện xuất cảnh, nhập cảnh",
+          "component_code": "000.00.00.G11-KQ0863",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019dc9b8-6215-76af-92ca-0fd0ec8f0db2",
+              "fileName": "Bản khai đối với người điều khiển, người đi trên phương tiện, phương tiện xuất cảnh, nhập cảnh.doc",
+              "bucketName": "dvc",
+              "filePath": "configuring/019dc9b8-6215-76af-92ca-0fd0ec8f0db2/Bản khai đối với người điều khiển, người đi trên phương tiện, phương tiện xuất cảnh, nhập cảnh.doc"
+            }
+          ]
+        },
+        {
+          "section": "Thành phần hồ sơ xuất trình ",
+          "position": 1,
+          "name": "Hộ chiếu hoặc giấy tờ có giá trị đi lại quốc tế của người điều khiển, người đi trên phương tiện và giấy tờ của phương tiện",
+          "component_code": "000.00.00.G11-KQ0864",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019dc9b9-1673-7428-b109-3ec7afdb55cd",
+          "name": "Bản điện tử xác nhận hoàn thành khai báo thủ tục biên phòng điện tử đối với người điều khiển, người đi trên phương tiện, phương tiện xuất cảnh, nhập cảnh",
+          "code": "KQ.G11.000426"
+        },
+        {
+          "id": "019dc9b9-62da-7145-9e18-2ef7a641466c",
+          "name": "Cán bộ thủ tục biên phòng thực hiện kiểm chứng, cấp tạm trú, cấp thị thực (nếu có) cho hành khách",
+          "code": "KQ.G11.000427"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d84-71c5-b677-78013aa85151",
+          "name": "Quyết định 15/2019/QĐ-TTg - Về việc thực hiện thủ tục biên phòng điện tử tại các cửa khẩu do Bộ Quốc phòng quản lý",
+          "code": "15/2019/QĐ-TTg"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b678-72e8ac46ed62",
+          "name": "Quyết định số 31/2025/QĐ-TTg của Thủ tướng Chính phủ: Sửa đổi, bổ sung một số điều các Quyết định của Thủ tướng Chính phủ về thực hiện thủ tục biên phòng điện tử tại các cửa khẩu do Bộ Quốc phòng quản lý",
+          "code": "31/2025/QĐ-TTg"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afe8-f0df1972585e",
+          "name": "Nghị định số 112/2014/NĐ-CP ngày 21/11/2014 của Chính phủ quy định về quản lý cửa khẩu biên giới đất liền được sửa đổi, bổ sung một số điều tại Nghị định số 34/2023/NĐ-CP ngày 16/6/2023",
+          "code": "112/2014/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d87-7195-a43f-486d730de526",
+          "name": "Nghị định 34/2023/NĐ-CP ngày 16/06/2023 sửa đổi, bổ sung một số điều của Nghị định số 112/2014/NĐ-CP ngày 21/11/2014 của Chính phủ quy định về quản lý cửa khẩu biên giới",
+          "code": "34/2023"
+        }
+      ]
+    }
+  ]
+}

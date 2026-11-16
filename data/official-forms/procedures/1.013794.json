@@ -1,0 +1,79 @@
+{
+  "ordinal": "84",
+  "managing_agency": "Sở Văn hóa thể thao",
+  "procedure_code": "1.013794",
+  "name": "Thủ tục gia hạn giấy chứng nhận đủ điều kiện hoạt động điểm cung cấp dịch vụ trò chơi điện tử công cộng",
+  "domain": "Phát thanh, truyền hình và thông tin điện tử",
+  "ministry_decision": "2069/QĐ-BVHTTDL ngày 19/06/2025",
+  "hanoi_decision": "959/QĐ-TTPVHCC ngày 27/6/2025",
+  "workflow_decision": "1122/QĐ-TTPVHCC ngày 31/7/2025",
+  "fees": "Không quy định",
+  "execution_level": "Cấp Xã",
+  "competent_authority": "UBND cấp xã",
+  "delegation_decision": "",
+  "delegation_expiry": "",
+  "receiving_location": "Điểm hỗ trợ DVC số",
+  "source_page": 3,
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "inventory_date": "2026-04-27",
+  "checked_at": "2026-11-12T22:23:41.055816+07:00",
+  "details": [
+    {
+      "id": "019d2bfd-ec2d-7265-a40a-ad05039b075e",
+      "code": "1.013794",
+      "name": "Thủ tục gia hạn giấy chứng nhận đủ điều kiện hoạt động điểm cung cấp dịch vụ trò chơi điện tử công cộng",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1794297425041,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfd-ec2d-7265-a40a-ad05039b075e",
+      "raw_path": "evidence/dvc/details/019d2bfd-ec2d-7265-a40a-ad05039b075e.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "(2) Xuất trình  chứng minh nhân dân/căn cước/căn cước công dân/hộ chiếu của chủ điểm cung cấp dịch vụ trò chơi điện tử công cộng đối với trường hợp chủ điểm là cá nhân; bản sao chứng minh nhân dân/căn cước/căn cước công dân/hộ chiếu của cá nhân đại diện cho tổ chức, doanh nghiệp trực tiếp quản lý điểm cung cấp dịch vụ trò chơi điện tử công cộng đối với trường hợp chủ điểm là tổ chức, doanh nghiệp trong trường hợp không tra cứu được trên hệ thống cơ sở dữ liệu quốc gia về dân cư.",
+          "component_code": "G16-KQ002103",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "(1) Đơn đề nghị gia hạn giấy chứng nhận đủ điều kiện hoạt động điểm cung cấp dịch vụ trò chơi điện tử công cộng theo quy định tại Mẫu số 53a hoặc Mẫu số 53b tại Phụ lục ban hành kèm theo Nghị định số 147/2024/NĐ-CP.",
+          "component_code": "G16-KQ002102",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c79-762e-8b2c-e7a701520ea2",
+          "name": "Giấy chứng nhận đủ điều kiện hoạt động điểm cung cấp dịch vụ trò chơi điện tử công cộng.",
+          "code": "KQ.G16.000377"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7e-72d1-afeb-4756e074bdea",
+          "name": "Nghị định số 147/2024/NĐ-CP của Chính phủ về quản lý, cung cấp, sử dụng dịch vụ internet và thông tin trên mạng",
+          "code": "147/2024/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afea-b0df1ec9673d",
+          "name": "Nghị định số 137/2025/NĐ-CP ngày 12/6/2025 của Chính phủ quy định về phân định thẩm quyền của chính quyền địa phương 02 cấp trong lĩnh vực văn hóa, thể thao và du lịch.",
+          "code": "137/2025/NĐ-CP"
+        }
+      ]
+    }
+  ],
+  "lookup_status": "retrieved",
+  "currency_status": "snapshot_requires_later_amendment_check",
+  "errors": []
+}

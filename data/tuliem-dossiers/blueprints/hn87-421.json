@@ -1,0 +1,428 @@
+{
+  "id": "hn87-421",
+  "ordinal": "421",
+  "procedure_code": "2.000720",
+  "name": "Đăng ký thay đổi nội dung đăng ký hộ kinh doanh",
+  "domain": "Thành lập và hoạt động của hộ kinh doanh",
+  "department_id": "ktdt",
+  "department": "Phòng Kinh tế, Hạ tầng và Đô thị",
+  "authority_as_published": "UBND cấp xã",
+  "execution_level_as_published": "Cấp xã",
+  "receiving_location_as_published": "Điểm hỗ trợ DVC số",
+  "inventory_date": "2026-04-27",
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "source_urls": [
+    "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-d9ca-768c-a8f4-cc0dff5f41ed"
+  ],
+  "current_dvc_match": true,
+  "lifecycle": null,
+  "scope": "hanoi_commune_notice_2026_04_27",
+  "scope_note": "Mốc kiểm kê cấp xã Hà Nội; áp dụng từng thủ tục tại Từ Liêm còn phải theo thẩm quyền/ủy quyền hiện hành.",
+  "status": "has_fillable_templates",
+  "components": [
+    {
+      "id": "hn87-421-c001",
+      "code": "TP-G12.000113889",
+      "name": "- Giấy đề nghị đăng ký thay đổi nội dung đăng ký hộ kinh doanh do chủ hộ kinh doanh ký theo Mẫu số 2, Phụ lục II, Thông tư số 68/2025/TT-BTC ngày 01/7/2025 của Bộ trưởng Bộ Tài chính;",
+      "section": "Trường hợp nội dung đăng ký thay đổi về: tên hộ kinh doanh, địa chỉ trụ sở, vốn kinh doanh, ngành, nghề kinh doanh và nội dung đăng ký thuế của hộ kinh doanh, trừ phương pháp tính thuế thì hồ sơ gồm:",
+      "role": "applicant_form",
+      "scenario_status": "conditional_needs_review",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-d9ca-768c-a8f4-cc0dff5f41ed",
+      "source_detail_id": "019d2bfc-d9ca-768c-a8f4-cc0dff5f41ed",
+      "embedded_other_requirements": false,
+      "template_candidates": [
+        "template-4b07470828c7760c"
+      ],
+      "template_selection_method": "first_matching_source_attachment",
+      "selected_template_id": "template-4b07470828c7760c",
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-421-c002",
+      "code": "TP-G12.00011111114",
+      "name": "- Biên bản họp nhóm cá nhân tham gia hộ kinh doanh về việc đăng ký thay đổi nội dung đăng ký hộ kinh doanh đối với trường hợp hộ kinh doanh do nhóm cá nhân thành lập trước ngày Nghị định số 168/2025/NĐ-CP có hiệu lực thi hành.",
+      "section": "Trường hợp nội dung đăng ký thay đổi về: tên hộ kinh doanh, địa chỉ trụ sở, vốn kinh doanh, ngành, nghề kinh doanh và nội dung đăng ký thuế của hộ kinh doanh, trừ phương pháp tính thuế thì hồ sơ gồm:",
+      "role": "agency_prepared",
+      "scenario_status": "agency_reserved",
+      "required_as_published": false,
+      "original_quantity": 0,
+      "copy_quantity": 1,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-d9ca-768c-a8f4-cc0dff5f41ed",
+      "source_detail_id": "019d2bfc-d9ca-768c-a8f4-cc0dff5f41ed",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-421-c003",
+      "code": "TP-G12.0001171444",
+      "name": "- Giấy đề nghị đăng ký thay đổi nội dung đăng ký hộ kinh doanh theo Mẫu số 2, Phụ lục II, Thông tư số 68/2025/TT-BTC ngày 01/7/2025 của Bộ trưởng Bộ Tài chính;",
+      "section": "* Trường hợp thay đổi chủ hộ kinh doanh do các thành viên hộ gia đình đăng ký hộ kinh doanh ủy quyền cho một trong các thành viên còn lại làm chủ hộ kinh doanh thì Hồ sơ gồm các giấy tờ sau:",
+      "role": "applicant_form",
+      "scenario_status": "conditional_not_selected",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-d9ca-768c-a8f4-cc0dff5f41ed",
+      "source_detail_id": "019d2bfc-d9ca-768c-a8f4-cc0dff5f41ed",
+      "embedded_other_requirements": false,
+      "template_candidates": [
+        "template-4b07470828c7760c"
+      ],
+      "template_selection_method": "first_matching_source_attachment",
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-421-c004",
+      "code": "TP-G12.000110000045",
+      "name": "- Bản sao văn bản ủy quyền của các thành viên hộ gia đình cho một thành viên làm chủ hộ kinh doanh. Văn bản ủy quyền này phải được công chứng hoặc chứng thực theo quy định của pháp luật.",
+      "section": "* Trường hợp thay đổi chủ hộ kinh doanh do các thành viên hộ gia đình đăng ký hộ kinh doanh ủy quyền cho một trong các thành viên còn lại làm chủ hộ kinh doanh thì Hồ sơ gồm các giấy tờ sau:",
+      "role": "supporting_submit",
+      "scenario_status": "conditional_not_selected",
+      "required_as_published": false,
+      "original_quantity": 0,
+      "copy_quantity": 1,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-d9ca-768c-a8f4-cc0dff5f41ed",
+      "source_detail_id": "019d2bfc-d9ca-768c-a8f4-cc0dff5f41ed",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-421-c005",
+      "code": "TP-G12.000111777",
+      "name": "- Giấy đề nghị đăng ký thay đổi nội dung đăng ký hộ kinh doanh theo Mẫu số 2, Phụ lục II, Thông tư số 68/2025/TT-BTC ngày 01/7/2025 của Bộ trưởng Bộ Tài chính;",
+      "section": "* Trường hợp hộ kinh doanh do thành viên hộ gia đình đăng ký thành lập thay đổi chủ hộ do chủ hộ chết hoặc bị Tòa án tuyên bố đã chết, mất tích, bị hạn chế hoặc mất năng lực hành vi dân sự, có khó khăn trong nhận thức, làm chủ hành vi, hồ sơ gồm:",
+      "role": "applicant_form",
+      "scenario_status": "alternative_case_not_selected",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-d9ca-768c-a8f4-cc0dff5f41ed",
+      "source_detail_id": "019d2bfc-d9ca-768c-a8f4-cc0dff5f41ed",
+      "embedded_other_requirements": false,
+      "template_candidates": [
+        "template-4b07470828c7760c"
+      ],
+      "template_selection_method": "first_matching_source_attachment",
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-421-c006",
+      "code": "TP-G12.00011189",
+      "name": "- Bản sao văn bản ủy quyền của các thành viên hộ gia đình cho một thành viên làm chủ hộ kinh doanh. Văn bản ủy quyền này phải được công chứng hoặc chứng thực theo quy định của pháp luật.",
+      "section": "* Trường hợp hộ kinh doanh do thành viên hộ gia đình đăng ký thành lập thay đổi chủ hộ do chủ hộ chết hoặc bị Tòa án tuyên bố đã chết, mất tích, bị hạn chế hoặc mất năng lực hành vi dân sự, có khó khăn trong nhận thức, làm chủ hành vi, hồ sơ gồm:",
+      "role": "supporting_submit",
+      "scenario_status": "alternative_case_not_selected",
+      "required_as_published": false,
+      "original_quantity": 0,
+      "copy_quantity": 1,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-d9ca-768c-a8f4-cc0dff5f41ed",
+      "source_detail_id": "019d2bfc-d9ca-768c-a8f4-cc0dff5f41ed",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-421-c007",
+      "code": "TP-G12.00011456",
+      "name": "- Bản sao giấy chứng tử hoặc quyết định của Tòa án tuyên bố đã chết, mất tích, bị hạn chế hoặc mất năng lực hành vi dân sự, có khó khăn trong nhận thức, làm chủ hành vi.",
+      "section": "* Trường hợp hộ kinh doanh do thành viên hộ gia đình đăng ký thành lập thay đổi chủ hộ do chủ hộ chết hoặc bị Tòa án tuyên bố đã chết, mất tích, bị hạn chế hoặc mất năng lực hành vi dân sự, có khó khăn trong nhận thức, làm chủ hành vi, hồ sơ gồm:",
+      "role": "supporting_submit",
+      "scenario_status": "alternative_case_not_selected",
+      "required_as_published": false,
+      "original_quantity": 0,
+      "copy_quantity": 1,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-d9ca-768c-a8f4-cc0dff5f41ed",
+      "source_detail_id": "019d2bfc-d9ca-768c-a8f4-cc0dff5f41ed",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-421-c008",
+      "code": "TP-G12.0001134569",
+      "name": "- Giấy đề nghị đăng ký thay đổi nội dung đăng ký hộ kinh doanh theo Mẫu số 2, Phụ lục II, Thông tư số 68/2025/TT-BTC ngày 01/7/2025 của Bộ trưởng Bộ Tài chính;",
+      "section": "* Trường hợp hộ kinh doanh có hai thành viên mà thành viên là chủ hộ kinh doanh chết hoặc bị Tòa án tuyên bố đã chết, mất tích, bị hạn chế hoặc mất năng lực hành vi dân sự, có khó khăn trong nhận thức, làm chủ hành vi thì thành viên còn lại là chủ hộ kinh doanh, Hồ sơ gồm:",
+      "role": "applicant_form",
+      "scenario_status": "alternative_case_not_selected",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-d9ca-768c-a8f4-cc0dff5f41ed",
+      "source_detail_id": "019d2bfc-d9ca-768c-a8f4-cc0dff5f41ed",
+      "embedded_other_requirements": false,
+      "template_candidates": [
+        "template-4b07470828c7760c"
+      ],
+      "template_selection_method": "first_matching_source_attachment",
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-421-c009",
+      "code": "TP-G12.0001111789",
+      "name": "- Bản sao giấy chứng tử hoặc quyết định của Tòa án tuyên bố đã chết, mất tích, bị hạn chế hoặc mất năng lực hành vi dân sự, có khó khăn trong nhận thức, làm chủ hành vi.",
+      "section": "* Trường hợp hộ kinh doanh có hai thành viên mà thành viên là chủ hộ kinh doanh chết hoặc bị Tòa án tuyên bố đã chết, mất tích, bị hạn chế hoặc mất năng lực hành vi dân sự, có khó khăn trong nhận thức, làm chủ hành vi thì thành viên còn lại là chủ hộ kinh doanh, Hồ sơ gồm:",
+      "role": "supporting_submit",
+      "scenario_status": "alternative_case_not_selected",
+      "required_as_published": false,
+      "original_quantity": 0,
+      "copy_quantity": 1,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-d9ca-768c-a8f4-cc0dff5f41ed",
+      "source_detail_id": "019d2bfc-d9ca-768c-a8f4-cc0dff5f41ed",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-421-c010",
+      "code": "TP-G12.00014598",
+      "name": "- Giấy đề nghị đăng ký thay đổi nội dung đăng ký hộ kinh doanh theo Mẫu số 2, Phụ lục II, Thông tư số 68/2025/TT-BTC ngày 01/7/2025 của Bộ trưởng Bộ Tài chính;",
+      "section": "* Trường hợp thay đổi thành viên hộ gia đình đăng ký hộ kinh doanh, hộ kinh doanh gửi hồ sơ đăng ký thay đổi đến Cơ quan đăng ký kinh doanh cấp xã. Hồ sơ gồm:",
+      "role": "applicant_form",
+      "scenario_status": "alternative_case_not_selected",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-d9ca-768c-a8f4-cc0dff5f41ed",
+      "source_detail_id": "019d2bfc-d9ca-768c-a8f4-cc0dff5f41ed",
+      "embedded_other_requirements": false,
+      "template_candidates": [
+        "template-4b07470828c7760c"
+      ],
+      "template_selection_method": "first_matching_source_attachment",
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-421-c011",
+      "code": "TP-G12.0001111471",
+      "name": "- Bản sao văn bản ủy quyền của thành viên mới cho chủ hộ kinh doanh trong trường hợp tiếp nhận thành viên mới. Văn bản ủy quyền này phải được công chứng hoặc chứng thực theo quy định của pháp luật.",
+      "section": "* Trường hợp thay đổi thành viên hộ gia đình đăng ký hộ kinh doanh, hộ kinh doanh gửi hồ sơ đăng ký thay đổi đến Cơ quan đăng ký kinh doanh cấp xã. Hồ sơ gồm:",
+      "role": "supporting_submit",
+      "scenario_status": "alternative_case_not_selected",
+      "required_as_published": false,
+      "original_quantity": 0,
+      "copy_quantity": 1,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-d9ca-768c-a8f4-cc0dff5f41ed",
+      "source_detail_id": "019d2bfc-d9ca-768c-a8f4-cc0dff5f41ed",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-421-c012",
+      "code": "000.00.00.G12-345214",
+      "name": "Văn bản ủy quyền cho cá nhân thực hiện thủ tục liên quan đến đăng ký hộ kinh doanh. Văn bản ủy quyền này không bắt buộc phải công chứng, chứng thực.",
+      "section": "* Trường hợp ủy quyền thực hiện thủ tục thì hồ sơ phải kèm theo một trong những giấy tờ sau: - Trường hợp ủy quyền cho cá nhân thực hiện thủ tục đăng ký hộ kinh doanh, kèm theo hồ sơ đăng ký hộ kinh doanh bao gồm:",
+      "role": "applicant_prepared",
+      "scenario_status": "conditional_not_selected",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-d9ca-768c-a8f4-cc0dff5f41ed",
+      "source_detail_id": "019d2bfc-d9ca-768c-a8f4-cc0dff5f41ed",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-421-c013",
+      "code": "000.00.00.G12-18032400",
+      "name": "(i) Bản sao hợp đồng cung cấp dịch vụ với tổ chức làm dịch vụ thực hiện thủ tục liên quan đến đăng ký hộ kinh doanh;",
+      "section": "* Trường hợp ủy quyền thực hiện thủ tục thì hồ sơ phải kèm theo một trong những giấy tờ sau:- Trường hợp ủy quyền cho tổ chức thực hiện thủ tục đăng ký hộ kinh doanh, kèm theo hồ sơ bao gồm:",
+      "role": "supporting_submit",
+      "scenario_status": "conditional_not_selected",
+      "required_as_published": false,
+      "original_quantity": 0,
+      "copy_quantity": 1,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-d9ca-768c-a8f4-cc0dff5f41ed",
+      "source_detail_id": "019d2bfc-d9ca-768c-a8f4-cc0dff5f41ed",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-421-c014",
+      "code": "000.00.00.G12-456123",
+      "name": "(ii) Giấy giới thiệu của tổ chức đó cho cá nhân trực tiếp thực hiện thủ tục liên quan đến đăng ký hộ kinh doanh.",
+      "section": "* Trường hợp ủy quyền thực hiện thủ tục thì hồ sơ phải kèm theo một trong những giấy tờ sau:- Trường hợp ủy quyền cho tổ chức thực hiện thủ tục đăng ký hộ kinh doanh, kèm theo hồ sơ bao gồm:",
+      "role": "needs_review",
+      "scenario_status": "conditional_not_selected",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-d9ca-768c-a8f4-cc0dff5f41ed",
+      "source_detail_id": "019d2bfc-d9ca-768c-a8f4-cc0dff5f41ed",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-421-c015",
+      "code": "000.00.00.G12-432100",
+      "name": "Bản sao phiếu gửi hồ sơ theo mẫu do doanh nghiệp cung ứng dịch vụ bưu chính công ích phát hành có chữ ký xác nhận của nhân viên bưu chính và chủ hộ kinh doanh.",
+      "section": "- Trường hợp ủy quyền cho đơn vị cung cấp dịch vụ bưu chính công ích thực hiện thủ tục đăng ký hộ kinh doanh, hồ sơ bao gồm:",
+      "role": "supporting_submit",
+      "scenario_status": "conditional_not_selected",
+      "required_as_published": false,
+      "original_quantity": 0,
+      "copy_quantity": 1,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-d9ca-768c-a8f4-cc0dff5f41ed",
+      "source_detail_id": "019d2bfc-d9ca-768c-a8f4-cc0dff5f41ed",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-421-c016",
+      "code": "000.00.00.G12-543123",
+      "name": "(i) Bản sao hợp đồng cung cấp dịch vụ với tổ chức làm dịch vụ thực hiện thủ tục liên quan đến đăng ký hộ kinh doanh;",
+      "section": "- Trường hợp ủy quyền cho đơn vị cung cấp dịch vụ bưu chính không phải là bưu chính công ích thực hiện thủ tục đăng ký hộ kinh doanh, hồ sơ bao gồm:",
+      "role": "supporting_submit",
+      "scenario_status": "conditional_not_selected",
+      "required_as_published": false,
+      "original_quantity": 0,
+      "copy_quantity": 1,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-d9ca-768c-a8f4-cc0dff5f41ed",
+      "source_detail_id": "019d2bfc-d9ca-768c-a8f4-cc0dff5f41ed",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-421-c017",
+      "code": "000.00.00.G12-657890",
+      "name": "(ii) Giấy giới thiệu của tổ chức đó cho cá nhân trực tiếp thực hiện thủ tục liên quan đến đăng ký hộ kinh doanh. - Người ủy quyền và người được ủy quyền thực hiện thủ tục đăng ký hộ kinh doanh chịu trách nhiệm trước pháp luật về tính hợp pháp, trung thực và chính xác của việc ủy quyền. Người ủy quyền và người được ủy quyền phải thực hiện xác thực điện tử để được cấp đăng ký hộ kinh doanh khi thực hiện thủ tục đăng ký thành lập hộ kinh doanh, đăng ký thay đổi chủ hộ kinh doanh, đăng ký thay đổi thành viên hộ gia đình đăng ký hộ kinh doanh.  Trường hợp việc xác thực điện tử bị gián đoạn thì người ủy quyền thực hiện việc xác thực điện tử sau khi được cấp đăng ký hộ kinh doanh. Trường hợp người ủy quyền không xác nhận hoặc xác nhận không ủy quyền thực hiện thủ tục đăng ký hộ kinh doanh thì Cơ quan đăng ký kinh doanh cấp xã yêu cầu hộ kinh doanh báo cáo theo quy định tại khoản 6 Điều 22 Nghị định số 168/2026/NĐ-CP. Trường hợp chưa có tài khoản định danh điện tử để thực hiện xác thực điện tử thì hồ sơ đăng ký hộ kinh doanh phải kèm theo bản sao thẻ Căn cước hoặc thẻ Căn cước công dân còn hiệu lực của người ủy quyền.",
+      "section": "- Trường hợp ủy quyền cho đơn vị cung cấp dịch vụ bưu chính không phải là bưu chính công ích thực hiện thủ tục đăng ký hộ kinh doanh, hồ sơ bao gồm:",
+      "role": "instruction",
+      "scenario_status": "instruction_only",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-d9ca-768c-a8f4-cc0dff5f41ed",
+      "source_detail_id": "019d2bfc-d9ca-768c-a8f4-cc0dff5f41ed",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    }
+  ],
+  "service_cases": [
+    {
+      "id": "019d2d41-218b-75ca-a39f-8948df4f68a0",
+      "code": "2.000720",
+      "name": "Đăng ký thay đổi nội dung đăng ký hộ kinh doanh",
+      "source_processing_time": {
+        "qty": 3,
+        "type": "WORKING_DAY"
+      },
+      "has_case_specific_components": false
+    },
+    {
+      "id": "019fb11f-f1cc-7008-b1c4-ad492204b936",
+      "code": "2.000720",
+      "name": "Đăng ký thay đổi nội dung đăng ký hộ kinh doanh",
+      "source_processing_time": {
+        "qty": 3,
+        "type": "WORKING_DAY"
+      },
+      "has_case_specific_components": false
+    }
+  ],
+  "selected_template_ids": [
+    "template-4b07470828c7760c"
+  ],
+  "source_component_groups": [
+    {
+      "name": "Trường hợp nội dung đăng ký thay đổi về: tên hộ kinh doanh, địa chỉ trụ sở, vốn kinh doanh, ngành, nghề kinh doanh và nội dung đăng ký thuế của hộ kinh doanh, trừ phương pháp tính thuế thì hồ sơ gồm:",
+      "component_count": 2,
+      "source_detail_id": "019d2bfc-d9ca-768c-a8f4-cc0dff5f41ed"
+    },
+    {
+      "name": "* Trường hợp thay đổi chủ hộ kinh doanh do các thành viên hộ gia đình đăng ký hộ kinh doanh ủy quyền cho một trong các thành viên còn lại làm chủ hộ kinh doanh thì Hồ sơ gồm các giấy tờ sau:",
+      "component_count": 2,
+      "source_detail_id": "019d2bfc-d9ca-768c-a8f4-cc0dff5f41ed"
+    },
+    {
+      "name": "* Trường hợp hộ kinh doanh do thành viên hộ gia đình đăng ký thành lập thay đổi chủ hộ do chủ hộ chết hoặc bị Tòa án tuyên bố đã chết, mất tích, bị hạn chế hoặc mất năng lực hành vi dân sự, có khó khăn trong nhận thức, làm chủ hành vi, hồ sơ gồm:",
+      "component_count": 3,
+      "source_detail_id": "019d2bfc-d9ca-768c-a8f4-cc0dff5f41ed"
+    },
+    {
+      "name": "* Trường hợp hộ kinh doanh có hai thành viên mà thành viên là chủ hộ kinh doanh chết hoặc bị Tòa án tuyên bố đã chết, mất tích, bị hạn chế hoặc mất năng lực hành vi dân sự, có khó khăn trong nhận thức, làm chủ hành vi thì thành viên còn lại là chủ hộ kinh doanh, Hồ sơ gồm:",
+      "component_count": 2,
+      "source_detail_id": "019d2bfc-d9ca-768c-a8f4-cc0dff5f41ed"
+    },
+    {
+      "name": "* Trường hợp thay đổi thành viên hộ gia đình đăng ký hộ kinh doanh, hộ kinh doanh gửi hồ sơ đăng ký thay đổi đến Cơ quan đăng ký kinh doanh cấp xã. Hồ sơ gồm:",
+      "component_count": 2,
+      "source_detail_id": "019d2bfc-d9ca-768c-a8f4-cc0dff5f41ed"
+    },
+    {
+      "name": "* Trường hợp ủy quyền thực hiện thủ tục thì hồ sơ phải kèm theo một trong những giấy tờ sau: - Trường hợp ủy quyền cho cá nhân thực hiện thủ tục đăng ký hộ kinh doanh, kèm theo hồ sơ đăng ký hộ kinh doanh bao gồm:",
+      "component_count": 1,
+      "source_detail_id": "019d2bfc-d9ca-768c-a8f4-cc0dff5f41ed"
+    },
+    {
+      "name": "* Trường hợp ủy quyền thực hiện thủ tục thì hồ sơ phải kèm theo một trong những giấy tờ sau:- Trường hợp ủy quyền cho tổ chức thực hiện thủ tục đăng ký hộ kinh doanh, kèm theo hồ sơ bao gồm:",
+      "component_count": 2,
+      "source_detail_id": "019d2bfc-d9ca-768c-a8f4-cc0dff5f41ed"
+    },
+    {
+      "name": "- Trường hợp ủy quyền cho đơn vị cung cấp dịch vụ bưu chính công ích thực hiện thủ tục đăng ký hộ kinh doanh, hồ sơ bao gồm:",
+      "component_count": 1,
+      "source_detail_id": "019d2bfc-d9ca-768c-a8f4-cc0dff5f41ed"
+    },
+    {
+      "name": "- Trường hợp ủy quyền cho đơn vị cung cấp dịch vụ bưu chính không phải là bưu chính công ích thực hiện thủ tục đăng ký hộ kinh doanh, hồ sơ bao gồm:",
+      "component_count": 2,
+      "source_detail_id": "019d2bfc-d9ca-768c-a8f4-cc0dff5f41ed"
+    }
+  ],
+  "conditional_component_groups": [
+    "Trường hợp nội dung đăng ký thay đổi về: tên hộ kinh doanh, địa chỉ trụ sở, vốn kinh doanh, ngành, nghề kinh doanh và nội dung đăng ký thuế của hộ kinh doanh, trừ phương pháp tính thuế thì hồ sơ gồm:",
+    "* Trường hợp hộ kinh doanh do thành viên hộ gia đình đăng ký thành lập thay đổi chủ hộ do chủ hộ chết hoặc bị Tòa án tuyên bố đã chết, mất tích, bị hạn chế hoặc mất năng lực hành vi dân sự, có khó khăn trong nhận thức, làm chủ hành vi, hồ sơ gồm:",
+    "* Trường hợp hộ kinh doanh có hai thành viên mà thành viên là chủ hộ kinh doanh chết hoặc bị Tòa án tuyên bố đã chết, mất tích, bị hạn chế hoặc mất năng lực hành vi dân sự, có khó khăn trong nhận thức, làm chủ hành vi thì thành viên còn lại là chủ hộ kinh doanh, Hồ sơ gồm:",
+    "* Trường hợp thay đổi thành viên hộ gia đình đăng ký hộ kinh doanh, hộ kinh doanh gửi hồ sơ đăng ký thay đổi đến Cơ quan đăng ký kinh doanh cấp xã. Hồ sơ gồm:"
+  ],
+  "default_test_scenario": {
+    "channel": "direct",
+    "applicant_submits_self": true,
+    "authorized": false,
+    "special_case_flags": [],
+    "selected_conditional_group": "Trường hợp nội dung đăng ký thay đổi về: tên hộ kinh doanh, địa chỉ trụ sở, vốn kinh doanh, ngành, nghề kinh doanh và nội dung đăng ký thuế của hộ kinh doanh, trừ phương pháp tính thuế thì hồ sơ gồm:",
+    "case_selection_method": "first_published_condition_with_available_template_for_test",
+    "case_status": "scenario_for_testing_not_a_legal_eligibility_decision"
+  },
+  "requirement_note": "required_as_published được giữ nguyên; false không chứng minh giấy tờ luôn tùy chọn. Các nhóm executionCases có thể là mục giấy tờ/hướng dẫn, không phải các phương án loại trừ nhau."
+}

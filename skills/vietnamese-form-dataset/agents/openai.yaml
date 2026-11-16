@@ -1,0 +1,4 @@
+interface:
+  display_name: "Vietnamese Form Dataset"
+  short_description: "Tạo hồ sơ giả theo mẫu gốc và đáp án OCR"
+  default_prompt: "Dùng $vietnamese-form-dataset tạo 2 bản dữ liệu giả cho mỗi mẫu có input, giữ bố cục gốc và xuất đáp án từng trường."

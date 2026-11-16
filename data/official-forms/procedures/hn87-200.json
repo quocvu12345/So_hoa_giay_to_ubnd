@@ -1,0 +1,168 @@
+{
+  "ordinal": "200",
+  "managing_agency": "Sở Công Thương",
+  "procedure_code": "3.000257",
+  "name": "Xác lập quyền sở hữu toàn dân và chuyển giao công trình điện có nguồn gốc ngoài ngân sách nhà nước",
+  "domain": "Quản lý công sản",
+  "ministry_decision": "4191/QĐ-BTC ngày 17/12/2025",
+  "hanoi_decision": "Quyết định số 2328/QĐ- UBND ngày 04/5/2025",
+  "workflow_decision": "1140/QĐ-TTPVHCC ngày 05/8/2025",
+  "fees": "Không quy định",
+  "execution_level": "Cấp tỉnh, cấp xã",
+  "competent_authority": "UBND thành phố; UBND cấp xã",
+  "delegation_decision": "",
+  "delegation_expiry": "",
+  "receiving_location": "Chi nhánh TTPVHCC",
+  "id": "hn87-200",
+  "source_page": 8,
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "inventory_date": "2026-04-27",
+  "checked_at": "2026-11-12T22:24:34.550837+07:00",
+  "details": [
+    {
+      "id": "019d2bfd-10a1-71c8-b6ea-f903ccfd35ec",
+      "code": "3.000257",
+      "name": "Xác lập quyền sở hữu toàn dân và chuyển giao công trình điện có nguồn gốc ngoài ngân sách nhà nước",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": false,
+      "updated_at_source": 1775645513342,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfd-10a1-71c8-b6ea-f903ccfd35ec",
+      "raw_path": "evidence/dvc/details/019d2bfd-10a1-71c8-b6ea-f903ccfd35ec.json",
+      "components": [
+        {
+          "section": "Hồ sơ đề nghị chuyển giao (do tổ chức, cá nhân là chủ sở hữu công trình điện lập)",
+          "position": 1,
+          "name": "Hồ sơ đất đai liên quan đến việc giao đất, cho thuê đất, công nhận quyền sử dụng đất để đầu tư công trình và các giấy tờ khác có liên quan (nếu có)",
+          "component_code": "000.00.00.G12-KQ013044",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Hồ sơ đề nghị chuyển giao (do tổ chức, cá nhân là chủ sở hữu công trình điện lập)",
+          "position": 2,
+          "name": "Văn bản của tổ chức, cá nhân là chủ sở hữu công trình điện đề nghị chuyển giao quyền sở hữu công trình điện cho Tập đoàn Điện lực Việt Nam theo Mẫu số 01 Phụ lục đính kèm Nghị định số 02/2024/NĐ-CP",
+          "component_code": "000.00.00.G12-KQ013041",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Hồ sơ đề nghị chuyển giao (do tổ chức, cá nhân là chủ sở hữu công trình điện lập)",
+          "position": 3,
+          "name": "Quyết định đầu tư, thiết kế kỹ thuật, thiết kế bản vẽ thi công liên quan đến công trình điện, biên bản nghiệm thu hoàn thành công trình, hạng mục công trình độc lập có liên quan đến công trình điện, Thông báo kết quả thẩm định dự án/công trình, Thông báo kết quả kiểm tra công tác nghiệm thu hoàn thành hạng mục công trình, công trình xây dựng theo quy định của pháp luật, báo cáo đánh giá tác động môi trường (nếu có)",
+          "component_code": "000.00.00.G12-KQ013042",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Hồ sơ đề nghị chuyển giao (do tổ chức, cá nhân là chủ sở hữu công trình điện lập)",
+          "position": 4,
+          "name": "Các bản sao là bản sao được chứng thực bởi cơ quan, tổ chức có thẩm quyền. Trường hợp các hồ sơ này không có hoặc bị mất, tổ chức, cá nhân là chủ sở hữu công trình điện có văn bản xác nhận về việc mất hồ sơ hoặc không có hồ sơ và chịu trách nhiệm về việc xác nhận của mình.",
+          "component_code": "000.00.00.G12-KQ015821",
+          "original_quantity": 0,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Hồ sơ đề nghị chuyển giao (do tổ chức, cá nhân là chủ sở hữu công trình điện lập)",
+          "position": 5,
+          "name": "Giấy chứng nhận thẩm duyệt thiết kế, văn bản thẩm duyệt thiết kế, văn bản chấp thuận kết quả nghiệm thu về phòng cháy và chữa cháy của cơ quan có thẩm quyền (nếu có); phương án chữa cháy, phương án phòng cháy theo quy định của pháp luật về phòng cháy và chữa cháy",
+          "component_code": "000.00.00.G12-KQ013045",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Hồ sơ đề nghị chuyển giao (do tổ chức, cá nhân là chủ sở hữu công trình điện lập)",
+          "position": 6,
+          "name": "Hồ sơ hoàn công, sơ đồ mặt bằng hành lang tuyến dây và mặt bằng trạm biến áp (nếu có)",
+          "component_code": "000.00.00.G12-KQ013043",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Hồ sơ đề nghị xác lập quyền sở hữu toàn dân và chuyển giao sang Tập đoàn Điện lực Việt Nam (do đơn vị điện lực lập)",
+          "position": 1,
+          "name": "Văn bản của tổ chức, cá nhân là chủ sở hữu công trình điện đề nghị chuyển giao quyền sở hữu công trình điện cho Tập đoàn Điện lực Việt Nam",
+          "component_code": "000.00.00.G12-KQ013049",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Hồ sơ đề nghị xác lập quyền sở hữu toàn dân và chuyển giao sang Tập đoàn Điện lực Việt Nam (do đơn vị điện lực lập)",
+          "position": 2,
+          "name": "Biên bản kiểm kê, xác định giá trị công trình điện theo Mẫu số 05 tại Phụ lục ban hành kèm theo Nghị định này",
+          "component_code": "000.00.00.G12-KQ015822",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Hồ sơ đề nghị xác lập quyền sở hữu toàn dân và chuyển giao sang Tập đoàn Điện lực Việt Nam (do đơn vị điện lực lập)",
+          "position": 3,
+          "name": "Văn bản của Bên nhận đề nghị xác lập quyền sở hữu toàn dân và chuyển giao sang Tập đoàn Điện lực Việt Nam",
+          "component_code": "000.00.00.G12-KQ013046",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Hồ sơ đề nghị xác lập quyền sở hữu toàn dân và chuyển giao sang Tập đoàn Điện lực Việt Nam (do đơn vị điện lực lập)",
+          "position": 4,
+          "name": "Danh mục công trình điện do Bên nhận lập (thông số kỹ thuật, tình trạng công trình điện, năm đưa vào sử dụng, giá trị công trình điện)",
+          "component_code": "000.00.00.G12-KQ013047",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c71-7574-afea-6894ca6a4ddb",
+          "name": "Quyết định xác lập quyền sở hữu toàn dân và chuyển giao sang Tập đoàn Điện lực Việt Nam",
+          "code": "KQ.G12.000253"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7e-72d1-afe6-ff19d4b15f44",
+          "name": "Nghị định 02/2024/NĐ-CP ngày 10 tháng 01 năm 2024 về việc chuyển giao công trình điện là tài sản công sang Tập đoàn Điện lực Việt Nam",
+          "code": "02/2024/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d86-7760-a646-d9649d5baf76",
+          "name": "Nghị định 286/2025/NĐ-CP ngày 03/11/2025 của Chính phủ sửa đổi, bổ sung một số điều của các Nghị định trong lĩnh vực quản lý, sử dụng tài sản công",
+          "code": "286/2025/NĐ-CP"
+        }
+      ]
+    }
+  ],
+  "lookup_status": "retrieved",
+  "currency_status": "snapshot_requires_later_amendment_check",
+  "errors": []
+}

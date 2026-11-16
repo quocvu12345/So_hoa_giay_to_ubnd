@@ -1,0 +1,102 @@
+{
+  "id": "dvc-019d2bfc-d202-7798-8210-559c7603b939",
+  "procedure_code": "2.000012",
+  "name": "Thủ tục hải quan đối với xăng dầu, hóa chất, khí, nguyên liệu nhập khẩu, tạm nhập",
+  "domain": "Hải quan",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.914646+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfc-d202-7798-8210-559c7603b939",
+      "code": "2.000012",
+      "name": "Thủ tục hải quan đối với xăng dầu, hóa chất, khí, nguyên liệu nhập khẩu, tạm nhập",
+      "state": "ACTIVE",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1775639356719,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-d202-7798-8210-559c7603b939",
+      "raw_path": "evidence/dvc/details/019d2bfc-d202-7798-8210-559c7603b939.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Hóa đơn thương mại: 01 bản chụp;",
+          "component_code": "000.00.00.G12-KQ0791",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Trường hợp người khai hải quan làm thủ tục lần đầu tại Chi cục Hải quan thì nộp thêm các giấy tờ sau (trừ trường hợp cung ứng – tái xuất, xuất khẩu hàng hóa cho đối tượng quy định tại điểm b khoản 4 Điều 35 Nghị định số 83/2014/NĐ-CP; khoản 3 Điều 19, khoản 2 Điều 35 Nghị định số 19/2016/NĐ-CP):  g.1) Giấy phép kinh doanh xuất nhập khẩu xăng dầu: 01 bản chụp;  g.2) Giấy chứng nhận đủ điều kiện xuất khẩu khí hoặc văn bản có giá trị tương đương: 01 bản chụp;  g.3) Bản hạn mức nhập khẩu xăng dầu tối thiểu do Bộ Công Thương cấp: 01 bản chụp;",
+          "component_code": "000.00.00.G12-KQ0802",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 3,
+          "name": "Giấy phép nhập khẩu đối với hàng hóa phải có Giấy phép nhập khẩu: 01 bản chính  Trường hợp áp dụng cơ chế một cửa quốc gia, cơ quan quản lý nhà nước chuyên ngành gửi các chứng từ quy định tại điểm d, g, h trên đây dưới dạng điện tử thông qua Cổng thông tin một cửa quốc gia, người khai hải quan không phải nộp khi làm thủ tục hải quan.  Trường hợp một lô hàng phải khai trên nhiều tờ khai hoặc hàng hóa nhập khẩu thuộc nhiều loại hình, có chung vận tải đơn, hoá đơn, khai trên nhiều tờ khai theo từng loại hình hàng hóa nhập khẩu tại một Chi ục Hải quan thì người khai hải quan chỉ phải nộp 01 bộ hồ sơ hải quan (trong trường hợp nộp hồ sơ giấy cho cơ quan hải quan); các tờ khai sau khi ghi rõ “chung chứng từ với tờ khai số.....ngày...” vào ô “Phần ghi chú”.",
+          "component_code": "000.00.00.G12-KQ0803",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 4,
+          "name": "Tờ khai hàng hóa nhập khẩu theo các chỉ tiêu thông tin tại Phụ lục II ban hành kèm theo Thông tư số 38/2015/TT-BTC ngày 25/3/2015 của Bộ Tài chính.  Trường hợp thực hiện trên tờ khai hải quan giấy theo quy định tại khoản 2 Điều 25 Nghị định số 08/2015/NĐ-CP ngày 21/1/2015 của Chính phủ, người khai hải quan khai và nộp 02 bản chính tờ khai hàng hóa nhập khẩu theo mẫu HQ/2015/NK Phụ lục IV ban hành kèm theo Thông tư số 38/2015/TT-BTC;",
+          "component_code": "000.00.00.G12-KQ0799",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 5,
+          "name": "Vận tải đơn hoặc chứng từ vận tải khác có giá trị tương đương trường hợp hàng hóa vận chuyển bằng đường biển (trừ hàng hóa xuất khẩu, tái xuất cho đối tượng quy định tại điểm b khoản 4 Điều 35 Nghị định số 83/2014/NĐ-CP ngày 03/9/2014 của Chính phủ; khoản 3 Điều 19, khoản 2 Điều 35 Nghị định số 19/2016/NĐ-CP ngày 22/3/2016 của Chính phủ): 01 bản chụp",
+          "component_code": "000.00.00.G12-KQ0800",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 6,
+          "name": "Giấy đăng ký giám định lượng, Giấy đăng ký kiểm tra nhà nước về chất lượng đối với hàng hóa thuộc Danh mục hàng hóa nhập khẩu phải kiểm tra nhà nước về chất lượng: 01 bản chụp",
+          "component_code": "000.00.00.G12-KQ0801",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c70-724b-96df-ddc2578f60d3",
+          "name": "Xác nhận thông quan hàng hóa",
+          "code": "KQ.G12.000583"
+        }
+      ],
+      "legal_bases": []
+    }
+  ]
+}

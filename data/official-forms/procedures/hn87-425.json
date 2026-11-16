@@ -1,0 +1,102 @@
+{
+  "ordinal": "425",
+  "managing_agency": "Sở Tài chính",
+  "procedure_code": "3.000410",
+  "name": "Quyết định xác lập quyền sở hữu toàn dân đối với tài sản không có người thừa kế",
+  "domain": "Quản lý công sản (Bộ Tài chính)",
+  "ministry_decision": "4191/QĐ-BTC ngày 17/12/2025",
+  "hanoi_decision": "QĐ số 41/QĐ-TTPVHCC ngày 09/01/2026",
+  "workflow_decision": "QĐ số 109/QĐ-TTPVHCC ngày 26/01/2026",
+  "fees": "Không quy định",
+  "execution_level": "Cấp tỉnh, cấp xã",
+  "competent_authority": "UBND thành phố; UBND cấp xã",
+  "delegation_decision": "",
+  "delegation_expiry": "",
+  "receiving_location": "Điểm hỗ trợ DVC số; Chi nhánh TTPVHCC",
+  "id": "hn87-425",
+  "source_page": 17,
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "inventory_date": "2026-04-27",
+  "checked_at": "2026-11-12T22:25:11.345529+07:00",
+  "details": [
+    {
+      "id": "019d2bfd-10d2-72d8-803c-ef49c81b6fb4",
+      "code": "3.000410",
+      "name": "Quyết định xác lập quyền sở hữu toàn dân đối với tài sản không có người thừa kế",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1793243373178,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfd-10d2-72d8-803c-ef49c81b6fb4",
+      "raw_path": "evidence/dvc/details/019d2bfd-10d2-72d8-803c-ef49c81b6fb4.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Báo cáo quá trình mở thừa kế đối với di sản",
+          "component_code": "G12.060243",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Các hồ sơ, tài liệu liên quan đến quá trình mở thừa kế, văn bản từ chối quyền hưởng di sản, bản án hoặc quyết định của Tòa án xác định người không được quyền hưởng di sản thừa kế (nếu có): Không yêu cầu cá nhân, tổ chức khi nộp; khi cơ quan giải quyết TTHC khai thác được thông tin về bản án hoặc quyết định của tài sản trên cơ sở dữ liệu quốc gia về bản án, quyết định của Tòa án; hệ thống quản lý thụ lý vụ việc",
+          "component_code": "G12.060245",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 3,
+          "name": "Bảng kê chủng loại, số lượng, khối lượng, hiện trạng của di sản, giá trị (nếu có thông tin về giá trị)",
+          "component_code": "G12.060244",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 4,
+          "name": "Văn bản từ bỏ phần quyền sở hữu đối với tài sản sở hữu chung quy định tại khoản 4 Điều 218 Bộ luật Dân sự",
+          "component_code": "G12.060246",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c71-7574-afeb-3ad069986ade",
+          "name": "Quyết định xác lập quyền sở hữu toàn dân về tài sản",
+          "code": "KQ.G12.000247"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7f-719e-b471-23adf32241d6",
+          "name": "Nghị định số 77/NĐ-CP ngày 01/4/2025 của Chính phủ quy định thẩm quyền, thủ tục xác lập quyền sở hữu toàn dân về tài sản và xử lý đối với tài sản được xác lập quyền sở hữu toàn dân",
+          "code": "77/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d86-7760-a646-d9649d5baf76",
+          "name": "Nghị định 286/2025/NĐ-CP ngày 03/11/2025 của Chính phủ sửa đổi, bổ sung một số điều của các Nghị định trong lĩnh vực quản lý, sử dụng tài sản công",
+          "code": "286/2025/NĐ-CP"
+        }
+      ]
+    }
+  ],
+  "lookup_status": "retrieved",
+  "currency_status": "snapshot_requires_later_amendment_check",
+  "errors": []
+}

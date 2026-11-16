@@ -1,0 +1,222 @@
+{
+  "id": "dvc-019d2bfc-5cc0-756c-8303-2d48ef3bd3dd",
+  "procedure_code": "1.008494",
+  "name": "Đăng ký thuế để khấu trừ và nộp thay nghĩa vụ thuế",
+  "domain": "Thuế",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.940717+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfc-5cc0-756c-8303-2d48ef3bd3dd",
+      "code": "1.008494",
+      "name": "Đăng ký thuế để khấu trừ và nộp thay nghĩa vụ thuế",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1784861594370,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-5cc0-756c-8303-2d48ef3bd3dd",
+      "raw_path": "evidence/dvc/details/019d2bfc-5cc0-756c-8303-2d48ef3bd3dd.json",
+      "components": [
+        {
+          "section": "* Đối với Doanh nghiệp, tổ chức, cá nhân khấu trừ và nộp thay thuế cho nhà thầu nước ngoài, nhà thầu phụ nước ngoài, gồm:",
+          "position": 1,
+          "name": "Tờ khai đăng ký thuế theo mẫu số 04.1-ĐKT ban hành kèm theo Thông tư số 90/2026/TT-BTC",
+          "component_code": "G12.0003340",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019f8df2-b7e2-7165-a2ed-ac9b0221cdd2",
+              "fileName": "04.1 ĐKT TT 90.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8df2-b7e2-7165-a2ed-ac9b0221cdd2/04.1 ĐKT TT 90.docx"
+            }
+          ]
+        },
+        {
+          "section": "* Đối với Doanh nghiệp, tổ chức, cá nhân khấu trừ và nộp thay thuế cho nhà thầu nước ngoài, nhà thầu phụ nước ngoài, gồm:",
+          "position": 2,
+          "name": "Bảng kê các hợp đồng nhà thầu nước ngoài, nhà thầu phụ nước ngoài nộp thuế thông qua Bên Việt Nam mẫu số BK04.1-ĐKT ban hành kèm theo Thông tư số 90/2026/TT-BTC",
+          "component_code": "G12.0003341",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019f8df3-4d29-706b-a87e-31a103af4004",
+              "fileName": "BK 04.1 ĐKT TT 90.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8df3-4d29-706b-a87e-31a103af4004/BK 04.1 ĐKT TT 90.docx"
+            }
+          ]
+        },
+        {
+          "section": "* Đối với Tổ chức kinh doanh tại Việt Nam áp dụng phương pháp tính thuế giá trị gia tăng là phương pháp khấu trừ thuế thực hiện khấu trừ và nộp thay thuế cho nhà cung cấp nước ngoài, gồm:",
+          "position": 1,
+          "name": "Tờ khai đăng ký thuế theo mẫu số 04.1-ĐKT ban hành kèm theo Thông tư số 90/2026/TT-BTC",
+          "component_code": "G12.0003340",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019f8df2-b7e2-7165-a2ed-ac9b0221cdd2",
+              "fileName": "04.1 ĐKT TT 90.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8df2-b7e2-7165-a2ed-ac9b0221cdd2/04.1 ĐKT TT 90.docx"
+            }
+          ]
+        },
+        {
+          "section": "* Đối với Chủ quản nền tảng thương mại điện tử, nền tảng số khác ở trong nước có chức năng đặt hàng trực tuyến và chức năng thanh toán theo quy định tại Điều 43 Nghị định số 252/2026/NĐ-CP khấu trừ và nộp thay thuế cho nhà cung cấp nước ngoài, hộ kinh doanh, cá nhân kinh doanh (bao gồm cá nhân cư trú và cá nhân không cư trú), gồm:",
+          "position": 1,
+          "name": "Tờ khai đăng ký thuế theo mẫu số 04.1-ĐKT ban hành kèm theo Thông tư số 90/2026/TT-BTC",
+          "component_code": "G12.0003340",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019f8df2-b7e2-7165-a2ed-ac9b0221cdd2",
+              "fileName": "04.1 ĐKT TT 90.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8df2-b7e2-7165-a2ed-ac9b0221cdd2/04.1 ĐKT TT 90.docx"
+            }
+          ]
+        },
+        {
+          "section": "* Đối với Doanh nghiệp, tổ chức, cá nhân khấu trừ và nộp thay thuế cho cá nhân có hợp đồng hoặc văn bản hợp tác kinh doanh, gồm:",
+          "position": 1,
+          "name": "Tờ khai đăng ký thuế theo mẫu số 04.1-ĐKT ban hành kèm theo Thông tư số 90/2026/TT-BTC",
+          "component_code": "G12.0003340",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019f8df2-b7e2-7165-a2ed-ac9b0221cdd2",
+              "fileName": "04.1 ĐKT TT 90.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8df2-b7e2-7165-a2ed-ac9b0221cdd2/04.1 ĐKT TT 90.docx"
+            }
+          ]
+        },
+        {
+          "section": "* Đối với Doanh nghiệp, tổ chức, cá nhân khấu trừ và nộp thay thuế cho cá nhân có hợp đồng hoặc văn bản hợp tác kinh doanh, gồm:",
+          "position": 2,
+          "name": "Bản sao hợp đồng hoặc văn bản hợp tác kinh doanh",
+          "component_code": "G12.0003342",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "* Đối với tổ chức, cá nhân được cơ quan thuế ủy nhiệm thu, gồm:",
+          "position": 1,
+          "name": "Tờ khai đăng ký thuế mẫu số 04.4-ĐKT ban hành kèm theo Thông tư số 90/2026/TT-BTC",
+          "component_code": "G12.0003343",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019f8df5-1d93-726b-907d-e9d8b5e03593",
+              "fileName": "04.4 ĐKT TT 90.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8df5-1d93-726b-907d-e9d8b5e03593/04.4 ĐKT TT 90.docx"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 1,
+          "name": "Người nộp thuế nộp hồ sơ đến cơ quan thuế bằng phương thức điện tử thì bản sao các văn bản, giấy tờ quy định trong hồ sơ đăng ký thuế là bản sao điện tử.",
+          "component_code": "G12.0003344",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Từ ngày 01/7/2026 đến trước thời điểm theo lộ trình của cơ quan thuế quy định tại khoản 2 Điều 36 Thông tư số 90/2026/TT-BTC thì tiếp tục áp dụng mẫu số 04.1-ĐK-TCT, mẫu số 04.1-ĐK-TCT-BK, mẫu số 04.4-ĐK-TCT ban hành kèm theo Thông tư số 86/2024/TT-BTC ngày 23/12/2024 của Bộ Tài chính đối với trường hợp đăng ký thuế theo phương thức điện tử.",
+          "component_code": "G12.0003345",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019f8df7-4ac9-7591-8868-fabe518e4dca",
+              "fileName": "04.4 ĐK TCT TT 86.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8df7-4ac9-7591-8868-fabe518e4dca/04.4 ĐK TCT TT 86.docx"
+            },
+            {
+              "id": "019f8df7-4bec-774c-aefa-3619322211b3",
+              "fileName": "04.1 ĐK TCT TT 86.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8df7-4bec-774c-aefa-3619322211b3/04.1 ĐK TCT TT 86.docx"
+            },
+            {
+              "id": "019f8df7-b73c-721e-8b17-f6df6ee458eb",
+              "fileName": "04.1-ĐK-TCT-BK.doc",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8df7-b73c-721e-8b17-f6df6ee458eb/04.1-ĐK-TCT-BK.doc"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c71-7574-afea-ea8c9211085c",
+          "name": "Thông báo mã số thuế (Mẫu 11 MST)",
+          "code": "KQ.G12.000828"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019f356e-75e3-7494-a2f3-672d8dce61a6",
+          "name": "QUY ĐỊNH CHI TIẾT MỘT SỐ ĐIỀU VÀ BIỆN PHÁP ĐỂ TỔ CHỨC, HƯỚNG DẪN THI HÀNH LUẬT QUẢN LÝ THUẾ",
+          "code": "252/2026/NĐ-CP"
+        },
+        {
+          "id": "019f8db3-9765-740b-8b90-682677b9c421",
+          "name": "Thông tư quy định chi tiết một số điều của Luật Quản lý thuế và Nghị định số 252/2026/NĐ-CP của Chính phủ quy định chi tiết một số điều và biện pháp để tổ chức, hướng dẫn thi hành Luật Quản lý thuế",
+          "code": "89/2026/TT-BTC"
+        },
+        {
+          "id": "019f8db3-e7d0-74e4-9c61-49a28e28113a",
+          "name": "Thông tư số 90/2026/TT-BTC ngày 30/6/2026 của Bộ Tài chính quy định về đăng ký thuế",
+          "code": "90/2026/TT-BTC "
+        },
+        {
+          "id": "019e5e83-1282-771d-9014-49799413a4e5",
+          "name": "Luật số 108/2025/QH15 của Quốc hội: Luật Quản lý thuế",
+          "code": "108/2025/QH15"
+        },
+        {
+          "id": "019f64ed-e026-7299-b5f2-ca44a3964050",
+          "name": "Nghị định về thực hiện thủ tục hành chính theo cơ chế một cửa, một cửa liên thông tại Bộ phận Một cửa và Cổng Dịch vụ công quốc gia.",
+          "code": "118/2025/NĐ-CP "
+        }
+      ]
+    }
+  ]
+}

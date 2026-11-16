@@ -1,0 +1,64 @@
+{
+  "id": "dvc-019d2bfc-c249-70f4-8f6d-6013d83f793a",
+  "procedure_code": "1.011725",
+  "name": "Thủ tục thông báo hợp đồng, phụ lục hợp đồng gia công",
+  "domain": "Hải quan",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.920524+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfc-c249-70f4-8f6d-6013d83f793a",
+      "code": "1.011725",
+      "name": "Thủ tục thông báo hợp đồng, phụ lục hợp đồng gia công",
+      "state": "ACTIVE",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1775639773051,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-c249-70f4-8f6d-6013d83f793a",
+      "raw_path": "evidence/dvc/details/019d2bfc-c249-70f4-8f6d-6013d83f793a.json",
+      "components": [
+        {
+          "section": "Hợp đồng gia công - Mẫu 21 Phụ lục II ban hành kèm Thông tư 38/2015/TT-BTC ngày 25/3/2015 của Bộ Tài chính (đã được sửa đổi, bổ sung tại Phụ lục I Thông tư số 39/2018/TT-BTC ngày 20/4/2018); ",
+          "position": 1,
+          "name": "Phụ lục hợp đồng - Mẫu 22 Phụ lục II ban hành kèm Thông tư 38/2015/TT-BTC ngày 25/3/2015 của Bộ Tài chính (đã được sửa đổi, bổ sung tại Phụ lục I Thông tư số 39/2018/TT-BTC ngày 20/4/2018);",
+          "component_code": "000.00.00.G12-KQ012585",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Hợp đồng gia công - Mẫu 21 Phụ lục II ban hành kèm Thông tư 38/2015/TT-BTC ngày 25/3/2015 của Bộ Tài chính (đã được sửa đổi, bổ sung tại Phụ lục I Thông tư số 39/2018/TT-BTC ngày 20/4/2018); ",
+          "position": 2,
+          "name": "Thông báo về việc thực hiện hợp đồng gia công/Phụ lục hợp đồng gia công - Mẫu số 18/TBHĐGC/GSQL Phụ lục V ban hành kèm Thông tư 38/2015/TT-BTC ngày 25/3/2015 của Bộ Tài chính (đã được sửa đổi, bổ sung tại Phụ lục II Thông tư số 39/2018/TT-BTC ngày 20/4/2018).",
+          "component_code": "000.00.00.G12-KQ012586",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c71-7574-afe8-a88542080507",
+          "name": "Chấp nhận thông báo hợp đồng, phụ lục hợp đồng.",
+          "code": "KQ.G12.000604"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7d-7398-be4d-ff62cdf67da5",
+          "name": "Luật 54/2014/QH13",
+          "code": "54/2014/QH13"
+        }
+      ]
+    }
+  ]
+}

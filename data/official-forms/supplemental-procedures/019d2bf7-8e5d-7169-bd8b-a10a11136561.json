@@ -1,0 +1,92 @@
+{
+  "id": "dvc-019d2bf7-8e5d-7169-bd8b-a10a11136561",
+  "procedure_code": "1.012537",
+  "name": "Giải quyết chế độ, chính sách cho người tham gia lực lượng tham gia bảo vệ an ninh, trật tự ở cơ sở chưa tham gia bảo hiểm y tế mà bị ốm đau, bị tai nạn, bị thương khi thực hiện nhiệm vụ",
+  "domain": "Chính sách",
+  "managing_agency": "Bộ Công an",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:18.036663+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bf7-8e5d-7169-bd8b-a10a11136561",
+      "code": "1.012537",
+      "name": "Giải quyết chế độ, chính sách cho người tham gia lực lượng tham gia bảo vệ an ninh, trật tự ở cơ sở chưa tham gia bảo hiểm y tế mà bị ốm đau, bị tai nạn, bị thương khi thực hiện nhiệm vụ",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1777456553763,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf7-8e5d-7169-bd8b-a10a11136561",
+      "raw_path": "evidence/dvc/details/019d2bf7-8e5d-7169-bd8b-a10a11136561.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Khi các cơ quan quản lý nhà nước hoàn thành việc kết nối, chia sẻ dữ liệu thông tin có trong thành phần hồ sơ quy định tại khoản này thì cơ quan có thẩm quyền giải quyết thủ tục phải khai thác trực tuyến để giải quyết mà không được yêu cầu người đề nghị cung cấp hồ sơ giấy.",
+          "component_code": "000.00.00.G01-KQ002920",
+          "original_quantity": 0,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Đơn đề nghị thanh toán chi phí khám bệnh, chữa bệnh của người được hỗ trợ chế độ bị ốm đau, bị tai nạn, bị thương hoặc người đại diện hợp pháp (Mẫu số 01 ban hành kèm theo Nghị định số 40/2024/NĐ-CP).",
+          "component_code": "000.00.00.G01-KQ002913",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019dd728-2220-7120-a074-c92690df36db",
+              "fileName": "Mẫu số 01 - Đề nghị thanh toán khám chữa bệnh (NĐ 40.2024).docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019dd728-2220-7120-a074-c92690df36db/Mẫu số 01 - Đề nghị thanh toán khám chữa bệnh (NĐ 40.2024).docx"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 3,
+          "name": "Bản sao hóa đơn thu tiền, giấy ra viện",
+          "component_code": "000.00.00.G01-KQ002919",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c37-76e8-b48d-75d452b6e549",
+          "name": "Quyết định chi trả kinh phí hỗ trợ khám bệnh, chữa bệnh cho người bị ốm đau, bị tai nạn, bị thương.",
+          "code": "KQ.G01.000138"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d84-71c5-b672-95d3d56e7ecc",
+          "name": "Luật Lực lượng tham gia bảo vệ an ninh, trật tự ở cơ sở",
+          "code": "30/2023/QH15"
+        },
+        {
+          "id": "019d2bb3-5d7f-719e-b46d-afb49ed3b4a5",
+          "name": "Nghị định số 40/2024/NĐ-CP của Chính phủ: Quy định chi tiết một số điều của Luật Lực lượng tham gia bảo vệ an ninh, trật tự ở cơ sở",
+          "code": "40/2024/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afec-c7ba7cb44bf3",
+          "name": "Nghị định số 184/2025/NĐ-CP của Chính phủ: Quy định phân định thẩm quyền khi tổ chức chính quyền địa phương 02 cấp và sửa đổi, bổ sung một số điều của các Nghị định của Chính phủ trong lĩnh vực an ninh, trật tự",
+          "code": "184/2025/NĐ-CP"
+        }
+      ]
+    }
+  ]
+}

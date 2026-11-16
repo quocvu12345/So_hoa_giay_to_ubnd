@@ -1,0 +1,37 @@
+{
+  "errors": [
+    {
+      "id": "moc-001",
+      "source_url": "https://moc.gov.vn/pl/tin-tuc/422/thong-bao-lich-tiep-cong-dan-nam-2025-cua-bo-xay-dung-sau-hop-nhat.aspx",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1011)"
+    }
+  ],
+  "summary": {
+    "document_count": 32,
+    "page_count": 422,
+    "byte_size": 110970377,
+    "publishers": {
+      "Trang thông tin xã Ba Dinh, Quảng Ngãi": 1,
+      "Trang thông tin xã Bình Lục, Ninh Bình": 1,
+      "Cổng Thông tin điện tử Chính phủ": 2,
+      "Sở Tài chính tỉnh Lạng Sơn": 1,
+      "Trang thông tin xã Nghĩa Hành, Quảng Ngãi": 2,
+      "Cổng thông tin Cục Thống kê": 1,
+      "Cổng thông tin đặc khu Phú Quốc": 5,
+      "Trang thông tin điện tử phường Từ Liêm, thành phố Hà Nội": 19
+    },
+    "document_forms": {
+      "Giấy mời": 1,
+      "Báo cáo": 2,
+      "Công điện": 1,
+      "Nghị định": 1,
+      "Thông báo": 2,
+      "Tờ trình": 1,
+      "Công văn": 1,
+      "Phụ lục bảng": 4,
+      "Kế hoạch": 2,
+      "Quyết định": 3,
+      "Nghị quyết": 14
+    }
+  }
+}

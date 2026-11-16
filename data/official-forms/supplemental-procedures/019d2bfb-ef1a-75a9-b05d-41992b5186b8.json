@@ -1,0 +1,137 @@
+{
+  "id": "dvc-019d2bfb-ef1a-75a9-b05d-41992b5186b8",
+  "procedure_code": "1.007277",
+  "name": "Khai lệ phí trước bạ nhà, đất/ Miễn lệ phí trước bạ nhà, đất",
+  "domain": "Thuế",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.959898+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfb-ef1a-75a9-b05d-41992b5186b8",
+      "code": "1.007277",
+      "name": "Khai lệ phí trước bạ nhà, đất/ Miễn lệ phí trước bạ nhà, đất",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1785399203479,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-ef1a-75a9-b05d-41992b5186b8",
+      "raw_path": "evidence/dvc/details/019d2bfb-ef1a-75a9-b05d-41992b5186b8.json",
+      "components": [
+        {
+          "section": "Thành phần hồ sơ ban hành kèm theo Phụ lục 1 Danh mục hồ sơ khai thuế Nghị định số 126/2020/NĐ-CP ngày 19/10/2020 của Chính phủ quy định chi tiết một số điều của Luật quản lý thuế, gồm",
+          "position": 1,
+          "name": "Tờ khai lệ phí trước bạ theo mẫu 01/LPTB ban hành kèm theo Thông tư số 89/2026/TT-BTC",
+          "component_code": "G12.0015682",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019fa874-687a-70dc-b5b3-4a5ba1d92de4",
+              "fileName": "1.  01.LPTB.doc",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa874-687a-70dc-b5b3-4a5ba1d92de4/1.  01.LPTB.doc"
+            }
+          ]
+        },
+        {
+          "section": "Thành phần hồ sơ ban hành kèm theo Phụ lục 1 Danh mục hồ sơ khai thuế Nghị định số 126/2020/NĐ-CP ngày 19/10/2020 của Chính phủ quy định chi tiết một số điều của Luật quản lý thuế, gồm",
+          "position": 2,
+          "name": "Bản sao Giấy tờ hợp pháp theo quy định của pháp luật về việc chuyển giao tài sản ký kết giữa bên giao tài sản và bên nhận tài sản",
+          "component_code": "G12.0014459",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Thành phần hồ sơ ban hành kèm theo Phụ lục 1 Danh mục hồ sơ khai thuế Nghị định số 126/2020/NĐ-CP ngày 19/10/2020 của Chính phủ quy định chi tiết một số điều của Luật quản lý thuế, gồm",
+          "position": 3,
+          "name": "Giấy tờ chứng minh nhà, đất có nguồn gốc hợp pháp theo quy định của pháp luật",
+          "component_code": "G12.0014458",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Thành phần hồ sơ ban hành kèm theo Phụ lục 1 Danh mục hồ sơ khai thuế Nghị định số 126/2020/NĐ-CP ngày 19/10/2020 của Chính phủ quy định chi tiết một số điều của Luật quản lý thuế, gồm",
+          "position": 4,
+          "name": "Bản sao Giấy tờ chứng minh tài sản (hoặc chủ tài sản) thuộc diện miễn lệ phí trước bạ (nếu có)",
+          "component_code": "G12.0014461",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Thành phần hồ sơ ban hành kèm theo Phụ lục 1 Danh mục hồ sơ khai thuế Nghị định số 126/2020/NĐ-CP ngày 19/10/2020 của Chính phủ quy định chi tiết một số điều của Luật quản lý thuế, gồm",
+          "position": 5,
+          "name": "Bản sao trong hồ sơ khai lệ phí trước bạ là bản sao hoặc bản sao được cấp từ sổ gốc hoặc bản sao được chứng thực từ bản chính. Trường hợp tổ chức, cá nhân nộp bản sao bằng hình thức trực tiếp thì phải xuất trình bản chính để đối chiếu. Trường hợp cơ quan thuế đã kết nối liên thông điện tử với cơ quan có liên quan thì hồ sơ khai lệ phí trước bạ là Tờ khai lệ phí trước bạ",
+          "component_code": "G12.0014462",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "Thành phần hồ sơ ban hành kèm theo Phụ lục 1 Danh mục hồ sơ khai thuế Nghị định số 126/2020/NĐ-CP ngày 19/10/2020 của Chính phủ quy định chi tiết một số điều của Luật quản lý thuế, gồm",
+          "position": 6,
+          "name": "Từ 01/7/2026 đến thời điểm theo lộ trình của cơ quan thuế quy định tại khoản 2 Điều 99 Thông tư số 89/2026/TT-BTC thì các tờ khai số 01/LPTB thực hiện theo mẫu ban hành kèm theo Thông tư số 80/2021/TT-BTC ngày 29/9/2021 của Bộ Tài chính",
+          "component_code": "G12.0014463",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019fa878-d4ea-759c-a3b8-583c97ad98da",
+              "fileName": "01 LPTB.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa878-d4ea-759c-a3b8-583c97ad98da/01 LPTB.docx"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c71-7574-afe7-e3216a7d527d",
+          "name": "Thông báo nộp lệ phí trước bạ",
+          "code": "KQ.G12.000032"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7e-72d1-afe9-653aac8276ee",
+          "name": "Nghị định số 118/2025/NĐ-CP của Chính phủ: Về thực hiện thủ tục hành chính theo cơ chế một cửa, một cửa liên thông tại Bộ phận Một cửa và Cổng Dịch vụ công quốc gia",
+          "code": "118/2025/NĐ-CP"
+        },
+        {
+          "id": "019f8db3-9765-740b-8b90-682677b9c421",
+          "name": "Thông tư quy định chi tiết một số điều của Luật Quản lý thuế và Nghị định số 252/2026/NĐ-CP của Chính phủ quy định chi tiết một số điều và biện pháp để tổ chức, hướng dẫn thi hành Luật Quản lý thuế",
+          "code": "89/2026/TT-BTC"
+        },
+        {
+          "id": "019f356e-75e3-7494-a2f3-672d8dce61a6",
+          "name": "QUY ĐỊNH CHI TIẾT MỘT SỐ ĐIỀU VÀ BIỆN PHÁP ĐỂ TỔ CHỨC, HƯỚNG DẪN THI HÀNH LUẬT QUẢN LÝ THUẾ",
+          "code": "252/2026/NĐ-CP"
+        },
+        {
+          "id": "019e5e83-1282-771d-9014-49799413a4e5",
+          "name": "Luật số 108/2025/QH15 của Quốc hội: Luật Quản lý thuế",
+          "code": "108/2025/QH15"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "id": "dvc-019d2bfc-ca46-74aa-bd9c-5ad9cbd9cdd9",
+  "procedure_code": "1.013655",
+  "name": "Thông báo điều chỉnh thông tin tại thông báo phát hành biên lai.",
+  "domain": "Hải quan",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.917979+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfc-ca46-74aa-bd9c-5ad9cbd9cdd9",
+      "code": "1.013655",
+      "name": "Thông báo điều chỉnh thông tin tại thông báo phát hành biên lai.",
+      "state": "ACTIVE",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1775639565259,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-ca46-74aa-bd9c-5ad9cbd9cdd9",
+      "raw_path": "evidence/dvc/details/019d2bfc-ca46-74aa-bd9c-5ad9cbd9cdd9.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Bảng kê biên lai chưa sử dụng theo mẫu 02/BK-BLG Phụ lục IA ban hành kèm theo Nghị định số 123/2020/NĐ-CP ngày 19/10/2020 của Chính phủ và điều chỉnh thông tin tại thông báo phát hành",
+          "component_code": "000.00.00.G12-KQ013896",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Thông báo theo Mẫu số 02/ĐCPH-BLG Phụ lục IA ban hành kèm theo Nghị định số 123/2020/NĐ-CP ngày 19/10/2020 của Chính phủ tới cơ quan thuế trực tiếp quản lý",
+          "component_code": "000.00.00.G12-KQ013895",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c71-7574-afec-62025039ebf4",
+          "name": "Biên lai thu thuế, phí, lệ phí mới được phát hành",
+          "code": "KQ.G12.000674"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d87-7195-a444-f7af6096dd40",
+          "name": "Nghị định số 70/2025/NĐ-CP ngày ngày 20 tháng 3 năm 2025 của Chính phủ sửa đổi, bổ sung một số điều của Nghị định số 123/2020/NĐ-CP ngày 19 tháng 10 năm 2020 của Chính phủ quy định về hóa đơn, chứng từ.",
+          "code": "70/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d86-7760-a63e-7a35aa2ed73a",
+          "name": "Nghị định 123/2020/NĐ-CP",
+          "code": "123/2020/NĐ-CP"
+        }
+      ]
+    }
+  ]
+}

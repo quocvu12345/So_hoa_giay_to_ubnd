@@ -1,0 +1,78 @@
+{
+  "id": "dvc-019f6b18-eb9c-77ec-b74c-bae23f52f669",
+  "procedure_code": "3.000611",
+  "name": "Đánh giá, phân hạng sản phẩm OCOP",
+  "domain": "Kinh tế hợp tác và Phát triển nông thôn",
+  "managing_agency": "Bộ Nông nghiệp và Môi trường",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.483603+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019f6b18-eb9c-77ec-b74c-bae23f52f669",
+      "code": "3.000611",
+      "name": "Đánh giá, phân hạng sản phẩm OCOP",
+      "state": "ACTIVE",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1784257257468,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019f6b18-eb9c-77ec-b74c-bae23f52f669",
+      "raw_path": "evidence/dvc/details/019f6b18-eb9c-77ec-b74c-bae23f52f669.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Phiếu đăng ký đánh giá, phân hạng sản  phẩm OCOP",
+          "component_code": "TP-G10.000070",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019f6def-996a-751a-9cbe-7a77057777bb",
+              "fileName": "Mẫu số 01. Đăng ký đánh giá phân hạng OCOP.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f6def-996a-751a-9cbe-7a77057777bb/Mẫu số 01. Đăng ký đánh giá phân hạng OCOP.docx"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Báo cáo tự đánh giá về sản phẩm",
+          "component_code": "TP-G10.000071",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019f6df0-2cfb-74fa-863b-30342dad04cf",
+              "fileName": "Mẫu số 02- Báo cáo tự đánh giá sản phẩm.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f6df0-2cfb-74fa-863b-30342dad04cf/Mẫu số 02- Báo cáo tự đánh giá sản phẩm.docx"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "id": "019f6df2-96ce-72dd-84c9-7d5f14f6b55f",
+          "name": "Quyết định công nhận kết quả đánh giá và cấp giấy chứng nhận sản phẩm OCOP đạt 3 sao, 4 sao, 5 sao",
+          "code": "KQ-G10.000019"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019f6b17-4ca5-7384-86ca-52af42716f6c",
+          "name": "Ban hành Bộ tiêu chí và quy trình đánh giá, phân hạng sản phẩm mỗi xã một sản phẩm ",
+          "code": "26/2026/QĐ-TTg"
+        }
+      ]
+    }
+  ]
+}

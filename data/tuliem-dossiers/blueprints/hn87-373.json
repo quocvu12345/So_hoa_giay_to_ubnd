@@ -1,0 +1,127 @@
+{
+  "id": "hn87-373",
+  "ordinal": "373",
+  "procedure_code": "1.014156",
+  "name": "Phê duyệt nhiệm vụ quy hoạch, nhiệm vụ điều chỉnh quy hoạch đô thị và nông thôn do nhà đầu tư đã được lựa chọn để thực hiện dự án đầu tư tổ chức lập",
+  "domain": "Quy hoạch đô thị và nông thôn",
+  "department_id": "ktdt",
+  "department": "Phòng Kinh tế, Hạ tầng và Đô thị",
+  "authority_as_published": "UBND thành phố; Ban QL; UBND cấp xã",
+  "execution_level_as_published": "Cấp tỉnh, cấp xã",
+  "receiving_location_as_published": "Điểm hỗ trợ DVC số; Chi nhánh TTPVHCC",
+  "inventory_date": "2026-04-27",
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "source_urls": [
+    "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfe-9859-729a-b092-1bf8860317c1"
+  ],
+  "current_dvc_match": true,
+  "lifecycle": null,
+  "scope": "hanoi_commune_notice_2026_04_27",
+  "scope_note": "Mốc kiểm kê cấp xã Hà Nội; áp dụng từng thủ tục tại Từ Liêm còn phải theo thẩm quyền/ủy quyền hiện hành.",
+  "status": "source_template_missing",
+  "components": [
+    {
+      "id": "hn87-373-c001",
+      "code": "G17-KQ003319",
+      "name": "+ Hồ sơ điện tử: Cơ sở dữ liệu số cơ bản là các tệp tin (file) bản vẽ và văn bản được in ấn thành một phần của hồ sơ nhiệm vụ quy hoạch bản giấy; Cơ sở dữ liệu số pháp lý bao gồm các tệp tin (file) được số hóa, quét (scan) từ hồ sơ bằng bản giấy hoặc chứng thực điện tử; Cơ sở dữ liệu số địa lý (GIS) quy hoạch đô thị và nông thôn bao gồm các tệp tin (file) được chuyển đổi thành dữ liệu địa lý từ cơ sở dữ liệu gốc.",
+      "section": "-\tThành phần hồ sơ theo quy định về hồ sơ trình phê duyệt tại Thông tư số 16/2025/TT-BXD:",
+      "role": "needs_review",
+      "scenario_status": "requirement_needs_review",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 1,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfe-9859-729a-b092-1bf8860317c1",
+      "source_detail_id": "019d2bfe-9859-729a-b092-1bf8860317c1",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-373-c002",
+      "code": "G17-KQ003321",
+      "name": "+ Báo cáo thẩm định nhiệm vụ quy hoạch hoặc nhiệm vụ điều chỉnh quy hoạch của cơ quan thẩm định.",
+      "section": "-\tThành phần hồ sơ theo quy định về hồ sơ trình phê duyệt tại Thông tư số 16/2025/TT-BXD:",
+      "role": "applicant_prepared",
+      "scenario_status": "selected_for_test",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfe-9859-729a-b092-1bf8860317c1",
+      "source_detail_id": "019d2bfe-9859-729a-b092-1bf8860317c1",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-373-c003",
+      "code": "G17-KQ003322",
+      "name": "+ Hồ sơ bản giấy gồm: Thuyết minh; Dự thảo Quyết định của cấp có thẩm quyền phê duyệt nhiệm vụ quy hoạch hoặc điều chỉnh nhiệm vụ quy hoạch; Các văn bản, tài liệu liên quan; Bản vẽ.",
+      "section": "-\tThành phần hồ sơ theo quy định về hồ sơ trình phê duyệt tại Thông tư số 16/2025/TT-BXD:",
+      "role": "needs_review",
+      "scenario_status": "requirement_needs_review",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfe-9859-729a-b092-1bf8860317c1",
+      "source_detail_id": "019d2bfe-9859-729a-b092-1bf8860317c1",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-373-c004",
+      "code": "G17-KQ003320",
+      "name": "+ Tờ trình đề nghị phê duyệt nhiệm vụ quy hoạch hoặc điều chỉnh nhiệm vụ quy hoạch đô thị và nông thôn.",
+      "section": "-\tThành phần hồ sơ theo quy định về hồ sơ trình phê duyệt tại Thông tư số 16/2025/TT-BXD:",
+      "role": "agency_prepared",
+      "scenario_status": "agency_reserved",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfe-9859-729a-b092-1bf8860317c1",
+      "source_detail_id": "019d2bfe-9859-729a-b092-1bf8860317c1",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    }
+  ],
+  "service_cases": [
+    {
+      "id": "019d2d5b-9093-739a-824f-8dd24b5886dc",
+      "code": "1.014156.01",
+      "name": "Phê duyệt nhiệm vụ quy hoạch, nhiệm vụ điều chỉnh quy hoạch đô thị và nông thôn do nhà đầu tư đã được lựa  chọn để thực hiện dự án đầu tư tổ chức lập",
+      "source_processing_time": {
+        "qty": 7,
+        "type": "WORKING_DAY"
+      },
+      "has_case_specific_components": false
+    }
+  ],
+  "selected_template_ids": [],
+  "source_component_groups": [
+    {
+      "name": "-\tThành phần hồ sơ theo quy định về hồ sơ trình phê duyệt tại Thông tư số 16/2025/TT-BXD:",
+      "component_count": 4,
+      "source_detail_id": "019d2bfe-9859-729a-b092-1bf8860317c1"
+    }
+  ],
+  "conditional_component_groups": [],
+  "default_test_scenario": {
+    "channel": "direct",
+    "applicant_submits_self": true,
+    "authorized": false,
+    "special_case_flags": [],
+    "selected_conditional_group": null,
+    "case_selection_method": "ordinary_direct_submission",
+    "case_status": "scenario_for_testing_not_a_legal_eligibility_decision"
+  },
+  "requirement_note": "required_as_published được giữ nguyên; false không chứng minh giấy tờ luôn tùy chọn. Các nhóm executionCases có thể là mục giấy tờ/hướng dẫn, không phải các phương án loại trừ nhau."
+}

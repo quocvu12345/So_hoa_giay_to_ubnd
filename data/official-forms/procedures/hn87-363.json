@@ -1,0 +1,87 @@
+{
+  "ordinal": "363",
+  "managing_agency": "Sở Xây dựng",
+  "procedure_code": "1.013228",
+  "name": "Cấp lại giấy phép xây dựng đối với công trình cấp III, cấp IV (công trình Không theo tuyến/Theo tuyến trong đô thị/Tín ngưỡng, tôn giáo/ Tượng đài, tranh hoành tráng/Theo giai đoạn cho công trình không theo tuyến/Theo giai đoạn cho công trình theo tuyến trong đô thị/Dự án) và nhà ở riêng lẻ.",
+  "domain": "Hoạt động xây dựng",
+  "ministry_decision": "864/QĐ-BXD ngày 19/6/2025",
+  "hanoi_decision": "948/QĐ-TTPVHCC NGÀY 27/06/2025",
+  "workflow_decision": "1093/QĐ-TTPVHCC ngày /23/07/2025",
+  "fees": "150.000 đ (75.000 đồng đối với nhà ở riêng lẻ)",
+  "execution_level": "Cấp xã",
+  "competent_authority": "UBND cấp xã",
+  "delegation_decision": "Quyết định 74/2025/QĐ-UBND: Về việc ban hành quy định về phân cấp một số nội dung thuộc lĩnh vực xây dựng, giao thông",
+  "delegation_expiry": "",
+  "receiving_location": "Điểm hỗ trợ DVC số",
+  "id": "hn87-363",
+  "source_page": 14,
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "inventory_date": "2026-04-27",
+  "checked_at": "2026-11-12T22:24:59.655238+07:00",
+  "details": [
+    {
+      "id": "019d2bfe-908a-775a-833e-26b204dfda4f",
+      "code": "1.013228",
+      "name": "Cấp lại giấy phép xây dựng đối với công trình cấp III, cấp IV (công trình Không theo tuyến/Theo tuyến trong đô thị/Tín ngưỡng, tôn giáo/Tượng đài, tranh hoành tráng/Sửa chữa, cải tạo/Theo giai đoạn cho công trình không theo tuyến/Theo giai đoạn cho công trình theo tuyến trong đô thị/Dự án) và nhà ở riêng lẻ",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1786949251317,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfe-908a-775a-833e-26b204dfda4f",
+      "raw_path": "evidence/dvc/details/019d2bfe-908a-775a-833e-26b204dfda4f.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Đơn đề nghị điều chỉnh, gia hạn, cấp lại giấy phép xây dựng, trong đó giải trình rõ lý do đề nghị cấp lại theo Mẫu số 02 Phụ lục II Nghị định số 217/2026/NĐ-CP.",
+          "component_code": "TP-G17.000415",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019fdefc-b1e3-7162-af60-e92c883e0253",
+              "fileName": "Đơn G 17.000194. 211 . 213. 375 380 386 393. 399.  406 415.doc",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fdefc-b1e3-7162-af60-e92c883e0253/Đơn G 17.000194. 211 . 213. 375 380 386 393. 399.  406 415.doc"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Bản chính giấy phép xây dựng đã được cấp (đối với trường hợp bị rách, nát).",
+          "component_code": "TP-G17.000416",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019fe03e-47d4-7742-b9e9-9f4519b297d0",
+          "name": "Kết quả giấy phép cấp mới, điều chỉnh, gia hạn",
+          "code": "KQ-G17.000093"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019f3666-e3d6-702f-926b-ced690d453d0",
+          "name": "Nghị định số 217/2026/NĐ-CP ngày 19/6/2026 của Chính phủ quy định chi tiết một số điều của Luật Xây dựng về quản lý hoạt động xây dựng",
+          "code": "217/2026/NĐ-CP"
+        },
+        {
+          "id": "019f1d67-d525-7040-bc15-3156f4c4411c",
+          "name": "Luật Xây dựng",
+          "code": "135/2025/QH15"
+        }
+      ]
+    }
+  ],
+  "lookup_status": "retrieved",
+  "currency_status": "snapshot_requires_later_amendment_check",
+  "errors": []
+}

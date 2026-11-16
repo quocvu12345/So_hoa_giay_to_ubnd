@@ -1,0 +1,75 @@
+{
+  "id": "dvc-019d2bfc-73f3-7528-9353-f4e64149a699",
+  "procedure_code": "1.008616",
+  "name": "Thủ tục tái nhập hàng hóa tạm quản",
+  "domain": "Hải quan",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.931871+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfc-73f3-7528-9353-f4e64149a699",
+      "code": "1.008616",
+      "name": "Thủ tục tái nhập hàng hóa tạm quản",
+      "state": "ACTIVE",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1775639890267,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-73f3-7528-9353-f4e64149a699",
+      "raw_path": "evidence/dvc/details/019d2bfc-73f3-7528-9353-f4e64149a699.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "- Văn bản thông báo kết quả kiểm tra chuyên ngành theo quy định của pháp luật",
+          "component_code": "000.00.00.G12-KQ9698",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "- Sổ ATA do VCCI cấp theo quy định;",
+          "component_code": "000.00.00.G12-KQ9696",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 3,
+          "name": "- Vận tải đơn hoặc các chứng từ vận tải khác có giá trị tương đương đối với trường hợp hàng hóa vận chuyển bằng đường biển, đường hàng không, đường sắt và vận tải đa phương thức: 01 bản chụp;",
+          "component_code": "000.00.00.G12-KQ9697",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c70-724b-96e0-bc555a64a485",
+          "name": "Xác nhận hàng hóa tái nhập trên sổ ATA",
+          "code": "KQ.G12.000386"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7f-719e-b46f-ea015430ca96",
+          "name": "Nghị định số 64/2020/NĐ-CP ngày 10/6/2020 của Chính phủ hướng dẫn thực hiện cơ chế tạm quản theo Công ước Istanbul.",
+          "code": "64/2020/NĐ-CP"
+        }
+      ]
+    }
+  ]
+}

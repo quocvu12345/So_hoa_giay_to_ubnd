@@ -1,0 +1,103 @@
+{
+  "id": "dvc-019d2bfc-6465-76fa-88ed-e34c5b2914c1",
+  "procedure_code": "1.008532",
+  "name": "Khai thuế thu nhập cá nhân đối với cá nhân trực tiếp khai thuế đối với thu nhập từ: kinh doanh của cá nhân không cư trú, đầu tư vốn, bản quyền, nhượng quyền thương mại, trúng thưởng, chuyển nhượng tên miền quốc gia Việt Nam “.vn”, chuyển nhượng kết quả giảm phát thải nhà kính, tín chỉ các bon, chuyển nhượng tài sản số",
+  "domain": "Thuế",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.939319+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfc-6465-76fa-88ed-e34c5b2914c1",
+      "code": "1.008532",
+      "name": "Khai thuế thu nhập cá nhân đối với cá nhân trực tiếp khai thuế đối với thu nhập từ: kinh doanh của cá nhân không cư trú, đầu tư vốn, bản quyền, nhượng quyền thương mại, trúng thưởng, chuyển nhượng tên miền quốc gia Việt Nam “.vn”, chuyển nhượng kết quả giảm phát thải nhà kính, tín chỉ các bon, chuyển nhượng tài sản số",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1785399203057,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-6465-76fa-88ed-e34c5b2914c1",
+      "raw_path": "evidence/dvc/details/019d2bfc-6465-76fa-88ed-e34c5b2914c1.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Tờ khai thuế (Áp dụng đối với cá nhân trực tiếp khai thuế đối với thu nhập từ: kinh doanh của cá nhân không cư trú, đầu tư vốn, bản quyền, nhượng quyền thương mại, trúng thưởng, chuyển nhượng tên miền quốc gia Việt Nam “.vn”, chuyển nhượng kết quả giảm phát thải nhà kính, tín chỉ các bon, chuyển nhượng tài sản số) mẫu số 04/NNG-TNCN ban hành kèm theo Thông tư số 89/2026/TT-BTC ngày 30/06/2026 của Bộ trưởng Bộ Tài chính",
+          "component_code": "G12.0011980",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019fa37a-72f2-76ad-99ce-e4751f347b94",
+              "fileName": "10. 04.NNG-TNCN.doc",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa37a-72f2-76ad-99ce-e4751f347b94/10. 04.NNG-TNCN.doc"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Từ 01/7/2026 đến thời điểm theo lộ trình của cơ quan thuế quy định tại khoản 2 Điều 99 Thông tư số 89/2026/TT-BTC thì mẫu 04/NNG-TNCN thực hiện theo mẫu biểu ban hành kèm theo Thông tư số 80/2021/TT-BTC ngày 29/9/2021 của Bộ Tài chính",
+          "component_code": "G12.0011981",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019fa37b-2c65-73ff-bd88-3a68c1f10181",
+              "fileName": "04 NNG-TNCN TT 80.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa37b-2c65-73ff-bd88-3a68c1f10181/04 NNG-TNCN TT 80.docx"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c70-724b-96e1-59c6a510ec9f",
+          "name": "Hồ sơ gửi đến cơ quan thuế không có kết quả giải quyết.",
+          "code": "KQ.G12.000429"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7e-72d1-afe9-653aac8276ee",
+          "name": "Nghị định số 118/2025/NĐ-CP của Chính phủ: Về thực hiện thủ tục hành chính theo cơ chế một cửa, một cửa liên thông tại Bộ phận Một cửa và Cổng Dịch vụ công quốc gia",
+          "code": "118/2025/NĐ-CP"
+        },
+        {
+          "id": "019f8db3-9765-740b-8b90-682677b9c421",
+          "name": "Thông tư quy định chi tiết một số điều của Luật Quản lý thuế và Nghị định số 252/2026/NĐ-CP của Chính phủ quy định chi tiết một số điều và biện pháp để tổ chức, hướng dẫn thi hành Luật Quản lý thuế",
+          "code": "89/2026/TT-BTC"
+        },
+        {
+          "id": "019fa377-0d10-73ea-b3b0-ee84180af5fe",
+          "name": "Nghị định số 253/2026/NĐ-CP ngày 30/6/2026 của Chính phủ quy định chi tiết một số điều và biện pháp để tổ chức, hướng dẫn thi hành Luật Thuế thu nhập cá nhân",
+          "code": "253/2026/NĐ-CP "
+        },
+        {
+          "id": "019f356e-75e3-7494-a2f3-672d8dce61a6",
+          "name": "QUY ĐỊNH CHI TIẾT MỘT SỐ ĐIỀU VÀ BIỆN PHÁP ĐỂ TỔ CHỨC, HƯỚNG DẪN THI HÀNH LUẬT QUẢN LÝ THUẾ",
+          "code": "252/2026/NĐ-CP"
+        },
+        {
+          "id": "019e5e83-1282-771d-9014-49799413a4e5",
+          "name": "Luật số 108/2025/QH15 của Quốc hội: Luật Quản lý thuế",
+          "code": "108/2025/QH15"
+        },
+        {
+          "id": "019fa376-69da-7783-9853-6afa7cd86621",
+          "name": "Luật Thuế thu nhập cá nhân 109/2025/QH15 ngày 10/12/2025 và các văn bản pháp luật quy định chi tiết, hướng dẫn thi hành và sửa đổi, bổ sung có liên quan",
+          "code": "109/2025/QH15 "
+        }
+      ]
+    }
+  ]
+}

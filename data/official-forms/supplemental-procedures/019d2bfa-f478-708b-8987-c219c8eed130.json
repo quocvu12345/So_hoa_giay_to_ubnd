@@ -1,0 +1,260 @@
+{
+  "id": "dvc-019d2bfa-f478-708b-8987-c219c8eed130",
+  "procedure_code": "1.010772",
+  "name": "Cấp Bằng “Tổ quốc ghi công”",
+  "domain": "Người có công",
+  "managing_agency": "Bộ Nội vụ",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:18.005469+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfa-f478-708b-8987-c219c8eed130",
+      "code": "1.010772",
+      "name": "Cấp Bằng “Tổ quốc ghi công”",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1793347374488,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfa-f478-708b-8987-c219c8eed130",
+      "raw_path": "evidence/dvc/details/019d2bfa-f478-708b-8987-c219c8eed130.json",
+      "components": [
+        {
+          "section": "a)\tĐối với trường hợp hy sinh quy định tại điểm a khoản 1 Điều 14 của Pháp lệnh, việc cấp giấy chứng nhận hy sinh phải căn cứ trên cơ sở giấy xác nhận của các cơ quan, đơn vị sau:",
+          "position": 1,
+          "name": "-\tNgười hy sinh là sĩ quan, quân nhân chuyên nghiệp, hạ sĩ quan, binh sĩ, công chức quốc phòng, công nhân và viên chức quốc phòng do thủ trưởng cấp tiểu đoàn và tương đương cấp; người hy sinh là người làm công tác cơ yếu, người làm công tác khác trong tổ chức cơ yếu và học viên cơ yếu thuộc Ban Cơ yếu Chính phủ do thủ trưởng đơn vị thuộc cơ quan, đơn vị trực thuộc Ban cấp. (Thay thế thành phần hồ sơ “Giấy xác nhận cán bộ, công chức, viên chức của các cơ quan, đơn vị” bằng dữ liệu từ CSDL quốc gia về cán bộ, công chức, viên chức khi cơ sở dữ liệu này đủ điều kiện kết nối, khai thác, chia sẻ thông tin và có dữ liệu đáp ứng yêu cầu giải quyết thủ tục hành chính.)",
+          "component_code": "G09-KQ00321090",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "a)\tĐối với trường hợp hy sinh quy định tại điểm a khoản 1 Điều 14 của Pháp lệnh, việc cấp giấy chứng nhận hy sinh phải căn cứ trên cơ sở giấy xác nhận của các cơ quan, đơn vị sau:",
+          "position": 2,
+          "name": "-\tNgười hy sinh thuộc các cơ quan trung ương do thủ trưởng cấp vụ hoặc cấp tương đương cấp. (Thay thế thành phần hồ sơ “Giấy xác nhận cán bộ, công chức, viên chức của các cơ quan, đơn vị” bằng dữ liệu từ CSDL quốc gia về cán bộ, công chức, viên chức khi cơ sở dữ liệu này đủ điều kiện kết nối, khai thác, chia sẻ thông tin và có dữ liệu đáp ứng yêu cầu giải quyết thủ tục hành chính.)",
+          "component_code": "G09-KQ00321091",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "a)\tĐối với trường hợp hy sinh quy định tại điểm a khoản 1 Điều 14 của Pháp lệnh, việc cấp giấy chứng nhận hy sinh phải căn cứ trên cơ sở giấy xác nhận của các cơ quan, đơn vị sau:",
+          "position": 3,
+          "name": "-\tNgười hy sinh là sĩ quan, hạ sĩ quan, chiến sĩ, công nhân, lao động hợp đồng không xác định thời hạn hưởng lương từ ngân sách trong công an do thủ trưởng công an cấp xã cấp (Thay thế thành phần hồ sơ “Giấy xác nhận cán bộ, công chức, viên chức của các cơ quan, đơn vị” bằng dữ liệu từ CSDL quốc gia về cán bộ, công chức, viên chức khi cơ sở dữ liệu này đủ điều kiện kết nối, khai thác, chia sẻ thông tin và có dữ liệu đáp ứng yêu cầu giải quyết thủ tục hành chính.)",
+          "component_code": "G09-KQ00321092",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "a)\tĐối với trường hợp hy sinh quy định tại điểm a khoản 1 Điều 14 của Pháp lệnh, việc cấp giấy chứng nhận hy sinh phải căn cứ trên cơ sở giấy xác nhận của các cơ quan, đơn vị sau:",
+          "position": 4,
+          "name": "-\tNgười hy sinh không thuộc quy định tại các điểm a, b, c khoản 1 Điều 17 Nghị định số 131/2021/NĐ-CP do Chủ tịch Ủy ban nhân dân cấp xã cấp (Thay thế thành phần hồ sơ “Giấy xác nhận cán bộ, công chức, viên chức của các cơ quan, đơn vị” bằng dữ liệu từ CSDL quốc gia về cán bộ, công chức, viên chức khi cơ sở dữ liệu này đủ điều kiện kết nối, khai thác, chia sẻ thông tin và có dữ liệu đáp ứng yêu cầu giải quyết thủ tục hành chính.)",
+          "component_code": "G09-KQ00321093",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "b)\tĐối với trường hợp hy sinh quy định tại điểm đ khoản 1 Điều 14 của Pháp lệnh việc cấp giấy chứng nhận hy sinh phải căn cứ trên cơ sở các giấy tờ sau:",
+          "position": 1,
+          "name": "-\tQuyết định cử đi làm nghĩa vụ quốc tế do thủ trưởng cơ quan, đơn vị có thẩm quyền cấp.",
+          "component_code": "G09-KQ00321094",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "b)\tĐối với trường hợp hy sinh quy định tại điểm đ khoản 1 Điều 14 của Pháp lệnh việc cấp giấy chứng nhận hy sinh phải căn cứ trên cơ sở các giấy tờ sau:",
+          "position": 2,
+          "name": "-\tBiên bản xảy ra sự việc do cơ quan đơn vị trực tiếp quản lý người hy sinh lập; trường hợp không có biên bản xảy ra sự việc thì phải có giấy xác nhận trường hợp hy sinh do thủ trưởng cơ quan, đơn vị quy định tại khoản 1 Điều 17 Nghị định số 131/2021/NĐ-CP cấp",
+          "component_code": "G09-KQ00321095",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "e)\tĐối với trường hợp hy sinh quy định tại điểm i khoản 1 Điều 14 của Pháp lệnh việc cấp giấy chứng nhận hy sinh phải căn cứ trên cơ sở bản kế hoạch công tác hoặc quyết định, danh sách phân công làm nhiệm vụ hoặc giấy xác nhận giao nhiệm vụ của cơ quan, đơn vị trực tiếp quản lý người hy sinh; biên bản họp cấp ủy, lãnh đạo, cơ quan đơn vị quản lý người hy sinh thống nhất việc đề nghị công nhận liệt sĩ; bản án hoặc bản kết luận điều tra vụ án hình sự của cơ quan điều tra.",
+          "position": 1,
+          "name": "Trường hợp không có bản án, bản kết luận vụ án của cơ quan điều tra thì phải kèm báo cáo kết thúc điều tra vụ việc hoặc báo cáo kết quả điều tra vụ việc của cơ quan điều tra có thẩm quyền và một trong các giấy tờ sau: Quyết định khởi tố vụ án hoặc quyết định tạm đình chỉ điều tra vụ án đối với trường hợp không xác định được đối tượng phạm tội; Quyết định truy nã bị can đối với trường hợp đối tượng phạm tội bỏ trốn hoặc không xác định được nơi đối tượng thường trú; Quyết định gia hạn điều tra; Quyết định không khởi tố vụ án, quyết định hủy bỏ quyết định khởi tố vụ án, quyết định đình chỉ điều tra vụ án đối với trường hợp người thực hiện hành vi nguy hiểm cho xã hội không có năng lực trách nhiệm hình sự hoặc chưa đến tuổi chịu trách nhiệm hình sự hoặc đã chết. Trường hợp bản án, bản kết luận vụ án, báo cáo kết thúc điều tra vụ việc hoặc báo cáo kết quả điều tra vụ việc không thể hiện rõ trường hợp hy sinh thì phải kèm theo biên bản xảy ra sự việc và báo cáo vụ việc của cơ quan, đơn vị trực tiếp quản lý người hy sinh. (Thay thế thành phần hồ sơ “Bản án hoặc bản kết luận điều tra vụ án hình sự của cơ quan điều tra” bằng dữ liệu từ CSDL bản án, quyết định của Tòa án khi cơ sở dữ liệu này đủ điều kiện kết nối, khai thác, chia sẻ thông tin và có dữ liệu đáp ứng yêu cầu giải quyết thủ tục hành chính.)",
+          "component_code": "G09-KQ00321096",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "g)\tĐối với trường hợp hy sinh quy định tại điểm k khoản 1 Điều 14 Pháp lệnh việc cấp giấy chứng nhận hy sinh phải căn cứ trên cơ sở các giấy tờ sau:",
+          "position": 1,
+          "name": "-\tBiên bản xảy ra sự việc do cơ quan, đơn vị trực tiếp quản lý người hy sinh hoặc Ủy ban nhân dân cấp xã nơi xảy ra sự việc lập; đối với việc ngăn chặn, bắt giữ người có hành vi phạm tội phải có kết luận của cơ quan điều tra cấp tỉnh trở lên.",
+          "component_code": "G09-KQ00321097",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "g)\tĐối với trường hợp hy sinh quy định tại điểm k khoản 1 Điều 14 Pháp lệnh việc cấp giấy chứng nhận hy sinh phải căn cứ trên cơ sở các giấy tờ sau:",
+          "position": 2,
+          "name": "-\tBiên bản xảy ra sự việc do cơ quan, đơn vị trực tiếp quản lý người hy sinh hoặc Ủy ban nhân dân cấp xã nơi xảy ra sự việc lập; đối với việc ngăn chặn, bắt giữ người có hành vi phạm tội phải có kết luận của cơ quan điều tra cấp tỉnh trở lên.",
+          "component_code": "G09-KQ00321098",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Đối với trường hợp hy sinh quy định tại điểm h khoản 1 Điều 14 của Pháp lệnh việc cấp giấy chứng nhận hy sinh phải căn cứ trên cơ sở các giấy tờ sau:",
+          "position": 1,
+          "name": "-\tQuyết định phân công nhiệm vụ của cơ quan có thẩm quyền",
+          "component_code": "G09-KQ003210100",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Đối với trường hợp hy sinh quy định tại điểm h khoản 1 Điều 14 của Pháp lệnh việc cấp giấy chứng nhận hy sinh phải căn cứ trên cơ sở các giấy tờ sau:",
+          "position": 2,
+          "name": "-\tBiên bản xảy ra sự việc đối với trường hợp tai nạn hoặc bản tóm tắt hồ sơ bệnh án thể hiện mắc bệnh trong thời gian công tác tại địa bàn có điều kiện đặc biệt khó khăn (Thay thế thành phần hồ sơ “Bản tóm tắt hồ sơ bệnh án” bằng dữ liệu từ Cơ sở dữ liệu về khám bệnh, chữa bệnh khi cơ sở dữ liệu này đủ điều kiện kết nối, khai thác, chia sẻ thông tin và có dữ liệu đáp ứng yêu cầu giải quyết thủ tục hành chính)",
+          "component_code": "G09-KQ003210101",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Đối với trường hợp hy sinh quy định tại điểm h khoản 1 Điều 14 của Pháp lệnh việc cấp giấy chứng nhận hy sinh phải căn cứ trên cơ sở các giấy tờ sau:",
+          "position": 3,
+          "name": "-\tBản sao được chứng thực từ một trong các giấy tờ có ghi nhận thời gian làm nhiệm vụ quốc phòng, an ninh ở địa bàn đặc biệt khó khăn như sau: Lý lịch cán bộ; lý lịch quân nhân; lý lịch đảng viên; (Thay thế thành phần hồ sơ “Lý lịch cán bộ; lý lịch đảng viên” bằng dữ liệu từ CSDL quốc gia về cán bộ, công chức, viên chức khi cơ sở dữ liệu này đủ điều kiện kết nối, khai thác, chia sẻ thông tin và có dữ liệu đáp ứng yêu cầu giải quyết thủ tục hành chính.)",
+          "component_code": "G09-KQ003210108",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Đối với trường hợp hy sinh quy định tại điểm h khoản 1 Điều 14 của Pháp lệnh việc cấp giấy chứng nhận hy sinh phải căn cứ trên cơ sở các giấy tờ sau:",
+          "position": 4,
+          "name": "-\tBản sao được chứng thực từ một trong các giấy tờ có ghi nhận thời gian làm nhiệm vụ quốc phòng, an ninh ở địa bàn đặc biệt khó khăn như sau: Hồ sơ bảo hiểm xã hội. (Thay thế thành phần hồ sơ “Hồ sơ bảo hiểm xã hội” bằng dữ liệu từ CSDL quốc gia về bảo hiểm khi cơ sở dữ liệu này đủ điều kiện kết nối, khai thác, chia sẻ thông tin và có dữ liệu đáp ứng yêu cầu giải quyết thủ tục hành chính.)",
+          "component_code": "G09-KQ003210107",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 1,
+          "name": "i)\tĐối với trường hợp mất tích theo quy định tại các điểm e, g, i, k khoản 1 Điều 14 Pháp lệnh việc cấp giấy chứng nhận hy sinh phải trên cơ sở căn cứ cấp giấy chứng nhận hy sinh quy định tại các khoản 3, 4 hoặc khoản 6, 7 Điều 17 Nghị định số 131/2021/NĐ-CP, kèm theo quyết định của tòa án tuyên mất tích theo quy định của Bộ luật Dân sự. (Thay thế thành phần hồ sơ “Quyết định của tòa án tuyên mất tích” bằng dữ liệu từ CSDL bản án, quyết định của Tòa án khi cơ sở dữ liệu này đủ điều kiện kết nối, khai thác, chia sẻ thông tin và có dữ liệu đáp ứng yêu cầu giải quyết thủ tục hành chính.)",
+          "component_code": "G09-KQ003210102",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Đối với trường hợp hy sinh hoặc mất tích trong kháng chiến chống Pháp, kháng chiến chống Mỹ, chiến tranh biên giới phía Bắc, biên giới Tây Nam và làm nghĩa vụ quốc tế tại Lào và Campuchia, truy quét Ful rô quy định tại một trong các điểm a, b, c, d, đ khoản 1 Điều 14 Pháp lệnh thì việc cấp giấy chứng nhận hy sinh thực hiện theo hướng dẫn tại Mục 12 Chương II Nghị định số 131/2021/NĐ-CP ngày 30/12/2021 của Chính phủ.",
+          "component_code": "G09-KQ003210103",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 3,
+          "name": "c)\tĐối với trường hợp hy sinh quy định tại điểm e khoản 1 Điều 14 của Pháp lệnh việc cấp giấy chứng nhận hy sinh phải trên cơ sở biên bản xảy ra sự việc do cơ quan, đơn vị trực tiếp quản lý người hy sinh lập.",
+          "component_code": "G09-KQ003210104",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 4,
+          "name": "h)\tĐối với trường hợp thương binh chết do vết thương tái phát quy định tại điểm l khoản 1 Điều 14 Pháp lệnh việc cấp giấy chứng nhận hy sinh phải căn cứ trên cơ sở bản tóm tắt hồ sơ bệnh án và biên bản kiểm thảo tử vong xác định nguyên nhân chính gây tử vong là do vết thương cũ tái phát của Bệnh viện hoặc Trung tâm Y tế khu vực (bao gồm cả bệnh viện quân đội, công an). (Thay thế thành phần hồ sơ “Bản tóm tắt hồ sơ bệnh án” bằng dữ liệu từ Cơ sở dữ liệu về khám bệnh, chữa bệnh khi cơ sở dữ liệu này đủ điều kiện kết nối, khai thác, chia sẻ thông tin và có dữ liệu đáp ứng yêu cầu giải quyết thủ tục hành chính.)",
+          "component_code": "G09-KQ003210105",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 5,
+          "name": "d) Đối với trường hợp hy sinh quy định tại điểm g khoản 1 Điều 14 của Pháp lệnh việc cấp giấy chứng nhận hy sinh phải trên cơ sở văn bản giao làm nhiệm vụ huấn luyện chiến đấu, diễn tập hoặc làm nhiệm vụ quốc phòng, an ninh có tính chất nguy hiểm kèm biên bản xảy ra sự việc do cơ quan, đơn vị trực tiếp quản lý người hy sinh lập.",
+          "component_code": "G09-KQ003210106",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c4d-7725-9d9c-20dc408f5f22",
+          "name": "Quyết định cấp Bằng “Tổ quốc ghi công” và Bằng “Tổ quốc ghi công”.",
+          "code": "KQ.G09.000411"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7e-72d1-afea-1c153ca6400f",
+          "name": "Quy định về phân định thẩm quyền của chính quyền địa phương 02 cấp trong lĩnh vực quản lý nhà nước của Bộ Nội vụ",
+          "code": "129/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7f-719e-b474-516a799e2145",
+          "name": "QUY ĐỊNH CHI TIẾT VÀ BIỆN PHÁP THI HÀNH PHÁP LỆNH ƯU ĐÃI NGƯỜI CÓ CÔNG VỚI CÁCH MẠNG",
+          "code": "Nghị định số 131/2021/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d85-73da-8eba-20bc75de794b",
+          "name": "ƯU ĐÃI NGƯỜI CÓ CÔNG VỚI CÁCH MẠNG",
+          "code": "Pháp lệnh số: 02/2020/UBTVQH14"
+        },
+        {
+          "id": "019d2bb3-5d7f-719e-b474-93996f3f00db",
+          "name": "Nghị định số 25/2025/NĐ-CP ngày 21 tháng 02 năm 2025 của Chính phủ quy định chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của Bộ Nội vụ",
+          "code": "Nghị định số 25/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b671-f40a5ee32475",
+          "name": "Nghị quyết số 190/2025/QH15 của Quốc hội: Quy định về xử lý một số vấn đề liên quan đến sắp xếp tổ chức bộ máy nhà nước",
+          "code": "190/2025/NQ-QH15"
+        }
+      ]
+    }
+  ]
+}

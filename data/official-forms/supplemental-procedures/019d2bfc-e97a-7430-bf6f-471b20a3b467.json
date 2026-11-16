@@ -1,0 +1,1189 @@
+{
+  "id": "dvc-019d2bfc-e97a-7430-bf6f-471b20a3b467",
+  "procedure_code": "2.002225",
+  "name": "Đăng ký thuế lần đầu đối với người nộp thuế là tổ chức (trừ trường hợp đăng ký thuế theo cơ chế một cửa liên thông qua cơ quan đăng ký kinh doanh)",
+  "domain": "Thuế",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.906599+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfc-e97a-7430-bf6f-471b20a3b467",
+      "code": "2.002225",
+      "name": "Đăng ký thuế lần đầu đối với người nộp thuế là tổ chức (trừ trường hợp đăng ký thuế theo cơ chế một cửa liên thông qua cơ quan đăng ký kinh doanh)",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1784861594376,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-e97a-7430-bf6f-471b20a3b467",
+      "raw_path": "evidence/dvc/details/019d2bfc-e97a-7430-bf6f-471b20a3b467.json",
+      "components": [
+        {
+          "section": "(i) Người nộp thuế là tổ chức kinh tế, tổ chức khác và đơn vị phụ thuộc (trừ trường hợp đăng ký thuế theo cơ chế một cửa liên thông qua cơ quan đăng ký kinh doanh): Tổ chức kinh tế (trừ tổ hợp tác) quy định tại điểm a, b khoản 2 Điều 4 Thông tư số 90/2026/TT-BTC - Đối với tổ chức kinh tế là đơn vị độc lập, đơn vị chủ quản:",
+          "position": 1,
+          "name": "Tờ khai đăng ký thuế mẫu số 01-ĐKT ban hành kèm theo Thông tư số 90/2026/TT-BTC",
+          "component_code": "G12.0001266",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019f8d09-d6ad-772f-8c28-f2926a6eccb1",
+              "fileName": "01 ĐKT (TT 90).docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8d09-d6ad-772f-8c28-f2926a6eccb1/01 ĐKT (TT 90).docx"
+            }
+          ]
+        },
+        {
+          "section": "(i) Người nộp thuế là tổ chức kinh tế, tổ chức khác và đơn vị phụ thuộc (trừ trường hợp đăng ký thuế theo cơ chế một cửa liên thông qua cơ quan đăng ký kinh doanh): Tổ chức kinh tế (trừ tổ hợp tác) quy định tại điểm a, b khoản 2 Điều 4 Thông tư số 90/2026/TT-BTC - Đối với tổ chức kinh tế là đơn vị độc lập, đơn vị chủ quản:",
+          "position": 2,
+          "name": "Bảng kê các công ty con, công ty thành viên mẫu số BK01-ĐKT ban hành kèm theo Thông tư số 90/2026/TT-BTC (nếu có)",
+          "component_code": "G12.0001269",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019f8d0b-8a50-7078-a5cf-1744bf134443",
+              "fileName": "BK01 ĐKT TT90.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8d0b-8a50-7078-a5cf-1744bf134443/BK01 ĐKT TT90.docx"
+            }
+          ]
+        },
+        {
+          "section": "(i) Người nộp thuế là tổ chức kinh tế, tổ chức khác và đơn vị phụ thuộc (trừ trường hợp đăng ký thuế theo cơ chế một cửa liên thông qua cơ quan đăng ký kinh doanh): Tổ chức kinh tế (trừ tổ hợp tác) quy định tại điểm a, b khoản 2 Điều 4 Thông tư số 90/2026/TT-BTC - Đối với tổ chức kinh tế là đơn vị độc lập, đơn vị chủ quản:",
+          "position": 3,
+          "name": "Bảng kê các đơn vị phụ thuộc mẫu số BK02-ĐKT ban hành kèm theo Thông tư số 90/2026/TT-BTC (nếu có)",
+          "component_code": "G12.0001270",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019f8d0c-b0ec-734b-8d9f-543aa9885b58",
+              "fileName": "BK02 ĐKT TT90.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8d0c-b0ec-734b-8d9f-543aa9885b58/BK02 ĐKT TT90.docx"
+            }
+          ]
+        },
+        {
+          "section": "(i) Người nộp thuế là tổ chức kinh tế, tổ chức khác và đơn vị phụ thuộc (trừ trường hợp đăng ký thuế theo cơ chế một cửa liên thông qua cơ quan đăng ký kinh doanh): Tổ chức kinh tế (trừ tổ hợp tác) quy định tại điểm a, b khoản 2 Điều 4 Thông tư số 90/2026/TT-BTC - Đối với tổ chức kinh tế là đơn vị độc lập, đơn vị chủ quản:",
+          "position": 4,
+          "name": "Bảng kê địa điểm kinh doanh mẫu số BK03-ĐKT ban hành kèm theo Thông tư số 90/2026/TT-BTC (nếu có)",
+          "component_code": "G12.0001271",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019f8d0d-d391-7679-82f0-8d97df8deddb",
+              "fileName": "BK03 ĐKT TT90.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8d0d-d391-7679-82f0-8d97df8deddb/BK03 ĐKT TT90.docx"
+            }
+          ]
+        },
+        {
+          "section": "(i) Người nộp thuế là tổ chức kinh tế, tổ chức khác và đơn vị phụ thuộc (trừ trường hợp đăng ký thuế theo cơ chế một cửa liên thông qua cơ quan đăng ký kinh doanh): Tổ chức kinh tế (trừ tổ hợp tác) quy định tại điểm a, b khoản 2 Điều 4 Thông tư số 90/2026/TT-BTC - Đối với tổ chức kinh tế là đơn vị độc lập, đơn vị chủ quản:",
+          "position": 5,
+          "name": "Bảng kê các nhà thầu nước ngoài, nhà thầu phụ nước ngoài mẫu số BK04-ĐKT ban hành kèm theo Thông tư số 90/2026/TT-BTC (nếu có)",
+          "component_code": "G12.0001272",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019f8d0e-792a-762f-a23b-a6608dca5313",
+              "fileName": "BK04 ĐKT TT 90.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8d0e-792a-762f-a23b-a6608dca5313/BK04 ĐKT TT 90.docx"
+            }
+          ]
+        },
+        {
+          "section": "(i) Người nộp thuế là tổ chức kinh tế, tổ chức khác và đơn vị phụ thuộc (trừ trường hợp đăng ký thuế theo cơ chế một cửa liên thông qua cơ quan đăng ký kinh doanh): Tổ chức kinh tế (trừ tổ hợp tác) quy định tại điểm a, b khoản 2 Điều 4 Thông tư số 90/2026/TT-BTC - Đối với tổ chức kinh tế là đơn vị độc lập, đơn vị chủ quản:",
+          "position": 6,
+          "name": "Bảng kê góp vốn của tổ chức, cá nhân mẫu số BK06-ĐKT ban hành kèm theo Thông tư số 90/2026/TT-BTC (nếu có)",
+          "component_code": "G12.0001273",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019f8d0e-e8fc-7499-936f-9d907edc17de",
+              "fileName": "BK 06 ĐKT TT 90.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8d0e-e8fc-7499-936f-9d907edc17de/BK 06 ĐKT TT 90.docx"
+            }
+          ]
+        },
+        {
+          "section": "(i) Người nộp thuế là tổ chức kinh tế, tổ chức khác và đơn vị phụ thuộc (trừ trường hợp đăng ký thuế theo cơ chế một cửa liên thông qua cơ quan đăng ký kinh doanh): Tổ chức kinh tế (trừ tổ hợp tác) quy định tại điểm a, b khoản 2 Điều 4 Thông tư số 90/2026/TT-BTC - Đối với tổ chức kinh tế là đơn vị độc lập, đơn vị chủ quản:",
+          "position": 7,
+          "name": "Bảng kê chủ sở hữu pháp lý, chủ sở hữu hưởng lợi của công ty nước ngoài có chi nhánh, văn phòng đại diện tại Việt Nam mẫu số BK07-ĐKT ban hành kèm theo Thông tư số 90/2026/TT-BTC (nếu có)",
+          "component_code": "G12.0001274",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019f8d0f-a0fa-76da-bce9-7a39509be66b",
+              "fileName": "BK 07 ĐKT TT 90.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8d0f-a0fa-76da-bce9-7a39509be66b/BK 07 ĐKT TT 90.docx"
+            }
+          ]
+        },
+        {
+          "section": "(i) Người nộp thuế là tổ chức kinh tế, tổ chức khác và đơn vị phụ thuộc (trừ trường hợp đăng ký thuế theo cơ chế một cửa liên thông qua cơ quan đăng ký kinh doanh): Tổ chức kinh tế (trừ tổ hợp tác) quy định tại điểm a, b khoản 2 Điều 4 Thông tư số 90/2026/TT-BTC - Đối với tổ chức kinh tế là đơn vị độc lập, đơn vị chủ quản:",
+          "position": 8,
+          "name": "Bản sao Giấy phép thành lập và hoạt động, hoặc Quyết định thành lập, hoặc văn bản tương đương do cơ quan có thẩm quyền cấp, hoặc Giấy chứng nhận đăng ký kinh doanh theo quy định của pháp luật của nước có chung biên giới (đối với tổ chức của nước có chung biên giới đất liền với Việt Nam thực hiện hoạt động mua, bán, trao đổi hàng hóa tại chợ biên giới, chợ cửa khẩu, chợ trong khu kinh tế cửa khẩu của Việt Nam).",
+          "component_code": "G12.0001275",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "(i) Người nộp thuế là tổ chức kinh tế, tổ chức khác và đơn vị phụ thuộc (trừ trường hợp đăng ký thuế theo cơ chế một cửa liên thông qua cơ quan đăng ký kinh doanh): Tổ chức kinh tế (trừ tổ hợp tác) quy định tại điểm a, b khoản 2 Điều 4 Thông tư số 90/2026/TT-BTC - Đối với tổ chức kinh tế là đơn vị độc lập, đơn vị chủ quản:",
+          "position": 9,
+          "name": "Trường hợp quyết định thành lập quy định tại khoản 2 Điều 7 Thông tư 90/2026/TT-BTC thuộc danh mục bí mật nhà nước theo quy định của pháp luật thì người nộp thuế không phải nộp bản sao quyết định thành lập khi đăng ký thuế nhưng phải có văn bản cung cấp thông tin về việc tài liệu thuộc danh mục bí mật nhà nước và chịu trách nhiệm về tính chính xác của thông tin kê khai trên hồ sơ đăng ký thuế.",
+          "component_code": "G12.0001276",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "(i) Người nộp thuế là tổ chức kinh tế, tổ chức khác và đơn vị phụ thuộc (trừ trường hợp đăng ký thuế theo cơ chế một cửa liên thông qua cơ quan đăng ký kinh doanh): Tổ chức kinh tế (trừ tổ hợp tác) quy định tại điểm a, b khoản 2 Điều 4 Thông tư số 90/2026/TT-BTC - Đối với tổ chức kinh tế là đơn vị độc lập, đơn vị chủ quản:",
+          "position": 10,
+          "name": "Người nộp thuế nộp hồ sơ đến cơ quan thuế bằng phương thức điện tử thì bản sao các văn bản, giấy tờ quy định trong hồ sơ đăng ký thuế là bản sao điện tử.",
+          "component_code": "G12.0001277",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "(i) Người nộp thuế là tổ chức kinh tế, tổ chức khác và đơn vị phụ thuộc (trừ trường hợp đăng ký thuế theo cơ chế một cửa liên thông qua cơ quan đăng ký kinh doanh): Tổ chức kinh tế (trừ tổ hợp tác) quy định tại điểm a, b khoản 2 Điều 4 Thông tư số 90/2026/TT-BTC - Đối với tổ chức kinh tế là đơn vị độc lập, đơn vị chủ quản:",
+          "position": 11,
+          "name": "Từ ngày 01/7/2026 đến trước thời điểm theo lộ trình của cơ quan thuế quy định tại khoản 2 Điều 36 Thông tư số 90/2026/TT-BTC",
+          "component_code": "G12.0001305",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019f8d24-c0f2-716b-8bd4-c9d918a9de92",
+              "fileName": "06 ĐK TCT TT 86.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8d24-c0f2-716b-8bd4-c9d918a9de92/06 ĐK TCT TT 86.docx"
+            },
+            {
+              "id": "019f8d24-c1f2-779e-94aa-128a0b574884",
+              "fileName": "04 ĐK TCT TT 86.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8d24-c1f2-779e-94aa-128a0b574884/04 ĐK TCT TT 86.docx"
+            },
+            {
+              "id": "019f8d24-c339-74ba-8cb5-875df41a95c7",
+              "fileName": "02 ĐK TCT TT 86.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8d24-c339-74ba-8cb5-875df41a95c7/02 ĐK TCT TT 86.docx"
+            },
+            {
+              "id": "019f8d24-c43b-71ca-a6db-4f6ba6eda519",
+              "fileName": "BK 06 ĐKT TCT TT86.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8d24-c43b-71ca-a6db-4f6ba6eda519/BK 06 ĐKT TCT TT86.docx"
+            },
+            {
+              "id": "019f8d24-c53b-722a-ab97-caeaa11bc596",
+              "fileName": "BK04 ĐK TCT TT 86.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8d24-c53b-722a-ab97-caeaa11bc596/BK04 ĐK TCT TT 86.docx"
+            },
+            {
+              "id": "019f8d24-c627-73e8-aa5f-a012844c7113",
+              "fileName": "BK02 ĐKTCT TT 86.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8d24-c627-73e8-aa5f-a012844c7113/BK02 ĐKTCT TT 86.docx"
+            },
+            {
+              "id": "019f8d24-c76a-7268-8c9a-531ea4b45b90",
+              "fileName": "BK02 ĐK TCT TT 86.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8d24-c76a-7268-8c9a-531ea4b45b90/BK02 ĐK TCT TT 86.docx"
+            },
+            {
+              "id": "019f8d24-c867-7488-8314-f7bfe5a590ca",
+              "fileName": "BK01 ĐK TCT TT 86.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8d24-c867-7488-8314-f7bfe5a590ca/BK01 ĐK TCT TT 86.docx"
+            },
+            {
+              "id": "019f8d24-c9db-76aa-8c48-a52401154030",
+              "fileName": "01 ĐKT TCT TT 86.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8d24-c9db-76aa-8c48-a52401154030/01 ĐKT TCT TT 86.docx"
+            }
+          ]
+        },
+        {
+          "section": "(i) Người nộp thuế là tổ chức kinh tế, tổ chức khác và đơn vị phụ thuộc (trừ trường hợp đăng ký thuế theo cơ chế một cửa liên thông qua cơ quan đăng ký kinh doanh): Tổ chức kinh tế (trừ tổ hợp tác) quy định tại điểm a, b khoản 2 Điều 4 Thông tư số 90/2026/TT-BTC - Đối với đơn vị phụ thuộc của tổ chức kinh tế:",
+          "position": 1,
+          "name": "Tờ khai đăng ký thuế mẫu số 02-ĐKT ban hành kèm theo Thông tư số 90/2026/TT-BTC; trường hợp đơn vị phụ thuộc được cấp mã số thuế 10 chữ số theo quy định tại điểm c khoản 2 Điều 5 Thông tư số 90/2026/TT-BTC là Tờ khai đăng ký thuế mẫu số 01-ĐKT ban hành kèm theo Thông tư số 90/2026/TT-BTC",
+          "component_code": "G12.0001278",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019f8d14-1811-72cb-bec6-3ddedec047c9",
+              "fileName": "02 ĐKT TT 90.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8d14-1811-72cb-bec6-3ddedec047c9/02 ĐKT TT 90.docx"
+            },
+            {
+              "id": "019f8d14-30b3-750f-8886-23bb6a332094",
+              "fileName": "01 ĐKT (TT 90).docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8d14-30b3-750f-8886-23bb6a332094/01 ĐKT (TT 90).docx"
+            }
+          ]
+        },
+        {
+          "section": "(i) Người nộp thuế là tổ chức kinh tế, tổ chức khác và đơn vị phụ thuộc (trừ trường hợp đăng ký thuế theo cơ chế một cửa liên thông qua cơ quan đăng ký kinh doanh): Tổ chức kinh tế (trừ tổ hợp tác) quy định tại điểm a, b khoản 2 Điều 4 Thông tư số 90/2026/TT-BTC - Đối với đơn vị phụ thuộc của tổ chức kinh tế:",
+          "position": 2,
+          "name": "Bảng kê địa điểm kinh doanh mẫu số BK03-ĐKT ban hành kèm theo Thông tư số 90/2026/TT-BTC (nếu có)",
+          "component_code": "G12.0001271",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019f8d0d-d391-7679-82f0-8d97df8deddb",
+              "fileName": "BK03 ĐKT TT90.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8d0d-d391-7679-82f0-8d97df8deddb/BK03 ĐKT TT90.docx"
+            }
+          ]
+        },
+        {
+          "section": "(i) Người nộp thuế là tổ chức kinh tế, tổ chức khác và đơn vị phụ thuộc (trừ trường hợp đăng ký thuế theo cơ chế một cửa liên thông qua cơ quan đăng ký kinh doanh): Tổ chức kinh tế (trừ tổ hợp tác) quy định tại điểm a, b khoản 2 Điều 4 Thông tư số 90/2026/TT-BTC - Đối với đơn vị phụ thuộc của tổ chức kinh tế:",
+          "position": 3,
+          "name": "Bảng kê các nhà thầu nước ngoài, nhà thầu phụ nước ngoài mẫu số BK04-ĐKT ban hành kèm theo Thông tư số 90/2026/TT-BTC (nếu có)",
+          "component_code": "G12.0001272",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019f8d0e-792a-762f-a23b-a6608dca5313",
+              "fileName": "BK04 ĐKT TT 90.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8d0e-792a-762f-a23b-a6608dca5313/BK04 ĐKT TT 90.docx"
+            }
+          ]
+        },
+        {
+          "section": "(i) Người nộp thuế là tổ chức kinh tế, tổ chức khác và đơn vị phụ thuộc (trừ trường hợp đăng ký thuế theo cơ chế một cửa liên thông qua cơ quan đăng ký kinh doanh): Tổ chức kinh tế (trừ tổ hợp tác) quy định tại điểm a, b khoản 2 Điều 4 Thông tư số 90/2026/TT-BTC - Đối với đơn vị phụ thuộc của tổ chức kinh tế:",
+          "position": 4,
+          "name": "Bản sao Giấy chứng nhận đăng ký hoạt động đơn vị phụ thuộc, hoặc Quyết định thành lập, hoặc văn bản tương đương do cơ quan có thẩm quyền cấp, hoặc Giấy chứng nhận đăng ký kinh doanh theo quy định của pháp luật của nước có chung biên giới (đối với tổ chức của nước có chung biên giới đất liền với Việt Nam thực hiện hoạt động mua, bán, trao đổi hàng hóa tại chợ biên giới, chợ cửa khẩu, chợ trong khu kinh tế cửa khẩu của Việt Nam)",
+          "component_code": "G12.0001279",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "(i) Người nộp thuế là tổ chức kinh tế, tổ chức khác và đơn vị phụ thuộc (trừ trường hợp đăng ký thuế theo cơ chế một cửa liên thông qua cơ quan đăng ký kinh doanh): Tổ chức kinh tế (trừ tổ hợp tác) quy định tại điểm a, b khoản 2 Điều 4 Thông tư số 90/2026/TT-BTC - Đối với đơn vị phụ thuộc của tổ chức kinh tế:",
+          "position": 5,
+          "name": "Trường hợp quyết định thành lập quy định tại khoản 2 Điều 7 Thông tư 90/2026/TT-BTC thuộc danh mục bí mật nhà nước theo quy định của pháp luật thì người nộp thuế không phải nộp bản sao quyết định thành lập khi đăng ký thuế nhưng phải có văn bản cung cấp thông tin về việc tài liệu thuộc danh mục bí mật nhà nước và chịu trách nhiệm về tính chính xác của thông tin kê khai trên hồ sơ đăng ký thuế",
+          "component_code": "G12.0001282",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "(i) Người nộp thuế là tổ chức kinh tế, tổ chức khác và đơn vị phụ thuộc (trừ trường hợp đăng ký thuế theo cơ chế một cửa liên thông qua cơ quan đăng ký kinh doanh): Tổ chức kinh tế (trừ tổ hợp tác) quy định tại điểm a, b khoản 2 Điều 4 Thông tư số 90/2026/TT-BTC - Đối với đơn vị phụ thuộc của tổ chức kinh tế:",
+          "position": 6,
+          "name": "Người nộp thuế nộp hồ sơ đến cơ quan thuế bằng phương thức điện tử thì bản sao các văn bản, giấy tờ quy định trong hồ sơ đăng ký thuế là bản sao điện tử",
+          "component_code": "G12.0001283",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "(i) Người nộp thuế là tổ chức kinh tế, tổ chức khác và đơn vị phụ thuộc (trừ trường hợp đăng ký thuế theo cơ chế một cửa liên thông qua cơ quan đăng ký kinh doanh): Tổ chức kinh tế (trừ tổ hợp tác) quy định tại điểm a, b khoản 2 Điều 4 Thông tư số 90/2026/TT-BTC - Đối với đơn vị phụ thuộc của tổ chức kinh tế:",
+          "position": 7,
+          "name": "Từ ngày 01/7/2026 đến trước thời điểm theo lộ trình của cơ quan thuế quy định tại khoản 2 Điều 36 Thông tư số 90/2026/TT-BTC",
+          "component_code": "G12.0000136",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019f8d25-ab8e-75bb-84a4-eca2dbefd17a",
+              "fileName": "06 ĐK TCT TT 86.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8d25-ab8e-75bb-84a4-eca2dbefd17a/06 ĐK TCT TT 86.docx"
+            },
+            {
+              "id": "019f8d25-ac81-750f-93a3-96011355f1ff",
+              "fileName": "04 ĐK TCT TT 86.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8d25-ac81-750f-93a3-96011355f1ff/04 ĐK TCT TT 86.docx"
+            },
+            {
+              "id": "019f8d25-ad8f-736a-9a72-1c70e6a3edb0",
+              "fileName": "02 ĐK TCT TT 86.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8d25-ad8f-736a-9a72-1c70e6a3edb0/02 ĐK TCT TT 86.docx"
+            },
+            {
+              "id": "019f8d25-ae97-7370-b878-0362cf8a1256",
+              "fileName": "BK 06 ĐKT TCT TT86.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8d25-ae97-7370-b878-0362cf8a1256/BK 06 ĐKT TCT TT86.docx"
+            },
+            {
+              "id": "019f8d25-af8a-73e8-9ed7-5c8d826b7f94",
+              "fileName": "BK04 ĐK TCT TT 86.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8d25-af8a-73e8-9ed7-5c8d826b7f94/BK04 ĐK TCT TT 86.docx"
+            },
+            {
+              "id": "019f8d25-b078-70eb-953f-8c933b1c00b6",
+              "fileName": "BK02 ĐKTCT TT 86.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8d25-b078-70eb-953f-8c933b1c00b6/BK02 ĐKTCT TT 86.docx"
+            },
+            {
+              "id": "019f8d25-b18d-71a9-a549-fcf2500c0194",
+              "fileName": "BK02 ĐK TCT TT 86.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8d25-b18d-71a9-a549-fcf2500c0194/BK02 ĐK TCT TT 86.docx"
+            },
+            {
+              "id": "019f8d25-b2b7-7328-9bad-e98d7ace80b7",
+              "fileName": "BK01 ĐK TCT TT 86.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8d25-b2b7-7328-9bad-e98d7ace80b7/BK01 ĐK TCT TT 86.docx"
+            },
+            {
+              "id": "019f8d25-b40f-72d9-8e32-6ebfb8071433",
+              "fileName": "01 ĐKT TCT TT 86.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8d25-b40f-72d9-8e32-6ebfb8071433/01 ĐKT TCT TT 86.docx"
+            }
+          ]
+        },
+        {
+          "section": "(i) Người nộp thuế là tổ chức kinh tế, tổ chức khác và đơn vị phụ thuộc (trừ trường hợp đăng ký thuế theo cơ chế một cửa liên thông qua cơ quan đăng ký kinh doanh): Tổ hợp tác, tổ chức khác và các đơn vị phụ thuộc quy định tại điểm b, c, p khoản 2 Điều 4 Thông tư số 90/2026/TT-BTC - Hồ sơ đăng ký thuế của tổ chức là đơn vị độc lập, đơn vị chủ quản:",
+          "position": 1,
+          "name": "Tờ khai đăng ký thuế mẫu số 01-ĐKT ban hành kèm theo Thông tư số 90/2026/TT-BTC",
+          "component_code": "G12.0001266",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019f8d09-d6ad-772f-8c28-f2926a6eccb1",
+              "fileName": "01 ĐKT (TT 90).docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8d09-d6ad-772f-8c28-f2926a6eccb1/01 ĐKT (TT 90).docx"
+            }
+          ]
+        },
+        {
+          "section": "(i) Người nộp thuế là tổ chức kinh tế, tổ chức khác và đơn vị phụ thuộc (trừ trường hợp đăng ký thuế theo cơ chế một cửa liên thông qua cơ quan đăng ký kinh doanh): Tổ hợp tác, tổ chức khác và các đơn vị phụ thuộc quy định tại điểm b, c, p khoản 2 Điều 4 Thông tư số 90/2026/TT-BTC - Hồ sơ đăng ký thuế của tổ chức là đơn vị độc lập, đơn vị chủ quản:",
+          "position": 2,
+          "name": "Bảng kê các công ty con, công ty thành viên mẫu số BK01-ĐKT ban hành kèm theo Thông tư số 90/2026/TT-BTC (nếu có)",
+          "component_code": "G12.0001269",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019f8d0b-8a50-7078-a5cf-1744bf134443",
+              "fileName": "BK01 ĐKT TT90.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8d0b-8a50-7078-a5cf-1744bf134443/BK01 ĐKT TT90.docx"
+            }
+          ]
+        },
+        {
+          "section": "(i) Người nộp thuế là tổ chức kinh tế, tổ chức khác và đơn vị phụ thuộc (trừ trường hợp đăng ký thuế theo cơ chế một cửa liên thông qua cơ quan đăng ký kinh doanh): Tổ hợp tác, tổ chức khác và các đơn vị phụ thuộc quy định tại điểm b, c, p khoản 2 Điều 4 Thông tư số 90/2026/TT-BTC - Hồ sơ đăng ký thuế của tổ chức là đơn vị độc lập, đơn vị chủ quản:",
+          "position": 3,
+          "name": "Bảng kê các đơn vị phụ thuộc mẫu số BK02-ĐKT ban hành kèm theo Thông tư số 90/2026/TT-BTC (nếu có)",
+          "component_code": "G12.0001270",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019f8d0c-b0ec-734b-8d9f-543aa9885b58",
+              "fileName": "BK02 ĐKT TT90.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8d0c-b0ec-734b-8d9f-543aa9885b58/BK02 ĐKT TT90.docx"
+            }
+          ]
+        },
+        {
+          "section": "(i) Người nộp thuế là tổ chức kinh tế, tổ chức khác và đơn vị phụ thuộc (trừ trường hợp đăng ký thuế theo cơ chế một cửa liên thông qua cơ quan đăng ký kinh doanh): Tổ hợp tác, tổ chức khác và các đơn vị phụ thuộc quy định tại điểm b, c, p khoản 2 Điều 4 Thông tư số 90/2026/TT-BTC - Hồ sơ đăng ký thuế của tổ chức là đơn vị độc lập, đơn vị chủ quản:",
+          "position": 4,
+          "name": "Bảng kê địa điểm kinh doanh mẫu số BK03-ĐKT ban hành kèm theo Thông tư số 90/2026/TT-BTC (nếu có)",
+          "component_code": "G12.0001271",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019f8d0d-d391-7679-82f0-8d97df8deddb",
+              "fileName": "BK03 ĐKT TT90.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8d0d-d391-7679-82f0-8d97df8deddb/BK03 ĐKT TT90.docx"
+            }
+          ]
+        },
+        {
+          "section": "(i) Người nộp thuế là tổ chức kinh tế, tổ chức khác và đơn vị phụ thuộc (trừ trường hợp đăng ký thuế theo cơ chế một cửa liên thông qua cơ quan đăng ký kinh doanh): Tổ hợp tác, tổ chức khác và các đơn vị phụ thuộc quy định tại điểm b, c, p khoản 2 Điều 4 Thông tư số 90/2026/TT-BTC - Hồ sơ đăng ký thuế của tổ chức là đơn vị độc lập, đơn vị chủ quản:",
+          "position": 5,
+          "name": "Bảng kê các nhà thầu nước ngoài, nhà thầu phụ nước ngoài mẫu số BK04-ĐKT ban hành kèm theo Thông tư số 90/2026/TT-BTC (nếu có)",
+          "component_code": "G12.0001272",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019f8d0e-792a-762f-a23b-a6608dca5313",
+              "fileName": "BK04 ĐKT TT 90.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8d0e-792a-762f-a23b-a6608dca5313/BK04 ĐKT TT 90.docx"
+            }
+          ]
+        },
+        {
+          "section": "(i) Người nộp thuế là tổ chức kinh tế, tổ chức khác và đơn vị phụ thuộc (trừ trường hợp đăng ký thuế theo cơ chế một cửa liên thông qua cơ quan đăng ký kinh doanh): Tổ hợp tác, tổ chức khác và các đơn vị phụ thuộc quy định tại điểm b, c, p khoản 2 Điều 4 Thông tư số 90/2026/TT-BTC - Hồ sơ đăng ký thuế của tổ chức là đơn vị độc lập, đơn vị chủ quản:",
+          "position": 6,
+          "name": "Bản sao Quyết định thành lập, hoặc văn bản tương đương do cơ quan có thẩm quyền cấp",
+          "component_code": "G12.0001298",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "(i) Người nộp thuế là tổ chức kinh tế, tổ chức khác và đơn vị phụ thuộc (trừ trường hợp đăng ký thuế theo cơ chế một cửa liên thông qua cơ quan đăng ký kinh doanh): Tổ hợp tác, tổ chức khác và các đơn vị phụ thuộc quy định tại điểm b, c, p khoản 2 Điều 4 Thông tư số 90/2026/TT-BTC - Hồ sơ đăng ký thuế của tổ chức là đơn vị độc lập, đơn vị chủ quản:",
+          "position": 7,
+          "name": "Trường hợp quyết định thành lập quy định tại khoản 2 Điều 7 Thông tư 90/2026/TT-BTC thuộc danh mục bí mật nhà nước theo quy định của pháp luật thì người nộp thuế không phải nộp bản sao quyết định thành lập khi đăng ký thuế nhưng phải có văn bản cung cấp thông tin về việc tài liệu thuộc danh mục bí mật nhà nước và chịu trách nhiệm về tính chính xác của thông tin kê khai trên hồ sơ đăng ký thuế",
+          "component_code": "G12.0001299",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "(i) Người nộp thuế là tổ chức kinh tế, tổ chức khác và đơn vị phụ thuộc (trừ trường hợp đăng ký thuế theo cơ chế một cửa liên thông qua cơ quan đăng ký kinh doanh): Tổ hợp tác, tổ chức khác và các đơn vị phụ thuộc quy định tại điểm b, c, p khoản 2 Điều 4 Thông tư số 90/2026/TT-BTC - Hồ sơ đăng ký thuế của tổ chức là đơn vị độc lập, đơn vị chủ quản:",
+          "position": 8,
+          "name": "Người nộp thuế nộp hồ sơ đến cơ quan thuế bằng phương thức điện tử thì bản sao các văn bản, giấy tờ quy định trong hồ sơ đăng ký thuế là bản sao điện tử.",
+          "component_code": "G12.0001300",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "(i) Người nộp thuế là tổ chức kinh tế, tổ chức khác và đơn vị phụ thuộc (trừ trường hợp đăng ký thuế theo cơ chế một cửa liên thông qua cơ quan đăng ký kinh doanh): Tổ hợp tác, tổ chức khác và các đơn vị phụ thuộc quy định tại điểm b, c, p khoản 2 Điều 4 Thông tư số 90/2026/TT-BTC - Hồ sơ đăng ký thuế của tổ chức là đơn vị độc lập, đơn vị chủ quản:",
+          "position": 9,
+          "name": "Từ ngày 01/7/2026 đến trước thời điểm theo lộ trình của cơ quan thuế quy định tại khoản 2 Điều 36 Thông tư số 90/2026/TT-BTC",
+          "component_code": "G12.0001306",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019f8d26-7ccb-71ad-b94a-54503dbed444",
+              "fileName": "06 ĐK TCT TT 86.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8d26-7ccb-71ad-b94a-54503dbed444/06 ĐK TCT TT 86.docx"
+            },
+            {
+              "id": "019f8d26-7dde-768c-a58c-7bc3cfe4abf6",
+              "fileName": "04 ĐK TCT TT 86.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8d26-7dde-768c-a58c-7bc3cfe4abf6/04 ĐK TCT TT 86.docx"
+            },
+            {
+              "id": "019f8d26-7f0d-7797-95c8-0c8a7a937fd3",
+              "fileName": "02 ĐK TCT TT 86.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8d26-7f0d-7797-95c8-0c8a7a937fd3/02 ĐK TCT TT 86.docx"
+            },
+            {
+              "id": "019f8d26-8008-724e-83f2-05d41cd0196e",
+              "fileName": "BK 06 ĐKT TCT TT86.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8d26-8008-724e-83f2-05d41cd0196e/BK 06 ĐKT TCT TT86.docx"
+            },
+            {
+              "id": "019f8d26-8116-7486-b674-b02950ce9cfe",
+              "fileName": "BK04 ĐK TCT TT 86.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8d26-8116-7486-b674-b02950ce9cfe/BK04 ĐK TCT TT 86.docx"
+            },
+            {
+              "id": "019f8d26-822b-7740-932c-5441f315cdd8",
+              "fileName": "BK02 ĐKTCT TT 86.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8d26-822b-7740-932c-5441f315cdd8/BK02 ĐKTCT TT 86.docx"
+            },
+            {
+              "id": "019f8d26-8367-77a3-b7b2-a3256be6d8d5",
+              "fileName": "BK02 ĐK TCT TT 86.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8d26-8367-77a3-b7b2-a3256be6d8d5/BK02 ĐK TCT TT 86.docx"
+            },
+            {
+              "id": "019f8d26-8469-75ac-a8a4-e794e17fe613",
+              "fileName": "BK01 ĐK TCT TT 86.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8d26-8469-75ac-a8a4-e794e17fe613/BK01 ĐK TCT TT 86.docx"
+            },
+            {
+              "id": "019f8d26-85d2-717d-8fe7-4841d1654b70",
+              "fileName": "01 ĐKT TCT TT 86.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8d26-85d2-717d-8fe7-4841d1654b70/01 ĐKT TCT TT 86.docx"
+            }
+          ]
+        },
+        {
+          "section": "(i) Người nộp thuế là tổ chức kinh tế, tổ chức khác và đơn vị phụ thuộc (trừ trường hợp đăng ký thuế theo cơ chế một cửa liên thông qua cơ quan đăng ký kinh doanh): Tổ hợp tác, tổ chức khác và các đơn vị phụ thuộc quy định tại điểm b, c, p khoản 2 Điều 4 Thông tư số 90/2026/TT-BTC - Hồ sơ đăng ký thuế của đơn vị phụ thuộc:",
+          "position": 1,
+          "name": "Tờ khai đăng ký thuế mẫu số 02-ĐKT ban hành kèm theo Thông tư số 90/2026/TT-BTC",
+          "component_code": "G12.0001301",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019f8d20-adde-70fa-972e-9e0e4339b200",
+              "fileName": "02 ĐKT TT 90.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8d20-adde-70fa-972e-9e0e4339b200/02 ĐKT TT 90.docx"
+            }
+          ]
+        },
+        {
+          "section": "(i) Người nộp thuế là tổ chức kinh tế, tổ chức khác và đơn vị phụ thuộc (trừ trường hợp đăng ký thuế theo cơ chế một cửa liên thông qua cơ quan đăng ký kinh doanh): Tổ hợp tác, tổ chức khác và các đơn vị phụ thuộc quy định tại điểm b, c, p khoản 2 Điều 4 Thông tư số 90/2026/TT-BTC - Hồ sơ đăng ký thuế của đơn vị phụ thuộc:",
+          "position": 2,
+          "name": "Bảng kê địa điểm kinh doanh mẫu số BK03-ĐKT ban hành kèm theo Thông tư số 90/2026/TT-BTC (nếu có)",
+          "component_code": "G12.0001271",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019f8d0d-d391-7679-82f0-8d97df8deddb",
+              "fileName": "BK03 ĐKT TT90.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8d0d-d391-7679-82f0-8d97df8deddb/BK03 ĐKT TT90.docx"
+            }
+          ]
+        },
+        {
+          "section": "(i) Người nộp thuế là tổ chức kinh tế, tổ chức khác và đơn vị phụ thuộc (trừ trường hợp đăng ký thuế theo cơ chế một cửa liên thông qua cơ quan đăng ký kinh doanh): Tổ hợp tác, tổ chức khác và các đơn vị phụ thuộc quy định tại điểm b, c, p khoản 2 Điều 4 Thông tư số 90/2026/TT-BTC - Hồ sơ đăng ký thuế của đơn vị phụ thuộc:",
+          "position": 3,
+          "name": "Bảng kê các nhà thầu nước ngoài, nhà thầu phụ nước ngoài mẫu số BK04-ĐKT ban hành kèm theo Thông tư số 90/2026/TT-BTC (nếu có)",
+          "component_code": "G12.0001272",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019f8d0e-792a-762f-a23b-a6608dca5313",
+              "fileName": "BK04 ĐKT TT 90.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8d0e-792a-762f-a23b-a6608dca5313/BK04 ĐKT TT 90.docx"
+            }
+          ]
+        },
+        {
+          "section": "(i) Người nộp thuế là tổ chức kinh tế, tổ chức khác và đơn vị phụ thuộc (trừ trường hợp đăng ký thuế theo cơ chế một cửa liên thông qua cơ quan đăng ký kinh doanh): Tổ hợp tác, tổ chức khác và các đơn vị phụ thuộc quy định tại điểm b, c, p khoản 2 Điều 4 Thông tư số 90/2026/TT-BTC - Hồ sơ đăng ký thuế của đơn vị phụ thuộc:",
+          "position": 4,
+          "name": "Bản sao Quyết định thành lập, hoặc văn bản tương đương do cơ quan có thẩm quyền cấp",
+          "component_code": "G12.0001298",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "(i) Người nộp thuế là tổ chức kinh tế, tổ chức khác và đơn vị phụ thuộc (trừ trường hợp đăng ký thuế theo cơ chế một cửa liên thông qua cơ quan đăng ký kinh doanh): Tổ hợp tác, tổ chức khác và các đơn vị phụ thuộc quy định tại điểm b, c, p khoản 2 Điều 4 Thông tư số 90/2026/TT-BTC - Hồ sơ đăng ký thuế của đơn vị phụ thuộc:",
+          "position": 5,
+          "name": "Trường hợp quyết định thành lập quy định tại khoản 2 Điều 7 Thông tư 90/2026/TT-BTC thuộc danh mục bí mật nhà nước theo quy định của pháp luật thì người nộp thuế không phải nộp bản sao quyết định thành lập khi đăng ký thuế nhưng phải có văn bản cung cấp thông tin về việc tài liệu thuộc danh mục bí mật nhà nước và chịu trách nhiệm về tính chính xác của thông tin kê khai trên hồ sơ đăng ký thuế.",
+          "component_code": "G12.0001302",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "(i) Người nộp thuế là tổ chức kinh tế, tổ chức khác và đơn vị phụ thuộc (trừ trường hợp đăng ký thuế theo cơ chế một cửa liên thông qua cơ quan đăng ký kinh doanh): Tổ hợp tác, tổ chức khác và các đơn vị phụ thuộc quy định tại điểm b, c, p khoản 2 Điều 4 Thông tư số 90/2026/TT-BTC - Hồ sơ đăng ký thuế của đơn vị phụ thuộc:",
+          "position": 6,
+          "name": "Người nộp thuế nộp hồ sơ đến cơ quan thuế bằng phương thức điện tử thì bản sao các văn bản, giấy tờ quy định trong hồ sơ đăng ký thuế là bản sao điện tử",
+          "component_code": "G12.0001303",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "(i) Người nộp thuế là tổ chức kinh tế, tổ chức khác và đơn vị phụ thuộc (trừ trường hợp đăng ký thuế theo cơ chế một cửa liên thông qua cơ quan đăng ký kinh doanh): Tổ hợp tác, tổ chức khác và các đơn vị phụ thuộc quy định tại điểm b, c, p khoản 2 Điều 4 Thông tư số 90/2026/TT-BTC - Hồ sơ đăng ký thuế của đơn vị phụ thuộc:",
+          "position": 7,
+          "name": "Từ ngày 01/7/2026 đến trước thời điểm theo lộ trình của cơ quan thuế quy định tại khoản 2 Điều 36 Thông tư số 90/2026/TT-BTC",
+          "component_code": "G12.0001307",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019f8d26-e520-74fa-a894-ebd858285e0c",
+              "fileName": "06 ĐK TCT TT 86.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8d26-e520-74fa-a894-ebd858285e0c/06 ĐK TCT TT 86.docx"
+            },
+            {
+              "id": "019f8d26-e663-75a8-adbb-cc6dba2bf497",
+              "fileName": "04 ĐK TCT TT 86.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8d26-e663-75a8-adbb-cc6dba2bf497/04 ĐK TCT TT 86.docx"
+            },
+            {
+              "id": "019f8d26-e812-77b8-bd48-e9717ef3283f",
+              "fileName": "02 ĐK TCT TT 86.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8d26-e812-77b8-bd48-e9717ef3283f/02 ĐK TCT TT 86.docx"
+            },
+            {
+              "id": "019f8d26-e919-75a9-82a2-e6d480c3a61a",
+              "fileName": "BK 06 ĐKT TCT TT86.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8d26-e919-75a9-82a2-e6d480c3a61a/BK 06 ĐKT TCT TT86.docx"
+            },
+            {
+              "id": "019f8d26-ea2e-72a1-94e8-dda3dfdaef36",
+              "fileName": "BK04 ĐK TCT TT 86.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8d26-ea2e-72a1-94e8-dda3dfdaef36/BK04 ĐK TCT TT 86.docx"
+            },
+            {
+              "id": "019f8d26-eb36-75ab-aff4-8dd88bbdc5ee",
+              "fileName": "BK02 ĐKTCT TT 86.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8d26-eb36-75ab-aff4-8dd88bbdc5ee/BK02 ĐKTCT TT 86.docx"
+            },
+            {
+              "id": "019f8d26-ec72-72da-9c78-aeb3046c9209",
+              "fileName": "BK02 ĐK TCT TT 86.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8d26-ec72-72da-9c78-aeb3046c9209/BK02 ĐK TCT TT 86.docx"
+            },
+            {
+              "id": "019f8d26-ed73-73ac-925b-739f6a676332",
+              "fileName": "BK01 ĐK TCT TT 86.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8d26-ed73-73ac-925b-739f6a676332/BK01 ĐK TCT TT 86.docx"
+            },
+            {
+              "id": "019f8d26-eec3-743c-bbb3-47a102dd44e7",
+              "fileName": "01 ĐKT TCT TT 86.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8d26-eec3-743c-bbb3-47a102dd44e7/01 ĐKT TCT TT 86.docx"
+            }
+          ]
+        },
+        {
+          "section": "(ii) Người điều hành; doanh nghiệp liên doanh; tổ chức được Chính phủ Việt Nam giao nhiệm vụ tiếp nhận phần được chia của Việt Nam thuộc các mỏ dầu khí tại vùng chồng lấn; nhà thầu, nhà đầu tư tham gia hợp đồng dầu khí; công ty mẹ - Tập đoàn Công nghiệp - Năng lượng Quốc gia Việt Nam đại diện nước chủ nhà nhận phần lãi được chia từ các hợp đồng dầu khí - Hồ sơ đăng ký thuế của người điều hành, doanh nghiệp liên doanh, tổ chức được Chính phủ Việt Nam giao nhiệm vụ tiếp nhận phần được chia của Việt Nam thuộc các mỏ dầu khí tại vùng chồng lấn gồm:",
+          "position": 1,
+          "name": "Tờ khai đăng ký thuế mẫu số 01-ĐKT ban hành kèm theo Thông tư số 90/2026/TT-BTC",
+          "component_code": "G12.0001266",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019f8d09-d6ad-772f-8c28-f2926a6eccb1",
+              "fileName": "01 ĐKT (TT 90).docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8d09-d6ad-772f-8c28-f2926a6eccb1/01 ĐKT (TT 90).docx"
+            }
+          ]
+        },
+        {
+          "section": "(ii) Người điều hành; doanh nghiệp liên doanh; tổ chức được Chính phủ Việt Nam giao nhiệm vụ tiếp nhận phần được chia của Việt Nam thuộc các mỏ dầu khí tại vùng chồng lấn; nhà thầu, nhà đầu tư tham gia hợp đồng dầu khí; công ty mẹ - Tập đoàn Công nghiệp - Năng lượng Quốc gia Việt Nam đại diện nước chủ nhà nhận phần lãi được chia từ các hợp đồng dầu khí - Hồ sơ đăng ký thuế của người điều hành, doanh nghiệp liên doanh, tổ chức được Chính phủ Việt Nam giao nhiệm vụ tiếp nhận phần được chia của Việt Nam thuộc các mỏ dầu khí tại vùng chồng lấn gồm:",
+          "position": 2,
+          "name": "Bảng kê nhà thầu, nhà đầu tư dầu khí mẫu số BK05-ĐKT ban hành kèm theo Thông tư số 90/2026/TT-BTC",
+          "component_code": "G12.0003006",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019f8d29-854b-750f-a89e-9b2dd0e69707",
+              "fileName": "BK 05 ĐKT TT 90.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8d29-854b-750f-a89e-9b2dd0e69707/BK 05 ĐKT TT 90.docx"
+            }
+          ]
+        },
+        {
+          "section": "(ii) Người điều hành; doanh nghiệp liên doanh; tổ chức được Chính phủ Việt Nam giao nhiệm vụ tiếp nhận phần được chia của Việt Nam thuộc các mỏ dầu khí tại vùng chồng lấn; nhà thầu, nhà đầu tư tham gia hợp đồng dầu khí; công ty mẹ - Tập đoàn Công nghiệp - Năng lượng Quốc gia Việt Nam đại diện nước chủ nhà nhận phần lãi được chia từ các hợp đồng dầu khí - Hồ sơ đăng ký thuế của người điều hành, doanh nghiệp liên doanh, tổ chức được Chính phủ Việt Nam giao nhiệm vụ tiếp nhận phần được chia của Việt Nam thuộc các mỏ dầu khí tại vùng chồng lấn gồm:",
+          "position": 3,
+          "name": "Từ ngày 01/7/2026 đến trước thời điểm theo lộ trình của cơ quan thuế quy định tại khoản 2 Điều 36 Thông tư số 90/2026/TT-BTC thì tiếp tục áp dụng mẫu số 01-ĐK-TCT, 02-ĐK-TCT, BK05-ĐK-TCT ban hành kèm theo Thông tư số 86/2024/TT-BTC ngày 23/12/2024 của Bộ Tài chính đối với trường hợp đăng ký thuế theo phương thức điện tử.",
+          "component_code": "G12.0003057",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019f8d2d-2564-724e-ac2c-93dd73af07a2",
+              "fileName": "02 ĐK TCT TT 86.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8d2d-2564-724e-ac2c-93dd73af07a2/02 ĐK TCT TT 86.docx"
+            },
+            {
+              "id": "019f8d2d-2686-730f-9222-7da2d601a4e7",
+              "fileName": "BK 05 ĐK TCT TT 86.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8d2d-2686-730f-9222-7da2d601a4e7/BK 05 ĐK TCT TT 86.docx"
+            },
+            {
+              "id": "019f8d2d-27d5-706e-befb-10696a42407b",
+              "fileName": "01 ĐKT TCT TT 86.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8d2d-27d5-706e-befb-10696a42407b/01 ĐKT TCT TT 86.docx"
+            }
+          ]
+        },
+        {
+          "section": "(ii) Người điều hành; doanh nghiệp liên doanh; tổ chức được Chính phủ Việt Nam giao nhiệm vụ tiếp nhận phần được chia của Việt Nam thuộc các mỏ dầu khí tại vùng chồng lấn; nhà thầu, nhà đầu tư tham gia hợp đồng dầu khí; công ty mẹ - Tập đoàn Công nghiệp - Năng lượng Quốc gia Việt Nam đại diện nước chủ nhà nhận phần lãi được chia từ các hợp đồng dầu khí - Hồ sơ đăng ký thuế của người điều hành, doanh nghiệp liên doanh, tổ chức được Chính phủ Việt Nam giao nhiệm vụ tiếp nhận phần được chia của Việt Nam thuộc các mỏ dầu khí tại vùng chồng lấn gồm:",
+          "position": 4,
+          "name": "Bản sao Giấy chứng nhận đăng ký đầu tư, giấy phép đầu tư hoặc giấy tờ khác có giá trị tương đương, bản sao văn bản giao nhiệm vụ điều hành, văn bản chấp thuận của cơ quan quản lý có thẩm quyền (nếu có), quyết định thành lập hoặc giấy chứng nhận đăng ký kinh doanh hoặc văn bản tương đương của đơn vị được giao nhiệm vụ điều hành",
+          "component_code": "G12.0003089",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "(ii) Người điều hành; doanh nghiệp liên doanh; tổ chức được Chính phủ Việt Nam giao nhiệm vụ tiếp nhận phần được chia của Việt Nam thuộc các mỏ dầu khí tại vùng chồng lấn; nhà thầu, nhà đầu tư tham gia hợp đồng dầu khí; công ty mẹ - Tập đoàn Công nghiệp - Năng lượng Quốc gia Việt Nam đại diện nước chủ nhà nhận phần lãi được chia từ các hợp đồng dầu khí - Hồ sơ đăng ký thuế của người điều hành, doanh nghiệp liên doanh, tổ chức được Chính phủ Việt Nam giao nhiệm vụ tiếp nhận phần được chia của Việt Nam thuộc các mỏ dầu khí tại vùng chồng lấn gồm:",
+          "position": 5,
+          "name": "Người nộp thuế nộp hồ sơ đến cơ quan thuế bằng phương thức điện tử thì bản sao các văn bản, giấy tờ quy định trong hồ sơ đăng ký thuế là bản sao điện tử",
+          "component_code": "G12.0003090",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "(ii) Người điều hành; doanh nghiệp liên doanh; tổ chức được Chính phủ Việt Nam giao nhiệm vụ tiếp nhận phần được chia của Việt Nam thuộc các mỏ dầu khí tại vùng chồng lấn; nhà thầu, nhà đầu tư tham gia hợp đồng dầu khí; công ty mẹ - Tập đoàn Công nghiệp - Năng lượng Quốc gia Việt Nam đại diện nước chủ nhà nhận phần lãi được chia từ các hợp đồng dầu khí - Hồ sơ đăng ký thuế của nhà thầu, nhà đầu tư dầu khí (bao gồm cả nhà thầu nhận phần lãi được chia):",
+          "position": 1,
+          "name": "Tờ khai đăng ký thuế mẫu số 02-ĐKT ban hành kèm theo Thông tư số 90/2026/TT-BTC",
+          "component_code": "G12.0003056",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019f8d2c-483b-72ed-b1c9-9a3313916953",
+              "fileName": "02 ĐKT TT 90.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8d2c-483b-72ed-b1c9-9a3313916953/02 ĐKT TT 90.docx"
+            }
+          ]
+        },
+        {
+          "section": "(ii) Người điều hành; doanh nghiệp liên doanh; tổ chức được Chính phủ Việt Nam giao nhiệm vụ tiếp nhận phần được chia của Việt Nam thuộc các mỏ dầu khí tại vùng chồng lấn; nhà thầu, nhà đầu tư tham gia hợp đồng dầu khí; công ty mẹ - Tập đoàn Công nghiệp - Năng lượng Quốc gia Việt Nam đại diện nước chủ nhà nhận phần lãi được chia từ các hợp đồng dầu khí - Hồ sơ đăng ký thuế của nhà thầu, nhà đầu tư dầu khí (bao gồm cả nhà thầu nhận phần lãi được chia):",
+          "position": 2,
+          "name": "Từ ngày 01/7/2026 đến trước thời điểm theo lộ trình của cơ quan thuế quy định tại khoản 2 Điều 36 Thông tư số 90/2026/TT-BTC thì tiếp tục áp dụng mẫu số 01-ĐK-TCT, 02-ĐK-TCT, BK05-ĐK-TCT ban hành kèm theo Thông tư số 86/2024/TT-BTC ngày 23/12/2024 của Bộ Tài chính đối với trường hợp đăng ký thuế theo phương thức điện tử.",
+          "component_code": "G12.0003058",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019f8d2e-6f9c-70eb-b8c7-7b15c074d4cd",
+              "fileName": "02 ĐK TCT TT 86.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8d2e-6f9c-70eb-b8c7-7b15c074d4cd/02 ĐK TCT TT 86.docx"
+            },
+            {
+              "id": "019f8d2e-70d0-7481-97eb-fed965de5e33",
+              "fileName": "BK 05 ĐK TCT TT 86.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8d2e-70d0-7481-97eb-fed965de5e33/BK 05 ĐK TCT TT 86.docx"
+            },
+            {
+              "id": "019f8d2e-7233-70f2-a068-3e03e73c09f3",
+              "fileName": "01 ĐKT TCT TT 86.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8d2e-7233-70f2-a068-3e03e73c09f3/01 ĐKT TCT TT 86.docx"
+            }
+          ]
+        },
+        {
+          "section": "(ii) Người điều hành; doanh nghiệp liên doanh; tổ chức được Chính phủ Việt Nam giao nhiệm vụ tiếp nhận phần được chia của Việt Nam thuộc các mỏ dầu khí tại vùng chồng lấn; nhà thầu, nhà đầu tư tham gia hợp đồng dầu khí; công ty mẹ - Tập đoàn Công nghiệp - Năng lượng Quốc gia Việt Nam đại diện nước chủ nhà nhận phần lãi được chia từ các hợp đồng dầu khí - Hồ sơ đăng ký thuế đối với Công ty mẹ - Tập đoàn Công nghiệp - Năng lượng Quốc gia Việt Nam đại diện nước chủ nhà nhận phần lãi được chia từ các hợp đồng dầu khí:",
+          "position": 1,
+          "name": "Tờ khai đăng ký thuế mẫu số 02-ĐKT ban hành kèm theo Thông tư số 90/2026/TT-BTC",
+          "component_code": "G12.0003056",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019f8d2c-483b-72ed-b1c9-9a3313916953",
+              "fileName": "02 ĐKT TT 90.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8d2c-483b-72ed-b1c9-9a3313916953/02 ĐKT TT 90.docx"
+            }
+          ]
+        },
+        {
+          "section": "(ii) Người điều hành; doanh nghiệp liên doanh; tổ chức được Chính phủ Việt Nam giao nhiệm vụ tiếp nhận phần được chia của Việt Nam thuộc các mỏ dầu khí tại vùng chồng lấn; nhà thầu, nhà đầu tư tham gia hợp đồng dầu khí; công ty mẹ - Tập đoàn Công nghiệp - Năng lượng Quốc gia Việt Nam đại diện nước chủ nhà nhận phần lãi được chia từ các hợp đồng dầu khí - Hồ sơ đăng ký thuế đối với Công ty mẹ - Tập đoàn Công nghiệp - Năng lượng Quốc gia Việt Nam đại diện nước chủ nhà nhận phần lãi được chia từ các hợp đồng dầu khí:",
+          "position": 2,
+          "name": "Từ ngày 01/7/2026 đến trước thời điểm theo lộ trình của cơ quan thuế quy định tại khoản 2 Điều 36 Thông tư số 90/2026/TT-BTC thì tiếp tục áp dụng mẫu số 01-ĐK-TCT, 02-ĐK-TCT, BK05-ĐK-TCT ban hành kèm theo Thông tư số 86/2024/TT-BTC ngày 23/12/2024 của Bộ Tài chính đối với trường hợp đăng ký thuế theo phương thức điện tử",
+          "component_code": "G12.0003059",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019f8d30-0987-7099-9467-3d97f7fa9e18",
+              "fileName": "02 ĐK TCT TT 86.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8d30-0987-7099-9467-3d97f7fa9e18/02 ĐK TCT TT 86.docx"
+            },
+            {
+              "id": "019f8d30-0a96-73ad-acb2-40e0a9b9c60e",
+              "fileName": "BK 05 ĐK TCT TT 86.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8d30-0a96-73ad-acb2-40e0a9b9c60e/BK 05 ĐK TCT TT 86.docx"
+            },
+            {
+              "id": "019f8d30-0bfc-7568-ac3c-30e7f4814c85",
+              "fileName": "01 ĐKT TCT TT 86.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8d30-0bfc-7568-ac3c-30e7f4814c85/01 ĐKT TCT TT 86.docx"
+            }
+          ]
+        },
+        {
+          "section": "(iii) Người nộp thuế là nhà thầu, nhà thầu phụ nước ngoài trực tiếp kê khai, nộp thuế nhà thầu hoặc các nghĩa vụ thuế khác trừ thuế nhà thầu do bên Việt Nam khấu trừ nộp thay với cơ quan thuế:",
+          "position": 1,
+          "name": "Tờ khai đăng ký thuế mẫu số 04-ĐKT ban hành kèm theo Thông tư số 90/2026/TT-BTC",
+          "component_code": "G12.0003065",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "(iii) Người nộp thuế là nhà thầu, nhà thầu phụ nước ngoài trực tiếp kê khai, nộp thuế nhà thầu hoặc các nghĩa vụ thuế khác trừ thuế nhà thầu do bên Việt Nam khấu trừ nộp thay với cơ quan thuế:",
+          "position": 2,
+          "name": "Bảng kê các nhà thầu nước ngoài, nhà thầu phụ nước ngoài mẫu số BK04-ĐKT ban hành kèm theo Thông tư số 90/2026/TT-BTC (nếu có)",
+          "component_code": "G12.0003066",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019f8d33-12bf-7788-8e3a-0cc0ca030b8c",
+              "fileName": "BK04 ĐKT TT 90.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8d33-12bf-7788-8e3a-0cc0ca030b8c/BK04 ĐKT TT 90.docx"
+            }
+          ]
+        },
+        {
+          "section": "(iii) Người nộp thuế là nhà thầu, nhà thầu phụ nước ngoài trực tiếp kê khai, nộp thuế nhà thầu hoặc các nghĩa vụ thuế khác trừ thuế nhà thầu do bên Việt Nam khấu trừ nộp thay với cơ quan thuế:",
+          "position": 3,
+          "name": "Từ ngày 01/7/2026 đến trước thời điểm theo lộ trình của cơ quan thuế quy định tại khoản 2 Điều 36 Thông tư số 90/2026/TT-BTC thì tiếp tục áp dụng mẫu số 04-ĐK-TCT, BK04-ĐK-TCT ban hành kèm theo Thông tư số 86/2024/TT-BTC ngày 23/12/2024 của Bộ Tài chính đối với trường hợp đăng ký thuế theo phương thức điện tử",
+          "component_code": "G12.0003067",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019f8d33-e275-75bd-8fc1-4c09df20d79a",
+              "fileName": "04 ĐK TCT TT 86.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8d33-e275-75bd-8fc1-4c09df20d79a/04 ĐK TCT TT 86.docx"
+            },
+            {
+              "id": "019f8d33-f16e-73cf-b6e6-97e590157a0b",
+              "fileName": "BK04 ĐK TCT TT 86.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8d33-f16e-73cf-b6e6-97e590157a0b/BK04 ĐK TCT TT 86.docx"
+            }
+          ]
+        },
+        {
+          "section": "(iii) Người nộp thuế là nhà thầu, nhà thầu phụ nước ngoài trực tiếp kê khai, nộp thuế nhà thầu hoặc các nghĩa vụ thuế khác trừ thuế nhà thầu do bên Việt Nam khấu trừ nộp thay với cơ quan thuế:",
+          "position": 4,
+          "name": "Bản sao Giấy xác nhận đăng ký văn phòng điều hành hoặc Văn bản tương đương do cơ quan có thẩm quyền cấp (nếu có)",
+          "component_code": "G12.0003099",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "(iv) Người nộp thuộc đối tượng được hưởng quyền ưu đãi miễn trừ ngoại giao theo quy định của pháp luật về ngoại giao mua hàng hóa, dịch vụ tại Việt Nam để sử dụng:",
+          "position": 1,
+          "name": "Tờ khai đăng ký thuế theo mẫu số 06-ĐKT ban hành kèm theo Thông tư số 90/2026/TT-BTC",
+          "component_code": "G12.0003068",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019f8d35-5bad-77e8-a995-cf3067775f88",
+              "fileName": "06 ĐKT TT90.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8d35-5bad-77e8-a995-cf3067775f88/06 ĐKT TT90.docx"
+            }
+          ]
+        },
+        {
+          "section": "(iv) Người nộp thuộc đối tượng được hưởng quyền ưu đãi miễn trừ ngoại giao theo quy định của pháp luật về ngoại giao mua hàng hóa, dịch vụ tại Việt Nam để sử dụng:",
+          "position": 2,
+          "name": "Từ ngày 01/7/2026 đến trước thời điểm theo lộ trình của cơ quan thuế quy định tại khoản 2 Điều 36 Thông tư số 90/2026/TT-BTC thì tiếp tục áp dụng mẫu số 06-ĐK-TCT ban hành kèm theo Thông tư số 86/2024/TT-BTC ngày 23/12/2024 của Bộ Tài chính đối với trường hợp đăng ký thuế theo phương thức điện tử",
+          "component_code": "G12.0003069",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019f8d35-afbe-7658-9957-04dc553f585a",
+              "fileName": "06 ĐK TCT TT 86.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8d35-afbe-7658-9957-04dc553f585a/06 ĐK TCT TT 86.docx"
+            }
+          ]
+        },
+        {
+          "section": "(iv) Người nộp thuộc đối tượng được hưởng quyền ưu đãi miễn trừ ngoại giao theo quy định của pháp luật về ngoại giao mua hàng hóa, dịch vụ tại Việt Nam để sử dụng:",
+          "position": 3,
+          "name": "Giấy xác nhận của Cục Lễ tân Nhà nước - Bộ Ngoại giao và Phiên dịch đối ngoại - Bộ Ngoại giao, trong đó có thông tin về tên, địa chỉ của cơ quan ngoại giao, cơ quan lãnh sự cơ quan đại diện tổ chức quốc tế",
+          "component_code": "G12.0003070",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "(v) Tổ chức ở Việt Nam sử dụng tiền viện trợ không hoàn lại, tiền viện trợ nhân đạo của tổ chức, cá nhân nước ngoài để mua hàng hóa, dịch vụ phục vụ cho chương trình, dự án viện trợ không hoàn lại, viện trợ nhân đạo tại Việt Nam; chủ chương trình, dự án, phi dự án hoặc nhà thầu chính (bao gồm cả văn phòng điều hành của nhà thầu chính tại Việt Nam), tổ chức do phía nhà tài trợ nước ngoài chỉ định việc quản lý chương trình, dự án sử dụng vốn ODA (bao gồm cả văn phòng đại diện của nhà tài trợ hoặc tổ chức quản lý, thực hiện chương trình, dự án do nhà tài trợ chỉ định):",
+          "position": 1,
+          "name": "Tờ khai đăng ký thuế mẫu số 01-ĐKT ban hành kèm theo Thông tư số 90/2026/TT-BTC",
+          "component_code": "G12.0001266",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019f8d09-d6ad-772f-8c28-f2926a6eccb1",
+              "fileName": "01 ĐKT (TT 90).docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8d09-d6ad-772f-8c28-f2926a6eccb1/01 ĐKT (TT 90).docx"
+            }
+          ]
+        },
+        {
+          "section": "(v) Tổ chức ở Việt Nam sử dụng tiền viện trợ không hoàn lại, tiền viện trợ nhân đạo của tổ chức, cá nhân nước ngoài để mua hàng hóa, dịch vụ phục vụ cho chương trình, dự án viện trợ không hoàn lại, viện trợ nhân đạo tại Việt Nam; chủ chương trình, dự án, phi dự án hoặc nhà thầu chính (bao gồm cả văn phòng điều hành của nhà thầu chính tại Việt Nam), tổ chức do phía nhà tài trợ nước ngoài chỉ định việc quản lý chương trình, dự án sử dụng vốn ODA (bao gồm cả văn phòng đại diện của nhà tài trợ hoặc tổ chức quản lý, thực hiện chương trình, dự án do nhà tài trợ chỉ định):",
+          "position": 2,
+          "name": "Từ ngày 01/7/2026 đến trước thời điểm theo lộ trình của cơ quan thuế quy định tại khoản 2 Điều 36 Thông tư số 90/2026/TT-BTC thì tiếp tục áp dụng mẫu số 01-ĐK-TCT ban hành kèm theo Thông tư số 86/2024/TT-BTC ngày 23/12/2024 của Bộ Tài chính đối với trường hợp đăng ký thuế theo phương thức điện tử",
+          "component_code": "G12.0003075",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019f8d37-1f82-76a8-9376-475b45bfc5ce",
+              "fileName": "01 ĐKT TCT TT 86.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8d37-1f82-76a8-9376-475b45bfc5ce/01 ĐKT TCT TT 86.docx"
+            }
+          ]
+        },
+        {
+          "section": "(vi) Người nộp thuế là tổ chức nước ngoài có phát sinh doanh thu tại Việt Nam thông qua hoạt động kinh doanh trên nền tảng thương mại điện tử theo quy định tại khoản 1 Điều 40 Nghị định số 252/2026/NĐ-CP  (sau đây gọi là nhà cung cấp nước ngoài), trừ trường hợp toàn bộ doanh thu phát sinh tại Việt Nam đã được khấu trừ và nộp thay thuế:",
+          "position": 1,
+          "name": "Tờ khai đăng ký thuế theo mẫu Tờ khai đăng ký thuế dành cho nhà cung cấp nước ngoài theo mẫu số 01/NCCNN ban hành kèm theo Thông tư số 90/2026/TT-BTC",
+          "component_code": "G12.0003078",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019f8d3b-a6b6-7584-9e03-b1c71a786747",
+              "fileName": "01 NCCNN TT 90.2026.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8d3b-a6b6-7584-9e03-b1c71a786747/01 NCCNN TT 90.2026.docx"
+            }
+          ]
+        },
+        {
+          "section": "(vi) Người nộp thuế là tổ chức nước ngoài có phát sinh doanh thu tại Việt Nam thông qua hoạt động kinh doanh trên nền tảng thương mại điện tử theo quy định tại khoản 1 Điều 40 Nghị định số 252/2026/NĐ-CP  (sau đây gọi là nhà cung cấp nước ngoài), trừ trường hợp toàn bộ doanh thu phát sinh tại Việt Nam đã được khấu trừ và nộp thay thuế:",
+          "position": 2,
+          "name": "Từ 01/7/2026 đến trước thời điểm theo lộ trình của cơ quan thuế quy định tại khoản 2 Điều 36 Thông tư số 90/2026/TT-BTC thì tiếp tục áp dụng mẫu số 01/NCCNN ban hành kèm theo Thông tư số 80/2021/TT-BTC của Bộ Tài chính đối với trường hợp đăng ký thuế theo phương thức điện tử",
+          "component_code": "G12.0003079",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019f8d39-b45e-7688-84d5-4dc8514fe817",
+              "fileName": "01 NCCNN TT 80.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8d39-b45e-7688-84d5-4dc8514fe817/01 NCCNN TT 80.docx"
+            }
+          ]
+        },
+        {
+          "section": "(vii) Tổ chức kê khai và nộp thuế thu nhập doanh nghiệp bổ sung theo quy định về thuế tối thiểu toàn cầu:",
+          "position": 1,
+          "name": "Tờ khai đăng ký/thay đổi thông tin đăng ký thuế theo Mẫu số 01-ĐKTĐ-ĐVHT ban hành kèm theo Nghị định số 236/2025/NĐ-CP",
+          "component_code": "G12.0003085",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019f8d42-5495-735e-a58e-cd86a7ce67a6",
+              "fileName": "01 ĐKTĐ ĐVHT.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8d42-5495-735e-a58e-cd86a7ce67a6/01 ĐKTĐ ĐVHT.docx"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 1,
+          "name": "Người nộp thuế nộp hồ sơ đến cơ quan thuế bằng phương thức điện tử thì bản sao các văn bản, giấy tờ quy định trong hồ sơ đăng ký thuế là bản sao điện tử",
+          "component_code": "G12.0003650",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c71-7574-afeb-1697c540e3aa",
+          "name": "Giấy chứng nhận đăng ký thuế (Mẫu 10 MST)",
+          "code": "KQ.G12.000853"
+        },
+        {
+          "id": "019f8db2-99e8-751e-ab30-ba02856536d4",
+          "name": "Thông báo mã số thuế nộp thay",
+          "code": "KQ.G12.001524"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019f8db3-9765-740b-8b90-682677b9c421",
+          "name": "Thông tư quy định chi tiết một số điều của Luật Quản lý thuế và Nghị định số 252/2026/NĐ-CP của Chính phủ quy định chi tiết một số điều và biện pháp để tổ chức, hướng dẫn thi hành Luật Quản lý thuế",
+          "code": "89/2026/TT-BTC"
+        },
+        {
+          "id": "019f8db3-e7d0-74e4-9c61-49a28e28113a",
+          "name": "Thông tư số 90/2026/TT-BTC ngày 30/6/2026 của Bộ Tài chính quy định về đăng ký thuế",
+          "code": "90/2026/TT-BTC "
+        },
+        {
+          "id": "019e5e83-1282-771d-9014-49799413a4e5",
+          "name": "Luật số 108/2025/QH15 của Quốc hội: Luật Quản lý thuế",
+          "code": "108/2025/QH15"
+        },
+        {
+          "id": "019f64ed-e026-7299-b5f2-ca44a3964050",
+          "name": "Nghị định về thực hiện thủ tục hành chính theo cơ chế một cửa, một cửa liên thông tại Bộ phận Một cửa và Cổng Dịch vụ công quốc gia.",
+          "code": "118/2025/NĐ-CP "
+        },
+        {
+          "id": "019f356e-75e3-7494-a2f3-672d8dce61a6",
+          "name": "QUY ĐỊNH CHI TIẾT MỘT SỐ ĐIỀU VÀ BIỆN PHÁP ĐỂ TỔ CHỨC, HƯỚNG DẪN THI HÀNH LUẬT QUẢN LÝ THUẾ",
+          "code": "252/2026/NĐ-CP"
+        }
+      ]
+    }
+  ]
+}

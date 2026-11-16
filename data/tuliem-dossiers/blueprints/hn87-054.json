@@ -1,0 +1,113 @@
+{
+  "id": "hn87-054",
+  "ordinal": "54",
+  "procedure_code": "1.010818",
+  "name": "Công nhận và giải quyết chế độ người hoạt động cách mạng, kháng chiến, bảo vệ tổ quốc, làm nghĩa vụ quốc tế bị địch bắt tù, đày",
+  "domain": "Người có công",
+  "department_id": "vx",
+  "department": "Phòng Văn hóa - Xã hội",
+  "authority_as_published": "UBND cấp xã",
+  "execution_level_as_published": "Cấp xã",
+  "receiving_location_as_published": "Điểm hỗ trợ DVC số",
+  "inventory_date": "2026-04-27",
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "source_urls": [
+    "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfa-fc2b-724d-8f15-ec8dbd06a4ed"
+  ],
+  "current_dvc_match": true,
+  "lifecycle": null,
+  "scope": "hanoi_commune_notice_2026_04_27",
+  "scope_note": "Mốc kiểm kê cấp xã Hà Nội; áp dụng từng thủ tục tại Từ Liêm còn phải theo thẩm quyền/ủy quyền hiện hành.",
+  "status": "has_fillable_templates",
+  "components": [
+    {
+      "id": "hn87-054-c001",
+      "code": "G09-KQ003210220",
+      "name": "- Giấy báo tử hoặc trích lục khai tử (đối với trường hợp chết mà chưa được hưởng chế độ ưu đãi).",
+      "section": "",
+      "role": "supporting_submit",
+      "scenario_status": "conditional_needs_review",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfa-fc2b-724d-8f15-ec8dbd06a4ed",
+      "source_detail_id": "019d2bfa-fc2b-724d-8f15-ec8dbd06a4ed",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-054-c002",
+      "code": "G09-KQ002706",
+      "name": "- Một trong các giấy tờ chứng minh có tham gia cách mạng, kháng chiến bảo vệ Tổ quốc, làm nghĩa vụ quốc tế và thời gian, địa điểm bị tù, đày như sau:         + Bản sao được chứng thực từ một trong các giấy tờ do cơ quan có thẩm quyền ban hành, xác nhận từ ngày 31/12/1994 trở về trước: lý lịch cán bộ, lý lịch đảng viên, lý lịch quân nhân, lý lịch công an; hồ sơ khen thưởng tổng kết thành tích tham gia kháng chiến; các giấy tờ, tài liệu khác.         + Bản sao được chứng thực từ hồ sơ hưởng chế độ Bảo hiểm xã hội.         + Bản trích lục hồ sơ liệt sĩ.          + Giấy xác nhận của cơ quan, đơn vị có thẩm quyền thuộc Bộ Quốc phòng, Bộ Công an về thời gian tù và nơi bị tù.",
+      "section": "",
+      "role": "supporting_submit",
+      "scenario_status": "conditional_needs_review",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 1,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfa-fc2b-724d-8f15-ec8dbd06a4ed",
+      "source_detail_id": "019d2bfa-fc2b-724d-8f15-ec8dbd06a4ed",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-054-c003",
+      "code": "G09-KQ003210221",
+      "name": "- Bản khai theo Mẫu số 10 Phụ lục I Nghị định số 131/2021/NĐ-CP.",
+      "section": "",
+      "role": "applicant_form",
+      "scenario_status": "selected_for_test",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfa-fc2b-724d-8f15-ec8dbd06a4ed",
+      "source_detail_id": "019d2bfa-fc2b-724d-8f15-ec8dbd06a4ed",
+      "embedded_other_requirements": false,
+      "template_candidates": [
+        "template-ad850d097fe57f19"
+      ],
+      "template_selection_method": "first_matching_source_attachment",
+      "selected_template_id": "template-ad850d097fe57f19",
+      "selection_requires_review": false
+    }
+  ],
+  "service_cases": [
+    {
+      "id": "019dbdfb-68ff-7680-85ce-67ab9b484f37",
+      "code": "1.010818.01",
+      "name": "Công nhận và giải quyết chế độ người hoạt động cách mạng, kháng chiến, bảo vệ tổ quốc, làm nghĩa vụ quốc tế bị địch bắt tù, đày",
+      "source_processing_time": {
+        "qty": 17,
+        "type": "DAY"
+      },
+      "has_case_specific_components": false
+    }
+  ],
+  "selected_template_ids": [
+    "template-ad850d097fe57f19"
+  ],
+  "source_component_groups": [
+    {
+      "name": "",
+      "component_count": 3,
+      "source_detail_id": "019d2bfa-fc2b-724d-8f15-ec8dbd06a4ed"
+    }
+  ],
+  "conditional_component_groups": [],
+  "default_test_scenario": {
+    "channel": "direct",
+    "applicant_submits_self": true,
+    "authorized": false,
+    "special_case_flags": [],
+    "selected_conditional_group": null,
+    "case_selection_method": "ordinary_direct_submission",
+    "case_status": "scenario_for_testing_not_a_legal_eligibility_decision"
+  },
+  "requirement_note": "required_as_published được giữ nguyên; false không chứng minh giấy tờ luôn tùy chọn. Các nhóm executionCases có thể là mục giấy tờ/hướng dẫn, không phải các phương án loại trừ nhau."
+}

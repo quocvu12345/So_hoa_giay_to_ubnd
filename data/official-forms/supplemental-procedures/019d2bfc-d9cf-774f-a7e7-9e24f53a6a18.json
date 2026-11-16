@@ -1,0 +1,266 @@
+{
+  "id": "dvc-019d2bfc-d9cf-774f-a7e7-9e24f53a6a18",
+  "procedure_code": "2.000762",
+  "name": "Giải quyết hưởng trợ cấp hằng tháng theo Quyết định số 613/QĐ-TTg",
+  "domain": "Thực hiện chính sách BHXH",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.910813+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfc-d9cf-774f-a7e7-9e24f53a6a18",
+      "code": "2.000762",
+      "name": "Giải quyết hưởng trợ cấp hằng tháng theo Quyết định số 613/QĐ-TTg",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1792931550059,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-d9cf-774f-a7e7-9e24f53a6a18",
+      "raw_path": "evidence/dvc/details/019d2bfc-d9cf-774f-a7e7-9e24f53a6a18.json",
+      "components": [
+        {
+          "section": "1. Đối với hưởng trợ cấp hằng tháng",
+          "position": 1,
+          "name": "Văn bản đề nghị giải quyết trợ cấp hằng tháng (Mẫu số 14-HSB)",
+          "component_code": "TP.G12.98.119",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "01a02eb0-9366-77f9-bdc4-91a188356f85",
+              "fileName": "14-HSB.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/01a02eb0-9366-77f9-bdc4-91a188356f85/14-HSB.docx"
+            }
+          ]
+        },
+        {
+          "section": "1. Đối với hưởng trợ cấp hằng tháng",
+          "position": 2,
+          "name": "Trường hợp người bị phạt tù nhưng không được hưởng án treo đã chấp hành xong hình phạt tù; người bị Tòa án tuyên bố là mất tích trở về; người xuất cảnh trở về định cư hợp pháp thì có thêm bản sao Giấy chứng nhận chấp hành xong hình phạt tù hoặc bản sao Quyết định của Tòa án tuyên bố mất tích trở về hoặc bản sao Quyết định trở về nước định cư hợp pháp",
+          "component_code": "TP.G12.98.120",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Hồ sơ do cơ quan BHXH đang lưu trữ (trường hợp BHXH cơ sở không có hồ sơ thì làm văn bản đề nghị BHXH tỉnh sao lục), gồm",
+          "position": 1,
+          "name": "Quyết định của cơ quan, đơn vị cho nghỉ việc vì MSLĐ",
+          "component_code": "TP.G12.98.121",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Hồ sơ do cơ quan BHXH đang lưu trữ (trường hợp BHXH cơ sở không có hồ sơ thì làm văn bản đề nghị BHXH tỉnh sao lục), gồm",
+          "position": 2,
+          "name": "Phiếu cá nhân (trường hợp tại mặt sau của Quyết định nghỉ việc có ghi quá trình công tác thì hồ sơ không gồm có Phiếu cá nhân)",
+          "component_code": "TP.G12.98.122",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Hồ sơ do cơ quan BHXH đang lưu trữ (trường hợp BHXH cơ sở không có hồ sơ thì làm văn bản đề nghị BHXH tỉnh sao lục), gồm",
+          "position": 3,
+          "name": "Biên bản GĐYK (trừ trường hợp nghỉ việc vì MSLĐ theo Nghị quyết 16-HĐBT ngày 08/02/1982)",
+          "component_code": "TP.G12.98.123",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Hồ sơ do cơ quan BHXH đang lưu trữ (trường hợp BHXH cơ sở không có hồ sơ thì làm văn bản đề nghị BHXH tỉnh sao lục), gồm",
+          "position": 4,
+          "name": "Quyết định hoặc Thông báo thôi hưởng trợ cấp MSLĐ hằng tháng",
+          "component_code": "TP.G12.98.124",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "2. Đối với hưởng trợ cấp mai táng phí của người đủ điều kiện hưởng trợ cấp hằng tháng theo Quyết định số 613/QĐ-TTg nhưng chưa được giải quyết hưởng trợ cấp mà bị chết từ ngày 01/7/2010 đến trước ngày 01/01/2016",
+          "position": 1,
+          "name": "Văn bản đề nghị giải quyết trợ cấp mai táng của người lo mai táng (Mẫu số 14-HSB)",
+          "component_code": "TP.G12.98.125",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "01a02eb1-2245-71fb-b949-6cba678e3f00",
+              "fileName": "14-HSB.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/01a02eb1-2245-71fb-b949-6cba678e3f00/14-HSB.docx"
+            }
+          ]
+        },
+        {
+          "section": "2. Đối với hưởng trợ cấp mai táng phí của người đủ điều kiện hưởng trợ cấp hằng tháng theo Quyết định số 613/QĐ-TTg nhưng chưa được giải quyết hưởng trợ cấp mà bị chết từ ngày 01/7/2010 đến trước ngày 01/01/2016",
+          "position": 2,
+          "name": "Bản sao giấy chứng tử hoặc bản sao giấy khai tử hoặc bản sao Quyết định của Tòa án tuyên bố đã chết hoặc bản chính giấy xác nhận của Ủy ban nhân dân xã, phường, thị trấn nơi chôn cất",
+          "component_code": "TP.G12.98.126",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "2. Đối với hưởng trợ cấp mai táng phí của người đủ điều kiện hưởng trợ cấp hằng tháng theo Quyết định số 613/QĐ-TTg nhưng chưa được giải quyết hưởng trợ cấp mà bị chết từ ngày 01/7/2010 đến trước ngày 01/01/2016",
+          "position": 3,
+          "name": "Trường hợp người đủ điều kiện hưởng trợ cấp hằng tháng theo Quyết định số 613/QĐ-TTg nhưng chưa được giải quyết hưởng trợ cấp mà bị chết thì có thêm Bản sao Giấy chứng nhận chấp hành xong hình phạt tù đối với trường hợp bị phạt tù nhưng không được hưởng án treo hoặc bản sao Quyết định của Tòa án tuyên bố mất tích trở về đối với trường hợp bị Tòa án tuyên bố là mất tích trở về hoặc bản sao Quyết định trở về nước định cư hợp pháp đối với trường hợp xuất cảnh trở về định cư hợp pháp",
+          "component_code": "TP.G12.98.127",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "2. Đối với hưởng trợ cấp mai táng phí của người đủ điều kiện hưởng trợ cấp hằng tháng theo Quyết định số 613/QĐ-TTg nhưng chưa được giải quyết hưởng trợ cấp mà bị chết từ ngày 01/7/2010 đến trước ngày 01/01/2016",
+          "position": 4,
+          "name": "Căn cứ Văn bản đề nghị của người lo mai táng, thực hiện như quy định tại tiết c điểm 1.1 khoản 1 Điều này",
+          "component_code": "TP.G12.98.128",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "3. Đối với hưởng chế độ tử tuất của người đủ điều kiện hưởng trợ cấp hằng tháng theo Quyết định số 613/QĐ-TTg nhưng chưa được giải quyết hưởng trợ cấp mà bị chết từ ngày 01/01/2016 trở đi:",
+          "position": 1,
+          "name": "Tờ khai của thân nhân, tổ chức, cá nhân lo mai táng theo Mẫu số 09-HSB",
+          "component_code": "TP.G12.98.129",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "01a02eb1-7b9e-773b-b91d-1ea11b8e574f",
+              "fileName": "09-HSB.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/01a02eb1-7b9e-773b-b91d-1ea11b8e574f/09-HSB.docx"
+            }
+          ]
+        },
+        {
+          "section": "3. Đối với hưởng chế độ tử tuất của người đủ điều kiện hưởng trợ cấp hằng tháng theo Quyết định số 613/QĐ-TTg nhưng chưa được giải quyết hưởng trợ cấp mà bị chết từ ngày 01/01/2016 trở đi:",
+          "position": 2,
+          "name": "Bản sao giấy chứng tử hoặc trích lục khai tử hoặc bản sao giấy báo tử hoặc bản sao quyết định của Tòa án tuyên bố là đã chết",
+          "component_code": "TP.G12.98.108",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "3. Đối với hưởng chế độ tử tuất của người đủ điều kiện hưởng trợ cấp hằng tháng theo Quyết định số 613/QĐ-TTg nhưng chưa được giải quyết hưởng trợ cấp mà bị chết từ ngày 01/01/2016 trở đi:",
+          "position": 3,
+          "name": "Trường hợp người đủ điều kiện hưởng trợ cấp hằng tháng theo Quyết định số 613/QĐ-TTg nhưng chưa được giải quyết hưởng trợ cấp mà bị chết thì có thêm Bản sao Giấy chứng nhận chấp hành xong hình phạt tù đối với trường hợp bị phạt tù nhưng không được hưởng án treo hoặc bản sao Quyết định của Tòa án tuyên bố mất tích trở về đối với trường hợp bị Tòa án tuyên bố là mất tích trở về hoặc bản sao Quyết định trở về nước định cư hợp pháp đối với trường hợp xuất cảnh trở về định cư hợp pháp",
+          "component_code": "TP.G12.98.127",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c82-739b-8b99-d6be7cc06c52",
+          "name": "Tiền trợ cấp",
+          "code": "KQ.G12.001151"
+        },
+        {
+          "id": "01a02eab-8f22-76df-9ca0-3afa64e0ccb3",
+          "name": "Quyết định về việc hưởng trợ cấp tuất hằng tháng (Mẫu số 08C-HSB)",
+          "code": "KQ.G12.001131"
+        },
+        {
+          "id": "01a02ea9-d9fb-746f-8484-2359d9dbcb3d",
+          "name": "Quyết định về việc hưởng trợ cấp hàng tháng theo Quyết định số 613/QĐ-TTg ngày 06/5/2010 của Thủ tướng Chính phủ (Mẫu số 07G-HSB)",
+          "code": "KQ.G12.001142"
+        },
+        {
+          "id": "01a02eac-6390-735e-a1f3-2c955ce53ce0",
+          "name": "Thông báo về việc chi trả lương hưu, trợ cấp BHXH đối với trường hợp di chuyển hưởng chế độ BHXH tại huyện/tỉnh khác (Mẫu 23-HSB).",
+          "code": "KQ.G12.001288"
+        },
+        {
+          "id": "01a02eaa-6241-744f-a417-2317328c1995",
+          "name": "Quyết định về việc hưởng trợ cấp mai táng theo Quyết định số 613/QĐ-TTg ngày 06/5/2010 của Thủ tướng Chính phủ (08G-HSB)",
+          "code": "KQ.G12.001143"
+        },
+        {
+          "id": "01a02eaa-fcc3-7203-8c42-c4ace71e04e8",
+          "name": "Quyết định về việc hưởng trợ cấp tuất một lần (Mẫu số 08E-HSB) (áp dụng cho trường hợp đủ điều kiện hưởng nhưng chưa được giải quyết mà đã chết từ 01/01/2016 trở đi).",
+          "code": "KQ.G12.001133"
+        },
+        {
+          "id": "01a02eab-fb03-70ab-b316-592ef19b0256",
+          "name": "Thẻ BHYT (đối với trường hợp hưởng trợ cấp hằng tháng)",
+          "code": "KQ.G12.001287"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d87-7195-a440-f511123122ee",
+          "name": "Luật Bảo hiểm xã hội",
+          "code": "41/2024/QH15"
+        },
+        {
+          "id": "019e72eb-488d-760e-abb8-0a3bb6585c78",
+          "name": "SỬA ĐỔI, BỔ SUNG MỘT SỐ ĐIỀU CỦA QUY TRÌNH GIẢI QUYẾT HƯỞNG CÁC CHẾ ĐỘ BẢO HIỂM XÃ HỘI, CHI TRẢ CÁC CHẾ ĐỘ BẢO HIỂM XÃ HỘI, BẢO HIỂM THẤT NGHIỆP BAN HÀNH KÈM THEO QUYẾT ĐỊNH SỐ 2222/QĐ-BHXH NGÀY 29/7/2025 CỦA GIÁM ĐỐC BẢO HIỂM XÃ HỘI VIỆT NAM",
+          "code": "313/QĐ-BHXH "
+        },
+        {
+          "id": "01a023be-84c8-77db-ade3-9c613cd83670",
+          "name": "Quy trình thu bảo hiểm xã hội, bảo hiểm y tế, bảo hiểm thất nghiệp; cấp sổ bảo hiểm xã hội, thẻ bảo hiểm y tế",
+          "code": "366/QĐ-BHXH"
+        },
+        {
+          "id": "019d2bb3-5d7c-71ab-9f07-f538ffa2f69d",
+          "name": "BAN HÀNH QUY TRÌNH GIẢI QUYẾT HƯỞNG CÁC CHẾ ĐỘ BẢO HIỂM XÃ HỘI, CHI TRẢ CÁC CHẾ ĐỘ BẢO HIỂM XÃ HỘI, BẢO HIỂM THẤT NGHIỆP",
+          "code": "2222/QĐ-BHXH"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afeb-e5ff16f715c7",
+          "name": "Quy định chi tiết và hướng dẫn thi hành một số điều của Luật Bảo hiểm xã hội về bảo hiểm xã hội bắt buộc",
+          "code": "158/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7c-71ab-9f06-d9e645d89484",
+          "name": "Hướng dẫn Quyết định 613/QĐ-TTg ngày 06 tháng 5 năm 2010 của Thủ tướng Chính phủ về việc trợ cấp hàng tháng cho những người có từ đủ 15 năm đến dưới 20 năm công tác thực tế đã hết thời hạn hưởng trợ cấp mất sức lao động",
+          "code": "16/2010/TT-BLĐTBXH"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b679-4cd33f9b9406",
+          "name": "Về việc trợ cấp hàng tháng cho những người có từ đủ 15 năm đến dưới 20 năm công tác thực tế đã hết thời hạn hưởng trợ cấp mất sức lao động",
+          "code": "613/QĐ-TTg"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "id": "dvc-019d2bfa-5f3e-764e-96a8-f159b09b08cf",
+  "procedure_code": "1.010736",
+  "name": "Tham vấn trong đánh giá tác động môi trường (cấp xã) (1.010736)",
+  "domain": "Môi trường",
+  "managing_agency": "Bộ Nông nghiệp và Môi trường",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:18.018961+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfa-5f3e-764e-96a8-f159b09b08cf",
+      "code": "1.010736",
+      "name": "Tham vấn trong đánh giá tác động môi trường (cấp xã) (1.010736)",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1776392145454,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfa-5f3e-764e-96a8-f159b09b08cf",
+      "raw_path": "evidence/dvc/details/019d2bfa-5f3e-764e-96a8-f159b09b08cf.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "01 bản chính nội dung tham vấn trong quá trình thực hiện đánh giá tác động môi trường (Phụ lục VIa ban hành kèm theo Nghị định số 08/2022/NĐ-CP, được sửa đổi, bổ sung tại Nghị định số 05/2025/NĐ-CP).",
+          "component_code": "000.00.00.G10-KQ005335",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019d8678-785c-718a-b8b9-133e2748350b",
+              "fileName": "Nidungthamvn.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d8678-785c-718a-b8b9-133e2748350b/Nidungthamvn.docx"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "- Báo cáo đánh giá tác động môi trường.",
+          "component_code": "000.00.00.G10-KQ005336",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 3,
+          "name": "01 bản chính văn bản lấy ý kiến tham vấn (mẫu quy định tại Phụ lục VI ban hành kèm theo Nghị định số 08/2022/NĐ-CP được sửa đổi, bổ sung tại Nghị định số 05/2025/NĐ-CP).",
+          "component_code": "000.00.00.G10-KQ005334",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019d8678-503c-778b-846f-8f0136df3450",
+              "fileName": "Vnbnthamvn.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d8678-503c-778b-846f-8f0136df3450/Vnbnthamvn.docx"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c4f-7269-8766-e9cacc69007a",
+          "name": "Biên bản họp tham vấn cộng đồng dân cư, cá nhân chịu tác động trực tiếp",
+          "code": "KQ.G10.000720"
+        },
+        {
+          "id": "019d2bb2-1c4f-7269-8766-ee28656f662b",
+          "name": "Văn bản của UBND cấp xã trả lời ý kiến tham vấn về quá trình thực hiện đánh giá tác động môi trường (nếu có).",
+          "code": "KQ.G10.000721"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7e-72d1-afe7-ac3296009dc1",
+          "name": "Nghị định số 08/2022/NĐ-CP",
+          "code": "08/2022/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d85-73da-8eb9-fbf4344c3579",
+          "name": "Luật Bảo vệ môi trường số 72/2020/QH14 ngày 17 tháng 11 năm 2020",
+          "code": "72/2020/QH14"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afe7-44fdf4392f79",
+          "name": "SỬA ĐỔI, BỔ SUNG MỘT SỐ ĐIỀU CỦA NGHỊ ĐỊNH SỐ 08/2022/NĐ-CP NGÀY 10 THÁNG 01 NĂM 2022 CỦA CHÍNH PHỦ QUY ĐỊNH CHI TIẾT MỘT SỐ ĐIỀU CỦA LUẬT BẢO VỆ MÔI TRƯỜNG",
+          "code": "05/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7d-7398-be51-0247fc76aa65",
+          "name": "Sửa đổi, bổ sung một số điều của Thông tư số 02/2022/TT-BTNMT ngày 10 tháng 01 năm 2022 của Bộ trưởng Bộ Tài nguyên và Môi trường quy định chi tiết thi hành một số điều của Luật Bảo vệ môi trường",
+          "code": "07/2025/TT-BTNMT"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "ordinal": "145",
+  "managing_agency": "Sở Nông nghiệp Môi trường",
+  "procedure_code": "3.000412",
+  "name": "Công nhận người lao động có thu nhập thấp",
+  "domain": "Giảm nghèo (Bộ Nông nghiệp và Môi trường)",
+  "ministry_decision": "967/QĐ-BNN ngày 18/4/2025",
+  "hanoi_decision": "252/QĐ-TTPVHCC ngày 01/3/2025",
+  "workflow_decision": "344/QĐ-TTPVHCC ngày 23/3/2026",
+  "fees": "Không quy định",
+  "execution_level": "Cấp Xã",
+  "competent_authority": "UBND cấp xã",
+  "delegation_decision": "",
+  "delegation_expiry": "",
+  "receiving_location": "Điểm hỗ trợ DVC số",
+  "id": "hn87-145",
+  "source_page": 6,
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "inventory_date": "2026-04-27",
+  "checked_at": "2026-11-12T22:24:34.539937+07:00",
+  "details": [
+    {
+      "id": "019d2bfa-bd95-7440-ae96-8e7ff95214ea",
+      "code": "3.000412",
+      "name": "Công nhận người lao động có thu nhập thấp",
+      "state": "ACTIVE",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1776478978701,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfa-bd95-7440-ae96-8e7ff95214ea",
+      "raw_path": "evidence/dvc/details/019d2bfa-bd95-7440-ae96-8e7ff95214ea.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Giấy đề nghị xác định người lao động có thu nhập thấp (mẫu số 1 Quyết định số 24/2021/QĐ-TTg ngày 16/07/2021 của Thủ tướng Chính phủ)",
+          "component_code": "000.00.00.G10-KQ005275",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019d9e3f-2344-73bf-9921-e6af66f86000",
+              "fileName": "Giấy đề nghị.pdf",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d9e3f-2344-73bf-9921-e6af66f86000/Giấy đề nghị.pdf"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c6d-743d-a39d-75e8bdce306e",
+          "name": "Quyết định công nhận danh sách người lao động có thu nhập thấp",
+          "code": "KQ.G10.001155"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d84-71c5-b678-1ea3663a051a",
+          "name": "quy định quy trình rà soát hộ nghèo, hộ cận nghèo hằng năm và quy trình xác định hộ làm nông nghiệp, lâm nghiệp, ngư nghiệp và diêm nghiệp có mức sống trung bình giai đoạn 2022-2025",
+          "code": "Quyết định số 24/2021/QĐ-TTg"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afe5-da50238e871e",
+          "name": "sửa đổi, bổ sung một số nội dung của Thông tư số 07/2021/TT-BLĐTBXH ngày 18/7/2021 của Bộ trưởng Bộ Lao động - Thương binh và Xã hội hướng dẫn phương pháp rà soát, phân loại hộ nghèo, hộ cận nghèo; xác định thu nhập của hộ làm nông nghiệp, lâm nghiệp, ngư nghiệp, diêm nghiệp có mức sống trung bình giai đoạn 2022 - 2025 và mẫu biểu báo cáo",
+          "code": "Thông tư số 02/2022/TT-BLĐTBXH"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afe5-dc44cbbb02e5",
+          "name": "Hướng dẫn phương pháp rà soát, phân loại hộ nghèo, hộ cận nghèo; xác định thu nhập của hộ làm nông nghiệp, lâm nghiệp, ngư nghiệp, diêm nghiệp có mức sống trung bình giai đoạn 2022 - 2025 và mẫu biểu báo cáo",
+          "code": "Thông tư số 07/2021/TT-BLĐTBXH"
+        },
+        {
+          "id": "019d2bb3-5d7f-719e-b46c-555ac571cbe3",
+          "name": "sửa đổi, bổ sung một số điều của Nghị định số 07/2021/NĐ-CP ngày 27/01/2021 của Chính phủ quy định chuẩn nghèo đa chiều giai đoạn 2021-2025.",
+          "code": "Nghị định số 30/2025/NĐ-CP"
+        }
+      ]
+    }
+  ],
+  "lookup_status": "retrieved",
+  "currency_status": "snapshot_requires_later_amendment_check",
+  "errors": []
+}

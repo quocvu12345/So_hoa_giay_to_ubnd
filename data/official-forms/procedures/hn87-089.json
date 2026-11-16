@@ -1,0 +1,69 @@
+{
+  "ordinal": "89",
+  "managing_agency": "Sở Văn hóa thể thao",
+  "procedure_code": "1.012085",
+  "name": "Thủ tục hủy bỏ Quyết định cấm tiếp xúc theo đơn đề nghị",
+  "domain": "Gia đình",
+  "ministry_decision": "3657/QĐ-BVHTTDL ngày 29/11/2023",
+  "hanoi_decision": "558/QĐ-TTPVHCC ngày 31/3/2025",
+  "workflow_decision": "607/QĐ-TTPVHCC ngày 15/4/2025",
+  "fees": "Không quy định",
+  "execution_level": "Cấp Xã",
+  "competent_authority": "UBND cấp xã",
+  "delegation_decision": "",
+  "delegation_expiry": "",
+  "receiving_location": "Điểm hỗ trợ DVC số",
+  "id": "hn87-089",
+  "source_page": 3,
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "inventory_date": "2026-04-27",
+  "checked_at": "2026-11-12T22:24:34.530512+07:00",
+  "details": [
+    {
+      "id": "019d2bfd-ebf9-75cc-b9d0-a639b35a5f14",
+      "code": "1.012085",
+      "name": "Thủ tục hủy bỏ Quyết định cấm tiếp xúc theo đơn đề nghị",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1794449530993,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfd-ebf9-75cc-b9d0-a639b35a5f14",
+      "raw_path": "evidence/dvc/details/019d2bfd-ebf9-75cc-b9d0-a639b35a5f14.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Đơn đề nghị về việc hủy bỏ Quyết định cấm tiếp xúc (Mẫu số 10 Nghị định 76).",
+          "component_code": "000.00.00.G16-KQ001564",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c79-762e-8b2c-2d0ed5e784be",
+          "name": "Quyết định của Chủ tịch Ủy ban nhân dân cấp xã về việc hủy bỏ Quyết định cấm tiếp xúc",
+          "code": "KQ.G16.000275"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7f-719e-b471-0adb78b6e896",
+          "name": "Nghị định Chính phủ",
+          "code": "76/2023/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d85-73da-8eb9-a2bab221b934",
+          "name": "Luật Phòng, chống bạo lực gia đình",
+          "code": "13/2022/QH15"
+        }
+      ]
+    }
+  ],
+  "lookup_status": "retrieved",
+  "currency_status": "snapshot_requires_later_amendment_check",
+  "errors": []
+}

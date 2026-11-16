@@ -1,0 +1,231 @@
+{
+  "id": "dvc-019d2bfc-f179-73dc-bda1-29f5857fcd56",
+  "procedure_code": "2.002639",
+  "name": "Đăng ký thay đổi nội dung đăng ký tổ hợp tác",
+  "domain": "Thành lập và hoạt động của tổ hợp tác, hợp tác xã, liên hiệp hợp tác xã",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.903373+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfc-f179-73dc-bda1-29f5857fcd56",
+      "code": "2.002639",
+      "name": "Đăng ký thay đổi nội dung đăng ký tổ hợp tác",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1785491673064,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-f179-73dc-bda1-29f5857fcd56",
+      "raw_path": "evidence/dvc/details/019d2bfc-f179-73dc-bda1-29f5857fcd56.json",
+      "components": [
+        {
+          "section": "Trường hợp đăng ký thay đổi: Tên tổ hợp tác; Ngành, nghề kinh doanh; Địa chỉ trụ sở tổ hợp tác; và Tổng giá trị phần vốn góp",
+          "position": 1,
+          "name": "Giấy đề nghị đăng ký thay đổi nội dung đăng ký tổ hợp tác",
+          "component_code": "000.00.00.G12-00006481",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019fb14f-be33-76d5-8f98-53d95fa83130",
+              "fileName": "MS 15 PL2.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fb14f-be33-76d5-8f98-53d95fa83130/MS 15 PL2.docx"
+            }
+          ]
+        },
+        {
+          "section": "Trường hợp đăng ký thay đổi: Tên tổ hợp tác; Ngành, nghề kinh doanh; Địa chỉ trụ sở tổ hợp tác; và Tổng giá trị phần vốn góp",
+          "position": 2,
+          "name": "Bản sao hoặc bản chính văn bản ủy quyền của thành viên tổ hợp tác cho một cá nhân hoặc một pháp nhân làm người đại diện tổ hợp tác thực hiện thủ tục đăng ký tổ hợp tác",
+          "component_code": "000.00.00.G12-00006480",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Trường hợp thay đổi Thành viên tổ hợp tác",
+          "position": 1,
+          "name": "Giấy đề nghị đăng ký thay đổi nội dung đăng ký tổ hợp tác",
+          "component_code": "000.00.00.G12-00006714",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019fb14f-e227-713b-b038-aa147a888d54",
+              "fileName": "MS 15 PL2.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fb14f-e227-713b-b038-aa147a888d54/MS 15 PL2.docx"
+            }
+          ]
+        },
+        {
+          "section": "Trường hợp thay đổi Thành viên tổ hợp tác",
+          "position": 2,
+          "name": "Danh sách thành viên tổ hợp tác",
+          "component_code": "000.00.00.G12-00006715",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Trường hợp thay đổi Thành viên tổ hợp tác",
+          "position": 3,
+          "name": "Bản sao hoặc bản chính văn bản ủy quyền của thành viên tổ hợp tác cho một cá nhân hoặc một pháp nhân làm người đại diện tổ hợp tác thực hiện thủ tục đăng ký tổ hợp tác",
+          "component_code": "000.00.00.G12-00006716",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Trường hợp tổ hợp tác thay đổi thông tin đăng ký thuế mà không thay đổi nội dung đăng ký kinh doanh, trừ thay đổi phương pháp tính thuế",
+          "position": 1,
+          "name": "Giấy đề nghị đăng ký thay đổi nội dung đăng ký tổ hợp tác kèm theo bản sao hoặc bản chính văn bản ủy quyền của thành viên tổ hợp tác cho một cá nhân hoặc một pháp nhân làm người đại diện tổ hợp tác để thực hiện thủ tục đăng ký tổ hợp tác",
+          "component_code": "000.00.00.G12-00006477",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019fb150-1a40-703e-aad3-dc5c17d26a70",
+              "fileName": "MS 15 PL2.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fb150-1a40-703e-aad3-dc5c17d26a70/MS 15 PL2.docx"
+            }
+          ]
+        },
+        {
+          "section": "Trường hợp ủy quyền thực hiện thủ tục",
+          "position": 1,
+          "name": "Người được ủy quyền đăng ký thành lập hợp tác xã, liên hiệp hợp tác xã được ghi trong nghị quyết Hội nghị thành lập hợp tác xã, liên hiệp hợp tác xã. Việc ủy quyền lại để thực hiện thủ tục đăng ký thành lập hợp tác xã, liên hiệp hợp tác xã thực hiện theo quy định của pháp luật về dân sự",
+          "component_code": "000.00.00.G12-00006473",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Trường hợp ủy quyền thực hiện thủ tục",
+          "position": 2,
+          "name": "Trừ trường hợp quy định tại khoản 1 Điều này, cá nhân ký tên tại văn bản đề nghị đăng ký tổ hợp tác, hợp tác xã, liên hiệp hợp tác xã có thể ủy quyền cho tổ chức, cá nhân khác thực hiện thủ tục đăng ký tổ hợp tác, đăng ký hợp tác xã, liên hiệp hợp tác xã như sau:Trường hợp ủy quyền cho cá nhân thực hiện thủ tục đăng ký tổ hợp tác, đăng ký hợp tác xã, liên hiệp hợp tác xã, kèm theo hồ sơ phải có văn bản ủy quyền cho cá nhân thực hiện thủ tục liên quan đến đăng ký tổ hợp tác, đăng ký hợp tác xã, liên hiệp hợp tác xã. Văn bản ủy quyền này không bắt buộc phải công chứng, chứng thực",
+          "component_code": "000.00.00.G12-00006474",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Trường hợp ủy quyền thực hiện thủ tục",
+          "position": 3,
+          "name": "Trường hợp ủy quyền cho tổ chức thực hiện thủ tục đăng ký tổ hợp tác, đăng ký hợp tác xã, liên hiệp hợp tác xã, kèm theo hồ sơ đăng ký phải có bản sao hợp đồng cung cấp dịch vụ với tổ chức làm dịch vụ, giấy giới thiệu hoặc văn bản phân công nhiệm vụ của tổ chức đó cho cá nhân trực tiếp thực hiện thủ tục liên quan đến đăng ký tổ hợp tác, đăng ký hợp tác xã, liên hiệp hợp tác xã",
+          "component_code": "TP-G12.0001079",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Trường hợp ủy quyền thực hiện thủ tục",
+          "position": 4,
+          "name": "Trường hợp thực hiện thủ tục đăng ký tổ hợp tác, đăng ký hợp tác xã, liên hiệp hợp tác xã qua dịch vụ bưu chính công ích, khi thực hiện thủ tục, nhân viên bưu chính phải nộp bản sao phiếu gửi hồ sơ theo mẫu do doanh nghiệp cung ứng dịch vụ bưu chính công ích phát hành có chữ ký xác nhận của nhân viên bưu chính và người có thẩm quyền ký văn bản đề nghị đăng ký",
+          "component_code": "TP-G12.0001080",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Trường hợp ủy quyền thực hiện thủ tục",
+          "position": 5,
+          "name": "Trường hợp ủy quyền cho đơn vị cung cấp dịch vụ bưu chính không phải là bưu chính công ích thực hiện thủ tục đăng ký tổ hợp tác, đăng ký hợp tác xã, liên hiệp hợp tác xã thì việc ủy quyền thực hiện theo quy định tại điểm b khoản 2 Điều 12 Nghị định số 295/2026/NĐ-CP",
+          "component_code": "TP-G12.0001081",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Trường hợp ủy quyền thực hiện thủ tục",
+          "position": 6,
+          "name": "Người ủy quyền và người được ủy quyền thực hiện thủ tục đăng ký tổ hợp tác, đăng ký hợp tác xã, liên hiệp hợp tác xã chịu trách nhiệm trước pháp luật về tính hợp pháp, trung thực và chính xác của việc ủy quyền",
+          "component_code": "TP-G12.0001082",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Trường hợp ủy quyền thực hiện thủ tục",
+          "position": 7,
+          "name": "Người ủy quyền phải xác thực điện tử theo quy định pháp luật về xác thực và định danh điện tử khi thực hiện thủ tục đăng ký thành lập tổ hợp tác, hợp tác xã, liên hiệp hợp tác xã; đăng ký thay đổi người đại diện theo pháp luật của hợp tác xã, liên hiệp hợp tác xã; thông báo thay đổi thông tin về thành viên chính thức, thành viên liên kết góp vốn là tổ chức kinh tế có vốn đầu tư nước ngoài, cá nhân là nhà đầu tư nước ngoài của hợp tác xã, liên hiệp hợp tác xã; đăng ký thay đổi thành viên tổ hợp tác để được cấp đăng ký tổ hợp tác, đăng ký hợp tác xã, liên hiệp hợp tác xã.  Trường hợp việc xác thực điện tử bị gián đoạn thì người ủy quyền thực hiện việc xác thực điện tử sau khi được cấp đăng ký tổ hợp tác, đăng ký hợp tác xã, liên hiệp hợp tác xã. Trường hợp người ủy quyền không xác nhận hoặc xác nhận không ủy quyền thực hiện thủ tục đăng ký sau khi được cấp đăng ký tổ hợp tác, đăng ký hợp tác xã, liên hiệp hợp tác xã thì cơ quan đăng ký kinh doanh cấp xã yêu cầu tổ hợp tác, hợp tác xã, liên hiệp hợp tác xã báo cáo theo quy định tại khoản 6 Điều 7 Nghị định số 295/2026/NĐ-CP.  Trường hợp chưa có tài khoản định danh điện tử để thực hiện xác thực điện tử thì hồ sơ đăng ký tổ hợp tác, hợp tác xã, liên hiệp hợp tác xã phải kèm theo bản sao thẻ Căn cước hoặc thẻ Căn cước công dân hoặc hộ chiếu hoặc hộ chiếu nước ngoài hoặc các giấy tờ có giá trị thay thế hộ chiếu nước ngoài còn hiệu lực của người ủy quyền.  Việc triển khai quy định về xác thực điện tử thực hiện theo kế hoạch xây dựng, nâng cấp Hệ thống thông tin về đăng ký hợp tác xã và được thông báo trên Cổng thông tin quốc gia về đăng ký doanh nghiệp",
+          "component_code": "TP-G12.0001084",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c72-75fa-a590-1d8c8e30f5c6",
+          "name": "Cơ quan đăng ký kinh doanh cấp xã cấp Giấy chứng nhận đăng ký tổ hợp tác (trong trường hợp đăng ký thay đổi tên tổ hợp tác, địa chỉ trụ sở tổ hợp tác, tổng giá trị phần vốn góp)",
+          "code": "KQ.G12.001008"
+        },
+        {
+          "id": "019d2bb2-1c72-75fa-a590-21c8d8f821db",
+          "name": "cấp Giấy chứng nhận đăng ký hoạt động chi nhánh, văn phòng đại diện, Giấy chứng nhận đăng ký địa điểm kinh doanh hoặc giấy xác nhận về việc thay đổi nội dung đăng ký hoạt động chi nhánh, văn phòng đại diện, địa điểm kinh doanh",
+          "code": "KQ.G12.001009"
+        },
+        {
+          "id": "019d2bb2-1c72-75fa-a590-25dc2a300512",
+          "name": "Trường hợp hồ sơ chưa hợp lệ hoặc tên tổ hợp tác yêu cầu đăng ký không đúng theo quy định hoặc thông tin kê khai trong hồ sơ đăng ký không thống nhất, cơ quan đăng ký kinh doanh cấp xã thông báo bằng văn bản nội dung cần sửa đổi, bổ sung",
+          "code": "KQ.G12.001010"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7d-7398-be4d-8105bcd345a7",
+          "name": "Thông tư số 43/2025/TT-BTC của Bộ Tài chính: Ban hành biểu mẫu sử dụng trong lĩnh vực quản lý nhà nước đối với hộ kinh doanh, tổ hợp tác, hợp tác xã, liên hiệp hợp tác xã khi tổ chức chính quyền địa phương 02 cấp",
+          "code": "43/2025/TT-BTC"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b671-d9e439ecbebe",
+          "name": "Luật Hợp tác xã",
+          "code": "17/2023/QH15"
+        },
+        {
+          "id": "019d2bb3-5d7c-71ab-9f05-a386e168546d",
+          "name": "Thông tư số 09/2024/TT-BKHĐT của Bộ Kế hoạch và Đầu tư: Ban hành biểu mẫu thực hiện thủ tục đăng ký tổ hợp tác, hợp tác xã, liên hiệp hợp tác xã và quy định về nội dung thông tin, việc cập nhật, khai thác và quản lý Hệ thống thông tin quốc gia về hợp tác xã",
+          "code": "09/2024/TT-BKHĐT"
+        },
+        {
+          "id": "019fb0de-6350-728a-9312-5ecdeb3da670",
+          "name": "Về đăng ký tổ hợp tác, hợp tác xã, liên hiệp hợp tác xã",
+          "code": "295/2026/NĐ-CP "
+        }
+      ]
+    }
+  ]
+}

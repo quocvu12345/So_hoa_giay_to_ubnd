@@ -1,0 +1,418 @@
+{
+  "id": "dvc-019d2bfc-6c70-7517-836b-9b5e86f49c16",
+  "procedure_code": "1.008584",
+  "name": "Miễn, giảm trong các trường hợp bất khả kháng, thiên tai, hỏa hoạn, tai nạn bất ngờ (tiền thuê đất; thuế sử dụng đất nông nghiệp; thuế sử dụng đất phi nông nghiệp; thuế tiêu thụ đặc biệt)",
+  "domain": "Thuế",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.933900+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfc-6c70-7517-836b-9b5e86f49c16",
+      "code": "1.008584",
+      "name": "Miễn, giảm trong các trường hợp bất khả kháng, thiên tai, hỏa hoạn, tai nạn bất ngờ (tiền thuê đất; thuế sử dụng đất nông nghiệp; thuế sử dụng đất phi nông nghiệp; thuế tiêu thụ đặc biệt)",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1785399197351,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-6c70-7517-836b-9b5e86f49c16",
+      "raw_path": "evidence/dvc/details/019d2bfc-6c70-7517-836b-9b5e86f49c16.json",
+      "components": [
+        {
+          "section": "i.1. Miễn, giảm tiền thuê đất + Đối với trường hợp được Nhà nước cho thuê đất trả tiền thuê đất hằng năm để sử dụng vào mục đích sản xuất nông nghiệp, lâm nghiệp, nuôi trồng thủy sản, làm muối mà bị thiên tai, hỏa hoạn theo quy định tại khoản 3 Điều 5 Nghị định số 230/2025/NĐ-CP của Chính phủ quy định các trường hợp khác được miễn, giảm tiền sử dụng đất, tiền thuê đất theo quy định tại khoản 2 Điều 157 Luật Đất đai năm 2024:",
+          "position": 1,
+          "name": "Văn bản đề nghị theo mẫu số 01/MGTH Phụ lục III ban hành kèm theo Thông tư số 89/2026/TT-BTC ngày 30/6/2026 của Bộ trưởng Bộ Tài chính",
+          "component_code": "G12.0001163",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019fa783-2c06-74da-bdc2-b8db8efd0de0",
+              "fileName": "01 - MGTH-TT89.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa783-2c06-74da-bdc2-b8db8efd0de0/01 - MGTH-TT89.docx"
+            }
+          ]
+        },
+        {
+          "section": "i.1. Miễn, giảm tiền thuê đất + Đối với trường hợp được Nhà nước cho thuê đất trả tiền thuê đất hằng năm để sử dụng vào mục đích sản xuất nông nghiệp, lâm nghiệp, nuôi trồng thủy sản, làm muối mà bị thiên tai, hỏa hoạn theo quy định tại khoản 3 Điều 5 Nghị định số 230/2025/NĐ-CP của Chính phủ quy định các trường hợp khác được miễn, giảm tiền sử dụng đất, tiền thuê đất theo quy định tại khoản 2 Điều 157 Luật Đất đai năm 2024:",
+          "position": 2,
+          "name": "Bản sao văn bản xác định thời gian, địa điểm xảy ra thiên tai, hỏa hoạn của cơ quan nhà nước có thẩm quyền nơi xảy ra thiên tai, hỏa hoạn theo mẫu số 02/MGTH Phụ lục III ban hành kèm theo Thông tư số 89/2026/TT-BTC ngày 30/6/2026 của Bộ Tài chính và bản sao tài liệu xác định giá trị thiệt hại của người nộp thuế đã gửi cơ quan nhà nước có thẩm quyền",
+          "component_code": "G12.0001167",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019fa7a5-f96a-72c0-a22d-6ebe8a01e004",
+              "fileName": "02 - MGTH-TT89.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa7a5-f96a-72c0-a22d-6ebe8a01e004/02 - MGTH-TT89.docx"
+            }
+          ]
+        },
+        {
+          "section": "i.1. Miễn, giảm tiền thuê đất + Đối với trường hợp được Nhà nước cho thuê đất trả tiền thuê đất hằng năm để sử dụng vào mục đích sản xuất nông nghiệp, lâm nghiệp, nuôi trồng thủy sản, làm muối mà bị thiên tai, hỏa hoạn theo quy định tại khoản 3 Điều 5 Nghị định số 230/2025/NĐ-CP của Chính phủ quy định các trường hợp khác được miễn, giảm tiền sử dụng đất, tiền thuê đất theo quy định tại khoản 2 Điều 157 Luật Đất đai năm 2024:",
+          "position": 3,
+          "name": "Bản sao tài liệu chứng minh về các khoản hỗ trợ của nhà nước theo quy định của pháp luật (trong trường hợp người thuê đất có nhận được khoản hỗ trợ của nhà nước theo quy định của pháp luật)",
+          "component_code": "G12.0001172",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "i.1. Miễn, giảm tiền thuê đất + Đối với trường hợp được Nhà nước cho thuê đất trả tiền thuê đất hằng năm để sử dụng vào mục đích sản xuất nông nghiệp, lâm nghiệp, nuôi trồng thủy sản, làm muối mà bị thiên tai, hỏa hoạn theo quy định tại khoản 3 Điều 5 Nghị định số 230/2025/NĐ-CP của Chính phủ quy định các trường hợp khác được miễn, giảm tiền sử dụng đất, tiền thuê đất theo quy định tại khoản 2 Điều 157 Luật Đất đai năm 2024:",
+          "position": 4,
+          "name": "Bản sao: Quyết định cho thuê đất hoặc Hợp đồng thuê đất hoặc văn bản về sử dụng đất của cơ quan, người có thẩm quyền cho thuê đất",
+          "component_code": "G12.0001165",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "i.2. Miễn, giảm tiền thuê đất - Đối với trường hợp được Nhà nước cho thuê đất trả tiền thuê đất hằng năm sử dụng vào mục đích sản xuất, kinh doanh (trừ dự án sử dụng đất vào mục đích sản xuất nông nghiệp, lâm nghiệp, nuôi trồng thủy sản, làm muối) nhưng phải tạm ngừng hoạt động để khắc phục hậu quả do bị thiên tai, hỏa hoạn hoặc do tai nạn bất khả kháng theo quy định tại khoản 4 Điều 5 Nghị định số 230/2025/NĐ-CP",
+          "position": 1,
+          "name": "Văn bản đề nghị theo mẫu số 01/MGTH Phụ lục III ban hành kèm theo Thông tư số 89/2026/TT-BTC ngày 30/6/2026 của Bộ trưởng Bộ Tài chính",
+          "component_code": "G12.0001163",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019fa783-2c06-74da-bdc2-b8db8efd0de0",
+              "fileName": "01 - MGTH-TT89.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa783-2c06-74da-bdc2-b8db8efd0de0/01 - MGTH-TT89.docx"
+            }
+          ]
+        },
+        {
+          "section": "i.2. Miễn, giảm tiền thuê đất - Đối với trường hợp được Nhà nước cho thuê đất trả tiền thuê đất hằng năm sử dụng vào mục đích sản xuất, kinh doanh (trừ dự án sử dụng đất vào mục đích sản xuất nông nghiệp, lâm nghiệp, nuôi trồng thủy sản, làm muối) nhưng phải tạm ngừng hoạt động để khắc phục hậu quả do bị thiên tai, hỏa hoạn hoặc do tai nạn bất khả kháng theo quy định tại khoản 4 Điều 5 Nghị định số 230/2025/NĐ-CP",
+          "position": 2,
+          "name": "Bản sao văn bản xác nhận về thời gian tạm ngừng hoạt động sản xuất, kinh doanh của cơ quan quản lý nhà nước có thẩm quyền theo quy định tại điểm a khoản 4 Điều 5 Nghị định số 230/2025/NĐ-CP",
+          "component_code": "G12.0001173",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "i.2. Miễn, giảm tiền thuê đất - Đối với trường hợp được Nhà nước cho thuê đất trả tiền thuê đất hằng năm sử dụng vào mục đích sản xuất, kinh doanh (trừ dự án sử dụng đất vào mục đích sản xuất nông nghiệp, lâm nghiệp, nuôi trồng thủy sản, làm muối) nhưng phải tạm ngừng hoạt động để khắc phục hậu quả do bị thiên tai, hỏa hoạn hoặc do tai nạn bất khả kháng theo quy định tại khoản 4 Điều 5 Nghị định số 230/2025/NĐ-CP",
+          "position": 3,
+          "name": "Bản sao: Quyết định cho thuê đất hoặc Hợp đồng thuê đất hoặc văn bản về sử dụng đất của cơ quan, người có thẩm quyền cho thuê đất",
+          "component_code": "G12.0001165",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "ii.1. Miễn, giảm thuế sử dụng đất nông nghiệp  + Đối với trường hợp người nộp thuế gặp khó khăn do gặp thiên tai, hoả hoạn:",
+          "position": 1,
+          "name": "Văn bản đề nghị theo mẫu số 01/MGTH Phụ lục III ban hành kèm theo Thông tư số 89/2026/TT-BTC ngày 30/6/2026 của Bộ trưởng Bộ Tài chính",
+          "component_code": "G12.0001163",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019fa783-2c06-74da-bdc2-b8db8efd0de0",
+              "fileName": "01 - MGTH-TT89.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa783-2c06-74da-bdc2-b8db8efd0de0/01 - MGTH-TT89.docx"
+            }
+          ]
+        },
+        {
+          "section": "ii.1. Miễn, giảm thuế sử dụng đất nông nghiệp  + Đối với trường hợp người nộp thuế gặp khó khăn do gặp thiên tai, hoả hoạn:",
+          "position": 2,
+          "name": "Bản sao văn bản xác định thời gian, địa điểm xảy ra thiên tai, hỏa hoạn của cơ quan nhà nước có thẩm quyền nơi xảy ra thiên tai, hỏa hoạn theo mẫu số 02/MGTH Phụ lục III ban hành kèm theo Thông tư số 89/2026/TT-BTC ngày 30/6/2026 của Bộ Tài chính và bản sao tài liệu xác định giá trị thiệt hại của người nộp thuế đã gửi cơ quan nhà nước có thẩm quyền",
+          "component_code": "G12.0001170",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019fa7a6-2622-722c-a0ad-d1ae6844a103",
+              "fileName": "02 - MGTH-TT89.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa7a6-2622-722c-a0ad-d1ae6844a103/02 - MGTH-TT89.docx"
+            }
+          ]
+        },
+        {
+          "section": "ii.2. Miễn, giảm thuế sử dụng đất nông nghiệp Đối với trường hợp người nộp thuế gặp khó khăn do tai nạn bất ngờ:",
+          "position": 1,
+          "name": "Văn bản đề nghị theo mẫu số 01/MGTH Phụ lục III ban hành kèm theo Thông tư số 89/2026/TT-BTC ngày 30/6/2026 của Bộ trưởng Bộ Tài chính",
+          "component_code": "G12.0001163",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019fa783-2c06-74da-bdc2-b8db8efd0de0",
+              "fileName": "01 - MGTH-TT89.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa783-2c06-74da-bdc2-b8db8efd0de0/01 - MGTH-TT89.docx"
+            }
+          ]
+        },
+        {
+          "section": "ii.2. Miễn, giảm thuế sử dụng đất nông nghiệp Đối với trường hợp người nộp thuế gặp khó khăn do tai nạn bất ngờ:",
+          "position": 2,
+          "name": "Bản sao văn bản xác định thời gian, địa điểm xảy ra tai nạn bất ngờ của cơ quan nhà nước có thẩm quyền nơi xảy ra tai nạn bất ngờ theo mẫu số 02/MGTH Phụ lục III ban hành kèm theo Thông tư số 89/2026/TT-BTC ngày 30/6/2026 của Bộ Tài chính hoặc bản sao văn bản xác nhận mức độ thương tật của cơ quan y tế",
+          "component_code": "G12.0001177",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019fa7a6-6cd6-77fb-b3ab-f2627bd74911",
+              "fileName": "02 - MGTH-TT89.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa7a6-6cd6-77fb-b3ab-f2627bd74911/02 - MGTH-TT89.docx"
+            }
+          ]
+        },
+        {
+          "section": "ii.2. Miễn, giảm thuế sử dụng đất nông nghiệp Đối với trường hợp người nộp thuế gặp khó khăn do tai nạn bất ngờ:",
+          "position": 3,
+          "name": "Bản sao văn bản xác định việc bồi thường của cơ quan bảo hiểm hoặc thỏa thuận bồi thường của người gây tai nạn (nếu có)",
+          "component_code": "G12.0001178",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "ii.2. Miễn, giảm thuế sử dụng đất nông nghiệp Đối với trường hợp người nộp thuế gặp khó khăn do tai nạn bất ngờ:",
+          "position": 4,
+          "name": "Bản sao các chứng từ chi liên quan trực tiếp đến việc khắc phục tai nạn.",
+          "component_code": "TP-G12.0001022",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "iii. Miễn, giảm thuế sử dụng đất phi nông nghiệp đối với người nộp thuế gặp khó khăn do sự kiện bất khả kháng",
+          "position": 1,
+          "name": "Văn bản đề nghị theo mẫu số 01/MGTH ban hành kèm theo phụ lục III Thông tư số 89/2026/TT-BTC ngày 30/6/2026 của Bộ Tài chính",
+          "component_code": "TP-G12.0001023",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019fa79c-8915-71ee-940f-55becf3a7c4f",
+              "fileName": "01 - MGTH-TT89.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa79c-8915-71ee-940f-55becf3a7c4f/01 - MGTH-TT89.docx"
+            }
+          ]
+        },
+        {
+          "section": "iii. Miễn, giảm thuế sử dụng đất phi nông nghiệp đối với người nộp thuế gặp khó khăn do sự kiện bất khả kháng",
+          "position": 2,
+          "name": "Bản sao văn bản xác định thời gian, địa điểm xảy ra sự kiện bất khả kháng của cơ quan nhà nước có thẩm quyền nơi xảy ra sự kiện bất khả kháng theo mẫu số 02/MGTH Phụ lục III ban hành kèm theo Thông tư số 89/2026/TT-BTC ngày 30/6/2026 của Bộ Tài chính và bản sao tài liệu xác định giá trị thiệt hại của người nộp thuế đã gửi cơ quan nhà nước có thẩm quyền.",
+          "component_code": "TP-G12.0001024",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019fa7a6-a272-758e-9d89-e00da0710347",
+              "fileName": "02 - MGTH-TT89.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa7a6-a272-758e-9d89-e00da0710347/02 - MGTH-TT89.docx"
+            }
+          ]
+        },
+        {
+          "section": "iii. Miễn, giảm thuế sử dụng đất phi nông nghiệp đối với người nộp thuế gặp khó khăn do sự kiện bất khả kháng",
+          "position": 3,
+          "name": "Bản sao các giấy tờ liên quan đến thửa đất chịu thuế như: Quyết định giao đất, Quyết định hoặc Hợp đồng cho thuê đất, Quyết định cho phép chuyển mục đích sử dụng đất; Người nộp thuế không phải nộp Giấy chứng nhận quyền sử dụng đất kèm theo hồ sơ miễn thuế, giảm thuế. Cơ quan thuế khai thác, sử dụng thông tin về Giấy chứng nhận quyền sử dụng đất trong cơ sở dữ liệu quốc gia về đất đai",
+          "component_code": "TP-G12.0001025",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "iv.1. Giảm thuế tiêu thụ đặc biệt đối với người nộp thuế sản xuất hàng hóa thuộc diện chịu thuế tiêu thụ đặc biệt  + Đối với người nộp thuế gặp khó khăn do thiên tai:",
+          "position": 1,
+          "name": "Văn bản đề nghị theo mẫu số 01/MGTH Phụ lục III ban hành kèm theo Thông tư số 89/2026/TT-BTC ngày 30/6/2026 của Bộ Tài chính",
+          "component_code": "TP-G12.0001026",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019fa79e-aefa-722e-a1a0-de6bc9275e95",
+              "fileName": "01 - MGTH-TT89.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa79e-aefa-722e-a1a0-de6bc9275e95/01 - MGTH-TT89.docx"
+            }
+          ]
+        },
+        {
+          "section": "iv.1. Giảm thuế tiêu thụ đặc biệt đối với người nộp thuế sản xuất hàng hóa thuộc diện chịu thuế tiêu thụ đặc biệt  + Đối với người nộp thuế gặp khó khăn do thiên tai:",
+          "position": 2,
+          "name": "Bản sao văn bản xác định thời gian, địa điểm xảy ra thiên tai của cơ quan nhà nước có thẩm quyền nơi xảy ra thiên tai theo mẫu số 02/MGTH Phụ lục III ban hành kèm theo Thông tư số 89/2026/TT-BTC ngày 30/6/2026 của Bộ Tài chính và bản sao tài liệu xác định giá trị thiệt hại của người nộp thuế đã gửi cơ quan nhà nước có thẩm quyền",
+          "component_code": "TP-G12.0001027",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019fa7a6-d415-765d-b63b-9051dd1f38df",
+              "fileName": "02 - MGTH-TT89.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa7a6-d415-765d-b63b-9051dd1f38df/02 - MGTH-TT89.docx"
+            }
+          ]
+        },
+        {
+          "section": "iv.2. Giảm thuế tiêu thụ đặc biệt đối với người nộp thuế sản xuất hàng hóa thuộc diện chịu thuế tiêu thụ đặc biệt Đối với người nộp thuế gặp khó khăn do tai nạn bất ngờ",
+          "position": 1,
+          "name": "Văn bản đề nghị theo mẫu số 01/MGTH Phụ lục III ban hành kèm theo Thông tư số 89/2026/TT-BTC ngày 30/6/2026 của Bộ Tài chính",
+          "component_code": "TP-G12.0001028",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019fa7a0-f401-748d-92fa-a7aa1064c2b4",
+              "fileName": "01 - MGTH-TT89.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa7a0-f401-748d-92fa-a7aa1064c2b4/01 - MGTH-TT89.docx"
+            }
+          ]
+        },
+        {
+          "section": "iv.2. Giảm thuế tiêu thụ đặc biệt đối với người nộp thuế sản xuất hàng hóa thuộc diện chịu thuế tiêu thụ đặc biệt Đối với người nộp thuế gặp khó khăn do tai nạn bất ngờ",
+          "position": 2,
+          "name": "Bản sao văn bản xác định thời gian, địa điểm xảy ra tai nạn bất ngờ của cơ quan nhà nước có thẩm quyền nơi xảy ra tai nạn bất ngờ theo mẫu số 02/MGTH Phụ lục III ban hành kèm theo Thông tư này hoặc văn bản xác nhận mức độ thương tật của cơ quan y tế",
+          "component_code": "TP-G12.0001029",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019fa7a6-ffe1-723a-b5fd-bb5666e4340c",
+              "fileName": "02 - MGTH-TT89.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa7a6-ffe1-723a-b5fd-bb5666e4340c/02 - MGTH-TT89.docx"
+            }
+          ]
+        },
+        {
+          "section": "iv.2. Giảm thuế tiêu thụ đặc biệt đối với người nộp thuế sản xuất hàng hóa thuộc diện chịu thuế tiêu thụ đặc biệt Đối với người nộp thuế gặp khó khăn do tai nạn bất ngờ",
+          "position": 3,
+          "name": "Bản sao văn bản xác định việc bồi thường của cơ quan bảo hiểm hoặc thỏa thuận bồi thường của người gây tai nạn (nếu có)",
+          "component_code": "TP-G12.0001030",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "iv.2. Giảm thuế tiêu thụ đặc biệt đối với người nộp thuế sản xuất hàng hóa thuộc diện chịu thuế tiêu thụ đặc biệt Đối với người nộp thuế gặp khó khăn do tai nạn bất ngờ",
+          "position": 4,
+          "name": "Bản sao các chứng từ chi liên quan trực tiếp đến việc khắc phục tai nạn.",
+          "component_code": "TP-G12.0001031",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 1,
+          "name": "Từ ngày 01/7/2026 đến thời điểm theo lộ trình của cơ quan thuế quy định tại khoản 2 Điều 99 Thông tư số 89/2026/TT-BTC thì mẫu số 01/MGTH và 02/MGTH thực hiện theo các mẫu biểu ban hành kèm theo Thông tư số 80/2021/TT-BTC ngày 29/9/2021 của Bộ Tài chính (đã được sửa đổi, bổ sung).",
+          "component_code": "G12.0011135",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019fb1c6-8e62-7678-97d7-375f66ae4819",
+              "fileName": "01 MGTH TT 80.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fb1c6-8e62-7678-97d7-375f66ae4819/01 MGTH TT 80.docx"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c71-7574-afe8-17852300bbbb",
+          "name": "Thông báo không được miễn thuế, giảm thuế theo mẫu số 04/MGTH Phụ lục III ban hành kèm theo Thông tư số 89/2026/TT-BTC",
+          "code": "KQ.G12.000558"
+        },
+        {
+          "id": "019d2bb2-1c70-724b-96df-0d8378c6d2fa",
+          "name": "Quyết định miễn thuế, giảm thuế theo mẫu số 03/MGTH Phụ lục III ban hành kèm theo Thông tư số 89/2026/TT-BTC",
+          "code": "KQ.G12.000260"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7e-72d1-afe9-653aac8276ee",
+          "name": "Nghị định số 118/2025/NĐ-CP của Chính phủ: Về thực hiện thủ tục hành chính theo cơ chế một cửa, một cửa liên thông tại Bộ phận Một cửa và Cổng Dịch vụ công quốc gia",
+          "code": "118/2025/NĐ-CP"
+        },
+        {
+          "id": "019f8db3-9765-740b-8b90-682677b9c421",
+          "name": "Thông tư quy định chi tiết một số điều của Luật Quản lý thuế và Nghị định số 252/2026/NĐ-CP của Chính phủ quy định chi tiết một số điều và biện pháp để tổ chức, hướng dẫn thi hành Luật Quản lý thuế",
+          "code": "89/2026/TT-BTC"
+        },
+        {
+          "id": "019f356e-75e3-7494-a2f3-672d8dce61a6",
+          "name": "QUY ĐỊNH CHI TIẾT MỘT SỐ ĐIỀU VÀ BIỆN PHÁP ĐỂ TỔ CHỨC, HƯỚNG DẪN THI HÀNH LUẬT QUẢN LÝ THUẾ",
+          "code": "252/2026/NĐ-CP"
+        },
+        {
+          "id": "019e5e83-1282-771d-9014-49799413a4e5",
+          "name": "Luật số 108/2025/QH15 của Quốc hội: Luật Quản lý thuế",
+          "code": "108/2025/QH15"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afed-bb9d18045764",
+          "name": "Nghị định số 230/2025/NĐ-CP Quy định các trường hợp khác được miễn, giảm tiền sử dụng đất, tiền thuê đất theo quy định tại khoản 2 Điều 157 Luật Đất đai năm 2024",
+          "code": "230/2025/NĐ-CP"
+        }
+      ]
+    }
+  ]
+}

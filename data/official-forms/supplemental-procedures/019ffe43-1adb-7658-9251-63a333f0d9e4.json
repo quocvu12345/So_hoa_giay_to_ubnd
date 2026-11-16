@@ -1,0 +1,148 @@
+{
+  "id": "dvc-019ffe43-1adb-7658-9251-63a333f0d9e4",
+  "procedure_code": "1.116316",
+  "name": "Kiểm tra chất lượng hàng hóa nhập khẩu có mức độ rủi ro cao thuộc trách nhiệm quản lý nhà nước của Bộ Nội vụ tại Danh mục ban hành kèm theo Thông tư số 16/2026/TT-BNV",
+  "domain": "Việc làm",
+  "managing_agency": "Bộ Công thương",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.480432+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019ffe43-1adb-7658-9251-63a333f0d9e4",
+      "code": "1.116316",
+      "name": "Kiểm tra chất lượng hàng hóa nhập khẩu có mức độ rủi ro cao thuộc trách nhiệm quản lý nhà nước của Bộ Nội vụ tại Danh mục ban hành kèm theo Thông tư số 16/2026/TT-BNV",
+      "state": "ACTIVE",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1789794106903,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019ffe43-1adb-7658-9251-63a333f0d9e4",
+      "raw_path": "evidence/dvc/details/019ffe43-1adb-7658-9251-63a333f0d9e4.json",
+      "components": [
+        {
+          "section": "a) Trường hợp hàng hóa nhập khẩu đã có Giấy chứng nhận hợp quy:",
+          "position": 1,
+          "name": "(1) Đăng ký kiểm tra nhà nước về chất lượng hàng hóa nhập khẩu theo Mẫu số 1 Phụ lục VII ban hành kèm theo Nghị định số 37/2026/NĐ-CP;",
+          "component_code": "G09-KQ002611",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019ffe45-eae6-748c-91f2-271f879f2325",
+              "fileName": "Mẫu số 1 Phụ lục VII ban hành kèm theo Nghị định số 37.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019ffe45-eae6-748c-91f2-271f879f2325/Mẫu số 1 Phụ lục VII ban hành kèm theo Nghị định số 37.docx"
+            }
+          ]
+        },
+        {
+          "section": "a) Trường hợp hàng hóa nhập khẩu đã có Giấy chứng nhận hợp quy:",
+          "position": 2,
+          "name": "(2) Giấy chứng nhận hợp quy do tổ chức đánh giá sự phù hợp được chỉ định cấp, trong đó có các thông tin liên quan đến hàng hóa nhập khẩu. Trường hợp Giấy chứng nhận hợp quy cấp cho lô hàng, phải có các thông tin liên quan đến lô hàng nhập khẩu (tên hàng hóa; nhãn hiệu, kiểu loại; đặc tính kỹ thuật; xuất xứ, nhà sản xuất; khối lượng/số lượng; tờ khai hàng hóa nhập khẩu; hóa đơn);",
+          "component_code": "G09-KQ002629",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "a) Trường hợp hàng hóa nhập khẩu đã có Giấy chứng nhận hợp quy:",
+          "position": 3,
+          "name": "(3) Ảnh hoặc bản mô tả đặc tính hàng hóa kèm theo các nội dung của nhãn chính (đối với hàng hóa phải ghi nhãn);",
+          "component_code": "G09-KQ002630",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "a) Trường hợp hàng hóa nhập khẩu đã có Giấy chứng nhận hợp quy:",
+          "position": 4,
+          "name": "(4) Mẫu nhãn phụ (nếu nhãn chính chưa đủ nội dung theo quy định) đối với hàng hóa phải ghi nhãn; Trường hợp sử dụng nhãn điện tử, việc ghi nhãn phải đáp ứng quy định của pháp luật về nhãn hàng hóa. Tổ chức, cá nhân nhập khẩu chịu trách nhiệm về tính hợp lệ của hồ sơ nhập khẩu.",
+          "component_code": "G09-KQ002631",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "b) Trường hợp hàng hóa nhập khẩu chưa có Giấy chứng nhận hợp quy:",
+          "position": 1,
+          "name": "(1) Đăng ký kiểm tra nhà nước về chất lượng hàng hóa nhập khẩu theo Mẫu số 1 Phụ lục VII ban hành kèm theo Nghị định số 37/2026/NĐ-CP;",
+          "component_code": "G09-KQ002611",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019ffe45-eae6-748c-91f2-271f879f2325",
+              "fileName": "Mẫu số 1 Phụ lục VII ban hành kèm theo Nghị định số 37.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019ffe45-eae6-748c-91f2-271f879f2325/Mẫu số 1 Phụ lục VII ban hành kèm theo Nghị định số 37.docx"
+            }
+          ]
+        },
+        {
+          "section": "b) Trường hợp hàng hóa nhập khẩu chưa có Giấy chứng nhận hợp quy:",
+          "position": 2,
+          "name": "(2) Ảnh hoặc bản mô tả đặc tính hàng hóa kèm theo các nội dung của nhãn chính (đối với hàng hóa phải ghi nhãn);",
+          "component_code": "G09-KQ002632",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "b) Trường hợp hàng hóa nhập khẩu chưa có Giấy chứng nhận hợp quy:",
+          "position": 3,
+          "name": "(3) Mẫu nhãn phụ (nếu nhãn chính chưa đủ nội dung theo quy định) đối với hàng hóa phải ghi nhãn; Trường hợp sử dụng nhãn điện tử, việc ghi nhãn phải đáp ứng quy định của pháp luật về nhãn hàng hóa. Tổ chức, cá nhân nhập khẩu chịu trách nhiệm về tính hợp lệ của hồ sơ nhập khẩu.",
+          "component_code": "G09-KQ002633",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019ffe40-2f65-7357-9949-c129c2661744",
+          "name": "- Hoặc Thông báo kết quả kiểm tra nhà nước về chất lượng hàng hoá nhập khẩu không đáp ứng yêu cầu.",
+          "code": "KQ.G09.002635"
+        },
+        {
+          "id": "019ffe3f-d3cf-737c-a993-d3c2779aa3a8",
+          "name": "- Thông báo kết quả kiểm tra nhà nước về chất lượng hàng hóa nhập khẩu đáp ứng yêu cầu chất lượng (Mẫu số 3 tại Phụ lục VII ban hành kèm theo Nghị định số 37/2026/NĐ-CP);",
+          "code": "KQ.G09.002634"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7f-719e-b46d-47da712d5452",
+          "name": "Nghị định số 37/2026/NĐ-CP ngày 23/01/2026 của Chính phủ quy định chi tiết một số điều và biện pháp để tổ chức, hướng dẫn thi hành Luật Chất lượng sản phẩm, hàng hóa",
+          "code": "37/2026/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b670-e74129169d90",
+          "name": "Luật Chất lượng sản phẩm, hàng hoá",
+          "code": "05/2007/QH12"
+        },
+        {
+          "id": "019d9adf-023c-74f0-9b88-5ff420dda213",
+          "name": "Luật sửa đổi, bổ sung một số điều của Luật Chất lượng sản\nphẩm, hàng hoá số 78/2025/QH15 ngày 18 tháng 6 năm 2025;\n",
+          "code": "78/2025/QH15 "
+        }
+      ]
+    }
+  ]
+}

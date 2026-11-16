@@ -1,0 +1,143 @@
+{
+  "id": "dvc-019d2bfa-8672-74d6-a162-9d0368d68fb5",
+  "procedure_code": "1.013952",
+  "name": "Điều chỉnh quyết định giao đất, cho thuê đất, cho phép chuyển mục đích sử dụng đất do thay đổi căn cứ quyết định giao đất, cho thuê đất, cho phép chuyển mục đích sử dụng đất; điều chỉnh thời hạn sử dụng đất của dự án đầu tư.",
+  "domain": "Đất đai",
+  "managing_agency": "Bộ Nông nghiệp và Môi trường",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:18.014790+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfa-8672-74d6-a162-9d0368d68fb5",
+      "code": "1.013952",
+      "name": "Điều chỉnh quyết định giao đất, cho thuê đất, cho phép chuyển mục đích sử dụng đất do thay đổi căn cứ quyết định giao đất, cho thuê đất, cho phép chuyển mục đích sử dụng đất; điều chỉnh thời hạn sử dụng đất của dự án đầu tư.",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1776326616655,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfa-8672-74d6-a162-9d0368d68fb5",
+      "raw_path": "evidence/dvc/details/019d2bfa-8672-74d6-a162-9d0368d68fb5.json",
+      "components": [
+        {
+          "section": "a) Hồ sơ đề nghị điều chỉnh quyết định giao đất/cho thuê đất/cho phép chuyển mục đích sử dụng đất bao gồm: ",
+          "position": 1,
+          "name": "Văn bản của cơ quan nhà nước có thẩm quyền có nội dung làm thay đổi căn cứ quyết định giao đất, cho thuê đất, cho phép chuyển mục đích sử dụng đất quy định tại các khoản 1, 2, 3, 4 và 5 Điều 116 Luật Đất đai",
+          "component_code": "000.00.00.G10-KQ005885",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "a) Hồ sơ đề nghị điều chỉnh quyết định giao đất/cho thuê đất/cho phép chuyển mục đích sử dụng đất bao gồm: ",
+          "position": 2,
+          "name": "Đơn đề nghị điều chỉnh quyết định giao đất/cho thuê đất/cho phép chuyển mục đích sử dụng đất",
+          "component_code": "000.00.00.G10-KQ005884",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "b) Hồ sơ đề nghị điều chỉnh thời hạn sử dụng đất của dự án đầu tư bao gồm:",
+          "position": 1,
+          "name": "Văn bản của cơ quan có thẩm quyền cho phép thay đổi thời hạn hoạt động của dự án đầu tư theo quy định của pháp luật về đầu tư",
+          "component_code": "000.00.00.G10-KQ005887",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "b) Hồ sơ đề nghị điều chỉnh thời hạn sử dụng đất của dự án đầu tư bao gồm:",
+          "position": 2,
+          "name": "Đơn đề nghị điều chỉnh thời hạn sử dụng đất của dự án đầu tư theo Mẫu số 12",
+          "component_code": "000.00.00.G10-KQ005886",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "b) Hồ sơ đề nghị điều chỉnh thời hạn sử dụng đất của dự án đầu tư bao gồm:",
+          "position": 3,
+          "name": "Quyết định giao đất, quyết định cho thuê đất, quyết định cho phép chuyển mục đích sử dụng đất của cơ quan nhà nước có thẩm quyền theo quy định của pháp luật về đất đai qua các thời kỳ.",
+          "component_code": "000.00.00.G10-KQ005889",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "b) Hồ sơ đề nghị điều chỉnh thời hạn sử dụng đất của dự án đầu tư bao gồm:",
+          "position": 4,
+          "name": "Một trong các giấy tờ sau đây: + Một trong các giấy chứng nhận: Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất là chứng thư pháp lý để Nhà nước xác nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất hợp pháp của người có quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất. Tài sản gắn liền với đất được cấp Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất là nhà ở, công trình xây dựng gắn liền với đất theo quy định của pháp luật. + Một trong các giấy chứng nhận: Giấy chứng nhận quyền sử dụng đất, Giấy chứng nhận quyền sở hữu nhà ở và quyền sử dụng đất ở, Giấy chứng nhận quyền sở hữu nhà ở, Giấy chứng nhận quyền sở hữu công trình xây dựng, Giấy chứng nhận quyền sử dụng đất, quyền sở hữu nhà ở và tài sản khác gắn liền với đất đã được cấp theo quy định của pháp luật về đất đai, pháp luật về nhà ở, pháp luật về xây dựng trước ngày Luật Đất đai có hiệu lực thi hành .",
+          "component_code": "000.00.00.G10-KQ005888",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c6c-7279-86b6-e7d1e0a4cfff",
+          "name": "Quyết định điều chỉnh quyết định giao đất, cho thuê đất, cho phép chuyển mục đích sử dụng đất.",
+          "code": "KQ.G10.000872"
+        },
+        {
+          "id": "019d2bb2-1c6d-743d-a39d-65380884f765",
+          "name": "Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất.",
+          "code": "KQ.H37.080001"
+        },
+        {
+          "id": "019d2bb2-1c6c-7279-86b6-eb72c045cd39",
+          "name": "Quyết định điều chỉnh thời hạn sử dụng đất của dự án đầu tư.",
+          "code": "KQ.G10.000873"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d84-71c5-b672-a3322a8748a6",
+          "name": "Luật Đất đai ngày 18/01/2024;",
+          "code": "31/2024/QH15"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afe9-61a6469bc95c",
+          "name": "Thực hiện thủ tục hành chính theo cơ chế một cửa, một cửa liên thông tại Bộ phận Một cửa và cổng Dịch vụ công quốc gia",
+          "code": "118/2025/NĐ-C"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afeb-9ac6648a4b4f",
+          "name": "Quy định về phân định thẩm quyền của chính quyền địa phương 02 cấp, phân quyền, phân cấp trong lĩnh vực đất đai",
+          "code": "151/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afe8-0a00a8be7fd7",
+          "name": "Nghị định 102/2024/NĐ-CP ngày 30/7/2024 của Chính phủ quy định chi tiết thi hành một số điều của Luật Đất đai.",
+          "code": "102/2024/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d86-7760-a644-ce39f72a6124",
+          "name": "Sửa đổi, bổ sung một số điều của các nghị định  quy định chi tiết thi hành Luật Đất đai",
+          "code": "226/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b673-29122897c8a3",
+          "name": "Luật số 43/2024/QH15 ngày 29/6/2024",
+          "code": "43/2024/QH15"
+        }
+      ]
+    }
+  ]
+}

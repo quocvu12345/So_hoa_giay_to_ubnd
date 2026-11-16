@@ -1,0 +1,163 @@
+{
+  "id": "dvc-019d2bfb-a852-73d0-a2ed-c507956a7431",
+  "procedure_code": "1.013566",
+  "name": "Thủ tục biên phòng đối với tàu thuyền Việt Nam, tàu thuyền nước ngoài, thuyền viên, hành khách đi trên tàu thuyền Việt Nam, tàu thuyền nước ngoài nhập cảnh tại cửa khẩu cảng",
+  "domain": "Quản lý biên giới",
+  "managing_agency": "Bộ Quốc phòng",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.980085+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfb-a852-73d0-a2ed-c507956a7431",
+      "code": "1.013566",
+      "name": "Thủ tục biên phòng đối với tàu thuyền Việt Nam, tàu thuyền nước ngoài, thuyền viên, hành khách đi trên tàu thuyền Việt Nam, tàu thuyền nước ngoài nhập cảnh tại cửa khẩu cảng",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1777598457444,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-a852-73d0-a2ed-c507956a7431",
+      "raw_path": "evidence/dvc/details/019d2bfb-a852-73d0-a2ed-c507956a7431.json",
+      "components": [
+        {
+          "section": "Thành phần hồ sơ khai báo trên Cổng Thông tin một cửa quốc gia hoặc Cổng Thông tin thủ tục biên phòng điện tử cảng biển",
+          "position": 1,
+          "name": "+ Danh sách hành khách (nếu có);",
+          "component_code": "000.00.00.G11-KQ2596",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019da9d3-903f-72cb-b9c4-9f0c69e9c392",
+              "fileName": "Danhschhnhkhchnuc.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019da9d3-903f-72cb-b9c4-9f0c69e9c392/Danhschhnhkhchnuc.docx"
+            }
+          ]
+        },
+        {
+          "section": "Thành phần hồ sơ khai báo trên Cổng Thông tin một cửa quốc gia hoặc Cổng Thông tin thủ tục biên phòng điện tử cảng biển",
+          "position": 2,
+          "name": "+ Danh sách thuyền viên;",
+          "component_code": "000.00.00.G11-KQ2595",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019da9d3-e1b0-702f-80ec-09cfbe822ff3",
+              "fileName": "Danhschthuynvin (9).docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019da9d3-e1b0-702f-80ec-09cfbe822ff3/Danhschthuynvin (9).docx"
+            }
+          ]
+        },
+        {
+          "section": "Thành phần hồ sơ khai báo trên Cổng Thông tin một cửa quốc gia hoặc Cổng Thông tin thủ tục biên phòng điện tử cảng biển",
+          "position": 3,
+          "name": "Bản khai chung",
+          "component_code": "000.00.00.G11-KQ2594",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019da9d4-190b-76c6-b1c0-a665f9b9cdbc",
+              "fileName": "Bnkhaichung (8).docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019da9d4-190b-76c6-b1c0-a665f9b9cdbc/Bnkhaichung (8).docx"
+            }
+          ]
+        },
+        {
+          "section": "Thành phần hồ sơ khai báo trên Cổng Thông tin một cửa quốc gia hoặc Cổng Thông tin thủ tục biên phòng điện tử cảng biển",
+          "position": 4,
+          "name": "+ Bản khai người trốn trên tàu (nếu có);",
+          "component_code": "000.00.00.G11-KQ2598",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019da9d4-5d46-70b1-b97e-630ec48d931b",
+              "fileName": "Bnkhaingitrntrntu.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019da9d4-5d46-70b1-b97e-630ec48d931b/Bnkhaingitrntrntu.docx"
+            }
+          ]
+        },
+        {
+          "section": "Thành phần hồ sơ khai báo trên Cổng Thông tin một cửa quốc gia hoặc Cổng Thông tin thủ tục biên phòng điện tử cảng biển",
+          "position": 5,
+          "name": "+ Bản khai vũ khí và vật liệu nổ (nếu có);",
+          "component_code": "000.00.00.G11-KQ2597",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019da9d4-a197-714c-9f10-fbc4e3c38bcc",
+              "fileName": "Bnkhaivkhvvtliunnuc.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019da9d4-a197-714c-9f10-fbc4e3c38bcc/Bnkhaivkhvvtliunnuc.docx"
+            }
+          ]
+        },
+        {
+          "section": "Thành phần hồ sơ phải xuất trình",
+          "position": 1,
+          "name": "Hộ chiếu hoặc giấy tờ có giá trị đi lại quốc tế của thuyền viên và hành khách hoặc sổ thuyền viên đối với thuyền viên nước ngoài thuộc trường hợp quy định tại khoản 3 Điều 13 Nghị định số 77/2017/NĐ-CP ngày 03/7/2017 của Chính phủ quy định về quản lý, bảo vệ an ninh, trật tự tại cửa khẩu cảng.",
+          "component_code": "000.00.00.G11-KQ003859",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c6f-72b5-bd09-677b2524ff9c",
+          "name": "Bản điện tử xác nhận hoàn thành thủ tục biên phòng điện tử cảng biển hoặc từ chối thực hiện thủ tục biên phòng điện tử cảng biển của Biên phòng cửa khẩu cảng gửi người làm thủ tục",
+          "code": "KQ.G11.000237"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d84-71c5-b678-72e8ac46ed62",
+          "name": "Quyết định số 31/2025/QĐ-TTg của Thủ tướng Chính phủ: Sửa đổi, bổ sung một số điều các Quyết định của Thủ tướng Chính phủ về thực hiện thủ tục biên phòng điện tử tại các cửa khẩu do Bộ Quốc phòng quản lý",
+          "code": "31/2025/QĐ-TTg"
+        },
+        {
+          "id": "019d2bb3-5d7f-719e-b46f-3623eee55f1d",
+          "name": "Nghị định quy định chi tiết một số điều của Bộ luật Hàng hải Việt Nam về quản lý hoạt động hàng hải",
+          "code": "58/2017/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7f-719e-b471-10f0667bd234",
+          "name": "Quy định về quản lý, bảo an ninh, trật tự tại cửa khẩu cảng",
+          "code": "77/2017/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7f-719e-b46c-e32fea9edd37",
+          "name": "Nghị định sửa đổi, bổ sung một số điều của các Nghị định trong lĩnh vực hàng hải",
+          "code": "34/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b676-c98634570781",
+          "name": "Về thực hiện thủ tục biên phòng điện tử cảng biển",
+          "code": "10/2016/QĐ-TTg"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "id": "dvc-019d2bfa-47f7-718f-8b27-0d6e6a357e0a",
+  "procedure_code": "1.007919",
+  "name": "Thẩm định thiết kế, dự toán công trình lâm sinh hoặc thẩm định điều chỉnh thiết kế, dự toán công trình lâm sinh sử dụng vốn đầu tư công đối với công trình lâm sinh thuộc dự án do Chủ tịch Ủy ban nhân dân cấp xã quyết định đầu tư",
+  "domain": "Lâm nghiệp và Kiểm lâm",
+  "managing_agency": "Bộ Nông nghiệp và Môi trường",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:18.020218+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfa-47f7-718f-8b27-0d6e6a357e0a",
+      "code": "1.007919",
+      "name": "Thẩm định thiết kế, dự toán công trình lâm sinh hoặc thẩm định điều chỉnh thiết kế, dự toán công trình lâm sinh sử dụng vốn đầu tư công đối với công trình lâm sinh thuộc dự án do Chủ tịch Ủy ban nhân dân cấp xã quyết định đầu tư",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1776754076639,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfa-47f7-718f-8b27-0d6e6a357e0a",
+      "raw_path": "evidence/dvc/details/019d2bfa-47f7-718f-8b27-0d6e6a357e0a.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": ".Bản sao quyết định phê duyệt dự án đầu tư hoặc kế hoạch vốn được giao đối với hoạt động sử dụng kinh phí ngân sách nhà nước và các tài liệu khác có liên quan",
+          "component_code": "G10-KQ007622",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Tờ trình đề nghị phê duyệt thiết kế, dự toán theo Mẫu số 13 Phụ lục ban hành kèm theo Nghị định số 58/2024/NĐ-CP",
+          "component_code": "G10-KQ007620",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019d6cb2-e11b-7289-9be9-ab70d3a2ab8d",
+              "fileName": "Mus132.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d6cb2-e11b-7289-9be9-ab70d3a2ab8d/Mus132.docx"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 3,
+          "name": "Thuyết minh thiết kế bao gồm dự toán và bản đồ thiết kế công trình lâm sinh theo Mẫu số 14 Phụ lục ban hành kèm theo Nghị định số 58/2024/NĐ-CP",
+          "component_code": "G10-KQ007621",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019d6cb3-429d-729d-b6fd-2a24a2242bdb",
+              "fileName": "Mus142.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d6cb3-429d-729d-b6fd-2a24a2242bdb/Mus142.docx"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c6e-7797-a21a-3a62c54e47e5",
+          "name": "Báo cáo kết quả thẩm định.",
+          "code": "KQ.G10.001401"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d86-7760-a641-700a6f743b8f",
+          "name": "Thông tư quy định phân cấp, phân định thẩm quyền quản lý nhà nước và một số nội dung trong lĩnh vực lâm nghiệp và kiểm lâm.",
+          "code": "16/2025/TT-BNNMT"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afea-45ea9b37796c",
+          "name": "Quy định phân định thẩm quyền của chính quyền địa phương 02 cấp trong lĩnh vực quản lý nhà nước của Bộ Nông nghiệp và Môi trường",
+          "code": "Nghị định số 131/2025/NĐ-CP"
+        }
+      ]
+    }
+  ]
+}

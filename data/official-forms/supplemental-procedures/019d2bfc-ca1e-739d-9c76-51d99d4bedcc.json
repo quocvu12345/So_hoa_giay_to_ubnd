@@ -1,0 +1,88 @@
+{
+  "id": "dvc-019d2bfc-ca1e-739d-9c76-51d99d4bedcc",
+  "procedure_code": "1.012843",
+  "name": "Thủ tục xử lý tiền thuế, tiền chậm nộp, tiền phạt nộp thừa",
+  "domain": "Hải quan",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.920288+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfc-ca1e-739d-9c76-51d99d4bedcc",
+      "code": "1.012843",
+      "name": "Thủ tục xử lý tiền thuế, tiền chậm nộp, tiền phạt nộp thừa",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1786419569937,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-ca1e-739d-9c76-51d99d4bedcc",
+      "raw_path": "evidence/dvc/details/019d2bfc-ca1e-739d-9c76-51d99d4bedcc.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Công văn đề nghị hoàn trả tiền thuế, khoản thu khác, tiền chậm nộp, tiền phạt nộp thừa theo Mẫu số 2 tại Phụ lục II Thông tư số 86/2026/TT-BTC và các chứng từ, tài liệu có liên quan theo quy định.",
+          "component_code": "000.00.00.G12-1042",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019f3bbf-dc9f-72bc-9238-f8d9a981b0dc",
+              "fileName": "2. PHỤ LỤC II - Mẫu điện tử.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f3bbf-dc9f-72bc-9238-f8d9a981b0dc/2. PHỤ LỤC II - Mẫu điện tử.docx"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Trường hợp Hệ thống gặp sự cố, người nộp thuế nộp công văn đề nghị hoàn trả tiền thuế, khoản thu khác, tiền chậm nộp, tiền phạt nộp thừa theo Mẫu số 04 tại Phụ lục I Thông tư số 86/2026/TT-BTC và chứng từ, tài liệu có liên quan.",
+          "component_code": "000.00.00.G12-125",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019f3678-e591-72ee-bf7c-c944fb69d818",
+              "fileName": "Mẫu số 04.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f3678-e591-72ee-bf7c-c944fb69d818/Mẫu số 04.docx"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "id": "019f363f-6efb-7548-ac06-ab6f13916cf2",
+          "name": "Quyết định hoàn tiền thuế, khoản thu khác, tiền chậm nộp, tiền phạt nộp thừa",
+          "code": "000.00.00.KQ-752"
+        },
+        {
+          "id": "019f363f-b32e-747c-a372-91d2f454b9d5",
+          "name": "Thông báo hồ sơ chưa đủ điều kiện hoàn tiền thuế, khoản thu khác, tiền chậm nộp, tiền phạt nộp thừa",
+          "code": "000.00.00.KQ-139"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019e5e83-1282-771d-9014-49799413a4e5",
+          "name": "Luật số 108/2025/QH15 của Quốc hội: Luật Quản lý thuế",
+          "code": "108/2025/QH15"
+        },
+        {
+          "id": "019f3572-2dda-738d-9e22-fb4a0b4e1a7c",
+          "name": "Quy định về quản lý thuế đối với hàng hóa xuất khẩu, nhập khẩu.",
+          "code": "86/2026/TT-BTC"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,249 @@
+{
+  "id": "dvc-019d2bfc-7bc8-760d-b666-15b15683cd0d",
+  "procedure_code": "1.009095",
+  "name": "Thủ tục hải quan đối với tàu hỏa xuất cảnh, nhập cảnh, quá cảnh",
+  "domain": "Hải quan",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.927334+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfc-7bc8-760d-b666-15b15683cd0d",
+      "code": "1.009095",
+      "name": "Thủ tục hải quan đối với tàu hỏa xuất cảnh, nhập cảnh, quá cảnh",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1778124112348,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-7bc8-760d-b666-15b15683cd0d",
+      "raw_path": "evidence/dvc/details/019d2bfc-7bc8-760d-b666-15b15683cd0d.json",
+      "components": [
+        {
+          "section": "Tàu nhập cảnh tại ga đường sắt liên vận quốc tế trong nội địa",
+          "position": 1,
+          "name": "Bản trích lược khai hàng hóa nhập khẩu dỡ xuống từng ga đường sắt liên vận quốc tế theo mẫu do Bộ Tài chính ban hành",
+          "component_code": "000.00.00.G12-KQ9962",
+          "original_quantity": 2,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Tàu nhập cảnh tại ga đường sắt liên vận quốc tế trong nội địa",
+          "position": 2,
+          "name": "Vận đơn",
+          "component_code": "000.00.00.G12-KQ9961",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Tàu nhập cảnh tại ga đường sắt liên vận quốc tế trong nội địa",
+          "position": 3,
+          "name": "Danh sách hành khách đối với tàu khách và hành khách làm thủ tục tại ga đường sắt liên vận quốc tế trong nội địa (nếu có)",
+          "component_code": "000.00.00.G12-KQ9963",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Tàu nhập cảnh tại ga đường sắt liên vận quốc tế ở biên giới",
+          "position": 1,
+          "name": "Danh sách hành khách đối với tàu khách và hành khách làm thủ tục tại ga đường sắt liên vận quốc tế ở biên giới (nếu có)",
+          "component_code": "000.00.00.G12-KQ9959",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Tàu nhập cảnh tại ga đường sắt liên vận quốc tế ở biên giới",
+          "position": 2,
+          "name": "Vận đơn",
+          "component_code": "000.00.00.G12-KQ9957",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Tàu nhập cảnh tại ga đường sắt liên vận quốc tế ở biên giới",
+          "position": 3,
+          "name": "Giấy giao tiếp hàng hóa",
+          "component_code": "000.00.00.G12-KQ9956",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Tàu nhập cảnh tại ga đường sắt liên vận quốc tế ở biên giới",
+          "position": 4,
+          "name": "Bảng kê nhiên liệu, dụng cụ, thực phẩm mang theo của tàu (nếu có)",
+          "component_code": "000.00.00.G12-KQ9960",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Tàu nhập cảnh tại ga đường sắt liên vận quốc tế ở biên giới",
+          "position": 5,
+          "name": "Bản trích lược khai hàng hóa nhập khẩu dỡ xuống từng ga đường sắt liên vận quốc tế theo mẫu do Bộ Tài chính ban hành",
+          "component_code": "000.00.00.G12-KQ9958",
+          "original_quantity": 2,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Tàu xuất cảnh tại ga liên vận quốc tế trong nội địa",
+          "position": 1,
+          "name": "Bản trích lược khai hàng hóa tại ga liên vận quốc tế trong nội địa theo mẫu do Bộ Tài chính ban hành",
+          "component_code": "000.00.00.G12-KQ9949",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Tàu xuất cảnh tại ga liên vận quốc tế trong nội địa",
+          "position": 2,
+          "name": "Vận đơn (nếu có)",
+          "component_code": "000.00.00.G12-KQ9948",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Tàu xuất cảnh tại ga liên vận quốc tế trong nội địa",
+          "position": 3,
+          "name": "Danh sách hành khách đối với tàu khách và hành khách làm thủ tục hải quan tại ga liên vận quốc tế trong nội địa (nếu có)",
+          "component_code": "000.00.00.G12-KQ9950",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Tàu xuất cảnh tại ga liên vận quốc tế trong nội địa",
+          "position": 4,
+          "name": "Bản xác báo thứ tự lập tàu đối với tàu khách làm thủ tục hải quan tại ga liên vận quốc tế trong nội địa",
+          "component_code": "000.00.00.G12-KQ9947",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Tàu xuất cảnh tại ga đường sắt liên vận quốc tế ở biên giới",
+          "position": 1,
+          "name": "Bản xác báo thứ tự lập tàu",
+          "component_code": "000.00.00.G12-KQ9954",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Tàu xuất cảnh tại ga đường sắt liên vận quốc tế ở biên giới",
+          "position": 2,
+          "name": "Vận đơn (nếu có)",
+          "component_code": "000.00.00.G12-KQ9951",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Tàu xuất cảnh tại ga đường sắt liên vận quốc tế ở biên giới",
+          "position": 3,
+          "name": "Danh sách hành khách đối với tàu khách và hành khách làm thủ tục hải quan tại ga đường sắt liên vận quốc tế ở biên giới (nếu có)",
+          "component_code": "000.00.00.G12-KQ9955",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Tàu xuất cảnh tại ga đường sắt liên vận quốc tế ở biên giới",
+          "position": 4,
+          "name": "Bản trích lược khai hàng hóa tại ga liên vận quốc tế trong nội địa theo mẫu do Bộ Tài chính ban hành; Giấy giao tiếp hàng hóa",
+          "component_code": "000.00.00.G12-KQ9952",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Tàu xuất cảnh tại ga đường sắt liên vận quốc tế ở biên giới",
+          "position": 5,
+          "name": "Giấy giao tiếp hàng hóa",
+          "component_code": "000.00.00.G12-KQ9953",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c70-724b-96df-ddc2578f60d3",
+          "name": "Xác nhận thông quan hàng hóa",
+          "code": "KQ.G12.000583"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7d-7398-be4d-ff62cdf67da5",
+          "name": "Luật 54/2014/QH13",
+          "code": "54/2014/QH13"
+        },
+        {
+          "id": "019d2bb3-5d87-7195-a442-414b51a3c119",
+          "name": "Thông tư 50/2018/TT-BTC",
+          "code": "50/2018/TT-BTC"
+        },
+        {
+          "id": "019d2bb3-5d7d-7398-be49-b47412bcdb1d",
+          "name": "Thông tư quy định mức thu, chế độ thu, nộp, quản lý và sử dụng phí hải quan và lệ phí hàng hóa, phương tiện vận tải quá cảnh",
+          "code": "14/2021/TT-BTC"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afec-4c8f9cb859d2",
+          "name": "Nghị định số 167/2025/NĐ-CP ngày 30/6/2025 của Chính phủ",
+          "code": "167/2025"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afe7-9c25863596db",
+          "name": "Nghị định 08/2015/NĐ-CP",
+          "code": "08/2015/NĐ-CP"
+        }
+      ]
+    }
+  ]
+}

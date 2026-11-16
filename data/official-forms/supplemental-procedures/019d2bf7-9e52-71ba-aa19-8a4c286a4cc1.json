@@ -1,0 +1,121 @@
+{
+  "id": "dvc-019d2bf7-9e52-71ba-aa19-8a4c286a4cc1",
+  "procedure_code": "1.014364",
+  "name": "Cấp giấy thông hành xuất, nhập cảnh vùng biên giới Việt Nam – Trung Quốc cho cán bộ, công chức làm việc tại các cơ quan nhà nước có trụ sở đóng tại đơn vị hành chính cấp xã thuộc tỉnh của Việt Nam tiếp giáp đường biên giới Việt Nam - Trung Quốc",
+  "domain": "Quản lý xuất nhập cảnh",
+  "managing_agency": "Bộ Công an",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:18.033798+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bf7-9e52-71ba-aa19-8a4c286a4cc1",
+      "code": "1.014364",
+      "name": "Cấp giấy thông hành xuất, nhập cảnh vùng biên giới Việt Nam – Trung Quốc cho cán bộ, công chức làm việc tại các cơ quan nhà nước có trụ sở đóng tại đơn vị hành chính cấp xã thuộc tỉnh của Việt Nam tiếp giáp đường biên giới Việt Nam - Trung Quốc",
+      "state": "ACTIVE",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1777390139816,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf7-9e52-71ba-aa19-8a4c286a4cc1",
+      "raw_path": "evidence/dvc/details/019d2bf7-9e52-71ba-aa19-8a4c286a4cc1.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "02 ảnh 4x6cm mới chụp, mặt nhìn thẳng, đầu để trần, không đeo  kính màu, phông nền trắng; trong đó 01 ảnh dán vào Tờ khai",
+          "component_code": "000.00.00.G01-KQ003546",
+          "original_quantity": 2,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Giấy thông hành đã được cấp nếu còn giá trị sử dụng",
+          "component_code": "000.00.00.G01-KQ003547",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 3,
+          "name": "Giấy giới thiệu của cơ quan, tổ chức, doanh nghiệp đối với trường hơp ủy quyền nộp hồ sơ",
+          "component_code": "000.00.00.G01-KQ003548",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 4,
+          "name": "Tờ khai đề nghị cấp giấy thông hành (mẫu M01a) ban hành kèm theo Nghị định số 67/2024/NĐ-CP ngày 25/6/2024 của Chính phủ, có xác nhận và đóng dấu giáp lai ảnh của cơ quan, tổ chức, doanh nghiệp nơi người đề nghị cấp giấy thông hành làm việc",
+          "component_code": "000.00.00.G01-KQ003545",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c38-75c9-8e12-33ee9cfb57c2",
+          "name": "Giấy thông hành xuất, nhập cảnh vùng biên giới Việt Nam – Trung Quốc",
+          "code": "KQ.G01.000258"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d87-7195-a445-a2e461afc7f1",
+          "name": "Nghị định 76/2020/NĐ-CP",
+          "code": "76/2020/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afec-c7ba7cb44bf3",
+          "name": "Nghị định số 184/2025/NĐ-CP của Chính phủ: Quy định phân định thẩm quyền khi tổ chức chính quyền địa phương 02 cấp và sửa đổi, bổ sung một số điều của các Nghị định của Chính phủ trong lĩnh vực an ninh, trật tự",
+          "code": "184/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d86-7760-a645-08dd5ede9baf",
+          "name": "Luật Xuất cảnh, nhập cảnh của công dân Việt Nam và Luật Nhập cảnh, xuất cảnh, quá cảnh, cư trú của người nước ngoài tại Việt Nam sửa đổi 2023",
+          "code": "23/2023/QH15"
+        },
+        {
+          "id": "019d2bb3-5d87-7195-a442-1fc2d8d3cd84",
+          "name": "Luật 49/2019/QH14",
+          "code": "49/2019/QH14"
+        },
+        {
+          "id": "019d2bb3-5d7f-719e-b470-660b94576cfb",
+          "name": "Nghị định số 67/2024/NĐ-CP ngày 25/6/2024 của Chính phủ sửa đổi, bổ sung một số điều của Nghị định số 76/2020/NĐ-CP ngày 01/7/2020 của Chính phủ quy định chi tiết đối tượng, trình tự, thủ tục, thẩm quyền cấp, thu hồi, hủy giá trị sử dụng giấy thông hành và Nghị định số 77/2020/NĐ-CP ngày 01/7/2020 của Chính phủ quy định việc quản lý, khai thác thông tin trong Cơ sở dữ liệu quốc gia về xuất nhập cảnh; dịch vụ công trực tuyến phục vụ cấp, quản lý, kiểm soát hộ chiếu của công dân Việt Nam; kiểm soát xuất nhập cảnh bằng cổng kiểm soát tự động.",
+          "code": "67/2024/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7d-7398-be4b-fbb10e115bac",
+          "name": "QUY ĐỊNH MỨC THU, CHẾ ĐỘ THU, NỘP, QUẢN LÝ VÀ SỬ DỤNG PHÍ, LỆ PHÍ TRONG LĨNH VỰC XUẤT CẢNH, NHẬP CẢNH, QUÁ CẢNH, CƯ TRÚ TẠI VIỆT NAM",
+          "code": "25/2021/TT-BTC"
+        },
+        {
+          "id": "019d2bb3-5d7d-7398-be4e-69cce97f8824",
+          "name": "Thông tư quy định mức thu, miễn một số khoản phí, lệ phí nhằm hỗ trợ cho doanh nghiệp, người dân",
+          "code": "64/2025/TT-BTC"
+        },
+        {
+          "id": "019d2bb3-5d87-7195-a445-c113edaff81c",
+          "name": "Nghị định 77/2020/NĐ-CP",
+          "code": "77/2020/NĐ-CP"
+        }
+      ]
+    }
+  ]
+}

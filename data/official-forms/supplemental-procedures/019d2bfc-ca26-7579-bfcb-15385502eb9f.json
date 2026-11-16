@@ -1,0 +1,91 @@
+{
+  "id": "dvc-019d2bfc-ca26-7579-bfcb-15385502eb9f",
+  "procedure_code": "1.012994",
+  "name": "Khấu trừ kinh phí bồi thường, hỗ trợ, tái định cư",
+  "domain": "Tài chính đất đai",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.919647+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfc-ca26-7579-bfcb-15385502eb9f",
+      "code": "1.012994",
+      "name": "Khấu trừ kinh phí bồi thường, hỗ trợ, tái định cư",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1775645689413,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-ca26-7579-bfcb-15385502eb9f",
+      "raw_path": "evidence/dvc/details/019d2bfc-ca26-7579-bfcb-15385502eb9f.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Văn bản của người thực hiện dự án đề nghị được khấu trừ kinh phí bồi thường, hỗ trợ, tái định cư",
+          "component_code": "000.00.00.G12-KQ013271",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Phương án bồi thường, hỗ trợ, tái định cư được cơ quan nhà nước có thẩm quyền phê duyệt",
+          "component_code": "000.00.00.G12-KQ013272",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 3,
+          "name": "Bảng kê thanh toán kinh phí bồi thường, hỗ trợ, tái định cư do đơn vị, tổ chức thực hiện nhiệm vụ bồi thường, hỗ trợ, tái định cư lập; trong đó có các nội dung về số tiền đã chi trả, số chứng từ chi trả, ngày, tháng chi tiền, người nhận tiề",
+          "component_code": "000.00.00.G12-KQ013274",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 4,
+          "name": "Chứng từ chuyển tiền của người thực hiện dự án cho đơn vị, tổ chức thực hiện nhiệm vụ bồi thường, hỗ trợ, tái định cư",
+          "component_code": "000.00.00.G12-KQ013273",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c71-7574-afea-b9025cc19b3c",
+          "name": "Văn bản xác nhận số tiền bồi thường, hỗ trợ, tái định cư được trừ vào tiền sử dụng đất, tiền thuê đất của Ủy ban nhân dân cấp huyện gửi cho cơ quan thuế thực hiện việc trừ số tiền ứng trước vào tiền sử dụng đất, tiền thuê đất.",
+          "code": "KQ.G12.000271"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7e-72d1-afe8-2d2590ea131f",
+          "name": "Nghị định số 103/2024/NĐ-CP ngày 30/7/2024 của Chính phủ quy định về tiền sử dụng đất, tiền thuê đất",
+          "code": "103/2024/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afe9-e5df60a9dbdb",
+          "name": "Nghị định số 125/2025/NĐ-CP của Chính phủ: Quy định về phân định thẩm quyền của chính quyền địa phương 02 cấp trong lĩnh vực quản lý nhà nước của Bộ Tài chính",
+          "code": "125/2025/NĐ-CP"
+        }
+      ]
+    }
+  ]
+}

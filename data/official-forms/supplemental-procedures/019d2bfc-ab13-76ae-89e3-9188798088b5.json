@@ -1,0 +1,70 @@
+{
+  "id": "dvc-019d2bfc-ab13-76ae-89e3-9188798088b5",
+  "procedure_code": "1.010339",
+  "name": "Cấp/Điều chỉnh/Thay thế hóa đơn điện tử có mã của cơ quan thuế theo từng lần phát sinh",
+  "domain": "Thuế",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.924980+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfc-ab13-76ae-89e3-9188798088b5",
+      "code": "1.010339",
+      "name": "Cấp/Điều chỉnh/Thay thế hóa đơn điện tử có mã của cơ quan thuế theo từng lần phát sinh",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1784548236456,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-ab13-76ae-89e3-9188798088b5",
+      "raw_path": "evidence/dvc/details/019d2bfc-ab13-76ae-89e3-9188798088b5.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Đơn đề nghị cấp hóa đơn điện tử có mã của cơ quan thuế (Mẫu số 06/ĐN-PSĐT)",
+          "component_code": "000.00.00.G12-KQ013906",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019f7f27-134e-7788-8f7e-19f2e6f0fbe7",
+              "fileName": "Mẫu 06 ĐN-PSĐT.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f7f27-134e-7788-8f7e-19f2e6f0fbe7/Mẫu 06 ĐN-PSĐT.docx"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c71-7574-afec-75685c8dfd2e",
+          "name": "Cấp/Điều chỉnh/Thay thế Hóa đơn điện tử có mã của cơ quan thuế theo từng lần phát sinh",
+          "code": "KQ.G12.000033"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019f64ed-e026-7299-b5f2-ca44a3964050",
+          "name": "Nghị định về thực hiện thủ tục hành chính theo cơ chế một cửa, một cửa liên thông tại Bộ phận Một cửa và Cổng Dịch vụ công quốc gia.",
+          "code": "118/2025/NĐ-CP "
+        },
+        {
+          "id": "019f7eee-65ff-7190-97bb-0d978182d268",
+          "name": "Nghị định số 254/2026/NĐ-CP của Chính phủ: Quy định chi tiết một số điều và biện pháp để tổ chức, hướng dẫn thi hành Luật Quản lý thuế số 108/2025/QH15 về hóa đơn điện tử, chứng từ điện tử",
+          "code": "254/2026/NĐ-CP"
+        },
+        {
+          "id": "019f7ef5-5ff2-73cd-841d-79992569d6c6",
+          "name": "Quy định một số điều của Luật Quản lý thuế và Nghị định số 254/2026/NĐ-CP của Chính phủ quy định chi tiết một số điều và biện pháp để tổ chức, hướng dẫn thi hành Luật Quản lý thuế số 108/2025/QH15 về hóa đơn điện tử, chứng từ điện tử",
+          "code": "91/2026/TT-BTC"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#0967b2">
+  <title>Thử SAM 3 · Hồ sơ số</title>
+  <link rel="stylesheet" href="assets/sam3-lab.css">
+  <script src="assets/sam3-lab.js" defer></script>
+  <link rel="stylesheet" href="assets/government-theme.css">
+</head>
+<body class="gov-ui page-lab">
+  <header class="topbar"><a class="brand" href="index.html"><span class="brand-icon">▤</span><span>HỒ SƠ SỐ<small>Phòng thử nghiệm tài liệu</small></span></a><nav aria-label="Điều hướng"><a href="quan-ly-ho-so.html">Quản lý hồ sơ</a><a href="/docs" target="_blank" rel="noopener">API</a><span class="local-badge">● Chạy trên máy này</span></nav></header>
+  <main>
+    <section class="heading"><div><p class="eyebrow">NHẬN DIỆN VÙNG TRONG TÀI LIỆU</p><h1>Thử SAM 3 với giấy tờ thật.</h1><p>Chọn một trang, mô tả đối tượng cần tìm và xem những vùng model nhận diện.</p></div><div class="model-card"><strong id="model-status">Đang kết nối…</strong><span id="model-device">SAM 3 · Meta</span><button id="refresh-status" type="button">Kiểm tra lại ↻</button></div></section>
+    <div id="setup-notice" class="notice" role="status" hidden></div>
+    <div id="error" class="error" role="alert" hidden></div>
+    <div class="workspace">
+      <aside class="library">
+        <div class="library-head"><h2>Kho tài liệu thử</h2><span id="sample-count">—</span></div>
+        <label class="search-label"><span class="sr-only">Tìm tài liệu</span><input id="search" type="search" placeholder="Tìm tên, loại hoặc nguồn…"></label>
+        <label class="upload-button" for="upload">＋ Nạp PDF / ảnh từ máy</label><input id="upload" type="file" accept=".pdf,.png,.jpg,.jpeg,.webp,.tif,.tiff" hidden>
+        <small class="upload-hint">Tối đa 40 MB · Tệp được giữ tại máy này</small>
+        <div id="document-list" class="document-list" aria-label="Danh sách tài liệu"></div>
+        <p class="library-note">Loại giấy tờ trong danh sách lấy từ nguồn công khai, chưa phải kết quả phân loại của SAM.</p>
+      </aside>
+      <section class="document-workspace" aria-label="Thử nhận diện">
+        <div class="document-heading"><div><p id="document-type" class="eyebrow">CHỌN TÀI LIỆU</p><h2 id="document-title">Đang nạp danh sách…</h2><p id="document-source" class="muted"></p></div><div class="source-links"><a id="source-link" href="#" target="_blank" rel="noopener" hidden>Nguồn công khai ↗</a><a id="original-link" href="#" hidden>↓ Bản gốc</a></div></div>
+        <div class="toolbar"><div class="pagination"><button id="prev-page" aria-label="Trang trước" disabled>←</button><label>Trang <input id="page" type="number" min="1" value="1" aria-label="Số trang"></label><span id="page-total">/ —</span><button id="next-page" aria-label="Trang sau" disabled>→</button></div><span class="muted">Xử lý từng trang để phù hợp RAM 16 GB</span></div>
+        <form id="segment-form" class="prompt-form">
+          <label class="prompt-field">Tìm đối tượng nào?<input id="prompt" value="document" maxlength="160" required placeholder="Ví dụ: table, stamp, signature"></label>
+          <label class="threshold-field">Ngưỡng điểm <output id="threshold-value">0.50</output><input id="threshold" type="range" min="0.05" max="0.95" step="0.05" value="0.5"></label>
+          <button class="run-button" id="run" type="submit" disabled>Chạy SAM 3 →</button>
+          <div class="presets" aria-label="Gợi ý prompt"><button type="button" data-prompt="document">Tờ giấy</button><button type="button" data-prompt="table">Bảng</button><button type="button" data-prompt="stamp">Con dấu</button><button type="button" data-prompt="signature">Chữ ký</button><button type="button" data-prompt="text">Vùng chữ</button><span>Prompt tiếng Anh · kết quả cần đối chiếu</span></div>
+        </form>
+        <div id="job-status" class="job-status" role="status" aria-live="polite" hidden></div>
+        <div class="viewers">
+          <figure><figcaption><strong>Trang nguồn</strong><span id="page-size">Ảnh dùng để nhận diện</span></figcaption><div class="image-stage"><img id="preview" alt="Trang tài liệu được chọn" hidden><p id="preview-empty">Chọn tài liệu để xem trước.</p></div></figure>
+          <figure><figcaption><strong>Vùng SAM 3 tìm thấy</strong><a id="json-link" href="#" hidden>↓ JSON kết quả</a></figcaption><div class="image-stage"><img id="overlay" alt="Các vùng nhận diện được tô màu trên tài liệu" hidden><div id="result-empty" class="result-empty"><span>◎</span><strong>Chưa chạy nhận diện</strong><p>Kết quả thật sẽ hiện tại đây sau khi model xử lý trang.</p></div></div></figure>
+        </div>
+        <div id="result-summary" class="result-summary" hidden></div>
+        <div id="region-list" class="region-list"></div>
+        <p class="scope-note">SAM 3 trả về vùng bao và mặt nạ theo mô tả. Đọc chữ (OCR) và phân loại công văn, quyết định, nghị quyết là các bước riêng. Các lần chạy và ảnh kết quả được lưu để đối chiếu.</p>
+      </section>
+    </div>
+  </main>
+  <footer>Hồ sơ số · SAM 3 local <span>PDF gốc và thông tin nguồn được giữ nguyên.</span></footer>
+</body>
+</html>

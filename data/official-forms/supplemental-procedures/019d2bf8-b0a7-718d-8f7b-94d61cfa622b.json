@@ -1,0 +1,113 @@
+{
+  "id": "dvc-019d2bf8-b0a7-718d-8f7b-94d61cfa622b",
+  "procedure_code": "1.008725",
+  "name": "Chuyển đổi trường tiểu học tư thục, trường trung học cơ sở tư thục và trường phổ thông tư thục có nhiều cấp học có cấp học cao nhất là trung học cơ sở do nhà đầu tư trong nước đầu tư sang trường phổ thông tư thục hoạt động không vì lợi nhuận",
+  "domain": "Giáo dục và Đào tạo thuộc hệ thống giáo dục quốc dân",
+  "managing_agency": "Bộ Giáo dục và Đào tạo",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:18.025712+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bf8-b0a7-718d-8f7b-94d61cfa622b",
+      "code": "1.008725",
+      "name": "Chuyển đổi trường tiểu học tư thục, trường trung học cơ sở tư thục và trường phổ thông tư thục có nhiều cấp học có cấp học cao nhất là trung học cơ sở do nhà đầu tư trong nước đầu tư sang trường phổ thông tư thục hoạt động không vì lợi nhuận",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1778139082526,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf8-b0a7-718d-8f7b-94d61cfa622b",
+      "raw_path": "evidence/dvc/details/019d2bf8-b0a7-718d-8f7b-94d61cfa622b.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Tờ trình đề nghị chuyển đổi cơ sở giáo dục phổ thông tư thục sang cơ sở giáo dục phổ thông tư thục hoạt động không vì lợi nhuận, trong đó nêu rõ sự cần thiết phải chuyển đổi; tôn chỉ, mục đích hoạt động không vì lợi nhuận; phân vốn góp, phần tài sản thuộc sở hữu chung hợp nhất không phân chia của nhà trường (nếu có).",
+          "component_code": "TP-G03.1290",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Quyết định thành lập cơ sở giáo dục phổ thông tư thục, quyết định công nhận hội đồng trường đương nhiệm, quyết định công nhận hiệu trưởng đương nhiệm của cơ sở giáo dục phổ thông tư thục và các tài liệu liên quan khác (nếu có)",
+          "component_code": "TP-G03.1295",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 3,
+          "name": "Văn bản cam kết của các nhà đầu tư đại diện ít nhất 75% tổng số vốn góp đối với cơ sở giáo dục phổ thông tư thục chuyển sang cơ sở giáo dục phổ thông tư thục hoạt động không vì lợi nhuận, bảo đảm thực hiện hoạt động không vì lợi nhuận, không rút vốn, không hưởng lợi tức; phần lợi nhuận tích lũy hằng năm thuộc sở hữu chung hợp nhất không phân chia để tiếp tục đầu tư phát triển cơ sở giáo dục phổ thông tư thục.",
+          "component_code": "TP-G03.1291",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 4,
+          "name": "Báo cáo đánh giá tác động của việc chuyển đổi về nhân sự, tài chính, tài sản và phương án xử lý",
+          "component_code": "TP-G03.1294",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 5,
+          "name": "Dự thảo quy chế tổ chức và hoạt động; dự thảo quy chế tài chính nội bộ của cơ sở giáo dục phổ thông tư thục hoạt động không vì lợi nhuận",
+          "component_code": "TP-G03.1292",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 6,
+          "name": "Bản sao được cấp từ sổ gốc, bản sao được chứng thực từ bản chính hoặc bản sao kèm theo bản chính để đối chiếu báo cáo kết quả kiểm toán; thỏa thuận giải quyết phần vốn góp cho nhà đầu tư không đồng ý chuyển đổi sang cơ sở giáo dục phổ thông tư thục hoạt động không vì lợi nhuận (nếu có); các giấy tờ, tài liệu về đất đai, tài sản, tài chính, tổ chức và nhân sự của cơ sở giáo dục phổ thông tư thục chuyển đổi sang cơ sở giáo dục phổ thông tư thục hoạt động không vì lợi nhuận",
+          "component_code": "TP-G03.1293",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c3b-735b-85a8-21bb39875d98",
+          "name": "Quyết định của Chủ tịch Ủy ban nhân dân cấp xã về việc chuyển đổi trường tiểu học tư thục/trường trung học cơ sở tư thục/trường phổ thông tư thục có nhiều cấp học có cấp học cao nhất là trung học cơ sở do nhà đầu tư trong nước đầu tư sang trường tiểu học tư thục/trường trung học cơ sở tư thục/trường phổ thông tư thục có nhiều cấp học có cấp học cao nhất là trung học cơ sở hoạt động không vì lợi nhuận.",
+          "code": "KQ-G03.000406"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7f-719e-b474-64d6cf9b4aac",
+          "name": "Nghị định số 142/2025/NĐ-CP của Chính phủ: Quy định về phân định thẩm quyền của chính quyền địa phương hai cấp trong lĩnh vực quản lý nhà nước của Bộ Giáo dục và Đào tạo",
+          "code": "Nghị định số 142/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d87-7195-a446-49b5dec7c330",
+          "name": "Nghị định 84/2020/NĐ-CP",
+          "code": "84/2020/NĐ-CP"
+        }
+      ]
+    }
+  ]
+}

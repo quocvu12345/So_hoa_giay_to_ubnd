@@ -1,0 +1,117 @@
+{
+  "ordinal": "279",
+  "managing_agency": "Sở Tư pháp",
+  "procedure_code": "2.001255",
+  "name": "Đăng ký lại việc nuôi con nuôi trong nước",
+  "domain": "Nuôi con nuôi",
+  "ministry_decision": "1848/QĐ-BTP ngày 23/06/2025",
+  "hanoi_decision": "216/QĐ-TTPVHCC ngày 13/02/2026",
+  "workflow_decision": "387/QĐ-TTPVHCC ngày 30/3/2026",
+  "fees": "Không quy định",
+  "execution_level": "Cấp xã",
+  "competent_authority": "UBND cấp xã",
+  "delegation_decision": "",
+  "delegation_expiry": "",
+  "receiving_location": "Điểm hỗ trợ DVC số",
+  "id": "hn87-279",
+  "source_page": 11,
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "inventory_date": "2026-04-27",
+  "checked_at": "2026-11-12T22:24:43.309963+07:00",
+  "details": [
+    {
+      "id": "019d2bfd-9614-7528-9c06-e53f6dee7a58",
+      "code": "2.001255",
+      "name": "Đăng ký lại việc nuôi con nuôi trong nước",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1777105286603,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfd-9614-7528-9c06-e53f6dee7a58",
+      "raw_path": "evidence/dvc/details/019d2bfd-9614-7528-9c06-e53f6dee7a58.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Lưu ý: Khi nộp hồ sơ, trường hợp phải chứng minh nơi thường trú của cha mẹ nuôi và con nuôi, cán bộ, công chức, viên chức, cá nhân được giao trách nhiệm tiếp nhận, giải quyết hồ sơ phải khai thác, sử dụng thông tin về cư trú của công dân trong Cơ sở dữ liệu quốc gia về dân cư theo các phương thức nêu tại khoản 2 Điều 14 Nghị định số 104/2022/NĐ-CP ngày 21/12/2022 của Chính phủ.  Trường hợp không thể khai thác được thông tin cư trú của công dân theo các phương thức trên thì có thể yêu cầu người nộp hồ sơ nộp bản sao hoặc xuất trình một trong các giấy tờ chứng minh thông tin về cư trú, bao gồm: Thẻ căn cước; Giấy xác nhận thông tin về cư trú, Giấy thông báo số định danh cá nhân và thông tin công dân trong Cơ sở dữ liệu quốc gia về dân cư.",
+          "component_code": "000.00.00.G15-KQ004737",
+          "original_quantity": 0,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Tờ khai đăng ký  lại việc nuôi  con nuôi. Tờ khai phải có  cam đoan của người yêu cầu đăng ký lại về tính trung thực của việc đăng ký nuôi con nuôi trước đó và có chữ ký của ít nhất hai người làm chứng.",
+          "component_code": "000.00.00.G15-KQ004736",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019d9563-f3d5-777f-844f-89f17c79f77c",
+              "fileName": "7.Tkhaingklivicnuiconnui.doc",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d9563-f3d5-777f-844f-89f17c79f77c/7.Tkhaingklivicnuiconnui.doc"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c78-7725-a74f-624c812c944a",
+          "name": "Giấy chứng nhận nuôi con nuôi trong nước",
+          "code": "KQ.G15.000002"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7d-7398-be52-75595513cbd8",
+          "name": "THÔNG TƯ  SỬA ĐỔI, BỔ SUNG MỘT SỐ ĐIỀU CỦA THÔNG TƯ SỐ 10/2020/TT-BTP NGÀY 28 THÁNG 12 NĂM 2020 CỦA BỘ TRƯỞNG BỘ TƯ PHÁP BAN HÀNH, HƯỚNG DẪN VIỆC GHI CHÉP, SỬ DỤNG, QUẢN LÝ VÀ LƯU TRỮ SỔ, MẪU GIẤY TỜ, HỒ SƠ NUÔI CON NUÔI",
+          "code": "07/2023/TT-BTP"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afe7-6431273ce2c4",
+          "name": "Nghị định số 06/2025/NĐ-CP ngày 08 tháng 01 năm 2025 của Chính phủ sửa đổi, bổ sung một số điều của các Nghị định về nuôi con nuôi",
+          "code": "06/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afe9-9d8e94b33af1",
+          "name": "Nghị định số 120/2025/NĐ-CP ngày 11/6/2025 của Chính phủ quy định về phân định thẩm quyền của chính quyền địa phương 02 cấp trong lĩnh vực quản lý nhà nước của Bộ Tư pháp.",
+          "code": "120/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7d-7398-be52-aa6de2bf3b03",
+          "name": "BAN HÀNH, HƯỚNG DẪN VIỆC GHI CHÉP, SỬ DỤNG, QUẢN LÝ VÀ LƯU TRỮ SỔ, MẪU GIẤY TỜ, HỒ SƠ NUÔI CON NUÔI",
+          "code": "10/2020/TT-BTP"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afe8-3ac91da2e6b0",
+          "name": "Nghị định sửa đổi, bổ sung một số điều của các Nghị định liên quan đến việc nộp xuất trình sổ hộ khẩu, sổ tạm trú giấy khi thực hiện thủ tục hành chính, cung cấp dịch vụ công",
+          "code": "104/2022/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afec-d87b860dc7c2",
+          "name": "Nghị định 19/2011/NĐ-CP",
+          "code": "19/2011/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7f-719e-b473-a3a6a5344e86",
+          "name": "Quy định lệ phí đăng ký nuôi con nuôi, lệ phí cấp giấy phép hoạt động của tổ chức con nuôi nước ngoài",
+          "code": "Nghị định 114/2016/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b673-6a6c4bfc8b96",
+          "name": "Luật Nuôi con nuôi",
+          "code": "52/2010/QH12"
+        }
+      ]
+    }
+  ],
+  "lookup_status": "retrieved",
+  "currency_status": "snapshot_requires_later_amendment_check",
+  "errors": []
+}

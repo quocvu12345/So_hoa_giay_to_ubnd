@@ -1,0 +1,89 @@
+{
+  "id": "dvc-019d2bfc-d209-71ff-affb-244cca037604",
+  "procedure_code": "1.014737",
+  "name": "Lựa chọn, phê duyệt dự án phát triển sản xuất cộng đồng",
+  "domain": "Quản lý chương trình mục tiêu quốc gia",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.914501+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfc-d209-71ff-affb-244cca037604",
+      "code": "1.014737",
+      "name": "Lựa chọn, phê duyệt dự án phát triển sản xuất cộng đồng",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1793098684208,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-d209-71ff-affb-244cca037604",
+      "raw_path": "evidence/dvc/details/019d2bfc-d209-71ff-affb-244cca037604.json",
+      "components": [
+        {
+          "section": "Số lượng hồ sơ: Ủy ban nhân dân cấp tỉnh quy định",
+          "position": 1,
+          "name": "Đơn đề nghị theo Mẫu số 04 tại Phụ lục XII ban hành kèm theo Nghị định số 387/2026/NĐ-CP của Chính phủ",
+          "component_code": "G12.A4.000005",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "01a17cfd-ae52-732b-9a18-ed4fdf398a3c",
+              "fileName": "Mẫu số 04 NĐ 387.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/01a17cfd-ae52-732b-9a18-ed4fdf398a3c/Mẫu số 04 NĐ 387.docx"
+            }
+          ]
+        },
+        {
+          "section": "Số lượng hồ sơ: Ủy ban nhân dân cấp tỉnh quy định",
+          "position": 2,
+          "name": "Nội dung dự án theo Mẫu số 05 tại Phụ lục XII ban hành kèm theo Nghị định số 387/2026/NĐ-CP của Chính phủ",
+          "component_code": "G12.A4.000006",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "01a17cfd-fafc-7478-8f2c-893592a12ac1",
+              "fileName": "Mẫu số 05 NĐ 387.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/01a17cfd-fafc-7478-8f2c-893592a12ac1/Mẫu số 05 NĐ 387.docx"
+            }
+          ]
+        },
+        {
+          "section": "Số lượng hồ sơ: Ủy ban nhân dân cấp tỉnh quy định",
+          "position": 3,
+          "name": "Biên bản họp dân và các tài liệu khác (nếu có).",
+          "component_code": "G12.A4.000007",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c73-70ac-aa1a-215bcd59b318",
+          "name": "Quyết định phê duyệt lựa chọn dự án phát triển sản xuất cộng đồng",
+          "code": "KQ.G12.001196"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "01a17cf6-5202-714e-afe8-9404c891c083",
+          "name": "Nghị định số 387/2026/NĐ-CP ngày 12/10/2026 của Chính phủ quy định nội dung, cơ chế, chính sách thực hiện Chương trình mục tiêu quốc gia phát triển văn hóa - xã hội, nông thôn, dân tộc và miền núi giai đoạn 2026 - 2035",
+          "code": "Nghị định số 387/2026/NĐ-CP"
+        }
+      ]
+    }
+  ]
+}

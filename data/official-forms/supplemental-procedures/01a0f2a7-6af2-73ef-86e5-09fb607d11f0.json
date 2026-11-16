@@ -1,0 +1,71 @@
+{
+  "id": "dvc-01a0f2a7-6af2-73ef-86e5-09fb607d11f0",
+  "procedure_code": "1.116847",
+  "name": "Cho phép thành lập trung tâm học tập cộng đồng tư thục",
+  "domain": "Giáo dục thường xuyên",
+  "managing_agency": "Bộ Giáo dục và Đào tạo",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.465073+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "01a0f2a7-6af2-73ef-86e5-09fb607d11f0",
+      "code": "1.116847",
+      "name": "Cho phép thành lập trung tâm học tập cộng đồng tư thục",
+      "state": "ACTIVE",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1790907958134,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/01a0f2a7-6af2-73ef-86e5-09fb607d11f0",
+      "raw_path": "evidence/dvc/details/01a0f2a7-6af2-73ef-86e5-09fb607d11f0.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Văn bản đề nghị thành lập hoặc cho phép thành lập trung tâm theo Mẫu số 03 Phụ lục kèm theo Nghị định số 360/2026/NĐ-CP",
+          "component_code": "TP-G03.0001177",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "01a0f2a5-e97e-7503-ad4b-f979fdb7d2df",
+              "fileName": "Mau so 3_VB de nghi cho phep thanh lap CSGD.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/01a0f2a5-e97e-7503-ad4b-f979fdb7d2df/Mau so 3_VB de nghi cho phep thanh lap CSGD.docx"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Đối với trung tâm giáo dục tư thục phải có văn bản pháp lý chứng minh quyền sử dụng đất, quyền sở hữu nhà ở hoặc hợp đồng thuê địa điểm, cơ sở vật chất với thời hạn tối thiểu 03 năm; tài liệu thuyết minh số tiền, tài sản đã đầu tư hoặc cam kết đầu tư phù hợp với quy mô dự kiến hoạt động của trung tâm, gồm một hoặc một số giấy tờ sau đây, tùy theo hình thức góp vốn, nguồn vốn, loại tài sản góp vốn và tình trạng thực hiện góp vốn tại thời điểm nộp hồ sơ: hợp đồng tín dụng, cam kết cấp tín dụng của tổ chức tín dụng, chi nhánh ngân hàng nước ngoài để thực hiện đầu tư vào trung tâm; văn bản xác nhận phong tỏa số tiền trong tài khoản thanh toán của nhà đầu tư; chứng từ chuyển tiền, tài liệu đối với nguồn lực tài chính đã được bố trí hoặc đã thực hiện đầu tư; chứng từ, hợp đồng, biên bản nghiệm thu, thanh toán hoặc tài liệu hợp pháp khác chứng minh giá trị vốn đã đầu tư xây dựng, mua sắm cơ sở vật chất, hạ tầng kỹ thuật, trang thiết bị; tài liệu chứng minh quyền sở hữu, quyền sử dụng hợp pháp đối với tài sản góp vốn kèm theo tài liệu xác định giá trị tài sản góp vốn theo quy định của pháp luật về doanh nghiệp và pháp luật có liên quan, nếu góp vốn bằng tài sản. Tổ chức, cá nhân không phải nộp bản sao các thành phần hồ sơ nếu cơ quan có thẩm quyền có thể khai thác, sử dụng thông tin tương ứng trong cơ sở dữ liệu quốc gia, cơ sở dữ liệu chuyên ngành hoặc đã được số hóa theo quy định",
+          "component_code": "TP-G03.0001178",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "01a0f2a6-c26a-745a-8738-8f64d20e0348",
+          "name": "Quyết định của Chủ tịch Ủy ban nhân dân cấp xã cho phép thành lập trung tâm học tập cộng đồng (theo Mẫu số 08 Phụ lục kèm theo Nghị định số 360/2026/NĐ-CP)",
+          "code": "KQ-G03.00046"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "01a0eb27-0a75-75f9-a08c-6705f56edf6d",
+          "name": "Quy định về điều kiện đầu tư và hoạt động của cơ sở giáo dục mầm non, cơ sở giáo dục phổ thông, cơ sở giáo dục thường xuyên và cơ sở giáo dục khác thuộc hệ thống giáo dục quốc dân",
+          "code": "360/2026/NĐ-CP"
+        }
+      ]
+    }
+  ]
+}

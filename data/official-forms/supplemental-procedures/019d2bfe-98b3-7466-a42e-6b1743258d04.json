@@ -1,0 +1,183 @@
+{
+  "id": "dvc-019d2bfe-98b3-7466-a42e-6b1743258d04",
+  "procedure_code": "2.001214",
+  "name": "Đăng ký lại phương tiện hoạt động vui chơi, giải trí dưới nước",
+  "domain": "Hàng hải và đường thủy nội địa",
+  "managing_agency": "Bộ xây dựng (Giao thông vận tải cũ)",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.856465+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfe-98b3-7466-a42e-6b1743258d04",
+      "code": "2.001214",
+      "name": "Đăng ký lại phương tiện hoạt động vui chơi, giải trí dưới nước",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1776357111331,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfe-98b3-7466-a42e-6b1743258d04",
+      "raw_path": "evidence/dvc/details/019d2bfe-98b3-7466-a42e-6b1743258d04.json",
+      "components": [
+        {
+          "section": "- Trường hợp cần chuyển đăng ký phương tiện sang cơ quan đăng ký phương tiện của địa phương khác:",
+          "position": 1,
+          "name": "+ Đơn đề nghị chuyển, nơi đăng ký nêu rõ nơi đăng ký mới và nộp lại Giấy chứng nhận đăng ký phương tiện đã được cấp trước đó.",
+          "component_code": "000.00.00.G04-KQ004651",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "- Trường hợp thay đổi chủ sở hữu phương tiện:",
+          "position": 1,
+          "name": "+Đơn đề nghị đăng ký phương tiện theo Mẫu;",
+          "component_code": "000.00.00.G04-KQ004647",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019d9603-f4c8-7619-a614-d25a32cd95c4",
+              "fileName": "Mẫu đơn đề nghị ĐƠN ĐỀ NGHỊ ĐĂNG KÝ PHƯƠNG TIỆN VUI CHƠI (dùng cho phương tiện đăng ký lại).docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d9603-f4c8-7619-a614-d25a32cd95c4/Mẫu đơn đề nghị ĐƠN ĐỀ NGHỊ ĐĂNG KÝ PHƯƠNG TIỆN VUI CHƠI (dùng cho phương tiện đăng ký lại).docx"
+            }
+          ]
+        },
+        {
+          "section": "- Trường hợp thay đổi chủ sở hữu phương tiện:",
+          "position": 2,
+          "name": "+ Xuất trình giấy tờ chứng minh quyền sở hữu phương tiện theo quy định: Hợp đồng mua bán hoặc hợp đồng đóng mới phương tiện hoặc các giấy tờ khác có giá trị tương đương;",
+          "component_code": "000.00.00.G04-KQ004649",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "- Trường hợp thay đổi chủ sở hữu phương tiện:",
+          "position": 3,
+          "name": "+Giấy chứng nhận an toàn kỹ thuật và bảo vệ môi trường của phương tiện còn hiệu lực đối với phương tiện thuộc diện đăng kiểm.",
+          "component_code": "000.00.00.G04-KQ004650",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "- Trường hợp thay đổi chủ sở hữu phương tiện:",
+          "position": 4,
+          "name": "+ Giấy chứng nhận đăng ký phương tiện đã được cấp trước đó, biên lai hoặc giấy chứng nhận đã nộp phí, lệ phí (nếu có);",
+          "component_code": "000.00.00.G04-KQ004648",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "- Trường hợp thay đổi thông số kỹ thuật",
+          "position": 1,
+          "name": "+   Giấy chứng nhận đăng ký phương tiện đã được cấp trước đó, biên lai hoặc giấy chứng nhận đã nộp phí, lệ phí (nếu có);",
+          "component_code": "000.00.00.G04-KQ004645",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "- Trường hợp thay đổi thông số kỹ thuật",
+          "position": 2,
+          "name": "+   Xuất trình Giấy chứng nhận an toàn kỹ thuật và bảo vệ môi trường của phương tiện còn hiệu lực đối với phương tiện thuộc diện đăng kiểm.",
+          "component_code": "000.00.00.G04-KQ004646",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "- Trường hợp thay đổi thông số kỹ thuật",
+          "position": 3,
+          "name": "+   Đơn đề nghị đăng ký phương tiện theo Mẫu;",
+          "component_code": "000.00.00.G04-KQ004644",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019d9605-3a5f-7029-b48d-bbde4b48b1df",
+              "fileName": "Mẫu đơn đề nghị ĐƠN ĐỀ NGHỊ ĐĂNG KÝ PHƯƠNG TIỆN VUI CHƠI (dùng cho phương tiện đăng ký lại) (1).docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d9605-3a5f-7029-b48d-bbde4b48b1df/Mẫu đơn đề nghị ĐƠN ĐỀ NGHỊ ĐĂNG KÝ PHƯƠNG TIỆN VUI CHƠI (dùng cho phương tiện đăng ký lại) (1).docx"
+            }
+          ]
+        },
+        {
+          "section": "- Trường hợp thay đổi tên phương tiện:",
+          "position": 1,
+          "name": "+  Đơn đề nghị đăng ký phương tiện theo Mẫu;",
+          "component_code": "000.00.00.G04-KQ004642",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019d9605-b002-725e-9aac-1c8a148c11e1",
+              "fileName": "Mẫu đơn đề nghị ĐĂNG KÝ PHƯƠNG TIỆN VUI CHƠI (dùng cho phương tiện đăng ký lại).docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d9605-b002-725e-9aac-1c8a148c11e1/Mẫu đơn đề nghị ĐĂNG KÝ PHƯƠNG TIỆN VUI CHƠI (dùng cho phương tiện đăng ký lại).docx"
+            }
+          ]
+        },
+        {
+          "section": "- Trường hợp thay đổi tên phương tiện:",
+          "position": 2,
+          "name": "+  Giấy chứng nhận đăng ký đã được cấp trước đó và xuất trình Giấy chứng nhận an toàn kỹ thuật và bảo vệ môi trường của phương tiện còn hiệu lực đối với phương tiện thuộc diện đăng kiểm.",
+          "component_code": "000.00.00.G04-KQ004643",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c7a-7554-ace5-88bb2a059eab",
+          "name": "Giấy chứng nhận đăng ký phương tiện",
+          "code": "KQ.G17.000291"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7e-72d1-afea-f01696ee65ca",
+          "name": "Quy định về phân định thẩm quyền của chính quyền địa phương 02 cấp trong lĩnh vực quản lý nhà nước của Bộ Xây dựng",
+          "code": "140/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afec-ea998119a7dc",
+          "name": "Nghị định số 19/2024/NĐ-CP ngày 23/02/2024 sửa đổi, bổ sung một số điều của Nghị định số 48/2019/NĐ-CP ngày 05/6/2019 của Chính phủ quy định về quản lý hoạt động của phương tiện phục vụ vui chơi, giải trí dưới nước",
+          "code": "19/2024/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7f-719e-b46e-6fbdb3d1c381",
+          "name": "Quy định về quản lý hoạt động của phương tiện phục vụ vui chơi, giải trí dưới nước",
+          "code": "48/2019/NĐ-CP"
+        }
+      ]
+    }
+  ]
+}

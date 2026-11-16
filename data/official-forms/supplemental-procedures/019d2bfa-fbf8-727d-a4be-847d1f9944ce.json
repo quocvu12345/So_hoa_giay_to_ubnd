@@ -1,0 +1,91 @@
+{
+  "id": "dvc-019d2bfa-fbf8-727d-a4be-847d1f9944ce",
+  "procedure_code": "1.010778",
+  "name": "Cấp lại Bằng “Tổ quốc ghi công”",
+  "domain": "Người có công",
+  "managing_agency": "Bộ Nội vụ",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:18.005765+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfa-fbf8-727d-a4be-847d1f9944ce",
+      "code": "1.010778",
+      "name": "Cấp lại Bằng “Tổ quốc ghi công”",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1779851518071,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfa-fbf8-727d-a4be-847d1f9944ce",
+      "raw_path": "evidence/dvc/details/019d2bfa-fbf8-727d-a4be-847d1f9944ce.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "- Bằng “Tổ quốc ghi công” cũ nếu còn.",
+          "component_code": "G09-KQ003210168",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Đơn đề nghị theo Mẫu số 16 Phụ lục I Nghị định số 131/2021/NĐ-CP.",
+          "component_code": "G09-KQ003210169",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019d7080-1940-77ad-b768-90b144f8187c",
+              "fileName": "Mauso16_ND131_2021.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d7080-1940-77ad-b768-90b144f8187c/Mauso16_ND131_2021.docx"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c4d-7725-9d9c-299d528a4282",
+          "name": "Quyết định cấp lại Bằng “Tổ quốc ghi công” và Bằng “Tổ quốc ghi công”.",
+          "code": "KQ.G09.000413"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7f-719e-b474-93996f3f00db",
+          "name": "Nghị định số 25/2025/NĐ-CP ngày 21 tháng 02 năm 2025 của Chính phủ quy định chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của Bộ Nội vụ",
+          "code": "Nghị định số 25/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b671-f40a5ee32475",
+          "name": "Nghị quyết số 190/2025/QH15 của Quốc hội: Quy định về xử lý một số vấn đề liên quan đến sắp xếp tổ chức bộ máy nhà nước",
+          "code": "190/2025/NQ-QH15"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afea-1c153ca6400f",
+          "name": "Quy định về phân định thẩm quyền của chính quyền địa phương 02 cấp trong lĩnh vực quản lý nhà nước của Bộ Nội vụ",
+          "code": "129/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7f-719e-b474-516a799e2145",
+          "name": "QUY ĐỊNH CHI TIẾT VÀ BIỆN PHÁP THI HÀNH PHÁP LỆNH ƯU ĐÃI NGƯỜI CÓ CÔNG VỚI CÁCH MẠNG",
+          "code": "Nghị định số 131/2021/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b671-1efb450f35ab",
+          "name": "Pháp lệnh ưu đãi người có công với cách mạng",
+          "code": "02/2020/UBTVQH14"
+        }
+      ]
+    }
+  ]
+}

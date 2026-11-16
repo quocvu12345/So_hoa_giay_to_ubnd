@@ -1,0 +1,101 @@
+{
+  "ordinal": "49",
+  "managing_agency": "Sở Nội Vụ",
+  "procedure_code": "1.013708",
+  "name": "Thủ tục hội tự giải thể.",
+  "domain": "Hội",
+  "ministry_decision": "627/QĐ-BNV ngày 20/6/2025",
+  "hanoi_decision": "963/QĐ-TTPVHCC ngày 27/6/2025",
+  "workflow_decision": "1062/QĐ-TTPVHCC ngày 12/7/2025",
+  "fees": "Không quy định",
+  "execution_level": "Cấp xã",
+  "competent_authority": "UBND cấp xã",
+  "delegation_decision": "",
+  "delegation_expiry": "",
+  "receiving_location": "Điểm hỗ trợ DVC số",
+  "source_page": 2,
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "inventory_date": "2026-04-27",
+  "checked_at": "2026-11-12T22:23:36.361582+07:00",
+  "details": [
+    {
+      "id": "019d2bfb-1b5d-738e-974f-9b1720c9150e",
+      "code": "1.013708",
+      "name": "Hội tự giải thể",
+      "state": "ACTIVE",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1776324066567,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-1b5d-738e-974f-9b1720c9150e",
+      "raw_path": "evidence/dvc/details/019d2bfb-1b5d-738e-974f-9b1720c9150e.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "- Bản kê tài sản, tài chính,",
+          "component_code": "G09-KQ002432",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "- Đơn đề nghị giải thể hội (theo mẫu),",
+          "component_code": "G09-KQ002430",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 3,
+          "name": "- Dự kiến phương thức xử lý tài sản, tài chính và thời hạn thanh toán các khoản nợ,",
+          "component_code": "G09-KQ002433",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 4,
+          "name": "- Biên bản có chữ ký của trên 1/2 tổng số hội viên chính thức hoặc nghị quyết của ban chấp hành hội về việc giải thể hội,",
+          "component_code": "G09-KQ002431",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c4c-77ab-bf6d-e0ee672154d1",
+          "name": "Quyết định giải thể hội",
+          "code": "KQ.G09.000184"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7e-72d1-afe9-f1533335aca7",
+          "name": "Nghị định số 126/2024/NĐ-CP của Chính phủ: Quy định về tổ chức, hoạt động và quản lý hội",
+          "code": "126/2024/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afea-1c153ca6400f",
+          "name": "Quy định về phân định thẩm quyền của chính quyền địa phương 02 cấp trong lĩnh vực quản lý nhà nước của Bộ Nội vụ",
+          "code": "129/2025/NĐ-CP"
+        }
+      ]
+    }
+  ],
+  "lookup_status": "retrieved",
+  "currency_status": "snapshot_requires_later_amendment_check",
+  "errors": []
+}

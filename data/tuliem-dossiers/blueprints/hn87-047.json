@@ -1,0 +1,183 @@
+{
+  "id": "hn87-047",
+  "ordinal": "47",
+  "procedure_code": "1.013706",
+  "name": "Thủ tục thông báo kết quả đại hội và phê duyệt đổi tên hội, phê duyệt điều lệ hội.",
+  "domain": "Hội",
+  "department_id": "vx",
+  "department": "Phòng Văn hóa - Xã hội",
+  "authority_as_published": "UBND cấp xã",
+  "execution_level_as_published": "Cấp xã",
+  "receiving_location_as_published": "Điểm hỗ trợ DVC số",
+  "inventory_date": "2026-04-27",
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "source_urls": [
+    "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-1b5d-74d9-8418-3390d177fc5c"
+  ],
+  "current_dvc_match": true,
+  "lifecycle": null,
+  "scope": "hanoi_commune_notice_2026_04_27",
+  "scope_note": "Mốc kiểm kê cấp xã Hà Nội; áp dụng từng thủ tục tại Từ Liêm còn phải theo thẩm quyền/ủy quyền hiện hành.",
+  "status": "source_template_missing",
+  "components": [
+    {
+      "id": "hn87-047-c001",
+      "code": "G09-KQ002416",
+      "name": "- Văn bản báo cáo kết quả đại hội (theo mẫu), trong đó có đề nghị phê duyệt điều lệ hội (nếu có) hoặc đề nghị đổi tên hội. Trường hợp đại hội quyết định không sửa đổi, bổ sung điều lệ thì hội báo cáo Ủy ban nhân dân cấp xã về việc tiếp tục thực hiện điều lệ hiện hành;,",
+      "section": "",
+      "role": "needs_review",
+      "scenario_status": "conditional_needs_review",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-1b5d-74d9-8418-3390d177fc5c",
+      "source_detail_id": "019d2bfb-1b5d-74d9-8418-3390d177fc5c",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-047-c002",
+      "code": "G09-KQ002422",
+      "name": "- Nghị quyết đại hội;,",
+      "section": "",
+      "role": "needs_review",
+      "scenario_status": "requirement_needs_review",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-1b5d-74d9-8418-3390d177fc5c",
+      "source_detail_id": "019d2bfb-1b5d-74d9-8418-3390d177fc5c",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-047-c003",
+      "code": "G09-KQ002419",
+      "name": "- Biên bản đại hội; biên bản bầu ban thường vụ, ban kiểm tra và các chức danh chủ tịch, phó chủ tịch hội (có danh sách kèm theo);,",
+      "section": "",
+      "role": "agency_prepared",
+      "scenario_status": "agency_reserved",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-1b5d-74d9-8418-3390d177fc5c",
+      "source_detail_id": "019d2bfb-1b5d-74d9-8418-3390d177fc5c",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-047-c004",
+      "code": "G09-KQ002417",
+      "name": "- Nếu trong đại hội có nội dung về đổi tên hội thì kèm theo đơn đề nghị đổi tên hội, trong đó nêu rõ lý do, sự cần thiết phải đổi tên hội;,",
+      "section": "",
+      "role": "needs_review",
+      "scenario_status": "requirement_needs_review",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-1b5d-74d9-8418-3390d177fc5c",
+      "source_detail_id": "019d2bfb-1b5d-74d9-8418-3390d177fc5c",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-047-c005",
+      "code": "G09-KQ002421",
+      "name": "- Chương trình hoạt động của hội;,",
+      "section": "",
+      "role": "needs_review",
+      "scenario_status": "requirement_needs_review",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-1b5d-74d9-8418-3390d177fc5c",
+      "source_detail_id": "019d2bfb-1b5d-74d9-8418-3390d177fc5c",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-047-c006",
+      "code": "G09-KQ002066",
+      "name": "- Trường hợp chủ tịch hội không phải là nhân sự dự kiến đã báo cáo cơ quan nhà nước có thẩm quyền thì hội bổ sung sơ yếu lý lịch cá nhân và phiếu lý lịch tư pháp số 1 không quá 06 tháng tính đến ngày nộp hồ sơ. Chủ tịch hội là cán bộ, công chức, viên chức hoặc là cán bộ, công chức, viên chức đã nghỉ hưu được cơ quan có thẩm quyền đồng ý bằng văn bản theo quy định về phân cấp quản lý cán bộ thì không phải nộp phiếu lý lịch tư pháp số 1;",
+      "section": "",
+      "role": "instruction",
+      "scenario_status": "instruction_only",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 1,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-1b5d-74d9-8418-3390d177fc5c",
+      "source_detail_id": "019d2bfb-1b5d-74d9-8418-3390d177fc5c",
+      "embedded_other_requirements": false,
+      "template_candidates": [
+        "template-a6136a9f1e9a2fe2"
+      ],
+      "template_selection_method": "first_matching_source_attachment",
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-047-c007",
+      "code": "G09-KQ002418",
+      "name": "- Dự thảo điều lệ hoặc dự thảo Điều lệ sửa đổi, bổ sung (theo mẫu);,",
+      "section": "",
+      "role": "needs_review",
+      "scenario_status": "requirement_needs_review",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-1b5d-74d9-8418-3390d177fc5c",
+      "source_detail_id": "019d2bfb-1b5d-74d9-8418-3390d177fc5c",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    }
+  ],
+  "service_cases": [
+    {
+      "id": "019db0fc-0520-717c-8fd4-7a08bf8f9638",
+      "code": "1.013706.01",
+      "name": "Thông báo kết quả đại hội và phê duyệt đổi tên hội, phê duyệt điều lệ hội",
+      "source_processing_time": {
+        "qty": 60,
+        "type": "WORKING_DAY"
+      },
+      "has_case_specific_components": false
+    }
+  ],
+  "selected_template_ids": [],
+  "source_component_groups": [
+    {
+      "name": "",
+      "component_count": 7,
+      "source_detail_id": "019d2bfb-1b5d-74d9-8418-3390d177fc5c"
+    }
+  ],
+  "conditional_component_groups": [],
+  "default_test_scenario": {
+    "channel": "direct",
+    "applicant_submits_self": true,
+    "authorized": false,
+    "special_case_flags": [],
+    "selected_conditional_group": null,
+    "case_selection_method": "ordinary_direct_submission",
+    "case_status": "scenario_for_testing_not_a_legal_eligibility_decision"
+  },
+  "requirement_note": "required_as_published được giữ nguyên; false không chứng minh giấy tờ luôn tùy chọn. Các nhóm executionCases có thể là mục giấy tờ/hướng dẫn, không phải các phương án loại trừ nhau."
+}

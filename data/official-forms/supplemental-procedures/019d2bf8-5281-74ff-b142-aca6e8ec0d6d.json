@@ -1,0 +1,96 @@
+{
+  "id": "dvc-019d2bf8-5281-74ff-b142-aca6e8ec0d6d",
+  "procedure_code": "1.012585",
+  "name": "THỦ TỤC ĐĂNG KÝ THAY ĐỔI NGƯỜI ĐẠI DIỆN CỦA NHÓM SINH HOẠT TÔN GIÁO TẬP TRUNG (CẤP XÃ)",
+  "domain": "Tín ngưỡng, tôn giáo",
+  "managing_agency": "Bộ Dân tộc và Tôn giáo",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:18.028547+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bf8-5281-74ff-b142-aca6e8ec0d6d",
+      "code": "1.012585",
+      "name": "THỦ TỤC ĐĂNG KÝ THAY ĐỔI NGƯỜI ĐẠI DIỆN CỦA NHÓM SINH HOẠT TÔN GIÁO TẬP TRUNG (CẤP XÃ)",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1776940782343,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf8-5281-74ff-b142-aca6e8ec0d6d",
+      "raw_path": "evidence/dvc/details/019d2bf8-5281-74ff-b142-aca6e8ec0d6d.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Đăng ký thay đổi người đại diện của nhóm sinh hoạt tôn giáo tập trung là người Việt Nam (Mẫu B6, Phụ lục ban hành kèm theo Nghị định số 95/2023/NĐ-CP ngày 29/12/2023 của Chính phủ được sửa đổi bổ sung tại Phụ lục II, Nghị định số 124/NĐ-CP ngày 11/6/2025 của Chính phủ).",
+          "component_code": "000.00.00.G21-KQ000237",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Sơ yếu lý lịch của người đại diện mới",
+          "component_code": "000.00.00.G09-KQ001812",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 3,
+          "name": "Biên bản cuộc họp bầu, cử người đại diện mới (nếu có).",
+          "component_code": "000.00.00.G09-KQ001814",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 4,
+          "name": "Văn bản chấp thuận của tổ chức tôn giáo hoặc tổ chức được cấp chứng nhận đăng ký hoạt động tôn giáo về việc thay đổi người đại diện đối với nhóm sinh hoạt tôn giáo tập trung do tổ chức đăng ký;",
+          "component_code": "000.00.00.G09-KQ001813",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c7e-720f-afcf-d56a503d4f22",
+          "name": "Văn bản trả lời về việc đăng ký thay đổi người đại diện của nhóm sinh hoạt tôn giáo  tập trung.",
+          "code": "KQ.G21.000134"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d80-7608-8cd0-b2e0a90e021d",
+          "name": "Tín ngưỡng, tôn giáo",
+          "code": "02/2016/QH14"
+        },
+        {
+          "id": "019d2bb3-5d7f-719e-b473-02ccebcf0369",
+          "name": "Nghị định số 95/2023/NĐ-CP ngày 29/12/2023 của Chính phủ quy định chi tiết một số điều và biện pháp thi hành Luật tín ngưỡng, tôn giáo.",
+          "code": "95/2023/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d86-7760-a63e-8a2bf55137fa",
+          "name": "Nghị định số 124/2025/NĐ-CP",
+          "code": "124/2025/NĐ-CP"
+        }
+      ]
+    }
+  ]
+}

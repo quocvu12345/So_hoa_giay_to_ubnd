@@ -1,0 +1,191 @@
+{
+  "id": "hn87-048",
+  "ordinal": "48",
+  "procedure_code": "1.013707",
+  "name": "Thủ tục chia, tách; sát nhập; hợp nhất hội.",
+  "domain": "Hội",
+  "department_id": "vx",
+  "department": "Phòng Văn hóa - Xã hội",
+  "authority_as_published": "UBND cấp xã",
+  "execution_level_as_published": "Cấp xã",
+  "receiving_location_as_published": "Điểm hỗ trợ DVC số",
+  "inventory_date": "2026-04-27",
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "source_urls": [
+    "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-1b5d-701d-a936-e90dd356c586"
+  ],
+  "current_dvc_match": true,
+  "lifecycle": null,
+  "scope": "hanoi_commune_notice_2026_04_27",
+  "scope_note": "Mốc kiểm kê cấp xã Hà Nội; áp dụng từng thủ tục tại Từ Liêm còn phải theo thẩm quyền/ủy quyền hiện hành.",
+  "status": "source_template_missing",
+  "components": [
+    {
+      "id": "hn87-048-c001",
+      "code": "G09-KQ002429",
+      "name": "- Văn bản xác nhận nơi dự kiến đặt trụ sở của hội hình thành mới do chia, tách; sáp nhập; hợp nhất hội..",
+      "section": "",
+      "role": "needs_review",
+      "scenario_status": "requirement_needs_review",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-1b5d-701d-a936-e90dd356c586",
+      "source_detail_id": "019d2bfb-1b5d-701d-a936-e90dd356c586",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-048-c002",
+      "code": "G09-KQ002423",
+      "name": "- Đơn đề nghị chia, tách; sáp nhập; hợp nhất hội (theo mẫu)..",
+      "section": "",
+      "role": "applicant_form",
+      "scenario_status": "selected_for_test",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-1b5d-701d-a936-e90dd356c586",
+      "source_detail_id": "019d2bfb-1b5d-701d-a936-e90dd356c586",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-048-c003",
+      "code": "G09-KQ002424",
+      "name": "- Đề án chia, tách; sáp nhập; hợp nhất hội..",
+      "section": "",
+      "role": "applicant_prepared",
+      "scenario_status": "selected_for_test",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-1b5d-701d-a936-e90dd356c586",
+      "source_detail_id": "019d2bfb-1b5d-701d-a936-e90dd356c586",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-048-c004",
+      "code": "G09-KQ002425",
+      "name": "- Nghị quyết của Ban chấp hành hội về việc chia, tách; sáp nhập; hợp nhất hội..",
+      "section": "",
+      "role": "needs_review",
+      "scenario_status": "requirement_needs_review",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-1b5d-701d-a936-e90dd356c586",
+      "source_detail_id": "019d2bfb-1b5d-701d-a936-e90dd356c586",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-048-c005",
+      "code": "G09-KQ002428",
+      "name": "- Sơ yếu lý lịch cá nhân, phiếu lý lịch tư pháp số 1 (bản chính) không quá 06 tháng tính đến ngày nộp hồ sơ của nhân sự dự kiến là chủ tịch của hội mới..",
+      "section": "",
+      "role": "needs_review",
+      "scenario_status": "requirement_needs_review",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-1b5d-701d-a936-e90dd356c586",
+      "source_detail_id": "019d2bfb-1b5d-701d-a936-e90dd356c586",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-048-c006",
+      "code": "G09-KQ002426",
+      "name": "- Dự thảo điều lệ hội mới do chia, tách; sáp nhập; hợp nhất hội..",
+      "section": "",
+      "role": "needs_review",
+      "scenario_status": "requirement_needs_review",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-1b5d-701d-a936-e90dd356c586",
+      "source_detail_id": "019d2bfb-1b5d-701d-a936-e90dd356c586",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-048-c007",
+      "code": "G09-KQ002427",
+      "name": "- Danh sách ban chấp hành và ban kiểm tra của hội mới do chia, tách; sáp nhập; hợp nhất hội..",
+      "section": "",
+      "role": "applicant_prepared",
+      "scenario_status": "selected_for_test",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-1b5d-701d-a936-e90dd356c586",
+      "source_detail_id": "019d2bfb-1b5d-701d-a936-e90dd356c586",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    }
+  ],
+  "service_cases": [
+    {
+      "id": "019d2d19-e867-7099-84c4-ae8c9a546a47",
+      "code": "1.013707.01",
+      "name": "Chia, tách; sáp nhập; hợp nhất hội",
+      "source_processing_time": {
+        "qty": 60,
+        "type": "WORKING_DAY"
+      },
+      "has_case_specific_components": false
+    },
+    {
+      "id": "019db100-2a3a-7629-8c8c-5b9599b02662",
+      "code": "1.013707.02",
+      "name": "Chia, tách; sáp nhập; hợp nhất hội",
+      "source_processing_time": {
+        "qty": 60,
+        "type": "WORKING_DAY"
+      },
+      "has_case_specific_components": false
+    }
+  ],
+  "selected_template_ids": [],
+  "source_component_groups": [
+    {
+      "name": "",
+      "component_count": 7,
+      "source_detail_id": "019d2bfb-1b5d-701d-a936-e90dd356c586"
+    }
+  ],
+  "conditional_component_groups": [],
+  "default_test_scenario": {
+    "channel": "direct",
+    "applicant_submits_self": true,
+    "authorized": false,
+    "special_case_flags": [],
+    "selected_conditional_group": null,
+    "case_selection_method": "ordinary_direct_submission",
+    "case_status": "scenario_for_testing_not_a_legal_eligibility_decision"
+  },
+  "requirement_note": "required_as_published được giữ nguyên; false không chứng minh giấy tờ luôn tùy chọn. Các nhóm executionCases có thể là mục giấy tờ/hướng dẫn, không phải các phương án loại trừ nhau."
+}

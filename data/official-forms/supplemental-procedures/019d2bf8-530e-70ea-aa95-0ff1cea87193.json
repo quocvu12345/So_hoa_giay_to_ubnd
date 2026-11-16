@@ -1,0 +1,92 @@
+{
+  "id": "dvc-019d2bf8-530e-70ea-aa95-0ff1cea87193",
+  "procedure_code": "1.012584",
+  "name": "THỦ TỤC ĐỀ NGHỊ THAY ĐỔI ĐỊA ĐIỂM SINH HOẠT TÔN GIÁO TẬP TRUNG TRONG ĐỊA BÀN MỘT XÃ (CẤP XÃ)",
+  "domain": "Tín ngưỡng, tôn giáo",
+  "managing_agency": "Bộ Dân tộc và Tôn giáo",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:18.028685+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bf8-530e-70ea-aa95-0ff1cea87193",
+      "code": "1.012584",
+      "name": "THỦ TỤC ĐỀ NGHỊ THAY ĐỔI ĐỊA ĐIỂM SINH HOẠT TÔN GIÁO TẬP TRUNG TRONG ĐỊA BÀN MỘT XÃ (CẤP XÃ)",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1787061496669,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf8-530e-70ea-aa95-0ff1cea87193",
+      "raw_path": "evidence/dvc/details/019d2bf8-530e-70ea-aa95-0ff1cea87193.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "+ Văn bản chấp thuận của tổ chức tôn giáo hoặc tổ chức được cấp chứng nhận đăng ký hoạt động tôn giáo về việc thay đổi địa điểm đối với nhóm sinh hoạt tôn giáo do tổ chức đăng ký;",
+          "component_code": "000.00.00.G21-KQ001802",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Văn bản đăng ký (theo mẫu B7)",
+          "component_code": "000.00.00.G21-KQ001800",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "01a0147b-32ef-73d6-814a-a020516f5a37",
+              "fileName": "Mẫu B7.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/01a0147b-32ef-73d6-814a-a020516f5a37/Mẫu B7.docx"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 3,
+          "name": "+ Giấy tờ chứng minh có địa điểm hợp pháp mới để làm nơi sinh hoạt tôn giáo tập trung (trường hợp giấy tờ chứng minh địa điểm hợp pháp có thành phần là bản sao giấy chứng nhận quyền sử dụng đất, tài sản gắn liền với đất thì sử dụng dữ liệu trên cơ sở dữ liệu về Đất đai để thay thế);",
+          "component_code": "000.00.00.G21-KQ001801",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c7e-720f-afd0-6131942bc1a2",
+          "name": "Văn bản trả lời về việc thay đổi địa điểm sinh hoạt tôn giáo tập trung",
+          "code": "KQ.G21.000171"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d80-7608-8cd0-b2e0a90e021d",
+          "name": "Tín ngưỡng, tôn giáo",
+          "code": "02/2016/QH14"
+        },
+        {
+          "id": "019d2bb3-5d7f-719e-b473-02ccebcf0369",
+          "name": "Nghị định số 95/2023/NĐ-CP ngày 29/12/2023 của Chính phủ quy định chi tiết một số điều và biện pháp thi hành Luật tín ngưỡng, tôn giáo.",
+          "code": "95/2023/NĐ-CP"
+        },
+        {
+          "id": "01a0141b-fc98-718a-aaa4-308cd14f9313",
+          "name": "Nghị quyết số 66.7/2025/NQ-CP của Chính phủ: Quy định cắt giảm, đơn giản hóa thủ tục hành chính dựa trên dữ liệu",
+          "code": "Nghị quyết 66.7/2025/NQ-CP"
+        }
+      ]
+    }
+  ]
+}

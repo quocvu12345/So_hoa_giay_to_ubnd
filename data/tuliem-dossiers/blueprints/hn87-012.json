@@ -1,0 +1,95 @@
+{
+  "id": "hn87-012",
+  "ordinal": "12",
+  "procedure_code": "1.010775",
+  "name": "Cấp “Bằng Tổ quốc ghi công” đối với người hy sinh thuộc các trường hợp quy định tại Điều 14 Pháp lệnh nhưng chưa được cấp “Bằng Tổ quốc ghi công” mà thân nhân đã được giải quyết chế độ ưu đãi từ ngày 01/01/1995 đến ngày 30/9/2006",
+  "domain": "Người có công",
+  "department_id": "vx",
+  "department": "Phòng Văn hóa - Xã hội",
+  "authority_as_published": "TW",
+  "execution_level_as_published": "Liên thông TW",
+  "receiving_location_as_published": "Điểm hỗ trợ DVC số",
+  "inventory_date": "2026-04-27",
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "source_urls": [
+    "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfa-fbf7-70d3-9bf0-ea139ebdac2b"
+  ],
+  "current_dvc_match": true,
+  "lifecycle": null,
+  "scope": "hanoi_commune_notice_2026_04_27",
+  "scope_note": "Mốc kiểm kê cấp xã Hà Nội; áp dụng từng thủ tục tại Từ Liêm còn phải theo thẩm quyền/ủy quyền hiện hành.",
+  "status": "has_fillable_templates",
+  "components": [
+    {
+      "id": "hn87-012-c001",
+      "code": "G09-KQ003210166",
+      "name": "- Hồ sơ công nhận và hưởng chế độ ưu đãi được xác lập đủ và đúng quy định tại từng thời điểm hiện đang lưu tại Sở Lao động - Thương binh và Xã hội, kèm danh sách chi trả trợ cấp hằng tháng hoặc trợ cấp một lần có ký nhận của người hưởng trợ cấp.",
+      "section": "",
+      "role": "needs_review",
+      "scenario_status": "requirement_needs_review",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfa-fbf7-70d3-9bf0-ea139ebdac2b",
+      "source_detail_id": "019d2bfa-fbf7-70d3-9bf0-ea139ebdac2b",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-012-c002",
+      "code": "G09-KQ003210167",
+      "name": "Đơn đề nghị theo Mẫu số 15 Phụ lục I Nghị định số 131/2021/NĐ-CP.",
+      "section": "",
+      "role": "applicant_form",
+      "scenario_status": "selected_for_test",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfa-fbf7-70d3-9bf0-ea139ebdac2b",
+      "source_detail_id": "019d2bfa-fbf7-70d3-9bf0-ea139ebdac2b",
+      "embedded_other_requirements": false,
+      "template_candidates": [
+        "template-7752392ae95463ba"
+      ],
+      "template_selection_method": "first_matching_source_attachment",
+      "selected_template_id": "template-7752392ae95463ba",
+      "selection_requires_review": false
+    }
+  ],
+  "service_cases": [
+    {
+      "id": "019d2ce8-d3c1-73e9-8d06-9bddbc14a5e4",
+      "code": "1.010775.01",
+      "name": "Cấp Bằng “Tổ quốc ghi công” đối với người hy sinh thuộc các trường hợp quy định tại Điều 14 Pháp lệnh nhưng chưa được cấp Bằng “Tổ quốc ghi công” mà thân nhân đã được giải quyết chế độ ưu đãi từ ngày 01 tháng 01 năm 1995 đến ngày 30 tháng 9 năm 2006",
+      "source_processing_time": {
+        "qty": 77,
+        "type": "DAY"
+      },
+      "has_case_specific_components": false
+    }
+  ],
+  "selected_template_ids": [
+    "template-7752392ae95463ba"
+  ],
+  "source_component_groups": [
+    {
+      "name": "",
+      "component_count": 2,
+      "source_detail_id": "019d2bfa-fbf7-70d3-9bf0-ea139ebdac2b"
+    }
+  ],
+  "conditional_component_groups": [],
+  "default_test_scenario": {
+    "channel": "direct",
+    "applicant_submits_self": true,
+    "authorized": false,
+    "special_case_flags": [],
+    "selected_conditional_group": null,
+    "case_selection_method": "ordinary_direct_submission",
+    "case_status": "scenario_for_testing_not_a_legal_eligibility_decision"
+  },
+  "requirement_note": "required_as_published được giữ nguyên; false không chứng minh giấy tờ luôn tùy chọn. Các nhóm executionCases có thể là mục giấy tờ/hướng dẫn, không phải các phương án loại trừ nhau."
+}

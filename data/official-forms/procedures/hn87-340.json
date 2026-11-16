@@ -1,0 +1,87 @@
+{
+  "ordinal": "340",
+  "managing_agency": "Sở Xây dựng",
+  "procedure_code": "1.006391",
+  "name": "Đăng ký lại phương tiện trong trường hợp chủ phương tiện thay đổi trụ sở hoặc nơi đăng ký hộ khẩu thường trú của chủ phương tiện sang đơn vị hành chính cấp tỉnh khác",
+  "domain": "Hàng hải và đường thủy nội địa",
+  "ministry_decision": "902/QĐ-BXD ngày 24/6/2025",
+  "hanoi_decision": "932/QĐ-TTPVHCC ngày 27/6/2025",
+  "workflow_decision": "1096/QĐ-TTPVHCC ngày 24/7/2025",
+  "fees": "70.000 đồng / giấy",
+  "execution_level": "Cấp tỉnh, cấp xã",
+  "competent_authority": "Sở; UBND cấp xã",
+  "delegation_decision": "",
+  "delegation_expiry": "",
+  "receiving_location": "Điểm hỗ trợ DVC số; Chi nhánh TTPVHCC",
+  "id": "hn87-340",
+  "source_page": 13,
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "inventory_date": "2026-04-27",
+  "checked_at": "2026-11-12T22:24:55.216571+07:00",
+  "details": [
+    {
+      "id": "019d2bfe-5208-7747-a4b2-cba5449b28fa",
+      "code": "1.006391",
+      "name": "Đăng ký lại phương tiện trong trường hợp chủ phương tiện thay đổi trụ sở hoặc nơi đăng ký hộ khẩu thường trú của chủ phương tiện sang đơn vị hành chính cấp tỉnh khác",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1777340252018,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfe-5208-7747-a4b2-cba5449b28fa",
+      "raw_path": "evidence/dvc/details/019d2bfe-5208-7747-a4b2-cba5449b28fa.json",
+      "components": [
+        {
+          "section": "Giấy tờ phải nộp để lưu giữ tại cơ quan đăng ký phương tiện",
+          "position": 1,
+          "name": "Đơn đề nghị đăng ký lại phương tiện thủy nội địa theo quy định",
+          "component_code": "000.00.00.G04-KQ005223",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019d9643-c14f-7587-836e-cf22d76c86bf",
+              "fileName": "Mauon.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d9643-c14f-7587-836e-cf22d76c86bf/Mauon.docx"
+            }
+          ]
+        },
+        {
+          "section": "Xuất trình hoặc gửi bản chính hoặc bản sao có chứng thực hoặc bản sao điện tử được chứng thực từ bản chính hoặc bản sao điện tử được cấp từ sổ gốc để cơ quan đăng ký phương tiện kiểm tra",
+          "position": 1,
+          "name": "Giấy chứng nhận an toàn kỹ thuật và bảo vệ môi trường của phương tiện còn hiệu lực đối với phương tiện thuộc diện đăng kiểm để cơ quan đăng ký phương tiện kiểm tra",
+          "component_code": "000.00.00.G04-KQ005227",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c7a-7554-ace6-0125765c932a",
+          "name": "Giấy chứng nhận đăng ký phương tiện thủy nội địa.",
+          "code": "KQ.G17.000321"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7e-72d1-afe1-1e8732e4a2c4",
+          "name": "Thông tư sửa đổi, bổ sung một số điều của các Thông tư thuộc lĩnh vực quản lý nhà nước của Bộ Xây dựng liên quan đến sắp xếp tổ chức bộ máy, thực hiện chính quyền địa phương hai cấp và phân cấp cho chính quyền địa phương.",
+          "code": "09/2025/TT-BXD"
+        },
+        {
+          "id": "019d2bb3-5d7c-71ab-9eff-539c9e188aa7",
+          "name": "Sửa đổi, bổ sung một số điều của các Thông tư quy định về đăng ký phương tiện thủy nội địa và quy định thi, kiểm tra, cấp, cấp lại, chuyển đổi giấy chứng nhận khả năng chuyên môn, chứng chỉ chuyên môn thuyền viên, người lái phương tiện thủy nội địa",
+          "code": "60/2024/TT-BGTVT"
+        }
+      ]
+    }
+  ],
+  "lookup_status": "retrieved",
+  "currency_status": "snapshot_requires_later_amendment_check",
+  "errors": []
+}

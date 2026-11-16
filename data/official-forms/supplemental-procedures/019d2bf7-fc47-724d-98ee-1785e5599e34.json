@@ -1,0 +1,135 @@
+{
+  "id": "dvc-019d2bf7-fc47-724d-98ee-1785e5599e34",
+  "procedure_code": "1.012568",
+  "name": "Giao tài sản kết cấu hạ tầng chợ do cấp xã quản lý",
+  "domain": "Tài sản kết cấu hạ tầng chợ do Nhà nước đầu tư, quản lý",
+  "managing_agency": "Bộ Công thương",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:18.030260+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bf7-fc47-724d-98ee-1785e5599e34",
+      "code": "1.012568",
+      "name": "Giao tài sản kết cấu hạ tầng chợ do cấp xã quản lý",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1776322097506,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf7-fc47-724d-98ee-1785e5599e34",
+      "raw_path": "evidence/dvc/details/019d2bf7-fc47-724d-98ee-1785e5599e34.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "- Danh mục tài sản đề nghị giao (tên tài sản, địa chỉ, loại hình công trình, năm xây dựng, năm đưa vào sử dụng, diện tích, số điểm kinh doanh tại chợ, giá trị tài sản, đánh giá tình trạng tài sản – nếu có): 01 bản chính",
+          "component_code": "000.00.00.G02-KQ004832",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "- Văn bản đề nghị được giao tài sản: 01 bản chính",
+          "component_code": "000.00.00.G02-KQ004831",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 3,
+          "name": "- Quyết định xác lập quyền sở hữu toàn dân (đối với tài sản được xác lập quyền sở hữu toàn dân theo quy định tại Điều 106 Luật Quản lý, sử dụng tài sản công): 01 bản chính",
+          "component_code": "000.00.00.G02-KQ004834",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 4,
+          "name": "- Tờ trình của chủ đầu tư dự án/đơn vị chủ trì quản lý tài sản về việc giao tài sản cho đối tượng quản lý: 01 bản chính",
+          "component_code": "000.00.00.G02-KQ004829",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 5,
+          "name": "- Quyết định phê duyệt dự án đầu tư xây dựng: 01 bản chính",
+          "component_code": "000.00.00.G02-KQ004830",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 6,
+          "name": "- Giấy tờ khác có liên quan (nếu có)",
+          "component_code": "000.00.00.G02-KQ004836",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 7,
+          "name": "- Biên bản nghiệm thu đưa tài sản vào sử dụng (đối với tài sản được đầu tư xây dựng mới): 01 bản chính",
+          "component_code": "000.00.00.G02-KQ004833",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 8,
+          "name": "- Hồ sơ hoàn công (đối với công trình đầu tư xây dựng mới)",
+          "component_code": "000.00.00.G02-KQ004835",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c39-7291-ba49-0041a4e793c9",
+          "name": "Bàn giao, tiếp nhận tài sản kết cấu hạ tầng chợ do Nhà nước đầu tư, quản lý",
+          "code": "KQ.G02.000349"
+        },
+        {
+          "id": "019d2bb2-1c39-7291-ba48-fd01de7308e0",
+          "name": "Quyết định giao tài sản",
+          "code": "KQ.G02.000348"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7f-719e-b46f-85e5bc589b94",
+          "name": "Nghị định số 60/2024/NĐ-CP",
+          "code": "60/2024/NĐ-CP"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,271 @@
+{
+  "id": "dvc-019d2bfc-644b-740a-b789-d3c3be08326c",
+  "procedure_code": "1.008529",
+  "name": "Khai thuế thu nhập cá nhân đối với cá nhân có thu nhập từ chuyển nhượng vốn góp, cá nhân chuyển nhượng chứng khoán khai trực tiếp với cơ quan thuế và tổ chức khai thuế thay, nộp thuế thay cho cá nhân",
+  "domain": "Thuế",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.939468+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfc-644b-740a-b789-d3c3be08326c",
+      "code": "1.008529",
+      "name": "Khai thuế thu nhập cá nhân đối với cá nhân có thu nhập từ chuyển nhượng vốn góp, cá nhân chuyển nhượng chứng khoán khai trực tiếp với cơ quan thuế và tổ chức khai thuế thay, nộp thuế thay cho cá nhân",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1785399203129,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-644b-740a-b789-d3c3be08326c",
+      "raw_path": "evidence/dvc/details/019d2bfc-644b-740a-b789-d3c3be08326c.json",
+      "components": [
+        {
+          "section": "- Đối với thu nhập từ chuyển nhượng vốn (không bao gồm chuyển nhượng chứng khoán) của cá nhân cư trú trực tiếp khai thuế với cơ quan thuế:",
+          "position": 1,
+          "name": "Tờ khai thuế thu nhập cá nhân (Áp dụng đối với cá nhân có thu nhập từ chuyển nhượng vốn góp, cá nhân chuyển nhượng chứng khoán khai trực tiếp với cơ quan thuế và tổ chức khai thuế thay, nộp thuế thay cho cá nhân) mẫu số 04/CNV-TNCN ban hành kèm theo Thông tư số 89/2026/TT-BTC ngày 30/06/2026 của Bộ trưởng Bộ Tài chính",
+          "component_code": "G12.0015720",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019fa65b-bbbc-771d-84cf-a5d97edcd8a3",
+              "fileName": "19. 04 CNV-TNCN.pdf",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa65b-bbbc-771d-84cf-a5d97edcd8a3/19. 04 CNV-TNCN.pdf"
+            }
+          ]
+        },
+        {
+          "section": "- Đối với thu nhập từ chuyển nhượng vốn (không bao gồm chuyển nhượng chứng khoán) của cá nhân cư trú trực tiếp khai thuế với cơ quan thuế:",
+          "position": 2,
+          "name": "Bản sao Hợp đồng chuyển nhượng vốn. Trường hợp góp vốn bằng phần vốn góp thì Hợp đồng chuyển nhượng vốn được thay bằng bản sao Hợp đồng góp vốn",
+          "component_code": "G12.0011954",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "- Đối với thu nhập từ chuyển nhượng vốn (không bao gồm chuyển nhượng chứng khoán) của cá nhân cư trú trực tiếp khai thuế với cơ quan thuế:",
+          "position": 3,
+          "name": "Bản sao tài liệu xác định trị giá vốn góp theo sổ sách kế toán, trường hợp vốn góp do mua lại thì phải có hợp đồng chuyển nhượng khi mua",
+          "component_code": "G12.0011960",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "- Đối với thu nhập từ chuyển nhượng vốn (không bao gồm chuyển nhượng chứng khoán) của cá nhân cư trú trực tiếp khai thuế với cơ quan thuế:",
+          "position": 4,
+          "name": "Bản sao các chứng từ chứng minh chi phí liên quan đến việc xác định thu nhập từ hoạt động chuyển nhượng vốn góp",
+          "component_code": "G12.008100",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "- Đối với tổ chức, cá nhân khai thuế thay, nộp thuế thay cho cá nhân cư trú có thu nhập từ chuyển nhượng vốn (không bao gồm chuyển nhượng chứng khoán):",
+          "position": 1,
+          "name": "Tờ khai thuế thu nhập cá nhân (Áp dụng đối với cá nhân có thu nhập từ chuyển nhượng vốn góp, cá nhân chuyển nhượng chứng khoán khai trực tiếp với cơ quan thuế và tổ chức khai thuế thay, nộp thuế thay cho cá nhân) mẫu số 04/CNV-TNCN ban hành kèm theo Thông tư số 89/2026/TT-BTC ngày 30/06/2026 của Bộ trưởng Bộ Tài chính",
+          "component_code": "G12.0015720",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019fa65b-bbbc-771d-84cf-a5d97edcd8a3",
+              "fileName": "19. 04 CNV-TNCN.pdf",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa65b-bbbc-771d-84cf-a5d97edcd8a3/19. 04 CNV-TNCN.pdf"
+            }
+          ]
+        },
+        {
+          "section": "- Đối với tổ chức, cá nhân khai thuế thay, nộp thuế thay cho cá nhân cư trú có thu nhập từ chuyển nhượng vốn (không bao gồm chuyển nhượng chứng khoán):",
+          "position": 2,
+          "name": "Phụ lục bảng kê chi tiết cá nhân chuyển nhượng vốn (Kèm theo tờ khai 04/CNV-TNCN áp dụng đối với tổ chức khai thuế thay, nộp thuế thay cho cá nhân) mẫu số 04-1/CNV-TNCN ban hành kèm theo Thông tư số 89/2026/TT-BTC ngày 30/06/2026 của Bộ trưởng Bộ Tài chính",
+          "component_code": "G12.0015721",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019fa660-6000-7111-b356-b39abc10275c",
+              "fileName": "18. 04-1.ĐTV-TNCN.doc",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa660-6000-7111-b356-b39abc10275c/18. 04-1.ĐTV-TNCN.doc"
+            }
+          ]
+        },
+        {
+          "section": "- Đối với tổ chức, cá nhân khai thuế thay, nộp thuế thay cho cá nhân cư trú có thu nhập từ chuyển nhượng vốn (không bao gồm chuyển nhượng chứng khoán):",
+          "position": 3,
+          "name": "Đối với các hồ sơ, tài liệu chứng minh giá chuyển nhượng, giá mua, chi phí liên quan thì tổ chức khai thay, nộp thay không gửi đến cơ quan thuế mà lưu trữ tại đơn vị, bao gồm: Bản sao Hợp đồng chuyển nhượng vốn. Trường hợp góp vốn bằng phần vốn góp thì Hợp đồng chuyển nhượng vốn được thay bằng bản chụp Hợp đồng góp vốn; Bản sao tài liệu xác định trị giá vốn góp theo sổ sách kế toán, trường hợp vốn góp do mua lại thì phải có hợp đồng chuyển nhượng khi mua; Bản sao các chứng từ chứng minh chi phí liên quan đến việc xác định thu nhập từ hoạt động chuyển nhượng vốn góp",
+          "component_code": "G12.0015722",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "- Đối với cá nhân có thu nhập từ chuyển nhượng chứng khoán trực tiếp khai thuế với cơ quan thuế:",
+          "position": 1,
+          "name": "Tờ khai thuế thu nhập cá nhân (Áp dụng đối với cá nhân có thu nhập từ chuyển nhượng vốn góp, cá nhân chuyển nhượng chứng khoán khai trực tiếp với cơ quan thuế và tổ chức khai thuế thay, nộp thuế thay cho cá nhân) mẫu số 04/CNV-TNCN ban hành kèm theo Thông tư số 89/2026/TT-BTC ngày 30/06/2026 của Bộ trưởng Bộ Tài chính",
+          "component_code": "G12.0015720",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019fa65b-bbbc-771d-84cf-a5d97edcd8a3",
+              "fileName": "19. 04 CNV-TNCN.pdf",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa65b-bbbc-771d-84cf-a5d97edcd8a3/19. 04 CNV-TNCN.pdf"
+            }
+          ]
+        },
+        {
+          "section": "- Đối với cá nhân có thu nhập từ chuyển nhượng chứng khoán trực tiếp khai thuế với cơ quan thuế:",
+          "position": 2,
+          "name": "Bản sao Hợp đồng chuyển nhượng chứng khoán. Trong trường hợp góp vốn bằng chứng khoán thì Hợp đồng chuyển nhượng chứng khoán được thay bằng bản sao Hợp đồng góp vốn",
+          "component_code": "G12.0009590",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "- Đối với tổ chức, cá nhân khai thuế thay, nộp thuế thay cho cá nhân đối với thu nhập từ chuyển nhượng chứng khoán:",
+          "position": 1,
+          "name": "Tờ khai thuế thu nhập cá nhân (Áp dụng đối với cá nhân có thu nhập từ chuyển nhượng vốn góp, cá nhân chuyển nhượng chứng khoán khai trực tiếp với cơ quan thuế và tổ chức khai thuế thay, nộp thuế thay cho cá nhân) mẫu số 04/CNV-TNCN ban hành kèm theo Thông tư số 89/2026/TT-BTC ngày 30/06/2026 của Bộ trưởng Bộ Tài chính",
+          "component_code": "G12.0015720",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019fa65b-bbbc-771d-84cf-a5d97edcd8a3",
+              "fileName": "19. 04 CNV-TNCN.pdf",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa65b-bbbc-771d-84cf-a5d97edcd8a3/19. 04 CNV-TNCN.pdf"
+            }
+          ]
+        },
+        {
+          "section": "- Đối với tổ chức, cá nhân khai thuế thay, nộp thuế thay cho cá nhân đối với thu nhập từ chuyển nhượng chứng khoán:",
+          "position": 2,
+          "name": "Phụ lục bảng kê chi tiết cá nhân chuyển nhượng vốn (Kèm theo tờ khai 04/CNV-TNCN áp dụng đối với tổ chức khai thuế thay, nộp thuế thay cho cá nhân) mẫu số 04-1/CNV-TNCN ban hành kèm theo Thông tư số 89/2026/TT-BTC ngày 30/06/2026 của Bộ trưởng Bộ Tài chính",
+          "component_code": "G12.0015721",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019fa660-6000-7111-b356-b39abc10275c",
+              "fileName": "18. 04-1.ĐTV-TNCN.doc",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa660-6000-7111-b356-b39abc10275c/18. 04-1.ĐTV-TNCN.doc"
+            }
+          ]
+        },
+        {
+          "section": "- Đối với tổ chức, cá nhân khai thuế thay, nộp thuế thay cho cá nhân đối với thu nhập từ chuyển nhượng chứng khoán:",
+          "position": 3,
+          "name": "Đối với các hồ sơ, tài liệu chứng minh giá chuyển nhượng thì tổ chức khai thay, nộp thay không gửi đến cơ quan thuế mà lưu trữ tại đơn vị, bao gồm: Bản sao Hợp đồng chuyển nhượng chứng khoán. Trong trường hợp góp vốn bằng chứng khoán thì Hợp đồng chuyển nhượng chứng khoán được thay bằng Bản sao Hợp đồng góp vốn",
+          "component_code": "G12.0015723",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 1,
+          "name": "Trường hợp người nộp thuế nộp hồ sơ theo phương thức điện tử thì tài liệu kèm theo là bản sao điện tử (đối với tài liệu là bản sao) hoặc văn bản điện tử hoặc bản sao điện tử được cấp từ sổ gốc hoặc được chứng thực từ bản chính (đối với tài liệu là bản gốc).",
+          "component_code": "G12.0015724",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Từ 01/7/2026 đến thời điểm theo lộ trình của cơ quan thuế quy định tại khoản 2 Điều 99 Thông tư số 89/2026/TT-BTC thì các mẫu 04/CNV-TNCN, 04-1/CNV-TNCN thực hiện theo mẫu biểu ban hành kèm theo Thông tư số 80/2021/TT-BTC ngày 29/9/2021 của Bộ Tài chính",
+          "component_code": "G12.0015725",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019fa665-393f-70a3-b183-afbacaffe5c6",
+              "fileName": "04-1 CNV TCNT TT 80.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa665-393f-70a3-b183-afbacaffe5c6/04-1 CNV TCNT TT 80.docx"
+            },
+            {
+              "id": "019fa665-3a8b-770a-b302-11700a1c69f3",
+              "fileName": "04 CNV TNCN TT 80.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa665-3a8b-770a-b302-11700a1c69f3/04 CNV TNCN TT 80.docx"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c71-7574-afe7-ecb2733edc3b",
+          "name": "Hồ sơ gửi đến cơ quan thuế không có kết quả trả từ cơ quan thuế",
+          "code": "KQ.G12.000028"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019fa377-0d10-73ea-b3b0-ee84180af5fe",
+          "name": "Nghị định số 253/2026/NĐ-CP ngày 30/6/2026 của Chính phủ quy định chi tiết một số điều và biện pháp để tổ chức, hướng dẫn thi hành Luật Thuế thu nhập cá nhân",
+          "code": "253/2026/NĐ-CP "
+        },
+        {
+          "id": "019f8db3-9765-740b-8b90-682677b9c421",
+          "name": "Thông tư quy định chi tiết một số điều của Luật Quản lý thuế và Nghị định số 252/2026/NĐ-CP của Chính phủ quy định chi tiết một số điều và biện pháp để tổ chức, hướng dẫn thi hành Luật Quản lý thuế",
+          "code": "89/2026/TT-BTC"
+        },
+        {
+          "id": "019e5e83-1282-771d-9014-49799413a4e5",
+          "name": "Luật số 108/2025/QH15 của Quốc hội: Luật Quản lý thuế",
+          "code": "108/2025/QH15"
+        },
+        {
+          "id": "019f64ed-e026-7299-b5f2-ca44a3964050",
+          "name": "Nghị định về thực hiện thủ tục hành chính theo cơ chế một cửa, một cửa liên thông tại Bộ phận Một cửa và Cổng Dịch vụ công quốc gia.",
+          "code": "118/2025/NĐ-CP "
+        },
+        {
+          "id": "019f356e-75e3-7494-a2f3-672d8dce61a6",
+          "name": "QUY ĐỊNH CHI TIẾT MỘT SỐ ĐIỀU VÀ BIỆN PHÁP ĐỂ TỔ CHỨC, HƯỚNG DẪN THI HÀNH LUẬT QUẢN LÝ THUẾ",
+          "code": "252/2026/NĐ-CP"
+        }
+      ]
+    }
+  ]
+}

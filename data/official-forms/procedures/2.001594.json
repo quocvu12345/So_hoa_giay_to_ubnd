@@ -1,0 +1,126 @@
+{
+  "ordinal": "87",
+  "managing_agency": "Sở Văn hóa thể thao",
+  "procedure_code": "2.001594",
+  "name": "Cấp giấy phép hoạt động in xuất bản phẩm (cơ sở in có trụ sở và chi nhánh/xưởng in tại cùng 01 xã/phường)",
+  "domain": "Xuất Bản, In và Phát hành",
+  "ministry_decision": "4508/QĐ-BVHTTDL ngày 28/11/2025",
+  "hanoi_decision": "1666/QĐ-TTPVHCC ngày 11/12/2025",
+  "workflow_decision": "1122/QĐ-TTPVHCC ngày 31/7/2025",
+  "fees": "Không quy định",
+  "execution_level": "Cấp tỉnh, cấp xã",
+  "competent_authority": "UBND cấp xã",
+  "delegation_decision": "93/QĐ-SVHTT ngày 07/2/2026",
+  "delegation_expiry": "31/12/2028",
+  "receiving_location": "Điểm hỗ trợ DVC số; Chi nhánh TTPVHCC",
+  "source_page": 3,
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "inventory_date": "2026-04-27",
+  "checked_at": "2026-11-12T22:23:41.444469+07:00",
+  "details": [
+    {
+      "id": "019d2bfd-fbde-71c7-b9cf-9390a4c97806",
+      "code": "2.001594",
+      "name": "Thủ tục cấp Giấy phép hoạt động in xuất bản phẩm",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": false,
+      "updated_at_source": 1794471545295,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfd-fbde-71c7-b9cf-9390a4c97806",
+      "raw_path": "evidence/dvc/details/019d2bfd-fbde-71c7-b9cf-9390a4c97806.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Sơ yếu lý lịch của người đứng đầu cơ sở in theo Mẫu số 03 tại Danh mục kèm theo Phụ lục Thông tư số 09/2026/TT-BVHTTDL",
+          "component_code": "G16-KQ001920",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Đơn đề nghị cấp giấy phép hoạt động in xuất bản phẩm theo Mẫu số 02 tại Danh mục kèm theo Phụ lục Thông tư số 09/2026/TT-BVHTTDL",
+          "component_code": "G16-KQ001894",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 3,
+          "name": "Bản sao một trong các loại giấy: Giấy chứng nhận đầu tư hoặc quyết định thành lập cơ sở in còn hiệu lực tính đến thời điểm nộp đơn; Trường hợp tổ chức sử dụng thông tin Giấy chứng nhận đăng ký hộ kinh doanh/giấy chứng nhận đăng ký doanh nghiệp thì được tra cứu, tích hợp thông tin từ Cơ sở dữ liệu quốc gia về đăng ký kinh doanh (không phải nộp bản sao nếu đã có thông tin dữ liệu)",
+          "component_code": "G16-KQ002448",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 4,
+          "name": "Giấy tờ, tài liệu chứng minh về người đứng đầu cơ sở in, có mặt bằng sản xuất và thiết bị trong đề nghị hồ sơ cấp giấy phép hoạt động in xuất bản phẩm để thực hiện một trong các công đoạn chế bản in, in và gia công sau in xuất bản phẩm được quy định cụ thể như sau: + Đối với người đứng đầu cơ sở in xuất bản phẩm: Là người đại diện theo pháp luật và trực tiếp quản lý, điều hành hoạt động của cơ sở. + Đối với tài liệu chứng minh về mặt bằng sản xuất: Bản sao giấy chứng nhận quyền sử dụng đất hoặc hợp đồng hay các loại giấy tờ khác chứng minh về việc giao đất, thuê đất, thuê mặt bằng, nhà xưởng để sản xuất; + Đối với tài liệu chứng minh về thiết bị: bản sao giấy tờ sở hữu hoặc thuê mua thiết bị.  Trong thời hạn 06 tháng, kể từ ngày được cấp giấy phép hoạt động in xuất bản phẩm, cơ sở in phải hoàn thành việc mua hoặc thuê mua đủ thiết bị theo danh mục dự kiến đầu tư, gửi bản sao chứng từ mua, thuê mua thiết bị cho cơ quan cấp giấy phép hoạt động in xuất bản phẩm.",
+          "component_code": "G16-KQ001896",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c75-741b-9abd-e852072a1717",
+          "name": "Giấy phép hoạt động in xuất bản phẩm.",
+          "code": "KQ.G14.000071"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7f-719e-b470-22af3c5ee091",
+          "name": "Nghị quyết số 66.7/2025/NQ-CP của Chính phủ: Quy định cắt giảm, đơn giản hóa thủ tục hành chính dựa trên dữ liệu",
+          "code": "66.7/2025/NQ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7c-71ab-9f03-e8a624fc3eca",
+          "name": "Thông tư 01/2020/TT-BTTTT",
+          "code": "01/2020/TT-BTTTT"
+        },
+        {
+          "id": "019d2bb3-5d7c-71ab-9f04-ccd0480fc664",
+          "name": "23/2023/TT-BTTTT",
+          "code": "23/2023/TT-BTTTT"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afed-006a4d6d88d0",
+          "name": "Nghị định 195/2013/NĐ-CP",
+          "code": "195/2013/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afeb-8dc5cf990676",
+          "name": "Sửa đổi một số Nghị định liên quan đến điều kiện đầu tư kinh doanh và thủ tục hành chính trong lĩnh vực thông tin và truyền thông",
+          "code": "150/2018/NĐ-CP"
+        },
+        {
+          "id": "019df0a7-9b83-75ea-abf3-9982f285a420",
+          "name": "Nghị quyết của Chính phủ quy định cắt giảm, đơn giản hóa thủ tục hành chính, quy định liên quan đến hoạt động sản xuất, kinh doanh",
+          "code": "66.16/2026/NQ-CP "
+        },
+        {
+          "id": "019e4f20-c3ea-74c6-abcc-aa2213edd132",
+          "name": "Thông tư số 09/2026/TT-BVHTTDL ngày 29 tháng 4 năm 2026 của Bộ trưởng Bộ Văn hóa, Thể thao và Du lịch quy định về phân cấp thủ tục hành chính thuộc thẩm quyền của Bộ Văn hóa, Thể thao và Du lịch.",
+          "code": "09/2026/TT-BVHTTDL "
+        }
+      ]
+    }
+  ],
+  "lookup_status": "retrieved",
+  "currency_status": "snapshot_requires_later_amendment_check",
+  "errors": []
+}

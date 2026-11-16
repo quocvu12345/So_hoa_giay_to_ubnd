@@ -1,0 +1,534 @@
+{
+  "id": "dvc-019d2bfc-2d7a-7038-b07a-2e47193a5108",
+  "procedure_code": "1.007674",
+  "name": "Khai thuế thu nhập cá nhân đối với cá nhân có thu nhập từ chuyển nhượng bất động sản; thu nhập từ nhận thừa kế và nhận quà tặng là bất động sản",
+  "domain": "Thuế",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.956476+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfc-2d7a-7038-b07a-2e47193a5108",
+      "code": "1.007674",
+      "name": "Khai thuế thu nhập cá nhân đối với cá nhân có thu nhập từ chuyển nhượng bất động sản; thu nhập từ nhận thừa kế và nhận quà tặng là bất động sản",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1785399202605,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-2d7a-7038-b07a-2e47193a5108",
+      "raw_path": "evidence/dvc/details/019d2bfc-2d7a-7038-b07a-2e47193a5108.json",
+      "components": [
+        {
+          "section": "(i-1) Hồ sơ khai thuế trong trường hợp cơ quan thuế tính thuế và thông báo nộp thuế theo hồ sơ khai thuế của người nộp thuế - Trường hợp chuyển nhượng, nhận thừa kế, quà tặng là nhà ở, nhà ở thương mại, công trình xây dựng hình thành trong tương lai, công trình xây dựng, nhà ở đã được dự án bàn giao đưa vào sử dụng nhưng chưa cấp Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất theo quy định của pháp luật về nhà ở (sau đây gọi tắt là nhà ở, công trình xây dựng hình thành trong tương lai), thành phần hồ sơ gồm:",
+          "position": 1,
+          "name": "Tờ khai thuế thu nhập cá nhân (áp dụng đối với cá nhân có thu nhập từ chuyển nhượng bất động sản; thu nhập từ nhận thừa kế, quà tặng là bất động sản) mẫu số 03/BĐS-TNCN Phụ lục I ban hành kèm theo Thông tư số 89/2026/TT-BTC ngày 30/06/2026 của Bộ trưởng Bộ Tài chính",
+          "component_code": "G12.0009596",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019fa6bf-b19a-7078-8451-04f546a6838b",
+              "fileName": "47 - 03.BĐS-TNCN.doc",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa6bf-b19a-7078-8451-04f546a6838b/47 - 03.BĐS-TNCN.doc"
+            }
+          ]
+        },
+        {
+          "section": "(i-1) Hồ sơ khai thuế trong trường hợp cơ quan thuế tính thuế và thông báo nộp thuế theo hồ sơ khai thuế của người nộp thuế - Trường hợp chuyển nhượng, nhận thừa kế, quà tặng là nhà ở, nhà ở thương mại, công trình xây dựng hình thành trong tương lai, công trình xây dựng, nhà ở đã được dự án bàn giao đưa vào sử dụng nhưng chưa cấp Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất theo quy định của pháp luật về nhà ở (sau đây gọi tắt là nhà ở, công trình xây dựng hình thành trong tương lai), thành phần hồ sơ gồm:",
+          "position": 2,
+          "name": "Hộ chiếu đối với trường hợp cá nhân không có quốc tịch Việt Nam chưa đăng ký thuế",
+          "component_code": "G12.0016131",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "(i-1) Hồ sơ khai thuế trong trường hợp cơ quan thuế tính thuế và thông báo nộp thuế theo hồ sơ khai thuế của người nộp thuế - Trường hợp chuyển nhượng, nhận thừa kế, quà tặng là nhà ở, nhà ở thương mại, công trình xây dựng hình thành trong tương lai, công trình xây dựng, nhà ở đã được dự án bàn giao đưa vào sử dụng nhưng chưa cấp Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất theo quy định của pháp luật về nhà ở (sau đây gọi tắt là nhà ở, công trình xây dựng hình thành trong tương lai), thành phần hồ sơ gồm:",
+          "position": 3,
+          "name": "Hợp đồng mua bán nhà ở, công trình xây dựng hình thành trong tương lai ký với chủ dự án cấp I, cấp II hoặc sàn giao dịch của chủ dự án (đối với trường hợp chuyển nhượng)",
+          "component_code": "G12.008093",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "(i-1) Hồ sơ khai thuế trong trường hợp cơ quan thuế tính thuế và thông báo nộp thuế theo hồ sơ khai thuế của người nộp thuế - Trường hợp chuyển nhượng, nhận thừa kế, quà tặng là nhà ở, nhà ở thương mại, công trình xây dựng hình thành trong tương lai, công trình xây dựng, nhà ở đã được dự án bàn giao đưa vào sử dụng nhưng chưa cấp Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất theo quy định của pháp luật về nhà ở (sau đây gọi tắt là nhà ở, công trình xây dựng hình thành trong tương lai), thành phần hồ sơ gồm:",
+          "position": 4,
+          "name": "Văn bản pháp lý chứng minh quyền được nhận thừa kế, quà tặng (đối với trường hợp nhận thừa kế, quà tặng)",
+          "component_code": "G12.008094",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "(i-1) Hồ sơ khai thuế trong trường hợp cơ quan thuế tính thuế và thông báo nộp thuế theo hồ sơ khai thuế của người nộp thuế - Trường hợp chuyển nhượng, nhận thừa kế, quà tặng là nhà ở, nhà ở thương mại, công trình xây dựng hình thành trong tương lai, công trình xây dựng, nhà ở đã được dự án bàn giao đưa vào sử dụng nhưng chưa cấp Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất theo quy định của pháp luật về nhà ở (sau đây gọi tắt là nhà ở, công trình xây dựng hình thành trong tương lai), thành phần hồ sơ gồm:",
+          "position": 5,
+          "name": "Hợp đồng chuyển nhượng Hợp đồng mua bán nhà ở, công trình xây dựng hình thành trong tương lai (nếu chuyển nhượng từ lần thứ hai trở đi thì cung cấp thêm bản sao hợp đồng chuyển nhượng lần trước liền kề)",
+          "component_code": "G12.008095",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "(i-1) Hồ sơ khai thuế trong trường hợp cơ quan thuế tính thuế và thông báo nộp thuế theo hồ sơ khai thuế của người nộp thuế - Trường hợp chuyển nhượng, nhận thừa kế, quà tặng là nhà ở, nhà ở thương mại, công trình xây dựng hình thành trong tương lai, công trình xây dựng, nhà ở đã được dự án bàn giao đưa vào sử dụng nhưng chưa cấp Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất theo quy định của pháp luật về nhà ở (sau đây gọi tắt là nhà ở, công trình xây dựng hình thành trong tương lai), thành phần hồ sơ gồm:",
+          "position": 6,
+          "name": "Tài liệu xác định đối tượng được miễn thuế thu nhập cá nhân, đối tượng không phải nộp thuế thu nhập cá nhân, đối tượng tạm thời chưa phải nộp thuế thu nhập cá nhân theo quy định",
+          "component_code": "G12.0011992",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "(i-1) Hồ sơ khai thuế trong trường hợp cơ quan thuế tính thuế và thông báo nộp thuế theo hồ sơ khai thuế của người nộp thuế - Trường hợp chuyển nhượng, nhận thừa kế, quà tặng là nhà ở, nhà ở thương mại, công trình xây dựng hình thành trong tương lai, công trình xây dựng, nhà ở đã được dự án bàn giao đưa vào sử dụng nhưng chưa cấp Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất theo quy định của pháp luật về nhà ở (sau đây gọi tắt là nhà ở, công trình xây dựng hình thành trong tương lai), thành phần hồ sơ gồm:",
+          "position": 7,
+          "name": "Văn bản ủy quyền (nếu có)",
+          "component_code": "G12.008096",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "(i-2) Hồ sơ khai thuế trong trường hợp cơ quan thuế tính thuế và thông báo nộp thuế theo hồ sơ khai thuế của người nộp thuế - Trường hợp ủy quyền mà người nhận ủy quyền có đầy đủ nội dung như quyền sở hữu đối với bất động sản theo quy định của pháp luật về dân sự, thành phần hồ sơ gồm:",
+          "position": 1,
+          "name": "Tờ khai thuế thu nhập cá nhân (áp dụng đối với cá nhân có thu nhập từ chuyển nhượng bất động sản; thu nhập từ nhận thừa kế, quà tặng là bất động sản) mẫu số 03/BĐS-TNCN Phụ lục I ban hành kèm theo Thông tư số 89/2026/TT-BTC ngày 30/06/2026 của Bộ trưởng Bộ Tài chính",
+          "component_code": "G12.0009596",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019fa6bf-b19a-7078-8451-04f546a6838b",
+              "fileName": "47 - 03.BĐS-TNCN.doc",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa6bf-b19a-7078-8451-04f546a6838b/47 - 03.BĐS-TNCN.doc"
+            }
+          ]
+        },
+        {
+          "section": "(i-2) Hồ sơ khai thuế trong trường hợp cơ quan thuế tính thuế và thông báo nộp thuế theo hồ sơ khai thuế của người nộp thuế - Trường hợp ủy quyền mà người nhận ủy quyền có đầy đủ nội dung như quyền sở hữu đối với bất động sản theo quy định của pháp luật về dân sự, thành phần hồ sơ gồm:",
+          "position": 2,
+          "name": "Hộ chiếu đối với trường hợp cá nhân không có quốc tịch Việt Nam chưa đăng ký thuế",
+          "component_code": "G12.0016131",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "(i-2) Hồ sơ khai thuế trong trường hợp cơ quan thuế tính thuế và thông báo nộp thuế theo hồ sơ khai thuế của người nộp thuế - Trường hợp ủy quyền mà người nhận ủy quyền có đầy đủ nội dung như quyền sở hữu đối với bất động sản theo quy định của pháp luật về dân sự, thành phần hồ sơ gồm:",
+          "position": 3,
+          "name": "Hợp đồng uỷ quyền bất động sản mà người nhận ủy quyền có đầy đủ nội dung như quyền sở hữu đối với bất động sản theo quy định của pháp luật về dân sự",
+          "component_code": "G12.0016132",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "(i-2) Hồ sơ khai thuế trong trường hợp cơ quan thuế tính thuế và thông báo nộp thuế theo hồ sơ khai thuế của người nộp thuế - Trường hợp ủy quyền mà người nhận ủy quyền có đầy đủ nội dung như quyền sở hữu đối với bất động sản theo quy định của pháp luật về dân sự, thành phần hồ sơ gồm:",
+          "position": 4,
+          "name": "Tài liệu xác định đối tượng được miễn thuế thu nhập cá nhân, đối tượng không phải nộp thuế thu nhập cá nhân, đối tượng tạm thời chưa phải nộp thuế thu nhập cá nhân theo quy định",
+          "component_code": "G12.0011992",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "(i-3) Hồ sơ khai thuế trong trường hợp cơ quan thuế tính thuế và thông báo nộp thuế theo hồ sơ khai thuế của người nộp thuế - Trường hợp chuyển nhượng, nhận thừa kế, quà tặng là bất động sản (bao gồm cả nhà ở, công trình xây dựng hình thành trong tương lai) tại nước ngoài, thành phần hồ sơ gồm:",
+          "position": 1,
+          "name": "Tờ khai thuế thu nhập cá nhân (áp dụng đối với cá nhân có thu nhập từ chuyển nhượng bất động sản; thu nhập từ nhận thừa kế, quà tặng là bất động sản) mẫu số 03/BĐS-TNCN Phụ lục I ban hành kèm theo Thông tư số 89/2026/TT-BTC ngày 30/06/2026 của Bộ trưởng Bộ Tài chính",
+          "component_code": "G12.0009596",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019fa6bf-b19a-7078-8451-04f546a6838b",
+              "fileName": "47 - 03.BĐS-TNCN.doc",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa6bf-b19a-7078-8451-04f546a6838b/47 - 03.BĐS-TNCN.doc"
+            }
+          ]
+        },
+        {
+          "section": "(i-3) Hồ sơ khai thuế trong trường hợp cơ quan thuế tính thuế và thông báo nộp thuế theo hồ sơ khai thuế của người nộp thuế - Trường hợp chuyển nhượng, nhận thừa kế, quà tặng là bất động sản (bao gồm cả nhà ở, công trình xây dựng hình thành trong tương lai) tại nước ngoài, thành phần hồ sơ gồm:",
+          "position": 2,
+          "name": "Hộ chiếu đối với trường hợp cá nhân không có quốc tịch Việt Nam chưa đăng ký thuế",
+          "component_code": "G12.0016131",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "(i-3) Hồ sơ khai thuế trong trường hợp cơ quan thuế tính thuế và thông báo nộp thuế theo hồ sơ khai thuế của người nộp thuế - Trường hợp chuyển nhượng, nhận thừa kế, quà tặng là bất động sản (bao gồm cả nhà ở, công trình xây dựng hình thành trong tương lai) tại nước ngoài, thành phần hồ sơ gồm:",
+          "position": 3,
+          "name": "Hợp đồng chuyển nhượng bất động sản tại nước ngoài (đối với trường hợp chuyển nhượng)",
+          "component_code": "G12.0009597",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "(i-3) Hồ sơ khai thuế trong trường hợp cơ quan thuế tính thuế và thông báo nộp thuế theo hồ sơ khai thuế của người nộp thuế - Trường hợp chuyển nhượng, nhận thừa kế, quà tặng là bất động sản (bao gồm cả nhà ở, công trình xây dựng hình thành trong tương lai) tại nước ngoài, thành phần hồ sơ gồm:",
+          "position": 4,
+          "name": "Văn bản pháp lý chứng minh quyền được nhận thừa kế, quà tặng là bất động sản tại nước ngoài (đối với trường hợp nhận thừa kế, quà tặng)",
+          "component_code": "G12.0009598",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "(i-3) Hồ sơ khai thuế trong trường hợp cơ quan thuế tính thuế và thông báo nộp thuế theo hồ sơ khai thuế của người nộp thuế - Trường hợp chuyển nhượng, nhận thừa kế, quà tặng là bất động sản (bao gồm cả nhà ở, công trình xây dựng hình thành trong tương lai) tại nước ngoài, thành phần hồ sơ gồm:",
+          "position": 5,
+          "name": "Tài liệu xác định đối tượng được miễn thuế thu nhập cá nhân, đối tượng không phải nộp thuế thu nhập cá nhân, đối tượng tạm thời chưa phải nộp thuế thu nhập cá nhân theo quy định",
+          "component_code": "G12.0011992",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "(i-3) Hồ sơ khai thuế trong trường hợp cơ quan thuế tính thuế và thông báo nộp thuế theo hồ sơ khai thuế của người nộp thuế - Trường hợp chuyển nhượng, nhận thừa kế, quà tặng là bất động sản (bao gồm cả nhà ở, công trình xây dựng hình thành trong tương lai) tại nước ngoài, thành phần hồ sơ gồm:",
+          "position": 6,
+          "name": "Văn bản ủy quyền (nếu có)",
+          "component_code": "G12.0009599",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "(i-4) Hồ sơ khai thuế trong trường hợp cơ quan thuế tính thuế và thông báo nộp thuế theo hồ sơ khai thuế của người nộp thuế - Các trường hợp khác, thành phần hồ sơ gồm:",
+          "position": 1,
+          "name": "Tờ khai thuế thu nhập cá nhân (áp dụng đối với cá nhân có thu nhập từ chuyển nhượng bất động sản; thu nhập từ nhận thừa kế, quà tặng là bất động sản) mẫu số 03/BĐS-TNCN Phụ lục I ban hành kèm theo Thông tư số 89/2026/TT-BTC ngày 30/06/2026 của Bộ trưởng Bộ Tài chính",
+          "component_code": "G12.0009596",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019fa6bf-b19a-7078-8451-04f546a6838b",
+              "fileName": "47 - 03.BĐS-TNCN.doc",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa6bf-b19a-7078-8451-04f546a6838b/47 - 03.BĐS-TNCN.doc"
+            }
+          ]
+        },
+        {
+          "section": "(i-4) Hồ sơ khai thuế trong trường hợp cơ quan thuế tính thuế và thông báo nộp thuế theo hồ sơ khai thuế của người nộp thuế - Các trường hợp khác, thành phần hồ sơ gồm:",
+          "position": 2,
+          "name": "Hộ chiếu đối với trường hợp cá nhân không có quốc tịch Việt Nam chưa đăng ký thuế",
+          "component_code": "G12.0016131",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "(i-4) Hồ sơ khai thuế trong trường hợp cơ quan thuế tính thuế và thông báo nộp thuế theo hồ sơ khai thuế của người nộp thuế - Các trường hợp khác, thành phần hồ sơ gồm:",
+          "position": 3,
+          "name": "Giấy tờ, hồ sơ là căn cứ xác định giá trị chuyển nhượng nhà ở, công trình xây dựng hình thành trong tương lai",
+          "component_code": "G12.0016135",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "(i-4) Hồ sơ khai thuế trong trường hợp cơ quan thuế tính thuế và thông báo nộp thuế theo hồ sơ khai thuế của người nộp thuế - Các trường hợp khác, thành phần hồ sơ gồm:",
+          "position": 4,
+          "name": "Hợp đồng mua bán nhà ở, công trình xây dựng hình thành trong tương lai ký với chủ dự án cấp I, cấp II hoặc sàn giao dịch của chủ dự án",
+          "component_code": "G12.0005174",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "(i-4) Hồ sơ khai thuế trong trường hợp cơ quan thuế tính thuế và thông báo nộp thuế theo hồ sơ khai thuế của người nộp thuế - Các trường hợp khác, thành phần hồ sơ gồm:",
+          "position": 5,
+          "name": "Tài liệu xác định đối tượng được miễn thuế thu nhập cá nhân, đối tượng không phải nộp thuế thu nhập cá nhân, đối tượng tạm thời chưa phải nộp thuế thu nhập cá nhân theo quy định",
+          "component_code": "G12.0011992",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "(i-4) Hồ sơ khai thuế trong trường hợp cơ quan thuế tính thuế và thông báo nộp thuế theo hồ sơ khai thuế của người nộp thuế - Các trường hợp khác, thành phần hồ sơ gồm:",
+          "position": 6,
+          "name": "Văn bản ủy quyền, hợp đồng góp vốn, văn bản xác định bên thứ ba có liên quan được phép bán tài sản của cá nhân theo quy định của pháp luật,…  (nếu có)",
+          "component_code": "G12.0016136",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "(ii) Hồ sơ khai thuế trong trường hợp cơ quan thuế tính thuế và thông báo nộp thuế theo hồ sơ xác định nghĩa vụ tài chính do cơ quan quản lý nhà nước có thẩm quyền chuyển đến là bản sao của các giấy tờ sau:",
+          "position": 1,
+          "name": "Hộ chiếu đối với trường hợp cá nhân không có quốc tịch Việt Nam chưa đăng ký thuế",
+          "component_code": "G12.0016131",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "(ii) Hồ sơ khai thuế trong trường hợp cơ quan thuế tính thuế và thông báo nộp thuế theo hồ sơ xác định nghĩa vụ tài chính do cơ quan quản lý nhà nước có thẩm quyền chuyển đến là bản sao của các giấy tờ sau:",
+          "position": 2,
+          "name": "Tài liệu xác định đối tượng được miễn thuế thu nhập cá nhân, đối tượng không phải nộp thuế thu nhập cá nhân, đối tượng tạm thời chưa phải nộp thuế thu nhập cá nhân theo quy định",
+          "component_code": "G12.0011992",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "(ii) Hồ sơ khai thuế trong trường hợp cơ quan thuế tính thuế và thông báo nộp thuế theo hồ sơ xác định nghĩa vụ tài chính do cơ quan quản lý nhà nước có thẩm quyền chuyển đến là bản sao của các giấy tờ sau:",
+          "position": 3,
+          "name": "Từ 01/7/2026 đến thời điểm theo lộ trình của cơ quan thuế quy định tại khoản 2 Điều 99 Thông tư số 89/2026/TT-BTC thì mẫu 03/BĐS-TNCN thực hiện theo mẫu biểu ban hành kèm theo Thông tư số 80/2021/TT-BTC ngày 29/9/2021 của Bộ Tài chính",
+          "component_code": "G12.0016138",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019fa6cb-d751-731e-ac70-72b6e10a70fb",
+              "fileName": "03 BĐS TNCN TT 80.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa6cb-d751-731e-ac70-72b6e10a70fb/03 BĐS TNCN TT 80.docx"
+            }
+          ]
+        },
+        {
+          "section": "(iii) Trường hợp hồ sơ khai thuế thu nhập cá nhân từ chuyển nhượng bất động sản; thu nhập từ nhận thừa kế và nhận quà tặng là bất động sản kèm miễn thuế thu nhập cá nhân thì hồ sơ miễn thuế thu nhập cá nhân bao gồm:",
+          "position": 1,
+          "name": "Đối với bất động sản chuyển nhượng, nhận thừa kế, quà tặng giữa vợ với chồng cần có một trong các giấy tờ sau: Xác nhận thông tin về cư trú hoặc bản sao Giấy chứng nhận kết hôn hoặc bản sao Quyết định của Tòa án về việc ly hôn, tái hôn (đối với trường hợp chia nhà do ly hôn; hợp nhất quyền sở hữu bất động sản do tái hôn)",
+          "component_code": "G12.0016139",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "(iii) Trường hợp hồ sơ khai thuế thu nhập cá nhân từ chuyển nhượng bất động sản; thu nhập từ nhận thừa kế và nhận quà tặng là bất động sản kèm miễn thuế thu nhập cá nhân thì hồ sơ miễn thuế thu nhập cá nhân bao gồm:",
+          "position": 2,
+          "name": "Đối với bất động sản chuyển nhượng, nhận thừa kế, quà tặng giữa cha đẻ, mẹ đẻ với con đẻ cần có một trong các giấy tờ sau: Xác nhận thông tin về cư trú hoặc bản sao Giấy khai sinh. Trường hợp con ngoài giá thú thì phải có bản sao Quyết định công nhận việc nhận cha, mẹ, con của cơ quan có thẩm quyền",
+          "component_code": "G12.0015731",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "(iii) Trường hợp hồ sơ khai thuế thu nhập cá nhân từ chuyển nhượng bất động sản; thu nhập từ nhận thừa kế và nhận quà tặng là bất động sản kèm miễn thuế thu nhập cá nhân thì hồ sơ miễn thuế thu nhập cá nhân bao gồm:",
+          "position": 3,
+          "name": "Đối với bất động sản chuyển nhượng, nhận thừa kế, quà tặng giữa cha nuôi, mẹ nuôi với con nuôi cần có một trong các giấy tờ sau: Xác nhận thông tin về cư trú hoặc bản sao Quyết định công nhận việc nuôi con nuôi của cơ quan có thẩm quyền",
+          "component_code": "G12.0015732",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "(iii) Trường hợp hồ sơ khai thuế thu nhập cá nhân từ chuyển nhượng bất động sản; thu nhập từ nhận thừa kế và nhận quà tặng là bất động sản kèm miễn thuế thu nhập cá nhân thì hồ sơ miễn thuế thu nhập cá nhân bao gồm:",
+          "position": 4,
+          "name": "Đối với bất động sản chuyển nhượng, nhận thừa kế, quà tặng giữa ông nội, bà nội với cháu nội cần có một trong các giấy tờ sau: bản sao Giấy khai sinh của cháu nội và bản sao Giấy khai sinh của bố cháu nội hoặc Xác nhận thông tin về cư trú có thể hiện mối quan hệ giữa ông nội, bà nội với cháu nội hoặc các giấy tờ khác có xác nhận của cơ quan cấp có thẩm quyền chứng minh mối quan hệ giữa ông nội, bà nội và cháu nội",
+          "component_code": "G12.0015733",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "(iii) Trường hợp hồ sơ khai thuế thu nhập cá nhân từ chuyển nhượng bất động sản; thu nhập từ nhận thừa kế và nhận quà tặng là bất động sản kèm miễn thuế thu nhập cá nhân thì hồ sơ miễn thuế thu nhập cá nhân bao gồm:",
+          "position": 5,
+          "name": "Đối với bất động sản chuyển nhượng, nhận thừa kế, quà tặng giữa ông ngoại, bà ngoại với cháu ngoại cần có một trong các giấy tờ sau: bản sao Giấy khai sinh của cháu ngoại và bản sao Giấy khai sinh của mẹ cháu ngoại hoặc Xác nhận thông tin về cư trú có thể hiện mối quan hệ giữa ông ngoại, bà ngoại với cháu ngoại hoặc giấy tờ khác có xác nhận của cơ quan cấp có thẩm quyền chứng minh mối quan hệ giữa ông ngoại, bà ngoại và cháu ngoại",
+          "component_code": "G12.0015734",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "(iii) Trường hợp hồ sơ khai thuế thu nhập cá nhân từ chuyển nhượng bất động sản; thu nhập từ nhận thừa kế và nhận quà tặng là bất động sản kèm miễn thuế thu nhập cá nhân thì hồ sơ miễn thuế thu nhập cá nhân bao gồm:",
+          "position": 6,
+          "name": "Đối với bất động sản chuyển nhượng, nhận thừa kế, quà tặng giữa anh, chị, em ruột với nhau cần có một trong các giấy tờ sau: Xác nhận thông tin về cư trú của người chuyển nhượng và của người nhận chuyển nhượng thể hiện mối quan hệ có chung cha mẹ hoặc cùng cha khác mẹ hoặc cùng mẹ khác cha hoặc các giấy tờ khác có xác nhận của cơ quan cấp có thẩm quyền chứng minh có quan hệ huyết thống",
+          "component_code": "G12.0015736",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "(iii) Trường hợp hồ sơ khai thuế thu nhập cá nhân từ chuyển nhượng bất động sản; thu nhập từ nhận thừa kế và nhận quà tặng là bất động sản kèm miễn thuế thu nhập cá nhân thì hồ sơ miễn thuế thu nhập cá nhân bao gồm:",
+          "position": 7,
+          "name": "Đối với bất động sản chuyển nhượng, nhận thừa kế, quà tặng giữa cha chồng, mẹ chồng với con dâu; cha vợ, mẹ vợ với con rể cần có một trong các giấy tờ sau: Xác nhận thông tin về cư trú ghi rõ mối quan hệ giữa cha chồng, mẹ chồng với con dâu; giữa cha vợ, mẹ vợ với con rể hoặc bản sao Giấy chứng nhận kết hôn và Giấy khai sinh của chồng hoặc vợ làm căn cứ xác định mối quan hệ giữa người chuyển nhượng là cha chồng, mẹ chồng với con dâu hoặc cha vợ, mẹ vợ với con rể",
+          "component_code": "G12.0015737",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "(iii) Trường hợp hồ sơ khai thuế thu nhập cá nhân từ chuyển nhượng bất động sản; thu nhập từ nhận thừa kế và nhận quà tặng là bất động sản kèm miễn thuế thu nhập cá nhân thì hồ sơ miễn thuế thu nhập cá nhân bao gồm:",
+          "position": 8,
+          "name": "Ngoài giấy tờ kể trên, người chuyển nhượng, nhận thừa kế, quà tặng có thể sử dụng các giấy tờ khác có xác nhận của cơ quan cấp có thẩm quyền về mối quan hệ giữa người chuyển nhượng và người nhận chuyển nhượng, thừa kế, quà tặng làm căn cứ để xác định thu nhập được miễn thuế",
+          "component_code": "G12.0016175",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "(iii) Trường hợp hồ sơ khai thuế thu nhập cá nhân từ chuyển nhượng bất động sản; thu nhập từ nhận thừa kế và nhận quà tặng là bất động sản kèm miễn thuế thu nhập cá nhân thì hồ sơ miễn thuế thu nhập cá nhân bao gồm:",
+          "position": 9,
+          "name": "Bản sao các giấy tờ đối với các trường hợp chuyển nhượng bất động sản được miễn thuế phải được công chứng hoặc chứng thực của cơ quan cấp có thẩm quyền",
+          "component_code": "G12.0015789",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "(iii) Trường hợp hồ sơ khai thuế thu nhập cá nhân từ chuyển nhượng bất động sản; thu nhập từ nhận thừa kế và nhận quà tặng là bất động sản kèm miễn thuế thu nhập cá nhân thì hồ sơ miễn thuế thu nhập cá nhân bao gồm:",
+          "position": 10,
+          "name": "Đối với trường hợp cá nhân chuyển nhượng chỉ có duy nhất một nhà ở, quyền sử dụng đất ở tại Việt Nam: Cá nhân chuyển nhượng kê khai thông tin miễn thuế thu nhập cá nhân trên Tờ khai thuế thu nhập cá nhân mẫu số 03/BĐS-TNCN Phụ lục I ban hành kèm theo Thông tư số 89/2026/TT-BTC ngày 30/06/2026 của Bộ trưởng Bộ Tài chính. Trên Tờ khai thuế, cá nhân tự khai thu nhập được miễn thuế, lý do miễn thuế thu nhập cá nhân đối với nhà ở, quyền sử dụng đất ở duy nhất và chịu trách nhiệm trước pháp luật về việc khai có duy nhất một nhà ở, quyền sử dụng đất ở tại Việt Nam",
+          "component_code": "G12.0015758",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019fa6d0-9078-7719-9158-e8cb91d450b8",
+              "fileName": "47 - 03.BĐS-TNCN.doc",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa6d0-9078-7719-9158-e8cb91d450b8/47 - 03.BĐS-TNCN.doc"
+            }
+          ]
+        },
+        {
+          "section": "(iii) Trường hợp hồ sơ khai thuế thu nhập cá nhân từ chuyển nhượng bất động sản; thu nhập từ nhận thừa kế và nhận quà tặng là bất động sản kèm miễn thuế thu nhập cá nhân thì hồ sơ miễn thuế thu nhập cá nhân bao gồm:",
+          "position": 11,
+          "name": "Từ 01/7/2026 đến thời điểm theo lộ trình của cơ quan thuế quy định tại khoản 2 Điều 99 Thông tư số 89/2026/TT-BTC thì mẫu 03/BĐS-TNCN thực hiện theo mẫu biểu ban hành kèm theo Thông tư số 80/2021/TT-BTC ngày 29/9/2021 của Bộ Tài chính",
+          "component_code": "G12.0015784",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019fa6d1-06d8-721a-a51a-43929588454a",
+              "fileName": "03 BĐS TNCN TT 80.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa6d1-06d8-721a-a51a-43929588454a/03 BĐS TNCN TT 80.docx"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 1,
+          "name": "Trường hợp cơ quan thuế đã kết nối, khai thác được thông tin có trong các cơ sở dữ liệu quốc gia, cơ sở dữ liệu của cơ quan nhà nước có thẩm quyền thì người nộp thuế không phải nộp các thành phần hồ sơ theo quy định tại điểm này. Trường hợp tổ chức, cá nhân nộp bản sao bằng hình thức trực tiếp thì phải xuất trình bản chính để đối chiếu. Trường hợp tổ chức, cá nhân nộp bản sao bằng hình thức điện tử thì phải chịu trách nhiệm về tính chính xác, đầy đủ trên hồ sơ.",
+          "component_code": "G12.0015785",
+          "original_quantity": 0,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c71-7574-afe7-f0f21627c265",
+          "name": "Thông báo nộp tiền về thuế thu nhập cá nhân đối với thu nhập từ chuyển nhượng bất động sản (mẫu số 03/TB-BĐS-TNCN)",
+          "code": "KQ.G12.000514"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019f356e-75e3-7494-a2f3-672d8dce61a6",
+          "name": "QUY ĐỊNH CHI TIẾT MỘT SỐ ĐIỀU VÀ BIỆN PHÁP ĐỂ TỔ CHỨC, HƯỚNG DẪN THI HÀNH LUẬT QUẢN LÝ THUẾ",
+          "code": "252/2026/NĐ-CP"
+        },
+        {
+          "id": "019e5e83-1282-771d-9014-49799413a4e5",
+          "name": "Luật số 108/2025/QH15 của Quốc hội: Luật Quản lý thuế",
+          "code": "108/2025/QH15"
+        },
+        {
+          "id": "019fa376-69da-7783-9853-6afa7cd86621",
+          "name": "Luật Thuế thu nhập cá nhân 109/2025/QH15 ngày 10/12/2025 và các văn bản pháp luật quy định chi tiết, hướng dẫn thi hành và sửa đổi, bổ sung có liên quan",
+          "code": "109/2025/QH15 "
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afe9-653aac8276ee",
+          "name": "Nghị định số 118/2025/NĐ-CP của Chính phủ: Về thực hiện thủ tục hành chính theo cơ chế một cửa, một cửa liên thông tại Bộ phận Một cửa và Cổng Dịch vụ công quốc gia",
+          "code": "118/2025/NĐ-CP"
+        },
+        {
+          "id": "019f8db3-9765-740b-8b90-682677b9c421",
+          "name": "Thông tư quy định chi tiết một số điều của Luật Quản lý thuế và Nghị định số 252/2026/NĐ-CP của Chính phủ quy định chi tiết một số điều và biện pháp để tổ chức, hướng dẫn thi hành Luật Quản lý thuế",
+          "code": "89/2026/TT-BTC"
+        },
+        {
+          "id": "019fa377-0d10-73ea-b3b0-ee84180af5fe",
+          "name": "Nghị định số 253/2026/NĐ-CP ngày 30/6/2026 của Chính phủ quy định chi tiết một số điều và biện pháp để tổ chức, hướng dẫn thi hành Luật Thuế thu nhập cá nhân",
+          "code": "253/2026/NĐ-CP "
+        }
+      ]
+    }
+  ]
+}

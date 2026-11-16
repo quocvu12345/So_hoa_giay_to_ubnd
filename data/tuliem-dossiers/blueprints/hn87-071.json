@@ -1,0 +1,156 @@
+{
+  "id": "hn87-071",
+  "ordinal": "71",
+  "procedure_code": "1.001699",
+  "name": "Xác định, xác định lại mức độ khuyết tật và cấp Giấy xác nhận khuyết tật",
+  "domain": "Bảo trợ xã hội",
+  "department_id": "vx",
+  "department": "Phòng Văn hóa - Xã hội",
+  "authority_as_published": "UBND cấp xã",
+  "execution_level_as_published": "Cấp Xã",
+  "receiving_location_as_published": "Điểm hỗ trợ DVC số",
+  "inventory_date": "2026-04-27",
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "source_urls": [
+    "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfe-b7cd-76e9-b909-bcf437629cb8"
+  ],
+  "current_dvc_match": true,
+  "lifecycle": null,
+  "scope": "hanoi_commune_notice_2026_04_27",
+  "scope_note": "Mốc kiểm kê cấp xã Hà Nội; áp dụng từng thủ tục tại Từ Liêm còn phải theo thẩm quyền/ủy quyền hiện hành.",
+  "status": "has_fillable_templates",
+  "components": [
+    {
+      "id": "hn87-071-c001",
+      "code": "000.00.00.G07-KQ002166",
+      "name": "+ Đơn đề nghị theo Mẫu số 01 ban hành kèm Thông tư số 01/2019/TT-BLĐTBXH (được sửa đổi, bổ sung tại Thông tư số 08/2023/TT-BLĐTBXH).",
+      "section": " Đối với trường hợp xác định lại khuyết tật",
+      "role": "applicant_form",
+      "scenario_status": "conditional_needs_review",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfe-b7cd-76e9-b909-bcf437629cb8",
+      "source_detail_id": "019d2bfe-b7cd-76e9-b909-bcf437629cb8",
+      "embedded_other_requirements": false,
+      "template_candidates": [
+        "template-2b283fbc087b867a"
+      ],
+      "template_selection_method": "first_matching_source_attachment",
+      "selected_template_id": "template-2b283fbc087b867a",
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-071-c002",
+      "code": "000.00.00.G07-KQ002167",
+      "name": "+ Bản sao các giấy tờ liên quan đến khuyết tật (nếu có) như: bệnh án, giấy tờ khám, điều trị, phẫu thuật, Giấy xác nhận khuyết tật cũ hoặc các giấy tờ liên quan khác.",
+      "section": " Đối với trường hợp xác định lại khuyết tật",
+      "role": "supporting_submit",
+      "scenario_status": "conditional_needs_review",
+      "required_as_published": false,
+      "original_quantity": 0,
+      "copy_quantity": 1,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfe-b7cd-76e9-b909-bcf437629cb8",
+      "source_detail_id": "019d2bfe-b7cd-76e9-b909-bcf437629cb8",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-071-c003",
+      "code": "000.00.00.G07-KQ002164",
+      "name": "+ Bản sao các giấy tờ liên quan đến khuyết tật (nếu có) như: bệnh án, giấy tờ khám, điều trị, phẫu thuật hoặc các giấy tờ liên quan khác.",
+      "section": "Đối với trường hợp xác định khuyết tật",
+      "role": "supporting_submit",
+      "scenario_status": "conditional_needs_review",
+      "required_as_published": false,
+      "original_quantity": 0,
+      "copy_quantity": 1,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfe-b7cd-76e9-b909-bcf437629cb8",
+      "source_detail_id": "019d2bfe-b7cd-76e9-b909-bcf437629cb8",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-071-c004",
+      "code": "000.00.00.G07-KQ002165",
+      "name": "+ Bản sao kết luận của Hội đồng Giám định y khoa về khả năng tự phục vụ, mức độ suy giảm khả năng lao động đối với trường hợp người khuyết tật đã có kết luận của Hội đồng Giám định y khoa trước ngày 01/6/2012.",
+      "section": "Đối với trường hợp xác định khuyết tật",
+      "role": "supporting_submit",
+      "scenario_status": "conditional_needs_review",
+      "required_as_published": false,
+      "original_quantity": 0,
+      "copy_quantity": 1,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfe-b7cd-76e9-b909-bcf437629cb8",
+      "source_detail_id": "019d2bfe-b7cd-76e9-b909-bcf437629cb8",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-071-c005",
+      "code": "000.00.00.G07-KQ002163",
+      "name": "+ Đơn đề nghị theo Mẫu số 01 ban hành kèm Thông tư số 01/2019/TT-BLĐTBXH (được sửa đổi, bổ sung tại Thông tư số 08/2023/TT-BLĐTBXH).",
+      "section": "Đối với trường hợp xác định khuyết tật",
+      "role": "applicant_form",
+      "scenario_status": "conditional_needs_review",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfe-b7cd-76e9-b909-bcf437629cb8",
+      "source_detail_id": "019d2bfe-b7cd-76e9-b909-bcf437629cb8",
+      "embedded_other_requirements": false,
+      "template_candidates": [
+        "template-2b283fbc087b867a"
+      ],
+      "template_selection_method": "first_matching_source_attachment",
+      "selected_template_id": "template-2b283fbc087b867a",
+      "selection_requires_review": false
+    }
+  ],
+  "service_cases": [
+    {
+      "id": "019d2cde-e46f-707e-a1af-360ace53ee55",
+      "code": "1.001699.01",
+      "name": "Xác định, xác định lại mức độ khuyết tật và cấp Giấy xác nhận khuyết tật",
+      "source_processing_time": {
+        "qty": 25,
+        "type": "WORKING_DAY"
+      },
+      "has_case_specific_components": false
+    }
+  ],
+  "selected_template_ids": [
+    "template-2b283fbc087b867a"
+  ],
+  "source_component_groups": [
+    {
+      "name": " Đối với trường hợp xác định lại khuyết tật",
+      "component_count": 2,
+      "source_detail_id": "019d2bfe-b7cd-76e9-b909-bcf437629cb8"
+    },
+    {
+      "name": "Đối với trường hợp xác định khuyết tật",
+      "component_count": 3,
+      "source_detail_id": "019d2bfe-b7cd-76e9-b909-bcf437629cb8"
+    }
+  ],
+  "conditional_component_groups": [],
+  "default_test_scenario": {
+    "channel": "direct",
+    "applicant_submits_self": true,
+    "authorized": false,
+    "special_case_flags": [],
+    "selected_conditional_group": null,
+    "case_selection_method": "ordinary_direct_submission",
+    "case_status": "scenario_for_testing_not_a_legal_eligibility_decision"
+  },
+  "requirement_note": "required_as_published được giữ nguyên; false không chứng minh giấy tờ luôn tùy chọn. Các nhóm executionCases có thể là mục giấy tờ/hướng dẫn, không phải các phương án loại trừ nhau."
+}

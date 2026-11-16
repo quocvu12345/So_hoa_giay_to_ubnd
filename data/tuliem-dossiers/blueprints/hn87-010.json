@@ -1,0 +1,139 @@
+{
+  "id": "hn87-010",
+  "ordinal": "10",
+  "procedure_code": "1.010781",
+  "name": "Cấp Bằng “Tổ quốc ghi công” đối với người hy sinh hoặc mất tích trong chiến tranh",
+  "domain": "Người có công",
+  "department_id": "vx",
+  "department": "Phòng Văn hóa - Xã hội",
+  "authority_as_published": "TW",
+  "execution_level_as_published": "Liên thông TW",
+  "receiving_location_as_published": "Điểm hỗ trợ DVC số",
+  "inventory_date": "2026-04-27",
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "source_urls": [
+    "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfa-fbfa-77c8-a91c-924c856d4048"
+  ],
+  "current_dvc_match": true,
+  "lifecycle": null,
+  "scope": "hanoi_commune_notice_2026_04_27",
+  "scope_note": "Mốc kiểm kê cấp xã Hà Nội; áp dụng từng thủ tục tại Từ Liêm còn phải theo thẩm quyền/ủy quyền hiện hành.",
+  "status": "has_fillable_templates",
+  "components": [
+    {
+      "id": "hn87-010-c001",
+      "code": "G09-KQ002677",
+      "name": "-\tCác giấy tờ do cơ quan có thẩm quyền ban hành, xác nhận từ ngày 31 tháng 12 năm 1994 trở về trước, bao gồm:          + Giấy báo tử trận; danh sách liệt sĩ, sổ quản lý liệt sĩ lưu tại cơ quan, đơn vị có ghi tên người hy sinh, trường hợp danh sách, sổ quản lý liệt sĩ không có dấu xác nhận của cơ quan, đơn vị tại thời điểm lập, ghi sổ thì cơ quan, đơn vị đang quản lý có trách nhiệm chuyển đến sư đoàn hoặc cấp tương đương trở lên để tập hợp chốt số lượng người, xác nhận danh sách, sổ quản lý và gửi số liệu theo Mẫu số 101 Phụ lục I Nghị định số 131/2021/NĐ-CP về Bộ Quốc phòng trước ngày 01 tháng 5 năm 2022.         + Các giấy tờ, tài liệu khác có ghi nhận là liệt sĩ hoặc hy sinh trong các trường hợp quy định tại các điểm a, b, c, d, đ khoản 1 Điều 14 Pháp lệnh, cụ thể như sau:         Chiến đấu hoặc trực tiếp phục vụ chiến đấu để bảo vệ độc lập, chủ quyền, toàn vẹn lãnh thổ, an ninh quốc gia.         Làm nhiệm vụ quốc phòng, an ninh trong địa bàn địch chiếm đóng, địa bàn có chiến sự, địa bàn tiếp giáp vùng địch chiếm đóng.         Trực tiếp đấu tranh chính trị, đấu tranh binh vận có tổ chức với địch.          Hoạt động hoặc tham gia hoạt động cách mạng, kháng chiến bị địch bắt, tra tấn vẫn không chịu khuất phục, kiên quyết đấu tranh hoặc thực hiện chủ trương vượt tù, vượt ngục mà hy sinh.        Làm nghĩa vụ quốc tế.",
+      "section": "(1)\tĐối với trường hợp hy sinh:",
+      "role": "instruction",
+      "scenario_status": "instruction_only",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfa-fbfa-77c8-a91c-924c856d4048",
+      "source_detail_id": "019d2bfa-fbfa-77c8-a91c-924c856d4048",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-010-c002",
+      "code": "G09-KQ003210111",
+      "name": "-\tBản khai theo Mẫu số 13 Phụ lục I Nghị định số 131/2021/NĐ-CP.",
+      "section": "(1)\tĐối với trường hợp hy sinh:",
+      "role": "applicant_form",
+      "scenario_status": "conditional_needs_review",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfa-fbfa-77c8-a91c-924c856d4048",
+      "source_detail_id": "019d2bfa-fbfa-77c8-a91c-924c856d4048",
+      "embedded_other_requirements": false,
+      "template_candidates": [
+        "template-01389456b778cd2a"
+      ],
+      "template_selection_method": "first_matching_source_attachment",
+      "selected_template_id": "template-01389456b778cd2a",
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-010-c003",
+      "code": "G09-KQ002678",
+      "name": "-\tBan khai theo Mẫu số 14 Phụ lục I Nghị định số 131/2021/NĐ-CP.",
+      "section": "(2)\tĐối với trường hợp mất tích:",
+      "role": "applicant_form",
+      "scenario_status": "conditional_needs_review",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfa-fbfa-77c8-a91c-924c856d4048",
+      "source_detail_id": "019d2bfa-fbfa-77c8-a91c-924c856d4048",
+      "embedded_other_requirements": false,
+      "template_candidates": [
+        "template-9ce8a1febbb0e712"
+      ],
+      "template_selection_method": "first_matching_source_attachment",
+      "selected_template_id": "template-9ce8a1febbb0e712",
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-010-c004",
+      "code": "G09-KQ002679",
+      "name": "-\tPhiếu xác minh theo Mẫu số 90 Phụ lục I Nghị định số 131/2021/NĐ- CP của Bộ Chỉ huy quân sự cấp tỉnh hoặc Công an cấp tỉnh đối với trường hợp mất tích sau đây:         + Chiến đấu hoặc trực tiếp phục vụ chiến đấu để bảo vệ độc lập, chủ quyền, toàn vẹn lãnh thổ, an ninh quốc gia;         + Làm nhiệm vụ quốc phòng, an ninh trong địa bàn địch chiếm đóng, địa bàn có chiến sự, địa bàn tiếp giáp vùng địch chiếm đóng;         + Trực tiếp đấu tranh chính trị, đấu tranh binh vận có tổ chức với địch;          + Hoạt động hoặc tham gia hoạt động cách mạng, kháng chiến bị địch bắt, tra tấn vẫn không chịu khuất phục, kiên quyết đấu tranh hoặc thực hiện chủ trương vượt tù, vượt ngục mà hy sinh;         + Làm nghĩa vụ quốc tế;",
+      "section": "(2)\tĐối với trường hợp mất tích:",
+      "role": "needs_review",
+      "scenario_status": "conditional_needs_review",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfa-fbfa-77c8-a91c-924c856d4048",
+      "source_detail_id": "019d2bfa-fbfa-77c8-a91c-924c856d4048",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    }
+  ],
+  "service_cases": [
+    {
+      "id": "019dbe51-db43-76a3-9a70-14f1042c9029",
+      "code": "1.010781.01",
+      "name": "Cấp Bằng “Tổ quốc ghi công” đối với người hy sinh hoặc mất tích trong chiến tranh",
+      "source_processing_time": {
+        "qty": 219,
+        "type": "DAY"
+      },
+      "has_case_specific_components": false
+    }
+  ],
+  "selected_template_ids": [
+    "template-01389456b778cd2a",
+    "template-9ce8a1febbb0e712"
+  ],
+  "source_component_groups": [
+    {
+      "name": "(1)\tĐối với trường hợp hy sinh:",
+      "component_count": 2,
+      "source_detail_id": "019d2bfa-fbfa-77c8-a91c-924c856d4048"
+    },
+    {
+      "name": "(2)\tĐối với trường hợp mất tích:",
+      "component_count": 2,
+      "source_detail_id": "019d2bfa-fbfa-77c8-a91c-924c856d4048"
+    }
+  ],
+  "conditional_component_groups": [],
+  "default_test_scenario": {
+    "channel": "direct",
+    "applicant_submits_self": true,
+    "authorized": false,
+    "special_case_flags": [],
+    "selected_conditional_group": null,
+    "case_selection_method": "ordinary_direct_submission",
+    "case_status": "scenario_for_testing_not_a_legal_eligibility_decision"
+  },
+  "requirement_note": "required_as_published được giữ nguyên; false không chứng minh giấy tờ luôn tùy chọn. Các nhóm executionCases có thể là mục giấy tờ/hướng dẫn, không phải các phương án loại trừ nhau."
+}

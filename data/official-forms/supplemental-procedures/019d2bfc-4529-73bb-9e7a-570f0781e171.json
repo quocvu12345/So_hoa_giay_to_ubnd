@@ -1,0 +1,116 @@
+{
+  "id": "dvc-019d2bfc-4529-73bb-9e7a-570f0781e171",
+  "procedure_code": "1.007859",
+  "name": "Thủ tục hải quan đối với hàng hoá xuất khẩu, nhập khẩu đăng ký tờ khai hải quan một lần",
+  "domain": "Hải quan",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.949325+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfc-4529-73bb-9e7a-570f0781e171",
+      "code": "1.007859",
+      "name": "Thủ tục hải quan đối với hàng hoá xuất khẩu, nhập khẩu đăng ký tờ khai hải quan một lần",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1793590641735,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-4529-73bb-9e7a-570f0781e171",
+      "raw_path": "evidence/dvc/details/019d2bfc-4529-73bb-9e7a-570f0781e171.json",
+      "components": [
+        {
+          "section": "Đối với hàng hóa xuất khẩu, nhập khẩu thực hiện việc giao nhận trước, đăng ký tờ khai hải quan sau",
+          "position": 1,
+          "name": "+ Thực hiện việc khai hải quan trên tờ khai hải quan theo các chỉ tiêu thông tin tại Phụ lục II ban hành kèm Thông tư số 38/2015/TT-BTC được sửa đổi, bổ sung tại Phụ lục I Thông tư 39/2018/TT-BTC",
+          "component_code": "000.00.00.G12-KQ012466",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Đối với hàng hóa xuất khẩu, nhập khẩu thực hiện việc giao nhận trước, đăng ký tờ khai hải quan sau",
+          "position": 2,
+          "name": "+  Nộp bộ hồ sơ xuất khẩu, nhập khẩu theo quy định tại Điều 16 Thông tư số 38/2015/TT-BTC được sửa đổi, bổ sung tại khoản 5 Điều 1 Thông tư 39/2018/TT-BTC, trong đó mỗi lần giao nhận, người khai hải quan phải có chứng từ chứng nhận việc giao nhận hàng hóa (hóa đơn bán hàng, hóa đơn thương mại, Phiếu xuất kho…) và phải lập Bảng tổng hợp các chứng từ chứng nhận việc giao nhận hàng hóa theo mẫu số 27/THCT-KML/GSQL Phụ lục V ban hành kèm Thông tư số 38/2015/TT-BTC được sửa đổi, bổ sung tại phụ lục II Thông tư 39/2018/TT-BTC cho cơ quan hải quan khi làm thủ tục hải quan.   Đối với mặt hàng điện năng xuất khẩu, nhập khẩu, người khai hải quan có trách nhiệm phối hợp với cơ quan hải quan và các đơn vị có liên quan thực hiện chốt số liệu tiêu thụ điện năng hàng tháng vào ngày đầu tiên của tháng liền kề. Sau khi chốt số liệu, lập Biên bản xác nhận chỉ số công tơ và sản lượng giao nhận điện năng có xác nhận của các bên tham gia chứng kiến. Trong vòng 30 ngày kể từ thời điểm xác nhận chỉ số công tơ, người khai hải quan phải thực hiện khai hải quan và nộp kèm Biên bản xác nhận chỉ số công tơ và sản lượng giao nhận điện năng có xác nhận của các bên tham gia chứng kiến cùng bộ hồ sơ hải quan theo quy định tại Điều 16 Thông tư 38/2015/TT-BTC được sửa đổi, bổ sung tại khoản 5 Điều 1 Thông tư 39/2018/TT-BTC; \tĐối với mặt hàng xăng dầu cung ứng cho tầu bay xuất cảnh phải làm thủ tục hải quan trong thời hạn 30 ngày và trong lượng tờ khai tạm nhập",
+          "component_code": "000.00.00.G12-KQ012467",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Đối với hàng hóa xuất khẩu, nhập khẩu được đăng ký tờ khai hải quan trước, thực hiện giao nhận sau",
+          "position": 1,
+          "name": "+  Nộp 01 bản hợp đồng (bản chụp), Giấy phép xuất khẩu hoặc nhập khẩu của cơ quan quản lý nhà nước có thẩm quyền (đối với hàng hoá phải có giấy phép xuất khẩu, nhập khẩu theo quy định của pháp luật): nộp 01 bản chụp và xuất trình bản chính để đối chiếu và cấp phiếu theo dõi, trừ lùi hoặc thực hiện trừ lùi từng lần.",
+          "component_code": "000.00.00.G12-KQ012465",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Đối với hàng hóa xuất khẩu, nhập khẩu được đăng ký tờ khai hải quan trước, thực hiện giao nhận sau",
+          "position": 2,
+          "name": "+ Thực hiện việc khai hải quan và nộp bộ hồ sơ xuất khẩu, nhập khẩu theo quy định tại Điều 16 Thông tư số 38/2015/TT-BTC được sửa đổi, bổ sung tại khoản 5 Điều 1 Thông tư 39/2018/TT-BTC",
+          "component_code": "000.00.00.G12-KQ012464",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c70-724b-96e0-46e541515789",
+          "name": "Thông quan hàng hóa nhập khẩu, xuất khẩu",
+          "code": "KQ.G12.000584"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7d-7398-be48-2ce7181d92a3",
+          "name": "Thông tư số 39/2018/TT-BTC ngày 20/4/2018 của Bộ Tài chính sửa đổi, bổ sung một số điều tại Thông tư số 38/2015/TT-BTC ngày 25/3/2015 của Bộ Tài chính quy định về thủ tục hải quan; kiểm tra, giám sát hải quan; thuế xuất khẩu, thuế nhập khẩu và quản lý thuế đối với hàng hóa xuất khẩu, nhập khẩu.",
+          "code": "39/2018/TT-BTC"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afe7-9c25863596db",
+          "name": "Nghị định 08/2015/NĐ-CP",
+          "code": "08/2015/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d87-7195-a443-db1e211c2ddd",
+          "name": "Nghị định 59/2018/NĐ-CP",
+          "code": "59/2018/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7d-7398-be4c-34fb9320bd01",
+          "name": "Thông tư số 274/2016/TT-BTC ngày 14/11/2016 của Bộ Tài chính quy định mức thu, chế độ thu, nộp, quản lý và sử dụng phí hải quan và lệ phí hàng hóa, phương tiện quá cảnh.",
+          "code": "274/2016/TT-BTC"
+        },
+        {
+          "id": "019d2bb3-5d7d-7398-be4d-1c6dbc289d7a",
+          "name": "Quy định về thủ tục hải quan; kiểm tra, giám sát hải quan; thuế xuất khẩu thuế nhập khẩu và quản lý thuế đối vớỉ hàng hoá xuất khẩu, nhập khẩu.",
+          "code": "38/2015/TT-BTC"
+        },
+        {
+          "id": "019d2bb3-5d7d-7398-be4d-ff62cdf67da5",
+          "name": "Luật 54/2014/QH13",
+          "code": "54/2014/QH13"
+        },
+        {
+          "id": "019d2bb3-5d86-7760-a63d-81004ce604b9",
+          "name": "Thông tư 114/2021/TT-BTC",
+          "code": "114/2021/TT-BTC"
+        }
+      ]
+    }
+  ]
+}

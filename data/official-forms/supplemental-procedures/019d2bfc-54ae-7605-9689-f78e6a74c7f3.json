@@ -1,0 +1,195 @@
+{
+  "id": "dvc-019d2bfc-54ae-7605-9689-f78e6a74c7f3",
+  "procedure_code": "1.008327",
+  "name": "Khai bổ sung hồ sơ khai thuế, giải trình hồ sơ khai thuế",
+  "domain": "Thuế",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.945063+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfc-54ae-7605-9689-f78e6a74c7f3",
+      "code": "1.008327",
+      "name": "Khai bổ sung hồ sơ khai thuế, giải trình hồ sơ khai thuế",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1785399198867,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-54ae-7605-9689-f78e6a74c7f3",
+      "raw_path": "evidence/dvc/details/019d2bfc-54ae-7605-9689-f78e6a74c7f3.json",
+      "components": [
+        {
+          "section": "(i.1) Trường hợp khai bổ sung - Đối với NNT là doanh nghiệp, tổ chức, cá nhân (trừ hộ kinh doanh, cá nhân kinh doanh đã khai thuế theo Thông tư số 18/2026/TT-BTC và các văn bản sửa đổi, bổ sung):",
+          "position": 1,
+          "name": "Tờ khai bổ sung mẫu số 01/KHBS Thông tư số 89/2026/TT-BTC ngày 30/06/2026",
+          "component_code": "G12.0003638",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019fa2bd-915b-741f-a00e-9282048a0f10",
+              "fileName": "01.KHBS.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa2bd-915b-741f-a00e-9282048a0f10/01.KHBS.docx"
+            }
+          ]
+        },
+        {
+          "section": "(i.1) Trường hợp khai bổ sung - Đối với NNT là doanh nghiệp, tổ chức, cá nhân (trừ hộ kinh doanh, cá nhân kinh doanh đã khai thuế theo Thông tư số 18/2026/TT-BTC và các văn bản sửa đổi, bổ sung):",
+          "position": 2,
+          "name": "Bản giải trình khai bổ sung mẫu số 01-1/KHBS Thông tư số 89/2026/TT-BTC ngày 30/06/2026",
+          "component_code": "G12.0003639",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019fa2be-01bb-74aa-aa5b-ef0804bfdbf7",
+              "fileName": "01-1.KHBS.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa2be-01bb-74aa-aa5b-ef0804bfdbf7/01-1.KHBS.docx"
+            }
+          ]
+        },
+        {
+          "section": "(i.1) Trường hợp khai bổ sung - Đối với NNT là doanh nghiệp, tổ chức, cá nhân (trừ hộ kinh doanh, cá nhân kinh doanh đã khai thuế theo Thông tư số 18/2026/TT-BTC và các văn bản sửa đổi, bổ sung):",
+          "position": 3,
+          "name": "Hồ sơ khai thuế của kỳ tính thuế có sai sót đã được bổ sung theo mẫu ban hành tại từng thời kỳ văn bản có hiệu lực",
+          "component_code": "G12.0003640",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "(i.1) Trường hợp khai bổ sung - Đối với NNT là doanh nghiệp, tổ chức, cá nhân (trừ hộ kinh doanh, cá nhân kinh doanh đã khai thuế theo Thông tư số 18/2026/TT-BTC và các văn bản sửa đổi, bổ sung):",
+          "position": 4,
+          "name": "Chứng từ, tài liệu có liên quan (nếu có)",
+          "component_code": "G12.0003641",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "(i.1) Trường hợp khai bổ sung - Đối với NNT là doanh nghiệp, tổ chức, cá nhân (trừ hộ kinh doanh, cá nhân kinh doanh đã khai thuế theo Thông tư số 18/2026/TT-BTC và các văn bản sửa đổi, bổ sung):",
+          "position": 5,
+          "name": "Từ 01/7/2026 đến thời điểm theo lộ trình của cơ quan thuế quy định tại khoản 2 Điều 99 Thông tư số 89/2026/TT-BTC thì các tờ khai số 01/KHBS, 01-1/KHBS thực hiện theo Mẫu ban hành kèm theo Thông tư số 80/2021/TT-BTC ngày 29/9/2021 của Bộ Tài chính",
+          "component_code": "G12.0003642",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019fa2c0-004f-73c9-adea-04fa4288b266",
+              "fileName": "01-1 KHBS TT 80.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa2c0-004f-73c9-adea-04fa4288b266/01-1 KHBS TT 80.docx"
+            },
+            {
+              "id": "019fa2c0-01b3-75e8-a39e-18384b4bd762",
+              "fileName": "01 KHBS TT 80.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa2c0-01b3-75e8-a39e-18384b4bd762/01 KHBS TT 80.docx"
+            }
+          ]
+        },
+        {
+          "section": "(ii) Trường hợp giải trình hồ sơ khai thuế:",
+          "position": 1,
+          "name": "Văn bản giải trình mẫu số 01/VBGT ban hành kèm theo Thông tư 89/2026/TT-BTC ngày 30/06/2026",
+          "component_code": "G12.0003644",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019fa2c6-5074-75cb-a53e-ebd978341414",
+              "fileName": "01. VBGT.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa2c6-5074-75cb-a53e-ebd978341414/01. VBGT.docx"
+            }
+          ]
+        },
+        {
+          "section": "(ii) Trường hợp giải trình hồ sơ khai thuế:",
+          "position": 2,
+          "name": "Hồ sơ khai thuế của kỳ tính thuế có sai sót đã được bổ sung theo mẫu ban hành tại từng thời kỳ văn bản có hiệu lực",
+          "component_code": "G12.0003640",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "(ii) Trường hợp giải trình hồ sơ khai thuế:",
+          "position": 3,
+          "name": "Chứng từ, tài liệu có liên quan (nếu có)",
+          "component_code": "G12.0003943",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "(i.2) Trường hợp khai bổ sung - Đối với NNT là hộ kinh doanh, cá nhân kinh doanh đã khai thuế theo Thông tư số 18/2026/TT-BTC và các văn bản sửa đổi, bổ sung:",
+          "position": 1,
+          "name": "Hồ sơ khai thuế của kỳ tính thuế có sai sót đã được bổ sung theo mẫu ban hành tại từng thời kỳ văn bản có hiệu lực",
+          "component_code": "G12.0003640",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019e5e36-2b71-729b-8304-bed7e2942ff7",
+          "name": "Hồ sơ gửi đến cơ quan thuế không có kết quả giải quyết.",
+          "code": "KQ.G12.01128"
+        },
+        {
+          "id": "019fa2c8-5a14-71af-9956-1c2c69548ec9",
+          "name": "Thông báo của cơ quan thuế về việc chấp nhận/không chấp nhận hồ sơ giải trình của người nộp thuế",
+          "code": "KQ.G12.0001277"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019e5e83-1282-771d-9014-49799413a4e5",
+          "name": "Luật số 108/2025/QH15 của Quốc hội: Luật Quản lý thuế",
+          "code": "108/2025/QH15"
+        },
+        {
+          "id": "019f8db3-9765-740b-8b90-682677b9c421",
+          "name": "Thông tư quy định chi tiết một số điều của Luật Quản lý thuế và Nghị định số 252/2026/NĐ-CP của Chính phủ quy định chi tiết một số điều và biện pháp để tổ chức, hướng dẫn thi hành Luật Quản lý thuế",
+          "code": "89/2026/TT-BTC"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afe9-653aac8276ee",
+          "name": "Nghị định số 118/2025/NĐ-CP của Chính phủ: Về thực hiện thủ tục hành chính theo cơ chế một cửa, một cửa liên thông tại Bộ phận Một cửa và Cổng Dịch vụ công quốc gia",
+          "code": "118/2025/NĐ-CP"
+        },
+        {
+          "id": "019f356e-75e3-7494-a2f3-672d8dce61a6",
+          "name": "QUY ĐỊNH CHI TIẾT MỘT SỐ ĐIỀU VÀ BIỆN PHÁP ĐỂ TỔ CHỨC, HƯỚNG DẪN THI HÀNH LUẬT QUẢN LÝ THUẾ",
+          "code": "252/2026/NĐ-CP"
+        }
+      ]
+    }
+  ]
+}

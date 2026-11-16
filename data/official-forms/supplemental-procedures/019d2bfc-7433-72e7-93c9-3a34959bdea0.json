@@ -1,0 +1,71 @@
+{
+  "id": "dvc-019d2bfc-7433-72e7-93c9-3a34959bdea0",
+  "procedure_code": "1.009067",
+  "name": "Thủ tục đối với hàng hóa đưa vào bán tại cửa hàng miễn thuế thay đổi mục đích sử dụng, chuyển tiêu thụ nội địa, tái xuất trong trường hợp hàng hóa nội địa được phép lưu thông theo quy định của pháp luật Việt Nam đưa vào bán tại cửa hàng miễn thuế sau đó đưa trở lại nội địa",
+  "domain": "Hải quan",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.928965+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfc-7433-72e7-93c9-3a34959bdea0",
+      "code": "1.009067",
+      "name": "Thủ tục đối với hàng hóa đưa vào bán tại cửa hàng miễn thuế thay đổi mục đích sử dụng, chuyển tiêu thụ nội địa, tái xuất trong trường hợp hàng hóa nội địa được phép lưu thông theo quy định của pháp luật Việt Nam đưa vào bán tại cửa hàng miễn thuế sau đó đưa trở lại nội địa",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1785982947016,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-7433-72e7-93c9-3a34959bdea0",
+      "raw_path": "evidence/dvc/details/019d2bfc-7433-72e7-93c9-3a34959bdea0.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Danh sách hàng hóa đưa vào/đưa ra cửa hàng miễn thuế, kho chứa hàng miễn thuế theo Mẫu số 08/DSHH Phụ lục III ban hành kèm theo Nghị định số 273/2026/NĐ-CP (đối với trường hợp nộp trực tiếp).",
+          "component_code": "000.00.00.G12-KQ9854",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019fd13f-6921-7302-a34e-8239c9a5bd56",
+              "fileName": "Mẫu số 08.DSHH.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fd13f-6921-7302-a34e-8239c9a5bd56/Mẫu số 08.DSHH.docx"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Chỉ tiêu thông tin tại Mẫu số 08c Phụ lục II ban hành kèm theo Nghị định số 273/2026/NĐ-CP (đối với trường hợp nộp trực tuyến).",
+          "component_code": "000.00.00.G12-KQ99456",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c70-724b-96e1-36b8791f252d",
+          "name": "phản hồi từ hệ thống xử lý dữ liệu điện tử hải quan và xác nhận của cơ quan hải quan trên hệ thống xử lý dữ liệu điện tử hải quan về số liệu báo cáo.",
+          "code": "KQ.G12.000417"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019fc558-dd5c-7395-9a78-efc7e38e5c9f",
+          "name": "Về kinh doanh hàng miễn thuế",
+          "code": "273/2026/NĐ-CP"
+        }
+      ]
+    }
+  ]
+}

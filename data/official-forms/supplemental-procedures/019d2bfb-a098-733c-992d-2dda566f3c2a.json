@@ -1,0 +1,96 @@
+{
+  "id": "dvc-019d2bfb-a098-733c-992d-2dda566f3c2a",
+  "procedure_code": "1.013550",
+  "name": "Thủ tục biên phòng trong cấp thị thực tại cửa khẩu và sửa đổi, bổ sung hồ sơ biên phòng đối với người nhận thị thực tại cửa khẩu",
+  "domain": "Quản lý biên giới",
+  "managing_agency": "Bộ Quốc phòng",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.981610+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfb-a098-733c-992d-2dda566f3c2a",
+      "code": "1.013550",
+      "name": "Thủ tục biên phòng trong cấp thị thực tại cửa khẩu và sửa đổi, bổ sung hồ sơ biên phòng đối với người nhận thị thực tại cửa khẩu",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1777598685965,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-a098-733c-992d-2dda566f3c2a",
+      "raw_path": "evidence/dvc/details/019d2bfb-a098-733c-992d-2dda566f3c2a.json",
+      "components": [
+        {
+          "section": "Thành phần hồ sơ nộp",
+          "position": 1,
+          "name": "- Thành phần hồ sơ nộp: Bản khai cấp thị thực tại cửa khẩu - Thành phần hồ sơ xuất trình: Hộ chiếu hoặc giấy tờ có giá trị xuất nhập cảnh hợp lệ.",
+          "component_code": "000.00.00.G11-KQ0735",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019dc93d-0545-7580-b263-536d36cbd54a",
+              "fileName": "Bản khai cấp thị thực.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019dc93d-0545-7580-b263-536d36cbd54a/Bản khai cấp thị thực.docx"
+            }
+          ]
+        },
+        {
+          "section": "Thành phần hồ sơ xuất trình",
+          "position": 1,
+          "name": "Hộ chiếu hoặc giấy tờ có giá trị xuất nhập cảnh hợp lệ",
+          "component_code": "000.00.00.G11-KQ0861",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c6f-72b5-bd08-cc60cbb9a012",
+          "name": "Bản điện tử xác nhận hoàn thành khai báo thủ tục biên phòng điện tử đối với người nhận thị thực tại cửa khẩu; hồ sơ điện tử sửa đổi, bổ sung hoặc cán bộ thủ tục biên phòng thực hiện kiểm chứng, cấp tạm trú, cấp thị thực (nếu có) cho hành khách.",
+          "code": "KQ.G11.000191"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d87-7195-a442-70603a9d0597",
+          "name": "Luật 51/2019/QH14",
+          "code": "51/2019/QH14"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b674-b1d4ccab82e5",
+          "name": "Luật Nhập cảnh, xuất cảnh, quá cảnh, cư trú của người nước ngoài tại Việt Nam",
+          "code": "Luật 47/2014/QH13"
+        },
+        {
+          "id": "019d2bb3-5d86-7760-a645-08dd5ede9baf",
+          "name": "Luật Xuất cảnh, nhập cảnh của công dân Việt Nam và Luật Nhập cảnh, xuất cảnh, quá cảnh, cư trú của người nước ngoài tại Việt Nam sửa đổi 2023",
+          "code": "23/2023/QH15"
+        },
+        {
+          "id": "019d2bb3-5d7d-7398-be4b-fbb10e115bac",
+          "name": "QUY ĐỊNH MỨC THU, CHẾ ĐỘ THU, NỘP, QUẢN LÝ VÀ SỬ DỤNG PHÍ, LỆ PHÍ TRONG LĨNH VỰC XUẤT CẢNH, NHẬP CẢNH, QUÁ CẢNH, CƯ TRÚ TẠI VIỆT NAM",
+          "code": "25/2021/TT-BTC"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b677-78013aa85151",
+          "name": "Quyết định 15/2019/QĐ-TTg - Về việc thực hiện thủ tục biên phòng điện tử tại các cửa khẩu do Bộ Quốc phòng quản lý",
+          "code": "15/2019/QĐ-TTg"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b678-72e8ac46ed62",
+          "name": "Quyết định số 31/2025/QĐ-TTg của Thủ tướng Chính phủ: Sửa đổi, bổ sung một số điều các Quyết định của Thủ tướng Chính phủ về thực hiện thủ tục biên phòng điện tử tại các cửa khẩu do Bộ Quốc phòng quản lý",
+          "code": "31/2025/QĐ-TTg"
+        }
+      ]
+    }
+  ]
+}

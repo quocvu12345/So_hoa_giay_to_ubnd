@@ -1,0 +1,170 @@
+{
+  "id": "dvc-019d2bfc-740f-77c1-8adc-a0e5648d08b3",
+  "procedure_code": "1.009064",
+  "name": "Thủ tục hải quan đối với hàng hóa đã bán cho khách xuất cảnh nhưng giao ở nước ngoài theo yêu cầu của khách",
+  "domain": "Hải quan",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.930285+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfc-740f-77c1-8adc-a0e5648d08b3",
+      "code": "1.009064",
+      "name": "Thủ tục hải quan đối với hàng hóa đã bán cho khách xuất cảnh nhưng giao ở nước ngoài theo yêu cầu của khách",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1785982946940,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-740f-77c1-8adc-a0e5648d08b3",
+      "raw_path": "evidence/dvc/details/019d2bfc-740f-77c1-8adc-a0e5648d08b3.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Tờ khai hải quan",
+          "component_code": "000.00.00.G12-KQ9841",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Bảng kê hàng hóa bán cho khách xuất cảnh theo Mẫu số 09/BKHH Phụ lục III ban hành kèm theo Nghị định số 273/2026/NĐ-CP (đối với trường hợp nộp trực tiếp).",
+          "component_code": "000.00.00.G12-KQ9843",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019fd137-c669-765a-9499-b1aa039b965b",
+              "fileName": "Mẫu số 09.BKHH.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fd137-c669-765a-9499-b1aa039b965b/Mẫu số 09.BKHH.docx"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 3,
+          "name": "Hóa đơn thương mại hoặc chứng từ có giá trị tương đương trong trường hợp người mua phải thanh toán cho người bán. Trường hợp hóa đơn thương mại được cấp dưới dạng điện tử theo quy định tại điểm 2a Điều 8 Nghị định 123/2020/NĐ-CP ngày 19/10/2020 được sửa đổi, bổ sung bởi khoản 5 Điều 1 Nghị định 70/2025/NĐ-CP ngày 20/3/2025 của Chính phủ trước thời điểm khai báo hải quan thì người khai hải quan không phải nộp cho cơ quan hải quan khi làm thủ tục hải quan;",
+          "component_code": "000.00.00.G12-KQ9842",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 4,
+          "name": "Chỉ tiêu thông tin theo Mẫu số 09 Phụ lục II ban hành kèm theo Nghị định số 273/2026/NĐ-CP (đối với trường hợp nộp trực tuyến).",
+          "component_code": "000.00.00.G12-KQ9848",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 5,
+          "name": "Giấy thông báo miễn kiểm tra hoặc giấy thông báo kết quả kiểm tra chuyên ngành hoặc chứng từ khác theo quy định của pháp luật (sau đây gọi tắt là Giấy chứng nhận kiểm tra chuyên ngành);",
+          "component_code": "000.00.00.G12-KQ9845",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 6,
+          "name": "01 bản chụp hộ chiếu hoặc giấy thông hành (trang đầu và trang có đóng dấu xuất cảnh của cơ quan xuất nhập cảnh).",
+          "component_code": "000.00.00.G12-KQ9849",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 7,
+          "name": "Giấy phép xuất khẩu hoặc văn bản cho phép xuất khẩu của cơ quan có thẩm quyền theo quy định pháp luật (sau đây gọi tắt là giấy phép xuất khẩu);",
+          "component_code": "000.00.00.G12-KQ9844",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 8,
+          "name": "Hợp đồng ủy thác đối với trường hợp ủy thác xuất khẩu hàng hóa thuộc diện phải có giấy phép xuất khẩu, giấy chứng nhận kiểm tra chuyên ngành, chứng từ chứng minh tổ chức, cá nhân đủ điều kiện xuất khẩu hàng hóa theo quy định của pháp luật về đầu tư;",
+          "component_code": "000.00.00.G12-KQ9847",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 9,
+          "name": "Chứng từ chứng minh tổ chức, cá nhân đủ điều kiện xuất khẩu hàng hóa theo quy định của pháp luật về đầu tư",
+          "component_code": "000.00.00.G12-KQ9846",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 10,
+          "name": "Giấy chứng nhận đăng ký quyền xuất khẩu, nhập khẩu của thương nhân nước ngoài không có hiện diện tại Việt Nam do Bộ Công Thương cấp",
+          "component_code": "000.00.00.G12-KQ012644",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 11,
+          "name": "Đối với doanh nghiệp có vốn đầu tư nước ngoài thực hiện quyền xuất khẩu: Giấy chứng nhận đầu tư về hoạt động mua bán hàng hóa và các hoạt động liên quan đến mua bán hàng hóa của thương nhân có vốn đầu tư nước ngoài có đăng ký quyền xuất khẩu; Trường hợp không phải thực hiện cấp Giấy chứng nhận đầu tư thì nộp chứng từ tương đương. Trường hợp thực hiện thủ tục hải quan tại cùng một cơ quan hải quan thì người khai hải quan chỉ phải nộp các chứng từ quy định tại điểm g và điểm h khoản này lần đầu khi làm thủ tục hải quan.",
+          "component_code": "000.00.00.G12-KQ12656",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c70-724b-96df-98c3165f3fa1",
+          "name": "Xác nhận thông quan trên hệ thống",
+          "code": "KQ.G12.000606"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019fc558-dd5c-7395-9a78-efc7e38e5c9f",
+          "name": "Về kinh doanh hàng miễn thuế",
+          "code": "273/2026/NĐ-CP"
+        }
+      ]
+    }
+  ]
+}

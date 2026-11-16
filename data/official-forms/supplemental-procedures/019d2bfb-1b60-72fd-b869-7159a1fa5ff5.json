@@ -1,0 +1,91 @@
+{
+  "id": "dvc-019d2bfb-1b60-72fd-b869-7159a1fa5ff5",
+  "procedure_code": "1.013710",
+  "name": "Hỗ trợ chi phí y tế và thu nhập thực tế bị mất hoặc giảm sút cho người đang trực tiếp tham gia hoạt động chữ thập đỏ bị tai nạn dẫn đến thiệt hại về sức khỏe",
+  "domain": "Quản lý nhà nước về hội, quỹ",
+  "managing_agency": "Bộ Nội vụ",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.995736+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfb-1b60-72fd-b869-7159a1fa5ff5",
+      "code": "1.013710",
+      "name": "Hỗ trợ chi phí y tế và thu nhập thực tế bị mất hoặc giảm sút cho người đang trực tiếp tham gia hoạt động chữ thập đỏ bị tai nạn dẫn đến thiệt hại về sức khỏe",
+      "state": "ACTIVE",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1776324067005,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-1b60-72fd-b869-7159a1fa5ff5",
+      "raw_path": "evidence/dvc/details/019d2bfb-1b60-72fd-b869-7159a1fa5ff5.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "- Giấy ra viện, hóa đơn thanh toán chi phí khám bệnh, chữa bệnh và những chi phí không nằm trong danh mục do bảo hiểm y tế chi trả với người lao động tham gia bảo hiểm y tế (bản chính hoặc bản sao có chứng thực nếu gửi qua đường bưu điện, bản sao và bản chính để đối chiếu nếu gửi trực tiếp)",
+          "component_code": "G09-KQ002438",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "- Công văn đề nghị thẩm định của Hội Chữ thập đỏ (bản chính)",
+          "component_code": "G09-KQ002436",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 3,
+          "name": "- Văn bản, giấy tờ hợp lệ về thu nhập thực tế theo tiền lương, tiền công hằng tháng của người bị tai nạn có xác nhận của tổ chức hoặc cá nhân sử dụng người lao động để cơ quan nhà nước có thẩm quyền xác định thu nhập thực tế bị mất hoặc giảm sút (bản chính hoặc bản sao có chứng thực nếu gửi qua đường bưu điện, bản sao và bản chính để đối chiếu nếu gửi trực tiếp), gồm: Hợp đồng lao động, quyết định nâng lương của tổ chức hoặc cá nhân sử dụng người lao động hoặc bản kê có thu nhập thực tế của người bị tai nạn và các giấy tờ chứng minh thu nhập thực tế hợp pháp khác (nếu có)",
+          "component_code": "G09-KQ002439",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 4,
+          "name": "- Biên bản xác nhận tình trạng của người bị tai nạn do Hội Chữ thập đỏ lập có xác nhận của Ủy ban nhân dân cấp xã nơi xảy ra tai nạn hoặc cơ quan công an nơi xảy ra tai nạn (bản chính hoặc bản sao có chứng thực nếu gửi qua bưu điện, bản phô tô và bản chính để đối chiếu nếu gửi trực tiếp)",
+          "component_code": "G09-KQ002437",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c4c-77ab-bf6f-52f1a3eb0f90",
+          "name": "Hội Chữ thập đỏ xem xét, chi trả chi phí. Trường hợp không đồng ý phải có văn bản trả lời nêu rõ lý do.",
+          "code": "KQ.G09.000331"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7d-7398-be46-59b9b0aa1881",
+          "name": "Quy định về phân định thẩm quyền và phân cấp thực hiện nhiệm vụ quản lý nhà nước trong lĩnh vực nội vụ",
+          "code": "09/2025/TT-BNV"
+        },
+        {
+          "id": "019d2bb3-5d86-7760-a638-5fb0cb2189b2",
+          "name": "Thông tư liên tịch số 02/2013/TTLT-BNV-BLĐTBXH-BTC-BYT ngày 09/7/2013 của Bộ trưởng Bộ Nội vụ-Bộ Lao động, Thương binh và Xã hội-Bộ Tài chính-Bộ Y tế Hướng dẫn quy trình, thủ tục, hồ sơ, mức hỗ trợ người đang trực tiếp tham gia hoạt động chữ thập đỏ bị tai nạn dẫn đến thiệt hại về sức khỏe",
+          "code": "02/2013/TTLT-BNV-BLĐTBXH-BTC-BYT"
+        }
+      ]
+    }
+  ]
+}

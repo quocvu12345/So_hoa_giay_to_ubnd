@@ -1,0 +1,153 @@
+{
+  "id": "dvc-019d2bfd-08d0-7378-bd2f-259201096791",
+  "procedure_code": "3.000088",
+  "name": "Miễn tiền chậm nộp",
+  "domain": "Thuế",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.898791+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfd-08d0-7378-bd2f-259201096791",
+      "code": "3.000088",
+      "name": "Miễn tiền chậm nộp",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1785399201449,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfd-08d0-7378-bd2f-259201096791",
+      "raw_path": "evidence/dvc/details/019d2bfd-08d0-7378-bd2f-259201096791.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Văn bản đề nghị miễn tiền chậm nộp của người nộp thuế theo mẫu số 01/MTCN Phụ lục III ban hành kèm theo Thông tư số 89/2026/TT-BTC ngày 30/6/2026 của Bộ Tài chính",
+          "component_code": "G12.0015457",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019fad51-1b79-70c3-87e8-5fff2e5e8e26",
+              "fileName": "1. Mẫu số  01-MTCN.doc",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fad51-1b79-70c3-87e8-5fff2e5e8e26/1. Mẫu số  01-MTCN.doc"
+            }
+          ]
+        },
+        {
+          "section": "(*) Trường hợp do thiên tai, thảm họa, dịch bệnh, hoả hoạn, tai nạn bất ngờ, phải có:",
+          "position": 1,
+          "name": "Bản chính hoặc bản sao có chứng thực tài liệu xác nhận về thời gian, địa điểm xảy ra thiên tai, thảm họa, dịch bệnh, hỏa hoạn, tai nạn bất ngờ của cơ quan có thẩm quyền",
+          "component_code": "G12.00002161",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "(*) Trường hợp do thiên tai, thảm họa, dịch bệnh, hoả hoạn, tai nạn bất ngờ, phải có:",
+          "position": 2,
+          "name": "Bản chính hoặc bản sao có chứng thực văn bản xác định giá trị thiệt hại vật chất của cơ quan tài chính hoặc cơ quan giám định độc lập",
+          "component_code": "G12.0015459",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "(*) Trường hợp do thiên tai, thảm họa, dịch bệnh, hoả hoạn, tai nạn bất ngờ, phải có:",
+          "position": 3,
+          "name": "Bản sao văn bản quy định trách nhiệm của tổ chức, cá nhân phải bồi thường thiệt hại (nếu có); bản sao các chứng từ liên quan đến việc bồi thường thiệt hại (nếu có)",
+          "component_code": "G12.00002163",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "(*) Đối với trường hợp bất khả kháng khác theo quy định tại khoản 1 Điều 3 Nghị định số 252/2026/NĐ-CP, phải có:",
+          "position": 1,
+          "name": "Bản chính hoặc bản sao có chứng thực văn bản xác định giá trị thiệt hại vật chất của cơ quan tài chính hoặc cơ quan giám định độc lập xác định mức độ, giá trị thiệt hại đối với trường hợp do chiến tranh, bạo loạn, đình công mà người nộp thuế phải ngừng, nghỉ sản xuất, kinh doanh",
+          "component_code": "G12.0012251",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "(*) Đối với trường hợp bất khả kháng khác theo quy định tại khoản 1 Điều 3 Nghị định số 252/2026/NĐ-CP, phải có:",
+          "position": 2,
+          "name": "Bản sao tài liệu chứng minh rủi ro không thuộc nguyên nhân, trách nhiệm chủ quan của người nộp thuế mà người nộp thuế không có khả năng nguồn tài chính nộp ngân sách nhà nước đối với trường hợp người nộp thuế gặp rủi ro không thuộc nguyên nhân, trách nhiệm chủ quan của người nộp thuế; bản sao các chứng từ liên quan đến việc bồi thường thiệt hại của cơ quan bảo hiểm (nếu có)",
+          "component_code": "G12.0012252",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 1,
+          "name": "Từ 01/7/2026 đến thời điểm theo lộ trình của cơ quan thuế quy định tại khoản 2 Điều 99 Thông tư số 89/2026/TT-BTC ngày 30/6/2026 của Bộ Tài chính thì văn bản miễn tiền chậm nộp của người nộp thuế theo mẫu số 01/MTCN thực hiện theo mẫu ban hành kèm theo Thông tư số 80/2021/TT-BTC ngày 29/9/2021 của Bộ Tài chính (đã được sửa đổi, bổ sung).",
+          "component_code": "G12.0012253",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019fad56-31fb-7688-a453-ed86db566443",
+              "fileName": "01 MTCN TT 80.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fad56-31fb-7688-a453-ed86db566443/01 MTCN TT 80.docx"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c70-724b-96df-29a6d4ae7e40",
+          "name": "Quyết định miễn tiền chậm nộp (Mẫu số 02/MTCN)",
+          "code": "KQ.G12.000269"
+        },
+        {
+          "id": "019d2bb2-1c71-7574-afe8-25659c0c0613",
+          "name": "Thông báo không chấp thuận miễn tiền chậm nộp (Mẫu số 03/MTCN)",
+          "code": "KQ.G12.000573"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019f356e-75e3-7494-a2f3-672d8dce61a6",
+          "name": "QUY ĐỊNH CHI TIẾT MỘT SỐ ĐIỀU VÀ BIỆN PHÁP ĐỂ TỔ CHỨC, HƯỚNG DẪN THI HÀNH LUẬT QUẢN LÝ THUẾ",
+          "code": "252/2026/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afe9-653aac8276ee",
+          "name": "Nghị định số 118/2025/NĐ-CP của Chính phủ: Về thực hiện thủ tục hành chính theo cơ chế một cửa, một cửa liên thông tại Bộ phận Một cửa và Cổng Dịch vụ công quốc gia",
+          "code": "118/2025/NĐ-CP"
+        },
+        {
+          "id": "019f8db3-9765-740b-8b90-682677b9c421",
+          "name": "Thông tư quy định chi tiết một số điều của Luật Quản lý thuế và Nghị định số 252/2026/NĐ-CP của Chính phủ quy định chi tiết một số điều và biện pháp để tổ chức, hướng dẫn thi hành Luật Quản lý thuế",
+          "code": "89/2026/TT-BTC"
+        },
+        {
+          "id": "019e5e83-1282-771d-9014-49799413a4e5",
+          "name": "Luật số 108/2025/QH15 của Quốc hội: Luật Quản lý thuế",
+          "code": "108/2025/QH15"
+        }
+      ]
+    }
+  ]
+}

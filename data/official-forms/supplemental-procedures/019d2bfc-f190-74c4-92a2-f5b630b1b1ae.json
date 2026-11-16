@@ -1,0 +1,134 @@
+{
+  "id": "dvc-019d2bfc-f190-74c4-92a2-f5b630b1b1ae",
+  "procedure_code": "2.002668",
+  "name": "Đăng ký nhu cầu hỗ trợ của tổ hợp tác, hợp tác xã, liên hiệp hợp tác xã",
+  "domain": "Hỗ trợ tổ hợp tác, hợp tác xã, liên hiệp hợp tác xã",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.901333+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfc-f190-74c4-92a2-f5b630b1b1ae",
+      "code": "2.002668",
+      "name": "Đăng ký nhu cầu hỗ trợ của tổ hợp tác, hợp tác xã, liên hiệp hợp tác xã",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1775645674088,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-f190-74c4-92a2-f5b630b1b1ae",
+      "raw_path": "evidence/dvc/details/019d2bfc-f190-74c4-92a2-f5b630b1b1ae.json",
+      "components": [
+        {
+          "section": "b) Bản sao tài liệu, hồ sơ liên quan thể hiện sự phù hợp các tiêu chí thụ hưởng theo quy định: Đối với hợp tác xã, liên hiệp hợp tác xã:",
+          "position": 1,
+          "name": "- Trường hợp hợp tác xã, liên hiệp hợp tác xã đăng ký thụ hưởng khoản hỗ trợ từ ngân sách nhà nước có giá trị từ 03 tỷ đồng trở lên thì phải có Báo cáo tài chính năm trước liền kề đã được kiểm toán bởi tổ chức kiểm toán độc lập tại thời điểm nộp đơn đăng ký nhu cầu hỗ trợ.",
+          "component_code": "G05-KQ006891",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "b) Bản sao tài liệu, hồ sơ liên quan thể hiện sự phù hợp các tiêu chí thụ hưởng theo quy định: Đối với hợp tác xã, liên hiệp hợp tác xã:",
+          "position": 2,
+          "name": "- Tài liệu, hồ sơ chứng minh hợp tác xã, liên hiệp hợp tác xã đáp ứng một (bắt buộc) hoặc nhiều (nếu có) tiêu chí sau, cụ thể: số lượng thành viên tăng trong 02 năm liên tiếp liền kề với năm nộp đơn đăng ký nhu cầu hỗ trợ; tỷ lệ giá trị giao dịch nội bộ tăng trong năm trước liền kề với năm nộp đơn đăng ký nhu cầu hỗ trợ; tỷ lệ trích lập quỹ chung không chia cao hơn so với mức tối thiểu quy định tại Điều 84 Luật Hợp tác xã 2023 trong năm trước liền kề với năm nộp đơn đăng ký nhu cầu hỗ trợ; tăng giá trị tài sản chung không chia trong năm trước liền kề với năm nộp đơn đăng ký nhu cầu hỗ trợ; có ít nhất 5% tổng số thành viên, người lao động được tham gia các lớp giáo dục, đào tạo, phổ biến, bồi dưỡng, tập huấn do hợp tác xã, liên hiệp hợp tác xã tự tổ chức hoặc do các cơ quan, đoàn thể, tổ chức khác tổ chức và đã được cấp chứng nhận tham gia khóa học hoặc có danh sách thành viên, người lao động tham gia khóa học có đóng dấu của hợp tác xã, liên hiệp hợp tác xã (đối với các khóa học do hợp tác xã, liên hiệp hợp tác xã tự tổ chức, thì hợp tác xã, liên hiệp hợp tác xã phải có kế hoạch tổ chức khóa học, nội dung khóa học và danh sách khóa học có chữ ký của người tham gia khóa học) tính đến thời điểm năm trước liền kề với năm nộp đơn đăng ký nhu cầu hỗ trợ; đã thành lập không quá 36 tháng tại địa bàn kinh tế - xã hội khó khăn, địa bàn kinh tế - xã hội đặc biệt khó khăn theo quy định của pháp luật về đầu tư tính đến thời điểm nộp đơn đăng ký nhu cầu hỗ trợ;",
+          "component_code": "G05-KQ006890",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "b) Bản sao tài liệu, hồ sơ liên quan thể hiện sự phù hợp các tiêu chí thụ hưởng theo quy định: Đối với tổ hợp tác:",
+          "position": 1,
+          "name": "- Bản sao Giấy chứng nhận đăng ký tổ hợp tác;",
+          "component_code": "G05-KQ006892",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "b) Bản sao tài liệu, hồ sơ liên quan thể hiện sự phù hợp các tiêu chí thụ hưởng theo quy định: Đối với tổ hợp tác:",
+          "position": 2,
+          "name": "- Tài liệu, hồ sơ chứng minh tổ hợp tác đáp ứng một tiêu chí (bắt buộc) hoặc nhiều tiêu chí (nếu có), cụ thể: số lượng thành viên tăng trong 02 năm liên tiếp liền kề với năm nộp đơn đăng ký nhu cầu hỗ trợ; có ít nhất 5% tổng số thành viên, người lao động được tham gia các lớp giáo dục, đào tạo, phổ biến, bồi dưỡng, tập huấn do tổ hợp tác tự tổ chức hoặc do các cơ quan, đoàn thể, tổ chức khác tổ chức và đã được cấp chứng nhận tham gia khóa học hoặc có danh sách thành viên, người lao động tham gia khóa học có xác nhận của tổ hợp tác (đối với các khóa học do tổ hợp tác tự tổ chức, thì tổ hợp tác phải có kế hoạch tổ chức khóa học, nội dung khóa học và danh sách khóa học có chữ ký của người tham gia khóa học) tính đến thời điểm năm trước liền kề với năm nộp đơn đăng ký nhu cầu hỗ trợ; đã thành lập không quá 36 tháng tại địa bàn kinh tế - xã hội khó khăn, địa bàn kinh tế - xã hội đặc biệt khó khăn theo quy định của pháp luật về đầu tư tính đến thời điểm nộp đơn đăng ký nhu cầu hỗ trợ.",
+          "component_code": "G05-KQ006893",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "b) Bản sao tài liệu, hồ sơ liên quan thể hiện sự phù hợp các tiêu chí thụ hưởng theo quy định: Đối với tổ hợp tác:",
+          "position": 3,
+          "name": "Tổ hợp tác, hợp tác xã, liên hiệp hợp tác xã tự chịu trách nhiệm trước pháp luật về tính chính xác, trung thực của các thông tin cung cấp tại hồ sơ đăng ký nhu cầu hỗ trợ nêu trên.",
+          "component_code": "G05-KQ006894",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 1,
+          "name": "a) Đơn đăng ký nhu cầu hỗ trợ trong đó có nội dung cam kết không vi phạm các hành vi bị nghiêm cấm theo quy định tại khoản 2 Điều 7 của Luật Hợp tác xã 2023, không trong thời gian chấp hành bản án hình sự của Tòa án đã có hiệu lực pháp luật theo Mẫu số 01 tại Phụ lục ban hành kèm theo Nghị định số 113/2024/NĐ-CP ngày 12/9/2024 của Chính phủ quy định chi tiết một số điều của Luật Hợp tác xã;",
+          "component_code": "G05-KQ006888",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "b) Bản sao tài liệu, hồ sơ liên quan thể hiện sự phù hợp các tiêu chí thụ hưởng theo quy định:",
+          "component_code": "G05-KQ006889",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c72-75fa-a590-0bc802b782e6",
+          "name": "Thông báo cho tổ hợp tác, hợp tác xã, liên hiệp hợp tác xã",
+          "code": "KQ.G12.001037"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d84-71c5-b671-d9e439ecbebe",
+          "name": "Luật Hợp tác xã",
+          "code": "17/2023/QH15"
+        },
+        {
+          "id": "019d2bb3-5d7d-7398-be4d-8105bcd345a7",
+          "name": "Thông tư số 43/2025/TT-BTC của Bộ Tài chính: Ban hành biểu mẫu sử dụng trong lĩnh vực quản lý nhà nước đối với hộ kinh doanh, tổ hợp tác, hợp tác xã, liên hiệp hợp tác xã khi tổ chức chính quyền địa phương 02 cấp",
+          "code": "43/2025/TT-BTC"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afe9-e5df60a9dbdb",
+          "name": "Nghị định số 125/2025/NĐ-CP của Chính phủ: Quy định về phân định thẩm quyền của chính quyền địa phương 02 cấp trong lĩnh vực quản lý nhà nước của Bộ Tài chính",
+          "code": "125/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afe9-071bbf5b4ece",
+          "name": "Nghị định số 113/2024/NĐ-CP của Chính phủ: Quy định chi tiết một số điều của Luật Hợp tác xã",
+          "code": "113/2024/NĐ-CP"
+        }
+      ]
+    }
+  ]
+}

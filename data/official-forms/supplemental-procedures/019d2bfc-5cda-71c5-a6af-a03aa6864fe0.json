@@ -1,0 +1,157 @@
+{
+  "id": "dvc-019d2bfc-5cda-71c5-a6af-a03aa6864fe0",
+  "procedure_code": "1.008510",
+  "name": "Khôi phục mã số thuế",
+  "domain": "Thuế",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.940291+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfc-5cda-71c5-a6af-a03aa6864fe0",
+      "code": "1.008510",
+      "name": "Khôi phục mã số thuế",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1784861594370,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-5cda-71c5-a6af-a03aa6864fe0",
+      "raw_path": "evidence/dvc/details/019d2bfc-5cda-71c5-a6af-a03aa6864fe0.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Văn bản đề nghị khôi phục mã số thuế mẫu số 25/ĐKT ban hành kèm theo Thông tư số 90/2026/TT-BTC",
+          "component_code": "G12.0003222",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019f8e72-c040-77dc-b44f-adf34c612c70",
+              "fileName": "28.Mẫu 25-ĐKT Đề nghị khôi phục MST.doc",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8e72-c040-77dc-b44f-adf34c612c70/28.Mẫu 25-ĐKT Đề nghị khôi phục MST.doc"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Hoặc Bản sao văn bản hủy bỏ văn bản thu hồi giấy phép thành lập và hoạt động hoặc giấy phép tương đương của cơ quan có thẩm quyền (trong trường hợp cơ quan có thẩm quyền thu hồi giấy phép thành lập và hoạt động hoặc giấy phép tương đương, cơ quan thuế đã chấm dứt hiệu lực mã số thuế theo quy định, nhưng sau đó cơ quan có thẩm quyền có văn bản hủy bỏ văn bản thu hồi)",
+          "component_code": "G12.0003223",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 3,
+          "name": "Hoặc Bản sao văn bản hủy quyết định chấm dứt hoạt động đơn vị phụ thuộc (trong trường hợp đơn vị phụ thuộc của doanh nghiệp, hợp tác xã đã nộp hồ sơ chấm dứt hiệu lực mã số thuế đến cơ quan thuế, sau đó có văn bản hủy quyết định chấm dứt hoạt động đơn vị phụ thuộc và người nộp thuế chưa nộp hồ sơ chấm dứt hoạt động đến cơ quan đăng ký kinh doanh)",
+          "component_code": "G12.0003224",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 4,
+          "name": "Trường hợp người nộp thuế đã thay đổi địa chỉ trụ sở nhưng không đăng ký thay đổi thông tin với cơ quan thuế hoặc cơ quan đăng ký kinh doanh, người nộp thuế phải ghi địa chỉ trụ sở hiện tại và giải trình lý do trong văn bản đề nghị khôi phục mã số thuế, đồng thời nộp kèm hồ sơ thông báo thay đổi thông tin đăng ký thuế theo quy định tại Điều 9 Thông tư số 90/2026/TT-BTC",
+          "component_code": "G12.0003225",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 5,
+          "name": "Người nộp thuế nộp hồ sơ đến cơ quan thuế bằng phương thức điện tử thì bản sao các văn bản, giấy tờ quy định trong hồ sơ đăng ký thuế là bản sao điện tử.",
+          "component_code": "G12.0003344",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 6,
+          "name": "Từ ngày 01/7/2026 đến trước thời điểm theo lộ trình của cơ quan thuế quy định tại khoản 2 Điều 36 Thông tư số 90/2026/TT-BTC thì tiếp tục áp dụng mẫu số 25/ĐK-TCT ban hành kèm theo Thông tư số 86/2024/TT-BTC ngày 23/12/2024 của Bộ Tài chính đối với trường hợp đăng ký thuế theo phương thức điện tử",
+          "component_code": "G12.0003346",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019f8e77-e850-718a-bf50-e84e50c9e821",
+              "fileName": "25 ĐK TCT TT 86.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8e77-e850-718a-bf50-e84e50c9e821/25 ĐK TCT TT 86.docx"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c71-7574-afeb-0deb669bc48f",
+          "name": "Thông báo về việc mã số thuế được khôi phục theo đơn vị chủ quản (mẫu số 37/TB-ĐKT)",
+          "code": "KQ.G12.000850"
+        },
+        {
+          "id": "019d2bb2-1c71-7574-afeb-1017adac5407",
+          "name": "Thông báo về việc mã số thuế không được khôi phục (mẫu số 38/TB- ĐKT)",
+          "code": "KQ.G12.000852"
+        },
+        {
+          "id": "019d2bb2-1c71-7574-afeb-0b71d8fedf97",
+          "name": "Thông báo khôi phục mã số thuế (mẫu số 19/TB- ĐKT)",
+          "code": "KQ.G12.000849"
+        },
+        {
+          "id": "019f8e76-d69c-775d-91c0-17e872cced53",
+          "name": "Cập nhật trạng thái mã số thuế cho người nộp thuế trên Hệ thống ứng dụng đăng ký thuế",
+          "code": "KQ.G12.000862"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019f8db3-9765-740b-8b90-682677b9c421",
+          "name": "Thông tư quy định chi tiết một số điều của Luật Quản lý thuế và Nghị định số 252/2026/NĐ-CP của Chính phủ quy định chi tiết một số điều và biện pháp để tổ chức, hướng dẫn thi hành Luật Quản lý thuế",
+          "code": "89/2026/TT-BTC"
+        },
+        {
+          "id": "019f356e-75e3-7494-a2f3-672d8dce61a6",
+          "name": "QUY ĐỊNH CHI TIẾT MỘT SỐ ĐIỀU VÀ BIỆN PHÁP ĐỂ TỔ CHỨC, HƯỚNG DẪN THI HÀNH LUẬT QUẢN LÝ THUẾ",
+          "code": "252/2026/NĐ-CP"
+        },
+        {
+          "id": "019f64ed-e026-7299-b5f2-ca44a3964050",
+          "name": "Nghị định về thực hiện thủ tục hành chính theo cơ chế một cửa, một cửa liên thông tại Bộ phận Một cửa và Cổng Dịch vụ công quốc gia.",
+          "code": "118/2025/NĐ-CP "
+        },
+        {
+          "id": "019e5e83-1282-771d-9014-49799413a4e5",
+          "name": "Luật số 108/2025/QH15 của Quốc hội: Luật Quản lý thuế",
+          "code": "108/2025/QH15"
+        },
+        {
+          "id": "019f8db3-e7d0-74e4-9c61-49a28e28113a",
+          "name": "Thông tư số 90/2026/TT-BTC ngày 30/6/2026 của Bộ Tài chính quy định về đăng ký thuế",
+          "code": "90/2026/TT-BTC "
+        }
+      ]
+    }
+  ]
+}

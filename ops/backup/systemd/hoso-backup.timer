@@ -1,0 +1,11 @@
+[Unit]
+Description=Hồ sơ số · sao lưu hằng ngày
+
+[Timer]
+# 02:00 mỗi ngày (giờ máy chủ); bù nếu máy tắt đúng giờ đó. Ngưỡng cảnh báo của API là 26 giờ, nên một lần lỡ chưa báo ngay.
+OnCalendar=*-*-* 02:00:00
+Persistent=true
+RandomizedDelaySec=10min
+
+[Install]
+WantedBy=timers.target

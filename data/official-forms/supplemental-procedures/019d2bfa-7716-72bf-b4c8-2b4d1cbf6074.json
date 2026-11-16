@@ -1,0 +1,107 @@
+{
+  "id": "dvc-019d2bfa-7716-72bf-b4c8-2b4d1cbf6074",
+  "procedure_code": "1.012836",
+  "name": "Hỗ trợ chi phí về vật tư phối giống nhân tạo gia súc gồm tinh đông lạnh, Nitơ lỏng, găng tay và dụng cụ dẫn tinh để phối giống cho trâu, bò cái; chi phí về liều tinh để thực hiện phối giống cho lợn nái, công cho người làm dịch vụ phối giống nhân tạo gia súc (trâu, bò)",
+  "domain": "Chăn nuôi",
+  "managing_agency": "Bộ Nông nghiệp và Môi trường",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:18.015559+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfa-7716-72bf-b4c8-2b4d1cbf6074",
+      "code": "1.012836",
+      "name": "Hỗ trợ chi phí về vật tư phối giống nhân tạo gia súc gồm tinh đông lạnh, Nitơ lỏng, găng tay và dụng cụ dẫn tinh để phối giống cho trâu, bò cái; chi phí về liều tinh để thực hiện phối giống cho lợn nái, công cho người làm dịch vụ phối giống nhân tạo gia súc (trâu, bò)",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1776755845467,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfa-7716-72bf-b4c8-2b4d1cbf6074",
+      "raw_path": "evidence/dvc/details/019d2bfa-7716-72bf-b4c8-2b4d1cbf6074.json",
+      "components": [
+        {
+          "section": "Hồ sơ người làm dịch vụ phối giống gửi Tổ chức được giao nhiệm vụ thực hiện chương trình hỗ trợ phối giống nhân tạo gia súc:",
+          "position": 1,
+          "name": "Danh sách gia súc đã được phối giống nhân tạo",
+          "component_code": "000.00.00.G10-KQ005892",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Hồ sơ tổ chức được giao nhiệm vụ thực hiện chương trình hỗ trợ phối giống nhân tạo gửi Ủy ban nhân dân cấp xã:",
+          "position": 1,
+          "name": "- Biên bản nghiệm thu  kết quả phối giống nhân tạo gia súc đã được thực hiện.",
+          "component_code": "000.00.00.G10-KQ005896",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Hồ sơ tổ chức được giao nhiệm vụ thực hiện chương trình hỗ trợ phối giống nhân tạo gửi Ủy ban nhân dân cấp xã:",
+          "position": 2,
+          "name": "- Hợp đồng cung cấp vật tư phối giống nhân tạo gia súc giữa tổ chức được giao nhiệm vụ thực hiện chương trình hỗ trợ phối giống nhân tạo gia súc với cơ sở được lựa chọn cung cấp vật tư phối giống nhân tạo gia súc;",
+          "component_code": "000.00.00.G10-KQ005894",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Hồ sơ tổ chức được giao nhiệm vụ thực hiện chương trình hỗ trợ phối giống nhân tạo gửi Ủy ban nhân dân cấp xã:",
+          "position": 3,
+          "name": "- Danh sách tổng hợp gia súc được phối giống nhân tạo do tổ chức được giao nhiệm vụ thực hiện chương trình hỗ trợ phối giống nhân tạo gia súc lập theo mẫu quy định tại Mẫu số 31.GVN Phụ lục I ban hành kèm theo Thông tư số 09/2025/TT-BNNMT ngày 19 tháng 06 năm 2025 của Bộ trưởng Bộ Nông nghiệp và Môi trường quy định phân quyền, phân cấp và phân định thẩm quyền trong lĩnh vực quản lý nhà nước về chăn nuôi và thú y",
+          "component_code": "000.00.00.G10-KQ005895",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Hồ sơ tổ chức được giao nhiệm vụ thực hiện chương trình hỗ trợ phối giống nhân tạo gửi Ủy ban nhân dân cấp xã:",
+          "position": 4,
+          "name": "- Quyết định giao nhiệm vụ của cơ quan có thẩm quyền cho tổ chức được giao nhiệm vụ thực hiện chương trình hỗ trợ phối giống nhân tạo gia súc;",
+          "component_code": "000.00.00.G10-KQ005893",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c4f-7269-8764-5b2dae7af46e",
+          "name": "Hỗ trợ cung cấp vật tư, công phối giống nhân tạo gia súc (trâu, bò); liều tinh để thực hiện phối giống cho lợn nái",
+          "code": "KQ.G10.000523"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d86-7760-a63c-9a190ab6b09f",
+          "name": "106/2024/NĐ-CP",
+          "code": "106/2024/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afea-45ea9b37796c",
+          "name": "Quy định phân định thẩm quyền của chính quyền địa phương 02 cấp trong lĩnh vực quản lý nhà nước của Bộ Nông nghiệp và Môi trường",
+          "code": "Nghị định số 131/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7c-71ab-9f09-128575143057",
+          "name": " Quy định chi tiết một số Điều của Luật thú y",
+          "code": "Nghị định số 35/2016/NĐ-CP"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "id": "dvc-019d2bfc-2dd0-7229-82bb-9dec451210dc",
+  "procedure_code": "1.007700",
+  "name": "Khai lệ phí trước bạ/ Miễn lệ phí trước bạ đối với tài sản khác theo quy định của pháp luật về lệ phí trước bạ (trừ tàu thuyền đánh cá, tàu thuyền vận tải thuỷ nội địa, tàu biển nếu thiếu hồ sơ gốc hoặc đóng mới tại Việt Nam)",
+  "domain": "Thuế",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.955342+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfc-2dd0-7229-82bb-9dec451210dc",
+      "code": "1.007700",
+      "name": "Khai lệ phí trước bạ/ Miễn lệ phí trước bạ đối với tài sản khác theo quy định của pháp luật về lệ phí trước bạ (trừ tàu thuyền đánh cá, tàu thuyền vận tải thuỷ nội địa, tàu biển nếu thiếu hồ sơ gốc hoặc đóng mới tại Việt Nam)",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1785399197330,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-2dd0-7229-82bb-9dec451210dc",
+      "raw_path": "evidence/dvc/details/019d2bfc-2dd0-7229-82bb-9dec451210dc.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Tờ khai lệ phí trước bạ theo mẫu số 02/LPTB ban hành kèm theo Thông tư số 89/2026/TT-BTC",
+          "component_code": "G12.0015684",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019fa880-f404-7499-82db-93b8c906e9ec",
+              "fileName": "2. 02.LPTB.doc",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa880-f404-7499-82db-93b8c906e9ec/2. 02.LPTB.doc"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Bản sao Phiếu báo hoặc xác nhận của cơ quan có thẩm quyền về việc tàu thuyền thuộc đối tượng được đăng ký sở hữu",
+          "component_code": "G12.0011904",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 3,
+          "name": "Từ 01/7/2026 đến thời điểm theo lộ trình của cơ quan thuế quy định tại khoản 2 Điều 99 Thông tư số 89/2026/TT-BTC thì các tờ khai số 02/LPTB thực hiện theo mẫu ban hành kèm theo Thông tư số 80/2021/TT-BTC ngày 29/9/2021 của Bộ Tài chính (đã được sửa đổi, bổ sung)",
+          "component_code": "G12.0011905",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019fa882-2e72-7185-8e91-d612acf5e963",
+              "fileName": "02 LPTB TT 80.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa882-2e72-7185-8e91-d612acf5e963/02 LPTB TT 80.docx"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c71-7574-afe7-e3216a7d527d",
+          "name": "Thông báo nộp lệ phí trước bạ",
+          "code": "KQ.G12.000032"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019f356e-75e3-7494-a2f3-672d8dce61a6",
+          "name": "QUY ĐỊNH CHI TIẾT MỘT SỐ ĐIỀU VÀ BIỆN PHÁP ĐỂ TỔ CHỨC, HƯỚNG DẪN THI HÀNH LUẬT QUẢN LÝ THUẾ",
+          "code": "252/2026/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afe9-653aac8276ee",
+          "name": "Nghị định số 118/2025/NĐ-CP của Chính phủ: Về thực hiện thủ tục hành chính theo cơ chế một cửa, một cửa liên thông tại Bộ phận Một cửa và Cổng Dịch vụ công quốc gia",
+          "code": "118/2025/NĐ-CP"
+        },
+        {
+          "id": "019f8db3-9765-740b-8b90-682677b9c421",
+          "name": "Thông tư quy định chi tiết một số điều của Luật Quản lý thuế và Nghị định số 252/2026/NĐ-CP của Chính phủ quy định chi tiết một số điều và biện pháp để tổ chức, hướng dẫn thi hành Luật Quản lý thuế",
+          "code": "89/2026/TT-BTC"
+        },
+        {
+          "id": "019e5e83-1282-771d-9014-49799413a4e5",
+          "name": "Luật số 108/2025/QH15 của Quốc hội: Luật Quản lý thuế",
+          "code": "108/2025/QH15"
+        }
+      ]
+    }
+  ]
+}

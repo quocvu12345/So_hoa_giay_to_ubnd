@@ -1,0 +1,118 @@
+{
+  "id": "dvc-019d2bfa-fc27-71cd-8eb4-a3f803216fe7",
+  "procedure_code": "1.010810",
+  "name": "Công nhận đối với người bị thương trong chiến tranh không thuộc quân đội, công an",
+  "domain": "Người có công",
+  "managing_agency": "Bộ Nội vụ",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:18.000982+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfa-fc27-71cd-8eb4-a3f803216fe7",
+      "code": "1.010810",
+      "name": "Công nhận đối với người bị thương trong chiến tranh không thuộc quân đội, công an",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1779872908150,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfa-fc27-71cd-8eb4-a3f803216fe7",
+      "raw_path": "evidence/dvc/details/019d2bfa-fc27-71cd-8eb4-a3f803216fe7.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "- Bản khai theo Mẫu số 08 Phụ lục I Nghị định số 131/2021/NĐ-CP,",
+          "component_code": "G09-KQ002686",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019d7164-5ab3-714b-a7a3-57fe961692b0",
+              "fileName": "Mauso08_ND131_2021.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d7164-5ab3-714b-a7a3-57fe961692b0/Mauso08_ND131_2021.docx"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "- Nếu đã phẫu thuật lấy dị vật thì phải kèm theo phiếu phẫu thuật hoặc giấy ra viện hoặc tóm tắt hồ sơ bệnh án ghi nhận nội dung này.",
+          "component_code": "G09-KQ003210112",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 3,
+          "name": "- Tùy từng trường hợp kèm theo một trong các giấy tờ sau:         + Giấy tờ, tài liệu chứng minh bị thương và bản sao được chứng thực từ một trong các giấy tờ đối với trường hợp quy định tại điểm a khoản 2 Điều 76 Nghị định số 131/2021/NĐ-CP.         + Kết quả chụp phim và kết luận của Bệnh viện hoặc Trung tâm Y tế khu vực (bao gồm cả bệnh viện quân đội, công an) đối với vết thương còn mảnh kim khí trong cơ thể với trường hợp quy định tại điểm b khoản 2 Điều 76 Nghị định số 131/2021/NĐ-CP.",
+          "component_code": "G09-KQ002688",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 4,
+          "name": "- Giấy tờ chứng minh quá trình tham gia cách mạng quy định khoản 1 tại Điều 76 Nghị định số 131/2021/NĐ-CP: + Bản sao được chứng thực từ một trong các giấy tờ sau: lý lịch cán bộ; lý lịch đảng viên; lý lịch quân nhân; quyết định phục viên, xuất ngũ, thôi việc; hồ sơ bảo hiểm xã hội hoặc các giấy tờ, tài liệu do cơ quan có thẩm quyền ban hành lập từ ngày 31 tháng 12 năm 1994 trở về trước (đối với người tham gia cách mạng sau đó tiếp tục tham gia công tác tại các cơ quan nhà nước)         + Bản sao được chứng thực từ một trong các giấy tờ sau: hồ sơ khen thưởng tổng kết thành tích kháng chiến hoặc một trong các quyết định của Thủ tướng Chính phủ về chế độ đối với người tham gia kháng chiến chống Pháp; chống Mỹ; tham gia chiến tranh bảo vệ Tổ quốc, làm nhiệm vụ quốc tế ở Campuchia, giúp bạn Lào (đối với người tham gia cách mạng sau đó không tiếp tục tham gia công tác tại các cơ quan nhà nước),.",
+          "component_code": "G09-KQ002687",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c4d-7725-9d9c-b48f8ec5aa77",
+          "name": "- Quyết định cấp giấy chứng nhận người hưởng chính sách như thương binh và trợ cấp, phụ cấp ưu đãi hoặc quyết định trợ cấp thương tật một lần. - Giấy chứng nhận người hưởng chính sách như thương binh",
+          "code": "KQ.G09.000448"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7e-72d1-afea-1c153ca6400f",
+          "name": "Quy định về phân định thẩm quyền của chính quyền địa phương 02 cấp trong lĩnh vực quản lý nhà nước của Bộ Nội vụ",
+          "code": "129/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7f-719e-b474-516a799e2145",
+          "name": "QUY ĐỊNH CHI TIẾT VÀ BIỆN PHÁP THI HÀNH PHÁP LỆNH ƯU ĐÃI NGƯỜI CÓ CÔNG VỚI CÁCH MẠNG",
+          "code": "Nghị định số 131/2021/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d85-73da-8eba-20bc75de794b",
+          "name": "ƯU ĐÃI NGƯỜI CÓ CÔNG VỚI CÁCH MẠNG",
+          "code": "Pháp lệnh số: 02/2020/UBTVQH14"
+        },
+        {
+          "id": "019d2bb3-5d7f-719e-b46e-3b82195c2d48",
+          "name": "Nghị định số 45/2025/NĐ-CP ngày 28/02/2025 của Chính phủ quy định tổ chức các cơ quan chuyên môn thuộc Ủy ban nhân dân tỉnh, thành phố trực thuộc trung ương và Ủy ban nhân dân huyện, quận, thị xã, thành phố thuộc tỉnh, thành phố thuộc thành phố trực thuộc trung ương",
+          "code": "45/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7f-719e-b474-93996f3f00db",
+          "name": "Nghị định số 25/2025/NĐ-CP ngày 21 tháng 02 năm 2025 của Chính phủ quy định chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của Bộ Nội vụ",
+          "code": "Nghị định số 25/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b671-f40a5ee32475",
+          "name": "Nghị quyết số 190/2025/QH15 của Quốc hội: Quy định về xử lý một số vấn đề liên quan đến sắp xếp tổ chức bộ máy nhà nước",
+          "code": "190/2025/NQ-QH15"
+        }
+      ]
+    }
+  ]
+}

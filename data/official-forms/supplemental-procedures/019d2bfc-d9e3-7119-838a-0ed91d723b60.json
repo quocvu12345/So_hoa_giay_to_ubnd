@@ -1,0 +1,67 @@
+{
+  "id": "dvc-019d2bfc-d9e3-7119-838a-0ed91d723b60",
+  "procedure_code": "2.001206",
+  "name": "Thủ tục hải quan đối với hàng hóa từ khu phi thuế quan hoặc từ nội địa vào kho ngoại quan",
+  "domain": "Hải quan",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.909713+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfc-d9e3-7119-838a-0ed91d723b60",
+      "code": "2.001206",
+      "name": "Thủ tục hải quan đối với hàng hóa từ khu phi thuế quan hoặc từ nội địa vào kho ngoại quan",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1775639774249,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-d9e3-7119-838a-0ed91d723b60",
+      "raw_path": "evidence/dvc/details/019d2bfc-d9e3-7119-838a-0ed91d723b60.json",
+      "components": [
+        {
+          "section": "Thành phần hồ sơ",
+          "position": 1,
+          "name": "\tkhông quy định",
+          "component_code": "000.00.00.G13-KQ0520",
+          "original_quantity": 0,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7d-7398-be48-bda1f1f496c4",
+          "name": "Hướng dẫn thủ tục hải quan đối với hoạt động xuất, nhập xăng dầu, nguyên liệu để pha chế xăng dầu và hoạt động pha chế chuyển đổi chủng loại xăng dầu tại kho ngoại quan xăng dầu",
+          "code": "106/2016/TT-BTC"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afe7-9c25863596db",
+          "name": "Nghị định 08/2015/NĐ-CP",
+          "code": "08/2015/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7d-7398-be4d-ff62cdf67da5",
+          "name": "Luật 54/2014/QH13",
+          "code": "54/2014/QH13"
+        },
+        {
+          "id": "019d2bb3-5d7d-7398-be4d-1c6dbc289d7a",
+          "name": "Quy định về thủ tục hải quan; kiểm tra, giám sát hải quan; thuế xuất khẩu thuế nhập khẩu và quản lý thuế đối vớỉ hàng hoá xuất khẩu, nhập khẩu.",
+          "code": "38/2015/TT-BTC"
+        },
+        {
+          "id": "019d2bb3-5d7d-7398-be4a-5fe7c5952529",
+          "name": "Thông tư 172/2010/TT-BTC",
+          "code": "172/2010/TT-BTC"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "id": "dvc-019f8e10-47b5-7061-b5bd-f9a8e9a35f58",
+  "procedure_code": "1.115960",
+  "name": "THỦ TỤC XÉT TUYỂN VIÊN CHỨC",
+  "domain": "Công chức, viên chức",
+  "managing_agency": "Bộ Nội vụ",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.482097+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019f8e10-47b5-7061-b5bd-f9a8e9a35f58",
+      "code": "1.115960",
+      "name": "THỦ TỤC XÉT TUYỂN VIÊN CHỨC",
+      "state": "ACTIVE",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1784861868312,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019f8e10-47b5-7061-b5bd-f9a8e9a35f58",
+      "raw_path": "evidence/dvc/details/019f8e10-47b5-7061-b5bd-f9a8e9a35f58.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Phiếu đăng ký dự tuyển theo Mẫu số 01 ban hành kèm theo Nghị định số 259/2026/NĐ-CP.",
+          "component_code": "G09-KQ002601",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019f8e04-e406-75af-90c0-7e95c0ccf0c8",
+              "fileName": "MẪU PHIẾU ĐĂNG KÝ DỰ TUYỂN.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8e04-e406-75af-90c0-7e95c0ccf0c8/MẪU PHIẾU ĐĂNG KÝ DỰ TUYỂN.docx"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "id": "019f8e06-549c-7099-a63a-438681e56b61",
+          "name": "Hợp đồng làm việc",
+          "code": "KQ.G09.000235"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019f91e4-f754-7462-8c8f-39e65eeb07a3",
+          "name": "Quy định về tuyển dụng, sử dụng và quản lý viên chức",
+          "code": "259/2026/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7d-7398-be4f-57a89040b8ff",
+          "name": "Thông tư số 92/2021/TT-BTC của Bộ Tài chính: Quy định mức thu, chế độ thu, nộp, quản lý và sử dụng phí tuyển dụng, dự thi nâng ngạch, thăng hạng công chức, viên chức",
+          "code": "92/2021/TT-BTC"
+        },
+        {
+          "id": "019f91e2-ca55-7193-ac18-f965e9a3d4df",
+          "name": "Luật Viên chức",
+          "code": "129/2025/QH15"
+        }
+      ]
+    }
+  ]
+}

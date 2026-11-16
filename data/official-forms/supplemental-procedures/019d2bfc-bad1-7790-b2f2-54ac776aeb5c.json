@@ -1,0 +1,74 @@
+{
+  "id": "dvc-019d2bfc-bad1-7790-b2f2-54ac776aeb5c",
+  "procedure_code": "1.011636",
+  "name": "Thủ tục nộp dần tiền thuế nợ",
+  "domain": "Hải quan",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.921176+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfc-bad1-7790-b2f2-54ac776aeb5c",
+      "code": "1.011636",
+      "name": "Thủ tục nộp dần tiền thuế nợ",
+      "state": "ACTIVE",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1775639690521,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-bad1-7790-b2f2-54ac776aeb5c",
+      "raw_path": "evidence/dvc/details/019d2bfc-bad1-7790-b2f2-54ac776aeb5c.json",
+      "components": [
+        {
+          "section": "Đề nghị nộp dần tiền thuế nợ của người nộp thuế ",
+          "position": 1,
+          "name": "Công văn đề nghị nộp dần tiền thuế nợ của người nộp thuế theo mẫu số 30/CVNDTT/TXNK Phụ lục VI ban hành kèm theo Thông tư số 39/2018/TT-BTC ngày 20/4/2018 của Bộ tài chính",
+          "component_code": "000.00.00.G12-KQ012523",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Đề nghị nộp dần tiền thuế nợ của người nộp thuế ",
+          "position": 2,
+          "name": "Theo mẫu số 30/CVNDTT/TXNK Phụ lục VI ban hành kèm theo Thông tư số 39/2018/TT-BTC ngày 20/4/2018 của Bộ tài chính",
+          "component_code": "000.00.00.G12-KQ012522",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c70-724b-96e1-84380892e44c",
+          "name": "Văn bản chấp thuận/không chấp thuận việc nộp dần tiền nợ thuế hoặc đề nghị bổ sung hồ sơ",
+          "code": "KQ.G12.000660"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7d-7398-be48-2ce7181d92a3",
+          "name": "Thông tư số 39/2018/TT-BTC ngày 20/4/2018 của Bộ Tài chính sửa đổi, bổ sung một số điều tại Thông tư số 38/2015/TT-BTC ngày 25/3/2015 của Bộ Tài chính quy định về thủ tục hải quan; kiểm tra, giám sát hải quan; thuế xuất khẩu, thuế nhập khẩu và quản lý thuế đối với hàng hóa xuất khẩu, nhập khẩu.",
+          "code": "39/2018/TT-BTC"
+        },
+        {
+          "id": "019d2bb3-5d85-73da-8eb9-e5214fd5ac79",
+          "name": "Luật Quản lý thuế",
+          "code": "38/2019/QH14"
+        },
+        {
+          "id": "019d2bb3-5d86-7760-a63a-595aba9478e9",
+          "name": "Thông tư 06/2021/TT-BTC",
+          "code": "06/2021/TT-BTC"
+        }
+      ]
+    }
+  ]
+}

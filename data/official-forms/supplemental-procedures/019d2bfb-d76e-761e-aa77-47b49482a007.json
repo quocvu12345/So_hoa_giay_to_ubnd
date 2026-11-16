@@ -1,0 +1,426 @@
+{
+  "id": "dvc-019d2bfb-d76e-761e-aa77-47b49482a007",
+  "procedure_code": "1.001632",
+  "name": "Giải quyết hưởng chế độ TNLĐ, BNN đối với trường hợp bị TNLĐ, BNN lần đầu",
+  "domain": "Thực hiện chính sách BHXH",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.974503+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfb-d76e-761e-aa77-47b49482a007",
+      "code": "1.001632",
+      "name": "Giải quyết hưởng chế độ TNLĐ, BNN đối với trường hợp bị TNLĐ, BNN lần đầu",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1792931550051,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-d76e-761e-aa77-47b49482a007",
+      "raw_path": "evidence/dvc/details/019d2bfb-d76e-761e-aa77-47b49482a007.json",
+      "components": [
+        {
+          "section": "1. Trường hợp bị TNLĐ lần đầu, bao gồm cả trường hợp NLĐ sau khi đã nghỉ việc hoặc đã về hưu đề nghị hưởng chế độ TNLĐ lần đầu",
+          "position": 1,
+          "name": "Biên bản giám định mức suy giảm KNLĐ của Hội đồng GĐYK",
+          "component_code": "TP.G12.98.142",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "1. Trường hợp bị TNLĐ lần đầu, bao gồm cả trường hợp NLĐ sau khi đã nghỉ việc hoặc đã về hưu đề nghị hưởng chế độ TNLĐ lần đầu",
+          "position": 2,
+          "name": "Trường hợp điều trị nội trú: Bản sao giấy ra viện hoặc trích sao hồ sơ bệnh án sau khi đã điều trị TNLĐ",
+          "component_code": "TP.G12.98.154",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "1. Trường hợp bị TNLĐ lần đầu, bao gồm cả trường hợp NLĐ sau khi đã nghỉ việc hoặc đã về hưu đề nghị hưởng chế độ TNLĐ lần đầu",
+          "position": 3,
+          "name": "Chỉ định của cơ sở khám bệnh, chữa bệnh, cơ sở chỉnh hình, phục hồi chức năng theo quy định về việc trang cấp PTTGSH (nếu có)",
+          "component_code": "TP.G12.98.138",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "1. Trường hợp bị TNLĐ lần đầu, bao gồm cả trường hợp NLĐ sau khi đã nghỉ việc hoặc đã về hưu đề nghị hưởng chế độ TNLĐ lần đầu",
+          "position": 4,
+          "name": "Văn bản đề nghị giải quyết chế độ TNLĐ, BNN theo mẫu số 05A-HSB",
+          "component_code": "TP.G12.98.155",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "01a02cdb-59f0-733a-adf1-c81e4c68c5c5",
+              "fileName": "05A-HSB.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/01a02cdb-59f0-733a-adf1-c81e4c68c5c5/05A-HSB.docx"
+            }
+          ]
+        },
+        {
+          "section": "1. Trường hợp bị TNLĐ lần đầu, bao gồm cả trường hợp NLĐ sau khi đã nghỉ việc hoặc đã về hưu đề nghị hưởng chế độ TNLĐ lần đầu",
+          "position": 5,
+          "name": "Trường hợp thanh toán phí GĐYK thì có thêm hóa đơn, chứng từ thu phí giám định; bảng kê các nội dung giám định của cơ sở thực hiện GĐYK",
+          "component_code": "TP.G12.98.139",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "2. Trường hợp bị BNN lần đầu",
+          "position": 1,
+          "name": "Biên bản giám định mức suy giảm KNLĐ của Hội đồng GĐYK hoặc bản sao giấy chứng nhận bị nhiễm HIV/AIDS do tai nạn rủi ro nghề nghiệp trong trường hợp bị nhiễm HIV/AIDS do tai nạn rủi ro nghề nghiệp (tương đương mức suy giảm KNLĐ 61%), nếu GĐYK mà tỷ lệ suy giảm KNLĐ cao hơn 61% thì hồ sơ hưởng chế độ BNN trong trường hợp này phải có Biên bản GĐYK",
+          "component_code": "TP.G12.98.156",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "2. Trường hợp bị BNN lần đầu",
+          "position": 2,
+          "name": "Trường hợp điều trị nội trú: Bản sao giấy ra viện hoặc trích sao hồ sơ bệnh án sau khi đã điều trị BNN",
+          "component_code": "TP.G12.98.157",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "2. Trường hợp bị BNN lần đầu",
+          "position": 3,
+          "name": "Trường hợp bị BNN mà không điều trị nội trú thì có thêm giấy khám BNN",
+          "component_code": "TP.G12.98.158",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "2. Trường hợp bị BNN lần đầu",
+          "position": 4,
+          "name": "Chỉ định của cơ sở khám bệnh, chữa bệnh, cơ sở chỉnh hình, phục hồi chức năng theo quy định về việc trang cấp PTTGSH (nếu có)",
+          "component_code": "TP.G12.98.138",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "2. Trường hợp bị BNN lần đầu",
+          "position": 5,
+          "name": "Văn bản đề nghị giải quyết chế độ TNLĐ, BNN theo mẫu số 05A-HSB",
+          "component_code": "TP.G12.98.155",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "01a02cdb-59f0-733a-adf1-c81e4c68c5c5",
+              "fileName": "05A-HSB.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/01a02cdb-59f0-733a-adf1-c81e4c68c5c5/05A-HSB.docx"
+            }
+          ]
+        },
+        {
+          "section": "2. Trường hợp bị BNN lần đầu",
+          "position": 6,
+          "name": "Trường hợp thanh toán phí GĐYK thì có thêm hóa đơn, chứng từ thu phí giám định; bảng kê các nội dung giám định của cơ sở thực hiện GĐYK",
+          "component_code": "TP.G12.98.139",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "3.1. Trường hợp đã nghỉ hưu, thôi việc",
+          "position": 1,
+          "name": "Đơn đề nghị hưởng chế độ BNN của NLĐ theo Mẫu số 01 ban hành kèm theo Nghị định số 88/2020/NĐ-CP ngày 28/7/2020 của Chính phủ đối với NLĐ đã nghỉ hưu hoặc thôi việc",
+          "component_code": "TP.G12.98.159",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "01a02cdc-e90a-76a3-bd90-3d7a7e7e51c1",
+              "fileName": "Mẫu số 01.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/01a02cdc-e90a-76a3-bd90-3d7a7e7e51c1/Mẫu số 01.docx"
+            }
+          ]
+        },
+        {
+          "section": "3.1. Trường hợp đã nghỉ hưu, thôi việc",
+          "position": 2,
+          "name": "Biên bản giám định mức suy giảm KNLĐ của Hội đồng GĐYK",
+          "component_code": "TP.G12.98.142",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "3.1. Trường hợp đã nghỉ hưu, thôi việc",
+          "position": 3,
+          "name": "Trường hợp thanh toán phí GĐYK thì có thêm hóa đơn, chứng từ thu phí giám định; bảng kê các nội dung giám định của cơ sở thực hiện GĐYK",
+          "component_code": "TP.G12.98.139",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "3.1. Trường hợp đã nghỉ hưu, thôi việc",
+          "position": 4,
+          "name": "Chỉ định của cơ sở khám bệnh, chữa bệnh, cơ sở chỉnh hình, phục hồi chức năng theo quy định về việc trang cấp phương tiện trợ giúp sinh hoạt, dụng cụ chỉnh hình (nếu có).",
+          "component_code": "TP.G12.98.160",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "3.2. NLĐ phát hiện bị BNN khi chuyển đến làm việc cho người SDLĐ khác và không còn làm trong các nghề, công việc có nguy cơ bị BNN",
+          "position": 1,
+          "name": "Văn bản đề nghị giải quyết chế độ TNLĐ, BNN theo mẫu số 05A-HSB (của đơn vị SDLĐ nơi NLĐ đang làm việc đề nghị giải quyết chế độ BNN)",
+          "component_code": "TP.G12.98.161",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "01a02cda-a837-760d-b3a2-b7f133ec3bd7",
+              "fileName": "05A-HSB.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/01a02cda-a837-760d-b3a2-b7f133ec3bd7/05A-HSB.docx"
+            }
+          ]
+        },
+        {
+          "section": "3.2. NLĐ phát hiện bị BNN khi chuyển đến làm việc cho người SDLĐ khác và không còn làm trong các nghề, công việc có nguy cơ bị BNN",
+          "position": 2,
+          "name": "Biên bản giám định mức suy giảm KNLĐ của Hội đồng GĐYK",
+          "component_code": "TP.G12.98.142",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "3.2. NLĐ phát hiện bị BNN khi chuyển đến làm việc cho người SDLĐ khác và không còn làm trong các nghề, công việc có nguy cơ bị BNN",
+          "position": 3,
+          "name": "Chỉ định của cơ sở khám bệnh, chữa bệnh, cơ sở chỉnh hình, phục hồi chức năng theo quy định về việc trang cấp phương tiện trợ giúp sinh hoạt, dụng cụ chỉnh hình (nếu có).",
+          "component_code": "TP.G12.98.160",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "3.2. NLĐ phát hiện bị BNN khi chuyển đến làm việc cho người SDLĐ khác và không còn làm trong các nghề, công việc có nguy cơ bị BNN",
+          "position": 4,
+          "name": "Trường hợp thanh toán phí GĐYK thì có thêm hóa đơn, chứng từ thu phí giám định; bảng kê các nội dung giám định của cơ sở thực hiện GĐYK",
+          "component_code": "TP.G12.98.139",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "4. Đối với người hưởng chế độ bảo hiểm TNLĐ theo hình thức tự nguyện",
+          "position": 1,
+          "name": "Giấy ra viện hoặc trích sao hồ sơ bệnh án sau khi đã điều trị TNLĐ đối với trường hợp nội trú",
+          "component_code": "TP.G12.98.162",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "4. Đối với người hưởng chế độ bảo hiểm TNLĐ theo hình thức tự nguyện",
+          "position": 2,
+          "name": "Biên bản giám định mức suy giảm KNLĐ của Hội đồng GĐYK",
+          "component_code": "TP.G12.98.142",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "4. Đối với người hưởng chế độ bảo hiểm TNLĐ theo hình thức tự nguyện",
+          "position": 3,
+          "name": "Biên bản điều tra TNLĐ",
+          "component_code": "TP.G12.98.117",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "4. Đối với người hưởng chế độ bảo hiểm TNLĐ theo hình thức tự nguyện",
+          "position": 4,
+          "name": "Đơn đề nghị giải quyết chế độ TNLĐ của NLĐ theo Mẫu số quy định tại Phụ lục VII ban hành kèm theo Nghị định số 143/2024/NĐ-CP",
+          "component_code": "TP.G12.98.163",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "01a02cd9-f3c2-7534-a3c7-995b4e088afc",
+              "fileName": "PHỤ LỤC VII.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/01a02cd9-f3c2-7534-a3c7-995b4e088afc/PHỤ LỤC VII.docx"
+            }
+          ]
+        },
+        {
+          "section": "4. Đối với người hưởng chế độ bảo hiểm TNLĐ theo hình thức tự nguyện",
+          "position": 5,
+          "name": "Bản chính hóa đơn, chứng từ hợp pháp liên quan về phí giám định suy giảm KNLĐ",
+          "component_code": "TP.G12.98.144",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c72-75fa-a592-5b00aa1e9684",
+          "name": "Bản quá trình đóng BHXH (mẫu số 04-HSB)",
+          "code": "KQ.G12.001173"
+        },
+        {
+          "id": "01a02cc7-64fc-76ea-8f17-25a963c88e35",
+          "name": "Quyết định cấp tiền mua phương tiện trợ giúp sinh hoạt (Mẫu số 03P-HSB)",
+          "code": "KQ.G12.001084"
+        },
+        {
+          "id": "01a02cc8-4162-7606-babd-a7808853d3c9",
+          "name": "Thẻ BHYT đối với trường hợp nghỉ việc hưởng trợ cấp TNLĐ, BNN hằng tháng",
+          "code": "KQ.G12.001275"
+        },
+        {
+          "id": "019d2bb2-1c82-739b-8b99-d6be7cc06c52",
+          "name": "Tiền trợ cấp",
+          "code": "KQ.G12.001151"
+        },
+        {
+          "id": "01a02cc6-c710-722b-aa8a-467a2dd4a60c",
+          "name": "Quyết định về việc hưởng trợ cấp TNLĐ theo hình thức tự nguyện: Mẫu số 03Q-HSB",
+          "code": "KQ.G12.001158"
+        },
+        {
+          "id": "01a02cc8-c9ac-75ad-8880-155ca38bcddb",
+          "name": "Thông báo về việc chi trả lương hưu, trợ cấp BHXH đối với trường hợp di chuyển nơi nhận chế độ BHXH (Mẫu số 23-HSB)",
+          "code": "KQ.G12.001277"
+        },
+        {
+          "id": "01a16277-3225-74ed-9a43-7adfe38cedf8",
+          "name": "Quyết định về việc hưởng trợ cấp TNLĐ một lần: Mẫu số 03B-HSB",
+          "code": "KQ.G12.001068"
+        },
+        {
+          "id": "01a16278-5fc9-724f-b3af-e8c6214c60cf",
+          "name": "Quyết định về việc hưởng trợ cấp BNN  một lần: Mẫu số 03D-HSB",
+          "code": "KQ.G12.001083"
+        },
+        {
+          "id": "01a02cc6-3e36-72a6-88cf-456d21da207e",
+          "name": "Quyết định về việc hưởng trợ cấp TNLĐ hằng tháng: Mẫu số 03A-HSB",
+          "code": "KQ.G12.001067"
+        },
+        {
+          "id": "01a16277-f3ef-73e7-9c09-85d6abfa34d3",
+          "name": "Quyết định về việc hưởng trợ cấp BNN hằng tháng : Mẫu số 03C-HSB",
+          "code": "KQ.G12.001082"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "01a023be-84c8-77db-ade3-9c613cd83670",
+          "name": "Quy trình thu bảo hiểm xã hội, bảo hiểm y tế, bảo hiểm thất nghiệp; cấp sổ bảo hiểm xã hội, thẻ bảo hiểm y tế",
+          "code": "366/QĐ-BHXH"
+        },
+        {
+          "id": "019d2bb3-5d7c-71ab-9f07-f538ffa2f69d",
+          "name": "BAN HÀNH QUY TRÌNH GIẢI QUYẾT HƯỞNG CÁC CHẾ ĐỘ BẢO HIỂM XÃ HỘI, CHI TRẢ CÁC CHẾ ĐỘ BẢO HIỂM XÃ HỘI, BẢO HIỂM THẤT NGHIỆP",
+          "code": "2222/QĐ-BHXH"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afe5-6de8c6e793ac",
+          "name": "THÔNG TƯ QUY ĐỊNH CHI TIẾT THI HÀNH LUẬT BẢO HIỂM XÃ HỘI, LUẬT AN TOÀN, VỆ SINH LAO ĐỘNG VỀ LĨNH VỰC Y TẾ VÀ MỘT SỐ ĐIỀU CỦA LUẬT KHÁM BỆNH, CHỮA BỆNH",
+          "code": "25/2025/TT-BYT"
+        },
+        {
+          "id": "019d2bb3-5d87-7195-a446-b9df772557c6",
+          "name": "Nghị định số 88/2020/NĐ-CP ngày 28/7/2020 của Chính phủ quy định chi tiết một số điều của Luật An toàn, vệ sinh lao động về bảo hiểm tai nạn lao động, bệnh nghề nghiệp bắt buộc",
+          "code": "88/2020/NĐ-CP"
+        },
+        {
+          "id": "019d7031-de5c-737a-b30f-7b42de069ca3",
+          "name": "- Luật An toàn, vệ sinh lao động (Luật số 84/2015/QH13 của Quốc hội thông qua ngày 25/6/2015); ",
+          "code": " 84/2015/QH13 "
+        },
+        {
+          "id": "01a02cd0-b47a-7096-b169-0e3135e43619",
+          "name": "Quy định chi tiết và hướng dẫn thi hành một số điều của Luật An toàn, vệ sinh lao động về chế độ đối với người lao động bị tai nạn lao động, bệnh nghề nghiệp",
+          "code": "28/2021/TT-BLĐTBXH"
+        },
+        {
+          "id": "019e72e9-3b2a-77b9-9c29-023d914eb3dc",
+          "name": "Quy định về giao dịch điện tử trong lĩnh vực bảo hiểm xã hội và Cơ sở dữ liệu quốc gia về bảo hiểm",
+          "code": "164/2025/NĐ-CP "
+        },
+        {
+          "id": "01a02cce-f424-7068-a9c4-54e874383981",
+          "name": "Quy định về bảo hiểm tai nạn lao động theo hình thức tự nguyện đối với người lao động làm việc không theo hợp đồng lao động",
+          "code": "143/2024/NĐ-CP"
+        },
+        {
+          "id": "019e72eb-488d-760e-abb8-0a3bb6585c78",
+          "name": "SỬA ĐỔI, BỔ SUNG MỘT SỐ ĐIỀU CỦA QUY TRÌNH GIẢI QUYẾT HƯỞNG CÁC CHẾ ĐỘ BẢO HIỂM XÃ HỘI, CHI TRẢ CÁC CHẾ ĐỘ BẢO HIỂM XÃ HỘI, BẢO HIỂM THẤT NGHIỆP BAN HÀNH KÈM THEO QUYẾT ĐỊNH SỐ 2222/QĐ-BHXH NGÀY 29/7/2025 CỦA GIÁM ĐỐC BẢO HIỂM XÃ HỘI VIỆT NAM",
+          "code": "313/QĐ-BHXH "
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "id": "dvc-019d2bfc-d1f2-773b-bc93-7e1c60c59792",
+  "procedure_code": "1.014535",
+  "name": "Quyết định miễn, giảm tiền thuê nhà cho tổ chức, cá nhân thuê nhà",
+  "domain": "Quản lý công sản",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.915076+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfc-d1f2-773b-bc93-7e1c60c59792",
+      "code": "1.014535",
+      "name": "Quyết định miễn, giảm tiền thuê nhà cho tổ chức, cá nhân thuê nhà",
+      "state": "ACTIVE",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1775645513324,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-d1f2-773b-bc93-7e1c60c59792",
+      "raw_path": "evidence/dvc/details/019d2bfc-d1f2-773b-bc93-7e1c60c59792.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Đơn đề nghị miễn, giảm tiền thuê nhà",
+          "component_code": "000.00.00.G12-KQ015816",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Các hồ sơ, tài liệu chứng minh thuộc đối tượng ưu tiên",
+          "component_code": "000.00.00.G12-KQ015817",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c73-70ac-aa19-c715d5a9aeb8",
+          "name": "Quyết định miễn, giảm tiền thuê nhà cho tổ chức, cá nhân thuê nhà.",
+          "code": "KQ.G12.000248"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d86-7760-a646-d9649d5baf76",
+          "name": "Nghị định 286/2025/NĐ-CP ngày 03/11/2025 của Chính phủ sửa đổi, bổ sung một số điều của các Nghị định trong lĩnh vực quản lý, sử dụng tài sản công",
+          "code": "286/2025/NĐ-CP"
+        }
+      ]
+    }
+  ]
+}

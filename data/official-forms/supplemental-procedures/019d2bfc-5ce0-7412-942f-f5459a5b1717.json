@@ -1,0 +1,108 @@
+{
+  "id": "dvc-019d2bfc-5ce0-7412-942f-f5459a5b1717",
+  "procedure_code": "1.008505",
+  "name": "Đăng ký thay đổi thông tin đăng ký thuế đối với người nộp thuế là tổ chức, hộ gia đình/cá nhân kinh doanh có thay đổi thông tin về địa chỉ trụ sở dẫn đến làm thay đổi cơ quan thuế quản lý trực tiếp (thực hiện tại cơ quan thuế nơi người nộp thuế chuyển đến), trừ trường hợp đăng ký thuế theo cơ chế một cửa liên thông qua cơ quan đăng ký kinh doanh",
+  "domain": "Thuế",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.939765+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfc-5ce0-7412-942f-f5459a5b1717",
+      "code": "1.008505",
+      "name": "Đăng ký thay đổi thông tin đăng ký thuế đối với người nộp thuế là tổ chức, hộ gia đình/cá nhân kinh doanh có thay đổi thông tin về địa chỉ trụ sở dẫn đến làm thay đổi cơ quan thuế quản lý trực tiếp (thực hiện tại cơ quan thuế nơi người nộp thuế chuyển đến), trừ trường hợp đăng ký thuế theo cơ chế một cửa liên thông qua cơ quan đăng ký kinh doanh",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1784861594672,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-5ce0-7412-942f-f5459a5b1717",
+      "raw_path": "evidence/dvc/details/019d2bfc-5ce0-7412-942f-f5459a5b1717.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Văn bản đăng ký chuyển địa điểm tại cơ quan thuế nơi người nộp thuế chuyển đến mẫu số 30/ĐKT ban hành kèm theo Thông tư số 90/2026/TT-BTC của Bộ Tài chính",
+          "component_code": "G12.0003125",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019f8e3d-397b-748e-ba0e-adcdbbc9180a",
+              "fileName": "23.Mẫu 30-ĐKT Đăng ký chuyển ĐĐ tại CQT nơi đến.doc",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8e3d-397b-748e-ba0e-adcdbbc9180a/23.Mẫu 30-ĐKT Đăng ký chuyển ĐĐ tại CQT nơi đến.doc"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Từ ngày 01/7/2026 đến trước thời điểm theo lộ trình của cơ quan thuế quy định tại khoản 2 Điều 36 Thông tư số 90/2026/TT-BTC thì tiếp tục áp dụng mẫu số 30/ĐK-TCT ban hành kèm theo Thông tư số 86/2024/TT-BTC ngày 23/12/2024 của Bộ Tài chính đối với trường hợp đăng ký thuế theo phương thức điện tử",
+          "component_code": "G12.0003126",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019f8e3e-cf58-713f-af99-b8e1cfd4282c",
+              "fileName": "30 ĐK TCT TT 86.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8e3e-cf58-713f-af99-b8e1cfd4282c/30 ĐK TCT TT 86.docx"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c70-724b-96de-1b0d81fabb74",
+          "name": "Giấy chứng nhận đăng ký thuế (10 MST)",
+          "code": "KQ.G12.000184"
+        },
+        {
+          "id": "019d2bb2-1c71-7574-afea-ea8c9211085c",
+          "name": "Thông báo mã số thuế (Mẫu 11 MST)",
+          "code": "KQ.G12.000828"
+        },
+        {
+          "id": "019f8e40-a3a4-77ca-bb14-daa2677c52d6",
+          "name": "Cơ quan thuế tiếp nhận hồ sơ có trách nhiệm cập nhật các thông tin thay đổi vào Hệ thống ứng dụng đăng ký thuế",
+          "code": "KQ.G12.000830"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019e5e83-1282-771d-9014-49799413a4e5",
+          "name": "Luật số 108/2025/QH15 của Quốc hội: Luật Quản lý thuế",
+          "code": "108/2025/QH15"
+        },
+        {
+          "id": "019f64ed-e026-7299-b5f2-ca44a3964050",
+          "name": "Nghị định về thực hiện thủ tục hành chính theo cơ chế một cửa, một cửa liên thông tại Bộ phận Một cửa và Cổng Dịch vụ công quốc gia.",
+          "code": "118/2025/NĐ-CP "
+        },
+        {
+          "id": "019f356e-75e3-7494-a2f3-672d8dce61a6",
+          "name": "QUY ĐỊNH CHI TIẾT MỘT SỐ ĐIỀU VÀ BIỆN PHÁP ĐỂ TỔ CHỨC, HƯỚNG DẪN THI HÀNH LUẬT QUẢN LÝ THUẾ",
+          "code": "252/2026/NĐ-CP"
+        },
+        {
+          "id": "019f8db3-9765-740b-8b90-682677b9c421",
+          "name": "Thông tư quy định chi tiết một số điều của Luật Quản lý thuế và Nghị định số 252/2026/NĐ-CP của Chính phủ quy định chi tiết một số điều và biện pháp để tổ chức, hướng dẫn thi hành Luật Quản lý thuế",
+          "code": "89/2026/TT-BTC"
+        },
+        {
+          "id": "019f8db3-e7d0-74e4-9c61-49a28e28113a",
+          "name": "Thông tư số 90/2026/TT-BTC ngày 30/6/2026 của Bộ Tài chính quy định về đăng ký thuế",
+          "code": "90/2026/TT-BTC "
+        }
+      ]
+    }
+  ]
+}

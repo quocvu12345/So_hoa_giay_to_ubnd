@@ -1,0 +1,159 @@
+{
+  "id": "dvc-019f35ab-2158-76db-863c-0b8e995e8c94",
+  "procedure_code": "1.115489",
+  "name": "Thủ tục xoá tiền thuế nợ",
+  "domain": "Hải quan",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.483806+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019f35ab-2158-76db-863c-0b8e995e8c94",
+      "code": "1.115489",
+      "name": "Thủ tục xoá tiền thuế nợ",
+      "state": "ACTIVE",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1786415439655,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019f35ab-2158-76db-863c-0b8e995e8c94",
+      "raw_path": "evidence/dvc/details/019f35ab-2158-76db-863c-0b8e995e8c94.json",
+      "components": [
+        {
+          "section": "Hồ sơ xóa tiền thuế nợ đối với trường hợp: Cá nhân đã chết, cá nhân bị Tòa án tuyên bố là đã chết hoặc mất năng lực hành vi dân sự mà cá nhân đó không có tài sản, bao gồm cả tài sản được thừa kế; Doanh nghiệp, hợp tác xã, liên hiệp hợp tác xã bị Tòa án tuyên bố phá sản và đã thực hiện thanh toán các khoản nợ theo quy định của pháp luật về phục hồi, phá sản mà không còn tài sản; Người nộp thuế không thuộc trường hợp quy định tại điểm a và điểm b khoản này mà cơ quan quản lý thuế đã áp dụng biện pháp cưỡng chế quy định tại điểm h khoản 1 Điều 49 của Luật này và khoản tiền thuế nợ này đã quá 10 năm kể từ ngày hết thời hạn nộp nhưng không có khả năng thu hồi; (quy định tại điểm a, điểm b, điểm c khoản 1 Điều 21 Luật số 108/2025/QH15):",
+          "position": 1,
+          "name": "a) Công văn đề nghị xóa nợ của cơ quan hải quan nơi phát sinh khoản nợ theo Mẫu số 15 tại Phụ lục II Thông tư số 86/2026/TT-BTC hoặc bản giấy theo Mẫu số 43 tại Phụ lục I Thông tư số 86/2026/TT-BTC;",
+          "component_code": "000.00.00.G12-6054",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019f362b-a72f-740b-82b5-dd985c22adb6",
+              "fileName": "Mẫu số 43.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f362b-a72f-740b-82b5-dd985c22adb6/Mẫu số 43.docx"
+            }
+          ]
+        },
+        {
+          "section": "Hồ sơ xóa tiền thuế nợ đối với trường hợp: Cá nhân đã chết, cá nhân bị Tòa án tuyên bố là đã chết hoặc mất năng lực hành vi dân sự mà cá nhân đó không có tài sản, bao gồm cả tài sản được thừa kế; Doanh nghiệp, hợp tác xã, liên hiệp hợp tác xã bị Tòa án tuyên bố phá sản và đã thực hiện thanh toán các khoản nợ theo quy định của pháp luật về phục hồi, phá sản mà không còn tài sản; Người nộp thuế không thuộc trường hợp quy định tại điểm a và điểm b khoản này mà cơ quan quản lý thuế đã áp dụng biện pháp cưỡng chế quy định tại điểm h khoản 1 Điều 49 của Luật này và khoản tiền thuế nợ này đã quá 10 năm kể từ ngày hết thời hạn nộp nhưng không có khả năng thu hồi; (quy định tại điểm a, điểm b, điểm c khoản 1 Điều 21 Luật số 108/2025/QH15):",
+          "position": 2,
+          "name": "b) Tương ứng với các trường hợp được xóa tiền thuế nợ quy định tại khoản 1 Điều 21 Luật số 108/2025/QH15, chứng từ gồm: b.1) Giấy chứng tử, giấy báo tử; Quyết định tuyên bố mất năng lực hành vi dân sự của Tòa án hoặc các văn bản của cơ quan nhà nước có thẩm quyền chứng minh một người là đã chết, mất năng lực hành vi dân sự đối với trường hợp quy định tại a khoản 1 Điều 21 Luật số 108/2025/QH15; b.2) Quyết định của cơ quan nhà nước có thẩm quyền về tuyên bố phá sản doanh nghiệp đối với trường hợp quy định tại b khoản 1 Điều 21 Luật số 108/2025/QH15; b.3) Quyết định của cơ quan có thẩm quyền về việc thu hồi giấy chứng nhận đăng ký kinh doanh, giấy chứng nhận đăng ký doanh nghiệp, giấy chứng nhận đăng ký hợp tác xã, giấy chứng nhận đăng ký tổ hợp tác, giấy chứng nhận đăng ký hộ kinh doanh, giấy phép thành lập và hoạt động, giấy phép hành nghề, giấy chứng nhận đăng ký hoạt động chi nhánh, văn phòng đại diện, giấy chứng nhận đăng ký địa điểm kinh doanh, đăng ký hoặc giấy phép hoạt động kinh doanh nền tảng thương mại điện tử đối với trường hợp quy định tại điểm c khoản 1 Điều 21 Luật số 108/2025/QH15; b.4) Các quyết định cưỡng chế hoặc hồ sơ thực hiện biện pháp cưỡng chế thi hành quyết định hành chính về quản lý thuế đối với người nộp thuế (nếu có).",
+          "component_code": "000.00.00.G12-1975",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Hồ sơ xóa nợ đối với trường hợp bị ảnh hưởng do thiên tai, thảm họa, dịch bệnh có phạm vi rộng đã được xem xét miễn tiền chậm nộp theo quy định tại khoản 5 Điều 16 của Luật này và đã được gia hạn nộp thuế, khoản thu khác, tiền chậm nộp, tiền phạt theo quy định tại điểm a khoản 7 Điều 14 của Luật này nhưng vẫn không có khả năng phục hồi sản xuất, kinh doanh và không có khả năng nộp tiền thuế nợ (quy định tại điểm d khoản 1 Điều 21 Luật số 108/2025/QH15, khoản 2 Điều 35 Nghị định số 252/2026/NĐ-CP):",
+          "position": 1,
+          "name": "Người nộp thuế có văn bản đề nghị gửi cơ quan hải quan theo Mẫu số 15 tại Phụ lục II Thông tư số 86/2026/TT-BTC hoặc bản giấy theo Mẫu số 43 tại Phụ lục I Thông tư số 86/2026/TT-BTC;",
+          "component_code": "000.00.00.G12-189",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019f3bb4-cbfd-7789-bbae-b0aeefb788fb",
+              "fileName": "2. PHỤ LỤC II - Mẫu điện tử.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f3bb4-cbfd-7789-bbae-b0aeefb788fb/2. PHỤ LỤC II - Mẫu điện tử.docx"
+            },
+            {
+              "id": "019f3bb4-f0cd-7653-96f0-fc28bada4716",
+              "fileName": "Mẫu số 15.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f3bb4-f0cd-7653-96f0-fc28bada4716/Mẫu số 15.docx"
+            }
+          ]
+        },
+        {
+          "section": "Hồ sơ xóa nợ đối với trường hợp bị ảnh hưởng do thiên tai, thảm họa, dịch bệnh có phạm vi rộng đã được xem xét miễn tiền chậm nộp theo quy định tại khoản 5 Điều 16 của Luật này và đã được gia hạn nộp thuế, khoản thu khác, tiền chậm nộp, tiền phạt theo quy định tại điểm a khoản 7 Điều 14 của Luật này nhưng vẫn không có khả năng phục hồi sản xuất, kinh doanh và không có khả năng nộp tiền thuế nợ (quy định tại điểm d khoản 1 Điều 21 Luật số 108/2025/QH15, khoản 2 Điều 35 Nghị định số 252/2026/NĐ-CP):",
+          "position": 2,
+          "name": "Văn bản của cơ quan nhà nước có thẩm quyền xác nhận cho các trường hợp bị ảnh hưởng do thiên tai, thảm họa, dịch bệnh có phạm vi rộng;",
+          "component_code": "000.00.00.G12-9800",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Hồ sơ xóa nợ đối với trường hợp bị ảnh hưởng do thiên tai, thảm họa, dịch bệnh có phạm vi rộng đã được xem xét miễn tiền chậm nộp theo quy định tại khoản 5 Điều 16 của Luật này và đã được gia hạn nộp thuế, khoản thu khác, tiền chậm nộp, tiền phạt theo quy định tại điểm a khoản 7 Điều 14 của Luật này nhưng vẫn không có khả năng phục hồi sản xuất, kinh doanh và không có khả năng nộp tiền thuế nợ (quy định tại điểm d khoản 1 Điều 21 Luật số 108/2025/QH15, khoản 2 Điều 35 Nghị định số 252/2026/NĐ-CP):",
+          "position": 3,
+          "name": "Quyết định miễn tiền chậm nộp theo quy định tại Điều 10 Thông tư số 86/2026/TT-BTC (nếu có);",
+          "component_code": "000.00.00.G12-1139",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Hồ sơ xóa nợ đối với trường hợp bị ảnh hưởng do thiên tai, thảm họa, dịch bệnh có phạm vi rộng đã được xem xét miễn tiền chậm nộp theo quy định tại khoản 5 Điều 16 của Luật này và đã được gia hạn nộp thuế, khoản thu khác, tiền chậm nộp, tiền phạt theo quy định tại điểm a khoản 7 Điều 14 của Luật này nhưng vẫn không có khả năng phục hồi sản xuất, kinh doanh và không có khả năng nộp tiền thuế nợ (quy định tại điểm d khoản 1 Điều 21 Luật số 108/2025/QH15, khoản 2 Điều 35 Nghị định số 252/2026/NĐ-CP):",
+          "position": 4,
+          "name": "Quyết định gia hạn nộp thuế theo quy định tại Điều 6 Thông tư số 86/2026/TT-BTC (nếu có);",
+          "component_code": "000.00.00.G12-123",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Hồ sơ xóa nợ đối với trường hợp bị ảnh hưởng do thiên tai, thảm họa, dịch bệnh có phạm vi rộng đã được xem xét miễn tiền chậm nộp theo quy định tại khoản 5 Điều 16 của Luật này và đã được gia hạn nộp thuế, khoản thu khác, tiền chậm nộp, tiền phạt theo quy định tại điểm a khoản 7 Điều 14 của Luật này nhưng vẫn không có khả năng phục hồi sản xuất, kinh doanh và không có khả năng nộp tiền thuế nợ (quy định tại điểm d khoản 1 Điều 21 Luật số 108/2025/QH15, khoản 2 Điều 35 Nghị định số 252/2026/NĐ-CP):",
+          "position": 5,
+          "name": "Chứng từ, tài liệu có liên quan để chứng minh người nộp thuế không có khả năng phục hồi sản xuất, kinh doanh và không có khả năng nộp tiền thuế nợ.",
+          "component_code": "000.00.00.G12-1052",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019f35aa-df7a-700d-861c-b88b1dd13730",
+          "name": "Quyết định xóa tiền thuế nợ",
+          "code": "000.00.00.KQ-112"
+        },
+        {
+          "id": "019f3bb8-c71f-76c4-b17b-0192719ffe95",
+          "name": "Thông báo yêu cầu bổ sung hồ sơ, Công văn yêu cầu tiếp tục theo dõi và đôn đốc thu hồi nợ thuế.",
+          "code": "000.00.00.KQ-564"
+        },
+        {
+          "id": "019f3bb8-44b5-70b8-970e-cf6a197b81c1",
+          "name": "Quyết định phục hồi tiền thuế nợ đã xóa",
+          "code": "000.00.00.KQ-236"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019e5e83-1282-771d-9014-49799413a4e5",
+          "name": "Luật số 108/2025/QH15 của Quốc hội: Luật Quản lý thuế",
+          "code": "108/2025/QH15"
+        },
+        {
+          "id": "019f356e-75e3-7494-a2f3-672d8dce61a6",
+          "name": "QUY ĐỊNH CHI TIẾT MỘT SỐ ĐIỀU VÀ BIỆN PHÁP ĐỂ TỔ CHỨC, HƯỚNG DẪN THI HÀNH LUẬT QUẢN LÝ THUẾ",
+          "code": "252/2026/NĐ-CP"
+        },
+        {
+          "id": "019f3572-2dda-738d-9e22-fb4a0b4e1a7c",
+          "name": "Quy định về quản lý thuế đối với hàng hóa xuất khẩu, nhập khẩu.",
+          "code": "86/2026/TT-BTC"
+        }
+      ]
+    }
+  ]
+}

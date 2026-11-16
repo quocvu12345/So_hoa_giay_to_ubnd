@@ -1,0 +1,137 @@
+{
+  "id": "hn87-113",
+  "ordinal": "113",
+  "procedure_code": "3.000502",
+  "name": "Thẩm định, phê duyệt hoặc điều chỉnh phương án nuôi, trồng phát triển, thu hoạch cây dược liệu trong rừng đối với chủ rừng là hộ gia đình, cá nhân, cộng đồng dân cư",
+  "domain": "Lâm nghiệp (Bộ Nông nghiệp và Môi trường)",
+  "department_id": "ktdt",
+  "department": "Phòng Kinh tế, Hạ tầng và Đô thị",
+  "authority_as_published": "UBND cấp xã",
+  "execution_level_as_published": "Cấp Xã",
+  "receiving_location_as_published": "Điểm hỗ trợ DVC số",
+  "inventory_date": "2026-04-27",
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "source_urls": [
+    "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfa-c527-751c-aa64-7eb5024ccb0a"
+  ],
+  "current_dvc_match": true,
+  "lifecycle": null,
+  "scope": "hanoi_commune_notice_2026_04_27",
+  "scope_note": "Mốc kiểm kê cấp xã Hà Nội; áp dụng từng thủ tục tại Từ Liêm còn phải theo thẩm quyền/ủy quyền hiện hành.",
+  "status": "has_fillable_templates",
+  "components": [
+    {
+      "id": "hn87-113-c001",
+      "code": "G10-KQ006463",
+      "name": "a) Các loại bản đồ (bản chính) gồm: bản đồ hiện trạng rừng theo tiêu chuẩn Việt Nam số TCVN 11565:2016; bản đồ khu vực nuôi, trồng phát triển, thu hoạch cây dược liệu theo tiêu chuẩn Việt Nam số TCVN 11565:2016 thể hiện các khu vực, diện tích dự kiến nuôi, trồng phát triển, thu hoạch cây dược liệu đối với trường hợp chủ rừng hợp tác, liên doanh, liên kết với tổ chức, cá nhân nuôi, trồng phát triển, thu hoạch cây dược liệu hoặc sơ đồ khu vực nuôi, trồng phát triển, thu hoạch cây dược liệu thể hiện các khu vực, diện tích dự kiến nuôi, trồng phát triển, thu hoạch cây dược liệu đối với trường hợp chủ rừng tự tổ chức nuôi, trồng phát triển, thu hoạch cây dược liệu trong rừng",
+      "section": "(i) Hồ sơ tổ chức nộp tại cơ quan tiếp nhận",
+      "role": "needs_review",
+      "scenario_status": "conditional_needs_review",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfa-c527-751c-aa64-7eb5024ccb0a",
+      "source_detail_id": "019d2bfa-c527-751c-aa64-7eb5024ccb0a",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-113-c002",
+      "code": "G10-KQ006461",
+      "name": "b) Bảng tổng hợp danh sách hộ gia đình, cá nhân đối với trường hợp hộ gia đình, cá nhân liên kết tổ chức theo nhóm hộ xây dựng phương án nuôi, trồng phát triển, thu hoạch cây dược liệu trong rừng theo Mẫu số 05 tại Phụ lục IB kèm theo Nghị định số 183/2025/NĐ-CP",
+      "section": "(i) Hồ sơ tổ chức nộp tại cơ quan tiếp nhận",
+      "role": "applicant_form",
+      "scenario_status": "conditional_needs_review",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfa-c527-751c-aa64-7eb5024ccb0a",
+      "source_detail_id": "019d2bfa-c527-751c-aa64-7eb5024ccb0a",
+      "embedded_other_requirements": false,
+      "template_candidates": [
+        "template-131601ac9ba3bd25"
+      ],
+      "template_selection_method": "first_matching_source_attachment",
+      "selected_template_id": "template-131601ac9ba3bd25",
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-113-c003",
+      "code": "G10-KQ006462",
+      "name": "e) Phương án nuôi, trồng phát triển, thu hoạch cây dược liệu trong rừng theo Mẫu số 06 tại Phụ lục IB kèm theo Nghị định số 183/2025/NĐ-CP",
+      "section": "(i) Hồ sơ tổ chức nộp tại cơ quan tiếp nhận",
+      "role": "applicant_prepared",
+      "scenario_status": "selected_for_test",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfa-c527-751c-aa64-7eb5024ccb0a",
+      "source_detail_id": "019d2bfa-c527-751c-aa64-7eb5024ccb0a",
+      "embedded_other_requirements": false,
+      "template_candidates": [
+        "template-f793805cb0c1c873"
+      ],
+      "template_selection_method": "first_matching_source_attachment",
+      "selected_template_id": "template-f793805cb0c1c873",
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-113-c004",
+      "code": "G10-KQ006460",
+      "name": "a) Đơn đề nghị của chủ rừng theo Mẫu số 04 tại Phụ lục IB kèm theo Nghị định số 183/2025/NĐ-CP",
+      "section": "(i) Hồ sơ tổ chức nộp tại cơ quan tiếp nhận",
+      "role": "applicant_form",
+      "scenario_status": "selected_for_test",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfa-c527-751c-aa64-7eb5024ccb0a",
+      "source_detail_id": "019d2bfa-c527-751c-aa64-7eb5024ccb0a",
+      "embedded_other_requirements": false,
+      "template_candidates": [
+        "template-ebdf1f89c4174dad"
+      ],
+      "template_selection_method": "first_matching_source_attachment",
+      "selected_template_id": "template-ebdf1f89c4174dad",
+      "selection_requires_review": false
+    }
+  ],
+  "service_cases": [
+    {
+      "id": "019d2d48-8424-747c-bdba-0ef66133d1f3",
+      "code": "3.000502.01",
+      "name": "Thẩm định, phê duyệt hoặc điều chỉnh phương án nuôi, trồng phát triển, thu hoạch cây dược liệu trong rừng đối với chủ rừng là hộ gia đình, cá nhân, cộng đồng dân cư",
+      "source_processing_time": {
+        "qty": 24,
+        "type": "WORKING_DAY"
+      },
+      "has_case_specific_components": false
+    }
+  ],
+  "selected_template_ids": [
+    "template-131601ac9ba3bd25",
+    "template-f793805cb0c1c873",
+    "template-ebdf1f89c4174dad"
+  ],
+  "source_component_groups": [
+    {
+      "name": "(i) Hồ sơ tổ chức nộp tại cơ quan tiếp nhận",
+      "component_count": 4,
+      "source_detail_id": "019d2bfa-c527-751c-aa64-7eb5024ccb0a"
+    }
+  ],
+  "conditional_component_groups": [],
+  "default_test_scenario": {
+    "channel": "direct",
+    "applicant_submits_self": true,
+    "authorized": false,
+    "special_case_flags": [],
+    "selected_conditional_group": null,
+    "case_selection_method": "ordinary_direct_submission",
+    "case_status": "scenario_for_testing_not_a_legal_eligibility_decision"
+  },
+  "requirement_note": "required_as_published được giữ nguyên; false không chứng minh giấy tờ luôn tùy chọn. Các nhóm executionCases có thể là mục giấy tờ/hướng dẫn, không phải các phương án loại trừ nhau."
+}

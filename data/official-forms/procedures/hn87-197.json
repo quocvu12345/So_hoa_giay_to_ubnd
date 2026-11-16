@@ -1,0 +1,102 @@
+{
+  "ordinal": "197",
+  "managing_agency": "Sở Nông nghiệp Môi trường",
+  "procedure_code": "-",
+  "name": "Hỗ trợ phát triển sản xuất trồng trọt hữu cơ (Thực hiện theo Điều 17 Nghị quyết số 53/2025/NQ-HĐND ngày 26/11/2025)",
+  "domain": "Nông nghiệp",
+  "ministry_decision": "(TTHC đặc thù) Nghị quyết số 53/2025/NQ- HĐND ngày 26/11/2025",
+  "hanoi_decision": "482/QĐ-TTPVHCC ngày 13/4/2026",
+  "workflow_decision": "482/QĐ-TTPVHCC ngày 13/4/2026",
+  "fees": "Không quy định",
+  "execution_level": "Cấp Xã",
+  "competent_authority": "UBND cấp xã",
+  "delegation_decision": "",
+  "delegation_expiry": "",
+  "receiving_location": "Điểm hỗ trợ DVC số",
+  "id": "hn87-197",
+  "source_page": 8,
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "inventory_date": "2026-04-27",
+  "checked_at": "2026-11-12T22:24:34.550613+07:00",
+  "details": [
+    {
+      "id": "019da53c-1a10-778e-b77a-e0793cf5c228",
+      "code": "1.015019",
+      "name": "Hỗ trợ phát triển sản xuất trồng trọt hữu cơ (Thực hiện theo Điều 17 Nghị quyết số 53/2025/NQ-HĐND ngày 26/11/2025)",
+      "state": "ACTIVE",
+      "type": "SPECIFIC",
+      "is_ward": true,
+      "updated_at_source": 1776618005943,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019da53c-1a10-778e-b77a-e0793cf5c228",
+      "raw_path": "evidence/dvc/details/019da53c-1a10-778e-b77a-e0793cf5c228.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Đơn đề nghị hỗ trợ theo Mẫu số 02A của Phụ lục kèm theo Quyết định số 35/2026/QĐ-UBND ngày 30/3/2026",
+          "component_code": "ĐĐN-02A-35/2026/QĐ-UBND",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Giấy chứng nhận đạt tiêu chuẩn hữu cơ do các tổ chức chứng nhận được chỉ định cấp",
+          "component_code": "GCN",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019da3a7-5b85-7125-baf9-e8dd79dc1f3f",
+          "name": "Quyết định hỗ trợ",
+          "code": "QĐHT"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d85-73da-8eb9-eab0340fcb27",
+          "name": "Luật Thủ đô",
+          "code": "39/2024/QH15"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b675-2df9683f0484",
+          "name": "Luật trồng trọt",
+          "code": "Luật số: 31/2018/QH14"
+        },
+        {
+          "id": "019d2bb3-5d87-7195-a445-3789c9336cec",
+          "name": "Luật Tổ chức chính quyền địa phương",
+          "code": "72/2025/QH15"
+        },
+        {
+          "id": "019d95f1-101b-7739-b8bc-0cd2414b8591",
+          "name": "sửa đổi bổ sung một số điều của 15 Luật trong lĩnh vực Nông nghiệp và Môi trường ",
+          "code": "146/2025/QH15 "
+        },
+        {
+          "id": "019d9950-5f30-72b3-9aba-c16e4c2d68c2",
+          "name": "Quy định trình tự, thủ tục triển khai thực hiện Nghị quyết số 53/2025/NQHĐND ngày 26/11/2025 của Hội đồng nhân dân Thành phố quy định về một số chính sách phát triển nông nghiệp thành phố Hà Nội",
+          "code": "35/2026/QĐ-UBND"
+        },
+        {
+          "id": "019d9954-3c63-73ba-8ed0-2a37a75f887c",
+          "name": "Quy định về một số chính sách phát triển nông nghiệp thành phố Hà Nội\n(Thực hiện khoản 2 Điều 32 Luật Thủ đô)\n",
+          "code": "53/2025/NQ-HĐND "
+        }
+      ]
+    }
+  ],
+  "lookup_status": "retrieved_by_exact_title",
+  "currency_status": "snapshot_requires_later_amendment_check",
+  "errors": [],
+  "match_method": "Tên nguyên văn chuẩn hóa trùng duy nhất với công bố của Trung tâm PVHCC Hà Nội; mã cũ nguồn không ghi.",
+  "matched_current_code": "1.015019"
+}

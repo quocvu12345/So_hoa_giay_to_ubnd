@@ -1,0 +1,104 @@
+{
+  "ordinal": "122",
+  "managing_agency": "Sở Nông nghiệp Môi trường",
+  "procedure_code": "2.001827",
+  "name": "Cấp Giấy chứng nhận cơ sở đủ điều kiện an toàn thực phẩm đối với cơ sở sản xuất, kinh doanh thực phẩm nông, lâm, thủy sản",
+  "domain": "Quản lý chất lượng nông lâm sản và thủy sản (Bộ Nông nghiệp và Môi trường)",
+  "ministry_decision": "2309/QĐ-BNNMT ngày 23/06/2025",
+  "hanoi_decision": "246/QĐ-TTPVHCC ngày 26/02/2026",
+  "workflow_decision": "386/QĐ-TTPVHCC ngày 30/3/2026",
+  "fees": "700.000 đồng/cơ sở",
+  "execution_level": "Cấp tỉnh, cấp xã",
+  "competent_authority": "Giám đốc Sở; Chủ tịch UBND cấp xã",
+  "delegation_decision": "231/QĐ-UBND ngày 15/01/2026",
+  "delegation_expiry": "31/12/2028",
+  "receiving_location": "Điểm hỗ trợ DVC số",
+  "id": "hn87-122",
+  "source_page": 5,
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "inventory_date": "2026-04-27",
+  "checked_at": "2026-11-12T22:24:34.536127+07:00",
+  "details": [
+    {
+      "id": "019d2bfa-b57f-73cc-856f-0255333fcb48",
+      "code": "2.001827",
+      "name": "Cấp Giấy chứng nhận cơ sở đủ điều kiện an toàn thực phẩm đối với cơ sở sản xuất, kinh doanh thực phẩm nông, lâm, thủy sản",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1780482148543,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfa-b57f-73cc-856f-0255333fcb48",
+      "raw_path": "evidence/dvc/details/019d2bfa-b57f-73cc-856f-0255333fcb48.json",
+      "components": [
+        {
+          "section": "1) Hồ sơ đăng ký bao gồm: ",
+          "position": 1,
+          "name": "- Đơn đề nghị cấp Giấy chứng nhận cơ sở đủ điều kiện an toàn thực phẩm theo mẫu tại Phụ lục I ban hành kèm theo Thông tư 17/2025/TT-BNNMT",
+          "component_code": "000.00.00.G10-KQ005783",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019daf18-d5e8-71df-b850-dfcb1c224283",
+              "fileName": "Phụ lục I Đơn đề nghị.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019daf18-d5e8-71df-b850-dfcb1c224283/Phụ lục I Đơn đề nghị.docx"
+            }
+          ]
+        },
+        {
+          "section": "1) Hồ sơ đăng ký bao gồm: ",
+          "position": 2,
+          "name": "- Bản thuyết minh về cơ sở vật chất, trang thiết bị, dụng cụ bảo đảm điều kiện vệ sinh an toàn thực phẩm theo mẫu tại Phụ lục II ban hành kèm theo Thông tư số 17/2025/TT-BNNMT",
+          "component_code": "000.00.00.G10-KQ005785",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019daf19-488e-776b-b785-318181939006",
+              "fileName": "Phụ lục II Bản thuyết minh.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019daf19-488e-776b-b785-318181939006/Phụ lục II Bản thuyết minh.docx"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c4f-7269-8764-ea81fd63a0f4",
+          "name": "Giấy chứng nhận cơ sở đủ điều kiện an toàn thực phẩm",
+          "code": "KQ.G10.000559"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d84-71c5-b670-fe6d5ec40a25",
+          "name": "Luật An toàn thực phẩm",
+          "code": "55/2010/QH12"
+        },
+        {
+          "id": "019d2bb3-5d7d-7398-be43-45cfda314cec",
+          "name": "Thông tư quy định về phân cấp quản lý nhà nước  trong lĩnh vực quản lý chất lượng nông lâm sản và thủy sản",
+          "code": "17/2025/TT-BNNMT"
+        },
+        {
+          "id": "019d2bb3-5d7d-7398-be44-ae8901dd0236",
+          "name": "Thông tư số 38/2018/TT-BNNPTNT",
+          "code": "38/2018/TT-BNNPTNT"
+        },
+        {
+          "id": "019d2bb3-5d86-7760-a642-2969f861ca6d",
+          "name": "Thông tư quy định thẩm định, chứng nhận cơ sở sản xuất, kinh doanh thực phẩm nông, lâm, thủy sản đủ điều kiện an toàn thực phẩm thuộc phạm vi quản lý của Bộ Nông nghiệp và Phát triển nông thôn",
+          "code": "17/2024/TT-BNNPTNT"
+        }
+      ]
+    }
+  ],
+  "lookup_status": "retrieved",
+  "currency_status": "snapshot_requires_later_amendment_check",
+  "errors": []
+}

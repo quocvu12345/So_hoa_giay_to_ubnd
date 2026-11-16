@@ -1,0 +1,74 @@
+{
+  "ordinal": "368",
+  "managing_agency": "Công an Thành phố",
+  "procedure_code": "1.013314",
+  "name": "Xác nhận về điều kiện diện tích bình quân nhà ở để đăng ký thường trú vào chỗ ở do thuê, mượn, ở nhờ; nhà ở, đất ở không có tranh chấp quyền sở hữu nhà ở, quyền sử dụng đất ở, không thuộc địa điểm không được đăng ký thường trú mới",
+  "domain": "Đăng ký, quản lý cư trú (Bộ Công an)",
+  "ministry_decision": "9354/QĐ-BCA-C06 ngày 20/11/2025",
+  "hanoi_decision": "102/QĐ-TTPVHCC ngày 18/02/2025",
+  "workflow_decision": "Chưa có",
+  "fees": "Không quy định",
+  "execution_level": "Cấp xã",
+  "competent_authority": "UBND cấp xã",
+  "delegation_decision": "",
+  "delegation_expiry": "",
+  "receiving_location": "Điểm hỗ trợ DVC số",
+  "id": "hn87-368",
+  "source_page": 15,
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "inventory_date": "2026-04-27",
+  "checked_at": "2026-11-12T22:25:00.451390+07:00",
+  "details": [
+    {
+      "id": "019d2bf7-9660-707e-97b1-ef8876f54d3b",
+      "code": "1.013314",
+      "name": "Xác nhận về điều kiện diện tích bình quân nhà ở để đăng ký thường trú vào chỗ ở do thuê, mượn, ở nhờ; nhà ở, đất ở không có tranh chấp quyền sở hữu nhà ở, quyền sử dụng đất ở, không thuộc địa điểm không được đăng ký thường trú mới",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1790740833537,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf7-9660-707e-97b1-ef8876f54d3b",
+      "raw_path": "evidence/dvc/details/019d2bf7-9660-707e-97b1-ef8876f54d3b.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Tờ khai xác nhận tình trạng chỗ ở hợp pháp, diện tích nhà ở tối thiểu để đăng ký thường trú, đăng ký tạm trú (Mẫu số 02 ban hành kèm theo Nghị định số 58/2026/NĐ-CP ngày 13/02/2026 của Chính phủ)",
+          "component_code": "000.00.00.G01-KQ004559",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c37-76e8-b48d-fe5d848be576",
+          "name": "Xác nhận tình trạng chỗ ở hợp pháp, diện tích nhà ở tối thiểu để đăng ký thường trú, đăng ký tạm trú",
+          "code": "KQ.G01.000173"
+        },
+        {
+          "id": "01a0f076-2f35-758d-8e2b-db13be2f1ae0",
+          "name": "Xác nhận tình trạng chỗ ở hợp pháp, diện tích nhà ở tối thiểu để đăng ký thường trú, đăng ký tạm trú",
+          "code": "KQ.G01.000686"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d85-73da-8eb9-f36f498aefcf",
+          "name": "Luật Cư trú 2020",
+          "code": "68/2020/QH14"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afeb-c1c82d7e48fe",
+          "name": "Nghị định quy định chi tiết một số điều và biện pháp thi hành Luật Cư trú",
+          "code": "154/2024/NĐ-CP"
+        }
+      ]
+    }
+  ],
+  "lookup_status": "retrieved",
+  "currency_status": "snapshot_requires_later_amendment_check",
+  "errors": []
+}

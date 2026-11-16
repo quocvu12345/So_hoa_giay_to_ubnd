@@ -1,0 +1,15 @@
+{
+  "failed_downloads": [
+    {
+      "id": "citizen-land-18",
+      "reason": "HTTP Error 503: Service Temporarily Unavailable"
+    }
+  ],
+  "not_used": [
+    {
+      "url": "https://media.mae.gov.vn/Document/865d817b-2d7e-7305-1c70-694c4607350e/2026/2/3/2.2.%20Ph%E1%BB%A5%20l%E1%BB%A5c%20II%20kem%20cvht__03022026094613_signed_c0ab335888.pdf",
+      "reason": "Tệp tự ghi là phụ lục dự thảo; không dùng như biểu mẫu đã ban hành."
+    }
+  ],
+  "handwriting_limitation": "Chưa có bộ hồ sơ viết tay thật phù hợp để đánh giá; 3 scan font mô phỏng chỉ thử đường đi OCR."
+}

@@ -1,0 +1,71 @@
+{
+  "id": "dvc-01a0f18e-9c38-77a9-a9ac-657df2b2dd9a",
+  "procedure_code": "1.116843",
+  "name": "Cấp phép hoạt động giáo dục đối với trường tiểu học, trường trung học cơ sở và trường phổ thông có nhiều cấp học trong đó có cấp học cao nhất là trung học cơ sở",
+  "domain": "Giáo dục Phổ thông",
+  "managing_agency": "Bộ Giáo dục và Đào tạo",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.466111+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "01a0f18e-9c38-77a9-a9ac-657df2b2dd9a",
+      "code": "1.116843",
+      "name": "Cấp phép hoạt động giáo dục đối với trường tiểu học, trường trung học cơ sở và trường phổ thông có nhiều cấp học trong đó có cấp học cao nhất là trung học cơ sở",
+      "state": "ACTIVE",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1790907958131,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/01a0f18e-9c38-77a9-a9ac-657df2b2dd9a",
+      "raw_path": "evidence/dvc/details/01a0f18e-9c38-77a9-a9ac-657df2b2dd9a.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Văn bản đề nghị cấp phép hoạt động giáo dục theo Mẫu số 04 Phụ lục kèm theo Nghị định số 360/2026/NĐ-CP, trong đó thuyết minh việc đáp ứng các điều kiện quy định tại Điều 25 Nghị định số 360/2026/NĐ-CP, kèm theo minh chứng (nếu có)",
+          "component_code": "TP-G03.0001172",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "01a0f18d-96c8-7776-8e9a-806e3a558469",
+              "fileName": "Mau so 4_VB de nghi cap phep hoat dong.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/01a0f18d-96c8-7776-8e9a-806e3a558469/Mau so 4_VB de nghi cap phep hoat dong.docx"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Đối với trường tư thục, hồ sơ phải kèm theo tài liệu chứng minh nguồn lực tài chính, số tiền, tài sản đã đầu tư hoặc cam kết đầu tư phù hợp với quy mô hoạt động dự kiến của nhà trường, gồm một hoặc một số giấy tờ sau đây, tùy theo hình thức góp vốn, nguồn vốn, loại tài sản góp vốn và tình trạng thực hiện góp vốn tại thời điểm nộp hồ sơ: hợp đồng tín dụng, cam kết cấp tín dụng của tổ chức tín dụng, chi nhánh ngân hàng nước ngoài để thực hiện đầu tư vào trường; văn bản xác nhận phong tỏa số tiền trong tài khoản thanh toán của nhà đầu tư; chứng từ chuyển tiền, tài liệu đối với nguồn lực tài chính đã được bố trí hoặc đã thực hiện đầu tư; chứng từ, hợp đồng, biên bản nghiệm thu, thanh toán hoặc tài liệu hợp pháp khác chứng minh giá trị vốn đã đầu tư xây dựng, mua sắm cơ sở vật chất, hạ tầng kỹ thuật, trang thiết bị; tài liệu chứng minh quyền sở hữu, quyền sử dụng hợp pháp đối với tài sản góp vốn kèm theo tài liệu xác định giá trị tài sản góp vốn theo quy định của pháp luật về doanh nghiệp và pháp luật có liên quan, nếu góp vốn bằng tài sản.",
+          "component_code": "TP-G03.0001173",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "01a0f18e-6dc2-7298-aa2e-ed5f51934933",
+          "name": "Quyết định của Chủ tịch Ủy ban nhân dân cấp xã cấp phép hoạt động giáo dục đối với trường tiểu học, trường trung học cơ sở, trường phổ thông có nhiều cấp học trong đó có cấp học cao nhất là trung học cơ sở (theo Mẫu số 08 Phụ lục kèm theo Nghị định số 360/2026/NĐ-CP)",
+          "code": "KQ-G03.00041"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "01a0eb27-0a75-75f9-a08c-6705f56edf6d",
+          "name": "Quy định về điều kiện đầu tư và hoạt động của cơ sở giáo dục mầm non, cơ sở giáo dục phổ thông, cơ sở giáo dục thường xuyên và cơ sở giáo dục khác thuộc hệ thống giáo dục quốc dân",
+          "code": "360/2026/NĐ-CP"
+        }
+      ]
+    }
+  ]
+}

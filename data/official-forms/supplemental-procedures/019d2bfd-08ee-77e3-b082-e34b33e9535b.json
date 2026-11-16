@@ -1,0 +1,113 @@
+{
+  "id": "dvc-019d2bfd-08ee-77e3-b082-e34b33e9535b",
+  "procedure_code": "3.000120",
+  "name": "Thủ tục đối chiếu, xác nhận số dư tài khoản của đơn vị giao dịch tại KBNN",
+  "domain": "Kho bạc Nhà nước",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.897890+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfd-08ee-77e3-b082-e34b33e9535b",
+      "code": "3.000120",
+      "name": "Thủ tục đối chiếu, xác nhận số dư tài khoản của đơn vị giao dịch tại KBNN",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1775636360558,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfd-08ee-77e3-b082-e34b33e9535b",
+      "raw_path": "evidence/dvc/details/019d2bfd-08ee-77e3-b082-e34b33e9535b.json",
+      "components": [
+        {
+          "section": " Trường hợp hồ sơ không được gửi trên môi trường điện tử: ",
+          "position": 1,
+          "name": "Số lượng mỗi thành phần hồ sơ quy định tại mục Thành phần hồ sơ thủ tục này tối thiểu là 02 bản gốc tùy theo nhu cầu xác nhận của đơn vị giao dịch.",
+          "component_code": "000.00.00.G12-KQ015882",
+          "original_quantity": 2,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": " Trường hợp hồ sơ được gửi trên môi trường điện tử: ",
+          "position": 1,
+          "name": "c) Trường hợp đối chiếu số kinh phí được chuyển nguồn sang năm sau:  Bảng đối chiếu tình hình thực hiện dự toán của các nhiệm vụ được chuyển nguồn sang năm sau.",
+          "component_code": "000.00.00.G12-KQ015879",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": " Trường hợp hồ sơ được gửi trên môi trường điện tử: ",
+          "position": 2,
+          "name": "Số lượng mỗi thành phần hồ sơ quy định tại mục Thành phần hồ sơ thủ tục này là 01 bản được ký số theo quy định của pháp luật.",
+          "component_code": "000.00.00.G12-KQ015881",
+          "original_quantity": 0,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": " Trường hợp hồ sơ được gửi trên môi trường điện tử: ",
+          "position": 3,
+          "name": "d) Trường hợp đối chiếu, xác nhận số dư tài khoản tiền gửi định kỳ, đột xuất: Bảng xác nhận số dư tài khoản tiền gửi tại Kho bạc Nhà nước.",
+          "component_code": "000.00.00.G12-KQ015880",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": " Trường hợp hồ sơ được gửi trên môi trường điện tử: ",
+          "position": 4,
+          "name": "b) Trường hợp đối chiếu số dư tài khoản tiền gửi kinh phí ngân sách cấp được chuyển nguồn sang năm sau: Bảng đối chiếu số dư tài khoản tiền gửi kinh phí ngân sách cấp của đơn vị được chuyển nguồn sang năm sau.",
+          "component_code": "000.00.00.G12-KQ015878",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": " Trường hợp hồ sơ được gửi trên môi trường điện tử: ",
+          "position": 5,
+          "name": "a) Trường hợp đối chiếu, xác nhận số dư tài khoản dự toán định kỳ, đột xuất:  Trường hợp đối chiếu dự toán, tình hình sử dụng kinh phí ngân sách bằng hình thức lệnh chi tiền: Bảng đối chiếu dự toán kinh phí ngân sách bằng hình thức lệnh chi tiền tại Kho bạc Nhà nước và Bảng đối chiếu tình hình sử dụng kinh phí ngân sách bằng hình thức lệnh chi tiền tại Kho bạc Nhà nước.  Trường hợp đối chiếu dự toán, tình hình sử dụng kinh phí ngân sách bằng hình thức rút dự toán: Bảng đối chiếu dự toán kinh phí ngân sách bằng hình thức rút dự toán tại Kho bạc Nhà nước và Bảng đối chiếu tình hình sử dụng kinh phí ngân sách bằng hình thức rút dự toán tại Kho bạc Nhà nước.",
+          "component_code": "000.00.00.G12-KQ015877",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c73-70ac-aa18-8664af36fa28",
+          "name": "Thành phần hồ sơ của đơn vị giao dịch có xác nhận của Kho bạc Nhà nước về số dư tài khoản của đơn vị giao dịch",
+          "code": "KQ.G12.001333"
+        },
+        {
+          "id": "019d2bb2-1c73-70ac-aa18-8b3bd562935a",
+          "name": "Thành phần hồ sơ của đơn vị giao dịch có xác nhận của Kho bạc Nhà nước về việc không khớp đúng số dư tài khoản của đơn vị giao dịch",
+          "code": "KQ.G12.000317"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7f-719e-b46c-e7d7a9d8616c",
+          "name": "Nghị định số 347/2025/NĐ-CP của Chính phủ: Quy định về thủ tục hành chính thuộc lĩnh vực Kho bạc Nhà nước",
+          "code": "347/2025/NĐ-CP"
+        }
+      ]
+    }
+  ]
+}

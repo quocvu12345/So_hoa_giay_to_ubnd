@@ -1,0 +1,256 @@
+{
+  "ordinal": "46",
+  "managing_agency": "Sở Nội Vụ",
+  "procedure_code": "1.013704",
+  "name": "Thủ tục báo cáo tổ chức đại hội thành lập, đại hội nhiệm kỳ, đại hội bất thường của hội",
+  "domain": "Hội",
+  "ministry_decision": "627/QĐ-BNV ngày 20/6/2025",
+  "hanoi_decision": "963/QĐ-TTPVHCC ngày 27/6/2025",
+  "workflow_decision": "1062/QĐ-TTPVHCC ngày 12/7/2025",
+  "fees": "Không quy định",
+  "execution_level": "Cấp xã",
+  "competent_authority": "UBND cấp xã",
+  "delegation_decision": "",
+  "delegation_expiry": "",
+  "receiving_location": "Điểm hỗ trợ DVC số",
+  "id": "hn87-046",
+  "source_page": 2,
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "inventory_date": "2026-04-27",
+  "checked_at": "2026-11-12T22:24:34.522533+07:00",
+  "details": [
+    {
+      "id": "019d2bfb-1b5d-738e-974f-94b0474a1be5",
+      "code": "1.013704",
+      "name": "Báo cáo tổ chức đại hội thành lập, đại hội nhiệm kỳ, đại hội bất thường của hội",
+      "state": "ACTIVE",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1776324066359,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-1b5d-738e-974f-94b0474a1be5",
+      "raw_path": "evidence/dvc/details/019d2bfb-1b5d-738e-974f-94b0474a1be5.json",
+      "components": [
+        {
+          "section": "* Hồ sơ báo cáo tổ chức đại hội nhiệm kỳ",
+          "position": 1,
+          "name": "- Đề án nhân sự, trong đó nêu rõ tiêu chuẩn, cơ cấu, số lượng, dự kiến danh sách thành viên ban chấp hành, ban thường vụ, ban kiểm tra, các chức danh chủ tịch, phó chủ tịch hội và chức danh khác (nếu có)..",
+          "component_code": "G09-KQ002406",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "* Hồ sơ báo cáo tổ chức đại hội nhiệm kỳ",
+          "position": 2,
+          "name": "- Văn bản báo cáo tổ chức đại hội nhiệm kỳ của hội; nếu trong đại hội nhiệm kỳ có nội dung về đổi tên hội thì kèm theo đơn đề nghị đổi tên hội, trong đó nêu rõ lý do, sự cần thiết phải đổi tên hội..",
+          "component_code": "G09-KQ002402",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "* Hồ sơ báo cáo tổ chức đại hội nhiệm kỳ",
+          "position": 3,
+          "name": "- Nghị quyết của ban chấp hành hội về việc tổ chức đại hội nhiệm kỳ và việc đổi tên hội (nếu có)..",
+          "component_code": "G09-KQ002403",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "* Hồ sơ báo cáo tổ chức đại hội nhiệm kỳ",
+          "position": 4,
+          "name": "- Sơ yếu lý lịch cá nhân và phiếu lý lịch tư pháp số 1 không quá 06 tháng tính đến ngày nộp hồ sơ của nhân sự dự kiến là chủ tịch hội; nếu nhân sự dự kiến chủ tịch hội là cán bộ, công chức, viên chức hoặc là cán bộ, công chức, viên chức đã nghỉ hưu được cơ quan có thẩm quyền đồng ý bằng văn bản theo quy định về phân cấp quản lý cán bộ hoặc đang là chủ tịch hội nhiệm kỳ hiện tại của hội thì không phải nộp phiếu lý lịch tư pháp số 1..",
+          "component_code": "G09-KQ002407",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "* Hồ sơ báo cáo tổ chức đại hội nhiệm kỳ",
+          "position": 5,
+          "name": "- Các hội dung khác thuộc thẩm quyền của đại hội theo quy định của điều lệ hội và quy định của pháp luật (nếu có);.",
+          "component_code": "G09-KQ002411",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "* Hồ sơ báo cáo tổ chức đại hội nhiệm kỳ",
+          "position": 6,
+          "name": "- Dự thảo điều lệ sửa đổi, bổ sung (nếu có)..",
+          "component_code": "G09-KQ002405",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "* Hồ sơ báo cáo tổ chức đại hội nhiệm kỳ",
+          "position": 7,
+          "name": "- Dự thảo báo cáo tổng kết công tác nhiệm kỳ và phương hướng hoạt động nhiệm kỳ tới của hội. Báo cáo kiểm điểm của Ban chấp hành, ban kiểm tra và báo cáo tài chính của hội..",
+          "component_code": "G09-KQ002404",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "* Hồ sơ báo cáo tổ chức đại hội nhiệm kỳ",
+          "position": 8,
+          "name": "- Báo cáo số lượng hội viên, trong đó nêu rõ số hội viên chính thức của hội.;",
+          "component_code": "G09-KQ002410",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "* Hồ sơ báo cáo tổ chức đại hội nhiệm kỳ",
+          "position": 9,
+          "name": "- Dự kiến thời gian, địa điểm tổ chức đại hội, số lượng đại biểu mời, đại biểu chính thức tham dự đại hội, dự kiến chương trình đại hội;.",
+          "component_code": "G09-KQ002409",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "* Hồ sơ báo cáo tổ chức đại hội nhiệm kỳ",
+          "position": 10,
+          "name": "- Ý kiến đồng ý của cơ quan có thẩm quyền theo quy định về phân cấp quản lý cán bộ đối với nhân sự là cán bộ, công chức, viên chức dự kiến tham gia ban chấp hành, ban thường vụ hoặc giữ các chức danh chủ tịch, phó chủ tịch hội..",
+          "component_code": "G09-KQ002408",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "* Hồ sơ báo cáo tổ chức đại hội thành lập",
+          "position": 1,
+          "name": "- Ý kiến đồng ý của cơ quan có thẩm quyền theo quy định về phân cấp quản lý cán bộ đối với nhân sự là cán bộ, công chức, viên chức dự kiến tham gia ban chấp hành, ban thường vụ hoặc giữ các chức danh chủ tịch, phó chủ tịch hội (bản chính); Trường hợp dự kiến chủ tịch hội không phải là trưởng ban vận động thành lập hội thì phải bổ sung sơ yếu lý lịch cá nhân và phiếu lý lịch tư pháp số 1 (bản chính) không quá 06 tháng tính đến ngày nộp hồ sơ; nếu chủ tịch hội dự kiến nêu trên là cán bộ, công chức, viên chức hoặc là cán bộ, công chức, viên chức đã nghỉ hưu được cơ quan có thẩm quyền đồng ý bằng văn bản theo quy định về phân cấp quản lý cán bộ thì không phải nộp phiếu lý lịch tư pháp số 1.;",
+          "component_code": "G09-KQ002400",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "* Hồ sơ báo cáo tổ chức đại hội thành lập",
+          "position": 2,
+          "name": "- Dự kiến thời gian, địa điểm tổ chức đại hội, số lượng đại biểu mời, đại biểu chính thức tham dự đại hội, dự kiến chương trình đại hội (bản gốc);.",
+          "component_code": "G09-KQ002401",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "* Hồ sơ báo cáo tổ chức đại hội thành lập",
+          "position": 3,
+          "name": "- Văn bản báo cáo tổ chức đại hội thành lập của Ban Vận động thành lập hội (bản gốc)",
+          "component_code": "G09-KQ002398",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "* Hồ sơ báo cáo tổ chức đại hội thành lập",
+          "position": 4,
+          "name": "- Đề án nhân sự (bản gốc), trong đó nêu rõ tiêu chuẩn, cơ cấu, số lượng, dự kiến danh sách thành viên ban chấp hành, ban thường vụ, ban kiểm tra, các chức danh chủ tịch, phó chủ tịch hội và chức danh khác (nếu có);.",
+          "component_code": "G09-KQ002399",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "* Hồ sơ báo cáo đại hội bất thường",
+          "position": 1,
+          "name": "- Dự kiến thời gian, địa điểm tổ chức đại hội, số lượng đại biểu mời, đại biểu chính thức tham dự đại hội, dự kiến chương trình đại hội,;",
+          "component_code": "G09-KQ002415",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "* Hồ sơ báo cáo đại hội bất thường",
+          "position": 2,
+          "name": "- Nghị quyết của Ban chấp hành hội về việc tổ chức đại hội bất thường trong đó nêu rõ nội dung thảo luận và quyết định tại đại hội;,",
+          "component_code": "G09-KQ002413",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "* Hồ sơ báo cáo đại hội bất thường",
+          "position": 3,
+          "name": "- Văn bản báo cáo tổ chức đại hội bất thường của hội; Nếu trong đại hội bất thường có nội dung về đổi tên hội thì kèm theo đơn đề nghị đổi tên hội, trong đó nêu rõ lý do, sự cần thiết phải đổi tên hội;,",
+          "component_code": "G09-KQ002412",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "* Hồ sơ báo cáo đại hội bất thường",
+          "position": 4,
+          "name": "- Dự thảo những nội dung thảo luận và quyết định tại đại hội,;",
+          "component_code": "G09-KQ002414",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c4c-77ab-bf6c-f3caaf5faf4a",
+          "name": "Công văn cho phép hội tổ chức đại hội nhiệm kỳ, đại hội bất thường",
+          "code": "KQ.G09.000124"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7e-72d1-afea-1c153ca6400f",
+          "name": "Quy định về phân định thẩm quyền của chính quyền địa phương 02 cấp trong lĩnh vực quản lý nhà nước của Bộ Nội vụ",
+          "code": "129/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afe9-f1533335aca7",
+          "name": "Nghị định số 126/2024/NĐ-CP của Chính phủ: Quy định về tổ chức, hoạt động và quản lý hội",
+          "code": "126/2024/NĐ-CP"
+        }
+      ]
+    }
+  ],
+  "lookup_status": "retrieved",
+  "currency_status": "snapshot_requires_later_amendment_check",
+  "errors": []
+}

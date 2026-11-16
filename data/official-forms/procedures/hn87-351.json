@@ -1,0 +1,99 @@
+{
+  "ordinal": "351",
+  "managing_agency": "Sở Xây dựng",
+  "procedure_code": "2.001212",
+  "name": "Cấp lại Giấy chứng nhận đăng ký phương tiện hoạt động vui chơi, giải trí dưới nước",
+  "domain": "Hàng hải và đường thủy nội địa",
+  "ministry_decision": "870/QĐ-BXD ngày 19/6/2025",
+  "hanoi_decision": "QĐ 933/TTPVHCC ngày 27/06/2025",
+  "workflow_decision": "1104/QĐ-TTPVHCC ngày 25/07/2025",
+  "fees": "Không quy định",
+  "execution_level": "Cấp xã",
+  "competent_authority": "UBND cấp xã",
+  "delegation_decision": "",
+  "delegation_expiry": "",
+  "receiving_location": "Điểm hỗ trợ DVC số",
+  "id": "hn87-351",
+  "source_page": 14,
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "inventory_date": "2026-04-27",
+  "checked_at": "2026-11-12T22:24:57.033212+07:00",
+  "details": [
+    {
+      "id": "019d2bfe-9899-7115-a1a7-0bfbcb1f0e5d",
+      "code": "2.001212",
+      "name": "Cấp lại Giấy chứng nhận đăng ký phương tiện hoạt động vui chơi, giải trí dưới nước",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1776357110945,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfe-9899-7115-a1a7-0bfbcb1f0e5d",
+      "raw_path": "evidence/dvc/details/019d2bfe-9899-7115-a1a7-0bfbcb1f0e5d.json",
+      "components": [
+        {
+          "section": "Trường hợp Giấy chứng nhận đăng ký bị hư hỏng:",
+          "position": 1,
+          "name": "- Đơn đề nghị cấp lại Giấy chứng nhận đăng ký phương tiện theo Mẫu và nộp lại Giấy chứng nhận đăng ký phương tiện đã được cấp trước đó.",
+          "component_code": "000.00.00.G04-KQ004653",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019d9607-d758-7573-b977-f9eff0f6d52d",
+              "fileName": "Mẫu đơn đề nghị CẤP LẠI GIẤY CHỨNG NHẬN ĐĂNG KÝ PHƯƠNG TIỆN VUI CHƠI GIẢI TRÍ DƯỚI NƯỚC.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d9607-d758-7573-b977-f9eff0f6d52d/Mẫu đơn đề nghị CẤP LẠI GIẤY CHỨNG NHẬN ĐĂNG KÝ PHƯƠNG TIỆN VUI CHƠI GIẢI TRÍ DƯỚI NƯỚC.docx"
+            }
+          ]
+        },
+        {
+          "section": "Trường hợp bị mất Giấy chứng nhận đăng ký: ",
+          "position": 1,
+          "name": "- Đơn đề nghị cấp lại Giấy chứng nhận đăng ký phương tiện theo Mẫu, trong đó nêu rõ lý do và chịu trách nhiệm về tính trung thực nội dung khai báo.",
+          "component_code": "000.00.00.G04-KQ004652",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019d9608-1766-7610-b111-4b63b2a0c961",
+              "fileName": "Mẫu đơn đề nghị CẤP LẠI GIẤY CHỨNG NHẬN ĐĂNG KÝ PHƯƠNG TIỆN VUI CHƠI GIẢI TRÍ DƯỚI NƯỚC (1).docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d9608-1766-7610-b111-4b63b2a0c961/Mẫu đơn đề nghị CẤP LẠI GIẤY CHỨNG NHẬN ĐĂNG KÝ PHƯƠNG TIỆN VUI CHƠI GIẢI TRÍ DƯỚI NƯỚC (1).docx"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c7a-7554-ace5-88bb2a059eab",
+          "name": "Giấy chứng nhận đăng ký phương tiện",
+          "code": "KQ.G17.000291"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7e-72d1-afea-f01696ee65ca",
+          "name": "Quy định về phân định thẩm quyền của chính quyền địa phương 02 cấp trong lĩnh vực quản lý nhà nước của Bộ Xây dựng",
+          "code": "140/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7f-719e-b46e-6fbdb3d1c381",
+          "name": "Quy định về quản lý hoạt động của phương tiện phục vụ vui chơi, giải trí dưới nước",
+          "code": "48/2019/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afec-ea998119a7dc",
+          "name": "Nghị định số 19/2024/NĐ-CP ngày 23/02/2024 sửa đổi, bổ sung một số điều của Nghị định số 48/2019/NĐ-CP ngày 05/6/2019 của Chính phủ quy định về quản lý hoạt động của phương tiện phục vụ vui chơi, giải trí dưới nước",
+          "code": "19/2024/NĐ-CP"
+        }
+      ]
+    }
+  ],
+  "lookup_status": "retrieved",
+  "currency_status": "snapshot_requires_later_amendment_check",
+  "errors": []
+}

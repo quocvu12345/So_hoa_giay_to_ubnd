@@ -1,0 +1,184 @@
+{
+  "id": "dvc-019d2bfc-54b1-7577-80a6-b3990bcf0560",
+  "procedure_code": "1.008323",
+  "name": "Khai/ hoàn thuế bảo vệ môi trường",
+  "domain": "Thuế",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.944897+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfc-54b1-7577-80a6-b3990bcf0560",
+      "code": "1.008323",
+      "name": "Khai/ hoàn thuế bảo vệ môi trường",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1785399202223,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-54b1-7577-80a6-b3990bcf0560",
+      "raw_path": "evidence/dvc/details/019d2bfc-54b1-7577-80a6-b3990bcf0560.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Tờ khai thuế BVMT mẫu số 01/TBVMT tại Phụ lục I ban hành kèm theo Thông tư số 89/2026/TT-BTC ngày 30 tháng 6 năm 2026 của Bộ Tài chính",
+          "component_code": "G12.0011783",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019fa6fe-336c-711f-99cb-fdb2ff3a25cb",
+              "fileName": "1. 01-TBVMT.doc",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa6fe-336c-711f-99cb-fdb2ff3a25cb/1. 01-TBVMT.doc"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Phụ lục bảng xác định số thuế bảo vệ môi trường phải nộp cho từng tỉnh nơi được hưởng nguồn thu đối với than (nếu có) theo mẫu số 01-1/TBVMT tại Phụ lục I ban hành kèm theo Thông tư số 89/2026/TT-BTC ngày 30 tháng 6 năm 2026 của Bộ Tài chính",
+          "component_code": "G12.0011784",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019fa705-c56d-71d4-ba5f-14eb5e2d15db",
+              "fileName": "2. 01-1.TBVMT.doc",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa705-c56d-71d4-ba5f-14eb5e2d15db/2. 01-1.TBVMT.doc"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 3,
+          "name": "Phụ lục bảng phân bổ số thuế bảo vệ môi trường phải nộp cho từng tỉnh nơi được hưởng nguồn thu đối với xăng dầu (nếu có) theo mẫu số 01-2/TBVMT tại Phụ lục I ban hành kèm theo Thông tư số 89/2026/TT-BTC ngày 30 tháng 6 năm 2026 của Bộ Tài chính",
+          "component_code": "G12.0011785",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019fa706-3c7e-764f-b8ff-7a90a867ce8d",
+              "fileName": "3. 01-2.TBVMT.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa706-3c7e-764f-b8ff-7a90a867ce8d/3. 01-2.TBVMT.docx"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 4,
+          "name": "Phụ lục thông tin đề nghị hoàn thuế bảo vệ môi trường mẫu số 01-3/TBVMT tại Phụ lục I ban hành kèm theo Thông tư số 89/2026/TT-BTC ngày 30 tháng 6 năm 2026 của Bộ Tài chính trong trường hợp người nộp thuế đề nghị hoàn trả số thuế bảo vệ môi trường đã nộp đối với lượng xăng, dầu bán cho phương tiện vận tải của hãng nước ngoài trên tuyến đường qua cảng Việt Nam hoặc phương tiện vận tải của Việt Nam trên tuyến đường vận tải quốc tế theo quy định của pháp luật",
+          "component_code": "G12.0011786",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019fa707-2b84-70c4-b0f2-61361b9783e8",
+              "fileName": "4. 01-3.TBVMT.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa707-2b84-70c4-b0f2-61361b9783e8/4. 01-3.TBVMT.docx"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 5,
+          "name": "Từ 01/7/2026 đến thời điểm theo lộ trình của cơ quan thuế quy định tại khoản 2 Điều 99 Thông tư số 89/2026/TT-BTC thì các mẫu 01/TBVMT, 01-1/TBVMT, 01-3/TBVMT thực hiện theo mẫu biểu ban hành kèm theo Thông tư số 80/2021/TT-BTC ngày 29/9/2021 của Bộ Tài chính (đã được sửa đổi, bổ sung)",
+          "component_code": "G12.0011787",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019fa708-7f30-772f-acb5-1a6b302fa496",
+              "fileName": "01-2 TBVMT TT 80.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa708-7f30-772f-acb5-1a6b302fa496/01-2 TBVMT TT 80.docx"
+            },
+            {
+              "id": "019fa708-8059-73bf-a177-3a24113f2652",
+              "fileName": "01-1 TBVMT TT 80.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa708-8059-73bf-a177-3a24113f2652/01-1 TBVMT TT 80.docx"
+            },
+            {
+              "id": "019fa708-8172-7304-9b65-93debf40621b",
+              "fileName": "01 TBVMT TT 80.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa708-8172-7304-9b65-93debf40621b/01 TBVMT TT 80.docx"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "id": "019fa328-0757-726b-936d-17f088ac9c48",
+          "name": "Thông báo số tiền đề nghị hoàn nhưng không được hoàn thuế, số tiền đề nghị hoàn chưa đủ điều kiện được hoàn thuế (mẫu số 04/TB-HT)",
+          "code": "KQ.G12.001485"
+        },
+        {
+          "id": "019fa329-7177-760d-ad80-2bef251243b4",
+          "name": "Quyết định hoàn thuế kiêm bù trừ thu ngân sách nhà nước (mẫu số 02/QĐ-HT)",
+          "code": "KQ.G12.001558"
+        },
+        {
+          "id": "019fa6bb-5cc3-70ff-b663-0bb8c95abfb2",
+          "name": "Quyết định hoàn thuế (Mẫu số 01/QĐ-HT)",
+          "code": "KQ.G12.001600"
+        },
+        {
+          "id": "019fa6be-d9ec-771f-b967-a3bae0d4c476",
+          "name": "Phụ lục số tiền thuế, tiền chậm nộp, tiền phạt phải nộp được bù trừ (Mẫu số 01/PL-BT)",
+          "code": "KQ.G12000603"
+        },
+        {
+          "id": "019d2bb2-1c71-7574-afe8-1af89bd23d1c",
+          "name": "Thông báo về việc giải trình, bổ sung thông tin, tài liệu (Mẫu 01/TB-BSTT-NNT)",
+          "code": "KQ.G12.000566"
+        },
+        {
+          "id": "019d2bb2-1c70-724b-96df-00aeca957cb7",
+          "name": "Thông báo về việc không được hoàn thuế (Mẫu số 04/TB-HT)",
+          "code": "KQ.G12.000252"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019f356e-75e3-7494-a2f3-672d8dce61a6",
+          "name": "QUY ĐỊNH CHI TIẾT MỘT SỐ ĐIỀU VÀ BIỆN PHÁP ĐỂ TỔ CHỨC, HƯỚNG DẪN THI HÀNH LUẬT QUẢN LÝ THUẾ",
+          "code": "252/2026/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afe9-653aac8276ee",
+          "name": "Nghị định số 118/2025/NĐ-CP của Chính phủ: Về thực hiện thủ tục hành chính theo cơ chế một cửa, một cửa liên thông tại Bộ phận Một cửa và Cổng Dịch vụ công quốc gia",
+          "code": "118/2025/NĐ-CP"
+        },
+        {
+          "id": "019f8db3-9765-740b-8b90-682677b9c421",
+          "name": "Thông tư quy định chi tiết một số điều của Luật Quản lý thuế và Nghị định số 252/2026/NĐ-CP của Chính phủ quy định chi tiết một số điều và biện pháp để tổ chức, hướng dẫn thi hành Luật Quản lý thuế",
+          "code": "89/2026/TT-BTC"
+        },
+        {
+          "id": "019e5e83-1282-771d-9014-49799413a4e5",
+          "name": "Luật số 108/2025/QH15 của Quốc hội: Luật Quản lý thuế",
+          "code": "108/2025/QH15"
+        }
+      ]
+    }
+  ]
+}

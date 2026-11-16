@@ -1,0 +1,95 @@
+{
+  "ordinal": "109",
+  "managing_agency": "Sở Văn hóa thể thao",
+  "procedure_code": "2.001740",
+  "name": "Xác nhận đăng ký hoạt động cơ sở in (cơ sở in có trụ sở và chi nhánh/xưởng in tại cùng 01 xã/phường)",
+  "domain": "Xuất Bản, In và Phát hành",
+  "ministry_decision": "776/QĐ-BVHTTDL ngày 07/04/2026",
+  "hanoi_decision": "513/QĐ-TTPVHCC ngày 17/4/2026",
+  "workflow_decision": "Đang cập nhật",
+  "fees": "Không quy định",
+  "execution_level": "Cấp tỉnh, cấp xã",
+  "competent_authority": "UBND cấp xã",
+  "delegation_decision": "93/QĐ-SVHTT ngày 07/2/2026",
+  "delegation_expiry": "31/12/2028",
+  "receiving_location": "Điểm hỗ trợ DVC số; Chi nhánh TTPVHCC",
+  "id": "hn87-109",
+  "source_page": 4,
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "inventory_date": "2026-04-27",
+  "checked_at": "2026-11-12T22:24:34.533928+07:00",
+  "details": [
+    {
+      "id": "019d2bfd-fbef-70ee-b0c6-9f8effe61770",
+      "code": "2.001740",
+      "name": "Thủ tục xác nhận đăng ký hoạt động in (cấp tỉnh)",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": false,
+      "updated_at_source": 1794471545287,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfd-fbef-70ee-b0c6-9f8effe61770",
+      "raw_path": "evidence/dvc/details/019d2bfd-fbef-70ee-b0c6-9f8effe61770.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Tờ khai đăng ký hoạt động in (Mẫu số 08 tại Phụ lục IV kèm theo Nghị quyết 18/2026/NQ-CP).",
+          "component_code": "G16-KQ001931",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Sơ yếu lý lịch của người đại diện pháp luật/người đứng đầu cơ sở in (Mẫu số 09 tại Phụ lục IV kèm theo Nghị quyết 18/2026/NQ-CP).",
+          "component_code": "2.001740-001",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c78-7725-a74e-033339ce2e25",
+          "name": "Giấy xác nhận đăng ký hoạt động in",
+          "code": "KQ.G14.000152"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019e1f0d-519c-718d-b974-e426c90b3034",
+          "name": "Nghị quyết số 18/2026/NQ-CP ngày 29/4/2026 của Chính phủ về cắt giảm, phân cấp, đơn giản hóa thủ tục hành chính, cắt giảm điều kiện đầu tư kinh doanh thuộc phạm vi quản lý của Bộ Văn hóa, Thể thao và Du lịch.",
+          "code": "18/2026/NQ-CP "
+        },
+        {
+          "id": "019d2bb3-5d7f-719e-b46b-822c79b97e3f",
+          "name": "Nghị định 25/2018/NĐ-CP",
+          "code": "25/2018/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7f-719e-b46f-71df9cf8e73c",
+          "name": "Nghị định 60/2014/NĐ-CP",
+          "code": "60/2014/NĐ-CP"
+        },
+        {
+          "id": "019d85ce-8119-76ae-9a24-ff4ac54c50a9",
+          "name": "Nghị định sửa đổi, bổ sung một số điều của các Nghị định có quy định thủ tục hành chính liên quan đến hoạt động sản xuất, kinh doanh thuộc phạm vi quản lý của Bộ Văn hóa, Thể thao và Du lịch.",
+          "code": "116/2026/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d87-7195-a445-31633de997cd",
+          "name": "Nghị định 72/2022/NĐ-CP",
+          "code": "72/2022/NĐ-CP"
+        }
+      ]
+    }
+  ],
+  "lookup_status": "retrieved",
+  "currency_status": "snapshot_requires_later_amendment_check",
+  "errors": []
+}

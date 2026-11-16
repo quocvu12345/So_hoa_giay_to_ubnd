@@ -1,0 +1,131 @@
+{
+  "id": "hn87-052",
+  "ordinal": "52",
+  "procedure_code": "1.010816",
+  "name": "Công nhận và giải quyết chế độ ưu đãi người hoạt động kháng chiến bị nhiễm chất độc hóa học",
+  "domain": "Người có công",
+  "department_id": "vx",
+  "department": "Phòng Văn hóa - Xã hội",
+  "authority_as_published": "UBND cấp xã",
+  "execution_level_as_published": "Cấp xã",
+  "receiving_location_as_published": "Điểm hỗ trợ DVC số",
+  "inventory_date": "2026-04-27",
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "source_urls": [
+    "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfa-fc29-7229-b30a-9311da45f3ca"
+  ],
+  "current_dvc_match": true,
+  "lifecycle": null,
+  "scope": "hanoi_commune_notice_2026_04_27",
+  "scope_note": "Mốc kiểm kê cấp xã Hà Nội; áp dụng từng thủ tục tại Từ Liêm còn phải theo thẩm quyền/ủy quyền hiện hành.",
+  "status": "has_fillable_templates",
+  "components": [
+    {
+      "id": "hn87-052-c001",
+      "code": "G09-KQ002695",
+      "name": "Bản khai theo Mẫu số 09 Phụ lục I Nghị định số 131/2021/NĐ-CP.",
+      "section": "",
+      "role": "applicant_form",
+      "scenario_status": "selected_for_test",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfa-fc29-7229-b30a-9311da45f3ca",
+      "source_detail_id": "019d2bfa-fc29-7229-b30a-9311da45f3ca",
+      "embedded_other_requirements": false,
+      "template_candidates": [
+        "template-95d405518e691fb6"
+      ],
+      "template_selection_method": "first_matching_source_attachment",
+      "selected_template_id": "template-95d405518e691fb6",
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-052-c002",
+      "code": "G09-KQ002696",
+      "name": "b) Một trong các giấy tờ có ghi nhận thời gian tham gia kháng chiến tại vùng quân đội Mỹ sử dụng chất độc hóa học sau: -\tGiấy X Y Z. -\tBản sao được chứng thực từ một trong các giấy tờ sau: quyết định phục viên, xuất ngũ; giấy chuyển thương, chuyển viện, giấy điều trị; lý lịch cán bộ; lý lịch đảng viên; lý lịch quân nhân; lý lịch công an nhân dân; hồ sơ hưởng chế độ bảo hiểm xã hội; Huân chương, Huy chương chiến sĩ giải phóng; hồ sơ khen thưởng thành tích tham gia kháng chiến, hồ sơ người có công được xác lập trước ngày 01 tháng 01 năm 2000. -\tGiấy tờ do cơ quan có thẩm quyền ban hành, xác nhận trước ngày 01 tháng 01 năm 2000.        Trường hợp danh sách, sổ quản lý quân nhân, sổ chi trả trợ cấp quân nhân đi B đang lưu tại cơ quan chức năng của địa phương mà chưa có xác nhận thì Sở Lao động - Thương binh và Xã hội (nay là Sở Nội vụ) có trách nhiệm phối hợp với Bộ chỉ huy quân sự tỉnh tập hợp, chốt số lượng người và xác nhận danh sách, sổ quản lý đang do cơ quan, đơn vị quản lý, hoàn thành trước ngày 01 tháng 5 năm 2022 và gửi số liệu về Bộ Lao động - Thương binh và Xã hội (nay là Bộ Nội vụ) trước ngày 01 tháng 6 năm 2022.        Trường hợp các giấy tờ trên chỉ thể hiện phiên hiệu, ký hiệu đơn vị thì kèm theo giấy xác nhận thông tin giải mã phiên hiệu, ký hiệu, thời gian, địa bàn hoạt động của đơn vị theo Mẫu số 37 Phụ lục I Nghị định số 131/2021/NĐ-CP",
+      "section": "",
+      "role": "instruction",
+      "scenario_status": "instruction_only",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 1,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfa-fc29-7229-b30a-9311da45f3ca",
+      "source_detail_id": "019d2bfa-fc29-7229-b30a-9311da45f3ca",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-052-c003",
+      "code": "G09-KQ002698",
+      "name": "d) Trường hợp có vợ hoặc có chồng nhưng không có con đẻ thì bổ sung thêm Giấy xác nhận người hoạt động kháng chiến có vợ hoặc có chồng nhưng không có con đẻ của Ủy ban nhân dân cấp xã,",
+      "section": "",
+      "role": "needs_review",
+      "scenario_status": "conditional_needs_review",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfa-fc29-7229-b30a-9311da45f3ca",
+      "source_detail_id": "019d2bfa-fc29-7229-b30a-9311da45f3ca",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-052-c004",
+      "code": "G09-KQ002697",
+      "name": "c) Một trong các giấy tờ ghi nhận mắc bệnh (trừ trường hợp có vợ hoặc có chồng nhưng không có con đẻ) như sau:       + Bản tóm tắt hồ sơ bệnh án của Bệnh viện hoặc Trung tâm y tế khu vực (bao gồm cả bệnh viện quân đội, công an) theo mẫu quy định của Bộ Y tế.        + Bản tóm tắt hồ sơ bệnh án ngoại trú của Phòng khám Ban Bảo vệ sức khỏe cán bộ tỉnh, thành phố trực thuộc trung ương theo mẫu quy định của Bộ Y tế.        + Giấy tờ do cơ quan, đơn vị có thẩm quyền ban hành được xác lập từ ngày 30 tháng 4 năm 1975 trở về trước ghi nhận mắc bệnh thuộc nhóm bệnh thần kinh ngoại biên trong thời gian từ một đến năm tuần sau phơi nhiễm đối với trường hợp mắc bệnh thần kinh ngoại biên cấp tính hoặc bán cấp tính.        + Bản tóm tắt hồ sơ bệnh án của lần điều trị cuối cùng ghi nhận quá trình điều trị về bệnh rối loạn tâm thần liên tiếp trong 03 năm trở lên của Bệnh viện hoặc Trung tâm y tế khu vực (bao gồm cả bệnh viện quân đội, công an) với các bệnh rối loạn tâm thần có liên quan đến phơi nhiễm với chất độc hóa học theo.",
+      "section": "",
+      "role": "needs_review",
+      "scenario_status": "conditional_needs_review",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfa-fc29-7229-b30a-9311da45f3ca",
+      "source_detail_id": "019d2bfa-fc29-7229-b30a-9311da45f3ca",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    }
+  ],
+  "service_cases": [
+    {
+      "id": "019dbda4-d5df-747c-b4fd-ba6866453cdf",
+      "code": "1.010816.01",
+      "name": "Công nhận và giải quyết chế độ ưu đãi người hoạt động kháng chiến bị nhiễm chất độc hóa học",
+      "source_processing_time": {
+        "qty": 89,
+        "type": "DAY"
+      },
+      "has_case_specific_components": false
+    }
+  ],
+  "selected_template_ids": [
+    "template-95d405518e691fb6"
+  ],
+  "source_component_groups": [
+    {
+      "name": "",
+      "component_count": 4,
+      "source_detail_id": "019d2bfa-fc29-7229-b30a-9311da45f3ca"
+    }
+  ],
+  "conditional_component_groups": [],
+  "default_test_scenario": {
+    "channel": "direct",
+    "applicant_submits_self": true,
+    "authorized": false,
+    "special_case_flags": [],
+    "selected_conditional_group": null,
+    "case_selection_method": "ordinary_direct_submission",
+    "case_status": "scenario_for_testing_not_a_legal_eligibility_decision"
+  },
+  "requirement_note": "required_as_published được giữ nguyên; false không chứng minh giấy tờ luôn tùy chọn. Các nhóm executionCases có thể là mục giấy tờ/hướng dẫn, không phải các phương án loại trừ nhau."
+}

@@ -1,0 +1,137 @@
+{
+  "id": "hn87-087",
+  "ordinal": "87",
+  "procedure_code": "2.001594",
+  "name": "Cấp giấy phép hoạt động in xuất bản phẩm (cơ sở in có trụ sở và chi nhánh/xưởng in tại cùng 01 xã/phường)",
+  "domain": "Xuất Bản, In và Phát hành",
+  "department_id": "vx",
+  "department": "Phòng Văn hóa - Xã hội",
+  "authority_as_published": "UBND cấp xã",
+  "execution_level_as_published": "Cấp tỉnh, cấp xã",
+  "receiving_location_as_published": "Điểm hỗ trợ DVC số; Chi nhánh TTPVHCC",
+  "inventory_date": "2026-04-27",
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "source_urls": [
+    "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfd-fbde-71c7-b9cf-9390a4c97806"
+  ],
+  "current_dvc_match": false,
+  "lifecycle": null,
+  "scope": "hanoi_commune_notice_2026_04_27",
+  "scope_note": "Mốc kiểm kê cấp xã Hà Nội; áp dụng từng thủ tục tại Từ Liêm còn phải theo thẩm quyền/ủy quyền hiện hành.",
+  "status": "source_template_missing",
+  "components": [
+    {
+      "id": "hn87-087-c001",
+      "code": "G16-KQ001920",
+      "name": "Sơ yếu lý lịch của người đứng đầu cơ sở in theo Mẫu số 03 tại Danh mục kèm theo Phụ lục Thông tư số 09/2026/TT-BVHTTDL",
+      "section": "",
+      "role": "needs_review",
+      "scenario_status": "requirement_needs_review",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfd-fbde-71c7-b9cf-9390a4c97806",
+      "source_detail_id": "019d2bfd-fbde-71c7-b9cf-9390a4c97806",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-087-c002",
+      "code": "G16-KQ001894",
+      "name": "Đơn đề nghị cấp giấy phép hoạt động in xuất bản phẩm theo Mẫu số 02 tại Danh mục kèm theo Phụ lục Thông tư số 09/2026/TT-BVHTTDL",
+      "section": "",
+      "role": "applicant_form",
+      "scenario_status": "selected_for_test",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfd-fbde-71c7-b9cf-9390a4c97806",
+      "source_detail_id": "019d2bfd-fbde-71c7-b9cf-9390a4c97806",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-087-c003",
+      "code": "G16-KQ002448",
+      "name": "Bản sao một trong các loại giấy: Giấy chứng nhận đầu tư hoặc quyết định thành lập cơ sở in còn hiệu lực tính đến thời điểm nộp đơn; Trường hợp tổ chức sử dụng thông tin Giấy chứng nhận đăng ký hộ kinh doanh/giấy chứng nhận đăng ký doanh nghiệp thì được tra cứu, tích hợp thông tin từ Cơ sở dữ liệu quốc gia về đăng ký kinh doanh (không phải nộp bản sao nếu đã có thông tin dữ liệu)",
+      "section": "",
+      "role": "instruction",
+      "scenario_status": "instruction_only",
+      "required_as_published": false,
+      "original_quantity": 0,
+      "copy_quantity": 1,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfd-fbde-71c7-b9cf-9390a4c97806",
+      "source_detail_id": "019d2bfd-fbde-71c7-b9cf-9390a4c97806",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-087-c004",
+      "code": "G16-KQ001896",
+      "name": "Giấy tờ, tài liệu chứng minh về người đứng đầu cơ sở in, có mặt bằng sản xuất và thiết bị trong đề nghị hồ sơ cấp giấy phép hoạt động in xuất bản phẩm để thực hiện một trong các công đoạn chế bản in, in và gia công sau in xuất bản phẩm được quy định cụ thể như sau: + Đối với người đứng đầu cơ sở in xuất bản phẩm: Là người đại diện theo pháp luật và trực tiếp quản lý, điều hành hoạt động của cơ sở. + Đối với tài liệu chứng minh về mặt bằng sản xuất: Bản sao giấy chứng nhận quyền sử dụng đất hoặc hợp đồng hay các loại giấy tờ khác chứng minh về việc giao đất, thuê đất, thuê mặt bằng, nhà xưởng để sản xuất; + Đối với tài liệu chứng minh về thiết bị: bản sao giấy tờ sở hữu hoặc thuê mua thiết bị.  Trong thời hạn 06 tháng, kể từ ngày được cấp giấy phép hoạt động in xuất bản phẩm, cơ sở in phải hoàn thành việc mua hoặc thuê mua đủ thiết bị theo danh mục dự kiến đầu tư, gửi bản sao chứng từ mua, thuê mua thiết bị cho cơ quan cấp giấy phép hoạt động in xuất bản phẩm.",
+      "section": "",
+      "role": "supporting_submit",
+      "scenario_status": "conditional_needs_review",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfd-fbde-71c7-b9cf-9390a4c97806",
+      "source_detail_id": "019d2bfd-fbde-71c7-b9cf-9390a4c97806",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    }
+  ],
+  "service_cases": [
+    {
+      "id": "019d95fa-00ff-723d-a6ed-d6380851e9db",
+      "code": "2.001594.01",
+      "name": "Cấp giấy phép hoạt động in xuất bản phẩm (địa phương)",
+      "source_processing_time": {
+        "qty": 15,
+        "type": "WORKING_DAY"
+      },
+      "has_case_specific_components": false
+    },
+    {
+      "id": "01a1ced6-f910-7345-a7ce-affd24bd8df9",
+      "code": "2.001594.01",
+      "name": "Thủ tục cấp Giấy phép hoạt động in xuất bản phẩm",
+      "source_processing_time": {
+        "qty": 15,
+        "type": "WORKING_DAY"
+      },
+      "has_case_specific_components": false
+    }
+  ],
+  "selected_template_ids": [],
+  "source_component_groups": [
+    {
+      "name": "",
+      "component_count": 4,
+      "source_detail_id": "019d2bfd-fbde-71c7-b9cf-9390a4c97806"
+    }
+  ],
+  "conditional_component_groups": [],
+  "default_test_scenario": {
+    "channel": "direct",
+    "applicant_submits_self": true,
+    "authorized": false,
+    "special_case_flags": [],
+    "selected_conditional_group": null,
+    "case_selection_method": "ordinary_direct_submission",
+    "case_status": "scenario_for_testing_not_a_legal_eligibility_decision"
+  },
+  "requirement_note": "required_as_published được giữ nguyên; false không chứng minh giấy tờ luôn tùy chọn. Các nhóm executionCases có thể là mục giấy tờ/hướng dẫn, không phải các phương án loại trừ nhau."
+}

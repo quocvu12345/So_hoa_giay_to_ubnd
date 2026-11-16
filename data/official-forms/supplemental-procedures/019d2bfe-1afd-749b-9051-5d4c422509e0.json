@@ -1,0 +1,124 @@
+{
+  "id": "dvc-019d2bfe-1afd-749b-9051-5d4c422509e0",
+  "procedure_code": "1.002372",
+  "name": "Xác nhận việc trình kháng nghị hàng hải",
+  "domain": "Hàng hải và đường thủy nội địa",
+  "managing_agency": "Bộ xây dựng (Giao thông vận tải cũ)",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.868794+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfe-1afd-749b-9051-5d4c422509e0",
+      "code": "1.002372",
+      "name": "Xác nhận việc trình kháng nghị hàng hải",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1776391336563,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfe-1afd-749b-9051-5d4c422509e0",
+      "raw_path": "evidence/dvc/details/019d2bfe-1afd-749b-9051-5d4c422509e0.json",
+      "components": [
+        {
+          "section": "Các giấy tờ phải nộp đối với phương tiện thủy nội địa (trừ phương tiện thủy nội địa mang cấp VR-SB), tàu cá,( Các giấy tờ này phải có chữ ký của thuyền trưởng và đóng dấu của tàu thuyền (nếu có); đối với bản kháng nghị hàng hải, ngoài chữ ký của thuyền trưởng và đóng dấu của tàu thuyền (nếu có con dấu) còn phải có chữ ký của máy trưởng, một sĩ quan hoặc một thủy thủ với tư cách là những người làm chứng)  bao gồm:",
+          "position": 1,
+          "name": "Kháng nghị hàng hải (02 bản)",
+          "component_code": "000.00.00.G04-KQ0903",
+          "original_quantity": 2,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Các giấy tờ phải nộp đối với phương tiện thủy nội địa (trừ phương tiện thủy nội địa mang cấp VR-SB), tàu cá,( Các giấy tờ này phải có chữ ký của thuyền trưởng và đóng dấu của tàu thuyền (nếu có); đối với bản kháng nghị hàng hải, ngoài chữ ký của thuyền trưởng và đóng dấu của tàu thuyền (nếu có con dấu) còn phải có chữ ký của máy trưởng, một sĩ quan hoặc một thủy thủ với tư cách là những người làm chứng)  bao gồm:",
+          "position": 2,
+          "name": "Bản sao Tự họa có mô tả sơ đồ vị trí xảy ra tai nạn, sự cố và đính kèm hình ảnh (01 bản, nếu có)",
+          "component_code": "000.00.00.G04-KQ0905",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Các giấy tờ phải nộp đối với phương tiện thủy nội địa (trừ phương tiện thủy nội địa mang cấp VR-SB), tàu cá,( Các giấy tờ này phải có chữ ký của thuyền trưởng và đóng dấu của tàu thuyền (nếu có); đối với bản kháng nghị hàng hải, ngoài chữ ký của thuyền trưởng và đóng dấu của tàu thuyền (nếu có con dấu) còn phải có chữ ký của máy trưởng, một sĩ quan hoặc một thủy thủ với tư cách là những người làm chứng)  bao gồm:",
+          "position": 3,
+          "name": "Bản trích sao các loại Nhật ký của tàu thuyền có liên quan đến vụ việc (01 bản, nếu có)",
+          "component_code": "000.00.00.G04-KQ0904",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Các giấy tờ phải nộp đối với tàu biển, tàu công vụ, giàn di động, tàu ngầm, tàu lặn, thủy phi cơ và phương tiện thủy nội địa mang cấp VR-SB, bao gồm:",
+          "position": 1,
+          "name": "Bản trích sao các loại Nhật ký của tàu thuyền có liên quan đến vụ việc (01 bản)",
+          "component_code": "000.00.00.G04-KQ0901",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Các giấy tờ phải nộp đối với tàu biển, tàu công vụ, giàn di động, tàu ngầm, tàu lặn, thủy phi cơ và phương tiện thủy nội địa mang cấp VR-SB, bao gồm:",
+          "position": 2,
+          "name": "Bản trích sao hải đồ liên quan đến vụ việc (trừ trường hợp tai nạn, sự cố xảy ra khi tàu thuyền đang neo đậu tại cảng biển) (01 bản)",
+          "component_code": "000.00.00.G04-KQ0902",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Các giấy tờ phải nộp đối với tàu biển, tàu công vụ, giàn di động, tàu ngầm, tàu lặn, thủy phi cơ và phương tiện thủy nội địa mang cấp VR-SB, bao gồm:",
+          "position": 3,
+          "name": "Kháng nghị hàng hải (02 bản)",
+          "component_code": "000.00.00.G04-KQ0900",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Các giấy tờ phải xuất trình: Đối với tàu biển, tàu công vụ, giàn di động, tàu ngầm, tàu lặn, thủy phi cơ và phương tiện thủy nội địa mang cấp VR-SB phải xuất trình",
+          "position": 1,
+          "name": "các loại Nhật ký liên quan đến vụ việc (bản chính)",
+          "component_code": "000.00.00.G04-KQ0906",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d95c5-7753-75d7-9dac-b8acce303807",
+          "name": "Xác nhận việc trình kháng nghị hàng hải",
+          "code": "000.00.00.G04-KQ0257"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7d-7398-be4c-0e59e8d816c2",
+          "name": "Quy định về phí, lệ phí hàng hải và biểu mức thu phí, lệ phí hàng hải",
+          "code": "261/2016/TT-BTC"
+        },
+        {
+          "id": "019d2bb3-5d87-7195-a43e-134b68ee588b",
+          "name": "Quy định về trình tự, thủ tục xác nhận việc trình kháng nghị hàng hải",
+          "code": "30/2016/TT-BGTVT"
+        }
+      ]
+    }
+  ]
+}

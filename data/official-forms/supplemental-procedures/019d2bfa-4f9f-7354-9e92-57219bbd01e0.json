@@ -1,0 +1,65 @@
+{
+  "id": "dvc-019d2bfa-4f9f-7354-9e92-57219bbd01e0",
+  "procedure_code": "1.008004",
+  "name": "Chuyển đổi cơ cấu cây trồng, vật nuôi trên đất trồng lúa",
+  "domain": "Trồng trọt",
+  "managing_agency": "Bộ Nông nghiệp và Môi trường",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:18.020103+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfa-4f9f-7354-9e92-57219bbd01e0",
+      "code": "1.008004",
+      "name": "Chuyển đổi cơ cấu cây trồng, vật nuôi trên đất trồng lúa",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1776771498427,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfa-4f9f-7354-9e92-57219bbd01e0",
+      "raw_path": "evidence/dvc/details/019d2bfa-4f9f-7354-9e92-57219bbd01e0.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Bản Đăng ký chuyển đổi cơ cấu cây trồng, vật nuôi trên đất trồng lúa theo mẫu tại Phụ lục IV ban hành kèm theo Nghị định số 112/2024/NĐ-CP",
+          "component_code": "000.00.00.G10-KQ004833",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019dafd3-cb12-749d-af34-6f1105addf88",
+              "fileName": "Phụ lục IV-NĐ 112.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019dafd3-cb12-749d-af34-6f1105addf88/Phụ lục IV-NĐ 112.docx"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c4f-7269-8764-8ab82c31c9c1",
+          "name": "Văn bản chấp thuận chuyển đổi cơ cấu cây trồng, vật nuôi trên đất trồng lúa theo mẫu tại Phụ lục V ban hành kèm theo Nghị định số 112/2024/NĐ-CP",
+          "code": "KQ.G10.000535"
+        },
+        {
+          "id": "019d2bb2-1c4f-7269-8764-8f03212f06e7",
+          "name": "Văn bản không chấp thuận bản đăng ký chuyển đổi cơ cấu cây trồng, vật nuôi trên đất trồng lúa theo mẫu Phụ lục VI ban hành kèm theo Nghị định số 112/2024/NĐ-CP",
+          "code": "KQ.G10.000536"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d86-7760-a63d-68bf11493971",
+          "name": "Nghị định quy định chi tiết đất trồng lúa",
+          "code": "112/2024/NĐ-CP"
+        }
+      ]
+    }
+  ]
+}

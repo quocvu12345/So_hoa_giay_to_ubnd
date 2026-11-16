@@ -1,0 +1,165 @@
+{
+  "id": "dvc-019d2bf7-8e69-723e-9a63-33c657dee945",
+  "procedure_code": "1.012538",
+  "name": "Giải quyết chế độ, chính sách cho người tham gia lực lượng tham gia bảo vệ an ninh, trật tự ở cơ sở chưa tham gia bảo hiểm xã hội mà bị tai nạn, chết khi thực hiện nhiệm vụ",
+  "domain": "Chính sách",
+  "managing_agency": "Bộ Công an",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:18.035744+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bf7-8e69-723e-9a63-33c657dee945",
+      "code": "1.012538",
+      "name": "Giải quyết chế độ, chính sách cho người tham gia lực lượng tham gia bảo vệ an ninh, trật tự ở cơ sở chưa tham gia bảo hiểm xã hội mà bị tai nạn, chết khi thực hiện nhiệm vụ",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1777456553767,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf7-8e69-723e-9a63-33c657dee945",
+      "raw_path": "evidence/dvc/details/019d2bf7-8e69-723e-9a63-33c657dee945.json",
+      "components": [
+        {
+          "section": "* Hồ sơ đề nghị hưởng trợ cấp tai nạn, gồm: ",
+          "position": 1,
+          "name": "- Giấy ra viện hoặc trích sao hồ sơ bệnh án sau khi điều trị tai nạn đối với trường hợp điều trị nội trú hoặc bản sao giấy chứng nhận thương tích do cơ sở y tế nơi đã cấp cứu, điều trị cấp.",
+          "component_code": "000.00.00.G01-KQ002921",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "* Hồ sơ đề nghị hưởng trợ cấp tai nạn, gồm: ",
+          "position": 2,
+          "name": "- Trường hợp bị tai nạn giao thông thì có thêm biên bản của cơ quan  Công an.",
+          "component_code": "000.00.00.G01-KQ002923",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "* Hồ sơ đề nghị hưởng trợ cấp tai nạn, gồm: ",
+          "position": 3,
+          "name": "Đơn đề nghị trợ cấp tai nạn, trợ cấp tiền tuất, tiền mai táng phí (Mẫu số 02 ban hành kèm theo Nghị định số 40/2024/NĐ-CP).",
+          "component_code": "000.00.00.G01-KQ002914",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019dd3a3-622b-767b-bf01-0e16cf7dbea8",
+              "fileName": "Mus02-nnghtrcptainntutN40.2024suatheoN184.2025.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019dd3a3-622b-767b-bf01-0e16cf7dbea8/Mus02-nnghtrcptainntutN40.2024suatheoN184.2025.docx"
+            }
+          ]
+        },
+        {
+          "section": "* Hồ sơ đề nghị hưởng trợ cấp tai nạn, gồm: ",
+          "position": 4,
+          "name": "- Biên bản giám định mức suy giảm khả năng lao động của hội đồng giám định y khoa bệnh viện cấp tỉnh và tương đương trở lên.",
+          "component_code": "000.00.00.G01-KQ002922",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "* Hồ sơ đề nghị hưởng trợ cấp tiền tuất, tiền mai táng phí, gồm: ",
+          "position": 1,
+          "name": "- Giấy ra viện hoặc trích sao hồ sơ bệnh án sau khi điều trị tai nạn đối với trường hợp điều trị nội trú.",
+          "component_code": "000.00.00.G01-KQ002924",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "* Hồ sơ đề nghị hưởng trợ cấp tiền tuất, tiền mai táng phí, gồm: ",
+          "position": 2,
+          "name": "- Bản sao giấy chứng tử hoặc trích lục khai tử.",
+          "component_code": "000.00.00.G01-KQ002925",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "* Hồ sơ đề nghị hưởng trợ cấp tiền tuất, tiền mai táng phí, gồm: ",
+          "position": 3,
+          "name": "- Trường hợp bị tai nạn giao thông dẫn đến chết thì có thêm biên bản của cơ quan Công an.",
+          "component_code": "000.00.00.G01-KQ002926",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "* Hồ sơ đề nghị hưởng trợ cấp tiền tuất, tiền mai táng phí, gồm: ",
+          "position": 4,
+          "name": "Đơn đề nghị trợ cấp tai nạn, trợ cấp tiền tuất, tiền mai táng phí (Mẫu số 02 ban hành kèm theo Nghị định số 40/2024/NĐ-CP).",
+          "component_code": "000.00.00.G01-KQ002914",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019dd3a3-622b-767b-bf01-0e16cf7dbea8",
+              "fileName": "Mus02-nnghtrcptainntutN40.2024suatheoN184.2025.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019dd3a3-622b-767b-bf01-0e16cf7dbea8/Mus02-nnghtrcptainntutN40.2024suatheoN184.2025.docx"
+            }
+          ]
+        },
+        {
+          "section": "Bao gồm",
+          "position": 1,
+          "name": "Khi các cơ quan quản lý nhà nước hoàn thành việc kết nối, chia sẻ dữ liệu thông tin có trong thành phần hồ sơ quy định tại khoản này thì cơ quan có thẩm quyền giải quyết thủ tục phải khai thác trực tuyến để giải quyết mà không được yêu cầu người đề nghị cung cấp hồ sơ giấy.",
+          "component_code": "000.00.00.G01-KQ002920",
+          "original_quantity": 0,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c37-76e8-b48d-78a85141f2bd",
+          "name": "Quyết định chi trả trợ cấp tai nạn, trợ cấp tiền tuất, tiền mai táng phí.",
+          "code": "KQ.G01.000139"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7e-72d1-afec-c7ba7cb44bf3",
+          "name": "Nghị định số 184/2025/NĐ-CP của Chính phủ: Quy định phân định thẩm quyền khi tổ chức chính quyền địa phương 02 cấp và sửa đổi, bổ sung một số điều của các Nghị định của Chính phủ trong lĩnh vực an ninh, trật tự",
+          "code": "184/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7f-719e-b46d-afb49ed3b4a5",
+          "name": "Nghị định số 40/2024/NĐ-CP của Chính phủ: Quy định chi tiết một số điều của Luật Lực lượng tham gia bảo vệ an ninh, trật tự ở cơ sở",
+          "code": "40/2024/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b672-95d3d56e7ecc",
+          "name": "Luật Lực lượng tham gia bảo vệ an ninh, trật tự ở cơ sở",
+          "code": "30/2023/QH15"
+        }
+      ]
+    }
+  ]
+}

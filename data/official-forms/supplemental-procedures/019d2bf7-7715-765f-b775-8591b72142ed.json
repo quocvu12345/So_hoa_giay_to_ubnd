@@ -1,0 +1,141 @@
+{
+  "id": "dvc-019d2bf7-7715-765f-b775-8591b72142ed",
+  "procedure_code": "1.004335",
+  "name": "Giải quyết khiếu nại về quyết định hành chính, hành vi hành chính của công dân đối với lực lượng Công an nhân dân thực hiện tại cấp xã (phải là cán bộ thuộc biên chế của lực lượng Công an)",
+  "domain": "Khiếu nại, tố cáo",
+  "managing_agency": "Bộ Công an",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:18.038335+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bf7-7715-765f-b775-8591b72142ed",
+      "code": "1.004335",
+      "name": "Giải quyết khiếu nại về quyết định hành chính, hành vi hành chính của công dân đối với lực lượng Công an nhân dân thực hiện tại cấp xã (phải là cán bộ thuộc biên chế của lực lượng Công an)",
+      "state": "ACTIVE",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1777623332916,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf7-7715-765f-b775-8591b72142ed",
+      "raw_path": "evidence/dvc/details/019d2bf7-7715-765f-b775-8591b72142ed.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Các tài liệu khác có liên quan",
+          "component_code": "000.00.00.G01-KQ0934",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Đơn khiếu nại hoặc bản ghi lời khiếu nại",
+          "component_code": "000.00.00.G01-KQ0929",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019dcfce-3262-7321-910d-f566501553fe",
+              "fileName": "Mẫu ban hành kèm theo Nghị định 124-2020.doc",
+              "bucketName": "dvc",
+              "filePath": "configuring/019dcfce-3262-7321-910d-f566501553fe/Mẫu ban hành kèm theo Nghị định 124-2020.doc"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 3,
+          "name": "Quyết định giải quyết khiếu nại",
+          "component_code": "000.00.00.G15-KQ0206",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 4,
+          "name": "Biên bản tổ chức đối thoại (nếu có)",
+          "component_code": "000.00.00.G01-KQ0312",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 5,
+          "name": "Biên bản kiểm tra, xác minh, kết luận, kết quả giám định (nếu có)",
+          "component_code": "000.00.00.G01-KQ0931",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 6,
+          "name": "Thông báo thụ lý khiếu nại",
+          "component_code": "000.00.00.G01-KQ0308",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 7,
+          "name": "Tài liệu, chứng cứ do các bên cung cấp",
+          "component_code": "000.00.00.G01-KQ0310",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c6f-72b5-bd07-fe38ef4c727f",
+          "name": "Quyết định giải quyết khiếu nại lần đầu",
+          "code": "KQ.G11.000026"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7b-7049-8fc6-20d04819108b",
+          "name": "Quy định quy trình giải quyết khiếu nại trong công an nhân dân",
+          "code": "11/2015/TT-BCA"
+        },
+        {
+          "id": "019d2bb3-5d7b-7049-8fc6-e67373ce29b6",
+          "name": "Hướng dẫn xử lý khiếu nại, kiến nghị, phản ánh; giải quyết khiếu nại và quản lý công tác giải quyết khiếu nại trong công an nhân dân",
+          "code": "68/2013/TT-BCA"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b671-1a2d6955f75c",
+          "name": "Luật Khiếu nại  năm 2011",
+          "code": "02/2011/QH13"
+        },
+        {
+          "id": "019d2bb3-5d87-7195-a445-71c7d15c9ef5",
+          "name": "Nghị định 75/2012/NĐ-CP",
+          "code": "75/2012/NĐ-CP"
+        }
+      ]
+    }
+  ]
+}

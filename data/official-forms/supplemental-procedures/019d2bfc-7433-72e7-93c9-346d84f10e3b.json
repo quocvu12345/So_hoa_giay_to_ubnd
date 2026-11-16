@@ -1,0 +1,53 @@
+{
+  "id": "dvc-019d2bfc-7433-72e7-93c9-346d84f10e3b",
+  "procedure_code": "1.009063",
+  "name": "Thủ tục bán hàng miễn thuế cho đối tượng mua là thuyền viên làm việc trên tàu biển chạy tuyến quốc tế",
+  "domain": "Hải quan",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.929064+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfc-7433-72e7-93c9-346d84f10e3b",
+      "code": "1.009063",
+      "name": "Thủ tục bán hàng miễn thuế cho đối tượng mua là thuyền viên làm việc trên tàu biển chạy tuyến quốc tế",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1785982947069,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-7433-72e7-93c9-346d84f10e3b",
+      "raw_path": "evidence/dvc/details/019d2bfc-7433-72e7-93c9-346d84f10e3b.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Chỉ tiêu thông tin tại Mẫu số 12 Phụ lục II ban hành kèm theo Nghị định số 273/2026/NĐ-CP (đối với trường hợp nộp trực tuyến).",
+          "component_code": "000.00.00.G12-KQ12589",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c70-724b-96e1-36b8791f252d",
+          "name": "phản hồi từ hệ thống xử lý dữ liệu điện tử hải quan và xác nhận của cơ quan hải quan trên hệ thống xử lý dữ liệu điện tử hải quan về số liệu báo cáo.",
+          "code": "KQ.G12.000417"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019fc558-dd5c-7395-9a78-efc7e38e5c9f",
+          "name": "Về kinh doanh hàng miễn thuế",
+          "code": "273/2026/NĐ-CP"
+        }
+      ]
+    }
+  ]
+}

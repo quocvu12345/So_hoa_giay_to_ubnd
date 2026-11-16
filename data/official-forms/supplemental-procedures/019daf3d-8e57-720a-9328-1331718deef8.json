@@ -1,0 +1,71 @@
+{
+  "id": "dvc-019daf3d-8e57-720a-9328-1331718deef8",
+  "procedure_code": "1.014997",
+  "name": "Xét, cấp học bổng chính sách đối với học viên cơ sở giáo dục nghề nghiệp tư thục dành cho thương binh, người khuyết tật",
+  "domain": "Giáo dục và Đào tạo thuộc hệ thống giáo dục quốc dân",
+  "managing_agency": "Bộ Giáo dục và Đào tạo",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.488890+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019daf3d-8e57-720a-9328-1331718deef8",
+      "code": "1.014997",
+      "name": "Xét, cấp học bổng chính sách đối với học viên cơ sở giáo dục nghề nghiệp tư thục dành cho thương binh, người khuyết tật",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1782788409735,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019daf3d-8e57-720a-9328-1331718deef8",
+      "raw_path": "evidence/dvc/details/019daf3d-8e57-720a-9328-1331718deef8.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Đơn đề nghị có xác nhận của nhà trường nơi người học theo học (theo Mẫu số 04 tại Phụ lục kèm theo Nghị định số 66/2026/NĐ-CP)",
+          "component_code": "TP-G03.002381",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019daf0a-c0e3-739f-b3c6-d811a738b86a",
+              "fileName": "Mau 04.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019daf0a-c0e3-739f-b3c6-d811a738b86a/Mau 04.docx"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Giấy chứng nhận hộ nghèo (nếu thuộc đối tượng hộ nghèo).  Trường hợp cơ quan có thẩm quyền khai thác được các thông tin trên từ Cơ sở dữ liệu chuyên ngành hoặc từ cơ quan nhà nước về hộ nghèo thì người học không cần phải cung cấp Giấy chứng nhận hộ nghèo và chỉ cần cung cấp thông tin để có cơ sở đối chiếu, khai thác dữ liệu.",
+          "component_code": "TP-G03.002382",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019daf3d-0534-7072-aa86-aa4dea51c902",
+          "name": "Quyết định cấp học bổng chính sách (cấp xã)",
+          "code": "KQ-G03.000501"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019daf1d-1258-720a-a7df-c52c0064bb92",
+          "name": "quy định chi tiết một số điều của Luật Giáo dục",
+          "code": "66/2026/NĐ-CP"
+        }
+      ]
+    }
+  ]
+}

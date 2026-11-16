@@ -1,0 +1,216 @@
+{
+  "id": "dvc-019d2bfc-6c82-7069-8446-0b1e3a371f74",
+  "procedure_code": "1.008585",
+  "name": "Miễn thuế, giảm thuế theo Điều ước quốc tế không phải là Hiệp định tránh đánh thuế hai lần hoặc thỏa thuận, cam kết của Chính phủ Việt Nam",
+  "domain": "Thuế",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.932549+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfc-6c82-7069-8446-0b1e3a371f74",
+      "code": "1.008585",
+      "name": "Miễn thuế, giảm thuế theo Điều ước quốc tế không phải là Hiệp định tránh đánh thuế hai lần hoặc thỏa thuận, cam kết của Chính phủ Việt Nam",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1785399198430,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-6c82-7069-8446-0b1e3a371f74",
+      "raw_path": "evidence/dvc/details/019d2bfc-6c82-7069-8446-0b1e3a371f74.json",
+      "components": [
+        {
+          "section": "i.1. Trường hợp tổ chức, cá nhân nước ngoài hoặc Việt Nam đăng ký kê khai, nộp thuế trực tiếp với cơ quan thuế: ++ Để được xem xét miễn, giảm thuế, tổ chức, cá nhân nước ngoài hoặc Việt Nam gửi cho cơ quan thuế nơi đăng ký thuế hồ sơ đề nghị miễn, giảm thuế, gồm:",
+          "position": 1,
+          "name": "Văn bản đề nghị theo mẫu số 01/DUQT Phụ lục III ban hành kèm theo Thông tư số 89/2026/TT-BTC có xác nhận của cơ quan đề xuất ký kết, gia nhập hoặc chủ trì thực hiện Điều ước quốc tế (trừ các Điều ước quốc tế do Bộ Tài chính đề xuất ký) hoặc thỏa thuận, cam kết của Chính phủ Việt Nam",
+          "component_code": "000.00.00.G12-00012069",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019fab79-d6f4-716d-90bc-fb49cfa5be38",
+              "fileName": "01 DUQT TT89.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fab79-d6f4-716d-90bc-fb49cfa5be38/01 DUQT TT89.docx"
+            }
+          ]
+        },
+        {
+          "section": "i.1. Trường hợp tổ chức, cá nhân nước ngoài hoặc Việt Nam đăng ký kê khai, nộp thuế trực tiếp với cơ quan thuế: ++ Để được xem xét miễn, giảm thuế, tổ chức, cá nhân nước ngoài hoặc Việt Nam gửi cho cơ quan thuế nơi đăng ký thuế hồ sơ đề nghị miễn, giảm thuế, gồm:",
+          "position": 2,
+          "name": "Bản sao có chứng thực Điều ước quốc tế (trừ Điều ước quốc tế đã được công bố trên Cơ sở dữ liệu quốc gia về điều ước quốc tế) hoặc thỏa thuận, cam kết của Chính phủ Việt Nam với cơ quan, tổ chức nước ngoài",
+          "component_code": "000.00.00.G12-00012072",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "i.1. Trường hợp tổ chức, cá nhân nước ngoài hoặc Việt Nam đăng ký kê khai, nộp thuế trực tiếp với cơ quan thuế: ++ Để được xem xét miễn, giảm thuế, tổ chức, cá nhân nước ngoài hoặc Việt Nam gửi cho cơ quan thuế nơi đăng ký thuế hồ sơ đề nghị miễn, giảm thuế, gồm:",
+          "position": 3,
+          "name": "Bản sao hợp đồng phát sinh thu nhập/doanh thu đề nghị miễn, giảm thuế theo điều ước quốc tế hoặc thỏa thuận, cam kết của Chính phủ Việt Nam có xác nhận của người đề nghị hoặc đại diện được uỷ quyền",
+          "component_code": "000.00.00.G12-00012070",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "i.1. Trường hợp tổ chức, cá nhân nước ngoài hoặc Việt Nam đăng ký kê khai, nộp thuế trực tiếp với cơ quan thuế: ++ Để được xem xét miễn, giảm thuế, tổ chức, cá nhân nước ngoài hoặc Việt Nam gửi cho cơ quan thuế nơi đăng ký thuế hồ sơ đề nghị miễn, giảm thuế, gồm:",
+          "position": 4,
+          "name": "Bản tóm tắt hợp đồng có xác nhận của người đề nghị hoặc đại diện được uỷ quyền. Bản tóm tắt hợp đồng gồm các nội dung sau: Tên hợp đồng và tên các điều khoản của hợp đồng, phạm vi công việc của hợp đồng, nghĩa vụ thuế tại hợp đồng",
+          "component_code": "000.00.00.G12-00012068",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "i.1. Trường hợp tổ chức, cá nhân nước ngoài hoặc Việt Nam đăng ký kê khai, nộp thuế trực tiếp với cơ quan thuế: ++ Để được xem xét miễn, giảm thuế, tổ chức, cá nhân nước ngoài hoặc Việt Nam gửi cho cơ quan thuế nơi đăng ký thuế hồ sơ đề nghị miễn, giảm thuế, gồm:",
+          "position": 5,
+          "name": "Bản sao có chứng thực văn bản ủy quyền trong trường hợp người đề nghị ủy quyền cho một tổ chức hoặc cá nhân Việt Nam thực hiện các thủ tục đề nghị miễn, giảm thuế. Văn bản ủy quyền cần có đủ chữ ký của đại diện hai bê",
+          "component_code": "000.00.00.G12-KQ012071",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "i.2. Trường hợp tổ chức, cá nhân nước ngoài hoặc Việt Nam đăng ký kê khai, nộp thuế trực tiếp với cơ quan thuế - Trường hợp do đặc thù của giao dịch người đề nghị không thể cung cấp hợp đồng với bên Việt Nam, người đề nghị nộp",
+          "position": 1,
+          "name": "Các tài liệu có giá trị tương đương hợp đồng và giải trình cụ thể tại Văn bản đề nghị theo mẫu số 01/DUQT Phụ lục III ban hành kèm theo Thông tư số 89/2026/TT-BTC",
+          "component_code": "G12.0012169",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019fb1ea-5b4d-705c-adae-d11c91b3586a",
+              "fileName": "13. 01 DUQT.doc",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fb1ea-5b4d-705c-adae-d11c91b3586a/13. 01 DUQT.doc"
+            }
+          ]
+        },
+        {
+          "section": "ii.1.1. Trường hợp tổ chức, cá nhân nước ngoài hoặc Việt Nam không đăng ký kê khai, nộp thuế trực tiếp với cơ quan thuế: ++ Đối với tổ chức, cá nhân nước ngoài: +++ Để được xem xét miễn, giảm thuế, người đề nghị gửi cho bên Việt Nam hồ sơ đề nghị miễn, giảm thuế, gồm:",
+          "position": 1,
+          "name": "Văn bản đề nghị theo mẫu số 01/DUQT Phụ lục III ban hành kèm theo Thông tư số 89/2026/TT-BTC có xác nhận của cơ quan đề xuất ký kết, gia nhập hoặc chủ trì thực hiện Điều ước quốc tế (trừ các Điều ước quốc tế do Bộ Tài chính đề xuất ký) hoặc thỏa thuận, cam kết của Chính phủ Việt Nam",
+          "component_code": "TP-G12.0001057",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019fab7a-06a7-776e-aade-499a2d81da83",
+              "fileName": "01 DUQT TT89.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fab7a-06a7-776e-aade-499a2d81da83/01 DUQT TT89.docx"
+            }
+          ]
+        },
+        {
+          "section": "ii.1.1. Trường hợp tổ chức, cá nhân nước ngoài hoặc Việt Nam không đăng ký kê khai, nộp thuế trực tiếp với cơ quan thuế: ++ Đối với tổ chức, cá nhân nước ngoài: +++ Để được xem xét miễn, giảm thuế, người đề nghị gửi cho bên Việt Nam hồ sơ đề nghị miễn, giảm thuế, gồm:",
+          "position": 2,
+          "name": "Bản sao Điều ước quốc tế (trừ Điều ước quốc tế đã được công bố trên Cơ sở dữ liệu quốc gia về điều ước quốc tế) hoặc thỏa thuận, cam kết của Chính phủ Việt Nam với cơ quan, tổ chức nước ngoài",
+          "component_code": "TP-G12.0001059",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "ii.1.1. Trường hợp tổ chức, cá nhân nước ngoài hoặc Việt Nam không đăng ký kê khai, nộp thuế trực tiếp với cơ quan thuế: ++ Đối với tổ chức, cá nhân nước ngoài: +++ Để được xem xét miễn, giảm thuế, người đề nghị gửi cho bên Việt Nam hồ sơ đề nghị miễn, giảm thuế, gồm:",
+          "position": 3,
+          "name": "Bản sao hợp đồng phát sinh thu nhập/doanh thu đề nghị miễn, giảm thuế theo điều ước quốc tế hoặc thỏa thuận, cam kết của Chính phủ Việt Nam có xác nhận của người đề nghị hoặc đại diện được uỷ quyền",
+          "component_code": "TP-G12.0001060",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "ii.1.1. Trường hợp tổ chức, cá nhân nước ngoài hoặc Việt Nam không đăng ký kê khai, nộp thuế trực tiếp với cơ quan thuế: ++ Đối với tổ chức, cá nhân nước ngoài: +++ Để được xem xét miễn, giảm thuế, người đề nghị gửi cho bên Việt Nam hồ sơ đề nghị miễn, giảm thuế, gồm:",
+          "position": 4,
+          "name": "Bản tóm tắt hợp đồng có xác nhận của người đề nghị hoặc đại diện được uỷ quyền. Bản tóm tắt hợp đồng gồm các nội dung sau: Tên hợp đồng và tên các điều khoản của hợp đồng, phạm vi công việc của hợp đồng, nghĩa vụ thuế tại hợp đồng",
+          "component_code": "TP-G12.0001061",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "ii.1.1. Trường hợp tổ chức, cá nhân nước ngoài hoặc Việt Nam không đăng ký kê khai, nộp thuế trực tiếp với cơ quan thuế: ++ Đối với tổ chức, cá nhân nước ngoài: +++ Để được xem xét miễn, giảm thuế, người đề nghị gửi cho bên Việt Nam hồ sơ đề nghị miễn, giảm thuế, gồm:",
+          "position": 5,
+          "name": "Bản sao có chứng thực văn bản ủy quyền trong trường hợp người đề nghị ủy quyền cho một tổ chức hoặc cá nhân Việt Nam thực hiện các thủ tục đề nghị miễn, giảm thuế. Văn bản ủy quyền cần có đủ chữ ký của đại diện hai bên",
+          "component_code": "TP-G12.0001062",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "ii.1.2. Trường hợp tổ chức, cá nhân nước ngoài hoặc Việt Nam không đăng ký kê khai, nộp thuế trực tiếp với cơ quan thuế -Đối với tổ chức, cá nhân nước ngoài - Trường hợp do đặc thù của giao dịch người đề nghị không thể cung cấp hợp đồng với bên Việt Nam, người đề nghị nộp các tài liệu có giá trị tương đương hợp đồng và giải trình cụ thể tại Văn bản đề nghị miễn, giảm thuế",
+          "position": 1,
+          "name": "Các tài liệu có giá trị tương đương hợp đồng và giải trình cụ thể tại Văn bản đề nghị miễn, giảm thuế",
+          "component_code": "G12.0011587",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "ii.2. Đối với bên Việt Nam",
+          "position": 1,
+          "name": "Trong thời hạn 03 ngày làm việc kể từ khi nhận được hồ sơ đề nghị miễn, giảm thuế của người đề nghị, bên Việt Nam có nghĩa vụ gửi hồ sơ đề nghị miễn, giảm thuế của người nộp thuế cho cơ quan thuế nơi bên Việt Nam đăng ký thuế",
+          "component_code": "TP-G12.0001063",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c71-7574-afe7-f63bc8a369b7",
+          "name": "Trường hợp xác định người nộp thuế không thuộc diện được miễn thuế, giảm thuế theo Hiệp định thuế hoặc Điều ước quốc tế khác, cơ quan thuế gửi người nộp thuế Thông báo mẫu số 03-1/MGTH Phụ lục III ban hành kèm theo Thông tư số 89/2026/TT-BTC ngày 30/6/2026 của Bộ Tài chính. Người nộp thuế có trách nhiệm khai chính xác, trung thực, đầy đủ các nội dung trong hồ sơ miễn thuế, giảm thuế theo Hiệp định thuế hoặc Điều ước quốc tế khác. Trường hợp qua kiểm tra phát hiện người nộp thuế không thuộc diện được miễn thuế, giảm thuế theo Hiệp định thuế hoặc Điều ước quốc tế khác thì người nộp thuế có trách nhiệm hoàn thành nghĩa vụ nộp thuế theo quy định.",
+          "code": "KQ.G12.000520"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019e5e83-1282-771d-9014-49799413a4e5",
+          "name": "Luật số 108/2025/QH15 của Quốc hội: Luật Quản lý thuế",
+          "code": "108/2025/QH15"
+        },
+        {
+          "id": "019f8db3-9765-740b-8b90-682677b9c421",
+          "name": "Thông tư quy định chi tiết một số điều của Luật Quản lý thuế và Nghị định số 252/2026/NĐ-CP của Chính phủ quy định chi tiết một số điều và biện pháp để tổ chức, hướng dẫn thi hành Luật Quản lý thuế",
+          "code": "89/2026/TT-BTC"
+        },
+        {
+          "id": "019f356e-75e3-7494-a2f3-672d8dce61a6",
+          "name": "QUY ĐỊNH CHI TIẾT MỘT SỐ ĐIỀU VÀ BIỆN PHÁP ĐỂ TỔ CHỨC, HƯỚNG DẪN THI HÀNH LUẬT QUẢN LÝ THUẾ",
+          "code": "252/2026/NĐ-CP"
+        }
+      ]
+    }
+  ]
+}

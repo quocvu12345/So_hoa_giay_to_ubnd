@@ -1,0 +1,90 @@
+{
+  "id": "dvc-019d2bf7-8ebf-777a-917d-a5f1a2877eac",
+  "procedure_code": "1.012564",
+  "name": "Điều chỉnh thông tin trong Cơ sở dữ liệu quốc gia về dân cư theo đề nghị của công dân (thực hiện tại cấp xã)",
+  "domain": "Cấp, quản lý căn cước",
+  "managing_agency": "Bộ Công an",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:18.035280+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bf7-8ebf-777a-917d-a5f1a2877eac",
+      "code": "1.012564",
+      "name": "Điều chỉnh thông tin trong Cơ sở dữ liệu quốc gia về dân cư theo đề nghị của công dân (thực hiện tại cấp xã)",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1787291673177,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf7-8ebf-777a-917d-a5f1a2877eac",
+      "raw_path": "evidence/dvc/details/019d2bf7-8ebf-777a-917d-a5f1a2877eac.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Phiếu đề nghị giải quyết thủ tục về căn cước (Mẫu DC02 ban hành kèm theo Thông tư số 17/2024/TT-BCA của Bộ Công an)",
+          "component_code": "000.00.00.G01-KQ002927",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019dce0d-886c-7126-8452-7f1193d0a1a8",
+              "fileName": "Mẫu DC02 Phiếu đề nghị giải quyết thủ tục về căn cước.doc",
+              "bucketName": "dvc",
+              "filePath": "configuring/019dce0d-886c-7126-8452-7f1193d0a1a8/Mẫu DC02 Phiếu đề nghị giải quyết thủ tục về căn cước.doc"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c37-76e8-b48d-93bca7059795",
+          "name": "Thông báo kết quả điều chỉnh thông tin trong Cơ sở dữ liệu quốc gia về dân cư, Cơ sở dữ liệu căn cước.",
+          "code": "KQ.G01.000145"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7f-719e-b470-9fafa6161ec1",
+          "name": "Nghị định của Chính phủ: Quy định chi tiết một số điều và biện pháp thi hành Luật Căn cước",
+          "code": "70/2024/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b672-609c23fcf9d1",
+          "name": "Luật Căn cước",
+          "code": "26/2023/QH15"
+        },
+        {
+          "id": "019f82b2-689c-7667-aa40-6ec8fb7fcd94",
+          "name": "Sửa đổi, bổ sung một số điều của 10 Luật có liên quan đến an ninh, trật tự",
+          "code": "118/2025/QH15"
+        },
+        {
+          "id": "01a0224a-0269-735f-84c1-54c2c0a3a716",
+          "name": "Thông tư số 61/2025/TT-BCA ngày 10/7/2025 của Bộ Công an quy định về quy trình cấp, cấp đổi, cấp lại thẻ căn cước, giấy chứng nhận căn cước được sửa đổi, bổ sung bởi Thông tư số 120/2026/TT-BCA ngày 29/6/2026 của Bộ Công an sửa đổi, bổ sung một số điều của Thông tư số 61/2025/TT-BCA",
+          "code": "61/2025/TT-BCA "
+        },
+        {
+          "id": "019d2bb3-5d7b-7049-8fc6-519d6a3ee863",
+          "name": "Thông tư quy định chi tiết một số điều và biện pháp thi hành Luật Căn cước",
+          "code": "17/2024/TT-BCA"
+        },
+        {
+          "id": "01a02258-f733-7757-b7e6-b21a174c6cbe",
+          "name": "Thông tư số 117/2026/TT-BCA ngày 29/6/2026 của Bộ Công an quy định chi tiết quy trình thu thập, cập nhật, điều chỉnh, tra cứu, khai thác, sử dụng, kết nối, chia sẻ, kiểm tra, phúc tra, giám sát và bảo đảm an ninh mạng, bảo vệ dữ liệu đối với thông tin trong Cơ sở dữ liệu quốc gia về dân cư, Cơ sở dữ liệu căn cước.",
+          "code": "117/2026/TT-BCA "
+        },
+        {
+          "id": "019d2bb3-5d7b-7049-8fc6-48bfec01b8f7",
+          "name": "Thông tư 16/2024/TT-BCA quy định về mẫu thẻ căn cước, mẫu giấy chứng nhận căn cước",
+          "code": "16/2024/TT-BCA"
+        }
+      ]
+    }
+  ]
+}

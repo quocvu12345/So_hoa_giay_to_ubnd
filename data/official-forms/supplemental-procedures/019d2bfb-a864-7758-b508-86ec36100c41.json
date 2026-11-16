@@ -1,0 +1,192 @@
+{
+  "id": "dvc-019d2bfb-a864-7758-b508-86ec36100c41",
+  "procedure_code": "1.013586",
+  "name": "Thủ tục biên phòng đối với tàu cá Việt Nam, thuyền viên, hành khách đi trên tàu cá Việt Nam nhập cảnh, xuất cảnh đi khai thác thủy sản ở vùng biển ngoài vùng biển Việt Nam ",
+  "domain": "Quản lý biên giới",
+  "managing_agency": "Bộ Quốc phòng",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.979372+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfb-a864-7758-b508-86ec36100c41",
+      "code": "1.013586",
+      "name": "Thủ tục biên phòng đối với tàu cá Việt Nam, thuyền viên, hành khách đi trên tàu cá Việt Nam nhập cảnh, xuất cảnh đi khai thác thủy sản ở vùng biển ngoài vùng biển Việt Nam ",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1777598602622,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-a864-7758-b508-86ec36100c41",
+      "raw_path": "evidence/dvc/details/019d2bfb-a864-7758-b508-86ec36100c41.json",
+      "components": [
+        {
+          "section": "Thành phần hồ sơ phải nộp khi xuất cảnh",
+          "position": 1,
+          "name": "02 bản chính Bản khai vũ khí và vật liệu nổ (nếu có);",
+          "component_code": "000.00.00.G11-KQ1370",
+          "original_quantity": 2,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019dc7fa-a283-772a-a4a1-0f891cab72ea",
+              "fileName": "Bản khai vũ khí vật liệu nổ.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019dc7fa-a283-772a-a4a1-0f891cab72ea/Bản khai vũ khí vật liệu nổ.docx"
+            }
+          ]
+        },
+        {
+          "section": "Thành phần hồ sơ phải nộp khi xuất cảnh",
+          "position": 2,
+          "name": "02 bản chính Danh sách hành khách (nếu có)",
+          "component_code": "000.00.00.G11-KQ1369",
+          "original_quantity": 2,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019dc7fb-3779-750c-a2e4-67d703207301",
+              "fileName": "Danh sách hành khách.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019dc7fb-3779-750c-a2e4-67d703207301/Danh sách hành khách.docx"
+            }
+          ]
+        },
+        {
+          "section": "Thành phần hồ sơ phải nộp khi xuất cảnh",
+          "position": 3,
+          "name": "02 bản chính Danh sách thuyền viên",
+          "component_code": "000.00.00.G11-KQ1368",
+          "original_quantity": 2,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019dc7fa-cb6b-72c1-a2cb-b379fa88741b",
+              "fileName": "Danh sách thuyền viên.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019dc7fa-cb6b-72c1-a2cb-b379fa88741b/Danh sách thuyền viên.docx"
+            }
+          ]
+        },
+        {
+          "section": "Thành phần hồ sơ phải nộp khi xuất cảnh",
+          "position": 4,
+          "name": "02 bản chính Bản khai chung",
+          "component_code": "000.00.00.G11-KQ1367",
+          "original_quantity": 2,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019dc7fb-1daf-726c-972c-57bed9c1506d",
+              "fileName": "Bản khai chung.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019dc7fb-1daf-726c-972c-57bed9c1506d/Bản khai chung.docx"
+            }
+          ]
+        },
+        {
+          "section": "Giấy tờ phải xuất trình",
+          "position": 1,
+          "name": "+ Bản chính Giấy phép cho tàu cá đi khai thác thuỷ sản ở vùng biển ngoài vùng biển Việt Nam do Cục Thủy sản và Kiểm ngư/Bộ Nông nghiệp và Môi trường cấp khi xuất cảnh; + Hộ chiếu phổ thông và sổ thuyền viên tàu cá của thuyền viên; hộ chiếu của hành khách (nếu có).",
+          "component_code": "000.00.00.G11-KQ1242",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Thành phần hồ sơ phải nộp khi nhập cảnh",
+          "position": 1,
+          "name": "+ 01 bản chính Bản khai chung; + 01 bản chính Danh sách thuyền viên; + 01 bản chính Danh sách hành khách (nếu có); + 01 bản chính Bản khai vũ khí và vật liệu nổ (nếu có); + 01 bản chính Bản khai người trốn trên tàu (nếu có).",
+          "component_code": "1.013586-09",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019dc94c-f8f3-731d-a53c-90f0fe23c10b",
+              "fileName": "Bản khai người trốn trên tàu.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019dc94c-f8f3-731d-a53c-90f0fe23c10b/Bản khai người trốn trên tàu.docx"
+            },
+            {
+              "id": "019dc94c-fa39-72da-9763-340f888c83cc",
+              "fileName": "Bản khai vũ khí vật liệu nổ.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019dc94c-fa39-72da-9763-340f888c83cc/Bản khai vũ khí vật liệu nổ.docx"
+            },
+            {
+              "id": "019dc94c-fb57-72c9-93e3-5689e18c9617",
+              "fileName": "Danh sách hành khách.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019dc94c-fb57-72c9-93e3-5689e18c9617/Danh sách hành khách.docx"
+            },
+            {
+              "id": "019dc94c-fc7c-73e7-b2c2-ed590abe1981",
+              "fileName": "Danh sách thuyền viên.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019dc94c-fc7c-73e7-b2c2-ed590abe1981/Danh sách thuyền viên.docx"
+            },
+            {
+              "id": "019dc94c-fdba-77cf-8581-6604d446f2ce",
+              "fileName": "Bản khai chung.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019dc94c-fdba-77cf-8581-6604d446f2ce/Bản khai chung.docx"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "id": "019dc912-7a24-7438-bc33-edbbe5a70e10",
+          "name": "Biên phòng cửa khẩu cảng thực hiện kiểm chứng nhập cảnh, xuất cảnh vào Bản khai chung, Danh sách thuyền viên, Danh sách hành khách (nếu có), hộ chiếu của thuyền viên, hộ chiếu của hành khách (nếu có) và khi xuất cảnh trả lại cho người làm thủ tục 01bản: Bản khai chung, Danh sách thuyền viên,  Danh sách hành khách (nếu có).",
+          "code": "KQ.G11.000421"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d87-7195-a442-70603a9d0597",
+          "name": "Luật 51/2019/QH14",
+          "code": "51/2019/QH14"
+        },
+        {
+          "id": "019d2bb3-5d87-7195-a442-1fc2d8d3cd84",
+          "name": "Luật 49/2019/QH14",
+          "code": "49/2019/QH14"
+        },
+        {
+          "id": "019d2bb3-5d86-7760-a645-08dd5ede9baf",
+          "name": "Luật Xuất cảnh, nhập cảnh của công dân Việt Nam và Luật Nhập cảnh, xuất cảnh, quá cảnh, cư trú của người nước ngoài tại Việt Nam sửa đổi 2023",
+          "code": "23/2023/QH15"
+        },
+        {
+          "id": "019d2bb3-5d7f-719e-b471-10f0667bd234",
+          "name": "Quy định về quản lý, bảo an ninh, trật tự tại cửa khẩu cảng",
+          "code": "77/2017/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7f-719e-b46f-3623eee55f1d",
+          "name": "Nghị định quy định chi tiết một số điều của Bộ luật Hàng hải Việt Nam về quản lý hoạt động hàng hải",
+          "code": "58/2017/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afe6-49026de6d7f6",
+          "name": "nghị định 26/2019/NĐ-CP",
+          "code": "26/2019/NĐ-CP"
+        }
+      ]
+    }
+  ]
+}

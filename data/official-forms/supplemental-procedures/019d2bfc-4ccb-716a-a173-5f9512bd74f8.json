@@ -1,0 +1,88 @@
+{
+  "id": "dvc-019d2bfc-4ccb-716a-a173-5f9512bd74f8",
+  "procedure_code": "1.007891",
+  "name": "Thủ tục hải quan đối với hàng hóa của người xuất cảnh, nhập cảnh và phương tiện xuất cảnh, nhập cảnh qua biên giới",
+  "domain": "Hải quan",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.948451+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfc-4ccb-716a-a173-5f9512bd74f8",
+      "code": "1.007891",
+      "name": "Thủ tục hải quan đối với hàng hóa của người xuất cảnh, nhập cảnh và phương tiện xuất cảnh, nhập cảnh qua biên giới",
+      "state": "ACTIVE",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1775640274218,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-4ccb-716a-a173-5f9512bd74f8",
+      "raw_path": "evidence/dvc/details/019d2bfc-4ccb-716a-a173-5f9512bd74f8.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Tờ khai hải quan và hồ sơ liên quan",
+          "component_code": "000.00.00.G12-KQ8958",
+          "original_quantity": 0,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c70-724b-96e0-46e541515789",
+          "name": "Thông quan hàng hóa nhập khẩu, xuất khẩu",
+          "code": "KQ.G12.000584"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7e-72d1-afe7-9c25863596db",
+          "name": "Nghị định 08/2015/NĐ-CP",
+          "code": "08/2015/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7d-7398-be4d-ff62cdf67da5",
+          "name": "Luật 54/2014/QH13",
+          "code": "54/2014/QH13"
+        },
+        {
+          "id": "019d2bb3-5d7d-7398-be4d-1c6dbc289d7a",
+          "name": "Quy định về thủ tục hải quan; kiểm tra, giám sát hải quan; thuế xuất khẩu thuế nhập khẩu và quản lý thuế đối vớỉ hàng hoá xuất khẩu, nhập khẩu.",
+          "code": "38/2015/TT-BTC"
+        },
+        {
+          "id": "019d2bb3-5d7c-71ab-9efa-475ffb701047",
+          "name": "Thông tư 13/2009/TT-BCT - Quy định xuất nhập khẩu hàng hóa qua các cửa khẩu phụ, lối mở biên giới nằm ngoài các Khu kinh tế cửa khẩu",
+          "code": "13/2009/TT-BCT"
+        },
+        {
+          "id": "019d2bb3-5d7f-719e-b46d-e2a9208a8197",
+          "name": "Về đăng ký doanh nghiệp",
+          "code": "43/2010/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b677-56fba586b47b",
+          "name": "Quyết định 139/2009/QĐ-TTg - Sửa đổi, bổ sung một số điều của Quyết định số 254/2006/QĐ-TTg ngày 07 tháng 11 năm 2006 của Thủ tướng Chính phủ về việc quản lý hoạt động thương mại biên giới với các nước có chung biên giới",
+          "code": "139/2009/QĐ-TTg"
+        },
+        {
+          "id": "019d2bb3-5d7d-7398-be48-496cae0271d9",
+          "name": "Thông tư liên tịch 01/2008/TTLT-BCT-BTC-BGTVT-BNN&PTNT-BYT-NHNN",
+          "code": "01/2008/TTLT-BCT-BTC-BGTVT-BNN&PTNT-BYT-NHNN"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b678-3bcd16d9899c",
+          "name": "Quyết định 254/2006/QĐ-TTg - Về việc quản lý hoạt động thương mại biên giớivới các nước có chung biên giới",
+          "code": "254/2006/QĐ-TTg"
+        }
+      ]
+    }
+  ]
+}

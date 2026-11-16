@@ -1,0 +1,78 @@
+{
+  "id": "dvc-019d2bfb-e6fa-7547-a001-bc0cefb08a26",
+  "procedure_code": "1.005458",
+  "name": "Thủ tục huỷ tờ khai hải quan",
+  "domain": "Hải quan",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.963167+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfb-e6fa-7547-a001-bc0cefb08a26",
+      "code": "1.005458",
+      "name": "Thủ tục huỷ tờ khai hải quan",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1777453672316,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-e6fa-7547-a001-bc0cefb08a26",
+      "raw_path": "evidence/dvc/details/019d2bfb-e6fa-7547-a001-bc0cefb08a26.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Mẫu số 04/HTK/GSQL – Đơn đề nghị huỷ tờ khai (phụ lục V ban hành kèm theo Thông tư số 38/2015/TT-BTC ngày 25/3/2015 của Bộ trưởng Bộ Tài chính được sửa đổi, bổ sung tại Phụ lục II Thông tư số 39/2018/TT-BTC ngày 20/4/2018 của Bộ trưởng Bộ Tài chính)",
+          "component_code": "000.00.00.G12-KQ012463",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c70-724b-96df-e9c042b3e557",
+          "name": "Thông báo hủy tờ khai",
+          "code": "KQ.G12.000591"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7d-7398-be4d-1c6dbc289d7a",
+          "name": "Quy định về thủ tục hải quan; kiểm tra, giám sát hải quan; thuế xuất khẩu thuế nhập khẩu và quản lý thuế đối vớỉ hàng hoá xuất khẩu, nhập khẩu.",
+          "code": "38/2015/TT-BTC"
+        },
+        {
+          "id": "019d2bb3-5d7d-7398-be4d-ff62cdf67da5",
+          "name": "Luật 54/2014/QH13",
+          "code": "54/2014/QH13"
+        },
+        {
+          "id": "019d2bb3-5d7d-7398-be48-2ce7181d92a3",
+          "name": "Thông tư số 39/2018/TT-BTC ngày 20/4/2018 của Bộ Tài chính sửa đổi, bổ sung một số điều tại Thông tư số 38/2015/TT-BTC ngày 25/3/2015 của Bộ Tài chính quy định về thủ tục hải quan; kiểm tra, giám sát hải quan; thuế xuất khẩu, thuế nhập khẩu và quản lý thuế đối với hàng hóa xuất khẩu, nhập khẩu.",
+          "code": "39/2018/TT-BTC"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afe7-9c25863596db",
+          "name": "Nghị định 08/2015/NĐ-CP",
+          "code": "08/2015/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7f-719e-b46b-b6df3641dbeb",
+          "name": "Về giao dịch điện tử trong hoạt động tài chính",
+          "code": "27/2007/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d87-7195-a443-db1e211c2ddd",
+          "name": "Nghị định 59/2018/NĐ-CP",
+          "code": "59/2018/NĐ-CP"
+        }
+      ]
+    }
+  ]
+}

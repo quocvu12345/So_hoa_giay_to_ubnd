@@ -1,0 +1,84 @@
+{
+  "id": "dvc-019d2bfb-a0ae-74aa-a866-8dbca5507ffa",
+  "procedure_code": "1.013548",
+  "name": "Thủ tục sửa đổi, bổ sung hồ sơ biên phòng cảng biển đối với tàu biển Việt Nam hoạt động tuyến nội địa đến, rời cửa khẩu cảng",
+  "domain": "Quản lý biên giới",
+  "managing_agency": "Bộ Quốc phòng",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.981348+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfb-a0ae-74aa-a866-8dbca5507ffa",
+      "code": "1.013548",
+      "name": "Thủ tục sửa đổi, bổ sung hồ sơ biên phòng cảng biển đối với tàu biển Việt Nam hoạt động tuyến nội địa đến, rời cửa khẩu cảng",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1777598584285,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-a0ae-74aa-a866-8dbca5507ffa",
+      "raw_path": "evidence/dvc/details/019d2bfb-a0ae-74aa-a866-8dbca5507ffa.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Yêu cầu sửa chữa, bổ sung nội dung khai báo thủ tục biên phòng điện tử",
+          "component_code": "000.00.00.G11-KQ0788",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Đề nghị sửa đổi, bổ sung nội dung khai báo thủ tục biên phòng điện tử",
+          "component_code": "000.00.00.G11-KQ002919",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c6f-72b5-bd09-63d43ef7c424",
+          "name": "Bản điện tử xác nhận hoàn thành thủ tục biên phòng điện tử đối với hồ sơ điện tử sửa đổi, bổ sung",
+          "code": "KQ.G11.000236"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7d-7398-be47-753ed1d1f3e3",
+          "name": "Hướng dẫn thực hiện Quyết định số 10/2016/QĐ-TTg ngày 03 tháng 3 năm 2016 của Thủ tướng Chính phủ về thực hiện thủ tục biên phòng điện tử cảng biển.",
+          "code": "49/2017/TT-BQP"
+        },
+        {
+          "id": "019d2bb3-5d7f-719e-b471-10f0667bd234",
+          "name": "Quy định về quản lý, bảo an ninh, trật tự tại cửa khẩu cảng",
+          "code": "77/2017/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b678-72e8ac46ed62",
+          "name": "Quyết định số 31/2025/QĐ-TTg của Thủ tướng Chính phủ: Sửa đổi, bổ sung một số điều các Quyết định của Thủ tướng Chính phủ về thực hiện thủ tục biên phòng điện tử tại các cửa khẩu do Bộ Quốc phòng quản lý",
+          "code": "31/2025/QĐ-TTg"
+        },
+        {
+          "id": "019d2bb3-5d7f-719e-b46f-3623eee55f1d",
+          "name": "Nghị định quy định chi tiết một số điều của Bộ luật Hàng hải Việt Nam về quản lý hoạt động hàng hải",
+          "code": "58/2017/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b677-78013aa85151",
+          "name": "Quyết định 15/2019/QĐ-TTg - Về việc thực hiện thủ tục biên phòng điện tử tại các cửa khẩu do Bộ Quốc phòng quản lý",
+          "code": "15/2019/QĐ-TTg"
+        }
+      ]
+    }
+  ]
+}

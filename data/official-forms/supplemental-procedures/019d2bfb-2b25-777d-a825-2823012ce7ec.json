@@ -1,0 +1,64 @@
+{
+  "id": "dvc-019d2bfb-2b25-777d-a825-2823012ce7ec",
+  "procedure_code": "1.014359",
+  "name": "Giải quyết chế độ mai táng phí đối với dân công hỏa tuyến tham gia kháng chiến chống Pháp, chống Mỹ, chiến tranh bảo vệ Tổ quốc và làm nhiệm vụ quốc tế",
+  "domain": "Người có công",
+  "managing_agency": "Bộ Nội vụ",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.986046+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfb-2b25-777d-a825-2823012ce7ec",
+      "code": "1.014359",
+      "name": "Giải quyết chế độ mai táng phí đối với dân công hỏa tuyến tham gia kháng chiến chống Pháp, chống Mỹ, chiến tranh bảo vệ Tổ quốc và làm nhiệm vụ quốc tế",
+      "state": "ACTIVE",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1777452902125,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-2b25-777d-a825-2823012ce7ec",
+      "raw_path": "evidence/dvc/details/019d2bfb-2b25-777d-a825-2823012ce7ec.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "- Bản trích sao quyết định của đối tượng từ trần đã được hưởng chế độ trợ cấp một lần;...",
+          "component_code": "G09-KQ003190",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "- Giấy chứng tử.",
+          "component_code": "G09-KQ003191",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c4c-77ab-bf70-20f23d27eff5",
+          "name": "Quyết định hưởng trợ cấp mai táng phí đối với thân nhân từng đối tượng.",
+          "code": "KQ.G09.000383"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7c-71ab-9f06-9e9003a8ab3a",
+          "name": "Hướng dẫn thực hiện Quyết định số 49/2015/QĐ-TTg ngày 14 tháng 10 năm 2015 của Thủ tướng Chính phủ về một số chế độ, chính sách đối với dân công hỏa tuyến tham gia kháng chiến chống Pháp, chống Mỹ, chiến tranh bảo vệ Tổ quốc và làm nhiệm vụ quốc tế",
+          "code": "138/2015/TTLT-BQP-BLĐBXH-BTC"
+        }
+      ]
+    }
+  ]
+}

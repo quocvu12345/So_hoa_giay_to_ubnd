@@ -1,0 +1,99 @@
+{
+  "id": "dvc-019d2bfc-6c92-7020-ab68-23b605834a3e",
+  "procedure_code": "1.008593",
+  "name": "Thông báo phương pháp trích khấu hao tài sản cố định/Thông báo về việc chuyển lợi nhuận ra nước ngoài",
+  "domain": "Thuế",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.932408+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfc-6c92-7020-ab68-23b605834a3e",
+      "code": "1.008593",
+      "name": "Thông báo phương pháp trích khấu hao tài sản cố định/Thông báo về việc chuyển lợi nhuận ra nước ngoài",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1778136278860,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-6c92-7020-ab68-23b605834a3e",
+      "raw_path": "evidence/dvc/details/019d2bfc-6c92-7020-ab68-23b605834a3e.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Mẫu thông báo chuyển lợi nhuận ra nước ngoài ban hành kèm theo Thông tư số 186/2011/TT-BTC",
+          "component_code": "000.00.00.G12-KQ9652",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Đối với Thông báo phương pháp trích khấu hao tài sản cố định: Thông báo phương pháp trích khấu hao tài sản cố định",
+          "component_code": "000.00.00.G12-KQ016083",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c70-724b-96e1-59c6a510ec9f",
+          "name": "Hồ sơ gửi đến cơ quan thuế không có kết quả giải quyết.",
+          "code": "KQ.G12.000429"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7d-7398-be4d-9f8629ebc27d",
+          "name": "sửa đổi một số điều của Thông tư 19/2021/TT-BTC ngày 18/3/2021 của Bộ trưởng Bộ Tài chính hướng dẫn giao dịch điện tử trong lĩnh vực thuế",
+          "code": "46/2024/TT-BTC"
+        },
+        {
+          "id": "019d2bb3-5d86-7760-a643-2e14de6cf380",
+          "name": "Thông tư số 19/2021/TT-BTC ngày 18/3/2021 của Bộ Tài chính hướng dẫn Giao dịch điện tử trong lĩnh vực thuế",
+          "code": "19/2021/TT-BTC"
+        },
+        {
+          "id": "019d2bb3-5d85-73da-8eb9-e5214fd5ac79",
+          "name": "Luật Quản lý thuế",
+          "code": "38/2019/QH14"
+        },
+        {
+          "id": "019d2bb3-5d7d-7398-be4d-96a5916ca04c",
+          "name": "hướng dẫn chế độ quản lý, sử dụng và trích khấu hao tài sản cố định",
+          "code": "45/2013/TT-BTC"
+        },
+        {
+          "id": "019d2bb3-5d7f-719e-b472-a31220f95d4a",
+          "name": "Nghị định số 91/2022/NĐ-CP sửa đổi bổ sung một số điều của Nghị định số 126/2020/NĐ-CP ngày 19/10/2020 của Chính phủ quy định chi tiết một số điều của Luật Quản lý thuế",
+          "code": "91/2022/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d86-7760-a642-eefec7e1f56c",
+          "name": "Thông tư 186/2010/TT-BTC",
+          "code": "186/2010/TT-BTC"
+        },
+        {
+          "id": "019d2bb3-5d87-7195-a446-0e6dcc708401",
+          "name": "Thông tư 80/2021/TT-BTC",
+          "code": "80/2021/TT-BTC"
+        },
+        {
+          "id": "019d2bb3-5d86-7760-a63e-9e72cf1f3ed4",
+          "name": "Nghị định 126/2020/NĐ-CP",
+          "code": "126/2020/NĐ-CP"
+        }
+      ]
+    }
+  ]
+}

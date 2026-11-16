@@ -1,0 +1,63 @@
+{
+  "id": "dvc-019d2bfc-ca20-712e-aaf7-2e77712a2cbe",
+  "procedure_code": "1.012839",
+  "name": "Thủ tục tham vấn trị giá hải qua đối với hàng hóa xuất khẩu, nhập khẩu",
+  "domain": "Hải quan",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.919773+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfc-ca20-712e-aaf7-2e77712a2cbe",
+      "code": "1.012839",
+      "name": "Thủ tục tham vấn trị giá hải qua đối với hàng hóa xuất khẩu, nhập khẩu",
+      "state": "ACTIVE",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1775639773085,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-ca20-712e-aaf7-2e77712a2cbe",
+      "raw_path": "evidence/dvc/details/019d2bfc-ca20-712e-aaf7-2e77712a2cbe.json",
+      "components": [
+        {
+          "section": "Thủ tục tham vấn trị giá hải quan đối với hàng hoá xuất khẩu, nhập khẩu",
+          "position": 1,
+          "name": "+ Thành phần hồ sơ: Hợp đồng mua bán hàng hoá, hoá đơn thương mại; chứng từ thể hiện chi phí vận tải (nếu có); chứng từ bảo hiểm (nếu có); chứng nhận xuất xứ hàng hoá theo quy định của pháp luật đối với hàng hoá nhập khẩu (nếu có); chứng từ thanh toán (nếu có) và các chứng từ, tài liệu theo phương pháp xác định trị giá khai báo quy định tại Điều 8, Điều 9, Điều 10, Điều 11 Thông tư số 39/2015/TT-BTC ngày 25/3/2015; khoản 3, khoản 5, k hoản 7 Điều 1 Thông tư số 60/2019/TT-BTC ngày 30/8/2019; khoản 14 Điều 1 Thông tư số 39/2018/TT-BTC ngày 20/4/2018.",
+          "component_code": "000.00.00.G12-KQ013245",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c71-7574-afea-b360345c57f5",
+          "name": "Biên bản tham vấn",
+          "code": "KQ.G12.34.109"
+        },
+        {
+          "id": "019d2bb2-1c71-7574-afea-afeca0106cc7",
+          "name": "Thông báo trị giá hải quan",
+          "code": "KQ.G12.000801"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7d-7398-be48-2ce7181d92a3",
+          "name": "Thông tư số 39/2018/TT-BTC ngày 20/4/2018 của Bộ Tài chính sửa đổi, bổ sung một số điều tại Thông tư số 38/2015/TT-BTC ngày 25/3/2015 của Bộ Tài chính quy định về thủ tục hải quan; kiểm tra, giám sát hải quan; thuế xuất khẩu, thuế nhập khẩu và quản lý thuế đối với hàng hóa xuất khẩu, nhập khẩu.",
+          "code": "39/2018/TT-BTC"
+        },
+        {
+          "id": "019d2bb3-5d7d-7398-be4d-34a9ab45c003",
+          "name": "Thông tư số 39/2015/TT-BTC",
+          "code": "39/2015/TT-BTC"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "id": "dvc-019d2bfc-ca39-704d-b9a8-b751c0e3a06a",
+  "procedure_code": "1.013490",
+  "name": "Thủ tục gia hạn nộp thuế",
+  "domain": "Hải quan",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.918816+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfc-ca39-704d-b9a8-b751c0e3a06a",
+      "code": "1.013490",
+      "name": "Thủ tục gia hạn nộp thuế",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1786419586783,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-ca39-704d-b9a8-b751c0e3a06a",
+      "raw_path": "evidence/dvc/details/019d2bfc-ca39-704d-b9a8-b751c0e3a06a.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "a) Công văn đề nghị gia hạn nộp thuế, trong đó nêu rõ lý do, số tiền thuế, thời hạn nộp theo Mẫu số 1 tại Phụ lục II Thông tư số 86/2026/TT-BTC qua Hệ thống xử lý dữ liệu điện tử hoặc bản giấy theo Mẫu số 01 tại Phụ lục I Thông tư số 86/2026/TT-BTC;",
+          "component_code": "000.00.00.G12-179",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019f3674-a14f-7008-8800-d83c3f5f80a0",
+              "fileName": "Mẫu số 01.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f3674-a14f-7008-8800-d83c3f5f80a0/Mẫu số 01.docx"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "b) Tài liệu gửi kèm công văn đề nghị gia hạn nộp tiền thuế đối với trường hợp quy định tại điểm a khoản 7 Điều 14 Luật số 108/2025/QH15 b.1) Văn bản, biên bản xác nhận nguyên nhân thiệt hại của cơ quan chức năng tại địa bàn nơi phát sinh thiệt hại b.1.1) Văn bản xác nhận của một trong các cơ quan, tổ chức sau: Ủy ban nhân dân xã, phường, đặc khu (sau đây gọi là Ủy ban nhân dân cấp xã), Ban quản lý Khu công nghiệp, Khu chế xuất, Khu kinh tế, Ban quản lý cửa khẩu, Cảng vụ hàng không, Cảng vụ hàng hải nơi xảy ra sự kiện bất khả kháng về việc thiên tai, thảm họa, dịch bệnh, tai nạn bất ngờ gây thiệt hại vật chất, ảnh hưởng trực tiếp đến sản xuất, kinh doanh: 01 bản chính; b.1.2) Biên bản xác nhận vụ cháy của cơ quan công an có thẩm quyền: 01 bản chính. b.2) Hợp đồng bảo hiểm, thông báo trả tiền bồi thường của tổ chức nhận bảo hiểm (nếu có), trường hợp hợp đồng bảo hiểm không bao gồm nội dung bồi thường về thuế phải có xác nhận của tổ chức bảo hiểm; hợp đồng hoặc biên bản thỏa thuận đền bù của hãng vận tải đối với trường hợp tổn thất do hãng vận tải gây ra (nếu có).",
+          "component_code": "000.00.00.G12-1023",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 3,
+          "name": "c) Tài liệu gửi kèm công văn đề nghị gia hạn nộp tiền thuế đối với trường hợp quy định tại điểm b khoản 7 Điều 14 Luật số 108/2025/QH15 c.1) Quyết định thu hồi địa điểm sản xuất, kinh doanh của cơ quan nhà nước có thẩm quyền đối với địa điểm sản xuất cũ của doanh nghiệp (trừ trường hợp di dời địa điểm sản xuất kinh doanh theo mục đích yêu cầu của doanh nghiệp);  c.2) Văn bản xác nhận của chính quyền địa phương về việc doanh nghiệp phải ngừng sản xuất kinh doanh do di chuyển địa điểm (01 bản chính); c.3) Tài liệu chứng minh mức độ thiệt hại do phải di chuyển địa điểm sản xuất, kinh doanh bao gồm hồ sơ, chứng từ chứng minh giá trị còn lại của tài sản bị thiệt hại, chi phí phát sinh do việc di dời và các tài liệu khác có liên quan theo quy định của pháp luật. Người nộp thuế chịu trách nhiệm trước pháp luật về tính chính xác của hồ sơ, chứng từ cung cấp.",
+          "component_code": "000.00.00.G12-1750",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019f3bbd-4c64-726e-a271-5a0c02d6f4f0",
+              "fileName": "Mẫu số 02.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f3bbd-4c64-726e-a271-5a0c02d6f4f0/Mẫu số 02.docx"
+            },
+            {
+              "id": "019f3bbd-5906-7048-8ef7-c4f011a234dd",
+              "fileName": "Mẫu số 03.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f3bbd-5906-7048-8ef7-c4f011a234dd/Mẫu số 03.docx"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "id": "019f3668-2eba-7643-a8d2-289ae7022442",
+          "name": "Thông báo về việc không chấp thuận gia hạn nộp thuế",
+          "code": "KQ.G12.000655"
+        },
+        {
+          "id": "019d2bb2-1c70-724b-96e1-80775a2cdd73",
+          "name": "Quyết định gia hạn nộp thuế",
+          "code": "KQ.G12.000654"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019e5e83-1282-771d-9014-49799413a4e5",
+          "name": "Luật số 108/2025/QH15 của Quốc hội: Luật Quản lý thuế",
+          "code": "108/2025/QH15"
+        },
+        {
+          "id": "019f3572-2dda-738d-9e22-fb4a0b4e1a7c",
+          "name": "Quy định về quản lý thuế đối với hàng hóa xuất khẩu, nhập khẩu.",
+          "code": "86/2026/TT-BTC"
+        }
+      ]
+    }
+  ]
+}

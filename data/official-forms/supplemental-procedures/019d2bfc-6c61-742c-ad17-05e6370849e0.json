@@ -1,0 +1,162 @@
+{
+  "id": "dvc-019d2bfc-6c61-742c-ad17-05e6370849e0",
+  "procedure_code": "1.008583",
+  "name": "Miễn, giảm thuế tài nguyên đối với trường hợp người nộp thuế tự xác định số thuế được miễn, giảm",
+  "domain": "Thuế",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.935053+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfc-6c61-742c-ad17-05e6370849e0",
+      "code": "1.008583",
+      "name": "Miễn, giảm thuế tài nguyên đối với trường hợp người nộp thuế tự xác định số thuế được miễn, giảm",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1785399203219,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-6c61-742c-ad17-05e6370849e0",
+      "raw_path": "evidence/dvc/details/019d2bfc-6c61-742c-ad17-05e6370849e0.json",
+      "components": [
+        {
+          "section": "Thành phần hồ sơ đối với cá nhân được phép khai thác cành, ngọn, củi, tre, trúc, nứa, mai, giang, tranh, vầu, lồ ô do phục vụ sinh hoạt gồm:",
+          "position": 1,
+          "name": "Văn bản đề nghị miễn thuế theo mẫu số 06/MGTH Phụ lục III ban hành kèm theo Thông tư số 89/2026/TT-BTC ngày 30/6/2026 của Bộ Tài chính",
+          "component_code": "000.00.00.G12-00015535",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019fa680-d9fd-751d-84eb-4d8e190f52a5",
+              "fileName": "06-MGTH-TT89.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa680-d9fd-751d-84eb-4d8e190f52a5/06-MGTH-TT89.docx"
+            }
+          ]
+        },
+        {
+          "section": "Thành phần hồ sơ đối với hộ gia đình, cá nhân sử dụng nước thiên nhiên tự sản xuất thuỷ điện phục vụ sinh hoạt gồm:",
+          "position": 1,
+          "name": "Văn bản đề nghị miễn thuế theo mẫu số 06/MGTH Phụ lục III ban hành kèm theo Thông tư số 89/2026/TT-BTC ngày 30/6/2026 của Bộ Tài chính",
+          "component_code": "000.00.00.G12-00015536",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019fa681-0686-7366-9892-ccf002047793",
+              "fileName": "06-MGTH-TT89.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa681-0686-7366-9892-ccf002047793/06-MGTH-TT89.docx"
+            }
+          ]
+        },
+        {
+          "section": "Thành phần hồ sơ đối với hộ gia đình, cá nhân sử dụng nước thiên nhiên tự sản xuất thuỷ điện phục vụ sinh hoạt gồm:",
+          "position": 2,
+          "name": "Bản sao Văn bản giải trình về thiết bị sản xuất thuỷ điện phục vụ cho sinh hoạt gia đình, có xác nhận của Ủy ban nhân dân cấp xã nơi cư trú",
+          "component_code": "TP-G12.0001013",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Thành phần hồ sơ đối với đất khai thác và sử dụng tại chỗ trên diện tích đất được giao, được thuê; đất khai thác để san lấp, xây dựng công trình an ninh, quân sự, đê điều: tổ chức, cá nhân được giao, được thuê đất tự khai thác hoặc đơn vị nhận thầu thi công nộp hồ sơ miễn thuế gồm",
+          "position": 1,
+          "name": "Văn bản đề nghị miễn thuế theo mẫu số 06/MGTH Phụ lục III ban hành kèm theo Thông tư số 89/2026/TT-BTC ngày 30/6/2026 của Bộ Tài chính",
+          "component_code": "000.00.00.G12-00015537",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019fa681-3605-76fa-8b28-299cef7cbdc6",
+              "fileName": "06-MGTH-TT89.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa681-3605-76fa-8b28-299cef7cbdc6/06-MGTH-TT89.docx"
+            }
+          ]
+        },
+        {
+          "section": "Thành phần hồ sơ đối với đất khai thác và sử dụng tại chỗ trên diện tích đất được giao, được thuê; đất khai thác để san lấp, xây dựng công trình an ninh, quân sự, đê điều: tổ chức, cá nhân được giao, được thuê đất tự khai thác hoặc đơn vị nhận thầu thi công nộp hồ sơ miễn thuế gồm",
+          "position": 2,
+          "name": "Bản sao hồ sơ được cơ quan có thẩm quyền phê duyệt về việc xây dựng công trình tại địa phương của chủ đầu tư, về xây dựng công trình an ninh, quân sự, đê điều",
+          "component_code": "TP-G12.0001014",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Thành phần hồ sơ đối với đất khai thác và sử dụng tại chỗ trên diện tích đất được giao, được thuê; đất khai thác để san lấp, xây dựng công trình an ninh, quân sự, đê điều: tổ chức, cá nhân được giao, được thuê đất tự khai thác hoặc đơn vị nhận thầu thi công nộp hồ sơ miễn thuế gồm",
+          "position": 3,
+          "name": "Bản sao Văn bản giao thầu ký với chủ đầu tư đối với trường hợp đơn vị nhận thầu thi công nộp hồ sơ miễn thuế thay cho chủ đầu tư",
+          "component_code": "TP-G12.0001015",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 1,
+          "name": "Từ 01/7/2026 đến thời điểm theo lộ trình của cơ quan thuế quy định tại khoản 2 Điều 99 Thông tư số 89/2026/TT-BTC, mẫu 06/MGTH thực hiện theo mẫu ban hành kèm theo Thông tư số 80/2021/TT-BTC ngày 29/9/2021 của Bộ Tài chính.",
+          "component_code": "G12.0015631",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019fb159-e41f-75ea-998e-fc13ae5e8c4c",
+              "fileName": "06 MGTH TT 80.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fb159-e41f-75ea-998e-fc13ae5e8c4c/06 MGTH TT 80.docx"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c70-724b-96e1-59c6a510ec9f",
+          "name": "Hồ sơ gửi đến cơ quan thuế không có kết quả giải quyết.",
+          "code": "KQ.G12.000429"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019f8db3-9765-740b-8b90-682677b9c421",
+          "name": "Thông tư quy định chi tiết một số điều của Luật Quản lý thuế và Nghị định số 252/2026/NĐ-CP của Chính phủ quy định chi tiết một số điều và biện pháp để tổ chức, hướng dẫn thi hành Luật Quản lý thuế",
+          "code": "89/2026/TT-BTC"
+        },
+        {
+          "id": "019f64ed-e026-7299-b5f2-ca44a3964050",
+          "name": "Nghị định về thực hiện thủ tục hành chính theo cơ chế một cửa, một cửa liên thông tại Bộ phận Một cửa và Cổng Dịch vụ công quốc gia.",
+          "code": "118/2025/NĐ-CP "
+        },
+        {
+          "id": "019e5e83-1282-771d-9014-49799413a4e5",
+          "name": "Luật số 108/2025/QH15 của Quốc hội: Luật Quản lý thuế",
+          "code": "108/2025/QH15"
+        },
+        {
+          "id": "019f356e-75e3-7494-a2f3-672d8dce61a6",
+          "name": "QUY ĐỊNH CHI TIẾT MỘT SỐ ĐIỀU VÀ BIỆN PHÁP ĐỂ TỔ CHỨC, HƯỚNG DẪN THI HÀNH LUẬT QUẢN LÝ THUẾ",
+          "code": "252/2026/NĐ-CP"
+        }
+      ]
+    }
+  ]
+}

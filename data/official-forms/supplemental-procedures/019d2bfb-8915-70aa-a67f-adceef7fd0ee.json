@@ -1,0 +1,79 @@
+{
+  "id": "dvc-019d2bfb-8915-70aa-a67f-adceef7fd0ee",
+  "procedure_code": "1.013133",
+  "name": "Thủ tục đăng ký nghĩa vụ quân sự lần đầu",
+  "domain": "Nghĩa vụ quân sự",
+  "managing_agency": "Bộ Quốc phòng",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.983967+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfb-8915-70aa-a67f-adceef7fd0ee",
+      "code": "1.013133",
+      "name": "Thủ tục đăng ký nghĩa vụ quân sự lần đầu",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1783306913110,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-8915-70aa-a67f-adceef7fd0ee",
+      "raw_path": "evidence/dvc/details/019d2bfb-8915-70aa-a67f-adceef7fd0ee.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "- Bản chụp Căn cước công dân hoặc Thẻ Căn cước. Trường hợp cơ quan hoặc người có thẩm quyền được giao trách nhiệm tiếp nhận, giải quyết thủ tục hành chính, cung cấp dịch vụ công khai thác được thông tin công dân trên Cơ sở dữ liệu quốc gia về dân cư thì không yêu cầu công dân nộp bản chụp Căn cước công dân hoặc Thẻ Căn cước.",
+          "component_code": "000.00.00.G11-KQ003956",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Phiếu tự khai sức khỏe nghĩa vụ quân sự",
+          "component_code": "000.00.00.G11-KQ0602",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c6f-72b5-bd08-382969157741",
+          "name": "Giấy chứng nhận đăng ký nghĩa vụ quân sự",
+          "code": "KQ.G11.000119"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7e-72d1-afe8-3ac91da2e6b0",
+          "name": "Nghị định sửa đổi, bổ sung một số điều của các Nghị định liên quan đến việc nộp xuất trình sổ hộ khẩu, sổ tạm trú giấy khi thực hiện thủ tục hành chính, cung cấp dịch vụ công",
+          "code": "104/2022/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7d-7398-be47-63376434bc5a",
+          "name": "Nghị định số 220/2025/NĐ-CP ngày 07 tháng 8 năm 2025 của  Chính phủ sửa đổi, bổ sung một số điều của một số Nghị định trong lĩnh vực  quốc phòng, quân sự khi tổ chức chính quyền địa phương hai cấp",
+          "code": "220/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b674-442118030b48",
+          "name": "Nghĩa vụ quân sự",
+          "code": "78/2015/QH13"
+        },
+        {
+          "id": "019d2bb3-5d85-73da-8eb9-f36f498aefcf",
+          "name": "Luật Cư trú 2020",
+          "code": "68/2020/QH14"
+        }
+      ]
+    }
+  ]
+}

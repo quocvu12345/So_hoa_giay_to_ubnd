@@ -1,0 +1,236 @@
+{
+  "ordinal": "398",
+  "managing_agency": "Sở Tài chính",
+  "procedure_code": "2.002641",
+  "name": "Thông báo tạm ngừng kinh doanh, tiếp tục kinh doanh trở lại đối với tổ hợp tác, hợp tác xã, liên hiệp hợp tác xã, chi nhánh, văn phòng đại diện, địa điểm kinh doanh",
+  "domain": "Thành lập và hoạt động của tổ hợp tác, hợp tác xã, liên hiệp hợp tác xã (Bộ Tài chính)",
+  "ministry_decision": "4167/QĐ-BTC ngày 15/12/2025",
+  "hanoi_decision": "122/QĐ-TTPVHCC ngày 27/01/2026",
+  "workflow_decision": "QĐ số 364/QĐ-TTPVHCC ngày 25/3/2026",
+  "fees": "Không quy định",
+  "execution_level": "Cấp xã",
+  "competent_authority": "UBND cấp xã",
+  "delegation_decision": "",
+  "delegation_expiry": "",
+  "receiving_location": "Điểm hỗ trợ DVC số",
+  "id": "hn87-398",
+  "source_page": 16,
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "inventory_date": "2026-04-27",
+  "checked_at": "2026-11-12T22:25:05.940808+07:00",
+  "details": [
+    {
+      "id": "019d2bfc-f186-70fe-b3fc-98274fa94661",
+      "code": "2.002641",
+      "name": "Thông báo tạm ngừng kinh doanh/ tiếp tục kinh doanh trở lại đối với tổ hợp tác, hợp tác xã, liên hiệp hợp tác xã, chi nhánh, văn phòng đại diện, địa điểm kinh doanh",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1785491942808,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-f186-70fe-b3fc-98274fa94661",
+      "raw_path": "evidence/dvc/details/019d2bfc-f186-70fe-b3fc-98274fa94661.json",
+      "components": [
+        {
+          "section": "* Hồ sơ bao gồm:  - Đối với trường hợp hợp tác xã, liên hiệp hợp tác xã, chi nhánh, văn phòng đại diện, địa điểm kinh doanh thông báo tạm ngừng kinh doanh:",
+          "position": 1,
+          "name": "a) Thông báo tạm ngừng kinh doanh, trong đó bao gồm thông tin về số điện thoại và địa chỉ thư điện tử của người đại diện theo pháp luật của tổ hợp tác, hợp tác xã, liên hiệp hợp tác xã;",
+          "component_code": "000.00.00.G12-222358",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019fb5c2-1f6f-72fa-a1c0-7efd0e36c1b0",
+              "fileName": "Mẫu số 16.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fb5c2-1f6f-72fa-a1c0-7efd0e36c1b0/Mẫu số 16.docx"
+            },
+            {
+              "id": "019fb5c2-349c-708c-8dcc-32533ace4597",
+              "fileName": "Mẫu số 8.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fb5c2-349c-708c-8dcc-32533ace4597/Mẫu số 8.docx"
+            }
+          ]
+        },
+        {
+          "section": "* Hồ sơ bao gồm:  - Đối với trường hợp hợp tác xã, liên hiệp hợp tác xã, chi nhánh, văn phòng đại diện, địa điểm kinh doanh thông báo tạm ngừng kinh doanh:",
+          "position": 2,
+          "name": "b) Bản sao hoặc bản chính nghị quyết của Đại hội thành viên về việc tạm ngừng kinh doanh đối với trường hợp hợp tác xã, liên hiệp hợp tác xã thông báo tạm ngừng kinh doanh.",
+          "component_code": "000.00.00.G12-222359",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "- Đối với trường hợp thông báo tiếp tục kinh doanh trở lại:",
+          "position": 1,
+          "name": "(i) Thông báo tiếp tục kinh doanh trở lại.",
+          "component_code": "000.00.00.G12-333125",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "- Đối với trường hợp thông báo tạm ngừng kinh doanh, tiếp tục kinh doanh trở lại của tổ hợp tác:",
+          "position": 1,
+          "name": "a) Thông báo tạm ngừng kinh doanh, tiếp tục kinh doanh trở lại, trong đó có thông tin về số điện thoại và địa chỉ thư điện tử của người đại diện của tổ hợp tác trong trường hợp người đại diện tổ hợp tác là cá nhân hoặc người đại diện hợp pháp của pháp nhân trong trường hợp người đại diện tổ hợp tác là pháp nhân;",
+          "component_code": "000.00.00.G12-555678",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019fb5c1-6889-7628-adb3-c6acd67dd98b",
+              "fileName": "Mẫu số 16.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fb5c1-6889-7628-adb3-c6acd67dd98b/Mẫu số 16.docx"
+            },
+            {
+              "id": "019fb5c1-7cd1-758b-b6a8-1a2b275a2084",
+              "fileName": "Mẫu số 8.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fb5c1-7cd1-758b-b6a8-1a2b275a2084/Mẫu số 8.docx"
+            }
+          ]
+        },
+        {
+          "section": "- Đối với trường hợp thông báo tạm ngừng kinh doanh, tiếp tục kinh doanh trở lại của tổ hợp tác:",
+          "position": 2,
+          "name": "b) Bản sao hoặc bản chính văn bản ủy quyền của thành viên tổ hợp tác cho một cá nhân hoặc một pháp nhân làm người đại diện tổ hợp tác thực hiện thủ tục đăng ký tổ hợp tác.  Lưu ý: Cơ quan đăng ký kinh doanh cấp xã khai thác, sử dụng thông tin đã có trong các cơ sở dữ liệu để thay thế và không yêu cầu cá nhân, tổ chức thực hiện thủ tục đăng ký tổ hợp tác, hợp tác xã, liên hiệp hợp tác xã nộp bản sao Giấy chứng nhận đăng ký thuế; bản sao hộ chiếu; bản sao Giấy chứng nhận đăng ký đầu tư; bản sao văn bản của cơ quan đăng ký đầu tư chấp thuận về việc góp vốn, mua cổ phần, mua phần vốn góp của nhà đầu tư nước ngoài, tổ chức kinh tế có vốn đầu tư nước ngoài; bản sao quyết định của Tòa án đã có hiệu lực pháp luật; bản sao phán quyết của Trọng tài có hiệu lực và các giấy tờ khác trong thành phần hồ sơ giải quyết thủ tục đăng ký tổ hợp tác, hợp tác xã, liên hiệp hợp tác xã quy định tại Luật Hợp tác xã và Nghị định số 295/2026/NĐ-CP.  Trường hợp không khai thác được thông tin hoặc thông tin khai thác được không đầy đủ, không chính xác thì cơ quan đăng ký kinh doanh cấp xã yêu cầu cá nhân, tổ chức bổ sung bản sao các giấy tờ nêu trên trong trường hợp hồ sơ quy định tại Luật Hợp tác xã và Nghị định số 295/2026/NĐ-CP có yêu cầu để giải quyết thủ tục đăng ký tổ hợp tác, đăng ký hợp tác xã, liên hiệp hợp tác xã theo quy định; Cá nhân, tổ chức thực hiện cập nhật, điều chỉnh thông tin trong các cơ sở dữ liệu theo quy định của pháp luật. Việc khai thác, sử dụng thông tin đã có trong các cơ sở dữ liệu để thay thế thành phần hồ sơ đăng ký tổ hợp tác, hợp tác xã, liên hiệp hợp tác xã trên cơ sở kết nối, chia sẻ thông tin giữa Cơ sở dữ liệu về đăng ký hợp tác xã và các cơ sở dữ liệu khác thực hiện theo thông báo trên Cổng thông tin quốc gia về đăng ký doanh nghiệp.",
+          "component_code": "000.00.00.G12-555679",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "* Trường hợp đăng ký trên môi trường điện tử:",
+          "position": 1,
+          "name": "Hồ sơ đăng ký tổ hợp tác trên môi trường điện tử bao gồm các giấy tờ theo quy định tại Luật Hợp tác xã năm 2023 và Nghị định số 295/2026/NĐ-CP được thể hiện dưới dạng văn bản điện tử. Hồ sơ đăng ký trên môi trường điện tử có giá trị pháp lý tương đương hồ sơ đăng ký bằng bản giấy.",
+          "component_code": "000.00.00.G12-555456",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "* Trường hợp ủy quyền thực hiện thủ tục:",
+          "position": 1,
+          "name": "1. Người được ủy quyền đăng ký thành lập hợp tác xã, liên hiệp hợp tác xã được ghi trong nghị quyết Hội nghị thành lập hợp tác xã, liên hiệp hợp tác xã. Việc ủy quyền lại để thực hiện thủ tục đăng ký thành lập hợp tác xã, liên hiệp hợp tác xã thực hiện theo quy định của pháp luật về dân sự.",
+          "component_code": "000.00.00.G12-444345",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "* Trường hợp ủy quyền thực hiện thủ tục:",
+          "position": 2,
+          "name": "2. Trừ trường hợp quy định tại khoản 1 Điều này, cá nhân ký tên tại văn bản đề nghị đăng ký tổ hợp tác, hợp tác xã, liên hiệp hợp tác xã có thể ủy quyền cho tổ chức, cá nhân khác thực hiện thủ tục đăng ký tổ hợp tác, đăng ký hợp tác xã, liên hiệp hợp tác xã như sau: a) Trường hợp ủy quyền cho cá nhân thực hiện thủ tục đăng ký tổ hợp tác, đăng ký hợp tác xã, liên hiệp hợp tác xã, kèm theo hồ sơ phải có văn bản ủy quyền cho cá nhân thực hiện thủ tục liên quan đến đăng ký tổ hợp tác, đăng ký hợp tác xã, liên hiệp hợp tác xã. Văn bản ủy quyền này không bắt buộc phải công chứng, chứng thực; b) Trường hợp ủy quyền cho tổ chức thực hiện thủ tục đăng ký tổ hợp tác, đăng ký hợp tác xã, liên hiệp hợp tác xã, kèm theo hồ sơ đăng ký phải có bản sao hợp đồng cung cấp dịch vụ với tổ chức làm dịch vụ, giấy giới thiệu hoặc văn bản phân công nhiệm vụ của tổ chức đó cho cá nhân trực tiếp thực hiện thủ tục liên quan đến đăng ký tổ hợp tác, đăng ký hợp tác xã, liên hiệp hợp tác xã.",
+          "component_code": "000.00.00.G12-345666",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "* Trường hợp ủy quyền thực hiện thủ tục:",
+          "position": 3,
+          "name": "3. Trường hợp thực hiện thủ tục đăng ký tổ hợp tác, đăng ký hợp tác xã, liên hiệp hợp tác xã qua dịch vụ bưu chính công ích, khi thực hiện thủ tục, nhân viên bưu chính phải nộp bản sao phiếu gửi hồ sơ theo mẫu do doanh nghiệp cung ứng dịch vụ bưu chính công ích phát hành có chữ ký xác nhận của nhân viên bưu chính và người có thẩm quyền ký văn bản đề nghị đăng ký.",
+          "component_code": "000.00.00.G12-11123400",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "* Trường hợp ủy quyền thực hiện thủ tục:",
+          "position": 4,
+          "name": "4. Trường hợp ủy quyền cho đơn vị cung cấp dịch vụ bưu chính không phải là bưu chính công ích thực hiện thủ tục đăng ký tổ hợp tác, đăng ký hợp tác xã, liên hiệp hợp tác xã thì việc ủy quyền thực hiện theo quy định tại điểm b khoản 2 Điều 12 Nghị định số 295/2026/NĐ-CP.",
+          "component_code": "000.00.00.G12-222345",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "* Trường hợp ủy quyền thực hiện thủ tục:",
+          "position": 5,
+          "name": "5. Người ủy quyền và người được ủy quyền thực hiện thủ tục đăng ký tổ hợp tác, đăng ký hợp tác xã, liên hiệp hợp tác xã chịu trách nhiệm trước pháp luật về tính hợp pháp, trung thực và chính xác của việc ủy quyền.",
+          "component_code": "000.00.00.G12-234345",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "* Trường hợp ủy quyền thực hiện thủ tục:",
+          "position": 6,
+          "name": "6. Người ủy quyền phải xác thực điện tử theo quy định pháp luật về xác thực và định danh điện tử khi thực hiện thủ tục đăng ký thành lập tổ hợp tác, hợp tác xã, liên hiệp hợp tác xã; đăng ký thay đổi người đại diện theo pháp luật của hợp tác xã, liên hiệp hợp tác xã; thông báo thay đổi thông tin về thành viên chính thức, thành viên liên kết góp vốn là tổ chức kinh tế có vốn đầu tư nước ngoài, cá nhân là nhà đầu tư nước ngoài của hợp tác xã, liên hiệp hợp tác xã; đăng ký thay đổi thành viên tổ hợp tác để được cấp đăng ký tổ hợp tác, đăng ký hợp tác xã, liên hiệp hợp tác xã.  Trường hợp việc xác thực điện tử bị gián đoạn thì người ủy quyền thực hiện việc xác thực điện tử sau khi được cấp đăng ký tổ hợp tác, đăng ký hợp tác xã, liên hiệp hợp tác xã. Trường hợp người ủy quyền không xác nhận hoặc xác nhận không ủy quyền thực hiện thủ tục đăng ký sau khi được cấp đăng ký tổ hợp tác, đăng ký hợp tác xã, liên hiệp hợp tác xã thì cơ quan đăng ký kinh doanh cấp xã yêu cầu tổ hợp tác, hợp tác xã, liên hiệp hợp tác xã báo cáo theo quy định tại khoản 6 Điều 7 Nghị định số 295/2026/NĐ-CP.  Trường hợp chưa có tài khoản định danh điện tử để thực hiện xác thực điện tử thì hồ sơ đăng ký tổ hợp tác, hợp tác xã, liên hiệp hợp tác xã phải kèm theo bản sao thẻ Căn cước hoặc thẻ Căn cước công dân hoặc hộ chiếu hoặc hộ chiếu nước ngoài hoặc các giấy tờ có giá trị thay thế hộ chiếu nước ngoài còn hiệu lực của người ủy quyền.  Việc triển khai quy định về xác thực điện tử thực hiện theo kế hoạch xây dựng, nâng cấp Hệ thống thông tin về đăng ký hợp tác xã và được thông báo trên Cổng thông tin quốc gia về đăng ký doanh nghiệp.",
+          "component_code": "000.00.00.G12-345679",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c72-75fa-a590-01d13f85a676",
+          "name": "Giấy xác nhận về việc hợp tác xã, liên hiệp hợp tác xã, chi nhánh, văn phòng đại diện, địa điểm kinh doanh tạm ngừng kinh doanh",
+          "code": "KQ.G12.001000"
+        },
+        {
+          "id": "019d2bb2-1c72-75fa-a590-33de8063c388",
+          "name": "Giấy xác nhận về việc tổ hợp tác tạm ngừng kinh doanh, giấy xác nhận về việc tổ hợp tác tiếp tục kinh doanh trở lại",
+          "code": "KQ.G12.001034"
+        },
+        {
+          "id": "019d2bb2-1c73-70ac-aa18-a04e63915278",
+          "name": "Giấy xác nhận về việc hợp tác xã, liên hiệp hợp tác xã, chi nhánh, văn phòng đại diện, địa điểm kinh doanh tiếp tục kinh doanh trở lại",
+          "code": "KQ.G12.001340"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7c-71ab-9f05-a386e168546d",
+          "name": "Thông tư số 09/2024/TT-BKHĐT của Bộ Kế hoạch và Đầu tư: Ban hành biểu mẫu thực hiện thủ tục đăng ký tổ hợp tác, hợp tác xã, liên hiệp hợp tác xã và quy định về nội dung thông tin, việc cập nhật, khai thác và quản lý Hệ thống thông tin quốc gia về hợp tác xã",
+          "code": "09/2024/TT-BKHĐT"
+        },
+        {
+          "id": "019d2bb3-5d7d-7398-be4d-8105bcd345a7",
+          "name": "Thông tư số 43/2025/TT-BTC của Bộ Tài chính: Ban hành biểu mẫu sử dụng trong lĩnh vực quản lý nhà nước đối với hộ kinh doanh, tổ hợp tác, hợp tác xã, liên hiệp hợp tác xã khi tổ chức chính quyền địa phương 02 cấp",
+          "code": "43/2025/TT-BTC"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b671-d9e439ecbebe",
+          "name": "Luật Hợp tác xã",
+          "code": "17/2023/QH15"
+        },
+        {
+          "id": "019fb0de-6350-728a-9312-5ecdeb3da670",
+          "name": "Về đăng ký tổ hợp tác, hợp tác xã, liên hiệp hợp tác xã",
+          "code": "295/2026/NĐ-CP "
+        }
+      ]
+    }
+  ],
+  "lookup_status": "retrieved",
+  "currency_status": "snapshot_requires_later_amendment_check",
+  "errors": []
+}

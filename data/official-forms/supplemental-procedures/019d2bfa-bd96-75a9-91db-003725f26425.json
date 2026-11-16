@@ -1,0 +1,95 @@
+{
+  "id": "dvc-019d2bfa-bd96-75a9-91db-003725f26425",
+  "procedure_code": "3.000443",
+  "name": "Công nhận khu vực biển cho cá nhân Việt Nam để nuôi trồng thủy sản",
+  "domain": "Biển và hải đảo",
+  "managing_agency": "Bộ Nông nghiệp và Môi trường",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:18.006677+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfa-bd96-75a9-91db-003725f26425",
+      "code": "3.000443",
+      "name": "Công nhận khu vực biển cho cá nhân Việt Nam để nuôi trồng thủy sản",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1775891746281,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfa-bd96-75a9-91db-003725f26425",
+      "raw_path": "evidence/dvc/details/019d2bfa-bd96-75a9-91db-003725f26425.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Báo cáo tình hình sử dụng khu vực biển",
+          "component_code": "G10-KQ007768",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Đơn đề nghị công nhận khu vực biển để nuôi trồng thủy sản",
+          "component_code": "G10-KQ007766",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 3,
+          "name": "Sơ đồ khu vực biển",
+          "component_code": "G10-KQ007767",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c6d-743d-a39e-14afd9824e80",
+          "name": "Văn bản thông báo từ chối/không đủ điều kiện",
+          "code": "KQ.G10.001197"
+        },
+        {
+          "id": "019d2bb2-1c6e-7797-a21a-cd3964769e0e",
+          "name": "Quyết định về việc giao khu vực biển",
+          "code": "KQ.G10.001439"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7e-72d1-afea-45ea9b37796c",
+          "name": "Quy định phân định thẩm quyền của chính quyền địa phương 02 cấp trong lĩnh vực quản lý nhà nước của Bộ Nông nghiệp và Môi trường",
+          "code": "Nghị định số 131/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7f-719e-b470-1a7347aeeb66",
+          "name": "Nghị định số 65/2025/NĐ-CP ngày 12 tháng 3 năm 2025 của Chính phủ sửa đổi, bổ sung một số điều của Nghị định số 40/2016/NĐ-CP ngày 15 tháng 5 năm 2016 của Chính phủ quy định chi tiết thi hành một số điều của Luật Tài nguyên, môi trường biển và hải đảo và Nghị định số 11/2021/NĐ-CP ngày 10 tháng 02 năm 2021 của Chính phủ quy định việc giao các khu vực biển nhất định cho tổ chức, cá nhân khai thác, sử dụng tài nguyên biển.",
+          "code": "65/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d87-7195-a441-73c6f24f8ceb",
+          "name": "44/2026/NĐ-CP",
+          "code": "44/2026/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d86-7760-a63d-12bc90d119b5",
+          "name": "Nghị định 11/2021/NĐ-CP",
+          "code": "11/2021/NĐ-CP"
+        }
+      ]
+    }
+  ]
+}

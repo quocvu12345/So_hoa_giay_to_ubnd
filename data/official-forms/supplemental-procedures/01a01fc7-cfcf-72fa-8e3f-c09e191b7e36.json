@@ -1,0 +1,100 @@
+{
+  "id": "dvc-01a01fc7-cfcf-72fa-8e3f-c09e191b7e36",
+  "procedure_code": "1.116458",
+  "name": "(Hà Nội) Giao đất ở có thu tiền sử dụng đất không thông qua đấu giá, không đấu thầu lựa chọn nhà đầu tư thực hiện dự án có sử dụng đất đối với cá nhân là cán bộ, công chức, viên chức, sĩ quan tại ngũ, quân nhân chuyên nghiệp, công chức quốc phòng, công nhân và viên chức quốc phòng, sĩ quan, hạ sĩ quan, công nhân công an, người làm công tác cơ yếu và người làm công tác khác trong tổ chức cơ yếu hưởng lương từ ngân sách nhà nước mà chưa được giao đất ở, nhà ở; giáo viên, nhân viên y tế đang công tác tại các xã biên giới, hải đảo thuộc vùng có điều kiện kinh tế - xã hội khó khăn, vùng có điều kiện kinh tế - xã hội đặc biệt khó khăn nhưng chưa có đất ở, nhà ở tại nơi công tác hoặc chưa được hưởng chính sách hỗ trợ về nhà ở theo quy định của pháp luật về nhà ở; cá nhân thường trú tại xã mà không có đất ở và chưa được Nhà nước giao đất ở hoặc chưa được hưởng chính sách hỗ trợ về nhà ở theo quy định của pháp luật về nhà ở",
+  "domain": "Đất đai",
+  "managing_agency": "UBND Thành phố Hà Nội",
+  "inventory_date": null,
+  "scope": "hanoi",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.475757+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "01a01fc7-cfcf-72fa-8e3f-c09e191b7e36",
+      "code": "1.116458",
+      "name": "(Hà Nội) Giao đất ở có thu tiền sử dụng đất không thông qua đấu giá, không đấu thầu lựa chọn nhà đầu tư thực hiện dự án có sử dụng đất đối với cá nhân là cán bộ, công chức, viên chức, sĩ quan tại ngũ, quân nhân chuyên nghiệp, công chức quốc phòng, công nhân và viên chức quốc phòng, sĩ quan, hạ sĩ quan, công nhân công an, người làm công tác cơ yếu và người làm công tác khác trong tổ chức cơ yếu hưởng lương từ ngân sách nhà nước mà chưa được giao đất ở, nhà ở; giáo viên, nhân viên y tế đang công tác tại các xã biên giới, hải đảo thuộc vùng có điều kiện kinh tế - xã hội khó khăn, vùng có điều kiện kinh tế - xã hội đặc biệt khó khăn nhưng chưa có đất ở, nhà ở tại nơi công tác hoặc chưa được hưởng chính sách hỗ trợ về nhà ở theo quy định của pháp luật về nhà ở; cá nhân thường trú tại xã mà không có đất ở và chưa được Nhà nước giao đất ở hoặc chưa được hưởng chính sách hỗ trợ về nhà ở theo quy định của pháp luật về nhà ở",
+      "state": "ACTIVE",
+      "type": "SPECIFIC",
+      "is_ward": true,
+      "updated_at_source": 1787306785086,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/01a01fc7-cfcf-72fa-8e3f-c09e191b7e36",
+      "raw_path": "evidence/dvc/details/01a01fc7-cfcf-72fa-8e3f-c09e191b7e36.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Đơn theo Mẫu số 01 ban hành kèm theo Quyết định số 105/2026/QĐ-UBND ngày 25/7/2026 của UBND thành phố.",
+          "component_code": "MD01.105.2026",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "01a01e84-bbb1-76fc-b6bd-174934b88168",
+              "fileName": "Mẫu số 01.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/01a01e84-bbb1-76fc-b6bd-174934b88168/Mẫu số 01.docx"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "id": "01a01e8e-38de-77e0-b5ba-8fcb14084d30",
+          "name": "Quyết định giao đất, cho thuê đất, cho phép chuyển mục đích sử dụng đất, giao đất và giao rừng, cho thuê đất và cho thuê rừng theo Mẫu số 06 ban hành kèm theo Quyết định số 105/2026/QĐ-UBND ngày 25/7/2026 của UBND Thành phố hoặc Quyết định gia hạn sử dụng đất khi hết thời hạn sử dụng đất theo Mẫu số 09 ban hành kèm theo Quyết định số 105/2026/QĐ-UBND ngày 25/7/2026 của UBND Thành phố.",
+          "code": "KQ.H26.105.2026.3"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d86-7760-a644-ce39f72a6124",
+          "name": "Sửa đổi, bổ sung một số điều của các nghị định  quy định chi tiết thi hành Luật Đất đai",
+          "code": "226/2025/NĐ-CP"
+        },
+        {
+          "id": "019fdfab-0f98-7309-b6da-edcf4b3418a4",
+          "name": "Về việc phân cấp thực hiện một số nhiệm vụ trong lĩnh vực đất đai trên địa bàn thành phố Hà Nội",
+          "code": "33/2026/QĐ-UBND "
+        },
+        {
+          "id": "019fdfab-9c87-71de-a747-04badf16fb31",
+          "name": "Về việc ban hành Quy định về điều chỉnh, sửa đổi, bổ sung, bãi bỏ một số nội dung của Quyết định số 33/2026/QĐ-UBND ngày 25/3/2026 của UBND Thành phố về việc phân cấp thực hiện một số nhiệm vụ trong lĩnh vực đất đai trên địa bàn thành phố Hà Nội; ban hành trình tự, thủ tục hành chính về đất đai trên địa bàn thành phố Hà Nội",
+          "code": "105/2026/QĐ-UBND"
+        },
+        {
+          "id": "019fe63e-5ffc-73a2-9971-335d80f4d73f",
+          "name": "Luật số 43/2024/QH15 ngày 29/6/2024 sửa đổi, bổ sung một số điều của Luật Đất đai số 31/2024/QH15, Luật Nhà ở số 27/2023/QH15, Luật Kinh doanh bất động sản số 29/2023/QH15 và Luật Các tổ chức tín dụng số 32/2024/QH15",
+          "code": "43/2024/QH15 ngày 29/6/2024"
+        },
+        {
+          "id": "019fb0eb-7629-732a-ae85-4507d8b9cbc8",
+          "name": "Nghị định số 102/2024/NĐ-CP ngày 30/7/2024 của Chính phủ quy định chi tiết thi hành một số điều của Luật Đất đai",
+          "code": "102/2024/NĐ-CP "
+        },
+        {
+          "id": "019ed88c-73bf-73ed-a2c9-ebbe831f989d",
+          "name": "quy định chi tiết và hướng dẫn một số điều của Nghị quyết số 254/2025/QH15 của Quốc hội quy định một số cơ chế, chính sách tháo gỡ khó khăn vướng mắc trong tổ chức thi hành Luật Đất đai",
+          "code": "49/2026/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afeb-9ac6648a4b4f",
+          "name": "Quy định về phân định thẩm quyền của chính quyền địa phương 02 cấp, phân quyền, phân cấp trong lĩnh vực đất đai",
+          "code": "151/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d87-7195-a441-ef586356e15f",
+          "name": "Luật Quy hoạch đô thị và nông thôn số 47/2024/QH15",
+          "code": "47/2024/QH15"
+        },
+        {
+          "id": "019f17b0-677b-774f-9888-8ac6fac4a6b4",
+          "name": " Luật số 58/2024/QH15 của Quốc hội.",
+          "code": "Luật số 58/2024/QH15 của Quốc hội"
+        }
+      ]
+    }
+  ]
+}

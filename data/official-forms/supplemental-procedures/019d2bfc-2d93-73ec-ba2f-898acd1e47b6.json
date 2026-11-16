@@ -1,0 +1,427 @@
+{
+  "id": "dvc-019d2bfc-2d93-73ec-ba2f-898acd1e47b6",
+  "procedure_code": "1.007695",
+  "name": "Khai; miễn, giảm thuế sử dụng đất phi nông nghiệp/ Khai thuế sử dụng đất nông nghiệp",
+  "domain": "Thuế",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.956318+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfc-2d93-73ec-ba2f-898acd1e47b6",
+      "code": "1.007695",
+      "name": "Khai; miễn, giảm thuế sử dụng đất phi nông nghiệp/ Khai thuế sử dụng đất nông nghiệp",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1785399198935,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-2d93-73ec-ba2f-898acd1e47b6",
+      "raw_path": "evidence/dvc/details/019d2bfc-2d93-73ec-ba2f-898acd1e47b6.json",
+      "components": [
+        {
+          "section": "(i-1) Khai thuế sử dụng đất phi nông nghiệp - Đối với tổ chức:",
+          "position": 1,
+          "name": "Tờ khai thuế sử dụng đất phi nông nghiệp mẫu số 02/TK-SDDPNN Phụ lục I ban hành kèm theo Thông tư số 89/2026/TT-BTC ngày 30/6/2026 của Bộ Tài chính",
+          "component_code": "G12.0016142",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019fa844-6d75-721d-8a33-4dd977b25d08",
+              "fileName": "2. 02-TK-SDDPNN.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa844-6d75-721d-8a33-4dd977b25d08/2. 02-TK-SDDPNN.docx"
+            }
+          ]
+        },
+        {
+          "section": "(i-1) Khai thuế sử dụng đất phi nông nghiệp - Đối với tổ chức:",
+          "position": 2,
+          "name": "Bản sao các giấy tờ liên quan đến thửa đất chịu thuế: Quyết định giao đất, Quyết định hoặc Hợp đồng cho thuê đất, Quyết định cho phép chuyển mục đích sử dụng đất (nếu có)",
+          "component_code": "G12.0016143",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "(i-1) Khai thuế sử dụng đất phi nông nghiệp - Đối với tổ chức:",
+          "position": 3,
+          "name": "Bản sao các giấy tờ chứng minh thuộc diện được miễn, giảm thuế (nếu có)",
+          "component_code": "G12.0016144",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "(i-1) Khai thuế sử dụng đất phi nông nghiệp - Đối với tổ chức:",
+          "position": 4,
+          "name": "Người nộp thuế không phải nộp Giấy chứng nhận quyền sử dụng đất trong hồ sơ khai thuế. Cơ quan thuế khai thác, sử dụng thông tin về Giấy chứng nhận quyền sử dụng đất trong cơ sở dữ liệu quốc gia về đất đai.",
+          "component_code": "G12.0016475",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "(i-1) Khai thuế sử dụng đất phi nông nghiệp - Đối với tổ chức:",
+          "position": 5,
+          "name": "Từ ngày 01/7/2026 đến thời điểm theo lộ trình của cơ quan thuế theo quy định tại khoản 2 Điều 99 Thông tư số 89/2026/TT-BTC thì các tờ khai số 01/TK-SDDPNN, 02/TK-SDDPNN thực hiện theo mẫu ban hành kèm theo Nghị định số 373/2025/NĐ-CP ngày 31/12/2025 của Chính phủ, tờ khai số 03/TKTH-SDDPNN thực hiện theo mẫu ban hành kèm theo Thông tư số 80/2021/TT-BTC ngày 29/9/2021 của Bộ Tài chính (đã được sửa đổi, bổ sung).",
+          "component_code": "G12.0011888",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019fa850-2eb0-71bc-bf6d-da4c0609e48d",
+              "fileName": "02 TK SDDPNN NĐ 373.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa850-2eb0-71bc-bf6d-da4c0609e48d/02 TK SDDPNN NĐ 373.docx"
+            },
+            {
+              "id": "019fa850-307c-7180-bd75-f773f3b1e722",
+              "fileName": "01 TK SĐPNN NĐ 373.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa850-307c-7180-bd75-f773f3b1e722/01 TK SĐPNN NĐ 373.docx"
+            },
+            {
+              "id": "019fa850-8308-752d-b968-a2e85e269a4e",
+              "fileName": "03 TKTH SDDPNN TT 80.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa850-8308-752d-b968-a2e85e269a4e/03 TKTH SDDPNN TT 80.docx"
+            }
+          ]
+        },
+        {
+          "section": "(i-2) Khai thuế sử dụng đất phi nông nghiệp - Đối với hộ gia đình, cá nhân:",
+          "position": 1,
+          "name": "Tờ khai thuế sử dụng đất phi nông theo mẫu số 01/TK-SDDPNN Phụ lục I ban hành kèm theo Thông tư số 89/2026/TT-BTC ngày 30/6/2026 của Bộ Tài chính",
+          "component_code": "G12.0016185",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019fa847-e5dc-73b7-af76-259670940eb0",
+              "fileName": "1. 01-TK-SDDPNN.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa847-e5dc-73b7-af76-259670940eb0/1. 01-TK-SDDPNN.docx"
+            }
+          ]
+        },
+        {
+          "section": "(i-2) Khai thuế sử dụng đất phi nông nghiệp - Đối với hộ gia đình, cá nhân:",
+          "position": 2,
+          "name": "Tờ khai tổng hợp thuế sử dụng đất phi nông nghiệp (áp dụng đối với hộ gia đình, cá nhân kê khai tổng hợp đất ở) theo mẫu số 03/TKTH-SDDPNN Phụ lục I ban hành kèm theo Thông tư số 89/2026/TT-BTC ngày 30/6/2026 của Bộ Tài chính",
+          "component_code": "G12.0015677",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019fa84a-541e-755e-94a2-52d12ecf8ae3",
+              "fileName": "3. 03-TKTH-SDDPNN.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa84a-541e-755e-94a2-52d12ecf8ae3/3. 03-TKTH-SDDPNN.docx"
+            }
+          ]
+        },
+        {
+          "section": "(i-2) Khai thuế sử dụng đất phi nông nghiệp - Đối với hộ gia đình, cá nhân:",
+          "position": 3,
+          "name": "Bản sao các giấy tờ liên quan đến thửa đất chịu thuế: Quyết định giao đất, Quyết định hoặc Hợp đồng cho thuê đất, Quyết định cho phép chuyển mục đích sử dụng đất (nếu có)",
+          "component_code": "G12.0016143",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "(i-2) Khai thuế sử dụng đất phi nông nghiệp - Đối với hộ gia đình, cá nhân:",
+          "position": 4,
+          "name": "Người nộp thuế không phải nộp Giấy chứng nhận quyền sử dụng đất trong hồ sơ khai thuế. Cơ quan thuế khai thác, sử dụng thông tin về Giấy chứng nhận quyền sử dụng đất trong cơ sở dữ liệu quốc gia về đất đai",
+          "component_code": "G12.0016478",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "(i-2) Khai thuế sử dụng đất phi nông nghiệp - Đối với hộ gia đình, cá nhân:",
+          "position": 5,
+          "name": "Bản sao các giấy tờ chứng minh thuộc diện được miễn, giảm thuế (nếu có)",
+          "component_code": "G12.0016144",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "(i-2) Khai thuế sử dụng đất phi nông nghiệp - Đối với hộ gia đình, cá nhân:",
+          "position": 6,
+          "name": "Từ ngày 01/7/2026 đến thời điểm theo lộ trình của cơ quan thuế theo quy định tại khoản 2 Điều 99 Thông tư số 89/2026/TT-BTC thì các tờ khai số 01/TK-SDDPNN, 02/TK-SDDPNN thực hiện theo mẫu ban hành kèm theo Nghị định số 373/2025/NĐ-CP ngày 31/12/2025 của Chính phủ, tờ khai số 03/TKTH-SDDPNN thực hiện theo mẫu ban hành kèm theo Thông tư số 80/2021/TT-BTC ngày 29/9/2021 của Bộ Tài chính (đã được sửa đổi, bổ sung).",
+          "component_code": "G12.0011888",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019fa850-2eb0-71bc-bf6d-da4c0609e48d",
+              "fileName": "02 TK SDDPNN NĐ 373.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa850-2eb0-71bc-bf6d-da4c0609e48d/02 TK SDDPNN NĐ 373.docx"
+            },
+            {
+              "id": "019fa850-307c-7180-bd75-f773f3b1e722",
+              "fileName": "01 TK SĐPNN NĐ 373.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa850-307c-7180-bd75-f773f3b1e722/01 TK SĐPNN NĐ 373.docx"
+            },
+            {
+              "id": "019fa850-8308-752d-b968-a2e85e269a4e",
+              "fileName": "03 TKTH SDDPNN TT 80.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa850-8308-752d-b968-a2e85e269a4e/03 TKTH SDDPNN TT 80.docx"
+            }
+          ]
+        },
+        {
+          "section": "(ii) Miễn, giảm thuế sử dụng đất phi nông nghiệp:",
+          "position": 1,
+          "name": "Văn bản đề nghị theo mẫu số 01/MGTH Phụ lục III ban hành kèm theo Thông tư số 89/2026/TT-BTC ngày 30/6/2026 của Bộ Tài chính",
+          "component_code": "G12.00015779",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019fa6e6-30c6-700b-b2c0-6db5ffbf5a44",
+              "fileName": "01 - MGTH-TT89.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa6e6-30c6-700b-b2c0-6db5ffbf5a44/01 - MGTH-TT89.docx"
+            }
+          ]
+        },
+        {
+          "section": "(ii) Miễn, giảm thuế sử dụng đất phi nông nghiệp:",
+          "position": 2,
+          "name": "Bản sao các giấy tờ liên quan đến thửa đất chịu thuế như: Quyết định giao đất, Quyết định hoặc Hợp đồng cho thuê đất, Quyết định cho phép chuyển mục đích sử dụng đất",
+          "component_code": "G12.0011889",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "(ii) Miễn, giảm thuế sử dụng đất phi nông nghiệp:",
+          "position": 3,
+          "name": "Người nộp thuế không phải nộp Giấy chứng nhận quyền sử dụng đất trong hồ sơ miễn thuế, giảm thuế. Cơ quan thuế khai thác, sử dụng thông tin về Giấy chứng nhận quyền sử dụng đất trong cơ sở dữ liệu quốc gia về đất đai",
+          "component_code": "G12.0011890",
+          "original_quantity": 0,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "(ii) Miễn, giảm thuế sử dụng đất phi nông nghiệp:",
+          "position": 4,
+          "name": "Bản sao Giấy tờ chứng minh thuộc đối tượng miễn, giảm thuế sử dụng đất phi nông nghiệp",
+          "component_code": "G12.0016147",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "(ii) Miễn, giảm thuế sử dụng đất phi nông nghiệp:",
+          "position": 5,
+          "name": "Người nộp thuế không phải nộp hồ sơ đề nghị miễn thuế, giảm thuế trong các trường hợp sau: (i) Thuế sử dụng đất phi nông nghiệp phải nộp hằng năm của hộ gia đình, cá nhân từ 50.000 đồng trở xuống; (ii) Thuế sử dụng đất phi nông nghiệp đối với đất ở trong các trường hợp quy định tại khoản 4, 5 và khoản 6 Điều 9, khoản 2 và khoản 3 Điều 10 Luật thuế sử dụng đất phi nông nghiệp",
+          "component_code": "G12.0011891",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "(ii) Miễn, giảm thuế sử dụng đất phi nông nghiệp:",
+          "position": 6,
+          "name": "Từ ngày 01/7/2026 đến thời điểm theo lộ trình của cơ quan thuế quy định tại khoản 2 Điều 99 Thông tư số 89/2026/TT-BTC, văn bản đề nghị số 01/MGTH thực hiện theo mẫu biểu ban hành kèm theo Thông tư số 80/2021/TT-BTC ngày 29/9/2021 của Bộ Tài chính (đã được sửa đổi, bổ sung)",
+          "component_code": "G12.0011892",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019fa856-dc13-7101-b5d4-556479e15cd4",
+              "fileName": "01 MGTH TT 80.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa856-dc13-7101-b5d4-556479e15cd4/01 MGTH TT 80.docx"
+            }
+          ]
+        },
+        {
+          "section": "(iii) Khai thuế sử dụng đất nông nghiệp:",
+          "position": 1,
+          "name": "Tờ khai thuế sử dụng đất nông nghiệp áp dụng đối với tổ chức theo mẫu số 01/SDDNN Phụ lục I ban hành kèm theo Thông tư số 89/2026/TT-BTC ngày 30/6/2026 của Bộ Tài chính",
+          "component_code": "G12.0016239",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019fa858-5607-772b-9804-29c0a33b7e89",
+              "fileName": "4. 01.SDDNN.doc",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa858-5607-772b-9804-29c0a33b7e89/4. 01.SDDNN.doc"
+            }
+          ]
+        },
+        {
+          "section": "(iii) Khai thuế sử dụng đất nông nghiệp:",
+          "position": 2,
+          "name": "Tờ khai thuế sử dụng đất nông nghiệp áp dụng đối với hộ gia đình, cá nhân theo mẫu số 02/SDDNN Phụ lục I ban hành kèm theo Thông tư số 89/2026/TT-BTC ngày 30/6/2026 của Bộ Tài chính",
+          "component_code": "G12.0016140",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019fa859-4f62-7141-b06d-77da55125fa9",
+              "fileName": "5. 02.SDDNN.doc",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa859-4f62-7141-b06d-77da55125fa9/5. 02.SDDNN.doc"
+            }
+          ]
+        },
+        {
+          "section": "(iii) Khai thuế sử dụng đất nông nghiệp:",
+          "position": 3,
+          "name": "Tờ khai thuế sử dụng đất nông nghiệp áp dụng đối với đất trồng cây lâu năm thu hoạch một lần theo mẫu số 03/SDDNN Phụ lục I ban hành kèm theo Thông tư số 89/2026/TT-BTC ngày 30/6/2026 của Bộ Tài chính",
+          "component_code": "G12.0016141",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019fa859-edcc-75ca-ada3-89ec9fea6b64",
+              "fileName": "6. 03.SDDNN.doc",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa859-edcc-75ca-ada3-89ec9fea6b64/6. 03.SDDNN.doc"
+            }
+          ]
+        },
+        {
+          "section": "(iii) Khai thuế sử dụng đất nông nghiệp:",
+          "position": 4,
+          "name": "Bản sao các giấy tờ liên quan đến việc xác định miễn thuế, giảm thuế (nếu có)",
+          "component_code": "G12.0016240",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "(iii) Khai thuế sử dụng đất nông nghiệp:",
+          "position": 5,
+          "name": "Từ ngày 01/7/2026 đến thời điểm theo lộ trình của cơ quan thuế quy định tại khoản 2 Điều 99 Thông tư số 89/2026/TT-BTC, các tờ khai số 01/SDDNN, 02/SDDNN, 03/SDDNN thực hiện theo mẫu ban hành kèm theo Thông tư số 80/2021/TT-BTC ngày 29/9/2021 của Bộ Tài chính (đã được sửa đổi, bổ sung)",
+          "component_code": "G12.0016241",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019fa85a-f602-7158-b402-d54388c04325",
+              "fileName": "03 SDDNN TT 80.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa85a-f602-7158-b402-d54388c04325/03 SDDNN TT 80.docx"
+            },
+            {
+              "id": "019fa85a-f733-7054-b6f8-01e95f56d198",
+              "fileName": "02 SDDNN TT 80.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa85a-f733-7054-b6f8-01e95f56d198/02 SDDNN TT 80.docx"
+            },
+            {
+              "id": "019fa85a-f851-7179-a473-fac60a4df082",
+              "fileName": "01 SDDNN TT 80.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa85a-f851-7179-a473-fac60a4df082/01 SDDNN TT 80.docx"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c71-7574-afe7-dc94efc6614d",
+          "name": "Thông báo nộp tiền thuế sử dụng đất phi nông nghiệp (mẫu số 01/TB-SDDPNN)",
+          "code": "KQ.G12.000501"
+        },
+        {
+          "id": "019d2bb2-1c73-70ac-aa1a-42fe8728630c",
+          "name": "Quyết định miễn thuế, giảm thuế (mẫu số 03/MGTH)",
+          "code": "KQ.G12.001446"
+        },
+        {
+          "id": "019fb10f-3c5f-7129-a0a8-3f5064df8b9b",
+          "name": "Thông báo nộp tiển thuế sử dụng đất nông nghiệp (mẫu số 01/TB-SDDNN)",
+          "code": "KQ.G12.000508"
+        },
+        {
+          "id": "019d2bb2-1c73-70ac-aa1a-4454ae3736c2",
+          "name": "Thông báo không được miễn thuế, giảm thuế (mẫu số 04/MGTH )",
+          "code": "KQ.G12.001447"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019e5e83-1282-771d-9014-49799413a4e5",
+          "name": "Luật số 108/2025/QH15 của Quốc hội: Luật Quản lý thuế",
+          "code": "108/2025/QH15"
+        },
+        {
+          "id": "019f64ed-e026-7299-b5f2-ca44a3964050",
+          "name": "Nghị định về thực hiện thủ tục hành chính theo cơ chế một cửa, một cửa liên thông tại Bộ phận Một cửa và Cổng Dịch vụ công quốc gia.",
+          "code": "118/2025/NĐ-CP "
+        },
+        {
+          "id": "019f356e-75e3-7494-a2f3-672d8dce61a6",
+          "name": "QUY ĐỊNH CHI TIẾT MỘT SỐ ĐIỀU VÀ BIỆN PHÁP ĐỂ TỔ CHỨC, HƯỚNG DẪN THI HÀNH LUẬT QUẢN LÝ THUẾ",
+          "code": "252/2026/NĐ-CP"
+        },
+        {
+          "id": "019f8db3-9765-740b-8b90-682677b9c421",
+          "name": "Thông tư quy định chi tiết một số điều của Luật Quản lý thuế và Nghị định số 252/2026/NĐ-CP của Chính phủ quy định chi tiết một số điều và biện pháp để tổ chức, hướng dẫn thi hành Luật Quản lý thuế",
+          "code": "89/2026/TT-BTC"
+        }
+      ]
+    }
+  ]
+}

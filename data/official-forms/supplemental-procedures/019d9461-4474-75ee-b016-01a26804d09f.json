@@ -1,0 +1,335 @@
+{
+  "id": "dvc-019d9461-4474-75ee-b016-01a26804d09f",
+  "procedure_code": "1.007607",
+  "name": "Chấm dứt hiệu lực mã số thuế",
+  "domain": "Thuế",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.844129+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d9461-4474-75ee-b016-01a26804d09f",
+      "code": "1.007607",
+      "name": "Chấm dứt hiệu lực mã số thuế",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1784861594375,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d9461-4474-75ee-b016-01a26804d09f",
+      "raw_path": "evidence/dvc/details/019d9461-4474-75ee-b016-01a26804d09f.json",
+      "components": [
+        {
+          "section": "(i) Chấm dứt hiệu lực mã số thuế đối với tổ chức kinh tế, tổ chức khác và đơn vị phụ thuộc (trừ trường hợp đăng ký thuế theo cơ chế một cửa liên thông qua cơ quan đăng ký kinh doanh):",
+          "position": 1,
+          "name": "Văn bản đề nghị chấm dứt hiệu lực mã số thuế mẫu số 24/ĐKT ban hành kèm theo Thông tư số 90/2026/TT-BTC",
+          "component_code": "G12.0003748",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019f8e5c-a6cb-7269-8f76-33cfd1cde685",
+              "fileName": "27.Mẫu 24-ĐKT Đề nghị chấm dứt MST.doc",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8e5c-a6cb-7269-8f76-33cfd1cde685/27.Mẫu 24-ĐKT Đề nghị chấm dứt MST.doc"
+            }
+          ]
+        },
+        {
+          "section": "(i) Chấm dứt hiệu lực mã số thuế đối với tổ chức kinh tế, tổ chức khác và đơn vị phụ thuộc (trừ trường hợp đăng ký thuế theo cơ chế một cửa liên thông qua cơ quan đăng ký kinh doanh):",
+          "position": 2,
+          "name": "Đối với đơn vị chủ quản, hồ sơ là bản sao của một trong các giấy tờ sau: quyết định giải thể, quyết định chia, hợp đồng hợp nhất, hợp đồng sáp nhập, quyết định thu hồi giấy chứng nhận đăng ký hoạt động của cơ quan có thẩm quyền, thông báo chấm dứt hoạt động, quyết định chuyển đổi",
+          "component_code": "G12.0003111",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "(i) Chấm dứt hiệu lực mã số thuế đối với tổ chức kinh tế, tổ chức khác và đơn vị phụ thuộc (trừ trường hợp đăng ký thuế theo cơ chế một cửa liên thông qua cơ quan đăng ký kinh doanh):",
+          "position": 3,
+          "name": "Trường hợp đơn vị chủ quản có các đơn vị phụ thuộc đã được cấp mã số thuế thì đơn vị chủ quản phải có văn bản thông báo chấm dứt hoạt động gửi cho các đơn vị phụ thuộc để yêu cầu đơn vị phụ thuộc thực hiện thủ tục chấm dứt hiệu lực mã số thuế với cơ quan thuế quản lý đơn vị phụ thuộc trước khi chấm dứt hiệu lực mã số thuế của đơn vị chủ quản",
+          "component_code": "G12.0003112",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "(i) Chấm dứt hiệu lực mã số thuế đối với tổ chức kinh tế, tổ chức khác và đơn vị phụ thuộc (trừ trường hợp đăng ký thuế theo cơ chế một cửa liên thông qua cơ quan đăng ký kinh doanh):",
+          "position": 4,
+          "name": "Trường hợp đơn vị phụ thuộc chấm dứt hiệu lực mã số thuế nhưng không có khả năng hoàn thành nghĩa vụ thuế với ngân sách nhà nước theo quy định của pháp luật về quản lý thuế thì đơn vị chủ quản có văn bản điện tử cam kết chịu trách nhiệm kế thừa toàn bộ khoản nghĩa vụ thuế của đơn vị phụ thuộc gửi cơ quan thuế quản lý đơn vị phụ thuộc và tiếp tục thực hiện nghĩa vụ thuế của đơn vị phụ thuộc với cơ quan thuế quản lý đơn vị phụ thuộc sau khi mã số thuế của đơn vị phụ thuộc đã chấm dứt hiệu lực",
+          "component_code": "G12.0003580",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "(i) Chấm dứt hiệu lực mã số thuế đối với tổ chức kinh tế, tổ chức khác và đơn vị phụ thuộc (trừ trường hợp đăng ký thuế theo cơ chế một cửa liên thông qua cơ quan đăng ký kinh doanh):",
+          "position": 5,
+          "name": "Đối với đơn vị phụ thuộc, hồ sơ là bản sao của một trong các giấy tờ sau: quyết định hoặc thông báo chấm dứt hoạt động đơn vị phụ thuộc, quyết định thu hồi giấy chứng nhận đăng ký hoạt động đối với đơn vị phụ thuộc của cơ quan có thẩm quyền",
+          "component_code": "G12.0003113",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "(ii) Chấm dứt hiệu lực mã số thuế của đơn vị phụ thuộc của doanh nghiệp, đơn vị phụ thuộc của hợp tác xã",
+          "position": 1,
+          "name": "Văn bản đề nghị chấm dứt hiệu lực mã số thuế mẫu số 24/ĐKT ban hành kèm theo Thông tư số 90/2026/TT-BTC",
+          "component_code": "G12.0003748",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019f8e5c-a6cb-7269-8f76-33cfd1cde685",
+              "fileName": "27.Mẫu 24-ĐKT Đề nghị chấm dứt MST.doc",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8e5c-a6cb-7269-8f76-33cfd1cde685/27.Mẫu 24-ĐKT Đề nghị chấm dứt MST.doc"
+            }
+          ]
+        },
+        {
+          "section": "(ii) Chấm dứt hiệu lực mã số thuế của đơn vị phụ thuộc của doanh nghiệp, đơn vị phụ thuộc của hợp tác xã",
+          "position": 2,
+          "name": "Bản sao quyết định hoặc thông báo của doanh nghiệp, hợp tác xã về chấm dứt hoạt động chi nhánh, văn phòng đại diện; bản sao quyết định thu hồi giấy chứng nhận đăng ký hoạt động chi nhánh, văn phòng đại diện của cơ quan nhà nước có thẩm quyền",
+          "component_code": "G12.0003114",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "(iii) Chấm dứt hiệu lực mã số thuế đối với nhà thầu nước ngoài, nhà thầu phụ nước ngoài, người điều hành, doanh nghiệp liên doanh, tổ chức được Chính phủ Việt Nam giao nhiệm vụ tiếp nhận phần được chia của Việt Nam thuộc các mỏ dầu khí tại vùng chồng lấn, nhà thầu, nhà đầu tư tham gia hợp đồng dầu khí, công ty mẹ - Tập đoàn Công nghiệp - Năng lượng Quốc gia Việt Nam đại diện nước chủ nhà nhận phần lãi được chia từ các hợp đồng dầu khí",
+          "position": 1,
+          "name": "Văn bản đề nghị chấm dứt hiệu lực mã số thuế mẫu số 24/ĐKT ban hành kèm theo Thông tư số 90/2026/TT-BTC",
+          "component_code": "G12.0003748",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019f8e5c-a6cb-7269-8f76-33cfd1cde685",
+              "fileName": "27.Mẫu 24-ĐKT Đề nghị chấm dứt MST.doc",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8e5c-a6cb-7269-8f76-33cfd1cde685/27.Mẫu 24-ĐKT Đề nghị chấm dứt MST.doc"
+            }
+          ]
+        },
+        {
+          "section": "(iii) Chấm dứt hiệu lực mã số thuế đối với nhà thầu nước ngoài, nhà thầu phụ nước ngoài, người điều hành, doanh nghiệp liên doanh, tổ chức được Chính phủ Việt Nam giao nhiệm vụ tiếp nhận phần được chia của Việt Nam thuộc các mỏ dầu khí tại vùng chồng lấn, nhà thầu, nhà đầu tư tham gia hợp đồng dầu khí, công ty mẹ - Tập đoàn Công nghiệp - Năng lượng Quốc gia Việt Nam đại diện nước chủ nhà nhận phần lãi được chia từ các hợp đồng dầu khí",
+          "position": 2,
+          "name": "Bản sao bản thanh lý hợp đồng, hoặc bản sao văn bản xác nhận việc chấm dứt hiệu lực của hợp đồng dầu khí, hoặc bản sao văn bản về việc chuyển nhượng toàn bộ phần vốn góp tham gia hợp đồng dầu khí đối với nhà đầu tư tham gia hợp đồng dầu khí, tài liệu chứng minh đã hoàn thành nghĩa vụ thuế tại Việt Nam",
+          "component_code": "G12.0003115",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "(iv) Chấm dứt hiệu lực mã số thuế đối với hộ kinh doanh, hộ gia đình, cá nhân có hoạt động sản xuất kinh doanh do chấm dứt hoạt động kinh doanh",
+          "position": 1,
+          "name": "Văn bản đề nghị chấm dứt hiệu lực mã số thuế mẫu số 24/ĐKT ban hành kèm theo Thông tư số 90/2026/TT-BTC",
+          "component_code": "G12.0003748",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019f8e5c-a6cb-7269-8f76-33cfd1cde685",
+              "fileName": "27.Mẫu 24-ĐKT Đề nghị chấm dứt MST.doc",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8e5c-a6cb-7269-8f76-33cfd1cde685/27.Mẫu 24-ĐKT Đề nghị chấm dứt MST.doc"
+            }
+          ]
+        },
+        {
+          "section": "(iv) Chấm dứt hiệu lực mã số thuế đối với hộ kinh doanh, hộ gia đình, cá nhân có hoạt động sản xuất kinh doanh do chấm dứt hoạt động kinh doanh",
+          "position": 2,
+          "name": "Trường hợp hộ kinh doanh, cá nhân kinh doanh chấm dứt hoạt động của địa điểm kinh doanh thì thực hiện thông báo đến cơ quan thuế quản lý trực tiếp trụ sở của hộ kinh doanh, cá nhân kinh doanh theo quy định tại điểm đ khoản 4 Điều 8 Nghị định số 68/2026/NĐ-CP và khoản 1 Điều 3 Thông tư số 18/2026/TT-BTC",
+          "component_code": "G12.0003116",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "(v) Doanh nghiệp, hợp tác xã, tổ hợp tác, đơn vị phụ thuộc của doanh nghiệp, đơn vị phụ thuộc của hợp tác xã đang bị cơ quan thuế thông báo không hoạt động tại địa chỉ đã đăng ký",
+          "position": 1,
+          "name": "Văn bản đề nghị chấm dứt hiệu lực mã số thuế mẫu số 24/ĐKT ban hành kèm theo Thông tư số 90/2026/TT-BTC",
+          "component_code": "G12.0003748",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019f8e5c-a6cb-7269-8f76-33cfd1cde685",
+              "fileName": "27.Mẫu 24-ĐKT Đề nghị chấm dứt MST.doc",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8e5c-a6cb-7269-8f76-33cfd1cde685/27.Mẫu 24-ĐKT Đề nghị chấm dứt MST.doc"
+            }
+          ]
+        },
+        {
+          "section": "(v) Doanh nghiệp, hợp tác xã, tổ hợp tác, đơn vị phụ thuộc của doanh nghiệp, đơn vị phụ thuộc của hợp tác xã đang bị cơ quan thuế thông báo không hoạt động tại địa chỉ đã đăng ký",
+          "position": 2,
+          "name": "Hồ sơ chấm dứt hiệu lực mã số thuế của doanh nghiệp, hợp tác xã giải thể là bản sao của một trong các giấy tờ: nghị quyết hoặc quyết định giải thể doanh nghiệp, nghị quyết giải thể hợp tác xã, quyết định thu hồi giấy chứng nhận đăng ký kinh doanh của cơ quan đăng ký kinh doanh",
+          "component_code": "G12.0003117",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "(v) Doanh nghiệp, hợp tác xã, tổ hợp tác, đơn vị phụ thuộc của doanh nghiệp, đơn vị phụ thuộc của hợp tác xã đang bị cơ quan thuế thông báo không hoạt động tại địa chỉ đã đăng ký",
+          "position": 3,
+          "name": "Hồ sơ chấm dứt hiệu lực mã số thuế của đơn vị phụ thuộc của doanh nghiệp, đơn vị phụ thuộc của hợp tác xã là bản sao của một trong các giấy tờ: quyết định hoặc thông báo của doanh nghiệp, hợp tác xã về chấm dứt hoạt động chi nhánh, văn phòng đại diện; quyết định thu hồi giấy chứng nhận đăng ký hoạt động chi nhánh, văn phòng đại diện của cơ quan nhà nước có thẩm quyền",
+          "component_code": "G12.0003118",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "(v) Doanh nghiệp, hợp tác xã, tổ hợp tác, đơn vị phụ thuộc của doanh nghiệp, đơn vị phụ thuộc của hợp tác xã đang bị cơ quan thuế thông báo không hoạt động tại địa chỉ đã đăng ký",
+          "position": 4,
+          "name": "Hồ sơ chấm dứt hiệu lực mã số thuế của tổ hợp tác là bản sao của một trong các giấy tờ: biên bản họp thành viên tổ hợp tác về việc chấm dứt hoạt động của tổ hợp tác, quyết định thu hồi giấy chứng nhận đăng ký tổ hợp tác của cơ quan nhà nước có thẩm quyền",
+          "component_code": "G12.0003119",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "(v) Doanh nghiệp, hợp tác xã, tổ hợp tác, đơn vị phụ thuộc của doanh nghiệp, đơn vị phụ thuộc của hợp tác xã đang bị cơ quan thuế thông báo không hoạt động tại địa chỉ đã đăng ký",
+          "position": 5,
+          "name": "Trường hợp có sự thay đổi về địa chỉ trụ sở hoặc các thông tin đăng ký thuế khác mà đã được cơ quan nhà nước có thẩm quyền chấp thuận, người nộp thuế phải nộp kèm theo hồ sơ thay đổi thông tin theo quy định",
+          "component_code": "G12.0003120",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "(vi) Tổ chức là chủ quản nền tảng thương mại điện tử, nền tảng số khác thuộc đối tượng khấu trừ, nộp thay và nhà cung cấp nước ngoài theo quy định tại điểm g, h khoản 2 Điều 13 Thông tư số 90/2026/TT-BTC",
+          "position": 1,
+          "name": "Văn bản đề nghị chấm dứt hiệu lực mã số thuế mẫu số 24/ĐKT ban hành kèm theo Thông tư số 90/2026/TT-BTC",
+          "component_code": "G12.0003748",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019f8e5c-a6cb-7269-8f76-33cfd1cde685",
+              "fileName": "27.Mẫu 24-ĐKT Đề nghị chấm dứt MST.doc",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8e5c-a6cb-7269-8f76-33cfd1cde685/27.Mẫu 24-ĐKT Đề nghị chấm dứt MST.doc"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 1,
+          "name": "Người nộp thuế nộp hồ sơ đến cơ quan thuế bằng phương thức điện tử thì bản sao các văn bản, giấy tờ quy định trong hồ sơ đăng ký thuế là bản sao điện tử.",
+          "component_code": "G12.0003344",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Từ ngày 01/7/2026 đến trước thời điểm theo lộ trình của cơ quan thuế quy định tại khoản 2 Điều 36 Thông tư số 90/2026/TT-BTC thì tiếp tục áp dụng mẫu số 24/ĐK-TCT ban hành kèm theo Thông tư số 86/2024/TT-BTC ngày 23/12/2024 của Bộ Tài chính đối với trường hợp đăng ký thuế theo phương thức điện tử",
+          "component_code": "G12.0003121",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019f8e6b-ef6d-77ee-80bb-5185af28ac60",
+              "fileName": "24 ĐK TCT TT 86.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8e6b-ef6d-77ee-80bb-5185af28ac60/24 ĐK TCT TT 86.docx"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c70-724b-96de-2162d5a6fe8f",
+          "name": "Thông báo người nộp thuế ngừng hoạt động và đang làm thủ tục chấm dứt hiệu lực mã số thuế (mẫu số 17/TB-ĐKT)",
+          "code": "KQ.G12.000187"
+        },
+        {
+          "id": "019f8e55-7995-7236-9140-3a2a090299f0",
+          "name": "Thông báo về việc chuyển nghĩa vụ thuế của người nộp thuế (mẫu số 39/TB-ĐKT)",
+          "code": "KQ.G12.0001501"
+        },
+        {
+          "id": "019d2bb2-1c71-7574-afeb-0715771a2242",
+          "name": "Thông báo chấm dứt hiệu lực mã số thuế (mẫu số 18/TB-ĐKT)",
+          "code": "KQ.G12.000848"
+        },
+        {
+          "id": "019f8e55-0a50-767b-a259-bf0bc4685b63",
+          "name": "Thông báo về việc người nộp thuế hoàn thành nghĩa vụ thuế để nộp hồ sơ giải thể/chấm dứt hoạt động đến cơ quan đăng ký kinh doanh (mẫu số 28/TB-ĐKT)",
+          "code": "KQ.G12.001500"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019f356e-75e3-7494-a2f3-672d8dce61a6",
+          "name": "QUY ĐỊNH CHI TIẾT MỘT SỐ ĐIỀU VÀ BIỆN PHÁP ĐỂ TỔ CHỨC, HƯỚNG DẪN THI HÀNH LUẬT QUẢN LÝ THUẾ",
+          "code": "252/2026/NĐ-CP"
+        },
+        {
+          "id": "019f8db3-9765-740b-8b90-682677b9c421",
+          "name": "Thông tư quy định chi tiết một số điều của Luật Quản lý thuế và Nghị định số 252/2026/NĐ-CP của Chính phủ quy định chi tiết một số điều và biện pháp để tổ chức, hướng dẫn thi hành Luật Quản lý thuế",
+          "code": "89/2026/TT-BTC"
+        },
+        {
+          "id": "019f8db3-e7d0-74e4-9c61-49a28e28113a",
+          "name": "Thông tư số 90/2026/TT-BTC ngày 30/6/2026 của Bộ Tài chính quy định về đăng ký thuế",
+          "code": "90/2026/TT-BTC "
+        },
+        {
+          "id": "019e5e83-1282-771d-9014-49799413a4e5",
+          "name": "Luật số 108/2025/QH15 của Quốc hội: Luật Quản lý thuế",
+          "code": "108/2025/QH15"
+        },
+        {
+          "id": "019f64ed-e026-7299-b5f2-ca44a3964050",
+          "name": "Nghị định về thực hiện thủ tục hành chính theo cơ chế một cửa, một cửa liên thông tại Bộ phận Một cửa và Cổng Dịch vụ công quốc gia.",
+          "code": "118/2025/NĐ-CP "
+        }
+      ]
+    }
+  ]
+}

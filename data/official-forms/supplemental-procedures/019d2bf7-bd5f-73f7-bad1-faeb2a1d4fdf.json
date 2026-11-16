@@ -1,0 +1,60 @@
+{
+  "id": "dvc-019d2bf7-bd5f-73f7-bad1-faeb2a1d4fdf",
+  "procedure_code": "3.000284",
+  "name": "Mở khóa tài khoản định danh điện tử (thực hiện tại cấp xã)",
+  "domain": "Định danh và xác thực điện tử",
+  "managing_agency": "Bộ Công an",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:18.032030+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bf7-bd5f-73f7-bad1-faeb2a1d4fdf",
+      "code": "3.000284",
+      "name": "Mở khóa tài khoản định danh điện tử (thực hiện tại cấp xã)",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1777541272484,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf7-bd5f-73f7-bad1-faeb2a1d4fdf",
+      "raw_path": "evidence/dvc/details/019d2bf7-bd5f-73f7-bad1-faeb2a1d4fdf.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Phiếu đề nghị khóa, mở khóa tài khoản định danh điện tử, căn cước điện tử (mẫu TK03 ban hành kèm theo Nghị định số 69/2024/NĐ-CP ngày 25/6/2024 quy định về định danh và xác thực điện tử)",
+          "component_code": "000.00.00.G01-KQ002957",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019dcfa8-588b-76ce-80f1-a9bc55c584a5",
+              "fileName": "TK03-Phiunghkhamkhatikhonnhdanhintcnccint.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019dcfa8-588b-76ce-80f1-a9bc55c584a5/TK03-Phiunghkhamkhatikhonnhdanhintcnccint.docx"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c37-76e8-b48d-bc14bf0bd02c",
+          "name": "Thông báo kết quả tới cơ quan tiến hành tố tụng, cơ quan khác có thẩm quyền đề nghị khóa tài khoản định danh điện tử và chủ thể bị khóa tài khoản. Trường hợp từ chối khóa tài khoản định danh điện tử thì có văn bản trả lời và nêu rõ lý do.",
+          "code": "KQ.G01.000157"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7f-719e-b470-82002429a2fa",
+          "name": "Nghị định số 69/2024/NĐ-CP của Chính phủ: Quy định về định danh và xác thực điện tử",
+          "code": "69/2024/NĐ-CP"
+        }
+      ]
+    }
+  ]
+}

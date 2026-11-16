@@ -1,0 +1,167 @@
+{
+  "id": "hn87-043",
+  "ordinal": "43",
+  "procedure_code": "1.014947",
+  "name": "Thủ tục quỹ tự giải thể",
+  "domain": "Quỹ",
+  "department_id": "vx",
+  "department": "Phòng Văn hóa - Xã hội",
+  "authority_as_published": "UBND cấp xã",
+  "execution_level_as_published": "Cấp xã",
+  "receiving_location_as_published": "Điểm hỗ trợ DVC số",
+  "inventory_date": "2026-04-27",
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "source_urls": [
+    "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d90dd-f017-732b-a670-c6d743b193fd"
+  ],
+  "current_dvc_match": true,
+  "lifecycle": null,
+  "scope": "hanoi_commune_notice_2026_04_27",
+  "scope_note": "Mốc kiểm kê cấp xã Hà Nội; áp dụng từng thủ tục tại Từ Liêm còn phải theo thẩm quyền/ủy quyền hiện hành.",
+  "status": "has_fillable_templates",
+  "components": [
+    {
+      "id": "hn87-043-c001",
+      "code": "G09-KQ002468",
+      "name": "- Đơn đề nghị giải thể quỹ (theo mẫu)",
+      "section": "",
+      "role": "applicant_form",
+      "scenario_status": "selected_for_test",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d90dd-f017-732b-a670-c6d743b193fd",
+      "source_detail_id": "019d90dd-f017-732b-a670-c6d743b193fd",
+      "embedded_other_requirements": false,
+      "template_candidates": [
+        "template-2d836e8060e56dfd"
+      ],
+      "template_selection_method": "first_matching_source_attachment",
+      "selected_template_id": "template-2d836e8060e56dfd",
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-043-c002",
+      "code": "G09-KQ002469",
+      "name": "- Nghị quyết của Hội đồng quản lý quỹ về tự giải thể, trong đó nêu rõ lý do giải thể quỹ",
+      "section": "",
+      "role": "needs_review",
+      "scenario_status": "requirement_needs_review",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d90dd-f017-732b-a670-c6d743b193fd",
+      "source_detail_id": "019d90dd-f017-732b-a670-c6d743b193fd",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-043-c003",
+      "code": "G09-KQ003560",
+      "name": "- Báo cáo về việc xử lý tài sản, tài chính quỹ; danh sách chủ nợ và số nợ đã thanh toán, bao gồm việc thanh toán hết các khoản nợ về thuế và nợ tiền đóng bảo hiểm xã hội, bảo hiểm y tế, bảo hiểm thất nghiệp cho người lao động (nếu có);",
+      "section": "",
+      "role": "applicant_prepared",
+      "scenario_status": "conditional_needs_review",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d90dd-f017-732b-a670-c6d743b193fd",
+      "source_detail_id": "019d90dd-f017-732b-a670-c6d743b193fd",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-043-c004",
+      "code": "G09-KQ003561",
+      "name": "- Báo cáo việc hoàn thành nộp vào ngân sách theo quy định tại khoản 5 Điều 44 Nghị định 03/2026/NĐ-CP (nếu có);",
+      "section": "",
+      "role": "applicant_prepared",
+      "scenario_status": "conditional_needs_review",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d90dd-f017-732b-a670-c6d743b193fd",
+      "source_detail_id": "019d90dd-f017-732b-a670-c6d743b193fd",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-043-c005",
+      "code": "G09-KQ003562",
+      "name": "- Thông báo công bố liên tiếp trên 03 số báo in hoặc báo điện tử về việc quỹ giải thể;",
+      "section": "",
+      "role": "agency_prepared",
+      "scenario_status": "agency_reserved",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d90dd-f017-732b-a670-c6d743b193fd",
+      "source_detail_id": "019d90dd-f017-732b-a670-c6d743b193fd",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-043-c006",
+      "code": "G09-KQ002473",
+      "name": "- Các tài liệu chứng minh việc hoàn thành nghĩa vụ tài sản, tài chính của quỹ",
+      "section": "",
+      "role": "needs_review",
+      "scenario_status": "requirement_needs_review",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d90dd-f017-732b-a670-c6d743b193fd",
+      "source_detail_id": "019d90dd-f017-732b-a670-c6d743b193fd",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    }
+  ],
+  "service_cases": [
+    {
+      "id": "019dafa0-28a9-77c8-aa26-111e1298bfc2",
+      "code": "1.014947.01",
+      "name": "THỦ TỤC QUỸ TỰ GIẢI THỂ (Cấp xã)",
+      "source_processing_time": {
+        "qty": 60,
+        "type": "WORKING_DAY"
+      },
+      "has_case_specific_components": false
+    }
+  ],
+  "selected_template_ids": [
+    "template-2d836e8060e56dfd"
+  ],
+  "source_component_groups": [
+    {
+      "name": "",
+      "component_count": 6,
+      "source_detail_id": "019d90dd-f017-732b-a670-c6d743b193fd"
+    }
+  ],
+  "conditional_component_groups": [],
+  "default_test_scenario": {
+    "channel": "direct",
+    "applicant_submits_self": true,
+    "authorized": false,
+    "special_case_flags": [],
+    "selected_conditional_group": null,
+    "case_selection_method": "ordinary_direct_submission",
+    "case_status": "scenario_for_testing_not_a_legal_eligibility_decision"
+  },
+  "requirement_note": "required_as_published được giữ nguyên; false không chứng minh giấy tờ luôn tùy chọn. Các nhóm executionCases có thể là mục giấy tờ/hướng dẫn, không phải các phương án loại trừ nhau."
+}

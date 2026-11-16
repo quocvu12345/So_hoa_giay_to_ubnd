@@ -1,0 +1,114 @@
+{
+  "ordinal": "332",
+  "managing_agency": "Sở Xây dựng",
+  "procedure_code": "1.009465",
+  "name": "Chấp thuận phương án bảo đảm an toàn giao thông",
+  "domain": "Hàng hải và đường thủy nội địa",
+  "ministry_decision": "870/QĐ-BXD ngày 19/6/2025",
+  "hanoi_decision": "1651/QĐ-TTPVHCC ngày 08/12/2025",
+  "workflow_decision": "1104/QĐ-TTPVHCC ngày 25/07/2025",
+  "fees": "Không quy định",
+  "execution_level": "Cấp tỉnh, cấp xã",
+  "competent_authority": "Sở; UBND cấp xã",
+  "delegation_decision": "Quyết định 74/2025/QĐ-UBND: Về việc ban hành quy định về phân cấp một số nội dung thuộc lĩnh vực xây dựng, giao thông trên địa bàn thành phố Hà Nội",
+  "delegation_expiry": "",
+  "receiving_location": "Chi nhánh TTPVHCC",
+  "id": "hn87-332",
+  "source_page": 13,
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "inventory_date": "2026-04-27",
+  "checked_at": "2026-11-12T22:24:53.662508+07:00",
+  "details": [
+    {
+      "id": "019d2bfe-6995-7036-9a0e-ed4c39b2f136",
+      "code": "1.009465",
+      "name": "Chấp thuận phương án bảo đảm an toàn giao thông đường thủy nội địa",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1785147285146,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfe-6995-7036-9a0e-ed4c39b2f136",
+      "raw_path": "evidence/dvc/details/019d2bfe-6995-7036-9a0e-ed4c39b2f136.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "- Phương án bảo đảm an toàn giao thông;",
+          "component_code": "000.00.00.G04-KQ3334",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "- Bản sao bản vẽ bố trí mặt bằng tổng thể của công trình, phạm vi khu vực tổ chức thi công công trình, tổ chức hoạt động.",
+          "component_code": "000.00.00.G04-KQ3335",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 3,
+          "name": "- Đơn đề nghị chấp thuận phương án bảo đảm an toàn giao thông theo mẫu;",
+          "component_code": "000.00.00.G04-KQ3332",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019f7329-8997-743f-a43c-9fbf14478a2a",
+              "fileName": "000.00.00.G04-KQ3332.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f7329-8997-743f-a43c-9fbf14478a2a/000.00.00.G04-KQ3332.docx"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 4,
+          "name": "- Phương án thi công, thời gian, tiến độ thi công công trình, tổ chức hoạt động;",
+          "component_code": "000.00.00.G04-KQ3333",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d3e2d-2051-7440-b58f-76d06cb99a02",
+          "name": "Văn bản chấp thuận phương án bảo đảm an toàn giao thông.",
+          "code": "000.00.00.G04-KQ3336"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7e-72d1-afea-f01696ee65ca",
+          "name": "Quy định về phân định thẩm quyền của chính quyền địa phương 02 cấp trong lĩnh vực quản lý nhà nước của Bộ Xây dựng",
+          "code": "140/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afe7-a8368c489fef",
+          "name": "Quy định về quản lý hoạt động đường thủy nội địa",
+          "code": "08/2021/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afea-e76414bd406c",
+          "name": "sửa đổi, bổ sung một số điều của các Nghị định để cắt giảm, đơn giản hóa thủ tục hành chính liên quan đến hoạt động sản xuất, kinh doanh thuộc phạm vi quản lý của Bộ Xây dựng",
+          "code": "14/2026/NĐ-CP"
+        }
+      ]
+    }
+  ],
+  "lookup_status": "retrieved",
+  "currency_status": "snapshot_requires_later_amendment_check",
+  "errors": []
+}

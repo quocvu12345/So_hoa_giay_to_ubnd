@@ -1,0 +1,89 @@
+{
+  "ordinal": "370",
+  "managing_agency": "Công an Thành phố",
+  "procedure_code": "3.000509",
+  "name": "Chế độ, chính sách đối với người được huy động, người tham gia phòng cháy, chữa cháy, cứu nạn, cứu hộ chưa tham gia bảo hiểm y tế, bảo hiểm xã hội mà bị tai nạn, bị thương",
+  "domain": "Phòng cháy, chữa cháy (Bộ Công an)",
+  "ministry_decision": "5461/QĐ-BCA-C07 ngày 27/6/2025",
+  "hanoi_decision": "1167/QĐ-TTPVHCC ngày 12/8/2025",
+  "workflow_decision": "129/QĐ-TTPVHCC ngày 28/01/2026",
+  "fees": "Không quy định",
+  "execution_level": "Cấp xã",
+  "competent_authority": "UBND cấp xã",
+  "delegation_decision": "",
+  "delegation_expiry": "",
+  "receiving_location": "Điểm hỗ trợ DVC số",
+  "id": "hn87-370",
+  "source_page": 15,
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "inventory_date": "2026-04-27",
+  "checked_at": "2026-11-12T22:25:00.880284+07:00",
+  "details": [
+    {
+      "id": "019d2bf7-cd23-766f-9b23-9ed884663c71",
+      "code": "3.000509",
+      "name": "Chế độ, chính sách đối với người được huy động, người tham gia phòng cháy, chữa cháy, cứu nạn, cứu hộ chưa tham gia bảo hiểm y tế, bảo hiểm xã hội mà bị tai nạn, bị thương",
+      "state": "ACTIVE",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1782728719651,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf7-cd23-766f-9b23-9ed884663c71",
+      "raw_path": "evidence/dvc/details/019d2bf7-cd23-766f-9b23-9ed884663c71.json",
+      "components": [
+        {
+          "section": "Đối với trường hợp đề nghị hỗ trợ chi trả chi phí khám bệnh, chữa bệnh",
+          "position": 1,
+          "name": "Đơn đề nghị thanh toán chi phí khám bệnh, chữa bệnh của người được hỗ trợ chế độ bị tai nạn, bị thương hoặc người đại diện hợp pháp (Mẫu số PC21 kèm theo Nghị định số 105/2025/NĐ-CP ngày 15/5/2025 của Chính Phủ); hóa đơn thu tiền; giấy ra viện.Thông tin về thành phần hồ sơ khi đã được kết nối, chia sẻ, cập nhật trên cơ sở dữ liệu quốc gia hoặc cơ sở dữ liệu chuyên ngành thì cơ quan có thẩm quyền giải quyết phải khai thác trực tuyến để giải quyết mà không được yêu cầu người đề nghị cung cấp hồ sơ giấy;",
+          "component_code": "000.00.00.G01-KQ003462",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019dd03f-ed19-7354-8afb-f91ae01051c0",
+              "fileName": "PC21.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019dd03f-ed19-7354-8afb-f91ae01051c0/PC21.docx"
+            }
+          ]
+        },
+        {
+          "section": "Đối với trường hợp đề nghị trợ cấp theo mức suy giảm khả năng lao động",
+          "position": 1,
+          "name": "Đơn đề nghị trợ cấp tai nạn (Mẫu số PC22 kèm theo Nghị định số 105/2025/NĐ-CP ngày 15/5/2025 của Chính Phủ); giấy ra viện hoặc trích sao hồ sơ bệnh án sau khi điều trị tai nạn đối với trường hợp điều trị nội trú hoặc giấy chứng nhận thương tích do cơ sở y tế nơi đã cấp cứu, điều trị cấp; biên bản giám định mức suy giảm khả năng lao động của Hội đồng giám định y khoa cấp tỉnh và tương đương trở lên.",
+          "component_code": "000.00.00.G01-KQ003463",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019dd040-0e24-70dd-92e8-50b701505048",
+              "fileName": "PC22.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019dd040-0e24-70dd-92e8-50b701505048/PC22.docx"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c38-75c9-8e11-d1293fd4c150",
+          "name": "Quyết định chi trả kinh phí hỗ trợ khám bệnh, chữa bệnh, trợ cấp cho người bị tai nạn, bị thương",
+          "code": "KQ.G01.000231"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7e-72d1-afe8-5765f94fd23a",
+          "name": "quy định chi tiết một số điều và biện pháp thi hành luật phòng cháy, chữa cháy và cứu nạn, cứu hộ",
+          "code": "105/2025/NĐ-CP"
+        }
+      ]
+    }
+  ],
+  "lookup_status": "retrieved",
+  "currency_status": "snapshot_requires_later_amendment_check",
+  "errors": []
+}

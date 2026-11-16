@@ -1,0 +1,203 @@
+{
+  "id": "hn87-331",
+  "ordinal": "331",
+  "procedure_code": "2.001921",
+  "name": "Chấp thuận vị trí, quy mô, kích thước, phương án tổ chức thi công biển quảng cáo, biển thông tin cổ động, tuyên truyền chính trị; chấp thuận xây dựng, lắp đặt công trình hạ tầng, công trình hạ tầng kỹ thuật sử dụng chung trong phạm vi bảo vệ kết cấu hạ tầng đường bộ; chấp thuận gia cường công trình đường bộ khi cần thiết để cho phép xe quá khổ giới hạn, xe quá tải trọng, xe bánh xích lưu hành trên đường bộ",
+  "domain": "Đường bộ",
+  "department_id": "ktdt",
+  "department": "Phòng Kinh tế, Hạ tầng và Đô thị",
+  "authority_as_published": "Sở; UBND cấp xã",
+  "execution_level_as_published": "Cấp tỉnh, cấp xã",
+  "receiving_location_as_published": "Điểm hỗ trợ DVC số; Chi nhánh TTPVHCC",
+  "inventory_date": "2026-04-27",
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "source_urls": [
+    "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfe-a02c-754e-9e9e-afd5f23aa699"
+  ],
+  "current_dvc_match": true,
+  "lifecycle": null,
+  "scope": "hanoi_commune_notice_2026_04_27",
+  "scope_note": "Mốc kiểm kê cấp xã Hà Nội; áp dụng từng thủ tục tại Từ Liêm còn phải theo thẩm quyền/ủy quyền hiện hành.",
+  "status": "has_fillable_templates",
+  "components": [
+    {
+      "id": "hn87-331-c001",
+      "code": "000.00.00.G04-KQ005108",
+      "name": "Bản chính hoặc bản sao (có chứng thực) Thuyết minh thiết kế, vị trí xây dựng, lắp đặt biển quảng cáo, biển thông tin cổ động, tuyên truyền chính trị, công trình hạ tầng và công trình hạ tầng kỹ thuật sử dụng chung trong phạm vi bảo vệ kết cấu hạ tầng đường bộ. Đối với công trình lắp đặt vào cầu, hầm, công trình, hạng mục công trình đường bộ thuộc kết cấu chịu lực, phải có kết quả tính toán bảo đảm khả năng chịu lực của kết cấu đối với tải trọng, tác động của gió khi lắp đặt các công trình này vào công trình đường bộ",
+      "section": "Hồ sơ chấp thuận vị trí, quy mô, kích thước biển quảng cáo, biển thông tin cổ động, tuyên truyền chính trị, xây dựng, lắp đặt công trình hạ tầng, công trình hạ tầng kỹ thuật sử dụng chung trong phạm vi bảo vệ kết cấu hạ tầng đường bộ, bao gồm",
+      "role": "supporting_submit",
+      "scenario_status": "conditional_needs_review",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 1,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfe-a02c-754e-9e9e-afd5f23aa699",
+      "source_detail_id": "019d2bfe-a02c-754e-9e9e-afd5f23aa699",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-331-c002",
+      "code": "000.00.00.G04-KQ005111",
+      "name": "Đối với biển quảng cáo được xây dựng, lắp đặt trong hành lang an toàn đường bộ thì phải có bản chính hoặc bản sao (có chứng thực) phương án thi công để bảo đảm an toàn giao thông, an toàn cho công trình đường bộ và công trình liền kề",
+      "section": "Hồ sơ chấp thuận vị trí, quy mô, kích thước biển quảng cáo, biển thông tin cổ động, tuyên truyền chính trị, xây dựng, lắp đặt công trình hạ tầng, công trình hạ tầng kỹ thuật sử dụng chung trong phạm vi bảo vệ kết cấu hạ tầng đường bộ, bao gồm",
+      "role": "supporting_submit",
+      "scenario_status": "conditional_needs_review",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 1,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfe-a02c-754e-9e9e-afd5f23aa699",
+      "source_detail_id": "019d2bfe-a02c-754e-9e9e-afd5f23aa699",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-331-c003",
+      "code": "TP-G17.000096",
+      "name": "Bản chính hoặc biểu mẫu điện tử đơn đề nghị theo quy định mẫu 01 Phụ lục III Nghị định 241/2026/NĐ-CP",
+      "section": "Hồ sơ chấp thuận vị trí, quy mô, kích thước biển quảng cáo, biển thông tin cổ động, tuyên truyền chính trị, xây dựng, lắp đặt công trình hạ tầng, công trình hạ tầng kỹ thuật sử dụng chung trong phạm vi bảo vệ kết cấu hạ tầng đường bộ, bao gồm",
+      "role": "applicant_form",
+      "scenario_status": "selected_for_test",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfe-a02c-754e-9e9e-afd5f23aa699",
+      "source_detail_id": "019d2bfe-a02c-754e-9e9e-afd5f23aa699",
+      "embedded_other_requirements": false,
+      "template_candidates": [
+        "template-6a3a706b7eb5f6ab"
+      ],
+      "template_selection_method": "first_matching_source_attachment",
+      "selected_template_id": "template-6a3a706b7eb5f6ab",
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-331-c004",
+      "code": "TP-G17.000098",
+      "name": "Bản chính hoặc bản sao hoặc bản sao điện tử: Các bản vẽ thiết kế, bao gồm bản vẽ bố trí chung, các bản vẽ mặt cắt đứng, mặt cắt ngang và các bản vẽ thiết kế chi tiết thể hiện cụ thể: quy mô, kích thước của công trình đề nghị chấp thuận; vị trí công trình đề nghị trên đoạn đường; khoảng cách từ mép ngoài công trình đề nghị đến mép ngoài mặt đường, tim đường, chiều sâu công trình đến mặt đường và các khoảng cách khác đến các hạng mục công trình cầu, cống, hầm có liên quan đến công trình đề nghị. Đối với biển thông tin cổ động, tuyên truyền chính trị, công trình hạ tầng và công trình hạ tầng kỹ thuật sử dụng chung xây dựng, lắp đặt trong phạm vi dải phân cách giữa của đường bộ, phải có thông tin về khoảng cách từ biển thông tin cổ động, tuyên truyền chính trị và các công trình đến: bề mặt dải phân cách giữa, mép dải phân cách giữa;",
+      "section": "Hồ sơ chấp thuận vị trí, quy mô, kích thước biển quảng cáo, biển thông tin cổ động, tuyên truyền chính trị, xây dựng, lắp đặt công trình hạ tầng, công trình hạ tầng kỹ thuật sử dụng chung trong phạm vi bảo vệ kết cấu hạ tầng đường bộ, bao gồm",
+      "role": "supporting_submit",
+      "scenario_status": "conditional_needs_review",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfe-a02c-754e-9e9e-afd5f23aa699",
+      "source_detail_id": "019d2bfe-a02c-754e-9e9e-afd5f23aa699",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-331-c005",
+      "code": "TP-G17.000097",
+      "name": "Bản chính hoặc biểu mẫu điện tử đơn đề nghị chấp thuận đồng thời với cấp giấy phép thi công công trình trên đường bộ đang khai thác theo quy định tại Mẫu số 02 Phụ lục III",
+      "section": "* Đối với việc thi công xây dựng đường dây tải điện, dây dẫn điện điện áp từ 35 kV trở xuống, đường dây thông tin, viễn thông, gia cường công trình đường bộ (khi cần thiết để cho phép xe quá khổ giới hạn, xe quá tải trọng, xe bánh xích lưu hành trên đường bộ), trừ các trường hợp không phải cấp giấy phép thi công theo quy định tại khoản 3 Điều 32 Luật Đường bộ, thành phần hồ sơ đề nghị chấp thuận xây dựng, gia cường được thực hiện đồng thời với hồ sơ cấp giấy phép thi công công trình trên đường bộ đang khai thác.",
+      "role": "applicant_form",
+      "scenario_status": "conditional_needs_review",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfe-a02c-754e-9e9e-afd5f23aa699",
+      "source_detail_id": "019d2bfe-a02c-754e-9e9e-afd5f23aa699",
+      "embedded_other_requirements": false,
+      "template_candidates": [
+        "template-2fef109324b14b1b"
+      ],
+      "template_selection_method": "first_matching_source_attachment",
+      "selected_template_id": "template-2fef109324b14b1b",
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-331-c006",
+      "code": "000.00.00.G04-KQ005108",
+      "name": "Bản chính hoặc bản sao (có chứng thực) Thuyết minh thiết kế, vị trí xây dựng, lắp đặt biển quảng cáo, biển thông tin cổ động, tuyên truyền chính trị, công trình hạ tầng và công trình hạ tầng kỹ thuật sử dụng chung trong phạm vi bảo vệ kết cấu hạ tầng đường bộ. Đối với công trình lắp đặt vào cầu, hầm, công trình, hạng mục công trình đường bộ thuộc kết cấu chịu lực, phải có kết quả tính toán bảo đảm khả năng chịu lực của kết cấu đối với tải trọng, tác động của gió khi lắp đặt các công trình này vào công trình đường bộ",
+      "section": "* Đối với việc thi công xây dựng đường dây tải điện, dây dẫn điện điện áp từ 35 kV trở xuống, đường dây thông tin, viễn thông, gia cường công trình đường bộ (khi cần thiết để cho phép xe quá khổ giới hạn, xe quá tải trọng, xe bánh xích lưu hành trên đường bộ), trừ các trường hợp không phải cấp giấy phép thi công theo quy định tại khoản 3 Điều 32 Luật Đường bộ, thành phần hồ sơ đề nghị chấp thuận xây dựng, gia cường được thực hiện đồng thời với hồ sơ cấp giấy phép thi công công trình trên đường bộ đang khai thác.",
+      "role": "supporting_submit",
+      "scenario_status": "conditional_needs_review",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfe-a02c-754e-9e9e-afd5f23aa699",
+      "source_detail_id": "019d2bfe-a02c-754e-9e9e-afd5f23aa699",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-331-c007",
+      "code": "TP-G17.000098",
+      "name": "Bản chính hoặc bản sao hoặc bản sao điện tử: Các bản vẽ thiết kế, bao gồm bản vẽ bố trí chung, các bản vẽ mặt cắt đứng, mặt cắt ngang và các bản vẽ thiết kế chi tiết thể hiện cụ thể: quy mô, kích thước của công trình đề nghị chấp thuận; vị trí công trình đề nghị trên đoạn đường; khoảng cách từ mép ngoài công trình đề nghị đến mép ngoài mặt đường, tim đường, chiều sâu công trình đến mặt đường và các khoảng cách khác đến các hạng mục công trình cầu, cống, hầm có liên quan đến công trình đề nghị. Đối với biển thông tin cổ động, tuyên truyền chính trị, công trình hạ tầng và công trình hạ tầng kỹ thuật sử dụng chung xây dựng, lắp đặt trong phạm vi dải phân cách giữa của đường bộ, phải có thông tin về khoảng cách từ biển thông tin cổ động, tuyên truyền chính trị và các công trình đến: bề mặt dải phân cách giữa, mép dải phân cách giữa;",
+      "section": "* Đối với việc thi công xây dựng đường dây tải điện, dây dẫn điện điện áp từ 35 kV trở xuống, đường dây thông tin, viễn thông, gia cường công trình đường bộ (khi cần thiết để cho phép xe quá khổ giới hạn, xe quá tải trọng, xe bánh xích lưu hành trên đường bộ), trừ các trường hợp không phải cấp giấy phép thi công theo quy định tại khoản 3 Điều 32 Luật Đường bộ, thành phần hồ sơ đề nghị chấp thuận xây dựng, gia cường được thực hiện đồng thời với hồ sơ cấp giấy phép thi công công trình trên đường bộ đang khai thác.",
+      "role": "supporting_submit",
+      "scenario_status": "conditional_needs_review",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfe-a02c-754e-9e9e-afd5f23aa699",
+      "source_detail_id": "019d2bfe-a02c-754e-9e9e-afd5f23aa699",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    }
+  ],
+  "service_cases": [
+    {
+      "id": "019f4637-120d-73c9-a238-3e79ae5880c3",
+      "code": "2.001921.01",
+      "name": "Chấp thuận vị trí, quy mô, kích thước, phương án tổ chức thi công biển quảng cáo, biển thông tin cổ động, tuyên truyền chính trị; chấp thuận xây dựng, lắp đặt công trình hạ tầng, công trình hạ tầng kỹ thuật sử dụng chung trong phạm vi bảo vệ kết cấu hạ tầng đường bộ; chấp thuận gia cường công trình đường bộ khi cần thiết để cho phép xe quá khổ giới hạn, xe quá tải trọng, xe bánh xích lưu hành trên đường bộ",
+      "source_processing_time": {
+        "qty": 7,
+        "type": "WORKING_DAY"
+      },
+      "has_case_specific_components": false
+    },
+    {
+      "id": "019d2d15-5c37-74a2-a607-6df5eb22ae50",
+      "code": "2.001921.01",
+      "name": "Chấp thuận vị trí, quy mô, kích thước, phương án tổ chức thi công biển quảng cáo, biển thông tin cổ động, tuyên truyền chính trị; chấp thuận xây dựng, lắp đặt công trình hạ tầng, công trình hạ tầng kỹ thuật sử dụng chung trong phạm vi bảo vệ kết cấu hạ tầng đường bộ; chấp thuận gia cường công trình đường bộ khi cần thiết để cho phép xe quá khổ giới hạn, xe quá tải trọng, xe bánh xích lưu hành trên đường bộ",
+      "source_processing_time": {
+        "qty": 7,
+        "type": "WORKING_DAY"
+      },
+      "has_case_specific_components": false
+    }
+  ],
+  "selected_template_ids": [
+    "template-6a3a706b7eb5f6ab",
+    "template-2fef109324b14b1b"
+  ],
+  "source_component_groups": [
+    {
+      "name": "Hồ sơ chấp thuận vị trí, quy mô, kích thước biển quảng cáo, biển thông tin cổ động, tuyên truyền chính trị, xây dựng, lắp đặt công trình hạ tầng, công trình hạ tầng kỹ thuật sử dụng chung trong phạm vi bảo vệ kết cấu hạ tầng đường bộ, bao gồm",
+      "component_count": 4,
+      "source_detail_id": "019d2bfe-a02c-754e-9e9e-afd5f23aa699"
+    },
+    {
+      "name": "* Đối với việc thi công xây dựng đường dây tải điện, dây dẫn điện điện áp từ 35 kV trở xuống, đường dây thông tin, viễn thông, gia cường công trình đường bộ (khi cần thiết để cho phép xe quá khổ giới hạn, xe quá tải trọng, xe bánh xích lưu hành trên đường bộ), trừ các trường hợp không phải cấp giấy phép thi công theo quy định tại khoản 3 Điều 32 Luật Đường bộ, thành phần hồ sơ đề nghị chấp thuận xây dựng, gia cường được thực hiện đồng thời với hồ sơ cấp giấy phép thi công công trình trên đường bộ đang khai thác.",
+      "component_count": 3,
+      "source_detail_id": "019d2bfe-a02c-754e-9e9e-afd5f23aa699"
+    }
+  ],
+  "conditional_component_groups": [],
+  "default_test_scenario": {
+    "channel": "direct",
+    "applicant_submits_self": true,
+    "authorized": false,
+    "special_case_flags": [],
+    "selected_conditional_group": null,
+    "case_selection_method": "ordinary_direct_submission",
+    "case_status": "scenario_for_testing_not_a_legal_eligibility_decision"
+  },
+  "requirement_note": "required_as_published được giữ nguyên; false không chứng minh giấy tờ luôn tùy chọn. Các nhóm executionCases có thể là mục giấy tờ/hướng dẫn, không phải các phương án loại trừ nhau."
+}

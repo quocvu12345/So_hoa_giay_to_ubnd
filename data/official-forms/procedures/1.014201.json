@@ -1,0 +1,646 @@
+{
+  "ordinal": "35",
+  "managing_agency": "Sở Nội Vụ",
+  "procedure_code": "1.014201",
+  "name": "Gia hạn giấy phép lao động đối với người lao động nước ngoài làm việc tại Việt Nam",
+  "domain": "Việc làm",
+  "ministry_decision": "346/QĐ-BNV ngày 24/3/2026",
+  "hanoi_decision": "396/QĐ-TTPVHCC ngày 31/3/2026",
+  "workflow_decision": "435/QĐ -TTPVHCC ngày 06/04/2026",
+  "fees": "Lệ phí: 300.000 đồng/ 1 giấy phép.",
+  "execution_level": "Cấp xã",
+  "competent_authority": "UBND cấp xã",
+  "delegation_decision": "114/QĐ-SNV ngày 15/01/2026",
+  "delegation_expiry": "31/12/2028",
+  "receiving_location": "Điểm hỗ trợ DVC số",
+  "source_page": 2,
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "inventory_date": "2026-04-27",
+  "checked_at": "2026-11-12T22:23:34.093856+07:00",
+  "details": [
+    {
+      "id": "019d2bfb-2afe-7204-b5da-cf375013bccc",
+      "code": "1.014201",
+      "name": "Gia hạn giấy phép lao động đối với người lao động nước ngoài làm việc tại Việt Nam",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1779783812904,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-2afe-7204-b5da-cf375013bccc",
+      "raw_path": "evidence/dvc/details/019d2bfb-2afe-7204-b5da-cf375013bccc.json",
+      "components": [
+        {
+          "section": "1.1. Đối với người lao động nước ngoài là nhà quản lý",
+          "position": 1,
+          "name": "(1) Văn bản của người sử dụng lao động báo cáo giải trình nhu cầu sử dụng lao động nước ngoài và đề nghị gia hạn giấy phép lao động theo Mẫu số 03 Phụ lục ban hành kèm theo Nghị định số 219/2025/NĐ-CP   .",
+          "component_code": "G09-KQ003088",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019d7643-4ea3-7482-bb70-ef3d57893276",
+              "fileName": "Mauso03.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d7643-4ea3-7482-bb70-ef3d57893276/Mauso03.docx"
+            }
+          ]
+        },
+        {
+          "section": "1.1. Đối với người lao động nước ngoài là nhà quản lý",
+          "position": 2,
+          "name": "(2) Giấy khám sức khỏe do cơ sở khám bệnh, chữa bệnh có đủ điều kiện cấp, trừ trường hợp kết quả khám sức khỏe đã được kết nối, chia sẻ trên Hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh hoặc cơ sở dữ liệu quốc gia về y tế. Đối với giấy khám sức khỏe do cơ sở y tế có thẩm quyền của nước ngoài cấp được sử dụng trong trường hợp Việt Nam và quốc gia hoặc vùng lãnh thổ cấp giấy khám sức khỏe có điều ước hoặc thỏa thuận thừa nhận lẫn nhau và thời hạn sử dụng của giấy khám sức khỏe đó không quá 12 tháng kể từ ngày được cấp.",
+          "component_code": "G09-KQ003054",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "1.1. Đối với người lao động nước ngoài là nhà quản lý",
+          "position": 3,
+          "name": "(3) 02 ảnh màu hoặc file ảnh trong trường hợp nộp trực tuyến (kích thước 4 cm x 6 cm, phông nền trắng, mặt nhìn thẳng, đầu để trần, không đeo kính).  Trường hợp khai thác được thông tin về ảnh trong cơ sở dữ liệu dùng chung, người sử dụng lao động không phải nộp thành phần hồ sơ này.",
+          "component_code": "G09-KQ003880",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "1.1. Đối với người lao động nước ngoài là nhà quản lý",
+          "position": 4,
+          "name": "(4) Bản sao giấy phép lao động còn thời hạn đã được cấp.  Trường hợp khai thác được thông tin về giấy phép lao động còn thời hạn đã được cấp trong cơ sở dữ liệu dùng chung hoặc không có sự thay đổi thông tin về giấy phép lao động, người sử dụng lao động không phải nộp thành phần hồ sơ này.",
+          "component_code": "G09-KQ003877",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "1.1. Đối với người lao động nước ngoài là nhà quản lý",
+          "position": 5,
+          "name": "(5) Bản sao trang nhân thân hộ chiếu còn thời hạn.  Trường hợp khai thác được thông tin về hộ chiếu còn thời hạn trong cơ sở dữ liệu dùng chung hoặc không có sự thay đổi thông tin về hộ chiếu, người sử dụng lao động không phải nộp thành phần hồ sơ này.",
+          "component_code": "G09-KQ003879",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "1.1. Đối với người lao động nước ngoài là nhà quản lý",
+          "position": 6,
+          "name": "(6) Giấy tờ chứng minh hình thức làm việc của người lao động nước ngoài trừ trường hợp người lao động nước ngoài làm việc theo hình thức thực hiện hợp đồng lao động là một trong các giấy tờ sau:",
+          "component_code": "G09-KQ003881",
+          "original_quantity": 0,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "1.1. Đối với người lao động nước ngoài là nhà quản lý",
+          "position": 7,
+          "name": "(6.1) Đối với hình thức là di chuyển trong nội bộ doanh nghiệp: Văn bản của người sử dụng lao động tại nước ngoài cử người lao động nước ngoài sang làm việc có thời hạn tại hiện diện thương mại trên lãnh thổ Việt Nam và xác nhận đã được người sử dụng lao động tại nước ngoài tuyển dụng trước đó ít nhất 12 tháng liên tục ngay trước khi vào Việt Nam làm việc.",
+          "component_code": "G09-KQ003858",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "1.1. Đối với người lao động nước ngoài là nhà quản lý",
+          "position": 8,
+          "name": "(6.2) Đối với hình thức là thực hiện các loại hợp đồng hoặc thỏa thuận về kinh tế, xã hội: Văn bản của người sử dụng lao động cử người lao động nước ngoài kèm hợp đồng hoặc thỏa thuận được ký kết.",
+          "component_code": "G09-KQ003859",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "1.1. Đối với người lao động nước ngoài là nhà quản lý",
+          "position": 9,
+          "name": "(6.3) Đối với hình thức là nhà cung cấp dịch vụ theo hợp đồng: Hợp đồng cung cấp dịch vụ ký kết giữa đối tác Việt Nam và nước ngoài và văn bản chứng minh người lao động nước ngoài đã làm việc cho doanh nghiệp nước ngoài không có hiện diện thương mại tại Việt Nam được ít nhất 24 tháng.",
+          "component_code": "G09-KQ003860",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "1.1. Đối với người lao động nước ngoài là nhà quản lý",
+          "position": 10,
+          "name": "(6.4) Đối với hình thức là chào bán dịch vụ: Văn bản của nhà cung cấp dịch vụ cử người lao động nước ngoài vào Việt Nam để đàm phán cung cấp dịch vụ.",
+          "component_code": "G09-KQ003861",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "1.1. Đối với người lao động nước ngoài là nhà quản lý",
+          "position": 11,
+          "name": "(6.5) Đối với hình thức là được điều chuyển từ cơ quan, tổ chức, doanh nghiệp ở nước ngoài sang Việt Nam làm việc trừ trường hợp di chuyển trong nội bộ doanh nghiệp: Văn bản của người sử dụng lao động tại nước ngoài cử người lao động nước ngoài sang làm việc tại Việt Nam và phù hợp với vị trí dự kiến làm việc.",
+          "component_code": "G09-KQ003862",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "1.1. Đối với người lao động nước ngoài là nhà quản lý",
+          "position": 12,
+          "name": "(6.6) Đối với hình thức là tham gia thực hiện các gói thầu, dự án tại Việt Nam Văn bản của người sử dụng lao động cử người lao động nước ngoài kèm hợp đồng hoặc thỏa thuận được ký kết.",
+          "component_code": "G09-KQ003863",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "1.1. Đối với người lao động nước ngoài là nhà quản lý",
+          "position": 13,
+          "name": "(6.7) Đối với hình thức là Chủ tịch Hội đồng quản trị, thành viên Hội đồng quản trị của công ty cổ phần, chủ sở hữu, thành viên của công ty trách nhiệm hữu hạn có giá trị góp vốn dưới 3 tỷ đồng: Văn bản chứng minh là phải có giấy tờ chứng minh là nhà quản lý là một trong các giấy tờ sau:",
+          "component_code": "G09-KQ003882",
+          "original_quantity": 0,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "1.1. Đối với người lao động nước ngoài là nhà quản lý",
+          "position": 14,
+          "name": "+ Điều lệ công ty và giấy tờ chứng minh là nhà quản lý hoặc văn bản bổ nhiệm, điều động đối với các vị trí là nhà quản lý theo quy định tại khoản 24 Điều 4 Luật Doanh nghiệp;",
+          "component_code": "G09-KQ003841",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "1.1. Đối với người lao động nước ngoài là nhà quản lý",
+          "position": 15,
+          "name": "+ Giấy phép thành lập cơ quan, tổ chức hoặc văn bản bổ nhiệm, điều động đối với người đứng đầu, cấp phó của người đứng đầu cơ quan, tổ chức.",
+          "component_code": "G09-KQ003842",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "1.2. Đối với người lao động nước ngoài là giám đốc điều hành",
+          "position": 1,
+          "name": "(1) Văn bản của người sử dụng lao động báo cáo giải trình nhu cầu sử dụng lao động nước ngoài và đề nghị gia hạn giấy phép lao động theo Mẫu số 03 Phụ lục ban hành kèm theo Nghị định số 219/2025/NĐ-CP   .",
+          "component_code": "G09-KQ003088",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019d7643-4ea3-7482-bb70-ef3d57893276",
+              "fileName": "Mauso03.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d7643-4ea3-7482-bb70-ef3d57893276/Mauso03.docx"
+            }
+          ]
+        },
+        {
+          "section": "1.2. Đối với người lao động nước ngoài là giám đốc điều hành",
+          "position": 2,
+          "name": "(2) Giấy khám sức khỏe do cơ sở khám bệnh, chữa bệnh có đủ điều kiện cấp, trừ trường hợp kết quả khám sức khỏe đã được kết nối, chia sẻ trên Hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh hoặc cơ sở dữ liệu quốc gia về y tế. Đối với giấy khám sức khỏe do cơ sở y tế có thẩm quyền của nước ngoài cấp được sử dụng trong trường hợp Việt Nam và quốc gia hoặc vùng lãnh thổ cấp giấy khám sức khỏe có điều ước hoặc thỏa thuận thừa nhận lẫn nhau và thời hạn sử dụng của giấy khám sức khỏe đó không quá 12 tháng kể từ ngày được cấp.",
+          "component_code": "G09-KQ003054",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "1.2. Đối với người lao động nước ngoài là giám đốc điều hành",
+          "position": 3,
+          "name": "(3) 02 ảnh màu hoặc file ảnh trong trường hợp nộp trực tuyến (kích thước 4 cm x 6 cm, phông nền trắng, mặt nhìn thẳng, đầu để trần, không đeo kính).  Trường hợp khai thác được thông tin về ảnh trong cơ sở dữ liệu dùng chung, người sử dụng lao động không phải nộp thành phần hồ sơ này.",
+          "component_code": "G09-KQ003880",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "1.2. Đối với người lao động nước ngoài là giám đốc điều hành",
+          "position": 4,
+          "name": "(4) Bản sao giấy phép lao động còn thời hạn đã được cấp.  Trường hợp khai thác được thông tin về giấy phép lao động còn thời hạn đã được cấp trong cơ sở dữ liệu dùng chung hoặc không có sự thay đổi thông tin về giấy phép lao động, người sử dụng lao động không phải nộp thành phần hồ sơ này.",
+          "component_code": "G09-KQ003877",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "1.2. Đối với người lao động nước ngoài là giám đốc điều hành",
+          "position": 5,
+          "name": "(5) Bản sao trang nhân thân hộ chiếu còn thời hạn.  Trường hợp khai thác được thông tin về hộ chiếu còn thời hạn trong cơ sở dữ liệu dùng chung hoặc không có sự thay đổi thông tin về hộ chiếu, người sử dụng lao động không phải nộp thành phần hồ sơ này.",
+          "component_code": "G09-KQ003879",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "1.2. Đối với người lao động nước ngoài là giám đốc điều hành",
+          "position": 6,
+          "name": "(6) Giấy tờ chứng minh hình thức làm việc của người lao động nước ngoài trừ trường hợp người lao động nước ngoài làm việc theo hình thức thực hiện hợp đồng lao động là một trong các giấy tờ sau:",
+          "component_code": "G09-KQ003881",
+          "original_quantity": 0,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "1.2. Đối với người lao động nước ngoài là giám đốc điều hành",
+          "position": 7,
+          "name": "(6.1) Đối với hình thức là di chuyển trong nội bộ doanh nghiệp: Văn bản của người sử dụng lao động tại nước ngoài cử người lao động nước ngoài sang làm việc có thời hạn tại hiện diện thương mại trên lãnh thổ Việt Nam và xác nhận đã được người sử dụng lao động tại nước ngoài tuyển dụng trước đó ít nhất 12 tháng liên tục ngay trước khi vào Việt Nam làm việc.",
+          "component_code": "G09-KQ003858",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "1.2. Đối với người lao động nước ngoài là giám đốc điều hành",
+          "position": 8,
+          "name": "(6.2) Đối với hình thức là thực hiện các loại hợp đồng hoặc thỏa thuận về kinh tế, xã hội: Văn bản của người sử dụng lao động cử người lao động nước ngoài kèm hợp đồng hoặc thỏa thuận được ký kết.",
+          "component_code": "G09-KQ003859",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "1.2. Đối với người lao động nước ngoài là giám đốc điều hành",
+          "position": 9,
+          "name": "(6.3) Đối với hình thức là nhà cung cấp dịch vụ theo hợp đồng: Hợp đồng cung cấp dịch vụ ký kết giữa đối tác Việt Nam và nước ngoài và văn bản chứng minh người lao động nước ngoài đã làm việc cho doanh nghiệp nước ngoài không có hiện diện thương mại tại Việt Nam được ít nhất 24 tháng.",
+          "component_code": "G09-KQ003860",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "1.2. Đối với người lao động nước ngoài là giám đốc điều hành",
+          "position": 10,
+          "name": "(6.4) Đối với hình thức là chào bán dịch vụ: Văn bản của nhà cung cấp dịch vụ cử người lao động nước ngoài vào Việt Nam để đàm phán cung cấp dịch vụ.",
+          "component_code": "G09-KQ003861",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "1.2. Đối với người lao động nước ngoài là giám đốc điều hành",
+          "position": 11,
+          "name": "(6.5) Đối với hình thức là được điều chuyển từ cơ quan, tổ chức, doanh nghiệp ở nước ngoài sang Việt Nam làm việc trừ trường hợp di chuyển trong nội bộ doanh nghiệp: Văn bản của người sử dụng lao động tại nước ngoài cử người lao động nước ngoài sang làm việc tại Việt Nam và phù hợp với vị trí dự kiến làm việc.",
+          "component_code": "G09-KQ003862",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "1.2. Đối với người lao động nước ngoài là giám đốc điều hành",
+          "position": 12,
+          "name": "(6.6) Đối với hình thức là tham gia thực hiện các gói thầu, dự án tại Việt Nam Văn bản của người sử dụng lao động cử người lao động nước ngoài kèm hợp đồng hoặc thỏa thuận được ký kết.",
+          "component_code": "G09-KQ003863",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "1.3. Đối với người lao động nước ngoài là chuyên gia",
+          "position": 1,
+          "name": "(1) Văn bản của người sử dụng lao động báo cáo giải trình nhu cầu sử dụng lao động nước ngoài và đề nghị gia hạn giấy phép lao động theo Mẫu số 03 Phụ lục ban hành kèm theo Nghị định số 219/2025/NĐ-CP   .",
+          "component_code": "G09-KQ003088",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019d7643-4ea3-7482-bb70-ef3d57893276",
+              "fileName": "Mauso03.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d7643-4ea3-7482-bb70-ef3d57893276/Mauso03.docx"
+            }
+          ]
+        },
+        {
+          "section": "1.3. Đối với người lao động nước ngoài là chuyên gia",
+          "position": 2,
+          "name": "(2) Giấy khám sức khỏe do cơ sở khám bệnh, chữa bệnh có đủ điều kiện cấp, trừ trường hợp kết quả khám sức khỏe đã được kết nối, chia sẻ trên Hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh hoặc cơ sở dữ liệu quốc gia về y tế. Đối với giấy khám sức khỏe do cơ sở y tế có thẩm quyền của nước ngoài cấp được sử dụng trong trường hợp Việt Nam và quốc gia hoặc vùng lãnh thổ cấp giấy khám sức khỏe có điều ước hoặc thỏa thuận thừa nhận lẫn nhau và thời hạn sử dụng của giấy khám sức khỏe đó không quá 12 tháng kể từ ngày được cấp.",
+          "component_code": "G09-KQ003054",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "1.3. Đối với người lao động nước ngoài là chuyên gia",
+          "position": 3,
+          "name": "(3) 02 ảnh màu hoặc file ảnh trong trường hợp nộp trực tuyến (kích thước 4 cm x 6 cm, phông nền trắng, mặt nhìn thẳng, đầu để trần, không đeo kính).  Trường hợp khai thác được thông tin về ảnh trong cơ sở dữ liệu dùng chung, người sử dụng lao động không phải nộp thành phần hồ sơ này.",
+          "component_code": "G09-KQ003880",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "1.3. Đối với người lao động nước ngoài là chuyên gia",
+          "position": 4,
+          "name": "(4) Bản sao giấy phép lao động còn thời hạn đã được cấp.  Trường hợp khai thác được thông tin về giấy phép lao động còn thời hạn đã được cấp trong cơ sở dữ liệu dùng chung hoặc không có sự thay đổi thông tin về giấy phép lao động, người sử dụng lao động không phải nộp thành phần hồ sơ này.",
+          "component_code": "G09-KQ003877",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "1.3. Đối với người lao động nước ngoài là chuyên gia",
+          "position": 5,
+          "name": "(5) Bản sao trang nhân thân hộ chiếu còn thời hạn.  Trường hợp khai thác được thông tin về hộ chiếu còn thời hạn trong cơ sở dữ liệu dùng chung hoặc không có sự thay đổi thông tin về hộ chiếu, người sử dụng lao động không phải nộp thành phần hồ sơ này.",
+          "component_code": "G09-KQ003879",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "1.3. Đối với người lao động nước ngoài là chuyên gia",
+          "position": 6,
+          "name": "(6) Giấy tờ chứng minh hình thức làm việc của người lao động nước ngoài trừ trường hợp người lao động nước ngoài làm việc theo hình thức thực hiện hợp đồng lao động là một trong các giấy tờ sau:",
+          "component_code": "G09-KQ003881",
+          "original_quantity": 0,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "1.3. Đối với người lao động nước ngoài là chuyên gia",
+          "position": 7,
+          "name": "(6.1) Đối với hình thức là di chuyển trong nội bộ doanh nghiệp: Văn bản của người sử dụng lao động tại nước ngoài cử người lao động nước ngoài sang làm việc có thời hạn tại hiện diện thương mại trên lãnh thổ Việt Nam và xác nhận đã được người sử dụng lao động tại nước ngoài tuyển dụng trước đó ít nhất 12 tháng liên tục ngay trước khi vào Việt Nam làm việc.",
+          "component_code": "G09-KQ003858",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "1.3. Đối với người lao động nước ngoài là chuyên gia",
+          "position": 8,
+          "name": "(6.2) Đối với hình thức là thực hiện các loại hợp đồng hoặc thỏa thuận về kinh tế, xã hội: Văn bản của người sử dụng lao động cử người lao động nước ngoài kèm hợp đồng hoặc thỏa thuận được ký kết.",
+          "component_code": "G09-KQ003859",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "1.3. Đối với người lao động nước ngoài là chuyên gia",
+          "position": 9,
+          "name": "(6.3) Đối với hình thức là nhà cung cấp dịch vụ theo hợp đồng: Hợp đồng cung cấp dịch vụ ký kết giữa đối tác Việt Nam và nước ngoài và văn bản chứng minh người lao động nước ngoài đã làm việc cho doanh nghiệp nước ngoài không có hiện diện thương mại tại Việt Nam được ít nhất 24 tháng.",
+          "component_code": "G09-KQ003860",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "1.3. Đối với người lao động nước ngoài là chuyên gia",
+          "position": 10,
+          "name": "(6.4) Đối với hình thức là chào bán dịch vụ: Văn bản của nhà cung cấp dịch vụ cử người lao động nước ngoài vào Việt Nam để đàm phán cung cấp dịch vụ.",
+          "component_code": "G09-KQ003861",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "1.3. Đối với người lao động nước ngoài là chuyên gia",
+          "position": 11,
+          "name": "(6.5) Đối với hình thức là được điều chuyển từ cơ quan, tổ chức, doanh nghiệp ở nước ngoài sang Việt Nam làm việc trừ trường hợp di chuyển trong nội bộ doanh nghiệp: Văn bản của người sử dụng lao động tại nước ngoài cử người lao động nước ngoài sang làm việc tại Việt Nam và phù hợp với vị trí dự kiến làm việc.",
+          "component_code": "G09-KQ003862",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "1.3. Đối với người lao động nước ngoài là chuyên gia",
+          "position": 12,
+          "name": "(6.6) Đối với hình thức là tham gia thực hiện các gói thầu, dự án tại Việt Nam Văn bản của người sử dụng lao động cử người lao động nước ngoài kèm hợp đồng hoặc thỏa thuận được ký kết.",
+          "component_code": "G09-KQ003863",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "1.4. Đối với người lao động nước ngoài là lao động kỹ thuật",
+          "position": 1,
+          "name": "(1) Văn bản của người sử dụng lao động báo cáo giải trình nhu cầu sử dụng lao động nước ngoài và đề nghị gia hạn giấy phép lao động theo Mẫu số 03 Phụ lục ban hành kèm theo Nghị định số 219/2025/NĐ-CP   .",
+          "component_code": "G09-KQ003088",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019d7643-4ea3-7482-bb70-ef3d57893276",
+              "fileName": "Mauso03.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d7643-4ea3-7482-bb70-ef3d57893276/Mauso03.docx"
+            }
+          ]
+        },
+        {
+          "section": "1.4. Đối với người lao động nước ngoài là lao động kỹ thuật",
+          "position": 2,
+          "name": "(2) Giấy khám sức khỏe do cơ sở khám bệnh, chữa bệnh có đủ điều kiện cấp, trừ trường hợp kết quả khám sức khỏe đã được kết nối, chia sẻ trên Hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh hoặc cơ sở dữ liệu quốc gia về y tế. Đối với giấy khám sức khỏe do cơ sở y tế có thẩm quyền của nước ngoài cấp được sử dụng trong trường hợp Việt Nam và quốc gia hoặc vùng lãnh thổ cấp giấy khám sức khỏe có điều ước hoặc thỏa thuận thừa nhận lẫn nhau và thời hạn sử dụng của giấy khám sức khỏe đó không quá 12 tháng kể từ ngày được cấp.",
+          "component_code": "G09-KQ003054",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "1.4. Đối với người lao động nước ngoài là lao động kỹ thuật",
+          "position": 3,
+          "name": "(3) 02 ảnh màu hoặc file ảnh trong trường hợp nộp trực tuyến (kích thước 4 cm x 6 cm, phông nền trắng, mặt nhìn thẳng, đầu để trần, không đeo kính).  Trường hợp khai thác được thông tin về ảnh trong cơ sở dữ liệu dùng chung, người sử dụng lao động không phải nộp thành phần hồ sơ này.",
+          "component_code": "G09-KQ003880",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "1.4. Đối với người lao động nước ngoài là lao động kỹ thuật",
+          "position": 4,
+          "name": "(4) Bản sao giấy phép lao động còn thời hạn đã được cấp.  Trường hợp khai thác được thông tin về giấy phép lao động còn thời hạn đã được cấp trong cơ sở dữ liệu dùng chung hoặc không có sự thay đổi thông tin về giấy phép lao động, người sử dụng lao động không phải nộp thành phần hồ sơ này.",
+          "component_code": "G09-KQ003877",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "1.4. Đối với người lao động nước ngoài là lao động kỹ thuật",
+          "position": 5,
+          "name": "(5) Bản sao trang nhân thân hộ chiếu còn thời hạn.  Trường hợp khai thác được thông tin về hộ chiếu còn thời hạn trong cơ sở dữ liệu dùng chung hoặc không có sự thay đổi thông tin về hộ chiếu, người sử dụng lao động không phải nộp thành phần hồ sơ này.",
+          "component_code": "G09-KQ003879",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "1.4. Đối với người lao động nước ngoài là lao động kỹ thuật",
+          "position": 6,
+          "name": "(6) Giấy tờ chứng minh hình thức làm việc của người lao động nước ngoài trừ trường hợp người lao động nước ngoài làm việc theo hình thức thực hiện hợp đồng lao động là một trong các giấy tờ sau:",
+          "component_code": "G09-KQ003881",
+          "original_quantity": 0,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "1.4. Đối với người lao động nước ngoài là lao động kỹ thuật",
+          "position": 7,
+          "name": "(6.1) Đối với hình thức là di chuyển trong nội bộ doanh nghiệp: Văn bản của người sử dụng lao động tại nước ngoài cử người lao động nước ngoài sang làm việc có thời hạn tại hiện diện thương mại trên lãnh thổ Việt Nam và xác nhận đã được người sử dụng lao động tại nước ngoài tuyển dụng trước đó ít nhất 12 tháng liên tục ngay trước khi vào Việt Nam làm việc.",
+          "component_code": "G09-KQ003858",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "1.4. Đối với người lao động nước ngoài là lao động kỹ thuật",
+          "position": 8,
+          "name": "(6.2) Đối với hình thức là thực hiện các loại hợp đồng hoặc thỏa thuận về kinh tế, xã hội: Văn bản của người sử dụng lao động cử người lao động nước ngoài kèm hợp đồng hoặc thỏa thuận được ký kết.",
+          "component_code": "G09-KQ003859",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "1.4. Đối với người lao động nước ngoài là lao động kỹ thuật",
+          "position": 9,
+          "name": "(6.3) Đối với hình thức là nhà cung cấp dịch vụ theo hợp đồng: Hợp đồng cung cấp dịch vụ ký kết giữa đối tác Việt Nam và nước ngoài và văn bản chứng minh người lao động nước ngoài đã làm việc cho doanh nghiệp nước ngoài không có hiện diện thương mại tại Việt Nam được ít nhất 24 tháng.",
+          "component_code": "G09-KQ003860",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "1.4. Đối với người lao động nước ngoài là lao động kỹ thuật",
+          "position": 10,
+          "name": "(6.4) Đối với hình thức là chào bán dịch vụ: Văn bản của nhà cung cấp dịch vụ cử người lao động nước ngoài vào Việt Nam để đàm phán cung cấp dịch vụ.",
+          "component_code": "G09-KQ003861",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "1.4. Đối với người lao động nước ngoài là lao động kỹ thuật",
+          "position": 11,
+          "name": "(6.5) Đối với hình thức là được điều chuyển từ cơ quan, tổ chức, doanh nghiệp ở nước ngoài sang Việt Nam làm việc trừ trường hợp di chuyển trong nội bộ doanh nghiệp: Văn bản của người sử dụng lao động tại nước ngoài cử người lao động nước ngoài sang làm việc tại Việt Nam và phù hợp với vị trí dự kiến làm việc.",
+          "component_code": "G09-KQ003862",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "1.4. Đối với người lao động nước ngoài là lao động kỹ thuật",
+          "position": 12,
+          "name": "(6.6) Đối với hình thức là tham gia thực hiện các gói thầu, dự án tại Việt Nam Văn bản của người sử dụng lao động cử người lao động nước ngoài kèm hợp đồng hoặc thỏa thuận được ký kết.",
+          "component_code": "G09-KQ003863",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c4c-77ab-bf70-1ea08bba6312",
+          "name": "- Giấy phép lao động; - Hoặc văn bản trả lời và nêu rõ lý do trong trường hợp không chấp thuận nhu cầu sử dụng lao động nước ngoài hoặc không gia hạn giấy phép lao động cho người lao động nước ngoài.",
+          "code": "KQ.G09.000382"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7e-72d1-afed-66700cf36a77",
+          "name": "QUY ĐỊNH VỀ NGƯỜI LAO ĐỘNG NƯỚC NGOÀI LÀM VIỆC TẠI VIỆT NAM",
+          "code": "219/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b673-3e33a4649d19",
+          "name": "Bộ Luật lao động",
+          "code": "45/2019/QH14"
+        }
+      ]
+    }
+  ],
+  "lookup_status": "retrieved",
+  "currency_status": "snapshot_requires_later_amendment_check",
+  "errors": []
+}

@@ -1,0 +1,94 @@
+{
+  "id": "dvc-019d2bfa-9621-740d-984e-e0a036f298d5",
+  "procedure_code": "1.014284",
+  "name": "Giao đất, cho thuê đất, giao khu vực biển để thực hiện hoạt động lấn biển.",
+  "domain": "Đất đai",
+  "managing_agency": "Bộ Nông nghiệp và Môi trường",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:18.012477+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfa-9621-740d-984e-e0a036f298d5",
+      "code": "1.014284",
+      "name": "Giao đất, cho thuê đất, giao khu vực biển để thực hiện hoạt động lấn biển.",
+      "state": "ACTIVE",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1776326614530,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfa-9621-740d-984e-e0a036f298d5",
+      "raw_path": "evidence/dvc/details/019d2bfa-9621-740d-984e-e0a036f298d5.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Dự án đầu tư lấn biển hoặc hạng mục lấn biển của dự án đầu tư đã được cơ quan nhà nước có thẩm quyền phê duyệt.",
+          "component_code": "000.00.00.G10-KQ005891",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Đơn đề nghị giao đất, cho thuê đất, giao khu vực biển để thực hiện hoạt động lấn biển.",
+          "component_code": "G10-KQ006843",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c6c-7279-86b6-ee06c5dd4d99",
+          "name": "Quyết định giao đất, cho thuê đất, giao khu vực biển để lấn biển",
+          "code": "KQ.G10.000874"
+        },
+        {
+          "id": "019d2bb2-1c6d-743d-a39d-65380884f765",
+          "name": "Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất.",
+          "code": "KQ.H37.080001"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7e-72d1-afeb-9ac6648a4b4f",
+          "name": "Quy định về phân định thẩm quyền của chính quyền địa phương 02 cấp, phân quyền, phân cấp trong lĩnh vực đất đai",
+          "code": "151/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b672-a3322a8748a6",
+          "name": "Luật Đất đai ngày 18/01/2024;",
+          "code": "31/2024/QH15"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afe9-653aac8276ee",
+          "name": "Nghị định số 118/2025/NĐ-CP của Chính phủ: Về thực hiện thủ tục hành chính theo cơ chế một cửa, một cửa liên thông tại Bộ phận Một cửa và Cổng Dịch vụ công quốc gia",
+          "code": "118/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d86-7760-a644-ce39f72a6124",
+          "name": "Sửa đổi, bổ sung một số điều của các nghị định  quy định chi tiết thi hành Luật Đất đai",
+          "code": "226/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afe8-0a00a8be7fd7",
+          "name": "Nghị định 102/2024/NĐ-CP ngày 30/7/2024 của Chính phủ quy định chi tiết thi hành một số điều của Luật Đất đai.",
+          "code": "102/2024/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d86-7760-a645-75ce66feb3f0",
+          "name": "Đính chính Nghị định số 151/2025/NĐ-CP ngày 12/6/2025",
+          "code": "2418/QĐ-BNNMT"
+        }
+      ]
+    }
+  ]
+}

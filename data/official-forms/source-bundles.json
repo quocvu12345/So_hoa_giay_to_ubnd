@@ -1,0 +1,274 @@
+[
+  {
+    "name": "Bộ biểu mẫu hộ tịch kèm Thông tư 04/2024 (tệp RAR gốc)",
+    "version": "TT 04/2024/TT-BTP",
+    "local_path": "originals/civil04.rar",
+    "source_url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2024/6/04-btp-kem.rar",
+    "sha256": "903de77e2898bed8935645d75c3a5c9cd1470d27207b9a2ea73bb8ff7b32f323",
+    "note": "Có cả tài liệu quốc tịch và hộ tịch. Không coi toàn bộ biểu mẫu trong gói đều còn hiệu lực; đối chiếu từng loại trước khi dùng."
+  },
+  {
+    "name": "Nội dung công khai TTHC hộ tịch và tờ khai năm 2026",
+    "version": "Sở Tư pháp Lạng Sơn, 25/02/2026",
+    "local_path": "originals/civil2026.pdf",
+    "source_url": "https://sotp.langson.gov.vn/upload/105377/20260225/2__Cong_khai_TTHC_ND_66_ho_tich_89166.pdf",
+    "sha256": "56972ff9d635f4e4f584448082a931eea9f97f65053e5a88886a0eee6efe1d03",
+    "note": "Nguồn đối chiếu mẫu dùng chung; mức phí và tổ chức tiếp nhận cần theo Hà Nội."
+  },
+  {
+    "name": "28 biểu mẫu đăng ký hộ kinh doanh trong văn bản hợp nhất",
+    "version": "VBHN 28/2026/VBHN-TT-BTC, 28/08/2026",
+    "local_path": "originals/business28.pdf",
+    "source_url": "https://xdcs.cdnchinhphu.vn/446259493575335936/2026/9/10/28-vbhn-btc-signed-1789004646391842704281.pdf",
+    "sha256": "38bd60ae5499ea23d2f62b7864aac37f6d103c19a5f0ffc6903c7213af494702",
+    "note": "Tệp gốc gồm cả biểu mẫu doanh nghiệp và hộ kinh doanh; dùng Phụ lục II cho hộ kinh doanh."
+  },
+  {
+    "name": "Quy trình nội bộ hộ tịch của Hà Nội, Phụ lục II",
+    "version": "QĐ 387, công bố tháng 4/2026",
+    "local_path": "originals/hanoi-civil387.pdf",
+    "source_url": "https://datafiles.hanoi.gov.vn/gov-hni/8123/VanBan/2026/4/6_1/387%20PL%2002.pdf",
+    "sha256": "f71dbd120a49e28d7bee6720ac073d3bb5be588515b0e88ad301e68f47e13922",
+    "note": "Tài liệu quy trình để đối chiếu, không phải mọi trang đều là mẫu đơn."
+  },
+  {
+    "name": "0. Phụ lục. Danh muc To khai dang ky ho tich",
+    "version": "Phụ lục tờ khai hộ tịch · TT 04/2024/TT-BTP",
+    "local_path": "originals/civil04/Biểu mẫu kèm theo Thông tư số 04.2024 ngày 06.6.2024/3. Phụ lục 5. Tờ khai đăng ký hộ tịch/0. Phụ lục. Danh muc To khai dang ky ho tich.doc",
+    "source_url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2024/6/04-btp-kem.rar",
+    "sha256": "2c84a04d4df0b6880c2252499713e0ce881136d35689919c5ed3fd62b2583bfe",
+    "note": "Tệp Word nguyên bản giải nén từ gói của Chính phủ; phiên bản 2024, cần đối chiếu mẫu đang áp dụng trước khi tạo dữ liệu."
+  },
+  {
+    "name": "1. TK đăng ký khai sinh",
+    "version": "Phụ lục tờ khai hộ tịch · TT 04/2024/TT-BTP",
+    "local_path": "originals/civil04/Biểu mẫu kèm theo Thông tư số 04.2024 ngày 06.6.2024/3. Phụ lục 5. Tờ khai đăng ký hộ tịch/1. TK đăng ký khai sinh.doc",
+    "source_url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2024/6/04-btp-kem.rar",
+    "sha256": "c818f55dae590c8ddd932b8681355e1bc437fa47896b50e5ce058b201400dd19",
+    "note": "Tệp Word nguyên bản giải nén từ gói của Chính phủ; phiên bản 2024, cần đối chiếu mẫu đang áp dụng trước khi tạo dữ liệu."
+  },
+  {
+    "name": "10. TK ghi vào sổ hộ tịch việc khai tử",
+    "version": "Phụ lục tờ khai hộ tịch · TT 04/2024/TT-BTP",
+    "local_path": "originals/civil04/Biểu mẫu kèm theo Thông tư số 04.2024 ngày 06.6.2024/3. Phụ lục 5. Tờ khai đăng ký hộ tịch/10. TK ghi vào sổ hộ tịch việc khai tử.doc",
+    "source_url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2024/6/04-btp-kem.rar",
+    "sha256": "e9099adec3538164253d0cb5464d050183ce0eea6242b2aa6a36c6f41f96d8e4",
+    "note": "Tệp Word nguyên bản giải nén từ gói của Chính phủ; phiên bản 2024, cần đối chiếu mẫu đang áp dụng trước khi tạo dữ liệu."
+  },
+  {
+    "name": "11. TK ghi vào sổ hộ tịch việc nuôi con nuôi",
+    "version": "Phụ lục tờ khai hộ tịch · TT 04/2024/TT-BTP",
+    "local_path": "originals/civil04/Biểu mẫu kèm theo Thông tư số 04.2024 ngày 06.6.2024/3. Phụ lục 5. Tờ khai đăng ký hộ tịch/11. TK ghi vào sổ hộ tịch việc nuôi con nuôi.doc",
+    "source_url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2024/6/04-btp-kem.rar",
+    "sha256": "c819f1f03ab47fcb037d4bd229897388bf31647eec41bfb7bce1754c3784ec77",
+    "note": "Tệp Word nguyên bản giải nén từ gói của Chính phủ; phiên bản 2024, cần đối chiếu mẫu đang áp dụng trước khi tạo dữ liệu."
+  },
+  {
+    "name": "12. TK ghi vào sổ hộ tịch việc giám hộ, nhận CMC",
+    "version": "Phụ lục tờ khai hộ tịch · TT 04/2024/TT-BTP",
+    "local_path": "originals/civil04/Biểu mẫu kèm theo Thông tư số 04.2024 ngày 06.6.2024/3. Phụ lục 5. Tờ khai đăng ký hộ tịch/12. TK ghi vào sổ hộ tịch việc giám hộ, nhận CMC.doc",
+    "source_url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2024/6/04-btp-kem.rar",
+    "sha256": "cee6f6a5e496f0822a763c90fbdb987a0de04fbe8ba76de7e7d282bdd7a24135",
+    "note": "Tệp Word nguyên bản giải nén từ gói của Chính phủ; phiên bản 2024, cần đối chiếu mẫu đang áp dụng trước khi tạo dữ liệu."
+  },
+  {
+    "name": "13. TK ghi vào sổ các việc hộ tịch khác",
+    "version": "Phụ lục tờ khai hộ tịch · TT 04/2024/TT-BTP",
+    "local_path": "originals/civil04/Biểu mẫu kèm theo Thông tư số 04.2024 ngày 06.6.2024/3. Phụ lục 5. Tờ khai đăng ký hộ tịch/13. TK ghi vào sổ các việc hộ tịch khác.doc",
+    "source_url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2024/6/04-btp-kem.rar",
+    "sha256": "67899e64646b54736e31b80f054e43431c753107a8ea51b701044be0588a1e05",
+    "note": "Tệp Word nguyên bản giải nén từ gói của Chính phủ; phiên bản 2024, cần đối chiếu mẫu đang áp dụng trước khi tạo dữ liệu."
+  },
+  {
+    "name": "14. TK đăng ký lại khai sinh",
+    "version": "Phụ lục tờ khai hộ tịch · TT 04/2024/TT-BTP",
+    "local_path": "originals/civil04/Biểu mẫu kèm theo Thông tư số 04.2024 ngày 06.6.2024/3. Phụ lục 5. Tờ khai đăng ký hộ tịch/14. TK đăng ký lại khai sinh.doc",
+    "source_url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2024/6/04-btp-kem.rar",
+    "sha256": "aeda28b58f5e2e3482641bdbad7ca309340b0d9c1b52854cb8fb385c24712846",
+    "note": "Tệp Word nguyên bản giải nén từ gói của Chính phủ; phiên bản 2024, cần đối chiếu mẫu đang áp dụng trước khi tạo dữ liệu."
+  },
+  {
+    "name": "15. TK đăng ký lại kết hôn",
+    "version": "Phụ lục tờ khai hộ tịch · TT 04/2024/TT-BTP",
+    "local_path": "originals/civil04/Biểu mẫu kèm theo Thông tư số 04.2024 ngày 06.6.2024/3. Phụ lục 5. Tờ khai đăng ký hộ tịch/15. TK đăng ký lại kết hôn.doc",
+    "source_url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2024/6/04-btp-kem.rar",
+    "sha256": "db1faea593ca1e33a34fd2086be4a3e3a0a2093208122a71cb6202f379f7d17a",
+    "note": "Tệp Word nguyên bản giải nén từ gói của Chính phủ; phiên bản 2024, cần đối chiếu mẫu đang áp dụng trước khi tạo dữ liệu."
+  },
+  {
+    "name": "16. TK đăng ký lại khai tử",
+    "version": "Phụ lục tờ khai hộ tịch · TT 04/2024/TT-BTP",
+    "local_path": "originals/civil04/Biểu mẫu kèm theo Thông tư số 04.2024 ngày 06.6.2024/3. Phụ lục 5. Tờ khai đăng ký hộ tịch/16. TK đăng ký lại khai tử.doc",
+    "source_url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2024/6/04-btp-kem.rar",
+    "sha256": "f47dda6232aa37834f3b9330f36f9d404e64189c6ed77add6e6938ba12c1945a",
+    "note": "Tệp Word nguyên bản giải nén từ gói của Chính phủ; phiên bản 2024, cần đối chiếu mẫu đang áp dụng trước khi tạo dữ liệu."
+  },
+  {
+    "name": "17. TK thay doi, cai chinh, bo sung ho tich, xa dinh lai dan toc",
+    "version": "Phụ lục tờ khai hộ tịch · TT 04/2024/TT-BTP",
+    "local_path": "originals/civil04/Biểu mẫu kèm theo Thông tư số 04.2024 ngày 06.6.2024/3. Phụ lục 5. Tờ khai đăng ký hộ tịch/17. TK thay doi, cai chinh, bo sung ho tich, xa dinh lai dan toc.doc",
+    "source_url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2024/6/04-btp-kem.rar",
+    "sha256": "1ba8722b03b120945d3c2e638f46797565036cadbe97e0c5fcde03921c4d1795",
+    "note": "Tệp Word nguyên bản giải nén từ gói của Chính phủ; phiên bản 2024, cần đối chiếu mẫu đang áp dụng trước khi tạo dữ liệu."
+  },
+  {
+    "name": "18. TK yeu cau ban sao trich luc ho tich",
+    "version": "Phụ lục tờ khai hộ tịch · TT 04/2024/TT-BTP",
+    "local_path": "originals/civil04/Biểu mẫu kèm theo Thông tư số 04.2024 ngày 06.6.2024/3. Phụ lục 5. Tờ khai đăng ký hộ tịch/18. TK yeu cau ban sao trich luc ho tich.doc",
+    "source_url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2024/6/04-btp-kem.rar",
+    "sha256": "55c4bde928a08dc87583c497bb5a47f82e2db7f48e6d2938a72e4acc76ec329d",
+    "note": "Tệp Word nguyên bản giải nén từ gói của Chính phủ; phiên bản 2024, cần đối chiếu mẫu đang áp dụng trước khi tạo dữ liệu."
+  },
+  {
+    "name": "19. TK cấp Giấy XNTTHN",
+    "version": "Phụ lục tờ khai hộ tịch · TT 04/2024/TT-BTP",
+    "local_path": "originals/civil04/Biểu mẫu kèm theo Thông tư số 04.2024 ngày 06.6.2024/3. Phụ lục 5. Tờ khai đăng ký hộ tịch/19. TK cấp Giấy XNTTHN.doc",
+    "source_url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2024/6/04-btp-kem.rar",
+    "sha256": "579a0d0b92f5a7bc801f1adfa755b54b37b82fd1c323c03f8c56cbb9e20fd14a",
+    "note": "Tệp Word nguyên bản giải nén từ gói của Chính phủ; phiên bản 2024, cần đối chiếu mẫu đang áp dụng trước khi tạo dữ liệu."
+  },
+  {
+    "name": "2. TK đăng ký kết hôn",
+    "version": "Phụ lục tờ khai hộ tịch · TT 04/2024/TT-BTP",
+    "local_path": "originals/civil04/Biểu mẫu kèm theo Thông tư số 04.2024 ngày 06.6.2024/3. Phụ lục 5. Tờ khai đăng ký hộ tịch/2. TK đăng ký kết hôn.doc",
+    "source_url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2024/6/04-btp-kem.rar",
+    "sha256": "3f7fcc0dbc609bf28c08ff73a5e13eb4b537afc76d26cdd95e28b8fb893b2e8c",
+    "note": "Tệp Word nguyên bản giải nén từ gói của Chính phủ; phiên bản 2024, cần đối chiếu mẫu đang áp dụng trước khi tạo dữ liệu."
+  },
+  {
+    "name": "20. Mẫu giấy cam đoan",
+    "version": "Phụ lục tờ khai hộ tịch · TT 04/2024/TT-BTP",
+    "local_path": "originals/civil04/Biểu mẫu kèm theo Thông tư số 04.2024 ngày 06.6.2024/3. Phụ lục 5. Tờ khai đăng ký hộ tịch/20. Mẫu giấy cam đoan.doc",
+    "source_url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2024/6/04-btp-kem.rar",
+    "sha256": "47c4dd33af9b0db316ef6edebe104f8b0ae6714e5a3efcd4fb1d132fdc3556b3",
+    "note": "Tệp Word nguyên bản giải nén từ gói của Chính phủ; phiên bản 2024, cần đối chiếu mẫu đang áp dụng trước khi tạo dữ liệu."
+  },
+  {
+    "name": "3. TK đăng ký khai tử",
+    "version": "Phụ lục tờ khai hộ tịch · TT 04/2024/TT-BTP",
+    "local_path": "originals/civil04/Biểu mẫu kèm theo Thông tư số 04.2024 ngày 06.6.2024/3. Phụ lục 5. Tờ khai đăng ký hộ tịch/3. TK đăng ký khai tử.doc",
+    "source_url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2024/6/04-btp-kem.rar",
+    "sha256": "7a41b2af03809ff099f1a1b8e4407d366f19f6c775136ba813e978d9e245f3b6",
+    "note": "Tệp Word nguyên bản giải nén từ gói của Chính phủ; phiên bản 2024, cần đối chiếu mẫu đang áp dụng trước khi tạo dữ liệu."
+  },
+  {
+    "name": "4. TK đăng ký giám hộ",
+    "version": "Phụ lục tờ khai hộ tịch · TT 04/2024/TT-BTP",
+    "local_path": "originals/civil04/Biểu mẫu kèm theo Thông tư số 04.2024 ngày 06.6.2024/3. Phụ lục 5. Tờ khai đăng ký hộ tịch/4. TK đăng ký giám hộ.doc",
+    "source_url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2024/6/04-btp-kem.rar",
+    "sha256": "06828d20d1557ea0a9e4f3eab6c020ba1830072b604a9713c007af7682e92996",
+    "note": "Tệp Word nguyên bản giải nén từ gói của Chính phủ; phiên bản 2024, cần đối chiếu mẫu đang áp dụng trước khi tạo dữ liệu."
+  },
+  {
+    "name": "5. TK đăng ký chấm dứt giám hộ",
+    "version": "Phụ lục tờ khai hộ tịch · TT 04/2024/TT-BTP",
+    "local_path": "originals/civil04/Biểu mẫu kèm theo Thông tư số 04.2024 ngày 06.6.2024/3. Phụ lục 5. Tờ khai đăng ký hộ tịch/5. TK đăng ký chấm dứt giám hộ.doc",
+    "source_url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2024/6/04-btp-kem.rar",
+    "sha256": "ca92b466e438c8d104719eea34862eccec7587c8e1dbdf22409db9571690c6c8",
+    "note": "Tệp Word nguyên bản giải nén từ gói của Chính phủ; phiên bản 2024, cần đối chiếu mẫu đang áp dụng trước khi tạo dữ liệu."
+  },
+  {
+    "name": "6. TK đăng ký nhận CMC",
+    "version": "Phụ lục tờ khai hộ tịch · TT 04/2024/TT-BTP",
+    "local_path": "originals/civil04/Biểu mẫu kèm theo Thông tư số 04.2024 ngày 06.6.2024/3. Phụ lục 5. Tờ khai đăng ký hộ tịch/6. TK đăng ký nhận CMC.doc",
+    "source_url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2024/6/04-btp-kem.rar",
+    "sha256": "9ecf1818f6a17da048854fae07dddb32789ffe00ab9013d76e4eac38176825b6",
+    "note": "Tệp Word nguyên bản giải nén từ gói của Chính phủ; phiên bản 2024, cần đối chiếu mẫu đang áp dụng trước khi tạo dữ liệu."
+  },
+  {
+    "name": "7. TK ghi vào sổ hộ tịch việc khai sinh",
+    "version": "Phụ lục tờ khai hộ tịch · TT 04/2024/TT-BTP",
+    "local_path": "originals/civil04/Biểu mẫu kèm theo Thông tư số 04.2024 ngày 06.6.2024/3. Phụ lục 5. Tờ khai đăng ký hộ tịch/7. TK ghi vào sổ hộ tịch việc khai sinh.doc",
+    "source_url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2024/6/04-btp-kem.rar",
+    "sha256": "bd85cc34bf21dfbc2442e2cbf8237cc3a4ee55305fc3aa01c016ba9241c81b85",
+    "note": "Tệp Word nguyên bản giải nén từ gói của Chính phủ; phiên bản 2024, cần đối chiếu mẫu đang áp dụng trước khi tạo dữ liệu."
+  },
+  {
+    "name": "8. TK ghi chú kết hôn",
+    "version": "Phụ lục tờ khai hộ tịch · TT 04/2024/TT-BTP",
+    "local_path": "originals/civil04/Biểu mẫu kèm theo Thông tư số 04.2024 ngày 06.6.2024/3. Phụ lục 5. Tờ khai đăng ký hộ tịch/8. TK ghi chú kết hôn.doc",
+    "source_url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2024/6/04-btp-kem.rar",
+    "sha256": "52b85e751bab134d0307207f4ffd92215aee1b6a3d995566884c81feb73f6f21",
+    "note": "Tệp Word nguyên bản giải nén từ gói của Chính phủ; phiên bản 2024, cần đối chiếu mẫu đang áp dụng trước khi tạo dữ liệu."
+  },
+  {
+    "name": "9. TK ghi chú ly hôn",
+    "version": "Phụ lục tờ khai hộ tịch · TT 04/2024/TT-BTP",
+    "local_path": "originals/civil04/Biểu mẫu kèm theo Thông tư số 04.2024 ngày 06.6.2024/3. Phụ lục 5. Tờ khai đăng ký hộ tịch/9. TK ghi chú ly hôn.doc",
+    "source_url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2024/6/04-btp-kem.rar",
+    "sha256": "421cb6eb8eee98144b882fb4c46605bd92278427d09b24c0386cc96340f42fbd",
+    "note": "Tệp Word nguyên bản giải nén từ gói của Chính phủ; phiên bản 2024, cần đối chiếu mẫu đang áp dụng trước khi tạo dữ liệu."
+  },
+  {
+    "name": "Nghị định 66/2025/NĐ-CP và phụ lục gốc",
+    "version": "NĐ 66/2025/NĐ-CP ngày 12/3/2025",
+    "local_path": "originals/education-66-2025.pdf",
+    "source_url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2025/3/66-nd-2025.signed.pdf",
+    "sha256": "13a16cd2967ca5b4c9168abe710d880cdd549ef2664ced709202e7ab8bdf4d6d",
+    "note": "Trích nguyên trang 27 của PDF gốc, không gõ lại nội dung. Tệp Word Mu05.docx trên DVC trả về rỗng."
+  },
+  {
+    "name": "Mẫu số 05 — học viên bán trú (PDF trích trang 27)",
+    "version": "NĐ 66/2025/NĐ-CP ngày 12/3/2025",
+    "local_path": "originals/mau-05-hoc-vien-ban-tru-nd66-2025-trang-27.pdf",
+    "source_url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2025/3/66-nd-2025.signed.pdf",
+    "sha256": "1efeff1e519c765416f0cd732d257594c6f377b00793bb2d6fe6c75460441b87",
+    "note": "Trích nguyên trang 27 của PDF gốc, không gõ lại nội dung. Tệp Word Mu05.docx trên DVC trả về rỗng."
+  },
+  {
+    "name": "Công báo 857 + 858 ngày 28/7/2023 — có bản hợp nhất NĐ 57/2017 và 104/2022",
+    "version": "NĐ 57/2017/NĐ-CP, hợp nhất sửa đổi NĐ 104/2022/NĐ-CP",
+    "local_path": "originals/cong-bao-857-858-2023.pdf",
+    "source_url": "https://congbaocdn.chinhphu.vn/CongBaoCP/CongBao/2023/7/39818/45875-1-857-858.pdf",
+    "sha256": "e6833dafc6ee418cf85716401574c6649a7c77db09d2ddbc9b71a95db93affa8",
+    "note": "Trích nguyên trang 79 Công báo, gồm chú thích sửa đổi bởi NĐ 104/2022. Tệp Word Mẫu số 02.docx trên DVC trả về rỗng."
+  },
+  {
+    "name": "Mẫu số 02 — hỗ trợ học tập (PDF trích trang 79)",
+    "version": "NĐ 57/2017/NĐ-CP, hợp nhất sửa đổi NĐ 104/2022/NĐ-CP",
+    "local_path": "originals/mau-02-ho-tro-hoc-tap-cong-bao-2023-trang-79.pdf",
+    "source_url": "https://congbaocdn.chinhphu.vn/CongBaoCP/CongBao/2023/7/39818/45875-1-857-858.pdf",
+    "sha256": "8590f0685a203d7b1747e81981840b35e971ec7f90e725edc7a19d811372ce31",
+    "note": "Trích nguyên trang 79 Công báo, gồm chú thích sửa đổi bởi NĐ 104/2022. Tệp Word Mẫu số 02.docx trên DVC trả về rỗng."
+  },
+  {
+    "name": "Quyết định 3033/QĐ-BYT ngày 29/9/2026",
+    "version": "Quyết định 3033/QĐ-BYT ngày 29/9/2026",
+    "local_path": "originals/byt3033-2026.pdf",
+    "source_url": "https://namhailang.quangtri.gov.vn/documents/39955/0/3033-Q%C4%90-BYT+2026.pdf/f84a7f83-e2f0-f050-031e-5d69cc904adc?t=1791359945686",
+    "sha256": "e67c073b982c29899ae88bb2d9348781d6eb8ad78788d3dfdb0e93e33847747a",
+    "note": "Văn bản gốc dùng đối chiếu thay thế/bãi bỏ. Trang áp dụng cho từng mã nằm trong lifecycle.json; giữ nguyên danh mục tháng 4."
+  },
+  {
+    "name": "Quyết định 2855/QĐ-BGDĐT ngày 30/9/2026",
+    "version": "Quyết định 2855/QĐ-BGDĐT ngày 30/9/2026",
+    "local_path": "originals/bgddt2855-2026.pdf",
+    "source_url": "https://dienbien.tnu.edu.vn/uploads/files/moet/moet-20260930-2855-qd-bgddt-quyet-dinh-ve-viec-cong-bo-thu-tuc-hanh-chinh-ban-hanh-moi-thu-tuc-hanh-chinh-duoc-thay-the-trong-cac-linh-vuc-thuoc-pha-7d2614c76a.pdf",
+    "sha256": "cf008cbd7ff333f5130543272f2ec20791f46f6ead34f5680e6a2d75d45ef94e",
+    "note": "Văn bản gốc dùng đối chiếu thay thế/bãi bỏ. Trang áp dụng cho từng mã nằm trong lifecycle.json; giữ nguyên danh mục tháng 4."
+  },
+  {
+    "name": "Quyết định 762/QĐ-TTPVHCC Hà Nội ngày 21/5/2026",
+    "version": "Quyết định 762/QĐ-TTPVHCC Hà Nội ngày 21/5/2026",
+    "local_path": "originals/hanoi762-2026.pdf",
+    "source_url": "https://datafiles.hanoi.gov.vn/gov-hni/6244/VanBan/2026/5/21/QDPVHCC-762-2026.pdf",
+    "sha256": "50e956bd4dbf85b6cb42f2654533a54344c9aad34ecb0b41baedd9bee0d66e5b",
+    "note": "Văn bản gốc dùng đối chiếu thay thế/bãi bỏ. Trang áp dụng cho từng mã nằm trong lifecycle.json; giữ nguyên danh mục tháng 4."
+  },
+  {
+    "name": "Quyết định 821/QĐ-TTPVHCC Hà Nội ngày 08/6/2026",
+    "version": "Quyết định 821/QĐ-TTPVHCC Hà Nội ngày 08/6/2026",
+    "local_path": "originals/hanoi821-2026.pdf",
+    "source_url": "https://datafiles.hanoi.gov.vn/gov-hni/8180/VanBan/2026/6/16/QD%20821.pdf",
+    "sha256": "06bcbf34571b7edfc493d3a3351f4b95d74df7826aa71d0ebec239c42700b9d0",
+    "note": "Văn bản gốc dùng đối chiếu thay thế/bãi bỏ. Trang áp dụng cho từng mã nằm trong lifecycle.json; giữ nguyên danh mục tháng 4."
+  },
+  {
+    "name": "Quyết định 826/QĐ-TTPVHCC Hà Nội ngày 11/6/2026",
+    "version": "Quyết định 826/QĐ-TTPVHCC Hà Nội ngày 11/6/2026",
+    "local_path": "originals/hanoi826-2026.pdf",
+    "source_url": "https://datafiles.hanoi.gov.vn/gov-hni/8180/VanBan/2026/6/16/QD%20826.pdf",
+    "sha256": "d70b7639b780eaeb7e0fcea62cab85077725b16efedc3af14d2b7780215814ec",
+    "note": "Văn bản gốc dùng đối chiếu thay thế/bãi bỏ. Trang áp dụng cho từng mã nằm trong lifecycle.json; giữ nguyên danh mục tháng 4."
+  }
+]

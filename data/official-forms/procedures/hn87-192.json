@@ -1,0 +1,117 @@
+{
+  "ordinal": "192",
+  "managing_agency": "Sở Nông nghiệp Môi trường",
+  "procedure_code": "1.012796",
+  "name": "Đính chính Giấy chứng nhận đã cấp lần đầu có sai sót",
+  "domain": "Đất đai (Bộ Nông nghiệp và Môi trường)",
+  "ministry_decision": "445/QĐ-BNNMT ngày 02/02/2026",
+  "hanoi_decision": "956/QĐ-TTPVHCC ngày 27/6/2025",
+  "workflow_decision": "1489/QĐ-TTPVHC ngày 27/10/2025",
+  "fees": "Theo quy định của Luật phí và lệ phí và các văn bản quy phạm pháp luật hướng dẫn Luật phí và lệ phí",
+  "execution_level": "Cấp Xã",
+  "competent_authority": "UBND cấp xã",
+  "delegation_decision": "",
+  "delegation_expiry": "",
+  "receiving_location": "Điểm hỗ trợ DVC số",
+  "id": "hn87-192",
+  "source_page": 8,
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "inventory_date": "2026-04-27",
+  "checked_at": "2026-11-12T22:24:34.549711+07:00",
+  "details": [
+    {
+      "id": "019d2bfa-76cb-741b-996e-33d1ef50be50",
+      "code": "1.012796",
+      "name": "Đính chính Giấy chứng nhận đã cấp lần đầu có sai sót",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1776326787847,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfa-76cb-741b-996e-33d1ef50be50",
+      "raw_path": "evidence/dvc/details/019d2bfa-76cb-741b-996e-33d1ef50be50.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Bản gốc Giấy chứng nhận đã cấp.",
+          "component_code": "000.00.00.G13-KQ3258",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Giấy tờ chứng minh sai sót thông tin của người được cấp Giấy chứng nhận so với thông tin tại thời điểm đề nghị đính chính hoặc sai sót thông tin về thửa đất, tài sản gắn liền với đất so với thông tin trên Giấy chứng nhận đã cấp.",
+          "component_code": "000.00.00.G10-KQ006195",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 3,
+          "name": "Văn bản về việc ủy quyền theo quy định của pháp luật về dân sự đối với trường hợp thực hiện thủ tục thông qua người đại diện.",
+          "component_code": "000.00.00.G10-KQ006196",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 4,
+          "name": "Đơn đăng ký biến động đất đai, tài sản gắn liền với đất theo Mẫu số 18",
+          "component_code": "000.00.00.G10-KQ005897",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c6d-743d-a39d-63d2de47991d",
+          "name": "Giấy chứng nhận quyền sử dụng đất; Giấy chứng nhận quyền sở hữu nhà ở và quyền sử dụng đất ở; Giấy chứng nhận quyền sở hữu nhà ở; Giấy chứng nhận quyền sở hữu công trình xây dựng; Giấy chứng nhận quyền sử dụng đất, quyền sở hữu nhà ở và tài sản khác gắn liền với đất; Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất",
+          "code": "KQ.G10.001147"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d84-71c5-b672-a3322a8748a6",
+          "name": "Luật Đất đai ngày 18/01/2024;",
+          "code": "31/2024/QH15"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afeb-9ac6648a4b4f",
+          "name": "Quy định về phân định thẩm quyền của chính quyền địa phương 02 cấp, phân quyền, phân cấp trong lĩnh vực đất đai",
+          "code": "151/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d87-7195-a448-2704415be2ca",
+          "name": "Nghị định 101/2024/NĐ-CP",
+          "code": "Nghị định 101/2024/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afe9-61a6469bc95c",
+          "name": "Thực hiện thủ tục hành chính theo cơ chế một cửa, một cửa liên thông tại Bộ phận Một cửa và cổng Dịch vụ công quốc gia",
+          "code": "118/2025/NĐ-C"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b673-29122897c8a3",
+          "name": "Luật số 43/2024/QH15 ngày 29/6/2024",
+          "code": "43/2024/QH15"
+        }
+      ]
+    }
+  ],
+  "lookup_status": "retrieved",
+  "currency_status": "snapshot_requires_later_amendment_check",
+  "errors": []
+}

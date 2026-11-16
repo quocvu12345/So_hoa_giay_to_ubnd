@@ -1,0 +1,75 @@
+{
+  "ordinal": "155",
+  "managing_agency": "Sở Nông nghiệp Môi trường",
+  "procedure_code": "1.012922",
+  "name": "Kiểm tra hiện trường rừng trồng bị thiệt hại",
+  "domain": "Lâm nghiệp (Bộ Nông nghiệp và Môi trường)",
+  "ministry_decision": "364/QĐ-BNNMT ngày 29/01/2026",
+  "hanoi_decision": "276/QĐ-TTPVHCC ngày 05/3/2026",
+  "workflow_decision": "439/QĐ-TTPVHCC ngày 06/4/2026",
+  "fees": "Không quy định",
+  "execution_level": "Cấp Xã",
+  "competent_authority": "UBND cấp xã",
+  "delegation_decision": "",
+  "delegation_expiry": "",
+  "receiving_location": "Điểm hỗ trợ DVC số",
+  "source_page": 6,
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "inventory_date": "2026-04-27",
+  "checked_at": "2026-11-12T22:23:51.198676+07:00",
+  "details": [
+    {
+      "id": "019d2bfa-7e99-7158-a0c2-9c3fc614a785",
+      "code": "1.012922",
+      "name": "Kiểm tra hiện trường rừng trồng bị thiệt hại",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1778130294894,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfa-7e99-7158-a0c2-9c3fc614a785",
+      "raw_path": "evidence/dvc/details/019d2bfa-7e99-7158-a0c2-9c3fc614a785.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Văn bản đề nghị xác nhận theo Mẫu số 01 Phụ lục IC ban hành kèm theo Nghị định số 42/2026/NĐ-CP",
+          "component_code": "G10-KQ007615",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019dae62-3bb5-7513-9ec1-d2b66898b9f1",
+              "fileName": "Mẫu số 01.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019dae62-3bb5-7513-9ec1-d2b66898b9f1/Mẫu số 01.docx"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c6e-7797-a21a-328ae67d674a",
+          "name": "Biên bản kiểm tra hiện trường xác định trường hợp, thiệt hại rừng trồng",
+          "code": "KQ.G10.001399"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7e-72d1-afea-efdc5cd40ee4",
+          "name": "Quy định về thanh lý rừng trồng.",
+          "code": "140/2024/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afea-45ea9b37796c",
+          "name": "Quy định phân định thẩm quyền của chính quyền địa phương 02 cấp trong lĩnh vực quản lý nhà nước của Bộ Nông nghiệp và Môi trường",
+          "code": "Nghị định số 131/2025/NĐ-CP"
+        }
+      ]
+    }
+  ],
+  "lookup_status": "retrieved",
+  "currency_status": "snapshot_requires_later_amendment_check",
+  "errors": []
+}

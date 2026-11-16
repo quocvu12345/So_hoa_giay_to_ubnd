@@ -1,0 +1,131 @@
+{
+  "ordinal": "177",
+  "managing_agency": "Sở Nông nghiệp Môi trường",
+  "procedure_code": "1.014848",
+  "name": "Phê duyệt phương án bảo vệ công trình thủy lợi do Chủ tịch UBND cấp tỉnh phân cấp cho Chủ tịch UBND cấp xã",
+  "domain": "Thủy lợi (Bộ Nông nghiệp và Môi trường)",
+  "ministry_decision": "498/QĐ-BNNMT ngày 09/02/2026",
+  "hanoi_decision": "331/QĐ-TTPVHCC ngày 18/3/2026",
+  "workflow_decision": "388/QĐ-TTPVHCC ngày 30/3/2026",
+  "fees": "Không quy định",
+  "execution_level": "Cấp Xã",
+  "competent_authority": "UBND cấp xã",
+  "delegation_decision": "",
+  "delegation_expiry": "",
+  "receiving_location": "Điểm hỗ trợ DVC số",
+  "source_page": 7,
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "inventory_date": "2026-04-27",
+  "checked_at": "2026-11-12T22:23:54.292798+07:00",
+  "details": [
+    {
+      "id": "019d2bfa-9e1f-71dc-9209-4e9a2b8425ce",
+      "code": "1.014848",
+      "name": "Phê duyệt phương án bảo vệ công trình thủy lợi do Chủ tịch Ủy ban nhân dân cấp tỉnh phân cấp cho Chủ tịch UBND cấp xã",
+      "state": "ACTIVE",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1776736065739,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfa-9e1f-71dc-9209-4e9a2b8425ce",
+      "raw_path": "evidence/dvc/details/019d2bfa-9e1f-71dc-9209-4e9a2b8425ce.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "- Ý kiến của các cơ quan, đơn vị liên quan (nếu có);",
+          "component_code": "000.00.00.G10-KQ005481",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "- Các tài liệu liên quan khác kèm theo (nếu có).\t",
+          "component_code": "000.00.00.G02-KQ1727",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 3,
+          "name": "- Dự thảo phương án bảo vệ công trình thủy lợi theo Mẫu số 03 tại Phụ lục II ban hành kèm theo Nghị định số 40/2026/NĐ-CP ngày 25/01/2026",
+          "component_code": "G10-KQ007848",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019d8b54-498c-7795-ba52-dec2d2396cef",
+              "fileName": "Mẫu số 03.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d8b54-498c-7795-ba52-dec2d2396cef/Mẫu số 03.docx"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 4,
+          "name": "- Bản vẽ (nếu có) hoặc sơ họa mặt bằng công trình và các hạng mục công trình cần bảo vệ",
+          "component_code": "G10-KQ007849",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 5,
+          "name": "- Tờ trình đề nghị phê duyệt phương án bảo vệ công trình thủy lợi theo Mẫu số 01 tại Phụ lục II ban hành kèm theo Nghị định số 40/2026/NĐ-CP ngày 25/01/2026",
+          "component_code": "G10-KQ007847",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019d8b52-b8eb-74f1-935a-39708242b095",
+              "fileName": "Mau so 01.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d8b52-b8eb-74f1-935a-39708242b095/Mau so 01.docx"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c6e-7797-a21b-13630591fc86",
+          "name": "Quyết định phê duyệt phương án bảo vệ công trình thủy lợi",
+          "code": "KQ.G10.001456"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d80-7608-8cd0-b5808a0fa91a",
+          "name": "Luật 08/2017/QH14",
+          "code": "08/2017/QH14"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b678-b6e5fb3d87aa",
+          "name": "Nghị định số 40/2026/NĐ-CP ngày 25/01/2026",
+          "code": "40/2026/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d85-73da-8eb9-a64b5543d0bd",
+          "name": "Luật số 146/2025/QH15 ngày 11/12/2025 của Quốc hội sửa đổi, bổ sung một số điều của 15 luật trong lĩnh vực nông nghiệp và môi trường",
+          "code": "146/2025/QH15"
+        }
+      ]
+    }
+  ],
+  "lookup_status": "retrieved",
+  "currency_status": "snapshot_requires_later_amendment_check",
+  "errors": []
+}

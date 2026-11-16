@@ -1,0 +1,205 @@
+{
+  "id": "hn87-038",
+  "ordinal": "38",
+  "procedure_code": "1.014942",
+  "name": "Thủ tục cấp giấy phép thành lập và công nhận điều lệ quỹ",
+  "domain": "Quỹ",
+  "department_id": "vx",
+  "department": "Phòng Văn hóa - Xã hội",
+  "authority_as_published": "UBND cấp xã",
+  "execution_level_as_published": "Cấp xã",
+  "receiving_location_as_published": "Điểm hỗ trợ DVC số",
+  "inventory_date": "2026-04-27",
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "source_urls": [
+    "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d9011-449a-721b-a7b9-8d28d0929df2"
+  ],
+  "current_dvc_match": true,
+  "lifecycle": null,
+  "scope": "hanoi_commune_notice_2026_04_27",
+  "scope_note": "Mốc kiểm kê cấp xã Hà Nội; áp dụng từng thủ tục tại Từ Liêm còn phải theo thẩm quyền/ủy quyền hiện hành.",
+  "status": "has_fillable_templates",
+  "components": [
+    {
+      "id": "hn87-038-c001",
+      "code": "G09-KQ002440",
+      "name": "- Đơn đề nghị thành lập quỹ (theo mẫu)",
+      "section": "",
+      "role": "applicant_form",
+      "scenario_status": "selected_for_test",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d9011-449a-721b-a7b9-8d28d0929df2",
+      "source_detail_id": "019d9011-449a-721b-a7b9-8d28d0929df2",
+      "embedded_other_requirements": false,
+      "template_candidates": [
+        "template-35d6bbb2d332c28f"
+      ],
+      "template_selection_method": "first_matching_source_attachment",
+      "selected_template_id": "template-35d6bbb2d332c28f",
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-038-c002",
+      "code": "G09-KQ002117",
+      "name": "- Dự thảo điều lệ quỹ (theo mẫu);",
+      "section": "",
+      "role": "applicant_form",
+      "scenario_status": "selected_for_test",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d9011-449a-721b-a7b9-8d28d0929df2",
+      "source_detail_id": "019d9011-449a-721b-a7b9-8d28d0929df2",
+      "embedded_other_requirements": false,
+      "template_candidates": [
+        "template-7260afe32d0999a1",
+        "template-0d4c17e4ea2a66f7"
+      ],
+      "template_selection_method": "first_matching_source_attachment",
+      "selected_template_id": "template-7260afe32d0999a1",
+      "selection_requires_review": true
+    },
+    {
+      "id": "hn87-038-c003",
+      "code": "G09-KQ002117",
+      "name": "- Dự thảo điều lệ quỹ (theo mẫu);",
+      "section": "",
+      "role": "applicant_form",
+      "scenario_status": "selected_for_test",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d9011-449a-721b-a7b9-8d28d0929df2",
+      "source_detail_id": "019d9011-449a-721b-a7b9-8d28d0929df2",
+      "embedded_other_requirements": false,
+      "template_candidates": [
+        "template-7260afe32d0999a1",
+        "template-0d4c17e4ea2a66f7"
+      ],
+      "template_selection_method": "first_matching_source_attachment",
+      "selected_template_id": "template-7260afe32d0999a1",
+      "selection_requires_review": true
+    },
+    {
+      "id": "hn87-038-c004",
+      "code": "G09-KQ002443",
+      "name": "- Tài liệu chứng minh tài sản đóng góp để thành lập quỹ",
+      "section": "",
+      "role": "needs_review",
+      "scenario_status": "requirement_needs_review",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d9011-449a-721b-a7b9-8d28d0929df2",
+      "source_detail_id": "019d9011-449a-721b-a7b9-8d28d0929df2",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-038-c005",
+      "code": "G09-KQ003540",
+      "name": "- Sơ yếu lý lịch cá nhân (theo mẫu) của các sáng lập viên thành lập quỹ không quá 06 tháng tính đến ngày nộp hồ sơ và hồ sơ theo quy định tại Điều 13, 14 hoặc Điều 15 Nghị định số 03/2026/NĐ-CP;",
+      "section": "",
+      "role": "applicant_form",
+      "scenario_status": "selected_for_test",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d9011-449a-721b-a7b9-8d28d0929df2",
+      "source_detail_id": "019d9011-449a-721b-a7b9-8d28d0929df2",
+      "embedded_other_requirements": false,
+      "template_candidates": [
+        "template-6621ab410ad89047"
+      ],
+      "template_selection_method": "first_matching_source_attachment",
+      "selected_template_id": "template-6621ab410ad89047",
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-038-c006",
+      "code": "G09-KQ003541",
+      "name": "- Văn bản bầu các chức danh Ban sáng lập quỹ (theo mẫu);",
+      "section": "",
+      "role": "needs_review",
+      "scenario_status": "requirement_needs_review",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d9011-449a-721b-a7b9-8d28d0929df2",
+      "source_detail_id": "019d9011-449a-721b-a7b9-8d28d0929df2",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-038-c007",
+      "code": "G09-KQ003542",
+      "name": "- Văn bản chứng minh quyền sử dụng hợp pháp theo quy định của pháp luật nơi dự kiến đặt trụ sở của quỹ (bản chính hoặc bản sao có chứng thực).",
+      "section": "",
+      "role": "supporting_submit",
+      "scenario_status": "selected_for_test",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d9011-449a-721b-a7b9-8d28d0929df2",
+      "source_detail_id": "019d9011-449a-721b-a7b9-8d28d0929df2",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    }
+  ],
+  "service_cases": [
+    {
+      "id": "019db04e-a68c-728b-be12-4b4ef5bc4555",
+      "code": "1.014942.02",
+      "name": "THỦ TỤC CẤP GIẤY PHÉP THÀNH LẬP VÀ CÔNG NHẬN ĐIỀU LỆ QUỸ (Cấp xã)",
+      "source_processing_time": {
+        "qty": 45,
+        "type": "WORKING_DAY"
+      },
+      "has_case_specific_components": false
+    },
+    {
+      "id": "019db037-6055-76fa-8852-60b182991b4e",
+      "code": "1.014942.01",
+      "name": "THỦ TỤC CẤP GIẤY PHÉP THÀNH LẬP VÀ CÔNG NHẬN ĐIỀU LỆ QUỸ (Cấp xã)",
+      "source_processing_time": {
+        "qty": 45,
+        "type": "WORKING_DAY"
+      },
+      "has_case_specific_components": false
+    }
+  ],
+  "selected_template_ids": [
+    "template-35d6bbb2d332c28f",
+    "template-7260afe32d0999a1",
+    "template-6621ab410ad89047"
+  ],
+  "source_component_groups": [
+    {
+      "name": "",
+      "component_count": 7,
+      "source_detail_id": "019d9011-449a-721b-a7b9-8d28d0929df2"
+    }
+  ],
+  "conditional_component_groups": [],
+  "default_test_scenario": {
+    "channel": "direct",
+    "applicant_submits_self": true,
+    "authorized": false,
+    "special_case_flags": [],
+    "selected_conditional_group": null,
+    "case_selection_method": "ordinary_direct_submission",
+    "case_status": "scenario_for_testing_not_a_legal_eligibility_decision"
+  },
+  "requirement_note": "required_as_published được giữ nguyên; false không chứng minh giấy tờ luôn tùy chọn. Các nhóm executionCases có thể là mục giấy tờ/hướng dẫn, không phải các phương án loại trừ nhau."
+}

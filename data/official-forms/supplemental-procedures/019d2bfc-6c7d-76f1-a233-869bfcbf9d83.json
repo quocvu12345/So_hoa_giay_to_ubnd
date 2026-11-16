@@ -1,0 +1,192 @@
+{
+  "id": "dvc-019d2bfc-6c7d-76f1-a233-869bfcbf9d83",
+  "procedure_code": "1.008590",
+  "name": "Gia hạn nộp thuế, khoản thu khác, tiền chậm nộp, tiền phạt",
+  "domain": "Thuế",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.932934+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfc-6c7d-76f1-a233-869bfcbf9d83",
+      "code": "1.008590",
+      "name": "Gia hạn nộp thuế, khoản thu khác, tiền chậm nộp, tiền phạt",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1785399204350,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-6c7d-76f1-a233-869bfcbf9d83",
+      "raw_path": "evidence/dvc/details/019d2bfc-6c7d-76f1-a233-869bfcbf9d83.json",
+      "components": [
+        {
+          "section": "* Trường hợp gia hạn nộp thuế, khoản thu khác, tiền chậm nộp, tiền phạt theo quy định tại điểm a và điểm b khoản 7 Điều 14 Luật Quản lý thuế số 108/2025/QH15:",
+          "position": 1,
+          "name": "Văn bản đề nghị gia hạn nộp thuế, khoản thu khác, tiền chậm nộp, tiền phạt của người nộp thuế theo mẫu số 01/GHAN Phụ lục III ban hành kèm theo Thông tư số Thông tư số 89/2026/TT-BTC ngày 30/6/2026 của Bộ Tài chính",
+          "component_code": "G12.00002152",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019fad3a-3401-75a5-825e-cf5b7922ca77",
+              "fileName": "1. Mau so 01-GHAN.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fad3a-3401-75a5-825e-cf5b7922ca77/1. Mau so 01-GHAN.docx"
+            }
+          ]
+        },
+        {
+          "section": "*1 Trường hợp bất khả kháng khác theo quy định tại Khoản 1 Điều 3 Nghị định số 126/2020/NĐ-CP ngày 19/10/2020 của Chính phủ (đã sửa đổi, bổ sung), phải có:",
+          "position": 1,
+          "name": "Bản chính hoặc bản sao có chứng thực tài liệu xác nhận về thời gian, địa điểm xảy ra trường hợp bất khả kháng của cơ quan có thẩm quyền; bản sao tài liệu chứng minh người nộp thuế phải ngừng, nghỉ sản xuất, kinh doanh đối với trường hợp do chiến tranh, bạo loạn, đình công mà người nộp thuế phải ngừng, nghỉ sản xuất, kinh doanh",
+          "component_code": "G12.00002154",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "*1 Trường hợp bất khả kháng khác theo quy định tại Khoản 1 Điều 3 Nghị định số 126/2020/NĐ-CP ngày 19/10/2020 của Chính phủ (đã sửa đổi, bổ sung), phải có:",
+          "position": 2,
+          "name": "Bản sao tài liệu chứng minh việc gặp rủi ro không thuộc nguyên nhân, trách nhiệm chủ quan của người nộp thuế và người nộp thuế không có khả năng nguồn tài chính nộp ngân sách nhà nước đối với trường hợp bị thiệt hại do gặp rủi ro không thuộc nguyên nhân, trách nhiệm chủ quan của người nộp thuế; bản sao các chứng từ liên quan đến việc bồi thường thiệt hại của cơ quan bảo hiểm (nếu có)",
+          "component_code": "G12.00002156",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "*2 Trường hợp di dời cơ sở sản xuất, kinh doanh theo quy định tại điểm b khoản 1 Điều 62 Luật Quản lý thuế (đã sửa đổi, bổ sung), phải có:",
+          "position": 1,
+          "name": "Bản chính hoặc bản sao có chứng thực Quyết định của cơ quan nhà nước có thẩm quyền về việc di dời cơ sở sản xuất, kinh doanh đối với người nộp thuế",
+          "component_code": "G12.00002157",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "*2 Trường hợp di dời cơ sở sản xuất, kinh doanh theo quy định tại điểm b khoản 1 Điều 62 Luật Quản lý thuế (đã sửa đổi, bổ sung), phải có:",
+          "position": 2,
+          "name": "Bản sao đề án hoặc phương án di dời, trong đó thể hiện rõ kế hoạch và tiến độ thực hiện di dời của người nộp thuế",
+          "component_code": "G12.00002158",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "*3 Trường hợp do thiên tai, thảm họa, dịch bệnh, hoả hoạn, tai nạn bất ngờ quy định tại quy định tại khoản 21 Điều 4 Luật Quản lý thuế, phải có:",
+          "position": 1,
+          "name": "Bản chính hoặc bản sao có chứng thực tài liệu xác nhận về thời gian, địa điểm xảy ra thiên tai, thảm họa, dịch bệnh, hỏa hoạn, tai nạn bất ngờ của cơ quan có thẩm quyền",
+          "component_code": "G12.00002161",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "*3 Trường hợp do thiên tai, thảm họa, dịch bệnh, hoả hoạn, tai nạn bất ngờ quy định tại quy định tại khoản 21 Điều 4 Luật Quản lý thuế, phải có:",
+          "position": 2,
+          "name": "Bản sao văn bản quy định trách nhiệm của tổ chức, cá nhân phải bồi thường thiệt hại (nếu có); bản sao các chứng từ liên quan đến việc bồi thường thiệt hại (nếu có)",
+          "component_code": "G12.00002163",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "* Theo Nghị định số 245/2026/NĐ-CP",
+          "position": 1,
+          "name": "Văn bản đề nghị gia hạn nộp thuế và tiền thuê đất (Mẫu Nghị định số 245/2026/NĐ-CP)",
+          "component_code": "G12.00002164",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019f891f-67cf-71ec-b027-8fddbf5f336f",
+              "fileName": "Mẫu Nghị định 245.2026.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f891f-67cf-71ec-b027-8fddbf5f336f/Mẫu Nghị định 245.2026.docx"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 1,
+          "name": "Từ 01/7/2026 đến thời điểm theo lộ trình của cơ quan thuế quy định tại khoản 2 Điều 99 Thông tư số 89/2026/TT-BTC ngày 30/6/2026 của Bộ Tài chính thì văn bản đề nghị gia hạn nộp thuế, khoản thu khác, tiền chậm nộp, tiền phạt của người nộp thuế theo mẫu số 01/GHAN thực hiện theo mẫu ban hành kèm theo Nghị định số 373/2025/NĐ-CP ngày 31/12/2025 của Chính phủ.",
+          "component_code": "G12.0002165",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019fad3f-e6af-74ed-97b3-805dbf00780b",
+              "fileName": "Mẫu 01 GHAN (1).docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fad3f-e6af-74ed-97b3-805dbf00780b/Mẫu 01 GHAN (1).docx"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "id": "019f8923-363e-73ad-bdbf-c9d461a674e4",
+          "name": "Cơ quan thuế không phải thông báo cho người nộp thuế trong trường hợp chấp nhận gia hạn",
+          "code": "KQ.G12.000164"
+        },
+        {
+          "id": "019fad41-0c35-752a-a9ff-1de146d5a268",
+          "name": "Thông báo không chấp thuận gia hạn nộp thuế, khoản thu khác, tiền chậm nộp, tiền phạt (mẫu số 03/GHAN)",
+          "code": "KQ.G12.000895"
+        },
+        {
+          "id": "019fad41-7c84-71bc-8f71-71cff5a9bff5",
+          "name": "Quyết định gia hạn nộp thuế, khoản thu khác, tiền chậm nộp, tiền phạt mẫu số 02/GHAN)",
+          "code": "KQ.G12.0001896"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7e-72d1-afe9-653aac8276ee",
+          "name": "Nghị định số 118/2025/NĐ-CP của Chính phủ: Về thực hiện thủ tục hành chính theo cơ chế một cửa, một cửa liên thông tại Bộ phận Một cửa và Cổng Dịch vụ công quốc gia",
+          "code": "118/2025/NĐ-CP"
+        },
+        {
+          "id": "019f8db3-9765-740b-8b90-682677b9c421",
+          "name": "Thông tư quy định chi tiết một số điều của Luật Quản lý thuế và Nghị định số 252/2026/NĐ-CP của Chính phủ quy định chi tiết một số điều và biện pháp để tổ chức, hướng dẫn thi hành Luật Quản lý thuế",
+          "code": "89/2026/TT-BTC"
+        },
+        {
+          "id": "019f356e-75e3-7494-a2f3-672d8dce61a6",
+          "name": "QUY ĐỊNH CHI TIẾT MỘT SỐ ĐIỀU VÀ BIỆN PHÁP ĐỂ TỔ CHỨC, HƯỚNG DẪN THI HÀNH LUẬT QUẢN LÝ THUẾ",
+          "code": "252/2026/NĐ-CP"
+        },
+        {
+          "id": "019e5e83-1282-771d-9014-49799413a4e5",
+          "name": "Luật số 108/2025/QH15 của Quốc hội: Luật Quản lý thuế",
+          "code": "108/2025/QH15"
+        },
+        {
+          "id": "019f8926-a62f-7734-ab22-4d5874e0f386",
+          "name": "Nghị định số 245/2026/NĐ-CP của Chính phủ: Gia hạn thời hạn nộp thuế giá trị gia tăng, thuế thu nhập doanh nghiệp, thuế thu nhập cá nhân và tiền thuê đất trong năm 2026",
+          "code": "245/2026/NĐ-CP"
+        }
+      ]
+    }
+  ]
+}

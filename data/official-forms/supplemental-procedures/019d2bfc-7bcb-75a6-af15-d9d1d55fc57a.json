@@ -1,0 +1,243 @@
+{
+  "id": "dvc-019d2bfc-7bcb-75a6-af15-d9d1d55fc57a",
+  "procedure_code": "1.009096",
+  "name": "Thủ tục hải quan đối với tàu biển  xuất cảnh, nhập cảnh, quá cảnh, chuyển cảng",
+  "domain": "Hải quan",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.927106+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfc-7bcb-75a6-af15-d9d1d55fc57a",
+      "code": "1.009096",
+      "name": "Thủ tục hải quan đối với tàu biển  xuất cảnh, nhập cảnh, quá cảnh, chuyển cảng",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1775639210017,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-7bcb-75a6-af15-d9d1d55fc57a",
+      "raw_path": "evidence/dvc/details/019d2bfc-7bcb-75a6-af15-d9d1d55fc57a.json",
+      "components": [
+        {
+          "section": "Đối với tàu biển nhập cảnh",
+          "position": 1,
+          "name": "Bản khai chung",
+          "component_code": "000.00.00.G12-KQ9965",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Đối với tàu biển nhập cảnh",
+          "position": 2,
+          "name": "Bản khai hàng hóa nguy hiểm trong trường hợp tàu biển vận chuyển hàng hóa nguy hiểm",
+          "component_code": "000.00.00.G12-KQ9972",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Đối với tàu biển nhập cảnh",
+          "position": 3,
+          "name": "Bản khai hàng hóa trường hợp tàu biển vận chuyển hàng hóa",
+          "component_code": "000.00.00.G12-KQ9966",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Đối với tàu biển nhập cảnh",
+          "position": 4,
+          "name": "Danh sách hành khách trong trường hợp tàu biển vận chuyển hành khách",
+          "component_code": "000.00.00.G12-KQ9971",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Đối với tàu biển nhập cảnh",
+          "position": 5,
+          "name": "Bản khai hành lý thuyền viên, nhân viên làm việc trên tàu biển",
+          "component_code": "000.00.00.G12-KQ9969",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Đối với tàu biển nhập cảnh",
+          "position": 6,
+          "name": "Thông tin về vận đơn: vận đơn chủ (master bill of lading), vận đơn thứ cấp (house bill of lading) trong trường hợp tàu biển vận chuyển hàng hóa",
+          "component_code": "000.00.00.G12-KQ9967",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Đối với tàu biển nhập cảnh",
+          "position": 7,
+          "name": "Bản khai dự trữ của tàu",
+          "component_code": "000.00.00.G12-KQ9970",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Đối với tàu biển nhập cảnh",
+          "position": 8,
+          "name": "Danh sách thuyền viên",
+          "component_code": "000.00.00.G12-KQ9968",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Đối với tàu biển quá cảnh",
+          "position": 1,
+          "name": "Khi làm thủ tục nhập cảnh đối với tàu biển quá cảnh, người khai hải quan nộp hồ sơ hải quan theo quy định như với thủ tục nhập cảnh; khi làm thủ tục xuất cảnh, nếu có sự thay đổi về các chứng từ khi nhập cảnh, người khai hải quan nộp hồ sơ hải quan gồm các chứng từ đã có sự thay đổi so với lúc nhập cảnh",
+          "component_code": "000.00.00.G12-KQ9980",
+          "original_quantity": 0,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Đối với tàu biển xuất cảnh",
+          "position": 1,
+          "name": "Danh sách thuyền viên",
+          "component_code": "000.00.00.G12-KQ9975",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Đối với tàu biển xuất cảnh",
+          "position": 2,
+          "name": "Bản khai hàng hóa nguy hiểm trong trường hợp tàu biển vận chuyển hàng hóa nguy hiểm",
+          "component_code": "000.00.00.G12-KQ9979",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Đối với tàu biển xuất cảnh",
+          "position": 3,
+          "name": "Bản khai dự trữ của tàu",
+          "component_code": "000.00.00.G12-KQ9977",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Đối với tàu biển xuất cảnh",
+          "position": 4,
+          "name": "Bản khai hành lý thuyền viên, nhân viên làm việc trên tàu biển",
+          "component_code": "000.00.00.G12-KQ9976",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Đối với tàu biển xuất cảnh",
+          "position": 5,
+          "name": "Danh sách hành khách trong trường hợp tàu biển vận chuyển hành khách",
+          "component_code": "000.00.00.G12-KQ9978",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Đối với tàu biển xuất cảnh",
+          "position": 6,
+          "name": "Bản khai chung",
+          "component_code": "000.00.00.G12-KQ9973",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Đối với tàu biển xuất cảnh",
+          "position": 7,
+          "name": "Bản khai hàng hóa trong trường hợp tàu biển vận chuyển hàng hóa",
+          "component_code": "000.00.00.G12-KQ9974",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c70-724b-96e0-6735814d9675",
+          "name": "Thông báo hoàn thành thủ tục hải quan tàu",
+          "code": "KQ.G12.000364"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7d-7398-be4d-ff62cdf67da5",
+          "name": "Luật 54/2014/QH13",
+          "code": "54/2014/QH13"
+        },
+        {
+          "id": "019d2bb3-5d87-7195-a442-414b51a3c119",
+          "name": "Thông tư 50/2018/TT-BTC",
+          "code": "50/2018/TT-BTC"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afec-4c8f9cb859d2",
+          "name": "Nghị định số 167/2025/NĐ-CP ngày 30/6/2025 của Chính phủ",
+          "code": "167/2025"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afe7-9c25863596db",
+          "name": "Nghị định 08/2015/NĐ-CP",
+          "code": "08/2015/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d87-7195-a443-db1e211c2ddd",
+          "name": "Nghị định 59/2018/NĐ-CP",
+          "code": "59/2018/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7d-7398-be4c-34fb9320bd01",
+          "name": "Thông tư số 274/2016/TT-BTC ngày 14/11/2016 của Bộ Tài chính quy định mức thu, chế độ thu, nộp, quản lý và sử dụng phí hải quan và lệ phí hàng hóa, phương tiện quá cảnh.",
+          "code": "274/2016/TT-BTC"
+        }
+      ]
+    }
+  ]
+}

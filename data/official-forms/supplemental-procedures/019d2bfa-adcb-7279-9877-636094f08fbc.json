@@ -1,0 +1,82 @@
+{
+  "id": "dvc-019d2bfa-adcb-7279-9877-636094f08fbc",
+  "procedure_code": "2.001621",
+  "name": "Hỗ trợ đầu tư xây dựng phát triển thủy lợi nhỏ, thuỷ lợi nội đồng và tưới tiên tiến, tiết kiệm nước (Đối với nguồn vốn hỗ trợ trực tiếp, ngân sách địa phương và nguồn vốn hợp pháp khác của địa phương phân bổ dự toán cho UBND cấp xã thực hiện)",
+  "domain": "Thủy lợi",
+  "managing_agency": "Bộ Nông nghiệp và Môi trường",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:18.008395+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfa-adcb-7279-9877-636094f08fbc",
+      "code": "2.001621",
+      "name": "Hỗ trợ đầu tư xây dựng phát triển thủy lợi nhỏ, thuỷ lợi nội đồng và tưới tiên tiến, tiết kiệm nước (Đối với nguồn vốn hỗ trợ trực tiếp, ngân sách địa phương và nguồn vốn hợp pháp khác của địa phương phân bổ dự toán cho UBND cấp xã thực hiện)",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1776736070012,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfa-adcb-7279-9877-636094f08fbc",
+      "raw_path": "evidence/dvc/details/019d2bfa-adcb-7279-9877-636094f08fbc.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "- Đơn đề nghị hỗ trợ;",
+          "component_code": "000.00.00.G10-KQ2073",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019d9aa4-f748-758d-8635-dfeee9e96768",
+              "fileName": "MẪU ĐƠN ĐỀ NGHỊ HỖ TRỢ.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d9aa4-f748-758d-8635-dfeee9e96768/MẪU ĐƠN ĐỀ NGHỊ HỖ TRỢ.docx"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "- Hồ sơ được phê duyệt;",
+          "component_code": "000.00.00.G10-KQ2074",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 3,
+          "name": "- Biên bản nghiệm thu giai đoạn hoặc nghiệm thu hoàn thành công trình đưa vào sử dụng.",
+          "component_code": "000.00.00.G10-KQ2075",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c70-724b-96dd-003c3dfd64ab",
+          "name": "Ủy nhiệm chi",
+          "code": "KQ.G12.000093"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7f-719e-b471-14ecb51fc762",
+          "name": "quy định hỗ trợ phát triển thủy lợi nhỏ, thủy lợi nội đồng, tưới tiên tiến, tiết kiệm nước",
+          "code": "77/2018/NĐ-CP"
+        }
+      ]
+    }
+  ]
+}

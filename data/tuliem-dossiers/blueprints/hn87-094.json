@@ -1,0 +1,191 @@
+{
+  "id": "hn87-094",
+  "ordinal": "94",
+  "procedure_code": "1.004650",
+  "name": "Thủ tục tiếp nhận hồ sơ thông báo sản phẩm quảng cáo trên bảng quảng cáo, băng- rôn",
+  "domain": "Quảng cáo",
+  "department_id": "vx",
+  "department": "Phòng Văn hóa - Xã hội",
+  "authority_as_published": "UBND cấp xã",
+  "execution_level_as_published": "Cấp Xã",
+  "receiving_location_as_published": "Điểm hỗ trợ DVC số",
+  "inventory_date": "2026-04-27",
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "source_urls": [
+    "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfd-d4c8-725d-8498-130caf913cf2"
+  ],
+  "current_dvc_match": false,
+  "lifecycle": null,
+  "scope": "hanoi_commune_notice_2026_04_27",
+  "scope_note": "Mốc kiểm kê cấp xã Hà Nội; áp dụng từng thủ tục tại Từ Liêm còn phải theo thẩm quyền/ủy quyền hiện hành.",
+  "status": "source_template_missing",
+  "components": [
+    {
+      "id": "hn87-094-c001",
+      "code": "000.00.00.G16-KQ0765",
+      "name": "Bản phối cảnh vị trí đặt bảng quảng cáo;",
+      "section": "",
+      "role": "needs_review",
+      "scenario_status": "requirement_needs_review",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfd-d4c8-725d-8498-130caf913cf2",
+      "source_detail_id": "019d2bfd-d4c8-725d-8498-130caf913cf2",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-094-c002",
+      "code": "000.00.00.G16-KQ0762",
+      "name": "Bản sao văn bản về việc tổ chức sự kiện của đơn vị tổ chức trong trường hợp quảng cáo cho sự kiện, chính sách xã hội;",
+      "section": "",
+      "role": "supporting_submit",
+      "scenario_status": "conditional_needs_review",
+      "required_as_published": false,
+      "original_quantity": 0,
+      "copy_quantity": 1,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfd-d4c8-725d-8498-130caf913cf2",
+      "source_detail_id": "019d2bfd-d4c8-725d-8498-130caf913cf2",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-094-c003",
+      "code": "000.00.00.G16-KQ001648",
+      "name": "Thông báo sản phẩm quảng cáo trên bảng quảng cáo, băng-rôn (Mẫu số 01 phụ lục III ban hành kèm theo Thông tư số13/2023/TT-BVHTTDL ngày 30/10/2023 của Bộ trưởng Bộ Văn hóa, Thể thao và Du lịch sửa đổi, bổ sung quy định liên quan đến giấy tờ công dân tại một số Thông tư do Bộ trưởng Bộ Văn hóa, Thể thao và Du lịch ban hành).",
+      "section": "",
+      "role": "agency_prepared",
+      "scenario_status": "agency_reserved",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfd-d4c8-725d-8498-130caf913cf2",
+      "source_detail_id": "019d2bfd-d4c8-725d-8498-130caf913cf2",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-094-c004",
+      "code": "000.00.00.G16-KQ0763",
+      "name": "Ma-két sản phẩm quảng cáo in mầu có chữ ký của người kinh doanh dịch vụ quảng cáo hoặc chữ ký của người quảng cáo trong trường hợp tự thực hiện quảng cáo. Trong trường hợp người kinh doanh dịch vụ quảng cáo, người quảng cáo là tổ chức thì phải có dấu của tổ chức;",
+      "section": "",
+      "role": "needs_review",
+      "scenario_status": "conditional_needs_review",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfd-d4c8-725d-8498-130caf913cf2",
+      "source_detail_id": "019d2bfd-d4c8-725d-8498-130caf913cf2",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-094-c005",
+      "code": "000.00.00.G16-KQ0766",
+      "name": "Bản sao giấy phép xây dựng công trình quảng cáo đối với loại bảng quảng cáo phải có giấy phép xây dựng theo quy định tại khoản 2 Điều 31 của Luật quảng cáo.",
+      "section": "",
+      "role": "supporting_submit",
+      "scenario_status": "conditional_needs_review",
+      "required_as_published": false,
+      "original_quantity": 0,
+      "copy_quantity": 1,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfd-d4c8-725d-8498-130caf913cf2",
+      "source_detail_id": "019d2bfd-d4c8-725d-8498-130caf913cf2",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-094-c006",
+      "code": "000.00.00.G16-KQ0761",
+      "name": "Bản sao giấy tờ chứng minh sự hợp chuẩn, hợp quy của sản phẩm, hàng hoá, dịch vụ theo quy định của pháp luật hoặc giấy tờ chứng minh đủ điều kiện để quảng cáo theo quy định tại Điều 20 của Luật quảng cáo;",
+      "section": "",
+      "role": "supporting_submit",
+      "scenario_status": "selected_for_test",
+      "required_as_published": false,
+      "original_quantity": 0,
+      "copy_quantity": 1,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfd-d4c8-725d-8498-130caf913cf2",
+      "source_detail_id": "019d2bfd-d4c8-725d-8498-130caf913cf2",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-094-c007",
+      "code": "000.00.00.G16-KQ0764",
+      "name": "Văn bản chứng minh quyền sở hữu hoặc quyền sử dụng bảng quảng cáo; quyền sở hữu hoặc quyền sử dụng địa điểm quảng cáo đối với băng-rôn;",
+      "section": "",
+      "role": "needs_review",
+      "scenario_status": "conditional_needs_review",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfd-d4c8-725d-8498-130caf913cf2",
+      "source_detail_id": "019d2bfd-d4c8-725d-8498-130caf913cf2",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    }
+  ],
+  "service_cases": [
+    {
+      "id": "01a1cd86-f0e3-710f-9239-256939ac4337",
+      "code": "1.004650.01",
+      "name": "Thủ tục tiếp nhận hồ sơ thông báo sản phẩm quảng cáo trên bảng quảng cáo, băng-rôn",
+      "source_processing_time": {
+        "qty": 5,
+        "type": "WORKING_DAY"
+      },
+      "has_case_specific_components": false
+    },
+    {
+      "id": "019d2da3-97b8-7131-9cf9-5e942f972d66",
+      "code": "1.004650.01",
+      "name": "Thủ tục tiếp nhận hồ sơ thông báo sản phẩm quảng cáo trên bảng quảng cáo, băng-rôn",
+      "source_processing_time": {
+        "qty": 5,
+        "type": "WORKING_DAY"
+      },
+      "has_case_specific_components": false
+    }
+  ],
+  "selected_template_ids": [],
+  "source_component_groups": [
+    {
+      "name": "",
+      "component_count": 7,
+      "source_detail_id": "019d2bfd-d4c8-725d-8498-130caf913cf2"
+    }
+  ],
+  "conditional_component_groups": [],
+  "default_test_scenario": {
+    "channel": "direct",
+    "applicant_submits_self": true,
+    "authorized": false,
+    "special_case_flags": [],
+    "selected_conditional_group": null,
+    "case_selection_method": "ordinary_direct_submission",
+    "case_status": "scenario_for_testing_not_a_legal_eligibility_decision"
+  },
+  "requirement_note": "required_as_published được giữ nguyên; false không chứng minh giấy tờ luôn tùy chọn. Các nhóm executionCases có thể là mục giấy tờ/hướng dẫn, không phải các phương án loại trừ nhau."
+}

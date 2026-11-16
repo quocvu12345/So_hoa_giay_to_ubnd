@@ -1,0 +1,127 @@
+{
+  "id": "dvc-019d2bfc-4cd6-7426-86a6-b0388b13ed08",
+  "procedure_code": "1.007888",
+  "name": "Thủ tục tạm nhập khẩu xe ô tô, xe gắn máy của đối tượng được hưởng quyền ưu đãi, miễn trừ",
+  "domain": "Hải quan",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.948629+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfc-4cd6-7426-86a6-b0388b13ed08",
+      "code": "1.007888",
+      "name": "Thủ tục tạm nhập khẩu xe ô tô, xe gắn máy của đối tượng được hưởng quyền ưu đãi, miễn trừ",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1775639874105,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-4cd6-7426-86a6-b0388b13ed08",
+      "raw_path": "evidence/dvc/details/019d2bfc-4cd6-7426-86a6-b0388b13ed08.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Tờ khai hàng hóa nhập khẩu theo các chỉ tiêu thông tin tại Mẫu số 01 - tờ khai hàng hóa nhập khẩu Phụ lục I ban hành kèm theo Thông tư số 39/2018/TT-BTC ngày 20/4/2018 của Bộ trưởng Bộ Tài chính. Trường hợp thực hiện trên tờ khai hải quan giấy theo quy định tại khoản 12 Điều 1 Nghị định số 59/2018/NĐ-CP ngày 20/4/2018 của Chính phủ, người khai hải quan khai và nộp 03 bản chính tờ khai hàng hóa nhập khẩu theo mẫu HQ/2015/NK Phụ lục IV ban hành kèm theo Thông tư 38/2015/TT-BTC ngày 25/3/2015 của Bộ trưởng Bộ Tài chính",
+          "component_code": "000.00.00.G12-KQ9720",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Bản đăng ký kiểm tra chất lượng an toàn kỹ thuật và bảo vệ môi trường xe mô tô, xe gắn máy/động cơ xe mô tô, xe gắn máy nhập khẩu (đối với xe gắn máy): 01 bản chính",
+          "component_code": "000.00.00.G12-KQ010175",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 3,
+          "name": "Bản đăng ký kiểm tra chất lượng an toàn kỹ thuật và bảo vệ môi trường xe cơ giới nhập khẩu (đối với ô tô)",
+          "component_code": "000.00.00.G12-KQ9722",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 4,
+          "name": "Giấy tạm nhập khẩu xe ô tô/xe gắn máy",
+          "component_code": "000.00.00.G12-KQ9719",
+          "original_quantity": 2,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 5,
+          "name": "Vận tải đơn hoặc các chứng từ vận tải khác có giá trị tương đương (có đóng dấu treo của Cục Hải quan tỉnh, thành phố nơi cấp giấy tạm nhập khẩu xe ô tô, xe gắn máy)",
+          "component_code": "000.00.00.G12-KQ9721",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c73-70ac-aa17-b35c16138d0a",
+          "name": "Thông quan xe ô tô, xe gắn máy",
+          "code": "KQ.G12.001227"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7e-72d1-afe7-9c25863596db",
+          "name": "Nghị định 08/2015/NĐ-CP",
+          "code": "08/2015/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7d-7398-be4d-ff62cdf67da5",
+          "name": "Luật 54/2014/QH13",
+          "code": "54/2014/QH13"
+        },
+        {
+          "id": "019d2bb3-5d7d-7398-be4d-1c6dbc289d7a",
+          "name": "Quy định về thủ tục hải quan; kiểm tra, giám sát hải quan; thuế xuất khẩu thuế nhập khẩu và quản lý thuế đối vớỉ hàng hoá xuất khẩu, nhập khẩu.",
+          "code": "38/2015/TT-BTC"
+        },
+        {
+          "id": "019d2bb3-5d87-7195-a445-3f0235d1cbf5",
+          "name": "Nghị định 73/NĐ-CP ngày 30/7/1994 của Chính phủ quy định chi tiết việc thực hiện Pháp lệnh về việc ưu đãi và miễn trừ dành cho các cơ quan đại diện ngoại giao, cơ quan Lãnh sự và đại diện tổ chức quốc tế Việt Nam.",
+          "code": "73-CP"
+        },
+        {
+          "id": "019d2bb3-5d7d-7398-be4a-c237f57a1fc1",
+          "name": "Thông tư số 19/2014/TT-BTC ngày 11/02/2014 của Bộ Tài chính quy định thủ tục tạm nhập khẩu, tái xuất khẩu, tiêu hủy, chuyển nhượng  xe ô tô, xe hai bánh gắn máy của đối tượng được hưởng quyền ưu đãi, miễn trừ tại Việt Nam",
+          "code": "19/2014/TT-BTC"
+        },
+        {
+          "id": "019d2bb3-5d87-7195-a444-1ce4a9535813",
+          "name": "Quyết định 601/QĐ-BTC",
+          "code": "601/QĐ-BTC"
+        },
+        {
+          "id": "019d2bb3-5d87-7195-a447-33ac962f66e7",
+          "name": "Thông tư 93/2018/TT-BTC",
+          "code": "93/2018/TT-BTC"
+        }
+      ]
+    }
+  ]
+}

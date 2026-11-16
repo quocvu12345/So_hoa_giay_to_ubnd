@@ -1,0 +1,111 @@
+{
+  "ordinal": "119",
+  "managing_agency": "Sở Nông nghiệp Môi trường",
+  "procedure_code": "3.000250",
+  "name": "Phê duyệt hoặc điều chỉnh phương án quản lý rừng bền vững của chủ rừng là hộ gia đình, cá nhân, cộng đồng dân cư hoặc hộ gia đình cá nhân liên kết thành nhóm hộ, tổ hợp tác trường hợp có tổ chức các hoạt động du lịch sinh thái",
+  "domain": "Lâm nghiệp (Bộ Nông nghiệp và Môi trường)",
+  "ministry_decision": "2261/QĐ-BNNMT ngày 20/06/2025",
+  "hanoi_decision": "1344/QĐ-TTPVHCC ngày 22/9/2025",
+  "workflow_decision": "439/QĐ-TTPVHCC ngày 06/4/2026",
+  "fees": "Không quy định",
+  "execution_level": "Cấp Xã",
+  "competent_authority": "UBND cấp xã",
+  "delegation_decision": "",
+  "delegation_expiry": "",
+  "receiving_location": "Điểm hỗ trợ DVC số",
+  "id": "hn87-119",
+  "source_page": 4,
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "inventory_date": "2026-04-27",
+  "checked_at": "2026-11-12T22:24:34.535271+07:00",
+  "details": [
+    {
+      "id": "019d2bfa-bd80-74ac-9ebf-3dda35f00682",
+      "code": "3.000250",
+      "name": "Phê duyệt hoặc điều chỉnh phương án quản lý rừng bền vững của chủ rừng là hộ gia đình, cá nhân, cộng đồng dân cư hoặc hộ gia đình cá nhân liên kết thành nhóm hộ, tổ hợp tác trường hợp có tổ chức các hoạt động du lịch sinh thái",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1775646686938,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfa-bd80-74ac-9ebf-3dda35f00682",
+      "raw_path": "evidence/dvc/details/019d2bfa-bd80-74ac-9ebf-3dda35f00682.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "- Phương án quản lý rừng bền vững theo Mẫu số 02 Phụ lục III ban hành kèm theo Thông tư số 16/2025/TT-BNNMT;",
+          "component_code": "000.00.00.G10-KQ006082",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019d6c9c-3fdd-749f-a3a3-bc2d7e2e66d1",
+              "fileName": "Mus02.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d6c9c-3fdd-749f-a3a3-bc2d7e2e66d1/Mus02.docx"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "- Bản chính Tờ trình đề nghị phê duyệt hoặc điều chỉnh phương án quản lý rừng bền vững theo Mẫu số 09 hoặc Mẫu số 10 Phụ lục III ban hành kèm theo Thông tư số 16/2025/TT-BNNMT;",
+          "component_code": "000.00.00.G10-KQ006081",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019d6c9b-ba1d-7044-9e49-d4e257d9cb8a",
+              "fileName": "Mus10.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d6c9b-ba1d-7044-9e49-d4e257d9cb8a/Mus10.docx"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 3,
+          "name": "Tỷ lệ bản đồ: 1/5.000 hoặc 1/10.000 hoặc 1/25.000 hoặc 1/50.000 theo hệ quy chiếu VN 2000 do chủ rừng tự chọn loại tỷ lệ bản đồ phù hợp với quy mô diện tích của khu rừng.",
+          "component_code": "000.00.00.G10-KQ004368",
+          "original_quantity": 0,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 4,
+          "name": "- Bản sao các loại bản đồ:  + Bản đồ hiện trạng rừng theo TCVN 11565:2016;  + Bản đồ hiện trạng sử dụng đất theo quy định của Bộ Nông nghiệp và Môi trường;  Bản đồ quản lý rừng bền vững được áp dụng theo TCVN 11566:2016 thể hiện diện tích các loại rừng được quản lý, bảo vệ, phát triển, sử dụng, bảo tồn đa dạng sinh học, cơ sở hạ tầng lâm sinh, du lịch sinh thái, nghỉ dưỡng, giải trí theo kế hoạch quản lý rừng bền vững của chủ rừng.",
+          "component_code": "000.00.00.G10-KQ006083",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c6c-7279-86b7-8b56a8743717",
+          "name": "Quyết định phê duyệt hoặc điều chỉnh phê duyêt phương án quản lý rừng bền vững theo Mẫu số 11 hoặc Mẫu số 12 Phụ lục III ban hành kèm theo Thông tư số 16/2025/TT-BNNMT",
+          "code": "KQ.G10.000918"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d86-7760-a641-700a6f743b8f",
+          "name": "Thông tư quy định phân cấp, phân định thẩm quyền quản lý nhà nước và một số nội dung trong lĩnh vực lâm nghiệp và kiểm lâm.",
+          "code": "16/2025/TT-BNNMT"
+        }
+      ]
+    }
+  ],
+  "lookup_status": "retrieved",
+  "currency_status": "snapshot_requires_later_amendment_check",
+  "errors": []
+}

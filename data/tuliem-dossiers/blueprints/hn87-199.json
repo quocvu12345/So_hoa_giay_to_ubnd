@@ -1,0 +1,145 @@
+{
+  "id": "hn87-199",
+  "ordinal": "199",
+  "procedure_code": "3.000256",
+  "name": "Chuyển giao công trình điện là hạ tầng kỹ thuật sử dụng chung trong các dự án khu đô thị, khu dân cư và dự án khác do chủ đầu tư phải bàn giao lại cho nhà nước theo quy định của pháp luật",
+  "domain": "Quản lý công sản",
+  "department_id": "ktdt",
+  "department": "Phòng Kinh tế, Hạ tầng và Đô thị",
+  "authority_as_published": "UBND thành phố; UBND cấp xã",
+  "execution_level_as_published": "Cấp tỉnh, cấp xã",
+  "receiving_location_as_published": "Chi nhánh TTPVHCC",
+  "inventory_date": "2026-04-27",
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "source_urls": [
+    "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfd-10a6-720a-94de-0c7622994b2d"
+  ],
+  "current_dvc_match": false,
+  "lifecycle": null,
+  "scope": "hanoi_commune_notice_2026_04_27",
+  "scope_note": "Mốc kiểm kê cấp xã Hà Nội; áp dụng từng thủ tục tại Từ Liêm còn phải theo thẩm quyền/ủy quyền hiện hành.",
+  "status": "source_template_missing",
+  "components": [
+    {
+      "id": "hn87-199-c001",
+      "code": "000.00.00.G12-KQ013036",
+      "name": "Các hồ sơ phục vụ quản lý, vận hành và bảo trì công trình theo quy định tại Phụ lục IX Nghị định số 06/2021/NĐ-CP ngày 26 tháng 01 năm 2021 của Chính phủ quy định chi tiết một số nội dung về quản lý chất lượng, thi công xây dựng và bảo trì công trình xây dựng",
+      "section": "",
+      "role": "needs_review",
+      "scenario_status": "requirement_needs_review",
+      "required_as_published": false,
+      "original_quantity": 0,
+      "copy_quantity": 1,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfd-10a6-720a-94de-0c7622994b2d",
+      "source_detail_id": "019d2bfd-10a6-720a-94de-0c7622994b2d",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-199-c002",
+      "code": "000.00.00.G12-KQ013038",
+      "name": "Hồ sơ đất đai liên quan đến việc giao đất, cho thuê đất, chuyển mục đích sử dụng đất, công nhận quyền sử dụng đất gắn với công trình và các giấy tờ khác có liên quan (nếu có)",
+      "section": "",
+      "role": "needs_review",
+      "scenario_status": "conditional_needs_review",
+      "required_as_published": false,
+      "original_quantity": 0,
+      "copy_quantity": 1,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfd-10a6-720a-94de-0c7622994b2d",
+      "source_detail_id": "019d2bfd-10a6-720a-94de-0c7622994b2d",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-199-c003",
+      "code": "000.00.00.G12-KQ013039",
+      "name": "Giấy chứng nhận thẩm duyệt thiết kế, văn bản thẩm duyệt thiết kế, văn bản chấp thuận kết quả nghiệm thu về phòng cháy, chữa cháy của cơ quan có thẩm quyền (nếu có); phương án chữa cháy, phương án phòng cháy theo quy định của pháp luật về phòng cháy, chữa cháy",
+      "section": "",
+      "role": "supporting_submit",
+      "scenario_status": "conditional_needs_review",
+      "required_as_published": false,
+      "original_quantity": 0,
+      "copy_quantity": 1,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfd-10a6-720a-94de-0c7622994b2d",
+      "source_detail_id": "019d2bfd-10a6-720a-94de-0c7622994b2d",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-199-c004",
+      "code": "000.00.00.G12-KQ013037",
+      "name": "Văn bản phê duyệt quyết toán của cơ quan nhà nước có thẩm quyền (nếu có)",
+      "section": "",
+      "role": "needs_review",
+      "scenario_status": "conditional_needs_review",
+      "required_as_published": false,
+      "original_quantity": 0,
+      "copy_quantity": 1,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfd-10a6-720a-94de-0c7622994b2d",
+      "source_detail_id": "019d2bfd-10a6-720a-94de-0c7622994b2d",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-199-c005",
+      "code": "000.00.00.G12-KQ013040",
+      "name": "Văn bản của chủ đầu tư đề nghị chuyển giao công trình điện theo Mẫu số 01 tại Phụ lục ban hành kèm theo Nghị định số 02/2024/NĐ-CP",
+      "section": "",
+      "role": "needs_review",
+      "scenario_status": "requirement_needs_review",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfd-10a6-720a-94de-0c7622994b2d",
+      "source_detail_id": "019d2bfd-10a6-720a-94de-0c7622994b2d",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    }
+  ],
+  "service_cases": [
+    {
+      "id": "019d2cab-8458-753a-9ad2-51b7a0d92ebf",
+      "code": "3.000256.01",
+      "name": "Chuyển giao công trình điện là hạ tầng kỹ thuật sử dụng chung trong các dự án khu đô thị, khu dân cư và dự án khác do chủ đầu tư phải bàn giao lại cho Nhà nước theo quy định của pháp luật",
+      "source_processing_time": {
+        "qty": 44,
+        "type": "DAY"
+      },
+      "has_case_specific_components": false
+    }
+  ],
+  "selected_template_ids": [],
+  "source_component_groups": [
+    {
+      "name": "",
+      "component_count": 5,
+      "source_detail_id": "019d2bfd-10a6-720a-94de-0c7622994b2d"
+    }
+  ],
+  "conditional_component_groups": [],
+  "default_test_scenario": {
+    "channel": "direct",
+    "applicant_submits_self": true,
+    "authorized": false,
+    "special_case_flags": [],
+    "selected_conditional_group": null,
+    "case_selection_method": "ordinary_direct_submission",
+    "case_status": "scenario_for_testing_not_a_legal_eligibility_decision"
+  },
+  "requirement_note": "required_as_published được giữ nguyên; false không chứng minh giấy tờ luôn tùy chọn. Các nhóm executionCases có thể là mục giấy tờ/hướng dẫn, không phải các phương án loại trừ nhau."
+}

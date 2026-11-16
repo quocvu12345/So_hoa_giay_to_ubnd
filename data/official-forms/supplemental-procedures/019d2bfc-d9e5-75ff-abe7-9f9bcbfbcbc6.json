@@ -1,0 +1,90 @@
+{
+  "id": "dvc-019d2bfc-d9e5-75ff-abe7-9f9bcbfbcbc6",
+  "procedure_code": "2.001243",
+  "name": "Thủ tục hải quan đối với hàng hóa từ nước ngoài đưa vào kho ngoại quan",
+  "domain": "Hải quan",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.909768+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfc-d9e5-75ff-abe7-9f9bcbfbcbc6",
+      "code": "2.001243",
+      "name": "Thủ tục hải quan đối với hàng hóa từ nước ngoài đưa vào kho ngoại quan",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1775639774145,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-d9e5-75ff-abe7-9f9bcbfbcbc6",
+      "raw_path": "evidence/dvc/details/019d2bfc-d9e5-75ff-abe7-9f9bcbfbcbc6.json",
+      "components": [
+        {
+          "section": "Trường hợp áp dụng cơ chế một cửa quốc gia, cơ quan quản lý nhà nước chuyên ngành gửi văn bản thông báo kết quả kiểm tra, miễn kiểm tra chuyên ngành dưới dạng điện tử thông qua Cổng thông tin một cửa quốc gia, người khai hải quan không phải nộp khi làm thủ tục hải quan",
+          "position": 1,
+          "name": "Nộp 01 bản chụp giấy chứng nhận mã số tạm nhập tái xuất của Bộ Công Thương đối với hàng hóa kinh doanh tạm nhập tái xuất có điều kiện theo quy định của Bộ Công Thương khi đưa từ nước ngoài vào kho ngoại quan để xuất đi nước khác phải được cấp Giấy chứng nhận mã số tạm nhập, tái xuất;",
+          "component_code": "000.00.00.G12-KQ2954",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Trường hợp áp dụng cơ chế một cửa quốc gia, cơ quan quản lý nhà nước chuyên ngành gửi văn bản thông báo kết quả kiểm tra, miễn kiểm tra chuyên ngành dưới dạng điện tử thông qua Cổng thông tin một cửa quốc gia, người khai hải quan không phải nộp khi làm thủ tục hải quan",
+          "position": 2,
+          "name": "Nộp 01 bản chính giấy thông báo miễn kiểm tra hoặc Giấy thông báo kết quả kiểm tra của cơ quan kiểm tra chuyên ngành theo quy định của pháp luật.",
+          "component_code": "000.00.00.G12-KQ2955",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Trường hợp áp dụng cơ chế một cửa quốc gia, cơ quan quản lý nhà nước chuyên ngành gửi văn bản thông báo kết quả kiểm tra, miễn kiểm tra chuyên ngành dưới dạng điện tử thông qua Cổng thông tin một cửa quốc gia, người khai hải quan không phải nộp khi làm thủ tục hải quan",
+          "position": 3,
+          "name": "Tờ khai hàng hoá nhập khẩu (nếu có): 02 bản chính.",
+          "component_code": "000.00.00.G12-KQ2952",
+          "original_quantity": 2,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Trường hợp áp dụng cơ chế một cửa quốc gia, cơ quan quản lý nhà nước chuyên ngành gửi văn bản thông báo kết quả kiểm tra, miễn kiểm tra chuyên ngành dưới dạng điện tử thông qua Cổng thông tin một cửa quốc gia, người khai hải quan không phải nộp khi làm thủ tục hải quan",
+          "position": 4,
+          "name": "Nộp 01 bản chụp vận tải đơn hoặc các chứng từ vận tải khác có giá trị tương đương theo quy định của pháp luật (trừ hàng hoá nhập khẩu qua cửa khẩu biên giới đường bộ);",
+          "component_code": "000.00.00.G12-KQ2953",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7e-72d1-afe7-9c25863596db",
+          "name": "Nghị định 08/2015/NĐ-CP",
+          "code": "08/2015/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7d-7398-be4d-1c6dbc289d7a",
+          "name": "Quy định về thủ tục hải quan; kiểm tra, giám sát hải quan; thuế xuất khẩu thuế nhập khẩu và quản lý thuế đối vớỉ hàng hoá xuất khẩu, nhập khẩu.",
+          "code": "38/2015/TT-BTC"
+        },
+        {
+          "id": "019d2bb3-5d7d-7398-be4d-ff62cdf67da5",
+          "name": "Luật 54/2014/QH13",
+          "code": "54/2014/QH13"
+        }
+      ]
+    }
+  ]
+}

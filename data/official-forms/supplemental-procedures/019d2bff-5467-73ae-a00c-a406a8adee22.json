@@ -1,0 +1,148 @@
+{
+  "id": "dvc-019d2bff-5467-73ae-a00c-a406a8adee22",
+  "procedure_code": "2.001947",
+  "name": "Phê duyệt kế hoạch hỗ trợ, can thiệp đối với trẻ em bị xâm hại hoặc có nguy cơ bị bạo lực, bóc lột, bỏ rơi và trẻ em có hoàn cảnh đặc biệt",
+  "domain": "Trẻ em",
+  "managing_agency": "Bộ Y tế",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.850917+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bff-5467-73ae-a00c-a406a8adee22",
+      "code": "2.001947",
+      "name": "Phê duyệt kế hoạch hỗ trợ, can thiệp đối với trẻ em bị xâm hại hoặc có nguy cơ bị bạo lực, bóc lột, bỏ rơi và trẻ em có hoàn cảnh đặc biệt",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1778035284171,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bff-5467-73ae-a00c-a406a8adee22",
+      "raw_path": "evidence/dvc/details/019d2bff-5467-73ae-a00c-a406a8adee22.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Báo cáo  tiếp nhận thông tin  trẻ em và đánh giá nguy cơ ban đầu về tình trạng trẻ em bị xâm hại hoặc có nguy cơ bị bạo lực, bóc lột, bỏ rơi và trẻ em có hoàn cảnh đặc biệt (do Tổng đài điện thoại quốc gia bảo vệ trẻ em, Cơ quan chuyên môn về y tế thuộc Ủy ban nhân dân cấp tỉnh, cơ quan Công an các cấp, Ủy ban nhân dân cấp xã và người làm công tác bảo vệ trẻ em cấp xã lập).",
+          "component_code": "000.00.00.G18-KQ005286",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Dự thảo Quyết  định phê duyệt và kế hoạch hỗ trợ, can thiệp đối với trẻ em bị xâm hại hoặc có nguy cơ bị bạo lực, bóc lột, bỏ rơi và trẻ em có hoàn cảnh đặc biệt (do người làm công tác bảo vệ trẻ em cấp xã lập).",
+          "component_code": "000.00.00.G18-KQ005290",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019e1fa4-763b-729b-9766-1abc0814c384",
+              "fileName": "Mus05.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019e1fa4-763b-729b-9766-1abc0814c384/Mus05.docx"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 3,
+          "name": "Báo cáo thu thập thông tin, đánh  giá nguy cơ cụ  thể tình hình trẻ em (do người làm công tác bảo vệ trẻ em cấp xã lập).",
+          "component_code": "000.00.00.G18-KQ005288",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 4,
+          "name": "Báo cáo đánh  giá nguy cơ ban  đầu về tình trạng trẻ em bị xâm hại hoặc có nguy cơ bị bạo lực, bóc lột, bỏ rơi (do người làm công tác bảo vệ trẻ em cấp xã lập).",
+          "component_code": "000.00.00.G18-KQ005287",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 5,
+          "name": "Các tài liệu có liên quan khác  (nếu có)",
+          "component_code": "000.00.00.G18-KQ005291",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 6,
+          "name": "Biên  bản  cuộc họp xác định nhu  cầu cần hỗ trợ, can thiệp cho trẻ em và các tài liệu khác có liên quan (do người làm công tác bảo vệ trẻ em cấp xã lập).",
+          "component_code": "000.00.00.G18-KQ005289",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 7,
+          "name": "Mẫu số 04 (KH hỗ trợ can thiệp)",
+          "component_code": "000.00.00.G18-KQ005292",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019e1fa1-d0db-7288-9ef6-4c5f6678aa6b",
+              "fileName": "Mus04.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019e1fa1-d0db-7288-9ef6-4c5f6678aa6b/Mus04.docx"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c7c-74ea-bcd1-845dfcb70916",
+          "name": "Quyết định phê duyệt và Kế hoạch hỗ trợ, can thiệp đối với trẻ em kèm theo (do Chủ tịch Ủy ban nhân dân cấp xã ban hành) (BYT)",
+          "code": "KQ.G18.000333"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7f-719e-b46d-d6ce43fbc8e0",
+          "name": "Nghị định số 42/2025/NĐ-CP của Chính phủ: Quy định chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của Bộ Y tế",
+          "code": "42/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7f-719e-b46e-fdfc3b2dd3aa",
+          "name": "Nghị định 56/2017/NĐ-CP - Quy định chi tiết một số điều của Luật Trẻ em",
+          "code": "56/2017/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b671-75490620578d",
+          "name": "Luật Trẻ em",
+          "code": "102/2016/QH13"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afeb-4a8713eeea9a",
+          "name": "Nghị định số 147/2025/NĐ-CP của Chính phủ: Quy định về phân định thẩm quyền của chính quyền địa phương 02 cấp trong lĩnh vực quản lý nhà nước của Bộ Y tế",
+          "code": "147/2025/NĐ-CP"
+        }
+      ]
+    }
+  ]
+}

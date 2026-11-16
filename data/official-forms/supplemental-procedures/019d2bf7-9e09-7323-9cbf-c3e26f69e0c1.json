@@ -1,0 +1,100 @@
+{
+  "id": "dvc-019d2bf7-9e09-7323-9cbf-c3e26f69e0c1",
+  "procedure_code": "1.014060",
+  "name": "Tích hợp, cập nhật, điều chỉnh thông tin trên thẻ căn cước",
+  "domain": "Cấp, quản lý căn cước",
+  "managing_agency": "Bộ Công an",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:18.034564+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bf7-9e09-7323-9cbf-c3e26f69e0c1",
+      "code": "1.014060",
+      "name": "Tích hợp, cập nhật, điều chỉnh thông tin trên thẻ căn cước",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1787291673185,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf7-9e09-7323-9cbf-c3e26f69e0c1",
+      "raw_path": "evidence/dvc/details/019d2bf7-9e09-7323-9cbf-c3e26f69e0c1.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Phiếu đề nghị giải quyết thủ tục về căn cước (Mẫu DC02 ban hành kèm theo Thông tư số 118/2026/TT-BCA ngày 29/6/2026 của Bộ Công an). Phiếu này là biểu mẫu điện tử, công dân kê khai",
+          "component_code": "000.00.00.G01-KQ003790",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Xuất trình thẻ căn cước của công dân để cơ quan Công an kiểm tra, xác định đúng người đề nghị thực hiện thủ tục.",
+          "component_code": "000.00.00.G01-KQ003799",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 3,
+          "name": "Phiếu thu nhận thông tin căn cước (Mẫu CC01 ban hành kèm theo Thông tư số 118/2026/TT-BCA ngày 29/6/2026 của Bộ Công an). Phiếu được tạo lập khi trích xuất thông tin của công dân trong Cơ sở dữ liệu quốc gia về dân cư và in trong quá trình thu nhận hồ sơ căn cước để công dân kiểm tra và ký xác nhận",
+          "component_code": "000.00.00.G01-KQ003796",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c37-76e8-b48d-89ea048b7867",
+          "name": "Thông báo kết quả tích hợp, cập nhật, điều chỉnh thông tin trên thẻ căn cước.",
+          "code": "KQ.G01.000143"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "01a0224a-0269-735f-84c1-54c2c0a3a716",
+          "name": "Thông tư số 61/2025/TT-BCA ngày 10/7/2025 của Bộ Công an quy định về quy trình cấp, cấp đổi, cấp lại thẻ căn cước, giấy chứng nhận căn cước được sửa đổi, bổ sung bởi Thông tư số 120/2026/TT-BCA ngày 29/6/2026 của Bộ Công an sửa đổi, bổ sung một số điều của Thông tư số 61/2025/TT-BCA",
+          "code": "61/2025/TT-BCA "
+        },
+        {
+          "id": "019d2bb3-5d7b-7049-8fc6-519d6a3ee863",
+          "name": "Thông tư quy định chi tiết một số điều và biện pháp thi hành Luật Căn cước",
+          "code": "17/2024/TT-BCA"
+        },
+        {
+          "id": "01a02258-f733-7757-b7e6-b21a174c6cbe",
+          "name": "Thông tư số 117/2026/TT-BCA ngày 29/6/2026 của Bộ Công an quy định chi tiết quy trình thu thập, cập nhật, điều chỉnh, tra cứu, khai thác, sử dụng, kết nối, chia sẻ, kiểm tra, phúc tra, giám sát và bảo đảm an ninh mạng, bảo vệ dữ liệu đối với thông tin trong Cơ sở dữ liệu quốc gia về dân cư, Cơ sở dữ liệu căn cước.",
+          "code": "117/2026/TT-BCA "
+        },
+        {
+          "id": "019f82b2-689c-7667-aa40-6ec8fb7fcd94",
+          "name": "Sửa đổi, bổ sung một số điều của 10 Luật có liên quan đến an ninh, trật tự",
+          "code": "118/2025/QH15"
+        },
+        {
+          "id": "019d2bb3-5d7f-719e-b470-9fafa6161ec1",
+          "name": "Nghị định của Chính phủ: Quy định chi tiết một số điều và biện pháp thi hành Luật Căn cước",
+          "code": "70/2024/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b672-609c23fcf9d1",
+          "name": "Luật Căn cước",
+          "code": "26/2023/QH15"
+        }
+      ]
+    }
+  ]
+}

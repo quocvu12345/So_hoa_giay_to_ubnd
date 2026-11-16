@@ -1,0 +1,139 @@
+{
+  "id": "dvc-01a019bb-bcde-70f8-9859-603de7bcaf38",
+  "procedure_code": "1.116434",
+  "name": "(Hà Nội) Đăng ký, cấp Giấy chứng nhận đối với thửa đất có diện tích tăng thêm do thay đổi ranh giới so với Giấy chứng nhận đã cấp đối với trường hợp thửa đất gốc đã có Giấy chứng nhận, phần diện tích tăng thêm chưa được cấp Giấy chứng nhận",
+  "domain": "Đất đai",
+  "managing_agency": "UBND Thành phố Hà Nội",
+  "inventory_date": null,
+  "scope": "hanoi",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.479963+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "01a019bb-bcde-70f8-9859-603de7bcaf38",
+      "code": "1.116434",
+      "name": "(Hà Nội) Đăng ký, cấp Giấy chứng nhận đối với thửa đất có diện tích tăng thêm do thay đổi ranh giới so với Giấy chứng nhận đã cấp đối với trường hợp thửa đất gốc đã có Giấy chứng nhận, phần diện tích tăng thêm chưa được cấp Giấy chứng nhận",
+      "state": "ACTIVE",
+      "type": "SPECIFIC",
+      "is_ward": true,
+      "updated_at_source": 1787306782155,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/01a019bb-bcde-70f8-9859-603de7bcaf38",
+      "raw_path": "evidence/dvc/details/01a019bb-bcde-70f8-9859-603de7bcaf38.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Đơn đăng ký biến động đất đai, tài sản gắn liền với đất theo Mẫu số 18/ĐK ban hành kèm theo Quyết định này;",
+          "component_code": "MD18.105.2026",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "01a01e2e-0abd-745e-91b7-a9c7718ea68d",
+              "fileName": "Mẫu số 18.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/01a01e2e-0abd-745e-91b7-a9c7718ea68d/Mẫu số 18.docx"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Mảnh trích đo bản đồ địa chính thửa đất theo mẫu;",
+          "component_code": "44.TH1.TPHS03.105.2026",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 3,
+          "name": "Bản gốc Giấy chứng nhận đã cấp;",
+          "component_code": "42.TH1.TPHS02.105.2026",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 4,
+          "name": "Giấy tờ chứng minh phần diện tích tăng thêm",
+          "component_code": "TP.H57.000152",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 5,
+          "name": "Văn bản về việc ủy quyền theo quy định của pháp luật về dân sự đối với trường hợp thực hiện thủ tục thông qua người đại diện (nếu có).",
+          "component_code": "42.TH1.TPHS03.105.2026",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019fdf8f-5c71-72eb-90b7-40f4b2432e0e",
+          "name": "Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất.",
+          "code": "KQ.H26.105.2026.1"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019eab71-e707-70af-996a-4e5b8b36e53e",
+          "name": "Luật Đất đai số 31/2024/QH15 ngày 18/01/2024 được sửa đổi bổ sung  một số điều bởi Luật số 43/2024/QH15, Luật số 47/2024/QH15 và Luật số 58/2024/QH15 của Quốc hội.",
+          "code": "31/2024/QH15 "
+        },
+        {
+          "id": "019fdfab-0f98-7309-b6da-edcf4b3418a4",
+          "name": "Về việc phân cấp thực hiện một số nhiệm vụ trong lĩnh vực đất đai trên địa bàn thành phố Hà Nội",
+          "code": "33/2026/QĐ-UBND "
+        },
+        {
+          "id": "019fdfab-9c87-71de-a747-04badf16fb31",
+          "name": "Về việc ban hành Quy định về điều chỉnh, sửa đổi, bổ sung, bãi bỏ một số nội dung của Quyết định số 33/2026/QĐ-UBND ngày 25/3/2026 của UBND Thành phố về việc phân cấp thực hiện một số nhiệm vụ trong lĩnh vực đất đai trên địa bàn thành phố Hà Nội; ban hành trình tự, thủ tục hành chính về đất đai trên địa bàn thành phố Hà Nội",
+          "code": "105/2026/QĐ-UBND"
+        },
+        {
+          "id": "019ed88c-73bf-73ed-a2c9-ebbe831f989d",
+          "name": "quy định chi tiết và hướng dẫn một số điều của Nghị quyết số 254/2025/QH15 của Quốc hội quy định một số cơ chế, chính sách tháo gỡ khó khăn vướng mắc trong tổ chức thi hành Luật Đất đai",
+          "code": "49/2026/NĐ-CP"
+        },
+        {
+          "id": "019fe63e-5ffc-73a2-9971-335d80f4d73f",
+          "name": "Luật số 43/2024/QH15 ngày 29/6/2024 sửa đổi, bổ sung một số điều của Luật Đất đai số 31/2024/QH15, Luật Nhà ở số 27/2023/QH15, Luật Kinh doanh bất động sản số 29/2023/QH15 và Luật Các tổ chức tín dụng số 32/2024/QH15",
+          "code": "43/2024/QH15 ngày 29/6/2024"
+        },
+        {
+          "id": "019fb0eb-7629-732a-ae85-4507d8b9cbc8",
+          "name": "Nghị định số 102/2024/NĐ-CP ngày 30/7/2024 của Chính phủ quy định chi tiết thi hành một số điều của Luật Đất đai",
+          "code": "102/2024/NĐ-CP "
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afeb-9ac6648a4b4f",
+          "name": "Quy định về phân định thẩm quyền của chính quyền địa phương 02 cấp, phân quyền, phân cấp trong lĩnh vực đất đai",
+          "code": "151/2025/NĐ-CP"
+        },
+        {
+          "id": "019ff439-01f8-77a8-9283-f80efea13a33",
+          "name": "quy định về điều tra cơ bản đất đai; đăng ký, cấp GCNQSD đất, quyền sở hữu tài sản gắn liền với đất và hệ thống thông tin đất đai",
+          "code": " 101/2024/NĐ-CP ngày 29/7/2024 "
+        }
+      ]
+    }
+  ]
+}

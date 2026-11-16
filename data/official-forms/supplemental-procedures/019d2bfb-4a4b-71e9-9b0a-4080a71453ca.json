@@ -1,0 +1,65 @@
+{
+  "id": "dvc-019d2bfb-4a4b-71e9-9b0a-4080a71453ca",
+  "procedure_code": "2.002303",
+  "name": "Lập danh sách đối tượng tham gia bảo hiểm y tế do Bộ Lao động – Thương binh và Xã hội quản lý",
+  "domain": "Bảo hiểm xã hội",
+  "managing_agency": "Bộ Nội vụ",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.985023+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfb-4a4b-71e9-9b0a-4080a71453ca",
+      "code": "2.002303",
+      "name": "Lập danh sách đối tượng tham gia bảo hiểm y tế do Bộ Lao động – Thương binh và Xã hội quản lý",
+      "state": "ACTIVE",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1776679871686,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-4a4b-71e9-9b0a-4080a71453ca",
+      "raw_path": "evidence/dvc/details/019d2bfb-4a4b-71e9-9b0a-4080a71453ca.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Danh sách đối tượng tham gia bảo hiểm y tế (theo Mẫu số 02 ban hành kèm theo Nghị định số 146/2018/NĐ-CP).",
+          "component_code": "G09-KQ003210280",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019da8de-45b4-7308-8162-87cf4970e3b6",
+              "fileName": "Mau so 2.doc",
+              "bucketName": "dvc",
+              "filePath": "configuring/019da8de-45b4-7308-8162-87cf4970e3b6/Mau so 2.doc"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c4a-754a-9b17-9a1d5d85312f",
+          "name": "Thẻ bảo hiểm y tế.",
+          "code": "KQ.G09.0002106"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d87-7195-a43e-2ac01bec0ffb",
+          "name": "Thông tư 30/2019/TT-BLĐTBXH",
+          "code": "30/2019/TT-BLĐTBXH"
+        },
+        {
+          "id": "019d2bb3-5d7f-719e-b473-bd83749a4349",
+          "name": "Nghị định 146/2018/NĐ-CP Quy định chi tiết và hướng dẫn biện pháp thi hành một số điều của Luật bảo hiểm y tế",
+          "code": "Nghị định 146/2018/NĐ-CP"
+        }
+      ]
+    }
+  ]
+}

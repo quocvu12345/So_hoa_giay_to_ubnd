@@ -1,0 +1,75 @@
+{
+  "id": "dvc-019d2bfc-c248-709e-a78f-a7cab36d4a77",
+  "procedure_code": "1.011724",
+  "name": "Thủ tục thông báo cơ sở gia công, sản xuất hàng hóa xuất khẩu; nơi lưu giữ nguyên liệu, vật tư, máy móc, thiết bị, sản phẩm xuất khẩu",
+  "domain": "Hải quan",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.921090+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfc-c248-709e-a78f-a7cab36d4a77",
+      "code": "1.011724",
+      "name": "Thủ tục thông báo cơ sở gia công, sản xuất hàng hóa xuất khẩu; nơi lưu giữ nguyên liệu, vật tư, máy móc, thiết bị, sản phẩm xuất khẩu",
+      "state": "ACTIVE",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1775639773076,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-c248-709e-a78f-a7cab36d4a77",
+      "raw_path": "evidence/dvc/details/019d2bfc-c248-709e-a78f-a7cab36d4a77.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Văn bản thông báo cơ sở gia công, sản xuất hàng hóa xuất khẩu, nơi lưu giữ nguyên liệu, vật tư, máy móc, thiết bị, sản phẩm xuất khẩu theo mẫu do Bộ Tài chính ban hành: 01 bản chính.",
+          "component_code": "000.00.00.G12-KQ012583",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Giấy chứng nhận đăng ký kinh doanh hoặc giấy chứng nhận đăng ký doanh nghiệp hoặc giấy phép đầu tư hoặc giấy chứng nhận đầu tư đối với doanh nghiệp có vốn đầu tư nước ngoài: 01 bản chụp;",
+          "component_code": "000.00.00.G12-KQ012582",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 3,
+          "name": "Hợp đồng thuê nhà xưởng, mặt bằng sản xuất đối với trường hợp thuê nhà xưởng, mặt bằng sản xuất: 01 bản chụp.",
+          "component_code": "000.00.00.G12-KQ012584",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c71-7574-afe8-a65ef1dc0a71",
+          "name": "Chấp nhận thông báo cơ sở sản xuất hoặc đề nghị sửa đổi, bổ sung; kiểm tra cơ sở sản xuất nếu thuộc trường hợp theo quy định; kiểm tra địa điểm lưu giữ nguyên liệu, vật tư và hàng hóa xuất khẩu ngoài cơ sở sản xuất nếu phát hiện có dấu hiệu vi phạm",
+          "code": "KQ.G12.000611"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7d-7398-be4d-ff62cdf67da5",
+          "name": "Luật 54/2014/QH13",
+          "code": "54/2014/QH13"
+        }
+      ]
+    }
+  ]
+}

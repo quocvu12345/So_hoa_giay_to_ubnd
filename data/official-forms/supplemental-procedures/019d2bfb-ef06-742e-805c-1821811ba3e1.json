@@ -1,0 +1,256 @@
+{
+  "id": "dvc-019d2bfb-ef06-742e-805c-1821811ba3e1",
+  "procedure_code": "1.007040",
+  "name": "Khai thuế tiêu thụ đặc biệt đối với sản xuất, kinh doanh hàng hóa, dịch vụ chịu thuế tiêu thụ đặc biệt và hoàn thuế tiêu thụ đặc biệt đối với xăng sinh học",
+  "domain": "Thuế",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.959474+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfb-ef06-742e-805c-1821811ba3e1",
+      "code": "1.007040",
+      "name": "Khai thuế tiêu thụ đặc biệt đối với sản xuất, kinh doanh hàng hóa, dịch vụ chịu thuế tiêu thụ đặc biệt và hoàn thuế tiêu thụ đặc biệt đối với xăng sinh học",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1785399197897,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-ef06-742e-805c-1821811ba3e1",
+      "raw_path": "evidence/dvc/details/019d2bfb-ef06-742e-805c-1821811ba3e1.json",
+      "components": [
+        {
+          "section": "(i) Trường hợp khai thuế TTĐB đối với sản xuất, kinh doanh hàng hóa, dịch vụ chịu thuế TTĐB:",
+          "position": 1,
+          "name": "Tờ khai thuế Tiêu thụ đặc biệt mẫu số 01/TTĐB ban hành kèm theo Thông tư số 89/2026/TT-BTC ngày 30/06/2026 của Bộ trưởng Bộ Tài chính",
+          "component_code": "G12.0016061",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019fa31c-5e54-70cc-b5b4-c5c0884cc4db",
+              "fileName": "1. 01.TTĐB.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa31c-5e54-70cc-b5b4-c5c0884cc4db/1. 01.TTĐB.docx"
+            }
+          ]
+        },
+        {
+          "section": "(i) Trường hợp khai thuế TTĐB đối với sản xuất, kinh doanh hàng hóa, dịch vụ chịu thuế TTĐB:",
+          "position": 2,
+          "name": "Bảng phân bổ thuế tiêu thụ đặc biệt theo địa bàn tỉnh, thành phố từ hoạt động kinh doanh sổ xố (nếu có) mẫu số 01-3/TTĐB ban hành kèm theo Thông tư số 89/2026/TT-BTC ngày 30/06/2026 của Bộ trưởng Bộ Tài chính",
+          "component_code": "G12.0016063",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019fa31d-101e-7372-bcc1-61bd06089cd0",
+              "fileName": "3. 01-3-TTĐB.doc",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa31d-101e-7372-bcc1-61bd06089cd0/3. 01-3-TTĐB.doc"
+            }
+          ]
+        },
+        {
+          "section": "(i) Trường hợp khai thuế TTĐB đối với sản xuất, kinh doanh hàng hóa, dịch vụ chịu thuế TTĐB:",
+          "position": 3,
+          "name": "Bảng xác định thuế tiêu thụ đặc biệt được khấu trừ (nếu có) mẫu số 01-2/TTĐB ban hành kèm theo Thông tư số 89/2026/TT-BTC ngày 30/06/2026 của Bộ trưởng Bộ Tài chính",
+          "component_code": "G12.0016062",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019fa31c-b72e-7726-a98a-cccb7c84587f",
+              "fileName": "2. 01-2.TTĐB.doc",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa31c-b72e-7726-a98a-cccb7c84587f/2. 01-2.TTĐB.doc"
+            }
+          ]
+        },
+        {
+          "section": "(i) Trường hợp khai thuế TTĐB đối với sản xuất, kinh doanh hàng hóa, dịch vụ chịu thuế TTĐB:",
+          "position": 4,
+          "name": "Từ 01/7/2026 đến thời điểm theo lộ trình của cơ quan thuế quy định tại khoản 2 Điều 99 Thông tư số 89/2026/TT-BTC thì các tờ khai số 01/TTĐB, số 01-2/TTĐB, 01-3/TTĐB thực hiện theo Mẫu ban hành kèm theo Nghị định số 373/2025/NĐ-CP ngày 31/12/2025 của Chính phủ",
+          "component_code": "G12.0016069",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019fa31f-3bb9-7053-89c7-8bc56fb9a652",
+              "fileName": "01 1 TTĐB TT 80.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa31f-3bb9-7053-89c7-8bc56fb9a652/01 1 TTĐB TT 80.docx"
+            },
+            {
+              "id": "019fa320-1c93-7379-ad5f-43e1d2a1e2e8",
+              "fileName": "01-3 TTĐB TT 80.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa320-1c93-7379-ad5f-43e1d2a1e2e8/01-3 TTĐB TT 80.docx"
+            },
+            {
+              "id": "019fa320-1dc2-73da-ac8b-06e0763aa944",
+              "fileName": "01-2 TTĐB TT 80.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa320-1dc2-73da-ac8b-06e0763aa944/01-2 TTĐB TT 80.docx"
+            }
+          ]
+        },
+        {
+          "section": "(ii) Trường hợp hoàn thuế tiêu thụ đặc biệt đối với xăng sinh học:",
+          "position": 1,
+          "name": "Tờ khai thuế Tiêu thụ đặc biệt mẫu số 01/TTĐB ban hành kèm theo Thông tư số 89/2026/TT-BTC ngày 30/06/2026 của Bộ trưởng Bộ Tài chính",
+          "component_code": "G12.0016061",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019fa31c-5e54-70cc-b5b4-c5c0884cc4db",
+              "fileName": "1. 01.TTĐB.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa31c-5e54-70cc-b5b4-c5c0884cc4db/1. 01.TTĐB.docx"
+            }
+          ]
+        },
+        {
+          "section": "(ii) Trường hợp hoàn thuế tiêu thụ đặc biệt đối với xăng sinh học:",
+          "position": 2,
+          "name": "Phụ lục thông tin đề nghị hoàn thuế tiêu thụ đặc biệt đối với xăng sinh học theo mẫu 01-4/TTĐB ban hành kèm theo Thông tư số 89/2026/TT-BTC ngày 30/06/2026 của Bộ trưởng Bộ Tài chính",
+          "component_code": "G12.0016070",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019fa322-b553-7098-b3a2-ad26bf4ddb40",
+              "fileName": "4. 01-4.TTĐB.pdf",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa322-b553-7098-b3a2-ad26bf4ddb40/4. 01-4.TTĐB.pdf"
+            }
+          ]
+        },
+        {
+          "section": "(ii) Trường hợp hoàn thuế tiêu thụ đặc biệt đối với xăng sinh học:",
+          "position": 3,
+          "name": "Từ ngày 01/7/2026 đến thời điểm theo lộ trình của cơ quan thuế quy định tại khoản 2 Điều 99 Thông tư số 89/2026/TT-BTC, NNT được áp dụng mẫu tờ khai 01/TTĐB ban hành kèm theo Nghị định số 373/2025/NĐ-CP ngày 31/12/2025 của Chính phủ",
+          "component_code": "G12.001671",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019fa323-a7f3-7768-802f-406564e3d4fd",
+              "fileName": "01 1 TTĐB TT 80.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa323-a7f3-7768-802f-406564e3d4fd/01 1 TTĐB TT 80.docx"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 1,
+          "name": "Đối với hồ sơ khai thuế mà người nộp thuế đã khai chỉ tiêu đề nghị hoàn trên tờ khai thuế của kỳ tính thuế trước ngày 01 tháng 7 năm 2026 nhưng chưa gửi hồ sơ hoàn thuế đến cơ quan thuế thì người nộp thuế gửi mẫu 01a/ĐNHT theo quy định tại Thông tư số 80/2021/TT-BTC ngày 29/9/2021 của Bộ Tài chính và các văn bản sửa đổi, bổ sung cho tất cả các kỳ tính thuế",
+          "component_code": "G12.006073",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019fa324-c084-707f-aa7c-b586c16bb327",
+              "fileName": "01a ĐNHT.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa324-c084-707f-aa7c-b586c16bb327/01a ĐNHT.docx"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Đối với hồ sơ khai thuế mà người nộp thuế đã khai chỉ tiêu đề nghị hoàn trên tờ khai thuế của kỳ tính thuế trước ngày 01 tháng 7 năm 2026 nhưng gửi hồ sơ hoàn thuế đến cơ quan thuế sau thời điểm quy định tại khoản 2 Điều 99 Thông tư số 89/2026/TT-BTC thì người nộp thuế thực hiện đề nghị hoàn thuế theo mẫu biểu quy định tại điểm b khoản 2 Điều 46 Thông tư số 89/2026/TT-BTC, mẫu đơn, mẫu tờ khai của hồ sơ hoàn thuế gồm",
+          "component_code": "G12.006074",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019fa326-8115-757f-9960-140095505d81",
+              "fileName": "4. 01-4.TTĐB.pdf",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa326-8115-757f-9960-140095505d81/4. 01-4.TTĐB.pdf"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c71-7574-afe8-1af89bd23d1c",
+          "name": "Thông báo về việc giải trình, bổ sung thông tin, tài liệu (Mẫu 01/TB-BSTT-NNT)",
+          "code": "KQ.G12.000566"
+        },
+        {
+          "id": "019fa2fb-b816-715f-b0a7-8559667eabb4",
+          "name": "Thông báo một phần số tiền đề nghị hoàn thuế trong hồ sơ hoàn thuế của người nộp thuế thuộc diện kiểm tra trước hoàn thuế (số 05/TB-HT )",
+          "code": "KQ.G12.000567"
+        },
+        {
+          "id": "019d2bb2-1c70-724b-96e1-59c6a510ec9f",
+          "name": "Hồ sơ gửi đến cơ quan thuế không có kết quả giải quyết.",
+          "code": "KQ.G12.000429"
+        },
+        {
+          "id": "019fa328-0757-726b-936d-17f088ac9c48",
+          "name": "Thông báo số tiền đề nghị hoàn nhưng không được hoàn thuế, số tiền đề nghị hoàn chưa đủ điều kiện được hoàn thuế (mẫu số 04/TB-HT)",
+          "code": "KQ.G12.001485"
+        },
+        {
+          "id": "019fa329-7177-760d-ad80-2bef251243b4",
+          "name": "Quyết định hoàn thuế kiêm bù trừ thu ngân sách nhà nước (mẫu số 02/QĐ-HT)",
+          "code": "KQ.G12.001558"
+        },
+        {
+          "id": "019fa6be-d9ec-771f-b967-a3bae0d4c476",
+          "name": "Phụ lục số tiền thuế, tiền chậm nộp, tiền phạt phải nộp được bù trừ (Mẫu số 01/PL-BT)",
+          "code": "KQ.G12000603"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7e-72d1-afe9-653aac8276ee",
+          "name": "Nghị định số 118/2025/NĐ-CP của Chính phủ: Về thực hiện thủ tục hành chính theo cơ chế một cửa, một cửa liên thông tại Bộ phận Một cửa và Cổng Dịch vụ công quốc gia",
+          "code": "118/2025/NĐ-CP"
+        },
+        {
+          "id": "019f8db3-9765-740b-8b90-682677b9c421",
+          "name": "Thông tư quy định chi tiết một số điều của Luật Quản lý thuế và Nghị định số 252/2026/NĐ-CP của Chính phủ quy định chi tiết một số điều và biện pháp để tổ chức, hướng dẫn thi hành Luật Quản lý thuế",
+          "code": "89/2026/TT-BTC"
+        },
+        {
+          "id": "019e5e83-1282-771d-9014-49799413a4e5",
+          "name": "Luật số 108/2025/QH15 của Quốc hội: Luật Quản lý thuế",
+          "code": "108/2025/QH15"
+        },
+        {
+          "id": "019f356e-75e3-7494-a2f3-672d8dce61a6",
+          "name": "QUY ĐỊNH CHI TIẾT MỘT SỐ ĐIỀU VÀ BIỆN PHÁP ĐỂ TỔ CHỨC, HƯỚNG DẪN THI HÀNH LUẬT QUẢN LÝ THUẾ",
+          "code": "252/2026/NĐ-CP"
+        }
+      ]
+    }
+  ]
+}

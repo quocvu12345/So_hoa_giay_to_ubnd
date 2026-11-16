@@ -1,0 +1,190 @@
+{
+  "id": "hn87-350",
+  "ordinal": "350",
+  "procedure_code": "2.001215",
+  "name": "Đăng ký phương tiện hoạt động vui chơi, giải trí dưới nước lần đầu",
+  "domain": "Hàng hải và đường thủy nội địa",
+  "department_id": "chuyennganh",
+  "department": "Cơ quan chuyên ngành · cần xác định đơn vị phối hợp",
+  "authority_as_published": "UBND cấp xã",
+  "execution_level_as_published": "Cấp xã",
+  "receiving_location_as_published": "Điểm hỗ trợ DVC số",
+  "inventory_date": "2026-04-27",
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "source_urls": [
+    "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfe-98ac-77de-bb23-6dbc853ac7d4"
+  ],
+  "current_dvc_match": true,
+  "lifecycle": null,
+  "scope": "hanoi_commune_notice_2026_04_27",
+  "scope_note": "Mốc kiểm kê cấp xã Hà Nội; áp dụng từng thủ tục tại Từ Liêm còn phải theo thẩm quyền/ủy quyền hiện hành.",
+  "status": "has_fillable_templates",
+  "components": [
+    {
+      "id": "hn87-350-c001",
+      "code": "000.00.00.G04-KQ004637",
+      "name": "+  Giấy chứng nhận an toàn kỹ thuật và bảo vệ môi trường của phương tiện còn hiệu lực đối với phương tiện thuộc diện đăng kiểm;",
+      "section": "-  Giấy tờ phải xuất trình khi nộp hồ sơ gồm bản chính các loại sau:",
+      "role": "supporting_show",
+      "scenario_status": "conditional_needs_review",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfe-98ac-77de-bb23-6dbc853ac7d4",
+      "source_detail_id": "019d2bfe-98ac-77de-bb23-6dbc853ac7d4",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-350-c002",
+      "code": "000.00.00.G04-KQ004638",
+      "name": "+ Giấy phép hoặc tờ khai phương tiện nhập khẩu theo quy định của pháp luật đối với phương tiện được nhập khẩu;",
+      "section": "-  Giấy tờ phải xuất trình khi nộp hồ sơ gồm bản chính các loại sau:",
+      "role": "supporting_show",
+      "scenario_status": "conditional_needs_review",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfe-98ac-77de-bb23-6dbc853ac7d4",
+      "source_detail_id": "019d2bfe-98ac-77de-bb23-6dbc853ac7d4",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-350-c003",
+      "code": "000.00.00.G04-KQ004639",
+      "name": "+ Giấy tờ chứng minh quyền sở hữu phương tiện: Hợp đồng mua bán hoặc hợp đồng đóng mới phương tiện hoặc các giấy tờ khác có giá trị tương đương;",
+      "section": "-  Giấy tờ phải xuất trình khi nộp hồ sơ gồm bản chính các loại sau:",
+      "role": "supporting_show",
+      "scenario_status": "selected_for_test",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfe-98ac-77de-bb23-6dbc853ac7d4",
+      "source_detail_id": "019d2bfe-98ac-77de-bb23-6dbc853ac7d4",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-350-c004",
+      "code": "000.00.00.G04-KQ004641",
+      "name": "(Trường hợp chủ phương tiện đồng thời là chủ cơ sở đóng mới, hoán cải, sửa chữa và phục hồi phương tiện được phép hoạt động theo quy định của pháp luật, khi thực hiện đăng ký phương tiện không phải xuất trình Giấy tờ chứng minh quyền sở hữu phương tiện: Hợp đồng mua bán hoặc hợp đồng đóng mới phương tiện hoặc các giấy tờ khác có giá trị tương đương).",
+      "section": "-  Giấy tờ phải xuất trình khi nộp hồ sơ gồm bản chính các loại sau:",
+      "role": "supporting_show",
+      "scenario_status": "conditional_needs_review",
+      "required_as_published": false,
+      "original_quantity": 0,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfe-98ac-77de-bb23-6dbc853ac7d4",
+      "source_detail_id": "019d2bfe-98ac-77de-bb23-6dbc853ac7d4",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-350-c005",
+      "code": "000.00.00.G04-KQ004640",
+      "name": "+ Giấy tờ chứng minh được phép hoạt động và có trụ sở tại Việt Nam đối với tổ chức nước ngoài hoặc giấy tờ chứng minh được phép cư trú tại Việt Nam đối với cá nhân nước ngoài.",
+      "section": "-  Giấy tờ phải xuất trình khi nộp hồ sơ gồm bản chính các loại sau:",
+      "role": "supporting_show",
+      "scenario_status": "conditional_needs_review",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfe-98ac-77de-bb23-6dbc853ac7d4",
+      "source_detail_id": "019d2bfe-98ac-77de-bb23-6dbc853ac7d4",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-350-c006",
+      "code": "000.00.00.G04-KQ004635",
+      "name": "+ Đơn đề nghị đăng ký phương tiện theo Mẫu;",
+      "section": "Giấy tờ phải nộp, gồm:",
+      "role": "applicant_form",
+      "scenario_status": "selected_for_test",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfe-98ac-77de-bb23-6dbc853ac7d4",
+      "source_detail_id": "019d2bfe-98ac-77de-bb23-6dbc853ac7d4",
+      "embedded_other_requirements": false,
+      "template_candidates": [
+        "template-c68ebdf248923b37"
+      ],
+      "template_selection_method": "first_matching_source_attachment",
+      "selected_template_id": "template-c68ebdf248923b37",
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-350-c007",
+      "code": "000.00.00.G04-KQ004636",
+      "name": "+ Biên lai nộp lệ phí trước bạ (bản chính hoặc bản điện tử hoặc bản sao điện tử) đối với phương tiện thuộc diện phải nộp lệ phí trước bạ.",
+      "section": "Giấy tờ phải nộp, gồm:",
+      "role": "supporting_submit",
+      "scenario_status": "conditional_needs_review",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 1,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfe-98ac-77de-bb23-6dbc853ac7d4",
+      "source_detail_id": "019d2bfe-98ac-77de-bb23-6dbc853ac7d4",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    }
+  ],
+  "service_cases": [
+    {
+      "id": "019db851-876f-764b-8b7a-e6c76655d475",
+      "code": "2.001215.01",
+      "name": "Đăng ký phương tiện hoạt động vui chơi, giải trí dưới nước lần đầu",
+      "source_processing_time": {
+        "qty": 3,
+        "type": "WORKING_DAY"
+      },
+      "has_case_specific_components": false
+    }
+  ],
+  "selected_template_ids": [
+    "template-c68ebdf248923b37"
+  ],
+  "source_component_groups": [
+    {
+      "name": "-  Giấy tờ phải xuất trình khi nộp hồ sơ gồm bản chính các loại sau:",
+      "component_count": 5,
+      "source_detail_id": "019d2bfe-98ac-77de-bb23-6dbc853ac7d4"
+    },
+    {
+      "name": "Giấy tờ phải nộp, gồm:",
+      "component_count": 2,
+      "source_detail_id": "019d2bfe-98ac-77de-bb23-6dbc853ac7d4"
+    }
+  ],
+  "conditional_component_groups": [],
+  "default_test_scenario": {
+    "channel": "direct",
+    "applicant_submits_self": true,
+    "authorized": false,
+    "special_case_flags": [],
+    "selected_conditional_group": null,
+    "case_selection_method": "ordinary_direct_submission",
+    "case_status": "scenario_for_testing_not_a_legal_eligibility_decision"
+  },
+  "requirement_note": "required_as_published được giữ nguyên; false không chứng minh giấy tờ luôn tùy chọn. Các nhóm executionCases có thể là mục giấy tờ/hướng dẫn, không phải các phương án loại trừ nhau."
+}

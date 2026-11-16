@@ -1,0 +1,101 @@
+{
+  "id": "dvc-019d2bf8-5247-7178-bf1f-a9e07e099434",
+  "procedure_code": "1.012222",
+  "name": "Công nhận người có uy tín",
+  "domain": "Công tác dân tộc",
+  "managing_agency": "Bộ Dân tộc và Tôn giáo",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:18.029367+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bf8-5247-7178-bf1f-a9e07e099434",
+      "code": "1.012222",
+      "name": "Công nhận người có uy tín",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1776791924248,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf8-5247-7178-bf1f-a9e07e099434",
+      "raw_path": "evidence/dvc/details/019d2bf8-5247-7178-bf1f-a9e07e099434.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "TỔNG HỢP DANH SÁCH Bình chọn, đề nghị công nhận người có uy tín trong đồng bào dân tộc thiểu số năm .....",
+          "component_code": "000.00.00.G21-KQ000074",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "BIÊN BẢN KIỂM TRA Kết quả bình chọn, đề nghị công nhận người có uy tín năm .....",
+          "component_code": "000.00.00.G21-KQ000073",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 3,
+          "name": "BIÊN BẢN HỌP LIÊN TỊCH THÔN Bình chọn, đề nghị công nhận người có uy tín trong đồng bào dân tộc thiểu số",
+          "component_code": "000.00.00.G21-KQ000072",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 4,
+          "name": "BIÊN BẢN HỘI NGHỊ DÂN CƯ THÔN Đề cử người có uy tín trong đồng bào dân tộc thiểu số",
+          "component_code": "000.00.00.G21-KQ000071",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c7e-720f-afcf-d08bc4074e49",
+          "name": "Quyết định công nhận người có uy tín của Chủ tịch Ủy ban nhân dân cấp xã",
+          "code": "KQ.G21.000133"
+        },
+        {
+          "id": "019d2bb2-1c7e-720f-afd0-271ba4d702d4",
+          "name": "Danh sách công nhận người có uy tín trong đồng bào dân tộc thiểu số",
+          "code": "KQ.G21.000155"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d86-7760-a63e-8a2bf55137fa",
+          "name": "Nghị định số 124/2025/NĐ-CP",
+          "code": "124/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b678-4d1640ab261f",
+          "name": "Quyết định 28/2023/QĐ-TTgcủa Thủ tướng Chính phủ",
+          "code": "28/2023/QĐ-TTg"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afe9-89044a592729",
+          "name": "Quyết định Số: 12/2018/QĐ-TTg- về tiêu chí lựa chọn, công nhận người có uy tín và chính sách đối với người có uy tín trong đồng bào dân tộc thiểu số",
+          "code": "12/2018/QĐ-TTg"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+  Worker AI chạy nền trên Mac Apple Silicon (AI-09). Dùng LaunchAgent của người dùng chạy máy: MLX cần GPU của phiên người dùng.
+  Cài bằng deploy/launchd/install.sh (điền đường dẫn thật của máy rồi nạp); KHÔNG sửa tay bản trong ~/Library/LaunchAgents.
+  Tắt/mở: launchctl bootout|bootstrap gui/$(id -u) ~/Library/LaunchAgents/vn.hoso.ai-worker.plist
+-->
+<plist version="1.0">
+<dict>
+  <key>Label</key><string>vn.hoso.ai-worker</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/bin/bash</string>
+    <string>__REPO__/ai-worker/deploy/run-worker.sh</string>
+    <string>run</string>
+  </array>
+  <key>WorkingDirectory</key><string>__REPO__/ai-worker</string>
+  <key>RunAtLoad</key><true/>
+  <!-- Tự chạy lại khi thoát bất thường (cách nhau tối thiểu 30 giây); thoát mã 0 (dừng có chủ ý) thì không chạy lại. launchd không loại trừ riêng mã 78 như systemd: thiếu cấu hình thì cứ 30 giây báo lỗi một lần vào nhật ký. -->
+  <key>KeepAlive</key>
+  <dict>
+    <key>SuccessfulExit</key><false/>
+  </dict>
+  <key>ThrottleInterval</key><integer>30</integer>
+  <!-- launchd gửi SIGTERM rồi chờ chừng này giây cho job đang đọc dở xong trang hiện tại trước khi SIGKILL. -->
+  <key>ExitTimeOut</key><integer>180</integer>
+  <key>ProcessType</key><string>Background</string>
+  <key>StandardOutPath</key><string>__LOG_DIR__/ai-worker.log</string>
+  <key>StandardErrorPath</key><string>__LOG_DIR__/ai-worker.log</string>
+  <key>EnvironmentVariables</key>
+  <dict>
+    <key>HOSO_AI_ENV_FILE</key><string>__REPO__/ai-worker/.env</string>
+    <key>PATH</key><string>/usr/local/bin:/opt/homebrew/bin:/usr/bin:/bin</string>
+  </dict>
+</dict>
+</plist>

@@ -1,0 +1,237 @@
+{
+  "id": "hn87-366",
+  "ordinal": "366",
+  "procedure_code": "1.014632",
+  "name": "Đăng ký mua, thuê mua, thuê nhà ở xã hội, vay vốn để hộ gia đình, cá nhân tự xây dựng hoặc cải tạo, sửa chữa nhà ở",
+  "domain": "Nhà ở",
+  "department_id": "ktdt",
+  "department": "Phòng Kinh tế, Hạ tầng và Đô thị",
+  "authority_as_published": "VPĐKĐĐ, Xã/Phường, Công an Xã",
+  "execution_level_as_published": "Cấp tỉnh, cấp xã",
+  "receiving_location_as_published": "Điểm hỗ trợ DVC số; Chi nhánh TTPVHCC",
+  "inventory_date": "2026-04-27",
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "source_urls": [
+    "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfe-985c-732b-822b-460f2199467e"
+  ],
+  "current_dvc_match": true,
+  "lifecycle": null,
+  "scope": "hanoi_commune_notice_2026_04_27",
+  "scope_note": "Mốc kiểm kê cấp xã Hà Nội; áp dụng từng thủ tục tại Từ Liêm còn phải theo thẩm quyền/ủy quyền hiện hành.",
+  "status": "has_fillable_templates",
+  "components": [
+    {
+      "id": "hn87-366-c001",
+      "code": "G17-KQ005445",
+      "name": "Giấy tờ chứng minh điều kiện về nhà ở để được mua, thuê mua  nhà ở xã hội/nhà ở cho lực lượng vũ trang nhân dân",
+      "section": "Trường hợp 1: Xác nhận điều kiện về nhà ở để được mua, thuê mua  nhà ở xã hội/nhà ở cho lực lượng vũ trang nhân dân (trường hợp chưa có  nhà ở thuộc sở hữu của mình).",
+      "role": "needs_review",
+      "scenario_status": "alternative_case_not_selected",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 1,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfe-985c-732b-822b-460f2199467e",
+      "source_detail_id": "019d2bfe-985c-732b-822b-460f2199467e",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-366-c002",
+      "code": "G17-KQ005446",
+      "name": "Giấy tờ chứng minh điều kiện về nhà ở để được mua, thuê mua nhà ở xã hội/nhà ở cho lực lượng vũ trang nhân dân (trường hợp có nhà ở nhưng diện tích nhà ở bình quân đầu người thấp hơn 15m2 sàn/người).",
+      "section": "Trường hợp 2: Xác nhận điều kiện về nhà ở để được mua, thuê mua nhà ở xã hội/nhà ở cho lực lượng vũ trang nhân dân (trường hợp có nhà ở nhưng diện tích nhà ở bình quân đầu người thấp hơn 15m2 sàn/người).",
+      "role": "needs_review",
+      "scenario_status": "alternative_case_not_selected",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 1,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfe-985c-732b-822b-460f2199467e",
+      "source_detail_id": "019d2bfe-985c-732b-822b-460f2199467e",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-366-c003",
+      "code": "G17-KQ005447",
+      "name": "Giấy tờ chứng minh điều kiện vay vốn ưu đãi của Nhà nước thông qua Ngân hàng Chính sách xã hội để hộ gia đình, cá nhân tự xây dựng hoặc cải tạo, sửa chữa nhà ở.",
+      "section": "Trường hợp 3: Xác nhận điều kiện vay vốn ưu đãi của Nhà nước thông qua Ngân hàng Chính sách xã hội để hộ gia đình, cá nhân tự xây dựng hoặc cải tạo, sửa chữa nhà ở.",
+      "role": "needs_review",
+      "scenario_status": "alternative_case_not_selected",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 1,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfe-985c-732b-822b-460f2199467e",
+      "source_detail_id": "019d2bfe-985c-732b-822b-460f2199467e",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-366-c004",
+      "code": "G17-KQ005448",
+      "name": "Giấy tờ chứng minh điều kiện vay vốn ưu đãi của Nhà nước tại tổ chức tín dụng do Nhà nước chỉ định để hộ gia đình, cá nhân tự xây dựng hoặc cải tạo, sửa chữa nhà ở.",
+      "section": "Trường hợp 4: Xác nhận điều kiện vay vốn ưu đãi của Nhà nước tại tổ chức tín dụng do Nhà nước chỉ định để hộ gia đình, cá nhân tự xây dựng hoặc cải tạo, sửa chữa nhà ở",
+      "role": "needs_review",
+      "scenario_status": "alternative_case_not_selected",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 1,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfe-985c-732b-822b-460f2199467e",
+      "source_detail_id": "019d2bfe-985c-732b-822b-460f2199467e",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-366-c005",
+      "code": "G17-KQ005449",
+      "name": "Giấy tờ chứng minh đối tượng được hưởng chính sách hỗ trợ về nhà ở xã hội (áp dụng cho các đối tượng quy định tại các khoản 9, 10, 11 Điều 76 của Luật Nhà ở và đối tượng quy định tại khoản 5 Điều 76 của Luật Nhà ở không có hợp đồng lao động, không được hưởng lương hưu do cơ quan Bảo hiểm xã hội chi trả).",
+      "section": "Trường hợp 5: Xác nhận đối tượng được hưởng chính sách hỗ trợ về nhà ở xã hội (áp dụng cho các đối tượng quy định tại các khoản 9, 10, 11 Điều 76 của Luật Nhà ở và đối tượng quy định tại khoản 5 Điều 76 của Luật Nhà ở không có hợp đồng lao động, không được hưởng lương hưu do cơ quan Bảo hiểm xã hội chi trả)",
+      "role": "applicant_form",
+      "scenario_status": "conditional_needs_review",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 1,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfe-985c-732b-822b-460f2199467e",
+      "source_detail_id": "019d2bfe-985c-732b-822b-460f2199467e",
+      "embedded_other_requirements": false,
+      "template_candidates": [
+        "template-4b96037d03c22ad4"
+      ],
+      "template_selection_method": "first_matching_source_attachment",
+      "selected_template_id": "template-4b96037d03c22ad4",
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-366-c006",
+      "code": "G17-KQ005450",
+      "name": "Giấy tờ chứng minh đối tượng, thu nhập để được hưởng chính sách hỗ trợ về nhà ở xã hội (áp dụng cho các đối tượng quy định tại các khoản 5, 6, 8 Điều 76 của Luật Nhà ở, trừ đối tượng quy định tại khoản 5 Điều 76 của Luật Nhà ở không có hợp đồng lao động, không được hưởng lương hưu do cơ quan Bảo hiểm xã hội chi trả).",
+      "section": "Trường hợp 6: Xác nhận đối tượng, thu nhập để được hưởng chính sách hỗ trợ về nhà ở xã hội (áp dụng cho các đối tượng quy định tại các khoản 5, 6, 8 Điều 76 của Luật Nhà ở, trừ đối tượng quy định tại khoản 5 Điều 76 của Luật Nhà ở không có hợp đồng lao động, không được hưởng lương hưu do cơ quan Bảo hiểm xã hội chi trả).",
+      "role": "applicant_form",
+      "scenario_status": "alternative_case_not_selected",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 1,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfe-985c-732b-822b-460f2199467e",
+      "source_detail_id": "019d2bfe-985c-732b-822b-460f2199467e",
+      "embedded_other_requirements": false,
+      "template_candidates": [
+        "template-600388ccac5d570b"
+      ],
+      "template_selection_method": "first_matching_source_attachment",
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-366-c007",
+      "code": "G17-KQ005451",
+      "name": "Giấy tờ chứng minh điều kiện về thu nhập để được mua, thuê mua nhà ở xã hội (áp dụng cho đối tượng quy định tại khoản 5 Điều 76 của Luật Nhà ở không có hợp đồng lao động, không được hưởng lương hưu do cơ quan Bảo hiểm xã hội chi trả).",
+      "section": "Trường hợp 7: Xác nhận điều kiện về thu nhập để được mua, thuê mua nhà ở xã hội (áp dụng cho đối tượng quy định tại khoản 5 Điều 76 của Luật Nhà ở không có hợp đồng lao động, không được hưởng lương hưu do cơ quan Bảo hiểm xã hội chi trả).",
+      "role": "applicant_form",
+      "scenario_status": "alternative_case_not_selected",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 1,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfe-985c-732b-822b-460f2199467e",
+      "source_detail_id": "019d2bfe-985c-732b-822b-460f2199467e",
+      "embedded_other_requirements": false,
+      "template_candidates": [
+        "template-c2c4a5a748d0a2dd"
+      ],
+      "template_selection_method": "first_matching_source_attachment",
+      "selected_template_id": null,
+      "selection_requires_review": false
+    }
+  ],
+  "service_cases": [
+    {
+      "id": "019d2d7d-8d3a-77bd-b2a2-4aff03a2493b",
+      "code": "1.014632.01",
+      "name": "Đăng ký mua, thuê mua, thuê nhà ở xã hội, vay vốn để hộ gia đình, cá nhân tự xây dựng hoặc cải tạo, sửa chữa nhà ở",
+      "source_processing_time": {
+        "qty": 7,
+        "type": "DAY"
+      },
+      "has_case_specific_components": false
+    },
+    {
+      "id": "019db0a9-41ea-7200-b3ea-13fdb87bfd5c",
+      "code": "1.014632.02",
+      "name": "Đăng ký mua, thuê mua, thuê nhà ở xã hội, vay vốn để hộ gia đình, cá nhân tự xây dựng hoặc cải tạo, sửa chữa nhà ở",
+      "source_processing_time": {
+        "qty": 7,
+        "type": "DAY"
+      },
+      "has_case_specific_components": false
+    }
+  ],
+  "selected_template_ids": [
+    "template-4b96037d03c22ad4"
+  ],
+  "source_component_groups": [
+    {
+      "name": "Trường hợp 1: Xác nhận điều kiện về nhà ở để được mua, thuê mua  nhà ở xã hội/nhà ở cho lực lượng vũ trang nhân dân (trường hợp chưa có  nhà ở thuộc sở hữu của mình).",
+      "component_count": 1,
+      "source_detail_id": "019d2bfe-985c-732b-822b-460f2199467e"
+    },
+    {
+      "name": "Trường hợp 2: Xác nhận điều kiện về nhà ở để được mua, thuê mua nhà ở xã hội/nhà ở cho lực lượng vũ trang nhân dân (trường hợp có nhà ở nhưng diện tích nhà ở bình quân đầu người thấp hơn 15m2 sàn/người).",
+      "component_count": 1,
+      "source_detail_id": "019d2bfe-985c-732b-822b-460f2199467e"
+    },
+    {
+      "name": "Trường hợp 3: Xác nhận điều kiện vay vốn ưu đãi của Nhà nước thông qua Ngân hàng Chính sách xã hội để hộ gia đình, cá nhân tự xây dựng hoặc cải tạo, sửa chữa nhà ở.",
+      "component_count": 1,
+      "source_detail_id": "019d2bfe-985c-732b-822b-460f2199467e"
+    },
+    {
+      "name": "Trường hợp 4: Xác nhận điều kiện vay vốn ưu đãi của Nhà nước tại tổ chức tín dụng do Nhà nước chỉ định để hộ gia đình, cá nhân tự xây dựng hoặc cải tạo, sửa chữa nhà ở",
+      "component_count": 1,
+      "source_detail_id": "019d2bfe-985c-732b-822b-460f2199467e"
+    },
+    {
+      "name": "Trường hợp 5: Xác nhận đối tượng được hưởng chính sách hỗ trợ về nhà ở xã hội (áp dụng cho các đối tượng quy định tại các khoản 9, 10, 11 Điều 76 của Luật Nhà ở và đối tượng quy định tại khoản 5 Điều 76 của Luật Nhà ở không có hợp đồng lao động, không được hưởng lương hưu do cơ quan Bảo hiểm xã hội chi trả)",
+      "component_count": 1,
+      "source_detail_id": "019d2bfe-985c-732b-822b-460f2199467e"
+    },
+    {
+      "name": "Trường hợp 6: Xác nhận đối tượng, thu nhập để được hưởng chính sách hỗ trợ về nhà ở xã hội (áp dụng cho các đối tượng quy định tại các khoản 5, 6, 8 Điều 76 của Luật Nhà ở, trừ đối tượng quy định tại khoản 5 Điều 76 của Luật Nhà ở không có hợp đồng lao động, không được hưởng lương hưu do cơ quan Bảo hiểm xã hội chi trả).",
+      "component_count": 1,
+      "source_detail_id": "019d2bfe-985c-732b-822b-460f2199467e"
+    },
+    {
+      "name": "Trường hợp 7: Xác nhận điều kiện về thu nhập để được mua, thuê mua nhà ở xã hội (áp dụng cho đối tượng quy định tại khoản 5 Điều 76 của Luật Nhà ở không có hợp đồng lao động, không được hưởng lương hưu do cơ quan Bảo hiểm xã hội chi trả).",
+      "component_count": 1,
+      "source_detail_id": "019d2bfe-985c-732b-822b-460f2199467e"
+    }
+  ],
+  "conditional_component_groups": [
+    "Trường hợp 1: Xác nhận điều kiện về nhà ở để được mua, thuê mua  nhà ở xã hội/nhà ở cho lực lượng vũ trang nhân dân (trường hợp chưa có  nhà ở thuộc sở hữu của mình).",
+    "Trường hợp 2: Xác nhận điều kiện về nhà ở để được mua, thuê mua nhà ở xã hội/nhà ở cho lực lượng vũ trang nhân dân (trường hợp có nhà ở nhưng diện tích nhà ở bình quân đầu người thấp hơn 15m2 sàn/người).",
+    "Trường hợp 3: Xác nhận điều kiện vay vốn ưu đãi của Nhà nước thông qua Ngân hàng Chính sách xã hội để hộ gia đình, cá nhân tự xây dựng hoặc cải tạo, sửa chữa nhà ở.",
+    "Trường hợp 4: Xác nhận điều kiện vay vốn ưu đãi của Nhà nước tại tổ chức tín dụng do Nhà nước chỉ định để hộ gia đình, cá nhân tự xây dựng hoặc cải tạo, sửa chữa nhà ở",
+    "Trường hợp 5: Xác nhận đối tượng được hưởng chính sách hỗ trợ về nhà ở xã hội (áp dụng cho các đối tượng quy định tại các khoản 9, 10, 11 Điều 76 của Luật Nhà ở và đối tượng quy định tại khoản 5 Điều 76 của Luật Nhà ở không có hợp đồng lao động, không được hưởng lương hưu do cơ quan Bảo hiểm xã hội chi trả)",
+    "Trường hợp 6: Xác nhận đối tượng, thu nhập để được hưởng chính sách hỗ trợ về nhà ở xã hội (áp dụng cho các đối tượng quy định tại các khoản 5, 6, 8 Điều 76 của Luật Nhà ở, trừ đối tượng quy định tại khoản 5 Điều 76 của Luật Nhà ở không có hợp đồng lao động, không được hưởng lương hưu do cơ quan Bảo hiểm xã hội chi trả).",
+    "Trường hợp 7: Xác nhận điều kiện về thu nhập để được mua, thuê mua nhà ở xã hội (áp dụng cho đối tượng quy định tại khoản 5 Điều 76 của Luật Nhà ở không có hợp đồng lao động, không được hưởng lương hưu do cơ quan Bảo hiểm xã hội chi trả)."
+  ],
+  "default_test_scenario": {
+    "channel": "direct",
+    "applicant_submits_self": true,
+    "authorized": false,
+    "special_case_flags": [],
+    "selected_conditional_group": "Trường hợp 5: Xác nhận đối tượng được hưởng chính sách hỗ trợ về nhà ở xã hội (áp dụng cho các đối tượng quy định tại các khoản 9, 10, 11 Điều 76 của Luật Nhà ở và đối tượng quy định tại khoản 5 Điều 76 của Luật Nhà ở không có hợp đồng lao động, không được hưởng lương hưu do cơ quan Bảo hiểm xã hội chi trả)",
+    "case_selection_method": "first_published_condition_with_available_template_for_test",
+    "case_status": "scenario_for_testing_not_a_legal_eligibility_decision"
+  },
+  "requirement_note": "required_as_published được giữ nguyên; false không chứng minh giấy tờ luôn tùy chọn. Các nhóm executionCases có thể là mục giấy tờ/hướng dẫn, không phải các phương án loại trừ nhau."
+}

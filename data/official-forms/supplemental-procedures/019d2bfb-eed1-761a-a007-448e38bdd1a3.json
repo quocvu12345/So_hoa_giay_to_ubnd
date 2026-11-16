@@ -1,0 +1,109 @@
+{
+  "id": "dvc-019d2bfb-eed1-761a-a007-448e38bdd1a3",
+  "procedure_code": "1.007016",
+  "name": "Khai thuế giá trị gia tăng đối với phương pháp trực tiếp trên giá trị gia tăng",
+  "domain": "Thuế",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.960506+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfb-eed1-761a-a007-448e38bdd1a3",
+      "code": "1.007016",
+      "name": "Khai thuế giá trị gia tăng đối với phương pháp trực tiếp trên giá trị gia tăng",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1785399199617,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-eed1-761a-a007-448e38bdd1a3",
+      "raw_path": "evidence/dvc/details/019d2bfb-eed1-761a-a007-448e38bdd1a3.json",
+      "components": [
+        {
+          "section": "Danh mục hồ sơ khai thuế tại Phụ lục I ban hành kèm theo Thông tư số 89/2026/TT-BTC gồm",
+          "position": 1,
+          "name": "Tờ khai thuế GTGT (áp dụng đối với hoạt động mua bán, chế tác vàng bạc, đá quý theo phương pháp trực tiếp trên GTGT) mẫu số 03/GTGT",
+          "component_code": "G12.0015433",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019fa302-de26-74dd-87d0-1d16f60f3dc6",
+              "fileName": "9. 03-GTGT.doc",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa302-de26-74dd-87d0-1d16f60f3dc6/9. 03-GTGT.doc"
+            }
+          ]
+        },
+        {
+          "section": "Danh mục hồ sơ khai thuế tại Phụ lục I ban hành kèm theo Thông tư số 89/2026/TT-BTC gồm",
+          "position": 2,
+          "name": "Tờ khai áp dụng cho các kỳ tính thuế theo thông báo nâng cấp Hệ thống thông tin quản lý thuế theo lộ trình của cơ quan thuế quy định tại khoản 2 Điều 99 Thông tư số 89/2026/TT-BTC",
+          "component_code": "G12.0015434",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "Danh mục hồ sơ khai thuế tại Phụ lục I ban hành kèm theo Thông tư số 89/2026/TT-BTC gồm",
+          "position": 3,
+          "name": "Từ ngày 01/7/2026 đến thời điểm theo lộ trình của cơ quan thuế quy định tại khoản 2 Điều 99 Thông tư số 89/2026/TT-BTC, NNT được áp dụng các mẫu tờ khai ban hành kèm theo Thông tư số 80/2021/TT-BTC ngày 29/9/2021 của Bộ Tài chính và các văn bản sửa đổi, bổ sung cho tất cả các kỳ tính thuế",
+          "component_code": "G12.0015435",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019fa303-f4bc-71ed-8925-cfd40bddeb89",
+              "fileName": "03 GTGT TT 80.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa303-f4bc-71ed-8925-cfd40bddeb89/03 GTGT TT 80.docx"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "id": "019facec-88aa-72dd-b9d6-a47f7f622abc",
+          "name": "Không phải trả kết quả cho người nộp thuế",
+          "code": "KQ.G12.001885"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019e5e83-1282-771d-9014-49799413a4e5",
+          "name": "Luật số 108/2025/QH15 của Quốc hội: Luật Quản lý thuế",
+          "code": "108/2025/QH15"
+        },
+        {
+          "id": "019f356e-75e3-7494-a2f3-672d8dce61a6",
+          "name": "QUY ĐỊNH CHI TIẾT MỘT SỐ ĐIỀU VÀ BIỆN PHÁP ĐỂ TỔ CHỨC, HƯỚNG DẪN THI HÀNH LUẬT QUẢN LÝ THUẾ",
+          "code": "252/2026/NĐ-CP"
+        },
+        {
+          "id": "019f8db3-9765-740b-8b90-682677b9c421",
+          "name": "Thông tư quy định chi tiết một số điều của Luật Quản lý thuế và Nghị định số 252/2026/NĐ-CP của Chính phủ quy định chi tiết một số điều và biện pháp để tổ chức, hướng dẫn thi hành Luật Quản lý thuế",
+          "code": "89/2026/TT-BTC"
+        },
+        {
+          "id": "019d2bb3-5d87-7195-a442-104ae6dd177c",
+          "name": "Luật Thuế giá tri gia tăng năm 2024",
+          "code": "48/2024/QH15"
+        },
+        {
+          "id": "019f64ed-e026-7299-b5f2-ca44a3964050",
+          "name": "Nghị định về thực hiện thủ tục hành chính theo cơ chế một cửa, một cửa liên thông tại Bộ phận Một cửa và Cổng Dịch vụ công quốc gia.",
+          "code": "118/2025/NĐ-CP "
+        }
+      ]
+    }
+  ]
+}

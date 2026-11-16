@@ -1,0 +1,74 @@
+{
+  "id": "dvc-019d2bfe-88ad-7129-8d77-3dd573272733",
+  "procedure_code": "1.012898",
+  "name": "Cho thuê nhà ở cũ thuộc tài sản công đối với trường hợp ký lại hợp đồng thuê",
+  "domain": "Nhà ở và công sở",
+  "managing_agency": "Bộ Xây dựng",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.863425+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfe-88ad-7129-8d77-3dd573272733",
+      "code": "1.012898",
+      "name": "Cho thuê nhà ở cũ thuộc tài sản công đối với trường hợp ký lại hợp đồng thuê",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1780646199236,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfe-88ad-7129-8d77-3dd573272733",
+      "raw_path": "evidence/dvc/details/019d2bfe-88ad-7129-8d77-3dd573272733.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Bản chính hợp đồng thuê nhà ở đã ký kết với cơ quan có thẩm quyền",
+          "component_code": "000.00.00.G17-KQ002499",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Đơn đề nghị thuê nhà ở cũ thuộc tài sản công theo Mẫu số 02 của Phụ lục V ban hành kèm theo Nghị định số 95/2024/NĐ-CP ngày 24/7/2024 của Chính phủ quy định chi tiết một số điều của Luật Nhà ở  (Mẫu đơn có quy định về các thông tin đã có trong cơ sở dữ liệu quốc gia về dân cư hoặc cơ sở dữ liệu chuyên ngành thì các thông tin này được thay thế bằng mã số định danh cá nhân hoặc mã số chuyên ngành thể hiện trong mẫu đơn, tờ khai khi cơ sở dữ liệu quốc gia về dân cư hoặc cơ sở dữ liệu chuyên ngành được vận hành).",
+          "component_code": "000.00.00.G17-KQ002479",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c7a-7554-ace4-24657f057877",
+          "name": "Hợp đồng thuê nhà ở cũ thuộc tài sản công.",
+          "code": "KQ.G17.000201"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d84-71c5-b672-6d9bdd44c1c7",
+          "name": "Luật Nhà ở số 27/2023/QH15",
+          "code": "27/2023/QH15"
+        },
+        {
+          "id": "019d9497-3607-7432-9852-b0c306dbc131",
+          "name": "NGHỊ ĐỊNH Sửa đổi, bổ sung một số điều của các Nghị định trong lĩnh vực nhà ở, kinh đoanh bất động sản",
+          "code": "54/2026/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7f-719e-b473-046c990c04b2",
+          "name": "Nghị định số 95/2024/NĐ-CP ngày 24 tháng 7 năm 2024 của Chính phủ về quy định chi tiết một số điều của Luật Nhà ở;",
+          "code": "95/2024/NĐ-CP"
+        }
+      ]
+    }
+  ]
+}

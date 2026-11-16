@@ -1,0 +1,95 @@
+{
+  "ordinal": "97",
+  "managing_agency": "Sở Văn hóa thể thao",
+  "procedure_code": "1.003784",
+  "name": "Thủ tục thông báo nhập khẩu văn hóa phẩm (trừ di vật, cổ vật) không nhằm mục đích kinh doanh cấp tỉnh",
+  "domain": "Hoạt động mua bán quốc tế chuyên ngành văn hóa",
+  "ministry_decision": "696/QĐ-BVHTTDL",
+  "hanoi_decision": "959/QĐ-TTPVHCC ngày 27/6/2025",
+  "workflow_decision": "1122/QĐ-TTPVHCC ngày 31/7/2025",
+  "fees": "Không quy định",
+  "execution_level": "Cấp Xã",
+  "competent_authority": "UBND cấp xã",
+  "delegation_decision": "93/QĐ-SVHTT ngày 07/2/2026",
+  "delegation_expiry": "31/12/2028",
+  "receiving_location": "Điểm hỗ trợ DVC số",
+  "source_page": 4,
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "inventory_date": "2026-04-27",
+  "checked_at": "2026-11-12T22:23:43.013510+07:00",
+  "details": [
+    {
+      "id": "019d2bfd-c516-74b6-bb3e-d766e6ae9024",
+      "code": "1.003784",
+      "name": "Thủ tục thông báo nhập khẩu văn hóa phẩm (trừ di vật, cổ vật) không nhằm mục đích kinh doanh cấp tỉnh",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": false,
+      "updated_at_source": 1779267263634,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfd-c516-74b6-bb3e-d766e6ae9024",
+      "raw_path": "evidence/dvc/details/019d2bfd-c516-74b6-bb3e-d766e6ae9024.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "(2) 01 ảnh chụp mặt trước, chính giữa văn hóa phẩm; đối với tác phẩm điêu khắc bổ sung 01 ảnh chụp từng mặt: bên trái, bên phải và phía sau tác phẩm, có chú thích, kích thước ảnh nhỏ nhất 13 x 18 cm, được in trên giấy hoặc ghi vào thiết bị lưu trữ di động (đối với trường hợp nộp trực tiếp hoặc nộp qua bưu chính) hoặc ảnh định dạng số (đối với trường hợp nộp qua môi trường điện tử, nộp qua Cổng thông tin một cửa quốc gia). Bản dịch công chứng chi tiết nội dung đối với bản ghi âm, ghi hình có sử dụng tiếng nước ngoài;",
+          "component_code": "G16-KQ001863",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "(1) Thông báo nhập khẩu văn hóa phẩm theo Phụ lục III kèm theo Nghị định 31/2025/NĐ-CP.",
+          "component_code": "G16-KQ001862",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 3,
+          "name": "(3) Bản sao vận đơn hoặc giấy báo nhận hàng (nếu có)",
+          "component_code": "G16-KQ001864",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c79-762e-8b2c-6759d5e55131",
+          "name": "Thông báo dừng nhập khẩu văn hóa phẩm",
+          "code": "KQ.G16.000320"
+        },
+        {
+          "id": "019d2bb2-1c79-762e-8b2c-69a5dc184db4",
+          "name": "Giấy biên nhận thông báo nhập khẩu văn hóa phẩm",
+          "code": "KQ.G16.000321"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7f-719e-b46c-99192fa740e1",
+          "name": "Nghị định 32/2012/NĐ-CP",
+          "code": "32/2012/NĐ-CP"
+        },
+        {
+          "id": "019e1f0d-519c-718d-b974-e426c90b3034",
+          "name": "Nghị quyết số 18/2026/NQ-CP ngày 29/4/2026 của Chính phủ về cắt giảm, phân cấp, đơn giản hóa thủ tục hành chính, cắt giảm điều kiện đầu tư kinh doanh thuộc phạm vi quản lý của Bộ Văn hóa, Thể thao và Du lịch.",
+          "code": "18/2026/NQ-CP "
+        }
+      ]
+    }
+  ],
+  "lookup_status": "retrieved",
+  "currency_status": "snapshot_requires_later_amendment_check",
+  "errors": []
+}

@@ -1,0 +1,207 @@
+{
+  "ordinal": "291",
+  "managing_agency": "Sở Tư pháp",
+  "procedure_code": "1.003583",
+  "name": "Thủ tục đăng ký khai sinh lưu động",
+  "domain": "Hộ tịch",
+  "ministry_decision": "163/QĐ-BTP ngày 16/01/2026",
+  "hanoi_decision": "216/QĐ-TTPVHCC ngày 13/02/2026",
+  "workflow_decision": "387/QĐ-TTPVHCC ngày 30/3/2026",
+  "fees": "Không quy định",
+  "execution_level": "Cấp xã",
+  "competent_authority": "UBND cấp xã",
+  "delegation_decision": "",
+  "delegation_expiry": "",
+  "receiving_location": "Điểm hỗ trợ DVC số",
+  "id": "hn87-291",
+  "source_page": 11,
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "inventory_date": "2026-04-27",
+  "checked_at": "2026-11-12T22:24:45.687846+07:00",
+  "details": [
+    {
+      "id": "019d2bfd-66dc-714a-90a8-11942739ea86",
+      "code": "1.003583",
+      "name": "Thủ tục đăng ký khai sinh lưu động",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1775659979469,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfd-66dc-714a-90a8-11942739ea86",
+      "raw_path": "evidence/dvc/details/019d2bfd-66dc-714a-90a8-11942739ea86.json",
+      "components": [
+        {
+          "section": "* Giấy tờ phải nộp:",
+          "position": 1,
+          "name": "- Bản chính Giấy chứng sinh; trường hợp không có Giấy chứng sinh thì nộp văn bản của người làm chứng xác nhận về việc sinh; nếu không có người làm chứng thì phải có giấy cam đoan về việc sinh;",
+          "component_code": "000.00.00.G15-KQ003302",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "* Giấy tờ phải nộp:",
+          "position": 2,
+          "name": "- Tờ khai đăng ký khai sinh theo mẫu.",
+          "component_code": "000.00.00.G15-KQ003301",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "* Giấy tờ phải nộp:",
+          "position": 3,
+          "name": "- Trường hợp khai sinh cho trẻ em sinh ra do mang thai hộ phải có văn bản xác nhận của cơ sở y tế đã thực hiện kỹ thuật hỗ trợ sinh sản cho việc mang thai hộ.",
+          "component_code": "000.00.00.G15-KQ003303",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "* Giấy tờ phải nộp:",
+          "position": 4,
+          "name": "Trường hợp người yêu cầu đã nộp bản điện tử Giấy chứng sinh hoặc cơ quan đăng ký hộ tịch đã khai thác được dữ liệu điện tử có ký số của Giấy chứng sinh thì không phải nộp bản giấy.",
+          "component_code": "000.00.00.G15-KQ004365",
+          "original_quantity": 0,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "* Giấy tờ phải xuất trình:",
+          "position": 1,
+          "name": "Trường hợp giấy tờ tùy thân sử dụng là: Hộ chiếu, Thẻ căn cước, Căn cước công dân, Giấy chứng nhận căn cước thì người có yêu cầu đăng ký hộ tịch chỉ cần cung cấp thông tin số định danh cá nhân hoặc thông tin về giấy tờ (số, ngày/tháng/năm cấp), cơ quan đăng ký hộ tịch có trách nhiệm tra cứu thông tin thông qua kết nối với Cơ sở dữ liệu hộ tịch điện tử, Cơ sở dữ liệu quốc gia về dân cư hoặc cơ sở dữ liệu khác có liên quan để đối chiếu, khai thác dữ liệu.",
+          "component_code": "000.00.00.G15-KQ005008",
+          "original_quantity": 0,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "* Giấy tờ phải xuất trình:",
+          "position": 2,
+          "name": "Trường hợp không khai thác được thông tin hoặc thông tin khai thác được không đầy đủ, không chính xác thì cơ quan đăng ký hộ tịch yêu cầu người đi đăng ký hộ tịch xuất trình bản chính giấy tờ để chứng minh, đồng thời đề nghị người đi đăng ký hộ tịch cập nhật, điều chỉnh thông tin trong các cơ sở dữ liệu theo quy định của pháp luật.",
+          "component_code": "000.00.00.G15-KQ005009",
+          "original_quantity": 0,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "* Giấy tờ phải xuất trình:",
+          "position": 3,
+          "name": "- Giấy chứng nhận kết hôn nếu cha, mẹ đã đăng ký kết hôn. Trường hợp đã có thông tin về việc kết hôn của cha, mẹ trong CSDLHTĐT, CSDLQGVDC thì không phải xuất trình.",
+          "component_code": "000.00.00.G15-KQ003306",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "* Giấy tờ phải xuất trình:",
+          "position": 4,
+          "name": "- Hộ chiếu/Thẻ căn cước công dân/Thẻ căn cước/Căn cước điện tử/Giấy chứng nhận căn cước hoặc các giấy tờ khác có dán ảnh và thông tin cá nhân do cơ quan có thẩm quyền cấp, còn giá trị sử dụng (sau đây gọi tắt là giấy tờ tùy thân) để chứng minh về nhân thân khi làm thủ tục trực tiếp tại cơ quan đăng ký hộ tịch.",
+          "component_code": "000.00.00.G15-KQ004946",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "* Giấy tờ phải xuất trình:",
+          "position": 5,
+          "name": "- Giấy tờ có giá trị chứng minh thông tin về cư trú trong trường hợp cơ quan đăng ký hộ tịch không thể khai thác được thông tin về nơi cư trú của công dân theo các phương thức quy định tại khoản 2 Điều 14 Nghị định số 104/2022/NĐ-CP ngày 21/12/2022 của Chính phủ. Trường hợp các thông tin về giấy tờ chứng minh nơi cư trú đã được khai thác từ Cơ sở dữ liệu quốc gia về dân cư bằng các phương thức này thì người có yêu cầu không phải xuất trình (theo hình thức trực tiếp) hoặc tải lên (theo hình thức trực tuyến).",
+          "component_code": "000.00.00.G15-KQ003785",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c78-7725-a74f-c81331b081fe",
+          "name": "Giấy khai sinh",
+          "code": "KQ.G15.000031"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d86-7760-a63c-96a998f803cc",
+          "name": "Thông tư sửa đổi, bổ sung một số điều của Thông tư số 85/2019/TT-BTC ngày 29/11/2019 của Bộ Tài chính hướng dẫn về phí và lệ phí thuộc thẩm quyền quyết định của Hội đồng nhân dân tỉnh, thành phố trực thuộc Trung ương.",
+          "code": "106/2021/TT-BTC"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afe4-f1309f15bfa5",
+          "name": "Sửa đổi, bổ sung một số điều của Thông tư số 02/2020/TT-BTP ngày 08/4/2020 của Bộ trưởng Bộ Tư pháp ban hành, hướng dẫn sử dụng, quản lý mẫu sổ quốc tịch và mẫu giấy tờ về quốc tịch và Thông tư số 04/2020/TT-BTP ngày 28/5/2020 của Bộ trưởng Bộ Tư pháp quy định chi tiết thi hành một số điều của Luật Hộ tịch và Nghị định  số 123/2015/NĐ-CP ngày 15/11/2015 của Chính phủ quy định chi tiết  một số điều và biện pháp thi hành Luật Hộ tịch",
+          "code": "04/2024/TT-BTP"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afe8-3ac91da2e6b0",
+          "name": "Nghị định sửa đổi, bổ sung một số điều của các Nghị định liên quan đến việc nộp xuất trình sổ hộ khẩu, sổ tạm trú giấy khi thực hiện thủ tục hành chính, cung cấp dịch vụ công",
+          "code": "104/2022/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d86-7760-a642-cb60cc107a28",
+          "name": "Nghị định sửa đổi, bổ sung một số nghị định để cắt giảm, đơn giản hóa thủ tục hành chính, điều kiện kinh doanh  thuộc phạm vi quản lý của Bộ Tư pháp",
+          "code": "18/2026/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afe9-c76312281acc",
+          "name": "Nghị định số 123/2015/NĐ-CP ngày 15/11/2015 của  Chính phủ quy định chi tiết một số điều và biện pháp thi  hành Luật Hộ tịch",
+          "code": "123/2015/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7d-7398-be4f-24cb929dcc49",
+          "name": "Thông tư Hướng dẫn về phí và lệ phí thuộc thẩm quyền quyết định của Hội đồng nhân dân tỉnh, thành phố trực thuộc Trung ương",
+          "code": "85/2019/TT-BTC"
+        },
+        {
+          "id": "019d2bb3-5d86-7760-a63b-4a861344d691",
+          "name": "Thông tư số 08/2025/TT-BTP ngày 12/6/2025 của Bộ trưởng Bộ Tư pháp quy định về phân định thẩm quyền của chính quyền địa phương 02 cấp và phân cấp trong lĩnh vực quản lý nhà nước của Bộ Tư pháp",
+          "code": "08/2025/TT-BTP"
+        },
+        {
+          "id": "019d2bb3-5d7f-719e-b470-22af3c5ee091",
+          "name": "Nghị quyết số 66.7/2025/NQ-CP của Chính phủ: Quy định cắt giảm, đơn giản hóa thủ tục hành chính dựa trên dữ liệu",
+          "code": "66.7/2025/NQ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7d-7398-be52-4d0d0e816882",
+          "name": "Hướng dẫn Luật hộ tịch và Nghị định 123/2015/NĐ-CP hướng dẫn Luật hộ tịch do Bộ trưởng Bộ Tư pháp ban hành",
+          "code": "04/2020/TT-BTP"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afe7-8a1cb4887092",
+          "name": "Nghị định sửa đổi, bổ sung một số điều của các Nghị định trong lĩnh vực hộ tịch, quốc tịch, chứng thực.",
+          "code": "07/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afe9-9d8e94b33af1",
+          "name": "Nghị định số 120/2025/NĐ-CP ngày 11/6/2025 của Chính phủ quy định về phân định thẩm quyền của chính quyền địa phương 02 cấp trong lĩnh vực quản lý nhà nước của Bộ Tư pháp.",
+          "code": "120/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b673-b79d48c2c30b",
+          "name": "Luật 60/2014/QH13",
+          "code": "60/2014/QH13"
+        }
+      ]
+    }
+  ],
+  "lookup_status": "retrieved",
+  "currency_status": "snapshot_requires_later_amendment_check",
+  "errors": []
+}

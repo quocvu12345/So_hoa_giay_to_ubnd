@@ -1,0 +1,2075 @@
+[
+  {
+    "id": "hn87-001",
+    "old_code": "1.014680",
+    "name": "Thủ tục tặng, truy tặng “Huy chương Thanh niên xung phong vẻ vang”",
+    "query": "tặng, truy tặng “Huy chương Thanh niên xung phong vẻ vang”",
+    "exact_title_candidates": [],
+    "search_candidates": [
+      {
+        "id": "01a1195b-5f04-737a-b168-c2e4bf61f63f",
+        "name": "Thủ tục tặng, truy tặng \"Huy chương Thanh niên xung phong vẻ vang\" cho cá nhân",
+        "code": "1.117102",
+        "codeNotation": "1.117102",
+        "categories": [
+          "Thi đua - khen thưởng"
+        ],
+        "categoryIds": [
+          "019d2bbb-69ee-7079-a6b3-2b9f2bf4ac61"
+        ],
+        "departments": [
+          "Ban Thi đua - Khen thưởng Trung ương - Bộ Nội vụ",
+          "Bộ Nội vụ",
+          "Ủy ban nhân dân cấp xã",
+          "Ủy ban nhân dân cấp tỉnh"
+        ],
+        "departmentPromulgate": "Bộ Nội vụ",
+        "departmentPromulgateId": "019d2be3-6a80-747a-9d0b-d22b7584413d",
+        "formalityTargetType": [
+          "Công dân Việt Nam",
+          "Tổ chức (không bao gồm doanh nghiệp, HTX)"
+        ],
+        "state": "ACTIVE",
+        "type": "STANDARD"
+      }
+    ],
+    "note": "Tên trùng hoặc gần giống không tự chứng minh thay thế mã/thẩm quyền; cần đối chiếu quyết định công bố."
+  },
+  {
+    "id": "hn87-007",
+    "old_code": "1.010773",
+    "name": "Tổ chức phát động học tập tấm gương trong phạm vi cả nước đối với trường hợp hy sinh, bị thương quy định tại điểm k khoản 1 Điều 14 và điểm k khoản 1 Điều 23 Pháp lệnh",
+    "query": "Tổ chức phát động học tập tấm gương trong phạm vi cả",
+    "exact_title_candidates": [],
+    "search_candidates": [],
+    "note": "Tên trùng hoặc gần giống không tự chứng minh thay thế mã/thẩm quyền; cần đối chiếu quyết định công bố."
+  },
+  {
+    "id": "hn87-027",
+    "old_code": "2.000134",
+    "name": "Khai báo với Sở Nội vụ địa phương khi đưa vào sử dụng các loại máy, thiết bị, vật tư có yêu cầu nghiêm ngặt về an toàn lao động",
+    "query": "Khai báo với Sở Nội vụ địa phương khi đưa vào sử",
+    "exact_title_candidates": [],
+    "search_candidates": [],
+    "note": "Tên trùng hoặc gần giống không tự chứng minh thay thế mã/thẩm quyền; cần đối chiếu quyết định công bố."
+  },
+  {
+    "id": "hn87-029",
+    "old_code": "1.005132",
+    "name": "Đăng ký hợp đồng nhận lao động thực tập dưới 90 ngày",
+    "query": "Đăng ký hợp đồng nhận lao động thực tập dưới 90 ngày",
+    "exact_title_candidates": [],
+    "search_candidates": [],
+    "note": "Tên trùng hoặc gần giống không tự chứng minh thay thế mã/thẩm quyền; cần đối chiếu quyết định công bố."
+  },
+  {
+    "id": "hn87-062",
+    "old_code": "2.001088",
+    "name": "Xét hưởng chính sách hỗ trợ cho đối tượng sinh con đúng chính sách dân số.",
+    "query": "Xét hưởng chính sách hỗ trợ cho đối tượng sinh con đúng",
+    "exact_title_candidates": [],
+    "search_candidates": [],
+    "note": "Tên trùng hoặc gần giống không tự chứng minh thay thế mã/thẩm quyền; cần đối chiếu quyết định công bố."
+  },
+  {
+    "id": "hn87-064",
+    "old_code": "1.001776",
+    "name": "Thực hiện, điều chỉnh, thôi hưởng trợ cấp xã hội hàng tháng, hỗ trợ kinh phí chăm sóc, nuôi dưỡng hàng tháng",
+    "query": "Thực hiện, điều chỉnh, thôi hưởng trợ cấp xã hội hàng tháng,",
+    "exact_title_candidates": [],
+    "search_candidates": [],
+    "note": "Tên trùng hoặc gần giống không tự chứng minh thay thế mã/thẩm quyền; cần đối chiếu quyết định công bố."
+  },
+  {
+    "id": "hn87-072",
+    "old_code": "2.000355",
+    "name": "Đăng ký hoạt động đối với cơ sở trợ giúp xã hội dưới 10 đối tượng có hoàn cảnh khó khăn",
+    "query": "Đăng ký hoạt động đối với cơ sở trợ giúp xã hội",
+    "exact_title_candidates": [],
+    "search_candidates": [],
+    "note": "Tên trùng hoặc gần giống không tự chứng minh thay thế mã/thẩm quyền; cần đối chiếu quyết định công bố."
+  },
+  {
+    "id": "hn87-073",
+    "old_code": "1.001731",
+    "name": "Hỗ trợ chi phí mai táng cho đối tượng bảo trợ xã hội",
+    "query": "Hỗ trợ chi phí mai táng cho đối tượng bảo trợ xã",
+    "exact_title_candidates": [
+      {
+        "id": "01a0f66e-63a3-749a-a9d8-2dcbeda6af79",
+        "name": "Hỗ trợ chi phí mai táng cho đối tượng bảo trợ xã hội",
+        "code": "1.116910",
+        "codeNotation": "1.116910",
+        "categories": [
+          "Bảo trợ xã hội"
+        ],
+        "categoryIds": [
+          "019d2bbb-69ee-7079-a6b2-6573ae6e97af"
+        ],
+        "departments": [
+          "Ủy ban nhân dân cấp xã"
+        ],
+        "departmentPromulgate": "Bộ Y tế",
+        "departmentPromulgateId": "019d2be3-6a72-700f-a652-d877ec9f7cfe",
+        "formalityTargetType": [
+          "Công dân Việt Nam",
+          "Doanh nghiệp",
+          "Người nước ngoài cư trú tại Việt Nam",
+          "Người nước ngoài",
+          "Tổ chức (không bao gồm doanh nghiệp, HTX)",
+          "Tổ chức nước ngoài",
+          "Doanh nghiệp Việt Nam",
+          "Doanh nghiệp có vốn đầu tư nước ngoài",
+          "Hợp tác xã",
+          "Người Việt Nam định cư ở nước ngoài",
+          "Công dân Việt Nam mà không xác định được nơi thường trú hoặc nơi tạm trú",
+          "Người nước ngoài đã cư trú tại Việt Nam"
+        ],
+        "state": "ACTIVE",
+        "type": "STANDARD"
+      }
+    ],
+    "search_candidates": [
+      {
+        "id": "01a0f66e-63a3-749a-a9d8-2dcbeda6af79",
+        "name": "Hỗ trợ chi phí mai táng cho đối tượng bảo trợ xã hội",
+        "code": "1.116910",
+        "codeNotation": "1.116910",
+        "categories": [
+          "Bảo trợ xã hội"
+        ],
+        "categoryIds": [
+          "019d2bbb-69ee-7079-a6b2-6573ae6e97af"
+        ],
+        "departments": [
+          "Ủy ban nhân dân cấp xã"
+        ],
+        "departmentPromulgate": "Bộ Y tế",
+        "departmentPromulgateId": "019d2be3-6a72-700f-a652-d877ec9f7cfe",
+        "formalityTargetType": [
+          "Công dân Việt Nam",
+          "Doanh nghiệp",
+          "Người nước ngoài cư trú tại Việt Nam",
+          "Người nước ngoài",
+          "Tổ chức (không bao gồm doanh nghiệp, HTX)",
+          "Tổ chức nước ngoài",
+          "Doanh nghiệp Việt Nam",
+          "Doanh nghiệp có vốn đầu tư nước ngoài",
+          "Hợp tác xã",
+          "Người Việt Nam định cư ở nước ngoài",
+          "Công dân Việt Nam mà không xác định được nơi thường trú hoặc nơi tạm trú",
+          "Người nước ngoài đã cư trú tại Việt Nam"
+        ],
+        "state": "ACTIVE",
+        "type": "STANDARD"
+      }
+    ],
+    "note": "Tên trùng hoặc gần giống không tự chứng minh thay thế mã/thẩm quyền; cần đối chiếu quyết định công bố."
+  },
+  {
+    "id": "hn87-076",
+    "old_code": "1.002944",
+    "name": "Công bố cơ sở đủ điều kiện sản xuất chế phẩm diệt côn trùng, diệt khuẩn dùng trong lĩnh vực gia dụng và y tế",
+    "query": "Công bố cơ sở đủ điều kiện sản xuất chế phẩm diệt",
+    "exact_title_candidates": [],
+    "search_candidates": [],
+    "note": "Tên trùng hoặc gần giống không tự chứng minh thay thế mã/thẩm quyền; cần đối chiếu quyết định công bố."
+  },
+  {
+    "id": "hn87-077",
+    "old_code": "1.002467",
+    "name": "Công bố cơ sở đủ điều kiện cung cấp dịch vụ diệt côn trùng, diệt khuẩn trong lĩnh vực gia dụng và y tế bằng chế phẩm",
+    "query": "Công bố cơ sở đủ điều kiện cung cấp dịch vụ diệt",
+    "exact_title_candidates": [],
+    "search_candidates": [],
+    "note": "Tên trùng hoặc gần giống không tự chứng minh thay thế mã/thẩm quyền; cần đối chiếu quyết định công bố."
+  },
+  {
+    "id": "hn87-078",
+    "old_code": "2.000282",
+    "name": "Tiếp nhận đối tượng cần bảo vệ khẩn cấp vào cơ sở trợ giúp xã hội",
+    "query": "Tiếp nhận đối tượng cần bảo vệ khẩn cấp vào cơ sở",
+    "exact_title_candidates": [
+      {
+        "id": "01a0f65f-4713-7199-9b0c-d57f794ef14d",
+        "name": "Tiếp nhận đối tượng cần bảo vệ khẩn cấp vào cơ sở trợ giúp xã hội",
+        "code": "1.116908",
+        "codeNotation": "1.116908",
+        "categories": [
+          "Bảo trợ xã hội"
+        ],
+        "categoryIds": [
+          "019d2bbb-69ee-7079-a6b2-6573ae6e97af"
+        ],
+        "departments": [
+          "Cơ sở trợ giúp xã hội",
+          "Ủy ban nhân dân cấp xã",
+          "Công an Xã"
+        ],
+        "departmentPromulgate": "Bộ Y tế",
+        "departmentPromulgateId": "019d2be3-6a72-700f-a652-d877ec9f7cfe",
+        "formalityTargetType": [
+          "Công dân Việt Nam",
+          "Doanh nghiệp",
+          "Người nước ngoài cư trú tại Việt Nam",
+          "Người nước ngoài",
+          "Đảng viên",
+          "Tổ chức (không bao gồm doanh nghiệp, HTX)",
+          "Tổ chức nước ngoài",
+          "Doanh nghiệp Việt Nam",
+          "Doanh nghiệp có vốn đầu tư nước ngoài",
+          "Hợp tác xã",
+          "Người Việt Nam định cư ở nước ngoài",
+          "Cán bộ, công chức, viên chức",
+          "Công dân Việt Nam mà không xác định được nơi thường trú hoặc nơi tạm trú",
+          "Người nước ngoài đã cư trú tại Việt Nam"
+        ],
+        "state": "ACTIVE",
+        "type": "STANDARD"
+      }
+    ],
+    "search_candidates": [
+      {
+        "id": "01a0f65f-4713-7199-9b0c-d57f794ef14d",
+        "name": "Tiếp nhận đối tượng cần bảo vệ khẩn cấp vào cơ sở trợ giúp xã hội",
+        "code": "1.116908",
+        "codeNotation": "1.116908",
+        "categories": [
+          "Bảo trợ xã hội"
+        ],
+        "categoryIds": [
+          "019d2bbb-69ee-7079-a6b2-6573ae6e97af"
+        ],
+        "departments": [
+          "Cơ sở trợ giúp xã hội",
+          "Ủy ban nhân dân cấp xã",
+          "Công an Xã"
+        ],
+        "departmentPromulgate": "Bộ Y tế",
+        "departmentPromulgateId": "019d2be3-6a72-700f-a652-d877ec9f7cfe",
+        "formalityTargetType": [
+          "Công dân Việt Nam",
+          "Doanh nghiệp",
+          "Người nước ngoài cư trú tại Việt Nam",
+          "Người nước ngoài",
+          "Đảng viên",
+          "Tổ chức (không bao gồm doanh nghiệp, HTX)",
+          "Tổ chức nước ngoài",
+          "Doanh nghiệp Việt Nam",
+          "Doanh nghiệp có vốn đầu tư nước ngoài",
+          "Hợp tác xã",
+          "Người Việt Nam định cư ở nước ngoài",
+          "Cán bộ, công chức, viên chức",
+          "Công dân Việt Nam mà không xác định được nơi thường trú hoặc nơi tạm trú",
+          "Người nước ngoài đã cư trú tại Việt Nam"
+        ],
+        "state": "ACTIVE",
+        "type": "STANDARD"
+      }
+    ],
+    "note": "Tên trùng hoặc gần giống không tự chứng minh thay thế mã/thẩm quyền; cần đối chiếu quyết định công bố."
+  },
+  {
+    "id": "hn87-079",
+    "old_code": "2.000286",
+    "name": "Tiếp nhận đối tượng bảo trợ xã hội có hoàn cảnh đặc biệt khó khăn vào cơ sở trợ giúp xã hội",
+    "query": "Tiếp nhận đối tượng bảo trợ xã hội có hoàn cảnh đặc",
+    "exact_title_candidates": [
+      {
+        "id": "01a0f653-8729-706c-9cc8-c3234469d7cf",
+        "name": "Tiếp nhận đối tượng bảo trợ xã hội có hoàn cảnh đặc biệt khó khăn vào cơ sở trợ giúp xã hội",
+        "code": "1.116907",
+        "codeNotation": "1.116907",
+        "categories": [
+          "Bảo trợ xã hội"
+        ],
+        "categoryIds": [
+          "019d2bbb-69ee-7079-a6b2-6573ae6e97af"
+        ],
+        "departments": [
+          "Ủy ban nhân dân cấp xã"
+        ],
+        "departmentPromulgate": "Bộ Y tế",
+        "departmentPromulgateId": "019d2be3-6a72-700f-a652-d877ec9f7cfe",
+        "formalityTargetType": [
+          "Công dân Việt Nam",
+          "Người Việt Nam định cư ở nước ngoài"
+        ],
+        "state": "ACTIVE",
+        "type": "STANDARD"
+      }
+    ],
+    "search_candidates": [
+      {
+        "id": "01a0f653-8729-706c-9cc8-c3234469d7cf",
+        "name": "Tiếp nhận đối tượng bảo trợ xã hội có hoàn cảnh đặc biệt khó khăn vào cơ sở trợ giúp xã hội",
+        "code": "1.116907",
+        "codeNotation": "1.116907",
+        "categories": [
+          "Bảo trợ xã hội"
+        ],
+        "categoryIds": [
+          "019d2bbb-69ee-7079-a6b2-6573ae6e97af"
+        ],
+        "departments": [
+          "Ủy ban nhân dân cấp xã"
+        ],
+        "departmentPromulgate": "Bộ Y tế",
+        "departmentPromulgateId": "019d2be3-6a72-700f-a652-d877ec9f7cfe",
+        "formalityTargetType": [
+          "Công dân Việt Nam",
+          "Người Việt Nam định cư ở nước ngoài"
+        ],
+        "state": "ACTIVE",
+        "type": "STANDARD"
+      }
+    ],
+    "note": "Tên trùng hoặc gần giống không tự chứng minh thay thế mã/thẩm quyền; cần đối chiếu quyết định công bố."
+  },
+  {
+    "id": "hn87-088",
+    "old_code": "1.003725",
+    "name": "Cấp giấy phép nhập khẩu xuất bản phẩm không kinh doanh (địa phương)",
+    "query": "Cấp giấy phép nhập khẩu xuất bản phẩm không kinh doanh",
+    "exact_title_candidates": [],
+    "search_candidates": [],
+    "note": "Tên trùng hoặc gần giống không tự chứng minh thay thế mã/thẩm quyền; cần đối chiếu quyết định công bố."
+  },
+  {
+    "id": "hn87-106",
+    "old_code": "1.003729",
+    "name": "Cấp đổi giấy phép hoạt động in xuất bản phẩm (cơ sở in có trụ sở và chi nhánh/xưởng in tại cùng 01 xã/phường)",
+    "query": "Cấp đổi giấy phép hoạt động in xuất bản phẩm",
+    "exact_title_candidates": [],
+    "search_candidates": [],
+    "note": "Tên trùng hoặc gần giống không tự chứng minh thay thế mã/thẩm quyền; cần đối chiếu quyết định công bố."
+  },
+  {
+    "id": "hn87-108",
+    "old_code": "1.000963",
+    "name": "Thủ tục cấp giấy phép điều chỉnh Giấy phép đủ điều kiện kinh doanh dịch vụ karaoke cấp tỉnh",
+    "query": "cấp giấy phép điều chỉnh Giấy phép đủ điều kiện kinh doanh",
+    "exact_title_candidates": [],
+    "search_candidates": [],
+    "note": "Tên trùng hoặc gần giống không tự chứng minh thay thế mã/thẩm quyền; cần đối chiếu quyết định công bố."
+  },
+  {
+    "id": "hn87-111",
+    "old_code": "1.001029",
+    "name": "Thủ tục cấp giấy phép đủ điều kiện kinh doanh dịch vụ karaoke cấp tỉnh",
+    "query": "cấp giấy phép đủ điều kiện kinh doanh dịch vụ karaoke cấp",
+    "exact_title_candidates": [],
+    "search_candidates": [],
+    "note": "Tên trùng hoặc gần giống không tự chứng minh thay thế mã/thẩm quyền; cần đối chiếu quyết định công bố."
+  },
+  {
+    "id": "hn87-112",
+    "old_code": "1.014475",
+    "name": "Thủ tục hành chính liên thông điện tử về cấp Giấy phép đủ điều kiện kinh doanh dịch vụ karaoke",
+    "query": "hành chính liên thông điện tử về cấp Giấy phép đủ điều",
+    "exact_title_candidates": [],
+    "search_candidates": [],
+    "note": "Tên trùng hoặc gần giống không tự chứng minh thay thế mã/thẩm quyền; cần đối chiếu quyết định công bố."
+  },
+  {
+    "id": "hn87-118",
+    "old_code": "1.012695",
+    "name": "Quyết định thu hồi rừng đối với hộ gia đình, cá nhân và cộng đồng dân cư tự nguyện trả lại rừng",
+    "query": "Quyết định thu hồi rừng đối với hộ gia đình, cá nhân",
+    "exact_title_candidates": [],
+    "search_candidates": [],
+    "note": "Tên trùng hoặc gần giống không tự chứng minh thay thế mã/thẩm quyền; cần đối chiếu quyết định công bố."
+  },
+  {
+    "id": "hn87-121",
+    "old_code": "1.003596",
+    "name": "Phê duyệt kế hoạch khuyến nông địa phương (cấp xã)",
+    "query": "Phê duyệt kế hoạch khuyến nông địa phương",
+    "exact_title_candidates": [],
+    "search_candidates": [],
+    "note": "Tên trùng hoặc gần giống không tự chứng minh thay thế mã/thẩm quyền; cần đối chiếu quyết định công bố."
+  },
+  {
+    "id": "hn87-126",
+    "old_code": "1.014258",
+    "name": "Xác nhận đăng ký thu hồi khoáng sản (cấp Xã)",
+    "query": "Xác nhận đăng ký thu hồi khoáng sản",
+    "exact_title_candidates": [],
+    "search_candidates": [
+      {
+        "id": "01a17752-404b-722a-ac69-90504a4ef705",
+        "name": "Xác định, phê duyệt, điều chỉnh tiền cấp quyền khai thác khoáng sản đối với giấy xác nhận đăng ký thu hồi khoáng sản thuộc thẩm quyền cấp của Chủ tịch Ủy ban nhân dân cấp xã",
+        "code": "5.003972",
+        "codeNotation": "5.003972",
+        "categories": [
+          "Địa chất và khoáng sản"
+        ],
+        "categoryIds": [
+          "01a1763c-11ec-71a3-9e2c-466ab282f125"
+        ],
+        "departments": [
+          "Chủ tịch ủy ban nhân dân cấp tỉnh"
+        ],
+        "departmentPromulgate": "Bộ Công thương",
+        "departmentPromulgateId": "019d2be3-6a72-700f-a652-b16ccb65a5c0",
+        "formalityTargetType": [
+          "Tổ chức (không bao gồm doanh nghiệp, HTX)"
+        ],
+        "state": "ACTIVE",
+        "type": "STANDARD_INTERNAL"
+      },
+      {
+        "id": "01a1774e-8e8c-7056-b28a-0868c6ba19a6",
+        "name": "Xác định, phê duyệt, điều chỉnh tiền cấp quyền khai thác khoáng sản đối với giấy phép khai thác khoáng sản, giấy phép khai thác tận thu khoáng sản, giấy xác nhận đăng ký thu hồi khoáng sản thuộc thẩm quyền phê duyệt của Chủ tịch Ủy ban nhân dân cấp tỉnh",
+        "code": "5.003971",
+        "codeNotation": "5.003971",
+        "categories": [
+          "Địa chất và khoáng sản"
+        ],
+        "categoryIds": [
+          "01a1763c-11ec-71a3-9e2c-466ab282f125"
+        ],
+        "departments": [
+          "Chủ tịch ủy ban nhân dân cấp tỉnh"
+        ],
+        "departmentPromulgate": "Bộ Công thương",
+        "departmentPromulgateId": "019d2be3-6a72-700f-a652-b16ccb65a5c0",
+        "formalityTargetType": [
+          "Tổ chức (không bao gồm doanh nghiệp, HTX)"
+        ],
+        "state": "ACTIVE",
+        "type": "STANDARD_INTERNAL"
+      },
+      {
+        "id": "01a0c31b-4887-72f5-974e-c9b317b60cd9",
+        "name": "Xác nhận đăng ký thu hồi khoáng sản thuộc thẩm quyền của Chủ tịch Ủy ban nhân dân cấp xã",
+        "code": "1.116679",
+        "codeNotation": "1.116679",
+        "categories": [
+          "Địa chất và khoáng sản"
+        ],
+        "categoryIds": [
+          "019d2bbb-69ee-7079-a6b2-d8f1a022b717"
+        ],
+        "departments": [
+          "Ủy ban nhân dân cấp xã"
+        ],
+        "departmentPromulgate": "Bộ Công thương",
+        "departmentPromulgateId": "019d2be3-6a72-700f-a652-b16ccb65a5c0",
+        "formalityTargetType": [
+          "Công dân Việt Nam",
+          "Doanh nghiệp",
+          "Tổ chức (không bao gồm doanh nghiệp, HTX)",
+          "Doanh nghiệp Việt Nam",
+          "Doanh nghiệp có vốn đầu tư nước ngoài",
+          "Hợp tác xã",
+          "Người Việt Nam định cư ở nước ngoài"
+        ],
+        "state": "ACTIVE",
+        "type": "STANDARD"
+      },
+      {
+        "id": "01a0c31b-4802-77f6-95c7-52c0ef254e33",
+        "name": "Xác nhận đăng ký thu hồi khoáng sản thuộc thẩm quyền của Chủ tịch Ủy ban nhân dân cấp tỉnh",
+        "code": "1.116674",
+        "codeNotation": "1.116674",
+        "categories": [
+          "Địa chất và khoáng sản"
+        ],
+        "categoryIds": [
+          "019d2bbb-69ee-7079-a6b2-d8f1a022b717"
+        ],
+        "departments": [
+          "Sở Công Thương"
+        ],
+        "departmentPromulgate": "Bộ Công thương",
+        "departmentPromulgateId": "019d2be3-6a72-700f-a652-b16ccb65a5c0",
+        "formalityTargetType": [
+          "Doanh nghiệp",
+          "Tổ chức (không bao gồm doanh nghiệp, HTX)",
+          "Doanh nghiệp có vốn đầu tư nước ngoài",
+          "Hợp tác xã"
+        ],
+        "state": "ACTIVE",
+        "type": "STANDARD"
+      }
+    ],
+    "note": "Tên trùng hoặc gần giống không tự chứng minh thay thế mã/thẩm quyền; cần đối chiếu quyết định công bố."
+  },
+  {
+    "id": "hn87-127",
+    "old_code": "1.014259",
+    "name": "Quyết toán tiền cấp quyền khai thác khoáng sản (cấp Xã)",
+    "query": "Quyết toán tiền cấp quyền khai thác khoáng sản",
+    "exact_title_candidates": [],
+    "search_candidates": [
+      {
+        "id": "01a0c31b-4868-70e0-b6dc-b724602dc861",
+        "name": "Quyết toán tiền cấp quyền khai thác khoáng sản thuộc thẩm quyền của Chủ tịch Ủy ban nhân dân cấp xã",
+        "code": "1.116678",
+        "codeNotation": "1.116678",
+        "categories": [
+          "Địa chất và khoáng sản"
+        ],
+        "categoryIds": [
+          "019d2bbb-69ee-7079-a6b2-d8f1a022b717"
+        ],
+        "departments": [
+          "Ủy ban nhân dân cấp xã"
+        ],
+        "departmentPromulgate": "Bộ Công thương",
+        "departmentPromulgateId": "019d2be3-6a72-700f-a652-b16ccb65a5c0",
+        "formalityTargetType": [
+          "Công dân Việt Nam",
+          "Doanh nghiệp",
+          "Tổ chức (không bao gồm doanh nghiệp, HTX)",
+          "Doanh nghiệp Việt Nam",
+          "Doanh nghiệp có vốn đầu tư nước ngoài",
+          "Hợp tác xã"
+        ],
+        "state": "ACTIVE",
+        "type": "STANDARD"
+      },
+      {
+        "id": "01a0c31b-47e7-751a-8187-ecffea654076",
+        "name": "Quyết toán tiền cấp quyền khai thác khoáng sản đối với giấy phép thuộc thẩm quyền cấp của Chủ tịch Ủy ban nhân dân cấp tỉnh",
+        "code": "1.116673",
+        "codeNotation": "1.116673",
+        "categories": [
+          "Địa chất và khoáng sản"
+        ],
+        "categoryIds": [
+          "019d2bbb-69ee-7079-a6b2-d8f1a022b717"
+        ],
+        "departments": [
+          "Sở Công Thương"
+        ],
+        "departmentPromulgate": "Bộ Công thương",
+        "departmentPromulgateId": "019d2be3-6a72-700f-a652-b16ccb65a5c0",
+        "formalityTargetType": [
+          "Doanh nghiệp",
+          "Tổ chức (không bao gồm doanh nghiệp, HTX)",
+          "Doanh nghiệp Việt Nam",
+          "Doanh nghiệp có vốn đầu tư nước ngoài",
+          "Hợp tác xã"
+        ],
+        "state": "ACTIVE",
+        "type": "STANDARD"
+      },
+      {
+        "id": "01a0c31b-444b-75ea-ae4b-9ce65ee309bd",
+        "name": "Quyết toán tiền cấp quyền khai thác khoáng sản đối với giấy phép thuộc thẩm quyền cấp của Bộ trưởng Bộ Công Thương",
+        "code": "1.116643",
+        "codeNotation": "1.116643",
+        "categories": [
+          "Địa chất và khoáng sản"
+        ],
+        "categoryIds": [
+          "019d2bbb-69ee-7079-a6b2-d8f1a022b717"
+        ],
+        "departments": [
+          "Cục Địa chất và Khoáng sản Việt Nam - Bộ NN và MT"
+        ],
+        "departmentPromulgate": "Bộ Công thương",
+        "departmentPromulgateId": "019d2be3-6a72-700f-a652-b16ccb65a5c0",
+        "formalityTargetType": [
+          "Doanh nghiệp",
+          "Tổ chức (không bao gồm doanh nghiệp, HTX)",
+          "Tổ chức nước ngoài",
+          "Doanh nghiệp Việt Nam"
+        ],
+        "state": "ACTIVE",
+        "type": "STANDARD"
+      }
+    ],
+    "note": "Tên trùng hoặc gần giống không tự chứng minh thay thế mã/thẩm quyền; cần đối chiếu quyết định công bố."
+  },
+  {
+    "id": "hn87-128",
+    "old_code": "1.014256",
+    "name": "Xác nhận đăng ký thu hồi khoáng sản (cấp Tỉnh)",
+    "query": "Xác nhận đăng ký thu hồi khoáng sản",
+    "exact_title_candidates": [],
+    "search_candidates": [
+      {
+        "id": "01a17752-404b-722a-ac69-90504a4ef705",
+        "name": "Xác định, phê duyệt, điều chỉnh tiền cấp quyền khai thác khoáng sản đối với giấy xác nhận đăng ký thu hồi khoáng sản thuộc thẩm quyền cấp của Chủ tịch Ủy ban nhân dân cấp xã",
+        "code": "5.003972",
+        "codeNotation": "5.003972",
+        "categories": [
+          "Địa chất và khoáng sản"
+        ],
+        "categoryIds": [
+          "01a1763c-11ec-71a3-9e2c-466ab282f125"
+        ],
+        "departments": [
+          "Chủ tịch ủy ban nhân dân cấp tỉnh"
+        ],
+        "departmentPromulgate": "Bộ Công thương",
+        "departmentPromulgateId": "019d2be3-6a72-700f-a652-b16ccb65a5c0",
+        "formalityTargetType": [
+          "Tổ chức (không bao gồm doanh nghiệp, HTX)"
+        ],
+        "state": "ACTIVE",
+        "type": "STANDARD_INTERNAL"
+      },
+      {
+        "id": "01a1774e-8e8c-7056-b28a-0868c6ba19a6",
+        "name": "Xác định, phê duyệt, điều chỉnh tiền cấp quyền khai thác khoáng sản đối với giấy phép khai thác khoáng sản, giấy phép khai thác tận thu khoáng sản, giấy xác nhận đăng ký thu hồi khoáng sản thuộc thẩm quyền phê duyệt của Chủ tịch Ủy ban nhân dân cấp tỉnh",
+        "code": "5.003971",
+        "codeNotation": "5.003971",
+        "categories": [
+          "Địa chất và khoáng sản"
+        ],
+        "categoryIds": [
+          "01a1763c-11ec-71a3-9e2c-466ab282f125"
+        ],
+        "departments": [
+          "Chủ tịch ủy ban nhân dân cấp tỉnh"
+        ],
+        "departmentPromulgate": "Bộ Công thương",
+        "departmentPromulgateId": "019d2be3-6a72-700f-a652-b16ccb65a5c0",
+        "formalityTargetType": [
+          "Tổ chức (không bao gồm doanh nghiệp, HTX)"
+        ],
+        "state": "ACTIVE",
+        "type": "STANDARD_INTERNAL"
+      },
+      {
+        "id": "01a0c31b-4887-72f5-974e-c9b317b60cd9",
+        "name": "Xác nhận đăng ký thu hồi khoáng sản thuộc thẩm quyền của Chủ tịch Ủy ban nhân dân cấp xã",
+        "code": "1.116679",
+        "codeNotation": "1.116679",
+        "categories": [
+          "Địa chất và khoáng sản"
+        ],
+        "categoryIds": [
+          "019d2bbb-69ee-7079-a6b2-d8f1a022b717"
+        ],
+        "departments": [
+          "Ủy ban nhân dân cấp xã"
+        ],
+        "departmentPromulgate": "Bộ Công thương",
+        "departmentPromulgateId": "019d2be3-6a72-700f-a652-b16ccb65a5c0",
+        "formalityTargetType": [
+          "Công dân Việt Nam",
+          "Doanh nghiệp",
+          "Tổ chức (không bao gồm doanh nghiệp, HTX)",
+          "Doanh nghiệp Việt Nam",
+          "Doanh nghiệp có vốn đầu tư nước ngoài",
+          "Hợp tác xã",
+          "Người Việt Nam định cư ở nước ngoài"
+        ],
+        "state": "ACTIVE",
+        "type": "STANDARD"
+      },
+      {
+        "id": "01a0c31b-4802-77f6-95c7-52c0ef254e33",
+        "name": "Xác nhận đăng ký thu hồi khoáng sản thuộc thẩm quyền của Chủ tịch Ủy ban nhân dân cấp tỉnh",
+        "code": "1.116674",
+        "codeNotation": "1.116674",
+        "categories": [
+          "Địa chất và khoáng sản"
+        ],
+        "categoryIds": [
+          "019d2bbb-69ee-7079-a6b2-d8f1a022b717"
+        ],
+        "departments": [
+          "Sở Công Thương"
+        ],
+        "departmentPromulgate": "Bộ Công thương",
+        "departmentPromulgateId": "019d2be3-6a72-700f-a652-b16ccb65a5c0",
+        "formalityTargetType": [
+          "Doanh nghiệp",
+          "Tổ chức (không bao gồm doanh nghiệp, HTX)",
+          "Doanh nghiệp có vốn đầu tư nước ngoài",
+          "Hợp tác xã"
+        ],
+        "state": "ACTIVE",
+        "type": "STANDARD"
+      }
+    ],
+    "note": "Tên trùng hoặc gần giống không tự chứng minh thay thế mã/thẩm quyền; cần đối chiếu quyết định công bố."
+  },
+  {
+    "id": "hn87-135",
+    "old_code": "1.000824",
+    "name": "Cấp lại giấy phép thăm dò nước dưới đất, giấy phép khai thác tài nguyên nước",
+    "query": "Cấp lại giấy phép thăm dò nước dưới đất, giấy phép khai",
+    "exact_title_candidates": [],
+    "search_candidates": [],
+    "note": "Tên trùng hoặc gần giống không tự chứng minh thay thế mã/thẩm quyền; cần đối chiếu quyết định công bố."
+  },
+  {
+    "id": "hn87-139",
+    "old_code": "1.012500",
+    "name": "Tạm dừng hiệu lực giấy phép thăm dò nước dưới đất, giấy phép khai thác tài nguyên nước.",
+    "query": "Tạm dừng hiệu lực giấy phép thăm dò nước dưới đất, giấy",
+    "exact_title_candidates": [],
+    "search_candidates": [],
+    "note": "Tên trùng hoặc gần giống không tự chứng minh thay thế mã/thẩm quyền; cần đối chiếu quyết định công bố."
+  },
+  {
+    "id": "hn87-165",
+    "old_code": "1.014854",
+    "name": "Cấp lại giấy phép cho các hoạt động trong phạm vi bảo vệ công trình thủy lợi trong trường hợp tên chủ giấy phép đã được cấp bị thay đổi do chuyển nhượng, sáp nhập, chia tách, cơ cấu lại tổ chức do Chủ tịch UBND cấp tỉnh phân cấp cho Chủ tịch UBND cấp xã",
+    "query": "Cấp lại giấy phép cho các hoạt động trong phạm vi bảo",
+    "exact_title_candidates": [],
+    "search_candidates": [],
+    "note": "Tên trùng hoặc gần giống không tự chứng minh thay thế mã/thẩm quyền; cần đối chiếu quyết định công bố."
+  },
+  {
+    "id": "hn87-171",
+    "old_code": "1.014865",
+    "name": "Thẩm định quy trình vận hành đối với công trình thủy lợi lớn và công trình thủy lợi vừa do Chủ tịch UBND cấp tỉnh phân cấp cho Chủ tịch UBND cấp xã phê duyệt",
+    "query": "Thẩm định quy trình vận hành đối với công trình thủy lợi",
+    "exact_title_candidates": [
+      {
+        "id": "019d2bfa-adcb-7629-a497-8674dcffeb8c",
+        "name": "Thẩm định quy trình vận hành đối với công trình thủy lợi lớn và công trình thủy lợi vừa do Chủ tịch UBND cấp tỉnh phân cấp cho Chủ tịch UBND cấp xã phê duyệt",
+        "code": "2.001627",
+        "codeNotation": "2.001627",
+        "categories": [
+          "Thủy lợi"
+        ],
+        "categoryIds": [
+          "019d2bbb-69ee-7079-a6b3-0acfda22577b"
+        ],
+        "departments": [
+          "Ủy ban nhân dân cấp xã"
+        ],
+        "departmentPromulgate": "Bộ Nông nghiệp và Môi trường",
+        "departmentPromulgateId": "019d2be3-6a80-747a-9d0b-db7fd18abadc",
+        "formalityTargetType": [
+          "Công dân Việt Nam",
+          "Tổ chức (không bao gồm doanh nghiệp, HTX)"
+        ],
+        "state": "UPDATED",
+        "type": "STANDARD"
+      }
+    ],
+    "search_candidates": [
+      {
+        "id": "019d2bfa-adcb-7629-a497-8674dcffeb8c",
+        "name": "Thẩm định quy trình vận hành đối với công trình thủy lợi lớn và công trình thủy lợi vừa do Chủ tịch UBND cấp tỉnh phân cấp cho Chủ tịch UBND cấp xã phê duyệt",
+        "code": "2.001627",
+        "codeNotation": "2.001627",
+        "categories": [
+          "Thủy lợi"
+        ],
+        "categoryIds": [
+          "019d2bbb-69ee-7079-a6b3-0acfda22577b"
+        ],
+        "departments": [
+          "Ủy ban nhân dân cấp xã"
+        ],
+        "departmentPromulgate": "Bộ Nông nghiệp và Môi trường",
+        "departmentPromulgateId": "019d2be3-6a80-747a-9d0b-db7fd18abadc",
+        "formalityTargetType": [
+          "Công dân Việt Nam",
+          "Tổ chức (không bao gồm doanh nghiệp, HTX)"
+        ],
+        "state": "UPDATED",
+        "type": "STANDARD"
+      },
+      {
+        "id": "019d2bfa-28a8-749d-87ce-e3a0b5c1f9ff",
+        "name": "Thẩm định quy trình vận hành đối với công trình thủy lợi lớn và công trình thủy lợi vừa thuộc thẩm quyền của Chủ tịch UBND cấp tỉnh phê duyệt",
+        "code": "1.003867",
+        "codeNotation": "1.003867",
+        "categories": [
+          "Thủy lợi"
+        ],
+        "categoryIds": [
+          "019d2bbb-69ee-7079-a6b3-0acfda22577b"
+        ],
+        "departments": [
+          ""
+        ],
+        "departmentPromulgate": "Bộ Nông nghiệp và Môi trường",
+        "departmentPromulgateId": "019d2be3-6a80-747a-9d0b-db7fd18abadc",
+        "formalityTargetType": [
+          "Công dân Việt Nam",
+          "Tổ chức (không bao gồm doanh nghiệp, HTX)"
+        ],
+        "state": "UPDATED",
+        "type": "STANDARD"
+      }
+    ],
+    "note": "Tên trùng hoặc gần giống không tự chứng minh thay thế mã/thẩm quyền; cần đối chiếu quyết định công bố."
+  },
+  {
+    "id": "hn87-181",
+    "old_code": "1.010730",
+    "name": "Cấp lại giấy phép môi trường (cấp Tỉnh)",
+    "query": "Cấp lại giấy phép môi trường",
+    "exact_title_candidates": [],
+    "search_candidates": [],
+    "note": "Tên trùng hoặc gần giống không tự chứng minh thay thế mã/thẩm quyền; cần đối chiếu quyết định công bố."
+  },
+  {
+    "id": "hn87-195",
+    "old_code": "-",
+    "name": "Hỗ trợ mua máy cấy, hệ thống thiết bị gieo mạ phục vụ cơ giới hóa trong sản xuất lúa (Thực hiện theo khoản 2 Điều 8 Nghị quyết số 53/2025/NQ-HĐND ngày 26/11/2025)",
+    "query": "Hỗ trợ mua máy cấy, hệ thống thiết bị gieo mạ phục",
+    "exact_title_candidates": [
+      {
+        "id": "019da4eb-06d7-7538-8f7a-d13d93b99c24",
+        "name": "Hỗ trợ mua máy cấy, hệ thống thiết bị gieo mạ phục vụ cơ giới hóa trong sản xuất lúa (Thực hiện theo khoản 2 Điều 8 Nghị quyết số 53/2025/NQ-HĐND ngày 26/11/2025)\n",
+        "code": "1.015017",
+        "codeNotation": "1.015017",
+        "categories": [
+          "Nông nghiệp"
+        ],
+        "categoryIds": [
+          "019d2c08-77b8-7437-8210-65a4a79991ed"
+        ],
+        "departments": [
+          "Ủy ban nhân dân cấp xã"
+        ],
+        "departmentPromulgate": "Trung tâm phục vụ hành chính công Thành phố Hà Nội",
+        "departmentPromulgateId": "019d2be3-6adb-7552-9a1f-fbe6380f2428",
+        "formalityTargetType": [
+          "Công dân Việt Nam",
+          "Doanh nghiệp",
+          "Người nước ngoài",
+          "Đảng viên",
+          "Tổ chức (không bao gồm doanh nghiệp, HTX)",
+          "Tổ chức Đảng",
+          "Tổ chức nước ngoài",
+          "Doanh nghiệp Việt Nam",
+          "Doanh nghiệp có vốn đầu tư nước ngoài",
+          "Hợp tác xã",
+          "Người Việt Nam định cư ở nước ngoài",
+          "Cán bộ, công chức, viên chức"
+        ],
+        "state": "ACTIVE",
+        "type": "SPECIFIC"
+      }
+    ],
+    "search_candidates": [
+      {
+        "id": "019da4eb-06d7-7538-8f7a-d13d93b99c24",
+        "name": "Hỗ trợ mua máy cấy, hệ thống thiết bị gieo mạ phục vụ cơ giới hóa trong sản xuất lúa (Thực hiện theo khoản 2 Điều 8 Nghị quyết số 53/2025/NQ-HĐND ngày 26/11/2025)\n",
+        "code": "1.015017",
+        "codeNotation": "1.015017",
+        "categories": [
+          "Nông nghiệp"
+        ],
+        "categoryIds": [
+          "019d2c08-77b8-7437-8210-65a4a79991ed"
+        ],
+        "departments": [
+          "Ủy ban nhân dân cấp xã"
+        ],
+        "departmentPromulgate": "Trung tâm phục vụ hành chính công Thành phố Hà Nội",
+        "departmentPromulgateId": "019d2be3-6adb-7552-9a1f-fbe6380f2428",
+        "formalityTargetType": [
+          "Công dân Việt Nam",
+          "Doanh nghiệp",
+          "Người nước ngoài",
+          "Đảng viên",
+          "Tổ chức (không bao gồm doanh nghiệp, HTX)",
+          "Tổ chức Đảng",
+          "Tổ chức nước ngoài",
+          "Doanh nghiệp Việt Nam",
+          "Doanh nghiệp có vốn đầu tư nước ngoài",
+          "Hợp tác xã",
+          "Người Việt Nam định cư ở nước ngoài",
+          "Cán bộ, công chức, viên chức"
+        ],
+        "state": "ACTIVE",
+        "type": "SPECIFIC"
+      }
+    ],
+    "note": "Tên trùng hoặc gần giống không tự chứng minh thay thế mã/thẩm quyền; cần đối chiếu quyết định công bố."
+  },
+  {
+    "id": "hn87-196",
+    "old_code": "-",
+    "name": "Hỗ trợ xây dựng nhà màng, nhà lưới để sản xuất một số loại cây trồng có giá trị kinh tế cao (áp dụng cho sản xuất rau, hoa không dùng đất: giá thể, thủy canh hoặc khí canh) (Thực hiện theo Điều 9 Nghị quyết số 53/2025/NQ-HĐND ngày 26/11/2025)",
+    "query": "Hỗ trợ xây dựng nhà màng, nhà lưới để sản xuất một",
+    "exact_title_candidates": [
+      {
+        "id": "019da4f6-bcca-71ee-9f39-56df65f47da3",
+        "name": "Hỗ trợ xây dựng nhà màng, nhà lưới để sản xuất một số loại cây trồng có giá trị kinh tế cao (áp dụng cho sản xuất rau, hoa không dùng đất: giá thể, thủy canh hoặc khí canh) (Thực hiện theo Điều 9 Nghị quyết số 53/2025/NQ-HĐND ngày 26/11/2025)\n",
+        "code": "1.015018",
+        "codeNotation": "1.015018",
+        "categories": [
+          "Nông nghiệp"
+        ],
+        "categoryIds": [
+          "019d2c08-77b8-7437-8210-65a4a79991ed"
+        ],
+        "departments": [
+          "Ủy ban nhân dân cấp xã"
+        ],
+        "departmentPromulgate": "Trung tâm phục vụ hành chính công Thành phố Hà Nội",
+        "departmentPromulgateId": "019d2be3-6adb-7552-9a1f-fbe6380f2428",
+        "formalityTargetType": [
+          "Công dân Việt Nam",
+          "Doanh nghiệp",
+          "Người nước ngoài",
+          "Đảng viên",
+          "Tổ chức (không bao gồm doanh nghiệp, HTX)",
+          "Tổ chức Đảng",
+          "Tổ chức nước ngoài",
+          "Doanh nghiệp Việt Nam",
+          "Doanh nghiệp có vốn đầu tư nước ngoài",
+          "Hợp tác xã",
+          "Người Việt Nam định cư ở nước ngoài",
+          "Cán bộ, công chức, viên chức"
+        ],
+        "state": "ACTIVE",
+        "type": "SPECIFIC"
+      }
+    ],
+    "search_candidates": [
+      {
+        "id": "019da4f6-bcca-71ee-9f39-56df65f47da3",
+        "name": "Hỗ trợ xây dựng nhà màng, nhà lưới để sản xuất một số loại cây trồng có giá trị kinh tế cao (áp dụng cho sản xuất rau, hoa không dùng đất: giá thể, thủy canh hoặc khí canh) (Thực hiện theo Điều 9 Nghị quyết số 53/2025/NQ-HĐND ngày 26/11/2025)\n",
+        "code": "1.015018",
+        "codeNotation": "1.015018",
+        "categories": [
+          "Nông nghiệp"
+        ],
+        "categoryIds": [
+          "019d2c08-77b8-7437-8210-65a4a79991ed"
+        ],
+        "departments": [
+          "Ủy ban nhân dân cấp xã"
+        ],
+        "departmentPromulgate": "Trung tâm phục vụ hành chính công Thành phố Hà Nội",
+        "departmentPromulgateId": "019d2be3-6adb-7552-9a1f-fbe6380f2428",
+        "formalityTargetType": [
+          "Công dân Việt Nam",
+          "Doanh nghiệp",
+          "Người nước ngoài",
+          "Đảng viên",
+          "Tổ chức (không bao gồm doanh nghiệp, HTX)",
+          "Tổ chức Đảng",
+          "Tổ chức nước ngoài",
+          "Doanh nghiệp Việt Nam",
+          "Doanh nghiệp có vốn đầu tư nước ngoài",
+          "Hợp tác xã",
+          "Người Việt Nam định cư ở nước ngoài",
+          "Cán bộ, công chức, viên chức"
+        ],
+        "state": "ACTIVE",
+        "type": "SPECIFIC"
+      }
+    ],
+    "note": "Tên trùng hoặc gần giống không tự chứng minh thay thế mã/thẩm quyền; cần đối chiếu quyết định công bố."
+  },
+  {
+    "id": "hn87-197",
+    "old_code": "-",
+    "name": "Hỗ trợ phát triển sản xuất trồng trọt hữu cơ (Thực hiện theo Điều 17 Nghị quyết số 53/2025/NQ-HĐND ngày 26/11/2025)",
+    "query": "Hỗ trợ phát triển sản xuất trồng trọt hữu cơ",
+    "exact_title_candidates": [
+      {
+        "id": "019da53c-1a10-778e-b77a-e0793cf5c228",
+        "name": "Hỗ trợ phát triển sản xuất trồng trọt hữu cơ (Thực hiện theo Điều 17 Nghị quyết số 53/2025/NQ-HĐND ngày 26/11/2025)",
+        "code": "1.015019",
+        "codeNotation": "1.015019",
+        "categories": [
+          "Nông nghiệp"
+        ],
+        "categoryIds": [
+          "019d2c08-77b8-7437-8210-65a4a79991ed"
+        ],
+        "departments": [
+          "Ủy ban nhân dân cấp xã"
+        ],
+        "departmentPromulgate": "Trung tâm phục vụ hành chính công Thành phố Hà Nội",
+        "departmentPromulgateId": "019d2be3-6adb-7552-9a1f-fbe6380f2428",
+        "formalityTargetType": [
+          "Công dân Việt Nam",
+          "Doanh nghiệp",
+          "Người nước ngoài",
+          "Đảng viên",
+          "Tổ chức (không bao gồm doanh nghiệp, HTX)",
+          "Tổ chức Đảng",
+          "Tổ chức nước ngoài",
+          "Doanh nghiệp Việt Nam",
+          "Doanh nghiệp có vốn đầu tư nước ngoài",
+          "Hợp tác xã",
+          "Người Việt Nam định cư ở nước ngoài",
+          "Cán bộ, công chức, viên chức"
+        ],
+        "state": "ACTIVE",
+        "type": "SPECIFIC"
+      }
+    ],
+    "search_candidates": [
+      {
+        "id": "019da53c-1a10-778e-b77a-e0793cf5c228",
+        "name": "Hỗ trợ phát triển sản xuất trồng trọt hữu cơ (Thực hiện theo Điều 17 Nghị quyết số 53/2025/NQ-HĐND ngày 26/11/2025)",
+        "code": "1.015019",
+        "codeNotation": "1.015019",
+        "categories": [
+          "Nông nghiệp"
+        ],
+        "categoryIds": [
+          "019d2c08-77b8-7437-8210-65a4a79991ed"
+        ],
+        "departments": [
+          "Ủy ban nhân dân cấp xã"
+        ],
+        "departmentPromulgate": "Trung tâm phục vụ hành chính công Thành phố Hà Nội",
+        "departmentPromulgateId": "019d2be3-6adb-7552-9a1f-fbe6380f2428",
+        "formalityTargetType": [
+          "Công dân Việt Nam",
+          "Doanh nghiệp",
+          "Người nước ngoài",
+          "Đảng viên",
+          "Tổ chức (không bao gồm doanh nghiệp, HTX)",
+          "Tổ chức Đảng",
+          "Tổ chức nước ngoài",
+          "Doanh nghiệp Việt Nam",
+          "Doanh nghiệp có vốn đầu tư nước ngoài",
+          "Hợp tác xã",
+          "Người Việt Nam định cư ở nước ngoài",
+          "Cán bộ, công chức, viên chức"
+        ],
+        "state": "ACTIVE",
+        "type": "SPECIFIC"
+      }
+    ],
+    "note": "Tên trùng hoặc gần giống không tự chứng minh thay thế mã/thẩm quyền; cần đối chiếu quyết định công bố."
+  },
+  {
+    "id": "hn87-198",
+    "old_code": "-",
+    "name": "Hỗ trợ trang thiết bị, công nghệ xử lý chất thải trong chăn nuôi (Thực hiện theo Điều 20 Nghị quyết số 53/2025/NQ-HĐND ngày 26/11/2025",
+    "query": "Hỗ trợ trang thiết bị, công nghệ xử lý chất thải trong",
+    "exact_title_candidates": [
+      {
+        "id": "019da6ae-d02b-714d-803f-47ad0fd7dc9b",
+        "name": "Hỗ trợ trang thiết bị, công nghệ xử lý chất thải trong chăn nuôi (Thực hiện theo Điều 20 Nghị quyết số 53/2025/NQ-HĐND ngày 26/11/2025)",
+        "code": "1.015020",
+        "codeNotation": "1.015020",
+        "categories": [
+          "Nông nghiệp"
+        ],
+        "categoryIds": [
+          "019d2c08-77b8-7437-8210-65a4a79991ed"
+        ],
+        "departments": [
+          "Ủy ban nhân dân cấp xã"
+        ],
+        "departmentPromulgate": "Trung tâm phục vụ hành chính công Thành phố Hà Nội",
+        "departmentPromulgateId": "019d2be3-6adb-7552-9a1f-fbe6380f2428",
+        "formalityTargetType": [
+          "Công dân Việt Nam",
+          "Doanh nghiệp",
+          "Người nước ngoài",
+          "Đảng viên",
+          "Tổ chức (không bao gồm doanh nghiệp, HTX)",
+          "Tổ chức Đảng",
+          "Tổ chức nước ngoài",
+          "Doanh nghiệp Việt Nam",
+          "Doanh nghiệp có vốn đầu tư nước ngoài",
+          "Hợp tác xã",
+          "Người Việt Nam định cư ở nước ngoài",
+          "Cán bộ, công chức, viên chức"
+        ],
+        "state": "ACTIVE",
+        "type": "SPECIFIC"
+      }
+    ],
+    "search_candidates": [
+      {
+        "id": "019da6ae-d02b-714d-803f-47ad0fd7dc9b",
+        "name": "Hỗ trợ trang thiết bị, công nghệ xử lý chất thải trong chăn nuôi (Thực hiện theo Điều 20 Nghị quyết số 53/2025/NQ-HĐND ngày 26/11/2025)",
+        "code": "1.015020",
+        "codeNotation": "1.015020",
+        "categories": [
+          "Nông nghiệp"
+        ],
+        "categoryIds": [
+          "019d2c08-77b8-7437-8210-65a4a79991ed"
+        ],
+        "departments": [
+          "Ủy ban nhân dân cấp xã"
+        ],
+        "departmentPromulgate": "Trung tâm phục vụ hành chính công Thành phố Hà Nội",
+        "departmentPromulgateId": "019d2be3-6adb-7552-9a1f-fbe6380f2428",
+        "formalityTargetType": [
+          "Công dân Việt Nam",
+          "Doanh nghiệp",
+          "Người nước ngoài",
+          "Đảng viên",
+          "Tổ chức (không bao gồm doanh nghiệp, HTX)",
+          "Tổ chức Đảng",
+          "Tổ chức nước ngoài",
+          "Doanh nghiệp Việt Nam",
+          "Doanh nghiệp có vốn đầu tư nước ngoài",
+          "Hợp tác xã",
+          "Người Việt Nam định cư ở nước ngoài",
+          "Cán bộ, công chức, viên chức"
+        ],
+        "state": "ACTIVE",
+        "type": "SPECIFIC"
+      }
+    ],
+    "note": "Tên trùng hoặc gần giống không tự chứng minh thay thế mã/thẩm quyền; cần đối chiếu quyết định công bố."
+  },
+  {
+    "id": "hn87-206",
+    "old_code": "2.000620",
+    "name": "Cấp Giấy phép bán lẻ rượu",
+    "query": "Cấp Giấy phép bán lẻ rượu",
+    "exact_title_candidates": [],
+    "search_candidates": [],
+    "note": "Tên trùng hoặc gần giống không tự chứng minh thay thế mã/thẩm quyền; cần đối chiếu quyết định công bố."
+  },
+  {
+    "id": "hn87-207",
+    "old_code": "2.000615",
+    "name": "Cấp sửa đổi, bổ sung Giấy phép bán lẻ rượu",
+    "query": "Cấp sửa đổi, bổ sung Giấy phép bán lẻ rượu",
+    "exact_title_candidates": [],
+    "search_candidates": [],
+    "note": "Tên trùng hoặc gần giống không tự chứng minh thay thế mã/thẩm quyền; cần đối chiếu quyết định công bố."
+  },
+  {
+    "id": "hn87-208",
+    "old_code": "2.001240",
+    "name": "Cấp lại Giấy phép bán lẻ rượu",
+    "query": "Cấp lại Giấy phép bán lẻ rượu",
+    "exact_title_candidates": [],
+    "search_candidates": [],
+    "note": "Tên trùng hoặc gần giống không tự chứng minh thay thế mã/thẩm quyền; cần đối chiếu quyết định công bố."
+  },
+  {
+    "id": "hn87-209",
+    "old_code": "2.000181",
+    "name": "Cấp Giấy phép bán lẻ sản phẩm thuốc lá",
+    "query": "Cấp Giấy phép bán lẻ sản phẩm thuốc lá",
+    "exact_title_candidates": [],
+    "search_candidates": [],
+    "note": "Tên trùng hoặc gần giống không tự chứng minh thay thế mã/thẩm quyền; cần đối chiếu quyết định công bố."
+  },
+  {
+    "id": "hn87-210",
+    "old_code": "2.000162",
+    "name": "Cấp sửa đổi, bổ sung Giấy phép bán lẻ sản phẩm thuốc lá",
+    "query": "Cấp sửa đổi, bổ sung Giấy phép bán lẻ sản phẩm thuốc",
+    "exact_title_candidates": [],
+    "search_candidates": [],
+    "note": "Tên trùng hoặc gần giống không tự chứng minh thay thế mã/thẩm quyền; cần đối chiếu quyết định công bố."
+  },
+  {
+    "id": "hn87-211",
+    "old_code": "2.000150",
+    "name": "Cấp lại Giấy phép bán lẻ sản phẩm thuốc lá",
+    "query": "Cấp lại Giấy phép bán lẻ sản phẩm thuốc lá",
+    "exact_title_candidates": [],
+    "search_candidates": [],
+    "note": "Tên trùng hoặc gần giống không tự chứng minh thay thế mã/thẩm quyền; cần đối chiếu quyết định công bố."
+  },
+  {
+    "id": "hn87-212",
+    "old_code": "2.000633",
+    "name": "Cấp Giấy phép sản xuất rượu thủ công nhằm mục đích kinh doanh",
+    "query": "Cấp Giấy phép sản xuất rượu thủ công nhằm mục đích kinh",
+    "exact_title_candidates": [],
+    "search_candidates": [],
+    "note": "Tên trùng hoặc gần giống không tự chứng minh thay thế mã/thẩm quyền; cần đối chiếu quyết định công bố."
+  },
+  {
+    "id": "hn87-213",
+    "old_code": "2.000629",
+    "name": "Cấp sửa đổi, bổ sung Giấy phép sản xuất rượu thủ công nhằm mục đích kinh doanh",
+    "query": "Cấp sửa đổi, bổ sung Giấy phép sản xuất rượu thủ công",
+    "exact_title_candidates": [],
+    "search_candidates": [],
+    "note": "Tên trùng hoặc gần giống không tự chứng minh thay thế mã/thẩm quyền; cần đối chiếu quyết định công bố."
+  },
+  {
+    "id": "hn87-214",
+    "old_code": "1.001279",
+    "name": "Cấp lại Giấy phép sản xuất rượu thủ công nhằm mục đích kinh doanh",
+    "query": "Cấp lại Giấy phép sản xuất rượu thủ công nhằm mục đích",
+    "exact_title_candidates": [],
+    "search_candidates": [],
+    "note": "Tên trùng hoặc gần giống không tự chứng minh thay thế mã/thẩm quyền; cần đối chiếu quyết định công bố."
+  },
+  {
+    "id": "hn87-217",
+    "old_code": "2.001283",
+    "name": "Cấp Giấy chứng nhận đủ điều kiện cửa hàng bán lẻ LPG chai",
+    "query": "Cấp Giấy chứng nhận đủ điều kiện cửa hàng bán lẻ LPG",
+    "exact_title_candidates": [],
+    "search_candidates": [],
+    "note": "Tên trùng hoặc gần giống không tự chứng minh thay thế mã/thẩm quyền; cần đối chiếu quyết định công bố."
+  },
+  {
+    "id": "hn87-218",
+    "old_code": "2.001261",
+    "name": "Cấp lại Giấy chứng nhận đủ điều kiện cửa hàng bán lẻ LPG chai",
+    "query": "Cấp lại Giấy chứng nhận đủ điều kiện cửa hàng bán lẻ",
+    "exact_title_candidates": [],
+    "search_candidates": [],
+    "note": "Tên trùng hoặc gần giống không tự chứng minh thay thế mã/thẩm quyền; cần đối chiếu quyết định công bố."
+  },
+  {
+    "id": "hn87-219",
+    "old_code": "2.001270",
+    "name": "Cấp điều chỉnh Giấy chứng nhận đủ điều kiện cửa hàng bán lẻ LPG chai",
+    "query": "Cấp điều chỉnh Giấy chứng nhận đủ điều kiện cửa hàng bán",
+    "exact_title_candidates": [],
+    "search_candidates": [],
+    "note": "Tên trùng hoặc gần giống không tự chứng minh thay thế mã/thẩm quyền; cần đối chiếu quyết định công bố."
+  },
+  {
+    "id": "hn87-223",
+    "old_code": "1.012961",
+    "name": "Thành lập hoặc cho phép thành lập trường mẫu giáo, trường mầm non, nhà trẻ",
+    "query": "Thành lập hoặc cho phép thành lập trường mẫu giáo, trường mầm",
+    "exact_title_candidates": [],
+    "search_candidates": [],
+    "note": "Tên trùng hoặc gần giống không tự chứng minh thay thế mã/thẩm quyền; cần đối chiếu quyết định công bố."
+  },
+  {
+    "id": "hn87-224",
+    "old_code": "1.006390",
+    "name": "Cho phép trường mẫu giáo, trường mầm non, nhà trẻ hoạt động giáo dục",
+    "query": "Cho phép trường mẫu giáo, trường mầm non, nhà trẻ hoạt động",
+    "exact_title_candidates": [],
+    "search_candidates": [],
+    "note": "Tên trùng hoặc gần giống không tự chứng minh thay thế mã/thẩm quyền; cần đối chiếu quyết định công bố."
+  },
+  {
+    "id": "hn87-225",
+    "old_code": "1.006444",
+    "name": "Cho phép trường mẫu giáo, trường mầm non, nhà trẻ hoạt động giáo dục trở lại",
+    "query": "Cho phép trường mẫu giáo, trường mầm non, nhà trẻ hoạt động",
+    "exact_title_candidates": [],
+    "search_candidates": [],
+    "note": "Tên trùng hoặc gần giống không tự chứng minh thay thế mã/thẩm quyền; cần đối chiếu quyết định công bố."
+  },
+  {
+    "id": "hn87-226",
+    "old_code": "1.006445",
+    "name": "Sáp nhập, chia, tách trường mẫu giáo, trường mầm non, nhà trẻ",
+    "query": "Sáp nhập, chia, tách trường mẫu giáo, trường mầm non, nhà trẻ",
+    "exact_title_candidates": [],
+    "search_candidates": [],
+    "note": "Tên trùng hoặc gần giống không tự chứng minh thay thế mã/thẩm quyền; cần đối chiếu quyết định công bố."
+  },
+  {
+    "id": "hn87-227",
+    "old_code": "1.012962",
+    "name": "Giải thể trường mẫu giáo, trường mầm non, nhà trẻ (theo đề nghị của tổ chức, cá nhân thành lập trường)",
+    "query": "Giải thể trường mẫu giáo, trường mầm non, nhà trẻ",
+    "exact_title_candidates": [],
+    "search_candidates": [],
+    "note": "Tên trùng hoặc gần giống không tự chứng minh thay thế mã/thẩm quyền; cần đối chiếu quyết định công bố."
+  },
+  {
+    "id": "hn87-228",
+    "old_code": "1.012963",
+    "name": "Thành lập hoặc cho phép thành lập trường tiểu học",
+    "query": "Thành lập hoặc cho phép thành lập trường tiểu học",
+    "exact_title_candidates": [],
+    "search_candidates": [],
+    "note": "Tên trùng hoặc gần giống không tự chứng minh thay thế mã/thẩm quyền; cần đối chiếu quyết định công bố."
+  },
+  {
+    "id": "hn87-229",
+    "old_code": "2.001842",
+    "name": "Cho phép trường tiểu học hoạt động giáo dục",
+    "query": "Cho phép trường tiểu học hoạt động giáo dục",
+    "exact_title_candidates": [],
+    "search_candidates": [],
+    "note": "Tên trùng hoặc gần giống không tự chứng minh thay thế mã/thẩm quyền; cần đối chiếu quyết định công bố."
+  },
+  {
+    "id": "hn87-230",
+    "old_code": "1.004552",
+    "name": "Cho phép trường tiểu học hoạt động giáo dục trở lại",
+    "query": "Cho phép trường tiểu học hoạt động giáo dục trở lại",
+    "exact_title_candidates": [],
+    "search_candidates": [],
+    "note": "Tên trùng hoặc gần giống không tự chứng minh thay thế mã/thẩm quyền; cần đối chiếu quyết định công bố."
+  },
+  {
+    "id": "hn87-231",
+    "old_code": "1.004563",
+    "name": "Sáp nhập, chia, tách trường tiểu học",
+    "query": "Sáp nhập, chia, tách trường tiểu học",
+    "exact_title_candidates": [],
+    "search_candidates": [
+      {
+        "id": "01a0f292-ef1b-7209-9853-a198ebb5282e",
+        "name": "Sáp nhập, chia, tách trường tiểu học, trường trung học cơ sở và trường phổ thông có nhiều cấp học trong đó có cấp học cao nhất là trung học cơ sở",
+        "code": "1.116844",
+        "codeNotation": "1.116844",
+        "categories": [
+          "Giáo dục Phổ thông"
+        ],
+        "categoryIds": [
+          "01a0eb08-8d94-779c-966b-ffe8dcc2bc8e"
+        ],
+        "departments": [
+          "Ủy ban nhân dân cấp xã"
+        ],
+        "departmentPromulgate": "Bộ Giáo dục và Đào tạo",
+        "departmentPromulgateId": "019d2be3-6a80-747a-9d09-f80ce780479b",
+        "formalityTargetType": [
+          "Công dân Việt Nam",
+          "Doanh nghiệp",
+          "Người nước ngoài",
+          "Tổ chức nước ngoài",
+          "Doanh nghiệp Việt Nam",
+          "Doanh nghiệp có vốn đầu tư nước ngoài"
+        ],
+        "state": "ACTIVE",
+        "type": "STANDARD"
+      },
+      {
+        "id": "01a0ec39-9a53-73da-97c6-2dfe4b0d365d",
+        "name": "Sáp nhập, chia, tách trường tiểu học, trường trung học cơ sở do cơ quan đại diện ngoại giao nước ngoài, tổ chức quốc tế liên chính phủ đề nghị",
+        "code": "1.116813",
+        "codeNotation": "1.116813",
+        "categories": [
+          "Giáo dục Phổ thông"
+        ],
+        "categoryIds": [
+          "01a0eb08-8d94-779c-966b-ffe8dcc2bc8e"
+        ],
+        "departments": [
+          "Ủy ban nhân dân cấp tỉnh"
+        ],
+        "departmentPromulgate": "Bộ Giáo dục và Đào tạo",
+        "departmentPromulgateId": "019d2be3-6a80-747a-9d09-f80ce780479b",
+        "formalityTargetType": [
+          "Tổ chức nước ngoài"
+        ],
+        "state": "ACTIVE",
+        "type": "STANDARD"
+      }
+    ],
+    "note": "Tên trùng hoặc gần giống không tự chứng minh thay thế mã/thẩm quyền; cần đối chiếu quyết định công bố."
+  },
+  {
+    "id": "hn87-232",
+    "old_code": "1.001639",
+    "name": "Giải thể trường tiểu học (theo đề nghị của tổ chức, cá nhân đề nghị thành lập trường tiểu học)",
+    "query": "Giải thể trường tiểu học",
+    "exact_title_candidates": [],
+    "search_candidates": [
+      {
+        "id": "01a0f298-7493-775d-9f7c-35f854b7a37d",
+        "name": "Giải thể trường tiểu học, trường trung học cơ sở và trường phổ thông có nhiều cấp học trong đó có cấp học cao nhất là trung học cơ sở (Theo đề nghị của tổ chức, cá nhân thành lập trường)",
+        "code": "1.116845",
+        "codeNotation": "1.116845",
+        "categories": [
+          "Giáo dục Phổ thông"
+        ],
+        "categoryIds": [
+          "01a0eb08-8d94-779c-966b-ffe8dcc2bc8e"
+        ],
+        "departments": [
+          "Ủy ban nhân dân cấp xã"
+        ],
+        "departmentPromulgate": "Bộ Giáo dục và Đào tạo",
+        "departmentPromulgateId": "019d2be3-6a80-747a-9d09-f80ce780479b",
+        "formalityTargetType": [
+          "Công dân Việt Nam",
+          "Doanh nghiệp",
+          "Người nước ngoài",
+          "Tổ chức (không bao gồm doanh nghiệp, HTX)",
+          "Tổ chức nước ngoài",
+          "Doanh nghiệp Việt Nam",
+          "Doanh nghiệp có vốn đầu tư nước ngoài"
+        ],
+        "state": "ACTIVE",
+        "type": "STANDARD"
+      },
+      {
+        "id": "01a0f085-012b-7628-80c4-c5c695a27bc7",
+        "name": "Giải thể trường tiểu học, trường trung học cơ sở theo đề nghị của cơ quan đại diện ngoại giao nước ngoài, tổ chức quốc tế liên chính phủ",
+        "code": "1.116829",
+        "codeNotation": "1.116829",
+        "categories": [
+          "Giáo dục Phổ thông"
+        ],
+        "categoryIds": [
+          "01a0eb08-8d94-779c-966b-ffe8dcc2bc8e"
+        ],
+        "departments": [
+          "Ủy ban nhân dân cấp tỉnh"
+        ],
+        "departmentPromulgate": "Bộ Giáo dục và Đào tạo",
+        "departmentPromulgateId": "019d2be3-6a80-747a-9d09-f80ce780479b",
+        "formalityTargetType": [
+          "Tổ chức nước ngoài"
+        ],
+        "state": "ACTIVE",
+        "type": "STANDARD"
+      }
+    ],
+    "note": "Tên trùng hoặc gần giống không tự chứng minh thay thế mã/thẩm quyền; cần đối chiếu quyết định công bố."
+  },
+  {
+    "id": "hn87-233",
+    "old_code": "1.005099",
+    "name": "Chuyển trường đối với học sinh tiểu học",
+    "query": "Chuyển trường đối với học sinh tiểu học",
+    "exact_title_candidates": [],
+    "search_candidates": [],
+    "note": "Tên trùng hoặc gần giống không tự chứng minh thay thế mã/thẩm quyền; cần đối chiếu quyết định công bố."
+  },
+  {
+    "id": "hn87-234",
+    "old_code": "1.012964",
+    "name": "Thành lập hoặc cho phép thành lập trường trung học cơ sở, trường phổ thông có nhiều cấp học có cấp học cao nhất là trung học cơ sở",
+    "query": "Thành lập hoặc cho phép thành lập trường trung học cơ sở,",
+    "exact_title_candidates": [],
+    "search_candidates": [],
+    "note": "Tên trùng hoặc gần giống không tự chứng minh thay thế mã/thẩm quyền; cần đối chiếu quyết định công bố."
+  },
+  {
+    "id": "hn87-235",
+    "old_code": "1.012965",
+    "name": "Cho phép trường trung học cơ sở, trường phổ thông có nhiều cấp học có cấp học cao nhất là trung học cơ sở hoạt động giáo dục",
+    "query": "Cho phép trường trung học cơ sở, trường phổ thông có nhiều",
+    "exact_title_candidates": [],
+    "search_candidates": [],
+    "note": "Tên trùng hoặc gần giống không tự chứng minh thay thế mã/thẩm quyền; cần đối chiếu quyết định công bố."
+  },
+  {
+    "id": "hn87-236",
+    "old_code": "1.012966",
+    "name": "Cho phép trường trung học cơ sở, trường phổ thông có nhiều cấp học có cấp học cao nhất là trung học cơ sở hoạt động giáo dục trở lại",
+    "query": "Cho phép trường trung học cơ sở, trường phổ thông có nhiều",
+    "exact_title_candidates": [],
+    "search_candidates": [],
+    "note": "Tên trùng hoặc gần giống không tự chứng minh thay thế mã/thẩm quyền; cần đối chiếu quyết định công bố."
+  },
+  {
+    "id": "hn87-237",
+    "old_code": "1.012967",
+    "name": "Sáp nhập, chia, tách trường trung học cơ sở, trường phổ thông có nhiều cấp học có cấp học cao nhất là trung học cơ sở",
+    "query": "Sáp nhập, chia, tách trường trung học cơ sở, trường phổ thông",
+    "exact_title_candidates": [],
+    "search_candidates": [],
+    "note": "Tên trùng hoặc gần giống không tự chứng minh thay thế mã/thẩm quyền; cần đối chiếu quyết định công bố."
+  },
+  {
+    "id": "hn87-238",
+    "old_code": "1.012968",
+    "name": "Giải thể trường trung học cơ sở, trường phổ thông có nhiều cấp học có cấp học cao nhất là trung học cơ sở (theo đề nghị của cá nhân, tổ chức thành lập trường)",
+    "query": "Giải thể trường trung học cơ sở, trường phổ thông có nhiều",
+    "exact_title_candidates": [],
+    "search_candidates": [],
+    "note": "Tên trùng hoặc gần giống không tự chứng minh thay thế mã/thẩm quyền; cần đối chiếu quyết định công bố."
+  },
+  {
+    "id": "hn87-240",
+    "old_code": "2.002481",
+    "name": "Chuyển trường đối với học sinh trung học cơ sở",
+    "query": "Chuyển trường đối với học sinh trung học cơ sở",
+    "exact_title_candidates": [],
+    "search_candidates": [],
+    "note": "Tên trùng hoặc gần giống không tự chứng minh thay thế mã/thẩm quyền; cần đối chiếu quyết định công bố."
+  },
+  {
+    "id": "hn87-241",
+    "old_code": "2.002482",
+    "name": "Tiếp nhận học sinh trung học cơ sở Việt Nam về nước",
+    "query": "Tiếp nhận học sinh trung học cơ sở Việt Nam về nước",
+    "exact_title_candidates": [],
+    "search_candidates": [],
+    "note": "Tên trùng hoặc gần giống không tự chứng minh thay thế mã/thẩm quyền; cần đối chiếu quyết định công bố."
+  },
+  {
+    "id": "hn87-242",
+    "old_code": "2.002483",
+    "name": "Tiếp nhận học sinh trung học cơ sở người nước ngoài",
+    "query": "Tiếp nhận học sinh trung học cơ sở người nước ngoài",
+    "exact_title_candidates": [],
+    "search_candidates": [],
+    "note": "Tên trùng hoặc gần giống không tự chứng minh thay thế mã/thẩm quyền; cần đối chiếu quyết định công bố."
+  },
+  {
+    "id": "hn87-243",
+    "old_code": "2.001904",
+    "name": "Tiếp nhận đối tượng học bổ túc trung học cơ sở",
+    "query": "Tiếp nhận đối tượng học bổ túc trung học cơ sở",
+    "exact_title_candidates": [],
+    "search_candidates": [],
+    "note": "Tên trùng hoặc gần giống không tự chứng minh thay thế mã/thẩm quyền; cần đối chiếu quyết định công bố."
+  },
+  {
+    "id": "hn87-244",
+    "old_code": "1.005108",
+    "name": "Thuyên chuyển đối tượng học bổ túc trung học cơ sở",
+    "query": "Thuyên chuyển đối tượng học bổ túc trung học cơ sở",
+    "exact_title_candidates": [],
+    "search_candidates": [],
+    "note": "Tên trùng hoặc gần giống không tự chứng minh thay thế mã/thẩm quyền; cần đối chiếu quyết định công bố."
+  },
+  {
+    "id": "hn87-247",
+    "old_code": "1.012969",
+    "name": "Thành lập hoặc cho phép thành lập trung tâm học tập cộng đồng",
+    "query": "Thành lập hoặc cho phép thành lập trung tâm học tập cộng",
+    "exact_title_candidates": [],
+    "search_candidates": [],
+    "note": "Tên trùng hoặc gần giống không tự chứng minh thay thế mã/thẩm quyền; cần đối chiếu quyết định công bố."
+  },
+  {
+    "id": "hn87-248",
+    "old_code": "1.012970",
+    "name": "Cho phép trung tâm học tập cộng đồng hoạt động trở lại",
+    "query": "Cho phép trung tâm học tập cộng đồng hoạt động trở lại",
+    "exact_title_candidates": [],
+    "search_candidates": [],
+    "note": "Tên trùng hoặc gần giống không tự chứng minh thay thế mã/thẩm quyền; cần đối chiếu quyết định công bố."
+  },
+  {
+    "id": "hn87-249",
+    "old_code": "3.000307",
+    "name": "Sáp nhập, chia tách trung tâm học tập cộng đồng",
+    "query": "Sáp nhập, chia tách trung tâm học tập cộng đồng",
+    "exact_title_candidates": [],
+    "search_candidates": [
+      {
+        "id": "01a0f2ac-bf6e-723f-b804-63f768e2c8f7",
+        "name": "Sáp nhập, chia, tách trung tâm học tập cộng đồng tư thục",
+        "code": "1.116848",
+        "codeNotation": "1.116848",
+        "categories": [
+          "Giáo dục thường xuyên"
+        ],
+        "categoryIds": [
+          "019d2bbb-69ee-7079-a6b1-ef3417facf7d"
+        ],
+        "departments": [
+          "Ủy ban nhân dân cấp xã"
+        ],
+        "departmentPromulgate": "Bộ Giáo dục và Đào tạo",
+        "departmentPromulgateId": "019d2be3-6a80-747a-9d09-f80ce780479b",
+        "formalityTargetType": [
+          "Công dân Việt Nam",
+          "Tổ chức (không bao gồm doanh nghiệp, HTX)",
+          "Doanh nghiệp Việt Nam"
+        ],
+        "state": "ACTIVE",
+        "type": "STANDARD"
+      }
+    ],
+    "note": "Tên trùng hoặc gần giống không tự chứng minh thay thế mã/thẩm quyền; cần đối chiếu quyết định công bố."
+  },
+  {
+    "id": "hn87-250",
+    "old_code": "3.000308",
+    "name": "Giải thể trung tâm học tập cộng đồng (theo đề nghị của tổ chức, cá nhân thành lập trung tâm)",
+    "query": "Giải thể trung tâm học tập cộng đồng",
+    "exact_title_candidates": [],
+    "search_candidates": [
+      {
+        "id": "01a0f2b1-8240-736b-9fc7-e5423b295950",
+        "name": "Giải thể trung tâm học tập cộng đồng tư thục (Theo đề nghị của tổ chức, cá nhân thành lập trung tâm)",
+        "code": "1.116849",
+        "codeNotation": "1.116849",
+        "categories": [
+          "Giáo dục thường xuyên"
+        ],
+        "categoryIds": [
+          "019d2bbb-69ee-7079-a6b1-ef3417facf7d"
+        ],
+        "departments": [
+          "Ủy ban nhân dân cấp xã"
+        ],
+        "departmentPromulgate": "Bộ Giáo dục và Đào tạo",
+        "departmentPromulgateId": "019d2be3-6a80-747a-9d09-f80ce780479b",
+        "formalityTargetType": [
+          "Công dân Việt Nam",
+          "Tổ chức (không bao gồm doanh nghiệp, HTX)",
+          "Doanh nghiệp Việt Nam"
+        ],
+        "state": "ACTIVE",
+        "type": "STANDARD"
+      }
+    ],
+    "note": "Tên trùng hoặc gần giống không tự chứng minh thay thế mã/thẩm quyền; cần đối chiếu quyết định công bố."
+  },
+  {
+    "id": "hn87-256",
+    "old_code": "3.000309",
+    "name": "Thành lập lớp dành cho người khuyết tật trong trường mầm non, trường tiểu học, trường trung học cơ sở và trung tâm giáo dục thường xuyên, trung tâm giáo dục nghề nghiệp – giáo dục thường xuyên thực hiện các chương trình xóa mù chữ và chương trình giáo dục thường xuyên cấp trung học cơ sở",
+    "query": "Thành lập lớp dành cho người khuyết tật trong trường mầm non,",
+    "exact_title_candidates": [],
+    "search_candidates": [],
+    "note": "Tên trùng hoặc gần giống không tự chứng minh thay thế mã/thẩm quyền; cần đối chiếu quyết định công bố."
+  },
+  {
+    "id": "hn87-257",
+    "old_code": "1.012975",
+    "name": "Cho phép cơ sở giáo dục khác thực hiện chương trình giáo dục phổ thông cấp tiểu học",
+    "query": "Cho phép cơ sở giáo dục khác thực hiện chương trình giáo",
+    "exact_title_candidates": [],
+    "search_candidates": [
+      {
+        "id": "01a0f2a1-afa5-762e-82ca-3c5b5eb039ff",
+        "name": "Cho phép cơ sở giáo dục khác thực hiện chương trình giáo dục phổ thông cấp tiểu học, cấp trung học cơ sở",
+        "code": "1.116846",
+        "codeNotation": "1.116846",
+        "categories": [
+          "Cơ sở giáo dục khác"
+        ],
+        "categoryIds": [
+          "019d2bbb-69ee-7079-a6b1-d8ae308eb824"
+        ],
+        "departments": [
+          "Ủy ban nhân dân cấp xã"
+        ],
+        "departmentPromulgate": "Bộ Giáo dục và Đào tạo",
+        "departmentPromulgateId": "019d2be3-6a80-747a-9d09-f80ce780479b",
+        "formalityTargetType": [
+          "Tổ chức (không bao gồm doanh nghiệp, HTX)"
+        ],
+        "state": "ACTIVE",
+        "type": "STANDARD"
+      }
+    ],
+    "note": "Tên trùng hoặc gần giống không tự chứng minh thay thế mã/thẩm quyền; cần đối chiếu quyết định công bố."
+  },
+  {
+    "id": "hn87-258",
+    "old_code": "1.012971",
+    "name": "Thành lập hoặc cho phép thành lập cơ sở giáo dục mầm non độc lập",
+    "query": "Thành lập hoặc cho phép thành lập cơ sở giáo dục mầm",
+    "exact_title_candidates": [],
+    "search_candidates": [],
+    "note": "Tên trùng hoặc gần giống không tự chứng minh thay thế mã/thẩm quyền; cần đối chiếu quyết định công bố."
+  },
+  {
+    "id": "hn87-259",
+    "old_code": "1.012972",
+    "name": "Cho phép cơ sở giáo dục mầm non độc lập hoạt động trở lại",
+    "query": "Cho phép cơ sở giáo dục mầm non độc lập hoạt động",
+    "exact_title_candidates": [],
+    "search_candidates": [],
+    "note": "Tên trùng hoặc gần giống không tự chứng minh thay thế mã/thẩm quyền; cần đối chiếu quyết định công bố."
+  },
+  {
+    "id": "hn87-260",
+    "old_code": "1.012973",
+    "name": "Sáp nhập, chia, tách cơ sở giáo dục mầm non độc lập",
+    "query": "Sáp nhập, chia, tách cơ sở giáo dục mầm non độc lập",
+    "exact_title_candidates": [],
+    "search_candidates": [],
+    "note": "Tên trùng hoặc gần giống không tự chứng minh thay thế mã/thẩm quyền; cần đối chiếu quyết định công bố."
+  },
+  {
+    "id": "hn87-261",
+    "old_code": "1.012974",
+    "name": "Giải thể cơ sở giáo dục mầm non độc lập (theo yêu cầu của tổ chức, cá nhân thành lập trường)",
+    "query": "Giải thể cơ sở giáo dục mầm non độc lập",
+    "exact_title_candidates": [],
+    "search_candidates": [],
+    "note": "Tên trùng hoặc gần giống không tự chứng minh thay thế mã/thẩm quyền; cần đối chiếu quyết định công bố."
+  },
+  {
+    "id": "hn87-264",
+    "old_code": "3.000315",
+    "name": "Thành lập hoặc cho phép thành lập trung tâm khác thực hiện nhiệm vụ giáo dục thường xuyên",
+    "query": "Thành lập hoặc cho phép thành lập trung tâm khác thực hiện",
+    "exact_title_candidates": [],
+    "search_candidates": [],
+    "note": "Tên trùng hoặc gần giống không tự chứng minh thay thế mã/thẩm quyền; cần đối chiếu quyết định công bố."
+  },
+  {
+    "id": "hn87-326",
+    "old_code": "2.002621",
+    "name": "Liên thông Đăng ký khai sinh, đăng ký thường trú, cấp thẻ bảo hiểm y tế cho trẻ em dưới 6 tuổi",
+    "query": "Liên thông Đăng ký khai sinh, đăng ký thường trú, cấp thẻ",
+    "exact_title_candidates": [],
+    "search_candidates": [],
+    "note": "Tên trùng hoặc gần giống không tự chứng minh thay thế mã/thẩm quyền; cần đối chiếu quyết định công bố."
+  },
+  {
+    "id": "hn87-327",
+    "old_code": "2.002622",
+    "name": "Liên thông Đăng ký khai tử, xóa đăng ký thường trú, giải quyết mai táng phí, tử tuất",
+    "query": "Liên thông Đăng ký khai tử, xóa đăng ký thường trú, giải",
+    "exact_title_candidates": [],
+    "search_candidates": [],
+    "note": "Tên trùng hoặc gần giống không tự chứng minh thay thế mã/thẩm quyền; cần đối chiếu quyết định công bố."
+  },
+  {
+    "id": "hn87-333",
+    "old_code": "1.009444",
+    "name": "Gia hạn hoạt động cảng, bến thủy nội địa",
+    "query": "Gia hạn hoạt động cảng, bến thủy nội địa",
+    "exact_title_candidates": [],
+    "search_candidates": [],
+    "note": "Tên trùng hoặc gần giống không tự chứng minh thay thế mã/thẩm quyền; cần đối chiếu quyết định công bố."
+  },
+  {
+    "id": "hn87-344",
+    "old_code": "1.009447",
+    "name": "Công bố đóng cảng, bến thủy nội địa",
+    "query": "Công bố đóng cảng, bến thủy nội địa",
+    "exact_title_candidates": [],
+    "search_candidates": [
+      {
+        "id": "019f6f68-e4e5-76ad-b9de-3f0138131872",
+        "name": "Công bố đóng cảng, bến thủy nội địa, khu neo đậu",
+        "code": "1.115949",
+        "codeNotation": "1.115949",
+        "categories": [
+          "Hàng hải và đường thủy nội địa"
+        ],
+        "categoryIds": [
+          "019d2bbb-69ee-7079-a6b1-c0a4209513fc"
+        ],
+        "departments": [
+          "Bộ Xây dựng",
+          "Cục Hàng hải và Đường thủy Việt Nam",
+          "Ủy ban nhân dân cấp xã",
+          "Sở Xây dựng"
+        ],
+        "departmentPromulgate": "Bộ Xây dựng",
+        "departmentPromulgateId": "019d2be3-6a81-771b-b66d-4ef4369c303d",
+        "formalityTargetType": [
+          "Công dân Việt Nam",
+          "Doanh nghiệp",
+          "Tổ chức (không bao gồm doanh nghiệp, HTX)",
+          "Doanh nghiệp Việt Nam",
+          "Doanh nghiệp có vốn đầu tư nước ngoài",
+          "Hợp tác xã",
+          "Cán bộ, công chức, viên chức"
+        ],
+        "state": "UPDATED",
+        "type": "STANDARD"
+      }
+    ],
+    "note": "Tên trùng hoặc gần giống không tự chứng minh thay thế mã/thẩm quyền; cần đối chiếu quyết định công bố."
+  },
+  {
+    "id": "hn87-345",
+    "old_code": "1.003658",
+    "name": "Công bố lại hoạt động bến thủy nội địa",
+    "query": "Công bố lại hoạt động bến thủy nội địa",
+    "exact_title_candidates": [],
+    "search_candidates": [],
+    "note": "Tên trùng hoặc gần giống không tự chứng minh thay thế mã/thẩm quyền; cần đối chiếu quyết định công bố."
+  },
+  {
+    "id": "hn87-348",
+    "old_code": "1.009454",
+    "name": "Công bố hoạt động bến thủy nội địa",
+    "query": "Công bố hoạt động bến thủy nội địa",
+    "exact_title_candidates": [],
+    "search_candidates": [],
+    "note": "Tên trùng hoặc gần giống không tự chứng minh thay thế mã/thẩm quyền; cần đối chiếu quyết định công bố."
+  },
+  {
+    "id": "hn87-349",
+    "old_code": "1.009455",
+    "name": "Công bố hoạt động bến khách ngang sông, bến thủy nội địa phục vụ thi công công trình chính",
+    "query": "Công bố hoạt động bến khách ngang sông, bến thủy nội địa",
+    "exact_title_candidates": [],
+    "search_candidates": [],
+    "note": "Tên trùng hoặc gần giống không tự chứng minh thay thế mã/thẩm quyền; cần đối chiếu quyết định công bố."
+  },
+  {
+    "id": "hn87-357",
+    "old_code": "1.013234",
+    "name": "Thẩm định thiết kế xây dựng triển khai sau thiết kế cơ sở/ thiết kế xây dựng triển khai sau thiết kế cơ sở điều chỉnh",
+    "query": "Thẩm định thiết kế xây dựng triển khai sau thiết kế cơ",
+    "exact_title_candidates": [],
+    "search_candidates": [],
+    "note": "Tên trùng hoặc gần giống không tự chứng minh thay thế mã/thẩm quyền; cần đối chiếu quyết định công bố."
+  },
+  {
+    "id": "hn87-379",
+    "old_code": "1.012599",
+    "name": "Thủ tục đề nghị tổ chức đại hội của tổ chức tôn giáo, tổ chức tôn giáo trực thuộc, tổ chức được cấp chứng nhận đăng ký hoạt động tôn giáo có địa bàn hoạt động ở một xã",
+    "query": "đề nghị tổ chức đại hội của tổ chức tôn giáo, tổ",
+    "exact_title_candidates": [
+      {
+        "id": "019d2bf8-621f-712b-8aff-761c53252df0",
+        "name": "THỦ TỤC ĐỀ NGHỊ TỔ CHỨC ĐẠI HỘI CỦA TỔ CHỨC TÔN GIÁO, TỔ CHỨC TÔN GIÁO TRỰC THUỘC, TỔ CHỨC ĐƯỢC CẤP CHỨNG NHẬN ĐĂNG KÝ HOẠT ĐỘNG TÔN GIÁO CÓ ĐỊA BÀN HOẠT ĐỘNG Ở MỘT XÃ",
+        "code": "1.013796",
+        "codeNotation": "1.013796",
+        "categories": [
+          "Tín ngưỡng, tôn giáo"
+        ],
+        "categoryIds": [
+          "019d2bbb-69ee-7079-a6b1-b7b3a3ae2ef2"
+        ],
+        "departments": [
+          "Ủy ban nhân dân cấp xã"
+        ],
+        "departmentPromulgate": "Bộ Dân tộc và Tôn giáo",
+        "departmentPromulgateId": "019d2be3-6a72-700f-a652-e0e44a89bb55",
+        "formalityTargetType": [
+          "Tổ chức (không bao gồm doanh nghiệp, HTX)"
+        ],
+        "state": "ACTIVE",
+        "type": "STANDARD"
+      }
+    ],
+    "search_candidates": [
+      {
+        "id": "019d2bf8-621f-712b-8aff-761c53252df0",
+        "name": "THỦ TỤC ĐỀ NGHỊ TỔ CHỨC ĐẠI HỘI CỦA TỔ CHỨC TÔN GIÁO, TỔ CHỨC TÔN GIÁO TRỰC THUỘC, TỔ CHỨC ĐƯỢC CẤP CHỨNG NHẬN ĐĂNG KÝ HOẠT ĐỘNG TÔN GIÁO CÓ ĐỊA BÀN HOẠT ĐỘNG Ở MỘT XÃ",
+        "code": "1.013796",
+        "codeNotation": "1.013796",
+        "categories": [
+          "Tín ngưỡng, tôn giáo"
+        ],
+        "categoryIds": [
+          "019d2bbb-69ee-7079-a6b1-b7b3a3ae2ef2"
+        ],
+        "departments": [
+          "Ủy ban nhân dân cấp xã"
+        ],
+        "departmentPromulgate": "Bộ Dân tộc và Tôn giáo",
+        "departmentPromulgateId": "019d2be3-6a72-700f-a652-e0e44a89bb55",
+        "formalityTargetType": [
+          "Tổ chức (không bao gồm doanh nghiệp, HTX)"
+        ],
+        "state": "ACTIVE",
+        "type": "STANDARD"
+      },
+      {
+        "id": "019d2bf8-5a0c-768d-82fb-1320736f1b61",
+        "name": "THỦ TỤC ĐỀ NGHỊ TỔ CHỨC ĐẠI HỘI CỦA TỔ CHỨC TÔN GIÁO, TỔ CHỨC TÔN GIÁO TRỰC THUỘC, TỔ CHỨC ĐƯỢC CẤP CHỨNG NHẬN ĐĂNG KÝ HOẠT ĐỘNG TÔN GIÁO CÓ ĐỊA BÀN HOẠT ĐỘNG Ở NHIỀU XÃ THUỘC MỘT TỈNH (CẤP TỈNH)",
+        "code": "1.012607",
+        "codeNotation": "1.012607",
+        "categories": [
+          "Tín ngưỡng, tôn giáo"
+        ],
+        "categoryIds": [
+          "019d2bbb-69ee-7079-a6b1-b7b3a3ae2ef2"
+        ],
+        "departments": [
+          "",
+          "Sở Nội vụ Thành phố Hà Nội"
+        ],
+        "departmentPromulgate": "Bộ Dân tộc và Tôn giáo",
+        "departmentPromulgateId": "019d2be3-6a72-700f-a652-e0e44a89bb55",
+        "formalityTargetType": [
+          "Công dân Việt Nam",
+          "Tổ chức (không bao gồm doanh nghiệp, HTX)"
+        ],
+        "state": "UPDATED",
+        "type": "STANDARD"
+      }
+    ],
+    "note": "Tên trùng hoặc gần giống không tự chứng minh thay thế mã/thẩm quyền; cần đối chiếu quyết định công bố."
+  },
+  {
+    "id": "hn87-380",
+    "old_code": "1.012598",
+    "name": "Thủ tục đề nghị tổ chức cuộc lễ ngoài cơ sở tôn giáo, địa điểm hợp pháp đã đăng ký có quy mô tổ chức ở một xã",
+    "query": "đề nghị tổ chức cuộc lễ ngoài cơ sở tôn giáo, địa",
+    "exact_title_candidates": [
+      {
+        "id": "019d2bf8-6244-7287-9a22-2ea431452b97",
+        "name": "THỦ TỤC ĐỀ NGHỊ TỔ CHỨC CUỘC LỄ NGOÀI CƠ SỞ TÔN GIÁO, ĐỊA ĐIỂM HỢP PHÁP ĐÃ ĐĂNG KÝ CÓ QUY MÔ TỔ CHỨC Ở MỘT XÃ",
+        "code": "1.013797",
+        "codeNotation": "1.013797",
+        "categories": [
+          "Tín ngưỡng, tôn giáo"
+        ],
+        "categoryIds": [
+          "019d2bbb-69ee-7079-a6b1-b7b3a3ae2ef2"
+        ],
+        "departments": [
+          "Ủy ban nhân dân cấp xã"
+        ],
+        "departmentPromulgate": "Bộ Dân tộc và Tôn giáo",
+        "departmentPromulgateId": "019d2be3-6a72-700f-a652-e0e44a89bb55",
+        "formalityTargetType": [
+          "Tổ chức (không bao gồm doanh nghiệp, HTX)"
+        ],
+        "state": "ACTIVE",
+        "type": "STANDARD"
+      }
+    ],
+    "search_candidates": [
+      {
+        "id": "019d2bf8-6244-7287-9a22-2ea431452b97",
+        "name": "THỦ TỤC ĐỀ NGHỊ TỔ CHỨC CUỘC LỄ NGOÀI CƠ SỞ TÔN GIÁO, ĐỊA ĐIỂM HỢP PHÁP ĐÃ ĐĂNG KÝ CÓ QUY MÔ TỔ CHỨC Ở MỘT XÃ",
+        "code": "1.013797",
+        "codeNotation": "1.013797",
+        "categories": [
+          "Tín ngưỡng, tôn giáo"
+        ],
+        "categoryIds": [
+          "019d2bbb-69ee-7079-a6b1-b7b3a3ae2ef2"
+        ],
+        "departments": [
+          "Ủy ban nhân dân cấp xã"
+        ],
+        "departmentPromulgate": "Bộ Dân tộc và Tôn giáo",
+        "departmentPromulgateId": "019d2be3-6a72-700f-a652-e0e44a89bb55",
+        "formalityTargetType": [
+          "Tổ chức (không bao gồm doanh nghiệp, HTX)"
+        ],
+        "state": "ACTIVE",
+        "type": "STANDARD"
+      },
+      {
+        "id": "019d2bf8-5a0f-70a9-b580-7cc204633442",
+        "name": "THỦ TỤC ĐỀ NGHỊ TỔ CHỨC CUỘC LỄ NGOÀI CƠ SỞ TÔN GIÁO, ĐỊA ĐIỂM HỢP PHÁP ĐÃ ĐĂNG KÝ CÓ QUY MÔ TỔ CHỨC Ở NHIỀU XÃ THUỘC MỘT TỈNH HOẶC Ở NHIỀU TỈNH (CẤP TỈNH)",
+        "code": "1.012606",
+        "codeNotation": "1.012606",
+        "categories": [
+          "Tín ngưỡng, tôn giáo"
+        ],
+        "categoryIds": [
+          "019d2bbb-69ee-7079-a6b1-b7b3a3ae2ef2"
+        ],
+        "departments": [
+          "Sở Nội vụ Thành phố Hà Nội",
+          ""
+        ],
+        "departmentPromulgate": "Bộ Dân tộc và Tôn giáo",
+        "departmentPromulgateId": "019d2be3-6a72-700f-a652-e0e44a89bb55",
+        "formalityTargetType": [
+          "Công dân Việt Nam",
+          "Tổ chức (không bao gồm doanh nghiệp, HTX)"
+        ],
+        "state": "UPDATED",
+        "type": "STANDARD"
+      }
+    ],
+    "note": "Tên trùng hoặc gần giống không tự chứng minh thay thế mã/thẩm quyền; cần đối chiếu quyết định công bố."
+  },
+  {
+    "id": "hn87-381",
+    "old_code": "1.012596",
+    "name": "Thủ tục đề nghị giảng đạo ngoài địa bàn phụ trách, cơ sở tôn giáo, địa điểm hợp pháp đã đăng ký có quy mô tổ chức ở một xã",
+    "query": "đề nghị giảng đạo ngoài địa bàn phụ trách, cơ sở tôn",
+    "exact_title_candidates": [],
+    "search_candidates": [
+      {
+        "id": "019d2bf8-622d-76c9-8fd7-a6346328fdad",
+        "name": "THỦ TỤC ĐỀ NGHỊ GIẢNG ĐẠO NGOÀI ĐỊA BÀN PHỤ TRÁCH, CƠ SỞ TÔN GIÁO, ĐỊA ĐIỂM HỢP PHÁP ĐÃ ĐĂNG KÝ CÓ QUY MÔ TỔ CHỨC TRONG MỘT XÃ",
+        "code": "1.013798",
+        "codeNotation": "1.013798",
+        "categories": [
+          "Tín ngưỡng, tôn giáo"
+        ],
+        "categoryIds": [
+          "019d2bbb-69ee-7079-a6b1-b7b3a3ae2ef2"
+        ],
+        "departments": [
+          "Ủy ban nhân dân cấp xã"
+        ],
+        "departmentPromulgate": "Bộ Dân tộc và Tôn giáo",
+        "departmentPromulgateId": "019d2be3-6a72-700f-a652-e0e44a89bb55",
+        "formalityTargetType": [
+          "Tổ chức (không bao gồm doanh nghiệp, HTX)"
+        ],
+        "state": "ACTIVE",
+        "type": "STANDARD"
+      },
+      {
+        "id": "019d2bf8-5a12-717d-a868-c58dc882fff0",
+        "name": "THỦ TỤC ĐỀ NGHỊ GIẢNG ĐẠO NGOÀI ĐỊA BÀN PHỤ TRÁCH, CƠ SỞ TÔN GIÁO, ĐỊA ĐIỂM HỢP PHÁP ĐÃ ĐĂNG KÝ CÓ QUY MÔ TỔ CHỨC Ở NHIỀU XÃ THUỘC MỘT TỈNH HOẶC Ở NHIỀU TỈNH (CẤP TỈNH)",
+        "code": "1.012605",
+        "codeNotation": "1.012605",
+        "categories": [
+          "Tín ngưỡng, tôn giáo"
+        ],
+        "categoryIds": [
+          "019d2bbb-69ee-7079-a6b1-b7b3a3ae2ef2"
+        ],
+        "departments": [
+          "",
+          ""
+        ],
+        "departmentPromulgate": "Bộ Dân tộc và Tôn giáo",
+        "departmentPromulgateId": "019d2be3-6a72-700f-a652-e0e44a89bb55",
+        "formalityTargetType": [
+          "Công dân Việt Nam",
+          "Tổ chức (không bao gồm doanh nghiệp, HTX)"
+        ],
+        "state": "UPDATED",
+        "type": "STANDARD"
+      }
+    ],
+    "note": "Tên trùng hoặc gần giống không tự chứng minh thay thế mã/thẩm quyền; cần đối chiếu quyết định công bố."
+  },
+  {
+    "id": "hn87-388",
+    "old_code": "2.002501",
+    "name": "Thủ tục xử lý đơn tại cấp xã",
+    "query": "xử lý đơn tại cấp xã",
+    "exact_title_candidates": [],
+    "search_candidates": [],
+    "note": "Tên trùng hoặc gần giống không tự chứng minh thay thế mã/thẩm quyền; cần đối chiếu quyết định công bố."
+  },
+  {
+    "id": "hn87-389",
+    "old_code": "1.010945",
+    "name": "Thủ tục tiếp công dân tại cấp xã",
+    "query": "tiếp công dân tại cấp xã",
+    "exact_title_candidates": [],
+    "search_candidates": [],
+    "note": "Tên trùng hoặc gần giống không tự chứng minh thay thế mã/thẩm quyền; cần đối chiếu quyết định công bố."
+  },
+  {
+    "id": "hn87-390",
+    "old_code": "2.002396",
+    "name": "Thủ tục giải quyết tố cáo tại cấp xã",
+    "query": "giải quyết tố cáo tại cấp xã",
+    "exact_title_candidates": [],
+    "search_candidates": [],
+    "note": "Tên trùng hoặc gần giống không tự chứng minh thay thế mã/thẩm quyền; cần đối chiếu quyết định công bố."
+  },
+  {
+    "id": "hn87-391",
+    "old_code": "2.002409",
+    "name": "Thủ tục giải quyết khiếu nại lần đầu tại cấp xã",
+    "query": "giải quyết khiếu nại lần đầu tại cấp xã",
+    "exact_title_candidates": [],
+    "search_candidates": [],
+    "note": "Tên trùng hoặc gần giống không tự chứng minh thay thế mã/thẩm quyền; cần đối chiếu quyết định công bố."
+  },
+  {
+    "id": "hn87-399",
+    "old_code": "2.002640",
+    "name": "Hiệu đính, cập nhật, bổ sung thông tin đăng ký tổ hợp tác",
+    "query": "Hiệu đính, cập nhật, bổ sung thông tin đăng ký tổ hợp",
+    "exact_title_candidates": [],
+    "search_candidates": [
+      {
+        "id": "019d2bfc-f199-75ef-bfcc-b0508a0c8b9b",
+        "name": "Hiệu đính, cập nhật, bổ sung thông tin đăng ký tổ hợp tác, hợp tác xã, liên hiệp hợp tác xã, chi nhánh, văn phòng đại diện, địa điểm kinh doanh của hợp tác xã, liên hiệp hợp tác xã",
+        "code": "2.002648",
+        "codeNotation": "2.002648",
+        "categories": [
+          "Thành lập và hoạt động của tổ hợp tác, hợp tác xã, liên hiệp hợp tác xã"
+        ],
+        "categoryIds": [
+          "019d2bbb-69ee-7079-a6b2-483ea0e12621"
+        ],
+        "departments": [
+          "Ủy ban nhân dân cấp xã"
+        ],
+        "departmentPromulgate": "Bộ Tài chính",
+        "departmentPromulgateId": "019d2be3-6a72-700f-a652-c9b1df8256e9",
+        "formalityTargetType": [
+          "Công dân Việt Nam",
+          "Hợp tác xã"
+        ],
+        "state": "UPDATED",
+        "type": "STANDARD"
+      }
+    ],
+    "note": "Tên trùng hoặc gần giống không tự chứng minh thay thế mã/thẩm quyền; cần đối chiếu quyết định công bố."
+  }
+]

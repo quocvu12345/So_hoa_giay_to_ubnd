@@ -1,0 +1,92 @@
+{
+  "ordinal": "67",
+  "managing_agency": "Sở Y tế",
+  "procedure_code": "2.001944",
+  "name": "Thông báo nhận chăm sóc thay thế cho trẻ em đối với cá nhân, người đại diện gia đình nhận chăm sóc thay thế là người thân thích của trẻ em",
+  "domain": "Trẻ em",
+  "ministry_decision": "2082/QĐ-BYT ngày 24/06/2025",
+  "hanoi_decision": "954/QĐ-TTPVHCC ngày 27/06/2025",
+  "workflow_decision": "1268/QĐ-TTPVHCC ngày 09/09/2025",
+  "fees": "Không quy định",
+  "execution_level": "Cấp Xã",
+  "competent_authority": "UBND cấp xã",
+  "delegation_decision": "",
+  "delegation_expiry": "",
+  "receiving_location": "Điểm hỗ trợ DVC số",
+  "source_page": 3,
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "inventory_date": "2026-04-27",
+  "checked_at": "2026-11-12T22:23:38.923769+07:00",
+  "details": [
+    {
+      "id": "019d2bff-5457-7246-b12e-d42023faa8a7",
+      "code": "2.001944",
+      "name": "Thông báo nhận chăm sóc thay thế cho trẻ em đối với cá nhân, người đại diện gia đình nhận chăm sóc thay thế là người thân thích của trẻ em",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1778035886666,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bff-5457-7246-b12e-d42023faa8a7",
+      "raw_path": "evidence/dvc/details/019d2bff-5457-7246-b12e-d42023faa8a7.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Đơn đề nghị  chấm  dứt việc chăm sóc thay  thế.",
+          "component_code": "000.00.00.G18-KQ005296",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019e1fa7-762b-723e-ac1f-a9c2ed75158e",
+              "fileName": "Mus11.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019e1fa7-762b-723e-ac1f-a9c2ed75158e/Mus11.docx"
+            },
+            {
+              "id": "019e1fa7-8452-72ed-baed-2c6f5473d1eb",
+              "fileName": "Mus12.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019e1fa7-8452-72ed-baed-2c6f5473d1eb/Mus12.docx"
+            },
+            {
+              "id": "019e1fa7-9f72-76cf-ad41-a0af827d028d",
+              "fileName": "BBgiaonhnchmscthayth.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019e1fa7-9f72-76cf-ad41-a0af827d028d/BBgiaonhnchmscthayth.docx"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c7c-74ea-bcd1-8ccccccc81d2",
+          "name": "Quyết định giao, nhận trẻ em cho cá nhân, gia đình nhận chăm sóc thay thế của Chủ tịch Ủy ban nhân dân cấp xã (BYT)",
+          "code": "KQ.G18.000335"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7f-719e-b46d-d6ce43fbc8e0",
+          "name": "Nghị định số 42/2025/NĐ-CP của Chính phủ: Quy định chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của Bộ Y tế",
+          "code": "42/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7f-719e-b46e-fdfc3b2dd3aa",
+          "name": "Nghị định 56/2017/NĐ-CP - Quy định chi tiết một số điều của Luật Trẻ em",
+          "code": "56/2017/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b671-75490620578d",
+          "name": "Luật Trẻ em",
+          "code": "102/2016/QH13"
+        }
+      ]
+    }
+  ],
+  "lookup_status": "retrieved",
+  "currency_status": "snapshot_requires_later_amendment_check",
+  "errors": []
+}

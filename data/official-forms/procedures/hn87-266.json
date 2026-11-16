@@ -1,0 +1,82 @@
+{
+  "ordinal": "266",
+  "managing_agency": "Sở Giáo dục Đào tạo",
+  "procedure_code": "1.014335",
+  "name": "Đề nghị miễn, giảm học phí trong cơ sở giáo dục nghề nghiệp, cơ sở giáo dục đại học tư thục và cơ sở giáo dục nghề nghiệp, cơ sở giáo dục đại học thuộc tổ chức kinh tế, doanh nghiệp nhà nước",
+  "domain": "Giáo dục và đào tạo thuộc hệ thống giáo dục quốc dân",
+  "ministry_decision": "2624/QĐ-BGDĐT ngày 17/09/2025",
+  "hanoi_decision": "1403/QĐ-TTPVHCC ngày 07/10/2025",
+  "workflow_decision": "501/QĐ-TTPVHCC ngày 15/4/2025",
+  "fees": "Không quy định",
+  "execution_level": "Cấp xã",
+  "competent_authority": "UBND cấp xã",
+  "delegation_decision": "",
+  "delegation_expiry": "",
+  "receiving_location": "Điểm hỗ trợ DVC số",
+  "id": "hn87-266",
+  "source_page": 10,
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "inventory_date": "2026-04-27",
+  "checked_at": "2026-11-12T22:24:40.758909+07:00",
+  "details": [
+    {
+      "id": "019d2bf8-c7e3-746e-8437-305980ee5536",
+      "code": "1.014335",
+      "name": "Đề nghị miễn, giảm học phí trong cơ sở giáo dục nghề nghiệp, cơ sở giáo dục đại học tư thục và cơ sở giáo dục nghề nghiệp, cơ sở giáo dục đại học thuộc tổ chức kinh tế, doanh nghiệp nhà nước",
+      "state": "ACTIVE",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1776130262874,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf8-c7e3-746e-8437-305980ee5536",
+      "raw_path": "evidence/dvc/details/019d2bf8-c7e3-746e-8437-305980ee5536.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Bản sao chứng thực hoặc bản sao kèm bản chính để đối chiếu hoặc bản sao từ sổ gốc giấy tờ chứng minh thuộc đối tượng miễn, giảm học phí trong các trường hợp sau:  - Giấy xác nhận của cơ quan quản lý đối với người có công áp dụng đối với đối tượng quy định tại khoản 2 Điều 15 Nghị định số 238/2025/NĐ-CP. - Giấy xác nhận khuyết tật áp dụng đối với đối tượng quy định tại khoản 3 Điều 15 Nghị định số 238/2025/NĐ-CP. - Quyết định về việc trợ cấp xã hội hoặc Giấy xác nhận mồ côi cả cha lẫn mẹ do Ủy ban nhân dân xã, phường, đặc khu trực thuộc cấp tỉnh áp dụng đối với đối tượng quy định tại khoản 3, khoản 4 Điều 15 Nghị định số 238/2025/NĐ-CP. - Giấy xác nhận hộ nghèo hoặc hộ cận nghèo do Ủy ban nhân dân xã, phường, đặc khu trực thuộc cấp tỉnh cấp áp dụng đối với đối tượng quy định tại khoản 7 Điều 15 Nghị định số 238/2025/NĐ-CP. - Bằng tốt nghiệp trung học cơ sở hoặc giấy xác nhận tốt nghiệp tạm thời hoặc xác nhận học bạ việc hoàn thành chương trình trung học cơ sở của hiệu trưởng áp dụng đối với đối tượng quy định tại khoản 12 Điều 15 Nghị định số 238/2025/NĐ-CP. - Quyết định hưởng trợ cấp hàng tháng của cha hoặc mẹ bị tai nạn lao động hoặc mắc bệnh nghề nghiệp do cơ quan bảo hiểm xã hội cấp áp dụng đối với đối tượng quy định tại khoản 2 Điều 16 Nghị định số 238/2025/NĐ-CP.",
+          "component_code": "TP-G03.002276",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Đơn đề nghị chi trả tiền miễn giảm học phí theo mẫu tại Phụ lục IV Nghị định số 238/2025/NĐ-CP",
+          "component_code": "TP-G03.002283",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019d71dd-a419-74ae-b846-612bc45aeb59",
+              "fileName": "MUNNGHCHITRATIENMGHP (1).docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d71dd-a419-74ae-b846-612bc45aeb59/MUNNGHCHITRATIENMGHP (1).docx"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c3b-735b-85a8-70fab0647b4e",
+          "name": "Quyết định phê duyệt danh sách được hưởng chế độ miễn, giảm học phí theo đúng đối tượng quy định",
+          "code": "KQ-G03.000427"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7e-72d1-afed-cec1100f5c1f",
+          "name": "Nghị định số 238/2025/NĐ-CP của Chính phủ quy định về chính sách học phí, miễn, giảm, hỗ trợ học phí, hỗ trợ chi phí học tập và giá dịch vụ trong lĩnh vực giáo dục, đào tạo",
+          "code": "238/2025/NĐ-CP"
+        }
+      ]
+    }
+  ],
+  "lookup_status": "retrieved",
+  "currency_status": "snapshot_requires_later_amendment_check",
+  "errors": []
+}

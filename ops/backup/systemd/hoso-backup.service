@@ -1,0 +1,15 @@
+# Sao lưu Hồ sơ số (OPS-03). Chạy bởi hoso-backup.timer; cũng chạy tay được: systemctl start hoso-backup
+[Unit]
+Description=Hồ sơ số · sao lưu cơ sở dữ liệu, kho tệp và cấu hình
+After=network-online.target postgresql.service
+
+[Service]
+Type=oneshot
+User=hoso-backup
+Group=hoso-backup
+Environment=HOSO_BACKUP_ENV=/etc/hoso/backup.env
+ExecStart=/opt/hoso/ops/backup/hoso-backup.sh
+# Mã thoát 1 (có loại sao lưu lỗi) hay 2 (báo API lỗi) làm đơn vị ở trạng thái failed để hệ thống giám sát thấy.
+TimeoutStartSec=4h
+Nice=10
+IOSchedulingClass=idle

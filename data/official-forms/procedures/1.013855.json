@@ -1,0 +1,134 @@
+{
+  "ordinal": "74",
+  "managing_agency": "Sở Y tế",
+  "procedure_code": "1.013855",
+  "name": "Cấp giấy chứng nhận cơ sở đủ điều kiện an toàn thực phẩm đối với cơ sở kinh doanh dịch vụ ăn uống, cơ sở sản xuất thực phẩm thuộc phạm vi quản lý của Bộ Y tế",
+  "domain": "An toàn thực phẩm",
+  "ministry_decision": "2495/QĐ-BYT ngày 04/8/2025",
+  "hanoi_decision": "954/QĐ-TTPVHCC ngày 27/06/2025",
+  "workflow_decision": "1483/QĐ-TTPVHCC ngày 24/10/2025",
+  "fees": "Không quy định",
+  "execution_level": "Cấp tỉnh, cấp xã",
+  "competent_authority": "Chi cục An toàn vệ sinh thực phẩm; UBND cấp xã",
+  "delegation_decision": "1555/QĐ-SYT; 53/2025/QĐ-UBND",
+  "delegation_expiry": "28/02/2027",
+  "receiving_location": "Chi nhánh TTPVHCC",
+  "source_page": 3,
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "inventory_date": "2026-04-27",
+  "checked_at": "2026-11-12T22:23:39.996133+07:00",
+  "details": [
+    {
+      "id": "019d2bff-2d33-76fe-bd90-4f37b18e4401",
+      "code": "1.013855",
+      "name": "Cấp giấy chứng nhận cơ sở đủ điều kiện an toàn thực phẩm đối với cơ sở kinh doanh dịch vụ ăn uống, cơ sở sản xuất thực phẩm thuộc phạm vi quản lý của Bộ Y tế",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1794295019507,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bff-2d33-76fe-bd90-4f37b18e4401",
+      "raw_path": "evidence/dvc/details/019d2bff-2d33-76fe-bd90-4f37b18e4401.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "a) Đơn đề nghị cấp Giấy chứng nhận (Mẫu số 1 Phụ lục I kèm theo Nghị định số 155/2018/NĐ-CP ngày 13/11/2018);",
+          "component_code": "000.00.00.G18-KQ0055044",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "01a15721-54cb-7715-9d9c-b0617ecd076a",
+              "fileName": "Mẫu số 01 PL 1 ND 155.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/01a15721-54cb-7715-9d9c-b0617ecd076a/Mẫu số 01 PL 1 ND 155.docx"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "b) Bản sao Giấy chứng nhận đăng ký kinh doanh hoặc Giấy chứng nhận đăng ký doanh nghiệp có ngành nghề phù hợp với loại thực phẩm của cơ sở sản xuất (có xác nhận của cơ sở);",
+          "component_code": "000.00.00.G18-KQ0055045",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 3,
+          "name": "c) Bản thuyết minh về cơ sở vật chất, trang thiết bị dụng cụ bảo đảm điều kiện vệ sinh an toàn thực phẩm.",
+          "component_code": "000.00.00.G18-KQ0055046",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 4,
+          "name": "d) Giấy xác nhận đủ sức khỏe của chủ cơ sở và người trực tiếp sản xuất, kinh doanh thực phẩm do cơ sở y tế tuyến huyện trở lên cấp.",
+          "component_code": "000.00.00.G18-KQ0055047",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 5,
+          "name": "e) Danh sách người sản xuất thực phẩm, kinh doanh dịch vụ ăn uống đã được tập huấn kiến thức an toàn thực phẩm có xác nhận của chủ cơ sở.",
+          "component_code": "000.00.00.G18-KQ0055048",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c4d-7725-9d9f-7e01ffa3b5e6",
+          "name": "Giấy chứng nhận cơ sở đủ điều kiện an toàn thực phẩm.",
+          "code": "KQ.G10.000099"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7d-7398-be4e-69cce97f8824",
+          "name": "Thông tư quy định mức thu, miễn một số khoản phí, lệ phí nhằm hỗ trợ cho doanh nghiệp, người dân",
+          "code": "64/2025/TT-BTC"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b670-fe6d5ec40a25",
+          "name": "Luật An toàn thực phẩm",
+          "code": "55/2010/QH12"
+        },
+        {
+          "id": "019d2bb3-5d7d-7398-be4e-7d21b11a2f3f",
+          "name": "quy định mức thu, chế độ thu, nộp, quản lý và sử dụng phí trong công tác an toàn thực phẩm",
+          "code": "67/2021/TT-BTC"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afeb-5aa2d036b45a",
+          "name": "NGHỊ ĐỊNH  QUY ĐỊNH VỀ PHÂN QUYỀN, PHÂN CẤP TRONG LĨNH VỰC Y TẾ",
+          "code": "148/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afeb-c70eba6aaa08",
+          "name": "NGHỊ ĐỊNH 155/2018/NĐ-CP SỬA ĐỔI QUY ĐỊNH LIÊN QUAN ĐẾN ĐIỀU KIỆN KINH DOANH THUỘC BỘ Y TẾ",
+          "code": "155/2018/NĐ-CP"
+        }
+      ]
+    }
+  ],
+  "lookup_status": "retrieved",
+  "currency_status": "snapshot_requires_later_amendment_check",
+  "errors": []
+}

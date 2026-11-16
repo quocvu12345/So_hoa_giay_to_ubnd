@@ -1,0 +1,80 @@
+{
+  "id": "dvc-019d7731-7af6-7726-8748-9aa7ca9ce304",
+  "procedure_code": "1.013575",
+  "name": "Thủ tục cấp Giấy phép cho người Việt Nam và người nước ngoài xuống tàu thuyền nước ngoài; người nước ngoài xuống tàu thuyền Việt Nam neo đậu tại cảng để thực hiện các hoạt động báo chí, nghiên cứu khoa học, tham quan; người điều khiển phương tiện Việt Nam, nước ngoài cập mạn tàu thuyền nước ngoài; thuyền viên nước ngoài xin nghỉ qua đêm trên bờ, xuống các tàu thuyền khác đang neo đậu tại cảng",
+  "domain": "Quản lý biên giới",
+  "managing_agency": "Bộ Quốc phòng",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.849908+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d7731-7af6-7726-8748-9aa7ca9ce304",
+      "code": "1.013575",
+      "name": "Thủ tục cấp Giấy phép cho người Việt Nam và người nước ngoài xuống tàu thuyền nước ngoài; người nước ngoài xuống tàu thuyền Việt Nam neo đậu tại cảng để thực hiện các hoạt động báo chí, nghiên cứu khoa học, tham quan; người điều khiển phương tiện Việt Nam, nước ngoài cập mạn tàu thuyền nước ngoài; thuyền viên nước ngoài xin nghỉ qua đêm trên bờ, xuống các tàu thuyền khác đang neo đậu tại cảng",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1777598674215,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d7731-7af6-7726-8748-9aa7ca9ce304",
+      "raw_path": "evidence/dvc/details/019d7731-7af6-7726-8748-9aa7ca9ce304.json",
+      "components": [
+        {
+          "section": "Thành phần hồ sơ phải nộp",
+          "position": 1,
+          "name": "* Đối với cấp Giấy phép cho người Việt Nam và người nước ngoài xuống tàu thuyền nước ngoài; người nước ngoài xuống tàu thuyền Việt Nam neo đậu tại cảng để thực hiện các hoạt động báo chí, nghiên cứu khoa học, tham quan; người điều khiển phương tiện Việt Nam, nước ngoài cập mạn tàu thuyền nước ngoài: - Giấy giới thiệu hoặc công văn của cơ quan, doanh nghiệp chủ quản, giấy mời hoặc đơn đề nghị của thuyền trưởng; - Trường hợp cơ quan doanh nghiệp đề nghị cấp Giấy phép cho từ 02 người trở lên: 01 danh sách trích ngang của người đề nghị cấp Giấy phép nội dung gồm: Họ tên; quốc tịch; nơi sinh; ngày, tháng, năm sinh; chức vụ; số của Thẻ Căn cước hoặc Căn cước công dân hoặc hộ chiếu hoặc giấy tờ có giá trị đi lại quốc tế.",
+          "component_code": "000.00.00.G11-KQ0867",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Thành phần hồ sơ phải xuất trình",
+          "position": 1,
+          "name": "Đối với người nước ngoài: Hộ chiếu hoặc giấy tờ có giá trị đi lại quốc tế",
+          "component_code": "000.00.00.G11-KQ003445",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Thành phần hồ sơ phải xuất trình",
+          "position": 2,
+          "name": "Đối với người Việt Nam: Căn cước hoặc Căn cước công dân: Hành khác không phải xuất trình Căn cước hoặc Căn cước công dân nếu đơn vị Biên phòng cửa khẩu cảng kết nối, sử dụng được cơ sở dữ liệu quốc gia về dân cư và cơ sở dữ liệu căn cước công dân (Biên phòng cửa khẩu cảng tự tra cứu, kiểm tra); trường hợp đơn vị Biên phòng cửa khẩu cảng chưa kết nối, sử dụng được cơ sở dữ liệu quốc gia về dân cư và cơ sở dữ liệu căn cước công dân, hành khách có thể xuất trình Căn cước hoặc Căn cước công dân trên VNeiD hoặc bản cứng hoặc hộ chiếu hoặc giấy tờ có giá trị thay hộ chiếu",
+          "component_code": "000.00.00.G11-KQ003446",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c6f-72b5-bd09-0d64a02152b8",
+          "name": "Giấy phép do Biên phòng cửa khẩu cảng cấp",
+          "code": "KQ.G11.000179"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d86-7760-a63f-a5b5e3fdfa27",
+          "name": "Thông tư 138/2016/TT-BTC",
+          "code": "138/2016/TT-BTC"
+        },
+        {
+          "id": "019d2bb3-5d7f-719e-b471-10f0667bd234",
+          "name": "Quy định về quản lý, bảo an ninh, trật tự tại cửa khẩu cảng",
+          "code": "77/2017/NĐ-CP"
+        }
+      ]
+    }
+  ]
+}

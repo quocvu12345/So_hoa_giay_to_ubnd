@@ -1,0 +1,1164 @@
+{
+  "ordinal": "32",
+  "managing_agency": "Sở Nội Vụ",
+  "procedure_code": "1.014198",
+  "name": "Gia hạn giấy xác nhận không thuộc diện cấp giấy phép lao động đối với người lao động nước ngoài làm việc tại Việt Nam",
+  "domain": "Việc làm",
+  "ministry_decision": "346/QĐ-BNV ngày 24/3/2026",
+  "hanoi_decision": "396/QĐ-TTPVHCC ngày 31/3/2026",
+  "workflow_decision": "435/QĐ -TTPVHCC ngày 06/04/2026",
+  "fees": "Không quy định",
+  "execution_level": "Cấp xã",
+  "competent_authority": "UBND cấp xã",
+  "delegation_decision": "114/QĐ-SNV ngày 15/01/2026",
+  "delegation_expiry": "31/12/2028",
+  "receiving_location": "Điểm hỗ trợ DVC số",
+  "id": "hn87-032",
+  "source_page": 2,
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "inventory_date": "2026-04-27",
+  "checked_at": "2026-11-12T22:24:34.515626+07:00",
+  "details": [
+    {
+      "id": "019d2bfb-2afb-717e-9c21-1ac815687763",
+      "code": "1.014198",
+      "name": "Gia hạn giấy xác nhận không thuộc diện cấp giấy phép lao động đối với người lao động nước ngoài làm việc tại Việt Nam",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1779699026987,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-2afb-717e-9c21-1ac815687763",
+      "raw_path": "evidence/dvc/details/019d2bfb-2afb-717e-9c21-1ac815687763.json",
+      "components": [
+        {
+          "section": "1.1. Đối với người lao động nước ngoài là Trưởng văn phòng đại diện, dự án hoặc chịu trách nhiệm chính về hoạt động của tổ chức quốc tế, tổ chức phi chính phủ nước ngoài tại Việt Nam (khoản 3 Điều 154 Bộ luật Lao động năm 2019)",
+          "position": 1,
+          "name": "(1) Văn bản của người sử dụng lao động đề nghị gia hạn giấy xác nhận không thuộc diện cấp giấy phép lao động theo Mẫu số 01 Phụ lục ban hành kèm theo Nghị định số 219/2025/NĐ-CP .",
+          "component_code": "G09-KQ003063",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019d765c-63af-762a-bfe0-5365585b72b6",
+              "fileName": "Mauso01.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d765c-63af-762a-bfe0-5365585b72b6/Mauso01.docx"
+            }
+          ]
+        },
+        {
+          "section": "1.1. Đối với người lao động nước ngoài là Trưởng văn phòng đại diện, dự án hoặc chịu trách nhiệm chính về hoạt động của tổ chức quốc tế, tổ chức phi chính phủ nước ngoài tại Việt Nam (khoản 3 Điều 154 Bộ luật Lao động năm 2019)",
+          "position": 2,
+          "name": "(2) Giấy khám sức khỏe do cơ sở khám bệnh, chữa bệnh có đủ điều kiện cấp, trừ trường hợp kết quả khám sức khỏe đã được kết nối, chia sẻ trên Hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh hoặc cơ sở dữ liệu quốc gia về y tế. Đối với giấy khám sức khỏe do cơ sở y tế có thẩm quyền của nước ngoài cấp được sử dụng trong trường hợp Việt Nam và quốc gia hoặc vùng lãnh thổ cấp giấy khám sức khỏe có điều ước hoặc thỏa thuận thừa nhận lẫn nhau và thời hạn sử dụng của giấy khám sức khỏe đó không quá 12 tháng kể từ ngày được cấp.",
+          "component_code": "G09-KQ003054",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "1.1. Đối với người lao động nước ngoài là Trưởng văn phòng đại diện, dự án hoặc chịu trách nhiệm chính về hoạt động của tổ chức quốc tế, tổ chức phi chính phủ nước ngoài tại Việt Nam (khoản 3 Điều 154 Bộ luật Lao động năm 2019)",
+          "position": 3,
+          "name": "(3) Bản sao giấy xác nhận không thuộc diện cấp giấy phép lao động còn thời hạn đã được cấp. Trường hợp khai thác được thông tin về giấy xác nhận không thuộc diện cấp giấy phép lao động đã được cấp trong cơ sở dữ liệu dùng chung hoặc không có sự thay đổi thông tin về giấy xác nhận không thuộc diện cấp giấy phép lao động, người sử dụng lao động không phải nộp thành phần hồ sơ này.",
+          "component_code": "G09-KQ003844",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "1.1. Đối với người lao động nước ngoài là Trưởng văn phòng đại diện, dự án hoặc chịu trách nhiệm chính về hoạt động của tổ chức quốc tế, tổ chức phi chính phủ nước ngoài tại Việt Nam (khoản 3 Điều 154 Bộ luật Lao động năm 2019)",
+          "position": 4,
+          "name": "(4) Bản sao trang nhân thân hộ chiếu còn thời hạn.  Trường hợp khai thác được thông tin về hộ chiếu còn thời hạn trong cơ sở dữ liệu dùng chung hoặc không có sự thay đổi thông tin về hộ chiếu, người sử dụng lao động không phải nộp thành phần hồ sơ này.",
+          "component_code": "G09-KQ003845",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "1.1. Đối với người lao động nước ngoài là Trưởng văn phòng đại diện, dự án hoặc chịu trách nhiệm chính về hoạt động của tổ chức quốc tế, tổ chức phi chính phủ nước ngoài tại Việt Nam (khoản 3 Điều 154 Bộ luật Lao động năm 2019)",
+          "position": 5,
+          "name": "(5) Giấy tờ chứng minh người lao động nước ngoài không thuộc diện cấp giấy phép lao động là văn bản của cơ quan có thẩm quyền cấp theo quy định của pháp luật.",
+          "component_code": "G09-KQ003335",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "1.2. Đối với người lao động nước ngoài có hộ chiếu công vụ vào làm việc cho cơ quan nhà nước, tổ chức chính trị, tổ chức chính trị - xã hội (khoản 9 Điều 7 Nghị định số 219/2025/NĐ-CP)",
+          "position": 1,
+          "name": "(1) Văn bản của người sử dụng lao động đề nghị gia hạn giấy xác nhận không thuộc diện cấp giấy phép lao động theo Mẫu số 01 Phụ lục ban hành kèm theo Nghị định số 219/2025/NĐ-CP .",
+          "component_code": "G09-KQ003063",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019d765c-63af-762a-bfe0-5365585b72b6",
+              "fileName": "Mauso01.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d765c-63af-762a-bfe0-5365585b72b6/Mauso01.docx"
+            }
+          ]
+        },
+        {
+          "section": "1.2. Đối với người lao động nước ngoài có hộ chiếu công vụ vào làm việc cho cơ quan nhà nước, tổ chức chính trị, tổ chức chính trị - xã hội (khoản 9 Điều 7 Nghị định số 219/2025/NĐ-CP)",
+          "position": 2,
+          "name": "(2) Giấy khám sức khỏe do cơ sở khám bệnh, chữa bệnh có đủ điều kiện cấp, trừ trường hợp kết quả khám sức khỏe đã được kết nối, chia sẻ trên Hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh hoặc cơ sở dữ liệu quốc gia về y tế. Đối với giấy khám sức khỏe do cơ sở y tế có thẩm quyền của nước ngoài cấp được sử dụng trong trường hợp Việt Nam và quốc gia hoặc vùng lãnh thổ cấp giấy khám sức khỏe có điều ước hoặc thỏa thuận thừa nhận lẫn nhau và thời hạn sử dụng của giấy khám sức khỏe đó không quá 12 tháng kể từ ngày được cấp.",
+          "component_code": "G09-KQ003054",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "1.2. Đối với người lao động nước ngoài có hộ chiếu công vụ vào làm việc cho cơ quan nhà nước, tổ chức chính trị, tổ chức chính trị - xã hội (khoản 9 Điều 7 Nghị định số 219/2025/NĐ-CP)",
+          "position": 3,
+          "name": "(3) Bản sao giấy xác nhận không thuộc diện cấp giấy phép lao động còn thời hạn đã được cấp. Trường hợp khai thác được thông tin về giấy xác nhận không thuộc diện cấp giấy phép lao động đã được cấp trong cơ sở dữ liệu dùng chung hoặc không có sự thay đổi thông tin về giấy xác nhận không thuộc diện cấp giấy phép lao động, người sử dụng lao động không phải nộp thành phần hồ sơ này.",
+          "component_code": "G09-KQ003844",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "1.2. Đối với người lao động nước ngoài có hộ chiếu công vụ vào làm việc cho cơ quan nhà nước, tổ chức chính trị, tổ chức chính trị - xã hội (khoản 9 Điều 7 Nghị định số 219/2025/NĐ-CP)",
+          "position": 4,
+          "name": "(4) Bản sao trang nhân thân hộ chiếu còn thời hạn.  Trường hợp khai thác được thông tin về hộ chiếu còn thời hạn trong cơ sở dữ liệu dùng chung hoặc không có sự thay đổi thông tin về hộ chiếu, người sử dụng lao động không phải nộp thành phần hồ sơ này.",
+          "component_code": "G09-KQ003845",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "1.2. Đối với người lao động nước ngoài có hộ chiếu công vụ vào làm việc cho cơ quan nhà nước, tổ chức chính trị, tổ chức chính trị - xã hội (khoản 9 Điều 7 Nghị định số 219/2025/NĐ-CP)",
+          "position": 5,
+          "name": "(5) Giấy tờ chứng minh người lao động nước ngoài không thuộc diện cấp giấy phép lao động là văn bản của cơ quan có thẩm quyền cấp theo quy định của pháp luật.",
+          "component_code": "G09-KQ003335",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "1.3. Đối với người lao động nước ngoài được Bộ Giáo dục và Đào tạo xác nhận vào Việt Nam để thực hiện giảng dạy, nghiên cứu, chuyển giao chương trình giáo dục quốc tế (điểm a khoản 14 Điều 7 Nghị định số 219/2025/NĐ-CP)",
+          "position": 1,
+          "name": "(1) Văn bản của người sử dụng lao động đề nghị gia hạn giấy xác nhận không thuộc diện cấp giấy phép lao động theo Mẫu số 01 Phụ lục ban hành kèm theo Nghị định số 219/2025/NĐ-CP .",
+          "component_code": "G09-KQ003063",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019d765c-63af-762a-bfe0-5365585b72b6",
+              "fileName": "Mauso01.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d765c-63af-762a-bfe0-5365585b72b6/Mauso01.docx"
+            }
+          ]
+        },
+        {
+          "section": "1.3. Đối với người lao động nước ngoài được Bộ Giáo dục và Đào tạo xác nhận vào Việt Nam để thực hiện giảng dạy, nghiên cứu, chuyển giao chương trình giáo dục quốc tế (điểm a khoản 14 Điều 7 Nghị định số 219/2025/NĐ-CP)",
+          "position": 2,
+          "name": "(2) Giấy khám sức khỏe do cơ sở khám bệnh, chữa bệnh có đủ điều kiện cấp, trừ trường hợp kết quả khám sức khỏe đã được kết nối, chia sẻ trên Hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh hoặc cơ sở dữ liệu quốc gia về y tế. Đối với giấy khám sức khỏe do cơ sở y tế có thẩm quyền của nước ngoài cấp được sử dụng trong trường hợp Việt Nam và quốc gia hoặc vùng lãnh thổ cấp giấy khám sức khỏe có điều ước hoặc thỏa thuận thừa nhận lẫn nhau và thời hạn sử dụng của giấy khám sức khỏe đó không quá 12 tháng kể từ ngày được cấp.",
+          "component_code": "G09-KQ003054",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "1.3. Đối với người lao động nước ngoài được Bộ Giáo dục và Đào tạo xác nhận vào Việt Nam để thực hiện giảng dạy, nghiên cứu, chuyển giao chương trình giáo dục quốc tế (điểm a khoản 14 Điều 7 Nghị định số 219/2025/NĐ-CP)",
+          "position": 3,
+          "name": "(3) Bản sao giấy xác nhận không thuộc diện cấp giấy phép lao động còn thời hạn đã được cấp. Trường hợp khai thác được thông tin về giấy xác nhận không thuộc diện cấp giấy phép lao động đã được cấp trong cơ sở dữ liệu dùng chung hoặc không có sự thay đổi thông tin về giấy xác nhận không thuộc diện cấp giấy phép lao động, người sử dụng lao động không phải nộp thành phần hồ sơ này.",
+          "component_code": "G09-KQ003844",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "1.3. Đối với người lao động nước ngoài được Bộ Giáo dục và Đào tạo xác nhận vào Việt Nam để thực hiện giảng dạy, nghiên cứu, chuyển giao chương trình giáo dục quốc tế (điểm a khoản 14 Điều 7 Nghị định số 219/2025/NĐ-CP)",
+          "position": 4,
+          "name": "(4) Bản sao trang nhân thân hộ chiếu còn thời hạn.  Trường hợp khai thác được thông tin về hộ chiếu còn thời hạn trong cơ sở dữ liệu dùng chung hoặc không có sự thay đổi thông tin về hộ chiếu, người sử dụng lao động không phải nộp thành phần hồ sơ này.",
+          "component_code": "G09-KQ003845",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "1.3. Đối với người lao động nước ngoài được Bộ Giáo dục và Đào tạo xác nhận vào Việt Nam để thực hiện giảng dạy, nghiên cứu, chuyển giao chương trình giáo dục quốc tế (điểm a khoản 14 Điều 7 Nghị định số 219/2025/NĐ-CP)",
+          "position": 5,
+          "name": "(5) Giấy tờ chứng minh người lao động nước ngoài không thuộc diện cấp giấy phép lao động là văn bản của cơ quan có thẩm quyền cấp theo quy định của pháp luật.",
+          "component_code": "G09-KQ003335",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "1.4. Đối với người lao động nước ngoài được Bộ Giáo dục và Đào tạo xác nhận vào Việt Nam để làm nhà quản lý, giám đốc điều hành, hiệu trưởng, phó hiệu trưởng cơ sở giáo dục do cơ quan đại diện ngoại giao nước ngoài hoặc tổ chức liên chính phủ đề nghị thành lập tại Việt Nam (điểm b khoản 14 Điều 7 Nghị định số 219/2025/NĐ-CP)",
+          "position": 1,
+          "name": "(1) Văn bản của người sử dụng lao động đề nghị gia hạn giấy xác nhận không thuộc diện cấp giấy phép lao động theo Mẫu số 01 Phụ lục ban hành kèm theo Nghị định số 219/2025/NĐ-CP .",
+          "component_code": "G09-KQ003063",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019d765c-63af-762a-bfe0-5365585b72b6",
+              "fileName": "Mauso01.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d765c-63af-762a-bfe0-5365585b72b6/Mauso01.docx"
+            }
+          ]
+        },
+        {
+          "section": "1.4. Đối với người lao động nước ngoài được Bộ Giáo dục và Đào tạo xác nhận vào Việt Nam để làm nhà quản lý, giám đốc điều hành, hiệu trưởng, phó hiệu trưởng cơ sở giáo dục do cơ quan đại diện ngoại giao nước ngoài hoặc tổ chức liên chính phủ đề nghị thành lập tại Việt Nam (điểm b khoản 14 Điều 7 Nghị định số 219/2025/NĐ-CP)",
+          "position": 2,
+          "name": "(2) Giấy khám sức khỏe do cơ sở khám bệnh, chữa bệnh có đủ điều kiện cấp, trừ trường hợp kết quả khám sức khỏe đã được kết nối, chia sẻ trên Hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh hoặc cơ sở dữ liệu quốc gia về y tế. Đối với giấy khám sức khỏe do cơ sở y tế có thẩm quyền của nước ngoài cấp được sử dụng trong trường hợp Việt Nam và quốc gia hoặc vùng lãnh thổ cấp giấy khám sức khỏe có điều ước hoặc thỏa thuận thừa nhận lẫn nhau và thời hạn sử dụng của giấy khám sức khỏe đó không quá 12 tháng kể từ ngày được cấp.",
+          "component_code": "G09-KQ003054",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "1.4. Đối với người lao động nước ngoài được Bộ Giáo dục và Đào tạo xác nhận vào Việt Nam để làm nhà quản lý, giám đốc điều hành, hiệu trưởng, phó hiệu trưởng cơ sở giáo dục do cơ quan đại diện ngoại giao nước ngoài hoặc tổ chức liên chính phủ đề nghị thành lập tại Việt Nam (điểm b khoản 14 Điều 7 Nghị định số 219/2025/NĐ-CP)",
+          "position": 3,
+          "name": "(3) Bản sao giấy xác nhận không thuộc diện cấp giấy phép lao động còn thời hạn đã được cấp. Trường hợp khai thác được thông tin về giấy xác nhận không thuộc diện cấp giấy phép lao động đã được cấp trong cơ sở dữ liệu dùng chung hoặc không có sự thay đổi thông tin về giấy xác nhận không thuộc diện cấp giấy phép lao động, người sử dụng lao động không phải nộp thành phần hồ sơ này.",
+          "component_code": "G09-KQ003844",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "1.4. Đối với người lao động nước ngoài được Bộ Giáo dục và Đào tạo xác nhận vào Việt Nam để làm nhà quản lý, giám đốc điều hành, hiệu trưởng, phó hiệu trưởng cơ sở giáo dục do cơ quan đại diện ngoại giao nước ngoài hoặc tổ chức liên chính phủ đề nghị thành lập tại Việt Nam (điểm b khoản 14 Điều 7 Nghị định số 219/2025/NĐ-CP)",
+          "position": 4,
+          "name": "(4) Bản sao trang nhân thân hộ chiếu còn thời hạn.  Trường hợp khai thác được thông tin về hộ chiếu còn thời hạn trong cơ sở dữ liệu dùng chung hoặc không có sự thay đổi thông tin về hộ chiếu, người sử dụng lao động không phải nộp thành phần hồ sơ này.",
+          "component_code": "G09-KQ003845",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "1.4. Đối với người lao động nước ngoài được Bộ Giáo dục và Đào tạo xác nhận vào Việt Nam để làm nhà quản lý, giám đốc điều hành, hiệu trưởng, phó hiệu trưởng cơ sở giáo dục do cơ quan đại diện ngoại giao nước ngoài hoặc tổ chức liên chính phủ đề nghị thành lập tại Việt Nam (điểm b khoản 14 Điều 7 Nghị định số 219/2025/NĐ-CP)",
+          "position": 5,
+          "name": "(5) Giấy tờ chứng minh người lao động nước ngoài không thuộc diện cấp giấy phép lao động là văn bản của cơ quan có thẩm quyền cấp theo quy định của pháp luật.",
+          "component_code": "G09-KQ003335",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "1.5. Đối với người lao động nước ngoài được các bộ, cơ quan ngang bộ hoặc Ủy ban nhân dân cấp tỉnh xác nhận vào Việt Nam làm việc trong các lĩnh vực: tài chính, khoa học, công nghệ, đổi mới sáng tạo, chuyển đổi số quốc gia, các lĩnh vực ưu tiên phát triển kinh tế - xã hội (khoản 15 Điều 7 Nghị định số 219/2025/NĐ-CP)",
+          "position": 1,
+          "name": "(1) Văn bản của người sử dụng lao động đề nghị gia hạn giấy xác nhận không thuộc diện cấp giấy phép lao động theo Mẫu số 01 Phụ lục ban hành kèm theo Nghị định số 219/2025/NĐ-CP .",
+          "component_code": "G09-KQ003063",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019d765c-63af-762a-bfe0-5365585b72b6",
+              "fileName": "Mauso01.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d765c-63af-762a-bfe0-5365585b72b6/Mauso01.docx"
+            }
+          ]
+        },
+        {
+          "section": "1.5. Đối với người lao động nước ngoài được các bộ, cơ quan ngang bộ hoặc Ủy ban nhân dân cấp tỉnh xác nhận vào Việt Nam làm việc trong các lĩnh vực: tài chính, khoa học, công nghệ, đổi mới sáng tạo, chuyển đổi số quốc gia, các lĩnh vực ưu tiên phát triển kinh tế - xã hội (khoản 15 Điều 7 Nghị định số 219/2025/NĐ-CP)",
+          "position": 2,
+          "name": "(2) Giấy khám sức khỏe do cơ sở khám bệnh, chữa bệnh có đủ điều kiện cấp, trừ trường hợp kết quả khám sức khỏe đã được kết nối, chia sẻ trên Hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh hoặc cơ sở dữ liệu quốc gia về y tế. Đối với giấy khám sức khỏe do cơ sở y tế có thẩm quyền của nước ngoài cấp được sử dụng trong trường hợp Việt Nam và quốc gia hoặc vùng lãnh thổ cấp giấy khám sức khỏe có điều ước hoặc thỏa thuận thừa nhận lẫn nhau và thời hạn sử dụng của giấy khám sức khỏe đó không quá 12 tháng kể từ ngày được cấp.",
+          "component_code": "G09-KQ003054",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "1.5. Đối với người lao động nước ngoài được các bộ, cơ quan ngang bộ hoặc Ủy ban nhân dân cấp tỉnh xác nhận vào Việt Nam làm việc trong các lĩnh vực: tài chính, khoa học, công nghệ, đổi mới sáng tạo, chuyển đổi số quốc gia, các lĩnh vực ưu tiên phát triển kinh tế - xã hội (khoản 15 Điều 7 Nghị định số 219/2025/NĐ-CP)",
+          "position": 3,
+          "name": "(3) Bản sao giấy xác nhận không thuộc diện cấp giấy phép lao động còn thời hạn đã được cấp. Trường hợp khai thác được thông tin về giấy xác nhận không thuộc diện cấp giấy phép lao động đã được cấp trong cơ sở dữ liệu dùng chung hoặc không có sự thay đổi thông tin về giấy xác nhận không thuộc diện cấp giấy phép lao động, người sử dụng lao động không phải nộp thành phần hồ sơ này.",
+          "component_code": "G09-KQ003844",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "1.5. Đối với người lao động nước ngoài được các bộ, cơ quan ngang bộ hoặc Ủy ban nhân dân cấp tỉnh xác nhận vào Việt Nam làm việc trong các lĩnh vực: tài chính, khoa học, công nghệ, đổi mới sáng tạo, chuyển đổi số quốc gia, các lĩnh vực ưu tiên phát triển kinh tế - xã hội (khoản 15 Điều 7 Nghị định số 219/2025/NĐ-CP)",
+          "position": 4,
+          "name": "(4) Bản sao trang nhân thân hộ chiếu còn thời hạn.  Trường hợp khai thác được thông tin về hộ chiếu còn thời hạn trong cơ sở dữ liệu dùng chung hoặc không có sự thay đổi thông tin về hộ chiếu, người sử dụng lao động không phải nộp thành phần hồ sơ này.",
+          "component_code": "G09-KQ003845",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "1.5. Đối với người lao động nước ngoài được các bộ, cơ quan ngang bộ hoặc Ủy ban nhân dân cấp tỉnh xác nhận vào Việt Nam làm việc trong các lĩnh vực: tài chính, khoa học, công nghệ, đổi mới sáng tạo, chuyển đổi số quốc gia, các lĩnh vực ưu tiên phát triển kinh tế - xã hội (khoản 15 Điều 7 Nghị định số 219/2025/NĐ-CP)",
+          "position": 5,
+          "name": "(5) Giấy tờ chứng minh người lao động nước ngoài không thuộc diện cấp giấy phép lao động là văn bản của cơ quan có thẩm quyền cấp theo quy định của pháp luật.",
+          "component_code": "G09-KQ003335",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "1.6. Đối với người lao động nước ngoài thuộc trường hợp theo quy định của điều ước quốc tế mà nước Cộng hòa xã hội chủ nghĩa Việt Nam là thành viên (khoản 7 Điều 154 Bộ luật Lao động năm 2019)",
+          "position": 1,
+          "name": "(1) Văn bản của người sử dụng lao động đề nghị gia hạn giấy xác nhận không thuộc diện cấp giấy phép lao động theo Mẫu số 01 Phụ lục ban hành kèm theo Nghị định số 219/2025/NĐ-CP .",
+          "component_code": "G09-KQ003063",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019d765c-63af-762a-bfe0-5365585b72b6",
+              "fileName": "Mauso01.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d765c-63af-762a-bfe0-5365585b72b6/Mauso01.docx"
+            }
+          ]
+        },
+        {
+          "section": "1.6. Đối với người lao động nước ngoài thuộc trường hợp theo quy định của điều ước quốc tế mà nước Cộng hòa xã hội chủ nghĩa Việt Nam là thành viên (khoản 7 Điều 154 Bộ luật Lao động năm 2019)",
+          "position": 2,
+          "name": "(2) Giấy khám sức khỏe do cơ sở khám bệnh, chữa bệnh có đủ điều kiện cấp, trừ trường hợp kết quả khám sức khỏe đã được kết nối, chia sẻ trên Hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh hoặc cơ sở dữ liệu quốc gia về y tế. Đối với giấy khám sức khỏe do cơ sở y tế có thẩm quyền của nước ngoài cấp được sử dụng trong trường hợp Việt Nam và quốc gia hoặc vùng lãnh thổ cấp giấy khám sức khỏe có điều ước hoặc thỏa thuận thừa nhận lẫn nhau và thời hạn sử dụng của giấy khám sức khỏe đó không quá 12 tháng kể từ ngày được cấp.",
+          "component_code": "G09-KQ003054",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "1.6. Đối với người lao động nước ngoài thuộc trường hợp theo quy định của điều ước quốc tế mà nước Cộng hòa xã hội chủ nghĩa Việt Nam là thành viên (khoản 7 Điều 154 Bộ luật Lao động năm 2019)",
+          "position": 3,
+          "name": "(3) Bản sao giấy xác nhận không thuộc diện cấp giấy phép lao động còn thời hạn đã được cấp. Trường hợp khai thác được thông tin về giấy xác nhận không thuộc diện cấp giấy phép lao động đã được cấp trong cơ sở dữ liệu dùng chung hoặc không có sự thay đổi thông tin về giấy xác nhận không thuộc diện cấp giấy phép lao động, người sử dụng lao động không phải nộp thành phần hồ sơ này.",
+          "component_code": "G09-KQ003844",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "1.6. Đối với người lao động nước ngoài thuộc trường hợp theo quy định của điều ước quốc tế mà nước Cộng hòa xã hội chủ nghĩa Việt Nam là thành viên (khoản 7 Điều 154 Bộ luật Lao động năm 2019)",
+          "position": 4,
+          "name": "(4) Bản sao trang nhân thân hộ chiếu còn thời hạn.  Trường hợp khai thác được thông tin về hộ chiếu còn thời hạn trong cơ sở dữ liệu dùng chung hoặc không có sự thay đổi thông tin về hộ chiếu, người sử dụng lao động không phải nộp thành phần hồ sơ này.",
+          "component_code": "G09-KQ003845",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "1.6. Đối với người lao động nước ngoài thuộc trường hợp theo quy định của điều ước quốc tế mà nước Cộng hòa xã hội chủ nghĩa Việt Nam là thành viên (khoản 7 Điều 154 Bộ luật Lao động năm 2019)",
+          "position": 5,
+          "name": "(5) Giấy tờ chứng minh người lao động nước ngoài không thuộc diện cấp giấy phép lao động là văn bản của người sử dụng lao động tại nước ngoài cử người lao động nước ngoài kèm thỏa thuận hoặc điều ước quốc tế mà nước Cộng hòa xã hội chủ nghĩa Việt Nam là thành viên.",
+          "component_code": "G09-KQ003449",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "1.7. Đối với người lao động nước ngoài vào Việt Nam để cung cấp dịch vụ tư vấn về chuyên môn và kỹ thuật hoặc thực hiện các nhiệm vụ khác phục vụ cho công tác nghiên cứu, xây dựng, thẩm định, theo dõi đánh giá, quản lý và thực hiện chương trình, dự án sử dụng nguồn hỗ trợ phát triển chính thức theo quy định hay thỏa thuận trong các điều ước quốc tế về nguồn hỗ trợ phát triển chính thức đã ký kết giữa cơ quan có thẩm quyền của Việt Nam và nước ngoài (khoản 4 Điều 7 Nghị định số 219/2025/NĐ-CP)",
+          "position": 1,
+          "name": "(1) Văn bản của người sử dụng lao động đề nghị gia hạn giấy xác nhận không thuộc diện cấp giấy phép lao động theo Mẫu số 01 Phụ lục ban hành kèm theo Nghị định số 219/2025/NĐ-CP .",
+          "component_code": "G09-KQ003063",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019d765c-63af-762a-bfe0-5365585b72b6",
+              "fileName": "Mauso01.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d765c-63af-762a-bfe0-5365585b72b6/Mauso01.docx"
+            }
+          ]
+        },
+        {
+          "section": "1.7. Đối với người lao động nước ngoài vào Việt Nam để cung cấp dịch vụ tư vấn về chuyên môn và kỹ thuật hoặc thực hiện các nhiệm vụ khác phục vụ cho công tác nghiên cứu, xây dựng, thẩm định, theo dõi đánh giá, quản lý và thực hiện chương trình, dự án sử dụng nguồn hỗ trợ phát triển chính thức theo quy định hay thỏa thuận trong các điều ước quốc tế về nguồn hỗ trợ phát triển chính thức đã ký kết giữa cơ quan có thẩm quyền của Việt Nam và nước ngoài (khoản 4 Điều 7 Nghị định số 219/2025/NĐ-CP)",
+          "position": 2,
+          "name": "(2) Giấy khám sức khỏe do cơ sở khám bệnh, chữa bệnh có đủ điều kiện cấp, trừ trường hợp kết quả khám sức khỏe đã được kết nối, chia sẻ trên Hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh hoặc cơ sở dữ liệu quốc gia về y tế. Đối với giấy khám sức khỏe do cơ sở y tế có thẩm quyền của nước ngoài cấp được sử dụng trong trường hợp Việt Nam và quốc gia hoặc vùng lãnh thổ cấp giấy khám sức khỏe có điều ước hoặc thỏa thuận thừa nhận lẫn nhau và thời hạn sử dụng của giấy khám sức khỏe đó không quá 12 tháng kể từ ngày được cấp.",
+          "component_code": "G09-KQ003054",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "1.7. Đối với người lao động nước ngoài vào Việt Nam để cung cấp dịch vụ tư vấn về chuyên môn và kỹ thuật hoặc thực hiện các nhiệm vụ khác phục vụ cho công tác nghiên cứu, xây dựng, thẩm định, theo dõi đánh giá, quản lý và thực hiện chương trình, dự án sử dụng nguồn hỗ trợ phát triển chính thức theo quy định hay thỏa thuận trong các điều ước quốc tế về nguồn hỗ trợ phát triển chính thức đã ký kết giữa cơ quan có thẩm quyền của Việt Nam và nước ngoài (khoản 4 Điều 7 Nghị định số 219/2025/NĐ-CP)",
+          "position": 3,
+          "name": "(3) Bản sao giấy xác nhận không thuộc diện cấp giấy phép lao động còn thời hạn đã được cấp. Trường hợp khai thác được thông tin về giấy xác nhận không thuộc diện cấp giấy phép lao động đã được cấp trong cơ sở dữ liệu dùng chung hoặc không có sự thay đổi thông tin về giấy xác nhận không thuộc diện cấp giấy phép lao động, người sử dụng lao động không phải nộp thành phần hồ sơ này.",
+          "component_code": "G09-KQ003844",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "1.7. Đối với người lao động nước ngoài vào Việt Nam để cung cấp dịch vụ tư vấn về chuyên môn và kỹ thuật hoặc thực hiện các nhiệm vụ khác phục vụ cho công tác nghiên cứu, xây dựng, thẩm định, theo dõi đánh giá, quản lý và thực hiện chương trình, dự án sử dụng nguồn hỗ trợ phát triển chính thức theo quy định hay thỏa thuận trong các điều ước quốc tế về nguồn hỗ trợ phát triển chính thức đã ký kết giữa cơ quan có thẩm quyền của Việt Nam và nước ngoài (khoản 4 Điều 7 Nghị định số 219/2025/NĐ-CP)",
+          "position": 4,
+          "name": "(4) Bản sao trang nhân thân hộ chiếu còn thời hạn.  Trường hợp khai thác được thông tin về hộ chiếu còn thời hạn trong cơ sở dữ liệu dùng chung hoặc không có sự thay đổi thông tin về hộ chiếu, người sử dụng lao động không phải nộp thành phần hồ sơ này.",
+          "component_code": "G09-KQ003845",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "1.7. Đối với người lao động nước ngoài vào Việt Nam để cung cấp dịch vụ tư vấn về chuyên môn và kỹ thuật hoặc thực hiện các nhiệm vụ khác phục vụ cho công tác nghiên cứu, xây dựng, thẩm định, theo dõi đánh giá, quản lý và thực hiện chương trình, dự án sử dụng nguồn hỗ trợ phát triển chính thức theo quy định hay thỏa thuận trong các điều ước quốc tế về nguồn hỗ trợ phát triển chính thức đã ký kết giữa cơ quan có thẩm quyền của Việt Nam và nước ngoài (khoản 4 Điều 7 Nghị định số 219/2025/NĐ-CP)",
+          "position": 5,
+          "name": "(5) Giấy tờ chứng minh người lao động nước ngoài không thuộc diện cấp giấy phép lao động là văn bản của người sử dụng lao động tại nước ngoài cử người lao động nước ngoài kèm thỏa thuận hoặc điều ước quốc tế mà nước Cộng hòa xã hội chủ nghĩa Việt Nam là thành viên.",
+          "component_code": "G09-KQ003449",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "1.8. Đối với người lao động nước ngoài được cơ quan, tổ chức có thẩm quyền của nước ngoài cử sang Việt Nam giảng dạy, làm nhà quản lý, giám đốc điều hành tại cơ sở giáo dục do cơ quan đại diện ngoại giao nước ngoài, tổ chức liên chính phủ đề nghị thành lập tại Việt Nam hoặc các cơ sở, tổ chức được thành lập theo các điều ước quốc tế mà Việt Nam đã ký kết, tham gia (khoản 6 Điều 7 Nghị định số 219/2025/NĐ-CP)",
+          "position": 1,
+          "name": "(1) Văn bản của người sử dụng lao động đề nghị gia hạn giấy xác nhận không thuộc diện cấp giấy phép lao động theo Mẫu số 01 Phụ lục ban hành kèm theo Nghị định số 219/2025/NĐ-CP .",
+          "component_code": "G09-KQ003063",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019d765c-63af-762a-bfe0-5365585b72b6",
+              "fileName": "Mauso01.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d765c-63af-762a-bfe0-5365585b72b6/Mauso01.docx"
+            }
+          ]
+        },
+        {
+          "section": "1.8. Đối với người lao động nước ngoài được cơ quan, tổ chức có thẩm quyền của nước ngoài cử sang Việt Nam giảng dạy, làm nhà quản lý, giám đốc điều hành tại cơ sở giáo dục do cơ quan đại diện ngoại giao nước ngoài, tổ chức liên chính phủ đề nghị thành lập tại Việt Nam hoặc các cơ sở, tổ chức được thành lập theo các điều ước quốc tế mà Việt Nam đã ký kết, tham gia (khoản 6 Điều 7 Nghị định số 219/2025/NĐ-CP)",
+          "position": 2,
+          "name": "(2) Giấy khám sức khỏe do cơ sở khám bệnh, chữa bệnh có đủ điều kiện cấp, trừ trường hợp kết quả khám sức khỏe đã được kết nối, chia sẻ trên Hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh hoặc cơ sở dữ liệu quốc gia về y tế. Đối với giấy khám sức khỏe do cơ sở y tế có thẩm quyền của nước ngoài cấp được sử dụng trong trường hợp Việt Nam và quốc gia hoặc vùng lãnh thổ cấp giấy khám sức khỏe có điều ước hoặc thỏa thuận thừa nhận lẫn nhau và thời hạn sử dụng của giấy khám sức khỏe đó không quá 12 tháng kể từ ngày được cấp.",
+          "component_code": "G09-KQ003054",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "1.8. Đối với người lao động nước ngoài được cơ quan, tổ chức có thẩm quyền của nước ngoài cử sang Việt Nam giảng dạy, làm nhà quản lý, giám đốc điều hành tại cơ sở giáo dục do cơ quan đại diện ngoại giao nước ngoài, tổ chức liên chính phủ đề nghị thành lập tại Việt Nam hoặc các cơ sở, tổ chức được thành lập theo các điều ước quốc tế mà Việt Nam đã ký kết, tham gia (khoản 6 Điều 7 Nghị định số 219/2025/NĐ-CP)",
+          "position": 3,
+          "name": "(3) Bản sao giấy xác nhận không thuộc diện cấp giấy phép lao động còn thời hạn đã được cấp. Trường hợp khai thác được thông tin về giấy xác nhận không thuộc diện cấp giấy phép lao động đã được cấp trong cơ sở dữ liệu dùng chung hoặc không có sự thay đổi thông tin về giấy xác nhận không thuộc diện cấp giấy phép lao động, người sử dụng lao động không phải nộp thành phần hồ sơ này.",
+          "component_code": "G09-KQ003844",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "1.8. Đối với người lao động nước ngoài được cơ quan, tổ chức có thẩm quyền của nước ngoài cử sang Việt Nam giảng dạy, làm nhà quản lý, giám đốc điều hành tại cơ sở giáo dục do cơ quan đại diện ngoại giao nước ngoài, tổ chức liên chính phủ đề nghị thành lập tại Việt Nam hoặc các cơ sở, tổ chức được thành lập theo các điều ước quốc tế mà Việt Nam đã ký kết, tham gia (khoản 6 Điều 7 Nghị định số 219/2025/NĐ-CP)",
+          "position": 4,
+          "name": "(4) Bản sao trang nhân thân hộ chiếu còn thời hạn.  Trường hợp khai thác được thông tin về hộ chiếu còn thời hạn trong cơ sở dữ liệu dùng chung hoặc không có sự thay đổi thông tin về hộ chiếu, người sử dụng lao động không phải nộp thành phần hồ sơ này.",
+          "component_code": "G09-KQ003845",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "1.8. Đối với người lao động nước ngoài được cơ quan, tổ chức có thẩm quyền của nước ngoài cử sang Việt Nam giảng dạy, làm nhà quản lý, giám đốc điều hành tại cơ sở giáo dục do cơ quan đại diện ngoại giao nước ngoài, tổ chức liên chính phủ đề nghị thành lập tại Việt Nam hoặc các cơ sở, tổ chức được thành lập theo các điều ước quốc tế mà Việt Nam đã ký kết, tham gia (khoản 6 Điều 7 Nghị định số 219/2025/NĐ-CP)",
+          "position": 5,
+          "name": "(5) Giấy tờ chứng minh người lao động nước ngoài không thuộc diện cấp giấy phép lao động là văn bản của người sử dụng lao động tại nước ngoài cử người lao động nước ngoài kèm thỏa thuận hoặc điều ước quốc tế mà nước Cộng hòa xã hội chủ nghĩa Việt Nam là thành viên.",
+          "component_code": "G09-KQ003449",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "1.9. Đối với người lao động nước ngoài là học sinh, sinh viên, học viên nước ngoài đang học tập tại các trường, cơ sở đào tạo ở Việt Nam hoặc nước ngoài có thỏa thuận thực tập hoặc thư mời làm việc cho người sử dụng lao động tại Việt Nam; học viên thực tập, tập sự trên tàu biển Việt Nam (khoản 7 Điều 7 Nghị định số 219/2025/NĐ-CP)",
+          "position": 1,
+          "name": "(1) Văn bản của người sử dụng lao động đề nghị gia hạn giấy xác nhận không thuộc diện cấp giấy phép lao động theo Mẫu số 01 Phụ lục ban hành kèm theo Nghị định số 219/2025/NĐ-CP .",
+          "component_code": "G09-KQ003063",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019d765c-63af-762a-bfe0-5365585b72b6",
+              "fileName": "Mauso01.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d765c-63af-762a-bfe0-5365585b72b6/Mauso01.docx"
+            }
+          ]
+        },
+        {
+          "section": "1.9. Đối với người lao động nước ngoài là học sinh, sinh viên, học viên nước ngoài đang học tập tại các trường, cơ sở đào tạo ở Việt Nam hoặc nước ngoài có thỏa thuận thực tập hoặc thư mời làm việc cho người sử dụng lao động tại Việt Nam; học viên thực tập, tập sự trên tàu biển Việt Nam (khoản 7 Điều 7 Nghị định số 219/2025/NĐ-CP)",
+          "position": 2,
+          "name": "(2) Giấy khám sức khỏe do cơ sở khám bệnh, chữa bệnh có đủ điều kiện cấp, trừ trường hợp kết quả khám sức khỏe đã được kết nối, chia sẻ trên Hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh hoặc cơ sở dữ liệu quốc gia về y tế. Đối với giấy khám sức khỏe do cơ sở y tế có thẩm quyền của nước ngoài cấp được sử dụng trong trường hợp Việt Nam và quốc gia hoặc vùng lãnh thổ cấp giấy khám sức khỏe có điều ước hoặc thỏa thuận thừa nhận lẫn nhau và thời hạn sử dụng của giấy khám sức khỏe đó không quá 12 tháng kể từ ngày được cấp.",
+          "component_code": "G09-KQ003054",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "1.9. Đối với người lao động nước ngoài là học sinh, sinh viên, học viên nước ngoài đang học tập tại các trường, cơ sở đào tạo ở Việt Nam hoặc nước ngoài có thỏa thuận thực tập hoặc thư mời làm việc cho người sử dụng lao động tại Việt Nam; học viên thực tập, tập sự trên tàu biển Việt Nam (khoản 7 Điều 7 Nghị định số 219/2025/NĐ-CP)",
+          "position": 3,
+          "name": "(3) Bản sao giấy xác nhận không thuộc diện cấp giấy phép lao động còn thời hạn đã được cấp. Trường hợp khai thác được thông tin về giấy xác nhận không thuộc diện cấp giấy phép lao động đã được cấp trong cơ sở dữ liệu dùng chung hoặc không có sự thay đổi thông tin về giấy xác nhận không thuộc diện cấp giấy phép lao động, người sử dụng lao động không phải nộp thành phần hồ sơ này.",
+          "component_code": "G09-KQ003844",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "1.9. Đối với người lao động nước ngoài là học sinh, sinh viên, học viên nước ngoài đang học tập tại các trường, cơ sở đào tạo ở Việt Nam hoặc nước ngoài có thỏa thuận thực tập hoặc thư mời làm việc cho người sử dụng lao động tại Việt Nam; học viên thực tập, tập sự trên tàu biển Việt Nam (khoản 7 Điều 7 Nghị định số 219/2025/NĐ-CP)",
+          "position": 4,
+          "name": "(4) Bản sao trang nhân thân hộ chiếu còn thời hạn.  Trường hợp khai thác được thông tin về hộ chiếu còn thời hạn trong cơ sở dữ liệu dùng chung hoặc không có sự thay đổi thông tin về hộ chiếu, người sử dụng lao động không phải nộp thành phần hồ sơ này.",
+          "component_code": "G09-KQ003845",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "1.9. Đối với người lao động nước ngoài là học sinh, sinh viên, học viên nước ngoài đang học tập tại các trường, cơ sở đào tạo ở Việt Nam hoặc nước ngoài có thỏa thuận thực tập hoặc thư mời làm việc cho người sử dụng lao động tại Việt Nam; học viên thực tập, tập sự trên tàu biển Việt Nam (khoản 7 Điều 7 Nghị định số 219/2025/NĐ-CP)",
+          "position": 5,
+          "name": "(5) Giấy tờ chứng minh người lao động nước ngoài không thuộc diện cấp giấy phép lao động là văn bản của người sử dụng lao động tại nước ngoài cử người lao động nước ngoài kèm thỏa thuận hoặc điều ước quốc tế mà nước Cộng hòa xã hội chủ nghĩa Việt Nam là thành viên.",
+          "component_code": "G09-KQ003449",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "1.10. Đối với người lao động nước ngoài là tình nguyện viên làm việc tại Việt Nam theo hình thức tự nguyện và không hưởng lương để thực hiện điều ước quốc tế mà nước Cộng hòa xã hội chủ nghĩa Việt Nam là thành viên và có xác nhận của cơ quan đại diện ngoại giao nước ngoài hoặc tổ chức quốc tế tại Việt Nam (khoản 11 Điều 7 Nghị định số 219/2025/NĐ-CP)",
+          "position": 1,
+          "name": "(1) Văn bản của người sử dụng lao động đề nghị gia hạn giấy xác nhận không thuộc diện cấp giấy phép lao động theo Mẫu số 01 Phụ lục ban hành kèm theo Nghị định số 219/2025/NĐ-CP .",
+          "component_code": "G09-KQ003063",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019d765c-63af-762a-bfe0-5365585b72b6",
+              "fileName": "Mauso01.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d765c-63af-762a-bfe0-5365585b72b6/Mauso01.docx"
+            }
+          ]
+        },
+        {
+          "section": "1.10. Đối với người lao động nước ngoài là tình nguyện viên làm việc tại Việt Nam theo hình thức tự nguyện và không hưởng lương để thực hiện điều ước quốc tế mà nước Cộng hòa xã hội chủ nghĩa Việt Nam là thành viên và có xác nhận của cơ quan đại diện ngoại giao nước ngoài hoặc tổ chức quốc tế tại Việt Nam (khoản 11 Điều 7 Nghị định số 219/2025/NĐ-CP)",
+          "position": 2,
+          "name": "(2) Giấy khám sức khỏe do cơ sở khám bệnh, chữa bệnh có đủ điều kiện cấp, trừ trường hợp kết quả khám sức khỏe đã được kết nối, chia sẻ trên Hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh hoặc cơ sở dữ liệu quốc gia về y tế. Đối với giấy khám sức khỏe do cơ sở y tế có thẩm quyền của nước ngoài cấp được sử dụng trong trường hợp Việt Nam và quốc gia hoặc vùng lãnh thổ cấp giấy khám sức khỏe có điều ước hoặc thỏa thuận thừa nhận lẫn nhau và thời hạn sử dụng của giấy khám sức khỏe đó không quá 12 tháng kể từ ngày được cấp.",
+          "component_code": "G09-KQ003054",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "1.10. Đối với người lao động nước ngoài là tình nguyện viên làm việc tại Việt Nam theo hình thức tự nguyện và không hưởng lương để thực hiện điều ước quốc tế mà nước Cộng hòa xã hội chủ nghĩa Việt Nam là thành viên và có xác nhận của cơ quan đại diện ngoại giao nước ngoài hoặc tổ chức quốc tế tại Việt Nam (khoản 11 Điều 7 Nghị định số 219/2025/NĐ-CP)",
+          "position": 3,
+          "name": "(3) Bản sao giấy xác nhận không thuộc diện cấp giấy phép lao động còn thời hạn đã được cấp. Trường hợp khai thác được thông tin về giấy xác nhận không thuộc diện cấp giấy phép lao động đã được cấp trong cơ sở dữ liệu dùng chung hoặc không có sự thay đổi thông tin về giấy xác nhận không thuộc diện cấp giấy phép lao động, người sử dụng lao động không phải nộp thành phần hồ sơ này.",
+          "component_code": "G09-KQ003844",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "1.10. Đối với người lao động nước ngoài là tình nguyện viên làm việc tại Việt Nam theo hình thức tự nguyện và không hưởng lương để thực hiện điều ước quốc tế mà nước Cộng hòa xã hội chủ nghĩa Việt Nam là thành viên và có xác nhận của cơ quan đại diện ngoại giao nước ngoài hoặc tổ chức quốc tế tại Việt Nam (khoản 11 Điều 7 Nghị định số 219/2025/NĐ-CP)",
+          "position": 4,
+          "name": "(4) Bản sao trang nhân thân hộ chiếu còn thời hạn.  Trường hợp khai thác được thông tin về hộ chiếu còn thời hạn trong cơ sở dữ liệu dùng chung hoặc không có sự thay đổi thông tin về hộ chiếu, người sử dụng lao động không phải nộp thành phần hồ sơ này.",
+          "component_code": "G09-KQ003845",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "1.10. Đối với người lao động nước ngoài là tình nguyện viên làm việc tại Việt Nam theo hình thức tự nguyện và không hưởng lương để thực hiện điều ước quốc tế mà nước Cộng hòa xã hội chủ nghĩa Việt Nam là thành viên và có xác nhận của cơ quan đại diện ngoại giao nước ngoài hoặc tổ chức quốc tế tại Việt Nam (khoản 11 Điều 7 Nghị định số 219/2025/NĐ-CP)",
+          "position": 5,
+          "name": "(5) Giấy tờ chứng minh người lao động nước ngoài không thuộc diện cấp giấy phép lao động là văn bản của người sử dụng lao động tại nước ngoài cử người lao động nước ngoài kèm thỏa thuận hoặc điều ước quốc tế mà nước Cộng hòa xã hội chủ nghĩa Việt Nam là thành viên.",
+          "component_code": "G09-KQ003449",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "1.11. Đối với người lao động nước ngoài vào Việt Nam thực hiện thỏa thuận quốc tế mà cơ quan, tổ chức ở Trung ương, cấp tỉnh ký kết theo quy định của pháp luật (khoản 12 Điều 7 Nghị định số 219/2025/NĐ-CP)",
+          "position": 1,
+          "name": "(1) Văn bản của người sử dụng lao động đề nghị gia hạn giấy xác nhận không thuộc diện cấp giấy phép lao động theo Mẫu số 01 Phụ lục ban hành kèm theo Nghị định số 219/2025/NĐ-CP .",
+          "component_code": "G09-KQ003063",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019d765c-63af-762a-bfe0-5365585b72b6",
+              "fileName": "Mauso01.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d765c-63af-762a-bfe0-5365585b72b6/Mauso01.docx"
+            }
+          ]
+        },
+        {
+          "section": "1.11. Đối với người lao động nước ngoài vào Việt Nam thực hiện thỏa thuận quốc tế mà cơ quan, tổ chức ở Trung ương, cấp tỉnh ký kết theo quy định của pháp luật (khoản 12 Điều 7 Nghị định số 219/2025/NĐ-CP)",
+          "position": 2,
+          "name": "(2) Giấy khám sức khỏe do cơ sở khám bệnh, chữa bệnh có đủ điều kiện cấp, trừ trường hợp kết quả khám sức khỏe đã được kết nối, chia sẻ trên Hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh hoặc cơ sở dữ liệu quốc gia về y tế. Đối với giấy khám sức khỏe do cơ sở y tế có thẩm quyền của nước ngoài cấp được sử dụng trong trường hợp Việt Nam và quốc gia hoặc vùng lãnh thổ cấp giấy khám sức khỏe có điều ước hoặc thỏa thuận thừa nhận lẫn nhau và thời hạn sử dụng của giấy khám sức khỏe đó không quá 12 tháng kể từ ngày được cấp.",
+          "component_code": "G09-KQ003054",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "1.11. Đối với người lao động nước ngoài vào Việt Nam thực hiện thỏa thuận quốc tế mà cơ quan, tổ chức ở Trung ương, cấp tỉnh ký kết theo quy định của pháp luật (khoản 12 Điều 7 Nghị định số 219/2025/NĐ-CP)",
+          "position": 3,
+          "name": "(3) Bản sao giấy xác nhận không thuộc diện cấp giấy phép lao động còn thời hạn đã được cấp. Trường hợp khai thác được thông tin về giấy xác nhận không thuộc diện cấp giấy phép lao động đã được cấp trong cơ sở dữ liệu dùng chung hoặc không có sự thay đổi thông tin về giấy xác nhận không thuộc diện cấp giấy phép lao động, người sử dụng lao động không phải nộp thành phần hồ sơ này.",
+          "component_code": "G09-KQ003844",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "1.11. Đối với người lao động nước ngoài vào Việt Nam thực hiện thỏa thuận quốc tế mà cơ quan, tổ chức ở Trung ương, cấp tỉnh ký kết theo quy định của pháp luật (khoản 12 Điều 7 Nghị định số 219/2025/NĐ-CP)",
+          "position": 4,
+          "name": "(4) Bản sao trang nhân thân hộ chiếu còn thời hạn.  Trường hợp khai thác được thông tin về hộ chiếu còn thời hạn trong cơ sở dữ liệu dùng chung hoặc không có sự thay đổi thông tin về hộ chiếu, người sử dụng lao động không phải nộp thành phần hồ sơ này.",
+          "component_code": "G09-KQ003845",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "1.11. Đối với người lao động nước ngoài vào Việt Nam thực hiện thỏa thuận quốc tế mà cơ quan, tổ chức ở Trung ương, cấp tỉnh ký kết theo quy định của pháp luật (khoản 12 Điều 7 Nghị định số 219/2025/NĐ-CP)",
+          "position": 5,
+          "name": "(5) Giấy tờ chứng minh người lao động nước ngoài không thuộc diện cấp giấy phép lao động là văn bản của người sử dụng lao động tại nước ngoài cử người lao động nước ngoài kèm thỏa thuận hoặc điều ước quốc tế mà nước Cộng hòa xã hội chủ nghĩa Việt Nam là thành viên.",
+          "component_code": "G09-KQ003449",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "1.12. Đối với người lao động nước ngoài là nhà quản lý di chuyển trong nội bộ doanh nghiệp (điểm b khoản 13 Điều 7 Nghị định số 219/2025/NĐ-CP)",
+          "position": 1,
+          "name": "(1) Văn bản của người sử dụng lao động đề nghị gia hạn giấy xác nhận không thuộc diện cấp giấy phép lao động theo Mẫu số 01 Phụ lục ban hành kèm theo Nghị định số 219/2025/NĐ-CP .",
+          "component_code": "G09-KQ003063",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019d765c-63af-762a-bfe0-5365585b72b6",
+              "fileName": "Mauso01.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d765c-63af-762a-bfe0-5365585b72b6/Mauso01.docx"
+            }
+          ]
+        },
+        {
+          "section": "1.12. Đối với người lao động nước ngoài là nhà quản lý di chuyển trong nội bộ doanh nghiệp (điểm b khoản 13 Điều 7 Nghị định số 219/2025/NĐ-CP)",
+          "position": 2,
+          "name": "(2) Giấy khám sức khỏe do cơ sở khám bệnh, chữa bệnh có đủ điều kiện cấp, trừ trường hợp kết quả khám sức khỏe đã được kết nối, chia sẻ trên Hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh hoặc cơ sở dữ liệu quốc gia về y tế. Đối với giấy khám sức khỏe do cơ sở y tế có thẩm quyền của nước ngoài cấp được sử dụng trong trường hợp Việt Nam và quốc gia hoặc vùng lãnh thổ cấp giấy khám sức khỏe có điều ước hoặc thỏa thuận thừa nhận lẫn nhau và thời hạn sử dụng của giấy khám sức khỏe đó không quá 12 tháng kể từ ngày được cấp.",
+          "component_code": "G09-KQ003054",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "1.12. Đối với người lao động nước ngoài là nhà quản lý di chuyển trong nội bộ doanh nghiệp (điểm b khoản 13 Điều 7 Nghị định số 219/2025/NĐ-CP)",
+          "position": 3,
+          "name": "(3) Bản sao giấy xác nhận không thuộc diện cấp giấy phép lao động còn thời hạn đã được cấp. Trường hợp khai thác được thông tin về giấy xác nhận không thuộc diện cấp giấy phép lao động đã được cấp trong cơ sở dữ liệu dùng chung hoặc không có sự thay đổi thông tin về giấy xác nhận không thuộc diện cấp giấy phép lao động, người sử dụng lao động không phải nộp thành phần hồ sơ này.",
+          "component_code": "G09-KQ003844",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "1.12. Đối với người lao động nước ngoài là nhà quản lý di chuyển trong nội bộ doanh nghiệp (điểm b khoản 13 Điều 7 Nghị định số 219/2025/NĐ-CP)",
+          "position": 4,
+          "name": "(4) Bản sao trang nhân thân hộ chiếu còn thời hạn.  Trường hợp khai thác được thông tin về hộ chiếu còn thời hạn trong cơ sở dữ liệu dùng chung hoặc không có sự thay đổi thông tin về hộ chiếu, người sử dụng lao động không phải nộp thành phần hồ sơ này.",
+          "component_code": "G09-KQ003845",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "1.12. Đối với người lao động nước ngoài là nhà quản lý di chuyển trong nội bộ doanh nghiệp (điểm b khoản 13 Điều 7 Nghị định số 219/2025/NĐ-CP)",
+          "position": 5,
+          "name": "(5) Văn bản của người sử dụng lao động tại nước ngoài cử người lao động nước ngoài sang làm việc có thời hạn tại hiện diện thương mại trên lãnh thổ Việt Nam.",
+          "component_code": "G09-KQ003701",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "1.12. Đối với người lao động nước ngoài là nhà quản lý di chuyển trong nội bộ doanh nghiệp (điểm b khoản 13 Điều 7 Nghị định số 219/2025/NĐ-CP)",
+          "position": 6,
+          "name": "(6) Giấy tờ chứng minh người lao động nước ngoài là nhà quản lý là một trong các giấy tờ sau:",
+          "component_code": "G09-KQ003619",
+          "original_quantity": 0,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "1.12. Đối với người lao động nước ngoài là nhà quản lý di chuyển trong nội bộ doanh nghiệp (điểm b khoản 13 Điều 7 Nghị định số 219/2025/NĐ-CP)",
+          "position": 7,
+          "name": "+ Điều lệ công ty và giấy tờ chứng minh là nhà quản lý hoặc văn bản bổ nhiệm, điều động đối với các vị trí là nhà quản lý theo quy định tại khoản 24 Điều 4 Luật Doanh nghiệp;",
+          "component_code": "G09-KQ003841",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "1.12. Đối với người lao động nước ngoài là nhà quản lý di chuyển trong nội bộ doanh nghiệp (điểm b khoản 13 Điều 7 Nghị định số 219/2025/NĐ-CP)",
+          "position": 8,
+          "name": "+ Giấy phép thành lập cơ quan, tổ chức hoặc văn bản bổ nhiệm, điều động đối với người đứng đầu, cấp phó của người đứng đầu cơ quan, tổ chức.",
+          "component_code": "G09-KQ003842",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "1.13. Đối với người lao động nước ngoài là giám đốc điều hành di chuyển trong nội bộ doanh nghiệp (điểm b khoản 13 Điều 7 Nghị định số 219/2025/NĐ-CP)",
+          "position": 1,
+          "name": "(1) Văn bản của người sử dụng lao động đề nghị gia hạn giấy xác nhận không thuộc diện cấp giấy phép lao động theo Mẫu số 01 Phụ lục ban hành kèm theo Nghị định số 219/2025/NĐ-CP .",
+          "component_code": "G09-KQ003063",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019d765c-63af-762a-bfe0-5365585b72b6",
+              "fileName": "Mauso01.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d765c-63af-762a-bfe0-5365585b72b6/Mauso01.docx"
+            }
+          ]
+        },
+        {
+          "section": "1.13. Đối với người lao động nước ngoài là giám đốc điều hành di chuyển trong nội bộ doanh nghiệp (điểm b khoản 13 Điều 7 Nghị định số 219/2025/NĐ-CP)",
+          "position": 2,
+          "name": "(2) Giấy khám sức khỏe do cơ sở khám bệnh, chữa bệnh có đủ điều kiện cấp, trừ trường hợp kết quả khám sức khỏe đã được kết nối, chia sẻ trên Hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh hoặc cơ sở dữ liệu quốc gia về y tế. Đối với giấy khám sức khỏe do cơ sở y tế có thẩm quyền của nước ngoài cấp được sử dụng trong trường hợp Việt Nam và quốc gia hoặc vùng lãnh thổ cấp giấy khám sức khỏe có điều ước hoặc thỏa thuận thừa nhận lẫn nhau và thời hạn sử dụng của giấy khám sức khỏe đó không quá 12 tháng kể từ ngày được cấp.",
+          "component_code": "G09-KQ003054",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "1.13. Đối với người lao động nước ngoài là giám đốc điều hành di chuyển trong nội bộ doanh nghiệp (điểm b khoản 13 Điều 7 Nghị định số 219/2025/NĐ-CP)",
+          "position": 3,
+          "name": "(3) Bản sao giấy xác nhận không thuộc diện cấp giấy phép lao động còn thời hạn đã được cấp. Trường hợp khai thác được thông tin về giấy xác nhận không thuộc diện cấp giấy phép lao động đã được cấp trong cơ sở dữ liệu dùng chung hoặc không có sự thay đổi thông tin về giấy xác nhận không thuộc diện cấp giấy phép lao động, người sử dụng lao động không phải nộp thành phần hồ sơ này.",
+          "component_code": "G09-KQ003844",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "1.13. Đối với người lao động nước ngoài là giám đốc điều hành di chuyển trong nội bộ doanh nghiệp (điểm b khoản 13 Điều 7 Nghị định số 219/2025/NĐ-CP)",
+          "position": 4,
+          "name": "(4) Bản sao trang nhân thân hộ chiếu còn thời hạn.  Trường hợp khai thác được thông tin về hộ chiếu còn thời hạn trong cơ sở dữ liệu dùng chung hoặc không có sự thay đổi thông tin về hộ chiếu, người sử dụng lao động không phải nộp thành phần hồ sơ này.",
+          "component_code": "G09-KQ003845",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "1.13. Đối với người lao động nước ngoài là giám đốc điều hành di chuyển trong nội bộ doanh nghiệp (điểm b khoản 13 Điều 7 Nghị định số 219/2025/NĐ-CP)",
+          "position": 5,
+          "name": "(5) Văn bản của người sử dụng lao động tại nước ngoài cử người lao động nước ngoài sang làm việc có thời hạn tại hiện diện thương mại trên lãnh thổ Việt Nam.",
+          "component_code": "G09-KQ003701",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "1.13. Đối với người lao động nước ngoài là giám đốc điều hành di chuyển trong nội bộ doanh nghiệp (điểm b khoản 13 Điều 7 Nghị định số 219/2025/NĐ-CP)",
+          "position": 6,
+          "name": "(6) Giấy tờ chứng minh người lao động nước ngoài là nhà quản lý là một trong các giấy tờ sau:",
+          "component_code": "G09-KQ003619",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "1.13. Đối với người lao động nước ngoài là giám đốc điều hành di chuyển trong nội bộ doanh nghiệp (điểm b khoản 13 Điều 7 Nghị định số 219/2025/NĐ-CP)",
+          "position": 7,
+          "name": "+ Giấy chứng nhận đăng ký hoạt động chi nhánh, giấy chứng nhận đăng ký hoạt động văn phòng đại diện hoặc giấy chứng nhận đăng ký địa điểm kinh doanh của doanh nghiệp.",
+          "component_code": "G09-KQ003847",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "1.13. Đối với người lao động nước ngoài là giám đốc điều hành di chuyển trong nội bộ doanh nghiệp (điểm b khoản 13 Điều 7 Nghị định số 219/2025/NĐ-CP)",
+          "position": 8,
+          "name": "+ Giấy phép thành lập cơ quan, tổ chức hoặc văn bản bổ nhiệm, điều động đối với người đứng đầu, cấp phó của người đứng đầu cơ quan, tổ chức.",
+          "component_code": "G09-KQ003842",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "1.14. Đối với người lao động nước ngoài là chuyên gia di chuyển trong nội bộ doanh nghiệp (điểm b khoản 13 Điều 7 Nghị định số 219/2025/NĐ-CP)",
+          "position": 1,
+          "name": "(1) Văn bản của người sử dụng lao động đề nghị gia hạn giấy xác nhận không thuộc diện cấp giấy phép lao động theo Mẫu số 01 Phụ lục ban hành kèm theo Nghị định số 219/2025/NĐ-CP .",
+          "component_code": "G09-KQ003063",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019d765c-63af-762a-bfe0-5365585b72b6",
+              "fileName": "Mauso01.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d765c-63af-762a-bfe0-5365585b72b6/Mauso01.docx"
+            }
+          ]
+        },
+        {
+          "section": "1.14. Đối với người lao động nước ngoài là chuyên gia di chuyển trong nội bộ doanh nghiệp (điểm b khoản 13 Điều 7 Nghị định số 219/2025/NĐ-CP)",
+          "position": 2,
+          "name": "(2) Giấy khám sức khỏe do cơ sở khám bệnh, chữa bệnh có đủ điều kiện cấp, trừ trường hợp kết quả khám sức khỏe đã được kết nối, chia sẻ trên Hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh hoặc cơ sở dữ liệu quốc gia về y tế. Đối với giấy khám sức khỏe do cơ sở y tế có thẩm quyền của nước ngoài cấp được sử dụng trong trường hợp Việt Nam và quốc gia hoặc vùng lãnh thổ cấp giấy khám sức khỏe có điều ước hoặc thỏa thuận thừa nhận lẫn nhau và thời hạn sử dụng của giấy khám sức khỏe đó không quá 12 tháng kể từ ngày được cấp.",
+          "component_code": "G09-KQ003054",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "1.14. Đối với người lao động nước ngoài là chuyên gia di chuyển trong nội bộ doanh nghiệp (điểm b khoản 13 Điều 7 Nghị định số 219/2025/NĐ-CP)",
+          "position": 3,
+          "name": "(3) Bản sao giấy xác nhận không thuộc diện cấp giấy phép lao động còn thời hạn đã được cấp. Trường hợp khai thác được thông tin về giấy xác nhận không thuộc diện cấp giấy phép lao động đã được cấp trong cơ sở dữ liệu dùng chung hoặc không có sự thay đổi thông tin về giấy xác nhận không thuộc diện cấp giấy phép lao động, người sử dụng lao động không phải nộp thành phần hồ sơ này.",
+          "component_code": "G09-KQ003844",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "1.14. Đối với người lao động nước ngoài là chuyên gia di chuyển trong nội bộ doanh nghiệp (điểm b khoản 13 Điều 7 Nghị định số 219/2025/NĐ-CP)",
+          "position": 4,
+          "name": "(4) Bản sao trang nhân thân hộ chiếu còn thời hạn.  Trường hợp khai thác được thông tin về hộ chiếu còn thời hạn trong cơ sở dữ liệu dùng chung hoặc không có sự thay đổi thông tin về hộ chiếu, người sử dụng lao động không phải nộp thành phần hồ sơ này.",
+          "component_code": "G09-KQ003845",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "1.14. Đối với người lao động nước ngoài là chuyên gia di chuyển trong nội bộ doanh nghiệp (điểm b khoản 13 Điều 7 Nghị định số 219/2025/NĐ-CP)",
+          "position": 5,
+          "name": "(5) Văn bản của người sử dụng lao động tại nước ngoài cử người lao động nước ngoài sang làm việc có thời hạn tại hiện diện thương mại trên lãnh thổ Việt Nam.",
+          "component_code": "G09-KQ003701",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "1.14. Đối với người lao động nước ngoài là chuyên gia di chuyển trong nội bộ doanh nghiệp (điểm b khoản 13 Điều 7 Nghị định số 219/2025/NĐ-CP)",
+          "position": 6,
+          "name": "(6) Giấy tờ chứng minh người lao động nước ngoài là nhà quản lý là một trong các giấy tờ sau:",
+          "component_code": "G09-KQ003619",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "1.14. Đối với người lao động nước ngoài là chuyên gia di chuyển trong nội bộ doanh nghiệp (điểm b khoản 13 Điều 7 Nghị định số 219/2025/NĐ-CP)",
+          "position": 7,
+          "name": "+ Văn bằng, chứng chỉ hoặc giấy chứng nhận chứng minh tốt nghiệp đại học trở lên hoặc tương đương và văn bản xác nhận của người sử dụng lao động tại nước ngoài về số năm kinh nghiệm làm việc của chuyên gia đó. Trường hợp người lao động nước ngoài đã làm việc tại Việt Nam thì được sử dụng giấy phép lao động hoặc giấy xác nhận không thuộc diện cấp giấy phép lao động đã được cấp để thay thế giấy tờ chứng minh số năm kinh nghiệm làm việc trong lĩnh vực phù hợp với vị trí công việc mà người lao động nước ngoài dự kiến làm việc tại Việt Nam.",
+          "component_code": "G09-KQ003829",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "1.14. Đối với người lao động nước ngoài là chuyên gia di chuyển trong nội bộ doanh nghiệp (điểm b khoản 13 Điều 7 Nghị định số 219/2025/NĐ-CP)",
+          "position": 8,
+          "name": "+ Văn bằng, chứng chỉ hoặc giấy chứng nhận chứng minh tốt nghiệp đại học trở lên hoặc tương đương trong lĩnh vực tài chính, khoa học, công nghệ, đổi mới sáng tạo, chuyển đổi số quốc gia, lĩnh vực ưu tiên phát triển kinh tế - xã hội hoặc theo thoả thuận hợp tác của Chính phủ Việt Nam và văn bản xác nhận người sử dụng lao động tại nước ngoài về số năm kinh nghiệm làm việc của chuyên gia đó. Trường hợp người lao động nước ngoài đã làm việc tại Việt Nam được sử dụng giấy phép lao động hoặc giấy xác nhận không thuộc diện cấp giấy phép lao động đã được cấp để thay thế giấy tờ chứng minh kinh nghiệm làm việc trong lĩnh vực phù hợp với vị trí công việc mà người lao động nước ngoài dự kiến làm việc tại Việt Nam.",
+          "component_code": "G09-KQ003830",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "1.14. Đối với người lao động nước ngoài là chuyên gia di chuyển trong nội bộ doanh nghiệp (điểm b khoản 13 Điều 7 Nghị định số 219/2025/NĐ-CP)",
+          "position": 9,
+          "name": "+ Giấy chứng nhận thành tích cao, bằng cấp, kinh nghiệm trong lĩnh vực văn hóa, thể thao đối với nghệ sĩ, huấn luyện viên, vận động viên theo hướng dẫn của Bộ trưởng Bộ Văn hóa, Thể thao và Du lịch.",
+          "component_code": "G09-KQ003831",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "1.14. Đối với người lao động nước ngoài là chuyên gia di chuyển trong nội bộ doanh nghiệp (điểm b khoản 13 Điều 7 Nghị định số 219/2025/NĐ-CP)",
+          "position": 10,
+          "name": "+ Giấy phép lái tàu bay, chứng chỉ chuyên môn được phép làm việc trên tàu bay đối với tiếp viên hàng không, chứng nhận trình độ chuyên môn trong lĩnh vực bảo dưỡng tàu bay, chứng nhận khả năng chuyên môn đối với thuyền viên nước ngoài do cơ quan có thẩm quyền của Việt Nam cấp. Trường hợp do cơ quan có thẩm quyền của nước ngoài cấp phải được cơ quan có thẩm quyền của Việt Nam công nhận theo hướng dẫn của Bộ trưởng Bộ Xây dựng.",
+          "component_code": "G09-KQ003832",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "1.14. Đối với người lao động nước ngoài là chuyên gia di chuyển trong nội bộ doanh nghiệp (điểm b khoản 13 Điều 7 Nghị định số 219/2025/NĐ-CP)",
+          "position": 11,
+          "name": "+ Giấy tờ chứng minh về trình độ, trình độ chuẩn theo Luật Giáo dục, Luật Giáo dục đại học, Luật Giáo dục nghề nghiệp đối với chuyên gia làm việc trong lĩnh vực giáo dục và đào tạo. Trường hợp chuyên gia làm việc trong Trung tâm ngoại ngữ, tin học phải đảm bảo theo quy chế tổ chức hoạt động của trung tâm.",
+          "component_code": "G09-KQ003833",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "1.14. Đối với người lao động nước ngoài là chuyên gia di chuyển trong nội bộ doanh nghiệp (điểm b khoản 13 Điều 7 Nghị định số 219/2025/NĐ-CP)",
+          "position": 12,
+          "name": "+ Giấy tờ chứng minh chuyên gia làm việc trong một số nghề, công việc đặc thù khác theo hướng dẫn của Bộ trưởng, Thủ trưởng cơ quan ngang bộ quản lý ngành, công việc đặc thù.",
+          "component_code": "G09-KQ003834",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "1.15. Đối với người lao động nước ngoài là lao động kỹ thuật di chuyển trong nội bộ doanh nghiệp (điểm b khoản 13 Điều 7 Nghị định số 219/2025/NĐ-CP)",
+          "position": 1,
+          "name": "(1) Văn bản của người sử dụng lao động đề nghị gia hạn giấy xác nhận không thuộc diện cấp giấy phép lao động theo Mẫu số 01 Phụ lục ban hành kèm theo Nghị định số 219/2025/NĐ-CP .",
+          "component_code": "G09-KQ003063",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019d765c-63af-762a-bfe0-5365585b72b6",
+              "fileName": "Mauso01.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d765c-63af-762a-bfe0-5365585b72b6/Mauso01.docx"
+            }
+          ]
+        },
+        {
+          "section": "1.15. Đối với người lao động nước ngoài là lao động kỹ thuật di chuyển trong nội bộ doanh nghiệp (điểm b khoản 13 Điều 7 Nghị định số 219/2025/NĐ-CP)",
+          "position": 2,
+          "name": "(2) Giấy khám sức khỏe do cơ sở khám bệnh, chữa bệnh có đủ điều kiện cấp, trừ trường hợp kết quả khám sức khỏe đã được kết nối, chia sẻ trên Hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh hoặc cơ sở dữ liệu quốc gia về y tế. Đối với giấy khám sức khỏe do cơ sở y tế có thẩm quyền của nước ngoài cấp được sử dụng trong trường hợp Việt Nam và quốc gia hoặc vùng lãnh thổ cấp giấy khám sức khỏe có điều ước hoặc thỏa thuận thừa nhận lẫn nhau và thời hạn sử dụng của giấy khám sức khỏe đó không quá 12 tháng kể từ ngày được cấp.",
+          "component_code": "G09-KQ003054",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "1.15. Đối với người lao động nước ngoài là lao động kỹ thuật di chuyển trong nội bộ doanh nghiệp (điểm b khoản 13 Điều 7 Nghị định số 219/2025/NĐ-CP)",
+          "position": 3,
+          "name": "(3) Bản sao giấy xác nhận không thuộc diện cấp giấy phép lao động còn thời hạn đã được cấp. Trường hợp khai thác được thông tin về giấy xác nhận không thuộc diện cấp giấy phép lao động đã được cấp trong cơ sở dữ liệu dùng chung hoặc không có sự thay đổi thông tin về giấy xác nhận không thuộc diện cấp giấy phép lao động, người sử dụng lao động không phải nộp thành phần hồ sơ này.",
+          "component_code": "G09-KQ003844",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "1.15. Đối với người lao động nước ngoài là lao động kỹ thuật di chuyển trong nội bộ doanh nghiệp (điểm b khoản 13 Điều 7 Nghị định số 219/2025/NĐ-CP)",
+          "position": 4,
+          "name": "(4) Bản sao trang nhân thân hộ chiếu còn thời hạn.  Trường hợp khai thác được thông tin về hộ chiếu còn thời hạn trong cơ sở dữ liệu dùng chung hoặc không có sự thay đổi thông tin về hộ chiếu, người sử dụng lao động không phải nộp thành phần hồ sơ này.",
+          "component_code": "G09-KQ003845",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "1.15. Đối với người lao động nước ngoài là lao động kỹ thuật di chuyển trong nội bộ doanh nghiệp (điểm b khoản 13 Điều 7 Nghị định số 219/2025/NĐ-CP)",
+          "position": 5,
+          "name": "(5) Văn bản của người sử dụng lao động tại nước ngoài cử người lao động nước ngoài sang làm việc có thời hạn tại hiện diện thương mại trên lãnh thổ Việt Nam.",
+          "component_code": "G09-KQ003701",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "1.15. Đối với người lao động nước ngoài là lao động kỹ thuật di chuyển trong nội bộ doanh nghiệp (điểm b khoản 13 Điều 7 Nghị định số 219/2025/NĐ-CP)",
+          "position": 6,
+          "name": "(6) Giấy tờ chứng minh người lao động nước ngoài là nhà quản lý là một trong các giấy tờ sau:",
+          "component_code": "G09-KQ003619",
+          "original_quantity": 0,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "1.15. Đối với người lao động nước ngoài là lao động kỹ thuật di chuyển trong nội bộ doanh nghiệp (điểm b khoản 13 Điều 7 Nghị định số 219/2025/NĐ-CP)",
+          "position": 7,
+          "name": "+ Văn bằng, chứng chỉ hoặc giấy chứng nhận chứng minh đào tạo ít nhất 01 năm và văn bản xác nhận của người sử dụng lao động tại nước ngoài về số năm kinh nghiệm làm việc của lao động kỹ thuật đó. Trường hợp người lao động nước ngoài đã làm việc tại Việt Nam được sử dụng giấy phép lao động hoặc giấy xác nhận không thuộc diện cấp giấy phép lao động đã được cấp để thay thế giấy tờ chứng minh kinh nghiệm làm việc trong lĩnh vực phù hợp với vị trí công việc mà người lao động nước ngoài dự kiến làm việc tại Việt Nam.",
+          "component_code": "G09-KQ003836",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "1.15. Đối với người lao động nước ngoài là lao động kỹ thuật di chuyển trong nội bộ doanh nghiệp (điểm b khoản 13 Điều 7 Nghị định số 219/2025/NĐ-CP)",
+          "position": 8,
+          "name": "+ Văn bản xác nhận của người sử dụng lao động tại nước ngoài về số năm kinh nghiệm làm việc của lao động kỹ thuật đó. Trường hợp người lao động nước ngoài đã làm việc tại Việt Nam được sử dụng giấy phép lao động hoặc giấy xác nhận không thuộc diện cấp giấy phép lao động đã được cấp để thay thế giấy tờ chứng minh kinh nghiệm làm việc trong lĩnh vực phù hợp với vị trí công việc mà người lao động nước ngoài dự kiến làm việc tại Việt Nam.",
+          "component_code": "G09-KQ003837",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c4c-77ab-bf70-12c123aab651",
+          "name": "- Giấy xác nhận không thuộc diện cấp giấy phép lao động; - Hoặc văn bản trả lời và nêu rõ lý do trong trường hợp không gia hạn giấy xác nhận không thuộc diện cấp giấy phép lao động.",
+          "code": "KQ.G09.000379"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7e-72d1-afed-66700cf36a77",
+          "name": "QUY ĐỊNH VỀ NGƯỜI LAO ĐỘNG NƯỚC NGOÀI LÀM VIỆC TẠI VIỆT NAM",
+          "code": "219/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b673-3e33a4649d19",
+          "name": "Bộ Luật lao động",
+          "code": "45/2019/QH14"
+        }
+      ]
+    }
+  ],
+  "lookup_status": "retrieved",
+  "currency_status": "snapshot_requires_later_amendment_check",
+  "errors": []
+}

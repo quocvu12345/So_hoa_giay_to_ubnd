@@ -1,0 +1,77 @@
+{
+  "id": "hn87-252",
+  "ordinal": "252",
+  "procedure_code": "1.003702",
+  "name": "Hỗ trợ học tập đối với trẻ mẫu giáo, học sinh tiểu học, học sinh trung học cơ sở, sinh viên các dân tộc thiểu số rất ít người",
+  "domain": "Giáo dục và đào tạo thuộc hệ thống giáo dục quốc dân",
+  "department_id": "vx",
+  "department": "Phòng Văn hóa - Xã hội",
+  "authority_as_published": "UBND cấp xã",
+  "execution_level_as_published": "Cấp xã",
+  "receiving_location_as_published": "Điểm hỗ trợ DVC số",
+  "inventory_date": "2026-04-27",
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "source_urls": [
+    "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf8-a0b7-73bc-a140-d0bbe50f7991"
+  ],
+  "current_dvc_match": true,
+  "lifecycle": null,
+  "scope": "hanoi_commune_notice_2026_04_27",
+  "scope_note": "Mốc kiểm kê cấp xã Hà Nội; áp dụng từng thủ tục tại Từ Liêm còn phải theo thẩm quyền/ủy quyền hiện hành.",
+  "status": "has_fillable_templates",
+  "components": [
+    {
+      "id": "hn87-252-c001",
+      "code": "TP-G03.0622",
+      "name": "Đơn đề nghị hỗ trợ học tập (theo mẫu)",
+      "section": "",
+      "role": "applicant_form",
+      "scenario_status": "selected_for_test",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf8-a0b7-73bc-a140-d0bbe50f7991",
+      "source_detail_id": "019d2bf8-a0b7-73bc-a140-d0bbe50f7991",
+      "embedded_other_requirements": false,
+      "template_candidates": [
+        "template-3aa7664c4eb523ea"
+      ],
+      "template_selection_method": "first_matching_source_attachment",
+      "selected_template_id": "template-3aa7664c4eb523ea",
+      "selection_requires_review": false
+    }
+  ],
+  "service_cases": [
+    {
+      "id": "019d2c8e-0500-73a7-b904-9b2edbc23204",
+      "code": "1.003702.01",
+      "name": "Hỗ trợ học tập đối với trẻ mẫu giáo, học sinh tiểu học, học sinh trung học cơ sở, sinh viên các dân tộc thiểu số rất ít người",
+      "source_processing_time": {
+        "qty": 1,
+        "type": "OTHER"
+      },
+      "has_case_specific_components": false
+    }
+  ],
+  "selected_template_ids": [
+    "template-3aa7664c4eb523ea"
+  ],
+  "source_component_groups": [
+    {
+      "name": "",
+      "component_count": 1,
+      "source_detail_id": "019d2bf8-a0b7-73bc-a140-d0bbe50f7991"
+    }
+  ],
+  "conditional_component_groups": [],
+  "default_test_scenario": {
+    "channel": "direct",
+    "applicant_submits_self": true,
+    "authorized": false,
+    "special_case_flags": [],
+    "selected_conditional_group": null,
+    "case_selection_method": "ordinary_direct_submission",
+    "case_status": "scenario_for_testing_not_a_legal_eligibility_decision"
+  },
+  "requirement_note": "required_as_published được giữ nguyên; false không chứng minh giấy tờ luôn tùy chọn. Các nhóm executionCases có thể là mục giấy tờ/hướng dẫn, không phải các phương án loại trừ nhau."
+}

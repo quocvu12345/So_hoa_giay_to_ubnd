@@ -1,0 +1,11 @@
+# Diễn tập khôi phục (OPS-04): chạy hằng quý (hoso-restore-test.timer) trên MÁY DIỄN TẬP, không phải máy chủ thật.
+[Unit]
+Description=Hồ sơ số · diễn tập khôi phục từ bản sao lưu mới nhất
+
+[Service]
+Type=oneshot
+User=hoso-backup
+Group=hoso-backup
+Environment=HOSO_BACKUP_ENV=/etc/hoso/backup.env
+ExecStart=/opt/hoso/ops/backup/hoso-restore-test.sh
+TimeoutStartSec=6h

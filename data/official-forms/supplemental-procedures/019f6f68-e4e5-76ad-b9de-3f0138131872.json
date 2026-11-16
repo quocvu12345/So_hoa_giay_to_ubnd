@@ -1,0 +1,73 @@
+{
+  "id": "dvc-019f6f68-e4e5-76ad-b9de-3f0138131872",
+  "procedure_code": "1.115949",
+  "name": "Công bố đóng cảng, bến thủy nội địa, khu neo đậu",
+  "domain": "Hàng hải và đường thủy nội địa",
+  "managing_agency": "Bộ Xây dựng",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.483412+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019f6f68-e4e5-76ad-b9de-3f0138131872",
+      "code": "1.115949",
+      "name": "Công bố đóng cảng, bến thủy nội địa, khu neo đậu",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1790220349972,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019f6f68-e4e5-76ad-b9de-3f0138131872",
+      "raw_path": "evidence/dvc/details/019f6f68-e4e5-76ad-b9de-3f0138131872.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Văn bản thông báo của chủ cảng, bến thủy nội địa, khu neo đậu",
+          "component_code": "TP-G17.000431",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019dd91e-f376-70da-b41a-e2ade1894454",
+          "name": "Văn bản chấp thuận",
+          "code": "000.00.00.G19-KQ1120"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d84-71c5-b672-345fa89f8a03",
+          "name": "Giao thông đường thủy nội địa",
+          "code": "23/2004/QH11"
+        },
+        {
+          "id": "019fdf71-76e2-704b-a3af-c9e4c43d5e83",
+          "name": "Thông tư số 21/2026/TT-BXD ngày 15/5/2026 của Bộ trưởng Bộ Xây dựng quy định về quản lý kết cấu hạ tầng đường thủy nội địa",
+          "code": "21/2026/TT-BXD"
+        },
+        {
+          "id": "019fdf72-377b-70a8-9722-cada8509b918",
+          "name": "Thông tư số 54/2026/TT-BXD ngày 01/7/2026 của Bộ trưởng Bộ Xây dựng quy định Sửa đổi, bổ sung một số điều của Thông tư số 20/2026/TT-BXD ngày 15/5/2026 của Bộ trưởng Bộ Xây dựng quy định về quản lý nhà nước chuyên ngành tại cảng thủy nội địa, bến thủy nội địa, khu neo đậu và quản lý hoạt động hoa tiêu đường thủy nội địa và Thông tư số 21/2026/TT-BXD ngày 15/5/2026 của Bộ trưởng Bộ Xây dựng quy định về quản lý kết cấu hạ tầng đường thủy nội địa",
+          "code": "54/2026/TT-BXD"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b673-4c2d13d60f2a",
+          "name": "sửa đổi, bổ sung một số Điều của Luật 23/2004/QH11 2004",
+          "code": "48/2014/QH13"
+        },
+        {
+          "id": "01a06aab-52f6-740e-8129-8fd7c001e91d",
+          "name": "Quy định về quản lý nhà nước chuyên ngành tại cảng thủy nội địa, bến thủy nội địa, khu neo đậu và quản lý hoạt động hoa tiêu đường thủy nội địa",
+          "code": "20/2026/TT-BXD"
+        }
+      ]
+    }
+  ]
+}

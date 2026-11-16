@@ -1,0 +1,99 @@
+{
+  "id": "dvc-019d2bfd-8e2e-7359-b42f-d5dc8d74741b",
+  "procedure_code": "2.000884",
+  "name": "Chứng thực chữ ký trong các giấy tờ, văn bản (áp dụng cho cả trường hợp chứng thực điểm chỉ và trường hợp người yêu cầu chứng thực không thể ký, không thể điểm chỉ được)",
+  "domain": "Chứng thực",
+  "managing_agency": "Bộ Tư pháp",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.878002+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfd-8e2e-7359-b42f-d5dc8d74741b",
+      "code": "2.000884",
+      "name": "Chứng thực chữ ký trong các giấy tờ, văn bản (áp dụng cho cả trường hợp chứng thực điểm chỉ và trường hợp người yêu cầu chứng thực không thể ký, không thể điểm chỉ được)",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1776676064732,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfd-8e2e-7359-b42f-d5dc8d74741b",
+      "raw_path": "evidence/dvc/details/019d2bfd-8e2e-7359-b42f-d5dc8d74741b.json",
+      "components": [
+        {
+          "section": "Người yêu cầu chứng thực phải xuất trình các giấy tờ sau:",
+          "position": 1,
+          "name": "+ Một trong các giấy tờ sau: Căn cước điện tử; bản chính hoặc bản sao của Thẻ căn cước công dân hoặc Thẻ căn cước hoặc Giấy chứng nhận căn cước hoặc Hộ chiếu hoặc giấy tờ xuất nhập cảnh hoặc giấy tờ có giá trị đi lại quốc tế còn giá trị sử dụng.",
+          "component_code": "000.00.00.G15-KQ004926",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Người yêu cầu chứng thực phải xuất trình các giấy tờ sau:",
+          "position": 2,
+          "name": "+ Giấy tờ, văn bản mà mình sẽ yêu cầu chứng thực chữ ký. Trường hợp chứng thực chữ ký trong giấy tờ, văn bản bằng tiếng nước ngoài, nếu người thực hiện chứng thực không hiểu rõ nội dung của giấy tờ, văn bản thì có quyền yêu cầu người yêu cầu chứng thực nộp kèm theo bản dịch ra tiếng Việt nội dung của giấy tờ, văn bản đó (bản dịch không cần công chứng hoặc chứng thực chữ ký người dịch, người yêu cầu chứng thực phải chịu trách nhiệm về nội dung của bản dịch).",
+          "component_code": "auuyii",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c78-7725-a74f-a42e2f3e5dec",
+          "name": "Giấy tờ, văn bản được chứng thực chữ ký/điểm chỉ",
+          "code": "KQ.G15.18.000109"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7d-7398-be47-d1948c61e360",
+          "name": "Thông tư \t226/2016/TT-BTC",
+          "code": "226/2016/TT-BTC"
+        },
+        {
+          "id": "019d2bb3-5d7f-719e-b46b-fbeb074e28f9",
+          "name": "Nghị định số 280/2025/NĐ-CP sửa đổi, bổ sung một số điều của Nghị định số 23/2015/NĐ-CP về cấp bản sao từ sổ gốc, chứng thực bản sao từ bản chính, chứng thực chữ ký và chứng thực hợp đồng, giao dịch, được sửa đổi, bổ sung bởi Nghị định số 07/2025/NĐ-CP",
+          "code": "280/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7f-719e-b470-22af3c5ee091",
+          "name": "Nghị quyết số 66.7/2025/NQ-CP của Chính phủ: Quy định cắt giảm, đơn giản hóa thủ tục hành chính dựa trên dữ liệu",
+          "code": "66.7/2025/NQ-CP"
+        },
+        {
+          "id": "019d2bb3-5d86-7760-a637-e9e3ffaa7962",
+          "name": "Thông tư 01/2020/TT-BTP",
+          "code": "01/2020/TT-BTP"
+        },
+        {
+          "id": "019d2bb3-5d7d-7398-be4c-000d94daf5c4",
+          "name": "Thông tư quy định mức thu, chế độ thu, nộp, quản lý, sử dụng phí công chứng; phí chứng thực bản sao từ bản chính, chứng thực chữ ký trong giấy tờ, văn bản; phí thẩm định tiêu chuẩn, điều kiện hành nghề công chứng; phí thẩm định điều kiện hoạt động Văn phòng công chứng; lệ phí cấp thẻ công chứng viên",
+          "code": "257/2016/TT-BTC"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afed-97d84ca2788a",
+          "name": "Về cấp bản sao từ sổ gốc, chứng thực bản sao từ bản chính, chứng thực chữ ký và chứng thực hợp đồng, giao dịch",
+          "code": "23/2015/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7d-7398-be47-dcd0b7b78f14",
+          "name": "Quy định mức thu, chế độ thu, nộp, quản lý và sử dụng phí, lệ phí trong lĩnh vực ngoại giao áp dụng tại các Cơ quan đại diện Việt Nam ở nước ngoài",
+          "code": "264/2016/TT-BTC"
+        },
+        {
+          "id": "019d951f-b414-7526-97a3-b578b6f5aa4c",
+          "name": "sửa đổi, bổ sung một số nghị định để cắt giảm, đơn giản hóa thủ tục hành chính, điều kiện kinh doanh\nthuộc phạm vi quản lý của Bộ Tư pháp.",
+          "code": "18/2026/NĐ-CP "
+        }
+      ]
+    }
+  ]
+}

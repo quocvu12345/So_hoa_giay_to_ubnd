@@ -1,0 +1,467 @@
+{
+  "id": "dvc-019d2bfb-d79c-73cd-8614-c7a7882c5e05",
+  "procedure_code": "1.001939",
+  "name": "Đăng ký đóng, cấp thẻ BHYT đối với người chỉ tham gia BHYT",
+  "domain": "Thu BHXH, BHYT, BHTN, BH tai nạn lao động, BNN",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.970160+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfb-d79c-73cd-8614-c7a7882c5e05",
+      "code": "1.001939",
+      "name": "Đăng ký đóng, cấp thẻ BHYT đối với người chỉ tham gia BHYT",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1792931550056,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-d79c-73cd-8614-c7a7882c5e05",
+      "raw_path": "evidence/dvc/details/019d2bfb-d79c-73cd-8614-c7a7882c5e05.json",
+      "components": [
+        {
+          "section": "- Người chỉ tham gia BHYT:",
+          "position": 1,
+          "name": "Tờ khai tham gia điều chỉnh thông tin BHYT (Mẫu số 2 ban hành kèm theo Nghị định số 188/2025/NĐ-CP) đối với người tham gia đăng ký tham gia BHYT lần đầu hoặc điều chỉnh thông tin nộp hồ sơ theo hình thức trực tiếp",
+          "component_code": "TP.G12.98.040",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "01a0eccf-2171-7495-b08d-335c1953c033",
+              "fileName": "Mau so 2.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/01a0eccf-2171-7495-b08d-335c1953c033/Mau so 2.docx"
+            }
+          ]
+        },
+        {
+          "section": "- Người chỉ tham gia BHYT:",
+          "position": 2,
+          "name": "Giấy ra viện do cơ sở khám bệnh, chữa bệnh nơi lấy bộ phận cơ thể của người hiến cấp (trong đó ghi rõ “đã hiến bộ phận cơ thể”) đối với trường hợp người đã hiến bộ phận cơ thể người theo quy định của pháp luật",
+          "component_code": "TP.G12.98.041",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "- Người chỉ tham gia BHYT:",
+          "position": 3,
+          "name": "Bản chụp (scan) văn bản, tài liệu liên quan chứng minh đối với trường hợp được hưởng quyền lợi BHYT cao hơn. (Cán bộ tiếp nhận, giải quyết TTHC tự khai thác và không yêu cầu người tham gia phải nộp đối với các văn bản, tài liệu hoặc thông tin của người tham gia đã có trong CSDL quốc gia về dân cư, CSDL về cư trú hoặc các CSDL chuyên ngành khác như CSDL người hưởng chính sách ưu đãi người có công, CSDL hộ nghèo, hộ cận nghèo, CSDL người khuyết tật... khi CSDL đó đã được chia sẻ, công bố thông tin)",
+          "component_code": "TP.G12.98.042",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Các văn bản, tài liệu liên quan dùng để thay đổi thông tin quyền lợi được hưởng của người tham gia được quy định tại các văn bản: Nghị định số 131/2021/NĐ-CP ngày 30/12/2021 của Chính phủ quy định chi tiết và biện pháp thi hành Pháp lệnh ưu đãi người có công; Thông tư số 30/2019/TT-BLĐTBXH ngày 26/12/2019 của Bộ Lao động - Thương binh và Xã hội hướng dẫn lập danh sách đối tượng tham gia BHYT do Bộ Lao động - Thương binh và Xã hội quản lý; Nghị định số 20/2021/NĐ-CP ngày 15/3/2021 của Chính phủ quy định chính sách trợ giúp xã hội đối với đối tượng bảo trợ xã hội...; Tùy theo từng trường hợp, người tham gia cung cấp bản chụp (scan) của một trong số văn bản, tài liệu liên quan như:1. Người có công với cách mạng theo quy định tại Pháp lệnh ưu đãi người có công với cách mạng",
+          "position": 1,
+          "name": "Quyết định công nhận của cơ quan có thẩm quyền hoặc Quyết định giải quyết chế độ của Giám đốc Sở Lao động - Thương binh và Xã hội tỉnh, thành phố trực thuộc trung ương",
+          "component_code": "TP.G12.98.043",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Các văn bản, tài liệu liên quan dùng để thay đổi thông tin quyền lợi được hưởng của người tham gia được quy định tại các văn bản: Nghị định số 131/2021/NĐ-CP ngày 30/12/2021 của Chính phủ quy định chi tiết và biện pháp thi hành Pháp lệnh ưu đãi người có công; Thông tư số 30/2019/TT-BLĐTBXH ngày 26/12/2019 của Bộ Lao động - Thương binh và Xã hội hướng dẫn lập danh sách đối tượng tham gia BHYT do Bộ Lao động - Thương binh và Xã hội quản lý; Nghị định số 20/2021/NĐ-CP ngày 15/3/2021 của Chính phủ quy định chính sách trợ giúp xã hội đối với đối tượng bảo trợ xã hội...; Tùy theo từng trường hợp, người tham gia cung cấp bản chụp (scan) của một trong số văn bản, tài liệu liên quan như:1. Người có công với cách mạng theo quy định tại Pháp lệnh ưu đãi người có công với cách mạng",
+          "position": 2,
+          "name": "Quyết định về việc công nhận người hoạt động cách mạng trước ngày 01/01/1945 hay người hoạt động cách mạng từ ngày 01/01/1945 đến ngày khởi nghĩa tháng Tám năm 1945",
+          "component_code": "TP.G12.98.044",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Các văn bản, tài liệu liên quan dùng để thay đổi thông tin quyền lợi được hưởng của người tham gia được quy định tại các văn bản: Nghị định số 131/2021/NĐ-CP ngày 30/12/2021 của Chính phủ quy định chi tiết và biện pháp thi hành Pháp lệnh ưu đãi người có công; Thông tư số 30/2019/TT-BLĐTBXH ngày 26/12/2019 của Bộ Lao động - Thương binh và Xã hội hướng dẫn lập danh sách đối tượng tham gia BHYT do Bộ Lao động - Thương binh và Xã hội quản lý; Nghị định số 20/2021/NĐ-CP ngày 15/3/2021 của Chính phủ quy định chính sách trợ giúp xã hội đối với đối tượng bảo trợ xã hội...; Tùy theo từng trường hợp, người tham gia cung cấp bản chụp (scan) của một trong số văn bản, tài liệu liên quan như:1. Người có công với cách mạng theo quy định tại Pháp lệnh ưu đãi người có công với cách mạng",
+          "position": 3,
+          "name": "Quyết định về việc cấp giấy chứng nhận và trợ cấp, phụ cấp ưu đãi cho người hoạt động cách mạng trước ngày 01/01/1945 hoặc người hoạt động cách mạng từ ngày 01/01/1945 đến ngày khởi nghĩa tháng Tám năm 1945",
+          "component_code": "TP.G12.98.045",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Các văn bản, tài liệu liên quan dùng để thay đổi thông tin quyền lợi được hưởng của người tham gia được quy định tại các văn bản: Nghị định số 131/2021/NĐ-CP ngày 30/12/2021 của Chính phủ quy định chi tiết và biện pháp thi hành Pháp lệnh ưu đãi người có công; Thông tư số 30/2019/TT-BLĐTBXH ngày 26/12/2019 của Bộ Lao động - Thương binh và Xã hội hướng dẫn lập danh sách đối tượng tham gia BHYT do Bộ Lao động - Thương binh và Xã hội quản lý; Nghị định số 20/2021/NĐ-CP ngày 15/3/2021 của Chính phủ quy định chính sách trợ giúp xã hội đối với đối tượng bảo trợ xã hội...; Tùy theo từng trường hợp, người tham gia cung cấp bản chụp (scan) của một trong số văn bản, tài liệu liên quan như:1. Người có công với cách mạng theo quy định tại Pháp lệnh ưu đãi người có công với cách mạng",
+          "position": 4,
+          "name": "Quyết định về việc trợ cấp, phụ cấp ưu đãi Bà mẹ Việt Nam anh hùng",
+          "component_code": "TP.G12.98.046",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Các văn bản, tài liệu liên quan dùng để thay đổi thông tin quyền lợi được hưởng của người tham gia được quy định tại các văn bản: Nghị định số 131/2021/NĐ-CP ngày 30/12/2021 của Chính phủ quy định chi tiết và biện pháp thi hành Pháp lệnh ưu đãi người có công; Thông tư số 30/2019/TT-BLĐTBXH ngày 26/12/2019 của Bộ Lao động - Thương binh và Xã hội hướng dẫn lập danh sách đối tượng tham gia BHYT do Bộ Lao động - Thương binh và Xã hội quản lý; Nghị định số 20/2021/NĐ-CP ngày 15/3/2021 của Chính phủ quy định chính sách trợ giúp xã hội đối với đối tượng bảo trợ xã hội...; Tùy theo từng trường hợp, người tham gia cung cấp bản chụp (scan) của một trong số văn bản, tài liệu liên quan như:1. Người có công với cách mạng theo quy định tại Pháp lệnh ưu đãi người có công với cách mạng",
+          "position": 5,
+          "name": "Quyết định về việc cấp giấy chứng nhận thương binh hoặc người hưởng chính sách như thương binh và trợ cấp, phụ cấp ưu đãi, Quyết định về việc trợ cấp thương tật một lần.",
+          "component_code": "TP.G12.98.047",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Các văn bản, tài liệu liên quan dùng để thay đổi thông tin quyền lợi được hưởng của người tham gia được quy định tại các văn bản: Nghị định số 131/2021/NĐ-CP ngày 30/12/2021 của Chính phủ quy định chi tiết và biện pháp thi hành Pháp lệnh ưu đãi người có công; Thông tư số 30/2019/TT-BLĐTBXH ngày 26/12/2019 của Bộ Lao động - Thương binh và Xã hội hướng dẫn lập danh sách đối tượng tham gia BHYT do Bộ Lao động - Thương binh và Xã hội quản lý; Nghị định số 20/2021/NĐ-CP ngày 15/3/2021 của Chính phủ quy định chính sách trợ giúp xã hội đối với đối tượng bảo trợ xã hội...; Tùy theo từng trường hợp, người tham gia cung cấp bản chụp (scan) của một trong số văn bản, tài liệu liên quan như:1. Người có công với cách mạng theo quy định tại Pháp lệnh ưu đãi người có công với cách mạng",
+          "position": 6,
+          "name": "Quyết định về việc cấp giấy chứng nhận bệnh binh và trợ cấp, phụ cấp ưu đãi",
+          "component_code": "TP.G12.98.048",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Các văn bản, tài liệu liên quan dùng để thay đổi thông tin quyền lợi được hưởng của người tham gia được quy định tại các văn bản: Nghị định số 131/2021/NĐ-CP ngày 30/12/2021 của Chính phủ quy định chi tiết và biện pháp thi hành Pháp lệnh ưu đãi người có công; Thông tư số 30/2019/TT-BLĐTBXH ngày 26/12/2019 của Bộ Lao động - Thương binh và Xã hội hướng dẫn lập danh sách đối tượng tham gia BHYT do Bộ Lao động - Thương binh và Xã hội quản lý; Nghị định số 20/2021/NĐ-CP ngày 15/3/2021 của Chính phủ quy định chính sách trợ giúp xã hội đối với đối tượng bảo trợ xã hội...; Tùy theo từng trường hợp, người tham gia cung cấp bản chụp (scan) của một trong số văn bản, tài liệu liên quan như:1. Người có công với cách mạng theo quy định tại Pháp lệnh ưu đãi người có công với cách mạng",
+          "position": 7,
+          "name": "Quyết định về việc cấp giấy chứng nhận người hoạt động kháng chiến bị nhiễm chất độc hóa học và trợ cấp, phụ cấp ưu đãi.",
+          "component_code": "TP.G12.98.049",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Các văn bản, tài liệu liên quan dùng để thay đổi thông tin quyền lợi được hưởng của người tham gia được quy định tại các văn bản: Nghị định số 131/2021/NĐ-CP ngày 30/12/2021 của Chính phủ quy định chi tiết và biện pháp thi hành Pháp lệnh ưu đãi người có công; Thông tư số 30/2019/TT-BLĐTBXH ngày 26/12/2019 của Bộ Lao động - Thương binh và Xã hội hướng dẫn lập danh sách đối tượng tham gia BHYT do Bộ Lao động - Thương binh và Xã hội quản lý; Nghị định số 20/2021/NĐ-CP ngày 15/3/2021 của Chính phủ quy định chính sách trợ giúp xã hội đối với đối tượng bảo trợ xã hội...; Tùy theo từng trường hợp, người tham gia cung cấp bản chụp (scan) của một trong số văn bản, tài liệu liên quan như:1. Người có công với cách mạng theo quy định tại Pháp lệnh ưu đãi người có công với cách mạng",
+          "position": 8,
+          "name": "Giấy chứng nhận người có công",
+          "component_code": "TP.G12.98.050",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "2. Cựu chiến binh",
+          "position": 1,
+          "name": "Quyết định hưởng chế độ trợ cấp của cơ quan có thẩm quyền",
+          "component_code": "TP.G12.98.051",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "3. Thân nhân của liệt sĩ",
+          "position": 1,
+          "name": "Giấy chứng nhận thân nhân liệt sỹ",
+          "component_code": "TP.G12.98.052",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "3. Thân nhân của liệt sĩ",
+          "position": 2,
+          "name": "Quyết định về việc trợ cấp tuất hằng tháng đối với thân nhân liệt sỹ",
+          "component_code": "TP.G12.98.053",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "3. Thân nhân của liệt sĩ",
+          "position": 3,
+          "name": "Quyết định về việc cấp giấy chứng nhận thân nhân liệt sĩ và trợ cấp một lần khi báo tử",
+          "component_code": "TP.G12.98.054",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "4. Người có công nuôi dưỡng liệt sĩ",
+          "position": 1,
+          "name": "Quyết định giải quyết chế độ của Giám đốc Sở Lao động - Thương binh và Xã hội tỉnh, thành phố trực thuộc Trung ương",
+          "component_code": "TP.G12.98.055",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "5. Vợ hoặc chồng liệt sĩ lấy chồng khác hoặc vợ khác đang hưởng trợ cấp tuất hằng tháng và cá nhân có liên quan theo quy định của Pháp lệnh Ưu đãi người có công với cách mạng",
+          "position": 1,
+          "name": "Quyết định về việc trợ cấp tuất hằng tháng đối với vợ hoặc chồng liệt sĩ đã lấy chồng hoặc vợ khác",
+          "component_code": "TP.G12.98.056",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "6. Người thuộc hộ gia đình nghèo, cận nghèo",
+          "position": 1,
+          "name": "Giấy chứng nhận hộ nghèo, hộ cận nghèo (Cán bộ giải quyết TTHC tự khai thác và không yêu cầu cá nhân phải nộp khi CSDL về hộ nghèo, cận nghèo của Bộ Nông nghiệp sẵn sàng chia sẻ dữ liệu)",
+          "component_code": "TP.G12.98.057",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "7. Người đang hưởng trợ cấp xã hội hằng tháng",
+          "position": 1,
+          "name": "Quyết định trợ cấp xã hội của Chủ tịch Ủy ban nhân dân quận, huyện, thị xã",
+          "component_code": "TP.G12.98.058",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "7. Người đang hưởng trợ cấp xã hội hằng tháng",
+          "position": 2,
+          "name": "Giấy xác nhận khuyết tật",
+          "component_code": "TP.G12.98.059",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "8. Người tham gia kháng chiến, bảo vệ Tổ quốc, làm nghĩa vụ quốc tế và các đối tượng khác đã được ngân sách nhà nước đóng BHYT theo quy định tại các văn bản quy phạm pháp luật ban hành trước ngày 01/01/2025",
+          "position": 1,
+          "name": "Huân chương kháng chiến; Huân chương Chiến thắng; Huy chương kháng chiến; Huy chương chiến thắng hoặc giấy chứng nhận đeo huân chương, huy chương; Quyết định tặng thưởng Huân chương kháng chiến, Huân chương chiến thắng, Huy chương kháng chiến, Huy chương chiến thắng; Giấy xác nhận về khen thưởng tổng kết thành tích kháng chiến và thời gian hoạt động kháng chiến thực tế của cơ quan Thi đua khen thưởng cấp huyện trở lên.",
+          "component_code": "TP.G12.98.060",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "8. Người tham gia kháng chiến, bảo vệ Tổ quốc, làm nghĩa vụ quốc tế và các đối tượng khác đã được ngân sách nhà nước đóng BHYT theo quy định tại các văn bản quy phạm pháp luật ban hành trước ngày 01/01/2025",
+          "position": 2,
+          "name": "Quyết định về việc trợ cấp ưu đãi người hoạt động kháng chiến giải phóng dân tộc, bảo vệ tổ quốc và làm nghĩa vụ quốc tế hoặc người có công giúp đỡ cách mạng",
+          "component_code": "TP.G12.98.061",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "- Cơ quan quản lý người chỉ tham gia BHYT/Tổ chức hỗ trợ phát triển đối tượng phối hợp:",
+          "position": 1,
+          "name": "Tờ khai đơn vị đăng ký, điều chỉnh thông tin tham gia BHXH, BHYT, BHTN (Mẫu TK3-TS) đối với đơn vị đăng ký tham gia lần đầu, di chuyển địa bàn hoặc thay đổi thông tin.",
+          "component_code": "TP.G12.98.062",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "01a0eccf-ab71-75ef-b255-f2fce1bd2d88",
+              "fileName": "TK3-TS.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/01a0eccf-ab71-75ef-b255-f2fce1bd2d88/TK3-TS.docx"
+            }
+          ]
+        },
+        {
+          "section": "- Cơ quan quản lý người chỉ tham gia BHYT/Tổ chức hỗ trợ phát triển đối tượng phối hợp:",
+          "position": 2,
+          "name": "Danh sách đối tượng tham gia BHYT (Mẫu số 3 ban hành kèm theo Nghị định số 188/2025/NĐ-CP)",
+          "component_code": "TP.G12.98.063",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "01a0eccf-ce61-715a-afee-9acab7447555",
+              "fileName": "Mau so 3.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/01a0eccf-ce61-715a-afee-9acab7447555/Mau so 3.docx"
+            }
+          ]
+        },
+        {
+          "section": "- Cơ quan quản lý người chỉ tham gia BHYT/Tổ chức hỗ trợ phát triển đối tượng phối hợp:",
+          "position": 3,
+          "name": "Hồ sơ của người tham gia (Tờ khai tham gia điều chỉnh thông tin BHYT (Mẫu số 2 ban hành kèm theo Nghị định số 188/2025/NĐ-CP) đối với trường hợp đăng ký tham gia lần đầu hoặc điều chỉnh thông tin và bản chụp (scan) giấy tờ chứng minh được hưởng quyền lợi BHYT cao hơn đối với trường hợp người tham gia được hưởng quyền lợi BHYT cao hơn)",
+          "component_code": "TP.G12.98.064",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "01a0eccf-f3f5-74ac-874f-aafe06f120a9",
+              "fileName": "Mau so 2.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/01a0eccf-f3f5-74ac-874f-aafe06f120a9/Mau so 2.docx"
+            }
+          ]
+        },
+        {
+          "section": "- Tổ chức hỗ trợ phát triển đối tượng dịch vụ:",
+          "position": 1,
+          "name": "Tờ khai đơn vị đăng ký, điều chỉnh thông tin tham gia BHXH, BHYT, BHTN (Mẫu TK3-TS) đối với đơn vị đăng ký tham gia lần đầu, di chuyển địa bàn hoặc thay đổi thông tin",
+          "component_code": "TP.G12.98.065",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "01a16d91-7c0d-7074-8e5b-83c134de9a21",
+              "fileName": "TK3-TS.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/01a16d91-7c0d-7074-8e5b-83c134de9a21/TK3-TS.docx"
+            }
+          ]
+        },
+        {
+          "section": "- Tổ chức hỗ trợ phát triển đối tượng dịch vụ:",
+          "position": 2,
+          "name": "Danh sách thành viên hộ gia đình tham gia BHYT (Mẫu số 4 ban hành kèm theo Nghị định số 188/2025/NĐ-CP)",
+          "component_code": "TP.G12.98.066",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "01a0ecd0-5f7d-772b-b206-6c6b8dba77ad",
+              "fileName": "Mau so 4.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/01a0ecd0-5f7d-772b-b206-6c6b8dba77ad/Mau so 4.docx"
+            }
+          ]
+        },
+        {
+          "section": "- Tổ chức hỗ trợ phát triển đối tượng dịch vụ:",
+          "position": 3,
+          "name": "Hồ sơ của người tham gia (Tờ khai tham gia điều chỉnh thông tin BHYT (Mẫu số 2 ban hành kèm theo Nghị định số 188/2025/NĐ-CP) đối với trường hợp đăng ký tham gia lần đầu hoặc điều chỉnh thông tin",
+          "component_code": "TP.G12.98.067",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "01a16d93-1827-713a-8237-8c14f8d2ddd9",
+              "fileName": "Mau so 2.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/01a16d93-1827-713a-8237-8c14f8d2ddd9/Mau so 2.docx"
+            }
+          ]
+        },
+        {
+          "section": "b) Hoàn trả tiền đóng BHYT đối với người tham gia BHYT thuộc nhóm ngân sách nhà nước hỗ trợ một phần mức đóng, nhóm tự đóng BHYT giảm giá trị sử dụng thẻ đã cấp do xác định lại thứ tự đóng BHYT (cá nhân thực hiện).",
+          "position": 1,
+          "name": "Tờ khai đăng ký, điều chỉnh thông tin tham gia BHXH, BHYT (Mẫu TK1-TS)",
+          "component_code": "TP.G12.98.068",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "01a0ecd0-a102-751d-a6dc-11abcad467f8",
+              "fileName": "TK1-TS.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/01a0ecd0-a102-751d-a6dc-11abcad467f8/TK1-TS.docx"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c72-75fa-a592-4375e21dd2da",
+          "name": "Thẻ BHYT Trường hợp Đăng ký đóng, cấp thẻ BHYT",
+          "code": "KQ.G12.001057"
+        },
+        {
+          "id": "019d2bb2-1c82-739b-8b99-613a23b81914",
+          "name": "+ Tiền hoàn trả; + Thông báo kết quả giải quyết thủ tục hành chính (Mẫu số 01-TB ban hành kèm theo Quyết định số 58/QĐ-BHXH ngày 22/01/2025)",
+          "code": "KQ.G12.001164"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d84-71c5-b672-49499e22ddad",
+          "name": "Luật 25/2008/QH12 - Bảo hiểm y tế",
+          "code": "25/2008/QH12"
+        },
+        {
+          "id": "019d2bb3-5d86-7760-a645-1edb649db1d2",
+          "name": "Công bố thủ tục hành chính mới trong lĩnh vực Bảo hiểm y tế và bị bãi bỏ trong lĩnh vực Tài chính y tế tại Nghị định 188/2025/NĐ-CP thuộc phạm vi chức năng quản lý của Bộ Y tế",
+          "code": "2306/QĐ-BYT"
+        },
+        {
+          "id": "019e72e9-3b2a-77b9-9c29-023d914eb3dc",
+          "name": "Quy định về giao dịch điện tử trong lĩnh vực bảo hiểm xã hội và Cơ sở dữ liệu quốc gia về bảo hiểm",
+          "code": "164/2025/NĐ-CP "
+        },
+        {
+          "id": "01a0eb46-afe7-72ed-b43e-f41105ad120f",
+          "name": "QUY ĐỊNH VỀ VIỆC TẠO LẬP SỔ BẢO HIỂM XÃ HỘI, THẺ BẢO HIỂM Y TẾ BẢN ĐIỆN TỬ",
+          "code": "09/2026/TT-BTC"
+        },
+        {
+          "id": "019d2bb3-5d86-7760-a63f-3570c1f2598e",
+          "name": "Nghị định 131/2021/NĐ-CP",
+          "code": "131/2021/NĐ-CP"
+        },
+        {
+          "id": "01a023be-84c8-77db-ade3-9c613cd83670",
+          "name": "Quy trình thu bảo hiểm xã hội, bảo hiểm y tế, bảo hiểm thất nghiệp; cấp sổ bảo hiểm xã hội, thẻ bảo hiểm y tế",
+          "code": "366/QĐ-BHXH"
+        },
+        {
+          "id": "019e1a33-d365-7413-8667-bbbb7d7de2ea",
+          "name": "quy định chi tiết và hướng dẫn thi hành một số điều của Luật Bảo hiểm y tế",
+          "code": "Nghị định số 188/2025/NĐ-CP "
+        },
+        {
+          "id": "019ff547-6a69-7038-a010-d5ec1e9fd252",
+          "name": "Nghị định 118/2025/NĐ-CP ngày 09/6/2025 của Chính phủ về thực hiện thủ tục hành chính theo cơ chế một cửa, một cửa liên thông tại Bộ phận Một cửa và Cổng Dịch vụ công quốc gia",
+          "code": "Nghị định 118/2025/NĐ-CP "
+        },
+        {
+          "id": "019d2bb3-5d87-7195-a43e-2ac01bec0ffb",
+          "name": "Thông tư 30/2019/TT-BLĐTBXH",
+          "code": "30/2019/TT-BLĐTBXH"
+        },
+        {
+          "id": "01a0ecc6-c6a7-725a-afae-fa48f0d1ea91",
+          "name": "QUY ĐỊNH BIỆN PHÁP THỰC HIỆN BẢO HIỂM Y TẾ ĐỐI VỚI CÔNG NHÂN CÔNG AN, NGƯỜI LAO ĐỘNG, HỌC SINH, SINH VIÊN VÀ THÂN NHÂN CỦA CÁN BỘ, CHIẾN SĨ, CÔNG NHÂN CÔNG AN ĐANG CÔNG TÁC, HỌC TẬP TRONG CÔNG AN NHÂN DÂN",
+          "code": "86/2025/TT-BCA"
+        }
+      ]
+    }
+  ]
+}

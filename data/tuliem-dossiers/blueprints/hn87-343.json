@@ -1,0 +1,77 @@
+{
+  "id": "hn87-343",
+  "ordinal": "343",
+  "procedure_code": "2.001659",
+  "name": "Xóa đăng ký phương tiện",
+  "domain": "Hàng hải và đường thủy nội địa",
+  "department_id": "chuyennganh",
+  "department": "Cơ quan chuyên ngành · cần xác định đơn vị phối hợp",
+  "authority_as_published": "Sở; UBND cấp xã",
+  "execution_level_as_published": "Cấp tỉnh, cấp xã",
+  "receiving_location_as_published": "Điểm hỗ trợ DVC số; Chi nhánh TTPVHCC",
+  "inventory_date": "2026-04-27",
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "source_urls": [
+    "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfe-a039-75a8-85e4-a19d8132bb5d"
+  ],
+  "current_dvc_match": true,
+  "lifecycle": null,
+  "scope": "hanoi_commune_notice_2026_04_27",
+  "scope_note": "Mốc kiểm kê cấp xã Hà Nội; áp dụng từng thủ tục tại Từ Liêm còn phải theo thẩm quyền/ủy quyền hiện hành.",
+  "status": "has_fillable_templates",
+  "components": [
+    {
+      "id": "hn87-343-c001",
+      "code": "000.00.00.G04-KQ005229",
+      "name": "Đơn đề nghị xóa đăng ký phương tiện thủy nội địa theo quy định",
+      "section": "",
+      "role": "applicant_form",
+      "scenario_status": "selected_for_test",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfe-a039-75a8-85e4-a19d8132bb5d",
+      "source_detail_id": "019d2bfe-a039-75a8-85e4-a19d8132bb5d",
+      "embedded_other_requirements": false,
+      "template_candidates": [
+        "template-346a3294292713a4"
+      ],
+      "template_selection_method": "first_matching_source_attachment",
+      "selected_template_id": "template-346a3294292713a4",
+      "selection_requires_review": false
+    }
+  ],
+  "service_cases": [
+    {
+      "id": "019db07d-25ce-758e-a773-503c2a3cf20c",
+      "code": "2.001659.01",
+      "name": "Xóa đăng ký phương tiện",
+      "source_processing_time": {
+        "qty": 2,
+        "type": "WORKING_DAY"
+      },
+      "has_case_specific_components": false
+    }
+  ],
+  "selected_template_ids": [
+    "template-346a3294292713a4"
+  ],
+  "source_component_groups": [
+    {
+      "name": "",
+      "component_count": 1,
+      "source_detail_id": "019d2bfe-a039-75a8-85e4-a19d8132bb5d"
+    }
+  ],
+  "conditional_component_groups": [],
+  "default_test_scenario": {
+    "channel": "direct",
+    "applicant_submits_self": true,
+    "authorized": false,
+    "special_case_flags": [],
+    "selected_conditional_group": null,
+    "case_selection_method": "ordinary_direct_submission",
+    "case_status": "scenario_for_testing_not_a_legal_eligibility_decision"
+  },
+  "requirement_note": "required_as_published được giữ nguyên; false không chứng minh giấy tờ luôn tùy chọn. Các nhóm executionCases có thể là mục giấy tờ/hướng dẫn, không phải các phương án loại trừ nhau."
+}

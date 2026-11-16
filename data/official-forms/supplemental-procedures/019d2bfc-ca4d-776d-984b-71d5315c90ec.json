@@ -1,0 +1,90 @@
+{
+  "id": "dvc-019d2bfc-ca4d-776d-984b-71d5315c90ec",
+  "procedure_code": "1.013653",
+  "name": "Đăng ký/Thay đổi thông tin sử dụng chứng từ điện tử/Ủy nhiệm lập biên lai điện tử",
+  "domain": "Hải quan",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.916738+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfc-ca4d-776d-984b-71d5315c90ec",
+      "code": "1.013653",
+      "name": "Đăng ký/Thay đổi thông tin sử dụng chứng từ điện tử/Ủy nhiệm lập biên lai điện tử",
+      "state": "ACTIVE",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1775639565259,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-ca4d-776d-984b-71d5315c90ec",
+      "raw_path": "evidence/dvc/details/019d2bfc-ca4d-776d-984b-71d5315c90ec.json",
+      "components": [
+        {
+          "section": "Trường hợp (1): Đối với đăng ký/ Thay đổi thông tin sử dụng chứng từ đối với các chứng từ có đầy đủ nội dung theo quy định (Tên biên lai, ký hiệu mẫu biên lai và ký hiệu biên lai, số biên lai, liên biên lai, tên, MST của tổ chức thu thuế, phí, lệ phí, tên loại các khoản thu thuế và số tiền, ngày tháng năm)",
+          "position": 1,
+          "name": "Mẫu số 01/ĐKTĐ-CTĐT Tờ khai đăng ký/thay đổi thông tin sử dụng chứng từ điện tử",
+          "component_code": "000.00.00.G12-KQ013890",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Trường hợp (2): Đối với đăng ký/ Thay đổi thông tin sử dụng chứng từ đối với các chứng từ điều chỉnh một số tiêu thức bắt buộc ",
+          "position": 1,
+          "name": "Có văn bản gửi Cục Hải quan (không có mẫu)",
+          "component_code": "000.00.00.G12-KQ013891",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Trường hợp (3): Ủy nhiệm lập biên lai điện tử",
+          "position": 1,
+          "name": "Mẫu số 01/ĐKTĐ-CTĐT Tờ khai đăng ký/thay đổi thông tin sử dụng chứng từ điện tử",
+          "component_code": "000.00.00.G12-KQ013890",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c71-7574-afec-5ba61823f89a",
+          "name": "Cục Hải quan chấp thuận hồ sơ",
+          "code": "KQ.G12.000951"
+        },
+        {
+          "id": "019d2bb2-1c71-7574-afec-6c69313f5154",
+          "name": "Thông báo về việc tiếp nhận/không tiếp nhận tờ khai đăng ký/thay đổi thông tin sử dụng hóa đơn điện tử/chứng từ điện tử (Mẫu số 01/TB-TNĐT)",
+          "code": "KQ.G12.000477"
+        },
+        {
+          "id": "019d2bb2-1c71-7574-afec-73ae9b6a2329",
+          "name": "Thông báo về việc chấp nhận/không chấp nhận đăng ký/thay đổi thông tin sử dụng hóa đơn điện tử/chứng từ điện tử và thực hiện kết nối kỹ thuật và kiểm tra truyền nhận dữ liệu (Mẫu số 01/TB-ĐKĐT)",
+          "code": "KQ.G12.000964"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d86-7760-a63e-7a35aa2ed73a",
+          "name": "Nghị định 123/2020/NĐ-CP",
+          "code": "123/2020/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d87-7195-a444-f7af6096dd40",
+          "name": "Nghị định số 70/2025/NĐ-CP ngày ngày 20 tháng 3 năm 2025 của Chính phủ sửa đổi, bổ sung một số điều của Nghị định số 123/2020/NĐ-CP ngày 19 tháng 10 năm 2020 của Chính phủ quy định về hóa đơn, chứng từ.",
+          "code": "70/2025/NĐ-CP"
+        }
+      ]
+    }
+  ]
+}

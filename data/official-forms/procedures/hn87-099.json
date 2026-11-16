@@ -1,0 +1,106 @@
+{
+  "ordinal": "99",
+  "managing_agency": "Sở Văn hóa thể thao",
+  "procedure_code": "1.000842",
+  "name": "Thủ tục cấp Giấy chứng nhận đủ điều kiện kinh doanh hoạt động thể thao đối với môn Judo",
+  "domain": "Thể dục thể thao",
+  "ministry_decision": "5001/QĐ-BVHTTDL",
+  "hanoi_decision": "177/QĐ-TTPVHCC ngày 06/02/2026",
+  "workflow_decision": "340/QĐ-TTPVHCC ngày 23/3/2026",
+  "fees": "Không quy định",
+  "execution_level": "Cấp Xã",
+  "competent_authority": "UBND cấp xã",
+  "delegation_decision": "93/QĐ-SVHTT ngày 07/2/2026",
+  "delegation_expiry": "31/12/2028",
+  "receiving_location": "Điểm hỗ trợ DVC số",
+  "id": "hn87-099",
+  "source_page": 4,
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "inventory_date": "2026-04-27",
+  "checked_at": "2026-11-12T22:24:34.532413+07:00",
+  "details": [
+    {
+      "id": "019d2bfd-ad63-72d6-809d-98bb79ddeb31",
+      "code": "1.000842",
+      "name": "Thủ tục cấp Giấy chứng nhận đủ điều kiện kinh doanh hoạt động thể thao đối với môn Judo",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": false,
+      "updated_at_source": 1780390344848,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfd-ad63-72d6-809d-98bb79ddeb31",
+      "raw_path": "evidence/dvc/details/019d2bfd-ad63-72d6-809d-98bb79ddeb31.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "(3) Thông tin giấy chứng nhận đăng ký doanh nghiệp được khai thác trên Cơ sở dữ liệu quốc gia về đăng ký doanh nghiệp, không phải nộp bản sao nếu đã có thông tin dữ liệu.",
+          "component_code": "G16-KQ002452",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Đơn đề nghị  Cấp giấy chứng nhận đủ điều kiện kinh doanh  hoạt động thể thao (theo mẫu số 02 Phụ lục III Nghị định số 31/2024/NĐ-CP ngày 15/3/2024)",
+          "component_code": "G16-KQ001719",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 3,
+          "name": "Bản tóm tắt tình hình chuẩn bị các điều kiện kinh doanh hoạt động thể thao theo Mẫu số 03 ban hành kèm theo Nghị định số 36/2019/NĐ-CP ngày 29/4/2019 quy định chi tiết một số điều của Luật sửa đổi, bổ sung một số điều của Luật Thể dục, thể thao",
+          "component_code": "000.00.00.G16-KQ1044",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c79-762e-8b2c-55bc4b426a15",
+          "name": "Giấy chứng nhận đủ điều kiện kinh doanh hoạt động thể thao (mẫu số 01 Phụ lục III Nghị định số 31/2024/NĐ-CP ngày 15/3/2024)",
+          "code": "KQ.G16.000305"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d84-71c5-b672-5e08ff02ad18",
+          "name": "SỬA ĐỔI, BỔ SUNG MỘT SỐ ĐIỀU CỦA LUẬT THỂ DỤC, THỂ THAO",
+          "code": "26/2018/QH14"
+        },
+        {
+          "id": "019d2bb3-5d7f-719e-b46c-77f835c4d23f",
+          "name": "Sửa đổi, bổ sung một số điều của Nghị định số 01/2012/NĐ-CP, Nghị định số 61/2016/NĐ-CP và Nghị định số 36/2019/NĐ-CP",
+          "code": "31/2024/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b674-3b196cccc10f",
+          "name": "Luật 77/2006/QH11",
+          "code": "77/2006/QH11"
+        },
+        {
+          "id": "019d2bb3-5d7f-719e-b46d-2287ece36c60",
+          "name": "Nghị định 36/2019/NĐ-CP",
+          "code": "36/2019/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b670-d45656bf8c18",
+          "name": "Phí và lệ phí",
+          "code": "97/2015/QH13"
+        }
+      ]
+    }
+  ],
+  "lookup_status": "retrieved",
+  "currency_status": "snapshot_requires_later_amendment_check",
+  "errors": []
+}

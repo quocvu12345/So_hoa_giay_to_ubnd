@@ -1,0 +1,160 @@
+{
+  "id": "dvc-019d2bfc-6c64-7369-bbee-fc48654f8db4",
+  "procedure_code": "1.008587",
+  "name": "Xác nhận số thuế đã nộp tại Việt Nam đối với đối tượng cư trú của nước ngoài",
+  "domain": "Thuế",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.934635+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfc-6c64-7369-bbee-fc48654f8db4",
+      "code": "1.008587",
+      "name": "Xác nhận số thuế đã nộp tại Việt Nam đối với đối tượng cư trú của nước ngoài",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1785399200136,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-6c64-7369-bbee-fc48654f8db4",
+      "raw_path": "evidence/dvc/details/019d2bfc-6c64-7369-bbee-fc48654f8db4.json",
+      "components": [
+        {
+          "section": "* Trường hợp người nộp thuế đề nghị xác nhận số thuế đã nộp tại Việt Nam gửi hồ sơ đề nghị đến cơ quan thuế quản lý trực tiếp nơi đăng ký nộp thuế để làm thủ tục xác nhận, hồ sơ bao gồm:",
+          "position": 1,
+          "name": "Văn bản đề nghị xác nhận số thuế đã nộp tại Việt Nam theo Hiệp định thuế theo mẫu số 03/HTQT Phụ lục III ban hành kèm theo Thông tư số 89/2026/TT-BTC, trong đó cung cấp các thông tin về giao dịch liên quan đến thu nhập chịu thuế và số thuế phát sinh từ giao dịch đó thuộc phạm vi điều chỉnh của Hiệp định thuế",
+          "component_code": "G12.0015664",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019fad90-e015-774f-8a3b-da280c3326c9",
+              "fileName": "3. 03.HTQT.doc",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fad90-e015-774f-8a3b-da280c3326c9/3. 03.HTQT.doc"
+            }
+          ]
+        },
+        {
+          "section": "* Trường hợp người nộp thuế đề nghị xác nhận số thuế đã nộp tại Việt Nam gửi hồ sơ đề nghị đến cơ quan thuế quản lý trực tiếp nơi đăng ký nộp thuế để làm thủ tục xác nhận, hồ sơ bao gồm:",
+          "position": 2,
+          "name": "Bản chính hoặc bản sao có chứng thực Giấy chứng nhận cư trú của nước cư trú do cơ quan thuế cấp (ghi rõ là đối tượng cư trú trong kỳ tính thuế nào) đã được hợp pháp hóa lãnh sự",
+          "component_code": "G12.0012079",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "* Trường hợp người nộp thuế đề nghị xác nhận số thuế đã nộp tại Việt Nam gửi hồ sơ đề nghị đến cơ quan thuế quản lý trực tiếp nơi đăng ký nộp thuế để làm thủ tục xác nhận, hồ sơ bao gồm:",
+          "position": 3,
+          "name": "Bản sao có chứng thực văn bản ủy quyền trong trường hợp người nộp thuế ủy quyền cho đại diện hợp pháp thực hiện thủ tục áp dụng Hiệp định thuế",
+          "component_code": "G12.0012002",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "* Trường hợp người nộp thuế đề nghị xác nhận số thuế phát sinh tại Việt Nam nhưng không phải nộp do được hưởng ưu đãi thuế và được coi như số thuế đã nộp tại Việt Nam để được khấu trừ số thuế tại nước nơi cư trú gửi hồ sơ đề nghị đến cơ quan thuế quản lý trực tiếp để làm thủ tục xác nhận, hồ sơ bao gồm:",
+          "position": 1,
+          "name": "Văn bản đề nghị xác nhận số thuế đã nộp tại Việt Nam theo Hiệp định thuế theo mẫu số 03/HTQT Phụ lục III ban hành kèm theo Thông tư số 89/2026/TT-BTC, trong đó cung cấp các thông tin về giao dịch liên quan đến thu nhập chịu thuế và số thuế phát sinh từ giao dịch đó thuộc phạm vi điều chỉnh của Hiệp định thuế",
+          "component_code": "G12.0015664",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019fad90-e015-774f-8a3b-da280c3326c9",
+              "fileName": "3. 03.HTQT.doc",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fad90-e015-774f-8a3b-da280c3326c9/3. 03.HTQT.doc"
+            }
+          ]
+        },
+        {
+          "section": "* Trường hợp người nộp thuế đề nghị xác nhận số thuế phát sinh tại Việt Nam nhưng không phải nộp do được hưởng ưu đãi thuế và được coi như số thuế đã nộp tại Việt Nam để được khấu trừ số thuế tại nước nơi cư trú gửi hồ sơ đề nghị đến cơ quan thuế quản lý trực tiếp để làm thủ tục xác nhận, hồ sơ bao gồm:",
+          "position": 2,
+          "name": "Bản chính hoặc bản sao có chứng thực Giấy chứng nhận cư trú của nước cư trú do cơ quan thuế cấp (ghi rõ là đối tượng cư trú trong kỳ tính thuế nào) đã được hợp pháp hóa lãnh sự",
+          "component_code": "G12.0012079",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "* Trường hợp người nộp thuế đề nghị xác nhận số thuế phát sinh tại Việt Nam nhưng không phải nộp do được hưởng ưu đãi thuế và được coi như số thuế đã nộp tại Việt Nam để được khấu trừ số thuế tại nước nơi cư trú gửi hồ sơ đề nghị đến cơ quan thuế quản lý trực tiếp để làm thủ tục xác nhận, hồ sơ bao gồm:",
+          "position": 3,
+          "name": "Bản sao có chứng thực văn bản ủy quyền trong trường hợp người nộp thuế ủy quyền cho đại diện hợp pháp thực hiện thủ tục áp dụng Hiệp định thuế",
+          "component_code": "G12.0012002",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 1,
+          "name": "Từ 01/7/2026 đến thời điểm theo lộ trình của cơ quan thuế quy định tại khoản 2 Điều 99 Thông tư số 89/2026/TT-BTC, tờ khai số 03/HTQT thực hiện theo mẫu ban hành kèm theo Thông tư số 80/2021/TT-BTC ngày 29/9/2021 của Bộ Tài chính (đã được sửa đổi, bổ sung)",
+          "component_code": "G12.0012103",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019fad92-c433-7639-9a34-ab01711af2b1",
+              "fileName": "03 HTQT TT 80.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fad92-c433-7639-9a34-ab01711af2b1/03 HTQT TT 80.docx"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c70-724b-96df-14189e6547bc",
+          "name": "Giấy xác nhận thuế thu nhập đã nộp tại Việt Nam (mẫu số 04/HTQT)",
+          "code": "KQ.G12.000263"
+        },
+        {
+          "id": "019d2bb2-1c71-7574-afe7-f80790c5405c",
+          "name": "Xác nhận số thuế phát sinh tại Việt Nam nhưng không phải nộp do được ưu đãi thuế dành cho đối tượng đề nghị (mẫu số 05/HTQT)",
+          "code": "KQ.G12.000531"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019e5e83-1282-771d-9014-49799413a4e5",
+          "name": "Luật số 108/2025/QH15 của Quốc hội: Luật Quản lý thuế",
+          "code": "108/2025/QH15"
+        },
+        {
+          "id": "019f356e-75e3-7494-a2f3-672d8dce61a6",
+          "name": "QUY ĐỊNH CHI TIẾT MỘT SỐ ĐIỀU VÀ BIỆN PHÁP ĐỂ TỔ CHỨC, HƯỚNG DẪN THI HÀNH LUẬT QUẢN LÝ THUẾ",
+          "code": "252/2026/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afe9-653aac8276ee",
+          "name": "Nghị định số 118/2025/NĐ-CP của Chính phủ: Về thực hiện thủ tục hành chính theo cơ chế một cửa, một cửa liên thông tại Bộ phận Một cửa và Cổng Dịch vụ công quốc gia",
+          "code": "118/2025/NĐ-CP"
+        },
+        {
+          "id": "019f8db3-9765-740b-8b90-682677b9c421",
+          "name": "Thông tư quy định chi tiết một số điều của Luật Quản lý thuế và Nghị định số 252/2026/NĐ-CP của Chính phủ quy định chi tiết một số điều và biện pháp để tổ chức, hướng dẫn thi hành Luật Quản lý thuế",
+          "code": "89/2026/TT-BTC"
+        }
+      ]
+    }
+  ]
+}

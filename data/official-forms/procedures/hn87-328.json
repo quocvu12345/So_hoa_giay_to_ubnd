@@ -1,0 +1,125 @@
+{
+  "ordinal": "328",
+  "managing_agency": "Sở Xây dựng",
+  "procedure_code": "1.013061",
+  "name": "Cấp giấy phép thi công công trình trên đường bộ đang khai thác",
+  "domain": "Đường bộ",
+  "ministry_decision": "901/QĐ-BGTVT ngày 24/6/2025",
+  "hanoi_decision": "957/QĐ-TTPVHCC ngày27/6/2025",
+  "workflow_decision": "1092/QĐ-TTPVHCC ngày 23/7/2025",
+  "fees": "Không quy định",
+  "execution_level": "Cấp tỉnh, cấp xã",
+  "competent_authority": "Sở; Ban QL; UBND cấp xã",
+  "delegation_decision": "Quyết định 74/2025/QĐ-UBND ngày 04/12/2025 của UBND TP: Về việc ban hành quy định về phân cấp một số nội dung thuộc lĩnh vực xây dựng, giao thông trên địa bàn thành phố Hà Nội",
+  "delegation_expiry": "",
+  "receiving_location": "Điểm hỗ trợ DVC số; Chi nhánh TTPVHCC",
+  "id": "hn87-328",
+  "source_page": 13,
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "inventory_date": "2026-04-27",
+  "checked_at": "2026-11-12T22:24:52.842081+07:00",
+  "details": [
+    {
+      "id": "019d2bfe-88c8-7734-ad0e-b5e2bc20de96",
+      "code": "1.013061",
+      "name": "Cấp giấy phép thi công công trình trên đường bộ đang khai thác",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1776427205628,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfe-88c8-7734-ad0e-b5e2bc20de96",
+      "raw_path": "evidence/dvc/details/019d2bfe-88c8-7734-ad0e-b5e2bc20de96.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Đơn đề nghị cấp phép thi công công trình trên đường bộ đang khai thác",
+          "component_code": "000.00.00.G04-KQ004871",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019d9b3e-8021-7629-922f-35dac89aa490",
+              "fileName": "Đơn_TT1.013061.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d9b3e-8021-7629-922f-35dac89aa490/Đơn_TT1.013061.docx"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Đối với công trình đề nghị cấp giấy phép thi công trong phạm vi dải phân cách giữa của đường bộ, ngoài Bản vẽ thiết kế thi công phải có thông tin về khoảng cách theo phương thẳng đứng, phương ngang từ mép công trình đề nghị cấp phép đến bề mặt và mép ngoài dải phân cách giữa (bản chính, bản sao có chứng thực, bản sao điện tử được cấp từ sổ gốc, bản sao điện tử được chứng thực từ bản chính, bản sao kèm theo bản chính để đối chiếu)",
+          "component_code": "G17-KQ005535",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 3,
+          "name": "Đối với công trình đề nghị cấp giấy phép thi công lắp đặt vào cầu, hầm hoặc các công trình đường bộ có kết cấu phức tạp khác thì ngoài Bản vẽ thiết kế thi công phải có báo cáo kết quả thẩm tra thiết kế và kết quả tính toán khả năng chịu lực của công trình đường bộ do tổ chức tư vấn đủ năng lực theo quy định của pháp luật về xây dựng thực hiện (bản chính, bản sao có chứng thực, bản sao điện tử được cấp từ sổ gốc, bản sao điện tử được chứng thực từ bản chính, bản sao kèm theo bản chính để đối chiếu);",
+          "component_code": "G17-KQ005536",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 4,
+          "name": "Bản vẽ thiết kế hoàn trả công trình đường bộ bị ảnh hưởng; bản vẽ và thuyết minh: biện pháp tổ chức thi công, biện pháp bảo đảm giao thông trong thời gian thi công trên đường bộ đang khai thác (bản chính, bản sao có chứng thực, bản sao điện tử được cấp từ sổ gốc, bản sao điện tử được chứng thực từ bản chính, bản sao kèm theo bản chính để đối chiếu)",
+          "component_code": "G17-KQ005537",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 5,
+          "name": "Bản vẽ thiết kế thi công có các thông tin về: vị trí, lý trình đường bộ, kích thước công trình trên mặt bằng công trình đường bộ và trong phạm vi đất dành cho kết cấu hạ tầng đường bộ; mặt đứng và khoảng cách theo phương thẳng đứng từ công trình bên trên hoặc bên dưới đến bề mặt công trình đường bộ, khoảng cách theo phương ngang từ cột, tuyến đường dây, đường ống, bộ phận khác của công trình đề nghị cấp phép đến mép ngoài rãnh thoát nước dọc, mép mặt đường xe chạy hoặc mép ngoài cùng của mặt đường bộ; bộ phận công trình đường bộ phải đào, khoan khi xây dựng công trình (bản chính, bản sao có chứng thực, bản sao điện tử được cấp từ sổ gốc, bản sao điện tử được chứng thực từ bản chính, bản sao kèm theo bản chính để đối chiếu) ;",
+          "component_code": "G17-KQ005534",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c3d-7379-a671-47bac1e3c4e9",
+          "name": "Giấy phép thi công công trình trên đường bộ đang khai thác",
+          "code": "KQ.G04.000479"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7c-71ab-9efe-861fc61c691f",
+          "name": "Quy định về quản lý, vận hành, khai thác và bảo trì kết cấu hạ tầng đường bộ",
+          "code": "41/2024/TT-BGTVT"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afe1-1e8732e4a2c4",
+          "name": "Thông tư sửa đổi, bổ sung một số điều của các Thông tư thuộc lĩnh vực quản lý nhà nước của Bộ Xây dựng liên quan đến sắp xếp tổ chức bộ máy, thực hiện chính quyền địa phương hai cấp và phân cấp cho chính quyền địa phương.",
+          "code": "09/2025/TT-BXD"
+        },
+        {
+          "id": "019d9b29-56fa-7689-a895-45b98c09c1c9",
+          "name": "Thông tư sửa đổi, bổ sung một số Điều của Thông tư số 36/2024/TT-BGTVT ngày 15 tháng 11 năm 2024 của Bộ trưởng Bộ Giao thông vận tải quy định về tổ chức, quản lý hoạt động vận tải bằng xe ô tô và hoạt động của bến xe, bãi đỗ xe, trạm dừng nghỉ, điểm dừng xe trên đường bộ; quy định trình tự, thủ tục đưa bến xe, trạm dừng nghỉ vào khai thác, Thông tư số 40/2024/TT-BGTVT ngày 15 tháng 11 năm 2024 của Bộ trưởng Bộ Giao thông vận tải quy định về công tác phòng, chống, khắc phục hậu quả thiên tai trong lĩnh vực đường bộ; Thông tư số 41/2024/TT-BGTVT ngày 15 tháng 11 năm 2024 của Bộ trưởng Bộ Giao thông vận tải quy định về quản lý, vận hành, khai thác và bảo trì kết cấu hạ tầng đường bộ, Thông tư số 22/2014/TT-BGTVT ngày 06 tháng 6 năm 2014 của Bộ trưởng Bộ Giao thông vận tải hướng dẫn xây dựng quy trình vận hành, khai thác bến phà, bến khách ngang sông sử dụng phà một lưỡi chở hành khách và xe ô tô.\n",
+          "code": "72/2025/TT-BXD"
+        }
+      ]
+    }
+  ],
+  "lookup_status": "retrieved",
+  "currency_status": "snapshot_requires_later_amendment_check",
+  "errors": []
+}

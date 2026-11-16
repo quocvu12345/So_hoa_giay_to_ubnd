@@ -1,0 +1,71 @@
+{
+  "id": "dvc-019d2bfc-25ef-76c3-bc54-f2fefb7fb7b0",
+  "procedure_code": "1.007645",
+  "name": "Thủ tục hải quan đối với hàng hóa nhập khẩu có trị giá hải quan trong định mức miễn thuế nhập khẩu theo quy định tại Điều 29 Nghị định số 134/2016/NĐ-CP được sửa đổi, bổ sung bởi khoản 11 Điều 1 Nghị định số 18/2021/NĐ-CP và thuộc trường hợp được miễn giấy phép, điều kiện, kiểm tra chuyên ngành hoặc không thuộc mặt hàng phải có giấy phép nhập khẩu, kiểm tra chuyên ngành theo quy định của pháp luật chuyên ngành gửi qua dịch vụ chuyển phát nhanh và hàng hoá xuất khẩu có trị giá hải quan dưới năm triệu đồng, được miễn thuế xuất khẩu hoặc chịu thuế xuất khẩu với thuế suất là 0%, không thuộc mặt hàng phải có giấy phép xuất khẩu, kiểm tra chuyên ngành gửi qua dịch vụ chuyển phát nhanh",
+  "domain": "Hải quan",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.958237+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfc-25ef-76c3-bc54-f2fefb7fb7b0",
+      "code": "1.007645",
+      "name": "Thủ tục hải quan đối với hàng hóa nhập khẩu có trị giá hải quan trong định mức miễn thuế nhập khẩu theo quy định tại Điều 29 Nghị định số 134/2016/NĐ-CP được sửa đổi, bổ sung bởi khoản 11 Điều 1 Nghị định số 18/2021/NĐ-CP và thuộc trường hợp được miễn giấy phép, điều kiện, kiểm tra chuyên ngành hoặc không thuộc mặt hàng phải có giấy phép nhập khẩu, kiểm tra chuyên ngành theo quy định của pháp luật chuyên ngành gửi qua dịch vụ chuyển phát nhanh và hàng hoá xuất khẩu có trị giá hải quan dưới năm triệu đồng, được miễn thuế xuất khẩu hoặc chịu thuế xuất khẩu với thuế suất là 0%, không thuộc mặt hàng phải có giấy phép xuất khẩu, kiểm tra chuyên ngành gửi qua dịch vụ chuyển phát nhanh",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1794380630948,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-25ef-76c3-bc54-f2fefb7fb7b0",
+      "raw_path": "evidence/dvc/details/019d2bfc-25ef-76c3-bc54-f2fefb7fb7b0.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Tờ khai hàng hóa xuất khẩu, nhập khẩu trị giá thấp đối với hàng hóa xuất khẩu, nhập khẩu nhóm 2 theo các chỉ tiêu thông tin tại phần A Mục II Phụ lục IV ban hành kèm theo Thông tư số 142/2026/TT-BTC.",
+          "component_code": "000.00.00.G12-KQ013963",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "01a1c8be-0c13-70a3-92e2-ca96b8314e2f",
+              "fileName": "Mẫu Phụ lục IV.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/01a1c8be-0c13-70a3-92e2-ca96b8314e2f/Mẫu Phụ lục IV.docx"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Tờ khai hải quan theo Mẫu số HQ/2015/XK hoặc Mẫu số HQ/2015/NK Phụ lục IV ban hành kèm theo Thông tư 38/2015/TT-BTC.",
+          "component_code": "000.00.00.G12-KQ013962",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c70-724b-96df-ddc2578f60d3",
+          "name": "Xác nhận thông quan hàng hóa",
+          "code": "KQ.G12.000583"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "01a1c4ee-85cd-72b0-a0d1-71be4519165d",
+          "name": "về sửa đổi, bổ sung một số điều của các Thông tư quy định thủ tục hải quan đối với hàng hóa xuất khẩu, nhập khẩu, quá cảnh gửi qua dịch vụ bưu chính của doanh nghiệp được chỉ định, dịch vụ chuyển phát nhanh quốc tế.",
+          "code": "142/2026/TT-BTC"
+        }
+      ]
+    }
+  ]
+}

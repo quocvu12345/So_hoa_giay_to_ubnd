@@ -1,0 +1,57 @@
+# Hạ tầng cho môi trường dev (task P0-03). Mật khẩu ở đây CHỈ dùng trên máy dev, nên mọi cổng chỉ mở cho chính máy này (127.0.0.1), không mở ra mạng.
+# Chạy: docker compose -f docker-compose.dev.yml up -d
+services:
+  postgres:
+    image: postgres:16
+    environment:
+      POSTGRES_PASSWORD: postgres_dev_only
+      POSTGRES_DB: hoso_dev
+    ports: ["127.0.0.1:5432:5432"]
+    volumes: ["pgdata:/var/lib/postgresql/data"]
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 5s
+      retries: 10
+
+  keycloak:
+    image: quay.io/keycloak/keycloak:26.0
+    command: start-dev --import-realm
+    environment:
+      KC_BOOTSTRAP_ADMIN_USERNAME: admin
+      KC_BOOTSTRAP_ADMIN_PASSWORD: admin_dev_only
+    ports: ["127.0.0.1:8080:8080"]
+    volumes: ["./infra/keycloak:/opt/keycloak/data/import:ro"]   # realm hoso xuất ở task P0-04
+
+  # Tùy chọn: kho tệp kiểu S3. Mặc định API lưu tệp trên ổ đĩa (Storage:Root) nên không bắt buộc.
+  # Kiểm tra lại điều khoản phát hành ảnh MinIO trước khi dùng; có thể thay bằng SeaweedFS/Garage.
+  minio:
+    image: minio/minio:latest
+    command: server /data --console-address ":9001"
+    environment:
+      MINIO_ROOT_USER: hoso
+      MINIO_ROOT_PASSWORD: minio_dev_only
+    ports: ["127.0.0.1:9000:9000", "127.0.0.1:9001:9001"]
+    volumes: ["minio:/data"]
+
+  # Giám sát (tùy chọn, task OPS-05): bật bằng --profile observability
+  loki:
+    image: grafana/loki:3.3.2
+    profiles: ["observability"]
+    ports: ["127.0.0.1:3101:3100"]
+  grafana:
+    image: grafana/grafana:11.4.0
+    profiles: ["observability"]
+    ports: ["127.0.0.1:3001:3000"]
+  glitchtip:
+    image: glitchtip/glitchtip:v4.2
+    profiles: ["observability"]
+    environment:
+      DATABASE_URL: postgres://postgres:postgres_dev_only@postgres:5432/glitchtip
+      SECRET_KEY: dev_only_change_me
+      PORT: "8000"
+    ports: ["127.0.0.1:8000:8000"]
+    depends_on: [postgres]
+
+volumes:
+  pgdata:
+  minio:

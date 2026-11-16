@@ -1,0 +1,113 @@
+{
+  "id": "hn87-120",
+  "ordinal": "120",
+  "procedure_code": "1.011471",
+  "name": "Phê duyệt Phương án khai thác gỗ, thực vật rừng ngoài gỗ loài thông thường thuộc thẩm quyền giải quyết của Ủy ban nhân dân cấp xã",
+  "domain": "Lâm nghiệp (Bộ Nông nghiệp và Môi trường)",
+  "department_id": "ktdt",
+  "department": "Phòng Kinh tế, Hạ tầng và Đô thị",
+  "authority_as_published": "UBND cấp xã",
+  "execution_level_as_published": "Cấp Xã",
+  "receiving_location_as_published": "Điểm hỗ trợ DVC số",
+  "inventory_date": "2026-04-27",
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "source_urls": [
+    "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfa-5f58-757b-a75e-76488561cdd0"
+  ],
+  "current_dvc_match": true,
+  "lifecycle": null,
+  "scope": "hanoi_commune_notice_2026_04_27",
+  "scope_note": "Mốc kiểm kê cấp xã Hà Nội; áp dụng từng thủ tục tại Từ Liêm còn phải theo thẩm quyền/ủy quyền hiện hành.",
+  "status": "has_fillable_templates",
+  "components": [
+    {
+      "id": "hn87-120-c001",
+      "code": "000.00.00.G10-KQ006278",
+      "name": "- Bản sao một trong các tài liệu sau đối với trường hợp khai thác tận dụng gỗ, thực vật rừng ngoài gỗ: + Đối với khai thác tận dụng trên diện tích giải phóng mặt bằng khi chuyển mục đích sử dụng rừng sang mục đích khác: quyết định chuyển mục đích sử dụng rừng sang mục đích khác được cấp có thẩm quyền phê duyệt; + Đối với khai thác tận dụng trên diện tích rừng được sử dụng để xây dựng kết cấu hạ tầng phục vụ bảo vệ và phát triển rừng: quyết định phê duyệt và hồ sơ dự án xây dựng công trình kết cấu hạ tầng phục vụ bảo vệ, phát triển rừng được cấp có thẩm quyền phê duyệt; + Đối với khai thác tận dụng trên diện tích tạm sử dụng rừng để thi công các công trình tạm phục vụ thi công dự án: quyết định phê duyệt và phương án tạm sử dụng rừng để thi công công trình, dự án được cấp có thẩm quyền phê duyệt; + Đối với khai thác tận dụng trong quá trình thực hiện biện pháp lâm sinh: quyết định phê duyệt dự án lâm sinh hoặc tài liệu chứng minh việc thực hiện các biện pháp lâm sinh được cấp có thẩm quyền phê duyệt; + Đối với khai thác tận dụng trên diện tích rừng trồng thanh lý: quyết định thanh lý kèm theo phương án thanh lý rừng trồng được cấp có thẩm quyền phê duyệt;  + Đối với khai thác tận dụng trong phạm vi hành lang bảo vệ an toàn đường dây dẫn điện trên không điện áp cao theo quy định pháp luật về điện lực: Biên bản kiểm tra hiện trường cây rừng chặt, tỉa, hạ độ cao trong hành lang bảo vệ an toàn đường dây dẫn điện theo Mẫu số 10 Phụ lục II ban hành kèm theo Thông tư số 26/2025/TT-BNNMT; + Đối với khai thác phục vụ nhiệm vụ đào tạo, nghiên cứu khoa học và công nghệ trong rừng đặc dụng, rừng phòng hộ; rừng sản xuất do nhà nước đại diện chủ sở hữu; thu thập mẫu vật trong rừng đặc dụng: quyết định phê duyệt kèm theo tài liệu dự án, nhiệm vụ, chương trình đào tạo, nghiên cứu khoa học của cấp có thẩm quyền.",
+      "section": "",
+      "role": "supporting_submit",
+      "scenario_status": "conditional_needs_review",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 1,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfa-5f58-757b-a75e-76488561cdd0",
+      "source_detail_id": "019d2bfa-5f58-757b-a75e-76488561cdd0",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-120-c002",
+      "code": "000.00.00.G10-KQ006277",
+      "name": "Phương án khai thác theo Mẫu số 08 Phụ lục II ban hành kèm theo Thông tư số 26/2025/TT-BNNMT;",
+      "section": "",
+      "role": "applicant_prepared",
+      "scenario_status": "selected_for_test",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 1,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfa-5f58-757b-a75e-76488561cdd0",
+      "source_detail_id": "019d2bfa-5f58-757b-a75e-76488561cdd0",
+      "embedded_other_requirements": false,
+      "template_candidates": [
+        "template-358875e99ca1f396"
+      ],
+      "template_selection_method": "first_matching_source_attachment",
+      "selected_template_id": "template-358875e99ca1f396",
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-120-c003",
+      "code": "000.00.00.G10-KQ006276",
+      "name": "- Bản chính Đề nghị phê duyệt phương án khai thác theo Mẫu số 09 Phụ lục II ban hành kèm theo Thông tư số 26/2025/TT-BNNMT;",
+      "section": "",
+      "role": "needs_review",
+      "scenario_status": "requirement_needs_review",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 1,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfa-5f58-757b-a75e-76488561cdd0",
+      "source_detail_id": "019d2bfa-5f58-757b-a75e-76488561cdd0",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    }
+  ],
+  "service_cases": [
+    {
+      "id": "019d2d42-10fa-777c-899a-0b2b4655b1ee",
+      "code": "1.011471.01",
+      "name": "Phê duyệt Phương án khai thác gỗ, thực vật rừng ngoài gỗ loài thông thường thuộc thẩm quyền giải quyết của Ủy ban nhân dân cấp xã",
+      "source_processing_time": {
+        "qty": 1,
+        "type": "OTHER"
+      },
+      "has_case_specific_components": false
+    }
+  ],
+  "selected_template_ids": [
+    "template-358875e99ca1f396"
+  ],
+  "source_component_groups": [
+    {
+      "name": "",
+      "component_count": 3,
+      "source_detail_id": "019d2bfa-5f58-757b-a75e-76488561cdd0"
+    }
+  ],
+  "conditional_component_groups": [],
+  "default_test_scenario": {
+    "channel": "direct",
+    "applicant_submits_self": true,
+    "authorized": false,
+    "special_case_flags": [],
+    "selected_conditional_group": null,
+    "case_selection_method": "ordinary_direct_submission",
+    "case_status": "scenario_for_testing_not_a_legal_eligibility_decision"
+  },
+  "requirement_note": "required_as_published được giữ nguyên; false không chứng minh giấy tờ luôn tùy chọn. Các nhóm executionCases có thể là mục giấy tờ/hướng dẫn, không phải các phương án loại trừ nhau."
+}

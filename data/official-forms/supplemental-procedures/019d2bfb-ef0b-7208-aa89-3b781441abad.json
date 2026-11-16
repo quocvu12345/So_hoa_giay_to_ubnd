@@ -1,0 +1,108 @@
+{
+  "id": "dvc-019d2bfb-ef0b-7208-aa89-3b781441abad",
+  "procedure_code": "1.007042",
+  "name": "Đăng ký thuế trong trường hợp tạm ngừng hoạt động, kinh doanh hoặc tiếp tục hoạt động, kinh doanh trở lại trước thời hạn",
+  "domain": "Thuế",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.959831+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfb-ef0b-7208-aa89-3b781441abad",
+      "code": "1.007042",
+      "name": "Đăng ký thuế trong trường hợp tạm ngừng hoạt động, kinh doanh hoặc tiếp tục hoạt động, kinh doanh trở lại trước thời hạn",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1784861594967,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-ef0b-7208-aa89-3b781441abad",
+      "raw_path": "evidence/dvc/details/019d2bfb-ef0b-7208-aa89-3b781441abad.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Từ ngày 01/7/2026 đến trước thời điểm theo lộ trình của cơ quan thuế quy định tại khoản 2 Điều 36 Thông tư số 90/2026/TT-BTC thì tiếp tục áp dụng mẫu số 23/ĐK-TCT ban hành kèm theo Thông tư số 86/2024/TT-BTC ngày 23/12/2024 của Bộ Tài chính đối với trường hợp đăng ký thuế theo phương thức điện tử",
+          "component_code": "G12.0003588",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019f8e46-8e95-75bc-bea0-b842b9cdb275",
+              "fileName": "23 ĐK TCT TT 86.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8e46-8e95-75bc-bea0-b842b9cdb275/23 ĐK TCT TT 86.docx"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Thông báo tạm ngừng hoạt động, kinh doanh/tiếp tục hoạt động, kinh doanh trở lại trước thời hạn mẫu số 23/ĐKT ban hành kèm theo Thông tư số 90/2026/TT-BTC",
+          "component_code": "G12.0003589",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019f8e47-9502-71e2-b7d4-ea9d2326d5f2",
+              "fileName": "23.Mẫu 30-ĐKT Đăng ký chuyển ĐĐ tại CQT nơi đến.doc",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8e47-9502-71e2-b7d4-ea9d2326d5f2/23.Mẫu 30-ĐKT Đăng ký chuyển ĐĐ tại CQT nơi đến.doc"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c70-724b-96de-2ca1ce4f1eab",
+          "name": "Thông báo chấp thuận/hoặc không chấp thuận tạm ngừng hoạt động, kinh doanh (mẫu số 27/TB-ĐKT)",
+          "code": "KQ.G12.000192"
+        },
+        {
+          "id": "019d2bb2-1c70-724b-96de-33312ae00b64",
+          "name": "Thông báo về việc tiếp tục hoạt động, kinh doanh trở lại trước thời hạn theo đơn vị chủ quản (mẫu số 34/TB-ĐKT)",
+          "code": "KQ.G12.000193"
+        },
+        {
+          "id": "019d2bb2-1c72-75fa-a592-aef6b06534aa",
+          "name": "Thông báo về việc tạm ngừng hoạt động, kinh doanh theo đơn vị chủ quản (mẫu số 33/TB-ĐKT)",
+          "code": "KQ.G12.001194"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019e5e83-1282-771d-9014-49799413a4e5",
+          "name": "Luật số 108/2025/QH15 của Quốc hội: Luật Quản lý thuế",
+          "code": "108/2025/QH15"
+        },
+        {
+          "id": "019f64ed-e026-7299-b5f2-ca44a3964050",
+          "name": "Nghị định về thực hiện thủ tục hành chính theo cơ chế một cửa, một cửa liên thông tại Bộ phận Một cửa và Cổng Dịch vụ công quốc gia.",
+          "code": "118/2025/NĐ-CP "
+        },
+        {
+          "id": "019f8db3-9765-740b-8b90-682677b9c421",
+          "name": "Thông tư quy định chi tiết một số điều của Luật Quản lý thuế và Nghị định số 252/2026/NĐ-CP của Chính phủ quy định chi tiết một số điều và biện pháp để tổ chức, hướng dẫn thi hành Luật Quản lý thuế",
+          "code": "89/2026/TT-BTC"
+        },
+        {
+          "id": "019f8db3-e7d0-74e4-9c61-49a28e28113a",
+          "name": "Thông tư số 90/2026/TT-BTC ngày 30/6/2026 của Bộ Tài chính quy định về đăng ký thuế",
+          "code": "90/2026/TT-BTC "
+        },
+        {
+          "id": "019f356e-75e3-7494-a2f3-672d8dce61a6",
+          "name": "QUY ĐỊNH CHI TIẾT MỘT SỐ ĐIỀU VÀ BIỆN PHÁP ĐỂ TỔ CHỨC, HƯỚNG DẪN THI HÀNH LUẬT QUẢN LÝ THUẾ",
+          "code": "252/2026/NĐ-CP"
+        }
+      ]
+    }
+  ]
+}

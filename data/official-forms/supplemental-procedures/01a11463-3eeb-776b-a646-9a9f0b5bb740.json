@@ -1,0 +1,53 @@
+{
+  "id": "dvc-01a11463-3eeb-776b-a646-9a9f0b5bb740",
+  "procedure_code": "1.117007",
+  "name": "Xác nhận của Ủy ban nhân dân cấp xã nơi hộ gia đình cư trú về việc hộ gia đình đang gặp khó khăn về kinh tế",
+  "domain": "Bảo đảm trật tự, an toàn giao thông đường bộ",
+  "managing_agency": "Bộ Công an",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.463030+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "01a11463-3eeb-776b-a646-9a9f0b5bb740",
+      "code": "1.117007",
+      "name": "Xác nhận của Ủy ban nhân dân cấp xã nơi hộ gia đình cư trú về việc hộ gia đình đang gặp khó khăn về kinh tế",
+      "state": "ACTIVE",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1791344065887,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/01a11463-3eeb-776b-a646-9a9f0b5bb740",
+      "raw_path": "evidence/dvc/details/01a11463-3eeb-776b-a646-9a9f0b5bb740.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Xác nhận của Ủy ban nhân dân cấp xã nơi nạn nhân, hộ gia đình nạn nhân cư trú hoặc của cơ quan, tổ chức nơi nạn nhân học tập, làm việc",
+          "component_code": "00.00.00.G01-KQ00579",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "01a11462-cd02-7177-92d8-870bed305285",
+          "name": "Giấy xác nhận của Ủy ban nhân dân cấp xã nơi nạn nhân, hộ gia đình nạn nhân cư trú hoặc của cơ quan, tổ chức nơi nạn nhân học tập, làm việc",
+          "code": "KQ.G01.000453"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "01a11444-1588-774b-9bdc-b625d33d1a48",
+          "name": "Thông tư số 126/2026/TT-BCA ngày 30/6/2026 của Bộ trưởng Bộ Công an quy định trình tự, thủ tục thực hiện nội dung chi từ Quỹ giảm thiểu thiệt hại tai nạn giao thông đường bộ",
+          "code": "126/2026/TT-BCA "
+        }
+      ]
+    }
+  ]
+}

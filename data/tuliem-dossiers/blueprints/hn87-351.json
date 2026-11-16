@@ -1,0 +1,105 @@
+{
+  "id": "hn87-351",
+  "ordinal": "351",
+  "procedure_code": "2.001212",
+  "name": "Cấp lại Giấy chứng nhận đăng ký phương tiện hoạt động vui chơi, giải trí dưới nước",
+  "domain": "Hàng hải và đường thủy nội địa",
+  "department_id": "chuyennganh",
+  "department": "Cơ quan chuyên ngành · cần xác định đơn vị phối hợp",
+  "authority_as_published": "UBND cấp xã",
+  "execution_level_as_published": "Cấp xã",
+  "receiving_location_as_published": "Điểm hỗ trợ DVC số",
+  "inventory_date": "2026-04-27",
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "source_urls": [
+    "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfe-9899-7115-a1a7-0bfbcb1f0e5d"
+  ],
+  "current_dvc_match": true,
+  "lifecycle": null,
+  "scope": "hanoi_commune_notice_2026_04_27",
+  "scope_note": "Mốc kiểm kê cấp xã Hà Nội; áp dụng từng thủ tục tại Từ Liêm còn phải theo thẩm quyền/ủy quyền hiện hành.",
+  "status": "has_fillable_templates",
+  "components": [
+    {
+      "id": "hn87-351-c001",
+      "code": "000.00.00.G04-KQ004653",
+      "name": "- Đơn đề nghị cấp lại Giấy chứng nhận đăng ký phương tiện theo Mẫu và nộp lại Giấy chứng nhận đăng ký phương tiện đã được cấp trước đó.",
+      "section": "Trường hợp Giấy chứng nhận đăng ký bị hư hỏng:",
+      "role": "applicant_form",
+      "scenario_status": "conditional_needs_review",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfe-9899-7115-a1a7-0bfbcb1f0e5d",
+      "source_detail_id": "019d2bfe-9899-7115-a1a7-0bfbcb1f0e5d",
+      "embedded_other_requirements": false,
+      "template_candidates": [
+        "template-43449f90547b5cb5"
+      ],
+      "template_selection_method": "first_matching_source_attachment",
+      "selected_template_id": "template-43449f90547b5cb5",
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-351-c002",
+      "code": "000.00.00.G04-KQ004652",
+      "name": "- Đơn đề nghị cấp lại Giấy chứng nhận đăng ký phương tiện theo Mẫu, trong đó nêu rõ lý do và chịu trách nhiệm về tính trung thực nội dung khai báo.",
+      "section": "Trường hợp bị mất Giấy chứng nhận đăng ký: ",
+      "role": "applicant_form",
+      "scenario_status": "alternative_case_not_selected",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfe-9899-7115-a1a7-0bfbcb1f0e5d",
+      "source_detail_id": "019d2bfe-9899-7115-a1a7-0bfbcb1f0e5d",
+      "embedded_other_requirements": false,
+      "template_candidates": [
+        "template-43449f90547b5cb5"
+      ],
+      "template_selection_method": "first_matching_source_attachment",
+      "selected_template_id": null,
+      "selection_requires_review": false
+    }
+  ],
+  "service_cases": [
+    {
+      "id": "019db8aa-1c80-7004-b8d5-1791fc360b96",
+      "code": "2.001212.01",
+      "name": "Cấp lại Giấy chứng nhận đăng ký phương tiện hoạt động vui chơi, giải trí dưới nước",
+      "source_processing_time": {
+        "qty": 3,
+        "type": "WORKING_DAY"
+      },
+      "has_case_specific_components": false
+    }
+  ],
+  "selected_template_ids": [
+    "template-43449f90547b5cb5"
+  ],
+  "source_component_groups": [
+    {
+      "name": "Trường hợp Giấy chứng nhận đăng ký bị hư hỏng:",
+      "component_count": 1,
+      "source_detail_id": "019d2bfe-9899-7115-a1a7-0bfbcb1f0e5d"
+    },
+    {
+      "name": "Trường hợp bị mất Giấy chứng nhận đăng ký: ",
+      "component_count": 1,
+      "source_detail_id": "019d2bfe-9899-7115-a1a7-0bfbcb1f0e5d"
+    }
+  ],
+  "conditional_component_groups": [
+    "Trường hợp Giấy chứng nhận đăng ký bị hư hỏng:",
+    "Trường hợp bị mất Giấy chứng nhận đăng ký: "
+  ],
+  "default_test_scenario": {
+    "channel": "direct",
+    "applicant_submits_self": true,
+    "authorized": false,
+    "special_case_flags": [],
+    "selected_conditional_group": "Trường hợp Giấy chứng nhận đăng ký bị hư hỏng:",
+    "case_selection_method": "first_published_condition_with_available_template_for_test",
+    "case_status": "scenario_for_testing_not_a_legal_eligibility_decision"
+  },
+  "requirement_note": "required_as_published được giữ nguyên; false không chứng minh giấy tờ luôn tùy chọn. Các nhóm executionCases có thể là mục giấy tờ/hướng dẫn, không phải các phương án loại trừ nhau."
+}

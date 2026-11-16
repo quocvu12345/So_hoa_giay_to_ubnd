@@ -1,0 +1,182 @@
+{
+  "ordinal": "201",
+  "managing_agency": "Sở Công Thương",
+  "procedure_code": "2.000591",
+  "name": "Cấp Giấy chứng nhận cơ sở đủ điều kiện an toàn thực phẩm đối với cơ sở sản xuất, kinh doanh thực phẩm",
+  "domain": "An toàn thực phẩm",
+  "ministry_decision": "2866/QĐ-BCT ngày 13/10/ 2025",
+  "hanoi_decision": "QĐ 291/QĐ-TTPVHCC ngày 08/03/2026",
+  "workflow_decision": "332/QĐ-TTPVHCC ngày 18/03/2026",
+  "fees": "Phí thẩm định: 2.500.000đ/lần/cơ sở",
+  "execution_level": "Cấp tỉnh, cấp xã",
+  "competent_authority": "Sở, UBND cấp xã",
+  "delegation_decision": "230/QĐ-UBND ngày 15/01/2026",
+  "delegation_expiry": "31/12/2028",
+  "receiving_location": "Chi nhánh TTPVHCC",
+  "id": "hn87-201",
+  "source_page": 8,
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "inventory_date": "2026-04-27",
+  "checked_at": "2026-11-12T22:24:34.550884+07:00",
+  "details": [
+    {
+      "id": "019d2bf8-330c-77dd-8058-19a40f5959f5",
+      "code": "2.000591",
+      "name": "Cấp Giấy chứng nhận đủ điều kiện an toàn thực phẩm đối với cơ sở sản xuất, kinh doanh thực phẩm",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": false,
+      "updated_at_source": 1784688935008,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf8-330c-77dd-8058-19a40f5959f5",
+      "raw_path": "evidence/dvc/details/019d2bf8-330c-77dd-8058-19a40f5959f5.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "- Danh sách tổng hợp đủ sức khỏe do chủ cơ sở xác nhận hoặc giấy xác nhận đủ sức khỏe của chủ cơ sở và người trực tiếp sản xuất, kinh doanh thực phẩm do cơ sở y tế cấp huyện trở lên cấp;",
+          "component_code": "000.00.00.G02-KQ2968",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "- Giấy xác nhận đã được tập huấn kiến thức về an toàn thực phẩm của người trực tiếp sản xuất, kinh doanh thực phẩm có xác nhận của cơ sở.",
+          "component_code": "000.00.00.G02-KQ2969",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 3,
+          "name": "Cơ quan giải quyết TTHC khai thác, sử dụng thông tin có trong Cơ sở dữ liệu quốc gia về đăng ký doanh nghiệp để thay thế thành phần hồ sơ Bản sao giấy chứng nhận đăng ký doanh nghiệp.  Trường hợp Cơ quan giải quyết TTHC không khai thác được hoặc khai thác không đầy đủ dữ liệu doanh nghiệp trên Cơ sở dữ liệu quốc gia về đăng ký doanh nghiệp, Cơ quan giải quyết TTHC yêu cầu doanh nghiệp bổ sung Bản sao Giấy chứng nhận đăng ký doanh nghiệp theo quy định tại Điều 8 Nghị quyết 66.7/2025/NQ-CP ngày 15/11/2025 của Chính phủ quy định cắt giảm,  đơn giản hóa thủ tục hành chính dựa trên dữ liệu",
+          "component_code": "000.00.00.G02-KQ006179",
+          "original_quantity": 0,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 4,
+          "name": "- Bản thuyết minh về cơ sở vật chất, trang thiết bị, dụng cụ bảo đảm điều kiện vệ sinh an toàn thực phẩm theo Mẫu số 02a (đối với cơ sở sản xuất), Mẫu số 02b (đối với cơ sở kinh doanh) hoặc cả Mẫu số 02a và Mẫu số 02b (đối với cơ sở vừa sản xuất vừa kinh doanh) Mục I tại Phụ lục ban hành kèm theo Nghị định số 17/2020/NĐ-CP ngày 05 tháng 02 năm 2020 sửa đổi, bổ sung một số điều của các Nghị định liên quan đến điều khiện đầu tư kinh doanh thuộc lĩnh vực quản lý nhà nước của Bộ Công Thương;",
+          "component_code": "000.00.00.G02-KQ2967",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019d90b8-d730-73f1-8b9e-b4eed742a8ba",
+              "fileName": "Mẫu số 02a.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d90b8-d730-73f1-8b9e-b4eed742a8ba/Mẫu số 02a.docx"
+            },
+            {
+              "id": "019d90b8-ef16-7108-a262-9508858f5f29",
+              "fileName": "Mẫu số 02b.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d90b8-ef16-7108-a262-9508858f5f29/Mẫu số 02b.docx"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 5,
+          "name": "-  Bảo sao Giấy chứng nhận đăng ký kinh doanh hoặc Giấy chứng nhận đăng ký doanh nghiệp hoặc Giấy chứng nhận đầu tư theo quy định của pháp luật.",
+          "component_code": "000.00.00.G02-KQ2966",
+          "original_quantity": 0,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 6,
+          "name": "- Đơn đề nghị theo Mẫu số 01a Mục I tại Phụ lục ban hành kèm theo Nghị định số 17/2020/NĐ-CP ngày 05 tháng 02 năm 2020 sửa đổi, bổ sung một số điều của các Nghị định liên quan đến điều kiện đầu tư kinh doanh thuộc lĩnh vực quản lý nhà nước của Bộ Công Thương;",
+          "component_code": "000.00.00.G02-KQ2965",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019d90b8-74ba-744f-b680-72e5354772ba",
+              "fileName": "Mẫu số 01a.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d90b8-74ba-744f-b680-72e5354772ba/Mẫu số 01a.docx"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 7,
+          "name": "- Báo cáo kết quả khắc phục theo Mẫu số 04 Mục I tại Phụ lục ban hành kèm theo Nghị định số 17/2020/NĐ-CP ngày 05 tháng 02 năm 2020 sửa đổi, bổ sung một số điều của các Nghị định liên quan đến điều kiện đầu tư kinh doanh thuộc lĩnh vực quản lý nhà nước của Bộ Công Thương.",
+          "component_code": "000.00.00.G02-KQ2970",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019d90b9-6691-7098-b5c5-78959043637c",
+              "fileName": "Mẫu số 04 (1).docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d90b9-6691-7098-b5c5-78959043637c/Mẫu số 04 (1).docx"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c38-75c9-8e13-0b9ad377fba7",
+          "name": "GIẤY CHỨNG NHẬN CƠ SỞ ĐỦ ĐIỀU KIỆN AN TOÀN THỰC PHẨM",
+          "code": "KQ.G02.000050"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7f-719e-b470-22af3c5ee091",
+          "name": "Nghị quyết số 66.7/2025/NQ-CP của Chính phủ: Quy định cắt giảm, đơn giản hóa thủ tục hành chính dựa trên dữ liệu",
+          "code": "66.7/2025/NQ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7c-71ab-9efc-007df1dda3ee",
+          "name": "Thông tư 43/2018/TT-BCT ngày 15/11/2018 của Bộ Công Thương quy định về quản lý an toàn thực phẩm thuộc trách nhiệm của Bộ Công Thương.",
+          "code": "Thông tư 43/2018/TT-BCT"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afec-6d106daf390f",
+          "name": "Sửa đổi, bổ sung một số điều của các Nghị định liên quan đến điều kiện đầu tư kinh doanh thuộc lĩnh vực quản lý nhà nước của Bộ Công Thương",
+          "code": "17/2020/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afeb-7780f0029957",
+          "name": "Quy định chi tiết thi hành một số điều của Luật an toàn thực phẩm",
+          "code": "15/2018/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b670-fe6d5ec40a25",
+          "name": "Luật An toàn thực phẩm",
+          "code": "55/2010/QH12"
+        },
+        {
+          "id": "019d2bb3-5d87-7195-a445-bb2c2f034061",
+          "name": "Nghị định 77/2016/NĐ-CP.",
+          "code": "77/2016/NĐ-CP."
+        }
+      ]
+    }
+  ],
+  "lookup_status": "retrieved",
+  "currency_status": "snapshot_requires_later_amendment_check",
+  "errors": []
+}

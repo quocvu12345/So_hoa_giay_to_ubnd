@@ -1,0 +1,189 @@
+{
+  "id": "dvc-019e5e84-46b8-70f5-a666-178a21772a71",
+  "procedure_code": "1.014979",
+  "name": "Hoàn nộp thừa các loại thuế đối với hộ kinh doanh, cá nhân kinh doanh",
+  "domain": "Thuế",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.486781+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019e5e84-46b8-70f5-a666-178a21772a71",
+      "code": "1.014979",
+      "name": "Hoàn nộp thừa các loại thuế đối với hộ kinh doanh, cá nhân kinh doanh",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1785399197984,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019e5e84-46b8-70f5-a666-178a21772a71",
+      "raw_path": "evidence/dvc/details/019e5e84-46b8-70f5-a666-178a21772a71.json",
+      "components": [
+        {
+          "section": "Trường hợp hộ kinh doanh, cá nhân kinh doanh đã được các tổ chức, cá nhân khấu trừ nộp thay số thuế giá trị gia tăng, thu nhập cá nhân hoặc hộ kinh doanh, cá nhân kinh doanh đã nộp thuế giá trị gia tăng, thuế thu nhập cá nhân đối với hoạt động kinh doanh nhưng có doanh thu thực tế phát sinh chưa đến ngưỡng chịu thuế theo quy định hoặc hộ kinh doanh, cá nhân kinh doanh nộp thuế TNCN theo phương pháp thuế suất (x) doanh thu tính thuế đề nghị hoàn thuế thì Không phải nộp hồ sơ hoàn thuế mà chỉ cần ghi số thuế đề nghị hoàn vào chỉ tiêu [49] - “Đề nghị hoàn trả” hoặc chỉ tiêu [50] - “Số bù trừ cho các phát sinh của kỳ sau”",
+          "position": 1,
+          "name": "Tờ khai quyết toán thuế theo mẫu số 01/TKN-CNKD khi quyết toán thuế",
+          "component_code": "G12.0001130",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019fac9c-c717-710d-ac50-26eb1e65d54c",
+              "fileName": "01 TKN CNKD TT89.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fac9c-c717-710d-ac50-26eb1e65d54c/01 TKN CNKD TT89.docx"
+            }
+          ]
+        },
+        {
+          "section": "Trường hợp hộ kinh doanh, cá nhân kinh doanh đã được các tổ chức, cá nhân khấu trừ nộp thay số thuế giá trị gia tăng, thu nhập cá nhân hoặc hộ kinh doanh, cá nhân kinh doanh đã nộp thuế giá trị gia tăng, thuế thu nhập cá nhân đối với hoạt động kinh doanh nhưng có doanh thu thực tế phát sinh chưa đến ngưỡng chịu thuế theo quy định hoặc hộ kinh doanh, cá nhân kinh doanh nộp thuế TNCN theo phương pháp thuế suất (x) doanh thu tính thuế đề nghị hoàn thuế thì Không phải nộp hồ sơ hoàn thuế mà chỉ cần ghi số thuế đề nghị hoàn vào chỉ tiêu [49] - “Đề nghị hoàn trả” hoặc chỉ tiêu [50] - “Số bù trừ cho các phát sinh của kỳ sau”",
+          "position": 2,
+          "name": "Các tài liệu kèm theo (nếu có)",
+          "component_code": "TP-G12.0001067",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Hộ kinh doanh, cá nhân kinh doanh nộp thuế thu nhập cá nhân theo phương pháp thu nhập tính thuế nhân (x) với thuế suất có số thuế nộp thừa thì không phải nộp hồ sơ hoàn thuế mà chỉ cần ghi số thuế đề nghị hoàn vào chỉ tiêu [21] - “Tổng số thuế đề nghị hoàn trả cho  người nộp thuế” hoặc chỉ tiêu [24] - “Tổng số thuế bù trừ cho các khoản phát sinh của kỳ sau”",
+          "position": 1,
+          "name": "Tờ khai quyết toán thuế theo mẫu số 02/CNKD-TNCN-QTT ban hành kèm theo Thông tư số 89/2026/TT-BTC ngày 30/06/2026",
+          "component_code": "G12.0001131",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019fac9e-464d-7735-90fb-c76dd338c4d6",
+              "fileName": "02 CNKD TNCN QTT.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fac9e-464d-7735-90fb-c76dd338c4d6/02 CNKD TNCN QTT.docx"
+            }
+          ]
+        },
+        {
+          "section": "Hộ kinh doanh, cá nhân kinh doanh nộp thuế thu nhập cá nhân theo phương pháp thu nhập tính thuế nhân (x) với thuế suất có số thuế nộp thừa thì không phải nộp hồ sơ hoàn thuế mà chỉ cần ghi số thuế đề nghị hoàn vào chỉ tiêu [21] - “Tổng số thuế đề nghị hoàn trả cho  người nộp thuế” hoặc chỉ tiêu [24] - “Tổng số thuế bù trừ cho các khoản phát sinh của kỳ sau”",
+          "position": 2,
+          "name": "Các tài liệu kèm theo (nếu có)",
+          "component_code": "TP-G12.0001066",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 1,
+          "name": "Từ 01/7/2026 đến thời điểm theo lộ trình của cơ quan thuế quy định tại khoản 2 Điều 99 Thông tư số 89/2026/TT-BTC thì mẫu 01/TKN-CNKD thực hiện theo mẫu biểu ban hành kèm theo Thông tư số 50/2026/TT-BTC ngày 13/5/2026 của Bộ trưởng Bộ Tài chính, 02/CNKD-TNCN-QTT thực hiện theo mẫu biểu ban hành kèm theo Thông tư số 18/2026/TT-BTC ngày 05/03/2026 của Bộ Tài chính",
+          "component_code": "G12.0001258",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019fb204-88b7-744d-896f-a9105b69083d",
+              "fileName": "02 CNKD TNCN QTT.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fb204-88b7-744d-896f-a9105b69083d/02 CNKD TNCN QTT.docx"
+            },
+            {
+              "id": "019fb204-89d8-7147-9394-6f2b07799cac",
+              "fileName": "01 TKN CNKD.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fb204-89d8-7147-9394-6f2b07799cac/01 TKN CNKD.docx"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "id": "019fa328-0757-726b-936d-17f088ac9c48",
+          "name": "Thông báo số tiền đề nghị hoàn nhưng không được hoàn thuế, số tiền đề nghị hoàn chưa đủ điều kiện được hoàn thuế (mẫu số 04/TB-HT)",
+          "code": "KQ.G12.001485"
+        },
+        {
+          "id": "019fa329-7177-760d-ad80-2bef251243b4",
+          "name": "Quyết định hoàn thuế kiêm bù trừ thu ngân sách nhà nước (mẫu số 02/QĐ-HT)",
+          "code": "KQ.G12.001558"
+        },
+        {
+          "id": "019fa6bb-5cc3-70ff-b663-0bb8c95abfb2",
+          "name": "Quyết định hoàn thuế (Mẫu số 01/QĐ-HT)",
+          "code": "KQ.G12.001600"
+        },
+        {
+          "id": "019fa6be-d9ec-771f-b967-a3bae0d4c476",
+          "name": "Phụ lục số tiền thuế, tiền chậm nộp, tiền phạt phải nộp được bù trừ (Mẫu số 01/PL-BT)",
+          "code": "KQ.G12000603"
+        },
+        {
+          "id": "019d2bb2-1c73-70ac-aa17-fd7a8f7b7402",
+          "name": "Quyết định hoàn thuế kiêm bù trừ thu Ngân sách nhà nước, Thông báo về việc không được hoàn thuế (Mẫu số 04/TB-HT)",
+          "code": "KQ.G12.001297"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019f8db3-9765-740b-8b90-682677b9c421",
+          "name": "Thông tư quy định chi tiết một số điều của Luật Quản lý thuế và Nghị định số 252/2026/NĐ-CP của Chính phủ quy định chi tiết một số điều và biện pháp để tổ chức, hướng dẫn thi hành Luật Quản lý thuế",
+          "code": "89/2026/TT-BTC"
+        },
+        {
+          "id": "019e5e83-1282-771d-9014-49799413a4e5",
+          "name": "Luật số 108/2025/QH15 của Quốc hội: Luật Quản lý thuế",
+          "code": "108/2025/QH15"
+        },
+        {
+          "id": "019f356e-75e3-7494-a2f3-672d8dce61a6",
+          "name": "QUY ĐỊNH CHI TIẾT MỘT SỐ ĐIỀU VÀ BIỆN PHÁP ĐỂ TỔ CHỨC, HƯỚNG DẪN THI HÀNH LUẬT QUẢN LÝ THUẾ",
+          "code": "252/2026/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afe9-653aac8276ee",
+          "name": "Nghị định số 118/2025/NĐ-CP của Chính phủ: Về thực hiện thủ tục hành chính theo cơ chế một cửa, một cửa liên thông tại Bộ phận Một cửa và Cổng Dịch vụ công quốc gia",
+          "code": "118/2025/NĐ-CP"
+        },
+        {
+          "id": "019fa377-0d10-73ea-b3b0-ee84180af5fe",
+          "name": "Nghị định số 253/2026/NĐ-CP ngày 30/6/2026 của Chính phủ quy định chi tiết một số điều và biện pháp để tổ chức, hướng dẫn thi hành Luật Thuế thu nhập cá nhân",
+          "code": "253/2026/NĐ-CP "
+        },
+        {
+          "id": "019e5e39-0aa7-757f-bfbb-291601c2e514",
+          "name": "Nghị định số 68/2026/NĐ-CP ngày 05/3/2026 quy định về chính sách thuế và quản lý thuế đối với hộ kinh doanh, cá nhân kinh doanh",
+          "code": "68/2026/NĐ-CP"
+        },
+        {
+          "id": "019e5e39-aa14-746c-80cd-afe06a8d307a",
+          "name": "Thông tư số 18/2026/TT-BTC ngày 05/3/2026 quy định về hồ sơ, thủ tục quản lý thuế đối với hộ kinh doanh, cá nhân kinh doanh",
+          "code": "18/2026/TT-BTC "
+        },
+        {
+          "id": "019e72a9-0c2b-749c-8856-31e73c463ba4",
+          "name": "Nghị định số 141/2026/NĐ-CP của Chính phủ: Sửa đổi, bổ sung một số điều của Nghị định số 68/2026/NĐ-CP quy định về chính sách thuế đối với hộ kinh doanh, cá nhân kinh doanh và Nghị định số 320/2025/NĐ-CP quy định chi tiết một số điều và biện pháp để tổ chức, hướng dẫn thi hành Luật Thuế thu nhập doanh nghiệp",
+          "code": "141/2026/NĐ-CP"
+        },
+        {
+          "id": "019e729c-8330-71b8-b045-b7f2443f308a",
+          "name": "Thông tư số 50/2026/TT-BTC của Bộ Tài chính: Sửa đổi, bổ sung một số điều của Thông tư số 18/2026/TT-BTC ngày 05 tháng 3 năm 2026 của Bộ trưởng Bộ Tài chính quy định về hồ sơ, thủ tục quản lý thuế đối với hộ kinh doanh, cá nhân kinh doanh",
+          "code": "50/2026/TT-BTC"
+        },
+        {
+          "id": "019fa376-69da-7783-9853-6afa7cd86621",
+          "name": "Luật Thuế thu nhập cá nhân 109/2025/QH15 ngày 10/12/2025 và các văn bản pháp luật quy định chi tiết, hướng dẫn thi hành và sửa đổi, bổ sung có liên quan",
+          "code": "109/2025/QH15 "
+        }
+      ]
+    }
+  ]
+}

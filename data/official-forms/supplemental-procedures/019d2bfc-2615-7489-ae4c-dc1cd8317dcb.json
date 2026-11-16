@@ -1,0 +1,629 @@
+{
+  "id": "dvc-019d2bfc-2615-7489-ae4c-dc1cd8317dcb",
+  "procedure_code": "1.007659",
+  "name": "Thủ tục miễn thuế đối với hàng hóa xuất khẩu, nhập khẩu",
+  "domain": "Hải quan",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.958169+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfc-2615-7489-ae4c-dc1cd8317dcb",
+      "code": "1.007659",
+      "name": "Thủ tục miễn thuế đối với hàng hóa xuất khẩu, nhập khẩu",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1785410324405,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-2615-7489-ae4c-dc1cd8317dcb",
+      "raw_path": "evidence/dvc/details/019d2bfc-2615-7489-ae4c-dc1cd8317dcb.json",
+      "components": [
+        {
+          "section": "Hồ sơ miễn thuế",
+          "position": 1,
+          "name": "- Hồ sơ miễn thuế là hồ sơ hải quan theo quy định tại Luật số 54/2015/QH13 và các văn bản hướng dẫn thi hành.",
+          "component_code": "000.00.00.G12- 0258",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Hồ sơ miễn thuế",
+          "position": 2,
+          "name": "- Ngoài ra, tùy từng trường hợp, người nộp thuế nộp thêm một trong các chứng từ sau: + Hợp đồng ủy thác trong trường hợp ủy thác xuất khẩu, nhập khẩu hàng hóa;",
+          "component_code": "000.00.00.G12-0087",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Hồ sơ miễn thuế",
+          "position": 3,
+          "name": "+ Hợp đồng cung cấp hàng hóa theo văn bản trúng thầu hoặc văn bản chỉ định thầu trong đó ghi rõ giá cung cấp hàng hóa không bao gồm thuế nhập khẩu;",
+          "component_code": "000.00.00.G12-05008",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Hồ sơ miễn thuế",
+          "position": 4,
+          "name": "+ Hợp đồng cung cấp hàng hóa cho tổ chức, cá nhân tiến hành hoạt động dầu khí trong đó ghi rõ giá cung cấp hàng hóa không bao gồm thuế nhập khẩu trong trường hợp tổ chức, cá nhân nhập khẩu hàng hóa cho hoạt động dầu khí;",
+          "component_code": "000.00.00.G12-100",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Hồ sơ miễn thuế",
+          "position": 5,
+          "name": "+ Hợp đồng cho thuê tài chính trong trường hợp Công ty cho thuê tài chính nhập khẩu hàng hóa cung cấp cho đối tượng được hưởng ưu đãi miễn thuế, trong đó ghi rõ giá cung cấp hàng hóa không bao gồm thuế nhập khẩu;",
+          "component_code": "000.00.00.G12-1800",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Hồ sơ miễn thuế",
+          "position": 6,
+          "name": "+ Chứng từ chuyển nhượng hàng hóa thuộc đối tượng miễn thuế đối với trường hợp hàng hóa thuộc đối tượng miễn thuế chuyển nhượng cho đối tượng miễn thuế khác, trong đó ghi rõ giá chuyển nhượng hàng hóa không bao gồm thuế nhập khẩu;",
+          "component_code": "000.00.00.G12-1058",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Hồ sơ miễn thuế",
+          "position": 7,
+          "name": "+ Danh mục miễn thuế đã được cơ quan hải quan tiếp nhận đối với trường hợp thông báo Danh mục miễn thuế bằng giấy kèm Phiếu theo dõi trừ lùi đã được cơ quan hải quan tiếp nhận. Trường hợp thông báo Danh mục miễn thuế thông qua Hệ thống xử lý dữ liệu điện tử, người nộp thuế không phải nộp Danh mục miễn thuế, cơ quan hải quan sử dụng Danh mục miễn thuế trên Hệ thống xử lý dữ liệu điện tử để thực hiện miễn thuế theo quy định.",
+          "component_code": "000.00.00.G12-10309",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Hồ sơ miễn thuế",
+          "position": 8,
+          "name": "+ Quyết định miễn thuế của Thủ tướng Chính phủ đối với trường hợp quy định tại các điểm a, điểm b và điểm đ khoản 1 Điều 28 Nghị định số 134/2016/NĐ-CP được sửa đổi, bổ sung bởi Nghị định số 18/2021/NĐ-CP;",
+          "component_code": "000.00.00.G12-101",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019f3bee-0108-72fa-b8d8-d1fca9a97721",
+              "fileName": "Mẫu số 26.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f3bee-0108-72fa-b8d8-d1fca9a97721/Mẫu số 26.docx"
+            }
+          ]
+        },
+        {
+          "section": "Hồ sơ miễn thuế",
+          "position": 9,
+          "name": "+ Người nộp thuế tự kê khai và chịu trách nhiệm đối với hàng hóa nhập khẩu miễn thuế là phương tiện vận tải chuyên dùng quy định tại điểm b khoản 11, điểm a khoản 15 và điểm a khoản 16 Điều 16 Luật số 107/2016/QH13",
+          "component_code": "000.00.00.G12-103",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Hồ sơ miễn thuế đối với các trường hợp đặc thù: - Trường hợp miễn thuế nhập khẩu đối với hàng hóa của tổ chức, cá nhân nước ngoài được hưởng quyền ưu đãi, miễn trừ (trừ trường hợp mua hàng miễn thuế tại cửa hàng miễn thuế)",
+          "position": 1,
+          "name": "Sổ định mức miễn thuế;",
+          "component_code": "000.00.00.G12-1021",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Hồ sơ miễn thuế đối với các trường hợp đặc thù: - Trường hợp miễn thuế nhập khẩu đối với hàng hóa của tổ chức, cá nhân nước ngoài được hưởng quyền ưu đãi, miễn trừ (trừ trường hợp mua hàng miễn thuế tại cửa hàng miễn thuế)",
+          "position": 2,
+          "name": "- Giấy tờ chứng minh đã hoàn thành việc tái xuất khẩu hoặc tiêu hủy hoặc chuyển nhượng đối với các trường hợp quy định tại khoản 5 Điều 5 Nghị định số 134/2016/NĐ-CP;",
+          "component_code": "000.00.00.G12-108",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Hồ sơ miễn thuế đối với các trường hợp đặc thù: - Trường hợp miễn thuế nhập khẩu đối với hàng hóa của tổ chức, cá nhân nước ngoài được hưởng quyền ưu đãi, miễn trừ (trừ trường hợp mua hàng miễn thuế tại cửa hàng miễn thuế)",
+          "position": 3,
+          "name": "- Văn bản xác nhận của Bộ Ngoại giao đối với trường hợp nhập khẩu hàng hóa quy định tại khoản 2, khoản 3 Điều 5 Nghị định số 134/2016/NĐ-CP được sửa đổi, bổ sung tại khoản 2 Điều 1 Nghị định số 18/2021/NĐ-CP;",
+          "component_code": "000.00.00.G12-106",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Hồ sơ miễn thuế đối với các trường hợp đặc thù: - Trường hợp miễn thuế nhập khẩu đối với hàng hóa của tổ chức, cá nhân nước ngoài được hưởng quyền ưu đãi, miễn trừ (trừ trường hợp mua hàng miễn thuế tại cửa hàng miễn thuế)",
+          "position": 4,
+          "name": "- Quyết định miễn thuế của Thủ tướng Chính phủ đối với trường hợp nhập khẩu hàng hóa quy định tại khoản 4 Điều 5 Nghị định số 134/2016/NĐ-CP ngày 01/9/2016 của Chính phủ.",
+          "component_code": "000.00.00.G12-0102",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Hồ sơ miễn thuế đối với các trường hợp đặc thù: Trường hợp miễn thuế xuất khẩu, thuế nhập khẩu đối với tài sản di chuyển",
+          "position": 1,
+          "name": "- Giấy phép lao động hoặc văn bản có giá trị tương đương do cơ quan có thẩm quyền cấp đối với người nước ngoài, người Việt Nam định cư ở nước ngoài đến công tác, làm việc tại Việt Nam từ 12 tháng trở lên;",
+          "component_code": "000.00.00.G12-110",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Hồ sơ miễn thuế đối với các trường hợp đặc thù: Trường hợp miễn thuế xuất khẩu, thuế nhập khẩu đối với tài sản di chuyển",
+          "position": 2,
+          "name": "- Văn bản chứng minh việc chấm dứt hoạt động hoặc chấm dứt thời hạn lao động ở nước ngoài đối với tổ chức, công dân Việt Nam có hoạt động ở nước ngoài từ 12 tháng trở lên sau khi kết thúc hoạt động trở về nước;",
+          "component_code": "000.00.00.G12-015",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Hồ sơ miễn thuế đối với các trường hợp đặc thù: Trường hợp miễn thuế xuất khẩu, thuế nhập khẩu đối với tài sản di chuyển",
+          "position": 3,
+          "name": "- Hộ chiếu (có đóng dấu kiểm chứng nhập cảnh của cơ quan quản lý xuất nhập cảnh tại cửa khẩu hoặc đóng dấu kiểm chứng nhập cảnh của cơ quan quản lý xuất nhập cảnh tại cửa khẩu trên thị thực rời đối với trường hợp hộ chiếu được cấp thị thực rời) hoặc giấy tờ thay hộ chiếu còn giá trị (có đóng dấu kiểm chứng nhập cảnh của cơ quan quản lý xuất nhập cảnh tại cửa khẩu) đối với người Việt Nam định cư ở nước ngoài đã đăng ký thường trú tại Việt Nam.",
+          "component_code": "000.00.00.G12-0065",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Hồ sơ miễn thuế đối với các trường hợp đặc thù: Trường hợp miễn thuế xuất khẩu, thuế nhập khẩu đối với tài sản di chuyển",
+          "position": 4,
+          "name": "- Quyết định của Bộ trưởng Bộ Tài chính về việc miễn thuế đối với tài sản di chuyển vượt định mức miễn thuế (01 bản chính).",
+          "component_code": "000.00.00.G12-1254",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Hồ sơ miễn thuế đối với các trường hợp đặc thù: Trường hợp miễn thuế xuất khẩu, thuế nhập khẩu đối với tài sản di chuyển",
+          "position": 5,
+          "name": "- Thông tin về số định danh cá nhân. Trường hợp cơ quan hải quan không khai thác được thông tin của người nộp thuế theo các phương thức quy định tại khoản 2 Điều 14 Nghị định số 104/2022/NĐ-CP, người nộp thuế xuất trình một trong các giấy tờ sau: Thẻ căn cước công dân, Giấy xác nhận thông tin về cư trú, Giấy thông báo số định danh cá nhân và thông tin công dân trong Cơ sở dữ liệu quốc gia về dân cư.",
+          "component_code": "000.00.00.G12-1210",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Hồ sơ miễn thuế đối với các trường hợp đặc thù: Trường hợp miễn thuế xuất khẩu, thuế nhập khẩu đối với quà biếu, quà tặng",
+          "position": 1,
+          "name": "- Văn bản thỏa thuận biếu tặng trong trường hợp người nhận quà tặng là tổ chức; Người nhận quà tặng là cá nhân có trách nhiệm kê khai chính xác, trung thực trên tờ khai hải quan về hàng hóa xuất khẩu, nhập khẩu là quà biếu, tặng; các thông tin về tên, địa chỉ người tặng, người nhận quà biếu, tặng ở nước ngoài và chịu trách nhiệm trước pháp luật về việc kê khai.",
+          "component_code": "000.00.00.G12-1120",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Hồ sơ miễn thuế đối với các trường hợp đặc thù: Trường hợp miễn thuế xuất khẩu, thuế nhập khẩu đối với quà biếu, quà tặng",
+          "position": 2,
+          "name": "- Văn bản của cơ quan chủ quản cấp trên về việc cho phép tiếp nhận để sử dụng hàng hóa miễn thuế và văn bản chứng minh tổ chức được ngân sách nhà nước đảm bảo kinh phí hoạt động đối với quà biếu, quà tặng cho cơ quan, tổ chức được Nhà nước đảm bảo kinh phí hoạt động (01 bản chính).",
+          "component_code": "000.00.00.G12-032",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Hồ sơ miễn thuế đối với các trường hợp đặc thù: Trường hợp miễn thuế xuất khẩu, thuế nhập khẩu đối với quà biếu, quà tặng",
+          "position": 3,
+          "name": "- Văn bản xác nhận của Chủ tịch Ủy ban nhân dân tỉnh, thành phố hoặc bộ, ngành chủ quản đối với quà biếu, quà tặng vì mục đích nhân đạo, từ thiện (01 bản chính).",
+          "component_code": "000.00.00.G12-0587",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Hồ sơ miễn thuế đối với các trường hợp đặc thù: Trường hợp miễn thuế xuất khẩu, thuế nhập khẩu đối với hàng hóa mua bán, trao đổi của cư dân biên giới",
+          "position": 1,
+          "name": "Thông tin về số định danh cá nhân hoặc xuất trình Giấy thông hành biên giới. Trường hợp cơ quan hải quan không khai thác được thông tin của người nộp thuế theo các phương thức quy định tại khoản 2 Điều 14 Nghị định số 104/2022/NĐ-CP, người nộp thuế xuất trình một trong các giấy tờ sau: Thẻ căn cước công dân, Giấy xác nhận thông tin về cư trú, Giấy thông báo số định danh cá nhân và thông tin công dân trong Cơ sở dữ liệu quốc gia về dân cư.",
+          "component_code": "000.00.00.G12-1987",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Hồ sơ miễn thuế đối với các trường hợp đặc thù: Trường hợp miễn thuế xuất khẩu, thuế nhập khẩu đối với hàng hóa xuất khẩu để gia công, sản phẩm gia công nhập khẩu",
+          "position": 1,
+          "name": "Người nộp thuế kê khai trên tờ khai hải quan các thông tin về số, ngày hợp đồng gia công; số, ngày văn bản đã thông báo cho cơ quan hải quan về sản phẩm xuất khẩu có tổng trị giá tài nguyên, khoáng sản cộng với chi phí năng lượng dưới 51% giá thành sản phẩm.",
+          "component_code": "000.00.00.G12-0310",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Hồ sơ miễn thuế đối với các trường hợp đặc thù: Trường hợp miễn thuế xuất khẩu, thuế nhập khẩu đối với hàng hóa tạm nhập, tái xuất hoặc tạm xuất, tái nhập trong thời hạn nhất định",
+          "position": 1,
+          "name": "Đối với hàng hóa kinh doanh tạm nhập tái xuất, người nộp thuế phải có bảo lãnh của tổ chức tín dụng hoặc thực hiện đặt cọc vào tài khoản tiền gửi của cơ quan hải quan tại Kho bạc Nhà nước. Trường hợp chứng từ bảo lãnh hoặc chứng từ nộp tiền đặt cọc được lập dưới dạng điện tử, người nộp thuế khai thông tin về chứng từ bảo lãnh hoặc số chứng từ giấy nộp tiền trên tờ khai hải quan để cơ quan hải quan kiểm tra, đối chiếu. Trường hợp dưới dạng bản giấy, người nộp thuế gửi bản chụp kèm hồ sơ hải quan qua Hệ thống xử lý dữ liệu điện tử hải quan.",
+          "component_code": "000.00.00.G12-10210",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Hồ sơ miễn thuế đối với các trường hợp đặc thù:Trường hợp miễn thuế đối với hàng hóa nhập khẩu phục vụ trực tiếp cho an ninh, quốc phòng khi làm thủ tục hải quan",
+          "position": 1,
+          "name": "- Thông báo miễn thuế;",
+          "component_code": "000.00.00.G12-035",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Hồ sơ miễn thuế đối với các trường hợp đặc thù:Trường hợp miễn thuế đối với hàng hóa nhập khẩu phục vụ trực tiếp cho an ninh, quốc phòng khi làm thủ tục hải quan",
+          "position": 2,
+          "name": "- Thông báo điều chỉnh Thông báo miễn thuế (nếu có);",
+          "component_code": "000.00.00.G12-039",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Hồ sơ miễn thuế đối với các trường hợp đặc thù:Trường hợp miễn thuế đối với hàng hóa nhập khẩu phục vụ trực tiếp cho an ninh, quốc phòng khi làm thủ tục hải quan",
+          "position": 3,
+          "name": "- Phiếu theo dõi trừ lùi để cơ quan hải quan thực hiện trừ lùi trong trường hợp nhập khẩu nhiều lần, nhiều chuyến.",
+          "component_code": "000.00.00.G12-0340",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Hồ sơ miễn thuế đối với các trường hợp đặc thù: Trường hợp miễn thuế xuất khẩu, thuế nhập khẩu hàng hóa xuất khẩu, nhập khẩu để bảo vệ môi trường",
+          "position": 1,
+          "name": "* Hàng hóa xuất khẩu - Bảng kê khai thông tin, nội dung miễn thuế xuất khẩu đối với sản phẩm được sản xuất từ hoạt động tái chế, xử lý chất thải theo Phụ lục XXXIa ban hành kèm theo Nghị định số 08/2022/NĐ-CP được sửa đổi, bổ sung bởi Nghị định số 05/2025/NĐ-CP quy định chi tiết một số điều của Luật Bảo vệ môi trường. - Giấy phép môi trường (GPMT) hoặc GPMT thành phần. - Hợp đồng hoặc tài liệu chứng minh điều kiện bảo đảm chất lượng hàng hóa xuất khẩu theo quy định của pháp luật về chất lượng sản phẩm, hàng hóa. - Giấy chứng nhận đăng ký đầu tư hoặc văn bản chấp thuận chủ trương đầu tư theo quy định của pháp luật về đầu tư hoặc văn bản cho phép đầu tư theo quy định của pháp luật chuyên ngành, trừ trường hợp miễn thuế quy định tại khoản 15 Điều 16 Luật số 107/2016/QH13. Đối với các dự án đầu tư không thuộc diện phải cấp Giấy chứng nhận đăng ký đầu tư, chấp thuận chủ trương đầu tư theo quy định của pháp luật về đầu tư hoặc cho phép đầu tư theo quy định của pháp luật chuyên ngành thì việc xác định dự án đầu tư mới căn cứ vào Báo cáo của nhà đầu tư theo quy định của pháp luật về đầu tư gửi cơ quan đăng ký đầu tư theo quy định của pháp luật về đầu tư.",
+          "component_code": "000.00.00.G12-043",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Hồ sơ miễn thuế đối với các trường hợp đặc thù: Trường hợp miễn thuế xuất khẩu, thuế nhập khẩu hàng hóa xuất khẩu, nhập khẩu để bảo vệ môi trường",
+          "position": 2,
+          "name": "* Hàng hóa nhập khẩu - Bảng kê khai thông tin, nội dung miễn thuế nhập khẩu đối với máy móc, thiết bị phương tiện, dụng cụ, vật tư chuyên dùng để sử dụng trong công trình xử lý chất thải, bảo vệ môi trường theo Phụ lục XXXIb ban hành kèm theo Nghị định số 08/2022/NĐ-CP được sửa đổi, bổ sung bởi Nghị định số 05/2025/NĐ-CP. - Giấy chứng nhận đăng ký đầu tư hoặc văn bản chấp thuận chủ trương đầu tư theo quy định của pháp luật về đầu tư hoặc văn bản cho phép đầu tư theo quy định của pháp luật chuyên ngành, trừ trường hợp miễn thuế quy định tại khoản 15 Điều 16 Luật số 107/2016/QH13. Đối với các dự án đầu tư không thuộc diện phải cấp Giấy chứng nhận đăng ký đầu tư, chấp thuận chủ trương đầu tư theo quy định của pháp luật về đầu tư hoặc cho phép đầu tư theo quy định của pháp luật chuyên ngành thì việc xác định dự án đầu tư mới căn cứ vào Báo cáo của nhà đầu tư theo quy định của pháp luật về đầu tư gửi cơ quan đăng ký đầu tư theo quy định của pháp luật về đầu tư.  - Báo cáo nghiên cứu khả thi hoặc tài liệu tương đương với báo cáo nghiên cứu khả thi của dự án đầu tư theo quy định của pháp luật về đầu tư, đầu tư công, đầu tư theo phương thức đối tác công tư, xây dựng (trong đó, có danh mục máy móc, thiết bị, phương tiện, dụng cụ, vật tư chuyên dùng để sử dụng trong công trình xử lý chất thải, bảo vệ môi trường) đã được cấp có thẩm quyền phê duyệt theo quy định của pháp luật; - Giấy phép môi trường (GPMT) hoặc GPMT thành phần hoặc Quyết định phê duyệt kết quả thẩm định báo cáo đánh giá tác động môi trường trong trường hợp dự án, cơ sở chưa có Giấy phép môi trường, giấy phép môi trường thành phần. - Hợp đồng hoặc chứng từ mua bán hàng hóa (trong đó có danh mục máy móc, thiết bị, phương tiện, dụng cụ, vật tư chuyên dùng để sử dụng trong công trình xử lý chất thải, bảo vệ môi trường) phục vụ triển khai dự án, cơ sở thực hiện dịch vụ thu gom, vận chuyển, xử lý chất thải rắn sinh hoạt tập trung và dịch vụ xử lý nước thải sinh hoạt tập trung. - Thông tin, số liệu về máy móc, thiết bị, phương tiện, dụng cụ, vật tư chuyên dùng đề nghị miễn thuế nhập khẩu không thuộc Danh mục máy móc, thiết bị, phụ tùng thay thế, phương tiện vận tải chuyên dùng, nguyên liệu, vật tư, bán thành phẩm trong nước đã sản xuất được do Bộ Tài chính ban hành.",
+          "component_code": "000.00.00.G12-0230",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Hồ sơ miễn thuế đối với các trường hợp đặc thù: Trường hợp miễn thuế nhập khẩu hàng hóa phục vụ hoạt động in, đúc tiền",
+          "position": 1,
+          "name": "Văn bản của Ngân hàng Nhà nước cho phép tổ chức được phép nhập khẩu máy móc, thiết bị, nguyên liệu, vật tư, linh kiện, bộ phận, phụ tùng phục vụ hoạt động in, đúc tiền.",
+          "component_code": "000.00.00.G12-01250",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Hồ sơ miễn thuế đối với các trường hợp đặc thù:  Trường hợp miễn thuế xuất khẩu, thuế nhập khẩu đối với hàng hóa xuất khẩu, nhập khẩu để phục vụ đảm bảo an sinh xã hội, khắc phục hậu quả thiên tai, thảm họa, dịch bệnh và các trường hợp đặc biệt khác",
+          "position": 1,
+          "name": "- Hồ sơ đề nghị miễn thuế trước khi làm thủ tục hải quan đối với hàng hóa nhập khẩu để khắc phục hậu quả thiên tai, thảm họa, dịch bệnh, gồm: + Công văn đề nghị miễn thuế của Ủy ban nhân dân cấp tỉnh, thành phố hoặc Bộ hoặc cấp tương đương trong đó nêu rõ tình hình thiệt hại do thiên tai, thảm họa, dịch bệnh gây ra trên địa bàn: 01bản chính; + Danh mục hàng hóa nhập khẩu trực tiếp phục vụ khắc phục hậu quả thiên tai, thảm họa, dịch bệnh theo Mẫu số 25 tại Phụ lục I Thông tư số 86/2026/TT-BTC.",
+          "component_code": "000.00.00.G12-072",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019f372e-f4b5-77d1-acdf-59ca5ff3b6ce",
+              "fileName": "Mẫu số 25.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f372e-f4b5-77d1-acdf-59ca5ff3b6ce/Mẫu số 25.docx"
+            }
+          ]
+        },
+        {
+          "section": "Hồ sơ miễn thuế đối với các trường hợp đặc thù:  Trường hợp miễn thuế xuất khẩu, thuế nhập khẩu đối với hàng hóa xuất khẩu, nhập khẩu để phục vụ đảm bảo an sinh xã hội, khắc phục hậu quả thiên tai, thảm họa, dịch bệnh và các trường hợp đặc biệt khác",
+          "position": 2,
+          "name": "- Hồ sơ đề nghị miễn thuế trước khi làm thủ tục hải quan đối với hàng hóa nhập khẩu phục vụ trực tiếp đảm bảo an sinh xã hội, gồm: + Công văn đề nghị miễn thuế của Ủy ban nhân dân cấp tỉnh, thành phố hoặc Bộ hoặc cấp tương đương: 01 bản chính; + Danh mục hàng hóa nhập khẩu trực tiếp phục vụ đảm bảo an sinh xã hội theo Mẫu số 25 tại Phụ lục I Thông tư số 86/2026/TT-BTC: 01 bản chính.",
+          "component_code": "000.00.00.G12-0115",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019f372e-8c5d-73c9-8b02-8d0018812311",
+              "fileName": "Mẫu số 25.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f372e-8c5d-73c9-8b02-8d0018812311/Mẫu số 25.docx"
+            }
+          ]
+        },
+        {
+          "section": "Hồ sơ miễn thuế đối với các trường hợp đặc thù:  Trường hợp miễn thuế xuất khẩu, thuế nhập khẩu đối với hàng hóa xuất khẩu, nhập khẩu để phục vụ đảm bảo an sinh xã hội, khắc phục hậu quả thiên tai, thảm họa, dịch bệnh và các trường hợp đặc biệt khác",
+          "position": 3,
+          "name": "- Hồ sơ đề nghị miễn thuế đối với hàng hóa xuất khẩu, nhập khẩu trong các trường hợp đặc biệt khác, gồm:  + Công văn đề nghị miễn thuế xuất khẩu, thuế nhập khẩu của Bộ, cơ quan ngang Bộ, Ủy ban nhân dân cấp tỉnh, thành phố hoặc tổ chức, cá nhân, trong đó nêu rõ lý do, số lượng, chủng loại và trị giá hàng hóa, số tiền thuế đề nghị được miễn thuế: 01 bản chính; + Danh mục hàng hóa xuất khẩu, nhập khẩu đề nghị được miễn thuế xuất khẩu, thuế nhập khẩu theo Mẫu số 25 tại Phụ lục I Thông tư số 86/2026/TT-BTC: 01 bản chính.",
+          "component_code": "000.00.00.G12-0365",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019f372f-73e9-7637-9fd3-3ba74971394d",
+              "fileName": "Mẫu số 25.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f372f-73e9-7637-9fd3-3ba74971394d/Mẫu số 25.docx"
+            }
+          ]
+        },
+        {
+          "section": "Hồ sơ miễn thuế đối với các trường hợp đặc thù:  Trường hợp miễn thuế xuất khẩu, thuế nhập khẩu đối với hàng hóa xuất khẩu, nhập khẩu để phục vụ đảm bảo an sinh xã hội, khắc phục hậu quả thiên tai, thảm họa, dịch bệnh và các trường hợp đặc biệt khác",
+          "position": 4,
+          "name": "- Hồ sơ đề nghị miễn thuế đối với hàng hóa nhập khẩu để trực tiếp phục vụ yêu cầu cứu trợ khẩn cấp khi xảy ra thiên tai, thảm họa, dịch bệnh, gồm:  + Hồ sơ hải quan theo quy định của pháp luật hải quan; + Văn bản xác nhận của Ủy ban nhân dân cấp tỉnh, thành phố hoặc bộ hoặc cấp tương đương về việc nhập khẩu hàng hóa phục vụ yêu cầu cứu trợ khẩn cấp, trong đó nêu rõ tình hình thiệt hại do thiên tai, thảm họa, dịch bệnh gây ra trên địa bàn:01 bản chính; + Danh mục hàng hóa nhập khẩu trực tiếp phục vụ cứu trợ khẩn cấp: 01 bản chính.",
+          "component_code": "000.00.00.G12-0480",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Hồ sơ miễn thuế đối với các trường hợp đặc thù:  Trường hợp miễn thuế xuất khẩu đối với mặt hàng trầm hương được sản xuất từ cây Dó bầu trồng và mặt hàng da trăn có nguồn gốc từ gây nuôi sinh sản",
+          "position": 1,
+          "name": "Đối với mặt hàng da trăn có nguồn gốc từ gây nuôi sinh sản, người nộp thuế nộp thêm các chứng từ sau: - Giấy chứng nhận đăng ký trại nuôi sinh sản động vật hoang dã do cơ quan Kiểm lâm địa phương hoặc cơ quan do Bộ Nông nghiệp và Môi trường chỉ định cấp;",
+          "component_code": "000.00.00.G12-0125",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Hồ sơ miễn thuế đối với các trường hợp đặc thù:  Trường hợp miễn thuế xuất khẩu đối với mặt hàng trầm hương được sản xuất từ cây Dó bầu trồng và mặt hàng da trăn có nguồn gốc từ gây nuôi sinh sản",
+          "position": 2,
+          "name": "- Giấy xác nhận số lượng trăn được giết mổ có nguồn gốc từ gây nuôi sinh sản do cơ quan Kiểm lâm địa phương xác nhận mỗi lần làm thủ tục xuất khẩu.",
+          "component_code": "000.00.00.G12-1187",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Hồ sơ miễn thuế đối với các trường hợp đặc thù: Trường hợp miễn thuế nhập khẩu đối với sản phẩm nông sản chưa qua chế biến do phía Việt Nam hỗ trợ đầu tư, trồng tại Campuchia nhập khẩu về nước",
+          "position": 1,
+          "name": "Ngoài hồ sơ thông báo Danh mục miễn thuế, người nộp thuế là doanh nghiệp nộp thêm các chứng từ sau: - Văn bản xác nhận cho phép đầu tư của cơ quan có thẩm quyền tại Campuchia nơi doanh nghiệp Việt Nam đầu tư: 01 bản chụp kèm 01 bản dịch tiếng Việt;",
+          "component_code": "000.00.00.G12-1812",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Hồ sơ miễn thuế đối với các trường hợp đặc thù: Trường hợp miễn thuế nhập khẩu đối với sản phẩm nông sản chưa qua chế biến do phía Việt Nam hỗ trợ đầu tư, trồng tại Campuchia nhập khẩu về nước",
+          "position": 2,
+          "name": "- Hợp đồng hoặc Thỏa thuận ký kết với phía Campuchia về việc hỗ trợ đầu tư, trồng và nhận lại nông sản, trong đó ghi rõ số tiền, hàng đầu tư vào từng lĩnh vực và tương ứng là số lượng, chủng loại, trị giá từng loại nông sản sẽ thu hoạch được: 01 bản chụp kèm 01 bản dịch tiếng Việt;",
+          "component_code": "000.00.00.G12-1810",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Hồ sơ miễn thuế đối với các trường hợp đặc thù: Trường hợp miễn thuế nhập khẩu đối với sản phẩm nông sản chưa qua chế biến do phía Việt Nam hỗ trợ đầu tư, trồng tại Campuchia nhập khẩu về nước",
+          "position": 3,
+          "name": "- Chứng từ liên quan đến việc hỗ trợ đầu tư, trồng nông sản tại các tỉnh của Campuchia tiếp giáp biên giới Việt Nam (nếu có). Cơ quan hải quan căn cứ hồ sơ thông báo Danh mục miễn thuế, danh sách hộ gia đình, hộ kinh doanh, cá nhân hỗ trợ đầu tư, trồng sản phẩm nông sản tại các tỉnh của Campuchia tiếp giáp biên giới Việt Nam do Ủy ban nhân dân cấp tỉnh nơi hộ gia đình, hộ kinh doanh, cá nhân cư trú công bố hàng năm, kiểm tra, đối chiếu với hàng hóa thực tế nhập khẩu để xử lý miễn thuế nhập khẩu cho từng lô hàng nhập khẩu. Ủy ban nhân dân các tỉnh tiếp giáp biên giới Việt Nam - Campuchia công bố danh sách hộ gia đình, hộ kinh doanh, cá nhân cư trú tại tỉnh có hoạt động đầu tư, trồng sản phẩm nông sản tại các tỉnh của Campuchia tiếp giáp biên giới Việt Nam hàng năm theo Mẫu số 27 tại Phụ lục I Thông tư số 86/2026/TT-BTC trên trang thông tin điện tử của Ủy ban nhân dân tỉnh; đồng thời gửi Chi cục Hải quan khu vực và các Hải quan cửa khẩu/ngoài cửa khẩu thuộc các tỉnh tiếp giáp biên giới Campuchia. Trường hợp có sự thay đổi các tiêu chí trong văn bản đã công bố phải ban hành văn bản điều chỉnh cho phù hợp.",
+          "component_code": "000.00.00.G12-1814",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Hồ sơ miễn thuế đối với các trường hợp đặc thù:Trường hợp miễn thuế xuất khẩu, thuế nhập khẩu đối với hàng hóa xuất khẩu, nhập khẩu theo điều ước quốc tế",
+          "position": 1,
+          "name": "Trước khi đăng ký tờ khai hải quan hàng hóa xuất khẩu, nhập khẩu miễn thuế đầu tiên, tổ chức, cá nhân thực hiện thông báo danh sách hàng hóa xuất khẩu, nhập khẩu miễn thuế Hồ sơ thông báo Danh sách hàng hóa miễn thuế - Công văn thông báo danh sách hàng hóa miễn thuế theo Mẫu số 17 tại Phụ lục I Thông tư số 86/2026/TT-BTC;",
+          "component_code": "000.00.00.G12-1819",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019f3b73-b1dc-7349-b1da-cdad5d7da2d7",
+              "fileName": "Mẫu số 17.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f3b73-b1dc-7349-b1da-cdad5d7da2d7/Mẫu số 17.docx"
+            }
+          ]
+        },
+        {
+          "section": "Hồ sơ miễn thuế đối với các trường hợp đặc thù:Trường hợp miễn thuế xuất khẩu, thuế nhập khẩu đối với hàng hóa xuất khẩu, nhập khẩu theo điều ước quốc tế",
+          "position": 2,
+          "name": "- Danh sách hàng hóa miễn thuế gửi qua Hệ thống xử lý liệu điện tự hải quan theo Mẫu số 7a tại Phụ lục II Thông tư số 86/2026/TT-BTC. Trường hợp hệ thống gặp sự cố, tổ chức, cá nhân nộp 02 bản chính theo Mẫu số 18 tại Phụ lục I Thông tư số 86/2026/TT-BTC và 01 bản chính Phiếu theo dõi trừ lùi theo Mẫu số 19 tại Phụ lục I Thông tư số 86/2026/TT-BTC. Trường hợp máy móc thiết bị phải xuất khẩu, nhập khẩu làm nhiều chuyến, không trừ lùi được số lượng tại thời điểm xuất khẩu, nhập khẩu, tổ chức, cá nhân nộp 02 bản chính danh sách hàng hóa miễn thuế (bản giấy) theo mẫu Mẫu số 18 tại Phụ lục I Thông tư số 86/2026/TT-BTC.  Danh sách hàng hóa miễn thuế được xây dựng thống nhất với điều ước quốc tế hoặc văn bản xác nhận chủng loại, định lượng miễn thuế của cơ quan đề xuất ký kết hoặc gia nhập điều ước quốc tế, cơ quan quản lý chuyên ngành.",
+          "component_code": "000.00.00.G12-1910",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019f3b73-282f-715c-b81e-0a78f0ae7441",
+              "fileName": "Mẫu số 18.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f3b73-282f-715c-b81e-0a78f0ae7441/Mẫu số 18.docx"
+            },
+            {
+              "id": "019f3b73-4cbe-73ce-af4b-d4fc6fc8f25f",
+              "fileName": "2. PHỤ LỤC II - Mẫu điện tử.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f3b73-4cbe-73ce-af4b-d4fc6fc8f25f/2. PHỤ LỤC II - Mẫu điện tử.docx"
+            },
+            {
+              "id": "019f3b74-a880-750d-a83c-7afa5bb64e03",
+              "fileName": "Mẫu số 19.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f3b74-a880-750d-a83c-7afa5bb64e03/Mẫu số 19.docx"
+            },
+            {
+              "id": "019f3bfc-23d0-7593-8ee6-d6e8b6aaec3c",
+              "fileName": "Mẫu số 27.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f3bfc-23d0-7593-8ee6-d6e8b6aaec3c/Mẫu số 27.docx"
+            },
+            {
+              "id": "019f3bfc-42dd-736d-9954-667a9cf65851",
+              "fileName": "Mẫu số 30.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f3bfc-42dd-736d-9954-667a9cf65851/Mẫu số 30.docx"
+            },
+            {
+              "id": "019f3bfc-542b-7408-be6f-2295807b0bff",
+              "fileName": "Mẫu số 31.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f3bfc-542b-7408-be6f-2295807b0bff/Mẫu số 31.docx"
+            }
+          ]
+        },
+        {
+          "section": "Hồ sơ miễn thuế đối với các trường hợp đặc thù:Trường hợp miễn thuế xuất khẩu, thuế nhập khẩu đối với hàng hóa xuất khẩu, nhập khẩu theo điều ước quốc tế",
+          "position": 3,
+          "name": "- Điều ước quốc tế đối với trường hợp điều ước quốc tế quy định chủng loại, định lượng hàng hóa miễn thuế;",
+          "component_code": "000.00.00.G12-230",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Hồ sơ miễn thuế đối với các trường hợp đặc thù:Trường hợp miễn thuế xuất khẩu, thuế nhập khẩu đối với hàng hóa xuất khẩu, nhập khẩu theo điều ước quốc tế",
+          "position": 4,
+          "name": "- Văn bản xác nhận chủng loại, định lượng hàng hóa miễn thuế xuất khẩu, thuế nhập khẩu trong trường hợp điều ước quốc tế không quy định chủng loại, định lượng hàng hóa miễn thuế theo Mẫu số 29 tại Phụ lục I Thông tư số 86/2026/TT-BTC. Trường hợp các chứng từ quy định được cơ quan quản lý nhà nước chuyên ngành gửi dưới dạng điện tử thông qua Cổng thông tin một cửa quốc gia, cơ sở dữ liệu quốc gia thì tổ chức, cá nhân không phải nộp khi thông báo danh sách hàng hóa miễn thuế cho cơ quan hải quan.   p) Khi làm thủ tục xuất khẩu tại chỗ đối với sản phẩm gia công, sản phẩm sản xuất xuất khẩu được gia công, sản xuất từ hàng hóa nhập khẩu miễn thuế theo quy định tại điểm g khoản 2 Điều 10, điểm e khoản 2 Điều 12 Nghị định số 134/2016/NĐ-CP được sửa đổi, bổ sung bởi Nghị định số 18/2021/NĐ-CP, ngoài hồ sơ miễn thuế theo quy định, người xuất khẩu tại chỗ phải nộp thêm văn bản chỉ định giao hàng hóa tại Việt Nam của tổ chức, cá nhân nước ngoài.  Người xuất khẩu tại chỗ thông báo thông tin về tờ khai hải quan của sản phẩm nhập khẩu tại chỗ tương ứng đã hoàn thành thủ tục hải quan cho cơ quan hải quan nơi làm thủ tục xuất khẩu theo quy định tại Điều 86 Thông tư số 38/2015/TT-BTC được sửa đổi, bổ sung bởi Thông tư số 121/2025/TT-BTC thông qua Hệ thống xử lý dữ liệu điện tử hải quan, trường hợp chưa thông báo được qua Hệ thống người nộp thuế thông báo theo Mẫu số 30 Phụ lục I Thông tư số 86/2026/TT-BTC.",
+          "component_code": "000.00.00.G12-233",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019f3b76-6f06-7188-b5e2-4f171fcaf253",
+              "fileName": "Mẫu số 29.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f3b76-6f06-7188-b5e2-4f171fcaf253/Mẫu số 29.docx"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c72-75fa-a593-1bfcdbc99f7c",
+          "name": "Thực hiện miễn thuế theo quy định",
+          "code": "KQ.G12.000638"
+        },
+        {
+          "id": "019d2bb2-1c72-75fa-a593-1e6a99732705",
+          "name": "Thông báo lý do không thuộc diện được miễn thuế, thu thuế và xử phạt vi phạm (nếu có) theo quy định",
+          "code": "KQ.G12.001223"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7f-719e-b470-22af3c5ee091",
+          "name": "Nghị quyết số 66.7/2025/NQ-CP của Chính phủ: Quy định cắt giảm, đơn giản hóa thủ tục hành chính dựa trên dữ liệu",
+          "code": "66.7/2025/NQ-CP"
+        },
+        {
+          "id": "019f3572-2dda-738d-9e22-fb4a0b4e1a7c",
+          "name": "Quy định về quản lý thuế đối với hàng hóa xuất khẩu, nhập khẩu.",
+          "code": "86/2026/TT-BTC"
+        },
+        {
+          "id": "019d2bb3-5d7d-7398-be4a-aac58bdf58a1",
+          "name": "Nghị định số 187/2013/NĐ-CP",
+          "code": "187/2013/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7d-7398-be4d-ff62cdf67da5",
+          "name": "Luật 54/2014/QH13",
+          "code": "54/2014/QH13"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afea-78ea8c197f3a",
+          "name": "Quy định chi tiết một số điều và biện pháp thi hành Luật thuế xuất khẩu, thuế nhập khẩu",
+          "code": "134/2016/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b671-8a6c5b6d5a80",
+          "name": "Thuế xuất khẩu, thuế nhập khẩu",
+          "code": "107/2016/QH13"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afec-a6f13e7884f3",
+          "name": "Nghị định số 18/2021/NĐ-CP ngày 11/3/2021 của Chính phủ sửa đổi, bổ sung một số điều của Nghị định số 134/2016/NĐ-CP ngày 01/9/2016 của Chính phủ quy định chi tiết một số điều và biện pháp thi hành Luật Thuế xuất khẩu, thuế nhập khẩu",
+          "code": "18/2021/ND-CP"
+        }
+      ]
+    }
+  ]
+}

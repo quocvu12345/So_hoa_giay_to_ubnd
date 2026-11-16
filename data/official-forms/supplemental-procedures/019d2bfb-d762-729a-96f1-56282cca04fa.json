@@ -1,0 +1,310 @@
+{
+  "id": "dvc-019d2bfb-d762-729a-96f1-56282cca04fa",
+  "procedure_code": "1.001521",
+  "name": "Giải quyết hưởng chế độ TNLĐ, BNN do thương tật, bệnh tật tái phát",
+  "domain": "Thực hiện chính sách BHXH",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.974797+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfb-d762-729a-96f1-56282cca04fa",
+      "code": "1.001521",
+      "name": "Giải quyết hưởng chế độ TNLĐ, BNN do thương tật, bệnh tật tái phát",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1792931550051,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-d762-729a-96f1-56282cca04fa",
+      "raw_path": "evidence/dvc/details/019d2bfb-d762-729a-96f1-56282cca04fa.json",
+      "components": [
+        {
+          "section": "1. Trường hợp hưởng chế độ TNLĐ do thương tật tái phát",
+          "position": 1,
+          "name": "Văn bản đề nghị theo Mẫu số 14-HSB",
+          "component_code": "TP.G12.98.089",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "01a02de5-e51a-722c-b292-89c5fb20dec8",
+              "fileName": "14-HSB.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/01a02de5-e51a-722c-b292-89c5fb20dec8/14-HSB.docx"
+            }
+          ]
+        },
+        {
+          "section": "1. Trường hợp hưởng chế độ TNLĐ do thương tật tái phát",
+          "position": 2,
+          "name": "Sổ BHXH (trong trường hợp bảo lưu thời gian đóng BHXH mà chưa có dữ liệu trong Hệ thống hoặc chưa được cấp mã số BHXH) đối với trường hợp bị TNLĐ đã được GĐYK nhưng không đủ điều kiện về mức suy giảm KNLĐ để hưởng trợ cấp",
+          "component_code": "TP.G12.98.134",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "1. Trường hợp hưởng chế độ TNLĐ do thương tật tái phát",
+          "position": 3,
+          "name": "Trường hợp điều trị xong ra viện trước ngày 01/7/2016 mà lần giám định trước không đủ điều kiện về mức suy giảm KNLĐ để hưởng trợ cấp TNLĐ: Biên bản điều tra TNLĐ; trường hợp bị TNGT được xác định là TNLĐ thì có thêm bản sao một trong các giấy tờ sau: Biên bản khám nghiệm hiện trường, sơ đồ hiện trường vụ TNGT hoặc Biên bản TNGT của cơ quan Công an hoặc cơ quan điều tra hình sự Quân đội.",
+          "component_code": "TP.G12.98.135",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "1. Trường hợp hưởng chế độ TNLĐ do thương tật tái phát",
+          "position": 4,
+          "name": "Biên bản giám định lại mức suy giảm KNLĐ sau khi điều trị thương tật tái phát của Hội đồng GĐYK",
+          "component_code": "TP.G12.98.137",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "1. Trường hợp hưởng chế độ TNLĐ do thương tật tái phát",
+          "position": 5,
+          "name": "Chỉ định của cơ sở khám bệnh, chữa bệnh, cơ sở chỉnh hình, phục hồi chức năng theo quy định về việc trang cấp PTTGSH (nếu có)",
+          "component_code": "TP.G12.98.138",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "1. Trường hợp hưởng chế độ TNLĐ do thương tật tái phát",
+          "position": 6,
+          "name": "Trường hợp thanh toán phí GĐYK thì có thêm hóa đơn, chứng từ thu phí giám định; bảng kê các nội dung giám định của cơ sở thực hiện GĐYK",
+          "component_code": "TP.G12.98.139",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "1. Trường hợp hưởng chế độ TNLĐ do thương tật tái phát",
+          "position": 7,
+          "name": "Trường hợp điều trị xong, ra viện trước ngày 01/7/2016 mà lần giám định trước không đủ điều kiện về mức suy giảm KNLĐ để hưởng trợ cấp BNN: Kết quả đo đạc, quan trắc môi trường lao động",
+          "component_code": "TP.G12.98.140",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "2. Trường hợp hưởng chế độ BNN do bệnh tật tái phát",
+          "position": 1,
+          "name": "Văn bản đề nghị theo Mẫu số 14-HSB",
+          "component_code": "TP.G12.98.089",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "01a02de5-e51a-722c-b292-89c5fb20dec8",
+              "fileName": "14-HSB.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/01a02de5-e51a-722c-b292-89c5fb20dec8/14-HSB.docx"
+            }
+          ]
+        },
+        {
+          "section": "2. Trường hợp hưởng chế độ BNN do bệnh tật tái phát",
+          "position": 2,
+          "name": "Biên bản giám định mức suy giảm KNLĐ lần trước gần nhất của Hội đồng GĐYK đối với trường hợp đã được giám định nhưng không đủ điều kiện về mức suy giảm KNLĐ để hưởng trợ cấp",
+          "component_code": "TP.G12.98.136",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "2. Trường hợp hưởng chế độ BNN do bệnh tật tái phát",
+          "position": 3,
+          "name": "Chỉ định của cơ sở khám bệnh, chữa bệnh, cơ sở chỉnh hình, phục hồi chức năng theo quy định về việc trang cấp PTTGSH (nếu có)",
+          "component_code": "TP.G12.98.138",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "2. Trường hợp hưởng chế độ BNN do bệnh tật tái phát",
+          "position": 4,
+          "name": "Trường hợp thanh toán phí GĐYK thì có thêm hóa đơn, chứng từ thu phí giám định; bảng kê các nội dung giám định của cơ sở thực hiện GĐYK",
+          "component_code": "TP.G12.98.139",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "2. Trường hợp hưởng chế độ BNN do bệnh tật tái phát",
+          "position": 5,
+          "name": "Sổ BHXH (trong trường hợp bảo lưu thời gian đóng BHXH mà chưa có dữ liệu trong Hệ thống hoặc chưa được cấp mã số BHXH) đối với trường hợp bị TNLĐ đã được GĐYK nhưng không đủ điều kiện về mức suy giảm KNLĐ để hưởng trợ cấp",
+          "component_code": "TP.G12.98.134",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "2. Trường hợp hưởng chế độ BNN do bệnh tật tái phát",
+          "position": 6,
+          "name": "Trường hợp điều trị xong, ra viện trước ngày 01/7/2016 mà lần giám định trước không đủ điều kiện về mức suy giảm KNLĐ để hưởng trợ cấp BNN: Kết quả đo đạc, quan trắc môi trường lao động",
+          "component_code": "TP.G12.98.140",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "2. Trường hợp hưởng chế độ BNN do bệnh tật tái phát",
+          "position": 7,
+          "name": "Biên bản giám định lại mức suy giảm KNLĐ sau khi điều trị bệnh tật tái phát của Hội đồng GĐYK",
+          "component_code": "TP.G12.98.141",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "3. Đối với người hưởng chế độ bảo hiểm TNLĐ theo hình thức tự nguyện giám định lại có kết quả tăng mức suy giảm KNLĐ so với mức suy giảm KNLĐ đã được hưởng trợ cấp",
+          "position": 1,
+          "name": "Biên bản giám định mức suy giảm KNLĐ của Hội đồng GĐYK",
+          "component_code": "TP.G12.98.142",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "3. Đối với người hưởng chế độ bảo hiểm TNLĐ theo hình thức tự nguyện giám định lại có kết quả tăng mức suy giảm KNLĐ so với mức suy giảm KNLĐ đã được hưởng trợ cấp",
+          "position": 2,
+          "name": "Đơn đề nghị giải quyết bổ sung chế độ TNLĐ của NLĐ theo Mẫu quy định tại Phụ lục VIII ban hành kèm theo Nghị định số 143/2024/NĐ-CP",
+          "component_code": "TP.G12.98.143",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "01a02de7-b17b-77bd-a26d-6d964ae8caaf",
+              "fileName": "PHỤ LỤC VIII.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/01a02de7-b17b-77bd-a26d-6d964ae8caaf/PHỤ LỤC VIII.docx"
+            }
+          ]
+        },
+        {
+          "section": "3. Đối với người hưởng chế độ bảo hiểm TNLĐ theo hình thức tự nguyện giám định lại có kết quả tăng mức suy giảm KNLĐ so với mức suy giảm KNLĐ đã được hưởng trợ cấp",
+          "position": 3,
+          "name": "Bản chính hóa đơn, chứng từ hợp pháp liên quan về phí giám định suy giảm KNLĐ",
+          "component_code": "TP.G12.98.144",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c82-739b-8b99-e259405a083c",
+          "name": "Bản quá trình đóng BHXH (Mẫu 04-HSB)",
+          "code": "KQ.G12.001309"
+        },
+        {
+          "id": "019d2bb2-1c82-739b-8b99-d6be7cc06c52",
+          "name": "Tiền trợ cấp",
+          "code": "KQ.G12.001151"
+        },
+        {
+          "id": "019d2bb2-1c82-739b-8b99-ea7eda4cbf78",
+          "name": "Quyết định về việc hưởng trợ cấp TNLĐ, BNN hàng tháng hoặc một lần do vết thương tái phát (Các mẫu 03E-HSB, 03G-HSB, 03H-HSB, 03K-HSB) và Quyết định về việc cấp tiền mua PTTGSH (mẫu 03P-HSB) (nếu có)",
+          "code": "KQ.G24.000059"
+        },
+        {
+          "id": "019d2bb2-1c82-739b-8b99-ec8af78c068d",
+          "name": "Thẻ BHYT đối với trường hợp nghỉ việc hưởng trợ cấp TNLĐ, BNN hàng tháng",
+          "code": "KQ.G24.000060"
+        },
+        {
+          "id": "019d2bb2-1c82-739b-8b99-f1f427866cbb",
+          "name": "Thông báo về việc chi trả lương hưu, trợ cấp BHXH đối với trường hợp di chuyển hưởng chế độ  BHXH tại huyện/tỉnh khác (Mẫu 23-HSB)",
+          "code": "KQ.G24.000061"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7e-72d1-afe5-6de8c6e793ac",
+          "name": "THÔNG TƯ QUY ĐỊNH CHI TIẾT THI HÀNH LUẬT BẢO HIỂM XÃ HỘI, LUẬT AN TOÀN, VỆ SINH LAO ĐỘNG VỀ LĨNH VỰC Y TẾ VÀ MỘT SỐ ĐIỀU CỦA LUẬT KHÁM BỆNH, CHỮA BỆNH",
+          "code": "25/2025/TT-BYT"
+        },
+        {
+          "id": "019d2bb3-5d87-7195-a446-b9df772557c6",
+          "name": "Nghị định số 88/2020/NĐ-CP ngày 28/7/2020 của Chính phủ quy định chi tiết một số điều của Luật An toàn, vệ sinh lao động về bảo hiểm tai nạn lao động, bệnh nghề nghiệp bắt buộc",
+          "code": "88/2020/NĐ-CP"
+        },
+        {
+          "id": "01a02cce-f424-7068-a9c4-54e874383981",
+          "name": "Quy định về bảo hiểm tai nạn lao động theo hình thức tự nguyện đối với người lao động làm việc không theo hợp đồng lao động",
+          "code": "143/2024/NĐ-CP"
+        },
+        {
+          "id": "01a02cd0-b47a-7096-b169-0e3135e43619",
+          "name": "Quy định chi tiết và hướng dẫn thi hành một số điều của Luật An toàn, vệ sinh lao động về chế độ đối với người lao động bị tai nạn lao động, bệnh nghề nghiệp",
+          "code": "28/2021/TT-BLĐTBXH"
+        },
+        {
+          "id": "019d2bb3-5d7c-71ab-9f07-f538ffa2f69d",
+          "name": "BAN HÀNH QUY TRÌNH GIẢI QUYẾT HƯỞNG CÁC CHẾ ĐỘ BẢO HIỂM XÃ HỘI, CHI TRẢ CÁC CHẾ ĐỘ BẢO HIỂM XÃ HỘI, BẢO HIỂM THẤT NGHIỆP",
+          "code": "2222/QĐ-BHXH"
+        },
+        {
+          "id": "019e72e9-3b2a-77b9-9c29-023d914eb3dc",
+          "name": "Quy định về giao dịch điện tử trong lĩnh vực bảo hiểm xã hội và Cơ sở dữ liệu quốc gia về bảo hiểm",
+          "code": "164/2025/NĐ-CP "
+        },
+        {
+          "id": "019d6d49-de8f-7682-83b1-0b8c61d58c2d",
+          "name": "Luật An toàn, vệ sinh lao động ",
+          "code": "84/2015/QH13 "
+        },
+        {
+          "id": "01a023be-84c8-77db-ade3-9c613cd83670",
+          "name": "Quy trình thu bảo hiểm xã hội, bảo hiểm y tế, bảo hiểm thất nghiệp; cấp sổ bảo hiểm xã hội, thẻ bảo hiểm y tế",
+          "code": "366/QĐ-BHXH"
+        },
+        {
+          "id": "019e72eb-488d-760e-abb8-0a3bb6585c78",
+          "name": "SỬA ĐỔI, BỔ SUNG MỘT SỐ ĐIỀU CỦA QUY TRÌNH GIẢI QUYẾT HƯỞNG CÁC CHẾ ĐỘ BẢO HIỂM XÃ HỘI, CHI TRẢ CÁC CHẾ ĐỘ BẢO HIỂM XÃ HỘI, BẢO HIỂM THẤT NGHIỆP BAN HÀNH KÈM THEO QUYẾT ĐỊNH SỐ 2222/QĐ-BHXH NGÀY 29/7/2025 CỦA GIÁM ĐỐC BẢO HIỂM XÃ HỘI VIỆT NAM",
+          "code": "313/QĐ-BHXH "
+        }
+      ]
+    }
+  ]
+}

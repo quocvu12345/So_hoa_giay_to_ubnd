@@ -1,0 +1,92 @@
+{
+  "ordinal": "353",
+  "managing_agency": "Sở Xây dựng",
+  "procedure_code": "2.001211",
+  "name": "Xóa đăng ký phương tiện hoạt động vui chơi, giải trí dưới nước",
+  "domain": "Hàng hải và đường thủy nội địa",
+  "ministry_decision": "870/QĐ-BXD ngày 19/6/2025",
+  "hanoi_decision": "QĐ 933/TTPVHCC ngày 27/06/2025",
+  "workflow_decision": "1104/QĐ-TTPVHCC ngày 25/07/2025",
+  "fees": "Không quy định",
+  "execution_level": "Cấp xã",
+  "competent_authority": "UBND cấp xã",
+  "delegation_decision": "",
+  "delegation_expiry": "",
+  "receiving_location": "Điểm hỗ trợ DVC số",
+  "id": "hn87-353",
+  "source_page": 14,
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "inventory_date": "2026-04-27",
+  "checked_at": "2026-11-12T22:24:57.724755+07:00",
+  "details": [
+    {
+      "id": "019d2bfe-98a8-76af-b485-17daf28c8fc9",
+      "code": "2.001211",
+      "name": "Xóa đăng ký phương tiện hoạt động vui chơi, giải trí dưới nước",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1776357111153,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfe-98a8-76af-b485-17daf28c8fc9",
+      "raw_path": "evidence/dvc/details/019d2bfe-98a8-76af-b485-17daf28c8fc9.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "- Đơn đề nghị xóa đăng ký phương tiện theo Mẫu;",
+          "component_code": "000.00.00.G04-KQ004654",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019d9609-e49e-71ca-8f49-f094315dc8ae",
+              "fileName": "Mẫu đơn đề nghị xoá đăng ký PHƯƠNG TIỆN VUI CHƠI GIẢI TRÍ DƯỚI NƯỚC.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d9609-e49e-71ca-8f49-f094315dc8ae/Mẫu đơn đề nghị xoá đăng ký PHƯƠNG TIỆN VUI CHƠI GIẢI TRÍ DƯỚI NƯỚC.docx"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "- Bản chính Giấy chứng nhận đăng ký phương tiện đã được cấp.",
+          "component_code": "000.00.00.G04-KQ004655",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c7a-7554-ace5-8d7635546841",
+          "name": "Giấy chứng nhận xóa đăng ký phương tiện",
+          "code": "KQ.G17.000292"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7e-72d1-afea-f01696ee65ca",
+          "name": "Quy định về phân định thẩm quyền của chính quyền địa phương 02 cấp trong lĩnh vực quản lý nhà nước của Bộ Xây dựng",
+          "code": "140/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7f-719e-b46e-6fbdb3d1c381",
+          "name": "Quy định về quản lý hoạt động của phương tiện phục vụ vui chơi, giải trí dưới nước",
+          "code": "48/2019/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afec-ea998119a7dc",
+          "name": "Nghị định số 19/2024/NĐ-CP ngày 23/02/2024 sửa đổi, bổ sung một số điều của Nghị định số 48/2019/NĐ-CP ngày 05/6/2019 của Chính phủ quy định về quản lý hoạt động của phương tiện phục vụ vui chơi, giải trí dưới nước",
+          "code": "19/2024/NĐ-CP"
+        }
+      ]
+    }
+  ],
+  "lookup_status": "retrieved",
+  "currency_status": "snapshot_requires_later_amendment_check",
+  "errors": []
+}

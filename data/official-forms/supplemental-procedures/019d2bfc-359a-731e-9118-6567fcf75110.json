@@ -1,0 +1,93 @@
+{
+  "id": "dvc-019d2bfc-359a-731e-9118-6567fcf75110",
+  "procedure_code": "1.007738",
+  "name": "Thủ tục phân loại máy liên hợp hoặc tổ hợp máy thuộc các Chương 84, Chương 85 và Chương 90 của Danh mục hàng hóa xuất khẩu, nhập khẩu Việt Nam và máy móc, thiết bị ở dạng chưa lắp ráp hoặc tháo rời",
+  "domain": "Hải quan",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.954582+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfc-359a-731e-9118-6567fcf75110",
+      "code": "1.007738",
+      "name": "Thủ tục phân loại máy liên hợp hoặc tổ hợp máy thuộc các Chương 84, Chương 85 và Chương 90 của Danh mục hàng hóa xuất khẩu, nhập khẩu Việt Nam và máy móc, thiết bị ở dạng chưa lắp ráp hoặc tháo rời",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1786897442961,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-359a-731e-9118-6567fcf75110",
+      "raw_path": "evidence/dvc/details/019d2bfc-359a-731e-9118-6567fcf75110.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Danh mục máy móc, thiết bị; các chi tiết, linh kiện rời của máy móc, thiết bị;",
+          "component_code": "000.00.00.G12-KQ8439",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "01a00b56-e50d-7778-a9f4-8641a240b714",
+              "fileName": "Mẫu số 01.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/01a00b56-e50d-7778-a9f4-8641a240b714/Mẫu số 01.docx"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "+ Phiếu theo dõi trừ lùi",
+          "component_code": "000.00.00.G12-KQ8440",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "01a00b57-10a4-7678-9cb0-55a0ec5d0b3f",
+              "fileName": "Mẫu số 02.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/01a00b57-10a4-7678-9cb0-55a0ec5d0b3f/Mẫu số 02.docx"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c73-70ac-aa17-63829601d0e8",
+          "name": "Phân loại máy liên hợp hoặc tổ hợp máy thuộc các Chương 84, Chương 85 và Chương 90 của Danh mục hàng hóa xuất khẩu, nhập khẩu Việt Nam và máy móc, thiết bị ở dạng chưa lắp ráp hoặc tháo rời.",
+          "code": "KQ.G12.000646"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7d-7398-be48-2ce7181d92a3",
+          "name": "Thông tư số 39/2018/TT-BTC ngày 20/4/2018 của Bộ Tài chính sửa đổi, bổ sung một số điều tại Thông tư số 38/2015/TT-BTC ngày 25/3/2015 của Bộ Tài chính quy định về thủ tục hải quan; kiểm tra, giám sát hải quan; thuế xuất khẩu, thuế nhập khẩu và quản lý thuế đối với hàng hóa xuất khẩu, nhập khẩu.",
+          "code": "39/2018/TT-BTC"
+        },
+        {
+          "id": "019d2bb3-5d7d-7398-be4d-ff62cdf67da5",
+          "name": "Luật 54/2014/QH13",
+          "code": "54/2014/QH13"
+        },
+        {
+          "id": "01a00b61-dc2e-718e-8028-63ad9f67528e",
+          "name": "Thông tư số 121/2025/TT-BTC ngày 18/12/2025 của Bộ Tài chính sửa đổi, bổ sung một số điều của các Thông tư quy định về thủ tục hải quan, kiểm tra, giám sát hải quan, thuế xuất khẩu, thuế nhập khẩu và quản lý thuế đối với hàng hoá xuất khẩu, nhập khẩu.",
+          "code": "121/2025/TT-BTC"
+        },
+        {
+          "id": "01a00b59-e7ae-7379-b25d-ca8cbc7c89d5",
+          "name": "Thông tư số 85/2026/TT-BTC ngày 30/6/2026 của Bộ Tài chính quy định phân loại hàng hóa, phân tích để phân loại hàng hóa xuất khẩu, nhập khẩu.",
+          "code": "85/2026/TT-BTC "
+        }
+      ]
+    }
+  ]
+}

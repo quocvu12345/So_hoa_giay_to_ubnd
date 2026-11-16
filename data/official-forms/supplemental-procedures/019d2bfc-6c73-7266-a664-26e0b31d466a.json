@@ -1,0 +1,109 @@
+{
+  "id": "dvc-019d2bfc-6c73-7266-a664-26e0b31d466a",
+  "procedure_code": "1.008588",
+  "name": "Nộp dần tiền thuế nợ",
+  "domain": "Thuế",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.933763+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfc-6c73-7266-a664-26e0b31d466a",
+      "code": "1.008588",
+      "name": "Nộp dần tiền thuế nợ",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1785399197552,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-6c73-7266-a664-26e0b31d466a",
+      "raw_path": "evidence/dvc/details/019d2bfc-6c73-7266-a664-26e0b31d466a.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Văn bản đề nghị nộp dần tiền thuế nợ của người nộp thuế theo mẫu số 01/NDAN Phụ lục III ban hành kèm theo Thông tư số 89/2026/TT-BTC ngày 30/6/2026 của Bộ Tài chính",
+          "component_code": "000.00.00.G12-00012267",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019fabaf-1df1-778e-8a86-e88adcefcb0e",
+              "fileName": "01 NDAN 89.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fabaf-1df1-778e-8a86-e88adcefcb0e/01 NDAN 89.docx"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Bản chính hoặc bản sao có chứng thực thư bảo lãnh theo đúng quy định của pháp luật về bảo lãnh và bắt buộc phải có nội dung cam kết về việc bên bảo lãnh sẽ thực hiện nộp thay cho người nộp thuế trong trường hợp người nộp thuế không thực hiện đúng thời hạn nộp dần tiền thuế nợ, nội dung về thời gian thư bảo lãnh có hiệu lực.",
+          "component_code": "000.00.00.G12-00012268",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 3,
+          "name": "Từ 01/7/2026 đến thời điểm theo lộ trình của cơ quan thuế quy định tại khoản 2 Điều 99 Thông tư số 89/2026/TT-BTC ngày 30/6/2026 của Bộ Tài chính thì văn bản nộp dần tiền thuế nợ của người nộp thuế theo mẫu số 01/NDAN thực hiện theo mẫu ban hành kèm theo Thông tư số 80/2021/TT-BTC ngày 29/9/2021 của Bộ Tài chính (đã được sửa đổi, bổ sung).",
+          "component_code": "000.00.00.G12-00012269",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019fabaf-4c52-76ae-a778-82e1f76f0329",
+              "fileName": "01 NDAN 80.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fabaf-4c52-76ae-a778-82e1f76f0329/01 NDAN 80.docx"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c71-7574-afe8-2d872c831658",
+          "name": "Hoặc Quyết định về việc nộp dần tiền thuế nợ (Phụ lục III ban hành kèm theo Thông tư số 89/2026/TT-BTC ngày 30/6/2026 của Bộ Tài chính).",
+          "code": "KQ.G12.000582"
+        },
+        {
+          "id": "019d2bb2-1c71-7574-afe8-29e2ff507d93",
+          "name": "Thông báo không chấp thuận việc nộp dần tiền thuế nợ (Phụ lục III ban hành kèm theo Thông tư số 89/2026/TT-BTC ngày 30/6/2026 của Bộ Tài chính).",
+          "code": "KQ.G12.000581"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019f8db3-9765-740b-8b90-682677b9c421",
+          "name": "Thông tư quy định chi tiết một số điều của Luật Quản lý thuế và Nghị định số 252/2026/NĐ-CP của Chính phủ quy định chi tiết một số điều và biện pháp để tổ chức, hướng dẫn thi hành Luật Quản lý thuế",
+          "code": "89/2026/TT-BTC"
+        },
+        {
+          "id": "019e5e83-1282-771d-9014-49799413a4e5",
+          "name": "Luật số 108/2025/QH15 của Quốc hội: Luật Quản lý thuế",
+          "code": "108/2025/QH15"
+        },
+        {
+          "id": "019f64ed-e026-7299-b5f2-ca44a3964050",
+          "name": "Nghị định về thực hiện thủ tục hành chính theo cơ chế một cửa, một cửa liên thông tại Bộ phận Một cửa và Cổng Dịch vụ công quốc gia.",
+          "code": "118/2025/NĐ-CP "
+        },
+        {
+          "id": "019f356e-75e3-7494-a2f3-672d8dce61a6",
+          "name": "QUY ĐỊNH CHI TIẾT MỘT SỐ ĐIỀU VÀ BIỆN PHÁP ĐỂ TỔ CHỨC, HƯỚNG DẪN THI HÀNH LUẬT QUẢN LÝ THUẾ",
+          "code": "252/2026/NĐ-CP"
+        }
+      ]
+    }
+  ]
+}

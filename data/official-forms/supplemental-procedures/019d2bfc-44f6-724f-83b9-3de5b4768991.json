@@ -1,0 +1,100 @@
+{
+  "id": "dvc-019d2bfc-44f6-724f-83b9-3de5b4768991",
+  "procedure_code": "1.007843",
+  "name": "Thủ tục hải quan đối với hàng hoá đã xuất khẩu nhưng bị trả lại",
+  "domain": "Hải quan",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.952486+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfc-44f6-724f-83b9-3de5b4768991",
+      "code": "1.007843",
+      "name": "Thủ tục hải quan đối với hàng hoá đã xuất khẩu nhưng bị trả lại",
+      "state": "ACTIVE",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1775640274206,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-44f6-724f-83b9-3de5b4768991",
+      "raw_path": "evidence/dvc/details/019d2bfc-44f6-724f-83b9-3de5b4768991.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "b) Chứng từ vận tải trong trường hợp hàng hóa vận chuyển bằng đường biển, đường hàng không, đường sắt: 01 bản chụp;",
+          "component_code": "000.00.00.G12-KQ8792",
+          "original_quantity": 0,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "c) Văn bản của bên nước ngoài thông báo hàng bị trả lại hoặc văn bản của hãng tàu/đại lý hãng tàu thông báo không có người nhận hàng: 01 bản chụp.",
+          "component_code": "000.00.00.G12-KQ8793",
+          "original_quantity": 0,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 3,
+          "name": "a) Tờ khai hải quan hàng hóa nhập khẩu;",
+          "component_code": "000.00.00.G12-KQ8791",
+          "original_quantity": 0,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c73-70ac-aa17-98a63c4b2b69",
+          "name": "Quyết định thông quan",
+          "code": "KQ.G12.000589"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7d-7398-be4d-ff62cdf67da5",
+          "name": "Luật 54/2014/QH13",
+          "code": "54/2014/QH13"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b673-5f4f0ddd4079",
+          "name": "Luật 51/2005/QH11",
+          "code": "51/2005/QH11"
+        },
+        {
+          "id": "019d2bb3-5d7d-7398-be4d-1c6dbc289d7a",
+          "name": "Quy định về thủ tục hải quan; kiểm tra, giám sát hải quan; thuế xuất khẩu thuế nhập khẩu và quản lý thuế đối vớỉ hàng hoá xuất khẩu, nhập khẩu.",
+          "code": "38/2015/TT-BTC"
+        },
+        {
+          "id": "019d2bb3-5d7f-719e-b46b-b6df3641dbeb",
+          "name": "Về giao dịch điện tử trong hoạt động tài chính",
+          "code": "27/2007/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afe7-9c25863596db",
+          "name": "Nghị định 08/2015/NĐ-CP",
+          "code": "08/2015/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7d-7398-be4a-5fe7c5952529",
+          "name": "Thông tư 172/2010/TT-BTC",
+          "code": "172/2010/TT-BTC"
+        }
+      ]
+    }
+  ]
+}

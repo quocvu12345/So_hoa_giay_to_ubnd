@@ -1,0 +1,85 @@
+{
+  "id": "dvc-019e5e49-eef4-7413-994c-2693d7f6196c",
+  "procedure_code": "1.009824",
+  "name": "Thông báo địa điểm kinh doanh của hộ kinh doanh, cá nhân kinh doanh",
+  "domain": "Thuế",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.487439+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019e5e49-eef4-7413-994c-2693d7f6196c",
+      "code": "1.009824",
+      "name": "Thông báo địa điểm kinh doanh của hộ kinh doanh, cá nhân kinh doanh",
+      "state": "ACTIVE",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1780590651540,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019e5e49-eef4-7413-994c-2693d7f6196c",
+      "raw_path": "evidence/dvc/details/019e5e49-eef4-7413-994c-2693d7f6196c.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Thông báo thành lập địa điểm kinh doanh, thay đổi thông tin, tạm ngừng kinh doanh, chấm dứt hoạt động địa điểm kinh doanh (Mẫu số 01/TB-ĐĐKD Thông tư số 18/2026/TT-BTC)",
+          "component_code": "G12.0001128",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019e5e3e-81e1-75af-a8a2-31f56e353cff",
+              "fileName": "Mẫu số 01 TB ĐĐKD.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019e5e3e-81e1-75af-a8a2-31f56e353cff/Mẫu số 01 TB ĐĐKD.docx"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "id": "019e5e48-be2c-7113-a170-10fb82eef6e1",
+          "name": "Thông báo về việc thành lập/thay đổi thông tin/tạm ngừng/chấm dứt hoạt động đối với địa điểm kinh doanh (Mẫu số 01/TB-ĐĐKD)",
+          "code": "KQ.G12.000475"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7e-72d1-afe9-653aac8276ee",
+          "name": "Nghị định số 118/2025/NĐ-CP của Chính phủ: Về thực hiện thủ tục hành chính theo cơ chế một cửa, một cửa liên thông tại Bộ phận Một cửa và Cổng Dịch vụ công quốc gia",
+          "code": "118/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d86-7760-a643-2e14de6cf380",
+          "name": "Thông tư số 19/2021/TT-BTC ngày 18/3/2021 của Bộ Tài chính hướng dẫn Giao dịch điện tử trong lĩnh vực thuế",
+          "code": "19/2021/TT-BTC"
+        },
+        {
+          "id": "019e5e39-0aa7-757f-bfbb-291601c2e514",
+          "name": "Nghị định số 68/2026/NĐ-CP ngày 05/3/2026 quy định về chính sách thuế và quản lý thuế đối với hộ kinh doanh, cá nhân kinh doanh",
+          "code": "68/2026/NĐ-CP"
+        },
+        {
+          "id": "019e5e39-aa14-746c-80cd-afe06a8d307a",
+          "name": "Thông tư số 18/2026/TT-BTC ngày 05/3/2026 quy định về hồ sơ, thủ tục quản lý thuế đối với hộ kinh doanh, cá nhân kinh doanh",
+          "code": "18/2026/TT-BTC "
+        },
+        {
+          "id": "019d2bb3-5d7d-7398-be4d-9f8629ebc27d",
+          "name": "sửa đổi một số điều của Thông tư 19/2021/TT-BTC ngày 18/3/2021 của Bộ trưởng Bộ Tài chính hướng dẫn giao dịch điện tử trong lĩnh vực thuế",
+          "code": "46/2024/TT-BTC"
+        },
+        {
+          "id": "019d2bb3-5d85-73da-8eb9-e5214fd5ac79",
+          "name": "Luật Quản lý thuế",
+          "code": "38/2019/QH14"
+        }
+      ]
+    }
+  ]
+}

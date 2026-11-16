@@ -1,0 +1,100 @@
+{
+  "ordinal": "176",
+  "managing_agency": "Sở Nông nghiệp Môi trường",
+  "procedure_code": "1.003471",
+  "name": "Phê duyệt đề cương, kết quả kiểm định an toàn đập, hồ chứa thủy lợi thuộc thẩm quyền của Chủ tịch UBND cấp xã",
+  "domain": "Thủy lợi (Bộ Nông nghiệp và Môi trường)",
+  "ministry_decision": "498/QĐ-BNNMT ngày 09/02/2026",
+  "hanoi_decision": "331/QĐ-TTPVHCC ngày 18/3/2026",
+  "workflow_decision": "388/QĐ-TTPVHCC ngày 30/3/2026",
+  "fees": "Không quy định",
+  "execution_level": "Cấp Xã",
+  "competent_authority": "UBND cấp xã",
+  "delegation_decision": "",
+  "delegation_expiry": "",
+  "receiving_location": "Điểm hỗ trợ DVC số",
+  "source_page": 7,
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "inventory_date": "2026-04-27",
+  "checked_at": "2026-11-12T22:23:53.919286+07:00",
+  "details": [
+    {
+      "id": "019d2bfa-2094-75aa-a75e-92fa750dd0f4",
+      "code": "1.003471",
+      "name": "Phê duyệt đề cương, kết quả kiểm định an toàn  đập, hồ chứa thủy lợi thuộc thẩm quyền của Chủ tịch UBND cấp xã",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1776736067947,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfa-2094-75aa-a75e-92fa750dd0f4",
+      "raw_path": "evidence/dvc/details/019d2bfa-2094-75aa-a75e-92fa750dd0f4.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Dự thảo đề cương kiểm định an toàn đập, hồ chứa thủy lợi",
+          "component_code": "000.00.00.G10-KQ0710",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "- Tờ trình đề nghị phê duyệt;",
+          "component_code": "000.00.00.G02-KQ1739",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 3,
+          "name": "Các tài liệu liên quan khác kèm theo (nếu có).",
+          "component_code": "000.00.00.G10-KQ2129",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c4d-7725-9d9f-e51a47f6296c",
+          "name": "Đề cương, kết quả kiểm định được phê duyệt",
+          "code": "KQ.G10.000125"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7e-72d1-afea-45ea9b37796c",
+          "name": "Quy định phân định thẩm quyền của chính quyền địa phương 02 cấp trong lĩnh vực quản lý nhà nước của Bộ Nông nghiệp và Môi trường",
+          "code": "Nghị định số 131/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d85-73da-8eb9-a64b5543d0bd",
+          "name": "Luật số 146/2025/QH15 ngày 11/12/2025 của Quốc hội sửa đổi, bổ sung một số điều của 15 luật trong lĩnh vực nông nghiệp và môi trường",
+          "code": "146/2025/QH15"
+        },
+        {
+          "id": "019d2bb3-5d80-7608-8cd0-b5808a0fa91a",
+          "name": "Luật 08/2017/QH14",
+          "code": "08/2017/QH14"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afe6-09420464b80c",
+          "name": "Nghị định 114/2018/NĐ-CP",
+          "code": "114/2018/NĐ-CP"
+        }
+      ]
+    }
+  ],
+  "lookup_status": "retrieved",
+  "currency_status": "snapshot_requires_later_amendment_check",
+  "errors": []
+}

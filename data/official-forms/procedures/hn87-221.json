@@ -1,0 +1,119 @@
+{
+  "ordinal": "221",
+  "managing_agency": "Sở Công Thương",
+  "procedure_code": "1.012427",
+  "name": "Thành lập/mở rộng cụm công nghiệp",
+  "domain": "Cụm công nghiệp",
+  "ministry_decision": "1752/QĐ-BCT ngày 19/6/2025",
+  "hanoi_decision": "QĐ 931/QĐ-TTPVHCC ngày 27/6/2025",
+  "workflow_decision": "301/QĐ-TTPVHCC ngày 12/03/2026",
+  "fees": "Không quy định",
+  "execution_level": "Cấp tỉnh, cấp xã",
+  "competent_authority": "UBND thành phố; UBND cấp xã",
+  "delegation_decision": "",
+  "delegation_expiry": "",
+  "receiving_location": "Điểm hỗ trợ DVC số",
+  "id": "hn87-221",
+  "source_page": 9,
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "inventory_date": "2026-04-27",
+  "checked_at": "2026-11-12T22:24:36.383741+07:00",
+  "details": [
+    {
+      "id": "019d2bf7-fc13-74f5-bd7a-f5c821c74ed2",
+      "code": "1.012427",
+      "name": "Thành lập/mở rộng cụm công nghiệp",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": false,
+      "updated_at_source": 1780887911473,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf7-fc13-74f5-bd7a-f5c821c74ed2",
+      "raw_path": "evidence/dvc/details/019d2bf7-fc13-74f5-bd7a-f5c821c74ed2.json",
+      "components": [
+        {
+          "section": "Hồ sơ đề nghị thành lập/mở rộng cụm công nghiệp (do doanh nghiệp, hợp tác xã, tổ chức thực hiện) bao gồm:",
+          "position": 1,
+          "name": "+ Văn bản của doanh nghiệp, hợp tác xã, tổ chức đề nghị làm chủ đầu tư xây dựng hạ tầng kỹ thuật cụm công nghiệp (trong đó có cam kết không vi phạm các quy định của pháp luật và chịu mọi chi phí, rủi ro nếu không được chấp thuận) kèm theo Báo cáo đầu tư thành lập/mở rộng cụm công nghiệp và bản đồ xác định vị trí, ranh giới của cụm công nghiệp;",
+          "component_code": "000.00.00.G02-KQ004715",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019d90b4-dd0c-75ce-bbd3-d3125c63c140",
+              "fileName": "Mau 1.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d90b4-dd0c-75ce-bbd3-d3125c63c140/Mau 1.docx"
+            },
+            {
+              "id": "019d90b4-f33f-77f9-85ca-a0f207b87684",
+              "fileName": "Mus02.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d90b4-f33f-77f9-85ca-a0f207b87684/Mus02.docx"
+            }
+          ]
+        },
+        {
+          "section": "Hồ sơ đề nghị thành lập/mở rộng cụm công nghiệp (do doanh nghiệp, hợp tác xã, tổ chức thực hiện) bao gồm:",
+          "position": 2,
+          "name": "+ Bản sao hợp lệ tài liệu chứng minh năng lực tài chính của doanh nghiệp, hợp tác xã, tổ chức đề nghị làm chủ đầu tư xây dựng hạ tầng kỹ thuật gồm ít nhất một trong các tài liệu sau: Báo cáo tài chính 02 năm gần nhất; cam kết hỗ trợ tài chính của công ty mẹ; cam kết hỗ trợ tài chính của tổ chức tài chính; bảo lãnh về năng lực tài chính; tài liệu khác chứng minh năng lực tài chính (nếu có);",
+          "component_code": "000.00.00.G02-KQ004717",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Hồ sơ đề nghị thành lập/mở rộng cụm công nghiệp (do doanh nghiệp, hợp tác xã, tổ chức thực hiện) bao gồm:",
+          "position": 3,
+          "name": "+ Bản sao hợp lệ tài liệu chứng minh kinh nghiệm của doanh nghiệp, hợp tác xã, tổ chức đề nghị làm chủ đầu tư xây dựng hạ tầng kỹ thuật cụm công nghiệp và các văn bản, tài liệu khác có liên quan (nếu có).",
+          "component_code": "000.00.00.G02-KQ004718",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c39-7291-ba48-d7306761bdff",
+          "name": "Quyết định thành lập cụm công nghiệp.",
+          "code": "KQ.G02.000335"
+        },
+        {
+          "id": "019d2bb2-1c3a-7502-a83f-c84f3388d207",
+          "name": "Quyết định mở rộng cụm công nghiệp",
+          "code": "KQ.G02.000460"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019e1627-6140-7639-ae90-2e4878db9890",
+          "name": "Nghị quyết số 19/2026/NQ-CP ngày 29 tháng 4 năm 2026 của Chính phủ về cắt giảm, phân cấp, đơn giản hoá thủ tục hành chính, điều kiện kinh doanh thuộc quản lý của Bộ Công Thương",
+          "code": "19/2026/NQ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afea-c50c12615de4",
+          "name": "Quy định về phân định thẩm quyền của chính quyền địa phương 02 cấp trong lĩnh vực quản lý nhà nước của Bộ Công Thương",
+          "code": "139/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d87-7195-a43e-c7a6b4140f5c",
+          "name": "Nghị đình số 32/2024/NĐ-CP",
+          "code": "32/2024/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d87-7195-a449-cbb7b3b9c71d",
+          "name": "Thông tư số 14/2024/TT-BCT",
+          "code": "Thông tư số 14/2024/TT-BCT"
+        }
+      ]
+    }
+  ],
+  "lookup_status": "retrieved",
+  "currency_status": "snapshot_requires_later_amendment_check",
+  "errors": []
+}

@@ -1,0 +1,192 @@
+{
+  "id": "dvc-019d2bfc-5cca-71bb-bfdd-909ee788f123",
+  "procedure_code": "1.008504",
+  "name": "Đăng ký thay đổi thông tin đăng ký thuế đối với người nộp thuế là tổ chức, hộ gia đình/cá nhân kinh doanh có thay đổi thông tin về địa chỉ trụ sở dẫn đến làm thay đổi cơ quan thuế quản lý trực tiếp thực hiện tại cơ quan thuế nơi người nộp thuế chuyển đi; doanh nghiệp/hợp tác xã/tổ hợp tác/hộ kinh doanh thực hiện nộp hồ sơ tại CQT nơi chuyển đi trước khi thực hiện thủ tục thay đổi với cơ quan đăng ký kinh doanh",
+  "domain": "Thuế",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.940522+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfc-5cca-71bb-bfdd-909ee788f123",
+      "code": "1.008504",
+      "name": "Đăng ký thay đổi thông tin đăng ký thuế đối với người nộp thuế là tổ chức, hộ gia đình/cá nhân kinh doanh có thay đổi thông tin về địa chỉ trụ sở dẫn đến làm thay đổi cơ quan thuế quản lý trực tiếp thực hiện tại cơ quan thuế nơi người nộp thuế chuyển đi; doanh nghiệp/hợp tác xã/tổ hợp tác/hộ kinh doanh thực hiện nộp hồ sơ tại CQT nơi chuyển đi trước khi thực hiện thủ tục thay đổi với cơ quan đăng ký kinh doanh",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1784861594370,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-5cca-71bb-bfdd-909ee788f123",
+      "raw_path": "evidence/dvc/details/019d2bfc-5cca-71bb-bfdd-909ee788f123.json",
+      "components": [
+        {
+          "section": "(i) Đối với người nộp thuế là tổ chức, hộ gia đình/cá nhân kinh doanh có thay đổi thông tin về địa chỉ trụ sở dẫn đến làm thay đổi cơ quan thuế quản lý trực tiếp thực hiện tại cơ quan thuế nơi người nộp thuế chuyển đi; doanh nghiệp/hợp tác xã/tổ hợp tác/hộ kinh doanh thực hiện nộp hồ sơ tại CQT nơi chuyển đi trước khi thực hiện thủ tục thay đổi với cơ quan đăng ký kinh doanh - Đối với người nộp thuế thuộc diện đăng ký thuế trực tiếp với cơ quan thuế theo quy định tại điểm a, b, c, g, i, p khoản 2 Điều 4 Thông tư số 90/2026/TT-BTC gồm:",
+          "position": 1,
+          "name": "Tờ khai điều chỉnh, bổ sung thông tin đăng ký thuế mẫu số 08-MST ban hành kèm theo Thông tư số 90/2026/TT-BTC",
+          "component_code": "G12.0003017",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019f8e2f-751a-73ee-8435-3b024040af10",
+              "fileName": "22.Mẫu 08-MST TK thay đổi thông tin ĐKT.doc",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8e2f-751a-73ee-8435-3b024040af10/22.Mẫu 08-MST TK thay đổi thông tin ĐKT.doc"
+            }
+          ]
+        },
+        {
+          "section": "(i) Đối với người nộp thuế là tổ chức, hộ gia đình/cá nhân kinh doanh có thay đổi thông tin về địa chỉ trụ sở dẫn đến làm thay đổi cơ quan thuế quản lý trực tiếp thực hiện tại cơ quan thuế nơi người nộp thuế chuyển đi; doanh nghiệp/hợp tác xã/tổ hợp tác/hộ kinh doanh thực hiện nộp hồ sơ tại CQT nơi chuyển đi trước khi thực hiện thủ tục thay đổi với cơ quan đăng ký kinh doanh - Đối với người nộp thuế thuộc diện đăng ký thuế trực tiếp với cơ quan thuế theo quy định tại điểm a, b, c, g, i, p khoản 2 Điều 4 Thông tư số 90/2026/TT-BTC gồm:",
+          "position": 2,
+          "name": "Bản sao Giấy phép thành lập và hoạt động, hoặc văn bản tương đương do cơ quan có thẩm quyền cấp trong trường hợp địa chỉ trên các Giấy tờ này có thay đổi",
+          "component_code": "G12.0003018",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "(i) Đối với người nộp thuế là tổ chức, hộ gia đình/cá nhân kinh doanh có thay đổi thông tin về địa chỉ trụ sở dẫn đến làm thay đổi cơ quan thuế quản lý trực tiếp thực hiện tại cơ quan thuế nơi người nộp thuế chuyển đi; doanh nghiệp/hợp tác xã/tổ hợp tác/hộ kinh doanh thực hiện nộp hồ sơ tại CQT nơi chuyển đi trước khi thực hiện thủ tục thay đổi với cơ quan đăng ký kinh doanh - Đối với người nộp thuế thuộc diện đăng ký thuế trực tiếp với cơ quan thuế theo quy định tại điểm a, b, c, g, i, p khoản 2 Điều 4 Thông tư số 90/2026/TT-BTC gồm:",
+          "position": 3,
+          "name": "Từ ngày 01/7/2026 đến trước thời điểm theo lộ trình của cơ quan thuế quy định tại khoản 2 Điều 36 Thông tư số 90/2026/TT-BTC thì tiếp tục áp dụng mẫu số 08-MST ban hành kèm theo Thông tư số 86/2024/TT-BTC ngày 23/12/2024 của Bộ Tài chính",
+          "component_code": "G12.0003610",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019f8e1a-91d8-716a-9f84-18964c39ecae",
+              "fileName": "08 MST TT 86.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8e1a-91d8-716a-9f84-18964c39ecae/08 MST TT 86.docx"
+            }
+          ]
+        },
+        {
+          "section": "(i) Đối với người nộp thuế là tổ chức, hộ gia đình/cá nhân kinh doanh có thay đổi thông tin về địa chỉ trụ sở dẫn đến làm thay đổi cơ quan thuế quản lý trực tiếp thực hiện tại cơ quan thuế nơi người nộp thuế chuyển đi; doanh nghiệp/hợp tác xã/tổ hợp tác/hộ kinh doanh thực hiện nộp hồ sơ tại CQT nơi chuyển đi trước khi thực hiện thủ tục thay đổi với cơ quan đăng ký kinh doanh - Đối với người nộp thuế theo quy định tại điểm d, k khoản 2 Điều 4 Thông tư số 90/2026/TT-BTC:",
+          "position": 1,
+          "name": "Tờ khai điều chỉnh, bổ sung thông tin đăng ký thuế mẫu số 08-MST ban hành kèm theo Thông tư số 90/2026/TT-BTC",
+          "component_code": "G12.0003017",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019f8e2f-751a-73ee-8435-3b024040af10",
+              "fileName": "22.Mẫu 08-MST TK thay đổi thông tin ĐKT.doc",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8e2f-751a-73ee-8435-3b024040af10/22.Mẫu 08-MST TK thay đổi thông tin ĐKT.doc"
+            }
+          ]
+        },
+        {
+          "section": "(i) Đối với người nộp thuế là tổ chức, hộ gia đình/cá nhân kinh doanh có thay đổi thông tin về địa chỉ trụ sở dẫn đến làm thay đổi cơ quan thuế quản lý trực tiếp thực hiện tại cơ quan thuế nơi người nộp thuế chuyển đi; doanh nghiệp/hợp tác xã/tổ hợp tác/hộ kinh doanh thực hiện nộp hồ sơ tại CQT nơi chuyển đi trước khi thực hiện thủ tục thay đổi với cơ quan đăng ký kinh doanh - Đối với người nộp thuế theo quy định tại điểm d, k khoản 2 Điều 4 Thông tư số 90/2026/TT-BTC:",
+          "position": 2,
+          "name": "Từ ngày 01/7/2026 đến trước thời điểm theo lộ trình của cơ quan thuế quy định tại khoản 2 Điều 36 Thông tư số 90/2026/TT-BTC thì tiếp tục áp dụng mẫu số 08-MST ban hành kèm theo Thông tư số 86/2024/TT-BTC ngày 23/12/2024 của Bộ Tài chính",
+          "component_code": "G12.0003610",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019f8e1a-91d8-716a-9f84-18964c39ecae",
+              "fileName": "08 MST TT 86.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8e1a-91d8-716a-9f84-18964c39ecae/08 MST TT 86.docx"
+            }
+          ]
+        },
+        {
+          "section": "(ii) Đăng ký hủy chuyển địa điểm tại cơ quan thuế nơi chuyển đi",
+          "position": 1,
+          "name": "Văn bản đăng ký hủy chuyển địa điểm mẫu số 31/ĐKT ban hành kèm theo Thông tư số 90/2026/TT-BTC",
+          "component_code": "G12.0003618",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019f8e33-099d-70cb-bfda-eae2a15d80df",
+              "fileName": "24.Mẫu 31-ĐKT Đăng ký hủy chuyển ĐĐ.doc",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8e33-099d-70cb-bfda-eae2a15d80df/24.Mẫu 31-ĐKT Đăng ký hủy chuyển ĐĐ.doc"
+            }
+          ]
+        },
+        {
+          "section": "(ii) Đăng ký hủy chuyển địa điểm tại cơ quan thuế nơi chuyển đi",
+          "position": 2,
+          "name": "Từ ngày 01/7/2026 đến trước thời điểm theo lộ trình của cơ quan thuế quy định tại khoản 2 Điều 36 Thông tư số 90/2026/TT-BTC thì tiếp tục áp dụng mẫu số 31/ĐK-TCT ban hành kèm theo Thông tư số 86/2024/TT-BTC ngày 23/12/2024 của Bộ Tài chính đối với trường hợp đăng ký thuế theo phương thức điện tử.",
+          "component_code": "G12.0003619",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019f8e35-a98d-725c-86f7-2cd0bc9812fd",
+              "fileName": "31 ĐKTCT.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8e35-a98d-725c-86f7-2cd0bc9812fd/31 ĐKTCT.docx"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 1,
+          "name": "Người nộp thuế nộp hồ sơ đến cơ quan thuế bằng phương thức điện tử thì bản sao các văn bản, giấy tờ quy định trong hồ sơ đăng ký thuế là bản sao điện tử.",
+          "component_code": "G12.0003344",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c70-724b-96de-1f12d675367f",
+          "name": "Thông báo người nộp thuế chuyển địa điểm (mẫu 09-MST)",
+          "code": "KQ.G12.000185"
+        },
+        {
+          "id": "019d2bb2-1c71-7574-afeb-036710beb869",
+          "name": "Thông báo về việc xác nhận người nộp thuế hủy chuyển địa điểm (Mẫu số 36/TB-ĐKT)",
+          "code": "KQ.G12.000843"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019f356e-75e3-7494-a2f3-672d8dce61a6",
+          "name": "QUY ĐỊNH CHI TIẾT MỘT SỐ ĐIỀU VÀ BIỆN PHÁP ĐỂ TỔ CHỨC, HƯỚNG DẪN THI HÀNH LUẬT QUẢN LÝ THUẾ",
+          "code": "252/2026/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afe9-653aac8276ee",
+          "name": "Nghị định số 118/2025/NĐ-CP của Chính phủ: Về thực hiện thủ tục hành chính theo cơ chế một cửa, một cửa liên thông tại Bộ phận Một cửa và Cổng Dịch vụ công quốc gia",
+          "code": "118/2025/NĐ-CP"
+        },
+        {
+          "id": "019f8db3-9765-740b-8b90-682677b9c421",
+          "name": "Thông tư quy định chi tiết một số điều của Luật Quản lý thuế và Nghị định số 252/2026/NĐ-CP của Chính phủ quy định chi tiết một số điều và biện pháp để tổ chức, hướng dẫn thi hành Luật Quản lý thuế",
+          "code": "89/2026/TT-BTC"
+        },
+        {
+          "id": "019e5e83-1282-771d-9014-49799413a4e5",
+          "name": "Luật số 108/2025/QH15 của Quốc hội: Luật Quản lý thuế",
+          "code": "108/2025/QH15"
+        }
+      ]
+    }
+  ]
+}

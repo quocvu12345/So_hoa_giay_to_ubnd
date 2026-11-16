@@ -1,0 +1,73 @@
+{
+  "id": "dvc-019e1f10-7a59-74eb-97dd-0d550e7b1d33",
+  "procedure_code": "3.000570",
+  "name": "Thủ tục xác nhận thay đổi thông tin đăng ký hoạt động in (cấp xã)",
+  "domain": "Xuất Bản, In và Phát hành",
+  "managing_agency": "Bộ Văn hóa, Thể thao và Du lịch",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.487631+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019e1f10-7a59-74eb-97dd-0d550e7b1d33",
+      "code": "3.000570",
+      "name": "Thủ tục xác nhận thay đổi thông tin đăng ký hoạt động in (cấp xã)",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1794471545295,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019e1f10-7a59-74eb-97dd-0d550e7b1d33",
+      "raw_path": "evidence/dvc/details/019e1f10-7a59-74eb-97dd-0d550e7b1d33.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Tờ khai thay đổi thông tin đăng ký hoạt động cơ sở in (Mẫu số 11 Phụ lục 04 kèm theo Nghị quyết 18/2026/NQ-CP).",
+          "component_code": "MS11.PL4.NQ18.2026",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c78-7725-a74e-033339ce2e25",
+          "name": "Giấy xác nhận đăng ký hoạt động in",
+          "code": "KQ.G14.000152"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7f-719e-b46b-822c79b97e3f",
+          "name": "Nghị định 25/2018/NĐ-CP",
+          "code": "25/2018/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7f-719e-b470-c3c59c101383",
+          "name": "Nghị định số 72/2022/NĐ-CP ngày 04 tháng 10 năm 2022 của Chính phủ sửa đổi, bổ sung một số điều của Nghị định số 60/2014/NĐ-CP ngày 19 tháng 6 năm 2014 của Chính phủ quy định về hoạt động in và Nghị định số 25/2018/NĐ-CP ngày 28 tháng 02 năm 2018 của Chính phủ sửa đổi, bổ sung một số điều của Nghị định số 60/2014/NĐ-CP ngày 19 tháng 6 năm 2014 của Chính phủ quy định về hoạt động in",
+          "code": "72/2022//NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7f-719e-b46f-71df9cf8e73c",
+          "name": "Nghị định 60/2014/NĐ-CP",
+          "code": "60/2014/NĐ-CP"
+        },
+        {
+          "id": "019d85ce-8119-76ae-9a24-ff4ac54c50a9",
+          "name": "Nghị định sửa đổi, bổ sung một số điều của các Nghị định có quy định thủ tục hành chính liên quan đến hoạt động sản xuất, kinh doanh thuộc phạm vi quản lý của Bộ Văn hóa, Thể thao và Du lịch.",
+          "code": "116/2026/NĐ-CP"
+        },
+        {
+          "id": "019e1f0d-519c-718d-b974-e426c90b3034",
+          "name": "Nghị quyết số 18/2026/NQ-CP ngày 29/4/2026 của Chính phủ về cắt giảm, phân cấp, đơn giản hóa thủ tục hành chính, cắt giảm điều kiện đầu tư kinh doanh thuộc phạm vi quản lý của Bộ Văn hóa, Thể thao và Du lịch.",
+          "code": "18/2026/NQ-CP "
+        }
+      ]
+    }
+  ]
+}

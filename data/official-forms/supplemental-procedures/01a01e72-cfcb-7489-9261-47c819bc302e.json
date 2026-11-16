@@ -1,0 +1,148 @@
+{
+  "id": "dvc-01a01e72-cfcb-7489-9261-47c819bc302e",
+  "procedure_code": "1.116439",
+  "name": "(Hà Nội) Sử dụng đất kết hợp đa mục đích, gia hạn phương án sử dụng đất kết hợp đa mục đích (cấp xã)",
+  "domain": "Đất đai",
+  "managing_agency": "UBND Thành phố Hà Nội",
+  "inventory_date": null,
+  "scope": "hanoi",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.478337+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "01a01e72-cfcb-7489-9261-47c819bc302e",
+      "code": "1.116439",
+      "name": "(Hà Nội) Sử dụng đất kết hợp đa mục đích, gia hạn phương án sử dụng đất kết hợp đa mục đích (cấp xã)",
+      "state": "ACTIVE",
+      "type": "SPECIFIC",
+      "is_ward": true,
+      "updated_at_source": 1787306785679,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/01a01e72-cfcb-7489-9261-47c819bc302e",
+      "raw_path": "evidence/dvc/details/01a01e72-cfcb-7489-9261-47c819bc302e.json",
+      "components": [
+        {
+          "section": "a) Hồ sơ đề nghị phê duyệt phương án sử dụng đất kết hợp đa mục đích",
+          "position": 1,
+          "name": "Đơn đề nghị sử dụng đất kết hợp đa mục đích theo mẫu số 14",
+          "component_code": "MD14.105.2026",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "01a01e64-800b-73ea-80e2-55f189536413",
+              "fileName": "Mẫu số 14.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/01a01e64-800b-73ea-80e2-55f189536413/Mẫu số 14.docx"
+            }
+          ]
+        },
+        {
+          "section": "a) Hồ sơ đề nghị phê duyệt phương án sử dụng đất kết hợp đa mục đích",
+          "position": 2,
+          "name": "Phương án sử dụng đất kết hợp (Bản chính).",
+          "component_code": "32.TH1.TPHS02.105.2026",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "a) Hồ sơ đề nghị phê duyệt phương án sử dụng đất kết hợp đa mục đích",
+          "position": 3,
+          "name": "Giấy chứng nhận đã cấp hoặc một trong các loại giấy tờ về quyền sử dụng đất theo quy định của pháp luật (Bản chính - nếu có).",
+          "component_code": "32.TH1.TPHS03.105.2026",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "Hồ sơ gia hạn phương án sử dụng đất kết hợp đa mục đích",
+          "position": 1,
+          "name": "Văn bản đề nghị gia hạn phương án sử dụng đất kết hợp (Bản chính).",
+          "component_code": "32.TH2.TPHS01.105.2026",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019ff92e-d2c1-71ba-95f3-ec8076984ce9",
+          "name": "Văn bản chấp thuận hoặc không chấp thuận Phương án sử dụng đất kết hợp đa mục đích",
+          "code": "KQ-H36.000035"
+        },
+        {
+          "id": "019ff92f-f785-7170-beca-7fda8fe7e7e4",
+          "name": "Văn bản chấp thuận hoặc không chấp thuận gia hạn Phương án sử dụng đất kết hợp đa mục đích đối với trường hợp xin gia hạn.",
+          "code": "KQ-H36.000036"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d84-71c5-b675-1125e97928b3",
+          "name": "Luật Các tổ chức tín dụng",
+          "code": "Luật số 32/2024/QH15"
+        },
+        {
+          "id": "019d2bb3-5d86-7760-a644-ce39f72a6124",
+          "name": "Sửa đổi, bổ sung một số điều của các nghị định  quy định chi tiết thi hành Luật Đất đai",
+          "code": "226/2025/NĐ-CP"
+        },
+        {
+          "id": "019eab71-e707-70af-996a-4e5b8b36e53e",
+          "name": "Luật Đất đai số 31/2024/QH15 ngày 18/01/2024 được sửa đổi bổ sung  một số điều bởi Luật số 43/2024/QH15, Luật số 47/2024/QH15 và Luật số 58/2024/QH15 của Quốc hội.",
+          "code": "31/2024/QH15 "
+        },
+        {
+          "id": "019fdfab-0f98-7309-b6da-edcf4b3418a4",
+          "name": "Về việc phân cấp thực hiện một số nhiệm vụ trong lĩnh vực đất đai trên địa bàn thành phố Hà Nội",
+          "code": "33/2026/QĐ-UBND "
+        },
+        {
+          "id": "019fdfab-9c87-71de-a747-04badf16fb31",
+          "name": "Về việc ban hành Quy định về điều chỉnh, sửa đổi, bổ sung, bãi bỏ một số nội dung của Quyết định số 33/2026/QĐ-UBND ngày 25/3/2026 của UBND Thành phố về việc phân cấp thực hiện một số nhiệm vụ trong lĩnh vực đất đai trên địa bàn thành phố Hà Nội; ban hành trình tự, thủ tục hành chính về đất đai trên địa bàn thành phố Hà Nội",
+          "code": "105/2026/QĐ-UBND"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afeb-9ac6648a4b4f",
+          "name": "Quy định về phân định thẩm quyền của chính quyền địa phương 02 cấp, phân quyền, phân cấp trong lĩnh vực đất đai",
+          "code": "151/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b672-6d9bdd44c1c7",
+          "name": "Luật Nhà ở số 27/2023/QH15",
+          "code": "27/2023/QH15"
+        },
+        {
+          "id": "019ed889-689c-754e-8006-5ba0214fab5a",
+          "name": "Quy định một số cơ chế, chính sách tháo gỡ khó khăn vướng mắc trong tổ chức thi hành Luật Đất đai",
+          "code": "254/2025/QH15"
+        },
+        {
+          "id": "019fb0eb-7629-732a-ae85-4507d8b9cbc8",
+          "name": "Nghị định số 102/2024/NĐ-CP ngày 30/7/2024 của Chính phủ quy định chi tiết thi hành một số điều của Luật Đất đai",
+          "code": "102/2024/NĐ-CP "
+        },
+        {
+          "id": "019f55b2-3b31-71cd-bf85-9982cee170c3",
+          "name": "Luật Kinh doanh bất động sản",
+          "code": "29/2023/QH15"
+        },
+        {
+          "id": "019fe63e-5ffc-73a2-9971-335d80f4d73f",
+          "name": "Luật số 43/2024/QH15 ngày 29/6/2024 sửa đổi, bổ sung một số điều của Luật Đất đai số 31/2024/QH15, Luật Nhà ở số 27/2023/QH15, Luật Kinh doanh bất động sản số 29/2023/QH15 và Luật Các tổ chức tín dụng số 32/2024/QH15",
+          "code": "43/2024/QH15 ngày 29/6/2024"
+        }
+      ]
+    }
+  ]
+}

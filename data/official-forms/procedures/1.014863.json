@@ -1,0 +1,151 @@
+{
+  "ordinal": "169",
+  "managing_agency": "Sở Nông nghiệp Môi trường",
+  "procedure_code": "1.014863",
+  "name": "Cấp gia hạn, điều chỉnh nội dung giấy phép cho các hoạt động trong phạm vi bảo vệ công trình thủy lợi đối với hoạt động: du lịch, thể thao, nghiên cứu khoa học, kinh doanh, dịch vụ do Chủ tịch UBND cấp tỉnh phân cấp cho Chủ tịch UBND cấp xã",
+  "domain": "Thủy lợi (Bộ Nông nghiệp và Môi trường)",
+  "ministry_decision": "498/QĐ-BNNMT ngày 09/02/2026",
+  "hanoi_decision": "331/QĐ-TTPVHCC ngày 18/3/2026",
+  "workflow_decision": "388/QĐ-TTPVHCC ngày 30/3/2026",
+  "fees": "Không quy định",
+  "execution_level": "Cấp Xã",
+  "competent_authority": "UBND cấp xã",
+  "delegation_decision": "",
+  "delegation_expiry": "",
+  "receiving_location": "Điểm hỗ trợ DVC số",
+  "source_page": 7,
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "inventory_date": "2026-04-27",
+  "checked_at": "2026-11-12T22:23:53.059919+07:00",
+  "details": [
+    {
+      "id": "019d2bfa-9e2d-7174-96b1-53a4fe84c876",
+      "code": "1.014863",
+      "name": "Cấp gia hạn, điều chỉnh nội dung giấy phép cho các hoạt động trong phạm vi bảo vệ công trình thủy lợi đối với hoạt động: du lịch, thể thao, nghiên cứu khoa học, kinh doanh, dịch vụ do Chủ tịch UBND cấp tỉnh phân cấp cho Chủ tịch UBND cấp xã",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1779249385279,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfa-9e2d-7174-96b1-53a4fe84c876",
+      "raw_path": "evidence/dvc/details/019d2bfa-9e2d-7174-96b1-53a4fe84c876.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "- Đơn đề nghị gia hạn, điều chỉnh nội dung giấy phép theo mẫu đơn (quy định tại Phụ lục III ban hành kèm theo Nghị định số 40/2026/NĐ-CP ngày 25/01/2026",
+          "component_code": "G10-KQ007896",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019d84ad-e49b-72da-975b-257d7cd95cf3",
+              "fileName": "Mau don de nghi cap, gia han giay phep.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d84ad-e49b-72da-975b-257d7cd95cf3/Mau don de nghi cap, gia han giay phep.docx"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "- Sơ họa vị trí khu vực tiến hành hoạt động đề nghị gia hạn, điều chỉnh nội dung giấy phép;",
+          "component_code": "000.00.00.G10-KQ005474",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 3,
+          "name": "- Báo cáo tình hình thực hiện giấy phép được cấp của tổ chức, cá nhân;",
+          "component_code": "000.00.00.G10-KQ005475",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 4,
+          "name": "- Văn bản ý kiến của tổ chức, cá nhân khai thác công trình thủy lợi về tình hình thực hiện giấy phép được cấp của tổ chức, cá nhân;",
+          "component_code": "000.00.00.G10-KQ005476",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 5,
+          "name": "- Đối với các dự án đầu tư trong phạm vi bảo vệ của công trình thủy lợi, hồ sơ đề nghị gia hạn, điều chỉnh nội dung giấy phép phải bổ sung:",
+          "component_code": "000.00.00.G10-KQ005477",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 6,
+          "name": "+ Bản sao quyết định thành lập hoặc bản sao giấy chứng nhận đăng ký doanh nghiệp, cập nhật đến thời điểm đề nghị gia hạn, điều chỉnh nội dung giấy phép (trong trường hợp chưa được tích hợp, kết nối và chia sẻ dữ liệu quốc gia)",
+          "component_code": "G10-KQ007897",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 7,
+          "name": "+ Trường hợp có thay đổi quy mô, công suất, thông số chủ yếu của các hoạt động được cấp phép phải bổ sung các tài liệu tương ứng với nội dung thay đổi theo quy định của pháp luật có liên quan như: quyết định phê duyệt điều chỉnh, bổ sung quy hoạch, chủ trương đầu tư, dự án đầu tư; quyết định phê duyệt kết quả thẩm định báo cáo đánh giá tác động môi trường, giấy phép môi trường hoặc đăng ký môi trường đã được cơ quan có thẩm quyền ban hành (nếu thuộc đối tượng phải lập, điều chỉnh); thông báo thẩm định thiết kế cơ sở, bản vẽ thiết kế của dự án điều chỉnh.",
+          "component_code": "G10-KQ007898",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c4d-7725-9d9e-be99e9c7a98a",
+          "name": "Giấy phép hoạt động trong phạm vi bảo vệ công trình thủy lợi",
+          "code": "KQ.G10.000048"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d80-7608-8cd0-b5808a0fa91a",
+          "name": "Luật 08/2017/QH14",
+          "code": "08/2017/QH14"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b678-b6e5fb3d87aa",
+          "name": "Nghị định số 40/2026/NĐ-CP ngày 25/01/2026",
+          "code": "40/2026/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d85-73da-8eb9-a64b5543d0bd",
+          "name": "Luật số 146/2025/QH15 ngày 11/12/2025 của Quốc hội sửa đổi, bổ sung một số điều của 15 luật trong lĩnh vực nông nghiệp và môi trường",
+          "code": "146/2025/QH15"
+        },
+        {
+          "id": "019e0be0-1ccd-7462-b7f5-5a312790c821",
+          "name": "Về cắt giảm, phân cấp, đơn giản hóa thủ tục hành chính và cắt giảm, đơn giản hóa điều kiện kinh doanh thuộc phạm vi quản lý của Bộ Nông nghiệp và Môi trường",
+          "code": "17/2026/NQ-CP"
+        }
+      ]
+    }
+  ],
+  "lookup_status": "retrieved",
+  "currency_status": "snapshot_requires_later_amendment_check",
+  "errors": []
+}

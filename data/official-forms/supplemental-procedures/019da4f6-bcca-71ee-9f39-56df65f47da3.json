@@ -1,0 +1,111 @@
+{
+  "id": "dvc-019da4f6-bcca-71ee-9f39-56df65f47da3",
+  "procedure_code": "1.015018",
+  "name": "Hỗ trợ xây dựng nhà màng, nhà lưới để sản xuất một số loại cây trồng có giá trị kinh tế cao (áp dụng cho sản xuất rau, hoa không dùng đất: giá thể, thủy canh hoặc khí canh) (Thực hiện theo Điều 9 Nghị quyết số 53/2025/NQ-HĐND ngày 26/11/2025)\n",
+  "domain": "Nông nghiệp",
+  "managing_agency": "Trung tâm phục vụ hành chính công Thành phố Hà Nội",
+  "inventory_date": null,
+  "scope": "hanoi",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.842130+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019da4f6-bcca-71ee-9f39-56df65f47da3",
+      "code": "1.015018",
+      "name": "Hỗ trợ xây dựng nhà màng, nhà lưới để sản xuất một số loại cây trồng có giá trị kinh tế cao (áp dụng cho sản xuất rau, hoa không dùng đất: giá thể, thủy canh hoặc khí canh) (Thực hiện theo Điều 9 Nghị quyết số 53/2025/NQ-HĐND ngày 26/11/2025)\n",
+      "state": "ACTIVE",
+      "type": "SPECIFIC",
+      "is_ward": true,
+      "updated_at_source": 1776618005830,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019da4f6-bcca-71ee-9f39-56df65f47da3",
+      "raw_path": "evidence/dvc/details/019da4f6-bcca-71ee-9f39-56df65f47da3.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Đơn đề nghị hỗ trợ theo Mẫu số 02A của Phụ lục kèm theo Quyết định số 35/2026/QĐ-UBND ngày 30/3/2026",
+          "component_code": "ĐĐN-02A-35/2026/QĐ-UBND",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Bản chính hoặc bản sao có chứng thực Hợp đồng, nghiệm thu, thanh lý hợp đồng, hoá đơn tài chính theo quy định của pháp luật về xây dựng (lắp đặt) mới nhà màng, nhà lưới",
+          "component_code": "HĐXD",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 3,
+          "name": "Bản chính hoặc bản chứng thực tài liệu minh chứng đảm bảo các tiêu chuẩn theo quy định tại Tiêu chuẩn Quốc gia hiện hành về nhà màng, nhà lưới (nhà ươm, trồng cây nông nghiệp).",
+          "component_code": "TLMC",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 4,
+          "name": "Bản gốc hoặc bản chứng thực chứng thư thẩm định giá của cơ quan thẩm định giá hoặc báo giá/thông báo giá của đơn vị sản xuất, phân phối độc quyền",
+          "component_code": "CTTĐG",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019da3a7-5b85-7125-baf9-e8dd79dc1f3f",
+          "name": "Quyết định hỗ trợ",
+          "code": "QĐHT"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d85-73da-8eb9-eab0340fcb27",
+          "name": "Luật Thủ đô",
+          "code": "39/2024/QH15"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b675-2df9683f0484",
+          "name": "Luật trồng trọt",
+          "code": "Luật số: 31/2018/QH14"
+        },
+        {
+          "id": "019d95f1-101b-7739-b8bc-0cd2414b8591",
+          "name": "sửa đổi bổ sung một số điều của 15 Luật trong lĩnh vực Nông nghiệp và Môi trường ",
+          "code": "146/2025/QH15 "
+        },
+        {
+          "id": "019d2bb3-5d87-7195-a445-3789c9336cec",
+          "name": "Luật Tổ chức chính quyền địa phương",
+          "code": "72/2025/QH15"
+        },
+        {
+          "id": "019d9950-5f30-72b3-9aba-c16e4c2d68c2",
+          "name": "Quy định trình tự, thủ tục triển khai thực hiện Nghị quyết số 53/2025/NQHĐND ngày 26/11/2025 của Hội đồng nhân dân Thành phố quy định về một số chính sách phát triển nông nghiệp thành phố Hà Nội",
+          "code": "35/2026/QĐ-UBND"
+        },
+        {
+          "id": "019d9954-3c63-73ba-8ed0-2a37a75f887c",
+          "name": "Quy định về một số chính sách phát triển nông nghiệp thành phố Hà Nội\n(Thực hiện khoản 2 Điều 32 Luật Thủ đô)\n",
+          "code": "53/2025/NQ-HĐND "
+        }
+      ]
+    }
+  ]
+}

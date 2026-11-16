@@ -1,0 +1,76 @@
+{
+  "id": "dvc-019d2bfe-90a2-7673-a2f5-9ba3da842499",
+  "procedure_code": "1.013274",
+  "name": "Cấp phép sử dụng tạm thời lòng đường, vỉa hè vào mục đích khác",
+  "domain": "Đường bộ",
+  "managing_agency": "Bộ Xây dựng",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.860004+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfe-90a2-7673-a2f5-9ba3da842499",
+      "code": "1.013274",
+      "name": "Cấp phép sử dụng tạm thời lòng đường, vỉa hè vào mục đích khác",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1783332936825,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfe-90a2-7673-a2f5-9ba3da842499",
+      "raw_path": "evidence/dvc/details/019d2bfe-90a2-7673-a2f5-9ba3da842499.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Phương án sử dụng tạm thời lòng đường vỉa hè vào mục đích khác, phương án tổ chức giao thông (bản chính hoặc bản sao có chứng thực)",
+          "component_code": "000.00.00.G04-KQ005085",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Văn bản đề nghị cấp phép sử dụng tạm thời lòng đường, vỉa hè vào mục đích khác theo quy định tại Mẫu số 1 Phụ lục IV Nghị định số 241/2026/NĐ-CP",
+          "component_code": "TP-G17.000099",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019f282c-0024-77a7-b4df-e691f3c5e3c1",
+              "fileName": "Mẫu 01_PLIV NĐ241.2026.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f282c-0024-77a7-b4df-e691f3c5e3c1/Mẫu 01_PLIV NĐ241.2026.docx"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "id": "019f2826-c6a5-762a-887c-349afb3e75fe",
+          "name": "Văn bản cấp phép sử dụng tạm thời lòng đường, vỉa hè vào mục đích khác",
+          "code": "KQ-G17.000021"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7e-72d1-afec-3d554727c630",
+          "name": "Quy định chi tiết, hướng dẫn thi hành một số điều của Luật Đường bộ và Điều 77 Luật Trật tự, an toàn giao thông đường bộ.",
+          "code": "165/2024/NĐ-CP"
+        },
+        {
+          "id": "019f20dc-8b6d-76ee-9ae1-64fa47a8e47a",
+          "name": "Nghị định số 241/2026/NĐ-CP ngày 26 tháng 6 năm 2026 sửa đổi, bổ sung một số điều của Nghị định số 165/2024/NĐ-CP ngày 26 tháng 12 năm 2024 của Chính phủ quy định chi tiết, hướng dẫn thi hành một số điều của Luật Đường bộ và Điều 77 Luật Trật tự, an toàn giao thông đường bộ",
+          "code": "241/2026/NĐ-CP"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "id": "dvc-019d2bfc-2d93-73ec-ba2f-8d6aef8f7950",
+  "procedure_code": "1.007689",
+  "name": "Khai thuế đối với cá nhân cho thuê bất động sản trực tiếp khai thuế với cơ quan thuế",
+  "domain": "Thuế",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.956103+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfc-2d93-73ec-ba2f-8d6aef8f7950",
+      "code": "1.007689",
+      "name": "Khai thuế đối với cá nhân cho thuê bất động sản trực tiếp khai thuế với cơ quan thuế",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1780273815352,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-2d93-73ec-ba2f-8d6aef8f7950",
+      "raw_path": "evidence/dvc/details/019d2bfc-2d93-73ec-ba2f-8d6aef8f7950.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Tờ khai thuế đối với hoạt động cho thuê bất động sản (Mẫu số 01/BĐS)",
+          "component_code": "G12.0001189",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019e72a5-7ff8-7119-891a-453bd5beecdf",
+              "fileName": "01 BĐS.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019e72a5-7ff8-7119-891a-453bd5beecdf/01 BĐS.docx"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Phụ lục bảng kê chi tiết bất động sản (Mẫu số 01/BK-BĐS)",
+          "component_code": "G12.0001190",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019e72a6-9ee3-701d-b4bb-d33ed26cc09c",
+              "fileName": "01 BK-BĐS.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019e72a6-9ee3-701d-b4bb-d33ed26cc09c/01 BK-BĐS.docx"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c70-724b-96e1-59c6a510ec9f",
+          "name": "Hồ sơ gửi đến cơ quan thuế không có kết quả giải quyết.",
+          "code": "KQ.G12.000429"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7e-72d1-afe9-653aac8276ee",
+          "name": "Nghị định số 118/2025/NĐ-CP của Chính phủ: Về thực hiện thủ tục hành chính theo cơ chế một cửa, một cửa liên thông tại Bộ phận Một cửa và Cổng Dịch vụ công quốc gia",
+          "code": "118/2025/NĐ-CP"
+        },
+        {
+          "id": "019e5e83-1282-771d-9014-49799413a4e5",
+          "name": "Luật số 108/2025/QH15 của Quốc hội: Luật Quản lý thuế",
+          "code": "108/2025/QH15"
+        },
+        {
+          "id": "019d2bb3-5d7d-7398-be4d-9f8629ebc27d",
+          "name": "sửa đổi một số điều của Thông tư 19/2021/TT-BTC ngày 18/3/2021 của Bộ trưởng Bộ Tài chính hướng dẫn giao dịch điện tử trong lĩnh vực thuế",
+          "code": "46/2024/TT-BTC"
+        },
+        {
+          "id": "019e729c-8330-71b8-b045-b7f2443f308a",
+          "name": "Thông tư số 50/2026/TT-BTC của Bộ Tài chính: Sửa đổi, bổ sung một số điều của Thông tư số 18/2026/TT-BTC ngày 05 tháng 3 năm 2026 của Bộ trưởng Bộ Tài chính quy định về hồ sơ, thủ tục quản lý thuế đối với hộ kinh doanh, cá nhân kinh doanh",
+          "code": "50/2026/TT-BTC"
+        },
+        {
+          "id": "019d2bb3-5d86-7760-a643-2e14de6cf380",
+          "name": "Thông tư số 19/2021/TT-BTC ngày 18/3/2021 của Bộ Tài chính hướng dẫn Giao dịch điện tử trong lĩnh vực thuế",
+          "code": "19/2021/TT-BTC"
+        },
+        {
+          "id": "019e5e39-0aa7-757f-bfbb-291601c2e514",
+          "name": "Nghị định số 68/2026/NĐ-CP ngày 05/3/2026 quy định về chính sách thuế và quản lý thuế đối với hộ kinh doanh, cá nhân kinh doanh",
+          "code": "68/2026/NĐ-CP"
+        },
+        {
+          "id": "019e5e39-aa14-746c-80cd-afe06a8d307a",
+          "name": "Thông tư số 18/2026/TT-BTC ngày 05/3/2026 quy định về hồ sơ, thủ tục quản lý thuế đối với hộ kinh doanh, cá nhân kinh doanh",
+          "code": "18/2026/TT-BTC "
+        },
+        {
+          "id": "019e72a9-0c2b-749c-8856-31e73c463ba4",
+          "name": "Nghị định số 141/2026/NĐ-CP của Chính phủ: Sửa đổi, bổ sung một số điều của Nghị định số 68/2026/NĐ-CP quy định về chính sách thuế đối với hộ kinh doanh, cá nhân kinh doanh và Nghị định số 320/2025/NĐ-CP quy định chi tiết một số điều và biện pháp để tổ chức, hướng dẫn thi hành Luật Thuế thu nhập doanh nghiệp",
+          "code": "141/2026/NĐ-CP"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "id": "hn87-392",
+  "ordinal": "392",
+  "procedure_code": "1.014736",
+  "name": "Lựa chọn, phê duyệt dự án phát triển sản xuất liên kết theo chuỗi giá trị",
+  "domain": "Quản lý các chương trình mục tiêu quốc gia",
+  "department_id": "ktdt",
+  "department": "Phòng Kinh tế, Hạ tầng và Đô thị",
+  "authority_as_published": "UBND thành phố; UBND cấp xã",
+  "execution_level_as_published": "Cấp tỉnh, cấp xã",
+  "receiving_location_as_published": "Điểm hỗ trợ DVC số; Chi nhánh TTPVHCC",
+  "inventory_date": "2026-04-27",
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "source_urls": [
+    "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-d1f4-77f9-a633-faef01f164bb"
+  ],
+  "current_dvc_match": true,
+  "lifecycle": null,
+  "scope": "hanoi_commune_notice_2026_04_27",
+  "scope_note": "Mốc kiểm kê cấp xã Hà Nội; áp dụng từng thủ tục tại Từ Liêm còn phải theo thẩm quyền/ủy quyền hiện hành.",
+  "status": "has_fillable_templates",
+  "components": [
+    {
+      "id": "hn87-392-c001",
+      "code": "G12.A4.000001",
+      "name": "Đơn đề nghị theo Mẫu số 01 tại Phụ lục XII ban hành kèm theo Nghị định số 387/2026/NĐ-CP của Chính phủ",
+      "section": "Số lượng hồ sơ: Ủy ban nhân dân cấp tỉnh quy định",
+      "role": "applicant_form",
+      "scenario_status": "selected_for_test",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-d1f4-77f9-a633-faef01f164bb",
+      "source_detail_id": "019d2bfc-d1f4-77f9-a633-faef01f164bb",
+      "embedded_other_requirements": false,
+      "template_candidates": [
+        "template-25fbb47451b43d6e"
+      ],
+      "template_selection_method": "first_matching_source_attachment",
+      "selected_template_id": "template-25fbb47451b43d6e",
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-392-c002",
+      "code": "G12.A4.000002",
+      "name": "Nội dung dự án theo Mẫu số 02 tại Phụ lục XII ban hành kèm theo Nghị định số 387/2026/NĐ-CP của Chính phủ",
+      "section": "Số lượng hồ sơ: Ủy ban nhân dân cấp tỉnh quy định",
+      "role": "needs_review",
+      "scenario_status": "requirement_needs_review",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-d1f4-77f9-a633-faef01f164bb",
+      "source_detail_id": "019d2bfc-d1f4-77f9-a633-faef01f164bb",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-392-c003",
+      "code": "G12.A4.000003",
+      "name": "Bản thỏa thuận cử đơn vị làm chủ trì liên kết theo Mẫu số 03 tại Phụ lục XII ban hành kèm theo Nghị định số 387/2026/NĐ-CP của Chính phủ",
+      "section": "Số lượng hồ sơ: Ủy ban nhân dân cấp tỉnh quy định",
+      "role": "needs_review",
+      "scenario_status": "requirement_needs_review",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-d1f4-77f9-a633-faef01f164bb",
+      "source_detail_id": "019d2bfc-d1f4-77f9-a633-faef01f164bb",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-392-c004",
+      "code": "G12.A4.000004",
+      "name": "Cam kết về tiêu chuẩn chất lượng sản phẩm, hàng hóa, dịch vụ; bản sao hợp đồng liên kết có chứng thực; văn bản khác theo quy định của Ủy ban nhân dân cấp tỉnh",
+      "section": "Số lượng hồ sơ: Ủy ban nhân dân cấp tỉnh quy định",
+      "role": "supporting_submit",
+      "scenario_status": "selected_for_test",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-d1f4-77f9-a633-faef01f164bb",
+      "source_detail_id": "019d2bfc-d1f4-77f9-a633-faef01f164bb",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    }
+  ],
+  "service_cases": [
+    {
+      "id": "019ef8b7-fc67-72a9-959d-d5f9386e8eed",
+      "code": "1.014736.01",
+      "name": "Lựa chọn, phê duyệt dự án phát triển sản xuất liên kết theo chuỗi giá trị",
+      "source_processing_time": {
+        "qty": 1,
+        "type": "WORKING_DAY"
+      },
+      "has_case_specific_components": false
+    },
+    {
+      "id": "01a17d02-97a5-75fb-8b93-eaf3807903f7",
+      "code": "1.014736.01",
+      "name": "Lựa chọn, phê duyệt dự án phát triển sản xuất liên kết theo chuỗi giá trị",
+      "source_processing_time": {
+        "qty": 1,
+        "type": "WORKING_DAY"
+      },
+      "has_case_specific_components": false
+    }
+  ],
+  "selected_template_ids": [
+    "template-25fbb47451b43d6e"
+  ],
+  "source_component_groups": [
+    {
+      "name": "Số lượng hồ sơ: Ủy ban nhân dân cấp tỉnh quy định",
+      "component_count": 4,
+      "source_detail_id": "019d2bfc-d1f4-77f9-a633-faef01f164bb"
+    }
+  ],
+  "conditional_component_groups": [],
+  "default_test_scenario": {
+    "channel": "direct",
+    "applicant_submits_self": true,
+    "authorized": false,
+    "special_case_flags": [],
+    "selected_conditional_group": null,
+    "case_selection_method": "ordinary_direct_submission",
+    "case_status": "scenario_for_testing_not_a_legal_eligibility_decision"
+  },
+  "requirement_note": "required_as_published được giữ nguyên; false không chứng minh giấy tờ luôn tùy chọn. Các nhóm executionCases có thể là mục giấy tờ/hướng dẫn, không phải các phương án loại trừ nhau."
+}

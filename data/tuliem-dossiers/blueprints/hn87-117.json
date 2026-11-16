@@ -1,0 +1,150 @@
+{
+  "id": "hn87-117",
+  "ordinal": "117",
+  "procedure_code": "1.012836",
+  "name": "Hỗ trợ chi phí về vật tư phối giống nhân tạo gia súc gồm tinh đông lạnh, Nitơ lỏng, găng tay và dụng cụ dẫn tinh để phối giống cho trâu, bò cái; chi phí về liều tinh để thực hiện phối giống cho lợn nái, công cho người làm dịch vụ phối giống nhân tạo gia súc (trâu, bò)",
+  "domain": "Chăn nuôi (Bộ Nông nghiệp và Môi trường)",
+  "department_id": "ktdt",
+  "department": "Phòng Kinh tế, Hạ tầng và Đô thị",
+  "authority_as_published": "UBND cấp xã",
+  "execution_level_as_published": "Cấp Xã",
+  "receiving_location_as_published": "Điểm hỗ trợ DVC số",
+  "inventory_date": "2026-04-27",
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "source_urls": [
+    "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfa-7716-72bf-b4c8-2b4d1cbf6074"
+  ],
+  "current_dvc_match": true,
+  "lifecycle": null,
+  "scope": "hanoi_commune_notice_2026_04_27",
+  "scope_note": "Mốc kiểm kê cấp xã Hà Nội; áp dụng từng thủ tục tại Từ Liêm còn phải theo thẩm quyền/ủy quyền hiện hành.",
+  "status": "source_template_missing",
+  "components": [
+    {
+      "id": "hn87-117-c001",
+      "code": "000.00.00.G10-KQ005892",
+      "name": "Danh sách gia súc đã được phối giống nhân tạo",
+      "section": "Hồ sơ người làm dịch vụ phối giống gửi Tổ chức được giao nhiệm vụ thực hiện chương trình hỗ trợ phối giống nhân tạo gia súc:",
+      "role": "applicant_prepared",
+      "scenario_status": "selected_for_test",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 1,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfa-7716-72bf-b4c8-2b4d1cbf6074",
+      "source_detail_id": "019d2bfa-7716-72bf-b4c8-2b4d1cbf6074",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-117-c002",
+      "code": "000.00.00.G10-KQ005896",
+      "name": "- Biên bản nghiệm thu  kết quả phối giống nhân tạo gia súc đã được thực hiện.",
+      "section": "Hồ sơ tổ chức được giao nhiệm vụ thực hiện chương trình hỗ trợ phối giống nhân tạo gửi Ủy ban nhân dân cấp xã:",
+      "role": "agency_prepared",
+      "scenario_status": "agency_reserved",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 1,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfa-7716-72bf-b4c8-2b4d1cbf6074",
+      "source_detail_id": "019d2bfa-7716-72bf-b4c8-2b4d1cbf6074",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-117-c003",
+      "code": "000.00.00.G10-KQ005894",
+      "name": "- Hợp đồng cung cấp vật tư phối giống nhân tạo gia súc giữa tổ chức được giao nhiệm vụ thực hiện chương trình hỗ trợ phối giống nhân tạo gia súc với cơ sở được lựa chọn cung cấp vật tư phối giống nhân tạo gia súc;",
+      "section": "Hồ sơ tổ chức được giao nhiệm vụ thực hiện chương trình hỗ trợ phối giống nhân tạo gửi Ủy ban nhân dân cấp xã:",
+      "role": "applicant_prepared",
+      "scenario_status": "selected_for_test",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 1,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfa-7716-72bf-b4c8-2b4d1cbf6074",
+      "source_detail_id": "019d2bfa-7716-72bf-b4c8-2b4d1cbf6074",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-117-c004",
+      "code": "000.00.00.G10-KQ005895",
+      "name": "- Danh sách tổng hợp gia súc được phối giống nhân tạo do tổ chức được giao nhiệm vụ thực hiện chương trình hỗ trợ phối giống nhân tạo gia súc lập theo mẫu quy định tại Mẫu số 31.GVN Phụ lục I ban hành kèm theo Thông tư số 09/2025/TT-BNNMT ngày 19 tháng 06 năm 2025 của Bộ trưởng Bộ Nông nghiệp và Môi trường quy định phân quyền, phân cấp và phân định thẩm quyền trong lĩnh vực quản lý nhà nước về chăn nuôi và thú y",
+      "section": "Hồ sơ tổ chức được giao nhiệm vụ thực hiện chương trình hỗ trợ phối giống nhân tạo gửi Ủy ban nhân dân cấp xã:",
+      "role": "applicant_prepared",
+      "scenario_status": "selected_for_test",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 1,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfa-7716-72bf-b4c8-2b4d1cbf6074",
+      "source_detail_id": "019d2bfa-7716-72bf-b4c8-2b4d1cbf6074",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-117-c005",
+      "code": "000.00.00.G10-KQ005893",
+      "name": "- Quyết định giao nhiệm vụ của cơ quan có thẩm quyền cho tổ chức được giao nhiệm vụ thực hiện chương trình hỗ trợ phối giống nhân tạo gia súc;",
+      "section": "Hồ sơ tổ chức được giao nhiệm vụ thực hiện chương trình hỗ trợ phối giống nhân tạo gửi Ủy ban nhân dân cấp xã:",
+      "role": "agency_prepared",
+      "scenario_status": "agency_reserved",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 1,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfa-7716-72bf-b4c8-2b4d1cbf6074",
+      "source_detail_id": "019d2bfa-7716-72bf-b4c8-2b4d1cbf6074",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    }
+  ],
+  "service_cases": [
+    {
+      "id": "019d2d28-8ba2-70a8-aedf-2ab6e03e839f",
+      "code": "1.012836.01",
+      "name": "Hỗ trợ chi phí về vật tư phối giống nhân tạo gia súc gồm tinh đông lạnh, Nitơ lỏng, găng tay và dụng cụ dẫn tinh để phối giống cho trâu, bò cái; chi phí về liều tinh để thực hiện phối giống cho lợn nái, công cho người làm dịch vụ phối giống nhân tạo gia súc (trâu, bò)",
+      "source_processing_time": {
+        "qty": 20,
+        "type": "WORKING_DAY"
+      },
+      "has_case_specific_components": false
+    }
+  ],
+  "selected_template_ids": [],
+  "source_component_groups": [
+    {
+      "name": "Hồ sơ người làm dịch vụ phối giống gửi Tổ chức được giao nhiệm vụ thực hiện chương trình hỗ trợ phối giống nhân tạo gia súc:",
+      "component_count": 1,
+      "source_detail_id": "019d2bfa-7716-72bf-b4c8-2b4d1cbf6074"
+    },
+    {
+      "name": "Hồ sơ tổ chức được giao nhiệm vụ thực hiện chương trình hỗ trợ phối giống nhân tạo gửi Ủy ban nhân dân cấp xã:",
+      "component_count": 4,
+      "source_detail_id": "019d2bfa-7716-72bf-b4c8-2b4d1cbf6074"
+    }
+  ],
+  "conditional_component_groups": [],
+  "default_test_scenario": {
+    "channel": "direct",
+    "applicant_submits_self": true,
+    "authorized": false,
+    "special_case_flags": [],
+    "selected_conditional_group": null,
+    "case_selection_method": "ordinary_direct_submission",
+    "case_status": "scenario_for_testing_not_a_legal_eligibility_decision"
+  },
+  "requirement_note": "required_as_published được giữ nguyên; false không chứng minh giấy tờ luôn tùy chọn. Các nhóm executionCases có thể là mục giấy tờ/hướng dẫn, không phải các phương án loại trừ nhau."
+}

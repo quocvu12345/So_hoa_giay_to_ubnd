@@ -1,0 +1,150 @@
+{
+  "id": "dvc-01a027ab-2b1e-7054-b8ea-183d2b88bfba",
+  "procedure_code": "1.116466",
+  "name": "Giám định chi phí khám bệnh, chữa bệnh bảo hiểm y tế",
+  "domain": "Thực hiện chính sách BHXH",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.472762+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "01a027ab-2b1e-7054-b8ea-183d2b88bfba",
+      "code": "1.116466",
+      "name": "Giám định chi phí khám bệnh, chữa bệnh bảo hiểm y tế",
+      "state": "ACTIVE",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1787504991642,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/01a027ab-2b1e-7054-b8ea-183d2b88bfba",
+      "raw_path": "evidence/dvc/details/01a027ab-2b1e-7054-b8ea-183d2b88bfba.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Bảng kê chi tiết đề nghị thanh toán chi phí khám bệnh, chữa bệnh bảo hiểm y tế được lập theo chuẩn và định dạng dữ liệu theo Mẫu số 01/KBCB ban hành tại Quyết định số 697/QĐ-BYT ngày 19/03/2026 của Bộ trưởng Bộ Y tế",
+          "component_code": "TP.G12.0000015",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Bảng tổng hợp đề nghị thanh toán chi phí khám bệnh, chữa bệnh bảo hiểm y tế được lập hằng tháng theo chuẩn và định dạng dữ liệu theo Mẫu số 01/BH ban hành kèm theo Thông tư số 12/2026/TT-BTC ngày 10 tháng 02 năm 2026",
+          "component_code": "TP.G12.0000016",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "01a02863-5b1e-710a-8c84-f5998dc87fc3",
+              "fileName": "01 BH.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/01a02863-5b1e-710a-8c84-f5998dc87fc3/01 BH.docx"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 3,
+          "name": "Báo cáo quyết toán chi khám bệnh, chữa bệnh bảo hiểm y tế (sau đây gọi là Báo cáo quyết toán) được lập hằng quý theo Mẫu số 02/BH ban hành kèm theo Thông tư số 12/2026/TT-BTC ngày 10 tháng 02 năm 2026",
+          "component_code": "TP.G12.0000017",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "01a02863-a167-75d9-b15a-2b7649d3f266",
+              "fileName": "02 BH.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/01a02863-a167-75d9-b15a-2b7649d3f266/02 BH.docx"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 4,
+          "name": "Hồ sơ bệnh án và tài liệu chuyên môn liên quan đến việc khám bệnh, chữa bệnh của người bệnh (trong trường hợp cơ quan bảo hiểm xã hội yêu cầu để phục vụ công tác giám định)",
+          "component_code": "TP.G12.0000018",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "01a024de-2470-70d3-af25-642e792ad8bf",
+          "name": "Biên bản giám định chi phí khám bệnh, chữa bệnh bảo hiểm y tế (Mẫu số 03/BH)",
+          "code": "KQ.G12.001171"
+        },
+        {
+          "id": "01a0283e-2ca5-75bc-9f32-895b58add664",
+          "name": "Biên bản làm việc (Mẫu số 04/BH)",
+          "code": "KQ.G12.001324"
+        },
+        {
+          "id": "01a0283e-c847-752c-bf8c-b57622a48a7a",
+          "name": "Thông báo kết quả giám định chi phí khám bệnh, chữa bệnh bảo hiểm y tế (Mẫu số 05/BH)",
+          "code": "KQ.G12.001176"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d84-71c5-b672-49499e22ddad",
+          "name": "Luật 25/2008/QH12 - Bảo hiểm y tế",
+          "code": "25/2008/QH12"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b673-669988af5f4c",
+          "name": "Luật số 51/2024/QH15 ngày 27/11/2024 của Quốc hội sửa đổi, bổ sung một số điều của Luật Bảo hiểm y tế",
+          "code": "51/2024/QH15"
+        },
+        {
+          "id": "019d2bb3-5d85-73da-8eb9-b34bf387534d",
+          "name": "Luật Khám, chữa bệnh 15/2023/QH15 (09/1/2023)",
+          "code": "15/2023/QH15"
+        },
+        {
+          "id": "019d2bb3-5d87-7195-a447-769d1061fb26",
+          "name": "Nghị định số 96/2023/NĐ-CP ngày 30 tháng 12 năm 2023 của Chính phủ quy định chi tiết một số điều của Luật Khám bệnh, chữa bệnh.",
+          "code": "96/2023/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b674-ae46cb2804d7",
+          "name": "46/2014/QH13 Sửa đổi, bổ sung một số điều của Luật Bảo hiểm y tế",
+          "code": "Luật 46/2014/QH13"
+        },
+        {
+          "id": "019e1a33-d365-7413-8667-bbbb7d7de2ea",
+          "name": "quy định chi tiết và hướng dẫn thi hành một số điều của Luật Bảo hiểm y tế",
+          "code": "Nghị định số 188/2025/NĐ-CP "
+        },
+        {
+          "id": "01a02847-b487-751a-9e31-309ef5cd15e4",
+          "name": "Quy định cơ chế tài chính về bảo hiểm xã hội, bảo hiểm thất nghiệp, bảo hiểm y tế; chi tổ chức và hoạt động bảo hiểm xã hội, bảo hiểm thất nghiệp, bảo hiểm y tế",
+          "code": "233/2025/NĐ-CP"
+        },
+        {
+          "id": "01a02854-219e-709a-84c3-cc669f327ecd",
+          "name": "Quy định trình tự, thủ tục giám định chi phí khám bệnh, chữa bệnh bảo hiểm y tế, biểu mẫu tổng hợp thanh toán, quyết toán và biện pháp thi hành Nghị định số 188/2025/NĐ-CP ngày 01 tháng 7 năm 2025 của Chính phủ quy định chi tiết và hướng dẫn thi hành một số điều của Luật Bảo hiểm y tế",
+          "code": "12/2026/TT-BTC"
+        },
+        {
+          "id": "01a02856-33ae-7379-bf45-2ae7bab6ada1",
+          "name": "về việc ban hành mẫu bảng kê chi phí khám bệnh, chữa bệnh sử dụng tại các cơ sở khám bệnh, chữa bệnh",
+          "code": "697/QĐ-BYT "
+        }
+      ]
+    }
+  ]
+}

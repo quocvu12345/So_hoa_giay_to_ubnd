@@ -1,0 +1,88 @@
+{
+  "ordinal": "28",
+  "managing_agency": "Sở Nội Vụ",
+  "procedure_code": "1.000502",
+  "name": "Nhận lại tiền ký quỹ của doanh nghiệp đưa người lao động đi đào tạo, nâng cao trình độ, kỹ năng nghề ở nước ngoài (hợp đồng dưới 90 ngày)",
+  "domain": "Quản lý lao động ngoài nước",
+  "ministry_decision": "322/QĐ-BNV ngày 08/4/2025",
+  "hanoi_decision": "1031/QĐ-TTPVHCC ngày 04/7/2025",
+  "workflow_decision": "1227/QĐ-TTPVHCC ngày 28/8/2025",
+  "fees": "Không quy định",
+  "execution_level": "Cấp xã",
+  "competent_authority": "UBND cấp xã",
+  "delegation_decision": "3176/QĐ-SNV ngày 20/6/2025",
+  "delegation_expiry": "28/02/2027",
+  "receiving_location": "Điểm hỗ trợ DVC số",
+  "source_page": 2,
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "inventory_date": "2026-04-27",
+  "checked_at": "2026-11-12T22:23:33.156454+07:00",
+  "details": [
+    {
+      "id": "019d2bfa-c560-757f-9aa2-4e2690f87961",
+      "code": "1.000502",
+      "name": "Nhận lại tiền ký quỹ của doanh nghiệp đưa người lao động đi đào tạo, nâng cao trình độ, kỹ năng nghề ở nước ngoài (hợp đồng dưới 90 ngày)",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": false,
+      "updated_at_source": 1777454569524,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfa-c560-757f-9aa2-4e2690f87961",
+      "raw_path": "evidence/dvc/details/019d2bfa-c560-757f-9aa2-4e2690f87961.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Báo cáo về việc đã thanh lý Hợp đồng đào tạo nghề ở nước ngoài với người lao động kèm theo tài liệu chứng minh.",
+          "component_code": "G09-KQ001648",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c4d-7725-9d9d-41295056f14c",
+          "name": "Văn bản đề nghị ngân hàng nhận ký quỹ trả lại tiền ký quỹ cho doanh nghiệp..",
+          "code": "KQ.G09.000483"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7f-719e-b46e-3b82195c2d48",
+          "name": "Nghị định số 45/2025/NĐ-CP ngày 28/02/2025 của Chính phủ quy định tổ chức các cơ quan chuyên môn thuộc Ủy ban nhân dân tỉnh, thành phố trực thuộc trung ương và Ủy ban nhân dân huyện, quận, thị xã, thành phố thuộc tỉnh, thành phố thuộc thành phố trực thuộc trung ương",
+          "code": "45/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b671-f40a5ee32475",
+          "name": "Nghị quyết số 190/2025/QH15 của Quốc hội: Quy định về xử lý một số vấn đề liên quan đến sắp xếp tổ chức bộ máy nhà nước",
+          "code": "190/2025/NQ-QH15"
+        },
+        {
+          "id": "019d2bb3-5d7f-719e-b474-93996f3f00db",
+          "name": "Nghị định số 25/2025/NĐ-CP ngày 21 tháng 02 năm 2025 của Chính phủ quy định chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của Bộ Nội vụ",
+          "code": "Nghị định số 25/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b674-0ff98d7121f9",
+          "name": "69-2020-QH14 Luật Ng VN đi LĐNN ngày 13.11.2020",
+          "code": "69/2020/QH14"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afe8-f619eeb30642",
+          "name": "NGHỊ ĐỊNH QUY ĐỊNH CHI TIẾT MỘT SỐ ĐIỀU VÀ BIỆN PHÁP THI HÀNH LUẬT NGƯỜI LAO ĐỘNG VIỆT NAM ĐI LÀM VIỆC Ở NƯỚC NGOÀI THEO HỢP ĐỒNG",
+          "code": "112/2021/NĐ-CP"
+        },
+        {
+          "id": "019db156-3f02-71fb-9cc1-ee7db9cf4fb6",
+          "name": "Nghị quyết số 66.16/2026/NQ-CP của Chính phủ ngày 07/04/2026 về việc Cắt giảm, đơn giản hóa thủ tục hành chính,quy định liên quan đến hoạt động sản xuất, kinh doanh",
+          "code": "66.16/2026/NQ-CP"
+        }
+      ]
+    }
+  ],
+  "lookup_status": "retrieved",
+  "currency_status": "snapshot_requires_later_amendment_check",
+  "errors": []
+}

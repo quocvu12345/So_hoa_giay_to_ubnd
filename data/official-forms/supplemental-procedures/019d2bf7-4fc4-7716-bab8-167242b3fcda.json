@@ -1,0 +1,79 @@
+{
+  "id": "dvc-019d2bf7-4fc4-7716-bab8-167242b3fcda",
+  "procedure_code": "1.000253",
+  "name": "Khai báo tạm trú cho người nước ngoài tại Việt Nam bằng Phiếu khai báo tạm trú",
+  "domain": "Quản lý xuất nhập cảnh",
+  "managing_agency": "Bộ Công an",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:18.038445+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bf7-4fc4-7716-bab8-167242b3fcda",
+      "code": "1.000253",
+      "name": "Khai báo tạm trú cho người nước ngoài tại Việt Nam bằng Phiếu khai báo tạm trú",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1784612976172,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf7-4fc4-7716-bab8-167242b3fcda",
+      "raw_path": "evidence/dvc/details/019d2bf7-4fc4-7716-bab8-167242b3fcda.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Thông tin khai báo tạm trú bao gồm các thông tin sau đây của người nước ngoài: Họ tên, giới tính, ngày, tháng, năm sinh, quốc tịch, số hộ chiếu hoặc giấy tờ có giá trị đi lại quốc tế, thời hạn chứng nhận tạm trú hoặc gia hạn tạm trú hoặc thẻ tạm trú do cơ quan có thẩm quyền cấp và thời gian dự kiến tạm trú tại cơ sở lưu trú.",
+          "component_code": "000.00.00.G01-KQ0427",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Trường hợp thực hiện trực tiếp",
+          "position": 1,
+          "name": "Phiếu khai báo tạm trú (mẫu NA17) ban hành kèm theo Thông tư số 04/2015/TT-BCA ngày 05/01/2015 của Bộ trưởng Bộ Công an quy định mẫu giấy tờ liên quan đến việc nhập cảnh, xuất cảnh, cư trú của người nước ngoài tại Việt Nam, được sửa đổi, bổ sung một số điều bởi Thông tư số 57/2020/TT-BCA ngày 10/6/2020, Thông tư số 22/2023/TT-BCA ngày 30/6/2023 và Thông tư số 70/2026/TT-BCA ngày 25/5/2026.",
+          "component_code": "000.00.00.G01-KQ0427.",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019dce04-7681-70cb-bb5f-a9be7ee8f5fd",
+          "name": "Phiếu khai báo tạm trú được cơ quan Công an xác nhận và các thông tin khai báo tạm trú đã được tiếp nhận ghi vào sổ trực ban của Công an cấp xã.",
+          "code": "KQ.G01.00263"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d86-7760-a645-08dd5ede9baf",
+          "name": "Luật Xuất cảnh, nhập cảnh của công dân Việt Nam và Luật Nhập cảnh, xuất cảnh, quá cảnh, cư trú của người nước ngoài tại Việt Nam sửa đổi 2023",
+          "code": "23/2023/QH15"
+        },
+        {
+          "id": "019d2bb3-5d7b-7049-8fc5-c06a3fdafaa4",
+          "name": "Quy định mẫu giấy tờ liên quan đến việc nhập cảnh, xuất cảnh, cư trú của người nước ngoài tại Việt Nam",
+          "code": "04/2015/TT-BCA"
+        },
+        {
+          "id": "019f8338-0d35-7527-82d2-3938f3b87e81",
+          "name": "Thông tư của Bộ trưởng Bộ Công an quy định cách thức thực hiện khai báo, tiếp nhận thông tin tạm trú của người nước ngoài tại Việt Nam.",
+          "code": "87/2026/TT-BCA "
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b674-b1d4ccab82e5",
+          "name": "Luật Nhập cảnh, xuất cảnh, quá cảnh, cư trú của người nước ngoài tại Việt Nam",
+          "code": "Luật 47/2014/QH13"
+        }
+      ]
+    }
+  ]
+}

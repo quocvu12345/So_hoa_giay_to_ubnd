@@ -1,0 +1,81 @@
+{
+  "id": "dvc-019d2bfe-9097-700f-899f-6dfc532f0e6b",
+  "procedure_code": "1.013227",
+  "name": "Gia hạn giấy phép xây dựng đối với công trình cấp III, cấp IV (công trình Không theo tuyến/Theo tuyến trong đô thị/Tín ngưỡng, tôn giáo/Tượng đài, tranh hoành tráng/Sửa chữa, cải tạo/Theo giai đoạn cho công trình không theo tuyến/Theo giai đoạn cho công trình theo tuyến trong đô thị/Dự án) và nhà ở riêng lẻ",
+  "domain": "Hoạt động xây dựng",
+  "managing_agency": "Bộ Xây dựng",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.861700+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfe-9097-700f-899f-6dfc532f0e6b",
+      "code": "1.013227",
+      "name": "Gia hạn giấy phép xây dựng đối với công trình cấp III, cấp IV (công trình Không theo tuyến/Theo tuyến trong đô thị/Tín ngưỡng, tôn giáo/Tượng đài, tranh hoành tráng/Sửa chữa, cải tạo/Theo giai đoạn cho công trình không theo tuyến/Theo giai đoạn cho công trình theo tuyến trong đô thị/Dự án) và nhà ở riêng lẻ",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1786949251706,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfe-9097-700f-899f-6dfc532f0e6b",
+      "raw_path": "evidence/dvc/details/019d2bfe-9097-700f-899f-6dfc532f0e6b.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Đơn đề nghị gia hạn giấy phép xây dựng theo Mẫu số 2 Phụ lục số II Nghị định số 217/2026/NĐ-CP ngày 19/6/2026 của Chính phủ.",
+          "component_code": "TP-G17.000413",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019fea66-bc09-737c-8cb8-3d0a2bb720a9",
+              "fileName": "Đơn gia hạn GPXD CT Cấp III. IV  G17. 000 413.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fea66-bc09-737c-8cb8-3d0a2bb720a9/Đơn gia hạn GPXD CT Cấp III. IV  G17. 000 413.docx"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Bản chính giấy phép xây dựng đã được cấp.",
+          "component_code": "TP-G17.000414",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019fe03e-47d4-7742-b9e9-9f4519b297d0",
+          "name": "Kết quả giấy phép cấp mới, điều chỉnh, gia hạn",
+          "code": "KQ-G17.000093"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019f1d67-d525-7040-bc15-3156f4c4411c",
+          "name": "Luật Xây dựng",
+          "code": "135/2025/QH15"
+        },
+        {
+          "id": "019f3666-e3d6-702f-926b-ced690d453d0",
+          "name": "Nghị định số 217/2026/NĐ-CP ngày 19/6/2026 của Chính phủ quy định chi tiết một số điều của Luật Xây dựng về quản lý hoạt động xây dựng",
+          "code": "217/2026/NĐ-CP"
+        },
+        {
+          "id": "019e1a20-4bcb-77ce-8a33-9b18a804996e",
+          "name": " Nghị định quy định chi tiết một số điều và biện pháp thi hành Luật Phòng cháy, chữa cháy và cứu nạn, cứu hộ.\n",
+          "code": "105/2025/NĐ- CP"
+        }
+      ]
+    }
+  ]
+}

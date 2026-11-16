@@ -1,0 +1,498 @@
+{
+  "id": "dvc-019d2bfc-7428-7107-b445-7089eeb05dec",
+  "procedure_code": "1.008759",
+  "name": "Đăng ký thuế trong trường hợp chia, tách, hợp nhất, sáp nhập tổ chức",
+  "domain": "Thuế",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.930213+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfc-7428-7107-b445-7089eeb05dec",
+      "code": "1.008759",
+      "name": "Đăng ký thuế trong trường hợp chia, tách, hợp nhất, sáp nhập tổ chức",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1784861595137,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-7428-7107-b445-7089eeb05dec",
+      "raw_path": "evidence/dvc/details/019d2bfc-7428-7107-b445-7089eeb05dec.json",
+      "components": [
+        {
+          "section": "* Đối với tổ chức mới được chia, tổ chức được tách, tổ chức hợp nhất là hồ sơ đăng ký thuế lần đầu -Tổ chức kinh tế (trừ tổ hợp tác) quy định tại điểm a, b khoản 2 Điều 4 Thông tư số 90/2026/TT-BTC:",
+          "position": 1,
+          "name": "Tờ khai đăng ký thuế mẫu số 01-ĐKT ban hành kèm theo Thông tư số 90/2026/TT-BTC",
+          "component_code": "G12.0001266",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019f8d09-d6ad-772f-8c28-f2926a6eccb1",
+              "fileName": "01 ĐKT (TT 90).docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8d09-d6ad-772f-8c28-f2926a6eccb1/01 ĐKT (TT 90).docx"
+            }
+          ]
+        },
+        {
+          "section": "* Đối với tổ chức mới được chia, tổ chức được tách, tổ chức hợp nhất là hồ sơ đăng ký thuế lần đầu -Tổ chức kinh tế (trừ tổ hợp tác) quy định tại điểm a, b khoản 2 Điều 4 Thông tư số 90/2026/TT-BTC:",
+          "position": 2,
+          "name": "Bảng kê các công ty con, công ty thành viên mẫu số BK01-ĐKT ban hành kèm theo Thông tư số 90/2026/TT-BTC (nếu có)",
+          "component_code": "G12.0001269",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019f8d0b-8a50-7078-a5cf-1744bf134443",
+              "fileName": "BK01 ĐKT TT90.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8d0b-8a50-7078-a5cf-1744bf134443/BK01 ĐKT TT90.docx"
+            }
+          ]
+        },
+        {
+          "section": "* Đối với tổ chức mới được chia, tổ chức được tách, tổ chức hợp nhất là hồ sơ đăng ký thuế lần đầu -Tổ chức kinh tế (trừ tổ hợp tác) quy định tại điểm a, b khoản 2 Điều 4 Thông tư số 90/2026/TT-BTC:",
+          "position": 3,
+          "name": "Bảng kê các đơn vị phụ thuộc mẫu số BK02-ĐKT ban hành kèm theo Thông tư số 90/2026/TT-BTC (nếu có)",
+          "component_code": "G12.0001270",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019f8d0c-b0ec-734b-8d9f-543aa9885b58",
+              "fileName": "BK02 ĐKT TT90.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8d0c-b0ec-734b-8d9f-543aa9885b58/BK02 ĐKT TT90.docx"
+            }
+          ]
+        },
+        {
+          "section": "* Đối với tổ chức mới được chia, tổ chức được tách, tổ chức hợp nhất là hồ sơ đăng ký thuế lần đầu -Tổ chức kinh tế (trừ tổ hợp tác) quy định tại điểm a, b khoản 2 Điều 4 Thông tư số 90/2026/TT-BTC:",
+          "position": 4,
+          "name": "Bảng kê địa điểm kinh doanh mẫu số BK03-ĐKT ban hành kèm theo Thông tư số 90/2026/TT-BTC (nếu có)",
+          "component_code": "G12.0001271",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019f8d0d-d391-7679-82f0-8d97df8deddb",
+              "fileName": "BK03 ĐKT TT90.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8d0d-d391-7679-82f0-8d97df8deddb/BK03 ĐKT TT90.docx"
+            }
+          ]
+        },
+        {
+          "section": "* Đối với tổ chức mới được chia, tổ chức được tách, tổ chức hợp nhất là hồ sơ đăng ký thuế lần đầu -Tổ chức kinh tế (trừ tổ hợp tác) quy định tại điểm a, b khoản 2 Điều 4 Thông tư số 90/2026/TT-BTC:",
+          "position": 5,
+          "name": "Bảng kê các nhà thầu nước ngoài, nhà thầu phụ nước ngoài mẫu số BK04-ĐKT ban hành kèm theo Thông tư số 90/2026/TT-BTC (nếu có)",
+          "component_code": "G12.0001272",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019f8d0e-792a-762f-a23b-a6608dca5313",
+              "fileName": "BK04 ĐKT TT 90.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8d0e-792a-762f-a23b-a6608dca5313/BK04 ĐKT TT 90.docx"
+            }
+          ]
+        },
+        {
+          "section": "* Đối với tổ chức mới được chia, tổ chức được tách, tổ chức hợp nhất là hồ sơ đăng ký thuế lần đầu -Tổ chức kinh tế (trừ tổ hợp tác) quy định tại điểm a, b khoản 2 Điều 4 Thông tư số 90/2026/TT-BTC:",
+          "position": 6,
+          "name": "Bảng kê góp vốn của tổ chức, cá nhân mẫu số BK06-ĐKT ban hành kèm theo Thông tư số 90/2026/TT-BTC (nếu có)",
+          "component_code": "G12.0001273",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019f8d0e-e8fc-7499-936f-9d907edc17de",
+              "fileName": "BK 06 ĐKT TT 90.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8d0e-e8fc-7499-936f-9d907edc17de/BK 06 ĐKT TT 90.docx"
+            }
+          ]
+        },
+        {
+          "section": "* Đối với tổ chức mới được chia, tổ chức được tách, tổ chức hợp nhất là hồ sơ đăng ký thuế lần đầu -Tổ chức kinh tế (trừ tổ hợp tác) quy định tại điểm a, b khoản 2 Điều 4 Thông tư số 90/2026/TT-BTC:",
+          "position": 7,
+          "name": "Bảng kê chủ sở hữu pháp lý, chủ sở hữu hưởng lợi của công ty nước ngoài có chi nhánh, văn phòng đại diện tại Việt Nam mẫu số BK07-ĐKT ban hành kèm theo Thông tư số 90/2026/TT-BTC (nếu có)",
+          "component_code": "G12.0001274",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019f8d0f-a0fa-76da-bce9-7a39509be66b",
+              "fileName": "BK 07 ĐKT TT 90.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8d0f-a0fa-76da-bce9-7a39509be66b/BK 07 ĐKT TT 90.docx"
+            }
+          ]
+        },
+        {
+          "section": "* Đối với tổ chức mới được chia, tổ chức được tách, tổ chức hợp nhất là hồ sơ đăng ký thuế lần đầu -Tổ chức kinh tế (trừ tổ hợp tác) quy định tại điểm a, b khoản 2 Điều 4 Thông tư số 90/2026/TT-BTC:",
+          "position": 8,
+          "name": "Bản sao Giấy phép thành lập và hoạt động, hoặc Quyết định thành lập, hoặc văn bản tương đương do cơ quan có thẩm quyền cấp, hoặc Giấy chứng nhận đăng ký kinh doanh theo quy định của pháp luật của nước có chung biên giới (đối với tổ chức của nước có chung biên giới đất liền với Việt Nam thực hiện hoạt động mua, bán, trao đổi hàng hóa tại chợ biên giới, chợ cửa khẩu, chợ trong khu kinh tế cửa khẩu của Việt Nam).",
+          "component_code": "G12.0001275",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "* Đối với tổ chức mới được chia, tổ chức được tách, tổ chức hợp nhất là hồ sơ đăng ký thuế lần đầu -Tổ chức kinh tế (trừ tổ hợp tác) quy định tại điểm a, b khoản 2 Điều 4 Thông tư số 90/2026/TT-BTC:",
+          "position": 9,
+          "name": "Trường hợp quyết định thành lập thuộc danh mục bí mật nhà nước theo quy định của pháp luật thì người nộp thuế không phải nộp bản sao quyết định thành lập khi đăng ký thuế nhưng phải có văn bản cung cấp thông tin về việc tài liệu thuộc danh mục bí mật nhà nước và chịu trách nhiệm về tính chính xác của thông tin kê khai trên hồ sơ đăng ký thuế",
+          "component_code": "G12.0003878",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "* Đối với tổ chức mới được chia, tổ chức được tách, tổ chức hợp nhất là hồ sơ đăng ký thuế lần đầu -Tổ chức kinh tế (trừ tổ hợp tác) quy định tại điểm a, b khoản 2 Điều 4 Thông tư số 90/2026/TT-BTC:",
+          "position": 10,
+          "name": "Bản sao quyết định chia/tách/hợp đồng hợp nhất hoặc văn bản tương đương",
+          "component_code": "G12.00035787",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "* Đối với tổ chức mới được chia, tổ chức được tách, tổ chức hợp nhất là hồ sơ đăng ký thuế lần đầu - Tổ chức khác và tổ hợp tác theo quy định tại điểm b, c, p khoản 2 Điều 4 Thông tư số 90/2026/TT-BTC:",
+          "position": 1,
+          "name": "Tờ khai đăng ký thuế mẫu số 01-ĐKT ban hành kèm theo Thông tư số 90/2026/TT-BTC",
+          "component_code": "G12.0001266",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019f8d09-d6ad-772f-8c28-f2926a6eccb1",
+              "fileName": "01 ĐKT (TT 90).docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8d09-d6ad-772f-8c28-f2926a6eccb1/01 ĐKT (TT 90).docx"
+            }
+          ]
+        },
+        {
+          "section": "* Đối với tổ chức mới được chia, tổ chức được tách, tổ chức hợp nhất là hồ sơ đăng ký thuế lần đầu - Tổ chức khác và tổ hợp tác theo quy định tại điểm b, c, p khoản 2 Điều 4 Thông tư số 90/2026/TT-BTC:",
+          "position": 2,
+          "name": "Bảng kê các công ty con, công ty thành viên mẫu số BK01-ĐKT ban hành kèm theo Thông tư số 90/2026/TT-BTC (nếu có)",
+          "component_code": "G12.0001269",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019f8d0b-8a50-7078-a5cf-1744bf134443",
+              "fileName": "BK01 ĐKT TT90.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8d0b-8a50-7078-a5cf-1744bf134443/BK01 ĐKT TT90.docx"
+            }
+          ]
+        },
+        {
+          "section": "* Đối với tổ chức mới được chia, tổ chức được tách, tổ chức hợp nhất là hồ sơ đăng ký thuế lần đầu - Tổ chức khác và tổ hợp tác theo quy định tại điểm b, c, p khoản 2 Điều 4 Thông tư số 90/2026/TT-BTC:",
+          "position": 3,
+          "name": "Bảng kê các đơn vị phụ thuộc mẫu số BK02-ĐKT ban hành kèm theo Thông tư số 90/2026/TT-BTC (nếu có)",
+          "component_code": "G12.0001270",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019f8d0c-b0ec-734b-8d9f-543aa9885b58",
+              "fileName": "BK02 ĐKT TT90.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8d0c-b0ec-734b-8d9f-543aa9885b58/BK02 ĐKT TT90.docx"
+            }
+          ]
+        },
+        {
+          "section": "* Đối với tổ chức mới được chia, tổ chức được tách, tổ chức hợp nhất là hồ sơ đăng ký thuế lần đầu - Tổ chức khác và tổ hợp tác theo quy định tại điểm b, c, p khoản 2 Điều 4 Thông tư số 90/2026/TT-BTC:",
+          "position": 4,
+          "name": "Bảng kê địa điểm kinh doanh mẫu số BK03-ĐKT ban hành kèm theo Thông tư số 90/2026/TT-BTC (nếu có)",
+          "component_code": "G12.0001271",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019f8d0d-d391-7679-82f0-8d97df8deddb",
+              "fileName": "BK03 ĐKT TT90.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8d0d-d391-7679-82f0-8d97df8deddb/BK03 ĐKT TT90.docx"
+            }
+          ]
+        },
+        {
+          "section": "* Đối với tổ chức mới được chia, tổ chức được tách, tổ chức hợp nhất là hồ sơ đăng ký thuế lần đầu - Tổ chức khác và tổ hợp tác theo quy định tại điểm b, c, p khoản 2 Điều 4 Thông tư số 90/2026/TT-BTC:",
+          "position": 5,
+          "name": "Bảng kê các nhà thầu nước ngoài, nhà thầu phụ nước ngoài mẫu số BK04-ĐKT ban hành kèm theo Thông tư số 90/2026/TT-BTC (nếu có)",
+          "component_code": "G12.0003066",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019f8d33-12bf-7788-8e3a-0cc0ca030b8c",
+              "fileName": "BK04 ĐKT TT 90.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8d33-12bf-7788-8e3a-0cc0ca030b8c/BK04 ĐKT TT 90.docx"
+            }
+          ]
+        },
+        {
+          "section": "* Đối với tổ chức mới được chia, tổ chức được tách, tổ chức hợp nhất là hồ sơ đăng ký thuế lần đầu - Tổ chức khác và tổ hợp tác theo quy định tại điểm b, c, p khoản 2 Điều 4 Thông tư số 90/2026/TT-BTC:",
+          "position": 6,
+          "name": "Bản sao Quyết định thành lập, hoặc văn bản tương đương do cơ quan có thẩm quyền cấp",
+          "component_code": "G12.0001298",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "* Đối với tổ chức mới được chia, tổ chức được tách, tổ chức hợp nhất là hồ sơ đăng ký thuế lần đầu - Tổ chức khác và tổ hợp tác theo quy định tại điểm b, c, p khoản 2 Điều 4 Thông tư số 90/2026/TT-BTC:",
+          "position": 7,
+          "name": "Trường hợp quyết định thành lập thuộc danh mục bí mật nhà nước theo quy định của pháp luật thì người nộp thuế không phải nộp bản sao quyết định thành lập khi đăng ký thuế nhưng phải có văn bản cung cấp thông tin về việc tài liệu thuộc danh mục bí mật nhà nước và chịu trách nhiệm về tính chính xác của thông tin kê khai trên hồ sơ đăng ký thuế",
+          "component_code": "G12.0003879",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "* Đối với tổ chức mới được chia, tổ chức được tách, tổ chức hợp nhất là hồ sơ đăng ký thuế lần đầu - Tổ chức khác và tổ hợp tác theo quy định tại điểm b, c, p khoản 2 Điều 4 Thông tư số 90/2026/TT-BTC:",
+          "position": 8,
+          "name": "Bản sao quyết định chia/tách/hợp đồng hợp nhất hoặc văn bản tương đương",
+          "component_code": "G12.00035787",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "* Đối với tổ chức bị chia, tổ chức bị sáp nhập, tổ chức bị hợp nhất là hồ sơ chấm dứt hiệu lực mã số thuế gồm:",
+          "position": 1,
+          "name": "Văn bản đề nghị chấm dứt hiệu lực mã số thuế mẫu số 24/ĐKT ban hành kèm theo Thông tư số 90/2026/TT-BTC",
+          "component_code": "G12.0003748",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019f8e5c-a6cb-7269-8f76-33cfd1cde685",
+              "fileName": "27.Mẫu 24-ĐKT Đề nghị chấm dứt MST.doc",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8e5c-a6cb-7269-8f76-33cfd1cde685/27.Mẫu 24-ĐKT Đề nghị chấm dứt MST.doc"
+            }
+          ]
+        },
+        {
+          "section": "* Đối với tổ chức bị chia, tổ chức bị sáp nhập, tổ chức bị hợp nhất là hồ sơ chấm dứt hiệu lực mã số thuế gồm:",
+          "position": 2,
+          "name": "Bản sao quyết định chia/tách/hợp đồng hợp nhất hoặc văn bản tương đương",
+          "component_code": "G12.00035787",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "* Đối với tổ chức bị tách, tổ chức nhận sáp nhập, tổ chức sau chuyển đổi loại hình tổ chức nếu có thay đổi thông tin đăng ký thuế thì hồ sơ thay đổi thông tin đăng ký thuế, gồm:",
+          "position": 1,
+          "name": "Tờ khai điều chỉnh, bổ sung thông tin đăng ký thuế mẫu số 08-MST ban hành kèm theo Thông tư số 90/2026/TT-BTC",
+          "component_code": "G12.0003017",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019f8e2f-751a-73ee-8435-3b024040af10",
+              "fileName": "22.Mẫu 08-MST TK thay đổi thông tin ĐKT.doc",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8e2f-751a-73ee-8435-3b024040af10/22.Mẫu 08-MST TK thay đổi thông tin ĐKT.doc"
+            }
+          ]
+        },
+        {
+          "section": "* Đối với tổ chức bị tách, tổ chức nhận sáp nhập, tổ chức sau chuyển đổi loại hình tổ chức nếu có thay đổi thông tin đăng ký thuế thì hồ sơ thay đổi thông tin đăng ký thuế, gồm:",
+          "position": 2,
+          "name": "Bản sao quyết định tách tổ chức, hoặc bản sao hợp đồng sáp nhập, hoặc bản sao quyết định chuyển đổi loại hình của tổ chức hoặc văn bản tương đương",
+          "component_code": "G12.0003874",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "* Đối với tổ chức bị tách, tổ chức nhận sáp nhập, tổ chức sau chuyển đổi loại hình tổ chức nếu có thay đổi thông tin đăng ký thuế thì hồ sơ thay đổi thông tin đăng ký thuế, gồm:",
+          "position": 3,
+          "name": "Bản sao Giấy phép thành lập và hoạt động, Quyết định thành lập hoặc Giấy tờ tương đương khác",
+          "component_code": "G12.0003875",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 1,
+          "name": "Từ ngày 01/7/2026 đến trước thời điểm theo lộ trình của cơ quan thuế quy định tại khoản 2 Điều 36 Thông tư số 90/2026/TT-BTC thì tiếp tục áp dụng mẫu số 01-ĐK-TCT, 24/ĐK-TCT, 08-MST, BK01-ĐK-TCT, BK02-ĐK-TCT, BK03-ĐK-TCT, BK04-ĐK-TCT, BK06-ĐK-TCT ban hành kèm theo Thông tư số 86/2024/TT-BTC ngày 23/12/2024 của Bộ Tài chính đối với trường hợp đăng ký thuế theo phương thức điện tử",
+          "component_code": "G12.0003876",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019f8e93-090e-758e-b714-d78caf444345",
+              "fileName": "01 ĐKT TCT TT 86.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8e93-090e-758e-b714-d78caf444345/01 ĐKT TCT TT 86.docx"
+            },
+            {
+              "id": "019f8e93-944f-73d9-bd0c-923e842d6c73",
+              "fileName": "BK 06 ĐKT TCT TT86.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8e93-944f-73d9-bd0c-923e842d6c73/BK 06 ĐKT TCT TT86.docx"
+            },
+            {
+              "id": "019f8e93-9566-702d-8547-5a282883bf2b",
+              "fileName": "BK04 ĐK TCT TT 86.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8e93-9566-702d-8547-5a282883bf2b/BK04 ĐK TCT TT 86.docx"
+            },
+            {
+              "id": "019f8e93-9684-701d-be01-d58ae5f8a735",
+              "fileName": "BK02 ĐK TCT TT 86.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8e93-9684-701d-be01-d58ae5f8a735/BK02 ĐK TCT TT 86.docx"
+            },
+            {
+              "id": "019f8e93-97b2-72bc-ab4f-ba0414e44b52",
+              "fileName": "BK01 ĐK TCT TT 86.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8e93-97b2-72bc-ab4f-ba0414e44b52/BK01 ĐK TCT TT 86.docx"
+            },
+            {
+              "id": "019f8e93-a4ed-7178-abfa-cc6be4b56660",
+              "fileName": "08 MST TT 86.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8e93-a4ed-7178-abfa-cc6be4b56660/08 MST TT 86.docx"
+            },
+            {
+              "id": "019f8e93-bdf6-77da-a612-f4116f25d638",
+              "fileName": "24 ĐK TCT TT 86.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8e93-bdf6-77da-a612-f4116f25d638/24 ĐK TCT TT 86.docx"
+            },
+            {
+              "id": "019f8e94-8b99-72bf-8cf8-0c5bd44e34f6",
+              "fileName": "BK 03 ĐK TCT TT 86.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8e94-8b99-72bf-8cf8-0c5bd44e34f6/BK 03 ĐK TCT TT 86.docx"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c70-724b-96de-2162d5a6fe8f",
+          "name": "Thông báo người nộp thuế ngừng hoạt động và đang làm thủ tục chấm dứt hiệu lực mã số thuế (mẫu số 17/TB-ĐKT)",
+          "code": "KQ.G12.000187"
+        },
+        {
+          "id": "019d2bb2-1c71-7574-afeb-1bc946d29971",
+          "name": "Giấy chứng nhận đăng ký thuế (đối với trường hợp thay đổi thông tin trên Giấy chứng nhận đăng ký thuế).",
+          "code": "KQ.G12.000855"
+        },
+        {
+          "id": "019f8e55-7995-7236-9140-3a2a090299f0",
+          "name": "Thông báo về việc chuyển nghĩa vụ thuế của người nộp thuế (mẫu số 39/TB-ĐKT)",
+          "code": "KQ.G12.0001501"
+        },
+        {
+          "id": "019d2bb2-1c71-7574-afeb-0715771a2242",
+          "name": "Thông báo chấm dứt hiệu lực mã số thuế (mẫu số 18/TB-ĐKT)",
+          "code": "KQ.G12.000848"
+        },
+        {
+          "id": "019d2bb2-1c71-7574-afeb-1697c540e3aa",
+          "name": "Giấy chứng nhận đăng ký thuế (Mẫu 10 MST)",
+          "code": "KQ.G12.000853"
+        },
+        {
+          "id": "019f8e98-9bca-73dc-97f2-fb6146b45ffd",
+          "name": "Thông báo chấm dứt hiệu lực mã số thuế theo đơn vị chủ quản gửi cho đơn vị chủ quản, đơn vị phụ thuộc (mẫu số 35/TB-ĐKT)",
+          "code": "KQ.G12.000856"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019e5e83-1282-771d-9014-49799413a4e5",
+          "name": "Luật số 108/2025/QH15 của Quốc hội: Luật Quản lý thuế",
+          "code": "108/2025/QH15"
+        },
+        {
+          "id": "019f64ed-e026-7299-b5f2-ca44a3964050",
+          "name": "Nghị định về thực hiện thủ tục hành chính theo cơ chế một cửa, một cửa liên thông tại Bộ phận Một cửa và Cổng Dịch vụ công quốc gia.",
+          "code": "118/2025/NĐ-CP "
+        },
+        {
+          "id": "019f356e-75e3-7494-a2f3-672d8dce61a6",
+          "name": "QUY ĐỊNH CHI TIẾT MỘT SỐ ĐIỀU VÀ BIỆN PHÁP ĐỂ TỔ CHỨC, HƯỚNG DẪN THI HÀNH LUẬT QUẢN LÝ THUẾ",
+          "code": "252/2026/NĐ-CP"
+        },
+        {
+          "id": "019f8db3-e7d0-74e4-9c61-49a28e28113a",
+          "name": "Thông tư số 90/2026/TT-BTC ngày 30/6/2026 của Bộ Tài chính quy định về đăng ký thuế",
+          "code": "90/2026/TT-BTC "
+        },
+        {
+          "id": "019f8db3-9765-740b-8b90-682677b9c421",
+          "name": "Thông tư quy định chi tiết một số điều của Luật Quản lý thuế và Nghị định số 252/2026/NĐ-CP của Chính phủ quy định chi tiết một số điều và biện pháp để tổ chức, hướng dẫn thi hành Luật Quản lý thuế",
+          "code": "89/2026/TT-BTC"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "id": "dvc-019ef35f-787e-765b-b6e2-52c8cb69bdd8",
+  "procedure_code": "1.115230",
+  "name": "Cấp lại Giấy chứng nhận đủ điều kiện về an ninh, trật tự đối với trường hợp cơ sở kinh doanh bị thu hồi không có thời hạn",
+  "domain": "Quản lý ngành nghề đầu tư, kinh doanh có điều kiện về an ninh, trật tự",
+  "managing_agency": "Bộ Công an",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.486095+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019ef35f-787e-765b-b6e2-52c8cb69bdd8",
+      "code": "1.115230",
+      "name": "Cấp lại Giấy chứng nhận đủ điều kiện về an ninh, trật tự đối với trường hợp cơ sở kinh doanh bị thu hồi không có thời hạn",
+      "state": "ACTIVE",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1782209220492,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019ef35f-787e-765b-b6e2-52c8cb69bdd8",
+      "raw_path": "evidence/dvc/details/019ef35f-787e-765b-b6e2-52c8cb69bdd8.json",
+      "components": [
+        {
+          "section": "- Văn bản đề nghị cấp lại Giấy chứng nhận đủ điều kiện về an ninh, trật tự của cơ sở kinh doanh gửi cơ quan Công an có thẩm quyền (Mẫu số 03 tại Phụ lục I ban hành kèm theo Nghị định số 58/2026/NĐ-CP); - Tài liệu hợp lệ các tài liệu bổ sung chứng minh đáp ứng đủ điều kiện để hoạt động kinh doanh (nếu có).",
+          "position": 1,
+          "name": "- Văn bản đề nghị cấp lại Giấy chứng nhận đủ điều kiện về an ninh, trật tự của cơ sở kinh doanh gửi cơ quan Công an có thẩm quyền (Mẫu số 03 tại Phụ lục I ban hành kèm theo Nghị định số 58/2026/NĐ-CP); - Tài liệu hợp lệ các tài liệu bổ sung chứng minh đáp ứng đủ điều kiện để hoạt động kinh doanh (nếu có).",
+          "component_code": "KQ.G01.000102",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c37-76e8-b48c-614b96822f5a",
+          "name": "Giấy chứng nhận đủ điều kiện về an ninh, trật tự",
+          "code": "KQ.G01.000063"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7f-719e-b46f-0ca240576c04",
+          "name": "Nghị định 56/2023/NĐ-CP",
+          "code": "56/2023/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d86-7760-a640-a84d6eed6a9d",
+          "name": "Thông tư 15/2022/TT-BCA",
+          "code": "15/2022/TT-BCA"
+        },
+        {
+          "id": "019d2bb3-5d7d-7398-be47-ce7c60f5ecd2",
+          "name": "Thông tư 218/2016/TT-BTC",
+          "code": "218/2016/TT-BTC"
+        },
+        {
+          "id": "019d2bb3-5d7d-7398-be4b-ac80f48de214",
+          "name": "Thông tư 23/2019/TT-BTC",
+          "code": "23/2019/TT-BTC"
+        },
+        {
+          "id": "019d2bb3-5d87-7195-a441-064feb0005fc",
+          "name": "Thông tư 42/2017/TT-BCA",
+          "code": "42/2017/TT-BCA"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afe6-93e458cb5e43",
+          "name": "Nghị định 96/2016/NĐ-CP",
+          "code": "96/2016/NĐ-CP"
+        }
+      ]
+    }
+  ]
+}

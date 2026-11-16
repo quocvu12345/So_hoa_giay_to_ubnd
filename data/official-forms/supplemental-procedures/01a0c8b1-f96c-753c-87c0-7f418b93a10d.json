@@ -1,0 +1,58 @@
+{
+  "id": "dvc-01a0c8b1-f96c-753c-87c0-7f418b93a10d",
+  "procedure_code": "1.116630",
+  "name": "Thủ tục xác nhận Giấy tờ xác định nơi làm việc cho đối tượng lao động tự do để được hưởng chính sách hỗ trợ về nhà ở xã hội (trường hợp có nhà ở thuộc sở hữu của mình nhưng cách xa địa điểm làm việc được hưởng chính sách hỗ trợ về nhà ở xã hội trên địa bàn thành phố Hà Nội)",
+  "domain": "Nhà ở và công sở",
+  "managing_agency": "UBND Thành phố Hà Nội",
+  "inventory_date": null,
+  "scope": "hanoi",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.470764+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "01a0c8b1-f96c-753c-87c0-7f418b93a10d",
+      "code": "1.116630",
+      "name": "Thủ tục xác nhận Giấy tờ xác định nơi làm việc cho đối tượng lao động tự do để được hưởng chính sách hỗ trợ về nhà ở xã hội (trường hợp có nhà ở thuộc sở hữu của mình nhưng cách xa địa điểm làm việc được hưởng chính sách hỗ trợ về nhà ở xã hội trên địa bàn thành phố Hà Nội)",
+      "state": "ACTIVE",
+      "type": "SPECIFIC",
+      "is_ward": true,
+      "updated_at_source": 1790309560233,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/01a0c8b1-f96c-753c-87c0-7f418b93a10d",
+      "raw_path": "evidence/dvc/details/01a0c8b1-f96c-753c-87c0-7f418b93a10d.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Giấy tờ xác định nơi làm việc để được hưởng chính sách hỗ trợ về nhà ở xãhội (áp dụng cho các đối tượng không có các giấy tờ xác định nơi làm việc) theoMẫu số 02 tại Phụ lục ban hành kèm theo Quyết định số 51/2026/QĐ-UBND ngày28/4/2026 của UBND Thành phố.",
+          "component_code": "TPHS02.01.51/2026/QĐ-UBND",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c75-741b-9abe-321a80b04ec9",
+          "name": "Giấy xác nhận",
+          "code": "KQ.G14.000089"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7e-72d1-afec-f5280260cd8c",
+          "name": "quy định chi tiết một số điều và biện pháp thi hành Nghị quyết số 201/2025/QH15 ngày 29/5/2025 của Quốc hội thí điểm về một số cơ chế, chính sách đặc thù phát triển nhà ở xã hội",
+          "code": "192/2025/NĐ-CP"
+        },
+        {
+          "id": "01a0c89d-c293-75aa-b8a4-94d3ccd77e2e",
+          "name": "quy định về trường hợp có nhà ở thuộc sở hữu của mình nhưng cách xa địa điểm làm \nviệc được hưởng chính sách hỗ trợ về nhà ở xã hội trên địa bàn thành phố Hà Nội.",
+          "code": " 51/2026/QĐ-UBND"
+        }
+      ]
+    }
+  ]
+}

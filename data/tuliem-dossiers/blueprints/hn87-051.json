@@ -1,0 +1,127 @@
+{
+  "id": "hn87-051",
+  "ordinal": "51",
+  "procedure_code": "1.013710",
+  "name": "Thủ tục hỗ trợ chi phí y tế và thu nhập thực tế bị mất hoặc giảm sút cho người đang trực tiếp tham gia hoạt động chữ thập đỏ bị tai nạn dẫn đến thiệt hại về sức khỏe",
+  "domain": "Hội",
+  "department_id": "vx",
+  "department": "Phòng Văn hóa - Xã hội",
+  "authority_as_published": "UBND cấp xã",
+  "execution_level_as_published": "Cấp xã",
+  "receiving_location_as_published": "Điểm hỗ trợ DVC số",
+  "inventory_date": "2026-04-27",
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "source_urls": [
+    "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-1b60-72fd-b869-7159a1fa5ff5"
+  ],
+  "current_dvc_match": true,
+  "lifecycle": null,
+  "scope": "hanoi_commune_notice_2026_04_27",
+  "scope_note": "Mốc kiểm kê cấp xã Hà Nội; áp dụng từng thủ tục tại Từ Liêm còn phải theo thẩm quyền/ủy quyền hiện hành.",
+  "status": "source_template_missing",
+  "components": [
+    {
+      "id": "hn87-051-c001",
+      "code": "G09-KQ002438",
+      "name": "- Giấy ra viện, hóa đơn thanh toán chi phí khám bệnh, chữa bệnh và những chi phí không nằm trong danh mục do bảo hiểm y tế chi trả với người lao động tham gia bảo hiểm y tế (bản chính hoặc bản sao có chứng thực nếu gửi qua đường bưu điện, bản sao và bản chính để đối chiếu nếu gửi trực tiếp)",
+      "section": "",
+      "role": "supporting_submit",
+      "scenario_status": "selected_for_test",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-1b60-72fd-b869-7159a1fa5ff5",
+      "source_detail_id": "019d2bfb-1b60-72fd-b869-7159a1fa5ff5",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-051-c002",
+      "code": "G09-KQ002436",
+      "name": "- Công văn đề nghị thẩm định của Hội Chữ thập đỏ (bản chính)",
+      "section": "",
+      "role": "needs_review",
+      "scenario_status": "requirement_needs_review",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-1b60-72fd-b869-7159a1fa5ff5",
+      "source_detail_id": "019d2bfb-1b60-72fd-b869-7159a1fa5ff5",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-051-c003",
+      "code": "G09-KQ002439",
+      "name": "- Văn bản, giấy tờ hợp lệ về thu nhập thực tế theo tiền lương, tiền công hằng tháng của người bị tai nạn có xác nhận của tổ chức hoặc cá nhân sử dụng người lao động để cơ quan nhà nước có thẩm quyền xác định thu nhập thực tế bị mất hoặc giảm sút (bản chính hoặc bản sao có chứng thực nếu gửi qua đường bưu điện, bản sao và bản chính để đối chiếu nếu gửi trực tiếp), gồm: Hợp đồng lao động, quyết định nâng lương của tổ chức hoặc cá nhân sử dụng người lao động hoặc bản kê có thu nhập thực tế của người bị tai nạn và các giấy tờ chứng minh thu nhập thực tế hợp pháp khác (nếu có)",
+      "section": "",
+      "role": "supporting_submit",
+      "scenario_status": "conditional_needs_review",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-1b60-72fd-b869-7159a1fa5ff5",
+      "source_detail_id": "019d2bfb-1b60-72fd-b869-7159a1fa5ff5",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-051-c004",
+      "code": "G09-KQ002437",
+      "name": "- Biên bản xác nhận tình trạng của người bị tai nạn do Hội Chữ thập đỏ lập có xác nhận của Ủy ban nhân dân cấp xã nơi xảy ra tai nạn hoặc cơ quan công an nơi xảy ra tai nạn (bản chính hoặc bản sao có chứng thực nếu gửi qua bưu điện, bản phô tô và bản chính để đối chiếu nếu gửi trực tiếp)",
+      "section": "",
+      "role": "agency_prepared",
+      "scenario_status": "agency_reserved",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-1b60-72fd-b869-7159a1fa5ff5",
+      "source_detail_id": "019d2bfb-1b60-72fd-b869-7159a1fa5ff5",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    }
+  ],
+  "service_cases": [
+    {
+      "id": "019db10e-a6e6-77cc-8fbb-0b1e48227777",
+      "code": "1.013710.01",
+      "name": "Hỗ trợ chi phí y tế và thu nhập thực tế bị mất hoặc giảm sút cho người đang trực tiếp tham gia hoạt động chữ thập đỏ bị tai nạn dẫn đến thiệt hại về sức khỏe",
+      "source_processing_time": {
+        "qty": 10,
+        "type": "WORKING_DAY"
+      },
+      "has_case_specific_components": false
+    }
+  ],
+  "selected_template_ids": [],
+  "source_component_groups": [
+    {
+      "name": "",
+      "component_count": 4,
+      "source_detail_id": "019d2bfb-1b60-72fd-b869-7159a1fa5ff5"
+    }
+  ],
+  "conditional_component_groups": [],
+  "default_test_scenario": {
+    "channel": "direct",
+    "applicant_submits_self": true,
+    "authorized": false,
+    "special_case_flags": [],
+    "selected_conditional_group": null,
+    "case_selection_method": "ordinary_direct_submission",
+    "case_status": "scenario_for_testing_not_a_legal_eligibility_decision"
+  },
+  "requirement_note": "required_as_published được giữ nguyên; false không chứng minh giấy tờ luôn tùy chọn. Các nhóm executionCases có thể là mục giấy tờ/hướng dẫn, không phải các phương án loại trừ nhau."
+}

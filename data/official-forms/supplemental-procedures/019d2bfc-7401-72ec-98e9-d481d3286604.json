@@ -1,0 +1,86 @@
+{
+  "id": "dvc-019d2bfc-7401-72ec-98e9-d481d3286604",
+  "procedure_code": "1.008618",
+  "name": "Thủ tục tái xuất hàng hóa tạm quản",
+  "domain": "Hải quan",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.931647+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfc-7401-72ec-98e9-d481d3286604",
+      "code": "1.008618",
+      "name": "Thủ tục tái xuất hàng hóa tạm quản",
+      "state": "ACTIVE",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1775639890267,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-7401-72ec-98e9-d481d3286604",
+      "raw_path": "evidence/dvc/details/019d2bfc-7401-72ec-98e9-d481d3286604.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Vận tải đơn hoặc các chứng từ vận tải khác có giá trị tương đương đối với trường hợp hàng hóa vận chuyển bằng đường biển, đường hàng không, đường sắt và vận tải đa phương thức",
+          "component_code": "000.00.00.G12-KQ9706",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Giấy phép tạm nhập, văn bản thông báo kết quả kiểm tra chuyên ngành theo quy định của pháp luật: 01 bản chính.  Trường hợp pháp luật chuyên ngành quy định nộp bản chụp hoặc không quy định cụ thể bản chính hay bản chụp thì người khai hải quan được nộp bản chụp",
+          "component_code": "000.00.00.G12-KQ9704",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 3,
+          "name": "Sổ ATA do VCCI cấp theo quy định;",
+          "component_code": "000.00.00.G12-KQ9703",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 4,
+          "name": "Văn bản xác nhận của cơ quan có thẩm quyền về tổ chức hoặc tham dự sự kiện",
+          "component_code": "000.00.00.G12-KQ9705",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c73-70ac-aa17-693644ec509a",
+          "name": "Tờ khai hải quan ( Tờ khai vận chuyển độc lập) được phê duyệt",
+          "code": "KQ.G12.001260"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7f-719e-b46f-ea015430ca96",
+          "name": "Nghị định số 64/2020/NĐ-CP ngày 10/6/2020 của Chính phủ hướng dẫn thực hiện cơ chế tạm quản theo Công ước Istanbul.",
+          "code": "64/2020/NĐ-CP"
+        }
+      ]
+    }
+  ]
+}

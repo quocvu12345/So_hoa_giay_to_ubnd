@@ -1,0 +1,490 @@
+{
+  "id": "dvc-019d2bfc-5cb3-745a-8b13-2b468a307e8b",
+  "procedure_code": "1.008498",
+  "name": "Đăng ký thuế lần đầu đối với người nộp thuế là cá nhân, người phụ thuộc",
+  "domain": "Thuế",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.942123+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfc-5cb3-745a-8b13-2b468a307e8b",
+      "code": "1.008498",
+      "name": "Đăng ký thuế lần đầu đối với người nộp thuế là cá nhân, người phụ thuộc",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1784861594535,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-5cb3-745a-8b13-2b468a307e8b",
+      "raw_path": "evidence/dvc/details/019d2bfc-5cb3-745a-8b13-2b468a307e8b.json",
+      "components": [
+        {
+          "section": "(i) Đăng ký thuế lần đầu đối với người nộp thuế là hộ gia đình, cá nhân có hoạt động sản xuất, kinh doanh không thuộc đối tượng đăng ký kinh doanh qua cơ quan đăng ký kinh doanh - Đối với hộ gia đình, cá nhân có hoạt động kinh doanh là người Việt Nam:",
+          "position": 1,
+          "name": "Tờ khai đăng ký thuế mẫu số 03-ĐKT ban hành kèm theo Thông tư số 90/2026/TT-BTC hoặc hồ sơ khai thuế có tích hợp thông tin đăng ký thuế theo quy định của pháp luật về quản lý thuế. Trường hợp doanh nghiệp, hợp tác xã, hộ kinh doanh đã được cấp giấy chứng nhận đăng ký kinh doanh nhưng chưa được cấp mã số thuế thì nộp kèm bản sao Giấy chứng nhận đăng ký hộ kinh doanh còn hiệu lực",
+          "component_code": "G12.0001140",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019f8dc2-30de-7272-b9dc-4a4212b3d0a4",
+              "fileName": "03 ĐKT TT 90.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8dc2-30de-7272-b9dc-4a4212b3d0a4/03 ĐKT TT 90.docx"
+            }
+          ]
+        },
+        {
+          "section": "(i) Đăng ký thuế lần đầu đối với người nộp thuế là hộ gia đình, cá nhân có hoạt động sản xuất, kinh doanh không thuộc đối tượng đăng ký kinh doanh qua cơ quan đăng ký kinh doanh - Đối với hộ gia đình, cá nhân có hoạt động kinh doanh là người Việt Nam:",
+          "position": 2,
+          "name": "Từ ngày 01/7/2026 đến trước thời điểm theo lộ trình của cơ quan thuế quy định tại khoản 2 Điều 36 Thông tư số 90/2026/TT-BTC thì tiếp tục áp dụng mẫu số 03-ĐK-TCT ban hành kèm theo Thông tư số 86/2024/TT-BTC ngày 23/12/2024 của Bộ Tài chính đối với trường hợp đăng ký thuế theo phương thức điện tử",
+          "component_code": "G12.0003254",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019f8dc4-eeaf-7481-8c25-8ac1456b7fc8",
+              "fileName": "03 ĐK TCT TT 86.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8dc4-eeaf-7481-8c25-8ac1456b7fc8/03 ĐK TCT TT 86.docx"
+            }
+          ]
+        },
+        {
+          "section": "(i) Đăng ký thuế lần đầu đối với người nộp thuế là hộ gia đình, cá nhân có hoạt động sản xuất, kinh doanh thuộc đối tượng không phải đăng ký hộ kinh doanh qua cơ quan đăng ký kinh doanh - Đối với cá nhân là người có quốc tịch nước ngoài:",
+          "position": 1,
+          "name": "Tờ khai đăng ký thuế mẫu số 03-ĐKT ban hành kèm theo Thông tư số 90/2026/TT-BTC hoặc hồ sơ khai thuế có tích hợp thông tin đăng ký thuế theo quy định của pháp luật về quản lý thuế",
+          "component_code": "G12.0001139",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019f8dc6-ac0f-775c-bbca-9d418262f5a2",
+              "fileName": "03 ĐKT TT 90.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8dc6-ac0f-775c-bbca-9d418262f5a2/03 ĐKT TT 90.docx"
+            }
+          ]
+        },
+        {
+          "section": "(i) Đăng ký thuế lần đầu đối với người nộp thuế là hộ gia đình, cá nhân có hoạt động sản xuất, kinh doanh thuộc đối tượng không phải đăng ký hộ kinh doanh qua cơ quan đăng ký kinh doanh - Đối với cá nhân là người có quốc tịch nước ngoài:",
+          "position": 2,
+          "name": "Bản sao hộ chiếu còn hiệu lực của cá nhân; hoặc bản sao giấy tờ có giá trị sử dụng đối với cá nhân kinh doanh thực hiện hoạt động mua bán, trao đổi hàng hoá tại chợ biên giới theo quy định tại Điều 16 Nghị định số 14/2018/NĐ-CP của Chính phủ quy định chi tiết về hoạt động thương mại biên giới (được sửa đổi, bổ sung tại khoản 4 Điều 1 Nghị định số 122/2024/NĐ-CP)",
+          "component_code": "G12.0001138",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "(i) Đăng ký thuế lần đầu đối với người nộp thuế là hộ gia đình, cá nhân có hoạt động sản xuất, kinh doanh thuộc đối tượng không phải đăng ký hộ kinh doanh qua cơ quan đăng ký kinh doanh - Đối với cá nhân là người có quốc tịch nước ngoài:",
+          "position": 3,
+          "name": "Từ ngày 01/7/2026 đến trước thời điểm theo lộ trình của cơ quan thuế quy định tại khoản 2 Điều 36 Thông tư số 90/2026/TT-BTC thì tiếp tục áp dụng mẫu số 03-ĐK-TCT ban hành kèm theo Thông tư số 86/2024/TT-BTC ngày 23/12/2024 của Bộ Tài chính đối với trường hợp đăng ký thuế theo phương thức điện tử",
+          "component_code": "G12.0002578",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019f8dd9-5f1f-724b-a337-b4333d90ea2e",
+              "fileName": "03 ĐK TCT TT 86.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8dd9-5f1f-724b-a337-b4333d90ea2e/03 ĐK TCT TT 86.docx"
+            }
+          ]
+        },
+        {
+          "section": "(ii) Đăng ký thuế lần đầu đối với người nộp thuế là cá nhân có thu nhập thuộc diện chịu thuế thu nhập cá nhân hoặc có nghĩa vụ với ngân sách nhà nước (trừ cá nhân kinh doanh) - Trường hợp cá nhân ủy quyền đăng ký thuế cho cơ quan chi trả thu nhập:",
+          "position": 1,
+          "name": "Văn bản ủy quyền mẫu số 41/UQ-ĐKT ban hành kèm theo Thông tư số 90/2026/TT-BTC",
+          "component_code": "G12.0001143",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019f8dc9-4666-749d-9111-ba98a1c1710e",
+              "fileName": "41 UQ ĐKT TT 90.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8dc9-4666-749d-9111-ba98a1c1710e/41 UQ ĐKT TT 90.docx"
+            }
+          ]
+        },
+        {
+          "section": "(ii) Đăng ký thuế lần đầu đối với người nộp thuế là cá nhân có thu nhập thuộc diện chịu thuế thu nhập cá nhân hoặc có nghĩa vụ với ngân sách nhà nước (trừ cá nhân kinh doanh) - Trường hợp cá nhân ủy quyền đăng ký thuế cho cơ quan chi trả thu nhập:",
+          "position": 2,
+          "name": "Bản sao Hộ chiếu còn hiệu lực đối với cá nhân là người có quốc tịch nước ngoài hoặc người có quốc tịch Việt Nam sinh sống tại nước ngoài",
+          "component_code": "G12.0003545",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "(ii) Đăng ký thuế lần đầu đối với người nộp thuế là cá nhân có thu nhập thuộc diện chịu thuế thu nhập cá nhân hoặc có nghĩa vụ với ngân sách nhà nước (trừ cá nhân kinh doanh) - Trường hợp cá nhân ủy quyền đăng ký thuế cho cơ quan chi trả thu nhập:",
+          "position": 3,
+          "name": "Cơ quan chi trả thu nhập có trách nhiệm tổng hợp thông tin đăng ký thuế của cá nhân vào tờ khai đăng ký thuế mẫu số 05-ĐKT-TH ban hành kèm theo Thông tư số 90/2026/TT-BTC gửi cơ quan thuế quản lý trực tiếp cơ quan chi trả thu nhập",
+          "component_code": "G12.0001142",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019f8dcb-6f3b-7335-b7ae-55ec6281bff5",
+              "fileName": "05 ĐKT TH TT 90.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8dcb-6f3b-7335-b7ae-55ec6281bff5/05 ĐKT TH TT 90.docx"
+            }
+          ]
+        },
+        {
+          "section": "(ii) Đăng ký thuế lần đầu đối với người nộp thuế là cá nhân có thu nhập thuộc diện chịu thuế thu nhập cá nhân hoặc có nghĩa vụ với ngân sách nhà nước (trừ cá nhân kinh doanh) - Trường hợp cá nhân ủy quyền đăng ký thuế cho cơ quan chi trả thu nhập:",
+          "position": 4,
+          "name": "Từ ngày 01/7/2026 đến trước thời điểm theo lộ trình của cơ quan thuế quy định tại khoản 2 Điều 36 Thông tư số 90/2026/TT-BTC thì tiếp tục áp dụng mẫu số 05-ĐK-TH-TCT ban hành kèm theo Thông tư số 86/2024/TT-BTC ngày 23/12/2024 của Bộ Tài chính đối với trường hợp đăng ký thuế theo phương thức điện tử.",
+          "component_code": "G12.0003547",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019f8dda-0cea-704e-bf2a-eebdf3e34f36",
+              "fileName": "05 ĐKTH TCT TT 86.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8dda-0cea-704e-bf2a-eebdf3e34f36/05 ĐKTH TCT TT 86.docx"
+            }
+          ]
+        },
+        {
+          "section": "(iii) Đăng ký thuế lần đầu đối với người nộp thuế là cá nhân có thu nhập thuộc diện chịu thuế thu nhập cá nhân hoặc có nghĩa vụ với NSNN (trừ cá nhân kinh doanh) - Trường hợp cá nhân đăng ký thuế trực tiếp với cơ quan thuế: Đối với cá nhân là người Việt Nam",
+          "position": 1,
+          "name": "Tờ khai đăng ký thuế mẫu số 05-ĐKT ban hành kèm theo Thông tư số 90/2026/TT-BTC hoặc hồ sơ khai thuế theo quy định của pháp luật về quản lý thuế trong trường hợp cá nhân đăng ký thuế thông qua hồ sơ khai thuế",
+          "component_code": "G12.0001145",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019f8dcd-dc75-771e-b7dc-175465b8ac27",
+              "fileName": "05 ĐKT TT 90.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8dcd-dc75-771e-b7dc-175465b8ac27/05 ĐKT TT 90.docx"
+            }
+          ]
+        },
+        {
+          "section": "(iii) Đăng ký thuế lần đầu đối với người nộp thuế là cá nhân có thu nhập thuộc diện chịu thuế thu nhập cá nhân hoặc có nghĩa vụ với NSNN (trừ cá nhân kinh doanh) - Trường hợp cá nhân đăng ký thuế trực tiếp với cơ quan thuế: Đối với cá nhân là người Việt Nam",
+          "position": 2,
+          "name": "Từ ngày 01/7/2026 đến trước thời điểm theo lộ trình của cơ quan thuế quy định tại khoản 2 Điều 36 Thông tư số 90/2026/TT-BTC thì tiếp tục áp dụng mẫu số 05-ĐK-TCT ban hành kèm theo Thông tư số 86/2024/TT-BTC ngày 23/12/2024 của Bộ Tài chính đối với trường hợp đăng ký thuế theo phương thức điện tử",
+          "component_code": "G12.0003425",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019f8dda-bf9e-73aa-8b9d-cacd6790063e",
+              "fileName": "05 ĐK TCT TT 86.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8dda-bf9e-73aa-8b9d-cacd6790063e/05 ĐK TCT TT 86.docx"
+            }
+          ]
+        },
+        {
+          "section": "(iii) Đăng ký thuế lần đầu đối với người nộp thuế là cá nhân có thu nhập thuộc diện chịu thuế thu nhập cá nhân hoặc có nghĩa vụ với NSNN (trừ cá nhân kinh doanh) - Trường hợp cá nhân đăng ký thuế trực tiếp với cơ quan thuế: Đối với cá nhân là người có quốc tịch nước ngoài hoặc là người có quốc tịch Việt Nam sinh sống tại nước ngoài không có số định danh cá nhân được xác lập từ Cơ sở dữ liệu quốc gia về dân cư",
+          "position": 1,
+          "name": "Tờ khai đăng ký thuế mẫu số 05-ĐKT ban hành kèm theo Thông tư số 90/2026/TT-BTC hoặc hồ sơ khai thuế theo quy định của pháp luật về quản lý thuế trong trường hợp cá nhân đăng ký thuế thông qua hồ sơ khai thuế",
+          "component_code": "G12.0001145",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019f8dcd-dc75-771e-b7dc-175465b8ac27",
+              "fileName": "05 ĐKT TT 90.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8dcd-dc75-771e-b7dc-175465b8ac27/05 ĐKT TT 90.docx"
+            }
+          ]
+        },
+        {
+          "section": "(iii) Đăng ký thuế lần đầu đối với người nộp thuế là cá nhân có thu nhập thuộc diện chịu thuế thu nhập cá nhân hoặc có nghĩa vụ với NSNN (trừ cá nhân kinh doanh) - Trường hợp cá nhân đăng ký thuế trực tiếp với cơ quan thuế: Đối với cá nhân là người có quốc tịch nước ngoài hoặc là người có quốc tịch Việt Nam sinh sống tại nước ngoài không có số định danh cá nhân được xác lập từ Cơ sở dữ liệu quốc gia về dân cư",
+          "position": 2,
+          "name": "Bản sao hộ chiếu còn hiệu lực của cá nhân",
+          "component_code": "G12.0003548",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "(iii) Đăng ký thuế lần đầu đối với người nộp thuế là cá nhân có thu nhập thuộc diện chịu thuế thu nhập cá nhân hoặc có nghĩa vụ với NSNN (trừ cá nhân kinh doanh) - Trường hợp cá nhân đăng ký thuế trực tiếp với cơ quan thuế: Đối với cá nhân là người có quốc tịch nước ngoài hoặc là người có quốc tịch Việt Nam sinh sống tại nước ngoài không có số định danh cá nhân được xác lập từ Cơ sở dữ liệu quốc gia về dân cư",
+          "position": 3,
+          "name": "Bản sao văn bản bổ nhiệm của Tổ chức sử dụng lao động trong trường hợp cá nhân người nước ngoài không cư trú tại Việt Nam theo quy định của pháp luật về thuế thu nhập cá nhân được cử sang Việt Nam làm việc nhưng nhận thu nhập tại nước ngoài",
+          "component_code": "G12.0001144",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "(iii) Đăng ký thuế lần đầu đối với người nộp thuế là cá nhân có thu nhập thuộc diện chịu thuế thu nhập cá nhân hoặc có nghĩa vụ với NSNN (trừ cá nhân kinh doanh) - Trường hợp cá nhân đăng ký thuế trực tiếp với cơ quan thuế: Đối với cá nhân là người có quốc tịch nước ngoài hoặc là người có quốc tịch Việt Nam sinh sống tại nước ngoài không có số định danh cá nhân được xác lập từ Cơ sở dữ liệu quốc gia về dân cư",
+          "position": 4,
+          "name": "Từ ngày 01/7/2026 đến trước thời điểm theo lộ trình của cơ quan thuế quy định tại khoản 2 Điều 36 Thông tư số 90/2026/TT-BTC thì tiếp tục áp dụng mẫu số 05-ĐK-TCT ban hành kèm theo Thông tư số 86/2024/TT-BTC ngày 23/12/2024 của Bộ Tài chính đối với trường hợp đăng ký thuế theo phương thức điện tử",
+          "component_code": "G12.0002541",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019f8ddb-57db-74e7-a9c3-1f1b95075a23",
+              "fileName": "05 ĐK TCT TT 86.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8ddb-57db-74e7-a9c3-1f1b95075a23/05 ĐK TCT TT 86.docx"
+            }
+          ]
+        },
+        {
+          "section": "(iv) Đăng ký thuế lần đầu cho người phụ thuộc để giảm trừ gia cảnh của người nộp thuế thu nhập cá nhân - Trường hợp cá nhân ủy quyền đăng ký thuế cho cơ quan chi trả thu nhập: Hồ sơ đăng ký thuế của cá nhân gồm gửi cho cơ quan chi trả thu nhập",
+          "position": 1,
+          "name": "Văn bản ủy quyền mẫu số 41/UQ-ĐKT ban hành kèm theo Thông tư số 90/2026/TT-BTC",
+          "component_code": "G12.0001143",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019f8dc9-4666-749d-9111-ba98a1c1710e",
+              "fileName": "41 UQ ĐKT TT 90.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8dc9-4666-749d-9111-ba98a1c1710e/41 UQ ĐKT TT 90.docx"
+            }
+          ]
+        },
+        {
+          "section": "(iv) Đăng ký thuế lần đầu cho người phụ thuộc để giảm trừ gia cảnh của người nộp thuế thu nhập cá nhân - Trường hợp cá nhân ủy quyền đăng ký thuế cho cơ quan chi trả thu nhập: Hồ sơ đăng ký thuế của cá nhân gồm gửi cho cơ quan chi trả thu nhập",
+          "position": 2,
+          "name": "Bảng kê khai về người phải trực tiếp nuôi dưỡng mẫu số 07/XN-NPT-TNCN (đối với trường hợp người phụ thuộc quy định tại điểm đ khoản 2 Điều 47 Nghị định số 253/2026/NĐ-CP) ban hành kèm theo Thông tư số 90/2026/TT-BTC",
+          "component_code": "G12.0001336",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019f8dd1-4949-705c-9425-acd654873160",
+              "fileName": "07 XN NPT TNCN TT 90.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8dd1-4949-705c-9425-acd654873160/07 XN NPT TNCN TT 90.docx"
+            }
+          ]
+        },
+        {
+          "section": "(iv) Đăng ký thuế lần đầu cho người phụ thuộc để giảm trừ gia cảnh của người nộp thuế thu nhập cá nhân - Trường hợp cá nhân ủy quyền đăng ký thuế cho cơ quan chi trả thu nhập: Hồ sơ đăng ký thuế của cá nhân gồm gửi cho cơ quan chi trả thu nhập",
+          "position": 3,
+          "name": "Bản sao các giấy tờ khác xác định người phụ thuộc theo quy định pháp luật về thuế thu nhập cá nhân",
+          "component_code": "G12.0001148",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "(iv) Đăng ký thuế lần đầu cho người phụ thuộc để giảm trừ gia cảnh của người nộp thuế thu nhập cá nhân - Trường hợp cá nhân ủy quyền đăng ký thuế cho cơ quan chi trả thu nhập: Hồ sơ đăng ký thuế của cá nhân gồm gửi cho cơ quan chi trả thu nhập",
+          "position": 4,
+          "name": "Bản sao Hộ chiếu còn hiệu lực của người phụ thuộc hoặc bản sao giấy tờ chứng thực cá nhân hợp pháp khác còn hiệu lực (nếu không có hộ chiếu) đối với người phụ thuộc là người có quốc tịch nước ngoài hoặc người có quốc tịch Việt Nam sinh sống tại nước ngoài",
+          "component_code": "G12.0001335",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "(iv) Đăng ký thuế lần đầu cho người phụ thuộc để giảm trừ gia cảnh của người nộp thuế thu nhập cá nhân - Trường hợp cá nhân ủy quyền đăng ký thuế cho cơ quan chi trả thu nhập: Hồ sơ đăng ký thuế của cá nhân gồm gửi cho cơ quan chi trả thu nhập",
+          "position": 5,
+          "name": "Cơ quan chi trả thu nhập có trách nhiệm tổng hợp thông tin đăng ký thuế của cá nhân vào tờ khai đăng ký thuế mẫu số 05-ĐKT-TH ban hành kèm theo Thông tư số 90/2026/TT-BTC gửi cơ quan thuế quản lý trực tiếp cơ quan chi trả thu nhập",
+          "component_code": "G12.0001142",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019f8dcb-6f3b-7335-b7ae-55ec6281bff5",
+              "fileName": "05 ĐKT TH TT 90.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8dcb-6f3b-7335-b7ae-55ec6281bff5/05 ĐKT TH TT 90.docx"
+            }
+          ]
+        },
+        {
+          "section": "(iv) Đăng ký thuế lần đầu cho người phụ thuộc để giảm trừ gia cảnh của người nộp thuế thu nhập cá nhân - Trường hợp cá nhân ủy quyền đăng ký thuế cho cơ quan chi trả thu nhập: Hồ sơ đăng ký thuế của cá nhân gồm gửi cho cơ quan chi trả thu nhập",
+          "position": 6,
+          "name": "Từ ngày 01/7/2026 đến trước thời điểm theo lộ trình của cơ quan thuế quy định tại khoản 2 Điều 36 Thông tư số 90/2026/TT-BTC thì tiếp tục áp dụng mẫu số 20-ĐK-TH-TCT ban hành kèm theo Thông tư số 86/2024/TT-BTC ngày 23/12/2024 của Bộ Tài chính đối với trường hợp đăng ký thuế theo phương thức điện tử",
+          "component_code": "G12.0003527",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019f8ddc-6d38-7033-9352-872cde88ed02",
+              "fileName": "20 ĐK TH  TCT TT 86.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8ddc-6d38-7033-9352-872cde88ed02/20 ĐK TH  TCT TT 86.docx"
+            }
+          ]
+        },
+        {
+          "section": "(v) Đăng ký thuế lần đầu cho người phụ thuộc để giảm trừ gia cảnh của người nộp thuế thu nhập cá nhân - Trường hợp cá nhân đăng ký thuế trực tiếp với cơ quan thuế:",
+          "position": 1,
+          "name": "Tờ khai đăng ký thuế mẫu số 20-ĐKT ban hành kèm theo Thông tư số 90/2026/TT-BTC",
+          "component_code": "G12.0001150",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019f8dd7-566f-754f-bc8e-438e129f4f0b",
+              "fileName": "20 ĐKT TT 90.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8dd7-566f-754f-bc8e-438e129f4f0b/20 ĐKT TT 90.docx"
+            }
+          ]
+        },
+        {
+          "section": "(v) Đăng ký thuế lần đầu cho người phụ thuộc để giảm trừ gia cảnh của người nộp thuế thu nhập cá nhân - Trường hợp cá nhân đăng ký thuế trực tiếp với cơ quan thuế:",
+          "position": 2,
+          "name": "Bảng kê khai về người phải trực tiếp nuôi dưỡng mẫu số 07/XN-NPT-TNCN (đối với trường hợp người phụ thuộc quy định tại điểm đ khoản 2 Điều 47 Nghị định số 253/2026/NĐ-CP) ban hành kèm theo Thông tư số 90/2026/TT-BTC",
+          "component_code": "G12.0001336",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019f8dd1-4949-705c-9425-acd654873160",
+              "fileName": "07 XN NPT TNCN TT 90.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8dd1-4949-705c-9425-acd654873160/07 XN NPT TNCN TT 90.docx"
+            }
+          ]
+        },
+        {
+          "section": "(v) Đăng ký thuế lần đầu cho người phụ thuộc để giảm trừ gia cảnh của người nộp thuế thu nhập cá nhân - Trường hợp cá nhân đăng ký thuế trực tiếp với cơ quan thuế:",
+          "position": 3,
+          "name": "Bản sao các giấy tờ khác xác định người phụ thuộc theo quy định pháp luật về thuế thu nhập cá nhân",
+          "component_code": "G12.0001148",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "(v) Đăng ký thuế lần đầu cho người phụ thuộc để giảm trừ gia cảnh của người nộp thuế thu nhập cá nhân - Trường hợp cá nhân đăng ký thuế trực tiếp với cơ quan thuế:",
+          "position": 4,
+          "name": "Bản sao Hộ chiếu còn hiệu lực của người phụ thuộc hoặc bản sao giấy tờ chứng thực cá nhân hợp pháp khác còn hiệu lực (nếu không có hộ chiếu) đối với người phụ thuộc là người có quốc tịch nước ngoài hoặc người có quốc tịch Việt Nam sinh sống tại nước ngoài",
+          "component_code": "G12.0001335",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "(v) Đăng ký thuế lần đầu cho người phụ thuộc để giảm trừ gia cảnh của người nộp thuế thu nhập cá nhân - Trường hợp cá nhân đăng ký thuế trực tiếp với cơ quan thuế:",
+          "position": 5,
+          "name": "Từ ngày 01/7/2026 đến trước thời điểm theo lộ trình của cơ quan thuế quy định tại khoản 2 Điều 36 Thông tư số 90/2026/TT-BTC thì tiếp tục áp dụng mẫu số 20-ĐK-TCT ban hành kèm theo Thông tư số 86/2024/TT-BTC ngày 23/12/2024 của Bộ Tài chính đối với trường hợp đăng ký thuế theo phương thức điện tử.",
+          "component_code": "G12.0003528",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019f8ddd-24a8-7365-97a1-166042ebb61c",
+              "fileName": "20 ĐK TCT TT 86.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8ddd-24a8-7365-97a1-166042ebb61c/20 ĐK TCT TT 86.docx"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 1,
+          "name": "Người nộp thuế nộp hồ sơ đến cơ quan thuế bằng phương thức điện tử thì bản sao các văn bản, giấy tờ quy định trong hồ sơ đăng ký thuế là bản sao điện tử.",
+          "component_code": "G12.0003578",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c71-7574-afea-f2066ddd5faf",
+          "name": "Thông báo mã số thuế cá nhân (Mẫu 14-MST)",
+          "code": "KQ.G12.000832"
+        },
+        {
+          "id": "019f8de2-fb1a-778c-9033-1dd440c38ba8",
+          "name": "Cơ quan thuế thông báo kết quả khớp đúng cho người nộp thuế đến địa chỉ thư điện tử hoặc số điện thoại đã đăng ký của cá nhân",
+          "code": "KQ.G12.000555"
+        },
+        {
+          "id": "019d2bb2-1c71-7574-afeb-1697c540e3aa",
+          "name": "Giấy chứng nhận đăng ký thuế (Mẫu 10 MST)",
+          "code": "KQ.G12.000853"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019e5e83-1282-771d-9014-49799413a4e5",
+          "name": "Luật số 108/2025/QH15 của Quốc hội: Luật Quản lý thuế",
+          "code": "108/2025/QH15"
+        },
+        {
+          "id": "019f64ed-e026-7299-b5f2-ca44a3964050",
+          "name": "Nghị định về thực hiện thủ tục hành chính theo cơ chế một cửa, một cửa liên thông tại Bộ phận Một cửa và Cổng Dịch vụ công quốc gia.",
+          "code": "118/2025/NĐ-CP "
+        },
+        {
+          "id": "019f8db3-9765-740b-8b90-682677b9c421",
+          "name": "Thông tư quy định chi tiết một số điều của Luật Quản lý thuế và Nghị định số 252/2026/NĐ-CP của Chính phủ quy định chi tiết một số điều và biện pháp để tổ chức, hướng dẫn thi hành Luật Quản lý thuế",
+          "code": "89/2026/TT-BTC"
+        },
+        {
+          "id": "019f8db3-e7d0-74e4-9c61-49a28e28113a",
+          "name": "Thông tư số 90/2026/TT-BTC ngày 30/6/2026 của Bộ Tài chính quy định về đăng ký thuế",
+          "code": "90/2026/TT-BTC "
+        }
+      ]
+    }
+  ]
+}

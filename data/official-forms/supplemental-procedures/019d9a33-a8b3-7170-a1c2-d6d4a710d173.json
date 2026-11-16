@@ -1,0 +1,150 @@
+{
+  "id": "dvc-019d9a33-a8b3-7170-a1c2-d6d4a710d173",
+  "procedure_code": "1.003133",
+  "name": "Cấp giấy thông hành xuất, nhập cảnh vùng biên giới Việt Nam – Trung Quốc cho công dân Việt Nam thường trú tại đơn vị hành chính cấp xã tiếp giáp đường biên giới Việt Nam – Trung Quốc",
+  "domain": "Quản lý xuất nhập cảnh",
+  "managing_agency": "Bộ Xây dựng",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.843592+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d9a33-a8b3-7170-a1c2-d6d4a710d173",
+      "code": "1.003133",
+      "name": "Cấp giấy thông hành xuất, nhập cảnh vùng biên giới Việt Nam – Trung Quốc cho công dân Việt Nam thường trú tại đơn vị hành chính cấp xã tiếp giáp đường biên giới Việt Nam – Trung Quốc",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1777450629669,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d9a33-a8b3-7170-a1c2-d6d4a710d173",
+      "raw_path": "evidence/dvc/details/019d9a33-a8b3-7170-a1c2-d6d4a710d173.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "01 bản sao có chứng thực giấy tờ do cơ quan có thẩm quyền của Việt Nam cấp chứng minh người đại diện theo pháp luật đối với người mất năng lực hành vi dân sự, người có khó khăn trong nhận thức, làm chủ hành vi theo quy định của Bộ luật Dân sự, người chưa đủ 14 tuổi; trường hợp nộp bản chụp thì xuất trình bản chính để kiểm tra, đối chiếu.",
+          "component_code": "000.00.00.G01-KQ002947",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Tờ khai đề nghị cấp giấy thông hành (mẫu M01a) ban hành kèm theo Nghị định số 67/2024/NĐ-CP ngày 25/6/2024 của Chính phủ; người chưa đủ 14 tuổi đề nghị cấp riêng giấy thông hành sử dụng tờ khai theo mẫu M01b ban hành kèm theo Nghị định số 184/2025/NĐ-CP ngày 01/7/2025 của Chính phủ. Trường hợp người mất năng lực hành vi dân sự, người có khó khăn trong nhận thức, làm chủ hành vi theo quy định của bộ luật dân sự, người chưa đủ 14 tuổi thì tờ khai do cha, mẹ, người đại diện hợp pháp khai và ký tên.",
+          "component_code": "000.00.00.G01-KQ003559",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019dcf9c-0606-750a-b683-25c09751735f",
+              "fileName": "M01b.pdf",
+              "bucketName": "dvc",
+              "filePath": "configuring/019dcf9c-0606-750a-b683-25c09751735f/M01b.pdf"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 3,
+          "name": "Người chưa đủ 16 tuổi đề nghị cấp chung giấy thông hành xuất, nhập cảnh vùng biên giới Việt Nam – Trung Quốc với cha hoặc mẹ thì tờ khai phải do cha hoặc mẹ khai và ký tên",
+          "component_code": "000.00.00.G01-KQ002952",
+          "original_quantity": 0,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 4,
+          "name": "02 ảnh 4x6cm mới chụp, mặt nhìn thẳng, đầu để trần, không đeo kính màu, phông nền trắng (trong đó 01 ảnh dán vào Tờ khai); trường hợp người chưa đủ 16 tuổi đề nghị cấp chung giấy thông hành xuất, nhập cảnh vùng biên giới Việt Nam – Trung Quốc với cha hoặc mẹ thì nộp thêm 02 ảnh 3x4cm mới chụp của trẻ em đi cùng, mặt nhìn thẳng, đầu để trần, không đeo kính màu, phông nền trắng (trong đó 01 ảnh dán vào Tờ khai).",
+          "component_code": "000.00.00.G01-KQ002953",
+          "original_quantity": 2,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 5,
+          "name": "01 bản sao giấy khai sinh hoặc trích lục ghi vào sổ hộ tịch việc khai sinh do cơ quan có thẩm quyền của Việt Nam cấp đối với người chưa đủ 14 tuổi chưa được cấp mã số định danh cá nhân; trường hợp nôp bản chụp thì xuất trình bản chính để kiểm tra, đối chiếu.",
+          "component_code": "000.00.00.G01-KQ002954",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 6,
+          "name": "+ Giấy thông hành đã được cấp nếu còn giá trị sử dụng.",
+          "component_code": "G01.000.000.000-KQ1909",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019dcf9c-db7c-73ea-8c91-402c47c2e93f",
+          "name": "Giấy thông hành xuất, nhập cảnh vùng biên giới Việt Nam – Trung Quốc.",
+          "code": "KQ.G01.00279"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7d-7398-be4b-fbb10e115bac",
+          "name": "QUY ĐỊNH MỨC THU, CHẾ ĐỘ THU, NỘP, QUẢN LÝ VÀ SỬ DỤNG PHÍ, LỆ PHÍ TRONG LĨNH VỰC XUẤT CẢNH, NHẬP CẢNH, QUÁ CẢNH, CƯ TRÚ TẠI VIỆT NAM",
+          "code": "25/2021/TT-BTC"
+        },
+        {
+          "id": "019d2bb3-5d7f-719e-b470-660b94576cfb",
+          "name": "Nghị định số 67/2024/NĐ-CP ngày 25/6/2024 của Chính phủ sửa đổi, bổ sung một số điều của Nghị định số 76/2020/NĐ-CP ngày 01/7/2020 của Chính phủ quy định chi tiết đối tượng, trình tự, thủ tục, thẩm quyền cấp, thu hồi, hủy giá trị sử dụng giấy thông hành và Nghị định số 77/2020/NĐ-CP ngày 01/7/2020 của Chính phủ quy định việc quản lý, khai thác thông tin trong Cơ sở dữ liệu quốc gia về xuất nhập cảnh; dịch vụ công trực tuyến phục vụ cấp, quản lý, kiểm soát hộ chiếu của công dân Việt Nam; kiểm soát xuất nhập cảnh bằng cổng kiểm soát tự động.",
+          "code": "67/2024/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7d-7398-be4d-7fccad76a3e1",
+          "name": "Thông tư 43/2024/TT-BTC của Bộ Tài chính",
+          "code": "43/2024/TT-BTC"
+        },
+        {
+          "id": "019d2bb3-5d7d-7398-be4e-69cce97f8824",
+          "name": "Thông tư quy định mức thu, miễn một số khoản phí, lệ phí nhằm hỗ trợ cho doanh nghiệp, người dân",
+          "code": "64/2025/TT-BTC"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afec-c7ba7cb44bf3",
+          "name": "Nghị định số 184/2025/NĐ-CP của Chính phủ: Quy định phân định thẩm quyền khi tổ chức chính quyền địa phương 02 cấp và sửa đổi, bổ sung một số điều của các Nghị định của Chính phủ trong lĩnh vực an ninh, trật tự",
+          "code": "184/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d86-7760-a645-08dd5ede9baf",
+          "name": "Luật Xuất cảnh, nhập cảnh của công dân Việt Nam và Luật Nhập cảnh, xuất cảnh, quá cảnh, cư trú của người nước ngoài tại Việt Nam sửa đổi 2023",
+          "code": "23/2023/QH15"
+        },
+        {
+          "id": "019d2bb3-5d87-7195-a442-1fc2d8d3cd84",
+          "name": "Luật 49/2019/QH14",
+          "code": "49/2019/QH14"
+        },
+        {
+          "id": "019d2bb3-5d87-7195-a445-a2e461afc7f1",
+          "name": "Nghị định 76/2020/NĐ-CP",
+          "code": "76/2020/NĐ-CP"
+        }
+      ]
+    }
+  ]
+}

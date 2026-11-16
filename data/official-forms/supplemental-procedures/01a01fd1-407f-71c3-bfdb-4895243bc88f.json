@@ -1,0 +1,174 @@
+{
+  "id": "dvc-01a01fd1-407f-71c3-bfdb-4895243bc88f",
+  "procedure_code": "1.116460",
+  "name": "(Hà Nội) Điều chỉnh quyết định giao đất, cho thuê đất, cho phép chuyển mục đích sử dụng đất do thay đổi căn cứ quyết định giao đất, cho thuê đất, cho phép chuyển mục đích sử dụng đất; điều chỉnh thời hạn sử dụng đất của dự án đầu tư (Cấp xã)",
+  "domain": "Đất đai",
+  "managing_agency": "UBND Thành phố Hà Nội",
+  "inventory_date": null,
+  "scope": "hanoi",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.475135+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "01a01fd1-407f-71c3-bfdb-4895243bc88f",
+      "code": "1.116460",
+      "name": "(Hà Nội) Điều chỉnh quyết định giao đất, cho thuê đất, cho phép chuyển mục đích sử dụng đất do thay đổi căn cứ quyết định giao đất, cho thuê đất, cho phép chuyển mục đích sử dụng đất; điều chỉnh thời hạn sử dụng đất của dự án đầu tư (Cấp xã)",
+      "state": "ACTIVE",
+      "type": "SPECIFIC",
+      "is_ward": true,
+      "updated_at_source": 1787306784953,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/01a01fd1-407f-71c3-bfdb-4895243bc88f",
+      "raw_path": "evidence/dvc/details/01a01fd1-407f-71c3-bfdb-4895243bc88f.json",
+      "components": [
+        {
+          "section": ") Đề nghị điều chỉnh quyết định giao đất, cho thuê đất, cho phép chuyển mục đích sử dụng đất",
+          "position": 1,
+          "name": "Đơn theo Mẫu số 02 ban hành kèm theo Quyết định số 105/2026/QĐ-UBND ngày 25/7/2026 của UBND thành phố.",
+          "component_code": "MD02.105.2026",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "01a01e72-6251-7632-be5f-a3bc27ae111f",
+              "fileName": "Mẫu số 02.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/01a01e72-6251-7632-be5f-a3bc27ae111f/Mẫu số 02.docx"
+            }
+          ]
+        },
+        {
+          "section": ") Đề nghị điều chỉnh quyết định giao đất, cho thuê đất, cho phép chuyển mục đích sử dụng đất",
+          "position": 2,
+          "name": "Văn bản của cơ quan nhà nước có thẩm quyền có nội dung làm thay đổi căn cứ quyết định giao đất, cho thuê đất, cho phép chuyển mục đích sử dụng đất quy định tại các khoản 1, 2, 3, 4 và 5 Điều 116 Luật Đất đai.",
+          "component_code": "30.TH1.TPHS01.105.2026",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": ") Đề nghị điều chỉnh quyết định giao đất, cho thuê đất, cho phép chuyển mục đích sử dụng đất",
+          "position": 3,
+          "name": "- Bản vẽ quy hoạch chi tiết 1/500 hoặc bản vẽ quy hoạch ranh giới dự án của cơ quan nhà nước có thẩm quyền phê duyệt (nếu có);",
+          "component_code": "30.TH1.TPHS02.105.2026",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "b) Đề nghị điều chỉnh thời hạn sử dụng đất của dự án đầu tư",
+          "position": 1,
+          "name": "Đơn đề nghị điều chỉnh thời hạn sử dụng đất của dự án đầu tư theo Mẫu số 10 ban hành kèm theo Quyết định số 105/2026/QĐ-UBND ngày 25/7/2026 của UBND thành phố.",
+          "component_code": "MD10.105.2026",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "01a01e99-e2bd-74d6-9719-01ff5b427a69",
+              "fileName": "Mẫu số 10.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/01a01e99-e2bd-74d6-9719-01ff5b427a69/Mẫu số 10.docx"
+            }
+          ]
+        },
+        {
+          "section": "b) Đề nghị điều chỉnh thời hạn sử dụng đất của dự án đầu tư",
+          "position": 2,
+          "name": "Văn bản của cơ quan có thẩm quyền cho phép thay đổi thời hạn hoạt động của dự án đầu tư theo quy định của pháp luật về đầu tư.",
+          "component_code": "29.TH2.TPHS01.105.2026",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "b) Đề nghị điều chỉnh thời hạn sử dụng đất của dự án đầu tư",
+          "position": 3,
+          "name": "Một trong các giấy chứng nhận: Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất là chứng thư pháp lý để Nhà nước xác nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất hợp pháp của người có quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất. Tài sản gắn liền với đất được cấp Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất là nhà ở, công trình xây dựng gắn liền với đất theo quy định của pháp luật.",
+          "component_code": "02.TH2.TPHS02.105.2026",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "b) Đề nghị điều chỉnh thời hạn sử dụng đất của dự án đầu tư",
+          "position": 4,
+          "name": "Một trong các giấy chứng nhận: Giấy chứng nhận quyền sử dụng đất, Giấy chứng nhận quyền sở hữu nhà ở và quyền sử dụng đất ở, Giấy chứng nhận quyền sở hữu nhà ở, Giấy chứng nhận quyền sở hữu công trình xây dựng, Giấy chứng nhận quyền sử dụng đất, quyền sở hữu nhà ở và tài sản khác gắn liền với đất đã được cấp theo quy định của pháp luật về đất đai, pháp luật về nhà ở, pháp luật về xây dựng trước ngày Luật Đất đai có hiệu lực thi hành .",
+          "component_code": "02.TH2.TPHS03.105.2026",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "b) Đề nghị điều chỉnh thời hạn sử dụng đất của dự án đầu tư",
+          "position": 5,
+          "name": "Quyết định giao đất, quyết định cho thuê đất, quyết định cho phép chuyển mục đích sử dụng đất của cơ quan nhà nước có thẩm quyền theo quy định của pháp luật về đất đai qua các thời kỳ.",
+          "component_code": "01.TH8.TPHS02.105.2026",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "01a01ea2-5ba1-74ee-bd27-370976e32dd1",
+          "name": "Quyết định điều chỉnh quyết định giao đất, cho thuê đất, cho phép chuyển mục đích sử dụng đất theo Mẫu số 08 ban hành kèm theo Quyết định số 105/2026/QĐ-UBND ngày 25/7/2026 của UBND Thành phố hoặc Quyết định điều chỉnh thời hạn sử dụng đất của dự án đầu tư theo Mẫu số 11 ban hành kèm theo Quyết định số 105/2026/QĐ-UBND ngày 25/7/2026 của UBND Thành phố.",
+          "code": "KQ.H26.105.2026.4"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019eab71-e707-70af-996a-4e5b8b36e53e",
+          "name": "Luật Đất đai số 31/2024/QH15 ngày 18/01/2024 được sửa đổi bổ sung  một số điều bởi Luật số 43/2024/QH15, Luật số 47/2024/QH15 và Luật số 58/2024/QH15 của Quốc hội.",
+          "code": "31/2024/QH15 "
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afeb-9ac6648a4b4f",
+          "name": "Quy định về phân định thẩm quyền của chính quyền địa phương 02 cấp, phân quyền, phân cấp trong lĩnh vực đất đai",
+          "code": "151/2025/NĐ-CP"
+        },
+        {
+          "id": "019ed88c-73bf-73ed-a2c9-ebbe831f989d",
+          "name": "quy định chi tiết và hướng dẫn một số điều của Nghị quyết số 254/2025/QH15 của Quốc hội quy định một số cơ chế, chính sách tháo gỡ khó khăn vướng mắc trong tổ chức thi hành Luật Đất đai",
+          "code": "49/2026/NĐ-CP"
+        },
+        {
+          "id": "019fb0eb-7629-732a-ae85-4507d8b9cbc8",
+          "name": "Nghị định số 102/2024/NĐ-CP ngày 30/7/2024 của Chính phủ quy định chi tiết thi hành một số điều của Luật Đất đai",
+          "code": "102/2024/NĐ-CP "
+        },
+        {
+          "id": "019d2bb3-5d86-7760-a644-ce39f72a6124",
+          "name": "Sửa đổi, bổ sung một số điều của các nghị định  quy định chi tiết thi hành Luật Đất đai",
+          "code": "226/2025/NĐ-CP"
+        },
+        {
+          "id": "019fdfab-0f98-7309-b6da-edcf4b3418a4",
+          "name": "Về việc phân cấp thực hiện một số nhiệm vụ trong lĩnh vực đất đai trên địa bàn thành phố Hà Nội",
+          "code": "33/2026/QĐ-UBND "
+        },
+        {
+          "id": "019fdfab-9c87-71de-a747-04badf16fb31",
+          "name": "Về việc ban hành Quy định về điều chỉnh, sửa đổi, bổ sung, bãi bỏ một số nội dung của Quyết định số 33/2026/QĐ-UBND ngày 25/3/2026 của UBND Thành phố về việc phân cấp thực hiện một số nhiệm vụ trong lĩnh vực đất đai trên địa bàn thành phố Hà Nội; ban hành trình tự, thủ tục hành chính về đất đai trên địa bàn thành phố Hà Nội",
+          "code": "105/2026/QĐ-UBND"
+        }
+      ]
+    }
+  ]
+}

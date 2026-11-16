@@ -1,0 +1,96 @@
+{
+  "id": "dvc-019d2bfa-fc1c-75e4-83a4-2df12d6eadb0",
+  "procedure_code": "1.010812",
+  "name": "Tiếp nhận người có công vào cơ sở nuôi dưỡng, điều dưỡng người có công do tỉnh quản lý",
+  "domain": "Người có công",
+  "managing_agency": "Bộ Nội vụ",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:18.001840+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfa-fc1c-75e4-83a4-2df12d6eadb0",
+      "code": "1.010812",
+      "name": "Tiếp nhận người có công vào cơ sở nuôi dưỡng, điều dưỡng người có công do tỉnh quản lý",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1779873095172,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfa-fc1c-75e4-83a4-2df12d6eadb0",
+      "raw_path": "evidence/dvc/details/019d2bfa-fc1c-75e4-83a4-2df12d6eadb0.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "- Bản sao được chứng thực từ quyết định cấp giấy chứng nhận và trợ cấp, phụ cấp ưu đãi người có công.",
+          "component_code": "G09-KQ003210208",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "- Đơn đề nghị vào nuôi dưỡng tại cơ sở nuôi dưỡng người có công (Mẫu số 22 phụ lục I Nghị định số 131/2021/NĐ-CP).",
+          "component_code": "G09-KQ003210209",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019d7167-2378-702c-8063-497fc1ca89c7",
+              "fileName": "Mauso22_ND131_2021.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d7167-2378-702c-8063-497fc1ca89c7/Mauso22_ND131_2021.docx"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c4d-7725-9d9c-bb245954dd0e",
+          "name": "Quyết định về việc tiếp nhận người có công vào cơ sở nuôi dưỡng người có công",
+          "code": "KQ.G09.000449"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7f-719e-b474-93996f3f00db",
+          "name": "Nghị định số 25/2025/NĐ-CP ngày 21 tháng 02 năm 2025 của Chính phủ quy định chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của Bộ Nội vụ",
+          "code": "Nghị định số 25/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b671-f40a5ee32475",
+          "name": "Nghị quyết số 190/2025/QH15 của Quốc hội: Quy định về xử lý một số vấn đề liên quan đến sắp xếp tổ chức bộ máy nhà nước",
+          "code": "190/2025/NQ-QH15"
+        },
+        {
+          "id": "019d2bb3-5d7f-719e-b46e-3b82195c2d48",
+          "name": "Nghị định số 45/2025/NĐ-CP ngày 28/02/2025 của Chính phủ quy định tổ chức các cơ quan chuyên môn thuộc Ủy ban nhân dân tỉnh, thành phố trực thuộc trung ương và Ủy ban nhân dân huyện, quận, thị xã, thành phố thuộc tỉnh, thành phố thuộc thành phố trực thuộc trung ương",
+          "code": "45/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afea-1c153ca6400f",
+          "name": "Quy định về phân định thẩm quyền của chính quyền địa phương 02 cấp trong lĩnh vực quản lý nhà nước của Bộ Nội vụ",
+          "code": "129/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7f-719e-b474-516a799e2145",
+          "name": "QUY ĐỊNH CHI TIẾT VÀ BIỆN PHÁP THI HÀNH PHÁP LỆNH ƯU ĐÃI NGƯỜI CÓ CÔNG VỚI CÁCH MẠNG",
+          "code": "Nghị định số 131/2021/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d85-73da-8eba-20bc75de794b",
+          "name": "ƯU ĐÃI NGƯỜI CÓ CÔNG VỚI CÁCH MẠNG",
+          "code": "Pháp lệnh số: 02/2020/UBTVQH14"
+        }
+      ]
+    }
+  ]
+}

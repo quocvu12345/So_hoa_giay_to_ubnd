@@ -1,0 +1,214 @@
+{
+  "id": "dvc-019d2bfc-35ba-708f-a516-60da5a835229",
+  "procedure_code": "1.007751",
+  "name": "Thủ tục hải quan hàng hóa là tài sản di chuyển",
+  "domain": "Hải quan",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.952394+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfc-35ba-708f-a516-60da5a835229",
+      "code": "1.007751",
+      "name": "Thủ tục hải quan hàng hóa là tài sản di chuyển",
+      "state": "ACTIVE",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1775640274220,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-35ba-708f-a516-60da5a835229",
+      "raw_path": "evidence/dvc/details/019d2bfc-35ba-708f-a516-60da5a835229.json",
+      "components": [
+        {
+          "section": "1. Người nước ngoài đưa tài sản di chuyển vào Việt Nam, khi làm thủ tục hải quan phải nộp:",
+          "position": 1,
+          "name": "a) Tờ khai hải quan: 02 bản chính;",
+          "component_code": "000.00.00.G12-KQ8492",
+          "original_quantity": 0,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "1. Người nước ngoài đưa tài sản di chuyển vào Việt Nam, khi làm thủ tục hải quan phải nộp:",
+          "position": 2,
+          "name": "b) Văn bản xác nhận đến công tác, làm việc tại Việt Nam của cơ quan, tổ chức nơi người nước ngoài làm việc hoặc giấy phép làm việc tại Việt Nam do cơ quan có thẩm quyền cấp: 01 bản chụp;",
+          "component_code": "000.00.00.G12-KQ8493",
+          "original_quantity": 0,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "1. Người nước ngoài đưa tài sản di chuyển vào Việt Nam, khi làm thủ tục hải quan phải nộp:",
+          "position": 3,
+          "name": "c) Chứng từ vận tải trong trường hợp tài sản vận chuyển bằng đường biển, đường hàng không, đường sắt: 01 bản chụp.",
+          "component_code": "000.00.00.G12-KQ8494",
+          "original_quantity": 0,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "2. Người nước ngoài chuyển tài sản di chuyển ra khỏi Việt Nam, khi làm thủ tục hải quan phải nộp:",
+          "position": 1,
+          "name": "a) Tờ khai hải quan: 02 bản chính;",
+          "component_code": "000.00.00.G12-KQ8495",
+          "original_quantity": 0,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "2. Người nước ngoài chuyển tài sản di chuyển ra khỏi Việt Nam, khi làm thủ tục hải quan phải nộp:",
+          "position": 2,
+          "name": "c) Tờ khai hải quan nhập khẩu có xác nhận của cơ quan hải quan đối với tài sản di chuyển là xe ô tô, xe gắn máy hoặc chứng từ thay đổi mục đích sử dụng và chứng từ nộp thuế đối vớihàng hóa thuộc diện phải nộp thuế: 01 bản chụp.",
+          "component_code": "000.00.00.G12-KQ8497",
+          "original_quantity": 0,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "2. Người nước ngoài chuyển tài sản di chuyển ra khỏi Việt Nam, khi làm thủ tục hải quan phải nộp:",
+          "position": 3,
+          "name": "b) Văn bản chứng minh hết thời gian làm việc: 01 bản chụp;",
+          "component_code": "000.00.00.G12-KQ8496",
+          "original_quantity": 0,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "3. Tổ chức, công dân Việt Nam đưa tài sản di chuyển về nước, khi làm thủ tục hải quan phải nộp:",
+          "position": 1,
+          "name": "a) Tờ khai hải quan: 02 bản chính;",
+          "component_code": "000.00.00.G12-KQ8498",
+          "original_quantity": 0,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "3. Tổ chức, công dân Việt Nam đưa tài sản di chuyển về nước, khi làm thủ tục hải quan phải nộp:",
+          "position": 2,
+          "name": "b) Văn bản chứng minh việc hết thời hạn kinh doanh, làm việc ở nước ngoài hoặc trở về Việt Nam cư trú: 01 bản chụp;",
+          "component_code": "000.00.00.G12-KQ8499",
+          "original_quantity": 0,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "3. Tổ chức, công dân Việt Nam đưa tài sản di chuyển về nước, khi làm thủ tục hải quan phải nộp:",
+          "position": 3,
+          "name": "c) Chứng từ vận tải trong trường hợp tài sản vận chuyển bằng đường biển, đường hàng không, đường sắt: 01 bản chụp.",
+          "component_code": "000.00.00.G12-KQ8500",
+          "original_quantity": 0,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "4. Tổ chức, công dân Việt Nam đưa tài sản di chuyển ra nước ngoài, khi làm thủ tục hải quan phải nộp:",
+          "position": 1,
+          "name": "b) Văn bản chứng minh công tác, làm việc hoặc cưtrú tại nước ngoài: 01 bản chụp.",
+          "component_code": "000.00.00.G12-KQ8502",
+          "original_quantity": 0,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "4. Tổ chức, công dân Việt Nam đưa tài sản di chuyển ra nước ngoài, khi làm thủ tục hải quan phải nộp:",
+          "position": 2,
+          "name": "a) Tờ khai hải quan: 02 bản chính;",
+          "component_code": "000.00.00.G12-KQ8501",
+          "original_quantity": 0,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 1,
+          "name": "5. Thủ tướng Chính phủ ban hành danh mục hàng hóa là tài sản di chuyển thuộc danh mục hàng hóa cấm nhập khẩu, hàng hóa thuộc danh mục hạn chế nhập khẩu, nhập khẩu có điều kiện được mang vào Việt Nam tùy từng thời kỳ và định mức hàng hóa là tài sản di chuyển miễn thuế.",
+          "component_code": "000.00.00.G12-KQ8503",
+          "original_quantity": 0,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c70-724b-96e0-46e541515789",
+          "name": "Thông quan hàng hóa nhập khẩu, xuất khẩu",
+          "code": "KQ.G12.000584"
+        },
+        {
+          "id": "019d2bb2-1c70-724b-96df-98c3165f3fa1",
+          "name": "Xác nhận thông quan trên hệ thống",
+          "code": "KQ.G12.000606"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7e-72d1-afe7-9c25863596db",
+          "name": "Nghị định 08/2015/NĐ-CP",
+          "code": "08/2015/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b670-dd41d5f535c2",
+          "name": "Luật 78/2006/QH11",
+          "code": "78/2006/QH11"
+        },
+        {
+          "id": "019d2bb3-5d7d-7398-be4a-aac58bdf58a1",
+          "name": "Nghị định số 187/2013/NĐ-CP",
+          "code": "187/2013/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7d-7398-be4d-ff62cdf67da5",
+          "name": "Luật 54/2014/QH13",
+          "code": "54/2014/QH13"
+        },
+        {
+          "id": "019d2bb3-5d7d-7398-be4d-1c6dbc289d7a",
+          "name": "Quy định về thủ tục hải quan; kiểm tra, giám sát hải quan; thuế xuất khẩu thuế nhập khẩu và quản lý thuế đối vớỉ hàng hoá xuất khẩu, nhập khẩu.",
+          "code": "38/2015/TT-BTC"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b674-5088177d006e",
+          "name": "Luật",
+          "code": "81/2006/QH11"
+        },
+        {
+          "id": "019d2bb3-5d7f-719e-b472-315bb5b481e9",
+          "name": "Nghị định 87/2010/NĐ-CP",
+          "code": "87/2010/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b673-3339df40988f",
+          "name": "Thuế xuất khẩu, thuế nhập khẩu",
+          "code": "45/2005/QH11"
+        }
+      ]
+    }
+  ]
+}

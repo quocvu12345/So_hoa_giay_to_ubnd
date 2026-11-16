@@ -1,0 +1,73 @@
+{
+  "id": "dvc-019d2bf7-8725-766f-9078-951a017d5f8a",
+  "procedure_code": "1.011728",
+  "name": "Trình báo mất thẻ ABTC (thực hiện tại cấp xã)",
+  "domain": "Quản lý xuất nhập cảnh",
+  "managing_agency": "Bộ Công an",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:18.036724+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bf7-8725-766f-9078-951a017d5f8a",
+      "code": "1.011728",
+      "name": "Trình báo mất thẻ ABTC (thực hiện tại cấp xã)",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1784883418738,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf7-8725-766f-9078-951a017d5f8a",
+      "raw_path": "evidence/dvc/details/019d2bf7-8725-766f-9078-951a017d5f8a.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Đơn trình báo mất thẻ ABTC cứng theo mẫu AP06",
+          "component_code": "000.00.00.G01-KQ002480",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c37-76e8-b48c-a3755ec8896e",
+          "name": "Thông báo của Cục Quản lý xuất nhập cảnh về việc giải quyết đơn trình báo mất thẻ ABTC (mẫu CV05)",
+          "code": "KQ.G01.000079"
+        },
+        {
+          "id": "019d2bb2-1c37-76e8-b48d-016398cccf3a",
+          "name": "Thông báo về việc chuyển đơn trình báo mất thẻ ABTC (mẫu CV04)",
+          "code": "KQ.G01.000103"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d87-7195-a442-1fc2d8d3cd84",
+          "name": "Luật 49/2019/QH14",
+          "code": "49/2019/QH14"
+        },
+        {
+          "id": "019d2bb3-5d86-7760-a645-08dd5ede9baf",
+          "name": "Luật Xuất cảnh, nhập cảnh của công dân Việt Nam và Luật Nhập cảnh, xuất cảnh, quá cảnh, cư trú của người nước ngoài tại Việt Nam sửa đổi 2023",
+          "code": "23/2023/QH15"
+        },
+        {
+          "id": "019f82b2-689c-7667-aa40-6ec8fb7fcd94",
+          "name": "Sửa đổi, bổ sung một số điều của 10 Luật có liên quan đến an ninh, trật tự",
+          "code": "118/2025/QH15"
+        },
+        {
+          "id": "019f82c0-c7ab-7156-91b2-50360b70da17",
+          "name": "Quyết định của Thủ tướng Chính phủ quy định trình tự, thủ tục, thẩm quyền cấp và quản lý thẻ đi lại doanh nhân APEC",
+          "code": "28/2026/QĐ-TTg"
+        }
+      ]
+    }
+  ]
+}

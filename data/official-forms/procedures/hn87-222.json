@@ -1,0 +1,80 @@
+{
+  "ordinal": "222",
+  "managing_agency": "Sở Công Thương",
+  "procedure_code": "2.001384",
+  "name": "Phê duyệt phương án cắm mốc chỉ giới xác định phạm vi bảo vệ đập thủy điện",
+  "domain": "An toàn đập, hồ chứa thủy điện",
+  "ministry_decision": "2866/QĐ-BCT ngày 13/10/ 2025",
+  "hanoi_decision": "QĐ 1493/QĐ-TTPVHCC ngày 27/10/2025",
+  "workflow_decision": "2187/QĐ-TTPVHCC ngày 29/12/2025",
+  "fees": "Không quy định",
+  "execution_level": "Cấp tỉnh, cấp xã",
+  "competent_authority": "UBND thành phố; UBND cấp xã",
+  "delegation_decision": "",
+  "delegation_expiry": "",
+  "receiving_location": "Điểm hỗ trợ DVC số",
+  "id": "hn87-222",
+  "source_page": 9,
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "inventory_date": "2026-04-27",
+  "checked_at": "2026-11-12T22:24:36.484495+07:00",
+  "details": [
+    {
+      "id": "019d2bf8-4293-745d-9be2-10f772646024",
+      "code": "2.001384",
+      "name": "Phê duyệt phương án cắm mốc chỉ giới xác định phạm vi bảo vệ đập thủy điện",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": false,
+      "updated_at_source": 1776321859376,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf8-4293-745d-9be2-10f772646024",
+      "raw_path": "evidence/dvc/details/019d2bf8-4293-745d-9be2-10f772646024.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "- Phương án cắm mốc chỉ giới;",
+          "component_code": "000.00.00.G02-KQ1793",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "- Văn bản đề nghị phê duyệt;",
+          "component_code": "000.00.00.G02-KQ1792",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c38-75c9-8e12-9944e7bf354f",
+          "name": "quyết định Phê duyệt phương án cắm mốc chỉ giới xác định phạm vi bảo vệ đập thủy điện",
+          "code": "KQ.G02.000022"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7e-72d1-afe6-09420464b80c",
+          "name": "Nghị định 114/2018/NĐ-CP",
+          "code": "114/2018/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d87-7195-a44a-592f046b043c",
+          "name": "Nghị định số 146/2025/NĐ-CP",
+          "code": "nghị định 146/2025"
+        }
+      ]
+    }
+  ],
+  "lookup_status": "retrieved",
+  "currency_status": "snapshot_requires_later_amendment_check",
+  "errors": []
+}

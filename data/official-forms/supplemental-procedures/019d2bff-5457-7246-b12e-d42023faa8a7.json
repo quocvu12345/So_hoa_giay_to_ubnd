@@ -1,0 +1,82 @@
+{
+  "id": "dvc-019d2bff-5457-7246-b12e-d42023faa8a7",
+  "procedure_code": "2.001944",
+  "name": "Thông báo nhận chăm sóc thay thế cho trẻ em đối với cá nhân, người đại diện gia đình nhận chăm sóc thay thế là người thân thích của trẻ em",
+  "domain": "Trẻ em",
+  "managing_agency": "Bộ Y tế",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.851443+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bff-5457-7246-b12e-d42023faa8a7",
+      "code": "2.001944",
+      "name": "Thông báo nhận chăm sóc thay thế cho trẻ em đối với cá nhân, người đại diện gia đình nhận chăm sóc thay thế là người thân thích của trẻ em",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1778035886666,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bff-5457-7246-b12e-d42023faa8a7",
+      "raw_path": "evidence/dvc/details/019d2bff-5457-7246-b12e-d42023faa8a7.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Đơn đề nghị  chấm  dứt việc chăm sóc thay  thế.",
+          "component_code": "000.00.00.G18-KQ005296",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019e1fa7-762b-723e-ac1f-a9c2ed75158e",
+              "fileName": "Mus11.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019e1fa7-762b-723e-ac1f-a9c2ed75158e/Mus11.docx"
+            },
+            {
+              "id": "019e1fa7-8452-72ed-baed-2c6f5473d1eb",
+              "fileName": "Mus12.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019e1fa7-8452-72ed-baed-2c6f5473d1eb/Mus12.docx"
+            },
+            {
+              "id": "019e1fa7-9f72-76cf-ad41-a0af827d028d",
+              "fileName": "BBgiaonhnchmscthayth.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019e1fa7-9f72-76cf-ad41-a0af827d028d/BBgiaonhnchmscthayth.docx"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c7c-74ea-bcd1-8ccccccc81d2",
+          "name": "Quyết định giao, nhận trẻ em cho cá nhân, gia đình nhận chăm sóc thay thế của Chủ tịch Ủy ban nhân dân cấp xã (BYT)",
+          "code": "KQ.G18.000335"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7f-719e-b46d-d6ce43fbc8e0",
+          "name": "Nghị định số 42/2025/NĐ-CP của Chính phủ: Quy định chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của Bộ Y tế",
+          "code": "42/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7f-719e-b46e-fdfc3b2dd3aa",
+          "name": "Nghị định 56/2017/NĐ-CP - Quy định chi tiết một số điều của Luật Trẻ em",
+          "code": "56/2017/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b671-75490620578d",
+          "name": "Luật Trẻ em",
+          "code": "102/2016/QH13"
+        }
+      ]
+    }
+  ]
+}

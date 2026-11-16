@@ -1,0 +1,65 @@
+{
+  "id": "dvc-019d2bf8-5292-7259-bdc8-9c9e32f3c5f1",
+  "procedure_code": "1.012591",
+  "name": "THỦ TỤC ĐĂNG KÝ BỔ SUNG HOẠT ĐỘNG TÍN NGƯỠNG (CẤP XÃ)",
+  "domain": "Tín ngưỡng, tôn giáo",
+  "managing_agency": "Bộ Dân tộc và Tôn giáo",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:18.028887+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bf8-5292-7259-bdc8-9c9e32f3c5f1",
+      "code": "1.012591",
+      "name": "THỦ TỤC ĐĂNG KÝ BỔ SUNG HOẠT ĐỘNG TÍN NGƯỠNG (CẤP XÃ)",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1776781171747,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf8-5292-7259-bdc8-9c9e32f3c5f1",
+      "raw_path": "evidence/dvc/details/019d2bf8-5292-7259-bdc8-9c9e32f3c5f1.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Văn bản đăng ký hoạt động tín ngưỡng hằng năm hoặc hoạt động tín ngưỡng bổ sung (Mẫu B1, Phụ lục ban hành kèm theo Nghị định số 95/2023/NĐ-CP ngày 29/12/2023 của Chính phủ).",
+          "component_code": "000.00.00.G09-KQ001830",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019da12c-1ac4-758c-a63f-e4e677096194",
+              "fileName": "Mẫu B1.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019da12c-1ac4-758c-a63f-e4e677096194/Mẫu B1.docx"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c7e-720f-afd0-696aff7e50e6",
+          "name": "Văn bản trả lời về việc đăng ký hoạt động tín ngưỡng bổ sung.",
+          "code": "KQ.G21.000173"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7f-719e-b473-02ccebcf0369",
+          "name": "Nghị định số 95/2023/NĐ-CP ngày 29/12/2023 của Chính phủ quy định chi tiết một số điều và biện pháp thi hành Luật tín ngưỡng, tôn giáo.",
+          "code": "95/2023/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d80-7608-8cd0-b2e0a90e021d",
+          "name": "Tín ngưỡng, tôn giáo",
+          "code": "02/2016/QH14"
+        }
+      ]
+    }
+  ]
+}

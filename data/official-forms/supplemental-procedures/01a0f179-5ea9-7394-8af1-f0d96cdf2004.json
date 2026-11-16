@@ -1,0 +1,60 @@
+{
+  "id": "dvc-01a0f179-5ea9-7394-8af1-f0d96cdf2004",
+  "procedure_code": "1.116838",
+  "name": "Giải thể trường mầm non (Theo đề nghị của tổ chức, cá nhân thành lập trường)",
+  "domain": "Giáo dục mầm non",
+  "managing_agency": "Bộ Giáo dục và Đào tạo",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.466988+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "01a0f179-5ea9-7394-8af1-f0d96cdf2004",
+      "code": "1.116838",
+      "name": "Giải thể trường mầm non (Theo đề nghị của tổ chức, cá nhân thành lập trường)",
+      "state": "ACTIVE",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1790907958132,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/01a0f179-5ea9-7394-8af1-f0d96cdf2004",
+      "raw_path": "evidence/dvc/details/01a0f179-5ea9-7394-8af1-f0d96cdf2004.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Văn bản đề nghị giải thể của tổ chức, cá nhân đề nghị thành lập trường theo Mẫu số 06 Phụ lục kèm theo Nghị định số 360/2026/NĐ-CP, trong đó nêu rõ lý do và phương án xử lý tổ chức bộ máy, nhân sự, tài chính, tài sản, đất đai, trẻ em và các vấn đề khác có liên quan.",
+          "component_code": "TP-G03.0001163",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "01a0f178-9789-759e-b398-a532eb62fa24",
+              "fileName": "Mau so 6_VB de nghi giai the CSGD.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/01a0f178-9789-759e-b398-a532eb62fa24/Mau so 6_VB de nghi giai the CSGD.docx"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "id": "01a0f179-3cfe-745a-b0ff-dc756bb9835c",
+          "name": "Quyết định của Chủ tịch Ủy ban nhân dân cấp xã giải thể trường mầm non (theo Mẫu số 08 Phụ lục kèm theo Nghị định số 360/2026/NĐ-CP)",
+          "code": "KQ-G03.00036"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "01a0eb27-0a75-75f9-a08c-6705f56edf6d",
+          "name": "Quy định về điều kiện đầu tư và hoạt động của cơ sở giáo dục mầm non, cơ sở giáo dục phổ thông, cơ sở giáo dục thường xuyên và cơ sở giáo dục khác thuộc hệ thống giáo dục quốc dân",
+          "code": "360/2026/NĐ-CP"
+        }
+      ]
+    }
+  ]
+}

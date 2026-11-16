@@ -1,0 +1,91 @@
+{
+  "ordinal": "203",
+  "managing_agency": "Sở Công Thương",
+  "procedure_code": "2.000033",
+  "name": "Thông báo hoạt động khuyến mại",
+  "domain": "Xúc tiến thương mại",
+  "ministry_decision": "2902/QĐ-BCT ngày 04/11/2024",
+  "hanoi_decision": "291/QĐ-TTPVHCC ngày 08/03/2026",
+  "workflow_decision": "332/QĐ-TTPVHCC ngày 18/03/2026",
+  "fees": "Không quy định",
+  "execution_level": "Cấp tỉnh, cấp xã",
+  "competent_authority": "Sở, UBND cấp xã",
+  "delegation_decision": "71/QĐ-SCT ngày 28/01/2026",
+  "delegation_expiry": "31/12/2028",
+  "receiving_location": "Chi nhánh TTPVHCC",
+  "id": "hn87-203",
+  "source_page": 8,
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "inventory_date": "2026-04-27",
+  "checked_at": "2026-11-12T22:24:34.551721+07:00",
+  "details": [
+    {
+      "id": "019d2bf8-1b7c-7222-8bad-e28afb1bf271",
+      "code": "2.000033",
+      "name": "Thông báo hoạt động khuyến mại",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": false,
+      "updated_at_source": 1782704449067,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf8-1b7c-7222-8bad-e28afb1bf271",
+      "raw_path": "evidence/dvc/details/019d2bf8-1b7c-7222-8bad-e28afb1bf271.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Thông báo thực hiện khuyến mại theo mẫu quy định;",
+          "component_code": "000.00.00.G02-KQ004849",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019d8fc7-cfab-7405-8c38-fd9885caf232",
+              "fileName": "Mẫu số 01 ĐP.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d8fc7-cfab-7405-8c38-fd9885caf232/Mẫu số 01 ĐP.docx"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "id": "019d8fc8-7983-7797-b180-083088479e21",
+          "name": "Không quy định kết quả",
+          "code": "KQ.48"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d84-71c5-b672-cff0cd8ef16a",
+          "name": "Luật Thương mại",
+          "code": "36/2005/QH11"
+        },
+        {
+          "id": "019d2bb3-5d7f-719e-b471-a23f836a3bba",
+          "name": "Nghị định 81/2018/NĐ-CP",
+          "code": "81/2018/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d86-7760-a63e-a4ec1f0018b6",
+          "name": "Nghị định số 128/2024/NĐ-CP sửa đổi, bổ sung một số điều của Nghị định số 81/2018/NĐ-CP của Chính phủ quy định chi tiết Luật Thương mại về hoạt động xúc tiến thương mại",
+          "code": "128/2024/NĐ-CP"
+        },
+        {
+          "id": "019e1627-6140-7639-ae90-2e4878db9890",
+          "name": "Nghị quyết số 19/2026/NQ-CP ngày 29 tháng 4 năm 2026 của Chính phủ về cắt giảm, phân cấp, đơn giản hoá thủ tục hành chính, điều kiện kinh doanh thuộc quản lý của Bộ Công Thương",
+          "code": "19/2026/NQ-CP"
+        },
+        {
+          "id": "019f1153-379c-704d-bc23-28e186cbdc04",
+          "name": "Nghị định số 230/2026/NĐ-CP ngày 25/6/2026 của Chính phủ sửa đổi, bổ sung một số điều của Nghị định số 28/2018/NĐ-CP ngày 01/3/2018 của Chính phủ quy định chi tiết Luật quản lý ngoại thương về một số biện pháp phát triển ngoại thương đã được sửa đổi, bổ sung theo Nghị định số 14/2024/NĐ-CP ngày 07/02/2024 của Chính phủ;",
+          "code": "230/2026/NĐ-CP "
+        }
+      ]
+    }
+  ],
+  "lookup_status": "retrieved",
+  "currency_status": "snapshot_requires_later_amendment_check",
+  "errors": []
+}

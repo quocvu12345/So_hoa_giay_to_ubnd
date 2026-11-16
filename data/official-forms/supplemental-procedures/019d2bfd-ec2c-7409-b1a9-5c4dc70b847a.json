@@ -1,0 +1,69 @@
+{
+  "id": "dvc-019d2bfd-ec2c-7409-b1a9-5c4dc70b847a",
+  "procedure_code": "1.013793",
+  "name": "Thủ tục sửa đổi, bổ sung giấy chứng nhận đủ điều kiện hoạt động điểm cung cấp dịch vụ trò chơi điện tử công cộng",
+  "domain": "Thông tin điện tử và Chuyển đổi số",
+  "managing_agency": "Bộ Văn hóa, Thể thao và Du lịch",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.870491+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfd-ec2c-7409-b1a9-5c4dc70b847a",
+      "code": "1.013793",
+      "name": "Thủ tục sửa đổi, bổ sung giấy chứng nhận đủ điều kiện hoạt động điểm cung cấp dịch vụ trò chơi điện tử công cộng",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1794297424002,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfd-ec2c-7409-b1a9-5c4dc70b847a",
+      "raw_path": "evidence/dvc/details/019d2bfd-ec2c-7409-b1a9-5c4dc70b847a.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "(2) Các tài liệu có liên quan đến các thông tin thay đổi (nếu có).",
+          "component_code": "G16-KQ002101",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "(1) Đơn đề nghị sửa đổi, bổ sung nội dung giấy chứng nhận đủ điều kiện hoạt động điểm cung cấp dịch vụ trò chơi điện tử công cộng theo Mẫu số 52a hoặc Mẫu số 52b tại Phụ lục ban hành kèm theo Nghị định số 147/2024/NĐ-CP;",
+          "component_code": "G16-KQ002100",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c79-762e-8b2c-e7a701520ea2",
+          "name": "Giấy chứng nhận đủ điều kiện hoạt động điểm cung cấp dịch vụ trò chơi điện tử công cộng.",
+          "code": "KQ.G16.000377"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7e-72d1-afea-b0df1ec9673d",
+          "name": "Nghị định số 137/2025/NĐ-CP ngày 12/6/2025 của Chính phủ quy định về phân định thẩm quyền của chính quyền địa phương 02 cấp trong lĩnh vực văn hóa, thể thao và du lịch.",
+          "code": "137/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afeb-4756e074bdea",
+          "name": "Nghị định số 147/2024/NĐ-CP của Chính phủ về quản lý, cung cấp, sử dụng dịch vụ internet và thông tin trên mạng",
+          "code": "147/2024/NĐ-CP"
+        }
+      ]
+    }
+  ]
+}

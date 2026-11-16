@@ -1,0 +1,115 @@
+{
+  "id": "dvc-019d90dd-f017-732b-a670-c6d743b193fd",
+  "procedure_code": "1.014947",
+  "name": "THỦ TỤC QUỸ TỰ GIẢI THỂ (Cấp xã)",
+  "domain": "Quản lý nhà nước về hội, quỹ",
+  "managing_agency": "Bộ Nội vụ",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.846279+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d90dd-f017-732b-a670-c6d743b193fd",
+      "code": "1.014947",
+      "name": "THỦ TỤC QUỸ TỰ GIẢI THỂ (Cấp xã)",
+      "state": "ACTIVE",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1777114299759,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d90dd-f017-732b-a670-c6d743b193fd",
+      "raw_path": "evidence/dvc/details/019d90dd-f017-732b-a670-c6d743b193fd.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "- Đơn đề nghị giải thể quỹ (theo mẫu)",
+          "component_code": "G09-KQ002468",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019d9468-b0a6-746c-a298-ab5d203ee42c",
+              "fileName": "Mau so 10.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d9468-b0a6-746c-a298-ab5d203ee42c/Mau so 10.docx"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "- Nghị quyết của Hội đồng quản lý quỹ về tự giải thể, trong đó nêu rõ lý do giải thể quỹ",
+          "component_code": "G09-KQ002469",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 3,
+          "name": "- Báo cáo về việc xử lý tài sản, tài chính quỹ; danh sách chủ nợ và số nợ đã thanh toán, bao gồm việc thanh toán hết các khoản nợ về thuế và nợ tiền đóng bảo hiểm xã hội, bảo hiểm y tế, bảo hiểm thất nghiệp cho người lao động (nếu có);",
+          "component_code": "G09-KQ003560",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 4,
+          "name": "- Báo cáo việc hoàn thành nộp vào ngân sách theo quy định tại khoản 5 Điều 44 Nghị định 03/2026/NĐ-CP (nếu có);",
+          "component_code": "G09-KQ003561",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 5,
+          "name": "- Thông báo công bố liên tiếp trên 03 số báo in hoặc báo điện tử về việc quỹ giải thể;",
+          "component_code": "G09-KQ003562",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 6,
+          "name": "- Các tài liệu chứng minh việc hoàn thành nghĩa vụ tài sản, tài chính của quỹ",
+          "component_code": "G09-KQ002473",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d90c6-f690-75fc-836a-5865d4bc6e17",
+          "name": "Quyết định giải thể quỹ.",
+          "code": "KQ.G09.000536"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d89ff-5856-76d2-90d1-9790a555ebca",
+          "name": "Nghị định Về tổ chức, hoạt động của quỹ xã hội, quỹ từ thiện",
+          "code": "03/2026/NĐ-CP"
+        }
+      ]
+    }
+  ]
+}

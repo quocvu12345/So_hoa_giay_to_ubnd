@@ -1,0 +1,94 @@
+{
+  "id": "dvc-019d2bf8-d791-76cd-bc4a-853197f14424",
+  "procedure_code": "2.002770",
+  "name": "Xét duyệt học sinh bán trú, học viên bán trú hỗ trợ kinh phí, hỗ trợ gạo",
+  "domain": "Giáo dục và Đào tạo thuộc hệ thống giáo dục quốc dân",
+  "managing_agency": "Bộ Giáo dục và Đào tạo",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:18.023653+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bf8-d791-76cd-bc4a-853197f14424",
+      "code": "2.002770",
+      "name": "Xét duyệt học sinh bán trú, học viên bán trú hỗ trợ kinh phí, hỗ trợ gạo",
+      "state": "ACTIVE",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1776152744558,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf8-d791-76cd-bc4a-853197f14424",
+      "raw_path": "evidence/dvc/details/019d2bf8-d791-76cd-bc4a-853197f14424.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Học sinh, học viên thuộc đối tượng quy định tại khoản 2, khoản 3 Điều 4 Nghị định này nộp Đơn đề nghị hưởng chính sách học sinh bán trú (theo Mẫu số 04)",
+          "component_code": "TP-G03002017",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019d714e-bdf2-7148-99ed-b28f52dcef94",
+              "fileName": "Mu04.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d714e-bdf2-7148-99ed-b28f52dcef94/Mu04.docx"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Trường hợp học sinh, học viên thuộc hộ nghèo phải nộp bản chụp kèm bản chính để đối chiếu hoặc bản sao có chứng thực Giấy chứng nhận hoặc Giấy xác nhận hộ nghèo do Ủy ban nhân dân cấp xã cấp trong trường hợp cơ quan, tổ chức không thể khai thác được thông tin cư trú của công dân trong Cơ sở dữ liệu quốc gia về dân cư.",
+          "component_code": "TP-G03002019",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 3,
+          "name": "Đơn đề nghị hưởng chính sách học viên bán trú (theo Mẫu số 05) quy định tại Phụ lục kèm theo Nghị định này",
+          "component_code": "TP-G03002018",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019d714f-556b-73bf-82e2-75c07e538b39",
+              "fileName": "Mu05.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d714f-556b-73bf-82e2-75c07e538b39/Mu05.docx"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c3b-735b-85a7-44289b095878",
+          "name": "Thông báo công khai danh sách học sinh bán trú, học viên bán trú",
+          "code": "KQ-G03.000349"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7f-719e-b474-64d6cf9b4aac",
+          "name": "Nghị định số 142/2025/NĐ-CP của Chính phủ: Quy định về phân định thẩm quyền của chính quyền địa phương hai cấp trong lĩnh vực quản lý nhà nước của Bộ Giáo dục và Đào tạo",
+          "code": "Nghị định số 142/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7f-719e-b470-41dae5e4ccbe",
+          "name": "Nghị định số 66/2025/NĐ-CP ngày 12/3/2025 của Chính phủ",
+          "code": "66/2025/NĐ-CP"
+        }
+      ]
+    }
+  ]
+}

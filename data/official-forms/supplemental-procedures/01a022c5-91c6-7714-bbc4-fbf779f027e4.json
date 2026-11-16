@@ -1,0 +1,138 @@
+{
+  "id": "dvc-01a022c5-91c6-7714-bbc4-fbf779f027e4",
+  "procedure_code": "1.116411",
+  "name": "Khai thác thông tin của công dân, người gốc Việt Nam chưa xác định được quốc tịch trong Cơ sở dữ liệu quốc gia về dân cư",
+  "domain": "Cấp, quản lý căn cước",
+  "managing_agency": "Bộ Công an",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.474102+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "01a022c5-91c6-7714-bbc4-fbf779f027e4",
+      "code": "1.116411",
+      "name": "Khai thác thông tin của công dân, người gốc Việt Nam chưa xác định được quốc tịch trong Cơ sở dữ liệu quốc gia về dân cư",
+      "state": "ACTIVE",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1787291673175,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/01a022c5-91c6-7714-bbc4-fbf779f027e4",
+      "raw_path": "evidence/dvc/details/01a022c5-91c6-7714-bbc4-fbf779f027e4.json",
+      "components": [
+        {
+          "section": "Trường hợp khai thác thông tin của công dân trong Cơ sở dữ liệu quốc gia về dân cư",
+          "position": 1,
+          "name": "Phiếu đề nghị giải quyết thủ tục về căn cước (Mẫu DC02 ban hành kèm theo Thông tư số 118/2026/TT-BCA ngày 29/6/2026 của Bộ Công an) trong đó nêu rõ mục đích, nội dung, phạm vi thông tin cần khai thác trong Cơ sở dữ liệu quốc gia về dân cư và cam đoan về việc chịu trách nhiệm trong sử dụng thông tin khi được khai thác và ý kiến đồng ý của chủ thể thông tin cần khai thác",
+          "component_code": "000.00.00.G01-KQ003792",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "Trường hợp khai thác thông tin của công dân trong Cơ sở dữ liệu quốc gia về dân cư",
+          "position": 2,
+          "name": "Xuất trình giấy tờ, tài liệu, thông tin hợp lệ chứng minh thông tin người đến nộp hồ sơ (đối với hồ sơ nộp trực tiếp).",
+          "component_code": "000.00.00.G01-KQ003793",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "Trường hợp khai thác thông tin của công dân trong Cơ sở dữ liệu quốc gia về dân cư",
+          "position": 3,
+          "name": "Đính kèm giấy tờ, tài liệu chứng minh thông tin người đề nghị/người đại diện thực hiện thủ tục (đối với hồ sơ nộp qua Cổng dịch vụ công quốc gia, Ứng dụng định danh quốc gia (VNeID)).",
+          "component_code": "000.00.00.G01-KQ003794",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "Trường hợp khai thác thông tin của công dân trong Cơ sở dữ liệu quốc gia về dân cư",
+          "position": 4,
+          "name": "Ý kiến của chủ thể thông tin (thực hiện xác nhận thông qua VNeID)(nếu có)",
+          "component_code": "000.00.00.G01-KQ003795",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "Khai thác thông tin của người gốc Việt Nam chưa xác định được quốc tịch trong Cơ sở dữ liệu quốc gia về dân cư",
+          "position": 1,
+          "name": "Phiếu đề nghị giải quyết thủ tục về căn cước (Mẫu DC02 ban hành kèm theo Thông tư số 118/2026/TT-BCA ngày 29/6/2026 của Bộ Công an) trong đó nêu rõ mục đích, nội dung, phạm vi thông tin cần khai thác trong Cơ sở dữ liệu quốc gia về dân cư và cam đoan về việc chịu trách nhiệm trong sử dụng thông tin khi được khai thác và ý kiến đồng ý của chủ thể thông tin cần khai thác",
+          "component_code": "000.00.00.G01-KQ003792",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "Khai thác thông tin của người gốc Việt Nam chưa xác định được quốc tịch trong Cơ sở dữ liệu quốc gia về dân cư",
+          "position": 2,
+          "name": "Xuất trình giấy tờ, tài liệu, thông tin hợp lệ chứng minh thông tin người đến nộp hồ sơ (đối với hồ sơ nộp trực tiếp).",
+          "component_code": "000.00.00.G01-KQ003793",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c37-76e8-b48d-7e3ea5413fcd",
+          "name": "Phiếu cung cấp thông tin trong cơ sở dữ liệu quốc gia về dân cư, cơ sở dữ liệu căn cước bằng văn bản giấy hoặc văn bản điện tử (Mẫu DC03 ban hành kèm theo Thông tư số 17/2024/TT-BCA của Bộ Công an)",
+          "code": "KQ.G01.000140"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d84-71c5-b672-609c23fcf9d1",
+          "name": "Luật Căn cước",
+          "code": "26/2023/QH15"
+        },
+        {
+          "id": "019d2bb3-5d7d-7398-be4d-c91f22b56049",
+          "name": "Thông tư số 48/2022/TT-BTC của Bộ Tài chính: Quy định mức thu, chế độ thu, nộp, quản lý và sử dụng phí khai thác và sử dụng thông tin trong Cơ sở dữ liệu quốc gia về dân cư",
+          "code": "48/2022/TT-BTC"
+        },
+        {
+          "id": "019d2bb3-5d7f-719e-b470-9fafa6161ec1",
+          "name": "Nghị định của Chính phủ: Quy định chi tiết một số điều và biện pháp thi hành Luật Căn cước",
+          "code": "70/2024/NĐ-CP"
+        },
+        {
+          "id": "019f82b2-689c-7667-aa40-6ec8fb7fcd94",
+          "name": "Sửa đổi, bổ sung một số điều của 10 Luật có liên quan đến an ninh, trật tự",
+          "code": "118/2025/QH15"
+        },
+        {
+          "id": "01a0224a-0269-735f-84c1-54c2c0a3a716",
+          "name": "Thông tư số 61/2025/TT-BCA ngày 10/7/2025 của Bộ Công an quy định về quy trình cấp, cấp đổi, cấp lại thẻ căn cước, giấy chứng nhận căn cước được sửa đổi, bổ sung bởi Thông tư số 120/2026/TT-BCA ngày 29/6/2026 của Bộ Công an sửa đổi, bổ sung một số điều của Thông tư số 61/2025/TT-BCA",
+          "code": "61/2025/TT-BCA "
+        },
+        {
+          "id": "019d2bb3-5d7b-7049-8fc6-519d6a3ee863",
+          "name": "Thông tư quy định chi tiết một số điều và biện pháp thi hành Luật Căn cước",
+          "code": "17/2024/TT-BCA"
+        },
+        {
+          "id": "01a02258-f733-7757-b7e6-b21a174c6cbe",
+          "name": "Thông tư số 117/2026/TT-BCA ngày 29/6/2026 của Bộ Công an quy định chi tiết quy trình thu thập, cập nhật, điều chỉnh, tra cứu, khai thác, sử dụng, kết nối, chia sẻ, kiểm tra, phúc tra, giám sát và bảo đảm an ninh mạng, bảo vệ dữ liệu đối với thông tin trong Cơ sở dữ liệu quốc gia về dân cư, Cơ sở dữ liệu căn cước.",
+          "code": "117/2026/TT-BCA "
+        }
+      ]
+    }
+  ]
+}

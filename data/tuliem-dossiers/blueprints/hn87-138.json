@@ -1,0 +1,98 @@
+{
+  "id": "hn87-138",
+  "ordinal": "138",
+  "procedure_code": "1.004228",
+  "name": "Gia hạn, điều chỉnh giấy phép thăm dò nước dưới đất đối với công trình có quy mô dưới 5.000 m3/ngày đêm",
+  "domain": "Tài nguyên nước (Bộ Nông nghiệp và Môi trường)",
+  "department_id": "ktdt",
+  "department": "Phòng Kinh tế, Hạ tầng và Đô thị",
+  "authority_as_published": "Giám đốc Sở; Chủ tịch UBND cấp xã",
+  "execution_level_as_published": "Cấp tỉnh, cấp xã",
+  "receiving_location_as_published": "Điểm hỗ trợ DVC số; Chi nhánh TTPVHCC",
+  "inventory_date": "2026-04-27",
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "source_urls": [
+    "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfa-3077-750c-87ed-b53c910e2f20"
+  ],
+  "current_dvc_match": false,
+  "lifecycle": null,
+  "scope": "hanoi_commune_notice_2026_04_27",
+  "scope_note": "Mốc kiểm kê cấp xã Hà Nội; áp dụng từng thủ tục tại Từ Liêm còn phải theo thẩm quyền/ủy quyền hiện hành.",
+  "status": "has_fillable_templates",
+  "components": [
+    {
+      "id": "hn87-138-c001",
+      "code": "G10-KQ007195",
+      "name": "- Văn bản đề nghị gia hạn/điều chỉnh giấy phép thăm dò nước dưới đất theo Mẫu 02 Phụ lục I Nghị định số 23/2026/NĐ-CP.",
+      "section": "",
+      "role": "applicant_form",
+      "scenario_status": "selected_for_test",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfa-3077-750c-87ed-b53c910e2f20",
+      "source_detail_id": "019d2bfa-3077-750c-87ed-b53c910e2f20",
+      "embedded_other_requirements": false,
+      "template_candidates": [
+        "template-192760103e587edc"
+      ],
+      "template_selection_method": "first_matching_source_attachment",
+      "selected_template_id": "template-192760103e587edc",
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-138-c002",
+      "code": "G10-KQ007196",
+      "name": "- Báo cáo tình hình thực hiện các quy định trong giấy phép theo Mẫu 37, Phụ lục I Nghị định số 23/2026/NĐ-CP.",
+      "section": "",
+      "role": "applicant_prepared",
+      "scenario_status": "selected_for_test",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfa-3077-750c-87ed-b53c910e2f20",
+      "source_detail_id": "019d2bfa-3077-750c-87ed-b53c910e2f20",
+      "embedded_other_requirements": false,
+      "template_candidates": [
+        "template-590db5ee2fb0a2cb"
+      ],
+      "template_selection_method": "first_matching_source_attachment",
+      "selected_template_id": "template-590db5ee2fb0a2cb",
+      "selection_requires_review": false
+    }
+  ],
+  "service_cases": [
+    {
+      "id": "019db95a-15f9-72dd-88dc-033dc14a7dd2",
+      "code": "1.004228.01",
+      "name": "Gia hạn, điều chỉnh giấy phép thăm dò nước dưới đất đối với công trình có quy mô dưới 5.000 m3/ngày đêm",
+      "source_processing_time": {
+        "qty": 24,
+        "type": "WORKING_DAY"
+      },
+      "has_case_specific_components": false
+    }
+  ],
+  "selected_template_ids": [
+    "template-192760103e587edc",
+    "template-590db5ee2fb0a2cb"
+  ],
+  "source_component_groups": [
+    {
+      "name": "",
+      "component_count": 2,
+      "source_detail_id": "019d2bfa-3077-750c-87ed-b53c910e2f20"
+    }
+  ],
+  "conditional_component_groups": [],
+  "default_test_scenario": {
+    "channel": "direct",
+    "applicant_submits_self": true,
+    "authorized": false,
+    "special_case_flags": [],
+    "selected_conditional_group": null,
+    "case_selection_method": "ordinary_direct_submission",
+    "case_status": "scenario_for_testing_not_a_legal_eligibility_decision"
+  },
+  "requirement_note": "required_as_published được giữ nguyên; false không chứng minh giấy tờ luôn tùy chọn. Các nhóm executionCases có thể là mục giấy tờ/hướng dẫn, không phải các phương án loại trừ nhau."
+}

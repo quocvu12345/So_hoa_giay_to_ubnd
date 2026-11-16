@@ -1,0 +1,138 @@
+{
+  "id": "dvc-019d2bfb-d74f-775d-93dd-3f91b822be72",
+  "procedure_code": "1.000115",
+  "name": "Thủ tục nhập khẩu, tạm nhập khẩu xe ô tô, xe gắn máy không nhằm mục đích thương mại",
+  "domain": "Hải quan",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.976218+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfb-d74f-775d-93dd-3f91b822be72",
+      "code": "1.000115",
+      "name": "Thủ tục nhập khẩu, tạm nhập khẩu xe ô tô, xe gắn máy không nhằm mục đích thương mại",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1775639850943,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-d74f-775d-93dd-3f91b822be72",
+      "raw_path": "evidence/dvc/details/019d2bfb-d74f-775d-93dd-3f91b822be72.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Vận tải đơn hoặc các chứng từ vận tải khác có giá trị tương đương",
+          "component_code": "000.00.00.G12-KQ0856",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Giấy phép nhập khẩu, tạm nhập khẩu xe ô tô, xe gắn máy:",
+          "component_code": "000.00.00.G12-KQ0855",
+          "original_quantity": 2,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 3,
+          "name": "Giấy đăng ký kiểm tra chất lượng xe gắn máy nhập khẩu (đối với xe gắn máy): 01 bản chính;",
+          "component_code": "000.00.00.G12-KQ0858",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 4,
+          "name": "Tờ khai hàng hóa nhập khẩu theo các chỉ tiêu thông tin tại Mẫu số 01 - Tờ khai hàng hóa nhập khẩu Phụ lục I ban hành kèm theo Thông tư số 39/2018/TT-BTC ngày 20 tháng 4 năm 2018 của Bộ trưởng Bộ Tài chính. Trường hợp thực hiện trên tờ khai hải quan giấy theo quy định tại khoản 12 Điều 1 Nghị định số 59/2018/NĐ-CP ngày 20 tháng 4 năm 2018 của Chính phủ, người khai hải quan khai và nộp 03 bản chính tờ khai hải quan theo mẫu HQ/2015/NK Phụ lục IV ban hành kèm Thông tư số 38/2015/TT-BTC ngày 25 tháng 3 năm 2015 của Bộ trưởng Bộ Tài chính;",
+          "component_code": "000.00.00.G12-KQ012454",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 5,
+          "name": "Giấy ủy quyền của đối tượng quy định tại khoản 1, 2, 3 và 4 Điều 2 Thông tư này ủy quyền cho tổ chức, cá nhân khác tại Việt Nam làm thủ tục nhập khẩu, tạm nhập khẩu xe (nếu có): 01 bản chính.",
+          "component_code": "000.00.00.G12-KQ0859",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 6,
+          "name": "Giấy đăng ký kiểm tra chất lượng an toàn kỹ thuật và bảo vệ môi trường xe cơ giới nhập khẩu (đối với ô tô): 01 bản chính;",
+          "component_code": "000.00.00.G12-KQ0857",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c70-724b-96df-f5e00bdb77e4",
+          "name": "Tờ khai nhập khẩu, tạm nhập khẩu đã hoàn thành thủ tục hải quan",
+          "code": "KQ.G12.000334"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7e-72d1-afe7-9c25863596db",
+          "name": "Nghị định 08/2015/NĐ-CP",
+          "code": "08/2015/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7d-7398-be4d-ff62cdf67da5",
+          "name": "Luật 54/2014/QH13",
+          "code": "54/2014/QH13"
+        },
+        {
+          "id": "019d2bb3-5d7d-7398-be4d-1c6dbc289d7a",
+          "name": "Quy định về thủ tục hải quan; kiểm tra, giám sát hải quan; thuế xuất khẩu thuế nhập khẩu và quản lý thuế đối vớỉ hàng hoá xuất khẩu, nhập khẩu.",
+          "code": "38/2015/TT-BTC"
+        },
+        {
+          "id": "019d2bb3-5d7d-7398-be4a-aac58bdf58a1",
+          "name": "Nghị định số 187/2013/NĐ-CP",
+          "code": "187/2013/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7d-7398-be49-c4aa81445449",
+          "name": "Thông tư 143/2015/TT-BTC",
+          "code": "143/2015/TT-BTC"
+        },
+        {
+          "id": "019d2bb3-5d7d-7398-be4c-c3e1706a8514",
+          "name": "Thông tư 32/2014/TT-BTC",
+          "code": "32/2014/TT-BTC"
+        },
+        {
+          "id": "019d2bb3-5d87-7195-a441-95e15796ed05",
+          "name": "Thông tư 45/2022/TT-BTC",
+          "code": "45/2022/TT-BTC"
+        }
+      ]
+    }
+  ]
+}

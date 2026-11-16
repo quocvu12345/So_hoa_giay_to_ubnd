@@ -1,0 +1,60 @@
+{
+  "id": "dvc-01a0f2a1-afa5-762e-82ca-3c5b5eb039ff",
+  "procedure_code": "1.116846",
+  "name": "Cho phép cơ sở giáo dục khác thực hiện chương trình giáo dục phổ thông cấp tiểu học, cấp trung học cơ sở",
+  "domain": "Cơ sở giáo dục khác",
+  "managing_agency": "Bộ Giáo dục và Đào tạo",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.465446+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "01a0f2a1-afa5-762e-82ca-3c5b5eb039ff",
+      "code": "1.116846",
+      "name": "Cho phép cơ sở giáo dục khác thực hiện chương trình giáo dục phổ thông cấp tiểu học, cấp trung học cơ sở",
+      "state": "ACTIVE",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1790907958133,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/01a0f2a1-afa5-762e-82ca-3c5b5eb039ff",
+      "raw_path": "evidence/dvc/details/01a0f2a1-afa5-762e-82ca-3c5b5eb039ff.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Văn bản đề nghị cho phép thực hiện chương trình giáo dục phổ thông cấp tiểu học, cấp trung học cơ sở theo Mẫu số 07 Phụ lục kèm theo Nghị định số 360/2026/NĐ-CP",
+          "component_code": "TP-G03.0001176",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "01a0f2a0-8a9d-7278-a6b6-c75e3f3a4347",
+              "fileName": "Mau so 7_VB de nghi thuc hien CT GDPT TH-THCS.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/01a0f2a0-8a9d-7278-a6b6-c75e3f3a4347/Mau so 7_VB de nghi thuc hien CT GDPT TH-THCS.docx"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "id": "01a0f2a1-78fc-70da-8371-0417094a9325",
+          "name": "Quyết định của Chủ tịch Ủy ban nhân dân cấp xã cho phép cơ sở giáo dục thực hiện chương trình giáo dục phổ thông cấp tiểu học, cấp trung học cơ sở (theo Mẫu số 08 Phụ lục kèm theo Nghị định số 360/2026/NĐ-CP)",
+          "code": "KQ-G03.00045"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "01a0eb27-0a75-75f9-a08c-6705f56edf6d",
+          "name": "Quy định về điều kiện đầu tư và hoạt động của cơ sở giáo dục mầm non, cơ sở giáo dục phổ thông, cơ sở giáo dục thường xuyên và cơ sở giáo dục khác thuộc hệ thống giáo dục quốc dân",
+          "code": "360/2026/NĐ-CP"
+        }
+      ]
+    }
+  ]
+}

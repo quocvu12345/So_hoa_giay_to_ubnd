@@ -1,0 +1,124 @@
+{
+  "id": "dvc-019d2bfc-d1f2-735d-9548-c36ed857362f",
+  "procedure_code": "1.014371",
+  "name": "Thủ tục cấp Giấy chứng nhận đăng ký Quỹ hỗ trợ phát triển hợp tác xã (sau đây gọi tắt là Quỹ hợp tác xã) địa phương hoạt động theo mô hình hợp tác xã",
+  "domain": "Thành lập và hoạt động của tổ hợp tác, hợp tác xã, liên hiệp hợp tác xã",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.915414+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfc-d1f2-735d-9548-c36ed857362f",
+      "code": "1.014371",
+      "name": "Thủ tục cấp Giấy chứng nhận đăng ký Quỹ hỗ trợ phát triển hợp tác xã (sau đây gọi tắt là Quỹ hợp tác xã) địa phương hoạt động theo mô hình hợp tác xã",
+      "state": "ACTIVE",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1775645517455,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-d1f2-735d-9548-c36ed857362f",
+      "raw_path": "evidence/dvc/details/019d2bfc-d1f2-735d-9548-c36ed857362f.json",
+      "components": [
+        {
+          "section": "Trường hợp cấp mới Giấy chứng nhận đăng ký",
+          "position": 1,
+          "name": "Nghị quyết của Hội nghị thành lập hoặc Đại hội thành viên về việc thành lập hoặc tổ chức lại Quỹ hợp tác xã địa phương hoạt động theo mô hình hợp tác xã, trong đó nêu rõ người được ủy quyền nộp hồ sơ đăng ký Quỹ hợp tác xã địa phương hoạt động theo mô hình hợp tác xã",
+          "component_code": "000.00.00.G12-KQ015148",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Trường hợp cấp mới Giấy chứng nhận đăng ký",
+          "position": 2,
+          "name": "Danh sách thành viên góp vốn Quỹ hợp tác xã địa phương hoạt động theo mô hình hợp tác xã",
+          "component_code": "000.00.00.G12-KQ015150",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Trường hợp cấp mới Giấy chứng nhận đăng ký",
+          "position": 3,
+          "name": "Điều lệ tổ chức và hoạt động của Quỹ hợp tác xã địa phương hoạt động theo mô hình hợp tác xã",
+          "component_code": "000.00.00.G12-KQ015149",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Trường hợp cấp mới Giấy chứng nhận đăng ký",
+          "position": 4,
+          "name": "Giấy đề nghị đăng ký Quỹ hợp tác xã địa phương hoạt động theo mô hình hợp tác xã.",
+          "component_code": "000.00.00.G12-KQ015147",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Trường hợp cấp mới Giấy chứng nhận đăng ký",
+          "position": 5,
+          "name": "Danh sách người đại diện theo pháp luật của Quỹ hợp tác xã địa phương hoạt động theo mô hình hợp tác xã",
+          "component_code": "000.00.00.G12-KQ015151",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Trường hợp thay đổi nội dung Giấy chứng nhận đăng ký",
+          "position": 1,
+          "name": "Giấy đề nghị đăng ký thay đổi nội dung đăng ký Quỹ hợp tác xã địa phương hoạt động theo mô hình hợp tác xã.",
+          "component_code": "000.00.00.G12-KQ015152",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Trường hợp thay đổi nội dung Giấy chứng nhận đăng ký",
+          "position": 2,
+          "name": "Bản sao hoặc bản chính biên bản họp Đại hội thành viên về việc thay đổi nội dung tại Giấy chứng nhận đăng ký.",
+          "component_code": "000.00.00.G12-KQ015153",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Trường hợp thay đổi nội dung Giấy chứng nhận đăng ký",
+          "position": 3,
+          "name": "Bản sao hoặc bản chính nghị quyết của Đại hội thành viên về việc thay đổi nội dung tại Giấy chứng nhận đăng ký.",
+          "component_code": "000.00.00.G12-KQ015154",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c72-75fa-a592-00424014dc18",
+          "name": "Cấp Giấy chứng nhận đăng ký Quỹ hợp tác xã địa phương hoạt động theo mô hình hợp tác xã",
+          "code": "KQ.G12.000811"
+        }
+      ],
+      "legal_bases": []
+    }
+  ]
+}

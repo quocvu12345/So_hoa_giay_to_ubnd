@@ -1,0 +1,63 @@
+{
+  "id": "dvc-019d2bfc-bab3-74af-b50c-45c15d8fc0d0",
+  "procedure_code": "1.011520",
+  "name": "Khai, nộp vào ngân sách nhà nước tiền thu từ chuyển đổi sở hữu doanh nghiệp, đơn vị sự nghiệp công lập, nguồn thu từ chuyển nhượng vốn nhà nước và chênh lệch vốn chủ sở hữu lớn hơn vốn điều lệ tại doanh nghiệp",
+  "domain": "Thuế",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.921293+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfc-bab3-74af-b50c-45c15d8fc0d0",
+      "code": "1.011520",
+      "name": "Khai, nộp vào ngân sách nhà nước tiền thu từ chuyển đổi sở hữu doanh nghiệp, đơn vị sự nghiệp công lập, nguồn thu từ chuyển nhượng vốn nhà nước và chênh lệch vốn chủ sở hữu lớn hơn vốn điều lệ tại doanh nghiệp",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1778139910639,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-bab3-74af-b50c-45c15d8fc0d0",
+      "raw_path": "evidence/dvc/details/019d2bfc-bab3-74af-b50c-45c15d8fc0d0.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Tờ khai số thu theo mẫu tờ khai quy định tại Điều 7 Thông tư số 57/2022/TT-BTC",
+          "component_code": "000.00.00.G12-KQ012518",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c70-724b-96e1-59c6a510ec9f",
+          "name": "Hồ sơ gửi đến cơ quan thuế không có kết quả giải quyết.",
+          "code": "KQ.G12.000429"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7e-72d1-afe9-653aac8276ee",
+          "name": "Nghị định số 118/2025/NĐ-CP của Chính phủ: Về thực hiện thủ tục hành chính theo cơ chế một cửa, một cửa liên thông tại Bộ phận Một cửa và Cổng Dịch vụ công quốc gia",
+          "code": "118/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d86-7760-a640-5d06ad672a5b",
+          "name": "Nghị định 148/2021/NĐ-CP",
+          "code": "148/2021/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d87-7195-a443-847b5fa2a6de",
+          "name": "Thông tư 57/2022/TT-BTC",
+          "code": "57/2022/TT-BTC"
+        }
+      ]
+    }
+  ]
+}

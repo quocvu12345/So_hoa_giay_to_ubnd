@@ -1,0 +1,175 @@
+{
+  "id": "hn87-336",
+  "ordinal": "336",
+  "procedure_code": "1.004047",
+  "name": "Đăng ký phương tiện lần đầu đối với phương tiện đang khai thác trên đường thủy nội địa",
+  "domain": "Hàng hải và đường thủy nội địa",
+  "department_id": "chuyennganh",
+  "department": "Cơ quan chuyên ngành · cần xác định đơn vị phối hợp",
+  "authority_as_published": "Sở; UBND cấp xã",
+  "execution_level_as_published": "Cấp tỉnh, cấp xã",
+  "receiving_location_as_published": "Điểm hỗ trợ DVC số; Chi nhánh TTPVHCC",
+  "inventory_date": "2026-04-27",
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "source_urls": [
+    "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfe-3a86-717c-992c-1393a2f50382"
+  ],
+  "current_dvc_match": true,
+  "lifecycle": null,
+  "scope": "hanoi_commune_notice_2026_04_27",
+  "scope_note": "Mốc kiểm kê cấp xã Hà Nội; áp dụng từng thủ tục tại Từ Liêm còn phải theo thẩm quyền/ủy quyền hiện hành.",
+  "status": "has_fillable_templates",
+  "components": [
+    {
+      "id": "hn87-336-c001",
+      "code": "000.00.00.G04-KQ005221",
+      "name": "Hợp đồng mua bán phương tiện hoặc hợp đồng đóng mới phương tiện đối với phương tiện thuộc diện đăng kiểm để cơ quan đăng ký phương tiện kiểm tra, trừ trường hợp chủ phương tiện là cơ sở đóng mới, hoán cải, sửa chữa và phục hồi phương tiện được phép hoạt động theo quy định của pháp luật đối với phương tiện được đóng mới trong nước sau ngày 01/01/2005",
+      "section": "* Xuất trình hoặc gửi bản chính hoặc bản sao có chứng thực hoặc bản sao điện tử được chứng thực từ bản chính hoặc bản sao điện tử được cấp từ sổ gốc các loại giấy tờ sau đây để cơ quan đăng ký phương tiện kiểm tra:",
+      "role": "supporting_show",
+      "scenario_status": "conditional_needs_review",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 1,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfe-3a86-717c-992c-1393a2f50382",
+      "source_detail_id": "019d2bfe-3a86-717c-992c-1393a2f50382",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-336-c002",
+      "code": "000.00.00.G04-KQ1568",
+      "name": "Giấy chứng nhận an toàn kỹ thuật và bảo vệ môi trường của phương tiện còn hiệu lực đối với phương tiện thuộc diện đăng kiểm;",
+      "section": "* Xuất trình hoặc gửi bản chính hoặc bản sao có chứng thực hoặc bản sao điện tử được chứng thực từ bản chính hoặc bản sao điện tử được cấp từ sổ gốc các loại giấy tờ sau đây để cơ quan đăng ký phương tiện kiểm tra:",
+      "role": "supporting_show",
+      "scenario_status": "conditional_needs_review",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 1,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfe-3a86-717c-992c-1393a2f50382",
+      "source_detail_id": "019d2bfe-3a86-717c-992c-1393a2f50382",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-336-c003",
+      "code": "000.00.00.G04-KQ1569",
+      "name": "Hợp đồng cho thuê tài chính đối với trường hợp tổ chức cho thuê tài chính đề nghị được đăng ký phương tiện tại nơi đăng ký hộ khẩu thường trú hoặc tạm trú của bên thuê.",
+      "section": "* Xuất trình hoặc gửi bản chính hoặc bản sao có chứng thực hoặc bản sao điện tử được chứng thực từ bản chính hoặc bản sao điện tử được cấp từ sổ gốc các loại giấy tờ sau đây để cơ quan đăng ký phương tiện kiểm tra:",
+      "role": "supporting_show",
+      "scenario_status": "conditional_needs_review",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 1,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfe-3a86-717c-992c-1393a2f50382",
+      "source_detail_id": "019d2bfe-3a86-717c-992c-1393a2f50382",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-336-c004",
+      "code": "000.00.00.G04-KQ005218",
+      "name": "Đơn đề nghị đăng ký phương tiện thủy nội địa theo quy định",
+      "section": "Giấy tờ phải nộp để lưu giữ tại cơ quan đăng ký phương tiện:",
+      "role": "applicant_form",
+      "scenario_status": "selected_for_test",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfe-3a86-717c-992c-1393a2f50382",
+      "source_detail_id": "019d2bfe-3a86-717c-992c-1393a2f50382",
+      "embedded_other_requirements": false,
+      "template_candidates": [
+        "template-fb5e7ad08bb8d56a"
+      ],
+      "template_selection_method": "first_matching_source_attachment",
+      "selected_template_id": "template-fb5e7ad08bb8d56a",
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-336-c005",
+      "code": "000.00.00.G04-KQ005220",
+      "name": "Bản kê khai điều kiện an toàn của phương tiện thủy nội địa theo quy định đối với phương tiện không thuộc diện đăng kiểm",
+      "section": "Giấy tờ phải nộp để lưu giữ tại cơ quan đăng ký phương tiện:",
+      "role": "applicant_form",
+      "scenario_status": "conditional_needs_review",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfe-3a86-717c-992c-1393a2f50382",
+      "source_detail_id": "019d2bfe-3a86-717c-992c-1393a2f50382",
+      "embedded_other_requirements": false,
+      "template_candidates": [
+        "template-d48345fc96200890"
+      ],
+      "template_selection_method": "first_matching_source_attachment",
+      "selected_template_id": "template-d48345fc96200890",
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-336-c006",
+      "code": "000.00.00.G04-KQ005219",
+      "name": "Biên lai nộp lệ phí trước bạ (bản chính hoặc bản sao có chứng thực hoặc bản sao điện tử được chứng thực từ bản chính hoặc bản sao điện tử được cấp từ sổ gốc) đối với phương tiện thuộc diện phải nộp lệ phí trước bạ",
+      "section": "Giấy tờ phải nộp để lưu giữ tại cơ quan đăng ký phương tiện:",
+      "role": "supporting_submit",
+      "scenario_status": "conditional_needs_review",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 1,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfe-3a86-717c-992c-1393a2f50382",
+      "source_detail_id": "019d2bfe-3a86-717c-992c-1393a2f50382",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    }
+  ],
+  "service_cases": [
+    {
+      "id": "019d2d3a-14cb-713f-b12a-c14cddfac918",
+      "code": "1.004047.01",
+      "name": "Đăng ký phương tiện lần đầu đối với phương tiện đang khai thác trên đường thủy nội địa",
+      "source_processing_time": {
+        "qty": 2,
+        "type": "WORKING_DAY"
+      },
+      "has_case_specific_components": false
+    }
+  ],
+  "selected_template_ids": [
+    "template-fb5e7ad08bb8d56a",
+    "template-d48345fc96200890"
+  ],
+  "source_component_groups": [
+    {
+      "name": "* Xuất trình hoặc gửi bản chính hoặc bản sao có chứng thực hoặc bản sao điện tử được chứng thực từ bản chính hoặc bản sao điện tử được cấp từ sổ gốc các loại giấy tờ sau đây để cơ quan đăng ký phương tiện kiểm tra:",
+      "component_count": 3,
+      "source_detail_id": "019d2bfe-3a86-717c-992c-1393a2f50382"
+    },
+    {
+      "name": "Giấy tờ phải nộp để lưu giữ tại cơ quan đăng ký phương tiện:",
+      "component_count": 3,
+      "source_detail_id": "019d2bfe-3a86-717c-992c-1393a2f50382"
+    }
+  ],
+  "conditional_component_groups": [],
+  "default_test_scenario": {
+    "channel": "direct",
+    "applicant_submits_self": true,
+    "authorized": false,
+    "special_case_flags": [],
+    "selected_conditional_group": null,
+    "case_selection_method": "ordinary_direct_submission",
+    "case_status": "scenario_for_testing_not_a_legal_eligibility_decision"
+  },
+  "requirement_note": "required_as_published được giữ nguyên; false không chứng minh giấy tờ luôn tùy chọn. Các nhóm executionCases có thể là mục giấy tờ/hướng dẫn, không phải các phương án loại trừ nhau."
+}

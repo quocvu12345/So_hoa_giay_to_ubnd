@@ -1,0 +1,131 @@
+{
+  "id": "dvc-019f8e19-045a-72d1-bab5-9488acf9a9b5",
+  "procedure_code": "1.115970",
+  "name": "Đăng ký, cấp chứng nhận đăng ký xe, biển số xe",
+  "domain": "Đăng ký, quản lý phương tiện giao thông cơ giới, xe máy chuyên dùng",
+  "managing_agency": "Bộ Công an",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.481658+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019f8e19-045a-72d1-bab5-9488acf9a9b5",
+      "code": "1.115970",
+      "name": "Đăng ký, cấp chứng nhận đăng ký xe, biển số xe",
+      "state": "ACTIVE",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1784882399133,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019f8e19-045a-72d1-bab5-9488acf9a9b5",
+      "raw_path": "evidence/dvc/details/019f8e19-045a-72d1-bab5-9488acf9a9b5.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Giấy khai đăng ký xe (Mẫu ĐKX10/79 ban hành kèm theo Thông tư số 13/2025/TT-BCA ngày 28/02/2025).",
+          "component_code": "000.00.00.G01-KQ003678",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Giấy tờ của chủ xe theo quy định",
+          "component_code": "000.00.00.G01-KQ003679",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 3,
+          "name": "Giấy tờ của xe, gồm: Chứng nhận nguồn gốc xe; Chứng từ chuyển quyền sở hữu xe; Chứng từ hoàn thành nghĩa vụ tài chính; Chứng nhận đăng ký xe; Biển số xe; Chứng nhận thu hồi chứng nhận đăng ký xe, biển số xe; Giấy tờ cải tạo xe; Giấy tờ phục vụ đăng ký xe tạm thời; Các giấy tờ khác theo quy định của pháp luật về đăng ký xe",
+          "component_code": "000.00.00.G01-KQ003680",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 4,
+          "name": "Trường hợp cơ quan giải quyết thủ tục hành chính khai thác được thông tin trong cơ sở dữ liệu thì không yêu cầu người nộp hồ sơ cung cấp giấy tờ này",
+          "component_code": "000.00.00.G01-KQ003681",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c36-71b8-ad26-6f35bf85cb8a",
+          "name": "Giấy chứng nhận thu hồi đăng ký, biển số xe",
+          "code": "KQ.G01.000008"
+        },
+        {
+          "id": "019d2bb2-1c36-71b8-ad26-7a1a5bb90b94",
+          "name": "Giấy chứng nhận đăng ký xe tạm thời",
+          "code": "KQ.G01.000011"
+        },
+        {
+          "id": "019d2bb2-1c36-71b8-ad26-823bd08b7519",
+          "name": "Biển số xe tạm thời",
+          "code": "KQ.G01.000013"
+        },
+        {
+          "id": "019d2bb2-1c36-71b8-ad26-84b1d2d9bb7d",
+          "name": "Giấy chứng nhận đăng ký xe",
+          "code": "KQ.G01.000014"
+        },
+        {
+          "id": "019d2bb2-1c36-71b8-ad26-899dd4578864",
+          "name": "Biển số xe",
+          "code": "KQ.G01.000015"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019f8e17-f623-730d-81fb-0572cf565239",
+          "name": "Thông tư số 154/2025/TT-BTC ngày 31/12/2025 của Bộ Tài chính quy định mức thu, chế độ thu, nộp phí sát hạch lái xe, lệ phí cấp bằng, chứng chỉ được hoạt động trên các loại phương tiện và lệ phí đăng ký, cấp biển xe máy chuyên dùng",
+          "code": "154/2025/TT-BTC "
+        },
+        {
+          "id": "019f82b2-689c-7667-aa40-6ec8fb7fcd94",
+          "name": "Sửa đổi, bổ sung một số điều của 10 Luật có liên quan đến an ninh, trật tự",
+          "code": "118/2025/QH15"
+        },
+        {
+          "id": "019d2bb3-5d7b-7049-8fc6-ebb0bdb9e697",
+          "name": "Thông tư số 79/2024/TT-BCA ngày 15/11/2024 của Bộ trưởng Bộ Công an quy định về cấp, thu hồi chứng nhận đăng ký, biển số xe cơ giới, xe máy chuyên dùng.",
+          "code": "79/2024/TT-BCA"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b672-dfa7472cab6e",
+          "name": "Luật Trật tự, an toàn giao thông đường bộ",
+          "code": "36/2024/QH15"
+        },
+        {
+          "id": "019f1695-2ebe-754f-a8e5-1fd2704da6db",
+          "name": "Thông tư số 62/2026/TT-BCA ngày 18/5/2026 quy định về phân cấp, cắt giảm, đơn giản hóa thủ tục hành chính thuộc phạm vi quản lý của Bộ Công an",
+          "code": "62/2026/TT-BCA "
+        },
+        {
+          "id": "019f8e18-f3be-7784-9d1c-92aaad9fcd73",
+          "name": "Thông tư số 155/2025/TT-BTC ngày 31/12/2025 của Bộ Tài chính quy định mức thu, chế độ thu, nộp, miễn lệ phí đăng ký, cấp biển phương tiện giao thông",
+          "code": "155/2025/TT-BTC "
+        }
+      ]
+    }
+  ]
+}

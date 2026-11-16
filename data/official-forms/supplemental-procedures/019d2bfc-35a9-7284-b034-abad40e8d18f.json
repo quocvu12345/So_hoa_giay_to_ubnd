@@ -1,0 +1,276 @@
+{
+  "id": "dvc-019d2bfc-35a9-7284-b034-abad40e8d18f",
+  "procedure_code": "1.007742",
+  "name": "Thủ tục hải quan đối với hàng hóa xuất khẩu, nhập khẩu theo quyền xuất khẩu, quyền nhập khẩu, quyền phân phối của doanh nghiệp chế xuất",
+  "domain": "Hải quan",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.953691+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfc-35a9-7284-b034-abad40e8d18f",
+      "code": "1.007742",
+      "name": "Thủ tục hải quan đối với hàng hóa xuất khẩu, nhập khẩu theo quyền xuất khẩu, quyền nhập khẩu, quyền phân phối của doanh nghiệp chế xuất",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1775639773794,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-35a9-7284-b034-abad40e8d18f",
+      "raw_path": "evidence/dvc/details/019d2bfc-35a9-7284-b034-abad40e8d18f.json",
+      "components": [
+        {
+          "section": "Đối với hàng hóa nhập khẩu:",
+          "position": 1,
+          "name": "Tờ khai trị giá: Người khai hải quan khai tờ khai trị giá theo mẫu, gửi đến Hệ thống dưới dạng dữ liệu điện tử hoặc nộp cho cơ quan hải quan 02 bản chính đối với trường hợp khai trên tờ khai hải quan giấy. Các trường hợp phải khai tờ khai trị giá và mẫu tờ khai trị giá thực hiện theo quy định tại Thông tư số 39/2015/TT-BTC;",
+          "component_code": "000.00.00.G12-KQ012613",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Đối với hàng hóa nhập khẩu:",
+          "position": 2,
+          "name": "Chứng từ chứng nhận xuất xứ hàng hóa theo quy định tại Thông tư của Bộ trưởng Bộ Tài chính quy định về xác định xuất xứ hàng hóa xuất khẩu, nhập khẩu",
+          "component_code": "000.00.00.G12-KQ012614",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Đối với hàng hóa nhập khẩu:",
+          "position": 3,
+          "name": "Giấy phép nhập khẩu hoặc văn bản cho phép nhập khẩu của cơ quan có thẩm quyền theo quy định của pháp luật về ngoại thương và thương mại đối với hàng hóa phải có giấy phép nhập khẩu; Giấy phép nhập khẩu theo hạn ngạch hoặc văn bản thông báo giao quyền sử dụng hạn ngạch thuế quan nhập khẩu:",
+          "component_code": "000.00.00.G12-KQ012610",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Đối với hàng hóa nhập khẩu:",
+          "position": 4,
+          "name": "Bảng kê lâm sản đối với gỗ nguyên liệu nhập khẩu quy định của Bộ Nông nghiệp và Phát triển nông thôn",
+          "component_code": "000.00.00.G12-KQ012609",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Đối với hàng hóa nhập khẩu:",
+          "position": 5,
+          "name": "Hóa đơn thương mại hoặc chứng từ có giá trị tương đương trong trường hợp người mua phải thanh toán cho người bán",
+          "component_code": "000.00.00.G12-KQ012607",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Đối với hàng hóa nhập khẩu:",
+          "position": 6,
+          "name": "Hợp đồng ủy thác",
+          "component_code": "000.00.00.G12-KQ012616",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Đối với hàng hóa nhập khẩu:",
+          "position": 7,
+          "name": "Hợp đồng bán hàng cho trường học, viện nghiên cứu hoặc hợp đồng cung cấp hàng hóa hoặc hợp đồng cung cấp dịch vụ đối với thiết bị, dụng cụ chuyên dùng cho giảng dạy, nghiên cứu, thí nghiệm khoa học đối với trường hợp hàng hóa nhập khẩu được áp dụng thuế suất thuế giá trị gia tăng 5% theo quy định của Luật Thuế giá trị gia tăng:",
+          "component_code": "000.00.00.G12-KQ012617",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Đối với hàng hóa nhập khẩu:",
+          "position": 8,
+          "name": "Chứng từ chứng minh tổ chức, cá nhân đủ điều kiện nhập khẩu hàng hóa theo quy định của pháp luật về đầu tư",
+          "component_code": "000.00.00.G12-KQ012612",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Đối với hàng hóa nhập khẩu:",
+          "position": 9,
+          "name": "Giấy chứng nhận kiểm tra chuyên ngành",
+          "component_code": "000.00.00.G12-KQ012611",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Đối với hàng hóa nhập khẩu:",
+          "position": 10,
+          "name": "Tờ khai hải quan theo các chỉ tiêu thông tin quy định tại mẫu số 01 Phụ lục ban hành kèm Thông tư 38/2015/TT-BTC ngày 25/3/2015 của Bộ Tài chính (đã sửa đổi, bổ sung tại Phụ lục I ban hành kèm Thông tư 39/2018/TT-BTC ngày 20/4/2018).",
+          "component_code": "000.00.00.G12-KQ012606",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Đối với hàng hóa nhập khẩu:",
+          "position": 11,
+          "name": "Vận đơn hoặc các chứng từ vận tải khác có giá trị tương đương đối với trường hợp hàng hóa vận chuyển bằng đường biển, đường hàng không, đường sắt, vận tải đa phương thức theo quy định của pháp luật (trừ hàng hoá nhập khẩu qua cửa khẩu biên giới đường bộ, hàng hoá mua bán giữa khu phi thuế quan và nội địa, hàng hóa nhập khẩu do người nhập cảnh mang theo đường hành lý)",
+          "component_code": "000.00.00.G12-KQ012608",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Đối với hàng hóa nhập khẩu:",
+          "position": 12,
+          "name": "Danh mục máy móc, thiết bị trong trường hợp phân loại máy liên hợp hoặc tổ hợp máy thuộc các Chương 84, Chương 85 và Chương 90 của Danh mục hàng hóa xuất khẩu, nhập khẩu Việt Nam hoặc phân loại máy móc, thiết bị ở dạng chưa lắp ráp hoặc tháo rời",
+          "component_code": "000.00.00.G12-KQ012615",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Đối với hàng hóa xuất khẩu:",
+          "position": 1,
+          "name": "Bảng kê lâm sản đối với gỗ nguyên liệu xuất khẩu theo quy định của Bộ Nông nghiệp và Phát triển nông thôn",
+          "component_code": "000.00.00.G12-KQ012620",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Đối với hàng hóa xuất khẩu:",
+          "position": 2,
+          "name": "Tờ khai hải quan theo các chỉ tiêu thông tin quy định tại mẫu số 02 Phụ lục II ban hành kèm Thông tư 38/2015/TT-BTC ngày 25/3/2015 của Bộ Tài chính (đã sửa đổi, bổ sung tại Phụ lục I ban hành kèm Thông tư 39/2018/TT-BTC ngày 20/4/2018).",
+          "component_code": "000.00.00.G12-KQ012618",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Đối với hàng hóa xuất khẩu:",
+          "position": 3,
+          "name": "Giấy thông báo miễn kiểm tra hoặc giấy thông báo kết quả kiểm tra chuyên ngành hoặc chứng từ khác theo quy định của pháp luật về quản lý, kiểm tra chuyên ngành (sau đây gọi tắt là Giấy chứng nhận kiểm tra chuyên ngành)",
+          "component_code": "000.00.00.G12-KQ012622",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Đối với hàng hóa xuất khẩu:",
+          "position": 4,
+          "name": "Giấy phép xuất khẩu hoặc văn bản cho phép xuất khẩu của cơ quan có thẩm quyền theo pháp luật về quản lý ngoại thương đối với hàng hóa xuất khẩu thuộc diện quản lý theo giấy phép",
+          "component_code": "000.00.00.G12-KQ012621",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Đối với hàng hóa xuất khẩu:",
+          "position": 5,
+          "name": "Hóa đơn thương mại hoặc chứng từ có giá trị tương đương trong trường hợp người mua phải thanh toán cho người bán",
+          "component_code": "000.00.00.G12-KQ012619",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Đối với hàng hóa xuất khẩu:",
+          "position": 6,
+          "name": "Hợp đồng ủy thác",
+          "component_code": "000.00.00.G12-KQ012624",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Đối với hàng hóa xuất khẩu:",
+          "position": 7,
+          "name": "Chứng từ chứng minh tổ chức, cá nhân đủ điều kiện xuất khẩu hàng hóa theo quy định của pháp luật về đầu tư",
+          "component_code": "000.00.00.G12-KQ012623",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c70-724b-96e0-46e541515789",
+          "name": "Thông quan hàng hóa nhập khẩu, xuất khẩu",
+          "code": "KQ.G12.000584"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7e-72d1-afe7-9c25863596db",
+          "name": "Nghị định 08/2015/NĐ-CP",
+          "code": "08/2015/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b671-3e47e4d388c3",
+          "name": "Luật quản lý ngoại thương",
+          "code": "05/2017/QH14"
+        },
+        {
+          "id": "019d2bb3-5d7d-7398-be4d-1c6dbc289d7a",
+          "name": "Quy định về thủ tục hải quan; kiểm tra, giám sát hải quan; thuế xuất khẩu thuế nhập khẩu và quản lý thuế đối vớỉ hàng hoá xuất khẩu, nhập khẩu.",
+          "code": "38/2015/TT-BTC"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b673-5f4f0ddd4079",
+          "name": "Luật 51/2005/QH11",
+          "code": "51/2005/QH11"
+        },
+        {
+          "id": "019d2bb3-5d7d-7398-be4d-ff62cdf67da5",
+          "name": "Luật 54/2014/QH13",
+          "code": "54/2014/QH13"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afe9-f48394345185",
+          "name": "Nghị định Quy định chi tiết thi hành một số điều của Luật Tiêu chuẩn và Quy chuẩn kỹ thuật",
+          "code": "127/2007/NĐ-CP"
+        }
+      ]
+    }
+  ]
+}

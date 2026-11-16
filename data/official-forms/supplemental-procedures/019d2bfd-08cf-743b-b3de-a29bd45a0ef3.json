@@ -1,0 +1,421 @@
+{
+  "id": "dvc-019d2bfd-08cf-743b-b3de-a29bd45a0ef3",
+  "procedure_code": "3.000115",
+  "name": "Thủ tục nộp tiền vào ngân sách nhà nước",
+  "domain": "Kho bạc Nhà nước",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.899317+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfd-08cf-743b-b3de-a29bd45a0ef3",
+      "code": "3.000115",
+      "name": "Thủ tục nộp tiền vào ngân sách nhà nước",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1793587868206,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfd-08cf-743b-b3de-a29bd45a0ef3",
+      "raw_path": "evidence/dvc/details/019d2bfd-08cf-743b-b3de-a29bd45a0ef3.json",
+      "components": [
+        {
+          "section": "Thành phần hồ sơ",
+          "position": 1,
+          "name": "Văn bản của cơ quan có thẩm quyền về việc yêu cầu nộp tiền vào ngân sách nhà nước  hoặc chứng từ nộp ngân sách nhà nước. Trong trường hợp người nộp giao dịch với Kho bạc Nhà nước, Kho bạc Nhà nước không yêu cầu cá nhân, tổ chức nộp khi Kho bạc Nhà nước khai thác được thông tin về dữ liệu trên Cơ sở dữ liệu xử lý vi phạm hành chính do Bộ Công an chủ quản.",
+          "component_code": "G12.12.0013",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Thành phần hồ sơ",
+          "position": 2,
+          "name": "a) Bảng kê nộp thuế.",
+          "component_code": "G12.12.0001",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Thành phần hồ sơ",
+          "position": 3,
+          "name": "b) Giấy nộp tiền vào ngân sách nhà nước.",
+          "component_code": "G12.12.0002",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "01a19a20-dbf3-71ed-894b-53dd198e3a90",
+              "fileName": "Mẫu số 02.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/01a19a20-dbf3-71ed-894b-53dd198e3a90/Mẫu số 02.docx"
+            }
+          ]
+        },
+        {
+          "section": "Thành phần hồ sơ",
+          "position": 4,
+          "name": "c) Giấy nộp tiền phí, lệ phí, phạt vi phạm hành chính.",
+          "component_code": "G12.12.0003",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "01a19a21-3e3b-777f-85f3-98fd482c3aad",
+              "fileName": "Mẫu số 03.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/01a19a21-3e3b-777f-85f3-98fd482c3aad/Mẫu số 03.docx"
+            }
+          ]
+        },
+        {
+          "section": "Thành phần hồ sơ",
+          "position": 5,
+          "name": "d) Biên lai thu thuế, phí, lệ phí in sẵn mệnh giá.",
+          "component_code": "G12.12.0004",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "01a19a21-cdb4-723d-bea4-722e6f1df828",
+              "fileName": "Mẫu số 04.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/01a19a21-cdb4-723d-bea4-722e6f1df828/Mẫu số 04.docx"
+            }
+          ]
+        },
+        {
+          "section": "Thành phần hồ sơ",
+          "position": 6,
+          "name": "đ) Biên lai thu thuế, phí, lệ phí không in sẵn mệnh giá.",
+          "component_code": "G12.12.0005",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "01a19a22-4096-71cd-8059-60ee696923af",
+              "fileName": "Mẫu số 05.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/01a19a22-4096-71cd-8059-60ee696923af/Mẫu số 05.docx"
+            }
+          ]
+        },
+        {
+          "section": "Thành phần hồ sơ",
+          "position": 7,
+          "name": "e) Biên lai thu phạt vi phạm hành chính in sẵn mệnh giá.",
+          "component_code": "G12.12.0007",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "01a19a22-a623-75f9-8d8b-5f43661458f2",
+              "fileName": "Mẫu số 06.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/01a19a22-a623-75f9-8d8b-5f43661458f2/Mẫu số 06.docx"
+            }
+          ]
+        },
+        {
+          "section": "Thành phần hồ sơ",
+          "position": 8,
+          "name": "g) Biên lai thu phạt vi phạm hành chính không in sẵn mệnh giá. Chứng từ nộp ngân sách nhà nước quy định tại điểm h, i mục (4.1) phần (4) thủ tục này: 02 bản gốc (trừ trường hợp thực hiện khấu trừ thuế giá trị gia tăng hoặc trường hợp đơn vị giao dịch và nhà cung cấp hàng hóa, dịch vụ cùng mở tài khoản tại một đơn vị Kho bạc Nhà nước thì số lượng là 03 bản gốc).",
+          "component_code": "G12.12.0008",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "01a19a23-0ef5-7385-8a86-a56666268e9a",
+              "fileName": "Mẫu số 07.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/01a19a23-0ef5-7385-8a86-a56666268e9a/Mẫu số 07.docx"
+            }
+          ]
+        },
+        {
+          "section": "Thành phần hồ sơ",
+          "position": 9,
+          "name": "h) Giấy rút dự toán ngân sách nhà nước (kèm theo nộp ngân sách nhà nước). Chứng từ nộp ngân sách nhà nước quy định tại điểm h, i mục (4.1) phần (4) thủ tục này: 02 bản gốc (trừ trường hợp thực hiện khấu trừ thuế giá trị gia tăng hoặc trường hợp đơn vị giao dịch và nhà cung cấp hàng hóa, dịch vụ cùng mở tài khoản tại một đơn vị Kho bạc Nhà nước thì số lượng là 03 bản gốc).",
+          "component_code": "G12.12.0009",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "01a19a24-5343-763c-b113-3f0d4dc5d965",
+              "fileName": "Mẫu số 14.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/01a19a24-5343-763c-b113-3f0d4dc5d965/Mẫu số 14.docx"
+            }
+          ]
+        },
+        {
+          "section": "Thành phần hồ sơ",
+          "position": 10,
+          "name": "i) Ủy nhiệm chi (kèm theo nộp ngân sách nhà nước).",
+          "component_code": "G12.12.0010",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "01a19a24-a0da-7244-ba78-8be4d09ae87a",
+              "fileName": "Mẫu số 18.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/01a19a24-a0da-7244-ba78-8be4d09ae87a/Mẫu số 18.docx"
+            }
+          ]
+        },
+        {
+          "section": "Thành phần hồ sơ",
+          "position": 11,
+          "name": "k) Chứng từ chứng nhận nộp tiền vào ngân sách nhà nước của doanh nghiệp cung ứng dịch vụ bưu chính công ích.",
+          "component_code": "G12.12.0011",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Thành phần hồ sơ",
+          "position": 12,
+          "name": "l) Chứng từ giao dịch của ngân hàng/tổ chức cung ứng dịch vụ trung gian thanh toán hoặc tổ chức khác theo quy định của pháp luật mà người nộp lựa chọn để nộp tiền vào ngân sách nhà nước.",
+          "component_code": "G12.12.0012",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Trường hợp nộp ngân sách nhà nước theo phương thức trực tiếp: Văn bản của cơ quan có thẩm quyền về việc yêu cầu nộp tiền vào ngân sách nhà nước: 01 bản (bản chính hoặc bản photo). Chứng từ nộp ngân sách nhà nước quy định tại điểm a, b, c, d, đ, e, g, k, l mục (4.1) phần (4) thủ tục này: 01 bản gốc (trừ trường hợp nộp ngân sách nhà nước trực tiếp tại ngân hàng chưa tham gia phối hợp thu ngân sách nhà nước với các cơ quan trong ngành tài chính thì số lượng là 02 bản gốc). Chứng từ nộp ngân sách nhà nước quy định tại điểm h, i mục (4.1) phần (4) thủ tục này: 02 bản gốc (trừ trường hợp thực hiện khấu trừ thuế giá trị gia tăng hoặc trường hợp đơn vị giao dịch và nhà cung cấp hàng hóa, dịch vụ cùng mở tài khoản tại một đơn vị Kho bạc Nhà nước thì số lượng là 03 bản gốc).",
+          "position": 1,
+          "name": "Văn bản của cơ quan có thẩm quyền về việc yêu cầu nộp tiền vào ngân sách nhà nước  hoặc chứng từ nộp ngân sách nhà nước. Trong trường hợp người nộp giao dịch với Kho bạc Nhà nước, Kho bạc Nhà nước không yêu cầu cá nhân, tổ chức nộp khi Kho bạc Nhà nước khai thác được thông tin về dữ liệu trên Cơ sở dữ liệu xử lý vi phạm hành chính do Bộ Công an chủ quản.",
+          "component_code": "G12.12.0013",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Trường hợp nộp ngân sách nhà nước theo phương thức trực tiếp: Văn bản của cơ quan có thẩm quyền về việc yêu cầu nộp tiền vào ngân sách nhà nước: 01 bản (bản chính hoặc bản photo). Chứng từ nộp ngân sách nhà nước quy định tại điểm a, b, c, d, đ, e, g, k, l mục (4.1) phần (4) thủ tục này: 01 bản gốc (trừ trường hợp nộp ngân sách nhà nước trực tiếp tại ngân hàng chưa tham gia phối hợp thu ngân sách nhà nước với các cơ quan trong ngành tài chính thì số lượng là 02 bản gốc). Chứng từ nộp ngân sách nhà nước quy định tại điểm h, i mục (4.1) phần (4) thủ tục này: 02 bản gốc (trừ trường hợp thực hiện khấu trừ thuế giá trị gia tăng hoặc trường hợp đơn vị giao dịch và nhà cung cấp hàng hóa, dịch vụ cùng mở tài khoản tại một đơn vị Kho bạc Nhà nước thì số lượng là 03 bản gốc).",
+          "position": 2,
+          "name": "a) Bảng kê nộp thuế.",
+          "component_code": "G12.12.0001",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Trường hợp nộp ngân sách nhà nước theo phương thức trực tiếp: Văn bản của cơ quan có thẩm quyền về việc yêu cầu nộp tiền vào ngân sách nhà nước: 01 bản (bản chính hoặc bản photo). Chứng từ nộp ngân sách nhà nước quy định tại điểm a, b, c, d, đ, e, g, k, l mục (4.1) phần (4) thủ tục này: 01 bản gốc (trừ trường hợp nộp ngân sách nhà nước trực tiếp tại ngân hàng chưa tham gia phối hợp thu ngân sách nhà nước với các cơ quan trong ngành tài chính thì số lượng là 02 bản gốc). Chứng từ nộp ngân sách nhà nước quy định tại điểm h, i mục (4.1) phần (4) thủ tục này: 02 bản gốc (trừ trường hợp thực hiện khấu trừ thuế giá trị gia tăng hoặc trường hợp đơn vị giao dịch và nhà cung cấp hàng hóa, dịch vụ cùng mở tài khoản tại một đơn vị Kho bạc Nhà nước thì số lượng là 03 bản gốc).",
+          "position": 3,
+          "name": "b) Giấy nộp tiền vào ngân sách nhà nước.",
+          "component_code": "G12.12.0002",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "01a19a20-dbf3-71ed-894b-53dd198e3a90",
+              "fileName": "Mẫu số 02.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/01a19a20-dbf3-71ed-894b-53dd198e3a90/Mẫu số 02.docx"
+            }
+          ]
+        },
+        {
+          "section": "Trường hợp nộp ngân sách nhà nước theo phương thức trực tiếp: Văn bản của cơ quan có thẩm quyền về việc yêu cầu nộp tiền vào ngân sách nhà nước: 01 bản (bản chính hoặc bản photo). Chứng từ nộp ngân sách nhà nước quy định tại điểm a, b, c, d, đ, e, g, k, l mục (4.1) phần (4) thủ tục này: 01 bản gốc (trừ trường hợp nộp ngân sách nhà nước trực tiếp tại ngân hàng chưa tham gia phối hợp thu ngân sách nhà nước với các cơ quan trong ngành tài chính thì số lượng là 02 bản gốc). Chứng từ nộp ngân sách nhà nước quy định tại điểm h, i mục (4.1) phần (4) thủ tục này: 02 bản gốc (trừ trường hợp thực hiện khấu trừ thuế giá trị gia tăng hoặc trường hợp đơn vị giao dịch và nhà cung cấp hàng hóa, dịch vụ cùng mở tài khoản tại một đơn vị Kho bạc Nhà nước thì số lượng là 03 bản gốc).",
+          "position": 4,
+          "name": "c) Giấy nộp tiền phí, lệ phí, phạt vi phạm hành chính.",
+          "component_code": "G12.12.0003",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "01a19a21-3e3b-777f-85f3-98fd482c3aad",
+              "fileName": "Mẫu số 03.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/01a19a21-3e3b-777f-85f3-98fd482c3aad/Mẫu số 03.docx"
+            }
+          ]
+        },
+        {
+          "section": "Trường hợp nộp ngân sách nhà nước theo phương thức trực tiếp: Văn bản của cơ quan có thẩm quyền về việc yêu cầu nộp tiền vào ngân sách nhà nước: 01 bản (bản chính hoặc bản photo). Chứng từ nộp ngân sách nhà nước quy định tại điểm a, b, c, d, đ, e, g, k, l mục (4.1) phần (4) thủ tục này: 01 bản gốc (trừ trường hợp nộp ngân sách nhà nước trực tiếp tại ngân hàng chưa tham gia phối hợp thu ngân sách nhà nước với các cơ quan trong ngành tài chính thì số lượng là 02 bản gốc). Chứng từ nộp ngân sách nhà nước quy định tại điểm h, i mục (4.1) phần (4) thủ tục này: 02 bản gốc (trừ trường hợp thực hiện khấu trừ thuế giá trị gia tăng hoặc trường hợp đơn vị giao dịch và nhà cung cấp hàng hóa, dịch vụ cùng mở tài khoản tại một đơn vị Kho bạc Nhà nước thì số lượng là 03 bản gốc).",
+          "position": 5,
+          "name": "d) Biên lai thu thuế, phí, lệ phí in sẵn mệnh giá.",
+          "component_code": "G12.12.0004",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "01a19a21-cdb4-723d-bea4-722e6f1df828",
+              "fileName": "Mẫu số 04.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/01a19a21-cdb4-723d-bea4-722e6f1df828/Mẫu số 04.docx"
+            }
+          ]
+        },
+        {
+          "section": "Trường hợp nộp ngân sách nhà nước theo phương thức trực tiếp: Văn bản của cơ quan có thẩm quyền về việc yêu cầu nộp tiền vào ngân sách nhà nước: 01 bản (bản chính hoặc bản photo). Chứng từ nộp ngân sách nhà nước quy định tại điểm a, b, c, d, đ, e, g, k, l mục (4.1) phần (4) thủ tục này: 01 bản gốc (trừ trường hợp nộp ngân sách nhà nước trực tiếp tại ngân hàng chưa tham gia phối hợp thu ngân sách nhà nước với các cơ quan trong ngành tài chính thì số lượng là 02 bản gốc). Chứng từ nộp ngân sách nhà nước quy định tại điểm h, i mục (4.1) phần (4) thủ tục này: 02 bản gốc (trừ trường hợp thực hiện khấu trừ thuế giá trị gia tăng hoặc trường hợp đơn vị giao dịch và nhà cung cấp hàng hóa, dịch vụ cùng mở tài khoản tại một đơn vị Kho bạc Nhà nước thì số lượng là 03 bản gốc).",
+          "position": 6,
+          "name": "đ) Biên lai thu thuế, phí, lệ phí không in sẵn mệnh giá.",
+          "component_code": "G12.12.0005",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "01a19a22-4096-71cd-8059-60ee696923af",
+              "fileName": "Mẫu số 05.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/01a19a22-4096-71cd-8059-60ee696923af/Mẫu số 05.docx"
+            }
+          ]
+        },
+        {
+          "section": "Trường hợp nộp ngân sách nhà nước theo phương thức trực tiếp: Văn bản của cơ quan có thẩm quyền về việc yêu cầu nộp tiền vào ngân sách nhà nước: 01 bản (bản chính hoặc bản photo). Chứng từ nộp ngân sách nhà nước quy định tại điểm a, b, c, d, đ, e, g, k, l mục (4.1) phần (4) thủ tục này: 01 bản gốc (trừ trường hợp nộp ngân sách nhà nước trực tiếp tại ngân hàng chưa tham gia phối hợp thu ngân sách nhà nước với các cơ quan trong ngành tài chính thì số lượng là 02 bản gốc). Chứng từ nộp ngân sách nhà nước quy định tại điểm h, i mục (4.1) phần (4) thủ tục này: 02 bản gốc (trừ trường hợp thực hiện khấu trừ thuế giá trị gia tăng hoặc trường hợp đơn vị giao dịch và nhà cung cấp hàng hóa, dịch vụ cùng mở tài khoản tại một đơn vị Kho bạc Nhà nước thì số lượng là 03 bản gốc).",
+          "position": 7,
+          "name": "e) Biên lai thu phạt vi phạm hành chính in sẵn mệnh giá.",
+          "component_code": "G12.12.0007",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "01a19a22-a623-75f9-8d8b-5f43661458f2",
+              "fileName": "Mẫu số 06.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/01a19a22-a623-75f9-8d8b-5f43661458f2/Mẫu số 06.docx"
+            }
+          ]
+        },
+        {
+          "section": "Trường hợp nộp ngân sách nhà nước theo phương thức trực tiếp: Văn bản của cơ quan có thẩm quyền về việc yêu cầu nộp tiền vào ngân sách nhà nước: 01 bản (bản chính hoặc bản photo). Chứng từ nộp ngân sách nhà nước quy định tại điểm a, b, c, d, đ, e, g, k, l mục (4.1) phần (4) thủ tục này: 01 bản gốc (trừ trường hợp nộp ngân sách nhà nước trực tiếp tại ngân hàng chưa tham gia phối hợp thu ngân sách nhà nước với các cơ quan trong ngành tài chính thì số lượng là 02 bản gốc). Chứng từ nộp ngân sách nhà nước quy định tại điểm h, i mục (4.1) phần (4) thủ tục này: 02 bản gốc (trừ trường hợp thực hiện khấu trừ thuế giá trị gia tăng hoặc trường hợp đơn vị giao dịch và nhà cung cấp hàng hóa, dịch vụ cùng mở tài khoản tại một đơn vị Kho bạc Nhà nước thì số lượng là 03 bản gốc).",
+          "position": 8,
+          "name": "g) Biên lai thu phạt vi phạm hành chính không in sẵn mệnh giá. Chứng từ nộp ngân sách nhà nước quy định tại điểm h, i mục (4.1) phần (4) thủ tục này: 02 bản gốc (trừ trường hợp thực hiện khấu trừ thuế giá trị gia tăng hoặc trường hợp đơn vị giao dịch và nhà cung cấp hàng hóa, dịch vụ cùng mở tài khoản tại một đơn vị Kho bạc Nhà nước thì số lượng là 03 bản gốc).",
+          "component_code": "G12.12.0008",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "01a19a23-0ef5-7385-8a86-a56666268e9a",
+              "fileName": "Mẫu số 07.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/01a19a23-0ef5-7385-8a86-a56666268e9a/Mẫu số 07.docx"
+            }
+          ]
+        },
+        {
+          "section": "Trường hợp nộp ngân sách nhà nước theo phương thức trực tiếp: Văn bản của cơ quan có thẩm quyền về việc yêu cầu nộp tiền vào ngân sách nhà nước: 01 bản (bản chính hoặc bản photo). Chứng từ nộp ngân sách nhà nước quy định tại điểm a, b, c, d, đ, e, g, k, l mục (4.1) phần (4) thủ tục này: 01 bản gốc (trừ trường hợp nộp ngân sách nhà nước trực tiếp tại ngân hàng chưa tham gia phối hợp thu ngân sách nhà nước với các cơ quan trong ngành tài chính thì số lượng là 02 bản gốc). Chứng từ nộp ngân sách nhà nước quy định tại điểm h, i mục (4.1) phần (4) thủ tục này: 02 bản gốc (trừ trường hợp thực hiện khấu trừ thuế giá trị gia tăng hoặc trường hợp đơn vị giao dịch và nhà cung cấp hàng hóa, dịch vụ cùng mở tài khoản tại một đơn vị Kho bạc Nhà nước thì số lượng là 03 bản gốc).",
+          "position": 9,
+          "name": "k) Chứng từ chứng nhận nộp tiền vào ngân sách nhà nước của doanh nghiệp cung ứng dịch vụ bưu chính công ích.",
+          "component_code": "G12.12.0011",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Trường hợp nộp ngân sách nhà nước theo phương thức trực tiếp: Văn bản của cơ quan có thẩm quyền về việc yêu cầu nộp tiền vào ngân sách nhà nước: 01 bản (bản chính hoặc bản photo). Chứng từ nộp ngân sách nhà nước quy định tại điểm a, b, c, d, đ, e, g, k, l mục (4.1) phần (4) thủ tục này: 01 bản gốc (trừ trường hợp nộp ngân sách nhà nước trực tiếp tại ngân hàng chưa tham gia phối hợp thu ngân sách nhà nước với các cơ quan trong ngành tài chính thì số lượng là 02 bản gốc). Chứng từ nộp ngân sách nhà nước quy định tại điểm h, i mục (4.1) phần (4) thủ tục này: 02 bản gốc (trừ trường hợp thực hiện khấu trừ thuế giá trị gia tăng hoặc trường hợp đơn vị giao dịch và nhà cung cấp hàng hóa, dịch vụ cùng mở tài khoản tại một đơn vị Kho bạc Nhà nước thì số lượng là 03 bản gốc).",
+          "position": 10,
+          "name": "l) Chứng từ giao dịch của ngân hàng/tổ chức cung ứng dịch vụ trung gian thanh toán hoặc tổ chức khác theo quy định của pháp luật mà người nộp lựa chọn để nộp tiền vào ngân sách nhà nước.",
+          "component_code": "G12.12.0012",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Trường hợp nộp ngân sách nhà nước theo phương thức trực tiếp: Văn bản của cơ quan có thẩm quyền về việc yêu cầu nộp tiền vào ngân sách nhà nước: 01 bản (bản chính hoặc bản photo). Chứng từ nộp ngân sách nhà nước quy định tại điểm a, b, c, d, đ, e, g, k, l mục (4.1) phần (4) thủ tục này: 01 bản gốc (trừ trường hợp nộp ngân sách nhà nước trực tiếp tại ngân hàng chưa tham gia phối hợp thu ngân sách nhà nước với các cơ quan trong ngành tài chính thì số lượng là 02 bản gốc). Chứng từ nộp ngân sách nhà nước quy định tại điểm h, i mục (4.1) phần (4) thủ tục này: 02 bản gốc (trừ trường hợp thực hiện khấu trừ thuế giá trị gia tăng hoặc trường hợp đơn vị giao dịch và nhà cung cấp hàng hóa, dịch vụ cùng mở tài khoản tại một đơn vị Kho bạc Nhà nước thì số lượng là 03 bản gốc).",
+          "position": 11,
+          "name": "h) Giấy rút dự toán ngân sách nhà nước (kèm theo nộp ngân sách nhà nước). Chứng từ nộp ngân sách nhà nước quy định tại điểm h, i mục (4.1) phần (4) thủ tục này: 02 bản gốc (trừ trường hợp thực hiện khấu trừ thuế giá trị gia tăng hoặc trường hợp đơn vị giao dịch và nhà cung cấp hàng hóa, dịch vụ cùng mở tài khoản tại một đơn vị Kho bạc Nhà nước thì số lượng là 03 bản gốc).",
+          "component_code": "G12.12.0009",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "01a19a24-5343-763c-b113-3f0d4dc5d965",
+              "fileName": "Mẫu số 14.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/01a19a24-5343-763c-b113-3f0d4dc5d965/Mẫu số 14.docx"
+            }
+          ]
+        },
+        {
+          "section": "Trường hợp nộp ngân sách nhà nước theo phương thức điện tử",
+          "position": 1,
+          "name": "01 bản chứng từ nộp ngân sách nhà nước được lập trên môi trường điện tử theo quy định của pháp luật.",
+          "component_code": "G12.12.0014",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "01a19a0c-003b-74da-97ec-708d6fa8378f",
+          "name": "Chứng từ nộp ngân sách nhà nước bằng văn bản giấy",
+          "code": "KQ.G12.001359"
+        },
+        {
+          "id": "01a19a0c-5d3b-716b-883d-e56f5623c50a",
+          "name": "Chứng từ nộp ngân sách nhà nước bằng văn bản điện tử",
+          "code": "KQ.G12.001358"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7f-719e-b46c-e7d7a9d8616c",
+          "name": "Nghị định số 347/2025/NĐ-CP của Chính phủ: Quy định về thủ tục hành chính thuộc lĩnh vực Kho bạc Nhà nước",
+          "code": "347/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7f-719e-b470-22af3c5ee091",
+          "name": "Nghị quyết số 66.7/2025/NQ-CP của Chính phủ: Quy định cắt giảm, đơn giản hóa thủ tục hành chính dựa trên dữ liệu",
+          "code": "66.7/2025/NQ-CP"
+        }
+      ]
+    }
+  ]
+}

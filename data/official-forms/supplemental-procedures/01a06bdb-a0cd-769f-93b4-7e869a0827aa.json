@@ -1,0 +1,88 @@
+{
+  "id": "dvc-01a06bdb-a0cd-769f-93b4-7e869a0827aa",
+  "procedure_code": "1.116557",
+  "name": "Thủ tục cung cấp thông tin theo yêu cầu (dành cho công dân thông qua tổ chức, đoàn thể, doanh nghiệp)",
+  "domain": "Tiếp cận thông tin",
+  "managing_agency": "Bộ Tư pháp",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.471921+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "01a06bdb-a0cd-769f-93b4-7e869a0827aa",
+      "code": "1.116557",
+      "name": "Thủ tục cung cấp thông tin theo yêu cầu (dành cho công dân thông qua tổ chức, đoàn thể, doanh nghiệp)",
+      "state": "ACTIVE",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1791796768120,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/01a06bdb-a0cd-769f-93b4-7e869a0827aa",
+      "raw_path": "evidence/dvc/details/01a06bdb-a0cd-769f-93b4-7e869a0827aa.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Phiếu yêu cầu cung cấp thông tin (dành cho trường hợp công dân yêu cầu cung cấp thông tin qua tổ chức, đoàn thể, doanh nghiệp) theo Mẫu số 01b ban hành kèm theo Nghị định số 337/2026/NĐ-CP ngày 26 tháng 8 năm 2026 của Chính phủ quy định chi tiết một số điều và biện pháp thi hành Luật Tiếp cận thông tin",
+          "component_code": "TP-G15.33-1000027",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "01a06bda-6516-7338-8c63-65359d137aba",
+              "fileName": "Mẫu 01b.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/01a06bda-6516-7338-8c63-65359d137aba/Mẫu 01b.docx"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Văn bản chấp thuận theo Mẫu số 06 ban hành kèm theo Nghị định số 337/2026/NĐ-CP ngày 26 tháng 8 năm 2026 của Chính phủ quy định chi tiết một số điều và biện pháp thi hành Luật Tiếp cận thông tin (trường hợp yêu cầu cung cấp thông tin quy định tại khoản 1 và khoản 2 Điều 16 của Luật Tiếp cận thông tin)",
+          "component_code": "TP-G15.33-1000024",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "01a06bc6-d090-73fa-b2be-7f3128a2ca06",
+              "fileName": "Mẫu 06_VB chấp thuận.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/01a06bc6-d090-73fa-b2be-7f3128a2ca06/Mẫu 06_VB chấp thuận.docx"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "id": "01a06bc7-f746-72e7-a5a6-65d4b69a9543",
+          "name": "Thông báo giải quyết yêu cầu cung cấp thông tin hoặc Thông báo từ chối yêu cầu cung cấp thông tin.",
+          "code": "KQ.G15.99714"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "01a06bca-aaec-76e8-8d5c-7a8c2bc397da",
+          "name": "Luật Tiếp cận thông tin số 01/2026/QH16",
+          "code": "01/2026/QH16"
+        },
+        {
+          "id": "01a06bcb-57fe-702b-a46a-ad09a56d2f5d",
+          "name": "Nghị định số 337/2026/NĐ-CP ngày 26 tháng 8 năm 2026 của Chính phủ quy định chi tiết một số điều và biện pháp thi hành Luật Tiếp cận thông tin.",
+          "code": "337/2026/NĐ-CP"
+        },
+        {
+          "id": "01a06bcc-07ca-763a-a54c-20eb6b3dde88",
+          "name": "Thông tư số 126/2026/TT-BTC ngày 24 tháng 8 năm 2026 của Bộ trưởng Bộ Tài chính quy định chi tiết chi phí thực tế để in, sao, chụp và gửi thông tin theo quy định tại khoản 2 Điều 25 Luật Tiếp cận thông tin số 01/2026/QH16",
+          "code": "126/2026/TT-BTC"
+        }
+      ]
+    }
+  ]
+}

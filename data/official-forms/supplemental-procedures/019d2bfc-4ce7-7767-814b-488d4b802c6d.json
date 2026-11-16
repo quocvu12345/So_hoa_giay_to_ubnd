@@ -1,0 +1,161 @@
+{
+  "id": "dvc-019d2bfc-4ce7-7767-814b-488d4b802c6d",
+  "procedure_code": "1.008000",
+  "name": "Thủ tục hải quan đối với hàng hóa nhập khẩu thương nhân mua gom của cư dân biên giới",
+  "domain": "Hải quan",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.947700+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfc-4ce7-7767-814b-488d4b802c6d",
+      "code": "1.008000",
+      "name": "Thủ tục hải quan đối với hàng hóa nhập khẩu thương nhân mua gom của cư dân biên giới",
+      "state": "ACTIVE",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1775640067002,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-4ce7-7767-814b-488d4b802c6d",
+      "raw_path": "evidence/dvc/details/019d2bfc-4ce7-7767-814b-488d4b802c6d.json",
+      "components": [
+        {
+          "section": "Thủ tục hải quan đối với hàng hóa nhập khẩu thương nhân mua gom của cư dân biên giới",
+          "position": 1,
+          "name": "+ Chứng từ chứng nhận xuất xứ hàng hóa (Giấy chứng nhận xuất xứ hàng hóa hoặc Chứng từ tự chứng nhận xuất xứ): 01 bản chính hoặc chứng từ dưới dạng dữ liệu điện tử.",
+          "component_code": "000.00.00.G12-KQ5894",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Thủ tục hải quan đối với hàng hóa nhập khẩu thương nhân mua gom của cư dân biên giới",
+          "position": 2,
+          "name": "Bản chính bảng kê lâm sản theo Mẫu số 01 kèm theo Thông tư số 27/2018/TT-BNNPTNT ngày 16/11/2018",
+          "component_code": "000.00.00.G10-KQ0319",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Thủ tục hải quan đối với hàng hóa nhập khẩu thương nhân mua gom của cư dân biên giới",
+          "position": 3,
+          "name": "e) Tờ khai trị giá: Người khai hải quan khai tờ khai trị giá theo mẫu, gửi đến Hệ thống dưới dạng dữ liệu điện tử hoặc nộp cho cơ quan hải quan 02 bản chính (đối với trường hợp khai trên tờ khai hải quan giấy). Các trường hợp phải khai tờ khai trị giá và mẫu tờ khai trị giá thực hiện theo Thông tư của Bộ Tài chính quy định về việc xác định trị giá hải quan đối với hàng hóa xuất khẩu, nhập khẩu;",
+          "component_code": "000.00.00.G12-KQ5883",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Thủ tục hải quan đối với hàng hóa nhập khẩu thương nhân mua gom của cư dân biên giới",
+          "position": 4,
+          "name": "a) Tờ khai hàng hóa nhập khẩu theo các chỉ tiêu thông tin tại Phụ lục II ban hành kèm theo Thông tư số 38/2015/TT-BTC. Trường hợp thực hiện trên tờ khai hải quan giấy theo quy định tại khoản 2 Điều 25 Nghị định số 08/2015/NĐ-CP, người khai hải quan khai và nộp 02 bản chính tờ khai hàng hóa nhập khẩu theo mẫu HQ/2015/NK Phụ lục IV ban hành kèm theo Thông tư số 38/2015/TT-BTC;",
+          "component_code": "000.00.00.G12-KQ5878",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Thủ tục hải quan đối với hàng hóa nhập khẩu thương nhân mua gom của cư dân biên giới",
+          "position": 5,
+          "name": "a) Tờ khai hàng hóa xuất khẩu theo các chỉ tiêu thông tin tại Phụ lục II ban hành kèm theo Thông tư số 38/2015/TT-BTC ngày 25/3/2015 của Bộ Tài chính.  Trường hợp thực hiện trên tờ khai hải quan giấy theo quy định tại khoản 2 Điều 25 Nghị định số 08/2015/NĐ-CP ngày 21/1/2015 của Chính phủ, người khai hải quan khai và nộp 02 bản chính tờ khai hàng hóa nhập khẩu theo mẫu HQ/2015/NK Phụ lục IV ban hành kèm theo Thông tư số 38/2015/TT-BTC;",
+          "component_code": "000.00.00.G12-KQ0780",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Thủ tục hải quan đối với hàng hóa nhập khẩu thương nhân mua gom của cư dân biên giới",
+          "position": 6,
+          "name": "BẢNG KÊ MUA GOM HÀNG NHẬP KHẨU CƯ DÂN BIÊN GIỚI",
+          "component_code": "000.00.00.G12-KQ9027",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Thủ tục hải quan đối với hàng hóa nhập khẩu thương nhân mua gom của cư dân biên giới",
+          "position": 7,
+          "name": "5) Giấy phép nhập khẩu đối với hàng hóa phải có giấy phép nhập khẩu theo quy định của pháp luật: nộp 01 bản chính nếu nhập khẩu một lần hoặc bản sao khi nhập khẩu nhiều lần và phải xuất trình bản chính để đối chiếu, lập phiếu theo dõi trừ lùi;",
+          "component_code": "000.00.00.G12-KQ3548",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Thủ tục hải quan đối với hàng hóa nhập khẩu thương nhân mua gom của cư dân biên giới",
+          "position": 8,
+          "name": "TỜ KHAI HÀNG NHẬP KHẨU CƯ DÂN BIÊN GIỚI",
+          "component_code": "000.00.00.G12-KQ9028",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Thủ tục hải quan đối với hàng hóa nhập khẩu thương nhân mua gom của cư dân biên giới",
+          "position": 9,
+          "name": "Đối với các mặt hàng chuyên dụng, đơn vị bán hàng phải cung cấp 01 bản gốc: giấy chứng nhận kiểm tra chuyên ngành do cơ quan nhà nước có thẩm quyền cấp.",
+          "component_code": "000.00.00.G12-KQ3110",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c70-724b-96e0-1265b92efe20",
+          "name": "Tờ khai thông quan hàng hóa nhập khẩu",
+          "code": "KQ.G12.000342"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d87-7195-a443-db1e211c2ddd",
+          "name": "Nghị định 59/2018/NĐ-CP",
+          "code": "59/2018/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afe7-9c25863596db",
+          "name": "Nghị định 08/2015/NĐ-CP",
+          "code": "08/2015/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7d-7398-be4d-ff62cdf67da5",
+          "name": "Luật 54/2014/QH13",
+          "code": "54/2014/QH13"
+        },
+        {
+          "id": "019d2bb3-5d7d-7398-be4d-1c6dbc289d7a",
+          "name": "Quy định về thủ tục hải quan; kiểm tra, giám sát hải quan; thuế xuất khẩu thuế nhập khẩu và quản lý thuế đối vớỉ hàng hoá xuất khẩu, nhập khẩu.",
+          "code": "38/2015/TT-BTC"
+        },
+        {
+          "id": "019d2bb3-5d7f-719e-b476-4780c07ce61e",
+          "name": "Thông tư",
+          "code": "80"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "id": "dvc-019d2bf8-98e1-7328-a826-74115e520507",
+  "procedure_code": "1.001714",
+  "name": "Cấp học bổng và hỗ trợ kinh phí mua phương tiện, đồ dùng học tập dùng riêng cho người khuyết tật học tại các cơ sở giáo dục",
+  "domain": "Giáo dục và Đào tạo thuộc hệ thống giáo dục quốc dân",
+  "managing_agency": "Bộ Giáo dục và Đào tạo",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:18.026349+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bf8-98e1-7328-a826-74115e520507",
+      "code": "1.001714",
+      "name": "Cấp học bổng và hỗ trợ kinh phí mua phương tiện, đồ dùng học tập dùng riêng cho người khuyết tật học tại các cơ sở giáo dục",
+      "state": "ACTIVE",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1776248817768,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf8-98e1-7328-a826-74115e520507",
+      "raw_path": "evidence/dvc/details/019d2bf8-98e1-7328-a826-74115e520507.json",
+      "components": [
+        {
+          "section": "Đối với người khuyết tập học tại các cơ sở giáo dục công lập",
+          "position": 1,
+          "name": "Giấy chứng nhận là hộ nghèo hoặc hộ cận nghèo do uỷ ban nhân dân xã (bản sao có công chứng)",
+          "component_code": "TP-G03.002263",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Đối với người khuyết tập học tại các cơ sở giáo dục công lập",
+          "position": 2,
+          "name": "Giấy chứng nhận về khuyết tật do cơ quan có thẩm quyền cấp theo quy định của Nhà nước (bản sao có công chứng)",
+          "component_code": "TP-G03.0443",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Đối với người khuyết tật học tại các cơ sở giáo dục ngoài công lập",
+          "position": 1,
+          "name": "Giấy chứng nhận là hộ nghèo hoặc hộ cận nghèo do uỷ ban nhân dân xã, phường, thị trấn cấp (bản sao có công chứng).",
+          "component_code": "000.00.00.G03-KQ1100",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Đối với người khuyết tật học tại các cơ sở giáo dục ngoài công lập",
+          "position": 2,
+          "name": "Giấy chứng nhận về khuyết tật do cơ quan có thẩm quyền cấp theo quy định của Nhà nước (bản sao có công chứng);",
+          "component_code": "000.00.00.G03-KQ0446",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Đối với người khuyết tật học tại các cơ sở giáo dục ngoài công lập",
+          "position": 3,
+          "name": "Đơn có xác nhận của nhà trường (theo mẫu tại phụ lục ban hành kèm theo Thông tư liên tịch số 42)",
+          "component_code": "000.00.00.G03-KQ0445",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019d7682-dae2-75cd-b1c9-9c8a7e132682",
+              "fileName": "PHỤ LỤC.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d7682-dae2-75cd-b1c9-9c8a7e132682/PHỤ LỤC.docx"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c3a-7502-a841-2c362ae6b905",
+          "name": "Người khuyết tật được chi trả học bổng và hỗ trợ chi phí mua phương tiện, đồ dùng học tập dùng riêng cho người khuyết tật theo định mức quy định",
+          "code": "KQ.G03.000083"
+        }
+      ],
+      "legal_bases": []
+    }
+  ]
+}

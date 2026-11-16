@@ -1,0 +1,592 @@
+{
+  "id": "dvc-019d2bfc-d9ce-754f-b27a-e0edfaf3e2fc",
+  "procedure_code": "2.000693",
+  "name": "Thủ tục Giải quyết hưởng chế độ thai sản",
+  "domain": "Thực hiện chính sách BHXH",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.911727+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfc-d9ce-754f-b27a-e0edfaf3e2fc",
+      "code": "2.000693",
+      "name": "Thủ tục Giải quyết hưởng chế độ thai sản",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1792931550054,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-d9ce-754f-b27a-e0edfaf3e2fc",
+      "raw_path": "evidence/dvc/details/019d2bfc-d9ce-754f-b27a-e0edfaf3e2fc.json",
+      "components": [
+        {
+          "section": "1. NLĐ đang tham gia BHXH bắt buộc Người SDLĐ lập Danh sách Mẫu số 01B-HSB đề nghị hưởng chế độ thai sản đối với NLĐ đang tham gia BHXH bắt buộc và kèm theo các trường hợp hồ sơ dưới đây:",
+          "position": 1,
+          "name": "Danh sách Mẫu số 01B-HSB đề nghị hưởng chế độ thai sản đối với NLĐ đang tham gia BHXH bắt buộc",
+          "component_code": "TP.G12.98.001",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "01a16c1e-d5d6-72f4-96f3-4b97cdd8a8af",
+              "fileName": "01B-HSB.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/01a16c1e-d5d6-72f4-96f3-4b97cdd8a8af/01B-HSB.docx"
+            }
+          ]
+        },
+        {
+          "section": "a) Trường hợp điều trị nội trú là bản chính hoặc bản sao của một trong các giấy tờ sau:",
+          "position": 1,
+          "name": "Giấy ra viện",
+          "component_code": "TP.G12.98.002",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "a) Trường hợp điều trị nội trú là bản chính hoặc bản sao của một trong các giấy tờ sau:",
+          "position": 2,
+          "name": "Tóm tắt hồ sơ bệnh án",
+          "component_code": "TP.G12.98.003",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "a) Trường hợp điều trị nội trú là bản chính hoặc bản sao của một trong các giấy tờ sau:",
+          "position": 3,
+          "name": "Giấy báo tử đối với trường hợp người bệnh điều trị nội trú tử vong tại cơ sở khám bệnh, chữa bệnh.",
+          "component_code": "TP.G12.98.004",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "a) Trường hợp điều trị nội trú là bản chính hoặc bản sao của một trong các giấy tờ sau:",
+          "position": 4,
+          "name": "Giấy xác nhận quá trình điều trị nội trú.",
+          "component_code": "TP.G12.98.005",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "b) Trường hợp điều trị ngoại trú là một trong các giấy tờ sau:",
+          "position": 1,
+          "name": "Bản chính Giấy chứng nhận nghỉ việc hưởng BHXH.",
+          "component_code": "TP.G12.98.006",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "b) Trường hợp điều trị ngoại trú là một trong các giấy tờ sau:",
+          "position": 2,
+          "name": "Bản chính hoặc bản sao giấy ra viện có ghi chỉ định thời gian cần điều trị ngoại trú sau thời gian điều trị nội trú.",
+          "component_code": "TP.G12.98.007",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "b) Trường hợp điều trị ngoại trú là một trong các giấy tờ sau:",
+          "position": 3,
+          "name": "Bản chính hoặc bản sao bản tóm tắt hồ sơ bệnh án có ghi chỉ định thời gian cần điều trị ngoại trú sau thời gian điều trị nội trú.",
+          "component_code": "TP.G12.98.008",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "1.2. Lao động nữ sinh con hoặc lao động nữ mang thai hộ sinh con hoặc lao động nữ nhờ mang thai hộ nhận con là bản sao giấy khai sinh hoặc trích lục khai sinh hoặc bản sao giấy chứng sinh của con và giấy tờ khác trong các trường hợp sau đây:",
+          "position": 1,
+          "name": "Bản sao giấy khai sinh hoặc trích lục khai sinh hoặc bản sao giấy chứng sinh của con",
+          "component_code": "TP.G12.98.009",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "a) Giấy tờ chứng minh quá trình điều trị vô sinh của lao động nữ trong trường hợp phải điều trị vô sinh gồm bản chính hoặc bản sao của một trong các giấy tờ sau:",
+          "position": 1,
+          "name": "Giấy ra viện",
+          "component_code": "TP.G12.98.002",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "a) Giấy tờ chứng minh quá trình điều trị vô sinh của lao động nữ trong trường hợp phải điều trị vô sinh gồm bản chính hoặc bản sao của một trong các giấy tờ sau:",
+          "position": 2,
+          "name": "Tóm tắt hồ sơ bệnh án",
+          "component_code": "TP.G12.98.003",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "a) Giấy tờ chứng minh quá trình điều trị vô sinh của lao động nữ trong trường hợp phải điều trị vô sinh gồm bản chính hoặc bản sao của một trong các giấy tờ sau:",
+          "position": 3,
+          "name": "Giấy xác nhận quá trình điều trị nội trú.",
+          "component_code": "TP.G12.98.005",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "a) Giấy tờ chứng minh quá trình điều trị vô sinh của lao động nữ trong trường hợp phải điều trị vô sinh gồm bản chính hoặc bản sao của một trong các giấy tờ sau:",
+          "position": 4,
+          "name": "Giấy xác nhận quá trình điều trị vô sinh của lao động nữ",
+          "component_code": "TP.G12.98.010",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 1,
+          "name": "Bản sao giấy chứng tử hoặc trích lục khai tử của lao động nữ sinh con, lao động nữ nhờ mang thai hộ trong trường hợp chết sau khi sinh con",
+          "component_code": "TP.G12.98.011",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Bản chính hoặc bản sao Giấy xác nhận người mẹ không đủ sức khỏe để chăm sóc con của cơ sở khám bệnh, chữa bệnh về tình trạng người mẹ sau khi sinh con mà không còn đủ sức khỏe để chăm sóc con hoặc lao động nữ nhờ mang thai hộ sau khi nhận con mà không còn đủ sức khỏe để chăm sóc con",
+          "component_code": "TP.G12.98.012",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "d) Giấy xác nhận nghỉ dưỡng thai của cơ sở khám bệnh, chữa bệnh về việc lao động nữ phải nghỉ việc để dưỡng thai trong trường hợp trong thời gian mang thai phải nghỉ việc để dưỡng thai gồm bản chính hoặc bản sao của một trong các giấy tờ sau:",
+          "position": 1,
+          "name": "Giấy ra viện",
+          "component_code": "TP.G12.98.002",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "d) Giấy xác nhận nghỉ dưỡng thai của cơ sở khám bệnh, chữa bệnh về việc lao động nữ phải nghỉ việc để dưỡng thai trong trường hợp trong thời gian mang thai phải nghỉ việc để dưỡng thai gồm bản chính hoặc bản sao của một trong các giấy tờ sau:",
+          "position": 2,
+          "name": "Tóm tắt hồ sơ bệnh án",
+          "component_code": "TP.G12.98.003",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "d) Giấy xác nhận nghỉ dưỡng thai của cơ sở khám bệnh, chữa bệnh về việc lao động nữ phải nghỉ việc để dưỡng thai trong trường hợp trong thời gian mang thai phải nghỉ việc để dưỡng thai gồm bản chính hoặc bản sao của một trong các giấy tờ sau:",
+          "position": 3,
+          "name": "Giấy xác nhận quá trình điều trị nội trú.",
+          "component_code": "TP.G12.98.005",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "d) Giấy xác nhận nghỉ dưỡng thai của cơ sở khám bệnh, chữa bệnh về việc lao động nữ phải nghỉ việc để dưỡng thai trong trường hợp trong thời gian mang thai phải nghỉ việc để dưỡng thai gồm bản chính hoặc bản sao của một trong các giấy tờ sau:",
+          "position": 4,
+          "name": "Giấy chứng nhận nghỉ việc hưởng bảo hiểm xã hội",
+          "component_code": "TP.G12.98.013",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "d) Giấy xác nhận nghỉ dưỡng thai của cơ sở khám bệnh, chữa bệnh về việc lao động nữ phải nghỉ việc để dưỡng thai trong trường hợp trong thời gian mang thai phải nghỉ việc để dưỡng thai gồm bản chính hoặc bản sao của một trong các giấy tờ sau:",
+          "position": 5,
+          "name": "Giấy xác nhận nghỉ dưỡng thai",
+          "component_code": "TP.G12.98.014",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 1,
+          "name": "đ) Bản sao bản thỏa thuận về mang thai hộ vì mục đích nhân đạo theo quy định tại Điều 96 của Luật Hôn nhân và gia đình và bản sao văn bản xác nhận thời điểm giao nhận con giữa bên mang thai hộ và bên nhờ mang thai hộ trong trường hợp lao động nữ mang thai hộ sinh con hoặc lao động nữ nhờ mang thai hộ nhận con",
+          "component_code": "TP.G12.98.015",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "1.3. Lao động nữ sinh con hoặc lao động nữ mang thai hộ sinh con trong trường hợp con chết ngay sau khi sinh mà chưa được cấp giấy chứng sinh; lao động nữ mang thai từ 22 tuần tuổi trở lên mà bị sảy thai, phá thai, thai chết trong tử cung, thai chết trong khi chuyển dạ đủ điều kiện hưởng chế độ thai sản khi sinh con là một trong các giấy tờ sau đây và giấy tờ khác trong các trường hợp nêu tại tiết a, d, đ điểm 1.2 khoản 1 nêu trên:",
+          "position": 1,
+          "name": "Bản chính hoặc bản sao bản tóm tắt hồ sơ bệnh án có thể hiện thông tin con chết, thai chết",
+          "component_code": "TP.G12.98.016",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "1.3. Lao động nữ sinh con hoặc lao động nữ mang thai hộ sinh con trong trường hợp con chết ngay sau khi sinh mà chưa được cấp giấy chứng sinh; lao động nữ mang thai từ 22 tuần tuổi trở lên mà bị sảy thai, phá thai, thai chết trong tử cung, thai chết trong khi chuyển dạ đủ điều kiện hưởng chế độ thai sản khi sinh con là một trong các giấy tờ sau đây và giấy tờ khác trong các trường hợp nêu tại tiết a, d, đ điểm 1.2 khoản 1 nêu trên:",
+          "position": 2,
+          "name": "Bản chính hoặc bản sao giấy ra viện của lao động nữ sinh con hoặc của lao động nữ mang thai hộ sinh con có thể hiện thông tin con chết, thai chết",
+          "component_code": "TP.G12.98.017",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "1.3. Lao động nữ sinh con hoặc lao động nữ mang thai hộ sinh con trong trường hợp con chết ngay sau khi sinh mà chưa được cấp giấy chứng sinh; lao động nữ mang thai từ 22 tuần tuổi trở lên mà bị sảy thai, phá thai, thai chết trong tử cung, thai chết trong khi chuyển dạ đủ điều kiện hưởng chế độ thai sản khi sinh con là một trong các giấy tờ sau đây và giấy tờ khác trong các trường hợp nêu tại tiết a, d, đ điểm 1.2 khoản 1 nêu trên:",
+          "position": 3,
+          "name": "Bản sao giấy báo tử của con",
+          "component_code": "TP.G12.98.018",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "1.3. Lao động nữ sinh con hoặc lao động nữ mang thai hộ sinh con trong trường hợp con chết ngay sau khi sinh mà chưa được cấp giấy chứng sinh; lao động nữ mang thai từ 22 tuần tuổi trở lên mà bị sảy thai, phá thai, thai chết trong tử cung, thai chết trong khi chuyển dạ đủ điều kiện hưởng chế độ thai sản khi sinh con là một trong các giấy tờ sau đây và giấy tờ khác trong các trường hợp nêu tại tiết a, d, đ điểm 1.2 khoản 1 nêu trên:",
+          "position": 4,
+          "name": "Văn bản xác nhận của Ủy ban nhân dân cấp xã đối với trường hợp con chết trong vòng 24 giờ sau khi sinh.",
+          "component_code": "TP.G12.98.019",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "1.4. Lao động nam đề nghị nghỉ việc hưởng chế độ thai sản hoặc hưởng trợ cấp một lần khi vợ sinh con: Hồ sơ là bản sao giấy khai sinh hoặc trích lục khai sinh hoặc bản sao giấy chứng sinh của con; trường hợp giấy chứng sinh không thể hiện thông tin về việc sinh con phải phẫu thuật hoặc sinh con dưới 32 tuần tuổi thì cần thêm bản chính hoặc bản sao văn bản của cơ sở khám bệnh, chữa bệnh thể hiện thông tin về việc sinh con phải phẫu thuật hoặc sinh con dưới 32 tuần tuổi. Trường hợp con chết sau khi sinh mà chưa được cấp giấy chứng sinh thì hồ sơ là bản chính hoặc bản sao bản tóm tắt hồ sơ bệnh án hoặc giấy ra viện của người mẹ có thể hiện thông tin về con chết.",
+          "position": 1,
+          "name": "Bản sao giấy khai sinh hoặc trích lục khai sinh hoặc bản sao giấy chứng sinh của con",
+          "component_code": "TP.G12.98.020",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "1.4. Lao động nam đề nghị nghỉ việc hưởng chế độ thai sản hoặc hưởng trợ cấp một lần khi vợ sinh con: Hồ sơ là bản sao giấy khai sinh hoặc trích lục khai sinh hoặc bản sao giấy chứng sinh của con; trường hợp giấy chứng sinh không thể hiện thông tin về việc sinh con phải phẫu thuật hoặc sinh con dưới 32 tuần tuổi thì cần thêm bản chính hoặc bản sao văn bản của cơ sở khám bệnh, chữa bệnh thể hiện thông tin về việc sinh con phải phẫu thuật hoặc sinh con dưới 32 tuần tuổi. Trường hợp con chết sau khi sinh mà chưa được cấp giấy chứng sinh thì hồ sơ là bản chính hoặc bản sao bản tóm tắt hồ sơ bệnh án hoặc giấy ra viện của người mẹ có thể hiện thông tin về con chết.",
+          "position": 2,
+          "name": "bản chính hoặc bản sao văn bản của cơ sở khám bệnh, chữa bệnh thể hiện thông tin về việc sinh con phải phẫu thuật hoặc sinh con dưới 32 tuần tuổi",
+          "component_code": "TP.G12.98.021",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "1.4. Lao động nam đề nghị nghỉ việc hưởng chế độ thai sản hoặc hưởng trợ cấp một lần khi vợ sinh con: Hồ sơ là bản sao giấy khai sinh hoặc trích lục khai sinh hoặc bản sao giấy chứng sinh của con; trường hợp giấy chứng sinh không thể hiện thông tin về việc sinh con phải phẫu thuật hoặc sinh con dưới 32 tuần tuổi thì cần thêm bản chính hoặc bản sao văn bản của cơ sở khám bệnh, chữa bệnh thể hiện thông tin về việc sinh con phải phẫu thuật hoặc sinh con dưới 32 tuần tuổi. Trường hợp con chết sau khi sinh mà chưa được cấp giấy chứng sinh thì hồ sơ là bản chính hoặc bản sao bản tóm tắt hồ sơ bệnh án hoặc giấy ra viện của người mẹ có thể hiện thông tin về con chết.",
+          "position": 3,
+          "name": "bản chính hoặc bản sao bản tóm tắt hồ sơ bệnh án hoặc giấy ra viện của người mẹ có thể hiện thông tin về con chết",
+          "component_code": "TP.G12.98.022",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "1.5.Người chồng của lao động nữ nhờ mang thai hộ hưởng trợ cấp một lần khi nhận con hồ sơ là bản sao giấy khai sinh hoặc trích lục khai sinh hoặc bản sao giấy chứng sinh của con.  Trường hợp con chết sau khi sinh mà chưa được cấp giấy chứng sinh thì hồ sơ là bản sao bản tóm tắt hồ sơ bệnh án hoặc bản chính hoặc bản sao giấy ra viện của người mang thai hộ có thể hiện thông tin về con chết hoặc văn bản khác của cơ sở khám bệnh, chữa bệnh có thể hiện thông tin về con chết sau khi sinh.",
+          "position": 1,
+          "name": "Bản sao giấy khai sinh hoặc trích lục khai sinh hoặc bản sao giấy chứng sinh của con",
+          "component_code": "TP.G12.98.020",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "1.5.Người chồng của lao động nữ nhờ mang thai hộ hưởng trợ cấp một lần khi nhận con hồ sơ là bản sao giấy khai sinh hoặc trích lục khai sinh hoặc bản sao giấy chứng sinh của con.  Trường hợp con chết sau khi sinh mà chưa được cấp giấy chứng sinh thì hồ sơ là bản sao bản tóm tắt hồ sơ bệnh án hoặc bản chính hoặc bản sao giấy ra viện của người mang thai hộ có thể hiện thông tin về con chết hoặc văn bản khác của cơ sở khám bệnh, chữa bệnh có thể hiện thông tin về con chết sau khi sinh.",
+          "position": 2,
+          "name": "bản sao bản tóm tắt hồ sơ bệnh án hoặc bản chính hoặc bản sao giấy ra viện của người mang thai hộ có thể hiện thông tin về con chết hoặc văn bản khác của cơ sở khám bệnh, chữa bệnh có thể hiện thông tin về con chết sau khi sinh",
+          "component_code": "TP.G12.98.023",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "1.6. Người chồng của lao động nữ mang thai hộ nghỉ việc hưởng chế độ thai sản hoặc hưởng trợ cấp một lần khi lao động nữ mang thai hộ sinh con bao gồm các giấy tờ sau đây:",
+          "position": 1,
+          "name": "Bản sao giấy chứng sinh hoặc trích lục khai sinh hoặc bản sao giấy khai sinh; trường hợp giấy chứng sinh không thể hiện thông tin về việc sinh con phải phẫu thuật hoặc sinh con dưới 32 tuần tuổi thì cần thêm bản chính hoặc bản sao văn bản của cơ sở khám bệnh, chữa bệnh thể hiện thông tin về việc sinh con phải phẫu thuật hoặc sinh con dưới 32 tuần tuổi",
+          "component_code": "TP.G12.98.024",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "1.6. Người chồng của lao động nữ mang thai hộ nghỉ việc hưởng chế độ thai sản hoặc hưởng trợ cấp một lần khi lao động nữ mang thai hộ sinh con bao gồm các giấy tờ sau đây:",
+          "position": 2,
+          "name": "Bản sao bản thỏa thuận về mang thai hộ vì mục đích nhân đạo theo quy định tại Điều 96 của Luật Hôn nhân và gia đình",
+          "component_code": "TP.G12.98.025",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "1.7. NLĐ nhận nuôi con nuôi dưới 06 tháng tuổi, hồ sơ đề nghị hưởng chế độ thai sản gồm:",
+          "position": 1,
+          "name": "Bản sao giấy chứng nhận nuôi con nuôi và biên bản giao nhận con.",
+          "component_code": "TP.G12.98.026",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "2. NLĐ sinh con, nhận con khi nhờ mang thai hộ, nhận nuôi con nuôi dưới 06 tháng tuổi trong thời gian bảo lưu thời gian đóng BHXH do đã thôi việc, phục viên, xuất ngũ trước thời điểm sinh con, nhận con, nhận nuôi con nuôi (áp dụng cho cả trường hợp sinh con, nhận con, nhận nuôi con nuôi trong thời gian đang đóng BHXH kể từ ngày 01/01/2018 trở đi nhưng đã thôi việc tại đơn vị mà có nguyện vọng nộp hồ sơ hưởng chế độ tại cơ quan BHXH); người cha, người trực tiếp nuôi dưỡng không tham gia BHXH theo quy định tại khoản 5 Điều 53 Luật BHXH năm 2024; người lao động giải quyết hưởng chế độ thai sản khi không còn người sử dụng lao động Văn bản đề nghị Mẫu số 14-HSB và kèm theo các trường hợp hồ sơ dưới đây: Hồ sơ như nêu tại tiết 1.2, 1.3, 1.7 khoản 1 nêu trên.",
+          "position": 1,
+          "name": "Văn bản đề nghị Mẫu số 14-HSB",
+          "component_code": "TP.G12.98.027",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "01a16d24-0443-75ff-ba28-0cc95dd6eeac",
+              "fileName": "14-HSB.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/01a16d24-0443-75ff-ba28-0cc95dd6eeac/14-HSB.docx"
+            }
+          ]
+        },
+        {
+          "section": "3. Lao động nữ tham gia BHXH tự nguyện sinh con, lao động nam tham gia BHXH tự nguyện có vợ sinh con: Văn bản đề nghị Mẫu số 14-HSB kèm theo các trường hợp hồ sơ dưới đây:",
+          "position": 1,
+          "name": "Văn bản đề nghị Mẫu số 14-HSB",
+          "component_code": "TP.G12.98.027",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "01a16d24-0443-75ff-ba28-0cc95dd6eeac",
+              "fileName": "14-HSB.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/01a16d24-0443-75ff-ba28-0cc95dd6eeac/14-HSB.docx"
+            }
+          ]
+        },
+        {
+          "section": "3. Lao động nữ tham gia BHXH tự nguyện sinh con, lao động nam tham gia BHXH tự nguyện có vợ sinh con: Văn bản đề nghị Mẫu số 14-HSB kèm theo các trường hợp hồ sơ dưới đây:",
+          "position": 2,
+          "name": "Bản sao giấy khai sinh hoặc trích lục khai sinh hoặc bản sao giấy chứng sinh của con",
+          "component_code": "TP.G12.98.020",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Trường hợp thai chết trong tử cung, thai chết trong khi chuyển dạ hoặc con chết sau khi sinh mà chưa được cấp giấy chứng sinh thì hồ sơ là một trong các giấy tờ sau đây:",
+          "position": 1,
+          "name": "Bản chính hoặc bản sao bản tóm tắt hồ sơ bệnh án có thể hiện thông tin con chết, thai chết",
+          "component_code": "TP.G12.98.016",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Trường hợp thai chết trong tử cung, thai chết trong khi chuyển dạ hoặc con chết sau khi sinh mà chưa được cấp giấy chứng sinh thì hồ sơ là một trong các giấy tờ sau đây:",
+          "position": 2,
+          "name": "Bản chính hoặc bản sao giấy ra viện của lao động nữ sinh con có thể hiện thông tin con chết",
+          "component_code": "TP.G12.98.028",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Trường hợp thai chết trong tử cung, thai chết trong khi chuyển dạ hoặc con chết sau khi sinh mà chưa được cấp giấy chứng sinh thì hồ sơ là một trong các giấy tờ sau đây:",
+          "position": 3,
+          "name": "Bản sao giấy báo tử của con",
+          "component_code": "TP.G12.98.018",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Trường hợp thai chết trong tử cung, thai chết trong khi chuyển dạ hoặc con chết sau khi sinh mà chưa được cấp giấy chứng sinh thì hồ sơ là một trong các giấy tờ sau đây:",
+          "position": 4,
+          "name": "Văn bản xác nhận của Ủy ban nhân dân cấp xã đối với trường hợp con chết trong vòng 24 giờ sau khi sinh.",
+          "component_code": "TP.G12.98.019",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "4. Trường hợp các hồ sơ quy định tại các khoản 1, 2, 3 nêu trên hoặc các giấy tờ có nội dung tương tự do cơ quan, tổ chức, cá nhân có thẩm quyền của nước ngoài cấp thì phải đáp ứng được các yêu cầu sau đây:",
+          "position": 1,
+          "name": "Có bản dịch tiếng Việt được công chứng hoặc chứng thực theo quy định của pháp luật về công chứng, chứng thực",
+          "component_code": "TP.G12.98.029",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "4. Trường hợp các hồ sơ quy định tại các khoản 1, 2, 3 nêu trên hoặc các giấy tờ có nội dung tương tự do cơ quan, tổ chức, cá nhân có thẩm quyền của nước ngoài cấp thì phải đáp ứng được các yêu cầu sau đây:",
+          "position": 2,
+          "name": "Được hợp pháp hóa lãnh sự, trừ trường hợp điều ước quốc tế mà nước Cộng hòa xã hội chủ nghĩa Việt Nam là thành viên có quy định khác",
+          "component_code": "TP.G12.98.030",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "5. Trường hợp bất khả kháng do thiên tai, thảm họa, dịch bệnh, giấy tờ thay thế các giấy tờ do cơ sở khám bệnh chữa bệnh cấp quy định tại tiết 1.1, 1.2, 1.3, 1.4, 1.5 khoản 1; khoản 2; khoản 3 nêu trên gồm:",
+          "position": 1,
+          "name": "Quyết định áp dụng biện pháp cách ly",
+          "component_code": "TP.G12.98.031",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "5. Trường hợp bất khả kháng do thiên tai, thảm họa, dịch bệnh, giấy tờ thay thế các giấy tờ do cơ sở khám bệnh chữa bệnh cấp quy định tại tiết 1.1, 1.2, 1.3, 1.4, 1.5 khoản 1; khoản 2; khoản 3 nêu trên gồm:",
+          "position": 2,
+          "name": "Giấy xác nhận điều trị",
+          "component_code": "TP.G12.98.032",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c82-739b-8b99-d6be7cc06c52",
+          "name": "Tiền trợ cấp",
+          "code": "KQ.G12.001151"
+        },
+        {
+          "id": "019d2bb2-1c82-739b-8b99-6b744885efea",
+          "name": "Danh sách giải quyết hưởng chế độ ốm đau, thai sản, dưỡng sức phục hồi sức khoẻ (Mẫu số 70A-HSB)",
+          "code": "KQ.G12.001059"
+        },
+        {
+          "id": "019d2bb2-1c82-739b-8b99-db5c57b86929",
+          "name": "Danh sách giải quyết hưởng chế độ thai sản đối người với NLĐ không còn quan hệ lao động và tham gia BHXH tự nguyện (Mẫu số 70B-HSB)",
+          "code": "KQ.G12.001061"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7d-7398-be46-85fda49d119e",
+          "name": "QUY ĐỊNH CHI TIẾT MỘT SỐ ĐIỀU CỦA LUẬT BẢO HIỂM XÃ HỘI VỀ BẢO HIỂM XÃ HỘI BẮT BUỘC",
+          "code": "12/2025/TT-BNV"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afe5-6de8c6e793ac",
+          "name": "THÔNG TƯ QUY ĐỊNH CHI TIẾT THI HÀNH LUẬT BẢO HIỂM XÃ HỘI, LUẬT AN TOÀN, VỆ SINH LAO ĐỘNG VỀ LĨNH VỰC Y TẾ VÀ MỘT SỐ ĐIỀU CỦA LUẬT KHÁM BỆNH, CHỮA BỆNH",
+          "code": "25/2025/TT-BYT"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afeb-e5ff16f715c7",
+          "name": "Quy định chi tiết và hướng dẫn thi hành một số điều của Luật Bảo hiểm xã hội về bảo hiểm xã hội bắt buộc",
+          "code": "158/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7c-71ab-9f07-f538ffa2f69d",
+          "name": "BAN HÀNH QUY TRÌNH GIẢI QUYẾT HƯỞNG CÁC CHẾ ĐỘ BẢO HIỂM XÃ HỘI, CHI TRẢ CÁC CHẾ ĐỘ BẢO HIỂM XÃ HỘI, BẢO HIỂM THẤT NGHIỆP",
+          "code": "2222/QĐ-BHXH"
+        },
+        {
+          "id": "019d2bb3-5d87-7195-a440-f511123122ee",
+          "name": "Luật Bảo hiểm xã hội",
+          "code": "41/2024/QH15"
+        },
+        {
+          "id": "019e72eb-488d-760e-abb8-0a3bb6585c78",
+          "name": "SỬA ĐỔI, BỔ SUNG MỘT SỐ ĐIỀU CỦA QUY TRÌNH GIẢI QUYẾT HƯỞNG CÁC CHẾ ĐỘ BẢO HIỂM XÃ HỘI, CHI TRẢ CÁC CHẾ ĐỘ BẢO HIỂM XÃ HỘI, BẢO HIỂM THẤT NGHIỆP BAN HÀNH KÈM THEO QUYẾT ĐỊNH SỐ 2222/QĐ-BHXH NGÀY 29/7/2025 CỦA GIÁM ĐỐC BẢO HIỂM XÃ HỘI VIỆT NAM",
+          "code": "313/QĐ-BHXH "
+        },
+        {
+          "id": "019d7031-de5c-737a-b30f-7b42de069ca3",
+          "name": "- Luật An toàn, vệ sinh lao động (Luật số 84/2015/QH13 của Quốc hội thông qua ngày 25/6/2015); ",
+          "code": " 84/2015/QH13 "
+        },
+        {
+          "id": "019e72e9-3b2a-77b9-9c29-023d914eb3dc",
+          "name": "Quy định về giao dịch điện tử trong lĩnh vực bảo hiểm xã hội và Cơ sở dữ liệu quốc gia về bảo hiểm",
+          "code": "164/2025/NĐ-CP "
+        }
+      ]
+    }
+  ]
+}

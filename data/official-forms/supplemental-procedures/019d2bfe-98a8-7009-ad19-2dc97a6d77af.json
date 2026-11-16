@@ -1,0 +1,154 @@
+{
+  "id": "dvc-019d2bfe-98a8-7009-ad19-2dc97a6d77af",
+  "procedure_code": "2.001218",
+  "name": "Công bố mở, cho phép hoạt động tại vùng nước khác không thuộc vùng nước trên tuyến đường thủy nội địa, vùng nước cảng biển hoặc khu vực hàng hải, được đánh dấu, xác định vị trí bằng phao hoặc cờ hiệu có màu sắc dễ quan sát",
+  "domain": "Hàng hải và đường thủy nội địa",
+  "managing_agency": "Bộ xây dựng (Giao thông vận tải cũ)",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.857383+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfe-98a8-7009-ad19-2dc97a6d77af",
+      "code": "2.001218",
+      "name": "Công bố mở, cho phép hoạt động tại vùng nước khác không thuộc vùng nước trên tuyến đường thủy nội địa, vùng nước cảng biển hoặc khu vực hàng hải, được đánh dấu, xác định vị trí bằng phao hoặc cờ hiệu có màu sắc dễ quan sát",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1776357111050,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfe-98a8-7009-ad19-2dc97a6d77af",
+      "raw_path": "evidence/dvc/details/019d2bfe-98a8-7009-ad19-2dc97a6d77af.json",
+      "components": [
+        {
+          "section": "- Hồ sơ công bố vùng hoạt động có dự án đầu tư xây dựng (01 bộ hồ sơ, mỗi loại 01 bản), gồm:",
+          "position": 1,
+          "name": "+ Bản chính hoặc bản điện tử hoặc bản sao điện tử sơ đồ vị trí thiết lập báo hiệu đối với trường hợp vùng hoạt động giáp ranh với vùng nước trên tuyến đường thủy nội địa, vùng nước cảng biển hoặc khu vực hàng hải hoặc sơ đồ bố trí phao và cờ hiệu đối với trường hợp vùng hoạt động không giáp ranh với vùng nước trên tuyến đường thủy nội địa, vùng nước cảng biển hoặc khu vực hàng hải;",
+          "component_code": "000.00.00.G04-KQ004628",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "- Hồ sơ công bố vùng hoạt động có dự án đầu tư xây dựng (01 bộ hồ sơ, mỗi loại 01 bản), gồm:",
+          "position": 2,
+          "name": "+ Bản chính hoặc biểu mẫu điện tử Đơn đề nghị theo Mẫu;",
+          "component_code": "000.00.00.G04-KQ004627",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019d9528-37ab-73f1-b737-005e9b2aed10",
+              "fileName": "Mẫu đơn đề nghị Công bố vùng hoạt động vui chơi giải trí dưới nước (1).docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d9528-37ab-73f1-b737-005e9b2aed10/Mẫu đơn đề nghị Công bố vùng hoạt động vui chơi giải trí dưới nước (1).docx"
+            }
+          ]
+        },
+        {
+          "section": "- Hồ sơ công bố vùng hoạt động có dự án đầu tư xây dựng (01 bộ hồ sơ, mỗi loại 01 bản), gồm:",
+          "position": 3,
+          "name": "+ Bản chính hoặc bản điện tử hoặc bản sao điện tử Phương án bảo đảm an ninh, an toàn, cứu hộ, cứu nạn và ngăn ngừa ô nhiễm môi trường;",
+          "component_code": "000.00.00.G04-KQ004630",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "- Hồ sơ công bố vùng hoạt động có dự án đầu tư xây dựng (01 bộ hồ sơ, mỗi loại 01 bản), gồm:",
+          "position": 4,
+          "name": "+ Bản chính hoặc bản điện tử hoặc bản sao điện tử bản vẽ hoàn công công trình, bao gồm cả hải đồ hoặc bản đồ thể hiện vị trí.",
+          "component_code": "000.00.00.G04-KQ004631",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "- Hồ sơ công bố vùng hoạt động có dự án đầu tư xây dựng (01 bộ hồ sơ, mỗi loại 01 bản), gồm:",
+          "position": 5,
+          "name": "+ Bản sao có chứng thực hoặc bản điện tử hoặc bản sao điện tử quyết định phê duyệt dự án (nếu có);",
+          "component_code": "000.00.00.G04-KQ004629",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "- Hồ sơ công bố vùng hoạt động không có dự án đầu tư xây dựng (01 bộ hồ sơ, mỗi loại 01 bản), gồm:",
+          "position": 1,
+          "name": "+ Bản chính hoặc bản điện tử hoặc bản sao điện tử phương án bảo đảm an ninh, an toàn, cứu hộ, cứu nạn và ngăn ngừa ô nhiễm môi trường.",
+          "component_code": "000.00.00.G04-KQ004634",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "- Hồ sơ công bố vùng hoạt động không có dự án đầu tư xây dựng (01 bộ hồ sơ, mỗi loại 01 bản), gồm:",
+          "position": 2,
+          "name": "+ Bản chính hoặc bản điện tử hoặc bản sao điện tử sơ đồ vị trí thiết lập báo hiệu đối với trường hợp vùng hoạt động giáp ranh với vùng nước trên tuyến đường thủy nội địa, vùng nước cảng biển hoặc khu vực hàng hải hoặc sơ đồ bố trí phao và cờ hiệu đối với trường hợp vùng hoạt động không giáp ranh với vùng nước trên tuyến đường thủy nội địa, vùng nước cảng biển hoặc khu vực hàng hải;",
+          "component_code": "000.00.00.G04-KQ004633",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "- Hồ sơ công bố vùng hoạt động không có dự án đầu tư xây dựng (01 bộ hồ sơ, mỗi loại 01 bản), gồm:",
+          "position": 3,
+          "name": "+ Bản chính hoặc biểu mẫu điện tử Đơn đề nghị theo Mẫu;",
+          "component_code": "000.00.00.G04-KQ004632",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019d9528-f650-77fb-b88a-711e79426b6e",
+              "fileName": "Mẫu đơn đề nghị Công bố vùng hoạt động vui chơi giải trí dưới nước (2).docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d9528-f650-77fb-b88a-711e79426b6e/Mẫu đơn đề nghị Công bố vùng hoạt động vui chơi giải trí dưới nước (2).docx"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c7a-7554-ace5-95ff72041b2f",
+          "name": "Quyết định công bố mở, cho phép hoạt động vui chơi giải trí tại vùng 2",
+          "code": "KQ.G17.000294"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7e-72d1-afea-f01696ee65ca",
+          "name": "Quy định về phân định thẩm quyền của chính quyền địa phương 02 cấp trong lĩnh vực quản lý nhà nước của Bộ Xây dựng",
+          "code": "140/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afec-ea998119a7dc",
+          "name": "Nghị định số 19/2024/NĐ-CP ngày 23/02/2024 sửa đổi, bổ sung một số điều của Nghị định số 48/2019/NĐ-CP ngày 05/6/2019 của Chính phủ quy định về quản lý hoạt động của phương tiện phục vụ vui chơi, giải trí dưới nước",
+          "code": "19/2024/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7f-719e-b46e-6fbdb3d1c381",
+          "name": "Quy định về quản lý hoạt động của phương tiện phục vụ vui chơi, giải trí dưới nước",
+          "code": "48/2019/NĐ-CP"
+        }
+      ]
+    }
+  ]
+}

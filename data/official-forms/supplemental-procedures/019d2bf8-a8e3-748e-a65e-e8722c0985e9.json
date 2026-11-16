@@ -1,0 +1,97 @@
+{
+  "id": "dvc-019d2bf8-a8e3-748e-a65e-e8722c0985e9",
+  "procedure_code": "1.005090",
+  "name": "Xét tuyển sinh vào trường phổ thông dân tộc nội trú",
+  "domain": "Thi, tuyển sinh",
+  "managing_agency": "Bộ Giáo dục và Đào tạo",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:18.026212+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bf8-a8e3-748e-a65e-e8722c0985e9",
+      "code": "1.005090",
+      "name": "Xét tuyển sinh vào trường phổ thông dân tộc nội trú",
+      "state": "ACTIVE",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1776325125402,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf8-a8e3-748e-a65e-e8722c0985e9",
+      "raw_path": "evidence/dvc/details/019d2bf8-a8e3-748e-a65e-e8722c0985e9.json",
+      "components": [
+        {
+          "section": "Tuyển sinh trung học cơ sở và phổ thông",
+          "position": 1,
+          "name": "Giấy xác nhận chế độ ưu tiên do cơ quan có thẩm quyền cấp (nếu có)",
+          "component_code": "TP-G03.001499",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Tuyển sinh trung học cơ sở và phổ thông",
+          "position": 2,
+          "name": "Bản sao chứng thực hoặc bản chụp/photo kèm bản chính để đối chiếu bằng tốt nghiệp trung học cơ sở hoặc giấy chứng nhận tốt nghiệp trung học cơ sở tạm thờ",
+          "component_code": "TP-G03.001501",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Tuyển sinh trung học cơ sở và phổ thông",
+          "position": 3,
+          "name": "Học bạ cấp trung học cơ sở",
+          "component_code": "TP-G03.001500",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Tuyển sinh trung học cơ sở và phổ thông",
+          "position": 4,
+          "name": "Học bạ cấp tiểu học hoặc các hồ sơ khác có giá trị thay thế học bạ",
+          "component_code": "TP-G03.001498",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Tuyển sinh trung học cơ sở và phổ thông",
+          "position": 5,
+          "name": "Giấy xác nhận chế độ ưu tiên do cơ quan có thẩm quyền cấp (nếu có)",
+          "component_code": "TP-G03.001502",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c3a-7502-a841-62970b50d15c",
+          "name": "Danh sách thí sinh được tuyển vào học tại trường phổ thông dân tộc nội trú",
+          "code": "KQ-G03.000108"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7c-71ab-9f00-078ff8eab084",
+          "name": "Thông tư",
+          "code": "04/2023/TT-BGDĐT"
+        }
+      ]
+    }
+  ]
+}

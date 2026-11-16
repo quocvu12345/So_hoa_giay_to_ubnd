@@ -1,0 +1,117 @@
+{
+  "id": "dvc-019d2bfc-54ad-732b-8734-567491107588",
+  "procedure_code": "1.008331",
+  "name": "Khai thuế đối với tái bảo hiểm nước ngoài",
+  "domain": "Thuế",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.946537+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfc-54ad-732b-8734-567491107588",
+      "code": "1.008331",
+      "name": "Khai thuế đối với tái bảo hiểm nước ngoài",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1785399200078,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-54ad-732b-8734-567491107588",
+      "raw_path": "evidence/dvc/details/019d2bfc-54ad-732b-8734-567491107588.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Tờ khai thuế thu nhập doanh nghiệp đối với tổ chức tái bảo hiểm nước ngoài theo mẫu số 01/TBH ban hành kèm theo Thông tư số 89/2026/TT-BTC",
+          "component_code": "G12.0016080",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019facfd-87d1-750b-8f18-80236b75e237",
+              "fileName": "12. 01.TBH.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019facfd-87d1-750b-8f18-80236b75e237/12. 01.TBH.docx"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Phụ lục hợp đồng tái bảo hiểm, chứng từ tái bảo hiểm theo tổ chức tái bảo hiểm nước ngoài mẫu số 01-1/TBH ban hành kèm theo Thông tư số 89/2026/TT-BTC",
+          "component_code": "G12.0016081",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019facfd-dd01-701b-9e45-5143edd0a8a1",
+              "fileName": "13. 01-1.TBH.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019facfd-dd01-701b-9e45-5143edd0a8a1/13. 01-1.TBH.docx"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 3,
+          "name": "Từ 01/7/2026 đến thời điểm theo lộ trình của cơ quan thuế quy định tại khoản 2 Điều 99 Thông tư số 89/2026/TT-BTC thì các mẫu số 01/TBH, mẫu số 01-TBH thực hiện theo Mẫu ban hành kèm theo Nghị định số 373/2025/NĐ-CP ngày 31/12/2025 của Chính phủ",
+          "component_code": "G12.0016082",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019facfe-f038-7098-91ac-e0ac1bc82df9",
+              "fileName": "01-1 TBH.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019facfe-f038-7098-91ac-e0ac1bc82df9/01-1 TBH.docx"
+            },
+            {
+              "id": "019facfe-f187-755c-91cf-cc4dcb06a342",
+              "fileName": "01 TBH.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019facfe-f187-755c-91cf-cc4dcb06a342/01 TBH.docx"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "id": "019facec-88aa-72dd-b9d6-a47f7f622abc",
+          "name": "Không phải trả kết quả cho người nộp thuế",
+          "code": "KQ.G12.001885"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019e5e83-1282-771d-9014-49799413a4e5",
+          "name": "Luật số 108/2025/QH15 của Quốc hội: Luật Quản lý thuế",
+          "code": "108/2025/QH15"
+        },
+        {
+          "id": "019f356e-75e3-7494-a2f3-672d8dce61a6",
+          "name": "QUY ĐỊNH CHI TIẾT MỘT SỐ ĐIỀU VÀ BIỆN PHÁP ĐỂ TỔ CHỨC, HƯỚNG DẪN THI HÀNH LUẬT QUẢN LÝ THUẾ",
+          "code": "252/2026/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afe9-653aac8276ee",
+          "name": "Nghị định số 118/2025/NĐ-CP của Chính phủ: Về thực hiện thủ tục hành chính theo cơ chế một cửa, một cửa liên thông tại Bộ phận Một cửa và Cổng Dịch vụ công quốc gia",
+          "code": "118/2025/NĐ-CP"
+        },
+        {
+          "id": "019f8db3-9765-740b-8b90-682677b9c421",
+          "name": "Thông tư quy định chi tiết một số điều của Luật Quản lý thuế và Nghị định số 252/2026/NĐ-CP của Chính phủ quy định chi tiết một số điều và biện pháp để tổ chức, hướng dẫn thi hành Luật Quản lý thuế",
+          "code": "89/2026/TT-BTC"
+        }
+      ]
+    }
+  ]
+}

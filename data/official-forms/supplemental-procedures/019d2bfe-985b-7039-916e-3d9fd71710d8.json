@@ -1,0 +1,104 @@
+{
+  "id": "dvc-019d2bfe-985b-7039-916e-3d9fd71710d8",
+  "procedure_code": "1.014155",
+  "name": "Thẩm định nhiệm vụ quy hoạch, nhiệm vụ điều chỉnh quy hoạch đô thị và nông thôn do nhà đầu tư đã được lựa  chọn để thực hiện dự án đầu tư tổ chức lập",
+  "domain": "Quy hoạch đô thị và nông thôn",
+  "managing_agency": "Bộ Xây dựng",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.858429+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfe-985b-7039-916e-3d9fd71710d8",
+      "code": "1.014155",
+      "name": "Thẩm định nhiệm vụ quy hoạch, nhiệm vụ điều chỉnh quy hoạch đô thị và nông thôn do nhà đầu tư đã được lựa  chọn để thực hiện dự án đầu tư tổ chức lập",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1781231772482,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfe-985b-7039-916e-3d9fd71710d8",
+      "raw_path": "evidence/dvc/details/019d2bfe-985b-7039-916e-3d9fd71710d8.json",
+      "components": [
+        {
+          "section": "-\tThành phần hồ sơ theo quy định về hồ sơ trình thẩm định tại Thông tư số 16/2025/TT-BXD:",
+          "position": 1,
+          "name": "+ Hồ sơ điện tử: Cơ sở dữ liệu số cơ bản là các tệp tin (file) bản vẽ và văn bản được in ấn thành một phần của hồ sơ nhiệm vụ quy hoạch bản giấy; Cơ sở dữ liệu số pháp lý bao gồm các tệp tin (file) được số hóa, quét (scan) từ hồ sơ bằng bản giấy hoặc chứng thực điện tử; Cơ sở dữ liệu số địa lý (GIS) quy hoạch đô thị và nông thôn bao gồm các tệp tin (file) được chuyển đổi thành dữ liệu địa lý từ cơ sở dữ liệu gốc.",
+          "component_code": "G17-KQ003319",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "-\tThành phần hồ sơ theo quy định về hồ sơ trình thẩm định tại Thông tư số 16/2025/TT-BXD:",
+          "position": 2,
+          "name": "Hồ sơ bản giấy, bao gồm: Tờ trình, thuyết minh và bản vẽ trong hồ sơ nhiệm vụ quy hoạch đô thị và nông thôn",
+          "component_code": "TP-G17.000041",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c7a-7554-ace6-5c0136a395fa",
+          "name": "Báo cáo thẩm định nhiệm vụ quy hoạch hoặc báo cáo thẩm định nhiệm vụ điều chỉnh quy hoạch",
+          "code": "KQ.G17.000344"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d87-7195-a441-ef586356e15f",
+          "name": "Luật Quy hoạch đô thị và nông thôn số 47/2024/QH15",
+          "code": "47/2024/QH15"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afe1-8623dffaacd0",
+          "name": "Ban hành định mức, phương pháp lập và quản lý chi phí cho hoạt động quy hoạch đô thị và nông thôn",
+          "code": "17/2025/TT-BXD"
+        },
+        {
+          "id": "019d2bb3-5d86-7760-a640-47204b0a5904",
+          "name": "QUY ĐỊNH VỀ PHÂN ĐỊNH THẨM QUYỀN CỦA CHÍNH QUYỀN ĐỊA PHƯƠNG 02 CẤP, PHÂN QUYỀN, PHÂN CẤP TRONG LĨNH VỰC QUY HOẠCH ĐÔ THỊ VÀ NÔNG THÔN",
+          "code": "145/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d86-7760-a641-770a93c8811c",
+          "name": "Thông tư sửa đổi, bổ sung một số điều của Thông tư số 16/2025/TT-BXD ngày 30/6/2025 của Bộ trưởng Bộ Xây dựng quy định chi tiết một số điều của Luật Quy hoạch đô thị và nông thôn",
+          "code": "43/2025/TT-BXD"
+        },
+        {
+          "id": "019d2bb3-5d86-7760-a642-6690722ed369",
+          "name": "Quy định chi tiết một số điều của Luật Quy hoạch đô thị và nông thôn.",
+          "code": "178/2025/NĐ-CP"
+        },
+        {
+          "id": "019dff4b-84b2-75aa-b860-2ef8d0b1e211",
+          "name": "Nghị định sửa đổi, bổ sung một số điều của Nghị định số 178/2025/NĐ-CP ngày 01 tháng 7 năm 2025 của Chính phủ quy định chi tiết một số điều của Luật Quy hoạch đô thị và nông thôn.",
+          "code": "34/2026/NĐ-CP"
+        },
+        {
+          "id": "019e2539-b957-7098-ad2c-0cf9a863c845",
+          "name": "Luật sửa đổi, bổ sung một số điều của Luật Quy hoạch đô thị và nông thôn ",
+          "code": "144/2025/QH15"
+        },
+        {
+          "id": "019e253b-68f7-7198-8e62-04f5cf0c177a",
+          "name": "quy định chi tiết một số điều của Luật Quy hoạch đô thị và nông thôn",
+          "code": "16/2025/TT-BXD "
+        },
+        {
+          "id": "019e80d7-efe4-770e-9fcd-98882ddedf32",
+          "name": "Thông tư sửa đổi, bổ sung một số điều của các Thông tư trong lĩnh vực đăng kiểm phương tiện giao thông đường bộ",
+          "code": "45/2026/TT-BXD"
+        }
+      ]
+    }
+  ]
+}

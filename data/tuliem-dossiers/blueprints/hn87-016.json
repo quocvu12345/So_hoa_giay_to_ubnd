@@ -1,0 +1,133 @@
+{
+  "id": "hn87-016",
+  "ordinal": "16",
+  "procedure_code": "2.002307",
+  "name": "Giải quyết chế độ mai táng phí đối với cựu chiến binh",
+  "domain": "Người có công",
+  "department_id": "vx",
+  "department": "Phòng Văn hóa - Xã hội",
+  "authority_as_published": "UBND cấp xã",
+  "execution_level_as_published": "Cấp xã",
+  "receiving_location_as_published": "Điểm hỗ trợ DVC số",
+  "inventory_date": "2026-04-27",
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "source_urls": [
+    "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-4a4e-7368-a306-f665291850ca"
+  ],
+  "current_dvc_match": true,
+  "lifecycle": null,
+  "scope": "hanoi_commune_notice_2026_04_27",
+  "scope_note": "Mốc kiểm kê cấp xã Hà Nội; áp dụng từng thủ tục tại Từ Liêm còn phải theo thẩm quyền/ủy quyền hiện hành.",
+  "status": "has_fillable_templates",
+  "components": [
+    {
+      "id": "hn87-016-c001",
+      "code": "G09-KQ1298",
+      "name": "- Bản khai để giải quyết chế độ trợ cấp mai táng theo Mẫu số 01 Thông tư số 21/2026/TT-BNV ngày 22/9/2026 của Bộ trưởng Bộ Nội vụ (trường hợp các trường thông tin trong Bản khai có thể khai thác từ cơ sở dữ liệu, hệ thống thông tin thì cán bộ tiếp nhận hồ sơ/cá nhân/tổ chức không phải kê khai thông tin này vào Bản khai điện tử).",
+      "section": "",
+      "role": "applicant_form",
+      "scenario_status": "conditional_needs_review",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-4a4e-7368-a306-f665291850ca",
+      "source_detail_id": "019d2bfb-4a4e-7368-a306-f665291850ca",
+      "embedded_other_requirements": false,
+      "template_candidates": [
+        "template-51c5435f7d8af078"
+      ],
+      "template_selection_method": "first_matching_source_attachment",
+      "selected_template_id": "template-51c5435f7d8af078",
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-016-c002",
+      "code": "G09-KQ00321065",
+      "name": "- Bản sao chứng thực giấy chứng tử hoặc trích lục khai tử. Trường hợp cơ quan tiếp nhận hồ sơ hoặc cá nhân, tổ chức khai thác được thông tin của giấy chứng tử hoặc trích lục khai tử từ các Cơ sở dữ liệu, hệ thống thông tin có liên quan thì cá nhân, tổ chức không phải nộp giấy tờ này. (Thay thế thành phần hồ sơ này khi Cơ sở dữ liệu hộ tịch điện tử đáp ứng điều kiện kết nối, khai thác và chia sẻ dữ liệu (Hệ thống tự động kết nối với CSDL hộ tịch điện tử để lấy thông tin Giấy chứng tử))",
+      "section": "",
+      "role": "instruction",
+      "scenario_status": "instruction_only",
+      "required_as_published": false,
+      "original_quantity": 0,
+      "copy_quantity": 1,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-4a4e-7368-a306-f665291850ca",
+      "source_detail_id": "019d2bfb-4a4e-7368-a306-f665291850ca",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-016-c003",
+      "code": "G09-KQ00321066",
+      "name": "- Một trong các giấy tờ xác nhận là cựu chiến binh theo quy định tại khoản 7 Điều 2 Nghị định số 150/2006/NĐ-CP.",
+      "section": "",
+      "role": "needs_review",
+      "scenario_status": "conditional_needs_review",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-4a4e-7368-a306-f665291850ca",
+      "source_detail_id": "019d2bfb-4a4e-7368-a306-f665291850ca",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    }
+  ],
+  "service_cases": [
+    {
+      "id": "019d2c3d-1627-737e-9110-38d255f418e4",
+      "code": "2.002307.01",
+      "name": "Giải quyết chế độ mai táng phí đối với cựu chiến binh",
+      "source_processing_time": {
+        "qty": 25,
+        "type": "DAY"
+      },
+      "has_case_specific_components": false
+    },
+    {
+      "id": "019dbe74-757f-741c-80b7-bcb36571076c",
+      "code": "2.002307.02",
+      "name": "Giải quyết chế độ mai táng phí đối với cựu chiến binh",
+      "source_processing_time": {
+        "qty": 25,
+        "type": "DAY"
+      },
+      "has_case_specific_components": false
+    },
+    {
+      "id": "01a1bf4c-8c63-7360-b70d-9e4942a96d9b",
+      "code": "2.002307.02",
+      "name": "Giải quyết chế độ mai táng phí đối với cựu chiến binh",
+      "source_processing_time": {
+        "qty": 25,
+        "type": "DAY"
+      },
+      "has_case_specific_components": false
+    }
+  ],
+  "selected_template_ids": [
+    "template-51c5435f7d8af078"
+  ],
+  "source_component_groups": [
+    {
+      "name": "",
+      "component_count": 3,
+      "source_detail_id": "019d2bfb-4a4e-7368-a306-f665291850ca"
+    }
+  ],
+  "conditional_component_groups": [],
+  "default_test_scenario": {
+    "channel": "direct",
+    "applicant_submits_self": true,
+    "authorized": false,
+    "special_case_flags": [],
+    "selected_conditional_group": null,
+    "case_selection_method": "ordinary_direct_submission",
+    "case_status": "scenario_for_testing_not_a_legal_eligibility_decision"
+  },
+  "requirement_note": "required_as_published được giữ nguyên; false không chứng minh giấy tờ luôn tùy chọn. Các nhóm executionCases có thể là mục giấy tờ/hướng dẫn, không phải các phương án loại trừ nhau."
+}

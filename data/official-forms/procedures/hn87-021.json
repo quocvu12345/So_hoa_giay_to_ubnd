@@ -1,0 +1,107 @@
+{
+  "ordinal": "21",
+  "managing_agency": "Sở Nội Vụ",
+  "procedure_code": "1.010824",
+  "name": "Hưởng trợ cấp khi người có công đang hưởng trợ cấp ưu đãi từ trần",
+  "domain": "Người có công",
+  "ministry_decision": "639/QĐ-BNV ngày 20/6/2031",
+  "hanoi_decision": "391/TB-TTPVHCC ngày 31/12/2025",
+  "workflow_decision": "5146/QĐ-TTPVHCC ngày 15/10/2025",
+  "fees": "Không quy định",
+  "execution_level": "Cấp xã",
+  "competent_authority": "UBND cấp xã",
+  "delegation_decision": "3176/ QĐ-SNV ngày 20/6/2025",
+  "delegation_expiry": "28/02/2027",
+  "receiving_location": "Điểm hỗ trợ DVC số",
+  "id": "hn87-021",
+  "source_page": 1,
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "inventory_date": "2026-04-27",
+  "checked_at": "2026-11-12T22:24:34.513635+07:00",
+  "details": [
+    {
+      "id": "019d2bfa-fc36-7611-9219-adb6dee5774f",
+      "code": "1.010824",
+      "name": "Hưởng trợ cấp khi người có công đang hưởng trợ cấp ưu đãi từ trần",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1776416016676,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfa-fc36-7611-9219-adb6dee5774f",
+      "raw_path": "evidence/dvc/details/019d2bfa-fc36-7611-9219-adb6dee5774f.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "a) Trợ cấp một lần, mai táng - Bản khai theo Mẫu số 12 Phụ lục I Nghị định số 131/2021/NĐ-CP. - Bản sao được chứng thực từ giấy báo tử hoặc trích lục khai tử.",
+          "component_code": "G09-KQ003210231",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019d707f-c666-775f-9ae7-c7cfd54153dd",
+              "fileName": "Mauso12_ND131_2021.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d707f-c666-775f-9ae7-c7cfd54153dd/Mauso12_ND131_2021.docx"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "b)\tTrợ cấp tuất hằng tháng, trợ cấp tuất nuôi dưỡng hằng tháng: -\tBản khai theo Mẫu số 12 Phụ lục I Nghị định số 131/2021/NĐ-CP. -\tBản sao được chứng thực từ giấy báo tử hoặc trích lục khai tử. -\tBản sao được chứng thực từ giấy khai sinh hoặc trích lục khai sinh đối với trường hợp thân nhân là con chưa đủ 18 tuổi. -\tGiấy xác nhận của cơ sở giáo dục nơi đang theo học đối với trường hợp thân nhân là con từ đủ 18 tuổi trở lên đang đi học; nếu đang theo học tại cơ sở giáo dục nghề nghiệp hoặc giáo dục đại học thì phải có thêm bản sao được chứng thực từ Bằng tốt nghiệp trung học phổ thông hoặc giấy xác nhận của cơ sở giáo dục trung học phổ thông về thời điểm kết thúc học.",
+          "component_code": "G09-KQ002709",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c4d-7725-9d9c-7f5c695c5cf6",
+          "name": "Quyết định về việc tạm đình chỉ/chấm dứt hưởng chế độ ưu đãi đối với người có công hoặc thân nhân. Quyết định về việc trợ cấp khi người có công từ trần",
+          "code": "KQ.G09.000434"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7f-719e-b46e-3b82195c2d48",
+          "name": "Nghị định số 45/2025/NĐ-CP ngày 28/02/2025 của Chính phủ quy định tổ chức các cơ quan chuyên môn thuộc Ủy ban nhân dân tỉnh, thành phố trực thuộc trung ương và Ủy ban nhân dân huyện, quận, thị xã, thành phố thuộc tỉnh, thành phố thuộc thành phố trực thuộc trung ương",
+          "code": "45/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afea-1c153ca6400f",
+          "name": "Quy định về phân định thẩm quyền của chính quyền địa phương 02 cấp trong lĩnh vực quản lý nhà nước của Bộ Nội vụ",
+          "code": "129/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7f-719e-b474-516a799e2145",
+          "name": "QUY ĐỊNH CHI TIẾT VÀ BIỆN PHÁP THI HÀNH PHÁP LỆNH ƯU ĐÃI NGƯỜI CÓ CÔNG VỚI CÁCH MẠNG",
+          "code": "Nghị định số 131/2021/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7f-719e-b474-93996f3f00db",
+          "name": "Nghị định số 25/2025/NĐ-CP ngày 21 tháng 02 năm 2025 của Chính phủ quy định chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của Bộ Nội vụ",
+          "code": "Nghị định số 25/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d85-73da-8eba-20bc75de794b",
+          "name": "ƯU ĐÃI NGƯỜI CÓ CÔNG VỚI CÁCH MẠNG",
+          "code": "Pháp lệnh số: 02/2020/UBTVQH14"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b671-f40a5ee32475",
+          "name": "Nghị quyết số 190/2025/QH15 của Quốc hội: Quy định về xử lý một số vấn đề liên quan đến sắp xếp tổ chức bộ máy nhà nước",
+          "code": "190/2025/NQ-QH15"
+        }
+      ]
+    }
+  ],
+  "lookup_status": "retrieved",
+  "currency_status": "snapshot_requires_later_amendment_check",
+  "errors": []
+}

@@ -1,0 +1,122 @@
+{
+  "id": "dvc-019d2bfb-cfc1-7658-94d3-9dd977da8fa5",
+  "procedure_code": "1.000014",
+  "name": "Thủ tục hải quan đối với xăng dầu, hóa chất, khí chuyển tiêu thụ nội địa",
+  "domain": "Hải quan",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.977371+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfb-cfc1-7658-94d3-9dd977da8fa5",
+      "code": "1.000014",
+      "name": "Thủ tục hải quan đối với xăng dầu, hóa chất, khí chuyển tiêu thụ nội địa",
+      "state": "ACTIVE",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1775639356720,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-cfc1-7658-94d3-9dd977da8fa5",
+      "raw_path": "evidence/dvc/details/019d2bfb-cfc1-7658-94d3-9dd977da8fa5.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Trường hợp xăng dầu, hóa chất, khí chuyển tiêu thụ nội địa được lấy tại các kho chứa nội địa khác của Thương nhân (khác với kho chứa khi làm thủ tục tạm nhập), Thương nhân nộp bổ sung 01 bản chụp Thông báo kết quả kiểm tra nhà nước về chất lượng và Thông báo kết quả giám định về lượng tại kho chứa nội địa đó.  Lượng xăng dầu, hóa chất, khí chuyển tiêu thụ nội địa căn cứ trên lượng xăng dầu, hóa chất, khí khi tạm nhập (có Chứng thư giám định lượng) và kết quả trừ lùi, thanh khoản của các tờ khai tái xuất xăng dầu, hóa chất, khí đã hoàn thành thủ tục hải quan theo quy định của tờ khai đó",
+          "component_code": "000.00.00.G12-KQ0779",
+          "original_quantity": 0,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "- Đơn đề nghị được chuyển tiêu thụ nội địa xăng dầu, hóa chất, khí của Thương nhân:",
+          "component_code": "000.00.00.G12-KQ0774",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 3,
+          "name": "- Tờ khai hải quan nhập khẩu: 02 bản chính. Tại ô chứng từ đi kèm trên tờ khai hàng hóa nhập khẩu, Thương nhân ghi rõ lượng xăng dầu, hóa chất, khí chuyển tiêu thụ nội địa của tờ khai tạm nhập số …;",
+          "component_code": "000.00.00.G12-KQ0775",
+          "original_quantity": 2,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 4,
+          "name": "- Giấy đăng ký kiểm tra nhà nước về chất lượng xăng dầu, hóa chất, khí (đối với trường hợp khi tạm nhập chưa thực hiện kiểm tra Nhà nước về chất lượng) hoặc Thông báo kết quả kiểm tra nhà nước về chất lượng xăng dầu, hóa chất, khí khi làm thủ tục tạm nhập: 01 bản chụp có đóng dấu xác nhận của Thương nhân.",
+          "component_code": "000.00.00.G12-KQ0777",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 5,
+          "name": "- Tờ khai hải quan tạm nhập của lô hàng: 01 bản chụp có đóng dấu xác nhận của Thương nhân;",
+          "component_code": "000.00.00.G12-KQ0776",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 6,
+          "name": "Đối với trường hợp xăng dầu, hóa chất, khí thuộc Danh mục hàng hóa nhập khẩu phải kiểm tra nhà nước về chất lượng thì phải nộp Thông báo kết quả kiểm tra nhà nước về chất lượng khi làm thủ tục tạm nhập hoặc Thông báo kết quả kiểm tra nhà nước về chất lượng khi làm thủ tục chuyển tiêu thụ nội địa (đối với trường hợp khi tạm nhập chưa thực hiện kiểm tra về chất lượng): 01 bản chụp.",
+          "component_code": "000.00.00.G12-KQ0778",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7d-7398-be4a-5fe7c5952529",
+          "name": "Thông tư 172/2010/TT-BTC",
+          "code": "172/2010/TT-BTC"
+        },
+        {
+          "id": "019d2bb3-5d7d-7398-be4e-8e22567edc3a",
+          "name": "Quy định thủ tục hải quan đối với xăng dầu, hóa chất, khí xuất khẩu, nhập khẩu, tạm nhập tái xuất, chuyển khẩu, quá cảnh; nguyên liệu nhập khẩu để sản xuất và pha chế hoặc gia công xuất khẩu xăng, dầu, khí; dầu thô xuất khẩu, nhập khẩu; hàng hóa xuất khẩu, nhập khẩu phục vụ hoạt động dầu khí",
+          "code": "69/2016/TT-BTC"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afe7-9c25863596db",
+          "name": "Nghị định 08/2015/NĐ-CP",
+          "code": "08/2015/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7d-7398-be4d-ff62cdf67da5",
+          "name": "Luật 54/2014/QH13",
+          "code": "54/2014/QH13"
+        },
+        {
+          "id": "019d2bb3-5d7d-7398-be4d-1c6dbc289d7a",
+          "name": "Quy định về thủ tục hải quan; kiểm tra, giám sát hải quan; thuế xuất khẩu thuế nhập khẩu và quản lý thuế đối vớỉ hàng hoá xuất khẩu, nhập khẩu.",
+          "code": "38/2015/TT-BTC"
+        }
+      ]
+    }
+  ]
+}

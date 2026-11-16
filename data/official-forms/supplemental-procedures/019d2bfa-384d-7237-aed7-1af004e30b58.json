@@ -1,0 +1,108 @@
+{
+  "id": "dvc-019d2bfa-384d-7237-aed7-1af004e30b58",
+  "procedure_code": "1.004498",
+  "name": "Sửa đổi, bổ sung nội dung quyết định công nhận và giao quyền quản lý cho tổ chức cộng đồng (thuộc địa bàn quản lý)",
+  "domain": "Thủy sản",
+  "managing_agency": "Bộ Nông nghiệp và Môi trường",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:18.021157+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfa-384d-7237-aed7-1af004e30b58",
+      "code": "1.004498",
+      "name": "Sửa đổi, bổ sung nội dung quyết định công nhận và giao quyền quản lý cho tổ chức cộng đồng (thuộc địa bàn quản lý)",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1789722120328,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfa-384d-7237-aed7-1af004e30b58",
+      "raw_path": "evidence/dvc/details/019d2bfa-384d-7237-aed7-1af004e30b58.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Báo cáo đánh giá kết quả thực hiện và dự thảo quy chế mới đối với trường hợp sửa đổi, bổ sung Quy chế hoạt động của tổ chức cộng đồng;",
+          "component_code": "000.00.00.H27-KQ0616",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Biên bản họp tổ chức cộng đồng theo Mẫu số 04 Phụ lục I ban hành kèm theo Thông tư số 88/2025/TT-BNNMT ngày 31/12/2025",
+          "component_code": "000.00.00.G10-KQ1353",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 3,
+          "name": "Báo cáo đánh giá kết quả thực hiện và dự thảo phương án bảo vệ và khai thác nguồn lợi thủy sản mới đối với trường hợp sửa đổi, bổ sung phương án bảo vệ và khai thác nguồn lợi thủy sản; vị trí, ranh giới khu vực địa lý được giao; phạm vi quyền được giao",
+          "component_code": "000.00.00.G10-KQ1688",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 4,
+          "name": "Đơn đề nghị sửa đổi, bổ sung quyết định công nhận và giao quyền cho tổ chức cộng đồng",
+          "component_code": "TP-G10.000091",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "01a0a82c-531f-76c4-ac87-6c7263a0f216",
+              "fileName": "Mẫu số 02 Phụ lục V TT 33.2026.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/01a0a82c-531f-76c4-ac87-6c7263a0f216/Mẫu số 02 Phụ lục V TT 33.2026.docx"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c4d-7725-9d9f-f3f8c7065927",
+          "name": "Quyết định sửa đổi, bổ sung Quyết định công nhận và giao quyền quản lý cho tổ chức cộng đồng theo Mẫu số 03 Phụ lục V ban hành kèm theo Thông tư số 33/2026/TT-BNNMT ngày 04/8/2026",
+          "code": "KQ.G10.000128"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d84-71c5-b674-9b7cf87c6962",
+          "name": "Luật",
+          "code": "Luật 18/2017/QH14"
+        },
+        {
+          "id": "019d2bb3-5d87-7195-a447-f9a5abcd2f43",
+          "name": "Luật sửa đổi, bổ sung một số điều của 15 luật trong lĩnh vực nông nghiệp và môi trường",
+          "code": "Luật số 146/2025/QH15"
+        },
+        {
+          "id": "019d2bb3-5d7d-7398-be45-8b4bf0a0ffd9",
+          "name": "Thông tư",
+          "code": "88/2025/TT-BNNMT"
+        },
+        {
+          "id": "01a023d9-4d68-750f-bf76-29237527fa27",
+          "name": "sửa đổi, bổ sung một số Thông tư trong lĩnh vực thủy sản",
+          "code": "33/2026/TT-BNNMT"
+        }
+      ]
+    }
+  ]
+}

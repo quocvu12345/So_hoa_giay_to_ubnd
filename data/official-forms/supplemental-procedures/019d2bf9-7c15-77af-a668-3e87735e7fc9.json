@@ -1,0 +1,152 @@
+{
+  "id": "dvc-019d2bf9-7c15-77af-a668-3e87735e7fc9",
+  "procedure_code": "1.014525",
+  "name": "Thủ tục xét tài trợ, đặt hàng nhiệm vụ khoa học, công nghệ và đổi mới sáng tạo (cấp tỉnh)",
+  "domain": "Hoạt động khoa học và công nghệ",
+  "managing_agency": "Bộ Khoa học và Công nghệ",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:18.022937+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bf9-7c15-77af-a668-3e87735e7fc9",
+      "code": "1.014525",
+      "name": "Thủ tục xét tài trợ, đặt hàng nhiệm vụ khoa học, công nghệ và đổi mới sáng tạo (cấp tỉnh)",
+      "state": "ACTIVE",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1793092803185,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf9-7c15-77af-a668-3e87735e7fc9",
+      "raw_path": "evidence/dvc/details/019d2bf9-7c15-77af-a668-3e87735e7fc9.json",
+      "components": [
+        {
+          "section": "Hoàn thiện sau họp Hội đồng:",
+          "position": 1,
+          "name": "Báo cáo giải trình, tiếp thu ý kiến của Hội đồng",
+          "component_code": "G06-KQ004600",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Hoàn thiện sau họp Hội đồng:",
+          "position": 2,
+          "name": "Thuyết minh nhiệm vụ đã được chỉnh sửa",
+          "component_code": "G06-KQ004601",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Hoàn thiện sau họp Hội đồng:",
+          "position": 3,
+          "name": "Dự toán kinh phí chi tiết (không quá 05 trang)",
+          "component_code": "G06-KQ004602",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Hoàn thiện sau thẩm định kinh phí",
+          "position": 1,
+          "name": "Báo cáo giải trình, tiếp thu ý kiến của Tổ thẩm định kinh phí",
+          "component_code": "G06-KQ004603",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Hoàn thiện sau thẩm định kinh phí",
+          "position": 2,
+          "name": "Dự toán kinh phí thực hiện nhiệm vụ đã hoàn thiện",
+          "component_code": "G06-KQ004604",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Nộp đăng ký ban đầu:",
+          "position": 1,
+          "name": "Thuyết minh nhiệm vụ hoặc chuỗi nhiệm vụ",
+          "component_code": "G06-KQ004619",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Nộp đăng ký ban đầu:",
+          "position": 2,
+          "name": "Các tài liệu khác... (tùy thuộc loại hình nhiệm vụ)",
+          "component_code": "G06-KQ004615",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Nộp đăng ký ban đầu:",
+          "position": 3,
+          "name": "Đơn đăng ký chủ trì thực hiện nhiệm vụ.",
+          "component_code": "G06-KQ004607",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Nộp đăng ký ban đầu:",
+          "position": 4,
+          "name": "Tài liệu chứng minh tư cách pháp lý của tổ chức chủ trì.",
+          "component_code": "G06-KQ004614",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Nộp đăng ký ban đầu:",
+          "position": 5,
+          "name": "Văn bản cam kết phối hợp/đồng tài trợ",
+          "component_code": "G06-KQ004599",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c41-7141-b6bb-49083c3ce2a4",
+          "name": "Quyết định phê duyệt tổ chức chủ trì, kinh phí, phương thức khoán chi và thời gian thực hiện nhiệm vụ khoa học, công nghệ và đổi mới sáng tạo",
+          "code": "KQ.G06.000848"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d85-73da-8eba-0eadc81b4d09",
+          "name": "Luật số 93/2025/QH15 của Quốc hội: Luật Khoa học, công nghệ và đổi mới sáng tạo",
+          "code": "93/2025/QH15"
+        }
+      ]
+    }
+  ]
+}

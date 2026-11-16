@@ -1,0 +1,189 @@
+{
+  "id": "dvc-019d2bfc-6c58-7558-a6b2-43c083ae1ec5",
+  "procedure_code": "1.008581",
+  "name": "Miễn thuế, giảm thuế theo Hiệp định tránh đánh thuế hai lần đối với thu nhập từ tái bảo hiểm nước ngoài",
+  "domain": "Thuế",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.935161+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfc-6c58-7558-a6b2-43c083ae1ec5",
+      "code": "1.008581",
+      "name": "Miễn thuế, giảm thuế theo Hiệp định tránh đánh thuế hai lần đối với thu nhập từ tái bảo hiểm nước ngoài",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1785399197351,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-6c58-7558-a6b2-43c083ae1ec5",
+      "raw_path": "evidence/dvc/details/019d2bfc-6c58-7558-a6b2-43c083ae1ec5.json",
+      "components": [
+        {
+          "section": "i. Đối với hồ sơ đề nghị dự kiến: 05 ngày trước khi ký kết hợp đồng hoặc 05 ngày sau khi thực hiện hợp đồng hoặc 05 ngày trước khi thanh toán, tùy theo thời điểm nào diễn ra trước, các tổ chức nhận tái bảo hiểm nước ngoài có trách nhiệm nộp cho cơ quan thuế hồ sơ đề nghị dự kiến cùng với tài liệu liên quan. Các tổ chức nhận tái bảo hiểm nước ngoài có văn phòng đại diện tại Việt Nam nộp hồ sơ tại Thuế tỉnh nơi đóng văn phòng đại diện. Đối với các tổ chức nhận tái bảo hiểm nước ngoài không có văn phòng đại diện tại Việt Nam:",
+          "position": 1,
+          "name": "Trường hợp các tổ chức nhận tái bảo hiểm nước ngoài trực tiếp nộp hồ sơ: nộp tại Thuế tỉnh nơi Công ty tái bảo hiểm Việt Nam đầu tiên dự kiến ký kết hợp đồng",
+          "component_code": "000.00.00.G12-00015661",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "i. Đối với hồ sơ đề nghị dự kiến: 05 ngày trước khi ký kết hợp đồng hoặc 05 ngày sau khi thực hiện hợp đồng hoặc 05 ngày trước khi thanh toán, tùy theo thời điểm nào diễn ra trước, các tổ chức nhận tái bảo hiểm nước ngoài có trách nhiệm nộp cho cơ quan thuế hồ sơ đề nghị dự kiến cùng với tài liệu liên quan. Các tổ chức nhận tái bảo hiểm nước ngoài có văn phòng đại diện tại Việt Nam nộp hồ sơ tại Thuế tỉnh nơi đóng văn phòng đại diện. Đối với các tổ chức nhận tái bảo hiểm nước ngoài không có văn phòng đại diện tại Việt Nam:",
+          "position": 2,
+          "name": "Trường hợp các tổ chức nhận tái bảo hiểm nước ngoài uỷ quyền cho đại diện hợp pháp tại Việt Nam (tổ chức, cá nhân cung cấp dịch vụ làm thủ tục về thuế hoặc Công ty kiểm toán hoặc Công ty tái bảo hiểm Việt Nam đầu tiên dự kiến ký kết hợp đồng...) nộp hồ sơ tại Thuế tỉnh nơi đại diện hợp pháp đăng ký nộp thuế",
+          "component_code": "000.00.00.G12-00015452",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "i. Đối với hồ sơ đề nghị dự kiến: 05 ngày trước khi ký kết hợp đồng hoặc 05 ngày sau khi thực hiện hợp đồng hoặc 05 ngày trước khi thanh toán, tùy theo thời điểm nào diễn ra trước, các tổ chức nhận tái bảo hiểm nước ngoài có trách nhiệm nộp cho cơ quan thuế hồ sơ đề nghị dự kiến cùng với tài liệu liên quan. Các tổ chức nhận tái bảo hiểm nước ngoài có văn phòng đại diện tại Việt Nam nộp hồ sơ tại Thuế tỉnh nơi đóng văn phòng đại diện. Đối với các tổ chức nhận tái bảo hiểm nước ngoài không có văn phòng đại diện tại Việt Nam:",
+          "position": 3,
+          "name": "Hồ sơ đề nghị dự kiến bao gồm: Văn bản đề nghị dự kiến theo mẫu số 01/TBH-TB Phụ lục III ban hành kèm theo Thông tư số 89/2026/TT-BTC; Bản chính hoặc bản sao có chứng thực Giấy chứng nhận cư trú do cơ quan thuế của nước cư trú cấp đã được hợp pháp hóa lãnh sự (cho năm ngay trước năm nộp hồ sơ đề nghị dự kiến); Bảng kê các Hợp đồng tái bảo hiểm đã hoặc dự kiến ký kết theo mẫu số 01-1/TBH-TB Phụ lục III ban hành kèm theo Thông tư này; Bản sao có chứng thực văn bản ủy quyền trong trường hợp người nộp thuế ủy quyền cho đại diện hợp pháp thực hiện thủ tục áp dụng Hiệp định thuế. Trường hợp người nộp thuế không cung cấp đủ các thông tin hoặc các tài liệu theo yêu cầu của Hồ sơ thông báo thuộc diện miễn, giảm thuế theo Hiệp định thuế, người nộp thuế có trách nhiệm giải trình cụ thể tại Văn bản đề nghị (dự kiến) theo mẫu số 01/TBH-TB Phụ lục III ban hành kèm theo Thông tư số 89/2026/TT-BTC.",
+          "component_code": "000.00.00.G12-00012022",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019fa849-a539-7547-949b-4df0c74220e0",
+              "fileName": "01-TBH-TB.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa849-a539-7547-949b-4df0c74220e0/01-TBH-TB.docx"
+            }
+          ]
+        },
+        {
+          "section": "ii. Đối với hồ sơ đề nghị chính thức: trong thời hạn quý I của năm sau, tổ chức nhận tái bảo hiểm nước ngoài có trách nhiệm nộp cho cơ quan thuế hồ sơ đề nghị chính thức cùng với tài liệu liên quan tương tự như đối với việc nộp hồ sơ đề nghị dự kiến. Hồ sơ đề nghị chính thức bao gồm:",
+          "position": 1,
+          "name": "Văn bản đề nghị chính thức theo mẫu số 02/TBH-TB Phụ lục III ban hành kèm theo Thông tư số 89/2026/TT-BTC",
+          "component_code": "000.00.00.G12-00012017",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019fa84a-4b2c-7739-97af-91049c7bfff2",
+              "fileName": "02-TBH- TT89.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa84a-4b2c-7739-97af-91049c7bfff2/02-TBH- TT89.docx"
+            }
+          ]
+        },
+        {
+          "section": "ii. Đối với hồ sơ đề nghị chính thức: trong thời hạn quý I của năm sau, tổ chức nhận tái bảo hiểm nước ngoài có trách nhiệm nộp cho cơ quan thuế hồ sơ đề nghị chính thức cùng với tài liệu liên quan tương tự như đối với việc nộp hồ sơ đề nghị dự kiến. Hồ sơ đề nghị chính thức bao gồm:",
+          "position": 2,
+          "name": "Bản chính hoặc bản sao có chứng thực Giấy chứng nhận cư trú do cơ quan thuế của nước cư trú cấp đã được hợp pháp hóa lãnh sự trong năm tính thuế đó",
+          "component_code": "000.00.00.G12-00015660",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "ii. Đối với hồ sơ đề nghị chính thức: trong thời hạn quý I của năm sau, tổ chức nhận tái bảo hiểm nước ngoài có trách nhiệm nộp cho cơ quan thuế hồ sơ đề nghị chính thức cùng với tài liệu liên quan tương tự như đối với việc nộp hồ sơ đề nghị dự kiến. Hồ sơ đề nghị chính thức bao gồm:",
+          "position": 3,
+          "name": "Bản sao của các hợp đồng tái bảo hiểm đã thực hiện trong năm có xác nhận của người nộp thuế (bao gồm cả những hợp đồng đã có trong kế hoạch và những hợp đồng ngoài kế hoạch đã gửi cơ quan thuế) nhưng chưa nộp cho cơ quan thuế;",
+          "component_code": "000.00.00.G12-00012018",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "ii. Đối với hồ sơ đề nghị chính thức: trong thời hạn quý I của năm sau, tổ chức nhận tái bảo hiểm nước ngoài có trách nhiệm nộp cho cơ quan thuế hồ sơ đề nghị chính thức cùng với tài liệu liên quan tương tự như đối với việc nộp hồ sơ đề nghị dự kiến. Hồ sơ đề nghị chính thức bao gồm:",
+          "position": 4,
+          "name": "Bảng kê các hợp đồng tái bảo hiểm đã thực hiện theo mẫu số 02-1/TBH-TB Phụ lục III ban hành kèm theo Thông tư số 89/2026/TT-BTC",
+          "component_code": "000.00.00.G12-00012019",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "ii. Đối với hồ sơ đề nghị chính thức: trong thời hạn quý I của năm sau, tổ chức nhận tái bảo hiểm nước ngoài có trách nhiệm nộp cho cơ quan thuế hồ sơ đề nghị chính thức cùng với tài liệu liên quan tương tự như đối với việc nộp hồ sơ đề nghị dự kiến. Hồ sơ đề nghị chính thức bao gồm:",
+          "position": 5,
+          "name": "Bản sao có chứng thực văn bản ủy quyền trong trường hợp người nộp thuế ủy quyền cho đại diện hợp pháp thực hiện thủ tục áp dụng Hiệp định thuế; Tại thời điểm nộp hồ sơ đề nghị chính thức, người nộp thuế phân loại hợp đồng và gửi danh mục hợp đồng theo từng loại (với các chỉ tiêu nhất định); mỗi loại hợp đồng chỉ gửi một bản sao có xác nhận của người nộp thuế để làm mẫu",
+          "component_code": "TP-G12.0001054",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "ii. Đối với hồ sơ đề nghị chính thức: trong thời hạn quý I của năm sau, tổ chức nhận tái bảo hiểm nước ngoài có trách nhiệm nộp cho cơ quan thuế hồ sơ đề nghị chính thức cùng với tài liệu liên quan tương tự như đối với việc nộp hồ sơ đề nghị dự kiến. Hồ sơ đề nghị chính thức bao gồm:",
+          "position": 6,
+          "name": "Trường hợp người nộp thuế không cung cấp đủ các thông tin hoặc các tài liệu theo yêu cầu của Hồ sơ thông báo thuộc diện miễn, giảm thuế theo Hiệp định thuế, người nộp thuế có trách nhiệm giải trình cụ thể tại Văn bản đề nghị (chính thức) theo mẫu 02/TBH-TB Phụ lục III ban hành kèm theo Thông tư số 89/2026/TT-BTC.",
+          "component_code": "TP-G12.0001055",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 1,
+          "name": "Từ 01/7/2026 đến thời điểm theo lộ trình của cơ quan thuế quy định tại khoản 2 Điều 99 Thông tư số 89/2026/TT-BTC, tờ khai số 01/TBH-TB và 02/TBH-TB thực hiện theo mẫu ban hành kèm theo Thông tư số 80/2021/TT-BTC ngày 29/9/2021 của Bộ Tài chính (đã được sửa đổi, bổ sung).",
+          "component_code": "G12.0011156",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019fb1e5-a25f-757b-843c-e39b9a9b842f",
+              "fileName": "02 TBH TB TT 80.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fb1e5-a25f-757b-843c-e39b9a9b842f/02 TBH TB TT 80.docx"
+            },
+            {
+              "id": "019fb1e5-a388-70ca-888d-9f9dc7ff1dc9",
+              "fileName": "01 TBH TB TT 80.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fb1e5-a388-70ca-888d-9f9dc7ff1dc9/01 TBH TB TT 80.docx"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c71-7574-afe7-f63bc8a369b7",
+          "name": "Trường hợp xác định người nộp thuế không thuộc diện được miễn thuế, giảm thuế theo Hiệp định thuế hoặc Điều ước quốc tế khác, cơ quan thuế gửi người nộp thuế Thông báo mẫu số 03-1/MGTH Phụ lục III ban hành kèm theo Thông tư số 89/2026/TT-BTC ngày 30/6/2026 của Bộ Tài chính. Người nộp thuế có trách nhiệm khai chính xác, trung thực, đầy đủ các nội dung trong hồ sơ miễn thuế, giảm thuế theo Hiệp định thuế hoặc Điều ước quốc tế khác. Trường hợp qua kiểm tra phát hiện người nộp thuế không thuộc diện được miễn thuế, giảm thuế theo Hiệp định thuế hoặc Điều ước quốc tế khác thì người nộp thuế có trách nhiệm hoàn thành nghĩa vụ nộp thuế theo quy định.",
+          "code": "KQ.G12.000520"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019f8db3-9765-740b-8b90-682677b9c421",
+          "name": "Thông tư quy định chi tiết một số điều của Luật Quản lý thuế và Nghị định số 252/2026/NĐ-CP của Chính phủ quy định chi tiết một số điều và biện pháp để tổ chức, hướng dẫn thi hành Luật Quản lý thuế",
+          "code": "89/2026/TT-BTC"
+        },
+        {
+          "id": "019e5e83-1282-771d-9014-49799413a4e5",
+          "name": "Luật số 108/2025/QH15 của Quốc hội: Luật Quản lý thuế",
+          "code": "108/2025/QH15"
+        },
+        {
+          "id": "019f356e-75e3-7494-a2f3-672d8dce61a6",
+          "name": "QUY ĐỊNH CHI TIẾT MỘT SỐ ĐIỀU VÀ BIỆN PHÁP ĐỂ TỔ CHỨC, HƯỚNG DẪN THI HÀNH LUẬT QUẢN LÝ THUẾ",
+          "code": "252/2026/NĐ-CP"
+        }
+      ]
+    }
+  ]
+}

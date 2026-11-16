@@ -1,0 +1,107 @@
+{
+  "id": "dvc-019d2bfb-98d1-709e-a4f4-ce3ea817a024",
+  "procedure_code": "1.008605",
+  "name": "Thủ tục khen thưởng tập thể về Dân quân tự vệ",
+  "domain": "Khen thưởng BQP",
+  "managing_agency": "Bộ Quốc phòng",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.981946+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfb-98d1-709e-a4f4-ce3ea817a024",
+      "code": "1.008605",
+      "name": "Thủ tục khen thưởng tập thể về Dân quân tự vệ",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1787018231354,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-98d1-709e-a4f4-ce3ea817a024",
+      "raw_path": "evidence/dvc/details/019d2bfb-98d1-709e-a4f4-ce3ea817a024.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Hồ sơ, tài liệu khác có liên quan (nếu có).",
+          "component_code": "000.00.00.G11-KQ003258",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Danh sách đề nghị tặng danh hiệu thi đua hoặc hình thức khen thưởng.",
+          "component_code": "000.00.00.G11-KQ003255",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 3,
+          "name": "Tờ trình của cơ quan, đơn vị (theo mẫu số 01 quy định tại Phụ lục I kèm theo Nghị định số 98/2023/NĐ-CP).",
+          "component_code": "000.00.00.G11-KQ003254",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 4,
+          "name": "Báo cáo thành tích của tập thể đề nghị tặng danh hiệu thi đua hoặc hình thức khen thưởng, có xác nhận của cấp trình khen thưởng (theo mẫu từ số 02 đến số 10 quy định tại Phụ lục I kèm theo Nghị định số 98/2023/NĐ-CP).",
+          "component_code": "000.00.00.G11-KQ003256",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 5,
+          "name": "Biên bản họp và kết quả bỏ phiếu tín nhiệm của hội đồng thi đua - khen thưởng (theo mẫu số 1.9 quy định tại Nghị định số 30/2020/NĐ-CP).",
+          "component_code": "000.00.00.G11-KQ003257",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c6e-7797-a21b-5bde8713878a",
+          "name": "Quyết định tặng thưởng danh hiệu thi đua và hình thức khen thưởng.",
+          "code": "KQ.G11.000025"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7f-719e-b473-4383d8012e2b",
+          "name": "Quy định chi tiết thi hành một số điều của Luật Thi đua, khen thưởng",
+          "code": "98/2023/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b671-4c4f0784f204",
+          "name": "Luật Thi đua, khen thưởng",
+          "code": "06/2022/QH15"
+        },
+        {
+          "id": "019d2bb3-5d85-73da-8eb8-3b5755362b92",
+          "name": "Luật dân quân tự vệ",
+          "code": "48/2019/QH14"
+        }
+      ]
+    }
+  ]
+}

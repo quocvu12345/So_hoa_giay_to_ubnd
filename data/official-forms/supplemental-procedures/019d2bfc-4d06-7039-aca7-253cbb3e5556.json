@@ -1,0 +1,150 @@
+{
+  "id": "dvc-019d2bfc-4d06-7039-aca7-253cbb3e5556",
+  "procedure_code": "1.008001",
+  "name": "Thủ tục hải quan đối với hàng hóa xuất khẩu, nhập khẩu của thương nhân qua cửa khẩu biên giới",
+  "domain": "Hải quan",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.946474+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfc-4d06-7039-aca7-253cbb3e5556",
+      "code": "1.008001",
+      "name": "Thủ tục hải quan đối với hàng hóa xuất khẩu, nhập khẩu của thương nhân qua cửa khẩu biên giới",
+      "state": "ACTIVE",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1775640066930,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-4d06-7039-aca7-253cbb3e5556",
+      "raw_path": "evidence/dvc/details/019d2bfc-4d06-7039-aca7-253cbb3e5556.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "a) Tờ khai hàng hóa xuất khẩu theo các chỉ tiêu thông tin tại Phụ lục II ban hành kèm theo Thông tư số 38/2015/TT-BTC ngày 25/3/2015 của Bộ Tài chính.  Trường hợp thực hiện trên tờ khai hải quan giấy theo quy định tại khoản 2 Điều 25 Nghị định số 08/2015/NĐ-CP ngày 21/1/2015 của Chính phủ, người khai hải quan khai và nộp 02 bản chính tờ khai hàng hóa nhập khẩu theo mẫu HQ/2015/NK Phụ lục IV ban hành kèm theo Thông tư số 38/2015/TT-BTC;",
+          "component_code": "000.00.00.G12-KQ0780",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "a) Tờ khai hàng hóa nhập khẩu theo các chỉ tiêu thông tin tại Phụ lục II ban hành kèm theo Thông tư số 38/2015/TT-BTC. Trường hợp thực hiện trên tờ khai hải quan giấy theo quy định tại khoản 2 Điều 25 Nghị định số 08/2015/NĐ-CP, người khai hải quan khai và nộp 02 bản chính tờ khai hàng hóa nhập khẩu theo mẫu HQ/2015/NK Phụ lục IV ban hành kèm theo Thông tư số 38/2015/TT-BTC;",
+          "component_code": "000.00.00.G12-KQ5878",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 3,
+          "name": "b) Hóa đơn thương mại trong trường hợp người mua phải thanh toán cho người bán: 01 bản chụp. Trường hợp chủ hàng mua hàng từ người bán tại Việt Nam nhưng được người bán chỉ định nhận hàng từ nước ngoài thì cơ quan hải quan chấp nhận hóa đơn do người bán tại Việt Nam phát hành cho chủ hàng. Người khai hải quan không phải nộp hóa đơn thương mại trong các trường hợp sau: b.1) Người khai hải quan là doanh nghiệp ưu tiên; b.2) Hàng hóa nhập khẩu để thực hiện hợp đồng gia công cho thương nhân nước ngoài, người khai hải quan khai giá tạm tính tại ô “Trị giá hải quan” trên tờ khai hải quan; b.3) Hàng hóa nhập khẩu không có hóa đơn và người mua không phải thanh toán cho người bán, người khai hải quan khai trị giá hải quan theo hướng dẫn của Bộ Tài chính về xác định trị giá hải quan.",
+          "component_code": "000.00.00.G12-KQ5879",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 4,
+          "name": "e) Tờ khai trị giá: Người khai hải quan khai tờ khai trị giá theo mẫu, gửi đến Hệ thống dưới dạng dữ liệu điện tử hoặc nộp cho cơ quan hải quan 02 bản chính (đối với trường hợp khai trên tờ khai hải quan giấy). Các trường hợp phải khai tờ khai trị giá và mẫu tờ khai trị giá thực hiện theo Thông tư của Bộ Tài chính quy định về việc xác định trị giá hải quan đối với hàng hóa xuất khẩu, nhập khẩu;",
+          "component_code": "000.00.00.G12-KQ5883",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 5,
+          "name": "5) Giấy phép nhập khẩu đối với hàng hóa phải có giấy phép nhập khẩu theo quy định của pháp luật: nộp 01 bản chính nếu nhập khẩu một lần hoặc bản sao khi nhập khẩu nhiều lần và phải xuất trình bản chính để đối chiếu, lập phiếu theo dõi trừ lùi;",
+          "component_code": "000.00.00.G12-KQ3548",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 6,
+          "name": "Đối với các mặt hàng chuyên dụng, đơn vị bán hàng phải cung cấp 01 bản gốc: giấy chứng nhận kiểm tra chuyên ngành do cơ quan nhà nước có thẩm quyền cấp.",
+          "component_code": "000.00.00.G12-KQ3110",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 7,
+          "name": "Bản chính bảng kê lâm sản theo Mẫu số 01 kèm theo Thông tư số 27/2018/TT-BNNPTNT ngày 16/11/2018",
+          "component_code": "000.00.00.G10-KQ0319",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 8,
+          "name": "+ Chứng từ chứng nhận xuất xứ hàng hóa (Giấy chứng nhận xuất xứ hàng hóa hoặc Chứng từ tự chứng nhận xuất xứ): 01 bản chính hoặc chứng từ dưới dạng dữ liệu điện tử.",
+          "component_code": "000.00.00.G12-KQ5894",
+          "original_quantity": 0,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c70-724b-96e0-46e541515789",
+          "name": "Thông quan hàng hóa nhập khẩu, xuất khẩu",
+          "code": "KQ.G12.000584"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7d-7398-be4d-ff62cdf67da5",
+          "name": "Luật 54/2014/QH13",
+          "code": "54/2014/QH13"
+        },
+        {
+          "id": "019d2bb3-5d7d-7398-be4d-1c6dbc289d7a",
+          "name": "Quy định về thủ tục hải quan; kiểm tra, giám sát hải quan; thuế xuất khẩu thuế nhập khẩu và quản lý thuế đối vớỉ hàng hoá xuất khẩu, nhập khẩu.",
+          "code": "38/2015/TT-BTC"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afe7-9c25863596db",
+          "name": "Nghị định 08/2015/NĐ-CP",
+          "code": "08/2015/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d87-7195-a443-db1e211c2ddd",
+          "name": "Nghị định 59/2018/NĐ-CP",
+          "code": "59/2018/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7d-7398-be4f-0071b6bbb0cd",
+          "name": "Hướng dẫn thủ tục hải quan, quản lý thuế, phí và lệ phí đối với  hàng hóa xuất khẩu, nhập khẩu theo Nghị định số 14/2018/NĐ-CP  ngày 23 tháng 01 năm 2018 của Chính phủ quy định chi tiết về  hoạt động thương mại biên giới",
+          "code": "80/2019/TT-BTC"
+        }
+      ]
+    }
+  ]
+}

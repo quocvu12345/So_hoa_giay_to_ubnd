@@ -1,0 +1,106 @@
+{
+  "id": "dvc-019d2bfb-1b93-7684-9fd3-a088c69450aa",
+  "procedure_code": "1.013734",
+  "name": "Đăng ký hợp đồng lao động trực tiếp giao kết .",
+  "domain": "Quản lý lao động ngoài nước",
+  "managing_agency": "Bộ Nội vụ",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.995179+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfb-1b93-7684-9fd3-a088c69450aa",
+      "code": "1.013734",
+      "name": "Đăng ký hợp đồng lao động trực tiếp giao kết .",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1782874280314,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-1b93-7684-9fd3-a088c69450aa",
+      "raw_path": "evidence/dvc/details/019d2bfb-1b93-7684-9fd3-a088c69450aa.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "- Bản sao hợp đồng lao động kèm theo bản dịch tiếng Việt được chứng thực",
+          "component_code": "G09-KQ003210122",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "- Văn bản đăng ký theo Mẫu số 05 Phụ lục I ban hành kèm theo Thông tư số 09/2026/TT-BNV",
+          "component_code": "G09-KQ003210123",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019ef3bc-485a-7357-84d4-d5024de2abb0",
+              "fileName": "Mẫu số 05 Thông tư số 09.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019ef3bc-485a-7357-84d4-d5024de2abb0/Mẫu số 05 Thông tư số 09.docx"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c4d-7725-9d9d-44cec2d9b363",
+          "name": "Văn bản trả lời;.",
+          "code": "KQ.G09.000484"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7f-719e-b474-93996f3f00db",
+          "name": "Nghị định số 25/2025/NĐ-CP ngày 21 tháng 02 năm 2025 của Chính phủ quy định chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của Bộ Nội vụ",
+          "code": "Nghị định số 25/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b671-f40a5ee32475",
+          "name": "Nghị quyết số 190/2025/QH15 của Quốc hội: Quy định về xử lý một số vấn đề liên quan đến sắp xếp tổ chức bộ máy nhà nước",
+          "code": "190/2025/NQ-QH15"
+        },
+        {
+          "id": "019d2bb3-5d7f-719e-b46e-3b82195c2d48",
+          "name": "Nghị định số 45/2025/NĐ-CP ngày 28/02/2025 của Chính phủ quy định tổ chức các cơ quan chuyên môn thuộc Ủy ban nhân dân tỉnh, thành phố trực thuộc trung ương và Ủy ban nhân dân huyện, quận, thị xã, thành phố thuộc tỉnh, thành phố thuộc thành phố trực thuộc trung ương",
+          "code": "45/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b674-0ff98d7121f9",
+          "name": "69-2020-QH14 Luật Ng VN đi LĐNN ngày 13.11.2020",
+          "code": "69/2020/QH14"
+        },
+        {
+          "id": "019d2bb3-5d7c-71ab-9f07-310a57777f10",
+          "name": "QUY ĐỊNH VỀ HỆ THỐNG CƠ SỞ DỮ LIỆU VỀ NGƯỜI LAO ĐỘNG VIỆT NAM ĐI LÀM VIỆC Ở NƯỚC NGOÀI THEO HỢP ĐỒNG",
+          "code": "20/2021/TT-BLĐTBXH"
+        },
+        {
+          "id": "019d2bb3-5d7c-71ab-9f07-406b5870c4e3",
+          "name": "QUY ĐỊNH CHI TIẾT MỘT SỐ ĐIỀU CỦA LUẬT NGƯỜI LAO ĐỘNG VIỆT NAM ĐI LÀM VIỆC Ở NƯỚC NGOÀI THEO HỢP ĐỒNG",
+          "code": "21/2021/TT-BLĐTBXH"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afea-0de7cda4cafa",
+          "name": "Quy định về phân quyền, phân cấp trong quản lý nhà nước lĩnh vực nội vụ",
+          "code": "128/2025/NĐ-CP"
+        },
+        {
+          "id": "019ef285-576d-721a-abe9-bdebdb62e12f",
+          "name": "Sửa đổi, bổ sung một số điều của Thông tư số 21/2021/TT-BLĐTBXH ngày 15 tháng 12 năm 2021 của Bộ trưởng Bộ Lao động – Thương binh và Xã hội quy định chi tiết một số điều của Luật Người lao động Việt Nam đi làm việc ở nước ngoài theo hợp đồng",
+          "code": "09/2026/TT-BNV"
+        }
+      ]
+    }
+  ]
+}

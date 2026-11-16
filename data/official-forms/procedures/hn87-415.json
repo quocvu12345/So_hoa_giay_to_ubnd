@@ -1,0 +1,504 @@
+{
+  "ordinal": "415",
+  "managing_agency": "Sở Tài chính",
+  "procedure_code": "1.005280",
+  "name": "Đăng ký thành lập hợp tác xã, liên hiệp hợp tác xã; đăng ký chuyển đổi tổ hợp tác thành hợp tác xã; đăng ký khi hợp tác xã, liên hiệp hợp tác xã chia, tách, hợp nhất",
+  "domain": "Thành lập và hoạt động của tổ hợp tác, hợp tác xã, liên hiệp hợp tác xã (Bộ Tài chính)",
+  "ministry_decision": "2103/QĐ-BTC ngày 23/06/2025",
+  "hanoi_decision": "951/QĐ-TTPVHCC",
+  "workflow_decision": "QĐ số 1025/QĐ- TTPVHCC ngày 03/7/2025",
+  "fees": "200.000 đồng",
+  "execution_level": "Cấp xã",
+  "competent_authority": "UBND cấp xã",
+  "delegation_decision": "",
+  "delegation_expiry": "",
+  "receiving_location": "Điểm hỗ trợ DVC số",
+  "id": "hn87-415",
+  "source_page": 17,
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "inventory_date": "2026-04-27",
+  "checked_at": "2026-11-12T22:25:09.401575+07:00",
+  "details": [
+    {
+      "id": "019d2bfb-df2c-74f3-8af6-ef7dc8d36f08",
+      "code": "1.005280",
+      "name": "Đăng ký thành lập hợp tác xã, liên hiệp hợp tác xã; đăng ký chuyển đổi tổ hợp tác thành hợp tác xã; đăng ký khi hợp tác xã, liên hiệp hợp tác xã chia, tách, hợp nhất",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1785491737529,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-df2c-74f3-8af6-ef7dc8d36f08",
+      "raw_path": "evidence/dvc/details/019d2bfb-df2c-74f3-8af6-ef7dc8d36f08.json",
+      "components": [
+        {
+          "section": "Trường hợp đăng ký thành lập hợp tác xã, liên hiệp hợp tác xã",
+          "position": 1,
+          "name": "Giấy đề nghị đăng ký thành lập",
+          "component_code": "000.00.00.G12-00006607",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019fb233-6a1f-71fe-869b-b8933ebbc93d",
+              "fileName": "MS 1 PL2.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fb233-6a1f-71fe-869b-b8933ebbc93d/MS 1 PL2.docx"
+            }
+          ]
+        },
+        {
+          "section": "Trường hợp đăng ký thành lập hợp tác xã, liên hiệp hợp tác xã",
+          "position": 2,
+          "name": "Điều lệ",
+          "component_code": "000.00.00.G12-00006606",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Trường hợp đăng ký thành lập hợp tác xã, liên hiệp hợp tác xã",
+          "position": 3,
+          "name": "Nghị quyết hội nghị thành lập",
+          "component_code": "000.00.00.G12-00006604",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Trường hợp đăng ký thành lập hợp tác xã, liên hiệp hợp tác xã",
+          "position": 4,
+          "name": "Danh sách thành viên chính thức, thành viên liên kết góp vốn",
+          "component_code": "000.00.00.G12-00006605",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019fb233-afb1-740d-a6d4-27f23d01bc9d",
+              "fileName": "MS 2 PL2.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fb233-afb1-740d-a6d4-27f23d01bc9d/MS 2 PL2.docx"
+            }
+          ]
+        },
+        {
+          "section": "Trường hợp đăng ký thành lập hợp tác xã, liên hiệp hợp tác xã",
+          "position": 5,
+          "name": "Danh sách, số định danh cá nhân của người đại diện theo pháp luật là người Việt Nam; danh sách, bản sao giấy tờ pháp lý của người đại diện theo pháp luật là người nước ngoài",
+          "component_code": "TP-G12.0001097",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019fb234-2615-71a4-b5da-2a414f29eb0c",
+              "fileName": "MS 3 PL2.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fb234-2615-71a4-b5da-2a414f29eb0c/MS 3 PL2.docx"
+            }
+          ]
+        },
+        {
+          "section": "Trường hợp đăng ký thành lập hợp tác xã, liên hiệp hợp tác xã",
+          "position": 6,
+          "name": "Bản sao giấy chứng nhận đăng ký đầu tư theo quy định tại điểm b khoản 1 Điều 30 của Luật Hợp tác xã 2023",
+          "component_code": "TP-G12.0001098",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Trường hợp đăng ký thành lập hợp tác xã, liên hiệp hợp tác xã",
+          "position": 7,
+          "name": "Bản sao giấy chứng nhận đăng ký đầu tư đối với dự án thành lập hợp tác xã, liên hiệp hợp tác xã trong trường hợp hợp tác xã, liên hiệp hợp tác xã được tham gia thành lập bởi cá nhân là nhà đầu tư nước ngoài hoặc tổ chức kinh tế có vốn đầu tư nước ngoài theo quy định của pháp luật về đầu tư. Trường hợp nhà đầu tư nước ngoài thành lập hợp tác xã, liên hiệp hợp tác xã trước khi thực hiện thủ tục cấp, điều chỉnh Giấy chứng nhận đăng ký đầu tư theo quy định thì hồ sơ không bao gồm bản sao Giấy chứng nhận đăng ký đầu tư quy định tại điểm g khoản 2 Điều 42 Luật Hợp tác xã. Trong trường hợp này, Giấy đề nghị đăng ký hợp tác xã bao gồm nội dung cam kết đáp ứng điều kiện tiếp cận thị trường đối với nhà đầu tư nước ngoài theo quy định của pháp luật",
+          "component_code": "TP-G12.0001099",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Trường hợp đăng ký thành lập hợp tác xã trên cơ sở chuyển đổi từ tổ hợp tác:",
+          "position": 1,
+          "name": "Giấy đề nghị đăng ký thành lập",
+          "component_code": "000.00.00.G12-00006592",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019fb234-688d-773d-a791-1414e8347cd8",
+              "fileName": "MS 1 PL2.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fb234-688d-773d-a791-1414e8347cd8/MS 1 PL2.docx"
+            }
+          ]
+        },
+        {
+          "section": "Trường hợp đăng ký thành lập hợp tác xã trên cơ sở chuyển đổi từ tổ hợp tác:",
+          "position": 2,
+          "name": "Điều lệ",
+          "component_code": "000.00.00.G12-00006589",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Trường hợp đăng ký thành lập hợp tác xã trên cơ sở chuyển đổi từ tổ hợp tác:",
+          "position": 3,
+          "name": "Nghị quyết hội nghị thành lập",
+          "component_code": "000.00.00.G12-00006595",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Trường hợp đăng ký thành lập hợp tác xã trên cơ sở chuyển đổi từ tổ hợp tác:",
+          "position": 4,
+          "name": "Danh sách thành viên chính thức, thành viên liên kết góp vốn",
+          "component_code": "000.00.00.G12-00006590",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019fb234-96df-74f9-a957-5cd342a1844c",
+              "fileName": "MS 2 PL2.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fb234-96df-74f9-a957-5cd342a1844c/MS 2 PL2.docx"
+            }
+          ]
+        },
+        {
+          "section": "Trường hợp đăng ký thành lập hợp tác xã trên cơ sở chuyển đổi từ tổ hợp tác:",
+          "position": 5,
+          "name": "Danh sách, số định danh cá nhân của người đại diệ-n theo pháp luật là người Việt Nam; danh sách, bản sao giấy tờ pháp lý của người đại diện theo pháp luật là người nước ngoài",
+          "component_code": "000.00.00.G12-00006594",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019fb234-d5c2-7750-9567-a11f5d15581b",
+              "fileName": "MS 3 PL2.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fb234-d5c2-7750-9567-a11f5d15581b/MS 3 PL2.docx"
+            }
+          ]
+        },
+        {
+          "section": "Trường hợp hợp tác xã được chuyển đổi từ tổ hợp tác có nhà đầu tư nước ngoài, tổ chức kinh tế có vốn đầu tư nước ngoài tham gia góp vốn, mua cổ phần, mua phần vốn góp thuộc trường hợp phải thực hiện thủ tục đăng ký góp vốn, mua cổ phần, mua phần vốn góp theo quy định của Luật Đầu tư",
+          "position": 1,
+          "name": "Giấy đề nghị đăng ký thành lập",
+          "component_code": "000.00.00.G12-00006596",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019fb235-00bb-7163-9b92-a0ad594d8e4b",
+              "fileName": "MS 1 PL2.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fb235-00bb-7163-9b92-a0ad594d8e4b/MS 1 PL2.docx"
+            }
+          ]
+        },
+        {
+          "section": "Trường hợp hợp tác xã được chuyển đổi từ tổ hợp tác có nhà đầu tư nước ngoài, tổ chức kinh tế có vốn đầu tư nước ngoài tham gia góp vốn, mua cổ phần, mua phần vốn góp thuộc trường hợp phải thực hiện thủ tục đăng ký góp vốn, mua cổ phần, mua phần vốn góp theo quy định của Luật Đầu tư",
+          "position": 2,
+          "name": "Điều lệ",
+          "component_code": "000.00.00.G12-00006601",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Trường hợp hợp tác xã được chuyển đổi từ tổ hợp tác có nhà đầu tư nước ngoài, tổ chức kinh tế có vốn đầu tư nước ngoài tham gia góp vốn, mua cổ phần, mua phần vốn góp thuộc trường hợp phải thực hiện thủ tục đăng ký góp vốn, mua cổ phần, mua phần vốn góp theo quy định của Luật Đầu tư",
+          "position": 3,
+          "name": "Nghị quyết hội nghị thành lập",
+          "component_code": "000.00.00.G12-00006599",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Trường hợp hợp tác xã được chuyển đổi từ tổ hợp tác có nhà đầu tư nước ngoài, tổ chức kinh tế có vốn đầu tư nước ngoài tham gia góp vốn, mua cổ phần, mua phần vốn góp thuộc trường hợp phải thực hiện thủ tục đăng ký góp vốn, mua cổ phần, mua phần vốn góp theo quy định của Luật Đầu tư",
+          "position": 4,
+          "name": "Danh sách thành viên chính thức, thành viên liên kết góp vốn",
+          "component_code": "000.00.00.G12-00006597",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019fb235-2747-73e9-a9b6-8d54cdf3d202",
+              "fileName": "MS 2 PL2.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fb235-2747-73e9-a9b6-8d54cdf3d202/MS 2 PL2.docx"
+            }
+          ]
+        },
+        {
+          "section": "Trường hợp hợp tác xã được chuyển đổi từ tổ hợp tác có nhà đầu tư nước ngoài, tổ chức kinh tế có vốn đầu tư nước ngoài tham gia góp vốn, mua cổ phần, mua phần vốn góp thuộc trường hợp phải thực hiện thủ tục đăng ký góp vốn, mua cổ phần, mua phần vốn góp theo quy định của Luật Đầu tư",
+          "position": 5,
+          "name": "Danh sách, số định danh cá nhân của người đại diện theo pháp luật là người Việt Nam; danh sách, bản sao giấy tờ pháp lý của người đại diện theo pháp luật là người nước ngoài",
+          "component_code": "000.00.00.G12-00006598",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019fb235-60eb-760c-ac42-83a04ced28ca",
+              "fileName": "MS 3 PL2.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fb235-60eb-760c-ac42-83a04ced28ca/MS 3 PL2.docx"
+            }
+          ]
+        },
+        {
+          "section": "Trường hợp hợp tác xã được chuyển đổi từ tổ hợp tác có nhà đầu tư nước ngoài, tổ chức kinh tế có vốn đầu tư nước ngoài tham gia góp vốn, mua cổ phần, mua phần vốn góp thuộc trường hợp phải thực hiện thủ tục đăng ký góp vốn, mua cổ phần, mua phần vốn góp theo quy định của Luật Đầu tư",
+          "position": 6,
+          "name": "Bản sao giấy chứng nhận đăng ký đầu tư theo quy định tại điểm b khoản 1 Điều 30 của Luật Hợp tác xã 2023",
+          "component_code": "000.00.00.G12-00006600",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Trường hợp hợp tác xã được chuyển đổi từ tổ hợp tác có nhà đầu tư nước ngoài, tổ chức kinh tế có vốn đầu tư nước ngoài tham gia góp vốn, mua cổ phần, mua phần vốn góp thuộc trường hợp phải thực hiện thủ tục đăng ký góp vốn, mua cổ phần, mua phần vốn góp theo quy định của Luật Đầu tư",
+          "position": 7,
+          "name": "Bản sao văn bản của cơ quan đăng ký đầu tư chấp thuận về việc góp vốn, mua cổ phần, mua phần vốn góp của nhà đầu tư nước ngoài, tổ chức kinh tế có vốn đầu tư nước ngoài",
+          "component_code": "000.00.00.G12-00006602",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Trường hợp đăng ký khi hợp tác xã, liên hiệp hợp tác xã chia, tách, hợp nhất",
+          "position": 1,
+          "name": "Giấy đề nghị đăng ký thành lập",
+          "component_code": "000.00.00.G12-00006586",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Trường hợp đăng ký khi hợp tác xã, liên hiệp hợp tác xã chia, tách, hợp nhất",
+          "position": 2,
+          "name": "Điều lệ",
+          "component_code": "000.00.00.G12-00006585",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Trường hợp đăng ký khi hợp tác xã, liên hiệp hợp tác xã chia, tách, hợp nhất",
+          "position": 3,
+          "name": "Danh sách thành viên chính thức, thành viên liên kết góp vốn",
+          "component_code": "000.00.00.G12-00006587",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Trường hợp đăng ký khi hợp tác xã, liên hiệp hợp tác xã chia, tách, hợp nhất",
+          "position": 4,
+          "name": "Danh sách, số định danh cá nhân của người đại diện theo pháp luật là người Việt Nam; danh sách, bản sao giấy tờ pháp lý của người đại diện theo pháp luật là người nước ngoài",
+          "component_code": "000.00.00.G12-00006584",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Trường hợp đăng ký khi hợp tác xã, liên hiệp hợp tác xã chia, tách, hợp nhất",
+          "position": 5,
+          "name": "Bản sao giấy chứng nhận đăng ký đầu tư theo quy định tại điểm b khoản 1 Điều 30 của Luật Hợp tác xã 2023",
+          "component_code": "000.00.00.G12-00006588",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Trường hợp đăng ký khi hợp tác xã, liên hiệp hợp tác xã chia, tách, hợp nhất",
+          "position": 6,
+          "name": "Bản sao giấy chứng nhận đăng ký đầu tư đối với dự án thành lập hợp tác xã, liên hiệp hợp tác xã trong trường hợp hợp tác xã, liên hiệp hợp tác xã được tham gia thành lập bởi cá nhân là nhà đầu tư nước ngoài hoặc tổ chức kinh tế có vốn đầu tư nước ngoài theo quy định của pháp luật về đầu tư",
+          "component_code": "TP-G12.0001100",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Trường hợp đăng ký khi hợp tác xã, liên hiệp hợp tác xã chia, tách, hợp nhất",
+          "position": 7,
+          "name": "Nghị quyết chia hợp tác xã (trong trường hợp đăng ký khi hợp tác xã, liên hiệp hợp tác xã chia); Nghị quyết tách hợp tác xã, liên hiệp hợp tác xã (trong trường hợp đăng ký khi hợp tác xã, liên hiệp hợp tác xã tách); Hợp đồng hợp nhất, nghị quyết thông qua hợp đồng hợp nhất của các hợp tác xã, liên hiệp hợp tác xã bị hợp nhất (trong trường hợp đăng ký khi hợp tác xã, liên hiệp hợp tác xã hợp nhất).",
+          "component_code": "TP-G12.0001102",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Trường hợp ủy quyền thực hiện thủ tục",
+          "position": 1,
+          "name": "Người được ủy quyền đăng ký thành lập hợp tác xã, liên hiệp hợp tác xã được ghi trong nghị quyết Hội nghị thành lập hợp tác xã, liên hiệp hợp tác xã. Việc ủy quyền lại để thực hiện thủ tục đăng ký thành lập hợp tác xã, liên hiệp hợp tác xã thực hiện theo quy định của pháp luật về dân sự",
+          "component_code": "000.00.00.G12-00006563",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Trường hợp ủy quyền thực hiện thủ tục",
+          "position": 2,
+          "name": "Trừ trường hợp quy định tại khoản 1 Điều này, cá nhân ký tên tại văn bản đề nghị đăng ký tổ hợp tác, hợp tác xã, liên hiệp hợp tác xã có thể ủy quyền cho tổ chức, cá nhân khác thực hiện thủ tục đăng ký tổ hợp tác, đăng ký hợp tác xã, liên hiệp hợp tác xã như sau:Trường hợp ủy quyền cho cá nhân thực hiện thủ tục đăng ký tổ hợp tác, đăng ký hợp tác xã, liên hiệp hợp tác xã, kèm theo hồ sơ phải có văn bản ủy quyền cho cá nhân thực hiện thủ tục liên quan đến đăng ký tổ hợp tác, đăng ký hợp tác xã, liên hiệp hợp tác xã. Văn bản ủy quyền này không bắt buộc phải công chứng, chứng thực",
+          "component_code": "000.00.00.G12-00006560",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Trường hợp ủy quyền thực hiện thủ tục",
+          "position": 3,
+          "name": "Trường hợp ủy quyền cho tổ chức thực hiện thủ tục đăng ký tổ hợp tác, đăng ký hợp tác xã, liên hiệp hợp tác xã, kèm theo hồ sơ đăng ký phải có bản sao hợp đồng cung cấp dịch vụ với tổ chức làm dịch vụ, giấy giới thiệu hoặc văn bản phân công nhiệm vụ của tổ chức đó cho cá nhân trực tiếp thực hiện thủ tục liên quan đến đăng ký tổ hợp tác, đăng ký hợp tác xã, liên hiệp hợp tác xã",
+          "component_code": "000.00.00.G12-00006565",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Trường hợp ủy quyền thực hiện thủ tục",
+          "position": 4,
+          "name": "Trường hợp thực hiện thủ tục đăng ký tổ hợp tác, đăng ký hợp tác xã, liên hiệp hợp tác xã qua dịch vụ bưu chính công ích, khi thực hiện thủ tục, nhân viên bưu chính phải nộp bản sao phiếu gửi hồ sơ theo mẫu do doanh nghiệp cung ứng dịch vụ bưu chính công ích phát hành có chữ ký xác nhận của nhân viên bưu chính và người có thẩm quyền ký văn bản đề nghị đăng ký",
+          "component_code": "000.00.00.G12-00006562",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Trường hợp ủy quyền thực hiện thủ tục",
+          "position": 5,
+          "name": "Trường hợp ủy quyền cho đơn vị cung cấp dịch vụ bưu chính không phải là bưu chính công ích thực hiện thủ tục đăng ký tổ hợp tác, đăng ký hợp tác xã, liên hiệp hợp tác xã thì việc ủy quyền thực hiện theo quy định tại điểm b khoản 2 Điều 12 Nghị định số 295/2026/NĐ-CP",
+          "component_code": "000.00.00.G12-00006564",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Trường hợp ủy quyền thực hiện thủ tục",
+          "position": 6,
+          "name": "Người ủy quyền và người được ủy quyền thực hiện thủ tục đăng ký tổ hợp tác, đăng ký hợp tác xã, liên hiệp hợp tác xã chịu trách nhiệm trước pháp luật về tính hợp pháp, trung thực và chính xác của việc ủy quyền",
+          "component_code": "000.00.00.G12-00006561",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Trường hợp ủy quyền thực hiện thủ tục",
+          "position": 7,
+          "name": "Người ủy quyền phải xác thực điện tử theo quy định pháp luật về xác thực và định danh điện tử khi thực hiện thủ tục đăng ký thành lập tổ hợp tác, hợp tác xã, liên hiệp hợp tác xã; đăng ký thay đổi người đại diện theo pháp luật của hợp tác xã, liên hiệp hợp tác xã; thông báo thay đổi thông tin về thành viên chính thức, thành viên liên kết góp vốn là tổ chức kinh tế có vốn đầu tư nước ngoài, cá nhân là nhà đầu tư nước ngoài của hợp tác xã, liên hiệp hợp tác xã; đăng ký thay đổi thành viên tổ hợp tác để được cấp đăng ký tổ hợp tác, đăng ký hợp tác xã, liên hiệp hợp tác xã.  Trường hợp việc xác thực điện tử bị gián đoạn thì người ủy quyền thực hiện việc xác thực điện tử sau khi được cấp đăng ký tổ hợp tác, đăng ký hợp tác xã, liên hiệp hợp tác xã. Trường hợp người ủy quyền không xác nhận hoặc xác nhận không ủy quyền thực hiện thủ tục đăng ký sau khi được cấp đăng ký tổ hợp tác, đăng ký hợp tác xã, liên hiệp hợp tác xã thì cơ quan đăng ký kinh doanh cấp xã yêu cầu tổ hợp tác, hợp tác xã, liên hiệp hợp tác xã báo cáo theo quy định tại khoản 6 Điều 7 Nghị định số 295/2026/NĐ-CP.  Trường hợp chưa có tài khoản định danh điện tử để thực hiện xác thực điện tử thì hồ sơ đăng ký tổ hợp tác, hợp tác xã, liên hiệp hợp tác xã phải kèm theo bản sao thẻ Căn cước hoặc thẻ Căn cước công dân hoặc hộ chiếu hoặc hộ chiếu nước ngoài hoặc các giấy tờ có giá trị thay thế hộ chiếu nước ngoài còn hiệu lực của người ủy quyền.  Việc triển khai quy định về xác thực điện tử thực hiện theo kế hoạch xây dựng, nâng cấp Hệ thống thông tin về đăng ký hợp tác xã và được thông báo trên Cổng thông tin quốc gia về đăng ký doanh nghiệp.",
+          "component_code": "000.00.00.G12-00006566",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c72-75fa-a590-21c8d8f821db",
+          "name": "cấp Giấy chứng nhận đăng ký hoạt động chi nhánh, văn phòng đại diện, Giấy chứng nhận đăng ký địa điểm kinh doanh hoặc giấy xác nhận về việc thay đổi nội dung đăng ký hoạt động chi nhánh, văn phòng đại diện, địa điểm kinh doanh",
+          "code": "KQ.G12.001009"
+        },
+        {
+          "id": "019d2bb2-1c72-75fa-a590-42e0286e1d3c",
+          "name": "Cơ quan đăng ký kinh doanh thông báo bằng văn bản nội dung cần sửa đổi, bổ sung",
+          "code": "KQ.G12.001017"
+        },
+        {
+          "id": "019d2bb2-1c72-75fa-a592-5f284a61812c",
+          "name": "Cơ quan đăng ký kinh doanh thông báo bằng văn bản và nêu rõ lý do",
+          "code": "KQ.G12.001174"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7c-71ab-9f05-a386e168546d",
+          "name": "Thông tư số 09/2024/TT-BKHĐT của Bộ Kế hoạch và Đầu tư: Ban hành biểu mẫu thực hiện thủ tục đăng ký tổ hợp tác, hợp tác xã, liên hiệp hợp tác xã và quy định về nội dung thông tin, việc cập nhật, khai thác và quản lý Hệ thống thông tin quốc gia về hợp tác xã",
+          "code": "09/2024/TT-BKHĐT"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b671-d9e439ecbebe",
+          "name": "Luật Hợp tác xã",
+          "code": "17/2023/QH15"
+        },
+        {
+          "id": "019fb0de-6350-728a-9312-5ecdeb3da670",
+          "name": "Về đăng ký tổ hợp tác, hợp tác xã, liên hiệp hợp tác xã",
+          "code": "295/2026/NĐ-CP "
+        },
+        {
+          "id": "019d2bb3-5d7d-7398-be4d-8105bcd345a7",
+          "name": "Thông tư số 43/2025/TT-BTC của Bộ Tài chính: Ban hành biểu mẫu sử dụng trong lĩnh vực quản lý nhà nước đối với hộ kinh doanh, tổ hợp tác, hợp tác xã, liên hiệp hợp tác xã khi tổ chức chính quyền địa phương 02 cấp",
+          "code": "43/2025/TT-BTC"
+        }
+      ]
+    }
+  ],
+  "lookup_status": "retrieved",
+  "currency_status": "snapshot_requires_later_amendment_check",
+  "errors": []
+}

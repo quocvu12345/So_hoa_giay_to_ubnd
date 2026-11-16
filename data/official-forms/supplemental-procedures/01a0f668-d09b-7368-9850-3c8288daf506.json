@@ -1,0 +1,64 @@
+{
+  "id": "dvc-01a0f668-d09b-7368-9850-3c8288daf506",
+  "procedure_code": "1.116909",
+  "name": "Thực hiện trợ cấp xã hội và nhận chăm sóc, nuôi dưỡng, hỗ trợ kinh phí nhận chăm sóc, nuôi dưỡng hằng tháng",
+  "domain": "Bảo trợ xã hội",
+  "managing_agency": "Bộ Y tế",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.463091+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "01a0f668-d09b-7368-9850-3c8288daf506",
+      "code": "1.116909",
+      "name": "Thực hiện trợ cấp xã hội và nhận chăm sóc, nuôi dưỡng, hỗ trợ kinh phí nhận chăm sóc, nuôi dưỡng hằng tháng",
+      "state": "ACTIVE",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1790936620279,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/01a0f668-d09b-7368-9850-3c8288daf506",
+      "raw_path": "evidence/dvc/details/01a0f668-d09b-7368-9850-3c8288daf506.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Tờ khai đề nghị trợ cấp xã hội, trợ cấp hưu trí xã hội (Mẫu số 01 ban hành kèm theo Nghị định số 335/2026/NĐ-CP)",
+          "component_code": "000.00.00.G18-KQ00580",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Tờ khai nhận chăm sóc, nuôi dưỡng, đề nghị hỗ trợ kinh phí nhận chăm sóc, nuôi dưỡng (Mẫu số 02 ban hành kèm theo Nghị định số 335/2026/NĐ-CP)",
+          "component_code": "000.00.00.G18-KQ00581",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "01a0f668-0469-745d-ae41-da068542cd81",
+          "name": "Quyết định trợ cấp xã hội hằng tháng, Quyết định nhận chăm sóc, nuôi dưỡng và hỗ trợ kinh phí chăm sóc, nuôi dưỡng hằng tháng cho đối tượng",
+          "code": "KQ.G15.9999"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "01a0f5ba-70eb-7222-824e-83a91e1866e9",
+          "name": "Nghị định số 335/2026/NĐ-CP ngày 21/8/2026 của Chính phủ quy\nđịnh chính sách trợ giúp xã hội",
+          "code": "335/2026/NĐ-CP"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "id": "dvc-019d2bfb-df22-7789-bf7e-ddf8e46d0bd5",
+  "procedure_code": "1.003050",
+  "name": "Thủ tục hải quan đối với nguyên liệu nhập khẩu để gia công xuất khẩu xăng dầu, khí",
+  "domain": "Hải quan",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.967537+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfb-df22-7789-bf7e-ddf8e46d0bd5",
+      "code": "1.003050",
+      "name": "Thủ tục hải quan đối với nguyên liệu nhập khẩu để gia công xuất khẩu xăng dầu, khí",
+      "state": "ACTIVE",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1775639356721,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-df22-7789-bf7e-ddf8e46d0bd5",
+      "raw_path": "evidence/dvc/details/019d2bfb-df22-7789-bf7e-ddf8e46d0bd5.json",
+      "components": [
+        {
+          "section": " Đối với trường hợp đơn vị Hải quan làm thủ tục xuất khẩu sản phẩm không phải là đơn vị Hải quan làm thủ tục nhập khẩu nguyên vật liệu thì trước khi nộp hồ sơ để đăng ký tờ khai xuất khẩu phải có bản “Đăng ký Chi cục Hải quan làm thủ tục xuất khẩu sản phẩm NSXXK” của doanh nhiệp.",
+          "position": 1,
+          "name": "Hợp đồng mua bán hàng hóa hoặc các giấy tờ có giá trị pháp lý tương đương hợp đồng: nộp 01 bản sao; hợp đồng uỷ thác xuất khẩu (nếu xuất khẩu uỷ thác): nộp 01 bản sao",
+          "component_code": "000.00.00.G12-KQ2969",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": " Đối với trường hợp đơn vị Hải quan làm thủ tục xuất khẩu sản phẩm không phải là đơn vị Hải quan làm thủ tục nhập khẩu nguyên vật liệu thì trước khi nộp hồ sơ để đăng ký tờ khai xuất khẩu phải có bản “Đăng ký Chi cục Hải quan làm thủ tục xuất khẩu sản phẩm NSXXK” của doanh nhiệp.",
+          "position": 2,
+          "name": "Tuỳ trường hợp cụ thể dưới đây, người khai hải quan nộp thêm, xuất trình các chứng từ sau:            + Bản kê chi tiết hàng hoá đối với trường hợp hàng hoá có nhiều chủng loại hoặc đóng gói không đồng nhất: nộp 01 bản chính;            + Giấy phép xuất khẩu đối với hàng hóa phải có giấy phép xuất khẩu theo quy định của pháp luật: nộp 01 bản chính nếu xuất khẩu một lần hoặc bản sao khi xuất khẩu nhiều lần và phải xuất trình bản chính để đối chiếu, lập phiếu theo dõi trừ lùi;            + Các chứng từ khác có liên quan theo quy định của pháp luật: nộp 01 bản chính;",
+          "component_code": "000.00.00.G12-KQ2970",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": " Đối với trường hợp đơn vị Hải quan làm thủ tục xuất khẩu sản phẩm không phải là đơn vị Hải quan làm thủ tục nhập khẩu nguyên vật liệu thì trước khi nộp hồ sơ để đăng ký tờ khai xuất khẩu phải có bản “Đăng ký Chi cục Hải quan làm thủ tục xuất khẩu sản phẩm NSXXK” của doanh nhiệp.",
+          "position": 3,
+          "name": "Tờ khai hải quan;",
+          "component_code": "000.00.00.G12-KQ2968",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c70-724b-96e0-04028cde98b0",
+          "name": "Xác nhận hoàn thành thủ tục hải quan",
+          "code": "KQ.G12.000339"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7e-72d1-afe7-9c25863596db",
+          "name": "Nghị định 08/2015/NĐ-CP",
+          "code": "08/2015/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7d-7398-be4d-ff62cdf67da5",
+          "name": "Luật 54/2014/QH13",
+          "code": "54/2014/QH13"
+        }
+      ]
+    }
+  ]
+}

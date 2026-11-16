@@ -1,0 +1,93 @@
+{
+  "id": "dvc-019d2bf7-b5a6-76fd-a4b1-49c93d86d9d6",
+  "procedure_code": "3.000228",
+  "name": "Cấp tài khoản định danh điện tử mức độ 02, căn cước điện tử cho công dân Việt Nam (cấp xã)",
+  "domain": "Định danh và xác thực điện tử",
+  "managing_agency": "Bộ Công an",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:18.033105+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bf7-b5a6-76fd-a4b1-49c93d86d9d6",
+      "code": "3.000228",
+      "name": "Cấp tài khoản định danh điện tử mức độ 02, căn cước điện tử cho công dân Việt Nam (cấp xã)",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1777541272499,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf7-b5a6-76fd-a4b1-49c93d86d9d6",
+      "raw_path": "evidence/dvc/details/019d2bf7-b5a6-76fd-a4b1-49c93d86d9d6.json",
+      "components": [
+        {
+          "section": "Công dân đã được cấp thẻ Căn cước công dân gắn chip điện tử, thẻ căn cước còn hiệu lực",
+          "position": 1,
+          "name": "Xuất trình thẻ Căn cước công dân gắn chip điện tử, thẻ căn cước còn hiệu lực",
+          "component_code": "000.00.00.G01-KQ002959",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Công dân đã được cấp thẻ Căn cước công dân gắn chip điện tử, thẻ căn cước còn hiệu lực",
+          "position": 2,
+          "name": "a) Đối với cơ quan có chức năng quản lý nhà nước, cơ quan chuyên môn:  - Văn bản đề nghị đăng ký mẫu con dấu của cơ quan, tổ chức, chức danh nhà nước; - Quyết định thành lập hoặc văn bản quy định về tổ chức, hoạt động của cơ quan có thẩm quyền.",
+          "component_code": "000.00.00.G01- KQ002583",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019dcfef-f499-77af-a75c-445cde97a393",
+              "fileName": "TK01-Phiunghcptikhonnhdanhintcnccint.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019dcfef-f499-77af-a75c-445cde97a393/TK01-Phiunghcptikhonnhdanhintcnccint.docx"
+            }
+          ]
+        },
+        {
+          "section": "Công dân đã được cấp thẻ Căn cước công dân gắn chip điện tử, thẻ căn cước còn hiệu lực",
+          "position": 3,
+          "name": "Trong đó cung cấp rõ số thuê bao di động chính chủ, địa chỉ thư điện tử (nếu có) và thông tin khác đề nghị tích hợp (nếu có nhu cầu)",
+          "component_code": "000.00.00.G01-KQ002961",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Trường hợp công dân chưa được cấp thẻ Căn cước công dân gắn chip điện tử, thẻ căn cước hoặc thẻ hết hiệu lực",
+          "position": 1,
+          "name": "Công dân chuẩn bị hồ sơ và thực hiện đồng thời thủ tục “cấp tài khoản định danh điện tử mức độ 2, căn cước điện tử cho công dân Việt Nam” cùng với thủ tục cấp thẻ căn cước.",
+          "component_code": "000.00.00.G01-KQ002962",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c37-76e8-b48c-e54c12ac6dcf",
+          "name": "Thông báo kết quả qua ứng dụng VNeID hoặc tin nhắn SMS hoặc địa chỉ thư điện tử.",
+          "code": "KQ.G01.000096"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7f-719e-b470-82002429a2fa",
+          "name": "Nghị định số 69/2024/NĐ-CP của Chính phủ: Quy định về định danh và xác thực điện tử",
+          "code": "69/2024/NĐ-CP"
+        }
+      ]
+    }
+  ]
+}

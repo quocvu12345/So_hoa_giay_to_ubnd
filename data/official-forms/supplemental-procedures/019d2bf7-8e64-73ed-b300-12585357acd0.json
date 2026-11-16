@@ -1,0 +1,98 @@
+{
+  "id": "dvc-019d2bf7-8e64-73ed-b300-12585357acd0",
+  "procedure_code": "1.012533",
+  "name": "Tuyển chọn Tổ viên Tổ bảo vệ an ninh, trật tự",
+  "domain": "Tổ chức, cán bộ",
+  "managing_agency": "Bộ Công an",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:18.036322+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bf7-8e64-73ed-b300-12585357acd0",
+      "code": "1.012533",
+      "name": "Tuyển chọn Tổ viên Tổ bảo vệ an ninh, trật tự",
+      "state": "ACTIVE",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1777629363846,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf7-8e64-73ed-b300-12585357acd0",
+      "raw_path": "evidence/dvc/details/019d2bf7-8e64-73ed-b300-12585357acd0.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Bản khai sơ yếu lý lịch",
+          "component_code": "000.00.00.G01-KQ002916",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Đơn đề nghị tham gia lực lượng tham gia bảo vệ an ninh, trật tự ở cơ sở (Mẫu số 01 ban hành kèm theo Thông tư số 14/2024/TT-BCA).",
+          "component_code": "000.00.00.G01-KQ002912",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019dd732-43ac-73cb-8d57-42e9689b0b52",
+              "fileName": "Mẫu số 01 - Đơn tham gia lực lượng ANTT cơ sở (TT14.2024.BCA).docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019dd732-43ac-73cb-8d57-42e9689b0b52/Mẫu số 01 - Đơn tham gia lực lượng ANTT cơ sở (TT14.2024.BCA).docx"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 3,
+          "name": "Chứng nhận của cơ sở khám bệnh, chữa bệnh được thành lập, hoạt động theo quy định của pháp luật về việc có đủ sức khoẻ",
+          "component_code": "000.00.00.G01-KQ002917",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 4,
+          "name": "Bằng tốt nghiệp hoặc đã hoàn thành chương trình giáo dục trung học cơ sở trở lên hoặc đã học xong chương trình giáo dục tiểu học theo quy định tại khoản 3 Điều 13 Luật Lực lượng tham gia bảo vệ an ninh, trật tự ở cơ sở.",
+          "component_code": "000.00.00.G01-KQ002918",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c37-76e8-b48d-73f28041d4b5",
+          "name": "Thông báo kết quả xét tuyển Tổ viên Tổ bảo vệ an ninh, trật tự",
+          "code": "KQ.G01.000137"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d84-71c5-b672-95d3d56e7ecc",
+          "name": "Luật Lực lượng tham gia bảo vệ an ninh, trật tự ở cơ sở",
+          "code": "30/2023/QH15"
+        },
+        {
+          "id": "019d2bb3-5d7b-7049-8fc6-3ed91f79edf4",
+          "name": "Thông tư số 14/2024/TT-BCA của Bộ Công an: Quy định chi tiết một số điều của Luật Lực lượng tham gia bảo vệ an ninh, trật tự ở cơ sở",
+          "code": "14/2024/TT-BCA"
+        }
+      ]
+    }
+  ]
+}

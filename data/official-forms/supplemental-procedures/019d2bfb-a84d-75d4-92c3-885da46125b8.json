@@ -1,0 +1,94 @@
+{
+  "id": "dvc-019d2bfb-a84d-75d4-92c3-885da46125b8",
+  "procedure_code": "1.013568",
+  "name": "Thủ tục cấp, tạm dừng và hủy tài khoản truy cập Cổng thông tin thủ tục biên phòng điện tử cảng biển đối với người làm thủ tục",
+  "domain": "Quản lý biên giới",
+  "managing_agency": "Bộ Quốc phòng",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.980327+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfb-a84d-75d4-92c3-885da46125b8",
+      "code": "1.013568",
+      "name": "Thủ tục cấp, tạm dừng và hủy tài khoản truy cập Cổng thông tin thủ tục biên phòng điện tử cảng biển đối với người làm thủ tục",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1777598638871,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-a84d-75d4-92c3-885da46125b8",
+      "raw_path": "evidence/dvc/details/019d2bfb-a84d-75d4-92c3-885da46125b8.json",
+      "components": [
+        {
+          "section": "Thành phần hồ sơ khai báo",
+          "position": 1,
+          "name": "- Đơn đề nghị cấp tài khoản truy cập Cổng thông tin thủ tục biên phòng điện tử.  - Thông báo về việc cấp tài khoản truy cập Cổng thông tin thủ tục biên phòng điện tử cảng biển. - Thông báo về việc từ chối cấp tài khoản truy cập Cổng Thông tin thủ tục biên phòng điện tử. - Thông báo về việc tạm dừng/hủy tài khoản truy cập Cổng Thông tin thủ tục biên phòng điện tử. - Đơn đề nghị tạm dừng/hủy tài khoản truy cập Cổng Thông tin thủ tục biên phòng điện tử cảng biển",
+          "component_code": "000.00.00.G11-KQ0776",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019dc922-ef9c-73e4-a04b-2289dd7148b9",
+              "fileName": "Đơn cấp tài khoản CTTTĐT.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019dc922-ef9c-73e4-a04b-2289dd7148b9/Đơn cấp tài khoản CTTTĐT.docx"
+            },
+            {
+              "id": "019dc922-f0ed-75df-b3d8-75e033efcc00",
+              "fileName": "Đơn hủy tài khoản CTTTĐT.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019dc922-f0ed-75df-b3d8-75e033efcc00/Đơn hủy tài khoản CTTTĐT.docx"
+            },
+            {
+              "id": "019dc922-f21f-74ce-b2cc-b66eb81d95f3",
+              "fileName": "Thông báo cấp.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019dc922-f21f-74ce-b2cc-b66eb81d95f3/Thông báo cấp.docx"
+            },
+            {
+              "id": "019dc922-f33b-7161-86b1-111c8616aa46",
+              "fileName": "Thông báo tạm dừng hủy.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019dc922-f33b-7161-86b1-111c8616aa46/Thông báo tạm dừng hủy.docx"
+            },
+            {
+              "id": "019dc922-f483-7016-b880-8856bdd445e1",
+              "fileName": "Thông báo từ chối.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019dc922-f483-7016-b880-8856bdd445e1/Thông báo từ chối.docx"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c6f-72b5-bd09-59d8d7ce5794",
+          "name": "Văn bản trả lời của Biên phòng cửa khẩu cảng về việc cấp hoặc từ chối cấp tài khoản truy cập Cổng thông tin thủ tục biên phòng địện tử cảng biển",
+          "code": "KQ.G11.000234"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d84-71c5-b676-c98634570781",
+          "name": "Về thực hiện thủ tục biên phòng điện tử cảng biển",
+          "code": "10/2016/QĐ-TTg"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b678-72e8ac46ed62",
+          "name": "Quyết định số 31/2025/QĐ-TTg của Thủ tướng Chính phủ: Sửa đổi, bổ sung một số điều các Quyết định của Thủ tướng Chính phủ về thực hiện thủ tục biên phòng điện tử tại các cửa khẩu do Bộ Quốc phòng quản lý",
+          "code": "31/2025/QĐ-TTg"
+        },
+        {
+          "id": "019d2bb3-5d7d-7398-be47-753ed1d1f3e3",
+          "name": "Hướng dẫn thực hiện Quyết định số 10/2016/QĐ-TTg ngày 03 tháng 3 năm 2016 của Thủ tướng Chính phủ về thực hiện thủ tục biên phòng điện tử cảng biển.",
+          "code": "49/2017/TT-BQP"
+        }
+      ]
+    }
+  ]
+}

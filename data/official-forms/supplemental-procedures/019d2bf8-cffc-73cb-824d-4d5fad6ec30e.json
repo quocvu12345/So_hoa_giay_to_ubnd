@@ -1,0 +1,158 @@
+{
+  "id": "dvc-019d2bf8-cffc-73cb-824d-4d5fad6ec30e",
+  "procedure_code": "2.002284",
+  "name": "Cấp chính sách nội trú cho học sinh, sinh viên tham gia chương trình đào tạo trình độ cao đẳng, trung cấp tại các cơ sở giáo dục nghề nghiệp công lập trực thuộc xã",
+  "domain": "Giáo dục nghề nghiệp (G07-LĐ06)",
+  "managing_agency": "Bộ Giáo dục và Đào tạo",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:18.024615+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bf8-cffc-73cb-824d-4d5fad6ec30e",
+      "code": "2.002284",
+      "name": "Cấp chính sách nội trú cho học sinh, sinh viên tham gia chương trình đào tạo trình độ cao đẳng, trung cấp tại các cơ sở giáo dục nghề nghiệp công lập trực thuộc xã",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1776130984119,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf8-cffc-73cb-824d-4d5fad6ec30e",
+      "raw_path": "evidence/dvc/details/019d2bf8-cffc-73cb-824d-4d5fad6ec30e.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Đối với học sinh/sinh viên người Kinh là người khuyết tật có hộ khẩu thường trú tại vùng có điều kiện kinh tế - xã hội đặc biệt khó khăn, vùng dân tộc thiểu số, biên giới, hải đảo ngoài đơn đề nghị cấp chính sách nội trú phải bổ sung Giấy xác nhận khuyết tật do Ủy ban nhân dân cấp xã cấp hoặc Quyết định của Ủy ban nhân dân cấp xã về việc trợ cấp xã hội đối với người khuyết tật sống tại cộng đồng trong trường hợp chưa có giấy xác nhận khuyết tật do Ủy ban nhân dân cấp xã cấp (Bản sao được chứng thực từ bản chính hoặc bản sao có mang bản chính để đối chiếu).",
+          "component_code": "TP-G03.002247",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Đối với học sinh/sinh viên người dân tộc thiểu số thuộc hộ nghèo, hộ cận nghèo, ngoài đơn đề nghị cấp chính sách nội trú phải bổ sung giấy chứng nhận hộ nghèo, hộ cận nghèo do Ủy ban nhân dân cấp xã cấp (Bản sao được chứng thực từ bản chính hoặc bản sao có mang bản chính để đối chiếu).",
+          "component_code": "TP-G03.002244",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 3,
+          "name": "Đối với học sinh, sinh viên ở lại trường trong dịp Tết Nguyên đán, ngoài một số giấy tờ trên phải bổ sung Đơn đề nghị xác nhận và cấp hỗ trợ theo mẫu tại Mẫu số 3 ban hành kèm theo Thông tư 08/2023/TT-BLĐTBXH.",
+          "component_code": "TP-G03.002249",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019d722f-9243-715e-8599-7a197f339beb",
+              "fileName": "Mau03.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d722f-9243-715e-8599-7a197f339beb/Mau03.docx"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 4,
+          "name": "Đối với học sinh/sinh viên tốt nghiệp trường phổ thông dân tộc nội trú, ngoài đơn đề nghị cấp chính sách nội trú phải bổ sung bằng tốt nghiệp hoặc giấy chứng nhận tốt nghiệp tạm thời (Bản sao được chứng thực từ bản chính hoặc bản sao có mang bản chính để đối chiếu).",
+          "component_code": "TP-G03.002248",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 5,
+          "name": "Đơn đề nghị cấp chính sách nội trú theo mẫu tại Mẫu số 1 ban hành kèm theo Thông tư  08/2023/TT-BLĐTBXH.",
+          "component_code": "TP-G03.002243",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019d722e-caee-72d2-9fc7-e82dc4158bcf",
+              "fileName": "Mau01.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d722e-caee-72d2-9fc7-e82dc4158bcf/Mau01.docx"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 6,
+          "name": "Đối với học sinh/sinh viên người dân tộc thiểu số là người khuyết tật, ngoài đơn đề nghị cấp chính sách nội trú phải bổ sung Giấy xác nhận khuyết tật do Ủy ban nhân dân cấp xã cấp hoặc Quyết định của Ủy ban nhân dân cấp xã về việc trợ cấp xã hội đối với người khuyết tật sống tại cộng đồng trong trường hợp chưa có giấy xác nhận khuyết tật do Ủy ban nhân dân cấp xã cấp (Bản sao được chứng thực từ bản chính hoặc bản sao có mang bản chính để đối chiếu).",
+          "component_code": "TP-G03.002245",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 7,
+          "name": "Đối với học sinh/sinh viên người Kinh thuộc hộ nghèo, hộ cận nghèo có hộ khẩu thường trú tại vùng có điều kiện kinh tế - xã hội đặc biệt khó khăn, vùng dân tộc thiểu số, biên giới, hải đảo ngoài đơn đề nghị cấp chính sách nội trú phải bổ sung Giấy chứng nhận hộ nghèo, hộ cận nghèo do Ủy ban nhân dân cấp xã cấp (Bản sao được chứng thực từ bản chính hoặc bản sao có mang bản chính để đối chiếu).",
+          "component_code": "TP-G03.002246",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c3b-735b-85a9-4d87eabaf159",
+          "name": "Học bổng chính sách và các khoản hỗ trợ khác được cấp cho học sinh, sinh viên tham gia chương trình đào tạo trình độ cao đẳng, trung cấp tại các cơ sở giáo dục nghề nghiệp công lập trực thuộc xã",
+          "code": "KQ-G03.000482"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7c-71ab-9f06-8be2c08424f5",
+          "name": "Thông tư liên tịch số 12/2016/TTLT-BLĐTBXH-BGDĐT-BTC ngày 16/6/2016 của Bộ Lao động - Thương binh và Xã hội, Bộ Giáo dục và Đào tạo, Bộ Tài chính hướng dẫn thực hiện chính sách nội trú quy định tại Quyết định số 53/2015/QĐ-TTg ngày 20/10/2015 của Thủ tướng Chính phủ về chính sách nội trú đối với học sinh, sinh viên học cao đẳng, trung cấp.",
+          "code": "12/2016/TTLT-BLĐTBXH-BGDĐT-BTC"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b679-0fe766fa665a",
+          "name": "Quyết định 53/2015/QĐ-TTg - Về chính sách nội trú đối với học sinh, sinh viên học cao đẳng, trung cấp",
+          "code": "53/2015/QĐ-TTg"
+        },
+        {
+          "id": "019d2bb3-5d7c-71ab-9f06-16ce3281f74d",
+          "name": "Thông tư sửa đổi, bổ sung một số điều của các Thông tư liên quan đến thủ tục hành chính thuộc phạm vi chức năng quản lý nhà nước của Bộ Lao động - Thương binh và Xã hội",
+          "code": "18/2018/TT-BLĐTBXH"
+        },
+        {
+          "id": "019d2bb3-5d7c-71ab-9f06-668846832011",
+          "name": "Sửa đổi, bổ sung, bãi bỏ một số điều của các Thông tư, Thông tư liên tịch có quy định liên quan đến việc nộp, xuất trình sổ hộ khẩu giấy, sổ tạm trú giấy hoặc giấy tờ có yêu cầu xác nhận nơi cư trú khi thực hiện thủ tục hành chính thuộc lĩnh vực quản lý nhà nước của Bộ Lao động - Thương binh và Xã hội",
+          "code": "08/2023/TT-BLĐTBXH"
+        },
+        {
+          "id": "019d2bb3-5d7f-719e-b46d-4053944c0c19",
+          "name": "Nghị định quy định chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của Bộ Giáo dục và Đào tạo",
+          "code": "37/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7c-71ab-9f00-5c7763de9569",
+          "name": "Thông tư số 11/2025/TT-BGDĐT ngày 12/6/2025 của Bộ trưởng Bộ GDĐT",
+          "code": "11/2025/TT-BGDĐT"
+        }
+      ]
+    }
+  ]
+}

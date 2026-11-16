@@ -1,0 +1,104 @@
+{
+  "id": "dvc-019d2bff-2561-77c8-a1f6-028851fa4069",
+  "procedure_code": "1.012422",
+  "name": "Đề nghị xét tặng Danh hiệu “Thầy thuốc Nhân dân”, “Thầy thuốc Ưu tú”",
+  "domain": "Thi đua, khen thưởng",
+  "managing_agency": "Bộ Y tế",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.853599+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bff-2561-77c8-a1f6-028851fa4069",
+      "code": "1.012422",
+      "name": "Đề nghị xét tặng Danh hiệu “Thầy thuốc Nhân dân”, “Thầy thuốc Ưu tú”",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1787197076148,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bff-2561-77c8-a1f6-028851fa4069",
+      "raw_path": "evidence/dvc/details/019d2bff-2561-77c8-a1f6-028851fa4069.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "2. Hồ sơ đề nghị xét tặng của cá nhân đề nghị xét tặng danh hiệu “Thầy thuốc nhân dân” bao gồm:     a) Báo cáo thành tích đề nghị xét tặng danh hiệu “Thầy thuốc nhân dân” theo Mẫu số 08 quy định tại Phụ lục ban hành kèm theo Nghị định số 25/2024/NĐ-CP ngày 27/02/2024 của Chính phủ;     b) Bản sao Quyết định và Bằng chứng nhận phong tặng danh hiệu “Thầy thuốc ưu tú”;     c) Các tài liệu quy định tại các điểm b, c, d, đ, e, g và h khoản 1 số 25/2024/NĐ-CP ngày 27/02/2024 của Chính phủ.",
+          "component_code": "000.00.00.G18-KQ004745",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019e1fad-89c4-74cd-b519-3996b2d386f3",
+              "fileName": "Mẫu số 08.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019e1fad-89c4-74cd-b519-3996b2d386f3/Mẫu số 08.docx"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "1. Hồ sơ đề nghị xét tặng của cá nhân đề nghị xét tặng danh hiệu “Thầy thuốc ưu tú” bao gồm:     a) Báo cáo thành tích đề nghị xét tặng danh hiệu “Thầy thuốc ưu tú” theo Mẫu số 09 quy định tại Phụ lục ban hành kèm theo Nghị định số 25/2024/NĐ-CP ngày 27/02/2024 của Chính phủ;     b) Bản sao quyết định tặng danh hiệu thi đua, hình thức khen thưởng có liên quan;      c) Bản sao giấy chứng nhận hoặc quyết định của cơ quan quản lý có thẩm quyền đối với sáng kiến, bằng độc quyền sáng chế (nếu có);     d) Bản sao biên bản nghiệm thu nhiệm vụ khoa học và công nghệ; Quyết định công nhận kết quả thực hiện nhiệm vụ khoa học và công nghệ được nghiệm thu, kết quả đánh giá, xếp loại ở mức đạt trở lên; Chứng nhận của cơ quan có thẩm quyền về hiệu quả áp dụng và phạm vi ảnh hưởng của nhiệm vụ khoa học và công nghệ;     đ) Xác nhận thời gian trực tiếp làm chuyên môn kỹ thuật trong ngành y tế. Trường hợp cơ sở y tế bị giải thể, sáp nhập thì cấp trên trực tiếp của đơn vị đó xác nhận thời gian làm chuyên môn kỹ thuật y tế.",
+          "component_code": "000.00.00.G18-KQ004744",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019e1fad-c9c9-7309-b501-067c386cd46e",
+              "fileName": "Mẫu số 09.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019e1fad-c9c9-7309-b501-067c386cd46e/Mẫu số 09.docx"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 3,
+          "name": "Số lượng hồ sơ:  01 bộ hồ sơ",
+          "component_code": "000.00.00.G18-KQ004746",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c7b-7208-ba49-b7be9129d4bf",
+          "name": "Quyết định công nhận danh hiệu",
+          "code": "KQ.G18.000151"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7e-72d1-afeb-4a8713eeea9a",
+          "name": "Nghị định số 147/2025/NĐ-CP của Chính phủ: Quy định về phân định thẩm quyền của chính quyền địa phương 02 cấp trong lĩnh vực quản lý nhà nước của Bộ Y tế",
+          "code": "147/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7f-719e-b475-0e0d2f2a2985",
+          "name": "Nghị định số 98/2023/NĐ-CP ngày 31/12/2023 của Chính phủ quy định chi tiết thi hành một số điều của Luật Thi đua, khen thưởng",
+          "code": "Nghị định số 98/2023/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7f-719e-b46b-85e158d9a858",
+          "name": "Nghị định số 25/2024/NĐ-CP ngày 27/02/2024 của Chính phủ quy định về xét tặng danh hiệu \"Thầy thuốc nhân dân\", \"Thầy thuốc ưu tú”.",
+          "code": "25/2024/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b671-4c4f0784f204",
+          "name": "Luật Thi đua, khen thưởng",
+          "code": "06/2022/QH15"
+        }
+      ]
+    }
+  ]
+}

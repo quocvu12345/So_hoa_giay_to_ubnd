@@ -1,0 +1,128 @@
+{
+  "id": "dvc-019d2bfc-2633-735c-ae42-061d0d2a7d09",
+  "procedure_code": "1.007662",
+  "name": "Thủ tục giảm thuế xuất khẩu, thuế nhập khẩu thuộc thẩm quyền của Cục Hải quan",
+  "domain": "Hải quan",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.956577+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfc-2633-735c-ae42-061d0d2a7d09",
+      "code": "1.007662",
+      "name": "Thủ tục giảm thuế xuất khẩu, thuế nhập khẩu thuộc thẩm quyền của Cục Hải quan",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1786419756930,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-2633-735c-ae42-061d0d2a7d09",
+      "raw_path": "evidence/dvc/details/019d2bfc-2633-735c-ae42-061d0d2a7d09.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Hợp đồng bảo hiểm, thông báo trả tiền bồi thường của tổ chức nhận bảo hiểm (nếu có), trường hợp hợp đồng bảo hiểm không bao gồm nội dung bồi thường về thuế phải có xác nhận của tổ chức bảo hiểm; hợp đồng hoặc biên bản thỏa thuận đền bù của hãng vận tải đối với trường hợp tổn thất do hãng vận tải gây ra (nếu có): 01 bản chụp",
+          "component_code": "000.00.00.G12-KQ011536",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Công văn đề nghị giảm thuế của người nộp thuế gửi qua Hệ thống xử lý dữ liệu điện tử của cơ quan hải quan theo các tiêu chí thông tin tại Mẫu số 3 Phụ lục VIIa hoặc công văn đề nghị giảm thuế theo Mẫu số 08 tại Phụ lục VII ban hành kèm theo Nghị định số 18/2021/NĐ-CP: 01 bản chính",
+          "component_code": "000.00.00.G12-KQ011534",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019f461c-afa0-7538-9afe-0b6a61df134d",
+              "fileName": "Mẫu số 08.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f461c-afa0-7538-9afe-0b6a61df134d/Mẫu số 08.docx"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 3,
+          "name": "Giấy chứng nhận giám định của thương nhân kinh doanh dịch vụ giám định về số lượng hàng hóa bị mất mát hoặc tỷ lệ tổn thất thực tế của hàng hóa",
+          "component_code": "000.00.00.G12-KQ011538",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 4,
+          "name": "Biên bản xác nhận nguyên nhân thiệt hại của cơ quan chức năng tại địa bàn nơi phát sinh thiệt hại (biên bản xác nhận vụ cháy của cơ quan cảnh sát phòng cháy chữa cháy của địa phương nơi xảy ra vụ cháy; văn bản xác nhận của một trong các cơ quan, tổ chức có liên quan sau: Cơ quan Công an xã, phường, thị trấn; Ủy ban nhân dân xã, phường, thị trấn; Ban quản lý khu công nghiệp; Ban quản lý khu chế xuất; Ban quản lý khu kinh tế; Ban quản lý cửa khẩu; Cảng vụ hàng hải; Cảng vụ hàng không nơi xảy ra sự kiện bất khả kháng về thiên tai, thảm họa, dịch bệnh, tai nạn bất ngờ gây thiệt hại cho nguyên liệu, máy móc, thiết bị nhập khẩu)",
+          "component_code": "000.00.00.G12-KQ011537",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019f461a-522c-72fb-914b-200a5864dace",
+          "name": "Quyết định của Chi Cục trưởng Chi Chi cục Hải quan khu vực về việc giảm thuế đối với hàng hóa xuất khẩu/nhập khẩu",
+          "code": "KQ.G12.000636"
+        },
+        {
+          "id": "019f461b-a5a3-7071-b425-6f6d1fcc3c9f",
+          "name": "Thông báo lý do không thuộc đối tượng giảm thuế cho người nộp thuế biết.",
+          "code": "KQ.G12.00000135"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7e-72d1-afea-78ea8c197f3a",
+          "name": "Quy định chi tiết một số điều và biện pháp thi hành Luật thuế xuất khẩu, thuế nhập khẩu",
+          "code": "134/2016/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b671-8a6c5b6d5a80",
+          "name": "Thuế xuất khẩu, thuế nhập khẩu",
+          "code": "107/2016/QH13"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afe7-9c25863596db",
+          "name": "Nghị định 08/2015/NĐ-CP",
+          "code": "08/2015/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7d-7398-be4d-ff62cdf67da5",
+          "name": "Luật 54/2014/QH13",
+          "code": "54/2014/QH13"
+        },
+        {
+          "id": "019d2bb3-5d86-7760-a63e-7a35aa2ed73a",
+          "name": "Nghị định 123/2020/NĐ-CP",
+          "code": "123/2020/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d86-7760-a642-af7a92dbdd3d",
+          "name": "Nghị định 18/2021/NĐ-CP",
+          "code": "18/2021/NĐ-CP"
+        },
+        {
+          "id": "019f4614-644e-727a-a551-b78a0a8b2c68",
+          "name": "Thông tư số 113/2025/TT-BTC ngày 09/12/2025 sửa đổi, bổ sung Thông tư số 178/2011/TT-BTC ngày 08/12/2011 về việc tạo, phát hành, sử dụng và quản lý biên lai thu thuế và phí hải quan đối với hàng hóa xuất khẩu, nhập khẩu của các Doanh nghiệp kinh doanh dịch vụ chuyển phát nhanh đường hàng không quốc tế;",
+          "code": "113/2025/TT-BTC"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "id": "dvc-019d2bfb-90d1-7773-958e-a9f5e64aa0f3",
+  "procedure_code": "1.013173",
+  "name": "Thủ tục giải quyết chế độ hỗ trợ và cấp “Giấy chứng nhận”đối với người tham gia kháng chiến, chiến tranh bảo vệ Tổ quốc và làm nhiệm vụ quốc tế đang định cư ở nước ngoài ủy quyền cho thân nhân ở trong nước kê khai, nhận chế độ",
+  "domain": "Chính sách BQP",
+  "managing_agency": "Bộ Quốc phòng",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.982581+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfb-90d1-7773-958e-a9f5e64aa0f3",
+      "code": "1.013173",
+      "name": "Thủ tục giải quyết chế độ hỗ trợ và cấp “Giấy chứng nhận”đối với người tham gia kháng chiến, chiến tranh bảo vệ Tổ quốc và làm nhiệm vụ quốc tế đang định cư ở nước ngoài ủy quyền cho thân nhân ở trong nước kê khai, nhận chế độ",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1782891792603,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-90d1-7773-958e-a9f5e64aa0f3",
+      "raw_path": "evidence/dvc/details/019d2bfb-90d1-7773-958e-a9f5e64aa0f3.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "-\tBản khai của thân nhân đối tượng đề nghị hưởng chế độ hỗ trợ (bản chính; 01 bản).",
+          "component_code": "000.00.00.G11-KQ2058",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "-\tGiấy ủy quyền của đối tượng (bản chính; 01 bản) có xác nhận của cơ quan đại diện ngoại giao hoặc đại diện lãnh sự của Việt Nam ở nước ngoài.",
+          "component_code": "000.00.00.G11-KQ2060",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 3,
+          "name": "Giấy tờ gốc hoặc giấy tờ có liên quan (bản chính hoặc bản sao từ sổ gốc hoặc bản sao kèm theo bản chính để đối chiếu hoặc bản sao có chứng thực của cơ quan có thẩm quyền của Việt Nam ở trong nước hoặc ở nước ngoài) chứng minh là người tham gia kháng chiến, chiến tranh bảo vệ Tổ quốc, làm nhiệm vụ quốc tế hoặc dân công hỏa tuyến",
+          "component_code": "000.00.00.G11-KQ003248",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c6f-72b5-bd08-942981cdc8cb",
+          "name": "Quyết định về việc thực hiện chế độ hỗ trợ đối với người tham gia kháng chiến, chiến tranh bảo vệ Tổ quốc và làm nhiệm vụ quốc tế đang định cư ở nước ngoài",
+          "code": "KQ.G11.000144"
+        },
+        {
+          "id": "019d2bb2-1c6f-72b5-bd0b-1234c92a11a6",
+          "name": "Giấy chứng nhận người tham gia kháng chiến, chiến tranh bảo vệ Tổ quốc và làm nhiệm vụ quốc tế",
+          "code": "KQ.G11.000400"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7e-72d1-afe8-06991d6ad0b9",
+          "name": "Nghị định 102/2018/NĐ-CP",
+          "code": "102/2018/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afed-3cbc9c2c08b6",
+          "name": "Nghị định số 209/2025/NĐ-CP của Chính phủ: Sửa đổi, bổ sung một số điều của 11 Nghị định của Chính phủ thuộc lĩnh vực quản lý nhà nước của Bộ Quốc phòng",
+          "code": "209/2025/NĐ-CP"
+        }
+      ]
+    }
+  ]
+}

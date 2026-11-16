@@ -1,0 +1,192 @@
+{
+  "id": "hn87-037",
+  "ordinal": "37",
+  "procedure_code": "1.012091",
+  "name": "Đề nghị việc sử dụng người chưa đủ 13 tuổi làm việc",
+  "domain": "Lao động, tiền lương",
+  "department_id": "vx",
+  "department": "Phòng Văn hóa - Xã hội",
+  "authority_as_published": "UBND cấp xã",
+  "execution_level_as_published": "Cấp xã",
+  "receiving_location_as_published": "Điểm hỗ trợ DVC số",
+  "inventory_date": "2026-04-27",
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "source_urls": [
+    "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-03d3-760e-989b-f2fbe55bed1d"
+  ],
+  "current_dvc_match": true,
+  "lifecycle": null,
+  "scope": "hanoi_commune_notice_2026_04_27",
+  "scope_note": "Mốc kiểm kê cấp xã Hà Nội; áp dụng từng thủ tục tại Từ Liêm còn phải theo thẩm quyền/ủy quyền hiện hành.",
+  "status": "has_fillable_templates",
+  "components": [
+    {
+      "id": "hn87-037-c001",
+      "code": "G09-KQ002382",
+      "name": "+ Bản cam kết chưa từng bị truy cứu trách nhiệm hình sự, xử phạt vi phạm hành chính về hành vi xâm hại trẻ em của người giao kết hợp đồng lao động bên phía người sử dụng lao động theo Mẫu số 02 tại Phụ lục I ban hành kèm theo Thông tư số 09/2020/TT-BLĐTBXH, (Cổng DVC cấu hình văn bản đề nghị dưới dạng E-Form điện tử (Cá nhân dùng mã định danh đăng nhập qua VneID, không cần ký số)Cổng DVC cấu hình văn bản đề nghị dưới dạng E-Form điện tử (Cá nhân dùng mã định danh đăng nhập qua VneID, không cần ký số))",
+      "section": "",
+      "role": "instruction",
+      "scenario_status": "instruction_only",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-03d3-760e-989b-f2fbe55bed1d",
+      "source_detail_id": "019d2bfb-03d3-760e-989b-f2fbe55bed1d",
+      "embedded_other_requirements": false,
+      "template_candidates": [
+        "template-f667f0ff95ead644"
+      ],
+      "template_selection_method": "first_matching_source_attachment",
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-037-c002",
+      "code": "G09-KQ002381",
+      "name": "+ Bản sao phiếu lý lịch tư pháp của người giao kết hợp đồng lao động bên phía người sử dụng lao động được cấp không quá 06 tháng kể từ ngày cấp đến ngày giao kết hợp đồng lao động, trong đó không có án tích về hành vi xâm hại trẻ em, (Thay thế thành phần hồ sơ “ Bản sao phiếu lý lịch tư pháp của người giao kết hợp đồng lao động” bằng dữ liệu từ CSDL về lý lịch tư pháp khi cơ sở dữ liệu này đủ điều kiện kết nối, khai thác, chia sẻ thông tin và có dữ liệu đáp ứng yêu cầu giải quyết thủ tục hành chính.)",
+      "section": "",
+      "role": "supporting_submit",
+      "scenario_status": "selected_for_test",
+      "required_as_published": false,
+      "original_quantity": 0,
+      "copy_quantity": 1,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-03d3-760e-989b-f2fbe55bed1d",
+      "source_detail_id": "019d2bfb-03d3-760e-989b-f2fbe55bed1d",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-037-c003",
+      "code": "G09-KQ002380",
+      "name": "+ Bản sao giấy chứng nhận đăng ký doanh nghiệp, hợp tác xã, liên hợp tác xã hoặc giấy chứng nhận đăng ký đầu tư hoặc văn bản chấp thuận chủ trương đầu tư hoặc quyết định thành lập cơ quan, tổ chức hoặc hợp đồng hợp tác của tổ hợp tác, trong trường hợp người sử dụng lao động là doanh nghiệp, cơ quan, tổ chức, hợp tác xã, (Thay thế thành phần hồ sơ “Bản sao giấy chứng nhận đăng ký doanh nghiệp” bằng dữ liệu từ CSDL quốc gia về đăng ký doanh nghiệp khi cơ sở dữ liệu này đủ điều kiện kết nối, khai thác, chia sẻ thông tin và có dữ liệu đáp ứng yêu cầu giải quyết thủ tục hành chính.).",
+      "section": "",
+      "role": "supporting_submit",
+      "scenario_status": "conditional_needs_review",
+      "required_as_published": false,
+      "original_quantity": 0,
+      "copy_quantity": 1,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-03d3-760e-989b-f2fbe55bed1d",
+      "source_detail_id": "019d2bfb-03d3-760e-989b-f2fbe55bed1d",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-037-c004",
+      "code": "G09-KQ002379",
+      "name": "+ Văn bản đề nghị việc sử dụng người chưa đủ 13 tuổi làm việc theo Mẫu số 01 tại Phụ lục I ban hành kèm theo Thông tư số 09/2020/TT-BLĐTBXH ngày 12 tháng 11 năm 2020 của Bộ trưởng Bộ Lao động - Thương binh và Xã hội quy định chi tiết và hướng dẫn thi hành một số điều của Bộ luật Lao động về lao động chưa thành niên (sau đây gọi tắt là Thông tư số 09/2020/TT-BLĐTBXH), (Cổng DVC cấu hình văn bản đề nghị dưới dạng E-Form điện tử (Cá nhân dùng mã định danh đăng nhập qua VneID, không cần ký số))",
+      "section": "",
+      "role": "applicant_form",
+      "scenario_status": "selected_for_test",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-03d3-760e-989b-f2fbe55bed1d",
+      "source_detail_id": "019d2bfb-03d3-760e-989b-f2fbe55bed1d",
+      "embedded_other_requirements": false,
+      "template_candidates": [
+        "template-cff21c341a10900b"
+      ],
+      "template_selection_method": "first_matching_source_attachment",
+      "selected_template_id": "template-cff21c341a10900b",
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-037-c005",
+      "code": "G09-KQ002383",
+      "name": "+ Hợp đồng lao động hoặc dự thảo hợp đồng lao động giữa người sử dụng lao động với người chưa đủ 13 tuổi và người đại diện theo pháp luật của người đó. Trong trường hợp dự thảo hợp đồng lao động thì phải có Phiếu đồng ý của người đại diện theo pháp luật của người chưa đủ 13 tuổi làm việc theo Mẫu số 03 tại Phụ lục I ban hành kèm theo Thông tư số 09/2020/TT-BLĐTBXH,",
+      "section": "",
+      "role": "applicant_prepared",
+      "scenario_status": "conditional_needs_review",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-03d3-760e-989b-f2fbe55bed1d",
+      "source_detail_id": "019d2bfb-03d3-760e-989b-f2fbe55bed1d",
+      "embedded_other_requirements": false,
+      "template_candidates": [
+        "template-3ffc2f0f13d51ada"
+      ],
+      "template_selection_method": "first_matching_source_attachment",
+      "selected_template_id": "template-3ffc2f0f13d51ada",
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-037-c006",
+      "code": "G09-KQ002384",
+      "name": "+ Bản sao giấy khai sinh, giấy khám sức khỏe của người chưa đủ 13 tuổi. Thời khóa biểu hoặc chương trình học tập của cơ sở giáo dục nơi người chưa đủ 13 tuổi đang học tập nếu đang đi học, (Thay thế thành phần hồ sơ “Bản sao giấy khám sức khỏe của người chưa đủ 13 tuổi” bằng dữ liệu từ CSDL về khám, chữa bệnh khi cơ sở dữ liệu này đủ điều kiện kết nối, khai thác, chia sẻ thông tin và có dữ liệu đáp ứng yêu cầu giải quyết thủ tục hành chính); (Thay thế thành phần hồ sơ “Bản sao giấy khai sinh của người chưa đủ 13 tuổi” bằng dữ liệu từ Cơ sở dữ liệu hộ tịch điện tử khi cơ sở dữ liệu này đủ điều kiện kết nối, khai thác, chia sẻ thông tin và có dữ liệu đáp ứng yêu cầu giải quyết thủ tục hành chính)",
+      "section": "",
+      "role": "supporting_submit",
+      "scenario_status": "selected_for_test",
+      "required_as_published": false,
+      "original_quantity": 0,
+      "copy_quantity": 1,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-03d3-760e-989b-f2fbe55bed1d",
+      "source_detail_id": "019d2bfb-03d3-760e-989b-f2fbe55bed1d",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    }
+  ],
+  "service_cases": [
+    {
+      "id": "019d2cf8-f394-72a2-ad45-174aa86a8a18",
+      "code": "1.012091.01",
+      "name": "Đề nghị việc sử dụng người chưa đủ 13 tuổi làm việc",
+      "source_processing_time": {
+        "qty": 10,
+        "type": "WORKING_DAY"
+      },
+      "has_case_specific_components": false
+    },
+    {
+      "id": "019dc84a-e3b1-73ca-b3d3-98be042d64f1",
+      "code": "1.012091.02",
+      "name": "Đề nghị việc sử dụng người chưa đủ 13 tuổi làm việc",
+      "source_processing_time": {
+        "qty": 10,
+        "type": "WORKING_DAY"
+      },
+      "has_case_specific_components": false
+    },
+    {
+      "id": "01a18bd5-90cd-7139-9c37-85516ea67228",
+      "code": "1.012091.02",
+      "name": "Đề nghị việc sử dụng người chưa đủ 13 tuổi làm việc",
+      "source_processing_time": {
+        "qty": 10,
+        "type": "WORKING_DAY"
+      },
+      "has_case_specific_components": false
+    }
+  ],
+  "selected_template_ids": [
+    "template-cff21c341a10900b",
+    "template-3ffc2f0f13d51ada"
+  ],
+  "source_component_groups": [
+    {
+      "name": "",
+      "component_count": 6,
+      "source_detail_id": "019d2bfb-03d3-760e-989b-f2fbe55bed1d"
+    }
+  ],
+  "conditional_component_groups": [],
+  "default_test_scenario": {
+    "channel": "direct",
+    "applicant_submits_self": true,
+    "authorized": false,
+    "special_case_flags": [],
+    "selected_conditional_group": null,
+    "case_selection_method": "ordinary_direct_submission",
+    "case_status": "scenario_for_testing_not_a_legal_eligibility_decision"
+  },
+  "requirement_note": "required_as_published được giữ nguyên; false không chứng minh giấy tờ luôn tùy chọn. Các nhóm executionCases có thể là mục giấy tờ/hướng dẫn, không phải các phương án loại trừ nhau."
+}

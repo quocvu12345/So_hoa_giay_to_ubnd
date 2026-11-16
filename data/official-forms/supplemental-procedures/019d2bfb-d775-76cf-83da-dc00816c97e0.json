@@ -1,0 +1,295 @@
+{
+  "id": "dvc-019d2bfb-d775-76cf-83da-dc00816c97e0",
+  "procedure_code": "1.001613",
+  "name": "Giải quyết hưởng BHXH một lần",
+  "domain": "Thực hiện chính sách BHXH",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.973542+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfb-d775-76cf-83da-dc00816c97e0",
+      "code": "1.001613",
+      "name": "Giải quyết hưởng BHXH một lần",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1792931550051,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-d775-76cf-83da-dc00816c97e0",
+      "raw_path": "evidence/dvc/details/019d2bfb-d775-76cf-83da-dc00816c97e0.json",
+      "components": [
+        {
+          "section": "1. Đối với người tham gia BHXH bắt buộc",
+          "position": 1,
+          "name": "Sổ BHXH",
+          "component_code": "TP.G12.98.083",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "1. Đối với người tham gia BHXH bắt buộc",
+          "position": 2,
+          "name": "Văn bản đề nghị theo Mẫu số 14-HSB",
+          "component_code": "TP.G12.98.089",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "01a02de5-e51a-722c-b292-89c5fb20dec8",
+              "fileName": "14-HSB.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/01a02de5-e51a-722c-b292-89c5fb20dec8/14-HSB.docx"
+            }
+          ]
+        },
+        {
+          "section": "1. Đối với người tham gia BHXH bắt buộc",
+          "position": 3,
+          "name": "Trường hợp ra nước ngoài định cư, ngoài hồ sơ quy định tại tiết a, b nêu trên thì có thêm bản sao giấy xác nhận của cơ quan có thẩm quyền về việc thôi quốc tịch Việt Nam hoặc bản dịch tiếng Việt được chứng thực hoặc công chứng một trong các giấy tờ sau đây:\t\t\t - Hộ chiếu do nước ngoài cấp\t\t - Thị thực của cơ quan nước ngoài có thẩm quyền cấp có xác nhận việc cho phép nhập cảnh để định cư ở nước ngoài;\t\t\t - Thẻ thường trú dài hạn ở nước ngoài của cơ quan nước ngoài có thẩm quyền cấp;\t\t - Giấy tờ hợp pháp khác thể hiện việc định cư ở nước ngoài theo quy định của Chính phủ.",
+          "component_code": "TP.G12.98.098",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "1. Đối với người tham gia BHXH bắt buộc",
+          "position": 4,
+          "name": "Trường hợp mắc một trong những bệnh ung thư, bại liệt, xơ gan mất bù, lao nặng, AIDS, ngoài hồ sơ quy định tại tiết a, b nêu trên thì có thêm bản tóm tắt hồ sơ bệnh án hoặc bản chính hoặc bản sao giấy ra viện",
+          "component_code": "TP.G12.98.099",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "1. Đối với người tham gia BHXH bắt buộc",
+          "position": 5,
+          "name": "Trường hợp suy giảm KNLĐ từ 81% trở lên; người khuyết tật đặc biệt nặng, ngoài hồ sơ quy định tại tiết a, b nêu trên thì có thêm biên bản giám định mức suy giảm KNLĐ của Hội đồng GĐYK hoặc bản sao giấy xác nhận mức độ khuyết tật đặc biệt nặng",
+          "component_code": "TP.G12.98.100",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "1. Đối với người tham gia BHXH bắt buộc",
+          "position": 6,
+          "name": "Trường hợp thanh toán phí GĐYK thì có thêm hóa đơn, chứng từ thu phí giám định kèm theo bản chính bảng kê các nội dung giám định của cơ sở thực hiện GĐYK",
+          "component_code": "TP.G12.98.101",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "1. Đối với người tham gia BHXH bắt buộc",
+          "position": 7,
+          "name": "Bản khai cá nhân về thời gian, địa bàn phục vụ trong Quân đội có hưởng phụ cấp khu vực (Mẫu số 04B-HBQP ban hành kèm theo Thông tư số 136/2020/TT-BQP ngày 29/10/2020) đối với trường hợp có thời gian phục vụ trong Quân đội trước ngày 01/01/2007 tại địa bàn có hưởng phụ cấp khu vực mà sổ BHXH không thể hiện đầy đủ thông tin làm căn cứ tính phụ cấp khu vực",
+          "component_code": "TP.G12.98.102",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "01a02e34-d3b2-72d7-900c-68e8b11fa5c1",
+              "fileName": "04B-HBQP.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/01a02e34-d3b2-72d7-900c-68e8b11fa5c1/04B-HBQP.docx"
+            }
+          ]
+        },
+        {
+          "section": "1. Đối với người tham gia BHXH bắt buộc",
+          "position": 8,
+          "name": "Trường hợp NLĐ là công dân nước ngoài làm việc tại Việt Nam đề nghị hưởng BHXH một lần: Hồ sơ như  tại điểm a, b, d, đ, e khoản khoản 1 nêu trên",
+          "component_code": "TP.G12.98.103",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "2. Trường hợp tham gia BHXH tự nguyện",
+          "position": 1,
+          "name": "Sổ BHXH",
+          "component_code": "TP.G12.98.083",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "2. Trường hợp tham gia BHXH tự nguyện",
+          "position": 2,
+          "name": "Văn bản đề nghị theo Mẫu số 14-HSB",
+          "component_code": "TP.G12.98.089",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "01a02de5-e51a-722c-b292-89c5fb20dec8",
+              "fileName": "14-HSB.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/01a02de5-e51a-722c-b292-89c5fb20dec8/14-HSB.docx"
+            }
+          ]
+        },
+        {
+          "section": "2. Trường hợp tham gia BHXH tự nguyện",
+          "position": 3,
+          "name": "Trường hợp ra nước ngoài định cư, ngoài hồ sơ quy định tại tiết a, b nêu trên thì có thêm bản sao giấy xác nhận của cơ quan có thẩm quyền về việc thôi quốc tịch Việt Nam hoặc bản dịch tiếng Việt được chứng thực hoặc công chứng một trong các giấy tờ sau đây:\t\t\t - Hộ chiếu do nước ngoài cấp\t\t - Thị thực của cơ quan nước ngoài có thẩm quyền cấp có xác nhận việc cho phép nhập cảnh để định cư ở nước ngoài;\t\t\t - Thẻ thường trú dài hạn ở nước ngoài của cơ quan nước ngoài có thẩm quyền cấp;\t\t - Giấy tờ hợp pháp khác thể hiện việc định cư ở nước ngoài theo quy định của Chính phủ.",
+          "component_code": "TP.G12.98.098",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "2. Trường hợp tham gia BHXH tự nguyện",
+          "position": 4,
+          "name": "Trường hợp mắc một trong những bệnh ung thư, bại liệt, xơ gan mất bù, lao nặng, AIDS, ngoài hồ sơ quy định tại tiết a, b nêu trên thì có thêm bản tóm tắt hồ sơ bệnh án hoặc bản chính hoặc bản sao giấy ra viện",
+          "component_code": "TP.G12.98.099",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "2. Trường hợp tham gia BHXH tự nguyện",
+          "position": 5,
+          "name": "Trường hợp suy giảm KNLĐ từ 81% trở lên; người khuyết tật đặc biệt nặng, ngoài hồ sơ quy định tại tiết a, b nêu trên thì có thêm biên bản giám định mức suy giảm KNLĐ của Hội đồng GĐYK hoặc bản sao giấy xác nhận mức độ khuyết tật đặc biệt nặng",
+          "component_code": "TP.G12.98.100",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "2. Trường hợp tham gia BHXH tự nguyện",
+          "position": 6,
+          "name": "Bản khai cá nhân về thời gian, địa bàn phục vụ trong Quân đội có hưởng phụ cấp khu vực (Mẫu số 04B-HBQP ban hành kèm theo Thông tư số 136/2020/TT-BQP ngày 29/10/2020) đối với trường hợp có thời gian phục vụ trong Quân đội trước ngày 01/01/2007 tại địa bàn có hưởng phụ cấp khu vực mà sổ BHXH không thể hiện đầy đủ thông tin làm căn cứ tính phụ cấp khu vực",
+          "component_code": "TP.G12.98.102",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "01a02e34-d3b2-72d7-900c-68e8b11fa5c1",
+              "fileName": "04B-HBQP.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/01a02e34-d3b2-72d7-900c-68e8b11fa5c1/04B-HBQP.docx"
+            }
+          ]
+        },
+        {
+          "section": "2. Trường hợp tham gia BHXH tự nguyện",
+          "position": 7,
+          "name": "Trường hợp thanh toán phí GĐYK thì có thêm hóa đơn, chứng từ thu phí giám định kèm theo bản chính bảng kê các nội dung giám định của cơ sở thực hiện GĐYK",
+          "component_code": "TP.G12.98.101",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c82-739b-8b99-71f2b510b501",
+          "name": "Bản quá trình đóng BHXH (Mẫu số 04-HSB)",
+          "code": "KQ.G12.001087"
+        },
+        {
+          "id": "019d2bb2-1c82-739b-8b99-d6be7cc06c52",
+          "name": "Tiền trợ cấp",
+          "code": "KQ.G12.001151"
+        },
+        {
+          "id": "019d2bb2-1c82-739b-8b99-a45e7c4f69fb",
+          "name": "Quyết định về việc hưởng BHXH một lần (Mẫu số 07B-HSB)",
+          "code": "KQ.G12.000711"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7c-71ab-9f07-f538ffa2f69d",
+          "name": "BAN HÀNH QUY TRÌNH GIẢI QUYẾT HƯỞNG CÁC CHẾ ĐỘ BẢO HIỂM XÃ HỘI, CHI TRẢ CÁC CHẾ ĐỘ BẢO HIỂM XÃ HỘI, BẢO HIỂM THẤT NGHIỆP",
+          "code": "2222/QĐ-BHXH"
+        },
+        {
+          "id": "019d2bb3-5d7d-7398-be46-85fda49d119e",
+          "name": "QUY ĐỊNH CHI TIẾT MỘT SỐ ĐIỀU CỦA LUẬT BẢO HIỂM XÃ HỘI VỀ BẢO HIỂM XÃ HỘI BẮT BUỘC",
+          "code": "12/2025/TT-BNV"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afe5-6de8c6e793ac",
+          "name": "THÔNG TƯ QUY ĐỊNH CHI TIẾT THI HÀNH LUẬT BẢO HIỂM XÃ HỘI, LUẬT AN TOÀN, VỆ SINH LAO ĐỘNG VỀ LĨNH VỰC Y TẾ VÀ MỘT SỐ ĐIỀU CỦA LUẬT KHÁM BỆNH, CHỮA BỆNH",
+          "code": "25/2025/TT-BYT"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afeb-e5ff16f715c7",
+          "name": "Quy định chi tiết và hướng dẫn thi hành một số điều của Luật Bảo hiểm xã hội về bảo hiểm xã hội bắt buộc",
+          "code": "158/2025/NĐ-CP"
+        },
+        {
+          "id": "019e72e9-3b2a-77b9-9c29-023d914eb3dc",
+          "name": "Quy định về giao dịch điện tử trong lĩnh vực bảo hiểm xã hội và Cơ sở dữ liệu quốc gia về bảo hiểm",
+          "code": "164/2025/NĐ-CP "
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afeb-f6d50e5e6371",
+          "name": "Quy định chi tiết và hướng dẫn thi hành một số điều của Luật Bảo hiểm xã hội về bảo hiểm xã hội tự nguyện",
+          "code": "159/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d87-7195-a440-f511123122ee",
+          "name": "Luật Bảo hiểm xã hội",
+          "code": "41/2024/QH15"
+        },
+        {
+          "id": "019e72eb-488d-760e-abb8-0a3bb6585c78",
+          "name": "SỬA ĐỔI, BỔ SUNG MỘT SỐ ĐIỀU CỦA QUY TRÌNH GIẢI QUYẾT HƯỞNG CÁC CHẾ ĐỘ BẢO HIỂM XÃ HỘI, CHI TRẢ CÁC CHẾ ĐỘ BẢO HIỂM XÃ HỘI, BẢO HIỂM THẤT NGHIỆP BAN HÀNH KÈM THEO QUYẾT ĐỊNH SỐ 2222/QĐ-BHXH NGÀY 29/7/2025 CỦA GIÁM ĐỐC BẢO HIỂM XÃ HỘI VIỆT NAM",
+          "code": "313/QĐ-BHXH "
+        },
+        {
+          "id": "019d2bb3-5d86-7760-a63f-86fb70a72ee2",
+          "name": "Thông tư 136/2020/TT-BQP",
+          "code": "136/2020/TT-BQP"
+        },
+        {
+          "id": "01a02e0e-719d-7317-8057-eba06fcb84d3",
+          "name": "Vv vướng mắc trong thực hiện chế độ BHXH",
+          "code": "4831/LĐTBXH-BHXH"
+        },
+        {
+          "id": "01a02e32-1e58-70b3-9ace-f98694c5cc92",
+          "name": "Quy định chi tiết và biện pháp thi hành một số điều của Luật Bảo hiểm xã hội về bảo hiểm xã hội bắt buộc đối với quân nhân, công an nhân dân, dân quân thường trực và người làm công tác cơ yếu hưởng lương như đối với quân nhân",
+          "code": "157/2025/NĐ-CP"
+        }
+      ]
+    }
+  ]
+}

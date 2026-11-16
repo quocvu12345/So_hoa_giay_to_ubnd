@@ -1,0 +1,136 @@
+{
+  "id": "dvc-019d2bfe-b7cd-76e9-b909-bcf437629cb8",
+  "procedure_code": "1.001699",
+  "name": "Xác định, xác định lại mức độ khuyết tật và cấp Giấy xác nhận khuyết tật",
+  "domain": "Bảo trợ xã hội",
+  "managing_agency": "Bộ Y tế",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.854858+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfe-b7cd-76e9-b909-bcf437629cb8",
+      "code": "1.001699",
+      "name": "Xác định, xác định lại mức độ khuyết tật và cấp Giấy xác nhận khuyết tật",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1776133200510,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfe-b7cd-76e9-b909-bcf437629cb8",
+      "raw_path": "evidence/dvc/details/019d2bfe-b7cd-76e9-b909-bcf437629cb8.json",
+      "components": [
+        {
+          "section": " Đối với trường hợp xác định lại khuyết tật",
+          "position": 1,
+          "name": "+ Đơn đề nghị theo Mẫu số 01 ban hành kèm Thông tư số 01/2019/TT-BLĐTBXH (được sửa đổi, bổ sung tại Thông tư số 08/2023/TT-BLĐTBXH).",
+          "component_code": "000.00.00.G07-KQ002166",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019e1f60-dd6d-7448-a56d-f36daa0f7377",
+              "fileName": "Mus01 don.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019e1f60-dd6d-7448-a56d-f36daa0f7377/Mus01 don.docx"
+            }
+          ]
+        },
+        {
+          "section": " Đối với trường hợp xác định lại khuyết tật",
+          "position": 2,
+          "name": "+ Bản sao các giấy tờ liên quan đến khuyết tật (nếu có) như: bệnh án, giấy tờ khám, điều trị, phẫu thuật, Giấy xác nhận khuyết tật cũ hoặc các giấy tờ liên quan khác.",
+          "component_code": "000.00.00.G07-KQ002167",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Đối với trường hợp xác định khuyết tật",
+          "position": 1,
+          "name": "+ Bản sao các giấy tờ liên quan đến khuyết tật (nếu có) như: bệnh án, giấy tờ khám, điều trị, phẫu thuật hoặc các giấy tờ liên quan khác.",
+          "component_code": "000.00.00.G07-KQ002164",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Đối với trường hợp xác định khuyết tật",
+          "position": 2,
+          "name": "+ Bản sao kết luận của Hội đồng Giám định y khoa về khả năng tự phục vụ, mức độ suy giảm khả năng lao động đối với trường hợp người khuyết tật đã có kết luận của Hội đồng Giám định y khoa trước ngày 01/6/2012.",
+          "component_code": "000.00.00.G07-KQ002165",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Đối với trường hợp xác định khuyết tật",
+          "position": 3,
+          "name": "+ Đơn đề nghị theo Mẫu số 01 ban hành kèm Thông tư số 01/2019/TT-BLĐTBXH (được sửa đổi, bổ sung tại Thông tư số 08/2023/TT-BLĐTBXH).",
+          "component_code": "000.00.00.G07-KQ002163",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019e2ac0-ea4f-727e-a299-ac395d1ef702",
+              "fileName": "Mus01 don.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019e2ac0-ea4f-727e-a299-ac395d1ef702/Mus01 don.docx"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c7c-74ea-bcd1-3ddc1951dd87",
+          "name": "Giấy xác nhận khuyết tật (BYT)",
+          "code": "KQ.G18.000315"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7f-719e-b46d-d6ce43fbc8e0",
+          "name": "Nghị định số 42/2025/NĐ-CP của Chính phủ: Quy định chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của Bộ Y tế",
+          "code": "42/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7f-719e-b46e-3b82195c2d48",
+          "name": "Nghị định số 45/2025/NĐ-CP ngày 28/02/2025 của Chính phủ quy định tổ chức các cơ quan chuyên môn thuộc Ủy ban nhân dân tỉnh, thành phố trực thuộc trung ương và Ủy ban nhân dân huyện, quận, thị xã, thành phố thuộc tỉnh, thành phố thuộc thành phố trực thuộc trung ương",
+          "code": "45/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7c-71ab-9f06-3352b6564cdd",
+          "name": "Quy định về việc xác định mức độ khuyết tật do Hội đồng xác định mức độ khuyết tật thực hiện",
+          "code": "01/2019/TT-BLĐTBXH"
+        },
+        {
+          "id": "019d2bb3-5d7c-71ab-9f06-668846832011",
+          "name": "Sửa đổi, bổ sung, bãi bỏ một số điều của các Thông tư, Thông tư liên tịch có quy định liên quan đến việc nộp, xuất trình sổ hộ khẩu giấy, sổ tạm trú giấy hoặc giấy tờ có yêu cầu xác nhận nơi cư trú khi thực hiện thủ tục hành chính thuộc lĩnh vực quản lý nhà nước của Bộ Lao động - Thương binh và Xã hội",
+          "code": "08/2023/TT-BLĐTBXH"
+        },
+        {
+          "id": "019d2bb3-5d7f-719e-b46b-dcf2a64573b2",
+          "name": "28/2012/NĐ-CP - Quy định chi tiết và hướng dẫn thi hành một số điều của Luật Người khuyết tật",
+          "code": "28/2012/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b673-605473a3009f",
+          "name": "Luật 51/2010/QH12 - Người khuyết tật",
+          "code": "51/2010/QH12"
+        }
+      ]
+    }
+  ]
+}

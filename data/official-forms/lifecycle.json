@@ -1,0 +1,858 @@
+[
+  {
+    "procedure_code": "2.000181",
+    "name": "Cấp Giấy phép bán lẻ sản phẩm thuốc lá",
+    "status": "repealed",
+    "label": "Đã có quyết định bãi bỏ",
+    "note": "Mã có trong phụ lục bãi bỏ của Hà Nội. Giữ bản ghi lịch sử; không dùng mẫu cũ làm mẫu hiện hành.",
+    "evidence": [
+      {
+        "name": "Quyết định 762/QĐ-TTPVHCC Hà Nội ngày 21/5/2026",
+        "scope": "hanoi",
+        "url": "https://datafiles.hanoi.gov.vn/gov-hni/6244/VanBan/2026/5/21/QDPVHCC-762-2026.pdf",
+        "local_path": "originals/hanoi762-2026.pdf",
+        "sha256": "50e956bd4dbf85b6cb42f2654533a54344c9aad34ecb0b41baedd9bee0d66e5b",
+        "page": 7
+      }
+    ],
+    "effective_from": null,
+    "effective_until": null,
+    "reviewed_on": "2026-11-13",
+    "use_old_form_for_synthetic_data": false,
+    "related_current_procedures": []
+  },
+  {
+    "procedure_code": "2.000162",
+    "name": "Cấp sửa đổi, bổ sung Giấy phép bán lẻ sản phẩm thuốc lá",
+    "status": "repealed",
+    "label": "Đã có quyết định bãi bỏ",
+    "note": "Mã có trong phụ lục bãi bỏ của Hà Nội. Giữ bản ghi lịch sử; không dùng mẫu cũ làm mẫu hiện hành.",
+    "evidence": [
+      {
+        "name": "Quyết định 762/QĐ-TTPVHCC Hà Nội ngày 21/5/2026",
+        "scope": "hanoi",
+        "url": "https://datafiles.hanoi.gov.vn/gov-hni/6244/VanBan/2026/5/21/QDPVHCC-762-2026.pdf",
+        "local_path": "originals/hanoi762-2026.pdf",
+        "sha256": "50e956bd4dbf85b6cb42f2654533a54344c9aad34ecb0b41baedd9bee0d66e5b",
+        "page": 7
+      }
+    ],
+    "effective_from": null,
+    "effective_until": null,
+    "reviewed_on": "2026-11-13",
+    "use_old_form_for_synthetic_data": false,
+    "related_current_procedures": []
+  },
+  {
+    "procedure_code": "2.000150",
+    "name": "Cấp lại Giấy phép bán lẻ sản phẩm thuốc lá",
+    "status": "repealed",
+    "label": "Đã có quyết định bãi bỏ",
+    "note": "Mã có trong phụ lục bãi bỏ của Hà Nội. Giữ bản ghi lịch sử; không dùng mẫu cũ làm mẫu hiện hành.",
+    "evidence": [
+      {
+        "name": "Quyết định 762/QĐ-TTPVHCC Hà Nội ngày 21/5/2026",
+        "scope": "hanoi",
+        "url": "https://datafiles.hanoi.gov.vn/gov-hni/6244/VanBan/2026/5/21/QDPVHCC-762-2026.pdf",
+        "local_path": "originals/hanoi762-2026.pdf",
+        "sha256": "50e956bd4dbf85b6cb42f2654533a54344c9aad34ecb0b41baedd9bee0d66e5b",
+        "page": 7
+      }
+    ],
+    "effective_from": null,
+    "effective_until": null,
+    "reviewed_on": "2026-11-13",
+    "use_old_form_for_synthetic_data": false,
+    "related_current_procedures": []
+  },
+  {
+    "procedure_code": "1.006444",
+    "name": "Cho phép trường mẫu giáo, trường mầm non, nhà trẻ hoạt động giáo dục trở lại",
+    "status": "repealed",
+    "label": "Đã có quyết định bãi bỏ",
+    "note": "Mã có trong phụ lục bãi bỏ của Hà Nội. Giữ bản ghi lịch sử; không dùng mẫu cũ làm mẫu hiện hành.",
+    "evidence": [
+      {
+        "name": "Quyết định 821/QĐ-TTPVHCC Hà Nội ngày 08/6/2026",
+        "scope": "hanoi",
+        "url": "https://datafiles.hanoi.gov.vn/gov-hni/8180/VanBan/2026/6/16/QD%20821.pdf",
+        "local_path": "originals/hanoi821-2026.pdf",
+        "sha256": "06bcbf34571b7edfc493d3a3351f4b95d74df7826aa71d0ebec239c42700b9d0",
+        "page": 28
+      }
+    ],
+    "effective_from": null,
+    "effective_until": null,
+    "reviewed_on": "2026-11-13",
+    "use_old_form_for_synthetic_data": false,
+    "related_current_procedures": []
+  },
+  {
+    "procedure_code": "1.012972",
+    "name": "Cho phép cơ sở giáo dục mầm non độc lập hoạt động trở lại",
+    "status": "repealed",
+    "label": "Đã có quyết định bãi bỏ",
+    "note": "Mã có trong phụ lục bãi bỏ của Hà Nội. Giữ bản ghi lịch sử; không dùng mẫu cũ làm mẫu hiện hành.",
+    "evidence": [
+      {
+        "name": "Quyết định 821/QĐ-TTPVHCC Hà Nội ngày 08/6/2026",
+        "scope": "hanoi",
+        "url": "https://datafiles.hanoi.gov.vn/gov-hni/8180/VanBan/2026/6/16/QD%20821.pdf",
+        "local_path": "originals/hanoi821-2026.pdf",
+        "sha256": "06bcbf34571b7edfc493d3a3351f4b95d74df7826aa71d0ebec239c42700b9d0",
+        "page": 28
+      }
+    ],
+    "effective_from": null,
+    "effective_until": null,
+    "reviewed_on": "2026-11-13",
+    "use_old_form_for_synthetic_data": false,
+    "related_current_procedures": []
+  },
+  {
+    "procedure_code": "1.004552",
+    "name": "Cho phép trường tiểu học hoạt động giáo dục trở lại",
+    "status": "repealed",
+    "label": "Đã có quyết định bãi bỏ",
+    "note": "Mã có trong phụ lục bãi bỏ của Hà Nội. Giữ bản ghi lịch sử; không dùng mẫu cũ làm mẫu hiện hành.",
+    "evidence": [
+      {
+        "name": "Quyết định 821/QĐ-TTPVHCC Hà Nội ngày 08/6/2026",
+        "scope": "hanoi",
+        "url": "https://datafiles.hanoi.gov.vn/gov-hni/8180/VanBan/2026/6/16/QD%20821.pdf",
+        "local_path": "originals/hanoi821-2026.pdf",
+        "sha256": "06bcbf34571b7edfc493d3a3351f4b95d74df7826aa71d0ebec239c42700b9d0",
+        "page": 28
+      }
+    ],
+    "effective_from": null,
+    "effective_until": null,
+    "reviewed_on": "2026-11-13",
+    "use_old_form_for_synthetic_data": false,
+    "related_current_procedures": []
+  },
+  {
+    "procedure_code": "1.012966",
+    "name": "Cho phép trường trung học cơ sở, trường phổ thông có nhiều cấp học có cấp học cao nhất là trung học cơ sở hoạt động giáo dục trở lại",
+    "status": "repealed",
+    "label": "Đã có quyết định bãi bỏ",
+    "note": "Mã có trong phụ lục bãi bỏ của Hà Nội. Giữ bản ghi lịch sử; không dùng mẫu cũ làm mẫu hiện hành.",
+    "evidence": [
+      {
+        "name": "Quyết định 821/QĐ-TTPVHCC Hà Nội ngày 08/6/2026",
+        "scope": "hanoi",
+        "url": "https://datafiles.hanoi.gov.vn/gov-hni/8180/VanBan/2026/6/16/QD%20821.pdf",
+        "local_path": "originals/hanoi821-2026.pdf",
+        "sha256": "06bcbf34571b7edfc493d3a3351f4b95d74df7826aa71d0ebec239c42700b9d0",
+        "page": 28
+      }
+    ],
+    "effective_from": null,
+    "effective_until": null,
+    "reviewed_on": "2026-11-13",
+    "use_old_form_for_synthetic_data": false,
+    "related_current_procedures": []
+  },
+  {
+    "procedure_code": "1.012970",
+    "name": "Cho phép trung tâm học tập cộng đồng hoạt động trở lại",
+    "status": "repealed",
+    "label": "Đã có quyết định bãi bỏ",
+    "note": "Mã có trong phụ lục bãi bỏ của Hà Nội. Giữ bản ghi lịch sử; không dùng mẫu cũ làm mẫu hiện hành.",
+    "evidence": [
+      {
+        "name": "Quyết định 821/QĐ-TTPVHCC Hà Nội ngày 08/6/2026",
+        "scope": "hanoi",
+        "url": "https://datafiles.hanoi.gov.vn/gov-hni/8180/VanBan/2026/6/16/QD%20821.pdf",
+        "local_path": "originals/hanoi821-2026.pdf",
+        "sha256": "06bcbf34571b7edfc493d3a3351f4b95d74df7826aa71d0ebec239c42700b9d0",
+        "page": 29
+      }
+    ],
+    "effective_from": null,
+    "effective_until": null,
+    "reviewed_on": "2026-11-13",
+    "use_old_form_for_synthetic_data": false,
+    "related_current_procedures": []
+  },
+  {
+    "procedure_code": "1.001029",
+    "name": "Thủ tục cấp giấy phép đủ điều kiện kinh doanh dịch vụ karaoke cấp tỉnh",
+    "status": "repealed_for_period",
+    "label": "Bãi bỏ trong thời hạn công bố",
+    "note": "Phụ lục 03 quy định bãi bỏ có thời hạn đến 28/02/2027. Cần kiểm tra lại sau mốc này.",
+    "evidence": [
+      {
+        "name": "Quyết định 826/QĐ-TTPVHCC Hà Nội ngày 11/6/2026",
+        "scope": "hanoi",
+        "url": "https://datafiles.hanoi.gov.vn/gov-hni/8180/VanBan/2026/6/16/QD%20826.pdf",
+        "local_path": "originals/hanoi826-2026.pdf",
+        "sha256": "d70b7639b780eaeb7e0fcea62cab85077725b16efedc3af14d2b7780215814ec",
+        "page": 14
+      }
+    ],
+    "effective_from": "2026-07-01",
+    "effective_until": "2027-02-28",
+    "reviewed_on": "2026-11-13",
+    "use_old_form_for_synthetic_data": false,
+    "related_current_procedures": []
+  },
+  {
+    "procedure_code": "1.000963",
+    "name": "Thủ tục cấp giấy phép điều chỉnh Giấy phép đủ điều kiện kinh doanh dịch vụ karaoke cấp tỉnh",
+    "status": "repealed_for_period",
+    "label": "Bãi bỏ trong thời hạn công bố",
+    "note": "Phụ lục 03 quy định bãi bỏ có thời hạn đến 28/02/2027. Cần kiểm tra lại sau mốc này.",
+    "evidence": [
+      {
+        "name": "Quyết định 826/QĐ-TTPVHCC Hà Nội ngày 11/6/2026",
+        "scope": "hanoi",
+        "url": "https://datafiles.hanoi.gov.vn/gov-hni/8180/VanBan/2026/6/16/QD%20826.pdf",
+        "local_path": "originals/hanoi826-2026.pdf",
+        "sha256": "d70b7639b780eaeb7e0fcea62cab85077725b16efedc3af14d2b7780215814ec",
+        "page": 14
+      }
+    ],
+    "effective_from": "2026-07-01",
+    "effective_until": "2027-02-28",
+    "reviewed_on": "2026-11-13",
+    "use_old_form_for_synthetic_data": false,
+    "related_current_procedures": []
+  },
+  {
+    "procedure_code": "1.003725",
+    "name": "Cấp giấy phép nhập khẩu xuất bản phẩm không kinh doanh (địa phương)",
+    "status": "repealed_for_period",
+    "label": "Bãi bỏ trong thời hạn công bố",
+    "note": "Phụ lục 03 quy định bãi bỏ có thời hạn đến 28/02/2027. Cần kiểm tra lại sau mốc này.",
+    "evidence": [
+      {
+        "name": "Quyết định 826/QĐ-TTPVHCC Hà Nội ngày 11/6/2026",
+        "scope": "hanoi",
+        "url": "https://datafiles.hanoi.gov.vn/gov-hni/8180/VanBan/2026/6/16/QD%20826.pdf",
+        "local_path": "originals/hanoi826-2026.pdf",
+        "sha256": "d70b7639b780eaeb7e0fcea62cab85077725b16efedc3af14d2b7780215814ec",
+        "page": 16
+      }
+    ],
+    "effective_from": "2026-05-20",
+    "effective_until": "2027-02-28",
+    "reviewed_on": "2026-11-13",
+    "use_old_form_for_synthetic_data": false,
+    "related_current_procedures": []
+  },
+  {
+    "procedure_code": "1.014475",
+    "name": "Thủ tục hành chính liên thông điện tử về cấp Giấy phép đủ điều kiện kinh doanh dịch vụ karaoke",
+    "status": "repealed_for_period",
+    "label": "Bãi bỏ trong thời hạn công bố",
+    "note": "Phụ lục 03 quy định bãi bỏ có thời hạn đến 28/02/2027. Cần kiểm tra lại sau mốc này.",
+    "evidence": [
+      {
+        "name": "Quyết định 826/QĐ-TTPVHCC Hà Nội ngày 11/6/2026",
+        "scope": "hanoi",
+        "url": "https://datafiles.hanoi.gov.vn/gov-hni/8180/VanBan/2026/6/16/QD%20826.pdf",
+        "local_path": "originals/hanoi826-2026.pdf",
+        "sha256": "d70b7639b780eaeb7e0fcea62cab85077725b16efedc3af14d2b7780215814ec",
+        "page": 17
+      }
+    ],
+    "effective_from": "2026-07-01",
+    "effective_until": "2027-02-28",
+    "reviewed_on": "2026-11-13",
+    "use_old_form_for_synthetic_data": false,
+    "related_current_procedures": []
+  },
+  {
+    "procedure_code": "2.000286",
+    "name": "Tiếp nhận đối tượng bảo trợ xã hội có hoàn cảnh đặc biệt khó khăn vào cơ sở trợ giúp xã hội",
+    "status": "repealed",
+    "label": "Mã cũ đã bị bãi bỏ",
+    "note": "Quyết định của Bộ Y tế bãi bỏ mã cũ từ 05/10/2026. Thủ tục mới cùng nghiệp vụ được liên kết riêng nếu tìm thấy.",
+    "evidence": [
+      {
+        "name": "Quyết định 3033/QĐ-BYT ngày 29/9/2026",
+        "scope": "national",
+        "url": "https://namhailang.quangtri.gov.vn/documents/39955/0/3033-Q%C4%90-BYT+2026.pdf/f84a7f83-e2f0-f050-031e-5d69cc904adc?t=1791359945686",
+        "local_path": "originals/byt3033-2026.pdf",
+        "sha256": "e67c073b982c29899ae88bb2d9348781d6eb8ad78788d3dfdb0e93e33847747a",
+        "page": 4
+      }
+    ],
+    "effective_from": "2026-10-05",
+    "effective_until": null,
+    "reviewed_on": "2026-11-13",
+    "use_old_form_for_synthetic_data": false,
+    "related_current_procedures": [
+      {
+        "code": "1.116907",
+        "name": "Tiếp nhận đối tượng bảo trợ xã hội có hoàn cảnh đặc biệt khó khăn vào cơ sở trợ giúp xã hội",
+        "id": "01a0f653-8729-706c-9cc8-c3234469d7cf",
+        "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/01a0f653-8729-706c-9cc8-c3234469d7cf",
+        "mapping_basis": "Đối chiếu tên thủ tục thay thế trong quyết định với tên và căn cứ pháp lý trên DVC; mã mới lấy từ DVC, không sửa mã gốc."
+      }
+    ]
+  },
+  {
+    "procedure_code": "2.000282",
+    "name": "Tiếp nhận đối tượng cần bảo vệ khẩn cấp vào cơ sở trợ giúp xã hội",
+    "status": "repealed",
+    "label": "Mã cũ đã bị bãi bỏ",
+    "note": "Quyết định của Bộ Y tế bãi bỏ mã cũ từ 05/10/2026. Thủ tục mới cùng nghiệp vụ được liên kết riêng nếu tìm thấy.",
+    "evidence": [
+      {
+        "name": "Quyết định 3033/QĐ-BYT ngày 29/9/2026",
+        "scope": "national",
+        "url": "https://namhailang.quangtri.gov.vn/documents/39955/0/3033-Q%C4%90-BYT+2026.pdf/f84a7f83-e2f0-f050-031e-5d69cc904adc?t=1791359945686",
+        "local_path": "originals/byt3033-2026.pdf",
+        "sha256": "e67c073b982c29899ae88bb2d9348781d6eb8ad78788d3dfdb0e93e33847747a",
+        "page": 4
+      }
+    ],
+    "effective_from": "2026-10-05",
+    "effective_until": null,
+    "reviewed_on": "2026-11-13",
+    "use_old_form_for_synthetic_data": false,
+    "related_current_procedures": [
+      {
+        "code": "1.116908",
+        "name": "Tiếp nhận đối tượng cần bảo vệ khẩn cấp vào cơ sở trợ giúp xã hội",
+        "id": "01a0f65f-4713-7199-9b0c-d57f794ef14d",
+        "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/01a0f65f-4713-7199-9b0c-d57f794ef14d",
+        "mapping_basis": "Đối chiếu tên thủ tục thay thế trong quyết định với tên và căn cứ pháp lý trên DVC; mã mới lấy từ DVC, không sửa mã gốc."
+      }
+    ]
+  },
+  {
+    "procedure_code": "1.001776",
+    "name": "Thực hiện, điều chỉnh, thôi hưởng trợ cấp xã hội hàng tháng, hỗ trợ kinh phí chăm sóc, nuôi dưỡng hàng tháng",
+    "status": "repealed",
+    "label": "Mã cũ đã bị bãi bỏ",
+    "note": "Quyết định của Bộ Y tế bãi bỏ mã cũ từ 05/10/2026. Thủ tục mới cùng nghiệp vụ được liên kết riêng nếu tìm thấy.",
+    "evidence": [
+      {
+        "name": "Quyết định 3033/QĐ-BYT ngày 29/9/2026",
+        "scope": "national",
+        "url": "https://namhailang.quangtri.gov.vn/documents/39955/0/3033-Q%C4%90-BYT+2026.pdf/f84a7f83-e2f0-f050-031e-5d69cc904adc?t=1791359945686",
+        "local_path": "originals/byt3033-2026.pdf",
+        "sha256": "e67c073b982c29899ae88bb2d9348781d6eb8ad78788d3dfdb0e93e33847747a",
+        "page": 5
+      }
+    ],
+    "effective_from": "2026-10-05",
+    "effective_until": null,
+    "reviewed_on": "2026-11-13",
+    "use_old_form_for_synthetic_data": false,
+    "related_current_procedures": [
+      {
+        "code": "1.116909",
+        "name": "Thực hiện trợ cấp xã hội và nhận chăm sóc, nuôi dưỡng, hỗ trợ kinh phí nhận chăm sóc, nuôi dưỡng hằng tháng",
+        "id": "01a0f668-d09b-7368-9850-3c8288daf506",
+        "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/01a0f668-d09b-7368-9850-3c8288daf506",
+        "mapping_basis": "Đối chiếu tên thủ tục thay thế trong quyết định với tên và căn cứ pháp lý trên DVC; mã mới lấy từ DVC, không sửa mã gốc."
+      }
+    ]
+  },
+  {
+    "procedure_code": "1.001731",
+    "name": "Hỗ trợ chi phí mai táng cho đối tượng bảo trợ xã hội",
+    "status": "repealed",
+    "label": "Mã cũ đã bị bãi bỏ",
+    "note": "Quyết định của Bộ Y tế bãi bỏ mã cũ từ 05/10/2026. Thủ tục mới cùng nghiệp vụ được liên kết riêng nếu tìm thấy.",
+    "evidence": [
+      {
+        "name": "Quyết định 3033/QĐ-BYT ngày 29/9/2026",
+        "scope": "national",
+        "url": "https://namhailang.quangtri.gov.vn/documents/39955/0/3033-Q%C4%90-BYT+2026.pdf/f84a7f83-e2f0-f050-031e-5d69cc904adc?t=1791359945686",
+        "local_path": "originals/byt3033-2026.pdf",
+        "sha256": "e67c073b982c29899ae88bb2d9348781d6eb8ad78788d3dfdb0e93e33847747a",
+        "page": 5
+      }
+    ],
+    "effective_from": "2026-10-05",
+    "effective_until": null,
+    "reviewed_on": "2026-11-13",
+    "use_old_form_for_synthetic_data": false,
+    "related_current_procedures": [
+      {
+        "code": "1.116910",
+        "name": "Hỗ trợ chi phí mai táng cho đối tượng bảo trợ xã hội",
+        "id": "01a0f66e-63a3-749a-a9d8-2dcbeda6af79",
+        "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/01a0f66e-63a3-749a-a9d8-2dcbeda6af79",
+        "mapping_basis": "Đối chiếu tên thủ tục thay thế trong quyết định với tên và căn cứ pháp lý trên DVC; mã mới lấy từ DVC, không sửa mã gốc."
+      }
+    ]
+  },
+  {
+    "procedure_code": "1.012971",
+    "name": "Thành lập hoặc cho phép thành lập cơ sở giáo dục mầm non độc lập",
+    "status": "replaced",
+    "label": "Đã có thủ tục thay thế",
+    "note": "Bảng thủ tục thay thế của Bộ GDĐT nêu mã cũ và tên thủ tục mới. Phạm vi một số thủ tục được gộp hoặc thay đổi.",
+    "evidence": [
+      {
+        "name": "Quyết định 2855/QĐ-BGDĐT ngày 30/9/2026",
+        "scope": "national",
+        "url": "https://dienbien.tnu.edu.vn/uploads/files/moet/moet-20260930-2855-qd-bgddt-quyet-dinh-ve-viec-cong-bo-thu-tuc-hanh-chinh-ban-hanh-moi-thu-tuc-hanh-chinh-duoc-thay-the-trong-cac-linh-vuc-thuoc-pha-7d2614c76a.pdf",
+        "local_path": "originals/bgddt2855-2026.pdf",
+        "sha256": "cf008cbd7ff333f5130543272f2ec20791f46f6ead34f5680e6a2d75d45ef94e",
+        "page": 12
+      }
+    ],
+    "effective_from": null,
+    "effective_until": null,
+    "reviewed_on": "2026-11-13",
+    "use_old_form_for_synthetic_data": false,
+    "related_current_procedures": [
+      {
+        "code": "1.116839",
+        "name": "Cho phép thành lập nhóm, lớp mầm non độc lập dân lập, tư thục",
+        "id": "01a0f180-8f18-71a3-bd5c-ae39015a5927",
+        "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/01a0f180-8f18-71a3-bd5c-ae39015a5927",
+        "mapping_basis": "Đối chiếu tên thủ tục thay thế trong quyết định với tên và căn cứ pháp lý trên DVC; mã mới lấy từ DVC, không sửa mã gốc."
+      }
+    ]
+  },
+  {
+    "procedure_code": "1.012973",
+    "name": "Sáp nhập, chia, tách cơ sở giáo dục mầm non độc lập",
+    "status": "replaced",
+    "label": "Đã có thủ tục thay thế",
+    "note": "Bảng thủ tục thay thế của Bộ GDĐT nêu mã cũ và tên thủ tục mới. Phạm vi một số thủ tục được gộp hoặc thay đổi.",
+    "evidence": [
+      {
+        "name": "Quyết định 2855/QĐ-BGDĐT ngày 30/9/2026",
+        "scope": "national",
+        "url": "https://dienbien.tnu.edu.vn/uploads/files/moet/moet-20260930-2855-qd-bgddt-quyet-dinh-ve-viec-cong-bo-thu-tuc-hanh-chinh-ban-hanh-moi-thu-tuc-hanh-chinh-duoc-thay-the-trong-cac-linh-vuc-thuoc-pha-7d2614c76a.pdf",
+        "local_path": "originals/bgddt2855-2026.pdf",
+        "sha256": "cf008cbd7ff333f5130543272f2ec20791f46f6ead34f5680e6a2d75d45ef94e",
+        "page": 12
+      }
+    ],
+    "effective_from": null,
+    "effective_until": null,
+    "reviewed_on": "2026-11-13",
+    "use_old_form_for_synthetic_data": false,
+    "related_current_procedures": [
+      {
+        "code": "1.116840",
+        "name": "Sáp nhập, chia, tách nhóm lớp mầm non độc lập dân lập, tư thục",
+        "id": "01a0f183-f379-747e-aea1-fb3518ea76a9",
+        "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/01a0f183-f379-747e-aea1-fb3518ea76a9",
+        "mapping_basis": "Đối chiếu tên thủ tục thay thế trong quyết định với tên và căn cứ pháp lý trên DVC; mã mới lấy từ DVC, không sửa mã gốc."
+      }
+    ]
+  },
+  {
+    "procedure_code": "1.012974",
+    "name": "Giải thể cơ sở giáo dục mầm non độc lập (theo yêu cầu của tổ chức, cá nhân thành lập trường)",
+    "status": "replaced",
+    "label": "Đã có thủ tục thay thế",
+    "note": "Bảng thủ tục thay thế của Bộ GDĐT nêu mã cũ và tên thủ tục mới. Phạm vi một số thủ tục được gộp hoặc thay đổi.",
+    "evidence": [
+      {
+        "name": "Quyết định 2855/QĐ-BGDĐT ngày 30/9/2026",
+        "scope": "national",
+        "url": "https://dienbien.tnu.edu.vn/uploads/files/moet/moet-20260930-2855-qd-bgddt-quyet-dinh-ve-viec-cong-bo-thu-tuc-hanh-chinh-ban-hanh-moi-thu-tuc-hanh-chinh-duoc-thay-the-trong-cac-linh-vuc-thuoc-pha-7d2614c76a.pdf",
+        "local_path": "originals/bgddt2855-2026.pdf",
+        "sha256": "cf008cbd7ff333f5130543272f2ec20791f46f6ead34f5680e6a2d75d45ef94e",
+        "page": 12
+      }
+    ],
+    "effective_from": null,
+    "effective_until": null,
+    "reviewed_on": "2026-11-13",
+    "use_old_form_for_synthetic_data": false,
+    "related_current_procedures": [
+      {
+        "code": "1.116841",
+        "name": "Giải thể nhóm lớp mầm non độc lập dân lập, tư thục (Theo đề nghị của tổ chức, cá nhân thành lập nhóm lớp)",
+        "id": "01a0f187-168d-7775-8789-f99e71a027af",
+        "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/01a0f187-168d-7775-8789-f99e71a027af",
+        "mapping_basis": "Đối chiếu tên thủ tục thay thế trong quyết định với tên và căn cứ pháp lý trên DVC; mã mới lấy từ DVC, không sửa mã gốc."
+      }
+    ]
+  },
+  {
+    "procedure_code": "1.012963",
+    "name": "Thành lập hoặc cho phép thành lập trường tiểu học",
+    "status": "replaced",
+    "label": "Đã có thủ tục thay thế",
+    "note": "Bảng thủ tục thay thế của Bộ GDĐT nêu mã cũ và tên thủ tục mới. Phạm vi một số thủ tục được gộp hoặc thay đổi.",
+    "evidence": [
+      {
+        "name": "Quyết định 2855/QĐ-BGDĐT ngày 30/9/2026",
+        "scope": "national",
+        "url": "https://dienbien.tnu.edu.vn/uploads/files/moet/moet-20260930-2855-qd-bgddt-quyet-dinh-ve-viec-cong-bo-thu-tuc-hanh-chinh-ban-hanh-moi-thu-tuc-hanh-chinh-duoc-thay-the-trong-cac-linh-vuc-thuoc-pha-7d2614c76a.pdf",
+        "local_path": "originals/bgddt2855-2026.pdf",
+        "sha256": "cf008cbd7ff333f5130543272f2ec20791f46f6ead34f5680e6a2d75d45ef94e",
+        "page": 12
+      }
+    ],
+    "effective_from": null,
+    "effective_until": null,
+    "reviewed_on": "2026-11-13",
+    "use_old_form_for_synthetic_data": false,
+    "related_current_procedures": [
+      {
+        "code": "1.116842",
+        "name": "Cho phép thành lập trường tiểu học, trường trung học cơ sở và trường phổ thông có nhiều cấp học trong đó có cấp học cao nhất là trung học cơ sở",
+        "id": "01a0f18a-e20e-771e-92ed-eb211e5ab713",
+        "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/01a0f18a-e20e-771e-92ed-eb211e5ab713",
+        "mapping_basis": "Đối chiếu tên thủ tục thay thế trong quyết định với tên và căn cứ pháp lý trên DVC; mã mới lấy từ DVC, không sửa mã gốc."
+      }
+    ]
+  },
+  {
+    "procedure_code": "1.012964",
+    "name": "Thành lập hoặc cho phép thành lập trường trung học cơ sở, trường phổ thông có nhiều cấp học có cấp học cao nhất là trung học cơ sở",
+    "status": "replaced",
+    "label": "Đã có thủ tục thay thế",
+    "note": "Bảng thủ tục thay thế của Bộ GDĐT nêu mã cũ và tên thủ tục mới. Phạm vi một số thủ tục được gộp hoặc thay đổi.",
+    "evidence": [
+      {
+        "name": "Quyết định 2855/QĐ-BGDĐT ngày 30/9/2026",
+        "scope": "national",
+        "url": "https://dienbien.tnu.edu.vn/uploads/files/moet/moet-20260930-2855-qd-bgddt-quyet-dinh-ve-viec-cong-bo-thu-tuc-hanh-chinh-ban-hanh-moi-thu-tuc-hanh-chinh-duoc-thay-the-trong-cac-linh-vuc-thuoc-pha-7d2614c76a.pdf",
+        "local_path": "originals/bgddt2855-2026.pdf",
+        "sha256": "cf008cbd7ff333f5130543272f2ec20791f46f6ead34f5680e6a2d75d45ef94e",
+        "page": 12
+      }
+    ],
+    "effective_from": null,
+    "effective_until": null,
+    "reviewed_on": "2026-11-13",
+    "use_old_form_for_synthetic_data": false,
+    "related_current_procedures": [
+      {
+        "code": "1.116842",
+        "name": "Cho phép thành lập trường tiểu học, trường trung học cơ sở và trường phổ thông có nhiều cấp học trong đó có cấp học cao nhất là trung học cơ sở",
+        "id": "01a0f18a-e20e-771e-92ed-eb211e5ab713",
+        "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/01a0f18a-e20e-771e-92ed-eb211e5ab713",
+        "mapping_basis": "Đối chiếu tên thủ tục thay thế trong quyết định với tên và căn cứ pháp lý trên DVC; mã mới lấy từ DVC, không sửa mã gốc."
+      }
+    ]
+  },
+  {
+    "procedure_code": "2.001842",
+    "name": "Cho phép trường tiểu học hoạt động giáo dục",
+    "status": "replaced",
+    "label": "Đã có thủ tục thay thế",
+    "note": "Bảng thủ tục thay thế của Bộ GDĐT nêu mã cũ và tên thủ tục mới. Phạm vi một số thủ tục được gộp hoặc thay đổi.",
+    "evidence": [
+      {
+        "name": "Quyết định 2855/QĐ-BGDĐT ngày 30/9/2026",
+        "scope": "national",
+        "url": "https://dienbien.tnu.edu.vn/uploads/files/moet/moet-20260930-2855-qd-bgddt-quyet-dinh-ve-viec-cong-bo-thu-tuc-hanh-chinh-ban-hanh-moi-thu-tuc-hanh-chinh-duoc-thay-the-trong-cac-linh-vuc-thuoc-pha-7d2614c76a.pdf",
+        "local_path": "originals/bgddt2855-2026.pdf",
+        "sha256": "cf008cbd7ff333f5130543272f2ec20791f46f6ead34f5680e6a2d75d45ef94e",
+        "page": 13
+      }
+    ],
+    "effective_from": null,
+    "effective_until": null,
+    "reviewed_on": "2026-11-13",
+    "use_old_form_for_synthetic_data": false,
+    "related_current_procedures": [
+      {
+        "code": "1.116843",
+        "name": "Cấp phép hoạt động giáo dục đối với trường tiểu học, trường trung học cơ sở và trường phổ thông có nhiều cấp học trong đó có cấp học cao nhất là trung học cơ sở",
+        "id": "01a0f18e-9c38-77a9-a9ac-657df2b2dd9a",
+        "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/01a0f18e-9c38-77a9-a9ac-657df2b2dd9a",
+        "mapping_basis": "Đối chiếu tên thủ tục thay thế trong quyết định với tên và căn cứ pháp lý trên DVC; mã mới lấy từ DVC, không sửa mã gốc."
+      }
+    ]
+  },
+  {
+    "procedure_code": "1.012965",
+    "name": "Cho phép trường trung học cơ sở, trường phổ thông có nhiều cấp học có cấp học cao nhất là trung học cơ sở hoạt động giáo dục",
+    "status": "replaced",
+    "label": "Đã có thủ tục thay thế",
+    "note": "Bảng thủ tục thay thế của Bộ GDĐT nêu mã cũ và tên thủ tục mới. Phạm vi một số thủ tục được gộp hoặc thay đổi.",
+    "evidence": [
+      {
+        "name": "Quyết định 2855/QĐ-BGDĐT ngày 30/9/2026",
+        "scope": "national",
+        "url": "https://dienbien.tnu.edu.vn/uploads/files/moet/moet-20260930-2855-qd-bgddt-quyet-dinh-ve-viec-cong-bo-thu-tuc-hanh-chinh-ban-hanh-moi-thu-tuc-hanh-chinh-duoc-thay-the-trong-cac-linh-vuc-thuoc-pha-7d2614c76a.pdf",
+        "local_path": "originals/bgddt2855-2026.pdf",
+        "sha256": "cf008cbd7ff333f5130543272f2ec20791f46f6ead34f5680e6a2d75d45ef94e",
+        "page": 13
+      }
+    ],
+    "effective_from": null,
+    "effective_until": null,
+    "reviewed_on": "2026-11-13",
+    "use_old_form_for_synthetic_data": false,
+    "related_current_procedures": [
+      {
+        "code": "1.116843",
+        "name": "Cấp phép hoạt động giáo dục đối với trường tiểu học, trường trung học cơ sở và trường phổ thông có nhiều cấp học trong đó có cấp học cao nhất là trung học cơ sở",
+        "id": "01a0f18e-9c38-77a9-a9ac-657df2b2dd9a",
+        "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/01a0f18e-9c38-77a9-a9ac-657df2b2dd9a",
+        "mapping_basis": "Đối chiếu tên thủ tục thay thế trong quyết định với tên và căn cứ pháp lý trên DVC; mã mới lấy từ DVC, không sửa mã gốc."
+      }
+    ]
+  },
+  {
+    "procedure_code": "1.004563",
+    "name": "Sáp nhập, chia, tách trường tiểu học",
+    "status": "replaced",
+    "label": "Đã có thủ tục thay thế",
+    "note": "Bảng thủ tục thay thế của Bộ GDĐT nêu mã cũ và tên thủ tục mới. Phạm vi một số thủ tục được gộp hoặc thay đổi.",
+    "evidence": [
+      {
+        "name": "Quyết định 2855/QĐ-BGDĐT ngày 30/9/2026",
+        "scope": "national",
+        "url": "https://dienbien.tnu.edu.vn/uploads/files/moet/moet-20260930-2855-qd-bgddt-quyet-dinh-ve-viec-cong-bo-thu-tuc-hanh-chinh-ban-hanh-moi-thu-tuc-hanh-chinh-duoc-thay-the-trong-cac-linh-vuc-thuoc-pha-7d2614c76a.pdf",
+        "local_path": "originals/bgddt2855-2026.pdf",
+        "sha256": "cf008cbd7ff333f5130543272f2ec20791f46f6ead34f5680e6a2d75d45ef94e",
+        "page": 13
+      }
+    ],
+    "effective_from": null,
+    "effective_until": null,
+    "reviewed_on": "2026-11-13",
+    "use_old_form_for_synthetic_data": false,
+    "related_current_procedures": [
+      {
+        "code": "1.116844",
+        "name": "Sáp nhập, chia, tách trường tiểu học, trường trung học cơ sở và trường phổ thông có nhiều cấp học trong đó có cấp học cao nhất là trung học cơ sở",
+        "id": "01a0f292-ef1b-7209-9853-a198ebb5282e",
+        "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/01a0f292-ef1b-7209-9853-a198ebb5282e",
+        "mapping_basis": "Đối chiếu tên thủ tục thay thế trong quyết định với tên và căn cứ pháp lý trên DVC; mã mới lấy từ DVC, không sửa mã gốc."
+      }
+    ]
+  },
+  {
+    "procedure_code": "1.012967",
+    "name": "Sáp nhập, chia, tách trường trung học cơ sở, trường phổ thông có nhiều cấp học có cấp học cao nhất là trung học cơ sở",
+    "status": "replaced",
+    "label": "Đã có thủ tục thay thế",
+    "note": "Bảng thủ tục thay thế của Bộ GDĐT nêu mã cũ và tên thủ tục mới. Phạm vi một số thủ tục được gộp hoặc thay đổi.",
+    "evidence": [
+      {
+        "name": "Quyết định 2855/QĐ-BGDĐT ngày 30/9/2026",
+        "scope": "national",
+        "url": "https://dienbien.tnu.edu.vn/uploads/files/moet/moet-20260930-2855-qd-bgddt-quyet-dinh-ve-viec-cong-bo-thu-tuc-hanh-chinh-ban-hanh-moi-thu-tuc-hanh-chinh-duoc-thay-the-trong-cac-linh-vuc-thuoc-pha-7d2614c76a.pdf",
+        "local_path": "originals/bgddt2855-2026.pdf",
+        "sha256": "cf008cbd7ff333f5130543272f2ec20791f46f6ead34f5680e6a2d75d45ef94e",
+        "page": 13
+      }
+    ],
+    "effective_from": null,
+    "effective_until": null,
+    "reviewed_on": "2026-11-13",
+    "use_old_form_for_synthetic_data": false,
+    "related_current_procedures": [
+      {
+        "code": "1.116844",
+        "name": "Sáp nhập, chia, tách trường tiểu học, trường trung học cơ sở và trường phổ thông có nhiều cấp học trong đó có cấp học cao nhất là trung học cơ sở",
+        "id": "01a0f292-ef1b-7209-9853-a198ebb5282e",
+        "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/01a0f292-ef1b-7209-9853-a198ebb5282e",
+        "mapping_basis": "Đối chiếu tên thủ tục thay thế trong quyết định với tên và căn cứ pháp lý trên DVC; mã mới lấy từ DVC, không sửa mã gốc."
+      }
+    ]
+  },
+  {
+    "procedure_code": "1.001639",
+    "name": "Giải thể trường tiểu học (theo đề nghị của tổ chức, cá nhân đề nghị thành lập trường tiểu học)",
+    "status": "replaced",
+    "label": "Đã có thủ tục thay thế",
+    "note": "Bảng thủ tục thay thế của Bộ GDĐT nêu mã cũ và tên thủ tục mới. Phạm vi một số thủ tục được gộp hoặc thay đổi.",
+    "evidence": [
+      {
+        "name": "Quyết định 2855/QĐ-BGDĐT ngày 30/9/2026",
+        "scope": "national",
+        "url": "https://dienbien.tnu.edu.vn/uploads/files/moet/moet-20260930-2855-qd-bgddt-quyet-dinh-ve-viec-cong-bo-thu-tuc-hanh-chinh-ban-hanh-moi-thu-tuc-hanh-chinh-duoc-thay-the-trong-cac-linh-vuc-thuoc-pha-7d2614c76a.pdf",
+        "local_path": "originals/bgddt2855-2026.pdf",
+        "sha256": "cf008cbd7ff333f5130543272f2ec20791f46f6ead34f5680e6a2d75d45ef94e",
+        "page": 13
+      }
+    ],
+    "effective_from": null,
+    "effective_until": null,
+    "reviewed_on": "2026-11-13",
+    "use_old_form_for_synthetic_data": false,
+    "related_current_procedures": [
+      {
+        "code": "1.116845",
+        "name": "Giải thể trường tiểu học, trường trung học cơ sở và trường phổ thông có nhiều cấp học trong đó có cấp học cao nhất là trung học cơ sở (Theo đề nghị của tổ chức, cá nhân thành lập trường)",
+        "id": "01a0f298-7493-775d-9f7c-35f854b7a37d",
+        "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/01a0f298-7493-775d-9f7c-35f854b7a37d",
+        "mapping_basis": "Đối chiếu tên thủ tục thay thế trong quyết định với tên và căn cứ pháp lý trên DVC; mã mới lấy từ DVC, không sửa mã gốc."
+      }
+    ]
+  },
+  {
+    "procedure_code": "1.012968",
+    "name": "Giải thể trường trung học cơ sở, trường phổ thông có nhiều cấp học có cấp học cao nhất là trung học cơ sở (theo đề nghị của cá nhân, tổ chức thành lập trường)",
+    "status": "replaced",
+    "label": "Đã có thủ tục thay thế",
+    "note": "Bảng thủ tục thay thế của Bộ GDĐT nêu mã cũ và tên thủ tục mới. Phạm vi một số thủ tục được gộp hoặc thay đổi.",
+    "evidence": [
+      {
+        "name": "Quyết định 2855/QĐ-BGDĐT ngày 30/9/2026",
+        "scope": "national",
+        "url": "https://dienbien.tnu.edu.vn/uploads/files/moet/moet-20260930-2855-qd-bgddt-quyet-dinh-ve-viec-cong-bo-thu-tuc-hanh-chinh-ban-hanh-moi-thu-tuc-hanh-chinh-duoc-thay-the-trong-cac-linh-vuc-thuoc-pha-7d2614c76a.pdf",
+        "local_path": "originals/bgddt2855-2026.pdf",
+        "sha256": "cf008cbd7ff333f5130543272f2ec20791f46f6ead34f5680e6a2d75d45ef94e",
+        "page": 13
+      }
+    ],
+    "effective_from": null,
+    "effective_until": null,
+    "reviewed_on": "2026-11-13",
+    "use_old_form_for_synthetic_data": false,
+    "related_current_procedures": [
+      {
+        "code": "1.116845",
+        "name": "Giải thể trường tiểu học, trường trung học cơ sở và trường phổ thông có nhiều cấp học trong đó có cấp học cao nhất là trung học cơ sở (Theo đề nghị của tổ chức, cá nhân thành lập trường)",
+        "id": "01a0f298-7493-775d-9f7c-35f854b7a37d",
+        "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/01a0f298-7493-775d-9f7c-35f854b7a37d",
+        "mapping_basis": "Đối chiếu tên thủ tục thay thế trong quyết định với tên và căn cứ pháp lý trên DVC; mã mới lấy từ DVC, không sửa mã gốc."
+      }
+    ]
+  },
+  {
+    "procedure_code": "1.012975",
+    "name": "Cho phép cơ sở giáo dục khác thực hiện chương trình giáo dục phổ thông cấp tiểu học",
+    "status": "replaced",
+    "label": "Đã có thủ tục thay thế",
+    "note": "Bảng thủ tục thay thế của Bộ GDĐT nêu mã cũ và tên thủ tục mới. Phạm vi một số thủ tục được gộp hoặc thay đổi.",
+    "evidence": [
+      {
+        "name": "Quyết định 2855/QĐ-BGDĐT ngày 30/9/2026",
+        "scope": "national",
+        "url": "https://dienbien.tnu.edu.vn/uploads/files/moet/moet-20260930-2855-qd-bgddt-quyet-dinh-ve-viec-cong-bo-thu-tuc-hanh-chinh-ban-hanh-moi-thu-tuc-hanh-chinh-duoc-thay-the-trong-cac-linh-vuc-thuoc-pha-7d2614c76a.pdf",
+        "local_path": "originals/bgddt2855-2026.pdf",
+        "sha256": "cf008cbd7ff333f5130543272f2ec20791f46f6ead34f5680e6a2d75d45ef94e",
+        "page": 14
+      }
+    ],
+    "effective_from": null,
+    "effective_until": null,
+    "reviewed_on": "2026-11-13",
+    "use_old_form_for_synthetic_data": false,
+    "related_current_procedures": [
+      {
+        "code": "1.116846",
+        "name": "Cho phép cơ sở giáo dục khác thực hiện chương trình giáo dục phổ thông cấp tiểu học, cấp trung học cơ sở",
+        "id": "01a0f2a1-afa5-762e-82ca-3c5b5eb039ff",
+        "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/01a0f2a1-afa5-762e-82ca-3c5b5eb039ff",
+        "mapping_basis": "Đối chiếu tên thủ tục thay thế trong quyết định với tên và căn cứ pháp lý trên DVC; mã mới lấy từ DVC, không sửa mã gốc."
+      }
+    ]
+  },
+  {
+    "procedure_code": "1.012969",
+    "name": "Thành lập hoặc cho phép thành lập trung tâm học tập cộng đồng",
+    "status": "replaced",
+    "label": "Đã có thủ tục thay thế",
+    "note": "Bảng thủ tục thay thế của Bộ GDĐT nêu mã cũ và tên thủ tục mới. Phạm vi một số thủ tục được gộp hoặc thay đổi.",
+    "evidence": [
+      {
+        "name": "Quyết định 2855/QĐ-BGDĐT ngày 30/9/2026",
+        "scope": "national",
+        "url": "https://dienbien.tnu.edu.vn/uploads/files/moet/moet-20260930-2855-qd-bgddt-quyet-dinh-ve-viec-cong-bo-thu-tuc-hanh-chinh-ban-hanh-moi-thu-tuc-hanh-chinh-duoc-thay-the-trong-cac-linh-vuc-thuoc-pha-7d2614c76a.pdf",
+        "local_path": "originals/bgddt2855-2026.pdf",
+        "sha256": "cf008cbd7ff333f5130543272f2ec20791f46f6ead34f5680e6a2d75d45ef94e",
+        "page": 14
+      }
+    ],
+    "effective_from": null,
+    "effective_until": null,
+    "reviewed_on": "2026-11-13",
+    "use_old_form_for_synthetic_data": false,
+    "related_current_procedures": [
+      {
+        "code": "1.116847",
+        "name": "Cho phép thành lập trung tâm học tập cộng đồng tư thục",
+        "id": "01a0f2a7-6af2-73ef-86e5-09fb607d11f0",
+        "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/01a0f2a7-6af2-73ef-86e5-09fb607d11f0",
+        "mapping_basis": "Đối chiếu tên thủ tục thay thế trong quyết định với tên và căn cứ pháp lý trên DVC; mã mới lấy từ DVC, không sửa mã gốc."
+      }
+    ]
+  },
+  {
+    "procedure_code": "3.000307",
+    "name": "Sáp nhập, chia tách trung tâm học tập cộng đồng",
+    "status": "replaced",
+    "label": "Đã có thủ tục thay thế",
+    "note": "Bảng thủ tục thay thế của Bộ GDĐT nêu mã cũ và tên thủ tục mới. Phạm vi một số thủ tục được gộp hoặc thay đổi.",
+    "evidence": [
+      {
+        "name": "Quyết định 2855/QĐ-BGDĐT ngày 30/9/2026",
+        "scope": "national",
+        "url": "https://dienbien.tnu.edu.vn/uploads/files/moet/moet-20260930-2855-qd-bgddt-quyet-dinh-ve-viec-cong-bo-thu-tuc-hanh-chinh-ban-hanh-moi-thu-tuc-hanh-chinh-duoc-thay-the-trong-cac-linh-vuc-thuoc-pha-7d2614c76a.pdf",
+        "local_path": "originals/bgddt2855-2026.pdf",
+        "sha256": "cf008cbd7ff333f5130543272f2ec20791f46f6ead34f5680e6a2d75d45ef94e",
+        "page": 14
+      }
+    ],
+    "effective_from": null,
+    "effective_until": null,
+    "reviewed_on": "2026-11-13",
+    "use_old_form_for_synthetic_data": false,
+    "related_current_procedures": [
+      {
+        "code": "1.116848",
+        "name": "Sáp nhập, chia, tách trung tâm học tập cộng đồng tư thục",
+        "id": "01a0f2ac-bf6e-723f-b804-63f768e2c8f7",
+        "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/01a0f2ac-bf6e-723f-b804-63f768e2c8f7",
+        "mapping_basis": "Đối chiếu tên thủ tục thay thế trong quyết định với tên và căn cứ pháp lý trên DVC; mã mới lấy từ DVC, không sửa mã gốc."
+      }
+    ]
+  },
+  {
+    "procedure_code": "3.000308",
+    "name": "Giải thể trung tâm học tập cộng đồng (theo đề nghị của tổ chức, cá nhân thành lập trung tâm)",
+    "status": "replaced",
+    "label": "Đã có thủ tục thay thế",
+    "note": "Bảng thủ tục thay thế của Bộ GDĐT nêu mã cũ và tên thủ tục mới. Phạm vi một số thủ tục được gộp hoặc thay đổi.",
+    "evidence": [
+      {
+        "name": "Quyết định 2855/QĐ-BGDĐT ngày 30/9/2026",
+        "scope": "national",
+        "url": "https://dienbien.tnu.edu.vn/uploads/files/moet/moet-20260930-2855-qd-bgddt-quyet-dinh-ve-viec-cong-bo-thu-tuc-hanh-chinh-ban-hanh-moi-thu-tuc-hanh-chinh-duoc-thay-the-trong-cac-linh-vuc-thuoc-pha-7d2614c76a.pdf",
+        "local_path": "originals/bgddt2855-2026.pdf",
+        "sha256": "cf008cbd7ff333f5130543272f2ec20791f46f6ead34f5680e6a2d75d45ef94e",
+        "page": 14
+      }
+    ],
+    "effective_from": null,
+    "effective_until": null,
+    "reviewed_on": "2026-11-13",
+    "use_old_form_for_synthetic_data": false,
+    "related_current_procedures": [
+      {
+        "code": "1.116849",
+        "name": "Giải thể trung tâm học tập cộng đồng tư thục (Theo đề nghị của tổ chức, cá nhân thành lập trung tâm)",
+        "id": "01a0f2b1-8240-736b-9fc7-e5423b295950",
+        "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/01a0f2b1-8240-736b-9fc7-e5423b295950",
+        "mapping_basis": "Đối chiếu tên thủ tục thay thế trong quyết định với tên và căn cứ pháp lý trên DVC; mã mới lấy từ DVC, không sửa mã gốc."
+      }
+    ]
+  },
+  {
+    "procedure_code": "3.000315",
+    "name": "Thành lập hoặc cho phép thành lập trung tâm khác thực hiện nhiệm vụ giáo dục thường xuyên",
+    "status": "replaced",
+    "label": "Đã có thủ tục thay thế",
+    "note": "Nội dung công bố cũ được thay thế; thủ tục mới gộp nhiều loại trung tâm. Chưa gán mã mới tự động.",
+    "evidence": [
+      {
+        "name": "Quyết định 2855/QĐ-BGDĐT ngày 30/9/2026",
+        "scope": "national",
+        "url": "https://dienbien.tnu.edu.vn/uploads/files/moet/moet-20260930-2855-qd-bgddt-quyet-dinh-ve-viec-cong-bo-thu-tuc-hanh-chinh-ban-hanh-moi-thu-tuc-hanh-chinh-duoc-thay-the-trong-cac-linh-vuc-thuoc-pha-7d2614c76a.pdf",
+        "local_path": "originals/bgddt2855-2026.pdf",
+        "sha256": "cf008cbd7ff333f5130543272f2ec20791f46f6ead34f5680e6a2d75d45ef94e",
+        "page": 10
+      }
+    ],
+    "effective_from": null,
+    "effective_until": null,
+    "reviewed_on": "2026-11-13",
+    "use_old_form_for_synthetic_data": false,
+    "related_current_procedures": []
+  }
+]

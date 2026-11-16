@@ -1,0 +1,64 @@
+{
+  "id": "dvc-019f1778-55e3-7597-be99-92549b7a4fa8",
+  "procedure_code": "1.115394",
+  "name": "Chế độ, chính sách đối với người được huy động, người tham gia phòng cháy, chữa cháy, cứu nạn, cứu hộ chưa tham gia bảo hiểm y tế, bảo hiểm xã hội mà bị tai nạn, bị thương",
+  "domain": "Phòng cháy, chữa cháy",
+  "managing_agency": "Bộ Công an",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.484540+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019f1778-55e3-7597-be99-92549b7a4fa8",
+      "code": "1.115394",
+      "name": "Chế độ, chính sách đối với người được huy động, người tham gia phòng cháy, chữa cháy, cứu nạn, cứu hộ chưa tham gia bảo hiểm y tế, bảo hiểm xã hội mà bị tai nạn, bị thương",
+      "state": "ACTIVE",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1782809183938,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019f1778-55e3-7597-be99-92549b7a4fa8",
+      "raw_path": "evidence/dvc/details/019f1778-55e3-7597-be99-92549b7a4fa8.json",
+      "components": [
+        {
+          "section": "Đối với trường hợp đề nghị hỗ trợ chi trả chi phí khám bệnh, chữa bệnh",
+          "position": 1,
+          "name": "Đơn đề nghị thanh toán chi phí khám bệnh, chữa bệnh của người được hỗ trợ chế độ bị tai nạn, bị thương hoặc người đại diện hợp pháp (Mẫu số PC22 kèm theo Nghị định số 105/2025/NĐ-CP ngày 15/5/2025 của Chính phủ); hóa đơn thu tiền; giấy ra viện. Thông tin về thành phần hồ sơ khi đã được kết nối, chia sẻ, cập nhật trên cơ sở dữ liệu quốc gia hoặc cơ sở dữ liệu chuyên ngành thì cơ quan có thẩm quyền giải quyết phải khai thác trực tuyến để giải quyết mà không được yêu cầu người đề nghị cung cấp hồ sơ giấy",
+          "component_code": "000.00.00.G01-KQ003462.",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "Đối với trường hợp đề nghị trợ cấp theo mức suy giảm khả năng lao động:",
+          "position": 1,
+          "name": "Đơn đề nghị trợ cấp tai nạn (Mẫu số PC23 kèm theo Nghị định số 105/2025/NĐ-CP ngày 15/5/2025 của Chính phủ); giấy ra viện hoặc trích sao hồ sơ bệnh án sau khi điều trị tai nạn đối với trường hợp điều trị nội trú hoặc giấy chứng nhận thương tích do cơ sở y tế nơi đã cấp cứu, điều trị cấp; biên bản giám định mức suy giảm khả năng lao động của Hội đồng giám định y khoa cấp tỉnh và tương đương trở lên.",
+          "component_code": "000.00.00.G01-KQ003463.",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c38-75c9-8e11-d1293fd4c150",
+          "name": "Quyết định chi trả kinh phí hỗ trợ khám bệnh, chữa bệnh, trợ cấp cho người bị tai nạn, bị thương",
+          "code": "KQ.G01.000231"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d9ae5-d5d1-734b-a3aa-8979fb7de3c3",
+          "name": "Nghị định số 105/2025/NĐ-CP ngày 15/5/2025 của Chính phủ quy định chi\ntiết một số điều và biện pháp thi hành Luật Phòng cháy, chữa cháy và cứu nạn,\ncứu hộ",
+          "code": "105/2025/CP-NĐ"
+        }
+      ]
+    }
+  ]
+}

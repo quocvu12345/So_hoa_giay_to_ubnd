@@ -1,0 +1,239 @@
+{
+  "id": "dvc-019d2bfd-a5b0-7288-8713-cb507168dfa7",
+  "procedure_code": "2.002363",
+  "name": "Ghi vào Sổ đăng ký nuôi con nuôi việc nuôi con nuôi đã được giải quyết tại cơ quan có thẩm quyền của nước ngoài",
+  "domain": "Nuôi con nuôi",
+  "managing_agency": "Bộ Tư pháp",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.871755+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfd-a5b0-7288-8713-cb507168dfa7",
+      "code": "2.002363",
+      "name": "Ghi vào Sổ đăng ký nuôi con nuôi việc nuôi con nuôi đã được giải quyết tại cơ quan có thẩm quyền của nước ngoài",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1776763562880,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfd-a5b0-7288-8713-cb507168dfa7",
+      "raw_path": "evidence/dvc/details/019d2bfd-a5b0-7288-8713-cb507168dfa7.json",
+      "components": [
+        {
+          "section": "Giấy tờ phải nộp:",
+          "position": 1,
+          "name": "- Văn bản chứng    nhận việc nuôi con nuôi đã được thực hiện     phù hợp với điều ước quốc tế của cơ quan có thẩm quyền của nước ngoài (trong trường hợp việc nuôi con nuôi đã được giải quyết theo quy định của điều ước quốc tế mà Việt Nam và nước nơi giải quyết việc nuôi con nuôi cùng là thành viên).",
+          "component_code": "000.00.00.G15-KQ004766",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Giấy tờ phải nộp:",
+          "position": 2,
+          "name": "- Văn bản ủy   quyền (được chứng thực) theo    quy định của pháp luật trong trường hợp ủy quyền việc ghi chú. Trường hợp người được ủy quyền là ông, bà, cha, mẹ, con, vợ, chồng, anh, chị, em ruột của người ủy quyền thì văn bản ủy quyền không phải chứng thực.",
+          "component_code": "000.00.00.G15-KQ004765",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Giấy tờ phải nộp:",
+          "position": 3,
+          "name": "- Bản sao có chứng thực giấy   tờ chứng minh việc nuôi con nuôi đã được giải quyết tại cơ quan có thẩm quyền của nước ngoài.",
+          "component_code": "000.00.00.G15-KQ004764",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Giấy tờ phải xuất trình:",
+          "position": 1,
+          "name": "Hộ chiếu/Thẻ căn cước công dân/Thẻ căn cước/Căn cước điện tử/Giấy chứng nhận căn cước hoặc các giấy tờ khác có dán ảnh và thông tin cá nhân do cơ quan có thẩm quyền cấp, còn giá trị sử dụng (sau đây gọi tắt là giấy tờ tùy thân) để chứng minh về nhân thân khi làm thủ tục trực tiếp tại cơ quan đăng ký hộ tịch.",
+          "component_code": "000.00.00.G15-KQ004944",
+          "original_quantity": 0,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Giấy tờ phải xuất trình:",
+          "position": 2,
+          "name": "Trường hợp không khai thác được thông tin hoặc thông tin khai thác được không đầy đủ, không chính xác thì cơ quan đăng ký hộ tịch yêu cầu người đi đăng ký hộ tịch xuất trình bản chính giấy tờ để chứng minh, đồng thời đề nghị người đi đăng ký hộ tịch cập nhật, điều chỉnh thông tin trong các cơ sở dữ liệu theo quy định của pháp luật.",
+          "component_code": "000.00.00.G15-KQ005009",
+          "original_quantity": 0,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Giấy tờ phải xuất trình:",
+          "position": 3,
+          "name": "Trường hợp giấy tờ tùy thân sử dụng là: Hộ chiếu, Thẻ căn cước, Căn cước công dân, Giấy chứng nhận căn cước thì người có yêu cầu đăng ký hộ tịch chỉ cần cung cấp thông tin số định danh cá nhân hoặc thông tin về giấy tờ (số, ngày/tháng/năm cấp), cơ quan đăng ký hộ tịch có trách nhiệm tra cứu thông tin thông qua kết nối với Cơ sở dữ liệu hộ tịch điện tử, Cơ sở dữ liệu quốc gia về dân cư hoặc cơ sở dữ liệu khác có liên quan để đối chiếu, khai thác dữ liệu.",
+          "component_code": "000.00.00.G15-KQ005008",
+          "original_quantity": 0,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Lưu ý",
+          "position": 1,
+          "name": "Lưu ý đối với các giấy tờ:  - Đối với giấy tờ nộp, xuất trình nếu người yêu cầu nộp hồ sơ theo hình thức trực tiếp: + Đối với giấy tờ xuất trình, người tiếp nhận có trách nhiệm kiểm tra, đối chiếu với thông tin trong tờ khai, chụp lại hoặc ghi lại thông tin để lưu trong hồ sơ và trả lại cho người xuất trình, không được yêu cầu nộp bản sao hoặc bản chụp giấy tờ đó. + Người yêu cầu thực hiện thủ tục có thể nộp bản sao chứng thực từ bản chính hoặc bản sao được cấp từ sổ gốc hoặc bản chụp kèm theo bản chính giấy tờ để đối chiếu. Trường hợp người yêu cầu nộp bản chụp kèm theo bản chính giấy tờ thì người tiếp nhận có trách nhiệm kiểm tra, đối chiếu bản chụp với bản chính và ký xác nhận, không được yêu cầu người đi đăng ký nộp bản sao giấy tờ đó. + Người tiếp nhận có trách nhiệm tiếp nhận đúng, đủ hồ sơ đăng ký theo quy định của pháp luật hộ tịch và pháp luật nuôi con nuôi, không được yêu cầu người đăng ký nộp thêm giấy tờ mà pháp luật hộ tịch và pháp luật nuôi con nuôi không quy định phải nộp. - Đối với giấy tờ gửi kèm theo nếu người yêu cầu nộp hồ sơ theo hình thức trực tuyến: + Bản chụp các giấy tờ gửi kèm theo hồ sơ yêu cầu ghi vào Sổ đăng ký nuôi con nuôi việc nuôi con nuôi đã được giải quyết tại cơ quan có thẩm quyền của nước ngoài trực tuyến phải bảo đảm rõ nét, đầy đủ, toàn vẹn về nội dung, là bản chụp bằng máy ảnh, điện thoại hoặc được chụp, được quét bằng thiết bị điện tử, từ giấy tờ được cấp hợp lệ, còn giá trị sử dụng; nếu là giấy tờ do cơ quan có thẩm quyền nước ngoài cấp thì phải được hợp pháp hóa lãnh sự, dịch sang tiếng Việt theo quy định, trừ trường hợp được miễn hợp pháp hóa lãnh sự. + Trường hợp giấy tờ, tài liệu phải gửi kèm trong hồ sơ ghi vào Sổ đăng ký nuôi con nuôi việc nuôi con nuôi đã được giải quyết tại cơ quan có thẩm quyền của nước ngoài trực tuyến đã có bản sao điện tử hoặc đã có bản điện tử giấy tờ thì người yêu cầu được sử dụng bản điện tử này. + Trường hợp nhận kết quả (Trích lục Ghi vào Sổ việc nuôi con nuôi đã được giải quyết tại cơ quan có thẩm quyền của nước ngoài) tại cơ quan đăng ký hộ tịch, người có yêu cầu ghi vào Sổ đăng ký nuôi con nuôi việc nuôi con nuôi đã được giải quyết tại cơ quan có thẩm quyền của nước ngoài phải xuất trình giấy tờ tuỳ thân, nộp các giấy tờ là thành phần hồ sơ ghi vào Sổ đăng ký nuôi con nuôi việc nuôi con nuôi đã được giải quyết tại cơ quan có thẩm quyền của nước ngoài theo quy định pháp luật hộ tịch và pháp luật nuôi con nuôi.",
+          "component_code": "000.00.00.G15-KQ004769",
+          "original_quantity": 0,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Thành phần hồ sơ:",
+          "position": 1,
+          "name": "Biểu mẫu điện tử tương tác ghi vào Sổ hộ tịch việc nuôi con nuôi (do người yêu cầu cung cấp thông tin theo hướng dẫn trên Cổng dịch vụ công nếu    người có yêu cầu lựa chọn nộp  hồ sơ theo hình thức trực tuyến);",
+          "component_code": "000.00.00.G15-KQ004762",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "Thành phần hồ sơ:",
+          "position": 2,
+          "name": "- Tờ khai   ghi vào  Sổ hộ tịch việc nuôi con nuôi theo mẫu;",
+          "component_code": "000.00.00.G15-KQ004761",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019d952c-8cd8-7307-a0c6-7513e5bccac9",
+              "fileName": "9..TKghivosccvichtchkhc.doc",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d952c-8cd8-7307-a0c6-7513e5bccac9/9..TKghivosccvichtchkhc.doc"
+            }
+          ]
+        },
+        {
+          "section": "Thành phần hồ sơ:",
+          "position": 3,
+          "name": "- Người có yêu cầu ghi vào Sổ đăng ký    nuôi con nuôi việc    nuôi con nuôi đã được giải quyết tại cơ quan có thẩm quyền của nước ngoài thực hiện việc nộp/xuất trình (theo hình thức trực tiếp) hoặc tải lên (theo hình thức trực tuyến) các giấy tờ sau:",
+          "component_code": "000.00.00.G15-KQ004763",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c79-762e-8b29-9b3b7b41fa98",
+          "name": "Trích lục Ghi vào Sổ việc nuôi con nuôi đã được giải quyết tại cơ quan có thẩm quyền của nước ngoài; Trích lục Ghi vào Sổ việc nuôi con nuôi đã được giải quyết tại cơ quan có thẩm quyền của nước ngoài (bản sao)",
+          "code": "KQ.G15.000281"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d84-71c5-b673-b79d48c2c30b",
+          "name": "Luật 60/2014/QH13",
+          "code": "60/2014/QH13"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afe9-9d8e94b33af1",
+          "name": "Nghị định số 120/2025/NĐ-CP ngày 11/6/2025 của Chính phủ quy định về phân định thẩm quyền của chính quyền địa phương 02 cấp trong lĩnh vực quản lý nhà nước của Bộ Tư pháp.",
+          "code": "120/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7d-7398-be52-4d0d0e816882",
+          "name": "Hướng dẫn Luật hộ tịch và Nghị định 123/2015/NĐ-CP hướng dẫn Luật hộ tịch do Bộ trưởng Bộ Tư pháp ban hành",
+          "code": "04/2020/TT-BTP"
+        },
+        {
+          "id": "019d2bb3-5d86-7760-a638-17aea53606d5",
+          "name": "Thông tư quy định chi tiết một số điều và biện pháp thi hành Nghị định số 87/2020/NĐ-CP ngày 28 tháng 7 năm 2020 của Chính phủ quy định về Cơ sở dữ liệu hộ tịch điện tử, đăng ký hộ tịch trực tuyến",
+          "code": "01/2022/TT-BTP"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afe4-f1309f15bfa5",
+          "name": "Sửa đổi, bổ sung một số điều của Thông tư số 02/2020/TT-BTP ngày 08/4/2020 của Bộ trưởng Bộ Tư pháp ban hành, hướng dẫn sử dụng, quản lý mẫu sổ quốc tịch và mẫu giấy tờ về quốc tịch và Thông tư số 04/2020/TT-BTP ngày 28/5/2020 của Bộ trưởng Bộ Tư pháp quy định chi tiết thi hành một số điều của Luật Hộ tịch và Nghị định  số 123/2015/NĐ-CP ngày 15/11/2015 của Chính phủ quy định chi tiết  một số điều và biện pháp thi hành Luật Hộ tịch",
+          "code": "04/2024/TT-BTP"
+        },
+        {
+          "id": "019d2bb3-5d86-7760-a63c-96a998f803cc",
+          "name": "Thông tư sửa đổi, bổ sung một số điều của Thông tư số 85/2019/TT-BTC ngày 29/11/2019 của Bộ Tài chính hướng dẫn về phí và lệ phí thuộc thẩm quyền quyết định của Hội đồng nhân dân tỉnh, thành phố trực thuộc Trung ương.",
+          "code": "106/2021/TT-BTC"
+        },
+        {
+          "id": "019d2bb3-5d7d-7398-be50-711b03f308a6",
+          "name": "quy định mức thu, chế độ thu, nộp, quản lý và sử dụng phí khai thác, sử dụng thông tin trong cơ sở dữ liệu hộ tịch, phí xác nhận có quốc tịch Việt Nam, phí xác nhận là người gốc Việt Nam, lệ phí quốc tịch",
+          "code": "Thông tư số 281/2016/TT-BTC"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afe8-3ac91da2e6b0",
+          "name": "Nghị định sửa đổi, bổ sung một số điều của các Nghị định liên quan đến việc nộp xuất trình sổ hộ khẩu, sổ tạm trú giấy khi thực hiện thủ tục hành chính, cung cấp dịch vụ công",
+          "code": "104/2022/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d86-7760-a642-cb60cc107a28",
+          "name": "Nghị định sửa đổi, bổ sung một số nghị định để cắt giảm, đơn giản hóa thủ tục hành chính, điều kiện kinh doanh  thuộc phạm vi quản lý của Bộ Tư pháp",
+          "code": "18/2026/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afe9-c76312281acc",
+          "name": "Nghị định số 123/2015/NĐ-CP ngày 15/11/2015 của  Chính phủ quy định chi tiết một số điều và biện pháp thi  hành Luật Hộ tịch",
+          "code": "123/2015/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7d-7398-be4f-24cb929dcc49",
+          "name": "Thông tư Hướng dẫn về phí và lệ phí thuộc thẩm quyền quyết định của Hội đồng nhân dân tỉnh, thành phố trực thuộc Trung ương",
+          "code": "85/2019/TT-BTC"
+        },
+        {
+          "id": "019d2bb3-5d87-7195-a446-a009449a7d98",
+          "name": " Nghị định quy định về Cơ sở dữ liệu hộ tịch điện tử, đăng ký hộ tịch trực tuyến",
+          "code": "87/2020/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d86-7760-a63b-4a861344d691",
+          "name": "Thông tư số 08/2025/TT-BTP ngày 12/6/2025 của Bộ trưởng Bộ Tư pháp quy định về phân định thẩm quyền của chính quyền địa phương 02 cấp và phân cấp trong lĩnh vực quản lý nhà nước của Bộ Tư pháp",
+          "code": "08/2025/TT-BTP"
+        },
+        {
+          "id": "019d2bb3-5d7d-7398-be52-75595513cbd8",
+          "name": "THÔNG TƯ  SỬA ĐỔI, BỔ SUNG MỘT SỐ ĐIỀU CỦA THÔNG TƯ SỐ 10/2020/TT-BTP NGÀY 28 THÁNG 12 NĂM 2020 CỦA BỘ TRƯỞNG BỘ TƯ PHÁP BAN HÀNH, HƯỚNG DẪN VIỆC GHI CHÉP, SỬ DỤNG, QUẢN LÝ VÀ LƯU TRỮ SỔ, MẪU GIẤY TỜ, HỒ SƠ NUÔI CON NUÔI",
+          "code": "07/2023/TT-BTP"
+        },
+        {
+          "id": "019d2bb3-5d7d-7398-be52-aa6de2bf3b03",
+          "name": "BAN HÀNH, HƯỚNG DẪN VIỆC GHI CHÉP, SỬ DỤNG, QUẢN LÝ VÀ LƯU TRỮ SỔ, MẪU GIẤY TỜ, HỒ SƠ NUÔI CON NUÔI",
+          "code": "10/2020/TT-BTP"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afec-d87b860dc7c2",
+          "name": "Nghị định 19/2011/NĐ-CP",
+          "code": "19/2011/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afed-eab8548f2ce8",
+          "name": "Nghị định 24/2019/NĐ-CP",
+          "code": "24/2019/NĐ-CP"
+        }
+      ]
+    }
+  ]
+}

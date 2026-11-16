@@ -1,0 +1,75 @@
+{
+  "id": "dvc-019d90b5-0f50-773c-88d5-07d6ef77b613",
+  "procedure_code": "1.014111",
+  "name": "Thi tuyển công chức",
+  "domain": "Công chức, viên chức",
+  "managing_agency": "Bộ Nội vụ",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.846626+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d90b5-0f50-773c-88d5-07d6ef77b613",
+      "code": "1.014111",
+      "name": "Thi tuyển công chức",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1787215805872,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d90b5-0f50-773c-88d5-07d6ef77b613",
+      "raw_path": "evidence/dvc/details/019d90b5-0f50-773c-88d5-07d6ef77b613.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "- Phiếu đăng ký dự tuyển theo Mẫu số 1 ban hành kèm theo Nghị định số 170/2025/NĐ-CP.",
+          "component_code": "G09-KQ002886",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019d9413-d9b8-70ae-ac54-8ab7a2fbfbc4",
+              "fileName": "1.014111 Mau phieu dang ky du tuyen.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d9413-d9b8-70ae-ac54-8ab7a2fbfbc4/1.014111 Mau phieu dang ky du tuyen.docx"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c4c-77ab-bf6c-936ac5bf246d",
+          "name": "Quyết định tuyển dụng công chức, trong đó bao gồm việc tuyển dụng, bố trí vị trí việc làm và xếp ngạch tương ứng với vị trí việc làm tuyển dụng.",
+          "code": "KQ.G09.000098"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7d-7398-be4f-57a89040b8ff",
+          "name": "Thông tư số 92/2021/TT-BTC của Bộ Tài chính: Quy định mức thu, chế độ thu, nộp, quản lý và sử dụng phí tuyển dụng, dự thi nâng ngạch, thăng hạng công chức, viên chức",
+          "code": "92/2021/TT-BTC"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afec-7db4f5578e84",
+          "name": "Quy định về tuyển dụng, sử dụng và quản lý công chức",
+          "code": "170/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d85-73da-8eba-0bd7fb6c4178",
+          "name": "Luật Cán bộ, Công chức",
+          "code": "80/2025/QH15"
+        },
+        {
+          "id": "01a017c3-a269-731d-b80f-e2d382846e7f",
+          "name": "Sửa đổi, bổ sung một số điều của Nghị định số 170/2025/NĐ-CР ngày 30 tháng 6 năm 2025 của Chính phủ quy định về tuyển dụng, sử dụng và quản lý công chức",
+          "code": "300/2026/NĐ-CP "
+        }
+      ]
+    }
+  ]
+}

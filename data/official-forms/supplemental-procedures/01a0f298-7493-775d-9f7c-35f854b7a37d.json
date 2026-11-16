@@ -1,0 +1,60 @@
+{
+  "id": "dvc-01a0f298-7493-775d-9f7c-35f854b7a37d",
+  "procedure_code": "1.116845",
+  "name": "Giải thể trường tiểu học, trường trung học cơ sở và trường phổ thông có nhiều cấp học trong đó có cấp học cao nhất là trung học cơ sở (Theo đề nghị của tổ chức, cá nhân thành lập trường)",
+  "domain": "Giáo dục Phổ thông",
+  "managing_agency": "Bộ Giáo dục và Đào tạo",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.465635+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "01a0f298-7493-775d-9f7c-35f854b7a37d",
+      "code": "1.116845",
+      "name": "Giải thể trường tiểu học, trường trung học cơ sở và trường phổ thông có nhiều cấp học trong đó có cấp học cao nhất là trung học cơ sở (Theo đề nghị của tổ chức, cá nhân thành lập trường)",
+      "state": "ACTIVE",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1790907958109,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/01a0f298-7493-775d-9f7c-35f854b7a37d",
+      "raw_path": "evidence/dvc/details/01a0f298-7493-775d-9f7c-35f854b7a37d.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Văn bản đề nghị giải thể của cơ quan, tổ chức, cá nhân thành lập trường theo Mẫu số 06 Phụ lục kèm theo Nghị định số 360/2026/NĐ-CP, trong đó nêu rõ lý do và phương án xử lý tổ chức bộ máy, nhân sự, tài chính, tài sản, đất đai, học sinh và các vấn đề khác có liên quan",
+          "component_code": "TP-G03.0001175",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "01a0f292-55e3-761b-b205-8e456548403a",
+              "fileName": "Mau so 6_VB de nghi giai the CSGD.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/01a0f292-55e3-761b-b205-8e456548403a/Mau so 6_VB de nghi giai the CSGD.docx"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "id": "01a0f298-2d0f-75ae-a012-b8eef1009e87",
+          "name": "Quyết định của Chủ tịch Ủy ban nhân dân cấp xã giải thể trường tiểu học, trường trung học cơ sở và trường phổ thông có nhiều cấp học trong đó có cấp học cao nhất là trung học cơ sở (theo Mẫu số 08 Phụ lục kèm theo Nghị định số 360/2026/NĐ-CP)",
+          "code": "KQ-G03.00044"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "01a0eb27-0a75-75f9-a08c-6705f56edf6d",
+          "name": "Quy định về điều kiện đầu tư và hoạt động của cơ sở giáo dục mầm non, cơ sở giáo dục phổ thông, cơ sở giáo dục thường xuyên và cơ sở giáo dục khác thuộc hệ thống giáo dục quốc dân",
+          "code": "360/2026/NĐ-CP"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "id": "dvc-019d2bfe-6981-7718-a29d-ed53f11adf84",
+  "procedure_code": "1.009452",
+  "name": "Cho ý kiến về sự phù hợp quy hoạch và thông số kỹ thuật xây dựng bến thủy nội địa",
+  "domain": "Hàng hải và đường thủy nội địa",
+  "managing_agency": "Bộ Xây dựng",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.866279+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfe-6981-7718-a29d-ed53f11adf84",
+      "code": "1.009452",
+      "name": "Cho ý kiến về sự phù hợp quy hoạch và thông số kỹ thuật xây dựng bến thủy nội địa",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1785147285604,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfe-6981-7718-a29d-ed53f11adf84",
+      "raw_path": "evidence/dvc/details/019d2bfe-6981-7718-a29d-ed53f11adf84.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "- Đơn đề nghị thỏa thuận thông số kỹ thuật xây dựng bến thủy nội địa theo mẫu;",
+          "component_code": "000.00.00.G04-KQ3256",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019f7328-681f-7027-8511-d46bdde656e2",
+              "fileName": "000.00.00.G04-KQ3256.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f7328-681f-7027-8511-d46bdde656e2/000.00.00.G04-KQ3256.docx"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "- Sơ đồ mặt bằng vị trí dự kiến xây dựng bến thủy nội địa: Thể hiện địa danh, vị trí công trình, vùng đất, vùng nước trước bến thủy nội địa, lý trình (km) sông, kênh, rạch và các công trình liền kề (nếu có).",
+          "component_code": "000.00.00.G04-KQ3258",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d9671-5bda-73fe-9e1b-3b98e33cd873",
+          "name": "Văn bản thỏa thuận thông số kỹ thuật xây dựng bến.",
+          "code": "000.00.00.G04-KQ3261"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7e-72d1-afe7-a8368c489fef",
+          "name": "Quy định về quản lý hoạt động đường thủy nội địa",
+          "code": "08/2021/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afea-f01696ee65ca",
+          "name": "Quy định về phân định thẩm quyền của chính quyền địa phương 02 cấp trong lĩnh vực quản lý nhà nước của Bộ Xây dựng",
+          "code": "140/2025/NĐ-CP"
+        },
+        {
+          "id": "019df74b-16d5-72ef-81f7-3f224a29c89e",
+          "name": "Nghị quyết số 24/2026/NQ-CP ngày 29/4/2026 của Chính phủ cắt giảm, phân cấp, đơn giản hóa thủ tục hành chính, điều kiện kinh doanh lĩnh vực quốc phòng, nội vụ, tài chính, xây dựng, ngoại giao, tư pháp, ngân hàng.",
+          "code": "24/2026/NQ-CP "
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afe7-618d550793cd",
+          "name": "Sửa đổi, bổ sung một số điều của Nghị định số 08/2021/NĐ-CP ngày 28 tháng 01 năm 2021 của Chính phủ quy định về quản lý hoạt động đường thủy nội địa",
+          "code": "06/2024/NĐ-CP"
+        }
+      ]
+    }
+  ]
+}

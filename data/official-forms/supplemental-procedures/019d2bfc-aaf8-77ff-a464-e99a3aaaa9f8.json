@@ -1,0 +1,93 @@
+{
+  "id": "dvc-019d2bfc-aaf8-77ff-a464-e99a3aaaa9f8",
+  "procedure_code": "1.010341",
+  "name": "Xử lý hóa đơn điện tử đã lập sai/Xử lý chứng từ điện tử đã lập sai",
+  "domain": "Thuế",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.925856+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfc-aaf8-77ff-a464-e99a3aaaa9f8",
+      "code": "1.010341",
+      "name": "Xử lý hóa đơn điện tử đã lập sai/Xử lý chứng từ điện tử đã lập sai",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1784548236546,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-aaf8-77ff-a464-e99a3aaaa9f8",
+      "raw_path": "evidence/dvc/details/019d2bfc-aaf8-77ff-a464-e99a3aaaa9f8.json",
+      "components": [
+        {
+          "section": "Trường hợp (1): Xử lý hóa đơn điện tử đã lập sai",
+          "position": 1,
+          "name": "Thông báo hóa đơn điện tử đã lập sai (Mẫu số 04/SS-HĐĐT)",
+          "component_code": "G12.0001212",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019f7f2f-1444-7594-8565-0f4a1eeb5103",
+              "fileName": "Mẫu 04 SS-HĐĐT.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f7f2f-1444-7594-8565-0f4a1eeb5103/Mẫu 04 SS-HĐĐT.docx"
+            }
+          ]
+        },
+        {
+          "section": "Trường hợp (2): Xử lý chứng từ điện tử đã lập sai",
+          "position": 1,
+          "name": "Thông báo chứng từ đã lập sai (Mẫu số 04/SS-CTĐT)",
+          "component_code": "G12.0001213",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019f7f30-11ba-77ab-963e-401ae8e41cd7",
+              "fileName": "Mẫu 04 SS-CTĐT.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f7f30-11ba-77ab-963e-401ae8e41cd7/Mẫu 04 SS-CTĐT.docx"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c73-70ac-aa18-6330c4b7f3f0",
+          "name": "Hệ thống thông tin giải quyết thủ tục hành chính của ngành thuế gửi phản hồi tự động về việc xác nhận người nộp thuế đã gửi thành công và thông báo về thời điểm tiếp nhận chính thức hồ sơ, tài liệu của người nộp thuế khi nhận Mẫu 04/SS-HĐĐT.",
+          "code": "KQ.G12.000472"
+        },
+        {
+          "id": "019d2bb2-1c71-7574-afec-7b10d604762f",
+          "name": "Thông báo về việc tiếp nhận/ kết quả xử lý về việc hóa đơn điện tử/chứng từ điện tử đã lập sai (Mẫu 01/TB-SSĐT)",
+          "code": "KQ.G12.000042"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7e-72d1-afe9-653aac8276ee",
+          "name": "Nghị định số 118/2025/NĐ-CP của Chính phủ: Về thực hiện thủ tục hành chính theo cơ chế một cửa, một cửa liên thông tại Bộ phận Một cửa và Cổng Dịch vụ công quốc gia",
+          "code": "118/2025/NĐ-CP"
+        },
+        {
+          "id": "019f7eee-65ff-7190-97bb-0d978182d268",
+          "name": "Nghị định số 254/2026/NĐ-CP của Chính phủ: Quy định chi tiết một số điều và biện pháp để tổ chức, hướng dẫn thi hành Luật Quản lý thuế số 108/2025/QH15 về hóa đơn điện tử, chứng từ điện tử",
+          "code": "254/2026/NĐ-CP"
+        },
+        {
+          "id": "019f7ef5-5ff2-73cd-841d-79992569d6c6",
+          "name": "Quy định một số điều của Luật Quản lý thuế và Nghị định số 254/2026/NĐ-CP của Chính phủ quy định chi tiết một số điều và biện pháp để tổ chức, hướng dẫn thi hành Luật Quản lý thuế số 108/2025/QH15 về hóa đơn điện tử, chứng từ điện tử",
+          "code": "91/2026/TT-BTC"
+        }
+      ]
+    }
+  ]
+}

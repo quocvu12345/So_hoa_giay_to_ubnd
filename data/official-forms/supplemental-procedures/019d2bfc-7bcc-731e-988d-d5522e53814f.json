@@ -1,0 +1,320 @@
+{
+  "id": "dvc-019d2bfc-7bcc-731e-988d-d5522e53814f",
+  "procedure_code": "1.009094",
+  "name": "Thủ tục hải quan đối với tàu bay xuất cảnh, nhập cảnh, quá cảnh",
+  "domain": "Hải quan",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.926448+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfc-7bcc-731e-988d-d5522e53814f",
+      "code": "1.009094",
+      "name": "Thủ tục hải quan đối với tàu bay xuất cảnh, nhập cảnh, quá cảnh",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1775639210014,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-7bcc-731e-988d-d5522e53814f",
+      "raw_path": "evidence/dvc/details/019d2bfc-7bcc-731e-988d-d5522e53814f.json",
+      "components": [
+        {
+          "section": "Hồ sơ hải quan nhập cảnh",
+          "position": 1,
+          "name": "Thông tin về chuyến bay bao gồm: đường bay, số hiệu chuyến bay, tên hãng hàng không, cửa khẩu, số lượng hành khách và thời gian nhập cảnh",
+          "component_code": "000.00.00.G12-KQ9939",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Hồ sơ hải quan nhập cảnh",
+          "position": 2,
+          "name": "Danh sách hành khách trong trường hợp tàu bay vận chuyển hành khách",
+          "component_code": "000.00.00.G12-KQ9935",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Hồ sơ hải quan nhập cảnh",
+          "position": 3,
+          "name": "Danh sách tổ lái và nhân viên làm việc trên tàu bay",
+          "component_code": "000.00.00.G12-KQ9936",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Hồ sơ hải quan nhập cảnh",
+          "position": 4,
+          "name": "Bản lược khai hành lý ký gửi trong trường hợp tàu bay vận chuyển hành khách",
+          "component_code": "000.00.00.G12-KQ9937",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Hồ sơ hải quan nhập cảnh",
+          "position": 5,
+          "name": "Bản khai hàng hóa nhập khẩu bằng đường hàng không trong trường hợp tàu bay vận chuyển hàng hóa nhập khẩu",
+          "component_code": "000.00.00.G12-KQ9933",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Hồ sơ hải quan nhập cảnh",
+          "position": 6,
+          "name": "Thông tin đặt chỗ của hành khách (PNR)",
+          "component_code": "000.00.00.G12-KQ9938",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Hồ sơ hải quan nhập cảnh",
+          "position": 7,
+          "name": "Thông tin về vận đơn: vận đơn chủ (master bill of lading), vận đơn thứ cấp (house bill of lading) trong trường hợp tàu bay vận chuyển hàng hóa nhập khẩu",
+          "component_code": "000.00.00.G12-KQ9934",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Hồ sơ hải quan quá cảnh:",
+          "position": 1,
+          "name": "Khi làm thủ tục nhập cảnh đối với tàu bay quá cảnh, người khai hải quan nộp hồ sơ hải quan theo quy định tại điểm 1 nêu trên; khi làm thủ tục xuất cảnh, nếu có sự thay đổi về các chứng từ khi nhập cảnh, người khai hải quan phải nộp hồ sơ hải quan gồm các chứng từ đã có sự thay đổi so với lúc nhập cảnh theo thời hạn quy định.",
+          "component_code": "000.00.00.G12-KQ014424",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Hồ sơ hải quan xuất cảnh",
+          "position": 1,
+          "name": "Bản khai hàng hóa xuất khẩu bằng đường hàng không trong trường hợp tàu bay vận chuyển hàng hóa xuất khẩu",
+          "component_code": "000.00.00.G12-KQ9940",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Hồ sơ hải quan xuất cảnh",
+          "position": 2,
+          "name": "Danh sách tổ lái, nhân viên làm việc trên tàu bay",
+          "component_code": "000.00.00.G12-KQ9942",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Hồ sơ hải quan xuất cảnh",
+          "position": 3,
+          "name": "Thông tin về chuyến bay bao gồm: đường bay, số hiệu chuyến bay, tên hãng hàng không, cửa khẩu, số lượng hành khách và thời gian xuất cảnh",
+          "component_code": "000.00.00.G12-KQ9945",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Hồ sơ hải quan xuất cảnh",
+          "position": 4,
+          "name": "Thông tin đặt chỗ của hành khách (PNR)",
+          "component_code": "000.00.00.G12-KQ9944",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Hồ sơ hải quan xuất cảnh",
+          "position": 5,
+          "name": "Danh sách hành khách trong trường hợp tàu bay vận chuyển hành khách",
+          "component_code": "000.00.00.G12-KQ9941",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Hồ sơ hải quan xuất cảnh",
+          "position": 6,
+          "name": "Bản lược khai hành lý ký gửi trong trường hợp tàu bay vận chuyển hành khách",
+          "component_code": "000.00.00.G12-KQ9943",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Thời hạn cung cấp hồ sơ hải quan:",
+          "position": 1,
+          "name": "+ Chậm nhất 24 giờ trước thời điểm tàu bay dự kiến nhập cảnh đối với thông tin đặt chỗ của hành khách (PNR)",
+          "component_code": "000.00.00.G12-KQ014428",
+          "original_quantity": 0,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Thời hạn cung cấp hồ sơ hải quan:",
+          "position": 2,
+          "name": "+ Đối với tàu bay xuất cảnh: Trước thời điểm tàu bay xuất cảnh.",
+          "component_code": "000.00.00.G12-KQ014429",
+          "original_quantity": 0,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Thời hạn cung cấp hồ sơ hải quan:",
+          "position": 3,
+          "name": "+ Đối với tàu bay nhập cảnh:",
+          "component_code": "000.00.00.G12-KQ014425",
+          "original_quantity": 0,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Thời hạn cung cấp hồ sơ hải quan:",
+          "position": 4,
+          "name": "+ Chậm nhất 30 phút trước thời điểm tàu bay dự kiến nhập cảnh đối với các chuyến bay có thời gian bay ngắn hơn 03 giờ bay;",
+          "component_code": "000.00.00.G12-KQ014427",
+          "original_quantity": 0,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Thời hạn cung cấp hồ sơ hải quan:",
+          "position": 5,
+          "name": "+ Chậm nhất 01 giờ sau thời điểm tàu bay xuất cảnh đối với chứng từ bản khai hàng hoá xuất khẩu bằng đường hàng không trong trường hợp tàu bay vận chuyển hàng hoá xuất khẩu.",
+          "component_code": "000.00.00.G12-KQ014430",
+          "original_quantity": 0,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Thời hạn cung cấp hồ sơ hải quan:",
+          "position": 6,
+          "name": "+ Đối với tàu bay quá cảnh: Khi làm thủ tục nhập cảnh đối với tàu bay quá cảnh, thực hiện theo quy định đối với tàu bay nhập cảnh. khi làm thủ tục xuất cảnh, thực hiện theo quy định đối với tàu bay xuất cảnh.",
+          "component_code": "000.00.00.G12-KQ014432",
+          "original_quantity": 0,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Thời hạn cung cấp hồ sơ hải quan:",
+          "position": 7,
+          "name": "+ Chậm nhất 03 giờ trước thời điểm tàu bay dự kiến nhập cảnh đối với các chuyến bay có thời gian dài hơn 03 giờ bay;",
+          "component_code": "000.00.00.G12-KQ014426",
+          "original_quantity": 0,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Thời hạn cung cấp hồ sơ hải quan:",
+          "position": 8,
+          "name": "Thời hạn nộp hồ sơ giấy: Đối với tàu bay nhập cảnh, người khai hải quan nộp cho cơ quan Hải quan, ngay sau khi và chậm nhất 30 phút kể từ khi tàu bay dừng đỗ tại vị trí quy định; Đối với tàu bay xuất cảnh, người khai hải quan nộp cho cơ quan hải quan ngay sau khi và chậm nhất 30 phút kể từ khi hãng vận chuyển hoàn thành thủ tục hàng hóa xuất khẩu, hành khách xuất cảnh; Đối với tàu bay quá cảnh, người khai hải quan thực hiện theo quy định tại điểm a hoặc điểm b khoản này.",
+          "component_code": "000.00.00.G12-KQ014433",
+          "original_quantity": 0,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Thời hạn cung cấp hồ sơ hải quan:",
+          "position": 9,
+          "name": "+ Chậm nhất 24 giờ trước thời điểm tàu bay dự kiến xuất cảnh đối với chứng từ thông tin đặt chỗ của hành khách (PNR).",
+          "component_code": "000.00.00.G12-KQ014431",
+          "original_quantity": 0,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c70-724b-96df-ddc2578f60d3",
+          "name": "Xác nhận thông quan hàng hóa",
+          "code": "KQ.G12.000583"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7e-72d1-afec-4c8f9cb859d2",
+          "name": "Nghị định số 167/2025/NĐ-CP ngày 30/6/2025 của Chính phủ",
+          "code": "167/2025"
+        },
+        {
+          "id": "019d2bb3-5d87-7195-a443-db1e211c2ddd",
+          "name": "Nghị định 59/2018/NĐ-CP",
+          "code": "59/2018/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afe7-9c25863596db",
+          "name": "Nghị định 08/2015/NĐ-CP",
+          "code": "08/2015/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d87-7195-a442-414b51a3c119",
+          "name": "Thông tư 50/2018/TT-BTC",
+          "code": "50/2018/TT-BTC"
+        },
+        {
+          "id": "019d2bb3-5d7d-7398-be4d-ff62cdf67da5",
+          "name": "Luật 54/2014/QH13",
+          "code": "54/2014/QH13"
+        },
+        {
+          "id": "019d2bb3-5d7d-7398-be4c-34fb9320bd01",
+          "name": "Thông tư số 274/2016/TT-BTC ngày 14/11/2016 của Bộ Tài chính quy định mức thu, chế độ thu, nộp, quản lý và sử dụng phí hải quan và lệ phí hàng hóa, phương tiện quá cảnh.",
+          "code": "274/2016/TT-BTC"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "id": "dvc-019d2bfc-baa5-7013-bf92-fb25b152d913",
+  "procedure_code": "1.011046",
+  "name": "Đăng ký/thay đổi thông tin sử dụng tem điện tử",
+  "domain": "Thuế",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.922061+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfc-baa5-7013-bf92-fb25b152d913",
+      "code": "1.011046",
+      "name": "Đăng ký/thay đổi thông tin sử dụng tem điện tử",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1784779910436,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-baa5-7013-bf92-fb25b152d913",
+      "raw_path": "evidence/dvc/details/019d2bfc-baa5-7013-bf92-fb25b152d913.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Tờ khai đăng ký sử dụng tem điện tử (Mẫu số 01/TEM Phụ lục III Thông tư số 93/2026/TT-BTC)",
+          "component_code": "G12.0002158",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019f894e-6b7c-7222-ad12-6c629f5728d0",
+              "fileName": "01 TEM.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f894e-6b7c-7222-ad12-6c629f5728d0/01 TEM.docx"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c72-75fa-a590-5ed0b72a04d6",
+          "name": "Thông báo lý do/ hướng dẫn bổ sung hồ sơ của cơ quan thuế trong trường hợp không được chấp thuận",
+          "code": "KQ.G12.000059"
+        },
+        {
+          "id": "019d2bb2-1c71-7574-afe8-802f299c8da0",
+          "name": "Thông báo chấp nhận/không chấp nhận hồ sơ đăng ký, sử dụng tem điện tử (Mẫu số 02/TB/TEM)",
+          "code": "KQ.G12.000474"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7e-72d1-afe8-6a884f7f33a2",
+          "name": "sửa đổi, bổ sung một số điều của Nghị định số 67/2013/NĐ-CP ngày 27 tháng 6 năm 2013 của Chính phủ quy định chi tiết một số điều và biện pháp thi hành Luật Phòng, chống tác hại của thuốc lá về kinh doanh thuốc lá",
+          "code": "106/2017/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7f-719e-b470-5059d2d50a11",
+          "name": "Quy định chi tiết một số điều và biện pháp thi hành Luật Phòng, chống tác hại của thuốc lá về kinh doanh thuốc lá",
+          "code": "67/2013/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afec-6d106daf390f",
+          "name": "Sửa đổi, bổ sung một số điều của các Nghị định liên quan đến điều kiện đầu tư kinh doanh thuộc lĩnh vực quản lý nhà nước của Bộ Công Thương",
+          "code": "17/2020/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b672-0af27f5afaf6",
+          "name": "Luật Giao dịch điện tử năm 2023",
+          "code": "20/2023/QH15"
+        },
+        {
+          "id": "019e5e83-1282-771d-9014-49799413a4e5",
+          "name": "Luật số 108/2025/QH15 của Quốc hội: Luật Quản lý thuế",
+          "code": "108/2025/QH15"
+        },
+        {
+          "id": "019f7eee-65ff-7190-97bb-0d978182d268",
+          "name": "Nghị định số 254/2026/NĐ-CP của Chính phủ: Quy định chi tiết một số điều và biện pháp để tổ chức, hướng dẫn thi hành Luật Quản lý thuế số 108/2025/QH15 về hóa đơn điện tử, chứng từ điện tử",
+          "code": "254/2026/NĐ-CP"
+        },
+        {
+          "id": "019f8950-f814-75e9-9794-0f1fbb579324",
+          "name": "Thông tư số 93/2026/TT-BTC ngày 01/7/2026 của Bộ Tài chính quy định việc in, phát hành, quản lý và sử dụng tem điện tử rượu và tem điện tử thuốc lá",
+          "code": "93/2026/TT-BTC "
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afe8-92103708c5ef",
+          "name": "Nghị định số 108/2018/NĐ-CP",
+          "code": "108/2018/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7f-719e-b473-90474578d5bd",
+          "name": "Về kinh doanh rượu",
+          "code": "Nghị định 105/2017/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d87-7195-a444-1975f9456dcc",
+          "name": "Luật dữ liệu",
+          "code": "60/2024/QH15"
+        }
+      ]
+    }
+  ]
+}

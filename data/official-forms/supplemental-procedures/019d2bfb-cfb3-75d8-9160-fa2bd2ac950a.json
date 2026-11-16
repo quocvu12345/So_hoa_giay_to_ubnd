@@ -1,0 +1,261 @@
+{
+  "id": "dvc-019d2bfb-cfb3-75d8-9160-fa2bd2ac950a",
+  "procedure_code": "1.000005",
+  "name": "Thủ tục hải quan đối với khí, nguyên liệu xuất khẩu, nhập khẩu bằng đường ống chuyên dụng",
+  "domain": "Hải quan",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.977448+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfb-cfb3-75d8-9160-fa2bd2ac950a",
+      "code": "1.000005",
+      "name": "Thủ tục hải quan đối với khí, nguyên liệu xuất khẩu, nhập khẩu bằng đường ống chuyên dụng",
+      "state": "ACTIVE",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1775639356720,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-cfb3-75d8-9160-fa2bd2ac950a",
+      "raw_path": "evidence/dvc/details/019d2bfb-cfb3-75d8-9160-fa2bd2ac950a.json",
+      "components": [
+        {
+          "section": "1. Chứng từ phải nộp",
+          "position": 1,
+          "name": "a) Tờ khai hàng hóa nhập khẩu theo các chỉ tiêu thông tin tại Phụ lục II ban hành kèm theo Thông tư số 38/2015/TT-BTC.  Trường hợp thực hiện trên tờ khai hải quan giấy theo quy định tại Khoản 2 Điều 25 Nghị định số 08/2015/NĐ-CP, người khai hải quan khai và nộp 02 bản chính tờ khai hàng hóa nhập khẩu theo mẫu HQ/2015/NK Phụ lục IV ban hành kèm theo Thông tư số 38/2015/TT-BTC;",
+          "component_code": "000.00.00.G12-KQ0754",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "1. Chứng từ phải nộp",
+          "position": 2,
+          "name": "d) Giấy đăng ký giám định lượng; Giấy đăng ký kiểm tra nhà nước về chất lượng đối với xăng dầu, hóa chất, khí thuộc Danh Mục hàng hóa nhập khẩu phải kiểm tra nhà nước về chất lượng: 01 bản chụp;",
+          "component_code": "000.00.00.G12-KQ0757",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "1. Chứng từ phải nộp",
+          "position": 3,
+          "name": "b) Hóa đơn thương mại: 01 bản chụp;",
+          "component_code": "000.00.00.G12-KQ0755",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "1. Chứng từ phải nộp",
+          "position": 4,
+          "name": "c) Vận tải đơn hoặc chứng từ vận tải khác có giá trị khác tương đương đối với trường hợp hàng hóa vận chuyển bằng đường biển theo quy định của pháp luật (trừ xăng dầu, khí tái xuất, xuất khẩu cho doanh nghiệp quy định tại Điểm b Khoản 4 Điều 35 Nghị định số 83/2014/NĐ-CP, đối tượng quy định tại Khoản 3, Điều 19, Khoản 2 Điều 35 Nghị định số 19/2016/NĐ-CP): 01 bản chụp;",
+          "component_code": "000.00.00.G12-KQ0756",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "1. Chứng từ phải nộp",
+          "position": 5,
+          "name": "e) Trường hợp một lô hàng phải khai trên nhiều tờ khai hoặc hàng hóa nhập khẩu thuộc nhiều loại hình, có chung vận tải đơn, Hóa đơn, khai trên nhiều tờ khai theo từng loại hình hàng hóa nhập khẩu tại một Chi cục Hải quan thì người khai hải quan chỉ phải nộp 01 bộ hồ sơ hải quan (trong trường hợp nộp hồ sơ giấy cho cơ quan hải quan); các tờ khai sau ghi rõ “chung chứng từ với tờ khai số... ngày...” vào ô “Phần ghi chú”.  Đối với các trường hợp quy định tại Khoản 2, Khoản 3, Khoản 4 Điều 18 Thông tư số 38/2015/TT-BTC, người khai hải quan chỉ phải nộp, xuất trình, lưu một bộ hồ sơ hải quan của các tờ khai hải quan thuộc cùng một lô hàng;",
+          "component_code": "000.00.00.G12-KQ0759",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "1. Chứng từ phải nộp",
+          "position": 6,
+          "name": "g) Trường hợp Thương nhân làm thủ tục lần đầu tại Chi cục Hải quan thì nộp thêm các giấy tờ sau (trừ trường hợp cung ứng (tái xuất), xuất khẩu xăng dầu, khí cho đối tượng quy định tại Điểm b Khoản 4, Khoản 5 Điều 35 Nghị định số 83/2014/NĐ-CP, Khoản 3, Điều 19, Khoản 2 Điều 35 Nghị định số 19/2016/NĐ-CP):  g.1) Giấy phép kinh doanh xuất khẩu, nhập khẩu xăng dầu: 01 bản chụp;  g.2) Giấy chứng nhận đủ Điều kiện xuất khẩu, nhập khẩu khí hoặc văn bản có giá trị tương đương: 01 bản chụp;  g.3) Bản hạn mức nhập khẩu xăng dầu tối thiểu do Bộ Công Thương cấp: 01 bản chụp.",
+          "component_code": "000.00.00.G12-KQ0760",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "1. Chứng từ phải nộp",
+          "position": 7,
+          "name": "đ) Hợp đồng mua hàng hóa nhập khẩu (đối với hàng hóa kinh doanh tạm nhập tái xuất): 01 bản chụp;",
+          "component_code": "000.00.00.G12-KQ0758",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "1. Chứng từ phải nộp",
+          "position": 8,
+          "name": "h) Giấy phép nhập khẩu đối với hàng hóa phải có giấy phép nhập khẩu: 01 bản chính;  Trường hợp áp dụng cơ chế một cửa quốc gia, cơ quan quản lý nhà nước chuyên ngành gửi các chứng từ quy định tại Điểm đ, Điểm g, Điểm h Khoản 1 Điều 7 Thông tư số 69/2016/TT-BTC dưới dạng điện từ thông qua Cổng thông tin một cửa quốc gia, người khai hải quan không phải nộp khi làm thủ tục hải quan.",
+          "component_code": "000.00.00.G12-KQ0761",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "2. Hồ sơ hải quan đối với xuất khẩu xăng dầu, hóa chất, khí:",
+          "position": 1,
+          "name": "d) Chứng thư giám định lượng (đối với trường hợp quy định tại Điểm a Khoản 4 Điều 4 Thông tư này): 01 bản chụp.",
+          "component_code": "000.00.00.G12-KQ0746",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "2. Hồ sơ hải quan đối với xuất khẩu xăng dầu, hóa chất, khí:",
+          "position": 2,
+          "name": "e) Văn bản nêu rõ nguồn gốc xăng dầu, khí xuất khẩu (nguồn do Thương nhân nhập khẩu hoặc mua của Thương nhân đầu mối nhập khẩu hoặc lấy từ nguồn sản xuất, pha chế xăng dầu, khí): 01 bản chụp;",
+          "component_code": "000.00.00.G12-KQ0748",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "2. Hồ sơ hải quan đối với xuất khẩu xăng dầu, hóa chất, khí:",
+          "position": 3,
+          "name": "h) Giấy phép xuất khẩu đối với hàng hóa phải có giấy phép nhập khẩu: 01 bản chính;  Trường hợp áp dụng cơ chế một cửa quốc gia, cơ quan quản lý nhà nước chuyên ngành gửi các chứng từ quy định tại Điểm b, Điểm c, Điểm g, Điểm h Khoản 1 Điều 12 Thông tư số 69/2016/TT-BTC dưới dạng điện tử thông qua Cổng thông tin một cửa quốc gia, người khai hải quan không phải nộp khi làm thủ tục hải quan.",
+          "component_code": "000.00.00.G12-KQ0750",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "2. Hồ sơ hải quan đối với xuất khẩu xăng dầu, hóa chất, khí:",
+          "position": 4,
+          "name": "g) Văn bản xác nhận của Bộ Công Thương về đăng ký kế hoạch sản xuất, nhập khẩu nguyên liệu và tiêu thụ sản phẩm xăng dầu: 01 bản chụp;",
+          "component_code": "000.00.00.G12-KQ0749",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "2. Hồ sơ hải quan đối với xuất khẩu xăng dầu, hóa chất, khí:",
+          "position": 5,
+          "name": "c) Giấy chứng nhận đủ Điều kiện xuất khẩu, nhập khẩu khí hoặc văn bản có giá trị tương đương: 01 bản chụp;",
+          "component_code": "000.00.00.G12-KQ0745",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "2. Hồ sơ hải quan đối với xuất khẩu xăng dầu, hóa chất, khí:",
+          "position": 6,
+          "name": "b) Giấy phép kinh doanh xuất khẩu, nhập khẩu xăng dầu: 01 bản chụp;",
+          "component_code": "000.00.00.G12-KQ0744",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "2. Hồ sơ hải quan đối với xuất khẩu xăng dầu, hóa chất, khí:",
+          "position": 7,
+          "name": "a) Tờ khai hàng hóa xuất khẩu theo các chỉ tiêu thông tin tại Phụ lục II ban hành kèm theo Thông tư số 38/2015/TT-BTC.  Trường hợp thực hiện trên tờ khai hải quan giấy theo quy định tại Khoản 2 Điều 25 Nghị định số 08/2015/NĐ-CP, người khai hải quan khai và nộp 02 bản chính tờ khai hàng hóa xuất khẩu theo mẫu HQ/2015/XK Phụ lục IV ban hành kèm theo Thông tư số 38/2015/TT-BTC;",
+          "component_code": "000.00.00.G12-KQ0743",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "2. Hồ sơ hải quan đối với xuất khẩu xăng dầu, hóa chất, khí:",
+          "position": 8,
+          "name": "đ) Hóa đơn thương mại: 01 bản chụp;",
+          "component_code": "000.00.00.G12-KQ0747",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "3. Hồ sơ hải quan đối với tái xuất xăng dầu, hóa chất, khí:",
+          "position": 1,
+          "name": "a) Ngoài các chứng từ phải nộp theo quy định tại các Điểm a, Điểm b, Điểm c, Điểm d, Điểm đ, Điểm h Khoản 1 Điều 12 Thông tư số 69/2016/TT-BTC, Thương nhân nộp bổ sung 01 bản chụp hợp đồng bán hàng, phụ lục hợp đồng (nếu có);",
+          "component_code": "000.00.00.G12-KQ0751",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "3. Hồ sơ hải quan đối với tái xuất xăng dầu, hóa chất, khí:",
+          "position": 2,
+          "name": "b) Trường hợp lô hàng tạm nhập được thực hiện trên tờ khai giấy theo mẫu HQ/2015/NK Phụ lục V ban hành kèm theo Thông tư số 38/2015/TT-BTC thì khi làm thủ tục tái xuất, người khai hải quan được thực hiện khai báo trên tờ khai hải quan giấy theo mẫu HQ/2015/NK Phụ lục V ban hành kèm theo Thông tư số 38/2015/TT-BTC;",
+          "component_code": "000.00.00.G12-KQ0752",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "3. Hồ sơ hải quan đối với tái xuất xăng dầu, hóa chất, khí:",
+          "position": 3,
+          "name": "c) Khi làm thủ tục tái xuất, thương nhân phải khai báo thông tin về số tờ khai tạm nhập, số thứ tự của dòng hàng trên tờ khai tạm nhập tương ứng với từng dòng hàng tái xuất để Hệ thống theo dõi trừ lùi; Hệ thống tự động thực hiện trừ lùi theo số lượng trên tờ khai tạm nhập tương ứng.  Một tờ khai tạm nhập có thể được sử dụng để làm thủ tục tái xuất nhiều lần; một tờ khai tái xuất hàng hóa chỉ được khai báo theo một tờ khai tạm nhập hàng hóa tương ứng. Chi cục Hải quan nơi đăng ký tờ khai tái xuất kiểm tra thông tin về tờ khai hải quan tạm nhập trên Hệ thống để làm thủ tục tái xuất.  Trường hợp khai hải quan trên tờ khai hải quan giấy thì người khai hải quan phải khai cụ thể số tờ khai tạm nhập nào ô “Chứng từ đi kèm” của tờ khai hàng hóa xuất khẩu theo mẫu HQ/2015/XK Phụ lục IV ban hành kèm Thông tư số 38/2015/TT-BTC.",
+          "component_code": "000.00.00.G12-KQ0753",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c70-724b-96df-ddc2578f60d3",
+          "name": "Xác nhận thông quan hàng hóa",
+          "code": "KQ.G12.000583"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7d-7398-be4d-ff62cdf67da5",
+          "name": "Luật 54/2014/QH13",
+          "code": "54/2014/QH13"
+        },
+        {
+          "id": "019d2bb3-5d7d-7398-be4f-52e0a657bb39",
+          "name": "Thông tư 92/2015/TT-BTC",
+          "code": "92/2015/TT-BTC"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b670-dd41d5f535c2",
+          "name": "Luật 78/2006/QH11",
+          "code": "78/2006/QH11"
+        }
+      ]
+    }
+  ]
+}

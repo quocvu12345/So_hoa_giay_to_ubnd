@@ -1,0 +1,76 @@
+{
+  "id": "dvc-019d2bfe-908d-726f-a05f-7026ac241c2d",
+  "procedure_code": "1.013232",
+  "name": "Cấp giấy phép di dời đối với công trình cấp III, cấp IV (Công trình không theo tuyến/Theo tuyến trong đô thị/Tín ngưỡng, tôn giáo/Tượng đài, tranh hoành tráng/Theo giai đoạn cho công trình không theo tuyến/Theo giai đoạn cho công trình theo tuyến trong đô thị/Dự án) và nhà ở riêng lẻ",
+  "domain": "Hoạt động xây dựng",
+  "managing_agency": "Bộ Xây dựng",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.861857+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfe-908d-726f-a05f-7026ac241c2d",
+      "code": "1.013232",
+      "name": "Cấp giấy phép di dời đối với công trình cấp III, cấp IV (Công trình không theo tuyến/Theo tuyến trong đô thị/Tín ngưỡng, tôn giáo/Tượng đài, tranh hoành tráng/Theo giai đoạn cho công trình không theo tuyến/Theo giai đoạn cho công trình theo tuyến trong đô thị/Dự án) và nhà ở riêng lẻ",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1786949251317,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfe-908d-726f-a05f-7026ac241c2d",
+      "raw_path": "evidence/dvc/details/019d2bfe-908d-726f-a05f-7026ac241c2d.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Đơn đề nghị cấp giấy phép di dời công trình theo Mẫu số 1 Phụ lục số II Nghị định số 217/2026/NĐ-CP ngày 19/6/2026 của Chính phủ",
+          "component_code": "TP-G17.000230",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019fdf00-9d2a-72fd-bda4-e438ea24afad",
+              "fileName": "Đơn G17.000170. 175.181. 18.192, 324. 327. 332. 335. 341. 347 352. 358 .363. 369 209. 230.doc",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fdf00-9d2a-72fd-bda4-e438ea24afad/Đơn G17.000170. 175.181. 18.192, 324. 327. 332. 335. 341. 347 352. 358 .363. 369 209. 230.doc"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Các tài liệu quy định tại khoản 3 Điều 61 bao gồm:  + Bản sao giấy tờ chứng minh quyền sử dụng đất nơi công trình sẽ di dời đến và giấy tờ hợp pháp về sở hữu công trình theo quy định của pháp luật. Trường hợp Giấy chứng nhận quyền sử dụng đất đã có trong Cơ sở dữ liệu quốc gia về đất đai thì các thông tin này được thay thế bằng dữ liệu khi Cơ sở dữ liệu quốc gia về đất đai được vận hành. + Bản vẽ hoàn công công trình (nếu có) hoặc bản vẽ thiết kế mô tả thực trạng công trình được di dời, gồm mặt bằng, mặt cắt móng và bản vẽ kết cấu chịu lực chính; bản vẽ tổng mặt bằng địa điểm công trình sẽ được di dời tới; bản vẽ mặt bằng, mặt cắt móng tại địa điểm công trình sẽ di dời đến. + Báo cáo kết quả khảo sát đánh giá chất lượng hiện trạng của công trình do tổ chức, cá nhân có đủ điều kiện năng lực thực hiện.  + Phương án di dời do tổ chức, cá nhân có đủ điều kiện năng lực thực hiện gồm:  Phần thuyết minh về hiện trạng công trình và khu vực công trình sẽ được di dời đến; giải pháp di dời, phương án bố trí sử dụng phương tiện, thiết bị, nhân lực; giải pháp bảo đảm an toàn cho công trình, người, máy móc, thiết bị và công trình lân cận; bảo đảm vệ sinh môi trường; tiến độ di dời; tổ chức, cá nhân thực hiện di dời công trình; phần bản vẽ biện pháp thi công di dời công trình.",
+          "component_code": "TP-G17.000231",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019fe045-3375-7549-92b9-cb44c5b157d6",
+          "name": "Kết quả giấy phép sửa chữa, cải tạo, di dời",
+          "code": "KQ-G17.000094"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019f1d67-d525-7040-bc15-3156f4c4411c",
+          "name": "Luật Xây dựng",
+          "code": "135/2025/QH15"
+        },
+        {
+          "id": "019f3666-e3d6-702f-926b-ced690d453d0",
+          "name": "Nghị định số 217/2026/NĐ-CP ngày 19/6/2026 của Chính phủ quy định chi tiết một số điều của Luật Xây dựng về quản lý hoạt động xây dựng",
+          "code": "217/2026/NĐ-CP"
+        }
+      ]
+    }
+  ]
+}

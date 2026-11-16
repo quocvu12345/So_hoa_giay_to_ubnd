@@ -1,0 +1,74 @@
+{
+  "id": "dvc-019d2bfd-fba4-7418-b25f-d4e06bd25809",
+  "procedure_code": "2.000794",
+  "name": "Thủ tục công nhận câu lạc bộ thể dục thể thao cơ sở",
+  "domain": "Thể dục thể thao",
+  "managing_agency": "Bộ Văn hóa, Thể thao và Du lịch",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.869303+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfd-fba4-7418-b25f-d4e06bd25809",
+      "code": "2.000794",
+      "name": "Thủ tục công nhận câu lạc bộ thể dục thể thao cơ sở",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1780070701610,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfd-fba4-7418-b25f-d4e06bd25809",
+      "raw_path": "evidence/dvc/details/019d2bfd-fba4-7418-b25f-d4e06bd25809.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Tờ trình đề nghị công nhận câu lạc bộ thể dục thể thao cơ sở (theo mẫu số 01 tại Phụ lục kèm theo Thông tư số 16/2025/TT-BVHTTDL ngày 01/12/2025)",
+          "component_code": "G16-KQ002602",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Quy chế hoạt động của câu lạc bộ thể dục thể thao cơ sở (theo mẫu số 02 tại Phụ lục kèm theo Thông tư số 16/2025/TT-BVHTTDL ngày 01/12/2025)",
+          "component_code": "G16-KQ002603",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c79-762e-8b2b-e09218b1ba0f",
+          "name": "Quyết định công nhận câu lạc bộ thể thao cơ sở",
+          "code": "KQ.G16.000211"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d84-71c5-b672-5e08ff02ad18",
+          "name": "SỬA ĐỔI, BỔ SUNG MỘT SỐ ĐIỀU CỦA LUẬT THỂ DỤC, THỂ THAO",
+          "code": "26/2018/QH14"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b674-3b196cccc10f",
+          "name": "Luật 77/2006/QH11",
+          "code": "77/2006/QH11"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afe9-f1533335aca7",
+          "name": "Nghị định số 126/2024/NĐ-CP của Chính phủ: Quy định về tổ chức, hoạt động và quản lý hội",
+          "code": "126/2024/NĐ-CP"
+        }
+      ]
+    }
+  ]
+}

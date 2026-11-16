@@ -1,0 +1,523 @@
+{
+  "id": "dvc-019d2bfb-eed0-71e8-80f5-8cc6c2252b48",
+  "procedure_code": "1.007014",
+  "name": "Khai thuế GTGT đối với phương pháp khấu trừ đối với hoạt động sản xuất kinh doanh",
+  "domain": "Thuế",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.960739+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfb-eed0-71e8-80f5-8cc6c2252b48",
+      "code": "1.007014",
+      "name": "Khai thuế GTGT đối với phương pháp khấu trừ đối với hoạt động sản xuất kinh doanh",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1785399199335,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-eed0-71e8-80f5-8cc6c2252b48",
+      "raw_path": "evidence/dvc/details/019d2bfb-eed0-71e8-80f5-8cc6c2252b48.json",
+      "components": [
+        {
+          "section": "* Đối với người nộp thuế có hoạt động sản xuất điện:",
+          "position": 1,
+          "name": "Tờ khai thuế GTGT mẫu số 01/GTGT",
+          "component_code": "G12.0002078",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019fa2e0-1c40-708b-b0f5-b51244b1a1c1",
+              "fileName": "1. 01-GTGT.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa2e0-1c40-708b-b0f5-b51244b1a1c1/1. 01-GTGT.docx"
+            }
+          ]
+        },
+        {
+          "section": "* Đối với người nộp thuế có hoạt động sản xuất điện:",
+          "position": 2,
+          "name": "Trường hợp người nộp thuế là cơ sở sản xuất thủy điện có nhà máy thủy điện nằm chung trên địa bàn các tỉnh thì nộp thêm Phụ lục bảng phân bổ số thuế GTGT phải nộp đối với hoạt động sản xuất thủy điện mẫu số 01-2/GTGT (thực hiện đến hết kỳ tính thuế tháng 12 năm 2026)",
+          "component_code": "G12.0015476",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019fa2e0-bca1-73ed-95df-6ca601dc3cf5",
+              "fileName": "2. 01-2-GTGT.doc",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa2e0-bca1-73ed-95df-6ca601dc3cf5/2. 01-2-GTGT.doc"
+            }
+          ]
+        },
+        {
+          "section": "* Đối với người nộp thuế có hoạt động sản xuất điện:",
+          "position": 3,
+          "name": "Phụ lục đề nghị hoàn thuế giá trị gia tăng theo mẫu số 01-8/GTGT trường hợp NNT có số thuế GTGT đề nghị hoàn",
+          "component_code": "G12.0002085",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019fa2e1-3e3b-740c-a867-e951fa637c9a",
+              "fileName": "6. 01-8. GTGT.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa2e1-3e3b-740c-a867-e951fa637c9a/6. 01-8. GTGT.docx"
+            }
+          ]
+        },
+        {
+          "section": "* Đối với người nộp thuế có hoạt động xổ số kiến thiết, xổ số điện toán:",
+          "position": 1,
+          "name": "Tờ khai thuế GTGT mẫu số 01/GTGT",
+          "component_code": "G12.0002078",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019fa2e0-1c40-708b-b0f5-b51244b1a1c1",
+              "fileName": "1. 01-GTGT.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa2e0-1c40-708b-b0f5-b51244b1a1c1/1. 01-GTGT.docx"
+            }
+          ]
+        },
+        {
+          "section": "* Đối với người nộp thuế có hoạt động xổ số kiến thiết, xổ số điện toán:",
+          "position": 2,
+          "name": "Phụ lục bảng phân bổ số thuế GTGT phải nộp đối với hoạt động kinh doanh xổ số điện toán mẫu số 01-3/GTGT (nếu có)",
+          "component_code": "G12.00015477",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019fa2e2-6a70-77e3-9541-fb14c900d049",
+              "fileName": "3. 01-3-GTGT.doc",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa2e2-6a70-77e3-9541-fb14c900d049/3. 01-3-GTGT.doc"
+            }
+          ]
+        },
+        {
+          "section": "* Đối với người nộp thuế là doanh nghiệp viễn thông có các chi nhánh hạch toán phụ thuộc tại tỉnh khác với nơi doanh nghiệp đóng trụ sở chính:",
+          "position": 1,
+          "name": "Tờ khai thuế GTGT mẫu số 01/GTGT",
+          "component_code": "G12.0002078",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019fa2e0-1c40-708b-b0f5-b51244b1a1c1",
+              "fileName": "1. 01-GTGT.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa2e0-1c40-708b-b0f5-b51244b1a1c1/1. 01-GTGT.docx"
+            }
+          ]
+        },
+        {
+          "section": "* Đối với người nộp thuế là doanh nghiệp viễn thông có các chi nhánh hạch toán phụ thuộc tại tỉnh khác với nơi doanh nghiệp đóng trụ sở chính:",
+          "position": 2,
+          "name": "Trường hợp người nộp thuế có dịch vụ viễn thông cước trả sau thì nộp thêm Phụ lục bảng phân bổ thuế GTGT phải nộp (trừ sản xuất thủy điện, kinh doanh xổ số điện toán) mẫu số 01-6/GTGT (thực hiện đến hết kỳ tính thuế tháng 12 năm 2026)",
+          "component_code": "G12.0015478",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019fa2fd-f7b0-745b-9f10-b87f1111b37d",
+              "fileName": "4. 01-6-GTGT.pdf",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa2fd-f7b0-745b-9f10-b87f1111b37d/4. 01-6-GTGT.pdf"
+            }
+          ]
+        },
+        {
+          "section": "* Đối với người nộp thuế là doanh nghiệp viễn thông có các chi nhánh hạch toán phụ thuộc tại tỉnh khác với nơi doanh nghiệp đóng trụ sở chính:",
+          "position": 3,
+          "name": "Trường hợp người nộp thuế có hoạt động kinh doanh dịch vụ viễn thông, thực hiện đầu tư mua sắm tập trung tại trụ sở chính hoặc tại đơn vị được phân cấp ủy quyền thì số thuế giá trị gia tăng đầu vào của hàng hóa, dịch vụ (bao gồm: toàn bộ tài sản cố định, vật tư, hàng hóa, chi phí dịch vụ mua ngoài) dùng chung hệ thống hạ tầng viễn thông đầu tư, mua sắm phát sinh tại trụ sở chính hoặc đơn vị phân cấp ủy quyền, nếu có nhu cầu thì thực hiện phân bổ số thuế giá trị gia tăng đầu vào cho trụ sở chính, các chi nhánh tại các tỉnh (bao gồm cả chi nhánh đóng trụ sở địa bàn cùng tỉnh với nơi người nộp thuế có trụ sở chính thì nộp thêm Phụ lục phân bổ thuế giá trị gia tăng đầu vào theo mẫu 01-7/GTGT",
+          "component_code": "G12.0009276",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019fa2e8-bfdf-7714-8fa4-6011f326163c",
+              "fileName": "5. 01-7-GTGT.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa2e8-bfdf-7714-8fa4-6011f326163c/5. 01-7-GTGT.docx"
+            }
+          ]
+        },
+        {
+          "section": "* Đối với người nộp thuế có đơn vị phụ thuộc, địa điểm kinh doanh là cơ sở sản xuất (bao gồm cả cơ sở gia công, lắp ráp) và cơ sở sản xuất điện mặt trời mái nhà khác tỉnh với nơi người nộp thuế đóng trụ sở chính:",
+          "position": 1,
+          "name": "Tờ khai thuế GTGT mẫu số 01/GTGT",
+          "component_code": "G12.0002078",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019fa2e0-1c40-708b-b0f5-b51244b1a1c1",
+              "fileName": "1. 01-GTGT.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa2e0-1c40-708b-b0f5-b51244b1a1c1/1. 01-GTGT.docx"
+            }
+          ]
+        },
+        {
+          "section": "* Đối với người nộp thuế có đơn vị phụ thuộc, địa điểm kinh doanh là cơ sở sản xuất (bao gồm cả cơ sở gia công, lắp ráp) và cơ sở sản xuất điện mặt trời mái nhà khác tỉnh với nơi người nộp thuế đóng trụ sở chính:",
+          "position": 2,
+          "name": "Phụ lục bảng phân bổ thuế GTGT phải nộp (trừ sản xuất thủy điện, kinh doanh xổ số điện toán) mẫu số 01-6/GTGT(thực hiện đến hết kỳ tính thuế tháng 12 năm 2026)",
+          "component_code": "G12.0015479",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019fa2fe-55c4-7542-a134-55c78772c987",
+              "fileName": "4. 01-6-GTGT.pdf",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa2fe-55c4-7542-a134-55c78772c987/4. 01-6-GTGT.pdf"
+            }
+          ]
+        },
+        {
+          "section": "* Đối với người nộp thuế có hoạt động khai thác dầu khí:",
+          "position": 1,
+          "name": "Tờ khai thuế GTGT mẫu số 01/GTGT",
+          "component_code": "G12.0002078",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019fa2e0-1c40-708b-b0f5-b51244b1a1c1",
+              "fileName": "1. 01-GTGT.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa2e0-1c40-708b-b0f5-b51244b1a1c1/1. 01-GTGT.docx"
+            }
+          ]
+        },
+        {
+          "section": "* Đối với người nộp thuế chỉ có hoạt động sản xuất kinh doanh thông thường:",
+          "position": 1,
+          "name": "Tờ khai thuế GTGT mẫu số 01/GTGT",
+          "component_code": "G12.0002078",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019fa2e0-1c40-708b-b0f5-b51244b1a1c1",
+              "fileName": "1. 01-GTGT.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa2e0-1c40-708b-b0f5-b51244b1a1c1/1. 01-GTGT.docx"
+            }
+          ]
+        },
+        {
+          "section": "* Đối với người nộp thuế chỉ có hoạt động sản xuất kinh doanh thông thường:",
+          "position": 2,
+          "name": "Phụ lục đề nghị hoàn thuế giá trị gia tăng theo mẫu số 01-8/GTGT trường hợp NNT có số thuế GTGT đề nghị hoàn",
+          "component_code": "G12.0002085",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019fa2e1-3e3b-740c-a867-e951fa637c9a",
+              "fileName": "6. 01-8. GTGT.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa2e1-3e3b-740c-a867-e951fa637c9a/6. 01-8. GTGT.docx"
+            }
+          ]
+        },
+        {
+          "section": "* Đối với người nộp thuế thuộc đối tượng nộp thuế GTGT theo phương pháp khấu trừ có hoạt động chuyển nhượng bất động sản tại địa bàn khác tỉnh, thành phố trực thuộc trung ương với nơi người nộp thuế đóng trụ sở chính (trừ hoạt động chuyển nhượng bất động sản của dự án đầu tư cơ sở hạ tầng, nhà để chuyển nhượng theo quy định tại điểm b khoản 1 Điều 11 Nghị định số 252/2026/NĐ-CP):",
+          "position": 1,
+          "name": "Tờ khai thuế GTGT mẫu số 05/GTGT (thực hiện đến hết kỳ tính thuế tháng 12 năm 2026)",
+          "component_code": "G12.0001360",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019fa2eb-1b94-7088-aa71-0f688b6cc3b8",
+              "fileName": "7. 05-GTGT.doc",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa2eb-1b94-7088-aa71-0f688b6cc3b8/7. 05-GTGT.doc"
+            }
+          ]
+        },
+        {
+          "section": "* Đối với người nộp thuế thuộc đối tượng nộp thuế GTGT theo phương pháp khấu trừ có hoạt động chuyển nhượng bất động sản tại địa bàn khác tỉnh, thành phố trực thuộc trung ương với nơi người nộp thuế đóng trụ sở chính (trừ hoạt động chuyển nhượng bất động sản của dự án đầu tư cơ sở hạ tầng, nhà để chuyển nhượng theo quy định tại điểm b khoản 1 Điều 11 Nghị định số 252/2026/NĐ-CP):",
+          "position": 2,
+          "name": "Người nộp thuế phải tổng hợp doanh thu chưa có thuế giá trị gia tăng đối với hoạt động chuyển nhượng bất động sản vào hồ sơ khai thuế tại trụ sở chính để xác định số thuế phải nộp cho toàn bộ hoạt động sản xuất kinh doanh tại trụ sở chính. Số thuế giá trị gia tăng đã nộp tại tỉnh nơi có bất động sản chuyển nhượng được bù trừ với số thuế giá trị gia tăng phải nộp tại trụ sở chính",
+          "component_code": "G12.0015480",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "* Đối với người nộp thuế thuộc đối tượng nộp thuế GTGT theo phương pháp khấu trừ là nhà thầu xây dựng (nhà thầu chính, nhà thầu phụ), ký hợp đồng (phụ lục hợp đồng) trực tiếp với chủ đầu tư để thi công công trình xây dựng (hoạt động xây dựng theo quy định của pháp luật về hệ thống ngành kinh tế quốc dân và quy định của pháp luật chuyên ngành) tại địa bàn khác tỉnh, thành phố trực thuộc trung ương với nơi người nộp thuế đóng trụ sở chính (bao gồm cả công trình, hạng mục công trình xây dựng liên quan tới nhiều tỉnh):",
+          "position": 1,
+          "name": "Tờ khai thuế GTGT mẫu số 05/GTGT (thực hiện đến hết kỳ tính thuế tháng 12 năm 2026)",
+          "component_code": "G12.0001360",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019fa2eb-1b94-7088-aa71-0f688b6cc3b8",
+              "fileName": "7. 05-GTGT.doc",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa2eb-1b94-7088-aa71-0f688b6cc3b8/7. 05-GTGT.doc"
+            }
+          ]
+        },
+        {
+          "section": "* Đối với người nộp thuế thuộc đối tượng nộp thuế GTGT theo phương pháp khấu trừ là nhà thầu xây dựng (nhà thầu chính, nhà thầu phụ), ký hợp đồng (phụ lục hợp đồng) trực tiếp với chủ đầu tư để thi công công trình xây dựng (hoạt động xây dựng theo quy định của pháp luật về hệ thống ngành kinh tế quốc dân và quy định của pháp luật chuyên ngành) tại địa bàn khác tỉnh, thành phố trực thuộc trung ương với nơi người nộp thuế đóng trụ sở chính (bao gồm cả công trình, hạng mục công trình xây dựng liên quan tới nhiều tỉnh):",
+          "position": 2,
+          "name": "Người nộp thuế phải tổng hợp doanh thu chưa có thuế giá trị gia tăng đối với hoạt động xây dựng vào hồ sơ khai thuế tại trụ sở chính để xác định số thuế phải nộp cho toàn bộ hoạt động sản xuất kinh doanh tại trụ sở chính. Số thuế giá trị gia tăng đã nộp tại tỉnh nơi có công trình xây dựng được bù trừ với số thuế giá trị gia tăng phải nộp tại trụ sở chính",
+          "component_code": "G12.0015481",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "* Đối với người nộp thuế thuộc đối tượng nộp thuế GTGT theo phương pháp khấu trừ là nhà thầu xây dựng (nhà thầu chính, nhà thầu phụ), ký hợp đồng (phụ lục hợp đồng) trực tiếp với chủ đầu tư để thi công công trình xây dựng (hoạt động xây dựng theo quy định của pháp luật về hệ thống ngành kinh tế quốc dân và quy định của pháp luật chuyên ngành) tại địa bàn khác tỉnh, thành phố trực thuộc trung ương với nơi người nộp thuế đóng trụ sở chính (bao gồm cả công trình, hạng mục công trình xây dựng liên quan tới nhiều tỉnh):",
+          "position": 3,
+          "name": "Trường hợp người nộp thuế gửi hồ sơ hoàn thuế đến cơ quan thuế sau thời điểm quy định tại khoản 2 Điều 99 Thông tư số 89/2026/TT-BTC thì thực hiện đề nghị hoàn thuế theo mẫu số 01-8/GTGT quy định tại Điều 46 Thông tư số 89/2026/TT-BTC",
+          "component_code": "G12.0015482",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019fa2ed-7787-773c-be19-252570708c40",
+              "fileName": "6. 01-8. GTGT.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa2ed-7787-773c-be19-252570708c40/6. 01-8. GTGT.docx"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 1,
+          "name": "Tờ khai áp dụng cho các kỳ tính thuế theo thông báo nâng cấp Hệ thống thông tin quản lý thuế theo lộ trình của cơ quan thuế quy định tại khoản 2 Điều 99 Thông tư số 89/2026/TT-BTC",
+          "component_code": "G12.001543",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019fa2f0-1223-72f8-966e-1e9cf97b9eee",
+              "fileName": "1. 01-GTGT.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa2f0-1223-72f8-966e-1e9cf97b9eee/1. 01-GTGT.docx"
+            },
+            {
+              "id": "019fa2f0-131e-73fc-937d-173983856923",
+              "fileName": "2. 01-2-GTGT.doc",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa2f0-131e-73fc-937d-173983856923/2. 01-2-GTGT.doc"
+            },
+            {
+              "id": "019fa2f0-1446-758c-813c-0e228423a968",
+              "fileName": "3. 01-3-GTGT.doc",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa2f0-1446-758c-813c-0e228423a968/3. 01-3-GTGT.doc"
+            },
+            {
+              "id": "019fa2f0-157f-7464-8ee4-47120e6bff9a",
+              "fileName": "5. 01-7-GTGT.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa2f0-157f-7464-8ee4-47120e6bff9a/5. 01-7-GTGT.docx"
+            },
+            {
+              "id": "019fa2f0-167c-7539-8dc8-d72034de0ec4",
+              "fileName": "6. 01-8. GTGT.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa2f0-167c-7539-8dc8-d72034de0ec4/6. 01-8. GTGT.docx"
+            },
+            {
+              "id": "019fa2f0-17d4-7112-9a2b-38ef7fefe8cb",
+              "fileName": "7. 05-GTGT.doc",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa2f0-17d4-7112-9a2b-38ef7fefe8cb/7. 05-GTGT.doc"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Từ ngày 01/7/2026 đến thời điểm theo lộ trình của cơ quan thuế quy định tại khoản 2 Điều 99 Thông tư số 89/2026/TT-BTC, NNT được áp dụng các mẫu hồ sơ khai thuế GTGT, hồ sơ hoàn thuế ban hành kèm theo Thông tư số 80/2021/TT-BTC ngày 29/9/2021 của Bộ Tài chính và các văn bản sửa đổi, bổ sung cho tất cả các kỳ tính thuế",
+          "component_code": "G12.001544",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019fa2f2-e9ce-73ce-9ce7-2ef98e996d8a",
+              "fileName": "01 GTGT TT 80.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa2f2-e9ce-73ce-9ce7-2ef98e996d8a/01 GTGT TT 80.docx"
+            },
+            {
+              "id": "019fa2f2-ec79-7316-8aa9-7ab26afd560f",
+              "fileName": "05 GTGT TT 80.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa2f2-ec79-7316-8aa9-7ab26afd560f/05 GTGT TT 80.docx"
+            },
+            {
+              "id": "019fa2f2-ef1d-7054-9c07-9c981bd992a2",
+              "fileName": "01 6 GTGT TT 80.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa2f2-ef1d-7054-9c07-9c981bd992a2/01 6 GTGT TT 80.docx"
+            },
+            {
+              "id": "019fa2f2-f07b-75ce-8380-345db819e4cd",
+              "fileName": "01 3 GTGT TT 80.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa2f2-f07b-75ce-8380-345db819e4cd/01 3 GTGT TT 80.docx"
+            },
+            {
+              "id": "019fa2f2-f1af-764a-881c-52c601468754",
+              "fileName": "01 2 GTGT TT 80.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa2f2-f1af-764a-881c-52c601468754/01 2 GTGT TT 80.docx"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 3,
+          "name": "Đối với hồ sơ khai thuế mà người nộp thuế đã khai chỉ tiêu đề nghị hoàn trên tờ khai thuế của kỳ tính thuế trước ngày 01 tháng 7 năm 2026 nhưng chưa gửi hồ sơ hoàn thuế đến cơ quan thuế thì người nộp thuế gửi mẫu đơn, mẫu tờ khai của hồ sơ hoàn thuế theo quy định tại Thông tư số 80/2021/TT-BTC",
+          "component_code": "G12.001545",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019fa2f3-1e00-710a-b83b-545e62769ebf",
+              "fileName": "01 HT TT 80.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa2f3-1e00-710a-b83b-545e62769ebf/01 HT TT 80.docx"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 4,
+          "name": "Đối với hồ sơ khai thuế mà người nộp thuế đã khai chỉ tiêu đề nghị hoàn trên tờ khai thuế của kỳ tính thuế trước ngày 01 tháng 7 năm 2026 nhưng gửi hồ sơ hoàn thuế đến cơ quan thuế sau thời điểm quy định tại khoản 2 Điều 99 Thông tư số 89/2026/TT-BTC thì người nộp thuế thực hiện đề nghị hoàn thuế theo mẫu biểu quy định tại điểm a.2 khoản 1 Điều 46 Thông tư số 89/2026/TT-BTC",
+          "component_code": "G12.001546",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019fa2f3-42ee-74f9-a140-beedea70948c",
+              "fileName": "01 8 GTGT TT 89.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa2f3-42ee-74f9-a140-beedea70948c/01 8 GTGT TT 89.docx"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c71-7574-afe8-1af89bd23d1c",
+          "name": "Thông báo về việc giải trình, bổ sung thông tin, tài liệu (Mẫu 01/TB-BSTT-NNT)",
+          "code": "KQ.G12.000566"
+        },
+        {
+          "id": "019fa2fb-b816-715f-b0a7-8559667eabb4",
+          "name": "Thông báo một phần số tiền đề nghị hoàn thuế trong hồ sơ hoàn thuế của người nộp thuế thuộc diện kiểm tra trước hoàn thuế (số 05/TB-HT )",
+          "code": "KQ.G12.000567"
+        },
+        {
+          "id": "019fa328-0757-726b-936d-17f088ac9c48",
+          "name": "Thông báo số tiền đề nghị hoàn nhưng không được hoàn thuế, số tiền đề nghị hoàn chưa đủ điều kiện được hoàn thuế (mẫu số 04/TB-HT)",
+          "code": "KQ.G12.001485"
+        },
+        {
+          "id": "019fa329-7177-760d-ad80-2bef251243b4",
+          "name": "Quyết định hoàn thuế kiêm bù trừ thu ngân sách nhà nước (mẫu số 02/QĐ-HT)",
+          "code": "KQ.G12.001558"
+        },
+        {
+          "id": "019fa6be-d9ec-771f-b967-a3bae0d4c476",
+          "name": "Phụ lục số tiền thuế, tiền chậm nộp, tiền phạt phải nộp được bù trừ (Mẫu số 01/PL-BT)",
+          "code": "KQ.G12000603"
+        },
+        {
+          "id": "019fa6bb-5cc3-70ff-b663-0bb8c95abfb2",
+          "name": "Quyết định hoàn thuế (Mẫu số 01/QĐ-HT)",
+          "code": "KQ.G12.001600"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019e5e83-1282-771d-9014-49799413a4e5",
+          "name": "Luật số 108/2025/QH15 của Quốc hội: Luật Quản lý thuế",
+          "code": "108/2025/QH15"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afe9-653aac8276ee",
+          "name": "Nghị định số 118/2025/NĐ-CP của Chính phủ: Về thực hiện thủ tục hành chính theo cơ chế một cửa, một cửa liên thông tại Bộ phận Một cửa và Cổng Dịch vụ công quốc gia",
+          "code": "118/2025/NĐ-CP"
+        },
+        {
+          "id": "019f8db3-9765-740b-8b90-682677b9c421",
+          "name": "Thông tư quy định chi tiết một số điều của Luật Quản lý thuế và Nghị định số 252/2026/NĐ-CP của Chính phủ quy định chi tiết một số điều và biện pháp để tổ chức, hướng dẫn thi hành Luật Quản lý thuế",
+          "code": "89/2026/TT-BTC"
+        },
+        {
+          "id": "019d2bb3-5d87-7195-a442-104ae6dd177c",
+          "name": "Luật Thuế giá tri gia tăng năm 2024",
+          "code": "48/2024/QH15"
+        },
+        {
+          "id": "019f356e-75e3-7494-a2f3-672d8dce61a6",
+          "name": "QUY ĐỊNH CHI TIẾT MỘT SỐ ĐIỀU VÀ BIỆN PHÁP ĐỂ TỔ CHỨC, HƯỚNG DẪN THI HÀNH LUẬT QUẢN LÝ THUẾ",
+          "code": "252/2026/NĐ-CP"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,128 @@
+{
+  "id": "dvc-019d2bfb-d775-76cf-83da-e7803993b9d8",
+  "procedure_code": "1.001342",
+  "name": "Thủ tục chuyển nhượng, cho, tặng xe ô tô, xe gắn máy đã tạm nhập khẩu miễn thuế",
+  "domain": "Hải quan",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.972999+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfb-d775-76cf-83da-e7803993b9d8",
+      "code": "1.001342",
+      "name": "Thủ tục chuyển nhượng, cho, tặng xe ô tô, xe gắn máy đã tạm nhập khẩu miễn thuế",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1778124435159,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-d775-76cf-83da-e7803993b9d8",
+      "raw_path": "evidence/dvc/details/019d2bfb-d775-76cf-83da-e7803993b9d8.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Văn bản xác nhận kết thúc thời hạn công tác Việt Nam của cơ quan chủ quản (đối với đối tượng quy định tại khoản 1, 2 và 3 Điều 2 Thông tư 143/2015/TT-BTC)",
+          "component_code": "000.00.00.G12-KQ1763",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "ăn bản đề nghị chuyển nhượng xe (ghi cụ thể thông tin về xe, thông tin về tổ chức, cá nhân nhận chuyển nhượng): 01 bản chính có xác nhận của cơ quan chủ quản về thân phận của người đề nghị;",
+          "component_code": "000.00.00.G12-KQ1762",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 3,
+          "name": "Giấy tờ mua bán xe giữa chủ xe và người nhận chuyển nhượng xe.",
+          "component_code": "000.00.00.G12-KQ1765",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 4,
+          "name": "Tờ khai hàng hóa nhập khẩu, tạm nhập khẩu xe có “đóng dấu dùng cho tái xuất hoặc chuyển nhượng”: 01 bản chụp có xác nhận của Chi cục Hải quan làm thủ tục nhập khẩu, tạm nhập khẩu (đối với trường hợp nhập khẩu, tạm nhập khẩu xe thực hiện khai trên tờ khai hải quan giấy và cơ quan Hải quan chưa tra cứu được tờ khai nhập khẩu trên hệ thống).",
+          "component_code": "000.00.00.G12-KQ012456",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 5,
+          "name": "Tờ khai hàng hóa nhập khẩu ban hành kèm theo Thông tư số 38/2015/TT-BTC ngày 25/03/2015 của Bộ Tài chính quy định về thủ tục hải quan; kiểm tra, giám sát hải quan; thuế xuất khẩu, thuế nhập khẩu và quản lý thuế đối với hàng hóa xuất khẩu, nhập khẩu;",
+          "component_code": "000.00.00.G12-KQ0853",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 6,
+          "name": "Giấy thu hồi đăng ký, biển số xe ô tô, xe gắn máy do cơ quan Công an cấp: 01 bản chính.",
+          "component_code": "000.00.00.G12-KQ0854",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c70-724b-96e0-1265b92efe20",
+          "name": "Tờ khai thông quan hàng hóa nhập khẩu",
+          "code": "KQ.G12.000342"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d87-7195-a441-95e15796ed05",
+          "name": "Thông tư 45/2022/TT-BTC",
+          "code": "45/2022/TT-BTC"
+        },
+        {
+          "id": "019d2bb3-5d7d-7398-be49-c4aa81445449",
+          "name": "Thông tư 143/2015/TT-BTC",
+          "code": "143/2015/TT-BTC"
+        },
+        {
+          "id": "019d2bb3-5d7d-7398-be4d-1c6dbc289d7a",
+          "name": "Quy định về thủ tục hải quan; kiểm tra, giám sát hải quan; thuế xuất khẩu thuế nhập khẩu và quản lý thuế đối vớỉ hàng hoá xuất khẩu, nhập khẩu.",
+          "code": "38/2015/TT-BTC"
+        },
+        {
+          "id": "019d2bb3-5d7d-7398-be4d-ff62cdf67da5",
+          "name": "Luật 54/2014/QH13",
+          "code": "54/2014/QH13"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afe7-9c25863596db",
+          "name": "Nghị định 08/2015/NĐ-CP",
+          "code": "08/2015/NĐ-CP"
+        }
+      ]
+    }
+  ]
+}

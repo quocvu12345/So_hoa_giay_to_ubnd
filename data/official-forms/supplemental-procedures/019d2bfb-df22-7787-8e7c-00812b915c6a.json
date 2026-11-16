@@ -1,0 +1,112 @@
+{
+  "id": "dvc-019d2bfb-df22-7787-8e7c-00812b915c6a",
+  "procedure_code": "1.003164",
+  "name": "Thủ tục hải quan đối với xăng dầu, hóa chất, khí quá cảnh",
+  "domain": "Hải quan",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.968191+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfb-df22-7787-8e7c-00812b915c6a",
+      "code": "1.003164",
+      "name": "Thủ tục hải quan đối với xăng dầu, hóa chất, khí quá cảnh",
+      "state": "ACTIVE",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1778124953926,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-df22-7787-8e7c-00812b915c6a",
+      "raw_path": "evidence/dvc/details/019d2bfb-df22-7787-8e7c-00812b915c6a.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Bản kê khai hàng hoá quá cảnh do người khai hải quan hoặc người đại diện nộp cho cơ quan hải quan cửa khẩu đối với hàng hóa quá cảnh giữ nguyên trạng đi thẳng; quá cảnh chuyển tải sang cùng loại phương tiện vận tải đường bộ, đường sắt, đường sông, đường biển, đường hàng không (trừ hàng hoá quá cảnh đi thẳng bằng đường hàng không)",
+          "component_code": "000.00.00.G12-KQ3057",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Giấy phép hàng quá cảnh (nếu có)",
+          "component_code": "000.00.00.G12-KQ3061",
+          "original_quantity": 0,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 3,
+          "name": "Vận tải đơn",
+          "component_code": "000.00.00.G12-KQ3060",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 4,
+          "name": "Bản kê chi tiết",
+          "component_code": "000.00.00.G12-KQ3059",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 5,
+          "name": "Tờ khai hải quan hàng hoá quá cảnh và bản kê khai hàng hoá quá cảnh do người khai hải quan hoặc người đại diện nộp cho cơ quan hải quan cửa khẩu đối với hàng hóa quá cảnh phải lưu kho hoặc thay đổi loại phương tiện vận tải.",
+          "component_code": "000.00.00.G12-KQ3058",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c70-724b-96df-ddc2578f60d3",
+          "name": "Xác nhận thông quan hàng hóa",
+          "code": "KQ.G12.000583"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7e-72d1-afe7-9c25863596db",
+          "name": "Nghị định 08/2015/NĐ-CP",
+          "code": "08/2015/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7d-7398-be4e-8e22567edc3a",
+          "name": "Quy định thủ tục hải quan đối với xăng dầu, hóa chất, khí xuất khẩu, nhập khẩu, tạm nhập tái xuất, chuyển khẩu, quá cảnh; nguyên liệu nhập khẩu để sản xuất và pha chế hoặc gia công xuất khẩu xăng, dầu, khí; dầu thô xuất khẩu, nhập khẩu; hàng hóa xuất khẩu, nhập khẩu phục vụ hoạt động dầu khí",
+          "code": "69/2016/TT-BTC"
+        },
+        {
+          "id": "019d2bb3-5d7d-7398-be4d-1c6dbc289d7a",
+          "name": "Quy định về thủ tục hải quan; kiểm tra, giám sát hải quan; thuế xuất khẩu thuế nhập khẩu và quản lý thuế đối vớỉ hàng hoá xuất khẩu, nhập khẩu.",
+          "code": "38/2015/TT-BTC"
+        },
+        {
+          "id": "019d2bb3-5d7d-7398-be4d-ff62cdf67da5",
+          "name": "Luật 54/2014/QH13",
+          "code": "54/2014/QH13"
+        }
+      ]
+    }
+  ]
+}

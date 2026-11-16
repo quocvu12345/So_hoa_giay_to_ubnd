@@ -1,0 +1,127 @@
+{
+  "id": "hn87-386",
+  "ordinal": "386",
+  "procedure_code": "1.012222",
+  "name": "Công nhận người có uy tín trong đồng bào dân tộc thiểu số",
+  "domain": "Dân tộc",
+  "department_id": "vx",
+  "department": "Phòng Văn hóa - Xã hội",
+  "authority_as_published": "UBND cấp xã",
+  "execution_level_as_published": "Cấp xã",
+  "receiving_location_as_published": "Điểm hỗ trợ DVC số",
+  "inventory_date": "2026-04-27",
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "source_urls": [
+    "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf8-5247-7178-bf1f-a9e07e099434"
+  ],
+  "current_dvc_match": true,
+  "lifecycle": null,
+  "scope": "hanoi_commune_notice_2026_04_27",
+  "scope_note": "Mốc kiểm kê cấp xã Hà Nội; áp dụng từng thủ tục tại Từ Liêm còn phải theo thẩm quyền/ủy quyền hiện hành.",
+  "status": "source_template_missing",
+  "components": [
+    {
+      "id": "hn87-386-c001",
+      "code": "000.00.00.G21-KQ000074",
+      "name": "TỔNG HỢP DANH SÁCH Bình chọn, đề nghị công nhận người có uy tín trong đồng bào dân tộc thiểu số năm .....",
+      "section": "",
+      "role": "needs_review",
+      "scenario_status": "requirement_needs_review",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf8-5247-7178-bf1f-a9e07e099434",
+      "source_detail_id": "019d2bf8-5247-7178-bf1f-a9e07e099434",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-386-c002",
+      "code": "000.00.00.G21-KQ000073",
+      "name": "BIÊN BẢN KIỂM TRA Kết quả bình chọn, đề nghị công nhận người có uy tín năm .....",
+      "section": "",
+      "role": "agency_prepared",
+      "scenario_status": "agency_reserved",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf8-5247-7178-bf1f-a9e07e099434",
+      "source_detail_id": "019d2bf8-5247-7178-bf1f-a9e07e099434",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-386-c003",
+      "code": "000.00.00.G21-KQ000072",
+      "name": "BIÊN BẢN HỌP LIÊN TỊCH THÔN Bình chọn, đề nghị công nhận người có uy tín trong đồng bào dân tộc thiểu số",
+      "section": "",
+      "role": "agency_prepared",
+      "scenario_status": "agency_reserved",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf8-5247-7178-bf1f-a9e07e099434",
+      "source_detail_id": "019d2bf8-5247-7178-bf1f-a9e07e099434",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-386-c004",
+      "code": "000.00.00.G21-KQ000071",
+      "name": "BIÊN BẢN HỘI NGHỊ DÂN CƯ THÔN Đề cử người có uy tín trong đồng bào dân tộc thiểu số",
+      "section": "",
+      "role": "agency_prepared",
+      "scenario_status": "agency_reserved",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf8-5247-7178-bf1f-a9e07e099434",
+      "source_detail_id": "019d2bf8-5247-7178-bf1f-a9e07e099434",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    }
+  ],
+  "service_cases": [
+    {
+      "id": "019d3c91-47ad-76b7-bced-ddec3cdf1964",
+      "code": "1.012222.01",
+      "name": "Công nhận người có uy tín",
+      "source_processing_time": {
+        "qty": 20,
+        "type": "WORKING_DAY"
+      },
+      "has_case_specific_components": false
+    }
+  ],
+  "selected_template_ids": [],
+  "source_component_groups": [
+    {
+      "name": "",
+      "component_count": 4,
+      "source_detail_id": "019d2bf8-5247-7178-bf1f-a9e07e099434"
+    }
+  ],
+  "conditional_component_groups": [],
+  "default_test_scenario": {
+    "channel": "direct",
+    "applicant_submits_self": true,
+    "authorized": false,
+    "special_case_flags": [],
+    "selected_conditional_group": null,
+    "case_selection_method": "ordinary_direct_submission",
+    "case_status": "scenario_for_testing_not_a_legal_eligibility_decision"
+  },
+  "requirement_note": "required_as_published được giữ nguyên; false không chứng minh giấy tờ luôn tùy chọn. Các nhóm executionCases có thể là mục giấy tờ/hướng dẫn, không phải các phương án loại trừ nhau."
+}

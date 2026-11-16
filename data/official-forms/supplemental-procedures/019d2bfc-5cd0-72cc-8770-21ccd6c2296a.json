@@ -1,0 +1,409 @@
+{
+  "id": "dvc-019d2bfc-5cd0-72cc-8770-21ccd6c2296a",
+  "procedure_code": "1.008503",
+  "name": "Đăng ký thay đổi thông tin đăng ký thuế không làm thay đổi cơ quan thuế quản lý trực tiếp (trừ trường hợp đăng ký thuế theo cơ chế một cửa liên thông qua cơ quan đăng ký kinh doanh)",
+  "domain": "Thuế",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.940619+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfc-5cd0-72cc-8770-21ccd6c2296a",
+      "code": "1.008503",
+      "name": "Đăng ký thay đổi thông tin đăng ký thuế không làm thay đổi cơ quan thuế quản lý trực tiếp (trừ trường hợp đăng ký thuế theo cơ chế một cửa liên thông qua cơ quan đăng ký kinh doanh)",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1784861594357,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-5cd0-72cc-8770-21ccd6c2296a",
+      "raw_path": "evidence/dvc/details/019d2bfc-5cd0-72cc-8770-21ccd6c2296a.json",
+      "components": [
+        {
+          "section": "(i) Đối với người nộp thuế là tổ chức, hộ gia đình/cá nhân kinh doanh thay đổi các thông tin đăng ký thuế không làm thay đổi cơ quan thuế quản lý trực tiếp (trừ trường hợp đăng ký thuế theo cơ chế một cửa liên thông qua cơ quan đăng ký kinh doanh) - Đối với người nộp thuế theo quy định tại điểm a, b, c, g, i, p khoản 2 Điều 4 Thông tư số 90/2026/TT-BTC, hồ sơ gồm:",
+          "position": 1,
+          "name": "Tờ khai điều chỉnh, bổ sung thông tin đăng ký thuế theo mẫu 08-MST ban hành kèm theo Thông tư số 90/2026/TT-BTC",
+          "component_code": "G12.0003601",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019f8e09-6b72-7618-ad75-7348346b2184",
+              "fileName": "22.Mẫu 08-MST TK thay đổi thông tin ĐKT.doc",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8e09-6b72-7618-ad75-7348346b2184/22.Mẫu 08-MST TK thay đổi thông tin ĐKT.doc"
+            }
+          ]
+        },
+        {
+          "section": "(i) Đối với người nộp thuế là tổ chức, hộ gia đình/cá nhân kinh doanh thay đổi các thông tin đăng ký thuế không làm thay đổi cơ quan thuế quản lý trực tiếp (trừ trường hợp đăng ký thuế theo cơ chế một cửa liên thông qua cơ quan đăng ký kinh doanh) - Đối với người nộp thuế theo quy định tại điểm a, b, c, g, i, p khoản 2 Điều 4 Thông tư số 90/2026/TT-BTC, hồ sơ gồm:",
+          "position": 2,
+          "name": "Bản sao Giấy phép thành lập và hoạt động, hoặc Giấy chứng nhận đăng ký hoạt động đơn vị phụ thuộc, hoặc Quyết định thành lập, hoặc Giấy phép tương đương do cơ quan có thẩm quyền cấp nếu thông tin trên các Giấy tờ này có thay đổi",
+          "component_code": "G12.0003602",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "(i) Đối với người nộp thuế là tổ chức, hộ gia đình/cá nhân kinh doanh thay đổi các thông tin đăng ký thuế không làm thay đổi cơ quan thuế quản lý trực tiếp (trừ trường hợp đăng ký thuế theo cơ chế một cửa liên thông qua cơ quan đăng ký kinh doanh) - Đối với người nộp thuế theo quy định tại điểm a, b, c, g, i, p khoản 2 Điều 4 Thông tư số 90/2026/TT-BTC, hồ sơ gồm:",
+          "position": 3,
+          "name": "Từ ngày 01/7/2026 đến trước thời điểm theo lộ trình của cơ quan thuế quy định tại khoản 2 Điều 36 Thông tư số 90/2026/TT-BTC thì tiếp tục áp dụng mẫu số 08-MST ban hành kèm theo Thông tư số 86/2024/TT-BTC ngày 23/12/2024 của Bộ Tài chính",
+          "component_code": "G12.0003610",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019f8e1a-91d8-716a-9f84-18964c39ecae",
+              "fileName": "08 MST TT 86.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8e1a-91d8-716a-9f84-18964c39ecae/08 MST TT 86.docx"
+            }
+          ]
+        },
+        {
+          "section": "(i) Đối với người nộp thuế là tổ chức, hộ gia đình/cá nhân kinh doanh thay đổi các thông tin đăng ký thuế không làm thay đổi cơ quan thuế quản lý trực tiếp (trừ trường hợp đăng ký thuế theo cơ chế một cửa liên thông qua cơ quan đăng ký kinh doanh) - Đối với người nộp thuế theo quy định tại điểm d khoản 2 Điều 4 Thông tư số 90/2026/TT-BTC, hồ sơ gồm:",
+          "position": 1,
+          "name": "Tờ khai điều chỉnh, bổ sung thông tin đăng ký thuế theo mẫu 08-MST ban hành kèm theo Thông tư số 90/2026/TT-BTC",
+          "component_code": "G12.0003601",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019f8e09-6b72-7618-ad75-7348346b2184",
+              "fileName": "22.Mẫu 08-MST TK thay đổi thông tin ĐKT.doc",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8e09-6b72-7618-ad75-7348346b2184/22.Mẫu 08-MST TK thay đổi thông tin ĐKT.doc"
+            }
+          ]
+        },
+        {
+          "section": "(i) Đối với người nộp thuế là tổ chức, hộ gia đình/cá nhân kinh doanh thay đổi các thông tin đăng ký thuế không làm thay đổi cơ quan thuế quản lý trực tiếp (trừ trường hợp đăng ký thuế theo cơ chế một cửa liên thông qua cơ quan đăng ký kinh doanh) - Đối với người nộp thuế theo quy định tại điểm d khoản 2 Điều 4 Thông tư số 90/2026/TT-BTC, hồ sơ gồm:",
+          "position": 2,
+          "name": "Từ ngày 01/7/2026 đến trước thời điểm theo lộ trình của cơ quan thuế quy định tại khoản 2 Điều 36 Thông tư số 90/2026/TT-BTC thì tiếp tục áp dụng mẫu số 08-MST ban hành kèm theo Thông tư số 86/2024/TT-BTC ngày 23/12/2024 của Bộ Tài chính",
+          "component_code": "G12.0003610",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019f8e1a-91d8-716a-9f84-18964c39ecae",
+              "fileName": "08 MST TT 86.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8e1a-91d8-716a-9f84-18964c39ecae/08 MST TT 86.docx"
+            }
+          ]
+        },
+        {
+          "section": "(i) Đối với người nộp thuế là tổ chức, hộ gia đình/cá nhân kinh doanh thay đổi các thông tin đăng ký thuế không làm thay đổi cơ quan thuế quản lý trực tiếp (trừ trường hợp đăng ký thuế theo cơ chế một cửa liên thông qua cơ quan đăng ký kinh doanh) - Đối với người nộp thuế là nhà cung cấp nước ngoài theo quy định tại điểm đ khoản 2 Điều 4 Thông tư số 90/2026/TT-BTC, hồ sơ gồm:",
+          "position": 1,
+          "name": "Tờ khai điều chỉnh thông tin đăng ký thuế dành cho nhà cung cấp nước ngoài theo mẫu số 01-1/NCCNN ban hành kèm theo Thông tư số 90/2026/TT-BTC",
+          "component_code": "G12.0003620",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019f8e0e-8044-74fb-8440-342c8110ff47",
+              "fileName": "25.Mẫu 01-1.NCCNN.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8e0e-8044-74fb-8440-342c8110ff47/25.Mẫu 01-1.NCCNN.docx"
+            }
+          ]
+        },
+        {
+          "section": "(i) Đối với người nộp thuế là tổ chức, hộ gia đình/cá nhân kinh doanh thay đổi các thông tin đăng ký thuế không làm thay đổi cơ quan thuế quản lý trực tiếp (trừ trường hợp đăng ký thuế theo cơ chế một cửa liên thông qua cơ quan đăng ký kinh doanh) - Đối với người nộp thuế là nhà cung cấp nước ngoài theo quy định tại điểm đ khoản 2 Điều 4 Thông tư số 90/2026/TT-BTC, hồ sơ gồm:",
+          "position": 2,
+          "name": "Từ ngày 01/7/2026 đến trước thời điểm theo lộ trình của cơ quan thuế quy định tại khoản 2 Điều 36 Thông tư số 90/2026/TT-BTC thì tiếp tục áp dụng mẫu số 01-1/NCCNN thực hiện theo mẫu biểu ban hành kèm theo Thông tư số 80/2021/TT-BTC đối với trường hợp đăng ký thuế theo phương thức điện tử.",
+          "component_code": "G12.0003612",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019f8e1d-5c83-76ab-8ccf-d2a02d328533",
+              "fileName": "01-1 NCCNN TT 80.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8e1d-5c83-76ab-8ccf-d2a02d328533/01-1 NCCNN TT 80.docx"
+            }
+          ]
+        },
+        {
+          "section": "(i) Đối với người nộp thuế là tổ chức, hộ gia đình/cá nhân kinh doanh thay đổi các thông tin đăng ký thuế không làm thay đổi cơ quan thuế quản lý trực tiếp (trừ trường hợp đăng ký thuế theo cơ chế một cửa liên thông qua cơ quan đăng ký kinh doanh) - Đối với hộ gia đình, cá nhân kinh doanh quy định tại điểm k khoản 2 Điều 4 Thông tư số 90/2026/TT-BTC, hồ sơ gồm:",
+          "position": 1,
+          "name": "Tờ khai điều chỉnh, bổ sung thông tin đăng ký thuế theo mẫu 08-MST ban hành kèm theo Thông tư số 90/2026/TT-BTC",
+          "component_code": "G12.0003601",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019f8e09-6b72-7618-ad75-7348346b2184",
+              "fileName": "22.Mẫu 08-MST TK thay đổi thông tin ĐKT.doc",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8e09-6b72-7618-ad75-7348346b2184/22.Mẫu 08-MST TK thay đổi thông tin ĐKT.doc"
+            }
+          ]
+        },
+        {
+          "section": "(i) Đối với người nộp thuế là tổ chức, hộ gia đình/cá nhân kinh doanh thay đổi các thông tin đăng ký thuế không làm thay đổi cơ quan thuế quản lý trực tiếp (trừ trường hợp đăng ký thuế theo cơ chế một cửa liên thông qua cơ quan đăng ký kinh doanh) - Đối với hộ gia đình, cá nhân kinh doanh quy định tại điểm k khoản 2 Điều 4 Thông tư số 90/2026/TT-BTC, hồ sơ gồm:",
+          "position": 2,
+          "name": "Bản sao hộ chiếu còn hiệu lực của cá nhân nếu thông tin trên giấy tờ này có thay đổi đối với cá nhân kinh doanh thuộc trường hợp cơ quan thuế cấp mã số thuế theo quy định tại điểm a khoản 2 Điều 5 Thông tư số 90/2026/TT-BTC.",
+          "component_code": "G12.0003603",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "(i) Đối với người nộp thuế là tổ chức, hộ gia đình/cá nhân kinh doanh thay đổi các thông tin đăng ký thuế không làm thay đổi cơ quan thuế quản lý trực tiếp (trừ trường hợp đăng ký thuế theo cơ chế một cửa liên thông qua cơ quan đăng ký kinh doanh) - Đối với hộ gia đình, cá nhân kinh doanh quy định tại điểm k khoản 2 Điều 4 Thông tư số 90/2026/TT-BTC, hồ sơ gồm:",
+          "position": 3,
+          "name": "Từ ngày 01/7/2026 đến trước thời điểm theo lộ trình của cơ quan thuế quy định tại khoản 2 Điều 36 Thông tư số 90/2026/TT-BTC thì tiếp tục áp dụng mẫu số 08-MST ban hành kèm theo Thông tư số 86/2024/TT-BTC ngày 23/12/2024 của Bộ Tài chính",
+          "component_code": "G12.0003610",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019f8e1a-91d8-716a-9f84-18964c39ecae",
+              "fileName": "08 MST TT 86.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8e1a-91d8-716a-9f84-18964c39ecae/08 MST TT 86.docx"
+            }
+          ]
+        },
+        {
+          "section": "(ii) Đối với người nộp thuế là cá nhân có phát sinh thu nhập chịu thuế thu nhập cá nhân (trừ cá nhân kinh doanh) và người phụ thuộc - trường hợp cá nhân đăng ký thay đổi thông tin qua cơ quan chi trả thu nhập - Đối với người nộp thuế và người phụ thuộc:",
+          "position": 1,
+          "name": "Văn bản ủy quyền mẫu số 41/UQ-ĐKT ban hành kèm theo Thông tư số 90/2026/TT-BTC",
+          "component_code": "G12.0001143",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019f8dc9-4666-749d-9111-ba98a1c1710e",
+              "fileName": "41 UQ ĐKT TT 90.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8dc9-4666-749d-9111-ba98a1c1710e/41 UQ ĐKT TT 90.docx"
+            }
+          ]
+        },
+        {
+          "section": "(ii) Đối với người nộp thuế là cá nhân có phát sinh thu nhập chịu thuế thu nhập cá nhân (trừ cá nhân kinh doanh) và người phụ thuộc - trường hợp cá nhân đăng ký thay đổi thông tin qua cơ quan chi trả thu nhập - Đối với người nộp thuế và người phụ thuộc:",
+          "position": 2,
+          "name": "Trường hợp cá nhân hoặc người phụ thuộc thuộc trường hợp cơ quan thuế cấp mã số thuế theo quy định tại điểm a khoản 2 Điều 5 Thông tư số 90/2026/TT-BTC thì nộp kèm theo bản sao hộ chiếu có thay đổi thông tin liên quan đến đăng ký thuế của cá nhân hoặc người phụ thuộc trong trường hợp thông tin đăng ký thuế trên giấy tờ này có thay đổi",
+          "component_code": "G12.0003604",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "(ii) Đối với người nộp thuế là cá nhân có phát sinh thu nhập chịu thuế thu nhập cá nhân (trừ cá nhân kinh doanh) và người phụ thuộc - trường hợp cá nhân đăng ký thay đổi thông tin qua cơ quan chi trả thu nhập - Đối với cơ quan chi trả thu nhập:",
+          "position": 1,
+          "name": "Tờ khai đăng ký mẫu số 05-ĐKT-TH ban hành kèm theo Thông tư số 90/2026/TT-BTC đối với trường hợp thay đổi thông tin đăng ký thuế của người nộp thuế.",
+          "component_code": "G12.0003605",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019f8e13-d3a4-7383-9906-50df3db70e61",
+              "fileName": "16.Mẫu 05-ĐKT-TH cá nhân qua CQCT.doc",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8e13-d3a4-7383-9906-50df3db70e61/16.Mẫu 05-ĐKT-TH cá nhân qua CQCT.doc"
+            }
+          ]
+        },
+        {
+          "section": "(ii) Đối với người nộp thuế là cá nhân có phát sinh thu nhập chịu thuế thu nhập cá nhân (trừ cá nhân kinh doanh) và người phụ thuộc - trường hợp cá nhân đăng ký thay đổi thông tin qua cơ quan chi trả thu nhập - Đối với cơ quan chi trả thu nhập:",
+          "position": 2,
+          "name": "Tờ khai đăng ký mẫu số 20-ĐKT-TH ban hành kèm theo Thông tư số 90/2026/TT-BTC đối với trường hợp thay đổi thông tin đăng ký người phụ thuộc.ện trợ nhân đạo, viện trợ không hoàn lại của nước ngoài mua hàng hoá, dịch vụ có thuế giá trị gia tăng ở Việt Nam để viện trợ không hoàn lại, viện trợ nhân đạo; các cơ quan đại diện ngoại giao, cơ quan lãnh sự và cơ quan đại diện của tổ chức quốc tế tại Việt Nam thuộc đối tượng được hoàn thuế giá trị gia tăng đối với đối tượng hưởng ưu đãi miễn trừ ngoại giao; Chủ dự án ODA thuộc diện được hoàn thuế giá trị gia tăng, Văn phòng đại diện nhà tài trợ dự án ODA, tổ chức do phía nhà tài trợ nước ngoài chỉ định quản lý chương trình, dự án ODA không hoàn lại) hồ sơ gồm: +++ Tờ khai điều chỉnh, bổ sung thông tin đăng ký thuế theo mẫu 08-MST ban hành kèm theo Thông tư số 86/2024/TT-BTC ngày 23/12/2024  của Bộ Tài chính",
+          "component_code": "G12.0003606",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019f8e15-51b7-762e-a495-df96d00e2b84",
+              "fileName": "19.Mẫu 20-TK ĐKT-TH NPT-CQ chi trả.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8e15-51b7-762e-a495-df96d00e2b84/19.Mẫu 20-TK ĐKT-TH NPT-CQ chi trả.docx"
+            }
+          ]
+        },
+        {
+          "section": "(ii) Đối với người nộp thuế là cá nhân có phát sinh thu nhập chịu thuế thu nhập cá nhân (trừ cá nhân kinh doanh) và người phụ thuộc - trường hợp cá nhân đăng ký thay đổi thông tin qua cơ quan chi trả thu nhập - Đối với cơ quan chi trả thu nhập:",
+          "position": 3,
+          "name": "Từ ngày 01/7/2026 đến trước thời điểm theo lộ trình của cơ quan thuế quy định tại khoản 2 Điều 36 Thông tư số 90/2026/TT-BTC thì tiếp tục áp dụng mẫu số 20-ĐK-TH-TCT ban hành kèm theo Thông tư số 86/2024/TT-BTC ngày 23/12/2024 của Bộ Tài chính đối với trường hợp đăng ký thuế theo phương thức điện tử",
+          "component_code": "G12.0003616",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019f8e21-fc3d-772a-b8e2-31e310848147",
+              "fileName": "20 ĐK TH  TCT TT 86.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8e21-fc3d-772a-b8e2-31e310848147/20 ĐK TH  TCT TT 86.docx"
+            }
+          ]
+        },
+        {
+          "section": "(ii) Đối với người nộp thuế là cá nhân có phát sinh thu nhập chịu thuế thu nhập cá nhân (trừ cá nhân kinh doanh) và người phụ thuộc - trường hợp cá nhân đăng ký thay đổi thông tin qua cơ quan chi trả thu nhập - Đối với cơ quan chi trả thu nhập:",
+          "position": 4,
+          "name": "Từ ngày 01/7/2026 đến trước thời điểm theo lộ trình của cơ quan thuế quy định tại khoản 2 Điều 36 Thông tư số 90/2026/TT-BTC thì tiếp tục áp dụng mẫu số 05-ĐK-TH-TCT ban hành kèm theo Thông tư số 86/2024/TT-BTC ngày 23/12/2024 của Bộ Tài chính đối với trường hợp đăng ký thuế theo phương thức điện tử.",
+          "component_code": "G12.0003617",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019f8e22-6e70-710d-9630-d8230f5e6f3d",
+              "fileName": "05 ĐKTH TCT TT 86.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8e22-6e70-710d-9630-d8230f5e6f3d/05 ĐKTH TCT TT 86.docx"
+            }
+          ]
+        },
+        {
+          "section": "(iii) Đối với người nộp thuế là cá nhân có phát sinh thu nhập chịu thuế thu nhập cá nhân (trừ cá nhân kinh doanh) và người phụ thuộc - Trường hợp cá nhân đăng ký thay đổi thông tin trực tiếp tại cơ quan thuế:",
+          "position": 1,
+          "name": "Tờ khai điều chỉnh, bổ sung thông tin đăng ký thuế mẫu số 08-MST hoặc mẫu số 20-ĐKT ban hành kèm theo Thông tư số 90/2026/TT-BTC",
+          "component_code": "G12.0003607",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019f8e16-483c-7016-bc5c-63f54d128ac5",
+              "fileName": "22.Mẫu 08-MST TK thay đổi thông tin ĐKT.doc",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8e16-483c-7016-bc5c-63f54d128ac5/22.Mẫu 08-MST TK thay đổi thông tin ĐKT.doc"
+            },
+            {
+              "id": "019f8e16-7225-76e9-a69e-8a9253abb12c",
+              "fileName": "18.Mẫu 20-TK ĐKT NPT- trực tiếp.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8e16-7225-76e9-a69e-8a9253abb12c/18.Mẫu 20-TK ĐKT NPT- trực tiếp.docx"
+            }
+          ]
+        },
+        {
+          "section": "(iii) Đối với người nộp thuế là cá nhân có phát sinh thu nhập chịu thuế thu nhập cá nhân (trừ cá nhân kinh doanh) và người phụ thuộc - Trường hợp cá nhân đăng ký thay đổi thông tin trực tiếp tại cơ quan thuế:",
+          "position": 2,
+          "name": "Trường hợp cá nhân hoặc người phụ thuộc thuộc trường hợp cơ quan thuế cấp mã số thuế theo quy định tại điểm a khoản 2 Điều 5 Thông tư số 90/2026/TT-BTC thì nộp kèm theo bản sao hộ chiếu có thay đổi thông tin liên quan đến đăng ký thuế của cá nhân hoặc người phụ thuộc trong trường hợp thông tin đăng ký thuế trên giấy tờ này có thay đổi",
+          "component_code": "G12.0003604",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "(iii) Đối với người nộp thuế là cá nhân có phát sinh thu nhập chịu thuế thu nhập cá nhân (trừ cá nhân kinh doanh) và người phụ thuộc - Trường hợp cá nhân đăng ký thay đổi thông tin trực tiếp tại cơ quan thuế:",
+          "position": 3,
+          "name": "Từ ngày 01/7/2026 đến trước thời điểm theo lộ trình của cơ quan thuế quy định tại khoản 2 Điều 36 Thông tư số 90/2026/TT-BTC thì tiếp tục áp dụng mẫu số 08-MST, mẫu số 20-ĐK-TCT ban hành kèm theo Thông tư số 86/2024/TT-BTC ngày 23/12/2024 của Bộ Tài chính đối với trường hợp đăng ký thuế theo phương thức điện tử.",
+          "component_code": "G12.0003615",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019f8e1f-bed7-758b-ae2e-cc9fd59bbcc7",
+              "fileName": "08 MST TT 86.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8e1f-bed7-758b-ae2e-cc9fd59bbcc7/08 MST TT 86.docx"
+            },
+            {
+              "id": "019f8e1f-da27-71df-a059-b88e6f2dcb75",
+              "fileName": "20 ĐK TCT TT 86.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8e1f-da27-71df-a059-b88e6f2dcb75/20 ĐK TCT TT 86.docx"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 1,
+          "name": "Người nộp thuế nộp hồ sơ đến cơ quan thuế bằng phương thức điện tử thì bản sao các văn bản, giấy tờ quy định trong hồ sơ đăng ký thuế là bản sao điện tử.",
+          "component_code": "G12.0003344",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c71-7574-afea-fa9977831a2f",
+          "name": "Cập nhật thông tin thay đổi nếu khớp đúng với thông tin trong Cơ sở dữ liệu quốc gia về dân cư",
+          "code": "KQ.G12.000030"
+        },
+        {
+          "id": "019d2bb2-1c71-7574-afea-f2066ddd5faf",
+          "name": "Thông báo mã số thuế cá nhân (Mẫu 14-MST)",
+          "code": "KQ.G12.000832"
+        },
+        {
+          "id": "019d2bb2-1c71-7574-afea-fdea47ae79b9",
+          "name": "Giấy chứng nhận đăng ký thuế hoặc Thông báo mã số thuế bản điện tử cho người nộp thuế (trường hợp người nộp thuế thay đổi các thông tin trên Giấy chứng nhận đăng ký thuế)",
+          "code": "KQ.G12.000842"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019f356e-75e3-7494-a2f3-672d8dce61a6",
+          "name": "QUY ĐỊNH CHI TIẾT MỘT SỐ ĐIỀU VÀ BIỆN PHÁP ĐỂ TỔ CHỨC, HƯỚNG DẪN THI HÀNH LUẬT QUẢN LÝ THUẾ",
+          "code": "252/2026/NĐ-CP"
+        },
+        {
+          "id": "019e5e83-1282-771d-9014-49799413a4e5",
+          "name": "Luật số 108/2025/QH15 của Quốc hội: Luật Quản lý thuế",
+          "code": "108/2025/QH15"
+        },
+        {
+          "id": "019f64ed-e026-7299-b5f2-ca44a3964050",
+          "name": "Nghị định về thực hiện thủ tục hành chính theo cơ chế một cửa, một cửa liên thông tại Bộ phận Một cửa và Cổng Dịch vụ công quốc gia.",
+          "code": "118/2025/NĐ-CP "
+        },
+        {
+          "id": "019f8db3-9765-740b-8b90-682677b9c421",
+          "name": "Thông tư quy định chi tiết một số điều của Luật Quản lý thuế và Nghị định số 252/2026/NĐ-CP của Chính phủ quy định chi tiết một số điều và biện pháp để tổ chức, hướng dẫn thi hành Luật Quản lý thuế",
+          "code": "89/2026/TT-BTC"
+        },
+        {
+          "id": "019f8db3-e7d0-74e4-9c61-49a28e28113a",
+          "name": "Thông tư số 90/2026/TT-BTC ngày 30/6/2026 của Bộ Tài chính quy định về đăng ký thuế",
+          "code": "90/2026/TT-BTC "
+        }
+      ]
+    }
+  ]
+}

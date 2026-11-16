@@ -1,0 +1,216 @@
+{
+  "id": "dvc-019d2bfc-e974-738b-939a-61bcf1b0d99f",
+  "procedure_code": "2.002233",
+  "name": "Khai quyết toán thuế/ Hoàn thuế đối với cá nhân cư trú có thu nhập từ tiền lương, tiền công quyết toán thuế trực tiếp với cơ quan thuế",
+  "domain": "Thuế",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.906709+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfc-e974-738b-939a-61bcf1b0d99f",
+      "code": "2.002233",
+      "name": "Khai quyết toán thuế/ Hoàn thuế đối với cá nhân cư trú có thu nhập từ tiền lương, tiền công quyết toán thuế trực tiếp với cơ quan thuế",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1785399202098,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-e974-738b-939a-61bcf1b0d99f",
+      "raw_path": "evidence/dvc/details/019d2bfc-e974-738b-939a-61bcf1b0d99f.json",
+      "components": [
+        {
+          "section": "Trường hợp (1): Khai quyết toán thuế đối với cá nhân cư trú có thu nhập từ tiền lương, tiền công quyết toán trực tiếp với cơ quan thuế:",
+          "position": 1,
+          "name": "Tờ khai quyết toán thuế thu nhập cá nhân (áp dụng đối với cá nhân có thu nhập từ tiền lương, tiền công) mẫu số 02/QTT-TNCN ban hành kèm theo Thông tư số 89/2026/TT-BTC ngày 30/06/2026 của Bộ trưởng Bộ Tài chính",
+          "component_code": "G12.0016097",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019fa683-5ffa-73de-a581-3e1663cc3f92",
+              "fileName": "8. 02 QTT-TNCN.pdf",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa683-5ffa-73de-a581-3e1663cc3f92/8. 02 QTT-TNCN.pdf"
+            }
+          ]
+        },
+        {
+          "section": "Trường hợp (1): Khai quyết toán thuế đối với cá nhân cư trú có thu nhập từ tiền lương, tiền công quyết toán trực tiếp với cơ quan thuế:",
+          "position": 2,
+          "name": "Phụ lục bảng kê giảm trừ gia cảnh cho người phụ thuộc mẫu số 02-1/BK-QTT-TNCN ban hành kèm theo Thông tư số 89/2026/TT-BTC ngày 30/06/2026 của Bộ trưởng Bộ Tài chính",
+          "component_code": "G12.0016071",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019fa679-b6fe-705a-9018-fb290fbb4beb",
+              "fileName": "9. 02-1.BK-QTT-TNCN.pdf",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa679-b6fe-705a-9018-fb290fbb4beb/9. 02-1.BK-QTT-TNCN.pdf"
+            }
+          ]
+        },
+        {
+          "section": "Trường hợp (1): Khai quyết toán thuế đối với cá nhân cư trú có thu nhập từ tiền lương, tiền công quyết toán trực tiếp với cơ quan thuế:",
+          "position": 3,
+          "name": "Bản sao các chứng từ chứng minh số thuế đã khấu trừ (ghi rõ đã nộp thuế theo tờ khai thuế thu nhập nào) do cơ quan trả thu nhập cấp hoặc Bản sao chứng từ ngân hàng đối với số thuế đã nộp ở nước ngoài có xác nhận của người nộp thuế trong trường hợp theo quy định của luật pháp nước ngoài, cơ quan thuế nước ngoài không cấp giấyxác nhận số thuế đã nộp",
+          "component_code": "G12.0006052",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "Trường hợp (1): Khai quyết toán thuế đối với cá nhân cư trú có thu nhập từ tiền lương, tiền công quyết toán trực tiếp với cơ quan thuế:",
+          "position": 4,
+          "name": "Tài liệu chứng minh về số tiền đã trả của đơn vị, tổ chức trả thu nhập ở nước ngoài trong trường hợp cá nhân nhận thu nhập từ các tổ chức quốc tế, Đại sứ quán, Lãnh sự quán và nhận thu nhập từ nước ngoài",
+          "component_code": "G12.0016075",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "Trường hợp (1): Khai quyết toán thuế đối với cá nhân cư trú có thu nhập từ tiền lương, tiền công quyết toán trực tiếp với cơ quan thuế:",
+          "position": 5,
+          "name": "Hồ sơ xác định khoản đóng góp từ thiện, nhân đạo, các khoản chi cho y tế, giáo dục – đào tạo của người nộp thuế và người phụ thuộc của người nộp thuế theo quy định của pháp luật thuế thu nhập cá nhân",
+          "component_code": "G12.0001672",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "Trường hợp (1): Khai quyết toán thuế đối với cá nhân cư trú có thu nhập từ tiền lương, tiền công quyết toán trực tiếp với cơ quan thuế:",
+          "position": 6,
+          "name": "Trường hợp cơ quan thuế đã kết nối, khai thác được thông tin có trong các cơ sở dữ liệu quốc gia, cơ sở dữ liệu của cơ quan nhà nước có thẩm quyền thì người nộp thuế không phải nộp các thành phần hồ sơ kèm theo nêu trên",
+          "component_code": "G12.0016087",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "Trường hợp (2): Hoàn thuế đối với cá nhân cư trú có thu nhập từ tiền lương, tiền công quyết toán trực tiếp với cơ quan thuế:",
+          "position": 1,
+          "name": "Không phải nộp hồ sơ hoàn thuế mà chỉ cần ghi số thuế đề nghị hoàn vào chỉ tiêu [55] - “Số thuế hoàn trả cho người nộp thuế” hoặc chỉ tiêu [56] - “Số thuế bù trừ cho khoản phải nộp ngân sách nhà nước” tại tờ khai quyết toán thuế theo mẫu số 02/QTT-TNCN khi quyết toán thuế",
+          "component_code": "G12.0015697",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019fa675-c804-76ee-98b9-a0baa069297c",
+              "fileName": "8. 02 QTT-TNCN.pdf",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa675-c804-76ee-98b9-a0baa069297c/8. 02 QTT-TNCN.pdf"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 1,
+          "name": "Từ 01/7/2026 đến thời điểm theo lộ trình của cơ quan thuế quy định tại khoản 2 Điều 99 Thông tư số 89/2026/TT-BTC thì các mẫu 02/QTT-TNCN, 02-1/BK-QTT-TNCN thực hiện theo mẫu biểu ban hành kèm theo Thông tư số 80/2021/TT-BTC ngày 29/9/2021 của Bộ Tài chính",
+          "component_code": "G12.0016088",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019fa682-b079-72d1-8d82-f019d5211e05",
+              "fileName": "01-1 BK QTT TNCN.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa682-b079-72d1-8d82-f019d5211e05/01-1 BK QTT TNCN.docx"
+            },
+            {
+              "id": "019fa682-b1b8-76a5-bac6-7ee08540f012",
+              "fileName": "02-ĐK TCT TT 86.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa682-b1b8-76a5-bac6-7ee08540f012/02-ĐK TCT TT 86.docx"
+            },
+            {
+              "id": "019fa682-b2c5-767c-8fe3-4f19623ffef8",
+              "fileName": "07 XN NPT TNCN TT 80.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa682-b2c5-767c-8fe3-4f19623ffef8/07 XN NPT TNCN TT 80.docx"
+            },
+            {
+              "id": "019fa682-b3f3-72ba-9fc3-1f1d76902c7a",
+              "fileName": "02 QTT TCNT TT 80.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa682-b3f3-72ba-9fc3-1f1d76902c7a/02 QTT TCNT TT 80.docx"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "id": "019fa328-0757-726b-936d-17f088ac9c48",
+          "name": "Thông báo số tiền đề nghị hoàn nhưng không được hoàn thuế, số tiền đề nghị hoàn chưa đủ điều kiện được hoàn thuế (mẫu số 04/TB-HT)",
+          "code": "KQ.G12.001485"
+        },
+        {
+          "id": "019fa329-7177-760d-ad80-2bef251243b4",
+          "name": "Quyết định hoàn thuế kiêm bù trừ thu ngân sách nhà nước (mẫu số 02/QĐ-HT)",
+          "code": "KQ.G12.001558"
+        },
+        {
+          "id": "019d9b6b-eb31-709e-b45f-39ca5e36c59b",
+          "name": "Quyết định hoàn thuế (mẫu số 01/QĐHT)",
+          "code": "KQ.G12.000465"
+        },
+        {
+          "id": "019fa687-3cf7-772d-bd42-14d2e12a5150",
+          "name": "Phụ lục số tiền thuế, tiền chậm nộp, tiền phạt phải nộp được bù trừ (mẫu số 01/PL-BT)",
+          "code": "KQ.G12.001578"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019f356e-75e3-7494-a2f3-672d8dce61a6",
+          "name": "QUY ĐỊNH CHI TIẾT MỘT SỐ ĐIỀU VÀ BIỆN PHÁP ĐỂ TỔ CHỨC, HƯỚNG DẪN THI HÀNH LUẬT QUẢN LÝ THUẾ",
+          "code": "252/2026/NĐ-CP"
+        },
+        {
+          "id": "019e5e83-1282-771d-9014-49799413a4e5",
+          "name": "Luật số 108/2025/QH15 của Quốc hội: Luật Quản lý thuế",
+          "code": "108/2025/QH15"
+        },
+        {
+          "id": "019fa376-69da-7783-9853-6afa7cd86621",
+          "name": "Luật Thuế thu nhập cá nhân 109/2025/QH15 ngày 10/12/2025 và các văn bản pháp luật quy định chi tiết, hướng dẫn thi hành và sửa đổi, bổ sung có liên quan",
+          "code": "109/2025/QH15 "
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afe9-653aac8276ee",
+          "name": "Nghị định số 118/2025/NĐ-CP của Chính phủ: Về thực hiện thủ tục hành chính theo cơ chế một cửa, một cửa liên thông tại Bộ phận Một cửa và Cổng Dịch vụ công quốc gia",
+          "code": "118/2025/NĐ-CP"
+        },
+        {
+          "id": "019f8db3-9765-740b-8b90-682677b9c421",
+          "name": "Thông tư quy định chi tiết một số điều của Luật Quản lý thuế và Nghị định số 252/2026/NĐ-CP của Chính phủ quy định chi tiết một số điều và biện pháp để tổ chức, hướng dẫn thi hành Luật Quản lý thuế",
+          "code": "89/2026/TT-BTC"
+        },
+        {
+          "id": "019fa377-0d10-73ea-b3b0-ee84180af5fe",
+          "name": "Nghị định số 253/2026/NĐ-CP ngày 30/6/2026 của Chính phủ quy định chi tiết một số điều và biện pháp để tổ chức, hướng dẫn thi hành Luật Thuế thu nhập cá nhân",
+          "code": "253/2026/NĐ-CP "
+        }
+      ]
+    }
+  ]
+}

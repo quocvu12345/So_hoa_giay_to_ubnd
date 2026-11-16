@@ -1,0 +1,169 @@
+{
+  "id": "dvc-019d2bfc-ba75-749e-a683-48635b00d765",
+  "procedure_code": "1.011007",
+  "name": "Khai thuế thu nhập cá nhân đối với cá nhân nhận cổ tức bằng cổ\nphiếu, lợi tức ghi tăng vốn, cổ phiếu phát hành từ nguồn vốn chủ sở hữu cho\ncổ đông hiện hữu khi chuyển nhượng và tổ chức khai thuế thay, nộp thuế\nthay cho cá nhân",
+  "domain": "Thuế",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.924728+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfc-ba75-749e-a683-48635b00d765",
+      "code": "1.011007",
+      "name": "Khai thuế thu nhập cá nhân đối với cá nhân nhận cổ tức bằng cổ\nphiếu, lợi tức ghi tăng vốn, cổ phiếu phát hành từ nguồn vốn chủ sở hữu cho\ncổ đông hiện hữu khi chuyển nhượng và tổ chức khai thuế thay, nộp thuế\nthay cho cá nhân",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1785399198496,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-ba75-749e-a683-48635b00d765",
+      "raw_path": "evidence/dvc/details/019d2bfc-ba75-749e-a683-48635b00d765.json",
+      "components": [
+        {
+          "section": "* Đối với tổ chức khai thuế thay, nộp thuế thay cho cá nhân:",
+          "position": 1,
+          "name": "Tờ khai thuế thu nhập cá nhân (Áp dụng đối với cá nhân nhận cổ tức bằng cổ phiếu, lợi tức ghi tăng vốn, cổ phiếu phát hành từ nguồn vốn chủ sở hữu cho cổ đông hiện hữu khi chuyển nhượng và tổ chức khai thuế thay, nộp thuế thay cho cá nhân) mẫu số 04/ĐTV-TNCN Phụ lục I ban hành kèm theo Thông tư số 89/2026/TT-BTC ngày 30/06/2026 của Bộ trưởng Bộ Tài chính",
+          "component_code": "G12.0015717",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019fa6b5-ef38-73e6-860e-8fbafe2407bb",
+              "fileName": "17. 04 .ĐTV-TNCN.doc",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa6b5-ef38-73e6-860e-8fbafe2407bb/17. 04 .ĐTV-TNCN.doc"
+            }
+          ]
+        },
+        {
+          "section": "* Đối với tổ chức khai thuế thay, nộp thuế thay cho cá nhân:",
+          "position": 2,
+          "name": "Phụ lục bảng kê chi tiết (Kèm theo Tờ khai mẫu số 04/ĐTV-TNCN áp dụng đối với tổ chức khai thuế thay, nộp thuế thay cho cá nhân) mẫu số 04-1/ĐTV-TNCN Phụ lục I ban hành kèm theo Thông tư số 89/2026/TT-BTC ngày 30/06/2026 của Bộ trưởng Bộ Tài chính",
+          "component_code": "G12.0015718",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019fa6b6-737b-737d-89ee-df76bd10b4cf",
+              "fileName": "18. 04-1.ĐTV-TNCN.doc",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa6b6-737b-737d-89ee-df76bd10b4cf/18. 04-1.ĐTV-TNCN.doc"
+            }
+          ]
+        },
+        {
+          "section": "* Đối với tổ chức khai thuế thay, nộp thuế thay cho cá nhân:",
+          "position": 3,
+          "name": "Từ 01/7/2026 đến thời điểm theo lộ trình của cơ quan thuế quy định tại khoản 2 Điều 99 Thông tư số 89/2026/TT-BTC thì các mẫu 04/ĐTV-TNCN, 04-1/ĐTV-TNCN thực hiện theo mẫu biểu ban hành kèm theo Thông tư số 80/2021/TT-BTC ngày 29/9/2021 của Bộ Tài chính",
+          "component_code": "G12,0015719",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019fa6b7-f037-728c-b313-69af179cc42a",
+              "fileName": "04-1 ĐTV TNCN TT 80.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa6b7-f037-728c-b313-69af179cc42a/04-1 ĐTV TNCN TT 80.docx"
+            },
+            {
+              "id": "019fa6b7-f139-7509-ae72-efae70c0482d",
+              "fileName": "04 ĐTV TNCN TT 80.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa6b7-f139-7509-ae72-efae70c0482d/04 ĐTV TNCN TT 80.docx"
+            }
+          ]
+        },
+        {
+          "section": "* Đối với cá nhân khai trực tiếp với cơ quan thuế:",
+          "position": 1,
+          "name": "Tờ khai thuế thu nhập cá nhân (Áp dụng đối với cá nhân nhận cổ tức bằng cổ phiếu, lợi tức ghi tăng vốn, cổ phiếu phát hành từ nguồn vốn chủ sở hữu cho cổ đông hiện hữu khi chuyển nhượng và tổ chức khai thuế thay, nộp thuế thay cho cá nhân) mẫu số 04/ĐTV-TNCN Phụ lục I ban hành kèm theo Thông tư số 89/2026/TT-BTC ngày 30/06/2026 của Bộ trưởng Bộ Tài chính",
+          "component_code": "G12.0015717",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019fa6b5-ef38-73e6-860e-8fbafe2407bb",
+              "fileName": "17. 04 .ĐTV-TNCN.doc",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa6b5-ef38-73e6-860e-8fbafe2407bb/17. 04 .ĐTV-TNCN.doc"
+            }
+          ]
+        },
+        {
+          "section": "* Đối với cá nhân khai trực tiếp với cơ quan thuế:",
+          "position": 2,
+          "name": "Từ 01/7/2026 đến thời điểm theo lộ trình của cơ quan thuế quy định tại khoản 2 Điều 99 Thông tư số 89/2026/TT-BTC thiì các mẫu 04/ĐTV-TNCN, 04- 1/ĐTV-TNCN thực hiện theo mẫu biểu ban hành kèm theo Thông tư số 80/2021/TT-BTC ngày 29/9/2021 của Bộ Tài chính",
+          "component_code": "G12.0015719",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019fb0fd-384a-771f-830d-6ed7e80d3d37",
+              "fileName": "04-1 ĐTV TNCN TT 80.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fb0fd-384a-771f-830d-6ed7e80d3d37/04-1 ĐTV TNCN TT 80.docx"
+            },
+            {
+              "id": "019fb0fd-398d-7023-9e5d-6ac0d8aae365",
+              "fileName": "04 ĐTV TNCN TT 80.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fb0fd-398d-7023-9e5d-6ac0d8aae365/04 ĐTV TNCN TT 80.docx"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c70-724b-96e1-59c6a510ec9f",
+          "name": "Hồ sơ gửi đến cơ quan thuế không có kết quả giải quyết.",
+          "code": "KQ.G12.000429"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019e5e83-1282-771d-9014-49799413a4e5",
+          "name": "Luật số 108/2025/QH15 của Quốc hội: Luật Quản lý thuế",
+          "code": "108/2025/QH15"
+        },
+        {
+          "id": "019fa376-69da-7783-9853-6afa7cd86621",
+          "name": "Luật Thuế thu nhập cá nhân 109/2025/QH15 ngày 10/12/2025 và các văn bản pháp luật quy định chi tiết, hướng dẫn thi hành và sửa đổi, bổ sung có liên quan",
+          "code": "109/2025/QH15 "
+        },
+        {
+          "id": "019f356e-75e3-7494-a2f3-672d8dce61a6",
+          "name": "QUY ĐỊNH CHI TIẾT MỘT SỐ ĐIỀU VÀ BIỆN PHÁP ĐỂ TỔ CHỨC, HƯỚNG DẪN THI HÀNH LUẬT QUẢN LÝ THUẾ",
+          "code": "252/2026/NĐ-CP"
+        },
+        {
+          "id": "019f8db3-9765-740b-8b90-682677b9c421",
+          "name": "Thông tư quy định chi tiết một số điều của Luật Quản lý thuế và Nghị định số 252/2026/NĐ-CP của Chính phủ quy định chi tiết một số điều và biện pháp để tổ chức, hướng dẫn thi hành Luật Quản lý thuế",
+          "code": "89/2026/TT-BTC"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afe9-653aac8276ee",
+          "name": "Nghị định số 118/2025/NĐ-CP của Chính phủ: Về thực hiện thủ tục hành chính theo cơ chế một cửa, một cửa liên thông tại Bộ phận Một cửa và Cổng Dịch vụ công quốc gia",
+          "code": "118/2025/NĐ-CP"
+        },
+        {
+          "id": "019fa377-0d10-73ea-b3b0-ee84180af5fe",
+          "name": "Nghị định số 253/2026/NĐ-CP ngày 30/6/2026 của Chính phủ quy định chi tiết một số điều và biện pháp để tổ chức, hướng dẫn thi hành Luật Thuế thu nhập cá nhân",
+          "code": "253/2026/NĐ-CP "
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "ordinal": "273",
+  "managing_agency": "Sở Tư pháp",
+  "procedure_code": "2.000950",
+  "name": "Thủ tục công nhận tổ trưởng tổ hòa giải (cấp xã)",
+  "domain": "Hòa giải ở cơ sở",
+  "ministry_decision": "QĐ/0001-BTP",
+  "hanoi_decision": "295/QĐ-TTPVHCC ngày 08/3/2026",
+  "workflow_decision": "309/QĐ-TTPVHCC ngày 13/3/2026",
+  "fees": "Không quy định",
+  "execution_level": "Cấp xã",
+  "competent_authority": "UBND cấp xã",
+  "delegation_decision": "",
+  "delegation_expiry": "",
+  "receiving_location": "Điểm hỗ trợ DVC số",
+  "id": "hn87-273",
+  "source_page": 11,
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "inventory_date": "2026-04-27",
+  "checked_at": "2026-11-12T22:24:42.000646+07:00",
+  "details": [
+    {
+      "id": "019d2bfd-95cf-74f7-8f8e-81c925ae839a",
+      "code": "2.000950",
+      "name": "Thủ tục công nhận tổ trưởng tổ hòa giải (cấp xã)",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1776238909876,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfd-95cf-74f7-8f8e-81c925ae839a",
+      "raw_path": "evidence/dvc/details/019d2bfd-95cf-74f7-8f8e-81c925ae839a.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Biên bản kiểm phiếu hoặc biên bản về kết quả biểu quyết về việc bầu tổ trưởng tổ hòa giải.",
+          "component_code": "000.00.00.G15-KQ1045",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Văn bản đề nghị công nhận tổ trưởng tổ hòa giải.",
+          "component_code": "000.00.00.G15-KQ1044",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c78-7725-a750-12abb358e956",
+          "name": "Quyết định công nhận tổ trưởng tổ hòa giải",
+          "code": "KQ.G15.000057"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d84-71c5-b670-f33d90ef2e01",
+          "name": "Luật Hòa giải ở cơ sở năm 2013",
+          "code": "35/2013/QH13"
+        },
+        {
+          "id": "019d2bb3-5d87-7195-a447-d9be41980566",
+          "name": "Hướng dẫn phối hợp thực hiện một số quy định của pháp luật về hòa giải ở cơ sở",
+          "code": "01/2014/NQLT-CP-UBTƯMTTQVN"
+        },
+        {
+          "id": "019d2bb3-5d87-7195-a44a-543530895285",
+          "name": "Công bố thủ tục hành chính được chuẩn hóa trong lĩnh vực hòa giải ở cơ sở thuộc phạm vi chức năng quản lý của Bộ Tư pháp",
+          "code": "Quyết định số 2338/QĐ-BTP "
+        }
+      ]
+    }
+  ],
+  "lookup_status": "retrieved",
+  "currency_status": "snapshot_requires_later_amendment_check",
+  "errors": []
+}

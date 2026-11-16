@@ -1,0 +1,245 @@
+{
+  "id": "dvc-019f6f73-60df-72fa-8886-1eda55384c67",
+  "procedure_code": "1.115950",
+  "name": "Công bố mở bến thủy nội địa, bến khách ngang sông, kết cấu hạ tầng đường thủy nội địa phục vụ thi công công trình, dự án và bến dân sinh",
+  "domain": "Hàng hải và đường thủy nội địa",
+  "managing_agency": "Bộ Xây dựng",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.482349+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019f6f73-60df-72fa-8886-1eda55384c67",
+      "code": "1.115950",
+      "name": "Công bố mở bến thủy nội địa, bến khách ngang sông, kết cấu hạ tầng đường thủy nội địa phục vụ thi công công trình, dự án và bến dân sinh",
+      "state": "ACTIVE",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1786160729766,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019f6f73-60df-72fa-8886-1eda55384c67",
+      "raw_path": "evidence/dvc/details/019f6f73-60df-72fa-8886-1eda55384c67.json",
+      "components": [
+        {
+          "section": "a) Thành phần hồ sơ công bố mở bến thủy nội địa:",
+          "position": 1,
+          "name": "- Bản sao có chứng thực hoặc bản sao điện tử được cấp từ sổ gốc hoặc bản sao điện tử được chứng thực từ bản chính Văn bản phê duyệt dự án đầu tư.",
+          "component_code": "000.00.00.G17-KQ002952",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "a) Thành phần hồ sơ công bố mở bến thủy nội địa:",
+          "position": 2,
+          "name": "- Bản sao có chứng thực hoặc bản sao và xuất trình bản chính để đối chiếu giấy tờ về sử dụng đất để xây dựng cảng thủy nội địa do cơ quan có thẩm quyền cấp;",
+          "component_code": "000.00.00.G04-KQ3276",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "a) Thành phần hồ sơ công bố mở bến thủy nội địa:",
+          "position": 3,
+          "name": "- Biên bản nghiệm thu hoàn thành công trình xây dựng đưa vào sử dụng; bản vẽ hoàn công mặt bằng, mặt chiếu đứng và mặt cắt ngang công trình cảng thủy nội địa;",
+          "component_code": "000.00.00.G04-KQ3278",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "a) Thành phần hồ sơ công bố mở bến thủy nội địa:",
+          "position": 4,
+          "name": "- Biên bản nghiệm thu kết quả rà tìm vật chướng ngại trong vùng nước cảng; biên bản xác nhận thiết lập báo hiệu tại cảng;",
+          "component_code": "000.00.00.G04-KQ3279",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "a) Thành phần hồ sơ công bố mở bến thủy nội địa:",
+          "position": 5,
+          "name": "+ Bản sao giấy chứng nhận an toàn kỹ thuật và bảo vệ môi trường của pông-tông, phao neo thuộc đối tượng phải đăng kiểm (nếu sử dụng pông-tông làm cầu cảng);",
+          "component_code": "000.00.00.G04-KQ3253",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "a) Thành phần hồ sơ công bố mở bến thủy nội địa:",
+          "position": 6,
+          "name": "- Bản sao giấy chứng nhận phù hợp an ninh cảng thủy nội địa tiếp nhận phương tiện thủy nước ngoài (đối với cảng thủy nội địa tiếp nhận phương tiện thủy nước ngoài);",
+          "component_code": "000.00.00.G04-KQ3282",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "a) Thành phần hồ sơ công bố mở bến thủy nội địa:",
+          "position": 7,
+          "name": "Bản chính hoặc biểu mẫu điện tử văn bản đề nghị",
+          "component_code": "TP-G17.000424",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "Thành phần hồ sơ công bố mở bến khách ngang sông, kết cấu hạ tầng đường thủy nội địa phục vụ thi công công trình, dự án và bến dân sinh",
+          "position": 1,
+          "name": "Biên bản nghiệm thu hoàn thành công trình đưa vào khai thác, sử dụng",
+          "component_code": "000.00.00.G04-KQ1053",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "Thành phần hồ sơ công bố mở bến khách ngang sông, kết cấu hạ tầng đường thủy nội địa phục vụ thi công công trình, dự án và bến dân sinh",
+          "position": 2,
+          "name": "- Bản sao có chứng thực hoặc bản sao và xuất trình bản chính để đối chiếu giấy tờ về sử dụng đất để xây dựng cảng thủy nội địa do cơ quan có thẩm quyền cấp;",
+          "component_code": "000.00.00.G04-KQ3276",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "Thành phần hồ sơ công bố mở bến khách ngang sông, kết cấu hạ tầng đường thủy nội địa phục vụ thi công công trình, dự án và bến dân sinh",
+          "position": 3,
+          "name": "+ Bản sao giấy chứng nhận an toàn kỹ thuật và bảo vệ môi trường của pông-tông, phao neo thuộc đối tượng phải đăng kiểm (nếu sử dụng pông-tông làm cầu cảng);",
+          "component_code": "000.00.00.G04-KQ3253",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "Thành phần hồ sơ công bố mở bến khách ngang sông, kết cấu hạ tầng đường thủy nội địa phục vụ thi công công trình, dự án và bến dân sinh",
+          "position": 4,
+          "name": "Bản chính hoặc biểu mẫu điện tử văn bản đề nghị",
+          "component_code": "TP-G17.000424",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "Thành phần hồ sơ công bố mở bến khách ngang sông, kết cấu hạ tầng đường thủy nội địa phục vụ thi công công trình, dự án và bến dân sinh",
+          "position": 5,
+          "name": "- Biên bản nghiệm thu rà quét vật chướng ngại.",
+          "component_code": "000.00.00.G04-KQ3205",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "Thành phần hồ sơ công bố mở bến thủy nội địa, bến khách ngang sông khi có sự thay đổi về quy mô hoặc công năng sử dụng; hết thời hạn công bố hoạt động hoặc hết tuổi thọ thiết kế vẫn có nhu cầu tiếp tục khai thác",
+          "position": 1,
+          "name": "- Biên bản nghiệm thu hoàn thành công trình xây dựng đưa vào sử dụng; bản vẽ hoàn công mặt bằng, mặt chiếu đứng và mặt cắt ngang công trình cảng thủy nội địa;",
+          "component_code": "000.00.00.G04-KQ3278",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "Thành phần hồ sơ công bố mở bến thủy nội địa, bến khách ngang sông khi có sự thay đổi về quy mô hoặc công năng sử dụng; hết thời hạn công bố hoạt động hoặc hết tuổi thọ thiết kế vẫn có nhu cầu tiếp tục khai thác",
+          "position": 2,
+          "name": "Bản chính hoặc biểu mẫu điện tử văn bản đề nghị",
+          "component_code": "TP-G17.000424",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "Thành phần hồ sơ công bố mở bến thủy nội địa, bến khách ngang sông khi có sự thay đổi về quy mô hoặc công năng sử dụng; hết thời hạn công bố hoạt động hoặc hết tuổi thọ thiết kế vẫn có nhu cầu tiếp tục khai thác",
+          "position": 3,
+          "name": "Báo cáo kiểm định, đánh giá chất lượng công trình do tư vấn có tư cách pháp nhân thực hiện",
+          "component_code": "TP-G17.000425",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019f7322-784e-7619-9983-ebedee7ad384",
+              "fileName": "TTHC thường 04 – Mẫu đề nghị.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f7322-784e-7619-9983-ebedee7ad384/TTHC thường 04 – Mẫu đề nghị.docx"
+            }
+          ]
+        },
+        {
+          "section": "Thành phần hồ sơ công bố mở bến thủy nội địa, bến khách ngang sông khi có sự thay đổi về quy mô hoặc công năng sử dụng; hết thời hạn công bố hoạt động hoặc hết tuổi thọ thiết kế vẫn có nhu cầu tiếp tục khai thác",
+          "position": 4,
+          "name": "Hồ sơ, biên bản nghiệm thu hoàn thành cải tạo, sửa chữa, nâng cấp (nếu có)",
+          "component_code": "TP-G17.000422",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019f731e-2711-712a-b10e-c5b989c9685a",
+          "name": "Quyết định công bố mở cảng thủy nội địa",
+          "code": "KQ-G17.000058"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7d-7398-be4a-f3074c98837e",
+          "name": "Quy định mức thu, chế độ thu, nộp, quản lý và sử dụng phí, lệ phí trong lĩnh vực đường thủy nội địa và đường sắt",
+          "code": "198/2016/TT-BTC"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b673-4c2d13d60f2a",
+          "name": "sửa đổi, bổ sung một số Điều của Luật 23/2004/QH11 2004",
+          "code": "48/2014/QH13"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b672-345fa89f8a03",
+          "name": "Giao thông đường thủy nội địa",
+          "code": "23/2004/QH11"
+        },
+        {
+          "id": "019fdf71-76e2-704b-a3af-c9e4c43d5e83",
+          "name": "Thông tư số 21/2026/TT-BXD ngày 15/5/2026 của Bộ trưởng Bộ Xây dựng quy định về quản lý kết cấu hạ tầng đường thủy nội địa",
+          "code": "21/2026/TT-BXD"
+        },
+        {
+          "id": "019fdf72-377b-70a8-9722-cada8509b918",
+          "name": "Thông tư số 54/2026/TT-BXD ngày 01/7/2026 của Bộ trưởng Bộ Xây dựng quy định Sửa đổi, bổ sung một số điều của Thông tư số 20/2026/TT-BXD ngày 15/5/2026 của Bộ trưởng Bộ Xây dựng quy định về quản lý nhà nước chuyên ngành tại cảng thủy nội địa, bến thủy nội địa, khu neo đậu và quản lý hoạt động hoa tiêu đường thủy nội địa và Thông tư số 21/2026/TT-BXD ngày 15/5/2026 của Bộ trưởng Bộ Xây dựng quy định về quản lý kết cấu hạ tầng đường thủy nội địa",
+          "code": "54/2026/TT-BXD"
+        }
+      ]
+    }
+  ]
+}

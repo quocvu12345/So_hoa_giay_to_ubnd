@@ -1,0 +1,99 @@
+{
+  "ordinal": "183",
+  "managing_agency": "Sở Nông nghiệp Môi trường",
+  "procedure_code": "1.014275",
+  "name": "Tổ chức kinh tế nhận chuyển nhượng, thuê quyền sử dụng đất, nhận góp vốn bằng quyền sử dụng đất để thực hiện dự án đầu tư.",
+  "domain": "Đất đai (Bộ Nông nghiệp và Môi trường)",
+  "ministry_decision": "445/QĐ-BNNMT ngày 02/02/2026",
+  "hanoi_decision": "1285/QĐ-TTPVHCC ngày 12/9/2025",
+  "workflow_decision": "1489/QĐ-TTPVHC ngày 27/10/2025",
+  "fees": "Theo quy định của Luật phí và lệ phí và các văn bản quy phạm pháp luật hướng dẫn Luật phí và lệ phí",
+  "execution_level": "Cấp Xã",
+  "competent_authority": "UBND cấp xã",
+  "delegation_decision": "",
+  "delegation_expiry": "",
+  "receiving_location": "Điểm hỗ trợ DVC số",
+  "source_page": 7,
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "inventory_date": "2026-04-27",
+  "checked_at": "2026-11-12T22:23:54.946269+07:00",
+  "details": [
+    {
+      "id": "019d2bfa-8e9b-7016-8e52-bcc0f5d0bc05",
+      "code": "1.014275",
+      "name": "Tổ chức kinh tế nhận chuyển nhượng, thuê quyền sử dụng đất, nhận góp vốn bằng quyền sử dụng đất để thực hiện dự án đầu tư.",
+      "state": "ACTIVE",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1776326614525,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfa-8e9b-7016-8e52-bcc0f5d0bc05",
+      "raw_path": "evidence/dvc/details/019d2bfa-8e9b-7016-8e52-bcc0f5d0bc05.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Trích lục vị trí khu đất mà nhà đầu tư đề xuất thực hiện dự án",
+          "component_code": "000.00.00.G10-KQ006047",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Văn bản đề nghị chấp thuận cho tổ chức kinh tế nhận chuyển nhượng, thuê quyền sử dụng đất, nhận góp vốn bằng quyền sử dụng đất để thực hiện dự án đầu tư.",
+          "component_code": "G10-KQ006812",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c6c-7279-86b7-6625a17f954f",
+          "name": "Văn bản chấp thuận tổ chức kinh tế được nhận chuyển nhượng, thuê quyền sử dụng đất, nhận góp vốn bằng quyền sử dụng đất để thực hiện dự án đầu tư đối với trường hợp được chấp thuận.",
+          "code": "KQ.G10.000908"
+        },
+        {
+          "id": "019d2bb2-1c6c-7279-86b7-6b393d74116b",
+          "name": "Văn bản không chấp thuận tổ chức kinh tế được nhận chuyển nhượng, thuê quyền sử dụng đất, nhận góp vốn bằng quyền sử dụng đất để thực hiện dự án đầu tư đối với trường hợp không được chấp thuận.",
+          "code": "KQ.0041"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7e-72d1-afeb-9ac6648a4b4f",
+          "name": "Quy định về phân định thẩm quyền của chính quyền địa phương 02 cấp, phân quyền, phân cấp trong lĩnh vực đất đai",
+          "code": "151/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afe8-0a00a8be7fd7",
+          "name": "Nghị định 102/2024/NĐ-CP ngày 30/7/2024 của Chính phủ quy định chi tiết thi hành một số điều của Luật Đất đai.",
+          "code": "102/2024/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d86-7760-a644-ce39f72a6124",
+          "name": "Sửa đổi, bổ sung một số điều của các nghị định  quy định chi tiết thi hành Luật Đất đai",
+          "code": "226/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afe9-653aac8276ee",
+          "name": "Nghị định số 118/2025/NĐ-CP của Chính phủ: Về thực hiện thủ tục hành chính theo cơ chế một cửa, một cửa liên thông tại Bộ phận Một cửa và Cổng Dịch vụ công quốc gia",
+          "code": "118/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b672-a3322a8748a6",
+          "name": "Luật Đất đai ngày 18/01/2024;",
+          "code": "31/2024/QH15"
+        }
+      ]
+    }
+  ],
+  "lookup_status": "retrieved",
+  "currency_status": "snapshot_requires_later_amendment_check",
+  "errors": []
+}

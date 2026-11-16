@@ -1,0 +1,125 @@
+{
+  "ordinal": "394",
+  "managing_agency": "Sở Tài chính",
+  "procedure_code": "2.002228",
+  "name": "Thông báo chấm dứt hoạt động của tổ hợp tác",
+  "domain": "Thành lập và hoạt động của tổ hợp tác (Bộ Tài chính)",
+  "ministry_decision": "2103/QĐ-BTC ngày 23/06/2025",
+  "hanoi_decision": "951/QĐ-TTPVHCC",
+  "workflow_decision": "QĐ số 1025/QĐ- TTPVHCC ngày 03/7/2025",
+  "fees": "Không quy định",
+  "execution_level": "Cấp xã",
+  "competent_authority": "UBND cấp xã",
+  "delegation_decision": "",
+  "delegation_expiry": "",
+  "receiving_location": "Điểm hỗ trợ DVC số",
+  "id": "hn87-394",
+  "source_page": 16,
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "inventory_date": "2026-04-27",
+  "checked_at": "2026-11-12T22:25:04.694838+07:00",
+  "details": [
+    {
+      "id": "019d2bfc-e975-702b-8e64-5692d3b7c41e",
+      "code": "2.002228",
+      "name": "Thông báo chấm dứt hoạt động của tổ hợp tác không đăng ký",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1785492284630,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-e975-702b-8e64-5692d3b7c41e",
+      "raw_path": "evidence/dvc/details/019d2bfc-e975-702b-8e64-5692d3b7c41e.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "- Thông báo chấm dứt hoạt động tổ hợp tác không đăng ký (Mẫu số 3);",
+          "component_code": "TP-G12.0002025",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019fa683-40cb-758e-bfd6-430d368d8872",
+              "fileName": "Biểu mẫu số 03_Về việc chấm dứt hoạt động tổ hợp tác không đăng ký.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa683-40cb-758e-bfd6-430d368d8872/Biểu mẫu số 03_Về việc chấm dứt hoạt động tổ hợp tác không đăng ký.docx"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "- Biên bản họp tổ hợp tác về việc chấm dứt hoạt động (đối với trường hợp tổ hợp tác chấm dứt theo sự thỏa thuận của các thành viên);",
+          "component_code": "TP-G12.0002026",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 3,
+          "name": "- Bản sao hoặc bản chính biên bản họp tổ hợp tác về việc bầu tổ trưởng (trường hợp tổ trưởng nộp hồ sơ);",
+          "component_code": "TP-G12.0002027",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 4,
+          "name": "- Bản sao hoặc bản chính văn bản ủy quyền của một trăm phần trăm (100%) tổng số thành viên tổ hợp tác đồng ý (trường hợp người đại diện theo ủy quyền của các thành viên tổ hợp tác nộp hồ sơ).",
+          "component_code": "TP-G12.0002028",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 5,
+          "name": "Đối với tổ hợp tác thành lập trước ngày Nghị định số 294/2026/NĐ-CP có hiệu lực thi hành mà đến thời điểm chấm dứt hoạt động chưa cập nhật thông tin thay đổi thành viên với Ủy ban nhân dân cấp xã theo quy định thì hồ sơ thông báo chấm dứt hoạt động tổ hợp tác phải kèm theo bản sao sổ ghi chép về việc đóng góp của thành viên tổ hợp tác",
+          "component_code": "TP-G12.0002029",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c73-70ac-aa18-dbfbf73baac7",
+          "name": "Cập nhật vào Hệ thống thông tin về đăng ký hợp tác xã hoặc thông báo",
+          "code": "KQ.G12.001487"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d84-71c5-b670-d23f4a84e3b8",
+          "name": "Bộ luật Dân sự",
+          "code": "91/2015/QH13"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b671-d9e439ecbebe",
+          "name": "Luật Hợp tác xã",
+          "code": "17/2023/QH15"
+        },
+        {
+          "id": "019fa2f0-0446-76c2-b339-d67344e0c90b",
+          "name": "Nghị định về tổ hợp tác",
+          "code": "294/2026/NĐ-CP"
+        }
+      ]
+    }
+  ],
+  "lookup_status": "retrieved",
+  "currency_status": "snapshot_requires_later_amendment_check",
+  "errors": []
+}

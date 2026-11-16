@@ -1,0 +1,206 @@
+{
+  "id": "dvc-01a01e7f-8e69-703f-9cdb-cf83e34ef49a",
+  "procedure_code": "1.116442",
+  "name": "(Hà Nội) Đăng ký đất đai, tài sản gắn liền với đất, cấp Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất lần đầu đối với tổ chức đang sử dụng đất theo hình thức giao đất không thu tiền sử dụng đất",
+  "domain": "Đất đai",
+  "managing_agency": "UBND Thành phố Hà Nội",
+  "inventory_date": null,
+  "scope": "hanoi",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.477698+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "01a01e7f-8e69-703f-9cdb-cf83e34ef49a",
+      "code": "1.116442",
+      "name": "(Hà Nội) Đăng ký đất đai, tài sản gắn liền với đất, cấp Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất lần đầu đối với tổ chức đang sử dụng đất theo hình thức giao đất không thu tiền sử dụng đất",
+      "state": "ACTIVE",
+      "type": "SPECIFIC",
+      "is_ward": true,
+      "updated_at_source": 1787306785595,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/01a01e7f-8e69-703f-9cdb-cf83e34ef49a",
+      "raw_path": "evidence/dvc/details/01a01e7f-8e69-703f-9cdb-cf83e34ef49a.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Trường hợp nhiều người cùng sử dụng đất, cùng sở hữu tài sản thì kê khai tên người cùng sử dụng đất, cùng sở hữu tài sản đó theo Mẫu số 15a;",
+          "component_code": "MD15a.105.2026",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "01a01e7e-73c1-721b-950e-faddc4d6a54f",
+              "fileName": "15a c b dDanh sách những người sử dụng chung thửa đất, Sở hữu chung tài sản gắn liền với đất.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/01a01e7e-73c1-721b-950e-faddc4d6a54f/15a c b dDanh sách những người sử dụng chung thửa đất, Sở hữu chung tài sản gắn liền với đất.docx"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Trường hợp đăng ký nhiều thửa đất nông nghiệp mà không đề nghị cấp Giấy chứng nhận hoặc đề nghị cấp chung một Giấy chứng nhận cho nhiều thửa đất nông nghiệp thì không kê khai các nội dung tại Mục này mà chỉ ghi tổng số thửa và kê khai từng thửa đất theo Mẫu số 15b;",
+          "component_code": "MD15b.105.2026",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "01a01e7e-8d0f-7624-8410-f14e53c1b6b6",
+              "fileName": "15a c b dDanh sách những người sử dụng chung thửa đất, Sở hữu chung tài sản gắn liền với đất.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/01a01e7e-8d0f-7624-8410-f14e53c1b6b6/15a c b dDanh sách những người sử dụng chung thửa đất, Sở hữu chung tài sản gắn liền với đất.docx"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 3,
+          "name": "Trường hợp có nhiều nhà ở, công trình xây dựng khác trên cùng 01 thửa đất thì chỉ kê khai các thông tin chung và tổng diện tích của các nhà ở, công trình xây dựng; đồng thời lập danh sách nhà ở, công trình theo Mẫu số 15c.",
+          "component_code": "MD15c.105.2026",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "01a01e7e-b727-7309-89b9-2975ef5274eb",
+              "fileName": "15a c b dDanh sách những người sử dụng chung thửa đất, Sở hữu chung tài sản gắn liền với đất.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/01a01e7e-b727-7309-89b9-2975ef5274eb/15a c b dDanh sách những người sử dụng chung thửa đất, Sở hữu chung tài sản gắn liền với đất.docx"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 4,
+          "name": "Một trong các loại giấy tờ quy định tại Điều 137, khoản 4, khoản 5 Điều 148, khoản 4, khoản 5 Điều 149 của Luật Đất đai (nếu có);",
+          "component_code": "35.TH1.TPHS01.105.2026",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 5,
+          "name": "Sơ đồ hoặc bản trích lục bản đồ địa chính hoặc mảnh trích đo bản đồ địa chính thửa đất có xác nhận của UBND cấp xã về tình trạng tranh chấp đất đai (Bản chính - nếu có);",
+          "component_code": "35.TH1.TPHS02.105.2026",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 6,
+          "name": "Báo cáo kết quả rà soát hiện trạng sử dụng đất theo Mẫu 15d đối với trường hợp tổ chức trong nước, tổ chức tôn giáo, tổ chức tôn giáo trực thuộc đang sử dụng đất;",
+          "component_code": "35.TH1.TPHS03.105.2026",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 7,
+          "name": "Quyết định vị trí đóng quân hoặc văn bản giao cơ sở nhà đất hoặc địa điểm công trình quốc phòng, an ninh được cấp có thẩm quyền phê duyệt cho đơn vị quân đội, đơn vị công an, đơn vị sự nghiệp công lập thuộc Quân đội nhân dân, Công an nhân dân; doanh nghiệp nhà nước do Bộ Quốc phòng, Bộ Công an được giao quản lý, sử dụng đất, công trình gắn liền với đất;",
+          "component_code": "35.TH1.TPHS04.105.2026",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 8,
+          "name": "Hồ sơ thiết kế xây dựng công trình đã được cơ quan chuyên môn về xây dựng thẩm định hoặc đã có văn bản chấp thuận kết quả nghiệm thu hoàn thành hạng mục công trình, công trình xây dựng theo quy định của pháp luật về xây dựng đối với trường hợp chứng nhận quyền sở hữu công trình xây dựng trên đất nông nghiệp mà chủ sở hữu công trình không có một trong các loại giấy tờ quy định tại Điều 149 của Luật Đất đai hoặc công trình được miễn giấy phép xây dựng theo quy định của pháp luật về xây dựng;",
+          "component_code": "35.TH1.TPHS05.105.2026",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 9,
+          "name": "Văn bản thỏa thuận về việc cấp chung một Giấy chứng nhận đối với trường hợp có nhiều người chung quyền sử dụng đất, chung quyền sở hữu tài sản gắn liền với đất.",
+          "component_code": "35.TH1.TPHS06.105.2026",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 10,
+          "name": "Văn bản về việc đại diện theo quy định của pháp luật về dân sự đối với trường hợp thực hiện thủ tục đăng ký đất đai, tài sản gắn liền với đất thông qua người đại diện.",
+          "component_code": "35.TH1.TPHS07.105.2026",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 11,
+          "name": "Đơn đăng ký đất đai, tài sản gắn liền với đất theo Mẫu số 15 ban hành kèm theo Quyết định số 105/2026/QĐ-UBND của UBND Thành phố (Bản chính).",
+          "component_code": "MD15.105.2026",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "01a01e5e-ce74-7337-b918-a5275d8b92dc",
+              "fileName": "Mẫu số 15 (a,b,c,d).docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/01a01e5e-ce74-7337-b918-a5275d8b92dc/Mẫu số 15 (a,b,c,d).docx"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "id": "019ff533-7029-723b-a6dd-556109d230f3",
+          "name": "Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất",
+          "code": "KQ-H36.000002"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d84-71c5-b672-6d9bdd44c1c7",
+          "name": "Luật Nhà ở số 27/2023/QH15",
+          "code": "27/2023/QH15"
+        },
+        {
+          "id": "019eab71-e707-70af-996a-4e5b8b36e53e",
+          "name": "Luật Đất đai số 31/2024/QH15 ngày 18/01/2024 được sửa đổi bổ sung  một số điều bởi Luật số 43/2024/QH15, Luật số 47/2024/QH15 và Luật số 58/2024/QH15 của Quốc hội.",
+          "code": "31/2024/QH15 "
+        },
+        {
+          "id": "019f55b2-3b31-71cd-bf85-9982cee170c3",
+          "name": "Luật Kinh doanh bất động sản",
+          "code": "29/2023/QH15"
+        },
+        {
+          "id": "019d2bb3-5d80-7608-8ccf-eb907426ced3",
+          "name": "Luật Các tổ chức tín dụng số 02/1997/QHX ngày 12/12/1997",
+          "code": "02/1997/QHX"
+        }
+      ]
+    }
+  ]
+}

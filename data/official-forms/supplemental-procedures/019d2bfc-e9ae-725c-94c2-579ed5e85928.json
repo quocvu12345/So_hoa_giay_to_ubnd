@@ -1,0 +1,63 @@
+{
+  "id": "dvc-019d2bfc-e9ae-725c-94c2-579ed5e85928",
+  "procedure_code": "2.002264",
+  "name": "Hàng hóa xuất khẩu, nhập khẩu, hành lý ký gửi của người nhập cảnh, xuất cảnh thất lạc, nhầm lẫn",
+  "domain": "Hải quan",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.905209+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfc-e9ae-725c-94c2-579ed5e85928",
+      "code": "2.002264",
+      "name": "Hàng hóa xuất khẩu, nhập khẩu, hành lý ký gửi của người nhập cảnh, xuất cảnh thất lạc, nhầm lẫn",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1775639774835,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-e9ae-725c-94c2-579ed5e85928",
+      "raw_path": "evidence/dvc/details/019d2bfc-e9ae-725c-94c2-579ed5e85928.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Không quy định",
+          "component_code": "000.00.00.G12-KQ8930",
+          "original_quantity": 0,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c73-70ac-aa17-ace11f6adc06",
+          "name": "Văn bản chấp nhận",
+          "code": "KQ.G12.000585"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7d-7398-be4d-1c6dbc289d7a",
+          "name": "Quy định về thủ tục hải quan; kiểm tra, giám sát hải quan; thuế xuất khẩu thuế nhập khẩu và quản lý thuế đối vớỉ hàng hoá xuất khẩu, nhập khẩu.",
+          "code": "38/2015/TT-BTC"
+        },
+        {
+          "id": "019d2bb3-5d7d-7398-be4d-ff62cdf67da5",
+          "name": "Luật 54/2014/QH13",
+          "code": "54/2014/QH13"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afe7-9c25863596db",
+          "name": "Nghị định 08/2015/NĐ-CP",
+          "code": "08/2015/NĐ-CP"
+        }
+      ]
+    }
+  ]
+}

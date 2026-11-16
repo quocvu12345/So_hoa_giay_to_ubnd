@@ -1,0 +1,107 @@
+{
+  "id": "dvc-019d2bfc-4cd9-741d-bf54-a6e64c0023f6",
+  "procedure_code": "1.007895",
+  "name": "Thủ tục hải quan đối với hàng hóa xuất khẩu, nhập khẩu phục vụ các yêu cầu khẩn cấp; hàng hoá xuất khẩu, nhập khẩu chuyên dùng trực tiếp phục vụ quốc phòng, an ninh",
+  "domain": "Hải quan",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.948237+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfc-4cd9-741d-bf54-a6e64c0023f6",
+      "code": "1.007895",
+      "name": "Thủ tục hải quan đối với hàng hóa xuất khẩu, nhập khẩu phục vụ các yêu cầu khẩn cấp; hàng hoá xuất khẩu, nhập khẩu chuyên dùng trực tiếp phục vụ quốc phòng, an ninh",
+      "state": "ACTIVE",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1775640274215,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-4cd9-741d-bf54-a6e64c0023f6",
+      "raw_path": "evidence/dvc/details/019d2bfc-4cd9-741d-bf54-a6e64c0023f6.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "- Văn bản xác nhận yêu cầu bảo mật của Bộ trưởng Bộ Công an hoặc Bộ trưởng Bộ Quốc phòng: 01 bản chính (nếu có).",
+          "component_code": "000.00.00.G12-KQ8985",
+          "original_quantity": 0,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "- Vận tải đơn: 01 bản chụp từ bản gốc hoặc bản chính của các bản vận tải đơn có ghi chữ copy;",
+          "component_code": "000.00.00.G12-KQ8983",
+          "original_quantity": 0,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 3,
+          "name": "- Hóa đơn thương mại (nếu có): 01 bản chụp;",
+          "component_code": "000.00.00.G12-KQ8982",
+          "original_quantity": 0,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 4,
+          "name": "- Tờ khai hải quan: 02 bản.",
+          "component_code": "000.00.00.G12-KQ8981",
+          "original_quantity": 0,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 5,
+          "name": "- Văn bản xác nhận hàng hóa chuyên dùng phục vụ an ninh quốc phòng của Bộ trưởng Bộ Quốc phòng hoặc Bộ trưởng Bộ Công an hoặc văn bản xác nhận hàng hóa phục vụ yêu cầu khẩn cấp của cơ quan nhà nước có thẩm quyền: 01 bản chính;",
+          "component_code": "000.00.00.G12-KQ8984",
+          "original_quantity": 0,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c70-724b-96df-ddc2578f60d3",
+          "name": "Xác nhận thông quan hàng hóa",
+          "code": "KQ.G12.000583"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7d-7398-be4d-1c6dbc289d7a",
+          "name": "Quy định về thủ tục hải quan; kiểm tra, giám sát hải quan; thuế xuất khẩu thuế nhập khẩu và quản lý thuế đối vớỉ hàng hoá xuất khẩu, nhập khẩu.",
+          "code": "38/2015/TT-BTC"
+        },
+        {
+          "id": "019d2bb3-5d7d-7398-be4d-ff62cdf67da5",
+          "name": "Luật 54/2014/QH13",
+          "code": "54/2014/QH13"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afe7-9c25863596db",
+          "name": "Nghị định 08/2015/NĐ-CP",
+          "code": "08/2015/NĐ-CP"
+        }
+      ]
+    }
+  ]
+}

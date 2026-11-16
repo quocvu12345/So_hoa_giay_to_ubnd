@@ -1,0 +1,65 @@
+{
+  "id": "dvc-019d2bfe-7126-72a4-a6e4-aa41bd71dcf9",
+  "procedure_code": "1.009791",
+  "name": "Cho ý kiến về việc kéo dài thời hạn sử dụng của công trình hết thời hạn sử dụng theo thiết kế nhưng có nhu cầu sử dụng tiếp (trừ trường hợp nhà ở riêng lẻ)",
+  "domain": "Quản lý chất lượng công trình xây dựng",
+  "managing_agency": "Bộ Xây dựng",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.865208+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfe-7126-72a4-a6e4-aa41bd71dcf9",
+      "code": "1.009791",
+      "name": "Cho ý kiến về việc kéo dài thời hạn sử dụng của công trình hết thời hạn sử dụng theo thiết kế nhưng có nhu cầu sử dụng tiếp (trừ trường hợp nhà ở riêng lẻ)",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1782991558338,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfe-7126-72a4-a6e4-aa41bd71dcf9",
+      "raw_path": "evidence/dvc/details/019d2bfe-7126-72a4-a6e4-aa41bd71dcf9.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Báo cáo kết quả thực hiện công việc tổ chức kiểm tra, kiểm định để đánh giá chất lượng hiện trạng của công trình hoặc đánh giá an toàn công trình và đề xuất phương án gia cố, cải tạo, sửa chữa hư hỏng công trình (nếu có), xác định thời gian được tiếp tục sử dụng công trình sau khi sửa chữa, gia cố; tổ chức gia cố, cải tạo, sửa chữa hư hỏng công trình (nếu có) để đảm bảo công năng và an toàn sử dụng (theo Phụ lục XIa Nghị định số 207/2026/NĐ-CP).",
+          "component_code": "000.00.00.G17-KQ1489",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019f2112-08cb-73db-bec4-e17f3218582e",
+              "fileName": "BC KDTT.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f2112-08cb-73db-bec4-e17f3218582e/BC KDTT.docx"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c7a-7554-ace2-9571a0e4138a",
+          "name": "Thông báo ý kiến về việc kéo dài thời hạn sử dụng của công trình (theo Phụ lục XIb Nghị định số 207/2026/NĐ-CP).",
+          "code": "KQ.G17.000096"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019f1d67-d525-7040-bc15-3156f4c4411c",
+          "name": "Luật Xây dựng",
+          "code": "135/2025/QH15"
+        },
+        {
+          "id": "019f1d73-47b7-76bc-b4d8-6e249aeeee51",
+          "name": "Quy định chi tiết một số điều của Luật Xây dựng về quản lý chất lượng, thi công xây dựng và bảo trì công trình xây dựng",
+          "code": "207/2026/NĐ-CP"
+        }
+      ]
+    }
+  ]
+}

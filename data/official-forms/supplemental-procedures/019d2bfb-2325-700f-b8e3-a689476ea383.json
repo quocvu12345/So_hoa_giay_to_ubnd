@@ -1,0 +1,85 @@
+{
+  "id": "dvc-019d2bfb-2325-700f-b8e3-a689476ea383",
+  "procedure_code": "1.013745",
+  "name": "Xác nhận và giải quyết chế độ ưu đãi người có công với cách mạng và thân nhân",
+  "domain": "Người có công",
+  "managing_agency": "Bộ Nội vụ",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.994287+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfb-2325-700f-b8e3-a689476ea383",
+      "code": "1.013745",
+      "name": "Xác nhận và giải quyết chế độ ưu đãi người có công với cách mạng và thân nhân",
+      "state": "ACTIVE",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1776416014460,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-2325-700f-b8e3-a689476ea383",
+      "raw_path": "evidence/dvc/details/019d2bfb-2325-700f-b8e3-a689476ea383.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "(ii) Các giấy tờ được cấp trong thời gian tại ngũ có ghi mắc bệnh kèm bệnh án điều trị tâm thần do bệnh cũ tái phát của bệnh viện cấp tỉnh hoặc tương đương trở lên. Trường hợp sau khi xuất ngũ mà bệnh cũ tái phát dẫn đến tâm thần làm mất năng lực hành vi thì căn cứ vào bệnh án điều trị của bệnh viện cấp tỉnh hoặc tương đương trở lên.",
+          "component_code": "G09-KQ003210143",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "(iii) Quyết định phục viên hoặc quyết định xuất ngũ. Trường hợp không còn quyết định thì phải có giấy xác nhận của Bộ Chỉ huy quân sự cấp tỉnh hoặc cơ quan có thẩm quyền theo quy định của Bộ Công an.",
+          "component_code": "G09-KQ003210144",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 3,
+          "name": "(i) Một trong các giấy tờ sau:  Phiếu chuyển thương, chuyển viện; bản sao lý lịch đảng viên, lý lịch quân nhân, lý lịch công an nhân dân có ghi đầy đủ quá trình công tác; Giấy xác nhận hoạt động tại địa bàn có điều kiện kinh tế - xã hội đặc biệt khó khăn do Thủ trưởng cơ quan, đơn vị có thẩm quyền cấp căn cứ vào hồ sơ, lý lịch và địa bàn hoạt động; Quyết định giao đi làm nghĩa vụ quốc tế do Thủ trưởng cơ quan, đơn vị có thẩm quyền cấp; Trường hợp sau khi xuất ngũ mà bệnh cũ tái phát dẫn đến tâm thần làm mất năng lực hành vi thì căn cứ xác nhận của cơ quan có thẩm quyền theo quy định của Bộ Quốc phòng, Bộ Công an.",
+          "component_code": "G09-KQ003210145",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c4c-77ab-bf6f-6c5f29565bea",
+          "name": "Giấy chứng nhận bệnh binh và trợ cấp, phụ cấp",
+          "code": "KQ.G09.000338"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7d-7398-be46-59b9b0aa1881",
+          "name": "Quy định về phân định thẩm quyền và phân cấp thực hiện nhiệm vụ quản lý nhà nước trong lĩnh vực nội vụ",
+          "code": "09/2025/TT-BNV"
+        },
+        {
+          "id": "019d2bb3-5d7f-719e-b46c-6243b2efe083",
+          "name": "Hướng dẫn Pháp lệnh ưu đãi người có công với cách mạng",
+          "code": "31/2013/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b671-1efb450f35ab",
+          "name": "Pháp lệnh ưu đãi người có công với cách mạng",
+          "code": "02/2020/UBTVQH14"
+        }
+      ]
+    }
+  ]
+}

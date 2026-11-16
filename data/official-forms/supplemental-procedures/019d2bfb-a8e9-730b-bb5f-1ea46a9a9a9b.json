@@ -1,0 +1,134 @@
+{
+  "id": "dvc-019d2bfb-a8e9-730b-bb5f-1ea46a9a9a9b",
+  "procedure_code": "1.013587",
+  "name": "Thủ tục đăng ký đến, đi đối với phương tiện thủy nội địa đến, rời cửa khẩu cảng",
+  "domain": "Quản lý biên giới",
+  "managing_agency": "Bộ Quốc phòng",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.978464+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfb-a8e9-730b-bb5f-1ea46a9a9a9b",
+      "code": "1.013587",
+      "name": "Thủ tục đăng ký đến, đi đối với phương tiện thủy nội địa đến, rời cửa khẩu cảng",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1777598612319,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-a8e9-730b-bb5f-1ea46a9a9a9b",
+      "raw_path": "evidence/dvc/details/019d2bfb-a8e9-730b-bb5f-1ea46a9a9a9b.json",
+      "components": [
+        {
+          "section": "Giấy tờ phải nộp",
+          "position": 1,
+          "name": "+ 02 (hai) bản chính Danh sách hành khách (nếu có).",
+          "component_code": "000.00.00.G10-KQ1090",
+          "original_quantity": 2,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019dc915-46b9-715f-abfe-2f8e52814ac2",
+              "fileName": "Danh sách hành khách.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019dc915-46b9-715f-abfe-2f8e52814ac2/Danh sách hành khách.docx"
+            }
+          ]
+        },
+        {
+          "section": "Giấy tờ phải nộp",
+          "position": 2,
+          "name": "+ 02 (hai) bản chính Danh sách thuyền viên",
+          "component_code": "000.00.00.G10-KQ1089",
+          "original_quantity": 2,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019dc915-7314-7075-a456-f225eef023b2",
+              "fileName": "Danh sách thuyền viên.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019dc915-7314-7075-a456-f225eef023b2/Danh sách thuyền viên.docx"
+            }
+          ]
+        },
+        {
+          "section": "Giấy tờ phải nộp",
+          "position": 3,
+          "name": "02 bản chính Bản khai chung",
+          "component_code": "1.013587-01",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019dc916-7063-70ba-b29f-bea9f30a87b3",
+              "fileName": "Bản khai chung.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019dc916-7063-70ba-b29f-bea9f30a87b3/Bản khai chung.docx"
+            }
+          ]
+        },
+        {
+          "section": "Giấy tờ phải xuất trình",
+          "position": 1,
+          "name": "+ Đối với thuyền viên: sổ thuyền viên",
+          "component_code": "000.00.00.G10-KQ1091",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Giấy tờ phải xuất trình",
+          "position": 2,
+          "name": "+ Các loại giấy tờ người đăng ký phải xuất trình khi có yêu cầu của Biên phòng cửa khẩu cảng: Sổ nhật ký hành trình. Giấy tờ liên quan đến hàng hóa nếu có hàng hóa trên phương tiện thủy nội địa, bao gồm: Hợp đồng vận chuyển hàng hóa; hợp đồng mua bán hàng hóa và hóa đơn giá trị gia tăng hoặc phiếu xuất kho kiêm vận chuyển nội bộ; giấy phép vận chuyển của cơ quan có thẩm quyền của Việt Nam đối với các loại hàng hóa vận chuyển có điều kiện.",
+          "component_code": "000.00.00.G11-KQ10611",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Giấy tờ phải xuất trình",
+          "position": 3,
+          "name": "+ Đối với hành khách (nếu có): Hộ chiếu hoặc giấy tờ có giá trị đi lại quốc tế hoặc sử dụng Căn cước hoặc Căn cước công dân: Hành khách không phải xuất trình Căn cước hoặc Căn cước công dân nếu đơn vị Biên phòng cửa khẩu cảng kết nối, sử dụng được cơ sở dữ liệu quốc gia về dân cư và cơ sở dữ liệu căn cước công dân (Biên phòng cửa khẩu cảng tự tra cứu, kiểm tra). Trường hợp đơn vị Biên phòng cửa khẩu cảng chưa kết nối, sử dụng được cơ sở dữ liệu quốc gia về dân cư và cơ sở dũ liệu căn cước công dân, hành khách có thể xuất trình Căn cước hoặc Căn cước công dân trên VNeiD hoặc bản cứng.",
+          "component_code": "000.00.00.G10-KQ1092",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c6f-72b5-bd0b-20b72fb989a2",
+          "name": "Đóng dấu kiểm soát hoàn thành thủ tục",
+          "code": "KQ.G11.000404"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7f-719e-b46f-3623eee55f1d",
+          "name": "Nghị định quy định chi tiết một số điều của Bộ luật Hàng hải Việt Nam về quản lý hoạt động hàng hải",
+          "code": "58/2017/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7f-719e-b471-10f0667bd234",
+          "name": "Quy định về quản lý, bảo an ninh, trật tự tại cửa khẩu cảng",
+          "code": "77/2017/NĐ-CP"
+        }
+      ]
+    }
+  ]
+}

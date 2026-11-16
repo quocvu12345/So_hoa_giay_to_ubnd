@@ -1,0 +1,60 @@
+namespace HoSoSo.Application.Dossiers;
+
+public sealed record DossierListItem(
+    Guid Id, string Code, string Title, string Status, string StatusLabel,
+    string WorkGroupCode, string WorkGroupTitle, string DepartmentCode,
+    string? AssigneeName, DateOnly? DueOn, DateTimeOffset UpdatedAt,
+    int DocumentCount, int VerifiedCount, uint Version);
+
+public sealed record DossierDocumentItem(
+    Guid DocumentId, int Position, string Title, string DocumentForm, string? DocumentNumber, DateOnly? IssuedOn,
+    string? Direction, string RelationKind, string ReviewStatus, string IntakeStatus, int PendingFields, Guid? ProcedureComponentId = null);
+
+public sealed record DossierDetail(
+    Guid Id, string Code, string Title, string Status, string StatusLabel, string WorkflowCode,
+    string OrganizationCode, string DepartmentCode, string WorkGroupCode, string WorkGroupTitle,
+    string AccessLevel, string Notes, string? PhysicalLocation, string? CreatorOrganizationName,
+    Guid? AssigneeId, string? AssigneeName, DateOnly? DueOn, int Year,
+    DateTimeOffset CreatedAt, DateTimeOffset UpdatedAt, DateTimeOffset? ArchivedAt, uint Version,
+    IReadOnlyList<DossierDocumentItem> Documents, Completeness Completeness, string? ProcedureId = null, string? ProcedureName = null);
+
+public sealed record Completeness(int ComponentCount, int VerifiedCount, int PendingFieldCount, bool Ready, IReadOnlyList<string> Reasons);
+
+/// <summary>Một giấy tờ trong hồ sơ. <c>ComponentId</c> là thành phần thủ tục mà giấy tờ này đáp ứng (nếu đã gán).</summary>
+public sealed record ChecklistItem(Guid DocumentId, string Title, string State, int PendingFields, bool Classified, Guid? ComponentId = null);
+
+/// <summary>
+/// Một thành phần hồ sơ của thủ tục. <c>State</c>: <c>ok</c> (có giấy tờ và tất cả đã đối chiếu), <c>pending</c> (có giấy tờ nhưng còn cái chưa đối chiếu),
+/// <c>missing</c> (chưa có giấy tờ nào). <c>Required</c> theo bản công bố; mục không bắt buộc chỉ mang tính nhắc.
+/// </summary>
+public sealed record ChecklistComponent(
+    Guid ComponentId, string Section, int Position, string Name, bool Required, int OriginalQuantity, int CopyQuantity, bool HasElectronicForm,
+    string State, IReadOnlyList<Guid> DocumentIds, string Todo);
+
+/// <summary>Tóm tắt theo thủ tục. <c>Enforced</c> = cơ quan đã bật cài đặt <c>dossier.enforce_procedure_components</c>: thiếu thành phần bắt buộc thì khóa các bước cần giấy tờ đã đối chiếu; chưa bật thì chỉ cảnh báo.</summary>
+public sealed record ProcedureCompleteness(int RequiredCount, int RequiredOk, int RequiredPending, int RequiredMissing, bool AllRequiredOk, string? Warning, bool Enforced = false);
+
+public sealed record Checklist(
+    Completeness Summary, IReadOnlyList<ChecklistItem> Items,
+    string? ProcedureId = null, string? ProcedureName = null, IReadOnlyList<ChecklistComponent>? Components = null, ProcedureCompleteness? Procedure = null);
+
+public sealed record AllowedAction(string Action, string Label, bool RequiresNote, bool Primary, bool Enabled, string? DisabledReason, string ToState, string? Warning = null);
+
+public sealed record HistoryItem(long Id, string Action, string ActionLabel, string? FromState, string ToState, string Note, string ActorName, string ActorRole, DateTimeOffset At);
+
+public sealed record TransitionResult(string Status, string StatusLabel);
+
+public sealed record QueueItem(Guid DossierId, string Code, string Title, string Status, string StatusLabel, DateOnly? DueOn, DateTimeOffset UpdatedAt);
+public sealed record Workspace(IReadOnlyDictionary<string, IReadOnlyList<QueueItem>> Queues);
+public sealed record WorkspaceSummary(IReadOnlyDictionary<string, int> Counts, int Inbox, int UnreadNotifications);
+
+// Yêu cầu
+public sealed record ListDossiersQuery(string? Status, string? Q, string? DepartmentCode, string? WorkGroupCode, bool Mine, string? Cursor, int Limit = 25);
+public sealed record CreateDossierRequest(string Title, string WorkGroupCode, string? WorkflowCode, string? AccessLevel, string? Notes, DateOnly? InternalDueOn, string? CreatorOrganizationName, int? Year, string? ProcedureId = null);
+/// <summary><c>ProcedureId</c>: null giữ nguyên, chuỗi rỗng bỏ thủ tục, giá trị khác đổi thủ tục (giấy tờ đã gán thành phần của thủ tục cũ được gỡ gán).</summary>
+public sealed record UpdateDossierRequest(uint Version, string? Title, string? Notes, DateOnly? InternalDueOn, string? AccessLevel, string? PhysicalLocation, string? ProcedureId = null);
+public sealed record AddDocumentRequest(Guid DocumentId, string? Direction, Guid? ProcedureComponentId = null);
+/// <summary><c>ProcedureComponentId</c> gán giấy tờ vào thành phần của thủ tục; <c>ClearProcedureComponent</c> gỡ gán.</summary>
+public sealed record DocumentPlacement(Guid DocumentId, int? Position, string? Direction, string? RelationKind, Guid? ProcedureComponentId = null, bool ClearProcedureComponent = false);
+public sealed record AssignRequest(Guid UserId, DateOnly? DueOn, string? Note);
+public sealed record TransitionRequest(string Action, string? Note, long? Version);

@@ -1,0 +1,113 @@
+{
+  "id": "hn87-221",
+  "ordinal": "221",
+  "procedure_code": "1.012427",
+  "name": "Thành lập/mở rộng cụm công nghiệp",
+  "domain": "Cụm công nghiệp",
+  "department_id": "ktdt",
+  "department": "Phòng Kinh tế, Hạ tầng và Đô thị",
+  "authority_as_published": "UBND thành phố; UBND cấp xã",
+  "execution_level_as_published": "Cấp tỉnh, cấp xã",
+  "receiving_location_as_published": "Điểm hỗ trợ DVC số",
+  "inventory_date": "2026-04-27",
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "source_urls": [
+    "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf7-fc13-74f5-bd7a-f5c821c74ed2"
+  ],
+  "current_dvc_match": false,
+  "lifecycle": null,
+  "scope": "hanoi_commune_notice_2026_04_27",
+  "scope_note": "Mốc kiểm kê cấp xã Hà Nội; áp dụng từng thủ tục tại Từ Liêm còn phải theo thẩm quyền/ủy quyền hiện hành.",
+  "status": "has_fillable_templates",
+  "components": [
+    {
+      "id": "hn87-221-c001",
+      "code": "000.00.00.G02-KQ004715",
+      "name": "+ Văn bản của doanh nghiệp, hợp tác xã, tổ chức đề nghị làm chủ đầu tư xây dựng hạ tầng kỹ thuật cụm công nghiệp (trong đó có cam kết không vi phạm các quy định của pháp luật và chịu mọi chi phí, rủi ro nếu không được chấp thuận) kèm theo Báo cáo đầu tư thành lập/mở rộng cụm công nghiệp và bản đồ xác định vị trí, ranh giới của cụm công nghiệp;",
+      "section": "Hồ sơ đề nghị thành lập/mở rộng cụm công nghiệp (do doanh nghiệp, hợp tác xã, tổ chức thực hiện) bao gồm:",
+      "role": "applicant_form",
+      "scenario_status": "selected_for_test",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf7-fc13-74f5-bd7a-f5c821c74ed2",
+      "source_detail_id": "019d2bf7-fc13-74f5-bd7a-f5c821c74ed2",
+      "embedded_other_requirements": false,
+      "template_candidates": [
+        "template-05425a069d36703c"
+      ],
+      "template_selection_method": "first_matching_source_attachment",
+      "selected_template_id": "template-05425a069d36703c",
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-221-c002",
+      "code": "000.00.00.G02-KQ004717",
+      "name": "+ Bản sao hợp lệ tài liệu chứng minh năng lực tài chính của doanh nghiệp, hợp tác xã, tổ chức đề nghị làm chủ đầu tư xây dựng hạ tầng kỹ thuật gồm ít nhất một trong các tài liệu sau: Báo cáo tài chính 02 năm gần nhất; cam kết hỗ trợ tài chính của công ty mẹ; cam kết hỗ trợ tài chính của tổ chức tài chính; bảo lãnh về năng lực tài chính; tài liệu khác chứng minh năng lực tài chính (nếu có);",
+      "section": "Hồ sơ đề nghị thành lập/mở rộng cụm công nghiệp (do doanh nghiệp, hợp tác xã, tổ chức thực hiện) bao gồm:",
+      "role": "supporting_submit",
+      "scenario_status": "conditional_needs_review",
+      "required_as_published": false,
+      "original_quantity": 0,
+      "copy_quantity": 1,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf7-fc13-74f5-bd7a-f5c821c74ed2",
+      "source_detail_id": "019d2bf7-fc13-74f5-bd7a-f5c821c74ed2",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-221-c003",
+      "code": "000.00.00.G02-KQ004718",
+      "name": "+ Bản sao hợp lệ tài liệu chứng minh kinh nghiệm của doanh nghiệp, hợp tác xã, tổ chức đề nghị làm chủ đầu tư xây dựng hạ tầng kỹ thuật cụm công nghiệp và các văn bản, tài liệu khác có liên quan (nếu có).",
+      "section": "Hồ sơ đề nghị thành lập/mở rộng cụm công nghiệp (do doanh nghiệp, hợp tác xã, tổ chức thực hiện) bao gồm:",
+      "role": "supporting_submit",
+      "scenario_status": "conditional_needs_review",
+      "required_as_published": false,
+      "original_quantity": 0,
+      "copy_quantity": 1,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf7-fc13-74f5-bd7a-f5c821c74ed2",
+      "source_detail_id": "019d2bf7-fc13-74f5-bd7a-f5c821c74ed2",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    }
+  ],
+  "service_cases": [
+    {
+      "id": "019daa73-c223-741e-956c-3a20ce71eb9f",
+      "code": "1.012427.01",
+      "name": "Thành lập/mở rộng cụm công nghiệp",
+      "source_processing_time": {
+        "qty": 42,
+        "type": "WORKING_DAY"
+      },
+      "has_case_specific_components": false
+    }
+  ],
+  "selected_template_ids": [
+    "template-05425a069d36703c"
+  ],
+  "source_component_groups": [
+    {
+      "name": "Hồ sơ đề nghị thành lập/mở rộng cụm công nghiệp (do doanh nghiệp, hợp tác xã, tổ chức thực hiện) bao gồm:",
+      "component_count": 3,
+      "source_detail_id": "019d2bf7-fc13-74f5-bd7a-f5c821c74ed2"
+    }
+  ],
+  "conditional_component_groups": [],
+  "default_test_scenario": {
+    "channel": "direct",
+    "applicant_submits_self": true,
+    "authorized": false,
+    "special_case_flags": [],
+    "selected_conditional_group": null,
+    "case_selection_method": "ordinary_direct_submission",
+    "case_status": "scenario_for_testing_not_a_legal_eligibility_decision"
+  },
+  "requirement_note": "required_as_published được giữ nguyên; false không chứng minh giấy tờ luôn tùy chọn. Các nhóm executionCases có thể là mục giấy tờ/hướng dẫn, không phải các phương án loại trừ nhau."
+}

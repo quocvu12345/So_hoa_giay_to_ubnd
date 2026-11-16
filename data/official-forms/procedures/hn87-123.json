@@ -1,0 +1,135 @@
+{
+  "ordinal": "123",
+  "managing_agency": "Sở Nông nghiệp Môi trường",
+  "procedure_code": "1.005412",
+  "name": "Phê duyệt đối tượng được hỗ trợ phí bảo hiểm nông nghiệp",
+  "domain": "Bảo hiểm (Bộ Tài chính)",
+  "ministry_decision": "2194/QĐ-BTC ngày 27/06/2025",
+  "hanoi_decision": "1054/QĐ-TTPVHCC ngày 11/7/2025",
+  "workflow_decision": "443/QĐ-TTPVHCC ngày 06/4/2026",
+  "fees": "Không quy định",
+  "execution_level": "Cấp Xã",
+  "competent_authority": "UBND cấp xã",
+  "delegation_decision": "",
+  "delegation_expiry": "",
+  "receiving_location": "Điểm hỗ trợ DVC số",
+  "id": "hn87-123",
+  "source_page": 5,
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "inventory_date": "2026-04-27",
+  "checked_at": "2026-11-12T22:24:34.536160+07:00",
+  "details": [
+    {
+      "id": "019d2bfb-df44-756d-b736-0d69f7d85d0f",
+      "code": "1.005412",
+      "name": "Phê duyệt đối tượng được hỗ trợ phí bảo hiểm nông nghiệp",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1791516350624,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-df44-756d-b736-0d69f7d85d0f",
+      "raw_path": "evidence/dvc/details/019d2bfb-df44-756d-b736-0d69f7d85d0f.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Đơn đề nghị xem xét, phê duyệt đối tượng được hỗ trợ phí bảo hiểm nông nghiệp theo Mẫu số 01 quy định tại Phụ lục kèm theo Nghị định số 346/2026/NĐ-CP ngày 05/9/2026",
+          "component_code": "000.00.00.G12-1588",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "01a0fc0e-314c-77fb-92fd-2c2d1a95fc3d",
+              "fileName": "Mẫu số 01 - BM.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/01a0fc0e-314c-77fb-92fd-2c2d1a95fc3d/Mẫu số 01 - BM.docx"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Bản kê khai về cây trồng, vật nuôi, nuôi trồng thủy sản theo Mẫu số 02 quy định tại Phụ lục kèm theo Nghị định số 58/2018/NĐ-CP ngày 18/4/2018",
+          "component_code": "000.00.00.G12-135588",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "01a0fc0e-559a-76c8-bafe-6e5767da2bf7",
+              "fileName": "bm -Mẫu số 02.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/01a0fc0e-559a-76c8-bafe-6e5767da2bf7/bm -Mẫu số 02.docx"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 3,
+          "name": "Tài liệu chứng minh thuộc đối tượng được hỗ trợ phí bảo hiểm nông nghiệp đối với trường hợp đối tượng được hỗ trợ phí bảo hiểm nông nghiệp là tổ chức sản xuất nông nghiệp: Bản sao Giấy chứng nhận đăng ký doanh nghiệp hoặc Bản sao Giấy chứng nhận đăng ký tổ hợp tác, hợp tác xã, liên hiệp hợp tác xã; Bản sao Hợp đồng liên kết hoặc Bản sao Giấy chứng nhận sản phẩm nông nghiệp đảm bảo chất lượng, an toàn thực phẩm hoặc Bản sao Giấy chứng nhận doanh nghiệp nông nghiệp ứng dụng công nghệ cao hoặc Bản sao văn bản xác nhận là doanh nghiệp công nghệ cao hoặc Bản sao Giấy chứng nhận đăng ký đầu tư hoặc Bản sao văn bản xác nhận của Ban quản lý khu nông nghiệp ứng dụng công nghệ cao. Không yêu cầu cung cấp thành phần hồ sơ này khi các thông tin trong thành phần hồ sơ đã có dữ liệu trong các cơ sở dữ liệu được cơ quan chủ quản cơ sở dữ liệu công bố. Trường hợp không khai thác được thông tin hoặc thông tin khai thác được không đầy đủ, không chính xác thì cơ quan tiếp nhận, giải quyết thủ tục hành chính yêu cầu tổ chức, cá nhân sản xuất nông nghiệp bổ sung thành phần hồ sơ để giải quyết thủ tục hành chính.",
+          "component_code": "G12-185566",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "01a0fc0a-8224-74cb-8445-61ebd3c13ef9",
+          "name": "Danh sách tổ chức, cá nhân sản xuất nông nghiệp thuộc đối tượng được hỗ trợ phí bảo hiểm nông nghiệp",
+          "code": "KQ.G12.000541"
+        },
+        {
+          "id": "01a0fc0a-cb60-701a-ab68-35eb2408c2fd",
+          "name": "Quyết định phê duyệt danh sách đối tượng được hỗ trợ",
+          "code": "KQ.G12.000542"
+        },
+        {
+          "id": "01a0fc0b-0e09-7274-8801-6c2b3b8170ad",
+          "name": "UBND cấp xã niêm yết công khai danh sách tổ chức, cá nhân sản xuất nông nghiệp thuộc đối tượng được hỗ trợ phí bảo hiểm",
+          "code": "KQ.G12.000544"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7e-72d1-afe9-e5df60a9dbdb",
+          "name": "Nghị định số 125/2025/NĐ-CP của Chính phủ: Quy định về phân định thẩm quyền của chính quyền địa phương 02 cấp trong lĩnh vực quản lý nhà nước của Bộ Tài chính",
+          "code": "125/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b670-aab4da2183f2",
+          "name": "Kinh doanh bảo hiểm",
+          "code": "24/2000/QH10"
+        },
+        {
+          "id": "01a0fb82-2b7d-729a-a105-fdf62cf9eed1",
+          "name": "Nghị định số 58/2018/NĐ-CP ngày 18/4/2018 của Chính phủ về bảo hiểm nông nghiệp được sửa đổi, bổ sung bởi Nghị định số 346/2026/NĐ-CP ngày 05/9/2026",
+          "code": "346/2026/NĐ-CP "
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afe6-bc261ac9e746",
+          "name": "về bảo hiểm nông nghiệp",
+          "code": "58/2018/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b670-c216265c4174",
+          "name": "Sửa đổi, bổ sung một số điều của Luật Kinh doanh bảo hiểm",
+          "code": "61/2010/QH12"
+        },
+        {
+          "id": "019d2bb3-5d86-7760-a63b-34a90db4148f",
+          "name": "Luật Kinh doanh bảo hiểm;",
+          "code": "08/2022/QH15"
+        }
+      ]
+    }
+  ],
+  "lookup_status": "retrieved",
+  "currency_status": "snapshot_requires_later_amendment_check",
+  "errors": []
+}

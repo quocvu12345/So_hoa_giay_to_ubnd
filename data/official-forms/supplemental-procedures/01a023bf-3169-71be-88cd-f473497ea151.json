@@ -1,0 +1,131 @@
+{
+  "id": "dvc-01a023bf-3169-71be-88cd-f473497ea151",
+  "procedure_code": "1.116462",
+  "name": "Giải quyết chế độ đối với người lao động không đủ điều kiện hưởng lương hưu và chưa đủ tuổi hưởng trợ cấp hưu trí xã hội",
+  "domain": "Thực hiện chính sách BHXH",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.473115+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "01a023bf-3169-71be-88cd-f473497ea151",
+      "code": "1.116462",
+      "name": "Giải quyết chế độ đối với người lao động không đủ điều kiện hưởng lương hưu và chưa đủ tuổi hưởng trợ cấp hưu trí xã hội",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1792931550046,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/01a023bf-3169-71be-88cd-f473497ea151",
+      "raw_path": "evidence/dvc/details/01a023bf-3169-71be-88cd-f473497ea151.json",
+      "components": [
+        {
+          "section": "Theo quy định tại Điều 24 Luật BHXH số 41/2024/QH15, gồm: 1. Trợ cấp hằng tháng",
+          "position": 1,
+          "name": "Sổ BHXH",
+          "component_code": "TP.G12.98.083",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Theo quy định tại Điều 24 Luật BHXH số 41/2024/QH15, gồm: 1. Trợ cấp hằng tháng",
+          "position": 2,
+          "name": "Văn bản đề nghị theo Mẫu số 14-HSB",
+          "component_code": "TP.G12.98.089",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "01a02de5-e51a-722c-b292-89c5fb20dec8",
+              "fileName": "14-HSB.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/01a02de5-e51a-722c-b292-89c5fb20dec8/14-HSB.docx"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c82-739b-8b99-657b0405c94b",
+          "name": "Trường hợp Cấp lại, đổi, điều chỉnh thông tin trên thẻ BHYT: Thẻ BHYT",
+          "code": "KQ.G12.001192"
+        },
+        {
+          "id": "019d2bb2-1c82-739b-8b99-d6be7cc06c52",
+          "name": "Tiền trợ cấp",
+          "code": "KQ.G12.001151"
+        },
+        {
+          "id": "019d2bb2-1c82-739b-8b99-e259405a083c",
+          "name": "Bản quá trình đóng BHXH (Mẫu 04-HSB)",
+          "code": "KQ.G12.001309"
+        },
+        {
+          "id": "01a023b0-414d-7722-9a1c-e29ce36c75f9",
+          "name": "Thông báo về số tiền đóng một lần cho phần còn thiếu (Mẫu số 35-HSB) (nếu NLĐ có nguyện vọng đóng)",
+          "code": "KQ.G12.001145"
+        },
+        {
+          "id": "01a02796-0d36-75d9-8e85-88ee197c0471",
+          "name": "Quyết định về việc hưởng trợ cấp hằng tháng (theo Điều 23 Luật BHXH) (Mẫu số 07E - HSB)",
+          "code": "KQ.G12.001146"
+        },
+        {
+          "id": "01a172c2-4d1c-72ee-a0b5-8b1a0228f3fe",
+          "name": "Thông báo về việc chi trả lương hưu, trợ cấp BHXH đối với trường hợp di chuyển hưởng chế độ đến địa bàn khác (Mẫu 23-HSB)",
+          "code": "KQ.G12.001166"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7e-72d1-afeb-f6d50e5e6371",
+          "name": "Quy định chi tiết và hướng dẫn thi hành một số điều của Luật Bảo hiểm xã hội về bảo hiểm xã hội tự nguyện",
+          "code": "159/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afec-9a2fdf61b46d",
+          "name": "NGHỊ ĐỊNH  176/2025/NĐ-CP NGÀY 30/6/2025 QUY ĐỊNH CHI TIẾT VÀ HƯỚNG DẪN THI HÀNH MỘT SỐ ĐIỀU CỦA LUẬT BẢO HIỂM XÃ HỘI VỀ TRỢ CẤP HƯU TRÍ XÃ HỘI",
+          "code": "176/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d87-7195-a440-f511123122ee",
+          "name": "Luật Bảo hiểm xã hội",
+          "code": "41/2024/QH15"
+        },
+        {
+          "id": "019e72eb-488d-760e-abb8-0a3bb6585c78",
+          "name": "SỬA ĐỔI, BỔ SUNG MỘT SỐ ĐIỀU CỦA QUY TRÌNH GIẢI QUYẾT HƯỞNG CÁC CHẾ ĐỘ BẢO HIỂM XÃ HỘI, CHI TRẢ CÁC CHẾ ĐỘ BẢO HIỂM XÃ HỘI, BẢO HIỂM THẤT NGHIỆP BAN HÀNH KÈM THEO QUYẾT ĐỊNH SỐ 2222/QĐ-BHXH NGÀY 29/7/2025 CỦA GIÁM ĐỐC BẢO HIỂM XÃ HỘI VIỆT NAM",
+          "code": "313/QĐ-BHXH "
+        },
+        {
+          "id": "01a023be-84c8-77db-ade3-9c613cd83670",
+          "name": "Quy trình thu bảo hiểm xã hội, bảo hiểm y tế, bảo hiểm thất nghiệp; cấp sổ bảo hiểm xã hội, thẻ bảo hiểm y tế",
+          "code": "366/QĐ-BHXH"
+        },
+        {
+          "id": "019d2bb3-5d7c-71ab-9f07-f538ffa2f69d",
+          "name": "BAN HÀNH QUY TRÌNH GIẢI QUYẾT HƯỞNG CÁC CHẾ ĐỘ BẢO HIỂM XÃ HỘI, CHI TRẢ CÁC CHẾ ĐỘ BẢO HIỂM XÃ HỘI, BẢO HIỂM THẤT NGHIỆP",
+          "code": "2222/QĐ-BHXH"
+        },
+        {
+          "id": "019d2bb3-5d7d-7398-be46-85fda49d119e",
+          "name": "QUY ĐỊNH CHI TIẾT MỘT SỐ ĐIỀU CỦA LUẬT BẢO HIỂM XÃ HỘI VỀ BẢO HIỂM XÃ HỘI BẮT BUỘC",
+          "code": "12/2025/TT-BNV"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afeb-e5ff16f715c7",
+          "name": "Quy định chi tiết và hướng dẫn thi hành một số điều của Luật Bảo hiểm xã hội về bảo hiểm xã hội bắt buộc",
+          "code": "158/2025/NĐ-CP"
+        }
+      ]
+    }
+  ]
+}

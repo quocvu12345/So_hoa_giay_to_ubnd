@@ -1,0 +1,133 @@
+{
+  "id": "dvc-019d2bfc-6c7e-731f-9543-37ef42d456a9",
+  "procedure_code": "1.008589",
+  "name": "Không tính tiền chậm nộp",
+  "domain": "Thuế",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.932642+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfc-6c7e-731f-9543-37ef42d456a9",
+      "code": "1.008589",
+      "name": "Không tính tiền chậm nộp",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1785399202039,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-6c7e-731f-9543-37ef42d456a9",
+      "raw_path": "evidence/dvc/details/019d2bfc-6c7e-731f-9543-37ef42d456a9.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Văn bản đề nghị không tính tiền chậm nộp theo mẫu số 01/KTCN Phụ lục III ban hành kèm theo Thông tư số 89/2026/TT-BTC ngày 30/6/2026 của Bộ Tài chính",
+          "component_code": "G12.0012242",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019fad49-388b-77d3-bee4-c9684abd6430",
+              "fileName": "1. Mẫu số 01 KTCN.doc",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fad49-388b-77d3-bee4-c9684abd6430/1. Mẫu số 01 KTCN.doc"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Từ 01/7/2026 đến thời điểm theo lộ trình của cơ quan thuế quy định tại khoản 2 Điều 99 Thông tư số 89/2026/TT-BTC ngày 30/6/2026 của Bộ Tài chính thì văn bản đề nghị không tính tiền chậm nộp theo mẫu số 01/KTCN, văn bản có xác nhận của đơn vị sử dụng ngân sách nhà nước về việc người nộp thuế chưa được thanh toán theo mẫu số 02/KTCN thực hiện theo mẫu ban hành kèm theo Thông tư số 80/2021/TT-BTC ngày 29/9/2021 của Bộ Tài chính (đã được sửa đổi, bổ sung).",
+          "component_code": "G12.0012244",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019fad4a-bcd3-74ed-9ce9-1012b56aa860",
+              "fileName": "02 KTCN TT 80.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fad4a-bcd3-74ed-9ce9-1012b56aa860/02 KTCN TT 80.docx"
+            },
+            {
+              "id": "019fad4a-be01-77ff-8c80-6ccd49701b5e",
+              "fileName": "01 KTCN TT 80.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fad4a-be01-77ff-8c80-6ccd49701b5e/01 KTCN TT 80.docx"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 3,
+          "name": "Bản chính hoặc bản sao có chứng thực văn bản có xác nhận của đơn vị sử dụng ngân sách nhà nước về việc người nộp thuế chưa được thanh toán theo mẫu số 02/KTCN Phụ lục III ban hành kèm theo Thông tư số 89/2026/TT-BTC ngày 30/6/2026 của Bộ Tài chính",
+          "component_code": "G12.0012245",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019fb133-be3d-753b-9294-6d57c213084f",
+              "fileName": "2. Mẫu số 02 KTCN.doc",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fb133-be3d-753b-9294-6d57c213084f/2. Mẫu số 02 KTCN.doc"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 4,
+          "name": "Bản sao hợp đồng cung ứng hàng hoá, dịch vụ ký với chủ đầu tư",
+          "component_code": "G12.0012246",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c71-7574-afe8-1c9a3557c450",
+          "name": "Thông báo không chấp thuận không tính tiền chậm nộp (Mẫu số 04/KTCN)",
+          "code": "KQ.G12.000571"
+        },
+        {
+          "id": "019d2bb2-1c71-7574-afe8-2120d8dd740f",
+          "name": "Thông báo chấp thuận không tính tiền chậm nộp (Mẫu số 05/KTCN)",
+          "code": "KQ.G12.000572"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019f356e-75e3-7494-a2f3-672d8dce61a6",
+          "name": "QUY ĐỊNH CHI TIẾT MỘT SỐ ĐIỀU VÀ BIỆN PHÁP ĐỂ TỔ CHỨC, HƯỚNG DẪN THI HÀNH LUẬT QUẢN LÝ THUẾ",
+          "code": "252/2026/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afe9-653aac8276ee",
+          "name": "Nghị định số 118/2025/NĐ-CP của Chính phủ: Về thực hiện thủ tục hành chính theo cơ chế một cửa, một cửa liên thông tại Bộ phận Một cửa và Cổng Dịch vụ công quốc gia",
+          "code": "118/2025/NĐ-CP"
+        },
+        {
+          "id": "019f8db3-9765-740b-8b90-682677b9c421",
+          "name": "Thông tư quy định chi tiết một số điều của Luật Quản lý thuế và Nghị định số 252/2026/NĐ-CP của Chính phủ quy định chi tiết một số điều và biện pháp để tổ chức, hướng dẫn thi hành Luật Quản lý thuế",
+          "code": "89/2026/TT-BTC"
+        },
+        {
+          "id": "019e5e83-1282-771d-9014-49799413a4e5",
+          "name": "Luật số 108/2025/QH15 của Quốc hội: Luật Quản lý thuế",
+          "code": "108/2025/QH15"
+        }
+      ]
+    }
+  ]
+}

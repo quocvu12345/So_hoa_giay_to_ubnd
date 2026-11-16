@@ -1,0 +1,140 @@
+{
+  "ordinal": "278",
+  "managing_agency": "Sở Tư pháp",
+  "procedure_code": "2.002165",
+  "name": "Giải quyết yêu cầu bồi thường tại cơ quan trực tiếp quản lý người thi hành công vụ gây thiệt hại (cấp xã)",
+  "domain": "Bồi thường nhà nước",
+  "ministry_decision": "3787 /QĐ-BTP ngày 31/12/2025",
+  "hanoi_decision": "295/QĐ-TTPVHCC ngày 08/3/2026",
+  "workflow_decision": "309/QĐ-TTPVHCC ngày 13/3/2026",
+  "fees": "Không quy định",
+  "execution_level": "Cấp xã",
+  "competent_authority": "UBND cấp xã",
+  "delegation_decision": "",
+  "delegation_expiry": "",
+  "receiving_location": "Điểm hỗ trợ DVC số",
+  "id": "hn87-278",
+  "source_page": 11,
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "inventory_date": "2026-04-27",
+  "checked_at": "2026-11-12T22:24:42.910497+07:00",
+  "details": [
+    {
+      "id": "019d2bfd-9e02-77dc-b8bb-e19988c9428f",
+      "code": "2.002165",
+      "name": "Giải quyết yêu cầu bồi thường tại cơ quan trực tiếp quản lý người thi hành công vụ gây thiệt hại (cấp xã)",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1782272514410,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfd-9e02-77dc-b8bb-e19988c9428f",
+      "raw_path": "evidence/dvc/details/019d2bfd-9e02-77dc-b8bb-e19988c9428f.json",
+      "components": [
+        {
+          "section": "a.Trường hợp người bị thiệt hại trực tiếp yêu cầu bồi thường",
+          "position": 1,
+          "name": "Văn bản yêu cầu bồi thường",
+          "component_code": "TP-G15.32-99971",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019ef7b5-f3c7-75bd-ae80-3ede1356cb2f",
+              "fileName": "Mẫu 01.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019ef7b5-f3c7-75bd-ae80-3ede1356cb2f/Mẫu 01.docx"
+            }
+          ]
+        },
+        {
+          "section": "a.Trường hợp người bị thiệt hại trực tiếp yêu cầu bồi thường",
+          "position": 2,
+          "name": "Văn bản làm căn cứ yêu cầu bồi thường (nếu có)",
+          "component_code": "TP-G15.32-99970",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "b. Trường hợp người yêu cầu bồi thường là người thừa kế (nếu có nhiều người thừa kế thì những người thừa kế đó phải cử ra một người đại diện) hoặc là người đại diện của người bị thiệt hại thì ngoài các tài liệu quy định tại điểm B.II.2 Mục 1 Phụ lục I.6 Nghị quyết số 66.18/2026/NQ-CP, hồ sơ còn phải có các tài liệu sau đây:",
+          "position": 1,
+          "name": "- Văn bản xác nhận hoặc chứng minh quyền đại diện hợp pháp trong trường hợp người yêu cầu bồi thường là người đại diện của người bị thiệt hại",
+          "component_code": "TP-G15.32-99969",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "b. Trường hợp người yêu cầu bồi thường là người thừa kế (nếu có nhiều người thừa kế thì những người thừa kế đó phải cử ra một người đại diện) hoặc là người đại diện của người bị thiệt hại thì ngoài các tài liệu quy định tại điểm B.II.2 Mục 1 Phụ lục I.6 Nghị quyết số 66.18/2026/NQ-CP, hồ sơ còn phải có các tài liệu sau đây:",
+          "position": 2,
+          "name": "Văn bản xác nhận hoặc chứng minh quyền thừa kế hợp pháp của người yêu cầu bồi thường đối với trường hợp người bị thiệt hại chết",
+          "component_code": "TP-G15.32-99968",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "b. Trường hợp người yêu cầu bồi thường là người thừa kế (nếu có nhiều người thừa kế thì những người thừa kế đó phải cử ra một người đại diện) hoặc là người đại diện của người bị thiệt hại thì ngoài các tài liệu quy định tại điểm B.II.2 Mục 1 Phụ lục I.6 Nghị quyết số 66.18/2026/NQ-CP, hồ sơ còn phải có các tài liệu sau đây:",
+          "position": 3,
+          "name": "Trường hợp người yêu cầu bồi thường trực tiếp nộp hồ sơ thì các giấy tờ quy định tại điểm B.II.2.b và điểm B.II.3 Mục 1 Phụ lục I.6 Nghị quyết số 66.18/2026/NQ-CP là bản sao nhưng phải có bản chính để đối chiếu; trường hợp người yêu cầu bồi thường gửi hồ sơ qua dịch vụ bưu chính thì các giấy tờ quy định tại điểm B.II.2.b điểm B.II.3 Mục 1 Phụ lục I.6 Nghị quyết số 66.18/2026/NQ-CP là bản sao có chứng thực theo quy định của pháp luật về chứng thực; trường hợp người yêu cầu bồi thường nộp yêu cầu bồi thường trực tuyến trên Cổng Dịch vụ công quốc gia thì các giấy tờ quy định tại điểm B.II.2.b điểm B.II.3 Mục 1 Phụ lục I.6 Nghị quyết số 66.18/2026/NQ-CP là bản sao chứng thực điện tử",
+          "component_code": "TP-G15.32-99967",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c78-7725-a750-0185277400f3",
+          "name": "Quyết định giải quyết bồi thường",
+          "code": "KQ.G15.000049"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019e8b88-c0b0-737a-954f-a60837c08c4f",
+          "name": "Nghị quyết số 66.18/2026/NQ-CP ngày 18 tháng 5 năm 2026 của Chính phủ về việc phân quyền, cắt giảm, đơn giản hóa thủ tục hành chính, điều kiện kinh doanh",
+          "code": "66.18/2026/NQ-CP "
+        },
+        {
+          "id": "019d2bb3-5d7f-719e-b470-22af3c5ee091",
+          "name": "Nghị quyết số 66.7/2025/NQ-CP của Chính phủ: Quy định cắt giảm, đơn giản hóa thủ tục hành chính dựa trên dữ liệu",
+          "code": "66.7/2025/NQ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7d-7398-be52-49e08cdcaa63",
+          "name": "Ban hành một số biểu mẫu trong công tác bồi thường nhà nước",
+          "code": "04/2018/TT-BTP"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afe6-79ed99ec19ac",
+          "name": "Quy định chi tiết một số điều và biện pháp thi hành Luật Trách nhiệm bồi thường của Nhà nước",
+          "code": "68/2018/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d80-7608-8cd0-b8d50a7332d1",
+          "name": "Trách nhiệm bồi thường của nhà nước",
+          "code": "10/2017/QH14"
+        },
+        {
+          "id": "019d2bb3-5d86-7760-a63b-4a861344d691",
+          "name": "Thông tư số 08/2025/TT-BTP ngày 12/6/2025 của Bộ trưởng Bộ Tư pháp quy định về phân định thẩm quyền của chính quyền địa phương 02 cấp và phân cấp trong lĩnh vực quản lý nhà nước của Bộ Tư pháp",
+          "code": "08/2025/TT-BTP"
+        }
+      ]
+    }
+  ],
+  "lookup_status": "retrieved",
+  "currency_status": "snapshot_requires_later_amendment_check",
+  "errors": []
+}

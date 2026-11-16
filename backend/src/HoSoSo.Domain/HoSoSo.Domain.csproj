@@ -1,0 +1,3 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!-- Không phụ thuộc gói nào: quy tắc nghiệp vụ kiểm thử được mà không cần DB hay web. -->
+</Project>

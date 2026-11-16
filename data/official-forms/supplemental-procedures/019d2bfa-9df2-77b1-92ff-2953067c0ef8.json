@@ -1,0 +1,90 @@
+{
+  "id": "dvc-019d2bfa-9df2-77b1-92ff-2953067c0ef8",
+  "procedure_code": "1.014832",
+  "name": "Giao rừng, cho thuê rừng khi đã được giao đất, cho thuê đất có rừng hoặc đã được công nhận quyền sử dụng đất có rừng thuộc thẩm quyền của Chủ tịch Ủy ban nhân dân cấp xã",
+  "domain": "Lâm nghiệp và Kiểm lâm",
+  "managing_agency": "Bộ Nông nghiệp và Môi trường",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:18.012163+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfa-9df2-77b1-92ff-2953067c0ef8",
+      "code": "1.014832",
+      "name": "Giao rừng, cho thuê rừng khi đã được giao đất, cho thuê đất có rừng hoặc đã được công nhận quyền sử dụng đất có rừng thuộc thẩm quyền của Chủ tịch Ủy ban nhân dân cấp xã",
+      "state": "ACTIVE",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1776754075143,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfa-9df2-77b1-92ff-2953067c0ef8",
+      "raw_path": "evidence/dvc/details/019d2bfa-9df2-77b1-92ff-2953067c0ef8.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Văn bản đề nghị giao rừng, cho thuê rừng theo Mẫu số 12 Phụ lục IIA ban hành kèm theo Nghị định số 42/2026/NĐ-CP (cộng đồng dân cư)",
+          "component_code": "G10-KQ007684",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019da9dd-1996-75b5-84ad-7aefd58a09c3",
+              "fileName": "Mẫu số 12.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019da9dd-1996-75b5-84ad-7aefd58a09c3/Mẫu số 12.docx"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "- Văn bản đề nghị giao rừng, cho thuê rừng theo Mẫu số 11 Phụ lục IIA ban hành kèm theo Nghị định số 42/2026/NĐ-CP (cá nhân)",
+          "component_code": "G10-KQ007683",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019da9de-6c8d-7267-bbb9-14f7da796adb",
+              "fileName": "Mẫu số 11.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019da9de-6c8d-7267-bbb9-14f7da796adb/Mẫu số 11.docx"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 3,
+          "name": "Văn bản đề nghị giao rừng, cho thuê rừng theo Mẫu số 13 Phụ lục IIA ban hành kèm theo Nghị định số 42/2026/NĐ-CP (tổ chức)",
+          "component_code": "G10-KQ007685",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019da9de-98b5-74b9-bcb1-e311ad68e451",
+              "fileName": "Mẫu số 13.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019da9de-98b5-74b9-bcb1-e311ad68e451/Mẫu số 13.docx"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c6e-7797-a21a-742433d09a4c",
+          "name": "Quyết định giao rừng, cho thuê rừng theo Mẫu số 14 (cá nhân, cộng đồng dân cư)",
+          "code": "KQ.G10.001417"
+        }
+      ],
+      "legal_bases": []
+    }
+  ]
+}

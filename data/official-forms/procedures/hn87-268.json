@@ -1,0 +1,104 @@
+{
+  "ordinal": "268",
+  "managing_agency": "Sở Giáo dục Đào tạo",
+  "procedure_code": "1.014337",
+  "name": "Đề nghị hỗ trợ chi phí học tập trong cơ sở giáo dục mầm non dân lập, tư thục; trường tiểu học tư thục, trường trung học cơ sở tư thục, cơ sở giáo dục thường xuyên tư thục, cơ sở giáo dục mầm non, trường tiểu học, trung học cơ sở trong các trường đại học, cao đẳng, viện nghiên cứu",
+  "domain": "Giáo dục và đào tạo thuộc hệ thống giáo dục quốc dân",
+  "ministry_decision": "2624/QĐ-BGDĐT ngày 17/09/2025",
+  "hanoi_decision": "1403/QĐ-TTPVHCC ngày 07/10/2025",
+  "workflow_decision": "501/QĐ-TTPVHCC ngày 15/4/2025",
+  "fees": "Không quy định",
+  "execution_level": "Cấp xã",
+  "competent_authority": "UBND cấp xã",
+  "delegation_decision": "",
+  "delegation_expiry": "",
+  "receiving_location": "Điểm hỗ trợ DVC số",
+  "id": "hn87-268",
+  "source_page": 11,
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "inventory_date": "2026-04-27",
+  "checked_at": "2026-11-12T22:24:41.004918+07:00",
+  "details": [
+    {
+      "id": "019d2bf8-c7e7-71f7-81cf-28778a076923",
+      "code": "1.014337",
+      "name": "Đề nghị hỗ trợ chi phí học tập trong cơ sở giáo dục mầm non dân lập, tư thục; trường tiểu học tư thục, trường trung học cơ sở tư thục, cơ sở giáo dục thường xuyên tư thục; cơ sở giáo dục mầm non, trường tiểu học, trung học cơ sở trong các trường đại học, cao đẳng, viện nghiên cứu",
+      "state": "ACTIVE",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1776130262968,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf8-c7e7-71f7-81cf-28778a076923",
+      "raw_path": "evidence/dvc/details/019d2bf8-c7e7-71f7-81cf-28778a076923.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Người học thuộc diện hỗ trợ chi phí học tập chỉ phải làm 01 bộ hồ sơ nộp lần đầu cho cả thời gian học tập. Riêng đối với người học thuộc diện hộ nghèo thì vào mỗi đầu học kỳ phải nộp bổ sung giấy xác nhận hộ nghèo để làm căn cứ xem xét hỗ trợ chi phí học tập cho kỳ học tiếp theo.",
+          "component_code": "TP-G03.002281",
+          "original_quantity": 0,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Đơn đề nghị hỗ trợ chi phí học tập theo mẫu tại Phụ lục II Nghị định số 238/2025/NĐ-CP",
+          "component_code": "TP-G03.002279",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019d7151-6576-732d-b19c-873c743d2fe6",
+              "fileName": "MUNNGHHTRCPHT.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d7151-6576-732d-b19c-873c743d2fe6/MUNNGHHTRCPHT.docx"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 3,
+          "name": "Bản sao chứng thực hoặc bản sao kèm bản chính để đối chiếu hoặc bản sao từ sổ gốc giấy tờ chứng minh thuộc đối tượng hỗ trợ chi phí học tập trong các trường hợp sau:  - Giấy xác nhận mồ côi cả cha lẫn mẹ do Ủy ban nhân dân xã, phường, đặc khu trực thuộc cấp tỉnh áp dụng đối với đối tượng quy định tại khoản 1 Điều 17 Nghị định số 238/2025/NĐ-CP. - Giấy xác nhận khuyết tật hoặc Quyết định về việc trợ cấp xã hội do Ủy ban nhân dân xã, phường, đặc khu trực thuộc cấp tỉnh cấp áp dụng đối với đối tượng được quy định tại khoản 2 Điều 17 Nghị định số 238/2025/NĐ-CP. - Giấy xác nhận hộ nghèo do Ủy ban nhân dân xã, phường, đặc khu trực thuộc cấp tỉnh cấp cho đối tượng được quy định tại khoản 3 Điều 17 Nghị định số 238/2025/NĐ-CP.",
+          "component_code": "TP-G03.002280",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 4,
+          "name": "Trường hợp cơ quan giải quyết thủ tục hành chính khai thác dữ liệu điện tử đã có trong Cơ sở dữ liệu quốc gia về dân cư, các cơ sở dữ liệu chuyên ngành khác và cơ sở dữ liệu có đầy đủ thông tin, hồ sơ theo yêu cầu của Nghị định số 238/2025/NĐ-CP thì cha, mẹ, người giám hộ, người học không phải nộp các giấy tờ có liên quan để hưởng chính sách hỗ trợ chi phí học tập.",
+          "component_code": "TP-G03.002282",
+          "original_quantity": 0,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c3b-735b-85a8-7539111abcf6",
+          "name": "Quyết định phê duyệt danh sách được hưởng chế độ hỗ trợ chi phí học tập theo đúng đối tượng quy định",
+          "code": "KQ-G03.000428"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7e-72d1-afed-cec1100f5c1f",
+          "name": "Nghị định số 238/2025/NĐ-CP của Chính phủ quy định về chính sách học phí, miễn, giảm, hỗ trợ học phí, hỗ trợ chi phí học tập và giá dịch vụ trong lĩnh vực giáo dục, đào tạo",
+          "code": "238/2025/NĐ-CP"
+        }
+      ]
+    }
+  ],
+  "lookup_status": "retrieved",
+  "currency_status": "snapshot_requires_later_amendment_check",
+  "errors": []
+}

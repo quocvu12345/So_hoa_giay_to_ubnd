@@ -1,0 +1,74 @@
+{
+  "id": "dvc-019d2bfd-8e50-70b5-b69c-ebc36daa6542",
+  "procedure_code": "2.000930",
+  "name": "Thủ tục thôi làm hòa giải viên (cấp xã)",
+  "domain": "Hòa giải ở cơ sở",
+  "managing_agency": "Bộ Tư pháp",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.877586+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfd-8e50-70b5-b69c-ebc36daa6542",
+      "code": "2.000930",
+      "name": "Thủ tục thôi làm hòa giải viên (cấp xã)",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1776393612266,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfd-8e50-70b5-b69c-ebc36daa6542",
+      "raw_path": "evidence/dvc/details/019d2bfd-8e50-70b5-b69c-ebc36daa6542.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Báo cáo về việc thôi làm hòa giải viên (Mẫu số 09 tại Phụ lục ban hành kèm theo Nghị quyết liên tịch số 01/2014/NQLT-CP-UBTƯMTTQVN) trong trường hợp Trưởng ban công tác Mặt trận, trưởng thôn, tổ trưởng tổ dân phố không đồng ý với đề nghị của tổ trưởng tổ hòa giải hoặc Trưởng ban công tác Mặt trận và trưởng thôn, tổ trưởng tổ dân phố không thống nhất được với nhau về đề nghị của tổ trưởng tổ hòa giải",
+          "component_code": "000.00.00.G15-KQ0551",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Văn bản đề nghị ra quyết định thôi làm hòa giải viên (Mẫu số 08 tại Phụ lục ban hành kèm theo Nghị quyết liên tịch số 01/2014/NQLT-CP-UBTƯMTTQVN",
+          "component_code": "000.00.00.G15-KQ0550",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c78-7725-a750-1580088867fe",
+          "name": "Quyết định thôi làm hòa giải viên",
+          "code": "KQ.G15.000058"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d84-71c5-b670-f33d90ef2e01",
+          "name": "Luật Hòa giải ở cơ sở năm 2013",
+          "code": "35/2013/QH13"
+        },
+        {
+          "id": "019d2bb3-5d87-7195-a447-d9be41980566",
+          "name": "Hướng dẫn phối hợp thực hiện một số quy định của pháp luật về hòa giải ở cơ sở",
+          "code": "01/2014/NQLT-CP-UBTƯMTTQVN"
+        },
+        {
+          "id": "019d2bb3-5d87-7195-a44a-543530895285",
+          "name": "Công bố thủ tục hành chính được chuẩn hóa trong lĩnh vực hòa giải ở cơ sở thuộc phạm vi chức năng quản lý của Bộ Tư pháp",
+          "code": "Quyết định số 2338/QĐ-BTP "
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "citizen-land-hand-sim": {
+    "expected_type_id": "U15-D14",
+    "expected_fields": {
+      "Bên chuyển nhượng": "Nguyễn Văn An",
+      "Bên nhận chuyển nhượng": "Lê Văn Bình",
+      "Số thửa đất": "128",
+      "Số tờ bản đồ": "09",
+      "Diện tích đất": "120,5 m²",
+      "Số giấy chứng nhận": "TEST-GCN-001",
+      "Giá chuyển nhượng": "850.000.000 đồng"
+    },
+    "purpose": "Ground truth giả lập để đối chiếu; tuyệt đối không đưa vào đầu vào model hoặc giả làm kết quả OCR."
+  },
+  "citizen-inheritance-hand-sim": {
+    "expected_type_id": "U09-D12",
+    "expected_fields": {
+      "Người tường trình": "Nguyễn Thị Mai",
+      "Người để lại di sản": "Nguyễn Văn An",
+      "Ngày mất": "15/02/2025",
+      "Quan hệ với người để lại di sản": "con",
+      "Vợ hoặc chồng người để lại di sản": "",
+      "Các con của người để lại di sản": "Nguyễn Thị Mai; Nguyễn Văn Minh"
+    },
+    "purpose": "Ground truth giả lập để đối chiếu; tuyệt đối không đưa vào đầu vào model hoặc giả làm kết quả OCR.",
+    "note": "Mẫu để trống mục vợ/chồng; không suy ra kết hôn từ việc có chung con."
+  },
+  "citizen-vehicle-hand-sim": {
+    "expected_type_id": "U27-D13",
+    "expected_fields": {
+      "Tên chủ xe": "Trần Văn Hòa",
+      "Chủ xe mới": "Lê Thị Thu",
+      "Biển số xe": "TEST-001",
+      "Nhãn hiệu": "HONDA",
+      "Số máy": "TESTMAY000123",
+      "Số khung": "TESTKHUNG00456",
+      "Lý do thu hồi": "Chuyển quyền sở hữu xe",
+      "Địa chỉ chủ xe": "30 đường Mẫu, phường Minh Họa",
+      "Địa chỉ chủ xe mới": "42 đường Thử Nghiệm, phường Minh Họa"
+    },
+    "purpose": "Ground truth giả lập để đối chiếu; tuyệt đối không đưa vào đầu vào model hoặc giả làm kết quả OCR."
+  },
+  "citizen-mixed-packet": {
+    "mixed_documents": true,
+    "components": [
+      {
+        "document_id": "citizen-land-hand-sim",
+        "first_page": 1,
+        "last_page": 3
+      },
+      {
+        "document_id": "citizen-inheritance-hand-sim",
+        "first_page": 4,
+        "last_page": 5
+      },
+      {
+        "document_id": "citizen-vehicle-hand-sim",
+        "first_page": 6,
+        "last_page": 7
+      }
+    ]
+  }
+}

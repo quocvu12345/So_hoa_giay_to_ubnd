@@ -1,0 +1,102 @@
+{
+  "id": "dvc-019d2bfa-18e5-71bf-9849-3fc86ee34b8a",
+  "procedure_code": "1.003434",
+  "name": "Hỗ trợ dự án liên kết (cấp xã)",
+  "domain": "Kinh tế hợp tác và Phát triển nông thôn",
+  "managing_agency": "Bộ Nông nghiệp và Môi trường",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:18.022060+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfa-18e5-71bf-9849-3fc86ee34b8a",
+      "code": "1.003434",
+      "name": "Hỗ trợ dự án liên kết (cấp xã)",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1776319031980,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfa-18e5-71bf-9849-3fc86ee34b8a",
+      "raw_path": "evidence/dvc/details/019d2bfa-18e5-71bf-9849-3fc86ee34b8a.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Bản sao chụp hợp đồng liên kết.",
+          "component_code": "000.00.00.G10-KQ0896",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Đơn đề nghị của chủ dự án (theo Phụ lục I ban hành kèm theo Nghị định số 98/2018/NĐ-CP)",
+          "component_code": "000.00.00.G10-KQ0892",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 3,
+          "name": "Bản sao chụp các chứng nhận về tiêu chuẩn chất lượng sản phẩm, an toàn thực phẩm, an toàn dịch bệnh và bảo vệ môi trường; hoặc cam kết bảo đảm các quy định của pháp luật về tiêu chuẩn chất lượng sản phẩm, an toàn thực phẩm, an toàn dịch bệnh và bảo vệ môi trường (theo Phụ lục IV ban hành kèm theo Nghị định số 98/2018/NĐ-CP)",
+          "component_code": "000.00.00.G10-KQ0895",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 4,
+          "name": "Bản thỏa thuận cử đơn vị làm chủ đầu tư dự án liên kết (theo Phụ lục III ban hành kèm theo Nghị định số 98/2018/NĐ-CP) đối với trường hợp các doanh nghiệp, hợp tác xã ký hợp đồng liên kết với nhau",
+          "component_code": "000.00.00.G10-KQ0894",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 5,
+          "name": "Dự án liên kết (theo Phụ lục II ban hành kèm theo Nghị định số 98/2018/NĐ-CP)",
+          "component_code": "000.00.00.G10-KQ0893",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c4d-7725-9da0-89664962feed",
+          "name": "Quyết định phê duyệt hỗ trợ dự án liên kết",
+          "code": "KQ.G10.000172"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7e-72d1-afea-45ea9b37796c",
+          "name": "Quy định phân định thẩm quyền của chính quyền địa phương 02 cấp trong lĩnh vực quản lý nhà nước của Bộ Nông nghiệp và Môi trường",
+          "code": "Nghị định số 131/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7f-719e-b473-367bd2a566e7",
+          "name": "98/2018/NĐ-CP",
+          "code": "98/2018/NĐ-CP"
+        }
+      ]
+    }
+  ]
+}

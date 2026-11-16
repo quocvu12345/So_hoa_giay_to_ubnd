@@ -1,0 +1,300 @@
+{
+  "id": "dvc-019d2bfc-6c26-766d-acc2-e1c64c99c638",
+  "procedure_code": "1.008565",
+  "name": "Bù trừ, hoàn nộp thừa các loại thuế và các khoản thu khác",
+  "domain": "Thuế",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.936778+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfc-6c26-766d-acc2-e1c64c99c638",
+      "code": "1.008565",
+      "name": "Bù trừ, hoàn nộp thừa các loại thuế và các khoản thu khác",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1785399201381,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-6c26-766d-acc2-e1c64c99c638",
+      "raw_path": "evidence/dvc/details/019d2bfc-6c26-766d-acc2-e1c64c99c638.json",
+      "components": [
+        {
+          "section": "1. Trường hợp bù trừ:",
+          "position": 1,
+          "name": "Văn bản đề nghị xử lý số tiền thuế nộp thừa theo mẫu số 01/DNXLNT ban hành kèm theo phụ lục III Thông tư số số 89/2026/TT-BTC",
+          "component_code": "G12.0015687",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019fad60-573f-736c-a3ea-0d3037824147",
+              "fileName": "14. 01-ĐNXLNT.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fad60-573f-736c-a3ea-0d3037824147/14. 01-ĐNXLNT.docx"
+            }
+          ]
+        },
+        {
+          "section": "2.1 Trường hợp hoàn thuế - Hồ sơ hoàn thuế thu nhập cá nhân đối với thu nhập từ tiền lương, tiền công (Trường hợp tổ chức, cá nhân trả thu nhập từ tiền lương, tiền công thực hiện quyết toán cho các cá nhân có uỷ quyền tại điểm a Khoản 1 Điều 56 Thông tư số 89/2026/TT-BTC):",
+          "position": 1,
+          "name": "Văn bản đề nghị xử lý số tiền thuế nộp thừa theo mẫu số 01/DNXLNT ban hành kèm theo phụ lục III Thông tư số số 89/2026/TT-BTC",
+          "component_code": "G12.0015687",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019fad60-573f-736c-a3ea-0d3037824147",
+              "fileName": "14. 01-ĐNXLNT.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fad60-573f-736c-a3ea-0d3037824147/14. 01-ĐNXLNT.docx"
+            }
+          ]
+        },
+        {
+          "section": "2.2 Trường hợp hoàn thuế- Hồ sơ hoàn trả tiền thuế thu nhập doanh nghiệp, thuế thu nhập cá nhân đối với tổ chức, cá nhân theo Hiệp định tránh đánh thuế hai lần và hoàn trả tiền thuế, khoản thu khác theo Điều ước quốc tế khác:",
+          "position": 1,
+          "name": "Văn bản đề nghị hoàn trả tiền thuế nộp thừa theo Hiệp định tránh đánh thuế hai lần và Điều ước quốc tế khác theo mẫu số 02/HT Phụ lục III ban hành kèm theo Thông tư số 89/2026/TT-BTC",
+          "component_code": "G12.0015688",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019fad62-9aaa-7334-8dd3-cde7bc3bb01d",
+              "fileName": "2. 02.HT.doc",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fad62-9aaa-7334-8dd3-cde7bc3bb01d/2. 02.HT.doc"
+            }
+          ]
+        },
+        {
+          "section": "2.2 Trường hợp hoàn thuế- Hồ sơ hoàn trả tiền thuế thu nhập doanh nghiệp, thuế thu nhập cá nhân đối với tổ chức, cá nhân theo Hiệp định tránh đánh thuế hai lần và hoàn trả tiền thuế, khoản thu khác theo Điều ước quốc tế khác:",
+          "position": 2,
+          "name": "Văn bản điện tử hoặc bản sao điện tử được cấp từ sổ gốc hoặc được chứng thực từ bản chính của Văn bản ủy quyền trong trường hợp tổ chức, cá nhân nước ngoài (hoặc tổ chức, cá nhân Việt Nam thuộc đối tượng được miễn thuế) ủy quyền cho một tổ chức hoặc cá nhân Việt Nam thực hiện các thủ tục đề nghị hoàn trả tiền thuế nộp thừa. Trường hợp tổ chức, cá nhân lập Văn bản uỷ quyền để uỷ quyền cho đại diện hợp pháp thực hiện thủ tục hoàn trả tiền thuế nộp thừa vào tài khoản của đối tượng khác cần thực hiện thủ tục hợp pháp hóa lãnh sự (nếu việc uỷ quyền được thực hiện ở nước ngoài) hoặc công chứng (nếu việc uỷ quyền được thực hiện tại Việt Nam) theo quy định",
+          "component_code": "G12.0015689",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "2.2 Trường hợp hoàn thuế- Hồ sơ hoàn trả tiền thuế thu nhập doanh nghiệp, thuế thu nhập cá nhân đối với tổ chức, cá nhân theo Hiệp định tránh đánh thuế hai lần và hoàn trả tiền thuế, khoản thu khác theo Điều ước quốc tế khác:",
+          "position": 3,
+          "name": "Trường hợp bên Việt Nam khấu trừ, khai và nộp số thuế đã khấu trừ của tổ chức, cá nhân nước ngoài vào ngân sách nhà nước thì bên Việt Nam thực hiện nộp hồ sơ đề nghị hoàn trả tiền thuế nộp thừa cho cơ quan thuế quản lý trực tiếp thay cho nhà thầu nước ngoài theo ủy quyền của tổ chức, cá nhân nước ngoài bao gồm cả việc thực hiện thủ tục hoàn trả tiền thuế nộp thừa vào tài khoản của Bên Việt Nam theo quy định tại điểm b khoản 2 Điều 56",
+          "component_code": "G12.0015690",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "2.2 Trường hợp hoàn thuế- Hồ sơ hoàn trả tiền thuế thu nhập doanh nghiệp, thuế thu nhập cá nhân đối với tổ chức, cá nhân theo Hiệp định tránh đánh thuế hai lần và hoàn trả tiền thuế, khoản thu khác theo Điều ước quốc tế khác:",
+          "position": 4,
+          "name": "Trường hợp người được ủy quyền thực hiện nộp hồ sơ đề nghị hoàn trả tiền thuế nộp thừa không phải là Bên Việt Nam quy định tại điểm b.1 khoản 2 Điều 56, người được ủy quyền phải điền các thông tin liên quan về việc Bên Việt Nam đã khấu trừ và khai, nộp số thuế đã khấu trừ của tổ chức, cá nhân nước ngoài vào ngân sách nhà nước được theo mẫu số 02/HT Phụ lục III ban hành kèm theo Thông tư số 89/2026/TT-BTC",
+          "component_code": "G12.00015691",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "2.2 (1) Trường hợp hoàn thuế - Hồ sơ hoàn trả tiền thuế thu nhập doanh nghiệp, thuế thu nhập cá nhân đối với tổ chức, cá nhân theo Hiệp định tránh đánh thuế hai lần và hoàn trả tiền thuế, khoản thu khác theo Điều ước quốc tế khác - Tài liệu liên quan đến hồ sơ hoàn trả tiền thuế nộp thừa -  Đối với trường hợp hoàn trả tiền thuế nộp thừa theo Hiệp định tránh đánh thuế hai lần:",
+          "position": 1,
+          "name": "Bản sao điện tử từ sổ gốc hoặc từ bản chính có chứng thực của các thành phần hồ sơ trong hồ sơ miễn, giảm thuế theo Hiệp định tránh đánh thuế hai lần quy định tại các Điều 76, Điều 77, Điều 78, Điều 79 và Điều 80 Thông tư số 89/2026/TT-BTC",
+          "component_code": "G12.0016692",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "2.2 (1) Trường hợp hoàn thuế - Hồ sơ hoàn trả tiền thuế thu nhập doanh nghiệp, thuế thu nhập cá nhân đối với tổ chức, cá nhân theo Hiệp định tránh đánh thuế hai lần và hoàn trả tiền thuế, khoản thu khác theo Điều ước quốc tế khác - Tài liệu liên quan đến hồ sơ hoàn trả tiền thuế nộp thừa -  Đối với trường hợp hoàn trả tiền thuế nộp thừa theo Hiệp định tránh đánh thuế hai lần:",
+          "position": 2,
+          "name": "Bản sao điện tử từ sổ gốc hoặc từ bản chính có chứng thực của văn bản xác nhận của tổ chức, cá nhân Việt Nam ký kết hợp đồng về thời gian và tình hình hoạt động thực tế theo hợp đồng (trừ trường hợp hoàn thuế đối với hãng vận tải nước ngoài)",
+          "component_code": "G12.0016693",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "2.2 (2) Trường hợp hoàn thuế - Hồ sơ hoàn trả tiền thuế thu nhập doanh nghiệp, thuế thu nhập cá nhân đối với tổ chức, cá nhân theo Hiệp định tránh đánh thuế hai lần và hoàn trả tiền thuế, khoản thu khác theo Điều ước quốc tế khác - Tài liệu liên quan đến hồ sơ hoàn trả tiền thuế nộp thừa - Đối với trường hợp hoàn trả tiền thuế theo Điều ước quốc tế khác:",
+          "position": 1,
+          "name": "Bản sao điện tử từ sổ gốc hoặc từ bản chính có chứng thực của các thành phần hồ sơ miễn thuế, giảm thuế theo Điều ước quốc tế khác quy định tại Điều 81 Thông tư số 89/2026/TT-BTC",
+          "component_code": "G12.0016694",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "2.2 (3) Trường hợp hoàn thuế - Hồ sơ hoàn trả tiền thuế thu nhập doanh nghiệp, thuế thu nhập cá nhân đối với tổ chức, cá nhân theo Hiệp định tránh đánh thuế hai lần và hoàn trả tiền thuế, khoản thu khác theo Điều ước quốc tế khác - Tài liệu liên quan đến hồ sơ hoàn trả tiền thuế nộp thừa - Trường hợp người nộp thuế đã nộp cho cơ quan thuế quản lý trực tiếp hồ sơ đề nghị miễn, giảm thuế theo Hiệp định tránh đánh thuế hai lần hoặc theo Điều ước quốc tế khác quy định :",
+          "position": 1,
+          "name": "Trường hợp người nộp thuế đã nộp cho cơ quan thuế quản lý trực tiếp hồ sơ đề nghị miễn, giảm thuế theo Hiệp định tránh đánh thuế hai lần hoặc theo Điều ước quốc tế khác quy định tại Điều 76, Điều 77, Điều 78, Điều 79, Điều 80 và Điều 81 Thông tư số 89/2026/TT-BTC trước khi nộp hồ sơ đề nghị hoàn trả tiền thuế nộp thừa theo quy định tại khoản 2 Điều 56, người nộp thuế không phải nộp lại các tài liệu đã nộp cho cơ quan thuế",
+          "component_code": "G12.0016695",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "2.3. Trường hợp hoàn thuế - Hồ sơ hoàn trả cho cá nhân thuộc trường hợp hoàn thuế, khoản thu khác, tiền chậm nộp, tiền phạt là người đã chết, người bị Tòa án tuyên bố là đã chết, mất tích hoặc mất năng lực hành vi dân sự - Người được thừa kế hoặc người được Tòa án giao quản lý tài sản của người đã chết, người bị tuyên bố là đã chết, mất tích, mất năng lực hành vi dân sự nộp hồ sơ hoàn nộp thừa gồm:",
+          "position": 1,
+          "name": "Văn bản đề nghị xử lý số tiền thuế, khoản thu khác, tiền chậm nộp, tiền phạt nộp thừa theo mẫu số 01/DNXLNT Phụ lục III ban hành kèm theo Thông tư này",
+          "component_code": "G12.0016696",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019fad6a-8627-714b-8d26-163e8a88e38e",
+              "fileName": "14. 01-ĐNXLNT.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fad6a-8627-714b-8d26-163e8a88e38e/14. 01-ĐNXLNT.docx"
+            }
+          ]
+        },
+        {
+          "section": "2.3. Trường hợp hoàn thuế - Hồ sơ hoàn trả cho cá nhân thuộc trường hợp hoàn thuế, khoản thu khác, tiền chậm nộp, tiền phạt là người đã chết, người bị Tòa án tuyên bố là đã chết, mất tích hoặc mất năng lực hành vi dân sự - Người được thừa kế hoặc người được Tòa án giao quản lý tài sản của người đã chết, người bị tuyên bố là đã chết, mất tích, mất năng lực hành vi dân sự nộp hồ sơ hoàn nộp thừa gồm:",
+          "position": 2,
+          "name": "Bản sao Di chúc hoặc Bản án của Tòa án hoặc Bản phân chia tài sản thừa kế của cơ quan có thẩm quyền",
+          "component_code": "G12.0016697",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "2.3. Trường hợp hoàn thuế - Hồ sơ hoàn trả cho cá nhân thuộc trường hợp hoàn thuế, khoản thu khác, tiền chậm nộp, tiền phạt là người đã chết, người bị Tòa án tuyên bố là đã chết, mất tích hoặc mất năng lực hành vi dân sự - Người được thừa kế hoặc người được Tòa án giao quản lý tài sản của người đã chết, người bị tuyên bố là đã chết, mất tích, mất năng lực hành vi dân sự nộp hồ sơ hoàn nộp thừa gồm:",
+          "position": 3,
+          "name": "Giấy ủy quyền trong trường hợp có nhiều người cùng thừa kế theo quy định của pháp luật về dân sự",
+          "component_code": "G12.0016698",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "2.4. Trường hợp hoàn thuế - Hồ sơ hoàn trả tiền nộp thừa đối với doanh nghiệp, tổ chức khi giải thể, phá sản:",
+          "position": 1,
+          "name": "Đối với trường hợp thuộc diện cơ quan thuế phải kiểm tra tại trụ sở của người nộp thuế theo quy định tại khoản 3 Điều 22 Luật Quản lý thuế và Chương VII Thông tư này, người nộp thuế không phải nộp hồ sơ hoàn trả tiền thuế cho cơ quan thuế mà thực hiện đề nghị hoàn trả tiền thuế nộp thừa và cung cấp các thông tin liên quan đến khoản tiền thuế nộp thừa đề nghị hoàn tại Biên bản kiểm tra thuế; Cơ quan thuế căn cứ kết quả kiểm tra tại Biên bản kiểm tra, Kết luận hoặc Quyết định xử lý và các tài liệu kiểm tra khác để thực hiện thủ tục hoàn trả tiền thuế nộp thừa cho người nộp thuế theo quy định.",
+          "component_code": "G12.0016699",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "2.4. Trường hợp hoàn thuế - Hồ sơ hoàn trả tiền nộp thừa đối với doanh nghiệp, tổ chức khi giải thể, phá sản:",
+          "position": 2,
+          "name": "Trường hợp không thuộc diện kiểm tra tại trụ sở của người nộp thuế nêu tại điểm a khoản 1 Điều 56 thì người nộp thuế lập và gửi Văn bản đề nghị xử lý số tiền thuế, tiền chậm nộp, tiền phạt nộp thừa theo mẫu số 01/DNXLNT Phụ lục III ban hành kèm theo Thông tư số 89/2026/TT-BTC đến cơ quan thuế",
+          "component_code": "G12.0016700",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019fad6c-04c4-736c-b662-0394a2792b42",
+              "fileName": "14. 01-ĐNXLNT.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fad6c-04c4-736c-b662-0394a2792b42/14. 01-ĐNXLNT.docx"
+            }
+          ]
+        },
+        {
+          "section": "2.5. Trường hợp hoàn thuế - Hồ sơ hoàn nộp thừa các loại thuế và các khoản thu khác (bao gồm cả hoàn nộp nhầm):",
+          "position": 1,
+          "name": "Văn bản đề nghị xử lý số tiền thuế, tiền chậm nộp, tiền phạt nộp thừa theo mẫu số 01/DNXLNT Phụ lục III ban hành kèm theo Thông tư số 89/2026/TT-BTC",
+          "component_code": "G12,0015774",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019fad6d-2975-72cb-8a8c-23743950dc0c",
+              "fileName": "14. 01-ĐNXLNT.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fad6d-2975-72cb-8a8c-23743950dc0c/14. 01-ĐNXLNT.docx"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "id": "019fa328-0757-726b-936d-17f088ac9c48",
+          "name": "Thông báo số tiền đề nghị hoàn nhưng không được hoàn thuế, số tiền đề nghị hoàn chưa đủ điều kiện được hoàn thuế (mẫu số 04/TB-HT)",
+          "code": "KQ.G12.001485"
+        },
+        {
+          "id": "019fa329-7177-760d-ad80-2bef251243b4",
+          "name": "Quyết định hoàn thuế kiêm bù trừ thu ngân sách nhà nước (mẫu số 02/QĐ-HT)",
+          "code": "KQ.G12.001558"
+        },
+        {
+          "id": "019fa6bb-5cc3-70ff-b663-0bb8c95abfb2",
+          "name": "Quyết định hoàn thuế (Mẫu số 01/QĐ-HT)",
+          "code": "KQ.G12.001600"
+        },
+        {
+          "id": "019fa6be-d9ec-771f-b967-a3bae0d4c476",
+          "name": "Phụ lục số tiền thuế, tiền chậm nộp, tiền phạt phải nộp được bù trừ (Mẫu số 01/PL-BT)",
+          "code": "KQ.G12000603"
+        },
+        {
+          "id": "019d2bb2-1c70-724b-96e1-79ef9e21967a",
+          "name": "Thông báo về việc xử lý số tiền thuế, tiền chậm nộp, tiền phạt nộp thừa theo đề nghị của người nộp thuế (Mẫu số 01/TB-XLBT)",
+          "code": "KQ.G12.000462"
+        },
+        {
+          "id": "019d2bb2-1c71-7574-afe8-1af89bd23d1c",
+          "name": "Thông báo về việc giải trình, bổ sung thông tin, tài liệu (Mẫu 01/TB-BSTT-NNT)",
+          "code": "KQ.G12.000566"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019f356e-75e3-7494-a2f3-672d8dce61a6",
+          "name": "QUY ĐỊNH CHI TIẾT MỘT SỐ ĐIỀU VÀ BIỆN PHÁP ĐỂ TỔ CHỨC, HƯỚNG DẪN THI HÀNH LUẬT QUẢN LÝ THUẾ",
+          "code": "252/2026/NĐ-CP"
+        },
+        {
+          "id": "019f64ed-e026-7299-b5f2-ca44a3964050",
+          "name": "Nghị định về thực hiện thủ tục hành chính theo cơ chế một cửa, một cửa liên thông tại Bộ phận Một cửa và Cổng Dịch vụ công quốc gia.",
+          "code": "118/2025/NĐ-CP "
+        },
+        {
+          "id": "019e5e83-1282-771d-9014-49799413a4e5",
+          "name": "Luật số 108/2025/QH15 của Quốc hội: Luật Quản lý thuế",
+          "code": "108/2025/QH15"
+        },
+        {
+          "id": "019f8db3-9765-740b-8b90-682677b9c421",
+          "name": "Thông tư quy định chi tiết một số điều của Luật Quản lý thuế và Nghị định số 252/2026/NĐ-CP của Chính phủ quy định chi tiết một số điều và biện pháp để tổ chức, hướng dẫn thi hành Luật Quản lý thuế",
+          "code": "89/2026/TT-BTC"
+        }
+      ]
+    }
+  ]
+}

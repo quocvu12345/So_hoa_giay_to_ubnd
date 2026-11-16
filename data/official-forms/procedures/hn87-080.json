@@ -1,0 +1,101 @@
+{
+  "ordinal": "80",
+  "managing_agency": "Sở Y tế",
+  "procedure_code": "2.001661",
+  "name": "Hỗ trợ học văn hóa, học nghề, trợ cấp khó khăn ban đầu cho nạn nhân",
+  "domain": "Phòng, chống tệ nạn xã hội",
+  "ministry_decision": "2179/QĐ-BYT ngày 30/06/2025",
+  "hanoi_decision": "1027/QĐ-TTPVHCC ngày 03/07/2025",
+  "workflow_decision": "1268/QĐ-TTPVHCC ngày 09/09/2025",
+  "fees": "Không quy định",
+  "execution_level": "Cấp tỉnh, cấp xã",
+  "competent_authority": "Sở; UBND cấp xã",
+  "delegation_decision": "",
+  "delegation_expiry": "",
+  "receiving_location": "Điểm hỗ trợ DVC số",
+  "id": "hn87-080",
+  "source_page": 3,
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "inventory_date": "2026-04-27",
+  "checked_at": "2026-11-12T22:24:34.528875+07:00",
+  "details": [
+    {
+      "id": "019d2bff-5454-72fb-ab3d-7430bfdda821",
+      "code": "2.001661",
+      "name": "Hỗ trợ học văn hóa, học nghề, trợ cấp khó khăn ban đầu cho nạn nhân",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1777133254805,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bff-5454-72fb-ab3d-7430bfdda821",
+      "raw_path": "evidence/dvc/details/019d2bff-5454-72fb-ab3d-7430bfdda821.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Đơn đề nghị hỗ trợ học văn hóa của gia đình nạn nhân dưới 18 tuổi hoặc gia đình người đi cùng dưới 18 tuổi; Đơn đề nghị hỗ trợ học nghề, trợ cấp khó khăn ban đầu của nạn nhân hoặc gia đình nạn nhân (đối với trường hợp dưới 18 tuổi) theo Mẫu số 07 ban hành kèm theo Nghị định số 162/2025/NĐ-CP ngày 29/6/2025 của Chính phủ quy định chi tiết một số điều và biện pháp thi hành Luật Phòng, chống mua bán người",
+          "component_code": "000.00.00.G18-KQ005325",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019dc565-2f94-779c-a4e0-8c2f6a2c4486",
+              "fileName": "Mus07.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019dc565-2f94-779c-a4e0-8c2f6a2c4486/Mus07.docx"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c7c-74ea-bcd1-75480e4a147b",
+          "name": "Quyết định chi hỗ trợ học văn hóa, học nghề, trợ cấp khó khăn ban đầu cho nạn nhân (BYT)",
+          "code": "KQ.G18.000329"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7c-71ab-9f06-668846832011",
+          "name": "Sửa đổi, bổ sung, bãi bỏ một số điều của các Thông tư, Thông tư liên tịch có quy định liên quan đến việc nộp, xuất trình sổ hộ khẩu giấy, sổ tạm trú giấy hoặc giấy tờ có yêu cầu xác nhận nơi cư trú khi thực hiện thủ tục hành chính thuộc lĩnh vực quản lý nhà nước của Bộ Lao động - Thương binh và Xã hội",
+          "code": "08/2023/TT-BLĐTBXH"
+        },
+        {
+          "id": "019d2bb3-5d7f-719e-b46d-d6ce43fbc8e0",
+          "name": "Nghị định số 42/2025/NĐ-CP của Chính phủ: Quy định chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của Bộ Y tế",
+          "code": "42/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7f-719e-b46e-3b82195c2d48",
+          "name": "Nghị định số 45/2025/NĐ-CP ngày 28/02/2025 của Chính phủ quy định tổ chức các cơ quan chuyên môn thuộc Ủy ban nhân dân tỉnh, thành phố trực thuộc trung ương và Ủy ban nhân dân huyện, quận, thị xã, thành phố thuộc tỉnh, thành phố thuộc thành phố trực thuộc trung ương",
+          "code": "45/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7c-71ab-9f06-2a0c7ce897e1",
+          "name": "Hướng dẫn thi hành một số điều của Nghị định số 09/2013/NĐ-CP ngày 11 tháng 01 năm 2013 của Chính phủ quy định chi tiết thi hành một số điều của Luật Phòng, chống mua bán người",
+          "code": "35/2013/TT-BLĐTBXH"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afec-1fb8a92ab0bf",
+          "name": "Nghị định số 162/2025/NĐ-CP của Chính phủ: Quy định chi tiết một số điều và biện pháp thi hành Luật Phòng, chống mua bán người",
+          "code": "162/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afe6-a0af52374cf3",
+          "name": "Hướng dẫn Luật Phóng chống mua bán người",
+          "code": "09/2013/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d87-7195-a442-b859a81bcc11",
+          "name": "Luật số 53/2024/QH15 của Quốc hội: Luật Phòng, chống mua bán người",
+          "code": "53/2024/QH15"
+        }
+      ]
+    }
+  ],
+  "lookup_status": "retrieved",
+  "currency_status": "snapshot_requires_later_amendment_check",
+  "errors": []
+}

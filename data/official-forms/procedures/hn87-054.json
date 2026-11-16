@@ -1,0 +1,118 @@
+{
+  "ordinal": "54",
+  "managing_agency": "Sở Nội Vụ",
+  "procedure_code": "1.010818",
+  "name": "Công nhận và giải quyết chế độ người hoạt động cách mạng, kháng chiến, bảo vệ tổ quốc, làm nghĩa vụ quốc tế bị địch bắt tù, đày",
+  "domain": "Người có công",
+  "ministry_decision": "320/QĐ-BNV ngày 08/4/2025",
+  "hanoi_decision": "95/QĐ-TTPVHCC ngày 21/01/2026",
+  "workflow_decision": "105/QĐ-TTPVHCC ngày 22/01/2026",
+  "fees": "Không quy định",
+  "execution_level": "Cấp xã",
+  "competent_authority": "UBND cấp xã",
+  "delegation_decision": "số 71/QĐ-SNV ngày 13/01/2026",
+  "delegation_expiry": "31/12/2028",
+  "receiving_location": "Điểm hỗ trợ DVC số",
+  "id": "hn87-054",
+  "source_page": 2,
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "inventory_date": "2026-04-27",
+  "checked_at": "2026-11-12T22:24:34.524152+07:00",
+  "details": [
+    {
+      "id": "019d2bfa-fc2b-724d-8f15-ec8dbd06a4ed",
+      "code": "1.010818",
+      "name": "Công nhận và giải quyết chế độ người hoạt động cách mạng, kháng chiến, bảo vệ tổ quốc, làm nghĩa vụ quốc tế bị địch bắt tù, đày",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1779871490670,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfa-fc2b-724d-8f15-ec8dbd06a4ed",
+      "raw_path": "evidence/dvc/details/019d2bfa-fc2b-724d-8f15-ec8dbd06a4ed.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "- Giấy báo tử hoặc trích lục khai tử (đối với trường hợp chết mà chưa được hưởng chế độ ưu đãi).",
+          "component_code": "G09-KQ003210220",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "- Một trong các giấy tờ chứng minh có tham gia cách mạng, kháng chiến bảo vệ Tổ quốc, làm nghĩa vụ quốc tế và thời gian, địa điểm bị tù, đày như sau:         + Bản sao được chứng thực từ một trong các giấy tờ do cơ quan có thẩm quyền ban hành, xác nhận từ ngày 31/12/1994 trở về trước: lý lịch cán bộ, lý lịch đảng viên, lý lịch quân nhân, lý lịch công an; hồ sơ khen thưởng tổng kết thành tích tham gia kháng chiến; các giấy tờ, tài liệu khác.         + Bản sao được chứng thực từ hồ sơ hưởng chế độ Bảo hiểm xã hội.         + Bản trích lục hồ sơ liệt sĩ.          + Giấy xác nhận của cơ quan, đơn vị có thẩm quyền thuộc Bộ Quốc phòng, Bộ Công an về thời gian tù và nơi bị tù.",
+          "component_code": "G09-KQ002706",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 3,
+          "name": "- Bản khai theo Mẫu số 10 Phụ lục I Nghị định số 131/2021/NĐ-CP.",
+          "component_code": "G09-KQ003210221",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019d7507-6774-7158-8e02-175c9dbf276b",
+              "fileName": "Mauso10_ND131_2021.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d7507-6774-7158-8e02-175c9dbf276b/Mauso10_ND131_2021.docx"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c4d-7725-9d9c-6c40d1b41404",
+          "name": "Quyết định về việc trợ cấp ưu đãi người hoạt động cách mạng, kháng chiến, bảo vệ tổ quốc và làm nghĩa vụ quốc tế bị địch bắt tù, đày",
+          "code": "KQ.G09.000430"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7e-72d1-afea-1c153ca6400f",
+          "name": "Quy định về phân định thẩm quyền của chính quyền địa phương 02 cấp trong lĩnh vực quản lý nhà nước của Bộ Nội vụ",
+          "code": "129/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7f-719e-b474-516a799e2145",
+          "name": "QUY ĐỊNH CHI TIẾT VÀ BIỆN PHÁP THI HÀNH PHÁP LỆNH ƯU ĐÃI NGƯỜI CÓ CÔNG VỚI CÁCH MẠNG",
+          "code": "Nghị định số 131/2021/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d85-73da-8eba-20bc75de794b",
+          "name": "ƯU ĐÃI NGƯỜI CÓ CÔNG VỚI CÁCH MẠNG",
+          "code": "Pháp lệnh số: 02/2020/UBTVQH14"
+        },
+        {
+          "id": "019d2bb3-5d7f-719e-b474-93996f3f00db",
+          "name": "Nghị định số 25/2025/NĐ-CP ngày 21 tháng 02 năm 2025 của Chính phủ quy định chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của Bộ Nội vụ",
+          "code": "Nghị định số 25/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b671-f40a5ee32475",
+          "name": "Nghị quyết số 190/2025/QH15 của Quốc hội: Quy định về xử lý một số vấn đề liên quan đến sắp xếp tổ chức bộ máy nhà nước",
+          "code": "190/2025/NQ-QH15"
+        },
+        {
+          "id": "019d2bb3-5d7f-719e-b46e-3b82195c2d48",
+          "name": "Nghị định số 45/2025/NĐ-CP ngày 28/02/2025 của Chính phủ quy định tổ chức các cơ quan chuyên môn thuộc Ủy ban nhân dân tỉnh, thành phố trực thuộc trung ương và Ủy ban nhân dân huyện, quận, thị xã, thành phố thuộc tỉnh, thành phố thuộc thành phố trực thuộc trung ương",
+          "code": "45/2025/NĐ-CP"
+        }
+      ]
+    }
+  ],
+  "lookup_status": "retrieved",
+  "currency_status": "snapshot_requires_later_amendment_check",
+  "errors": []
+}

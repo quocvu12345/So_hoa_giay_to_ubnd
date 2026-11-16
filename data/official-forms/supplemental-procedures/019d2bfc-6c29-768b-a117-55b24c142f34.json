@@ -1,0 +1,361 @@
+{
+  "id": "dvc-019d2bfc-6c29-768b-a117-55b24c142f34",
+  "procedure_code": "1.008558",
+  "name": "Hoàn thuế giá trị gia tăng đối với các chương trình, dự án sử dụng vốn hỗ trợ phát triển chính thức (ODA) không hoàn lại và nguồn vốn viện trợ không hoàn lại",
+  "domain": "Thuế",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.936536+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfc-6c29-768b-a117-55b24c142f34",
+      "code": "1.008558",
+      "name": "Hoàn thuế giá trị gia tăng đối với các chương trình, dự án sử dụng vốn hỗ trợ phát triển chính thức (ODA) không hoàn lại và nguồn vốn viện trợ không hoàn lại",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1785399204399,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-6c29-768b-a117-55b24c142f34",
+      "raw_path": "evidence/dvc/details/019d2bfc-6c29-768b-a117-55b24c142f34.json",
+      "components": [
+        {
+          "section": "1. Trường hợp hoàn thuế thuộc chương trình, dự án sử dụng vốn hỗ trợ phát triển chính thức (ODA) không hoàn lại:",
+          "position": 1,
+          "name": "Giấy đề nghị hoàn trả khoản thu NSNN theo mẫu số 01/HT Phụ lục III ban hành kèm theo Thông tư số 89/2026/TT-BTC",
+          "component_code": "G12.0011666",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019fad9a-e1b0-7287-b428-96c20adac5a7",
+              "fileName": "1. 01.HT.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fad9a-e1b0-7287-b428-96c20adac5a7/1. 01.HT.docx"
+            }
+          ]
+        },
+        {
+          "section": "1. Trường hợp hoàn thuế thuộc chương trình, dự án sử dụng vốn hỗ trợ phát triển chính thức (ODA) không hoàn lại:",
+          "position": 2,
+          "name": "Bảng kê hoá đơn, chứng từ hàng hoá, dịch vụ mua vào mẫu số 01-1/HT ban hành kèm theo Phụ lục III Thông tư số 89/2026/TT-BTC",
+          "component_code": "G12.0011670",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019fad9b-3d55-7644-b3cb-f476511626ca",
+              "fileName": "3. 01-1.HT.doc",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fad9b-3d55-7644-b3cb-f476511626ca/3. 01-1.HT.doc"
+            }
+          ]
+        },
+        {
+          "section": "1. Trường hợp hoàn thuế thuộc chương trình, dự án sử dụng vốn hỗ trợ phát triển chính thức (ODA) không hoàn lại:",
+          "position": 3,
+          "name": "Hồ sơ hoàn thuế theo quy định tại khoản 2 Điều 90 Nghị định số 242/2025/NĐ-CP của Chính phủ quy định về quản lý và sử dụng vốn hỗ trợ phát triển chính thức (ODA) và vốn vay ưu đãi nước ngoài, được sửa đổi, bổ sung tại điểm b, điểm c khoản 41 Điều 1 Nghị định số 119/2026/NĐ-CP",
+          "component_code": "G12.0011672",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "1. Trường hợp hoàn thuế thuộc chương trình, dự án sử dụng vốn hỗ trợ phát triển chính thức (ODA) không hoàn lại:",
+          "position": 4,
+          "name": "Bản sao văn bản xác nhận của cơ quan chủ quản chương trình, dự án ODA cho chủ chương trình, dự án về hình thức cung cấp chương trình, dự án ODA là ODA không hoàn lại thuộc đối tượng được hoàn thuế giá trị gia tăng và việc không được ngân sách nhà nước cấp vốn đối ứng để trả thuế giá trị gia tăng",
+          "component_code": "G12.0016758",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "1. Trường hợp hoàn thuế thuộc chương trình, dự án sử dụng vốn hỗ trợ phát triển chính thức (ODA) không hoàn lại:",
+          "position": 5,
+          "name": "Trường hợp chủ chương trình, dự án giao một phần hoặc toàn bộ chương trình, dự án cho đơn vị, tổ chức khác quản lý, thực hiện theo quy định của pháp luật về quản lý và sử dụng vốn ODA không hoàn lại nhưng nội dung này chưa được nêu trong các tài liệu quy định tại điểm d.2 và điểm d.3 khoản 1 Điều 46 Thông tư số 89/2026/TT-BTC thì phải có thêm bản sao văn bản về việc giao quản lý, thực hiện chương trình, dự án ODA không hoàn lại của chủ chương trình, dự án cho đơn vị, tổ chức đề nghị hoàn thuế",
+          "component_code": "G12,0011673",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "1. Trường hợp hoàn thuế thuộc chương trình, dự án sử dụng vốn hỗ trợ phát triển chính thức (ODA) không hoàn lại:",
+          "position": 6,
+          "name": "Trường hợp nhà thầu chính lập hồ sơ hoàn thuế thì phải có thêm bản sao hợp đồng ký kết giữa chủ dự án với nhà thầu chính thể hiện giá thanh toán theo kết quả thầu không bao gồm thuế giá trị gia tăng",
+          "component_code": "G12.0011674",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "1. Trường hợp hoàn thuế thuộc chương trình, dự án sử dụng vốn hỗ trợ phát triển chính thức (ODA) không hoàn lại:",
+          "position": 7,
+          "name": "Trường hợp nhà tài trợ chỉ định Văn phòng đại diện của nhà tài trợ hoặc tổ chức quản lý, thực hiện chương trình, dự án nhưng nội dung này chưa được nêu trong các tài liệu quy định tại điểm d.2 khoản 1 Điều 46 Thông tư số 89/2026/TT-BTC thì phải có thêm bản sao văn bản về việc giao quản lý, thực hiện chương trình, dự án ODA không hoàn lại của nhà tài trợ cho Văn phòng đại diện của nhà tài trợ hoặc tổ chức do nhà tài trợ chỉ định và bản sao văn bản của cơ quan có thẩm quyền về việc thành lập Văn phòng đại diện của nhà tài trợ, tổ chức do nhà tài trợ chỉ định",
+          "component_code": "G12.0011679",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "1. Trường hợp hoàn thuế thuộc chương trình, dự án sử dụng vốn hỗ trợ phát triển chính thức (ODA) không hoàn lại:",
+          "position": 8,
+          "name": "Trường hợp nhà tài trợ chỉ định Văn phòng đại diện của nhà tài trợ hoặc tổ chức quản lý, thực hiện chương trình, dự án nhưng nhà thầu chính lập hồ sơ hoàn thuế phải có thêm bản sao hợp đồng ký kết giữa nhà tài trợ với nhà thầu chính hoặc bản sao bản tóm tắt hợp đồng có xác nhận của nhà tài trợ về hợp đồng ký kết giữa nhà tài trợ với nhà thầu chính bao gồm các thông tin: số hợp đồng, ngày ký kết hợp đồng, thời hạn hợp đồng, phạm vi công việc, giá trị hợp đồng, phương thức thanh toán, giá thanh toán theo kết quả thầu không bao gồm thuế giá trị gia tăng",
+          "component_code": "G12.0011675",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "1. Trường hợp hoàn thuế thuộc chương trình, dự án sử dụng vốn hỗ trợ phát triển chính thức (ODA) không hoàn lại:",
+          "position": 9,
+          "name": "Người nộp thuế chỉ phải nộp các giấy tờ theo quy định tại các điểm d.2, d.3, d.5, d.6, d.7 và điểm d.8 khoản 1 Điều 46 Thông tư số 89/2026/TT-BTC (trừ giấy tờ quy định tại điểm d khoản 2 Điều 90 Nghị định số 242/2025/NĐ-CP được sửa đổi, bổ sung tại điểm c khoản 41 Điều 1 Nghị định số 119/2026/NĐ-CP) đối với hồ sơ đề nghị hoàn thuế lần đầu hoặc khi có thay đổi, bổ sung",
+          "component_code": "G12.00116785",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "2. Trường hợp hoàn thuế đối với hàng hóa, dịch vụ mua trong nước bằng nguồn tiền viện trợ không hoàn lại không thuộc hỗ trợ phát triển chính thức:",
+          "position": 1,
+          "name": "Văn bản đề nghị hoàn trả khoản thu ngân sách nhà nước theo mẫu số 01/HT Phụ lục III ban hành kèm theo Thông tư số 89/2026/TT-BTC",
+          "component_code": "G12.00015743",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019fa2f8-a909-727f-ba35-f6a5fe859498",
+              "fileName": "01-HT TT89.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa2f8-a909-727f-ba35-f6a5fe859498/01-HT TT89.docx"
+            }
+          ]
+        },
+        {
+          "section": "2. Trường hợp hoàn thuế đối với hàng hóa, dịch vụ mua trong nước bằng nguồn tiền viện trợ không hoàn lại không thuộc hỗ trợ phát triển chính thức:",
+          "position": 2,
+          "name": "Hồ sơ hoàn thuế theo quy định tại khoản 2 Điều 24 Nghị định số 313/2025/NĐ-CP của Chính phủ quy định về quản lý và sử dụng viện trợ không hoàn lại không thuộc hỗ trợ phát triển chính thức của cơ quan, tổ chức, cá nhân nước ngoài dành cho Việt Nam",
+          "component_code": "G12.0015749",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "2. Trường hợp hoàn thuế đối với hàng hóa, dịch vụ mua trong nước bằng nguồn tiền viện trợ không hoàn lại không thuộc hỗ trợ phát triển chính thức:",
+          "position": 3,
+          "name": "Bảng kê hóa đơn, chứng từ hàng hóa dịch vụ mua vào theo mẫu số 01-1/HT Phụ lục III ban hành kèm theo Thông tư 89/2026/TT-BTC",
+          "component_code": "G12.0015750",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019fada0-7e28-708e-b4a6-8911f7e444b8",
+              "fileName": "3. 01-1.HT.doc",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fada0-7e28-708e-b4a6-8911f7e444b8/3. 01-1.HT.doc"
+            }
+          ]
+        },
+        {
+          "section": "2. Trường hợp hoàn thuế đối với hàng hóa, dịch vụ mua trong nước bằng nguồn tiền viện trợ không hoàn lại không thuộc hỗ trợ phát triển chính thức:",
+          "position": 4,
+          "name": "Người nộp thuế chỉ phải nộp các giấy tờ quy định tại điểm đ.2 khoản 1 Điều 46 Thông tư số 89/2026/TT-BTC đối với hồ sơ đề nghị hoàn thuế lần đầu hoặc khi có thay đổi, bổ sung",
+          "component_code": "G12.0015751",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "3. Trường hợp hoàn thuế đối với hàng hóa, dịch vụ mua trong nước bằng nguồn tiền viện trợ quốc tế khẩn cấp để cứu trợ và khắc phục hậu quả thiên tai tại Việt Nam:",
+          "position": 1,
+          "name": "Văn bản đề nghị hoàn trả khoản thu ngân sách nhà nước theo mẫu số 01/HT Phụ lục III ban hành kèm theo Thông tư số 89/2026/TT-BTC",
+          "component_code": "G12.00015743",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019fa2f8-a909-727f-ba35-f6a5fe859498",
+              "fileName": "01-HT TT89.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa2f8-a909-727f-ba35-f6a5fe859498/01-HT TT89.docx"
+            }
+          ]
+        },
+        {
+          "section": "3. Trường hợp hoàn thuế đối với hàng hóa, dịch vụ mua trong nước bằng nguồn tiền viện trợ quốc tế khẩn cấp để cứu trợ và khắc phục hậu quả thiên tai tại Việt Nam:",
+          "position": 2,
+          "name": "Bản sao Quyết định tiếp nhận viện trợ khẩn cấp để cứu trợ (trường hợp viện trợ quốc tế khẩn cấp để cứu trợ) hoặc Quyết định chủ trương tiếp nhận viện trợ quốc tế khẩn cấp để khắc phục hậu quả thiên tai và văn kiện viện trợ quốc tế khẩn cấp để khắc phục hậu quả thiên tai (trường hợp viện trợ quốc tế khẩn cấp để khắc phục hậu quả thiên tai) theo quy định tại các khoản 6, 7 và khoản 8 Điều 3 Nghị định số 50/2020/NĐ-CP của Chính phủ quy định về tiếp nhận, quản lý và sử dụng viện trợ quốc tế khẩn cấp để cứu trợ và khắc phục hậu quả thiên tai",
+          "component_code": "G12.0015753",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "3. Trường hợp hoàn thuế đối với hàng hóa, dịch vụ mua trong nước bằng nguồn tiền viện trợ quốc tế khẩn cấp để cứu trợ và khắc phục hậu quả thiên tai tại Việt Nam:",
+          "position": 3,
+          "name": "Bảng kê hóa đơn, chứng từ hàng hóa dịch vụ mua vào theo mẫu số 01-1/HT Phụ lục III ban hành kèm theo Thông tư 89/2026/TT-BTC",
+          "component_code": "G12.0015754",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019fada3-1fd3-759b-937a-b7970ca1544e",
+              "fileName": "3. 01-1.HT.doc",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fada3-1fd3-759b-937a-b7970ca1544e/3. 01-1.HT.doc"
+            }
+          ]
+        },
+        {
+          "section": "3. Trường hợp hoàn thuế đối với hàng hóa, dịch vụ mua trong nước bằng nguồn tiền viện trợ quốc tế khẩn cấp để cứu trợ và khắc phục hậu quả thiên tai tại Việt Nam:",
+          "position": 4,
+          "name": "Người nộp thuế chỉ phải nộp các giấy tờ quy định tại điểm e.2 khoản 1 Điều 46 Thông tư số 89/2026/TT-BTC đối với hồ sơ đề nghị hoàn thuế lần đầu hoặc khi có thay đổi, bổ sung",
+          "component_code": "G12.0015755",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 1,
+          "name": "Hồ sơ hoàn thuế áp dụng cho các kỳ tính thuế theo thông báo nâng cấp Hệ thống thông tin quản lý thuế theo lộ trình của cơ quan thuế quy định tại khoản 2 Điều 99 Thông tư số 89/2026/TT-BTC",
+          "component_code": "G12.0015756",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Từ ngày 01/7/2026 đến thời điểm theo lộ trình của cơ quan thuế quy định tại khoản 2 Điều 99 Thông tư số 89/2026/TT-BTC, NNT được áp dụng các mẫu hồ sơ hoàn thuế ban hành kèm theo Thông tư số 80/2021/TT-BTC ngày 29/9/2021 của Bộ Tài chính và các văn bản sửa đổi, bổ sung cho tất cả các kỳ tính thuế",
+          "component_code": "G12.0015757",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019fada4-5926-7429-92f8-cbb2ce9f5642",
+              "fileName": "01 HT TT 80.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fada4-5926-7429-92f8-cbb2ce9f5642/01 HT TT 80.docx"
+            },
+            {
+              "id": "019fada4-c8c1-729f-bdea-70726dcf0c6f",
+              "fileName": "01-1 HT TT 80.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fada4-c8c1-729f-bdea-70726dcf0c6f/01-1 HT TT 80.docx"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "id": "019fa329-7177-760d-ad80-2bef251243b4",
+          "name": "Quyết định hoàn thuế kiêm bù trừ thu ngân sách nhà nước (mẫu số 02/QĐ-HT)",
+          "code": "KQ.G12.001558"
+        },
+        {
+          "id": "019fa6bb-5cc3-70ff-b663-0bb8c95abfb2",
+          "name": "Quyết định hoàn thuế (Mẫu số 01/QĐ-HT)",
+          "code": "KQ.G12.001600"
+        },
+        {
+          "id": "019fa6be-d9ec-771f-b967-a3bae0d4c476",
+          "name": "Phụ lục số tiền thuế, tiền chậm nộp, tiền phạt phải nộp được bù trừ (Mẫu số 01/PL-BT)",
+          "code": "KQ.G12000603"
+        },
+        {
+          "id": "019fa328-0757-726b-936d-17f088ac9c48",
+          "name": "Thông báo số tiền đề nghị hoàn nhưng không được hoàn thuế, số tiền đề nghị hoàn chưa đủ điều kiện được hoàn thuế (mẫu số 04/TB-HT)",
+          "code": "KQ.G12.001485"
+        },
+        {
+          "id": "019d2bb2-1c71-7574-afe8-1af89bd23d1c",
+          "name": "Thông báo về việc giải trình, bổ sung thông tin, tài liệu (Mẫu 01/TB-BSTT-NNT)",
+          "code": "KQ.G12.000566"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7e-72d1-afe9-653aac8276ee",
+          "name": "Nghị định số 118/2025/NĐ-CP của Chính phủ: Về thực hiện thủ tục hành chính theo cơ chế một cửa, một cửa liên thông tại Bộ phận Một cửa và Cổng Dịch vụ công quốc gia",
+          "code": "118/2025/NĐ-CP"
+        },
+        {
+          "id": "019e5e83-1282-771d-9014-49799413a4e5",
+          "name": "Luật số 108/2025/QH15 của Quốc hội: Luật Quản lý thuế",
+          "code": "108/2025/QH15"
+        },
+        {
+          "id": "019d2bb3-5d87-7195-a442-104ae6dd177c",
+          "name": "Luật Thuế giá tri gia tăng năm 2024",
+          "code": "48/2024/QH15"
+        },
+        {
+          "id": "019f356e-75e3-7494-a2f3-672d8dce61a6",
+          "name": "QUY ĐỊNH CHI TIẾT MỘT SỐ ĐIỀU VÀ BIỆN PHÁP ĐỂ TỔ CHỨC, HƯỚNG DẪN THI HÀNH LUẬT QUẢN LÝ THUẾ",
+          "code": "252/2026/NĐ-CP"
+        },
+        {
+          "id": "019f8db3-9765-740b-8b90-682677b9c421",
+          "name": "Thông tư quy định chi tiết một số điều của Luật Quản lý thuế và Nghị định số 252/2026/NĐ-CP của Chính phủ quy định chi tiết một số điều và biện pháp để tổ chức, hướng dẫn thi hành Luật Quản lý thuế",
+          "code": "89/2026/TT-BTC"
+        },
+        {
+          "id": "019d2bb3-5d7f-719e-b46c-872aa63b17a7",
+          "name": "Nghị định số 313/2025/NĐ-CP của Chính phủ: Quản lý và sử dụng viện trợ không hoàn lại không thuộc hỗ trợ phát triển chính thức của cơ quan, tổ chức, cá nhân nước ngoài dành cho Việt Nam",
+          "code": "313/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d87-7195-a442-447b933365e1",
+          "name": "Nghị định 50/2020/NĐ-CP",
+          "code": "50/2020/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afed-f3a003ca9383",
+          "name": "Nghị định về quản lý và sử dụng vốn hỗ trợ phát triển chính thức (ODA) và vốn vay ưu đãi nước ngoài",
+          "code": "242/2025/NĐ-CP"
+        }
+      ]
+    }
+  ]
+}

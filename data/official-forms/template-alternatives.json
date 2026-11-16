@@ -1,0 +1,46 @@
+[
+  {
+    "attachment_id": "019d714f-556b-73bf-82e2-75c07e538b39",
+    "procedure_code": "2.002770",
+    "source_url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2025/3/66-nd-2025.signed.pdf",
+    "source_path": "originals/education-66-2025.pdf",
+    "source_pages": [
+      27
+    ],
+    "source_name": "Nghị định 66/2025/NĐ-CP và phụ lục gốc",
+    "version": "NĐ 66/2025/NĐ-CP ngày 12/3/2025",
+    "local_path": "originals/mau-05-hoc-vien-ban-tru-nd66-2025-trang-27.pdf",
+    "filename": "Mẫu số 05 — học viên bán trú (PDF trích trang 27)",
+    "note": "Trích nguyên trang 27 của PDF gốc, không gõ lại nội dung. Tệp Word Mu05.docx trên DVC trả về rỗng.",
+    "id": "extract-019d714f-556b-73bf-82e2-75c07e538b39",
+    "kind": "blank_form_extract",
+    "status": "downloaded",
+    "bytes": 100168,
+    "sha256": "1efeff1e519c765416f0cd732d257594c6f377b00793bb2d6fe6c75460441b87",
+    "media_type": "application/pdf",
+    "source_sha256": "13a16cd2967ca5b4c9168abe710d880cdd549ef2664ced709202e7ab8bdf4d6d",
+    "render_matches_source": true
+  },
+  {
+    "attachment_id": "01a0f14b-38ed-77e8-a001-22fcbe05bfa0",
+    "procedure_code": "1.003702",
+    "source_url": "https://congbaocdn.chinhphu.vn/CongBaoCP/CongBao/2023/7/39818/45875-1-857-858.pdf",
+    "source_path": "originals/cong-bao-857-858-2023.pdf",
+    "source_pages": [
+      79
+    ],
+    "source_name": "Công báo 857 + 858 ngày 28/7/2023 — có bản hợp nhất NĐ 57/2017 và 104/2022",
+    "version": "NĐ 57/2017/NĐ-CP, hợp nhất sửa đổi NĐ 104/2022/NĐ-CP",
+    "local_path": "originals/mau-02-ho-tro-hoc-tap-cong-bao-2023-trang-79.pdf",
+    "filename": "Mẫu số 02 — hỗ trợ học tập (PDF trích trang 79)",
+    "note": "Trích nguyên trang 79 Công báo, gồm chú thích sửa đổi bởi NĐ 104/2022. Tệp Word Mẫu số 02.docx trên DVC trả về rỗng.",
+    "id": "extract-01a0f14b-38ed-77e8-a001-22fcbe05bfa0",
+    "kind": "blank_form_extract",
+    "status": "downloaded",
+    "bytes": 285135,
+    "sha256": "8590f0685a203d7b1747e81981840b35e971ec7f90e725edc7a19d811372ce31",
+    "media_type": "application/pdf",
+    "source_sha256": "e6833dafc6ee418cf85716401574c6649a7c77db09d2ddbc9b71a95db93affa8",
+    "render_matches_source": true
+  }
+]

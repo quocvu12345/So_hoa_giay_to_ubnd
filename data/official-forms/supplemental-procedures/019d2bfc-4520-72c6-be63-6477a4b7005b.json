@@ -1,0 +1,79 @@
+{
+  "id": "dvc-019d2bfc-4520-72c6-be63-6477a4b7005b",
+  "procedure_code": "1.007855",
+  "name": "Thủ tục hải quan xử lý nguyên liệu, vật tư dư thừa; phế thải, phế liệu, phế phẩm; máy móc, thiết bị thuê, mượn",
+  "domain": "Hải quan",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.950290+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfc-4520-72c6-be63-6477a4b7005b",
+      "code": "1.007855",
+      "name": "Thủ tục hải quan xử lý nguyên liệu, vật tư dư thừa; phế thải, phế liệu, phế phẩm; máy móc, thiết bị thuê, mượn",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1775639773912,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-4520-72c6-be63-6477a4b7005b",
+      "raw_path": "evidence/dvc/details/019d2bfc-4520-72c6-be63-6477a4b7005b.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Trường hợp thực hiện trên tờ khai hải quan giấy theo quy định tại khoản 2 Điều 25 Nghị định số 08/2015/NĐ-CP, người khai hải quan khai và nộp 02 bản chính tờ khai hàng hóa xuất khẩu theo mẫu HQ/2015/XK Phụ lục IV ban hành kèm Thông tư số 38/2015/TT-BTC",
+          "component_code": "000.00.00.G12-KQ8815",
+          "original_quantity": 0,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "+ Tờ khai hàng hóa xuất khẩu theo các chỉ tiêu thông tin tại Phụ lục II ban hành kèm Thông tư số 38/2015/TT-BTC.",
+          "component_code": "000.00.00.G12-KQ8453",
+          "original_quantity": 0,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c70-724b-96e0-46e541515789",
+          "name": "Thông quan hàng hóa nhập khẩu, xuất khẩu",
+          "code": "KQ.G12.000584"
+        },
+        {
+          "id": "019d2bb2-1c73-70ac-aa17-a44e6b0bab67",
+          "name": "Tiêu hủy hàng hóa hoặc xác nhận vào văn bản thông báo đề nghị chuyển sang hợp đồng khác",
+          "code": "KQ.G12.000609"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7e-72d1-afe7-9c25863596db",
+          "name": "Nghị định 08/2015/NĐ-CP",
+          "code": "08/2015/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7d-7398-be4d-ff62cdf67da5",
+          "name": "Luật 54/2014/QH13",
+          "code": "54/2014/QH13"
+        },
+        {
+          "id": "019d2bb3-5d7d-7398-be4d-1c6dbc289d7a",
+          "name": "Quy định về thủ tục hải quan; kiểm tra, giám sát hải quan; thuế xuất khẩu thuế nhập khẩu và quản lý thuế đối vớỉ hàng hoá xuất khẩu, nhập khẩu.",
+          "code": "38/2015/TT-BTC"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "id": "dvc-019d2bff-3508-7268-b54b-6ce79a8cbf0e",
+  "procedure_code": "1.014028",
+  "name": "Hỗ trợ chi phí mai táng đối với đối tượng hưởng trợ cấp hưu trí xã hội",
+  "domain": "Bảo trợ xã hội",
+  "managing_agency": "Bộ Y tế",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.852405+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bff-3508-7268-b54b-6ce79a8cbf0e",
+      "code": "1.014028",
+      "name": "Hỗ trợ chi phí mai táng đối với đối tượng hưởng trợ cấp hưu trí xã hội",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1790936620375,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bff-3508-7268-b54b-6ce79a8cbf0e",
+      "raw_path": "evidence/dvc/details/019d2bff-3508-7268-b54b-6ce79a8cbf0e.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Tờ khai đề nghị hỗ trợ chi phí mai táng (Mẫu số 03 ban hành kèm theo Nghị định số 335/2026/NĐ-CP)",
+          "component_code": "000.00.00.G18-KQ00582",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c7c-74ea-bcd1-32ff548aac85",
+          "name": "Quyết định hỗ trợ chi phí mai táng (BYT)",
+          "code": "KQ.G18.000312"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7e-72d1-afec-9a2fdf61b46d",
+          "name": "NGHỊ ĐỊNH  176/2025/NĐ-CP NGÀY 30/6/2025 QUY ĐỊNH CHI TIẾT VÀ HƯỚNG DẪN THI HÀNH MỘT SỐ ĐIỀU CỦA LUẬT BẢO HIỂM XÃ HỘI VỀ TRỢ CẤP HƯU TRÍ XÃ HỘI",
+          "code": "176/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7f-719e-b46d-d6ce43fbc8e0",
+          "name": "Nghị định số 42/2025/NĐ-CP của Chính phủ: Quy định chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của Bộ Y tế",
+          "code": "42/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d87-7195-a440-f511123122ee",
+          "name": "Luật Bảo hiểm xã hội",
+          "code": "41/2024/QH15"
+        },
+        {
+          "id": "01a0f5ba-70eb-7222-824e-83a91e1866e9",
+          "name": "Nghị định số 335/2026/NĐ-CP ngày 21/8/2026 của Chính phủ quy\nđịnh chính sách trợ giúp xã hội",
+          "code": "335/2026/NĐ-CP"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "id": "dvc-019d2bfc-e97b-7644-8f2b-07949526a9a0",
+  "procedure_code": "2.002226",
+  "name": "Thông báo thành lập/thay đổi tổ hợp tác không đăng ký",
+  "domain": "Thành lập và hoạt động của tổ hợp tác không đăng ký",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.905941+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfc-e97b-7644-8f2b-07949526a9a0",
+      "code": "2.002226",
+      "name": "Thông báo thành lập/thay đổi tổ hợp tác không đăng ký",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1785492267808,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-e97b-7644-8f2b-07949526a9a0",
+      "raw_path": "evidence/dvc/details/019d2bfc-e97b-7644-8f2b-07949526a9a0.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "- Thông báo thành lập/thay đổi tổ hợp tác không đăng ký (Mẫu số 1);",
+          "component_code": "TP-G12.0001999",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019fa66f-5407-70e9-a7a3-5f20bab20e1e",
+              "fileName": "Biểu mẫu số 01 _ Giấy thông báo thành lập hoặc thay đổi tổ hợp tác không đăng ký.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa66f-5407-70e9-a7a3-5f20bab20e1e/Biểu mẫu số 01 _ Giấy thông báo thành lập hoặc thay đổi tổ hợp tác không đăng ký.docx"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "- Hợp đồng hợp tác (Mẫu số 2);",
+          "component_code": "TP-G12.0002011",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019fa66f-7e75-76bf-bcad-890989a4587e",
+              "fileName": "Biểu mẫu số 02 _ Hợp đồng hợp tác.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa66f-7e75-76bf-bcad-890989a4587e/Biểu mẫu số 02 _ Hợp đồng hợp tác.docx"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 3,
+          "name": "- Bản sao hoặc bản chính biên bản họp tổ hợp tác về việc bầu tổ trưởng (trường hợp tổ trưởng nộp hồ sơ);",
+          "component_code": "TP-G12.0002012",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 4,
+          "name": "Bản sao hoặc bản chính văn bản ủy quyền của một trăm phần trăm (100%) tổng số thành viên tổ hợp tác đồng ý (trường hợp người đại diện theo ủy quyền của các thành viên tổ hợp tác nộp hồ sơ)",
+          "component_code": "TP-G12.0002015",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c73-70ac-aa18-dbfbf73baac7",
+          "name": "Cập nhật vào Hệ thống thông tin về đăng ký hợp tác xã hoặc thông báo",
+          "code": "KQ.G12.001487"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d84-71c5-b670-d23f4a84e3b8",
+          "name": "Bộ luật Dân sự",
+          "code": "91/2015/QH13"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b671-d9e439ecbebe",
+          "name": "Luật Hợp tác xã",
+          "code": "17/2023/QH15"
+        },
+        {
+          "id": "019fa2f0-0446-76c2-b339-d67344e0c90b",
+          "name": "Nghị định về tổ hợp tác",
+          "code": "294/2026/NĐ-CP"
+        }
+      ]
+    }
+  ]
+}

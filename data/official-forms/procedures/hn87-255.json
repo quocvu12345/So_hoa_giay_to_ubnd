@@ -1,0 +1,87 @@
+{
+  "ordinal": "255",
+  "managing_agency": "Sở Giáo dục Đào tạo",
+  "procedure_code": "1.008951",
+  "name": "Hỗ trợ đối với giáo viên mầm non làm việc tại cơ sở giáo dục mầm non dân lập, tư thục ở địa bàn có khu công nghiệp",
+  "domain": "Giáo dục và đào tạo thuộc hệ thống giáo dục quốc dân",
+  "ministry_decision": "1755/QĐ-BGDĐT ngày 27/06/2025",
+  "hanoi_decision": "1168/QĐ-TTPVHCC ngày 12/08/2025",
+  "workflow_decision": "1270/QĐ-TTPVHCC ngày 9/9/2025",
+  "fees": "Không quy định",
+  "execution_level": "Cấp xã",
+  "competent_authority": "UBND cấp xã",
+  "delegation_decision": "",
+  "delegation_expiry": "",
+  "receiving_location": "Điểm hỗ trợ DVC số",
+  "id": "hn87-255",
+  "source_page": 10,
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "inventory_date": "2026-04-27",
+  "checked_at": "2026-11-12T22:24:39.742370+07:00",
+  "details": [
+    {
+      "id": "019d2bf8-b0b2-7055-8dda-a3270391d92e",
+      "code": "1.008951",
+      "name": "Hỗ trợ đối với giáo viên mầm non làm việc tại cơ sở giáo dục mầm non dân lập, tư thục ở địa bàn có khu công nghiệp",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1776130946667,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf8-b0b2-7055-8dda-a3270391d92e",
+      "raw_path": "evidence/dvc/details/019d2bf8-b0b2-7055-8dda-a3270391d92e.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Danh sách giáo viên được hưởng chính sách (Mẫu số 05 quy định tại Phụ lục kèm theo Nghị định 105/2020/NĐ-CP)",
+          "component_code": "TP-G03.1309",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019d71ee-2f43-71ed-877b-6b4ea9aa6f34",
+              "fileName": "Mẫu số 05_ND105.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d71ee-2f43-71ed-877b-6b4ea9aa6f34/Mẫu số 05_ND105.docx"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Bản sao kèm bản chính để đối chiếu hoặc bản sao có chứng thực Hợp đồng lao động của giáo viên được hưởng chính sách",
+          "component_code": "TP-G03.1310",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c3b-735b-85a8-6b5b33d54968",
+          "name": "Danh sách giáo viên được hưởng chính sách",
+          "code": "KQ-G03.000425"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d86-7760-a63c-7fbfbf53f196",
+          "name": "Nghị định 105/2020/NĐ-CP",
+          "code": "105/2020/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7f-719e-b474-64d6cf9b4aac",
+          "name": "Nghị định số 142/2025/NĐ-CP của Chính phủ: Quy định về phân định thẩm quyền của chính quyền địa phương hai cấp trong lĩnh vực quản lý nhà nước của Bộ Giáo dục và Đào tạo",
+          "code": "Nghị định số 142/2025/NĐ-CP"
+        }
+      ]
+    }
+  ],
+  "lookup_status": "retrieved",
+  "currency_status": "snapshot_requires_later_amendment_check",
+  "errors": []
+}

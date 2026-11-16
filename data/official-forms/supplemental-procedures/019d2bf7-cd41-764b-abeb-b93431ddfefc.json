@@ -1,0 +1,85 @@
+{
+  "id": "dvc-019d2bf7-cd41-764b-abeb-b93431ddfefc",
+  "procedure_code": "3.000527",
+  "name": "Đăng ký cai nghiện ma  túy tự nguyện",
+  "domain": "Tổ chức cai nghiên ma túy và quản lý sau cai nghiện",
+  "managing_agency": "Bộ Công an",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:18.030316+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bf7-cd41-764b-abeb-b93431ddfefc",
+      "code": "3.000527",
+      "name": "Đăng ký cai nghiện ma  túy tự nguyện",
+      "state": "ACTIVE",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1777626456019,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf7-cd41-764b-abeb-b93431ddfefc",
+      "raw_path": "evidence/dvc/details/019d2bf7-cd41-764b-abeb-b93431ddfefc.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Bản sao Phiếu kết  quả xác định tình trạng nghiện ma túy của cơ quan có thẩm quyền;",
+          "component_code": "000.00.00.G01-KQ003541",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Đăng ký cai nghiện ma túy tự nguyện của người nghiện hoặc người đại diện hợp pháp theo Mẫu  số 22 Phụ lục II Nghị định số 116/2021/NĐ-CP;",
+          "component_code": "000.00.00.G01-KQ003540",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 3,
+          "name": "Bản phôtô một trong các loại giấy tờ tùy thân: căn cước công dân hoặc thẻ căn cước, hộ chiếu, giấy khai sinh  (đối với người từ đủ 12 tuổi đến dưới 18 tuổi) của người nghiện ma túy.",
+          "component_code": "000.00.00.G01-KQ003542",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c38-75c9-8e12-2c949cf8c5f1",
+          "name": "Quyết định của Chủ tịch Ủy ban nhân dân cấp xã về việc cai nghiện ma túy tự nguyện  tại gia đình, cộng đồng.",
+          "code": "KQ.G01.000257"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7e-72d1-afec-c7ba7cb44bf3",
+          "name": "Nghị định số 184/2025/NĐ-CP của Chính phủ: Quy định phân định thẩm quyền khi tổ chức chính quyền địa phương 02 cấp và sửa đổi, bổ sung một số điều của các Nghị định của Chính phủ trong lĩnh vực an ninh, trật tự",
+          "code": "184/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afe9-4b2f8b8b2cde",
+          "name": "QUY ĐỊNH CHI TIẾT MỘT SỐ ĐIỀU CỦA LUẬT PHÒNG, CHỐNG MA TÚY, LUẬT XỬ LÝ VI PHẠM HÀNH CHÍNH VỀ CAI NGHIỆN MA TÚY VÀ QUẢN LÝ SAU CAI NGHIỆN MA TÚY",
+          "code": "116/2021/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d85-73da-8eb9-fd19385e43a2",
+          "name": "Luật Phòng, chống ma túy số 73/2021/QH14",
+          "code": "73/2021/QH14"
+        }
+      ]
+    }
+  ]
+}

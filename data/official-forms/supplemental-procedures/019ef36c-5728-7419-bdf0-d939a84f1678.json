@@ -1,0 +1,63 @@
+{
+  "id": "dvc-019ef36c-5728-7419-bdf0-d939a84f1678",
+  "procedure_code": "1.115232",
+  "name": "Đăng ký lại mẫu con dấu",
+  "domain": "Đăng ký, quản lý con dấu",
+  "managing_agency": "Bộ Công an",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.485724+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019ef36c-5728-7419-bdf0-d939a84f1678",
+      "code": "1.115232",
+      "name": "Đăng ký lại mẫu con dấu",
+      "state": "ACTIVE",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1782209220753,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019ef36c-5728-7419-bdf0-d939a84f1678",
+      "raw_path": "evidence/dvc/details/019ef36c-5728-7419-bdf0-d939a84f1678.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "a) Đối với cơ quan, tổ chức có con dấu bị biến dạng, mòn, hỏng hoặc thay đổi chất liệu: Văn bản đề nghị đăng ký mẫu con dấu của cơ quan, tổ chức, chức danh nhà nước.",
+          "component_code": "000.00.00.G01- KQ002582.",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c36-71b8-ad26-c9e7b11b974d",
+          "name": "Con dấu và Giấy chứng nhận đăng ký mẫu con dấu",
+          "code": "KQ.G01.000031"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7f-719e-b46f-0ca240576c04",
+          "name": "Nghị định 56/2023/NĐ-CP",
+          "code": "56/2023/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7f-719e-b473-61b8951d61e3",
+          "name": "Nghị định 99/2016/NĐ-CP",
+          "code": "99/2016/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d86-7760-a640-a84d6eed6a9d",
+          "name": "Thông tư 15/2022/TT-BCA",
+          "code": "15/2022/TT-BCA"
+        }
+      ]
+    }
+  ]
+}

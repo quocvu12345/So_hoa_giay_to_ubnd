@@ -1,0 +1,91 @@
+{
+  "ordinal": "98",
+  "managing_agency": "Sở Văn hóa thể thao",
+  "procedure_code": "1.003743",
+  "name": "Thủ tục kiểm tra chuyên ngành văn hóa phẩm không nhằm mục đích kinh doanh trước khi xuất khẩu cấp tỉnh",
+  "domain": "Văn hóa",
+  "ministry_decision": "696/QĐ-BVHTTDL",
+  "hanoi_decision": "558/QĐ-TTPVHCC ngày 31/3/2025",
+  "workflow_decision": "607/QĐ-TTPVHCC ngày 15/4/2025",
+  "fees": "Không quy định",
+  "execution_level": "Cấp Xã",
+  "competent_authority": "UBND cấp xã",
+  "delegation_decision": "93/QĐ-SVHTT ngày 07/2/2026",
+  "delegation_expiry": "31/12/2028",
+  "receiving_location": "Chi nhánh TTPVHCC",
+  "id": "hn87-098",
+  "source_page": 4,
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "inventory_date": "2026-04-27",
+  "checked_at": "2026-11-12T22:24:34.531900+07:00",
+  "details": [
+    {
+      "id": "019d2bfd-c577-7749-bbc4-179495f31035",
+      "code": "1.003743",
+      "name": "Thủ tục kiểm tra chuyên ngành văn hóa phẩm không nhằm mục đích kinh doanh trước khi xuất khẩu ",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": false,
+      "updated_at_source": 1779267434991,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfd-c577-7749-bbc4-179495f31035",
+      "raw_path": "evidence/dvc/details/019d2bfd-c577-7749-bbc4-179495f31035.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "(2) Văn hóa phẩm đề nghị kiểm tra chuyên ngành;",
+          "component_code": "G16-KQ001860",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "(3) Trường hợp văn hóa phẩm là di vật, cổ vật phải có thêm: Bản sao quyết định cho phép xuất khẩu di vật, cổ vật của Bộ trưởng Bộ Văn hóa, Thể thao và Du lịch và Bản sao tài liệu kèm theo bản chính để đối chiếu hoặc bản sao có chứng thực tài liệu có liên quan chứng minh nguồn gốc, xuất xứ hợp pháp của di vật, cổ vật",
+          "component_code": "G16-KQ001861",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 3,
+          "name": "(1) Đơn đề nghị kiểm tra chuyên ngành văn hóa phẩm xuất khẩu theo Phụ lục I  Nghị định 31/2025/NĐ-CP ngày 24 tháng 02 năm 2025 của Chính phủ",
+          "component_code": "G16-KQ001859",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c79-762e-8b2c-62ba0955766c",
+          "name": "Biên bản kiểm tra chuyên ngành văn hóa phẩm xuất khẩu",
+          "code": "KQ.G16.000318"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7f-719e-b46c-99192fa740e1",
+          "name": "Nghị định 32/2012/NĐ-CP",
+          "code": "32/2012/NĐ-CP"
+        },
+        {
+          "id": "019e1f0d-519c-718d-b974-e426c90b3034",
+          "name": "Nghị quyết số 18/2026/NQ-CP ngày 29/4/2026 của Chính phủ về cắt giảm, phân cấp, đơn giản hóa thủ tục hành chính, cắt giảm điều kiện đầu tư kinh doanh thuộc phạm vi quản lý của Bộ Văn hóa, Thể thao và Du lịch.",
+          "code": "18/2026/NQ-CP "
+        }
+      ]
+    }
+  ],
+  "lookup_status": "retrieved",
+  "currency_status": "snapshot_requires_later_amendment_check",
+  "errors": []
+}

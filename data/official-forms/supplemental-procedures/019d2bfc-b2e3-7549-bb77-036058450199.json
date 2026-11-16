@@ -1,0 +1,75 @@
+{
+  "id": "dvc-019d2bfc-b2e3-7549-bb77-036058450199",
+  "procedure_code": "1.010949",
+  "name": "Thay đổi kỳ tính thuế giá trị gia tăng từ tháng sang quý",
+  "domain": "Thuế",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.924892+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfc-b2e3-7549-bb77-036058450199",
+      "code": "1.010949",
+      "name": "Thay đổi kỳ tính thuế giá trị gia tăng từ tháng sang quý",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1785399198570,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-b2e3-7549-bb77-036058450199",
+      "raw_path": "evidence/dvc/details/019d2bfc-b2e3-7549-bb77-036058450199.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Văn bản đề nghị thay đổi kỳ tính thuế từ tháng sang quý mẫu số 01/ĐK-TĐKTT Phụ lục I Thông tư số 89/2026/TT-BTC",
+          "component_code": "G12.0003660",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019fa2d5-fc41-76d9-aa30-46cda2078dc9",
+              "fileName": "11. 01-ĐK-TĐKTT.doc",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa2d5-fc41-76d9-aa30-46cda2078dc9/11. 01-ĐK-TĐKTT.doc"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "id": "019fa2d7-af52-772f-89b8-6a2c8ad0fd84",
+          "name": "Thông báo cho người nộp thuế về việc tiếp nhận hoặc không tiếp nhận (mẫu số 01/TB-TĐT)",
+          "code": "KQ.G12.000545"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019e5e83-1282-771d-9014-49799413a4e5",
+          "name": "Luật số 108/2025/QH15 của Quốc hội: Luật Quản lý thuế",
+          "code": "108/2025/QH15"
+        },
+        {
+          "id": "019f64ed-e026-7299-b5f2-ca44a3964050",
+          "name": "Nghị định về thực hiện thủ tục hành chính theo cơ chế một cửa, một cửa liên thông tại Bộ phận Một cửa và Cổng Dịch vụ công quốc gia.",
+          "code": "118/2025/NĐ-CP "
+        },
+        {
+          "id": "019d2bb3-5d87-7195-a442-104ae6dd177c",
+          "name": "Luật Thuế giá tri gia tăng năm 2024",
+          "code": "48/2024/QH15"
+        },
+        {
+          "id": "019f8db3-9765-740b-8b90-682677b9c421",
+          "name": "Thông tư quy định chi tiết một số điều của Luật Quản lý thuế và Nghị định số 252/2026/NĐ-CP của Chính phủ quy định chi tiết một số điều và biện pháp để tổ chức, hướng dẫn thi hành Luật Quản lý thuế",
+          "code": "89/2026/TT-BTC"
+        }
+      ]
+    }
+  ]
+}

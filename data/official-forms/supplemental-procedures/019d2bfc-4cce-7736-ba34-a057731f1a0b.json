@@ -1,0 +1,197 @@
+{
+  "id": "dvc-019d2bfc-4cce-7736-ba34-a057731f1a0b",
+  "procedure_code": "1.007887",
+  "name": "Thủ tục tái xuất khẩu xe ô tô, xe gắn máy của đối tượng được hưởng quyền ưu đãi, miễn trừ",
+  "domain": "Hải quan",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.948382+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfc-4cce-7736-ba34-a057731f1a0b",
+      "code": "1.007887",
+      "name": "Thủ tục tái xuất khẩu xe ô tô, xe gắn máy của đối tượng được hưởng quyền ưu đãi, miễn trừ",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1775639874107,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-4cce-7736-ba34-a057731f1a0b",
+      "raw_path": "evidence/dvc/details/019d2bfc-4cce-7736-ba34-a057731f1a0b.json",
+      "components": [
+        {
+          "section": "a) Đối với xe ô tô, xe gắn máy của cơ quan:",
+          "position": 1,
+          "name": "Văn bản đề nghị tái xuất xe ô tô, xe gắn máy theo Phụ lục III ban hành kèm Thông tư số 27/2021/TT-BTC ngày 19/4/2021 của Bộ trưởng Bộ Tài chính: 01 bản chính.",
+          "component_code": "000.00.00.G12-KQ010176",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "b) Đối với xe ô tô, xe gắn máy của cá nhân:",
+          "position": 1,
+          "name": "+ Văn bản đề nghị tái xuất xe ô tô, xe gắn máy theo Phụ lục III ban hành kèm Thông tư số 27/2021/TT-BTC dẫn trên: 01 bản chính có xác nhận của cơ quan nơi đối tượng công tác tại Việt Nam hoặc văn bản đề nghị tái xuất xe ô tô, xe gắn máy của cơ quan nơi chủ xe công tác đối với trường hợp đối tượng được hưởng quyền ưu đãi, miễn trừ là cá nhân ủy quyền cho cơ quan nơi công tác thực hiện thủ tục tái xuất xe ô tô, xe gắn máy;",
+          "component_code": "000.00.00.G12-KQ010177",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "b) Đối với xe ô tô, xe gắn máy của cá nhân:",
+          "position": 2,
+          "name": "+ Giấy ủy quyền cho cơ quan nơi đối tượng công tác làm thủ tục tái xuất xe ô tô, xe gắn máy theo quy định tại khoản 2 Điều 1 Quyết định số 14/2021/QĐ-TTg ngày 26/03/2021 của Thủ tướng Chính phủ: 01 bản chính;",
+          "component_code": "000.00.00.G12-KQ010179",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "b) Đối với xe ô tô, xe gắn máy của cá nhân:",
+          "position": 3,
+          "name": "+ Chứng minh thư do Bộ Ngoại giao cấp: 01 bản chụp từ bản chính và xuất trình bản chính để đối chiếu; hoặc 01 bản chụp có xác nhận của cơ quan nơi đối tượng ủy quyền công tác đối với trường hợp đối tượng được hưởng quyền ưu đãi, miễn trừ là cá nhân ủy quyền cho cơ quan nơi công tác thực hiện thủ tục tái xuất xe ô tô, xe gắn máy;",
+          "component_code": "000.00.00.G12-KQ010178",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 1,
+          "name": "e) Biên bản xác nhận của cơ quan nhà nước có thẩm quyền về việc xe ô tô, xe gắn máy bị tai nạn, thiên tai hoặc do nguyên nhân khách quan về kỹ thuật không tiếp tục sử dụng được: 01 bản chính (đối với trường hợp quy định tại khoản 3 Điều 7 Quyết định số 53/2013/QĐ-TTg ngày 13/09/2013 của Thủ tướng Chính phủ);",
+          "component_code": "000.00.00.G12-KQ010183",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "d) Tờ khai hàng hóa nhập khẩu xe có đóng dấu “dùng cho tái xuất hoặc chuyển nhượng hoặc tiêu hủy theo quy định của pháp luật”: 01 bản chính đối với trường hợp khi tạm nhập khẩu thực hiện thủ tục hải quan giấy;",
+          "component_code": "000.00.00.G12-KQ010181",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 3,
+          "name": "g) Tờ khai hàng hóa xuất khẩu theo các chỉ tiêu thông tin quy định tại Mẫu số 02 - Tờ khai hàng hóa xuất khẩu Phụ lục I ban hành kèm Thông tư số 39/2018/TT-BTC ngày 20/04/2018 của Bộ trưởng Bộ Tài chính.",
+          "component_code": "000.00.00.G12-KQ010184",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 4,
+          "name": "đ) Giấy chứng nhận thu hồi đăng ký, biển số xe ô tô, xe gắn máy do cơ quan công an cấp: 01 bản chính;",
+          "component_code": "000.00.00.G12-KQ010182",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 5,
+          "name": "Trường hợp thực hiện trên tờ khai hải quan giấy theo quy định tại khoản 12 Điều 1 Nghị định số 59/2018/NĐ-CP ngày 20/4/2018 của Chính phủ, người khai hải quan khai và nộp 02 bản chính tờ khai hàng hóa xuất khẩu theo mẫu HQ/2015/XK Phụ lục IV ban hành kèm Thông tư số 38/2015/TT-BTC ngày 25/03/2015 của Bộ trưởng Bộ Tài chính. Người khai hải quan phải khai thông tin về số tờ khai hàng hóa tạm nhập khẩu xe trên chỉ tiêu thông tin tiêu chí số 2.3 của tờ khai hàng hóa xuất khẩu đối với trường hợp thực hiện thủ tục hải quan điện tử, tại ô 29 (ghi chép khác) của tờ khai hàng hóa xuất khẩu đối với trường hợp thực hiện thủ tục hải quan giấy.",
+          "component_code": "000.00.00.G12-KQ010185",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 6,
+          "name": "c) Văn bản của Bộ Ngoại giao (Cục Lễ tân Nhà nước hoặc Sở Ngoại vụ địa phương nơi có cơ quan Lãnh sự đóng) về việc tái xuất khẩu xe ô tô, xe gắn máy: 01 bản chính;",
+          "component_code": "000.00.00.G12-KQ010180",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c70-724b-96e0-73354b7971f6",
+          "name": "Thông quan xe ô tô, xe gắn máy của đối tượng được hưởng quyền ưu đãi, miễn trừ tái xuất khẩu",
+          "code": "KQ.G12.000367"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7e-72d1-afe7-9c25863596db",
+          "name": "Nghị định 08/2015/NĐ-CP",
+          "code": "08/2015/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d87-7195-a443-db1e211c2ddd",
+          "name": "Nghị định 59/2018/NĐ-CP",
+          "code": "59/2018/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7d-7398-be4d-ff62cdf67da5",
+          "name": "Luật 54/2014/QH13",
+          "code": "54/2014/QH13"
+        },
+        {
+          "id": "019d2bb3-5d7d-7398-be49-43bd2a973c0f",
+          "name": "Thông tư số 119/2014/TT-BTC",
+          "code": "119/2014/TT-BTC"
+        },
+        {
+          "id": "019d2bb3-5d87-7195-a447-33ac962f66e7",
+          "name": "Thông tư 93/2018/TT-BTC",
+          "code": "93/2018/TT-BTC"
+        },
+        {
+          "id": "019d2bb3-5d7d-7398-be4a-c237f57a1fc1",
+          "name": "Thông tư số 19/2014/TT-BTC ngày 11/02/2014 của Bộ Tài chính quy định thủ tục tạm nhập khẩu, tái xuất khẩu, tiêu hủy, chuyển nhượng  xe ô tô, xe hai bánh gắn máy của đối tượng được hưởng quyền ưu đãi, miễn trừ tại Việt Nam",
+          "code": "19/2014/TT-BTC"
+        },
+        {
+          "id": "019d2bb3-5d86-7760-a63b-c73df48de5a0",
+          "name": "Quyết định 10/2018/QĐ-TTg",
+          "code": "10/2018/QĐ-TTg"
+        },
+        {
+          "id": "019d2bb3-5d87-7195-a444-1ce4a9535813",
+          "name": "Quyết định 601/QĐ-BTC",
+          "code": "601/QĐ-BTC"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b679-0992d019eaf0",
+          "name": "Quyết định số 53/2013/QĐ-TTg  ngày 13  tháng 09  năm 2013 của Thủ tướng Chính phủ về việc tạm nhập khẩu, tái xuất khẩu, tiêu hủy, chuyển nhượng đối với xe ô tô, xe hai bánh gắn máy của đối tượng được hưởng quyền ưu đãi miễn trừ tại Việt Nam",
+          "code": "53/2013/QĐ-TTg"
+        },
+        {
+          "id": "019d2bb3-5d87-7195-a445-3f0235d1cbf5",
+          "name": "Nghị định 73/NĐ-CP ngày 30/7/1994 của Chính phủ quy định chi tiết việc thực hiện Pháp lệnh về việc ưu đãi và miễn trừ dành cho các cơ quan đại diện ngoại giao, cơ quan Lãnh sự và đại diện tổ chức quốc tế Việt Nam.",
+          "code": "73-CP"
+        }
+      ]
+    }
+  ]
+}

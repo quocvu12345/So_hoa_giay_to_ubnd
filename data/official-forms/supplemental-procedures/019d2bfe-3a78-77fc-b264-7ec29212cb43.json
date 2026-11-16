@@ -1,0 +1,108 @@
+{
+  "id": "dvc-019d2bfe-3a78-77fc-b264-7ec29212cb43",
+  "procedure_code": "1.003970",
+  "name": "Đăng ký lại phương tiện trong trường hợp chuyển quyền sở hữu phương tiện đồng thời thay đổi cơ quan đăng ký phương tiện",
+  "domain": "Hàng hải và đường thủy nội địa",
+  "managing_agency": "Bộ xây dựng (Giao thông vận tải cũ)",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.868166+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfe-3a78-77fc-b264-7ec29212cb43",
+      "code": "1.003970",
+      "name": "Đăng ký lại phương tiện trong trường hợp chuyển quyền sở hữu phương tiện đồng thời thay đổi cơ quan đăng ký phương tiện",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1776357034162,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfe-3a78-77fc-b264-7ec29212cb43",
+      "raw_path": "evidence/dvc/details/019d2bfe-3a78-77fc-b264-7ec29212cb43.json",
+      "components": [
+        {
+          "section": "* Xuất trình hoặc gửi bản chính hoặc bản sao có chứng thực hoặc bản sao điện tử được chứng thực từ bản chính hoặc bản sao điện tử được cấp từ sổ gốc các loại giấy tờ sau đây để cơ quan đăng ký phương tiện kiểm tra:",
+          "position": 1,
+          "name": "Giấy chứng nhận an toàn kỹ thuật và bảo vệ môi trường của phương tiện còn hiệu lực đối với phương tiện thuộc diện đăng kiểm..",
+          "component_code": "000.00.00.G04-KQ1521",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "* Xuất trình hoặc gửi bản chính hoặc bản sao có chứng thực hoặc bản sao điện tử được chứng thực từ bản chính hoặc bản sao điện tử được cấp từ sổ gốc các loại giấy tờ sau đây để cơ quan đăng ký phương tiện kiểm tra:",
+          "position": 2,
+          "name": "Hợp đồng mua bán phương tiện hoặc quyết định điều chuyển phương tiện của cơ quan có thẩm quyền hoặc giấy tờ khác chứng minh phương tiện được cho, tặng, thừa kế theo quy định của pháp luật. Trường hợp chủ phương tiện là tổ chức, cá nhân nước ngoài đứng tên đăng ký lại phương tiện thì phải xuất trình giấy tờ chứng minh được phép hoạt động và có trụ sở tại Việt Nam hoặc giấy tờ chứng minh được phép cư trú tại Việt Nam;",
+          "component_code": "000.00.00.G04-KQ1520",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Giấy tờ phải nộp để lưu giữ tại cơ quan đăng ký phương tiện:",
+          "position": 1,
+          "name": "Đơn đề nghị đăng ký lại phương tiện thủy nội địa theo quy định",
+          "component_code": "000.00.00.G04-KQ005223",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019d9643-c14f-7587-836e-cf22d76c86bf",
+              "fileName": "Mauon.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d9643-c14f-7587-836e-cf22d76c86bf/Mauon.docx"
+            }
+          ]
+        },
+        {
+          "section": "Giấy tờ phải nộp để lưu giữ tại cơ quan đăng ký phương tiện:",
+          "position": 2,
+          "name": "Biên lai nộp lệ phí trước bạ (bản chính hoặc bản sao có chứng thực hoặc bản sao điện tử được chứng thực từ bản chính hoặc bản sao điện tử được cấp từ sổ gốc) đối với phương tiện thuộc diện phải nộp lệ phí trước bạ",
+          "component_code": "000.00.00.G04-KQ005219",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c7a-7554-ace6-0125765c932a",
+          "name": "Giấy chứng nhận đăng ký phương tiện thủy nội địa.",
+          "code": "KQ.G17.000321"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7c-71ab-9eff-8252bdc658b1",
+          "name": "Quy định về đăng ký phương tiện thủy nội địa",
+          "code": "75/2014/TT-BGTVT"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afe1-1e8732e4a2c4",
+          "name": "Thông tư sửa đổi, bổ sung một số điều của các Thông tư thuộc lĩnh vực quản lý nhà nước của Bộ Xây dựng liên quan đến sắp xếp tổ chức bộ máy, thực hiện chính quyền địa phương hai cấp và phân cấp cho chính quyền địa phương.",
+          "code": "09/2025/TT-BXD"
+        },
+        {
+          "id": "019d2bb3-5d7d-7398-be4a-f3074c98837e",
+          "name": "Quy định mức thu, chế độ thu, nộp, quản lý và sử dụng phí, lệ phí trong lĩnh vực đường thủy nội địa và đường sắt",
+          "code": "198/2016/TT-BTC"
+        },
+        {
+          "id": "019d2bb3-5d7c-71ab-9eff-539c9e188aa7",
+          "name": "Sửa đổi, bổ sung một số điều của các Thông tư quy định về đăng ký phương tiện thủy nội địa và quy định thi, kiểm tra, cấp, cấp lại, chuyển đổi giấy chứng nhận khả năng chuyên môn, chứng chỉ chuyên môn thuyền viên, người lái phương tiện thủy nội địa",
+          "code": "60/2024/TT-BGTVT"
+        }
+      ]
+    }
+  ]
+}

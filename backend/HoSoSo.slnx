@@ -1,0 +1,13 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/HoSoSo.Domain/HoSoSo.Domain.csproj" />
+    <Project Path="src/HoSoSo.Application/HoSoSo.Application.csproj" />
+    <Project Path="src/HoSoSo.Infrastructure/HoSoSo.Infrastructure.csproj" />
+    <Project Path="src/HoSoSo.Api/HoSoSo.Api.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/HoSoSo.Domain.Tests/HoSoSo.Domain.Tests.csproj" />
+    <Project Path="tests/HoSoSo.Application.Tests/HoSoSo.Application.Tests.csproj" />
+    <Project Path="tests/HoSoSo.Api.IntegrationTests/HoSoSo.Api.IntegrationTests.csproj" />
+  </Folder>
+</Solution>

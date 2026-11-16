@@ -1,0 +1,81 @@
+{
+  "id": "dvc-019d2bf8-b0a4-756f-a185-c74fda62ef1c",
+  "procedure_code": "1.008950",
+  "name": "Trợ cấp đối với trẻ em mầm non là con công nhân, người lao động làm việc tại khu công nghiệp",
+  "domain": "Giáo dục và Đào tạo thuộc hệ thống giáo dục quốc dân",
+  "managing_agency": "Bộ Giáo dục và Đào tạo",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:18.025495+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bf8-b0a4-756f-a185-c74fda62ef1c",
+      "code": "1.008950",
+      "name": "Trợ cấp đối với trẻ em mầm non là con công nhân, người lao động làm việc tại khu công nghiệp",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1775733488457,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf8-b0a4-756f-a185-c74fda62ef1c",
+      "raw_path": "evidence/dvc/details/019d2bf8-b0a4-756f-a185-c74fda62ef1c.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Đơn đề nghị trợ cấp đối với trẻ em mầm non là con công nhân, người lao động tại khu công nghiệp (Mẫu số 03 quy định tại Phụ lục kèm theo Nghị định 105/2020/NĐ-CP) có xác nhận của đơn vị sử dụng lao động nơi cha hoặc mẹ hoặc người chăm sóc, nuôi dưỡng trẻ em đang công tác",
+          "component_code": "TP-G03.1306",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019d71f1-13ef-774f-a794-a25e975837b5",
+              "fileName": "Mau don_ND105.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d71f1-13ef-774f-a794-a25e975837b5/Mau don_ND105.docx"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Giấy khai sinh (Bản sao kèm theo bản chính để đối chiếu hoặc bản sao có chứng thực). (Cơ quan giải quyết TTHC khai thác, sử dụng thông tin đã có trong CSDL quốc gia về Tư pháp để thay thế thành phần hồ sơ Bản sao các văn bản pháp lý chứng minh quyền sử dụng đất, quyền sở hữu nhà hoặc hợp đồng thuê địa điểm trường mầm non với thời hạn tối thiểu 05 năm. Trường hợp Cơ quan giải quyết TTHC không khai thác được hoặc khai thác không đầy đủ dữ liệu trên CSDL quốc gia về Đất đai, Cơ quan giải quyết TTHC yêu cầu tổ chức, cá nhân bổ sung Bản sao các văn bản pháp lý chứng minh quyền sử dụng đất, quyền sở hữu nhà hoặc hợp đồng thuê địa điểm trường mầm non với thời hạn tối thiểu 05 năm theo quy định tại Điều 8 Nghị quyết 66.7/2025/NQ-CP ngày 15/11/2025 của Chính phủ quy định cắt giảm, đơn giản hóa thủ tục hành chính dựa trên dữ liệu).",
+          "component_code": "TP-G03.001495",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c3b-735b-85a8-6481874bc158",
+          "name": "Danh sách trẻ em mầm non được hưởng trợ cấp do UBND cấp xã phê duyệt",
+          "code": "KQ-G03.000424"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7f-719e-b474-64d6cf9b4aac",
+          "name": "Nghị định số 142/2025/NĐ-CP của Chính phủ: Quy định về phân định thẩm quyền của chính quyền địa phương hai cấp trong lĩnh vực quản lý nhà nước của Bộ Giáo dục và Đào tạo",
+          "code": "Nghị định số 142/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afe8-3ac91da2e6b0",
+          "name": "Nghị định sửa đổi, bổ sung một số điều của các Nghị định liên quan đến việc nộp xuất trình sổ hộ khẩu, sổ tạm trú giấy khi thực hiện thủ tục hành chính, cung cấp dịch vụ công",
+          "code": "104/2022/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d86-7760-a63c-7fbfbf53f196",
+          "name": "Nghị định 105/2020/NĐ-CP",
+          "code": "105/2020/NĐ-CP"
+        }
+      ]
+    }
+  ]
+}

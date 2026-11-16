@@ -1,0 +1,71 @@
+{
+  "ordinal": "267",
+  "managing_agency": "Sở Giáo dục Đào tạo",
+  "procedure_code": "1.014336",
+  "name": "Đề nghị hỗ trợ chi phí học tập trong cơ sở giáo dục mầm non công lập, cơ sở giáo dục phổ thông công lập, cơ sở giáo dục công lập thực hiện chương trình giáo dục phổ thông",
+  "domain": "Giáo dục và đào tạo thuộc hệ thống giáo dục quốc dân",
+  "ministry_decision": "2624/QĐ-BGDĐT ngày 17/09/2025",
+  "hanoi_decision": "1403/QĐ-TTPVHCC ngày 07/10/2025",
+  "workflow_decision": "501/QĐ-TTPVHCC ngày 15/4/2025",
+  "fees": "Không quy định",
+  "execution_level": "Cấp xã",
+  "competent_authority": "UBND cấp xã",
+  "delegation_decision": "",
+  "delegation_expiry": "",
+  "receiving_location": "Điểm hỗ trợ DVC số",
+  "id": "hn87-267",
+  "source_page": 11,
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "inventory_date": "2026-04-27",
+  "checked_at": "2026-11-12T22:24:40.814459+07:00",
+  "details": [
+    {
+      "id": "019d2bf8-c7e3-744b-8bd9-0747eeabb2db",
+      "code": "1.014336",
+      "name": "Đề nghị hỗ trợ chi phí học tập trong cơ sở giáo dục mầm non công lập, cơ sở giáo dục phổ thông công lập, cơ sở giáo dục công lập thực hiện chương trình giáo dục phổ thông",
+      "state": "ACTIVE",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1776130262757,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf8-c7e3-744b-8bd9-0747eeabb2db",
+      "raw_path": "evidence/dvc/details/019d2bf8-c7e3-744b-8bd9-0747eeabb2db.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Đơn đề nghị hỗ trợ chi phí học tập theo mẫu tại Phụ lục II Nghị định số 238/2025/NĐ-CP",
+          "component_code": "TP-G03.002279",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019d7151-6576-732d-b19c-873c743d2fe6",
+              "fileName": "MUNNGHHTRCPHT.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d7151-6576-732d-b19c-873c743d2fe6/MUNNGHHTRCPHT.docx"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c3b-735b-85a8-7539111abcf6",
+          "name": "Quyết định phê duyệt danh sách được hưởng chế độ hỗ trợ chi phí học tập theo đúng đối tượng quy định",
+          "code": "KQ-G03.000428"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7e-72d1-afed-cec1100f5c1f",
+          "name": "Nghị định số 238/2025/NĐ-CP của Chính phủ quy định về chính sách học phí, miễn, giảm, hỗ trợ học phí, hỗ trợ chi phí học tập và giá dịch vụ trong lĩnh vực giáo dục, đào tạo",
+          "code": "238/2025/NĐ-CP"
+        }
+      ]
+    }
+  ],
+  "lookup_status": "retrieved",
+  "currency_status": "snapshot_requires_later_amendment_check",
+  "errors": []
+}

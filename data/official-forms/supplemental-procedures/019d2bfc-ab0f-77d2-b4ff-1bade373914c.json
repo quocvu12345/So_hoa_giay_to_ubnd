@@ -1,0 +1,104 @@
+{
+  "id": "dvc-019d2bfc-ab0f-77d2-b4ff-1bade373914c",
+  "procedure_code": "1.010343",
+  "name": "Chuyển dữ liệu hóa đơn điện tử/chứng từ điện tử tới cơ quan thuế",
+  "domain": "Thuế",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.925396+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfc-ab0f-77d2-b4ff-1bade373914c",
+      "code": "1.010343",
+      "name": "Chuyển dữ liệu hóa đơn điện tử/chứng từ điện tử tới cơ quan thuế",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1784548236181,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-ab0f-77d2-b4ff-1bade373914c",
+      "raw_path": "evidence/dvc/details/019d2bfc-ab0f-77d2-b4ff-1bade373914c.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Bảng tổng hợp doanh thu (đối với hoạt động kinh doanh casino, trò chơi điện tử có thưởng)- Mẫu 01/TH-DT",
+          "component_code": "G12.0001214",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019f7f40-a1f3-7079-9bfd-353cf69ead8e",
+              "fileName": "Mẫu 01 TH- DT.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f7f40-a1f3-7079-9bfd-353cf69ead8e/Mẫu 01 TH- DT.docx"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Bảng tổng hợp dữ liệu hóa đơn điện tử (Mẫu số 01/TH-HĐĐT)",
+          "component_code": "G12.0001215",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019f7f41-708a-74f7-881e-cd48ffa22f11",
+              "fileName": "Mẫu 01 TH- HĐĐT.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f7f41-708a-74f7-881e-cd48ffa22f11/Mẫu 01 TH- HĐĐT.docx"
+            }
+          ]
+        },
+        {
+          "section": "Hồ sơ đăng ký gửi dữ liệu HĐĐT trực tiếp",
+          "position": 1,
+          "name": "Văn bản kèm theo tài liệu chứng minh điều kiện đáp ứng yêu cầu về hóa đơn bình quân từ 1.000.000 hóa đơn một tháng trở lên (tính theo số lượng hóa đơn bình quân năm trước liền kề), có hệ thống công nghệ thông tin đáp ứng yêu cầu về định dạng chuẩn dữ liệu, có nhu cầu chuyển dữ liệu hóa đơn điện tử theo hình thức gửi trực tiếp đến cơ quan thuế (không có mẫu)",
+          "component_code": "G12.0001219",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c71-7574-afec-73ae9b6a2329",
+          "name": "Thông báo về việc chấp nhận/không chấp nhận đăng ký/thay đổi thông tin sử dụng hóa đơn điện tử/chứng từ điện tử và thực hiện kết nối kỹ thuật và kiểm tra truyền nhận dữ liệu (Mẫu số 01/TB-ĐKĐT)",
+          "code": "KQ.G12.000964"
+        },
+        {
+          "id": "019d2bb2-1c71-7574-afec-7e05c87b4c34",
+          "name": "Hệ thống thông tin giải quyết thủ tục hành chính của ngành thuế gửi phản hồi tự động về việc xác nhận người nộp thuế đã gửi thành công và thông báo về thời điểm tiếp nhận chính thức hồ sơ, tài liệu của người nộp thuế khi nhận được dữ liệu hóa đơn điện tử của NNT",
+          "code": "KQ.G12.000473"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019f64ed-e026-7299-b5f2-ca44a3964050",
+          "name": "Nghị định về thực hiện thủ tục hành chính theo cơ chế một cửa, một cửa liên thông tại Bộ phận Một cửa và Cổng Dịch vụ công quốc gia.",
+          "code": "118/2025/NĐ-CP "
+        },
+        {
+          "id": "019f7eee-65ff-7190-97bb-0d978182d268",
+          "name": "Nghị định số 254/2026/NĐ-CP của Chính phủ: Quy định chi tiết một số điều và biện pháp để tổ chức, hướng dẫn thi hành Luật Quản lý thuế số 108/2025/QH15 về hóa đơn điện tử, chứng từ điện tử",
+          "code": "254/2026/NĐ-CP"
+        },
+        {
+          "id": "019f7ef5-5ff2-73cd-841d-79992569d6c6",
+          "name": "Quy định một số điều của Luật Quản lý thuế và Nghị định số 254/2026/NĐ-CP của Chính phủ quy định chi tiết một số điều và biện pháp để tổ chức, hướng dẫn thi hành Luật Quản lý thuế số 108/2025/QH15 về hóa đơn điện tử, chứng từ điện tử",
+          "code": "91/2026/TT-BTC"
+        }
+      ]
+    }
+  ]
+}

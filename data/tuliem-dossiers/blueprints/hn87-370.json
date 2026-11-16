@@ -1,0 +1,92 @@
+{
+  "id": "hn87-370",
+  "ordinal": "370",
+  "procedure_code": "3.000509",
+  "name": "Chế độ, chính sách đối với người được huy động, người tham gia phòng cháy, chữa cháy, cứu nạn, cứu hộ chưa tham gia bảo hiểm y tế, bảo hiểm xã hội mà bị tai nạn, bị thương",
+  "domain": "Phòng cháy, chữa cháy (Bộ Công an)",
+  "department_id": "ca",
+  "department": "Công an · đơn vị ngành dọc",
+  "authority_as_published": "UBND cấp xã",
+  "execution_level_as_published": "Cấp xã",
+  "receiving_location_as_published": "Điểm hỗ trợ DVC số",
+  "inventory_date": "2026-04-27",
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "source_urls": [
+    "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf7-cd23-766f-9b23-9ed884663c71"
+  ],
+  "current_dvc_match": true,
+  "lifecycle": null,
+  "scope": "hanoi_commune_notice_2026_04_27",
+  "scope_note": "Mốc kiểm kê cấp xã Hà Nội; áp dụng từng thủ tục tại Từ Liêm còn phải theo thẩm quyền/ủy quyền hiện hành.",
+  "status": "has_fillable_templates",
+  "components": [
+    {
+      "id": "hn87-370-c001",
+      "code": "000.00.00.G01-KQ003462",
+      "name": "Đơn đề nghị thanh toán chi phí khám bệnh, chữa bệnh của người được hỗ trợ chế độ bị tai nạn, bị thương hoặc người đại diện hợp pháp (Mẫu số PC21 kèm theo Nghị định số 105/2025/NĐ-CP ngày 15/5/2025 của Chính Phủ); hóa đơn thu tiền; giấy ra viện.Thông tin về thành phần hồ sơ khi đã được kết nối, chia sẻ, cập nhật trên cơ sở dữ liệu quốc gia hoặc cơ sở dữ liệu chuyên ngành thì cơ quan có thẩm quyền giải quyết phải khai thác trực tuyến để giải quyết mà không được yêu cầu người đề nghị cung cấp hồ sơ giấy;",
+      "section": "Đối với trường hợp đề nghị hỗ trợ chi trả chi phí khám bệnh, chữa bệnh",
+      "role": "applicant_form",
+      "scenario_status": "conditional_needs_review",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 1,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf7-cd23-766f-9b23-9ed884663c71",
+      "source_detail_id": "019d2bf7-cd23-766f-9b23-9ed884663c71",
+      "embedded_other_requirements": true,
+      "template_candidates": [
+        "template-2153bb3e15fe80d1"
+      ],
+      "template_selection_method": "first_matching_source_attachment",
+      "selected_template_id": "template-2153bb3e15fe80d1",
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-370-c002",
+      "code": "000.00.00.G01-KQ003463",
+      "name": "Đơn đề nghị trợ cấp tai nạn (Mẫu số PC22 kèm theo Nghị định số 105/2025/NĐ-CP ngày 15/5/2025 của Chính Phủ); giấy ra viện hoặc trích sao hồ sơ bệnh án sau khi điều trị tai nạn đối với trường hợp điều trị nội trú hoặc giấy chứng nhận thương tích do cơ sở y tế nơi đã cấp cứu, điều trị cấp; biên bản giám định mức suy giảm khả năng lao động của Hội đồng giám định y khoa cấp tỉnh và tương đương trở lên.",
+      "section": "Đối với trường hợp đề nghị trợ cấp theo mức suy giảm khả năng lao động",
+      "role": "applicant_form",
+      "scenario_status": "conditional_needs_review",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 1,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf7-cd23-766f-9b23-9ed884663c71",
+      "source_detail_id": "019d2bf7-cd23-766f-9b23-9ed884663c71",
+      "embedded_other_requirements": true,
+      "template_candidates": [
+        "template-6bac27071e3015a5"
+      ],
+      "template_selection_method": "first_matching_source_attachment",
+      "selected_template_id": "template-6bac27071e3015a5",
+      "selection_requires_review": false
+    }
+  ],
+  "service_cases": [],
+  "selected_template_ids": [
+    "template-2153bb3e15fe80d1",
+    "template-6bac27071e3015a5"
+  ],
+  "source_component_groups": [
+    {
+      "name": "Đối với trường hợp đề nghị hỗ trợ chi trả chi phí khám bệnh, chữa bệnh",
+      "component_count": 1,
+      "source_detail_id": "019d2bf7-cd23-766f-9b23-9ed884663c71"
+    },
+    {
+      "name": "Đối với trường hợp đề nghị trợ cấp theo mức suy giảm khả năng lao động",
+      "component_count": 1,
+      "source_detail_id": "019d2bf7-cd23-766f-9b23-9ed884663c71"
+    }
+  ],
+  "conditional_component_groups": [],
+  "default_test_scenario": {
+    "channel": "direct",
+    "applicant_submits_self": true,
+    "authorized": false,
+    "special_case_flags": [],
+    "selected_conditional_group": null,
+    "case_selection_method": "ordinary_direct_submission",
+    "case_status": "scenario_for_testing_not_a_legal_eligibility_decision"
+  },
+  "requirement_note": "required_as_published được giữ nguyên; false không chứng minh giấy tờ luôn tùy chọn. Các nhóm executionCases có thể là mục giấy tờ/hướng dẫn, không phải các phương án loại trừ nhau."
+}

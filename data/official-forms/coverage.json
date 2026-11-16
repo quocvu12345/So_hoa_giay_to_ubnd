@@ -1,0 +1,24 @@
+{
+  "baseline_procedures": 425,
+  "current_commune_procedures": 733,
+  "merged_entries": 861,
+  "retrieved_details": 774,
+  "baseline_details_found": 338,
+  "component_rows": 5596,
+  "domains_baseline": 84,
+  "distinct_component_codes_or_texts": 3964,
+  "official_pdf_template_extracts": 2,
+  "baseline_missing_with_change_evidence": 32,
+  "baseline_missing_still_unexplained": 55,
+  "files_by_kind_status": {
+    "blank_form:downloaded": 1085,
+    "blank_form:failed": 2,
+    "procedure_pdf:downloaded": 774,
+    "electronic_form:not_provided": 746,
+    "electronic_form:downloaded": 28
+  },
+  "entries_with_blank_files": 444,
+  "baseline_with_blank_files": 183,
+  "distinct_downloaded_template_hashes": 768,
+  "downloaded_bytes": 189253618
+}

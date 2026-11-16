@@ -1,0 +1,76 @@
+{
+  "id": "dvc-019d2bfe-230c-75d8-8979-11b8bdc68e6c",
+  "procedure_code": "1.002693",
+  "name": "Cấp giấy phép chặt hạ, dịch chuyển cây xanh",
+  "domain": "Hạ tầng kỹ thuật",
+  "managing_agency": "Bộ xây dựng (Giao thông vận tải cũ)",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.868699+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfe-230c-75d8-8979-11b8bdc68e6c",
+      "code": "1.002693",
+      "name": "Cấp giấy phép chặt hạ, dịch chuyển cây xanh",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1776607748796,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfe-230c-75d8-8979-11b8bdc68e6c",
+      "raw_path": "evidence/dvc/details/019d2bfe-230c-75d8-8979-11b8bdc68e6c.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Đơn đề nghị cấp giấy phép chặt hạ, dịch chuyển cây xanh theo Mẫu số 01 Phụ lục I của Nghị định số 258/2025/NĐ-CP",
+          "component_code": "000.00.00.G17-KQ0639",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019d9ff4-0189-7314-b9d8-7dff775c2815",
+              "fileName": "Mẫu số 01.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d9ff4-0189-7314-b9d8-7dff775c2815/Mẫu số 01.docx"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Ảnh chụp hiện trạng cây xanh đô thị cần chặt hạ, dịch chuyển",
+          "component_code": "000.00.00.G17-KQ0338",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c87-71ef-a769-e01d3ed1b6b3",
+          "name": "Giấy phép chặt hạ, dịch chuyển cây xanh",
+          "code": "KQ.H17.000039"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7e-72d1-afe1-af917c7e2a2c",
+          "name": "Về quản lý công viên, cây xanh, mặt nước",
+          "code": "258/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d87-7195-a441-ef586356e15f",
+          "name": "Luật Quy hoạch đô thị và nông thôn số 47/2024/QH15",
+          "code": "47/2024/QH15"
+        }
+      ]
+    }
+  ]
+}

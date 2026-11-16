@@ -1,0 +1,97 @@
+{
+  "ordinal": "12",
+  "managing_agency": "Sở Nội Vụ",
+  "procedure_code": "1.010775",
+  "name": "Cấp “Bằng Tổ quốc ghi công” đối với người hy sinh thuộc các trường hợp quy định tại Điều 14 Pháp lệnh nhưng chưa được cấp “Bằng Tổ quốc ghi công” mà thân nhân đã được giải quyết chế độ ưu đãi từ ngày 01/01/1995 đến ngày 30/9/2006",
+  "domain": "Người có công",
+  "ministry_decision": "320/QĐ-BNV ngày 08/4/2025",
+  "hanoi_decision": "5146/QĐ-TTPVHCC ngày 15/10/2025",
+  "workflow_decision": "1053/QĐ-TTPVHCC ngày 11/7/2025",
+  "fees": "Không quy định",
+  "execution_level": "Liên thông TW",
+  "competent_authority": "TW",
+  "delegation_decision": "",
+  "delegation_expiry": "",
+  "receiving_location": "Điểm hỗ trợ DVC số",
+  "id": "hn87-012",
+  "source_page": 1,
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "inventory_date": "2026-04-27",
+  "checked_at": "2026-11-12T22:24:34.510677+07:00",
+  "details": [
+    {
+      "id": "019d2bfa-fbf7-70d3-9bf0-ea139ebdac2b",
+      "code": "1.010775",
+      "name": "Cấp Bằng “Tổ quốc ghi công” đối với người hy sinh thuộc các trường hợp quy định tại Điều 14 Pháp lệnh nhưng chưa được cấp Bằng “Tổ quốc ghi công” mà thân nhân đã được giải quyết chế độ ưu đãi từ ngày 01 tháng 01 năm 1995 đến ngày 30 tháng 9 năm 2006",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1779866601151,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfa-fbf7-70d3-9bf0-ea139ebdac2b",
+      "raw_path": "evidence/dvc/details/019d2bfa-fbf7-70d3-9bf0-ea139ebdac2b.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "- Hồ sơ công nhận và hưởng chế độ ưu đãi được xác lập đủ và đúng quy định tại từng thời điểm hiện đang lưu tại Sở Lao động - Thương binh và Xã hội, kèm danh sách chi trả trợ cấp hằng tháng hoặc trợ cấp một lần có ký nhận của người hưởng trợ cấp.",
+          "component_code": "G09-KQ003210166",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Đơn đề nghị theo Mẫu số 15 Phụ lục I Nghị định số 131/2021/NĐ-CP.",
+          "component_code": "G09-KQ003210167",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019d710e-3604-73f9-8ca6-1e91882cbb67",
+              "fileName": "Mau so 15.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d710e-3604-73f9-8ca6-1e91882cbb67/Mau so 15.docx"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c4d-7725-9d9c-20dc408f5f22",
+          "name": "Quyết định cấp Bằng “Tổ quốc ghi công” và Bằng “Tổ quốc ghi công”.",
+          "code": "KQ.G09.000411"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7f-719e-b474-93996f3f00db",
+          "name": "Nghị định số 25/2025/NĐ-CP ngày 21 tháng 02 năm 2025 của Chính phủ quy định chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của Bộ Nội vụ",
+          "code": "Nghị định số 25/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b671-f40a5ee32475",
+          "name": "Nghị quyết số 190/2025/QH15 của Quốc hội: Quy định về xử lý một số vấn đề liên quan đến sắp xếp tổ chức bộ máy nhà nước",
+          "code": "190/2025/NQ-QH15"
+        },
+        {
+          "id": "019d2bb3-5d7f-719e-b474-516a799e2145",
+          "name": "QUY ĐỊNH CHI TIẾT VÀ BIỆN PHÁP THI HÀNH PHÁP LỆNH ƯU ĐÃI NGƯỜI CÓ CÔNG VỚI CÁCH MẠNG",
+          "code": "Nghị định số 131/2021/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d85-73da-8eba-20bc75de794b",
+          "name": "ƯU ĐÃI NGƯỜI CÓ CÔNG VỚI CÁCH MẠNG",
+          "code": "Pháp lệnh số: 02/2020/UBTVQH14"
+        }
+      ]
+    }
+  ],
+  "lookup_status": "retrieved",
+  "currency_status": "snapshot_requires_later_amendment_check",
+  "errors": []
+}

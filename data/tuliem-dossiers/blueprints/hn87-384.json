@@ -1,0 +1,119 @@
+{
+  "id": "hn87-384",
+  "ordinal": "384",
+  "procedure_code": "1.012584",
+  "name": "Thủ tục đề nghị thay đổi địa điểm sinh hoạt tôn giáo tập trung trong địa bàn một xã",
+  "domain": "Tín ngưỡng, tôn giáo",
+  "department_id": "vx",
+  "department": "Phòng Văn hóa - Xã hội",
+  "authority_as_published": "UBND cấp xã",
+  "execution_level_as_published": "Cấp xã",
+  "receiving_location_as_published": "Điểm hỗ trợ DVC số",
+  "inventory_date": "2026-04-27",
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "source_urls": [
+    "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf8-530e-70ea-aa95-0ff1cea87193"
+  ],
+  "current_dvc_match": true,
+  "lifecycle": null,
+  "scope": "hanoi_commune_notice_2026_04_27",
+  "scope_note": "Mốc kiểm kê cấp xã Hà Nội; áp dụng từng thủ tục tại Từ Liêm còn phải theo thẩm quyền/ủy quyền hiện hành.",
+  "status": "source_template_missing",
+  "components": [
+    {
+      "id": "hn87-384-c001",
+      "code": "000.00.00.G21-KQ001802",
+      "name": "+ Văn bản chấp thuận của tổ chức tôn giáo hoặc tổ chức được cấp chứng nhận đăng ký hoạt động tôn giáo về việc thay đổi địa điểm đối với nhóm sinh hoạt tôn giáo do tổ chức đăng ký;",
+      "section": "",
+      "role": "needs_review",
+      "scenario_status": "conditional_needs_review",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf8-530e-70ea-aa95-0ff1cea87193",
+      "source_detail_id": "019d2bf8-530e-70ea-aa95-0ff1cea87193",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-384-c002",
+      "code": "000.00.00.G21-KQ001800",
+      "name": "Văn bản đăng ký (theo mẫu B7)",
+      "section": "",
+      "role": "needs_review",
+      "scenario_status": "requirement_needs_review",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf8-530e-70ea-aa95-0ff1cea87193",
+      "source_detail_id": "019d2bf8-530e-70ea-aa95-0ff1cea87193",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-384-c003",
+      "code": "000.00.00.G21-KQ001801",
+      "name": "+ Giấy tờ chứng minh có địa điểm hợp pháp mới để làm nơi sinh hoạt tôn giáo tập trung (trường hợp giấy tờ chứng minh địa điểm hợp pháp có thành phần là bản sao giấy chứng nhận quyền sử dụng đất, tài sản gắn liền với đất thì sử dụng dữ liệu trên cơ sở dữ liệu về Đất đai để thay thế);",
+      "section": "",
+      "role": "supporting_submit",
+      "scenario_status": "conditional_needs_review",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf8-530e-70ea-aa95-0ff1cea87193",
+      "source_detail_id": "019d2bf8-530e-70ea-aa95-0ff1cea87193",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    }
+  ],
+  "service_cases": [
+    {
+      "id": "019db094-1fdc-74d7-9d3b-0681f61a730a",
+      "code": "1.012584.01",
+      "name": "THỦ TỤC ĐỀ NGHỊ THAY ĐỔI ĐỊA ĐIỂM SINH HOẠT TÔN GIÁO TẬP TRUNG TRONG ĐỊA BÀN MỘT XÃ (CẤP XÃ)",
+      "source_processing_time": {
+        "qty": 20,
+        "type": "DAY"
+      },
+      "has_case_specific_components": false
+    },
+    {
+      "id": "01a0152a-72e0-75ad-8da6-df0e21249139",
+      "code": "1.012584.01",
+      "name": "THỦ TỤC ĐỀ NGHỊ THAY ĐỔI ĐỊA ĐIỂM SINH HOẠT TÔN GIÁO TẬP TRUNG TRONG ĐỊA BÀN MỘT XÃ (CẤP XÃ)",
+      "source_processing_time": {
+        "qty": 20,
+        "type": "DAY"
+      },
+      "has_case_specific_components": false
+    }
+  ],
+  "selected_template_ids": [],
+  "source_component_groups": [
+    {
+      "name": "",
+      "component_count": 3,
+      "source_detail_id": "019d2bf8-530e-70ea-aa95-0ff1cea87193"
+    }
+  ],
+  "conditional_component_groups": [],
+  "default_test_scenario": {
+    "channel": "direct",
+    "applicant_submits_self": true,
+    "authorized": false,
+    "special_case_flags": [],
+    "selected_conditional_group": null,
+    "case_selection_method": "ordinary_direct_submission",
+    "case_status": "scenario_for_testing_not_a_legal_eligibility_decision"
+  },
+  "requirement_note": "required_as_published được giữ nguyên; false không chứng minh giấy tờ luôn tùy chọn. Các nhóm executionCases có thể là mục giấy tờ/hướng dẫn, không phải các phương án loại trừ nhau."
+}

@@ -1,0 +1,75 @@
+{
+  "id": "dvc-019d2bfc-ca1c-706f-b190-0cdc7be4c4fa",
+  "procedure_code": "1.012995",
+  "name": "Ghi nợ tiền sử dụng đất của hộ gia đình, cá nhân trong trường hợp được bố trí tái định cư",
+  "domain": "Tài chính đất đai",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.920337+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfc-ca1c-706f-b190-0cdc7be4c4fa",
+      "code": "1.012995",
+      "name": "Ghi nợ tiền sử dụng đất của hộ gia đình, cá nhân trong trường hợp được bố trí tái định cư",
+      "state": "ACTIVE",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1775645797856,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-ca1c-706f-b190-0cdc7be4c4fa",
+      "raw_path": "evidence/dvc/details/019d2bfc-ca1c-706f-b190-0cdc7be4c4fa.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Đơn đề nghị ghi nợ tiền sử dụng đấ",
+          "component_code": "000.00.00.G12-KQ013275",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Hồ sơ xin cấp Giấy chứng nhận: Quyết định giao đất tái định cư, phương án bồi thường, hỗ trợ, tái định cư do cơ quan Nhà nước có thẩm quyền phê duyệt",
+          "component_code": "000.00.00.G12-KQ013277",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 3,
+          "name": "Giấy tờ chứng minh thuộc đối tượng được ghi nợ tiền sử dụng đất",
+          "component_code": "000.00.00.G12-KQ013276",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c71-7574-afea-bc895ffb0930",
+          "name": "Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất trong đó có nội dung về số tiền sử dụng đất ghi nợ và thời hạn ghi nợ",
+          "code": "KQ.G12.000270"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7e-72d1-afe8-2d2590ea131f",
+          "name": "Nghị định số 103/2024/NĐ-CP ngày 30/7/2024 của Chính phủ quy định về tiền sử dụng đất, tiền thuê đất",
+          "code": "103/2024/NĐ-CP"
+        }
+      ]
+    }
+  ]
+}

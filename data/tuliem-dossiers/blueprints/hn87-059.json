@@ -1,0 +1,188 @@
+{
+  "id": "hn87-059",
+  "ordinal": "59",
+  "procedure_code": "2.002821",
+  "name": "Hỗ trợ đào tạo nghề cho người lao động ở khu vực nông thôn, người lao động là thanh niên",
+  "domain": "Lĩnh vực đào tạo nghề",
+  "department_id": "vx",
+  "department": "Phòng Văn hóa - Xã hội",
+  "authority_as_published": "UBND cấp xã",
+  "execution_level_as_published": "Cấp xã",
+  "receiving_location_as_published": "Điểm hỗ trợ DVC số",
+  "inventory_date": "2026-04-27",
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "source_urls": [
+    "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-4a52-722d-90e3-52eae73487a0"
+  ],
+  "current_dvc_match": true,
+  "lifecycle": null,
+  "scope": "hanoi_commune_notice_2026_04_27",
+  "scope_note": "Mốc kiểm kê cấp xã Hà Nội; áp dụng từng thủ tục tại Từ Liêm còn phải theo thẩm quyền/ủy quyền hiện hành.",
+  "status": "source_template_missing",
+  "components": [
+    {
+      "id": "hn87-059-c001",
+      "code": "G09-KQ003251",
+      "name": "- Bản sao từ sổ gốc hoặc bản sao kèm bản chính để đối chiếu hoặc bản sao có chứng thực điện tử hoặc bản sao điện tử từ sổ gốc của chứng chỉ sơ cấp hoặc chứng nhận hoàn thành khoá học, trừ trường hợp đặt hàng đào tạo theo quy định tại khoản 3 Điều 28 Nghị định số 338/2025/NĐ-CP;",
+      "section": "(1) Đối với người lao động ở khu vực nông thôn ",
+      "role": "supporting_submit",
+      "scenario_status": "conditional_needs_review",
+      "required_as_published": false,
+      "original_quantity": 0,
+      "copy_quantity": 1,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-4a52-722d-90e3-52eae73487a0",
+      "source_detail_id": "019d2bfb-4a52-722d-90e3-52eae73487a0",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-059-c002",
+      "code": "G09-KQ003250",
+      "name": "- Giấy đề nghị hỗ trợ theo Mẫu số 01 Phụ lục I kèm theo Nghị định số 338/2025/NĐ-CP;",
+      "section": "(1) Đối với người lao động ở khu vực nông thôn ",
+      "role": "applicant_form",
+      "scenario_status": "conditional_needs_review",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-4a52-722d-90e3-52eae73487a0",
+      "source_detail_id": "019d2bfb-4a52-722d-90e3-52eae73487a0",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-059-c003",
+      "code": "G09-KQ003252",
+      "name": "- Hóa đơn hoặc biên lai thu tiền đào tạo trình độ sơ cấp, đào tạo dưới 03 tháng, trừ trường hợp đặt hàng đào tạo theo quy định tại khoản 3 Điều 28 Nghị định số 338/2025/NĐ-CP.",
+      "section": "(1) Đối với người lao động ở khu vực nông thôn ",
+      "role": "needs_review",
+      "scenario_status": "conditional_needs_review",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-4a52-722d-90e3-52eae73487a0",
+      "source_detail_id": "019d2bfb-4a52-722d-90e3-52eae73487a0",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-059-c004",
+      "code": "G09-KQ003253",
+      "name": "- Bản sao từ sổ gốc hoặc bản sao kèm bản chính để đối chiếu hoặc bản sao có chứng thực điện tử hoặc bản sao điện tử từ sổ gốc của một trong các giấy tờ sau: quyết định xuất ngũ đối với thanh niên hoàn thành nghĩa vụ quân sự hoặc nghĩa vụ tham gia Công an nhân dân; quyết định hoàn thành nghĩa vụ quân sự tại ngũ trong thời bình đối với dân quân thường trực;",
+      "section": "(2) Đối với người lao động là thanh niên hoàn thành nghĩa vụ quân sự, nghĩa vụ tham gia Công an nhân dân",
+      "role": "supporting_submit",
+      "scenario_status": "conditional_needs_review",
+      "required_as_published": false,
+      "original_quantity": 0,
+      "copy_quantity": 1,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-4a52-722d-90e3-52eae73487a0",
+      "source_detail_id": "019d2bfb-4a52-722d-90e3-52eae73487a0",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-059-c005",
+      "code": "G09-KQ003254",
+      "name": "Giấy chứng nhận tham gia hoạt động tình nguyện (Bản sao từ sổ gốc hoặc bản sao kèm bản chính để đối chiếu hoặc bản sao có chứng thực điện tử hoặc bản sao điện tử từ sổ gốc)",
+      "section": "(3) Đối với người lao động là thanh niên tình nguyện hoàn thành nhiệm vụ thực hiện chương trình, dự án phát triển kinh tế - xã hội",
+      "role": "supporting_submit",
+      "scenario_status": "conditional_needs_review",
+      "required_as_published": false,
+      "original_quantity": 0,
+      "copy_quantity": 1,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-4a52-722d-90e3-52eae73487a0",
+      "source_detail_id": "019d2bfb-4a52-722d-90e3-52eae73487a0",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-059-c006",
+      "code": "G09-KQ003255",
+      "name": "Giấy chứng nhận trí thức trẻ tình nguyện hoàn thành nhiệm vụ công tác tại khu kinh tế - quốc phòng (Bản sao từ sổ gốc hoặc bản sao kèm bản chính để đối chiếu hoặc bản sao có chứng thực điện tử hoặc bản sao điện tử từ sổ gốc)",
+      "section": "(4) Đối với trí thức trẻ tình nguyện hoàn thành nhiệm vụ công tác tại khu kinh tế - quốc phòng",
+      "role": "supporting_submit",
+      "scenario_status": "conditional_needs_review",
+      "required_as_published": false,
+      "original_quantity": 0,
+      "copy_quantity": 1,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-4a52-722d-90e3-52eae73487a0",
+      "source_detail_id": "019d2bfb-4a52-722d-90e3-52eae73487a0",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    }
+  ],
+  "service_cases": [
+    {
+      "id": "019d2d7f-3cd9-73d3-b456-8f7dfe11c11e",
+      "code": "2.002821.01",
+      "name": "Hỗ trợ đào tạo nghề cho người lao động ở khu vực nông thôn, người lao động là thanh niên",
+      "source_processing_time": {
+        "qty": 7,
+        "type": "WORKING_DAY"
+      },
+      "has_case_specific_components": false
+    },
+    {
+      "id": "019dc53b-b968-731e-9034-9c39ebaea21e",
+      "code": "2.002821.02",
+      "name": "Hỗ trợ đào tạo nghề cho người lao động ở khu vực nông thôn, người lao động là thanh niên",
+      "source_processing_time": {
+        "qty": 7,
+        "type": "WORKING_DAY"
+      },
+      "has_case_specific_components": false
+    }
+  ],
+  "selected_template_ids": [],
+  "source_component_groups": [
+    {
+      "name": "(1) Đối với người lao động ở khu vực nông thôn ",
+      "component_count": 3,
+      "source_detail_id": "019d2bfb-4a52-722d-90e3-52eae73487a0"
+    },
+    {
+      "name": "(2) Đối với người lao động là thanh niên hoàn thành nghĩa vụ quân sự, nghĩa vụ tham gia Công an nhân dân",
+      "component_count": 1,
+      "source_detail_id": "019d2bfb-4a52-722d-90e3-52eae73487a0"
+    },
+    {
+      "name": "(3) Đối với người lao động là thanh niên tình nguyện hoàn thành nhiệm vụ thực hiện chương trình, dự án phát triển kinh tế - xã hội",
+      "component_count": 1,
+      "source_detail_id": "019d2bfb-4a52-722d-90e3-52eae73487a0"
+    },
+    {
+      "name": "(4) Đối với trí thức trẻ tình nguyện hoàn thành nhiệm vụ công tác tại khu kinh tế - quốc phòng",
+      "component_count": 1,
+      "source_detail_id": "019d2bfb-4a52-722d-90e3-52eae73487a0"
+    }
+  ],
+  "conditional_component_groups": [],
+  "default_test_scenario": {
+    "channel": "direct",
+    "applicant_submits_self": true,
+    "authorized": false,
+    "special_case_flags": [],
+    "selected_conditional_group": null,
+    "case_selection_method": "ordinary_direct_submission",
+    "case_status": "scenario_for_testing_not_a_legal_eligibility_decision"
+  },
+  "requirement_note": "required_as_published được giữ nguyên; false không chứng minh giấy tờ luôn tùy chọn. Các nhóm executionCases có thể là mục giấy tờ/hướng dẫn, không phải các phương án loại trừ nhau."
+}

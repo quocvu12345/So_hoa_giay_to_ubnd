@@ -1,0 +1,173 @@
+{
+  "ordinal": "167",
+  "managing_agency": "Sở Nông nghiệp Môi trường",
+  "procedure_code": "1.014860",
+  "name": "Cấp giấy phép cho các hoạt động trồng cây lâu năm trong phạm vi bảo vệ công trình thủy lợi do Chủ tịch UBND cấp tỉnh phân cấp cho Chủ tịch UBND cấp xã",
+  "domain": "Thủy lợi (Bộ Nông nghiệp và Môi trường)",
+  "ministry_decision": "498/QĐ-BNNMT ngày 09/02/2026",
+  "hanoi_decision": "331/QĐ-TTPVHCC ngày 18/3/2026",
+  "workflow_decision": "Đang cập nhật",
+  "fees": "Không quy định",
+  "execution_level": "Cấp Xã",
+  "competent_authority": "UBND cấp xã",
+  "delegation_decision": "",
+  "delegation_expiry": "",
+  "receiving_location": "Điểm hỗ trợ DVC số",
+  "source_page": 7,
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "inventory_date": "2026-04-27",
+  "checked_at": "2026-11-12T22:23:52.799459+07:00",
+  "details": [
+    {
+      "id": "019d2bfa-9e2a-746d-802c-0c7f1b2718c0",
+      "code": "1.014860",
+      "name": "Cấp giấy phép cho các hoạt động trồng cây lâu năm trong phạm vi bảo vệ công trình thủy lợi do Chủ tịch UBND cấp tỉnh phân cấp cho Chủ tịch UBND cấp xã",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1779249214532,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfa-9e2a-746d-802c-0c7f1b2718c0",
+      "raw_path": "evidence/dvc/details/019d2bfa-9e2a-746d-802c-0c7f1b2718c0.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "- Đơn đề nghị cấp giấy phép theo mẫu đơn (quy định tại Phụ lục III ban hành kèm theo Nghị định số 40/2026/NĐ-CP ngày 25/01/2026);",
+          "component_code": "G10-KQ007885",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019d84a4-7271-75fe-be7d-ed921e4ab400",
+              "fileName": "Mau don de nghi cap, gia han giay phep.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d84a4-7271-75fe-be7d-ed921e4ab400/Mau don de nghi cap, gia han giay phep.docx"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "- Sơ họa vị trí khu vực tiến hành các hoạt động đề nghị cấp phép.",
+          "component_code": "000.00.00.H46-KQ0293",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 3,
+          "name": "- Báo cáo đánh giá ảnh hưởng của hoạt động đến việc quản lý, khai thác và an toàn công trình thủy lợi;",
+          "component_code": "000.00.00.G10-KQ005469",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 4,
+          "name": "- Văn bản ý kiến của tổ chức, cá nhân khai thác công trình thủy lợi về ảnh hưởng của hoạt động đến việc quản lý, khai thác và an toàn công trình thủy lợi của tổ chức, cá nhân;",
+          "component_code": "000.00.00.G10-KQ005470",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 5,
+          "name": "- Đối với các dự án đầu tư trong phạm vi bảo vệ của công trình thủy lợi, hồ sơ đề nghị cấp phép phải bổ sung:",
+          "component_code": "000.00.00.G10-KQ005471",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 6,
+          "name": "+ Bản sao quyết định thành lập hoặc bản sao giấy chứng nhận đăng ký doanh nghiệp (trong trường hợp chưa được tích hợp, kết nối và chia sẻ dữ liệu quốc gia);",
+          "component_code": "G10-KQ007853",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 7,
+          "name": "+ Bản sao quyết định phê duyệt quy hoạch, chủ trương đầu tư, dự án đầu tư (trong trường hợp chưa được tích hợp, kết nối và chia sẻ dữ liệu quốc gia);",
+          "component_code": "G10-KQ007854",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 8,
+          "name": "+ Bản sao quyết định phê duyệt kết quả thẩm định báo cáo đánh giá tác động môi trường, giấy phép môi trường hoặc đăng ký môi trường đã được cơ quan có thẩm quyền ban hành theo quy định của pháp luật về bảo vệ môi trường (trong trường hợp chưa được tích hợp, kết nối và chia sẻ dữ liệu quốc gia);",
+          "component_code": "G10-KQ007855",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 9,
+          "name": "+ Bản sao thông báo thẩm định thiết kế cơ sở hoặc thông báo thẩm định thiết kế, bản vẽ thiết kế của dự án",
+          "component_code": "G10-KQ007856",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c4d-7725-9d9e-be99e9c7a98a",
+          "name": "Giấy phép hoạt động trong phạm vi bảo vệ công trình thủy lợi",
+          "code": "KQ.G10.000048"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019e0be0-1ccd-7462-b7f5-5a312790c821",
+          "name": "Về cắt giảm, phân cấp, đơn giản hóa thủ tục hành chính và cắt giảm, đơn giản hóa điều kiện kinh doanh thuộc phạm vi quản lý của Bộ Nông nghiệp và Môi trường",
+          "code": "17/2026/NQ-CP"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b678-b6e5fb3d87aa",
+          "name": "Nghị định số 40/2026/NĐ-CP ngày 25/01/2026",
+          "code": "40/2026/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d80-7608-8cd0-b5808a0fa91a",
+          "name": "Luật 08/2017/QH14",
+          "code": "08/2017/QH14"
+        },
+        {
+          "id": "019d2bb3-5d85-73da-8eb9-a64b5543d0bd",
+          "name": "Luật số 146/2025/QH15 ngày 11/12/2025 của Quốc hội sửa đổi, bổ sung một số điều của 15 luật trong lĩnh vực nông nghiệp và môi trường",
+          "code": "146/2025/QH15"
+        }
+      ]
+    }
+  ],
+  "lookup_status": "retrieved",
+  "currency_status": "snapshot_requires_later_amendment_check",
+  "errors": []
+}

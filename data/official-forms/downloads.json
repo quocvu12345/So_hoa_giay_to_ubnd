@@ -1,0 +1,42 @@
+[
+  {
+    "file": "vehicle79.pdf",
+    "url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2024/12/79-bca.signed.pdf",
+    "sha256": "3d7126e1b44e6f983e2352cabdebe513511b7d267cc4e125cad9afc8c5ee3e30",
+    "bytes": 2852647,
+    "magic": "b'%PDF-1.4\\n4'"
+  },
+  {
+    "file": "civil04.pdf",
+    "url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2024/6/04-btp.pdf",
+    "sha256": "58e05dae781e2032054de6674072e9076248d6e97b1e753ab97a47cc2b335d57",
+    "bytes": 633279,
+    "magic": "b'%PDF-1.5\\r\\n'"
+  },
+  {
+    "file": "civil04.rar",
+    "url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2024/6/04-btp-kem.rar",
+    "sha256": "903de77e2898bed8935645d75c3a5c9cd1470d27207b9a2ea73bb8ff7b32f323",
+    "bytes": 603934,
+    "magic": "b'Rar!\\x1a\\x07\\x01\\x00\\xa3\\xec'"
+  },
+  {
+    "file": "land-1153-II.pdf",
+    "url": "https://sonnmt.baria-vungtau.gov.vn/portal/editor/files/2.2.%20Ph%E1%BB%A5%20l%E1%BB%A5c%20II958.pdf",
+    "error": "HTTPSConnectionPool(host='sonnmt.baria-vungtau.gov.vn', port=443): Max retries exceeded with url: /portal/editor/files/2.2.%20Ph%E1%BB%A5%20l%E1%BB%A5c%20II958.pdf (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1011)')))"
+  },
+  {
+    "file": "vehicle-registration.docx",
+    "url": "https://congan.langson.gov.vn/Service/Download.ashx?header=1510",
+    "sha256": "c97997e8c31e63efac6856d628cf0462930f3ee997be1b53f870d65bd1aa9bdc",
+    "bytes": 32780,
+    "magic": "b'PK\\x03\\x04\\x14\\x00\\x06\\x00\\x08\\x00'"
+  },
+  {
+    "file": "vehicle-recall.docx",
+    "url": "https://congan.langson.gov.vn/Service/Download.ashx?header=1509",
+    "sha256": "9dead21db1a7969338ed98ccea1bbe2e6fb5e0838c9c6403c6e5195f3bf90cb9",
+    "bytes": 16426,
+    "magic": "b'PK\\x03\\x04\\x14\\x00\\x06\\x00\\x08\\x00'"
+  }
+]

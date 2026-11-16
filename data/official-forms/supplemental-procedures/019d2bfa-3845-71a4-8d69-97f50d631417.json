@@ -1,0 +1,118 @@
+{
+  "id": "dvc-019d2bfa-3845-71a4-8d69-97f50d631417",
+  "procedure_code": "1.004478",
+  "name": "Công bố mở cảng cá loại III",
+  "domain": "Thủy sản",
+  "managing_agency": "Bộ Nông nghiệp và Môi trường",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:18.021090+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfa-3845-71a4-8d69-97f50d631417",
+      "code": "1.004478",
+      "name": "Công bố mở cảng cá loại III",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1793248279464,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfa-3845-71a4-8d69-97f50d631417",
+      "raw_path": "evidence/dvc/details/019d2bfa-3845-71a4-8d69-97f50d631417.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "c) Văn bản thể hiện quyền sử dụng vùng đất của cảng;.",
+          "component_code": "G10-KQ007153",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "b) Văn bản thành lập Tổ chức quản lý cảng cá;;;;",
+          "component_code": "G10-KQ007152",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 3,
+          "name": "Đơn đề nghị công bố mở cảng cá theo Mẫu số 01.CC Phụ lục XII ban hành kèm theo Thông tư số 02/2026/TT-BNNMT ngày 01/01/2026",
+          "component_code": "G10-KQ007151",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "01a180b7-19b5-7479-8af1-3e45ef05d8b5",
+              "fileName": "Mẫu số 01.CC Phụ lục XII Thông tư 02.2026.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/01a180b7-19b5-7479-8af1-3e45ef05d8b5/Mẫu số 01.CC Phụ lục XII Thông tư 02.2026.docx"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 4,
+          "name": "d) Biên bản nghiệm thu đã hoàn thành công trình đưa vào sử dụng cảng cá.",
+          "component_code": "G10-KQ007154",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c4e-742c-98a4-b045dd3790ab",
+          "name": "Quyết định công bố mở cảng cá theo theo Mẫu số 02.CC Phụ lục XII ban hành kèm theo Thông tư số 02/2026/TT-BNNMT ngày 01/01/2026",
+          "code": "KQ.G10.000478"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d84-71c5-b674-9b7cf87c6962",
+          "name": "Luật",
+          "code": "Luật 18/2017/QH14"
+        },
+        {
+          "id": "019d2bb3-5d87-7195-a447-f9a5abcd2f43",
+          "name": "Luật sửa đổi, bổ sung một số điều của 15 luật trong lĩnh vực nông nghiệp và môi trường",
+          "code": "Luật số 146/2025/QH15"
+        },
+        {
+          "id": "019d2bb3-5d7c-71ab-9f08-a9a7bf4292fe",
+          "name": "Thông tư",
+          "code": "02/2026/TT-BNNMT"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b672-a3322a8748a6",
+          "name": "Luật Đất đai ngày 18/01/2024;",
+          "code": "31/2024/QH15"
+        },
+        {
+          "id": "01a023d9-4d68-750f-bf76-29237527fa27",
+          "name": "sửa đổi, bổ sung một số Thông tư trong lĩnh vực thủy sản",
+          "code": "33/2026/TT-BNNMT"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b673-29122897c8a3",
+          "name": "Luật số 43/2024/QH15 ngày 29/6/2024",
+          "code": "43/2024/QH15"
+        }
+      ]
+    }
+  ]
+}

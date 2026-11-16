@@ -1,0 +1,136 @@
+{
+  "id": "dvc-01a0c31b-4887-72f5-974e-c9b317b60cd9",
+  "procedure_code": "1.116679",
+  "name": "Xác nhận đăng ký thu hồi khoáng sản thuộc thẩm quyền của Chủ tịch Ủy ban nhân dân cấp xã",
+  "domain": "Địa chất và khoáng sản",
+  "managing_agency": "Bộ Công thương",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.471764+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "01a0c31b-4887-72f5-974e-c9b317b60cd9",
+      "code": "1.116679",
+      "name": "Xác nhận đăng ký thu hồi khoáng sản thuộc thẩm quyền của Chủ tịch Ủy ban nhân dân cấp xã",
+      "state": "ACTIVE",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1790515514397,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/01a0c31b-4887-72f5-974e-c9b317b60cd9",
+      "raw_path": "evidence/dvc/details/01a0c31b-4887-72f5-974e-c9b317b60cd9.json",
+      "components": [
+        {
+          "section": "Đối với người sử dụng đất đề nghị cấp giấy xác nhận đăng ký thu hồi khoáng sản trong trường hợp quy định tại điểm d khoản 1 Điều 75 của Luật Địa chất và khoáng sản (cụ thể: thu hồi khoáng sản nhóm III, nhóm IV từ hoạt động cải tạo, xây dựng công trình trên đất ở, đất nông nghiệp):",
+          "position": 1,
+          "name": "Bản đăng ký thu hồi khoáng sản",
+          "component_code": "TPHS.DCKS.133",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "01a0e28f-429d-7178-b45a-84155d530f36",
+              "fileName": "Mau 02_Phu luc IV_54.2026.TT-BCT.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/01a0e28f-429d-7178-b45a-84155d530f36/Mau 02_Phu luc IV_54.2026.TT-BCT.docx"
+            }
+          ]
+        },
+        {
+          "section": "Đối với người sử dụng đất đề nghị cấp giấy xác nhận đăng ký thu hồi khoáng sản trong trường hợp quy định tại điểm d khoản 1 Điều 75 của Luật Địa chất và khoáng sản (cụ thể: thu hồi khoáng sản nhóm III, nhóm IV từ hoạt động cải tạo, xây dựng công trình trên đất ở, đất nông nghiệp):",
+          "position": 2,
+          "name": "Giấy phép xây dựng theo quy định của pháp luật về xây dựng (nếu có)",
+          "component_code": "TPHS.DCKS.151",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Đối với người sử dụng đất đề nghị cấp giấy xác nhận đăng ký thu hồi khoáng sản trong trường hợp quy định tại điểm d khoản 1 Điều 75 của Luật Địa chất và khoáng sản (cụ thể: thu hồi khoáng sản nhóm III, nhóm IV từ hoạt động cải tạo, xây dựng công trình trên đất ở, đất nông nghiệp):",
+          "position": 3,
+          "name": "Quyết định cho phép chuyển mục đích sử dụng đất theo quy định của pháp luật về đất đai (nếu có)",
+          "component_code": "TPHS.DCKS.152",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Đối với người sử dụng đất đề nghị cấp giấy xác nhận đăng ký thu hồi khoáng sản trong trường hợp quy định tại điểm d khoản 1 Điều 75 của Luật Địa chất và khoáng sản (cụ thể: thu hồi khoáng sản nhóm III, nhóm IV từ hoạt động cải tạo, xây dựng công trình trên đất ở, đất nông nghiệp):",
+          "position": 4,
+          "name": "Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất theo quy định của pháp luật về đất đai hoặc quyết định cho thuê đất của cơ quan nhà nước có thẩm quyền",
+          "component_code": "TPHS.DCKS.153",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Đối với chủ đầu tư, nhà đầu tư hoặc nhà thầu thi công đề nghị sử dụng khoáng sản dôi dư đã được tập kết tại bãi thải, bãi chứa để phục vụ cho các công trình, dự án quy định tại các điểm a, b, c, d và đ khoản 1a Điều 55 của Luật Địa chất và khoáng sản:",
+          "position": 1,
+          "name": "Văn bản đề nghị sử dụng khoáng sản",
+          "component_code": "TPHS.DCKS.139",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "01a0e292-bc85-71db-af44-84ff1a0593f1",
+              "fileName": "Mau 03_Phu luc IV_54.2026.TT-BCT.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/01a0e292-bc85-71db-af44-84ff1a0593f1/Mau 03_Phu luc IV_54.2026.TT-BCT.docx"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "id": "01a0e295-dabf-708c-9f33-e6f7538780cb",
+          "name": "Giấy xác nhận đăng ký thu hồi khoáng sản",
+          "code": "KQ.G02.000651"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d84-71c5-b673-7f8ef38db354",
+          "name": "Luật Địa chất và Khoáng sản",
+          "code": "54/2024/QH15"
+        },
+        {
+          "id": "019d2bb3-5d85-73da-8eb8-298b0b3e5261",
+          "name": "Luật Địa chất và khoáng sản sửa đổi 2025",
+          "code": "147/2025/QH15"
+        },
+        {
+          "id": "019d2bb3-5d86-7760-a643-57895d9499c0",
+          "name": "193/2025/NĐ-CP",
+          "code": "193/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b677-ebdeb83adab1",
+          "name": "Nghị định số 21/2026/NĐ-CP ngày 16/01/2026 của Chính phủ",
+          "code": "21/2026/NĐ-CP"
+        },
+        {
+          "id": "01a0d169-8318-727d-8919-9f1d8430cc63",
+          "name": "Về xử lý khó khăn, vướng mắc liên quan đến chức năng, nhiệm vụ, quyền hạn quản lý nhà nước về khu công nghiệp, địa chất, khoáng sản",
+          "code": "66.25/2026/NQ-CP"
+        },
+        {
+          "id": "01a0e0b7-f97b-738a-9d8e-9f3d9301fe47",
+          "name": "Quy định về khai thác khoáng sản, khai thác tận thu khoáng sản và thu hồi khoáng sản",
+          "code": "54/2026/TT-BCT"
+        }
+      ]
+    }
+  ]
+}

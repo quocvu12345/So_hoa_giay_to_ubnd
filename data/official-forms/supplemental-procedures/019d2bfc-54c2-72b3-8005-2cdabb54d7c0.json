@@ -1,0 +1,132 @@
+{
+  "id": "dvc-019d2bfc-54c2-72b3-8005-2cdabb54d7c0",
+  "procedure_code": "1.008342",
+  "name": "Khai thuế thu nhập cá nhân của tổ chức khấu trừ thuế đối với hoạt động bán đúng giá đại lý bảo hiểm, xổ số, bán hàng đa cấp; hoạt động môi giới; doanh nghiệp bảo hiểm trả phí tích lũy bảo hiểm nhân thọ, bảo hiểm không bắt buộc khác",
+  "domain": "Thuế",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.943465+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfc-54c2-72b3-8005-2cdabb54d7c0",
+      "code": "1.008342",
+      "name": "Khai thuế thu nhập cá nhân của tổ chức khấu trừ thuế đối với hoạt động bán đúng giá đại lý bảo hiểm, xổ số, bán hàng đa cấp; hoạt động môi giới; doanh nghiệp bảo hiểm trả phí tích lũy bảo hiểm nhân thọ, bảo hiểm không bắt buộc khác",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1785399203756,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-54c2-72b3-8005-2cdabb54d7c0",
+      "raw_path": "evidence/dvc/details/019d2bfc-54c2-72b3-8005-2cdabb54d7c0.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Tờ khai thuế (Áp dụng đối với tổ chức khấu trừ thuế, khai thay, nộp thay thuế đối với hoạt động đại lý bán đúng giá bảo hiểm, xổ số, bán hàng đa cấp, hoạt động môi giới; doanh nghiệp bảo hiểm trả phí tích lũy bảo hiểm nhân thọ, bảo hiểm không bắt buộc khác) mẫu số 01/XSBHDCMG-CNKD Phụ lục I ban hành kèm theo Thông tư số 89/2026/TT-BTC ngày 30/06/2026 của Bộ trưởng Bộ Tài chính",
+          "component_code": "G12.0012275",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019fa6ae-a091-76cc-86e5-c9e2250494ee",
+              "fileName": "11. 01.XSBHDCMG-CNKD TT 89.pdf",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa6ae-a091-76cc-86e5-c9e2250494ee/11. 01.XSBHDCMG-CNKD TT 89.pdf"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Phụ lục Bảng kê chi tiết cá nhân có phát sinh doanh thu (Kèm theo Tờ khai 01/XSBHDCMG-CNKD kê khai vào hồ sơ khai thuế của kỳ tháng/quý cuối cùng trong năm tính thuế) mẫu số 01/BK-XSBHDCMG Phụ lục I ban hành kèm theo Thông tư số 89/2026/TT-BTC ngày 30/06/2026 của Bộ trưởng Bộ Tài chính",
+          "component_code": "G12.0015691",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019fa6af-4a54-7699-94af-2e3d6665889e",
+              "fileName": "12. 01.BK-XSBHDCMG.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa6af-4a54-7699-94af-2e3d6665889e/12. 01.BK-XSBHDCMG.docx"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 3,
+          "name": "Từ 01/7/2026 đến thời điểm theo lộ trình của cơ quan thuế quy định tại khoản 2 Điều 99 Thông tư số 89/2026/TT-BTC thì áp dụng theo các mẫu 01/XSBHĐC, 01/BK-XSBHĐC thực hiện theo mẫu biểu ban hành kèm theo Thông tư số 18/2026/TT-BTC ngày 05/3/2026 của Bộ trưởng Bộ Tài chính",
+          "component_code": "G12.0015692",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019fa6b0-a1c4-729b-91a3-d8074dcd7191",
+              "fileName": "01 BK XSBHĐC TT 18.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa6b0-a1c4-729b-91a3-d8074dcd7191/01 BK XSBHĐC TT 18.docx"
+            },
+            {
+              "id": "019fa6b0-a2bd-730b-8b27-cb5cc26369e4",
+              "fileName": "01 XSBHĐC - TT 18.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa6b0-a2bd-730b-8b27-cb5cc26369e4/01 XSBHĐC - TT 18.docx"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c71-7574-afe7-ecb2733edc3b",
+          "name": "Hồ sơ gửi đến cơ quan thuế không có kết quả trả từ cơ quan thuế",
+          "code": "KQ.G12.000028"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7e-72d1-afe9-653aac8276ee",
+          "name": "Nghị định số 118/2025/NĐ-CP của Chính phủ: Về thực hiện thủ tục hành chính theo cơ chế một cửa, một cửa liên thông tại Bộ phận Một cửa và Cổng Dịch vụ công quốc gia",
+          "code": "118/2025/NĐ-CP"
+        },
+        {
+          "id": "019f8db3-9765-740b-8b90-682677b9c421",
+          "name": "Thông tư quy định chi tiết một số điều của Luật Quản lý thuế và Nghị định số 252/2026/NĐ-CP của Chính phủ quy định chi tiết một số điều và biện pháp để tổ chức, hướng dẫn thi hành Luật Quản lý thuế",
+          "code": "89/2026/TT-BTC"
+        },
+        {
+          "id": "019f356e-75e3-7494-a2f3-672d8dce61a6",
+          "name": "QUY ĐỊNH CHI TIẾT MỘT SỐ ĐIỀU VÀ BIỆN PHÁP ĐỂ TỔ CHỨC, HƯỚNG DẪN THI HÀNH LUẬT QUẢN LÝ THUẾ",
+          "code": "252/2026/NĐ-CP"
+        },
+        {
+          "id": "019e5e83-1282-771d-9014-49799413a4e5",
+          "name": "Luật số 108/2025/QH15 của Quốc hội: Luật Quản lý thuế",
+          "code": "108/2025/QH15"
+        },
+        {
+          "id": "019e72a9-0c2b-749c-8856-31e73c463ba4",
+          "name": "Nghị định số 141/2026/NĐ-CP của Chính phủ: Sửa đổi, bổ sung một số điều của Nghị định số 68/2026/NĐ-CP quy định về chính sách thuế đối với hộ kinh doanh, cá nhân kinh doanh và Nghị định số 320/2025/NĐ-CP quy định chi tiết một số điều và biện pháp để tổ chức, hướng dẫn thi hành Luật Thuế thu nhập doanh nghiệp",
+          "code": "141/2026/NĐ-CP"
+        },
+        {
+          "id": "019fa377-0d10-73ea-b3b0-ee84180af5fe",
+          "name": "Nghị định số 253/2026/NĐ-CP ngày 30/6/2026 của Chính phủ quy định chi tiết một số điều và biện pháp để tổ chức, hướng dẫn thi hành Luật Thuế thu nhập cá nhân",
+          "code": "253/2026/NĐ-CP "
+        },
+        {
+          "id": "019fa376-69da-7783-9853-6afa7cd86621",
+          "name": "Luật Thuế thu nhập cá nhân 109/2025/QH15 ngày 10/12/2025 và các văn bản pháp luật quy định chi tiết, hướng dẫn thi hành và sửa đổi, bổ sung có liên quan",
+          "code": "109/2025/QH15 "
+        }
+      ]
+    }
+  ]
+}

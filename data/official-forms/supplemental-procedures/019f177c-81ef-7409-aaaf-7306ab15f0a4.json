@@ -1,0 +1,53 @@
+{
+  "id": "dvc-019f177c-81ef-7409-aaaf-7306ab15f0a4",
+  "procedure_code": "1.115395",
+  "name": "Chế độ, chính sách đối với người được huy động, người tham gia phòng cháy, chữa cháy, cứu nạn, cứu hộ chưa tham gia bảo hiểm xã hội bị chết",
+  "domain": "Phòng cháy, chữa cháy",
+  "managing_agency": "Bộ Công an",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.484406+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019f177c-81ef-7409-aaaf-7306ab15f0a4",
+      "code": "1.115395",
+      "name": "Chế độ, chính sách đối với người được huy động, người tham gia phòng cháy, chữa cháy, cứu nạn, cứu hộ chưa tham gia bảo hiểm xã hội bị chết",
+      "state": "ACTIVE",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1782809183720,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019f177c-81ef-7409-aaaf-7306ab15f0a4",
+      "raw_path": "evidence/dvc/details/019f177c-81ef-7409-aaaf-7306ab15f0a4.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Đơn đề nghị trợ cấp tiền tuất, tiền mai táng phí (Mẫu số PC23 kèm theo Nghị định số 105/2025/NĐ-CP ngày 15/5/2025 của Chính phủ); giấy chứng tử hoặc trích lục khai tử.  Thông tin về thành phần hồ sơ khi đã được kết nối, chia sẻ, cập nhật trên cơ sở dữ liệu quốc gia hoặc cơ sở dữ liệu chuyên ngành thì cơ quan có thẩm quyền giải quyết phải khai thác trực tuyến để giải quyết mà không được yêu cầu người đề nghị cung cấp hồ sơ giấy.",
+          "component_code": "000.00.00.G01-KQ003464.",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c38-75c9-8e11-d65d3d037f77",
+          "name": "Quyết định chi trả chế độ, chính sách",
+          "code": "KQ.G01.000232"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d9ae5-d5d1-734b-a3aa-8979fb7de3c3",
+          "name": "Nghị định số 105/2025/NĐ-CP ngày 15/5/2025 của Chính phủ quy định chi\ntiết một số điều và biện pháp thi hành Luật Phòng cháy, chữa cháy và cứu nạn,\ncứu hộ",
+          "code": "105/2025/CP-NĐ"
+        }
+      ]
+    }
+  ]
+}

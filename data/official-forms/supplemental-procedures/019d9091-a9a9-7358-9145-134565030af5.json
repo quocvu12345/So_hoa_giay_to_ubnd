@@ -1,0 +1,172 @@
+{
+  "id": "dvc-019d9091-a9a9-7358-9145-134565030af5",
+  "procedure_code": "1.010774",
+  "name": "Cấp Bằng “Tổ quốc ghi công” đối với người hy sinh nhưng chưa được cấp Bằng “Tổ quốc ghi công” mà thân nhân đã được giải quyết chế độ ưu đãi từ ngày 31 tháng 12 năm 1994 trở về trước",
+  "domain": "Người có công",
+  "managing_agency": "Bộ Nội vụ",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.848091+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d9091-a9a9-7358-9145-134565030af5",
+      "code": "1.010774",
+      "name": "Cấp Bằng “Tổ quốc ghi công” đối với người hy sinh nhưng chưa được cấp Bằng “Tổ quốc ghi công” mà thân nhân đã được giải quyết chế độ ưu đãi từ ngày 31 tháng 12 năm 1994 trở về trước",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1779865875890,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d9091-a9a9-7358-9145-134565030af5",
+      "raw_path": "evidence/dvc/details/019d9091-a9a9-7358-9145-134565030af5.json",
+      "components": [
+        {
+          "section": "Đối với trường hợp quy định tại điểm b khoản 32 Phụ lục I.2 ban hành kèm theo Nghị quyết số 24/2026/NQ-CP ngày 29/4/2026 của Chính phủ",
+          "position": 1,
+          "name": "(1)\tĐơn đề nghị theo Mẫu số 15 Phụ lục I Nghị định số 131/2021/NĐ-CP.",
+          "component_code": "G09-KQ002671",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Đối với trường hợp quy định tại điểm b khoản 32 Phụ lục I.2 ban hành kèm theo Nghị quyết số 24/2026/NQ-CP ngày 29/4/2026 của Chính phủ",
+          "position": 2,
+          "name": "- Một trong các giấy tờ chứng minh thân nhân đã được giải quyết chế độ ưu đãi: Quyết định hưởng trợ cấp; sổ nhận trợ cấp ưu đãi; Phiếu điều chỉnh trợ cấp; danh sách chi trả trợ cấp hằng tháng hoặc trợ cấp một lần khi báo tử có ký nhận của người hưởng trợ cấp; giấy tờ khác do cơ quan có thẩm quyền ban hành, xác nhận được lập từ ngày 31 tháng 12 năm 1994 trở về trước.",
+          "component_code": "G09-KQ002673",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "Đối với trường hợp quy định tại điểm c khoản 32 Phụ lục I.2 ban hành kèm theo Nghị quyết số 24/2026/NQ-CP ngày 29/4/2026 của Chính phủ- Đơn đề nghị theo Mẫu số 15 Phụ lục I Nghị định số 131/2021/NĐ-CP.",
+          "position": 1,
+          "name": "- Một trong các giấy tờ chứng minh thân nhân đã được giải quyết chế độ ưu đãi: Quyết định hưởng trợ cấp; sổ nhận trợ cấp ưu đãi; Phiếu điều chỉnh trợ cấp; danh sách chi trả trợ cấp hằng tháng hoặc trợ cấp một lần khi báo tử có ký nhận của người hưởng trợ cấp; giấy tờ khác do cơ quan có thẩm quyền ban hành, xác nhận được lập từ ngày 31 tháng 12 năm 1994 trở về trước.",
+          "component_code": "G09-KQ002673",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "Đối với trường hợp quy định tại điểm c khoản 32 Phụ lục I.2 ban hành kèm theo Nghị quyết số 24/2026/NQ-CP ngày 29/4/2026 của Chính phủ- Đơn đề nghị theo Mẫu số 15 Phụ lục I Nghị định số 131/2021/NĐ-CP.",
+          "position": 2,
+          "name": "- Một trong các giấy tờ, tài liệu do cơ quan có thẩm quyền ban hành, xác nhận là liệt sĩ, hy sinh; trường hợp có tên trong danh sách, sổ quản lý liệt sĩ không có dấu xác nhận của cơ quan, đơn vị tại thời điểm lập, ghi sổ nhưng đang do cơ quan chức năng địa phương quản lý thì cơ quan đang quản lý, lưu trữ tập hợp, chốt số lượng người từng trang; ghi tổng số trang, tổng số người tại trang cuối cùng và ký, đóng dấu. Thời gian hoàn thành trước 01 tháng 3 năm 2027.",
+          "component_code": "G09-KQ002674",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "Đối với trường hợp quy định tại điểm d khoản 32 Phụ lục I.2 ban hành kèm theo Nghị quyết số 24/2026/NQ-CP ngày 29/4/2026 của Chính phủ",
+          "position": 1,
+          "name": "(1)\tĐơn đề nghị theo Mẫu số 15 Phụ lục I Nghị định số 131/2021/NĐ-CP.",
+          "component_code": "G09-KQ002671",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "Đối với trường hợp quy định tại điểm d khoản 32 Phụ lục I.2 ban hành kèm theo Nghị quyết số 24/2026/NQ-CP ngày 29/4/2026 của Chính phủ",
+          "position": 2,
+          "name": "- Một trong các giấy tờ chứng minh thân nhân đã được giải quyết chế độ ưu đãi: Quyết định hưởng trợ cấp; sổ nhận trợ cấp ưu đãi; Phiếu điều chỉnh trợ cấp; danh sách chi trả trợ cấp hằng tháng hoặc trợ cấp một lần khi báo tử có ký nhận của người hưởng trợ cấp; giấy tờ khác do cơ quan có thẩm quyền ban hành, xác nhận được lập từ ngày 31 tháng 12 năm 1994 trở về trước.",
+          "component_code": "G09-KQ002673",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "Đối với trường hợp quy định tại điểm d khoản 32 Phụ lục I.2 ban hành kèm theo Nghị quyết số 24/2026/NQ-CP ngày 29/4/2026 của Chính phủ",
+          "position": 3,
+          "name": "- Có một trong các giấy tờ: giấy báo tử, giấy báo tử trận, giấy chứng nhận hy sinh hoặc có hồ sơ đang lưu tại Sở Nội vụ.",
+          "component_code": "G09-KQ002675",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "Đối với trường hợp quy định tại điểm đ khoản 32 Phụ lục I.2 ban hành kèm theo Nghị quyết số 24/2026/NQ-CP ngày 29/4/2026 của Chính phủ",
+          "position": 1,
+          "name": "(1)\tĐơn đề nghị theo Mẫu số 15 Phụ lục I Nghị định số 131/2021/NĐ-CP.",
+          "component_code": "G09-KQ002671",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "Đối với trường hợp quy định tại điểm đ khoản 32 Phụ lục I.2 ban hành kèm theo Nghị quyết số 24/2026/NQ-CP ngày 29/4/2026 của Chính phủ",
+          "position": 2,
+          "name": "- Một trong các giấy tờ chứng minh thân nhân đã được giải quyết chế độ ưu đãi: Quyết định hưởng trợ cấp; sổ nhận trợ cấp ưu đãi; Phiếu điều chỉnh trợ cấp; danh sách chi trả trợ cấp hằng tháng hoặc trợ cấp một lần khi báo tử có ký nhận của người hưởng trợ cấp; giấy tờ khác do cơ quan có thẩm quyền ban hành, xác nhận được lập từ ngày 31 tháng 12 năm 1994 trở về trước.",
+          "component_code": "G09-KQ002673",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "Đối với trường hợp quy định tại điểm đ khoản 32 Phụ lục I.2 ban hành kèm theo Nghị quyết số 24/2026/NQ-CP ngày 29/4/2026 của Chính phủ",
+          "position": 3,
+          "name": "- Có giấy xác nhận thông tin liệt sĩ trên bia ghi danh liệt sĩ từ cấp xã trở lên kèm theo các giấy tờ được cơ quan có thẩm quyền ban hành hoặc xác nhận để khắc bia của Ủy ban nhân dân cấp xã nơi đặt bia ghi danh liệt sĩ.",
+          "component_code": "G09-KQ002676",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c4d-7725-9d9c-20dc408f5f22",
+          "name": "Quyết định cấp Bằng “Tổ quốc ghi công” và Bằng “Tổ quốc ghi công”.",
+          "code": "KQ.G09.000411"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7f-719e-b474-93996f3f00db",
+          "name": "Nghị định số 25/2025/NĐ-CP ngày 21 tháng 02 năm 2025 của Chính phủ quy định chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của Bộ Nội vụ",
+          "code": "Nghị định số 25/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b671-f40a5ee32475",
+          "name": "Nghị quyết số 190/2025/QH15 của Quốc hội: Quy định về xử lý một số vấn đề liên quan đến sắp xếp tổ chức bộ máy nhà nước",
+          "code": "190/2025/NQ-QH15"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afea-1c153ca6400f",
+          "name": "Quy định về phân định thẩm quyền của chính quyền địa phương 02 cấp trong lĩnh vực quản lý nhà nước của Bộ Nội vụ",
+          "code": "129/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7f-719e-b474-516a799e2145",
+          "name": "QUY ĐỊNH CHI TIẾT VÀ BIỆN PHÁP THI HÀNH PHÁP LỆNH ƯU ĐÃI NGƯỜI CÓ CÔNG VỚI CÁCH MẠNG",
+          "code": "Nghị định số 131/2021/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d85-73da-8eba-20bc75de794b",
+          "name": "ƯU ĐÃI NGƯỜI CÓ CÔNG VỚI CÁCH MẠNG",
+          "code": "Pháp lệnh số: 02/2020/UBTVQH14"
+        }
+      ]
+    }
+  ]
+}

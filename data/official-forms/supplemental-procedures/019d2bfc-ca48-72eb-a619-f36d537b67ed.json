@@ -1,0 +1,74 @@
+{
+  "id": "dvc-019d2bfc-ca48-72eb-a619-f36d537b67ed",
+  "procedure_code": "1.013654",
+  "name": "Thông báo phát hành biên lai đặt in/tự in.",
+  "domain": "Hải quan",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.917834+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfc-ca48-72eb-a619-f36d537b67ed",
+      "code": "1.013654",
+      "name": "Thông báo phát hành biên lai đặt in/tự in.",
+      "state": "ACTIVE",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1775639565258,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-ca48-72eb-a619-f36d537b67ed",
+      "raw_path": "evidence/dvc/details/019d2bfc-ca48-72eb-a619-f36d537b67ed.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Biên lai mẫu",
+          "component_code": "000.00.00.G12-KQ013894",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Mẫu 02/PH-BLG Thông báo phát hành biên lai theo Phụ lục IA ban hành kèm theo Nghị định số 123/2020/NĐ-CP ngày 19/10/2020 của Chính phủ quy định về hóa đơn, chứng từ",
+          "component_code": "000.00.00.G12-KQ013893",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c73-70ac-aa18-ce7101e92340",
+          "name": "Cổng thông tin điện tử của Cục Hải quan gửi phản hồi tự động về việc xác nhận người nộp thuế đã gửi thành công và thông báo về thời điểm tiếp nhận chính thức hồ sơ, tài liệu của người nộp thuế",
+          "code": "KQ.G12.000670"
+        },
+        {
+          "id": "019d2bb2-1c71-7574-afec-84a869295c92",
+          "name": "Văn bản thông báo của cơ quan quản lý thuế đối với tổ chức thu thuế, phí, lệ phí trong trường hợp cơ quan quản lý thuế phát hiện Thông báo phát hành biên lai không bảo đảm nội dung theo quy định",
+          "code": "KQ.G12.000972"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d87-7195-a444-f7af6096dd40",
+          "name": "Nghị định số 70/2025/NĐ-CP ngày ngày 20 tháng 3 năm 2025 của Chính phủ sửa đổi, bổ sung một số điều của Nghị định số 123/2020/NĐ-CP ngày 19 tháng 10 năm 2020 của Chính phủ quy định về hóa đơn, chứng từ.",
+          "code": "70/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d86-7760-a63e-7a35aa2ed73a",
+          "name": "Nghị định 123/2020/NĐ-CP",
+          "code": "123/2020/NĐ-CP"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "id": "dvc-019d2bfd-08dd-71d8-b216-1e9cbb44bc34",
+  "procedure_code": "3.000116",
+  "name": "Thủ tục hoàn trả các khoản thu ngân sách nhà nước qua KBNN",
+  "domain": "Kho bạc Nhà nước",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.898308+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfd-08dd-71d8-b216-1e9cbb44bc34",
+      "code": "3.000116",
+      "name": "Thủ tục hoàn trả các khoản thu ngân sách nhà nước qua KBNN",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1775636360560,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfd-08dd-71d8-b216-1e9cbb44bc34",
+      "raw_path": "evidence/dvc/details/019d2bfd-08dd-71d8-b216-1e9cbb44bc34.json",
+      "components": [
+        {
+          "section": "Trường hợp hoàn trả bằng tiền mặt trực tiếp tại KBNN cho cá nhân",
+          "position": 1,
+          "name": "Chứng minh nhân dân hoặc giấy chứng minh, chứng nhận của lực lượng vũ trang hoặc thẻ căn cước công dân hoặc hộ chiếu còn hạn sử dụng xuất trình tại Kho bạc Nhà nước khi làm thủ tục",
+          "component_code": "000.00.00.G12-KQ011084",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Trường hợp hoàn trả bằng tiền mặt trực tiếp tại KBNN cho cá nhân",
+          "position": 2,
+          "name": "Bản chính hoặc bản sao y bản chính giấy ủy quyền nhận tiền hoàn trả của người được hoàn trả các khoản thu ngân sách nhà nước (đối với trường hợp ủy quyền).",
+          "component_code": "000.00.00.G12-KQ011085",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Trường hợp hoàn trả qua tài khoản của người được hoàn trả",
+          "position": 1,
+          "name": "Kho bạc Nhà nước thực hiện hoàn trả vào tài khoản của người được hoàn trả theo lệnh hoàn trả của cơ quan nhà nước có thẩm quyền quyết định hoàn trả",
+          "component_code": "000.00.00.G12-KQ011086",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c70-724b-96dd-1a58d811fe59",
+          "name": "Chứng từ hoàn trả thu ngân sách nhà nước của KBNN có chữ ký xác nhận đã nhận đủ tiền của người nhận tiền",
+          "code": "KQ.G12.000099"
+        },
+        {
+          "id": "019d2bb2-1c73-70ac-aa18-72d151c5ba8e",
+          "name": "KBNN hoặc ngân hàng hoặc tổ chức cung ứng dịch vụ trung gian thanh toán báo Có cho tổ chức, cá nhân được hoàn trả các khoản thu ngân sách nhà nước",
+          "code": "KQ.G12.12.002"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7e-72d1-afe8-bc7231a7bf09",
+          "name": "QUY ĐỊNH VỀ MẪU THẺ, TRÌNH TỰ, THỦ TỤC CẤP MỚI, CẤP LẠI THẺ GIÁM ĐỊNH VIÊN TƯ PHÁP",
+          "code": "11/2020/NĐ-CP"
+        }
+      ]
+    }
+  ]
+}

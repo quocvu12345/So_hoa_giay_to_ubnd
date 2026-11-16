@@ -1,0 +1,137 @@
+{
+  "id": "hn87-425",
+  "ordinal": "425",
+  "procedure_code": "3.000410",
+  "name": "Quyết định xác lập quyền sở hữu toàn dân đối với tài sản không có người thừa kế",
+  "domain": "Quản lý công sản (Bộ Tài chính)",
+  "department_id": "ktdt",
+  "department": "Phòng Kinh tế, Hạ tầng và Đô thị",
+  "authority_as_published": "UBND thành phố; UBND cấp xã",
+  "execution_level_as_published": "Cấp tỉnh, cấp xã",
+  "receiving_location_as_published": "Điểm hỗ trợ DVC số; Chi nhánh TTPVHCC",
+  "inventory_date": "2026-04-27",
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "source_urls": [
+    "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfd-10d2-72d8-803c-ef49c81b6fb4"
+  ],
+  "current_dvc_match": true,
+  "lifecycle": null,
+  "scope": "hanoi_commune_notice_2026_04_27",
+  "scope_note": "Mốc kiểm kê cấp xã Hà Nội; áp dụng từng thủ tục tại Từ Liêm còn phải theo thẩm quyền/ủy quyền hiện hành.",
+  "status": "source_template_missing",
+  "components": [
+    {
+      "id": "hn87-425-c001",
+      "code": "G12.060243",
+      "name": "Báo cáo quá trình mở thừa kế đối với di sản",
+      "section": "",
+      "role": "applicant_prepared",
+      "scenario_status": "conditional_needs_review",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfd-10d2-72d8-803c-ef49c81b6fb4",
+      "source_detail_id": "019d2bfd-10d2-72d8-803c-ef49c81b6fb4",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-425-c002",
+      "code": "G12.060245",
+      "name": "Các hồ sơ, tài liệu liên quan đến quá trình mở thừa kế, văn bản từ chối quyền hưởng di sản, bản án hoặc quyết định của Tòa án xác định người không được quyền hưởng di sản thừa kế (nếu có): Không yêu cầu cá nhân, tổ chức khi nộp; khi cơ quan giải quyết TTHC khai thác được thông tin về bản án hoặc quyết định của tài sản trên cơ sở dữ liệu quốc gia về bản án, quyết định của Tòa án; hệ thống quản lý thụ lý vụ việc",
+      "section": "",
+      "role": "needs_review",
+      "scenario_status": "conditional_needs_review",
+      "required_as_published": false,
+      "original_quantity": 0,
+      "copy_quantity": 1,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfd-10d2-72d8-803c-ef49c81b6fb4",
+      "source_detail_id": "019d2bfd-10d2-72d8-803c-ef49c81b6fb4",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-425-c003",
+      "code": "G12.060244",
+      "name": "Bảng kê chủng loại, số lượng, khối lượng, hiện trạng của di sản, giá trị (nếu có thông tin về giá trị)",
+      "section": "",
+      "role": "applicant_prepared",
+      "scenario_status": "conditional_needs_review",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfd-10d2-72d8-803c-ef49c81b6fb4",
+      "source_detail_id": "019d2bfd-10d2-72d8-803c-ef49c81b6fb4",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-425-c004",
+      "code": "G12.060246",
+      "name": "Văn bản từ bỏ phần quyền sở hữu đối với tài sản sở hữu chung quy định tại khoản 4 Điều 218 Bộ luật Dân sự",
+      "section": "",
+      "role": "needs_review",
+      "scenario_status": "conditional_needs_review",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfd-10d2-72d8-803c-ef49c81b6fb4",
+      "source_detail_id": "019d2bfd-10d2-72d8-803c-ef49c81b6fb4",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    }
+  ],
+  "service_cases": [
+    {
+      "id": "019f7d4f-9792-77ac-8a3b-f53e4c1f6fe7",
+      "code": "3.000410.01",
+      "name": "Quyết định xác lập quyền sở hữu toàn dân đối với tài sản không có người thừa kế",
+      "source_processing_time": {
+        "qty": 29,
+        "type": "DAY"
+      },
+      "has_case_specific_components": false
+    },
+    {
+      "id": "019fa68a-a089-76ec-b7ed-a5b5f4428bbb",
+      "code": "3.000410.02",
+      "name": "Quyết định xác lập quyền sở hữu toàn dân đối với tài sản không có người thừa kế",
+      "source_processing_time": {
+        "qty": 29,
+        "type": "DAY"
+      },
+      "has_case_specific_components": false
+    }
+  ],
+  "selected_template_ids": [],
+  "source_component_groups": [
+    {
+      "name": "",
+      "component_count": 4,
+      "source_detail_id": "019d2bfd-10d2-72d8-803c-ef49c81b6fb4"
+    }
+  ],
+  "conditional_component_groups": [],
+  "default_test_scenario": {
+    "channel": "direct",
+    "applicant_submits_self": true,
+    "authorized": false,
+    "special_case_flags": [],
+    "selected_conditional_group": null,
+    "case_selection_method": "ordinary_direct_submission",
+    "case_status": "scenario_for_testing_not_a_legal_eligibility_decision"
+  },
+  "requirement_note": "required_as_published được giữ nguyên; false không chứng minh giấy tờ luôn tùy chọn. Các nhóm executionCases có thể là mục giấy tờ/hướng dẫn, không phải các phương án loại trừ nhau."
+}

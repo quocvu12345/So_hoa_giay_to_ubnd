@@ -1,0 +1,85 @@
+{
+  "id": "dvc-019d2bfe-88a8-7575-8d67-81d64c2d22cb",
+  "procedure_code": "1.012892",
+  "name": "Cho thuê nhà ở cũ thuộc tài sản công đối với trường hợp chưa có hợp đồng thuê nhà ở",
+  "domain": "Nhà ở và công sở",
+  "managing_agency": "Bộ Xây dựng",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.864784+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfe-88a8-7575-8d67-81d64c2d22cb",
+      "code": "1.012892",
+      "name": "Cho thuê nhà ở cũ thuộc tài sản công đối với trường hợp chưa có hợp đồng thuê nhà ở",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1780646199236,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfe-88a8-7575-8d67-81d64c2d22cb",
+      "raw_path": "evidence/dvc/details/019d2bfe-88a8-7575-8d67-81d64c2d22cb.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "- Bản sao có chứng thực hoặc bản sao kèm bản chính để đối chiếu giấy tờ chứng minh việc bố trí, sử dụng nhà ở theo một trong các trường hợp sau: (1) Hộ gia đình, cá nhân đang thực tế sử dụng nhà ở và chưa có hợp đồng thuê nhà ở nhung có quyết định hoặc văn bản phân phối, bố trí sử dụng nhà ở (sau đây gọi chung là văn bản bố trí sử dụng nhà ở) và có tên trong văn bản bố trí sử dụng này, bao gồm cả trường hợp nhà ở mà Nhà nước cho phép đầu tư xây dựng bằng vốn ngân sách nhà nước trước ngày 27 tháng 11 năm 1992 (ngày ban hành Quyết định số 118/TTg của Thủ tướng Chính phủ về giá cho thuê nhà ở và đưa tiền nhà ở vào tiền lương, sau đây gọi tắt là Quyết định số 118/TTg) nhưng từ ngày 27 tháng 11 năm 1992 mới hoàn thành xây dựng và đưa vào sử dụng để phân phối bố trí cho thuê theo Quyết định số 118/TTg và trường hợp người đang thuê nhà ở từ trước ngày 27 tháng 11 năm 1992 nhưng thuộc diện phải điều chuyển công tác và Nhà nước yêu cầu phải trả lại nhà ở đang thuê, sau đó được cơ quan nhà nước bố trí cho thuê nhà ở khác sau ngày 27 tháng 11 năm 1992; (2) Trường hợp thuộc diện quy định tại điểm c khoản 1 Điều 62 của Nghị định này thì phải không thuộc diện có tranh chấp về quyền sử dụng nhà ở, không thuộc diện chiếm dụng nhà ở và phải có một trong các giấy tờ chứng minh sử dụng nhà ở được cơ quan có thẩm quyền cấp trước ngày 19 tháng 01 năm 2007, bao gồm: a) Giấy tờ về đăng ký thường trú hoặc đăng ký tạm trú theo quy định của pháp luật về cư trú tại thời điểm sử dụng nhà ở; b) Giấy tờ về đăng ký kê khai nhà ở; c) Biên lai nộp tiền sử dụng đất hàng năm. + Trường hợp nhận chuyển quyền thuê thì phải kèm theo một trong các giấy tờ sau: (1) Hộ gia đình, cá nhân đang thực tế sử dụng nhà ở và đã có hợp đồng thuê nhà ở ký với cơ quan có thẩm quyền; (2) Hộ gia đình, cá nhân đang thực tế sử dụng nhà ở và chưa có hợp đồng thuê nhà ở nhung có quyết định hoặc văn bản phân phối, bố trí sử dụng nhà ở (sau đây gọi chung là văn bản bố trí sử dụng nhà ở) và có tên trong văn bản bố trí sử dụng này, bao gồm cả trường hợp nhà ở mà Nhà nước cho phép đầu tư xây dựng bằng vốn ngân sách nhà nước trước ngày 27 tháng 11 năm 1992 (ngày ban hành Quyết định số 118/TTg của Thủ tướng Chính phủ về giá cho thuê nhà ở và đưa tiền nhà ở vào tiền lương, sau đây gọi tắt là Quyết định số 118/TTg) nhưng từ ngày 27 tháng 11 năm 1992 mới hoàn thành xây dựng và đưa vào sử dụng để phân phối bố trí cho thuê theo Quyết định số 118/TTg và trường hợp người đang thuê nhà ở từ trước ngày 27 tháng 11 năm 1992 nhưng thuộc diện phải điều chuyển công tác và Nhà nước yêu cầu phải trả lại nhà ở đang thuê, sau đó được cơ quan nhà nước bố trí cho thuê nhà ở khác sau ngày 27 tháng 11 năm 1992; (3) Trường hợp có hợp đồng thuê nhà ở nhưng không thuộc diện quy định tại điểm b khoản này và người đang sử dụng nhà ở có giấy tờ chứng minh đã nộp tiền thuê nhà ở trước khi ký kết hợp đồng thuê nhà thì thời điểm bố trí sử dụng nhà ở được xác định theo thời điểm nộp tiền thuê nhà ở; trường hợp khi ký kết hợp đồng thuê nhà ở mà cơ quan có thẩm quyền đã truy thu tiền thuê nhà ở (có giấy tờ chứng minh việc truy thu tiền thuê nhà ở) thì thời điểm bố trí sử dụng nhà ở được xác định theo thời điểm tính truy thu tiền thuê nhà ở; + Trường hợp là vợ chồng thì phải có bản sao có chứng thực hoặc bản sao kèm bản chính để đối chiếu giấy chứng nhận kết hôn ; (Thành phần hồ sơ có quy định về các thông tin đã có trong cơ sở dữ liệu quốc gia về dân cư hoặc cơ sở dữ liệu chuyên ngành thì các thông tin này được thay thế bằng mã số định danh cá nhân hoặc mã số chuyên ngành thể hiện trong mẫu đơn, tờ khai khi cơ sở dữ liệu quốc gia về dân cư hoặc cơ sở dữ liệu chuyên ngành được vận hành).",
+          "component_code": "000.00.00.G17-KQ002481",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Đơn đề nghị thuê nhà ở cũ thuộc tài sản công theo Mẫu số 02 của Phụ lục V ban hành kèm theo Nghị định số 95/2024/NĐ-CP ngày 24/7/2024 của Chính phủ quy định chi tiết một số điều của Luật Nhà ở  (Mẫu đơn có quy định về các thông tin đã có trong cơ sở dữ liệu quốc gia về dân cư hoặc cơ sở dữ liệu chuyên ngành thì các thông tin này được thay thế bằng mã số định danh cá nhân hoặc mã số chuyên ngành thể hiện trong mẫu đơn, tờ khai khi cơ sở dữ liệu quốc gia về dân cư hoặc cơ sở dữ liệu chuyên ngành được vận hành).",
+          "component_code": "000.00.00.G17-KQ002479",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 3,
+          "name": "- Bản sao có chứng thực hoặc bản sao kèm bản chính để đối chiếu giấy tờ chứng minh thuộc đối tượng được miễn, giảm tiền thuê nhà ở (nếu có) sau: (1) Trường hợp là người có công với cách mạng thì phải có giấy tờ chứng minh do cơ quan có thẩm quyền cấp theo quy định của pháp luật về ưu đãi người có công với cách mạng; (2) Trường hợp là người khuyết tật hoặc người cao tuổi thì phải có giấy xác nhận của cơ quan có thẩm quyền theo quy định của pháp luật về người khuyết tật hoặc chính sách trợ giúp cho các đối tượng bảo trợ xã hội; (3) Trường hợp là hộ gia đình nghèo, cận nghèo tại khu vực đô thị thì phải có giấy xác nhận của Ủy ban nhân dân xã, phường, thị trấn (sau đây gọi chung là Ủy ban nhân dân cấp xã) nơi người đó đang thường trú hoặc đang tạm trú từ 01 năm trở lên.",
+          "component_code": "000.00.00.G17-KQ002480",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c7a-7554-ace4-1083afc26a21",
+          "name": "Quyết định phê duyệt đối tượng được thuê nhà ở cũ",
+          "code": "KQ.G17.000196"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d84-71c5-b672-6d9bdd44c1c7",
+          "name": "Luật Nhà ở số 27/2023/QH15",
+          "code": "27/2023/QH15"
+        },
+        {
+          "id": "019d2bb3-5d7f-719e-b473-046c990c04b2",
+          "name": "Nghị định số 95/2024/NĐ-CP ngày 24 tháng 7 năm 2024 của Chính phủ về quy định chi tiết một số điều của Luật Nhà ở;",
+          "code": "95/2024/NĐ-CP"
+        },
+        {
+          "id": "019d9497-3607-7432-9852-b0c306dbc131",
+          "name": "NGHỊ ĐỊNH Sửa đổi, bổ sung một số điều của các Nghị định trong lĩnh vực nhà ở, kinh đoanh bất động sản",
+          "code": "54/2026/NĐ-CP"
+        }
+      ]
+    }
+  ]
+}

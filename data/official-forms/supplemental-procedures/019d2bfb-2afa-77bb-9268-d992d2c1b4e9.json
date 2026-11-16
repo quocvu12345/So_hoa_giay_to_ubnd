@@ -1,0 +1,91 @@
+{
+  "id": "dvc-019d2bfb-2afa-77bb-9268-d992d2c1b4e9",
+  "procedure_code": "1.014200",
+  "name": "Cấp lại giấy phép lao động đối với người lao động nước ngoài làm việc tại Việt Nam",
+  "domain": "Việc làm",
+  "managing_agency": "Bộ Nội vụ",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.989418+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfb-2afa-77bb-9268-d992d2c1b4e9",
+      "code": "1.014200",
+      "name": "Cấp lại giấy phép lao động đối với người lao động nước ngoài làm việc tại Việt Nam",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1779781300280,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-2afa-77bb-9268-d992d2c1b4e9",
+      "raw_path": "evidence/dvc/details/019d2bfb-2afa-77bb-9268-d992d2c1b4e9.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "(1) Các giấy tờ trong hồ sơ cấp lại giấy phép lao động đối với người lao động nước ngoài nếu của nước ngoài phải hợp pháp hóa lãnh sự trừ trường hợp được miễn hợp pháp hóa lãnh sự theo điều ước quốc tế mà nước Cộng hòa xã hội chủ nghĩa Việt Nam và nước ngoài liên quan đều là thành viên hoặc theo nguyên tắc có đi có lại hoặc theo quy định của pháp luật,.",
+          "component_code": "G09-KQ003080",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "(2) 02 ảnh màu (kích thước 4 cm x 6 cm phông nền trắng, mặt nhìn thẳng, đầu để trần, không đeo kính)  ,",
+          "component_code": "G09-KQ003083",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 3,
+          "name": "(3) Giấy tờ chứng minh việc thay đổi một trong các nội dung ghi trong giấy phép lao động còn thời hạn: họ và tên; quốc tịch; số hộ chiếu; đổi tên người sử dụng lao động mà không thay đổi mã số định danh của người sử dụng lao động    .",
+          "component_code": "G09-KQ003084",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 4,
+          "name": "(4) Giấy phép lao động còn thời hạn, trừ trường hợp bị mất hoặc bị hư hỏng không sử dụng được    ,",
+          "component_code": "G09-KQ003085",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c4c-77ab-bf70-1936838f1bec",
+          "name": "- Giấy phép lao động; - Hoặc văn bản trả lời và nêu rõ lý do trong trường hợp không cấp lại giấy phép lao động",
+          "code": "KQ.G09.000381"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7e-72d1-afed-66700cf36a77",
+          "name": "QUY ĐỊNH VỀ NGƯỜI LAO ĐỘNG NƯỚC NGOÀI LÀM VIỆC TẠI VIỆT NAM",
+          "code": "219/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b673-3e33a4649d19",
+          "name": "Bộ Luật lao động",
+          "code": "45/2019/QH14"
+        }
+      ]
+    }
+  ]
+}

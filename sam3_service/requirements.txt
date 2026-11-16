@@ -1,0 +1,15 @@
+# SAM 3 image inference on Apple MPS / CPU / CUDA through Transformers.
+# Model weights are downloaded separately from the official gated Meta repository.
+torch==2.15.0
+torchvision==0.29.2
+transformers==5.22.2
+accelerate==1.15.0
+safetensors==0.8.0
+numpy==1.26.4
+pillow==13.0.0
+pypdfium2==5.15.2
+fastapi==0.162.5
+uvicorn==0.54.0
+httpx==0.28.1
+huggingface-hub==2.4.0
+pytest==9.2.0

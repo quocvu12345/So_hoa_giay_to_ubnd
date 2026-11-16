@@ -1,0 +1,68 @@
+{
+  "id": "dvc-019d2bf7-adb7-7329-8d7c-db89ef073ced",
+  "procedure_code": "2.001159",
+  "name": "Thông báo lưu trú",
+  "domain": "Đăng ký, quản lý cư trú",
+  "managing_agency": "Bộ Công an",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:18.033729+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bf7-adb7-7329-8d7c-db89ef073ced",
+      "code": "2.001159",
+      "name": "Thông báo lưu trú",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1790740833532,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf7-adb7-7329-8d7c-db89ef073ced",
+      "raw_path": "evidence/dvc/details/019d2bf7-adb7-7329-8d7c-db89ef073ced.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Khi có người đến lưu trú, đại diện hộ gia đình, cơ sở khám bệnh, chữa bệnh, cơ sở lưu trú du lịch, cơ sở lưu trú ở khu công nghiệp, cơ sở khác có chức năng lưu trú thì phải thực hiện việc thông báo lưu trú cho người đang lưu trú theo một trong các hình thức đã được quy định tại và theo quy định sau đây: - Chủ hộ hoặc thành viên hộ gia đình, đại diện cơ sở lưu trú ở khu công nghiệp, cơ sở lưu trú du lịch đề nghị người đến lưu trú xuất trình một trong các giấy tờ pháp lý thể hiện thông tin về số định danh cá nhân theo quy định của pháp luật và thực hiện việc thông báo lưu trú với cơ quan đăng ký cư trú; - Đại diện cơ sở khám bệnh, chữa bệnh có trách nhiệm lập danh sách người đến điều trị nội trú và thực hiện thông báo lưu trú với cơ quan đăng ký cư trú nơi đặt trụ sở cơ sở khám chữa bệnh",
+          "component_code": "000.00.00.G01-KQ002884",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c37-76e8-b48c-6ca41f3fbddf",
+          "name": "Cập nhật thông tin trong Cơ sở dữ liệu về cư trú",
+          "code": "KQ.G01.000066"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "01a0e5f3-d1fa-700d-bd8d-74c957958c2e",
+          "name": "Thông tư số 116/2026/TT-BCA ngày 29/6/2026 của Bộ trưởng Bộ Công an quy định chi tiết một số điều và biện pháp thi hành Luật Cư trú",
+          "code": "116/2026/TT-BCA"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afeb-c1c82d7e48fe",
+          "name": "Nghị định quy định chi tiết một số điều và biện pháp thi hành Luật Cư trú",
+          "code": "154/2024/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7b-7049-8fc6-cde21d6c7dad",
+          "name": "Thông tư số 54/2025/TT-BCA ngày 01/7/2025 của Bộ trưởng Bộ Công an quy định về quy trình đăng ký cư trú.",
+          "code": "54/2025/TT-BCA"
+        },
+        {
+          "id": "019d2bb3-5d85-73da-8eb9-f36f498aefcf",
+          "name": "Luật Cư trú 2020",
+          "code": "68/2020/QH14"
+        }
+      ]
+    }
+  ]
+}

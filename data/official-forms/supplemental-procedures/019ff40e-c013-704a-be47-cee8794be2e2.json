@@ -1,0 +1,108 @@
+{
+  "id": "dvc-019ff40e-c013-704a-be47-cee8794be2e2",
+  "procedure_code": "3.000722",
+  "name": "Liên thông điện tử: đăng ký khai sinh, đăng ký thường trú, cấp thẻ bảo hiểm y tế, cấp thẻ căn cước cho trẻ em dưới 6 tuổi",
+  "domain": "thủ tục hành chính liên thông",
+  "managing_agency": "Bộ Tư pháp",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.480586+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019ff40e-c013-704a-be47-cee8794be2e2",
+      "code": "3.000722",
+      "name": "Liên thông điện tử: đăng ký khai sinh, đăng ký thường trú, cấp thẻ bảo hiểm y tế, cấp thẻ căn cước cho trẻ em dưới 6 tuổi",
+      "state": "ACTIVE",
+      "type": "INTERCONNECTED",
+      "is_ward": true,
+      "updated_at_source": 1787800941411,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019ff40e-c013-704a-be47-cee8794be2e2",
+      "raw_path": "evidence/dvc/details/019ff40e-c013-704a-be47-cee8794be2e2.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Tờ khai điện tử (Mẫu số 01 kèm theo Nghị định số 301/2026/NĐ-CP)",
+          "component_code": "TP-G15.32-99950",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019ff3fd-97e9-764e-8ddb-15fcf2ce452d",
+              "fileName": "Mau 1.doc",
+              "bucketName": "dvc",
+              "filePath": "configuring/019ff3fd-97e9-764e-8ddb-15fcf2ce452d/Mau 1.doc"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Dữ liệu điện tử có ký số của Giấy chứng sinh được liên thông từ cơ sở khám bệnh, chữa bệnh với Cổng Dịch vụ công quốc gia hoặc bản điện tử Giấy chứng sinh do người yêu cầu đăng ký khai sinh đính kèm trên Cổng Dịch vụ công quốc gia. Trường hợp không có giấy chứng sinh thì người yêu cầu đăng ký khai sinh có thể đính kèm bản chụp hoặc bản điện tử giấy tờ thay giấy chứng sinh theo quy định pháp luật về hộ tịch",
+          "component_code": "TP-G15.32-99955",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 3,
+          "name": "Trường hợp đăng ký thường trú cho trẻ em khác nơi thường trú của cha, mẹ (nếu được cha, mẹ đồng ý) thì đính kèm các thành phần hồ sơ theo quy định pháp luật về cư trú.",
+          "component_code": "TP-G15.32-99957",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 4,
+          "name": "Các thành phần hồ sơ trên là bản giấy thì phải thực hiện số hóa theo quy định tại Nghị định số 118/2025/NĐ-CP, được sửa đổi, bổ sung bởi Nghị định số 367/2025/NĐ-CP ngày 31 tháng 12 năm 2025",
+          "component_code": "TP-G15.32-99954",
+          "original_quantity": 0,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "01a03d98-3861-7774-9597-b26377991d78",
+          "name": "- Kết quả giải quyết cấp thẻ bảo hiểm y tế cho trẻ em dưới 6 tuổi được gửi cho người yêu cầu và cập nhật vào kho quản lý dữ liệu điện tử của người yêu cầu trên Cổng Dịch vụ công quốc gia, ứng dụng VNeID và Hệ thống thông tin giải quyết TTHC của Bộ Tài chính. Thẻ bảo hiểm y tế được trả cho người yêu cầu theo cách thức đã lựa chọn tại Tờ khai.",
+          "code": "KQ.G15.9962"
+        },
+        {
+          "id": "019ff3f8-ff26-7600-9ac5-d440f1748d52",
+          "name": "- Bản điện tử Giấy khai sinh được cập nhật vào kho quản lý dữ liệu điện tử của người yêu cầu trên Cổng Dịch vụ công quốc gia, ứng dụng VNeID và Hệ thống thông tin giải quyết TTHC của Bộ Tư pháp. Bản chính và bản sao giấy khai sinh trả cho người yêu cầu tại Bộ phận một cửa của cơ quan giải quyết đăng ký khai sinh.",
+          "code": "KQ.G15.9965"
+        },
+        {
+          "id": "01a03d97-ce65-7339-ade0-f2d8dd0d6f26",
+          "name": "- Kết quả giải quyết đăng ký thường trú được gửi cho người yêu cầu và cập nhật vào kho quản lý dữ liệu điện tử của người yêu cầu trên Cổng Dịch vụ công quốc gia, ứng dụng VNeID và Hệ thống thông tin giải quyết TTHC của Bộ Công an. Bản giấy Thông báo kết quả giải quyết đăng ký cư trú được trả cho người yêu cầu theo cách thức đã lựa chọn tại Tờ khai.",
+          "code": "KQ.G15.9964"
+        },
+        {
+          "id": "01a03d98-b826-7768-8c30-84dce8e971c1",
+          "name": "- Kết quả giải quyết cấp thẻ căn cước cho trẻ em dưới 6 tuổi được gửi cho người yêu cầu và cập nhật vào kho quản lý dữ liệu điện tử của người yêu cầu trên Cổng Dịch vụ công quốc gia, ứng dụng VNeID và Hệ thống thông tin giải quyết TTHC của Bộ Công an. Thẻ căn cước được trả cho người yêu cầu theo cách thức đã lựa chọn tại Tờ khai.",
+          "code": "KQ.G15.9961"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019ff3f9-baa1-7103-aa2d-326a3fe17fc1",
+          "name": "Nghị định số 301/2026/NĐ-CP ngày 30 tháng 7 năm 2026 của Chính phủ sửa đổi, bổ sung một số điều của Nghị định số 63/2024/NĐ-CP ngày 10 tháng 6 năm 2024 của Chính phủ quy định việc thực hiện liên thông điện tử 02 nhóm thủ tục hành chính: đăng ký khai sinh, đăng ký thường trú, cấp thẻ bảo hiểm y tế cho trẻ em dưới 6 tuổi; đăng ký khai tử, xóa đăng ký thường trú, giải quyết mai táng phí, tử tuất.",
+          "code": "Nghị định số 301/2026/NĐ-CP "
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "id": "dvc-019d2bfc-7411-759b-b2b9-1ee513dc52eb",
+  "procedure_code": "1.009058",
+  "name": "Thủ tục trừ lùi chứng nhận xuất xứ hàng hóa nhập khẩu",
+  "domain": "Hải quan",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.930435+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfc-7411-759b-b2b9-1ee513dc52eb",
+      "code": "1.009058",
+      "name": "Thủ tục trừ lùi chứng nhận xuất xứ hàng hóa nhập khẩu",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1775639574080,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-7411-759b-b2b9-1ee513dc52eb",
+      "raw_path": "evidence/dvc/details/019d2bfc-7411-759b-b2b9-1ee513dc52eb.json",
+      "components": [
+        {
+          "section": "Trường hợp gửi qua Hệ thống xử lý dữ liệu điện tử hải quan",
+          "position": 1,
+          "name": "Chứng nhận xuất xứ hàng hóa (C/O)",
+          "component_code": "000.00.00.G12-KQ9822",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Trường hợp hệ thống xử lý dữ liệu điện tử hải quan chưa đáp ứng theo dõi trừ lùi C/O ",
+          "position": 1,
+          "name": "Chứng nhận xuất xứ hàng hóa (C/O)",
+          "component_code": "000.00.00.G12-KQ9825",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c70-724b-96e0-5af8301177b1",
+          "name": "Lô hàng được trừ lùi C/O cho từng lần nhập khẩu",
+          "code": "KQ.G12.000361"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7d-7398-be4d-ff62cdf67da5",
+          "name": "Luật 54/2014/QH13",
+          "code": "54/2014/QH13"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afe7-9c25863596db",
+          "name": "Nghị định 08/2015/NĐ-CP",
+          "code": "08/2015/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d87-7195-a443-db1e211c2ddd",
+          "name": "Nghị định 59/2018/NĐ-CP",
+          "code": "59/2018/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7c-71ab-9efb-1a6b62ecff66",
+          "name": "Quy định chi tiết Luật Quản lý ngoại thương về xuất xứ hàng hoá",
+          "code": "31/2018/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b671-3e47e4d388c3",
+          "name": "Luật quản lý ngoại thương",
+          "code": "05/2017/QH14"
+        },
+        {
+          "id": "019d2bb3-5d87-7195-a440-4622fd7f57e9",
+          "name": "Thông tư 38/2018/TT-BTC",
+          "code": "38/2018/TT-BTC"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b671-8a6c5b6d5a80",
+          "name": "Thuế xuất khẩu, thuế nhập khẩu",
+          "code": "107/2016/QH13"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "id": "dvc-019d2bfa-18f1-777d-95ef-b4b7dca1255c",
+  "procedure_code": "1.003446",
+  "name": "Thẩm định, phê duyệt phương án ứng phó thiên tai cho công trình, vùng hạ du đập trong quá trình thi công thuộc thẩm quyền của UBND cấp xã",
+  "domain": "Thủy lợi",
+  "managing_agency": "Bộ Nông nghiệp và Môi trường",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:18.021952+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfa-18f1-777d-95ef-b4b7dca1255c",
+      "code": "1.003446",
+      "name": "Thẩm định, phê duyệt phương án ứng phó thiên tai cho công trình, vùng hạ du đập trong quá trình thi công thuộc thẩm quyền của UBND cấp xã",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1776736067843,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfa-18f1-777d-95ef-b4b7dca1255c",
+      "raw_path": "evidence/dvc/details/019d2bfa-18f1-777d-95ef-b4b7dca1255c.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Tờ trình đề nghị phê duyệt phương án ứng phó thiên tai cho công trình, vùng hạ du đập",
+          "component_code": "000.00.00.G10-KQ0708",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Dự thảo phương án ứng phó thiên tai cho công trình, vùng hạ du đập",
+          "component_code": "000.00.00.G10-KQ2140",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 3,
+          "name": "Báo cáo kết quả tính toán kỹ thuật;",
+          "component_code": "000.00.00.G10-KQ2141",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 4,
+          "name": "Văn bản góp ý kiến của các cơ quan, đơn vị liên quan",
+          "component_code": "000.00.00.H27-KQ0586",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 5,
+          "name": "Các tài liệu liên quan khác kèm theo (nếu có).",
+          "component_code": "000.00.00.H27-KQ0587",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c6d-743d-a39d-e656807879af",
+          "name": "Quyết định phê duyệt phương án ứng phó thiên tai cho công trình, vùng hạ du đập",
+          "code": "KQ.G10.001185"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d80-7608-8cd0-b5808a0fa91a",
+          "name": "Luật 08/2017/QH14",
+          "code": "08/2017/QH14"
+        },
+        {
+          "id": "019d2bb3-5d85-73da-8eb9-a64b5543d0bd",
+          "name": "Luật số 146/2025/QH15 ngày 11/12/2025 của Quốc hội sửa đổi, bổ sung một số điều của 15 luật trong lĩnh vực nông nghiệp và môi trường",
+          "code": "146/2025/QH15"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afe6-09420464b80c",
+          "name": "Nghị định 114/2018/NĐ-CP",
+          "code": "114/2018/NĐ-CP"
+        }
+      ]
+    }
+  ]
+}

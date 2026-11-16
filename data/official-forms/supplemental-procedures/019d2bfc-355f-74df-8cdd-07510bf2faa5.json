@@ -1,0 +1,180 @@
+{
+  "id": "dvc-019d2bfc-355f-74df-8cdd-07510bf2faa5",
+  "procedure_code": "1.007721",
+  "name": "Miễn, giảm thuế tài nguyên đối với trường hợp cơ quan thuế quyết định miễn, giảm",
+  "domain": "Thuế",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.955131+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfc-355f-74df-8cdd-07510bf2faa5",
+      "code": "1.007721",
+      "name": "Miễn, giảm thuế tài nguyên đối với trường hợp cơ quan thuế quyết định miễn, giảm",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1785399197646,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-355f-74df-8cdd-07510bf2faa5",
+      "raw_path": "evidence/dvc/details/019d2bfc-355f-74df-8cdd-07510bf2faa5.json",
+      "components": [
+        {
+          "section": "Đối với trường hợp miễn, giảm thuế tài nguyên do thiên tai, hỏa hoạn gây tổn thất đến tài nguyên đã kê khai nộp thuế, hồ sơ gồm",
+          "position": 1,
+          "name": "Văn bản đề nghị theo mẫu số 01/MGTH Phụ lục III ban hành kèm theo  Thông tư số 89/2026/TT-BTC ngày 30/6/2026 của Bộ Tài chính",
+          "component_code": "000.00.00.G12-00015783",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019fa6e6-c15c-752f-b578-017f8bfd30eb",
+              "fileName": "01 - MGTH-TT89.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa6e6-c15c-752f-b578-017f8bfd30eb/01 - MGTH-TT89.docx"
+            }
+          ]
+        },
+        {
+          "section": "Đối với trường hợp miễn, giảm thuế tài nguyên do thiên tai, hỏa hoạn gây tổn thất đến tài nguyên đã kê khai nộp thuế, hồ sơ gồm",
+          "position": 2,
+          "name": "Bản sao văn bản xác định thời gian, địa điểm xảy ra thiên tai, hỏa hoạn của cơ quan nhà nước có thẩm quyền nơi xảy ra thiên tai, hỏa hoạn theo mẫu số 02/MGTH Phụ lục III ban hành kèm theo Thông tư số 89/2026/TT-BTC và bản sao tài liệu xác định giá trị thiệt hại của người nộp thuế đã gửi cơ quan nhà nước có thẩm quyền",
+          "component_code": "000.00.00.G12-002118",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019fa6e6-e5c1-71a7-a3ee-56c78ed2a097",
+              "fileName": "02 - MGTH-TT89.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa6e6-e5c1-71a7-a3ee-56c78ed2a097/02 - MGTH-TT89.docx"
+            }
+          ]
+        },
+        {
+          "section": "Đối với trường hợp miễn thuế, giảm thuế tài nguyên do tai nạn bất ngờ gây tổn thất đến tài nguyên đã kê khai nộp thuế, hồ sơ gồm",
+          "position": 1,
+          "name": "Văn bản đề nghị theo mẫu số 01/MGTH Phụ lục III ban hành kèm theo Thông tư số 89/2026/TT-BTC ngày 30/6/2026 của Bộ Tài chính",
+          "component_code": "G12.00015779",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019fa6e6-30c6-700b-b2c0-6db5ffbf5a44",
+              "fileName": "01 - MGTH-TT89.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa6e6-30c6-700b-b2c0-6db5ffbf5a44/01 - MGTH-TT89.docx"
+            }
+          ]
+        },
+        {
+          "section": "Đối với trường hợp miễn thuế, giảm thuế tài nguyên do tai nạn bất ngờ gây tổn thất đến tài nguyên đã kê khai nộp thuế, hồ sơ gồm",
+          "position": 2,
+          "name": "Bản sao văn bản xác định thời gian, địa điểm xảy ra tai nạn bất ngờ của cơ quan nhà nước có thẩm quyền nơi xảy ra tai nạn bất ngờ theo mẫu số 02/MGTH Phụ lục III ban hành kèm theo Thông tư số 89/2026/TT-BTC",
+          "component_code": "000.00.00.G12-00015781",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019fa6e6-60e5-701f-a610-c6e74460e7e0",
+              "fileName": "02 - MGTH-TT89.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa6e6-60e5-701f-a610-c6e74460e7e0/02 - MGTH-TT89.docx"
+            }
+          ]
+        },
+        {
+          "section": "Đối với trường hợp miễn thuế, giảm thuế tài nguyên do tai nạn bất ngờ gây tổn thất đến tài nguyên đã kê khai nộp thuế, hồ sơ gồm",
+          "position": 3,
+          "name": "Bản sao văn bản xác định việc bồi thường của cơ quan bảo hiểm hoặc thỏa thuận bồi thường của người gây tai nạn (nếu có)",
+          "component_code": "000.00.00.G12-00015509",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Đối với trường hợp miễn thuế, giảm thuế tài nguyên do tai nạn bất ngờ gây tổn thất đến tài nguyên đã kê khai nộp thuế, hồ sơ gồm",
+          "position": 4,
+          "name": "Bản sao các chứng từ chi liên quan trực tiếp đến việc khắc phục tai nạn.",
+          "component_code": "000.00.00.G12-00015782",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Đối với trường hợp miễn thuế, giảm thuế tài nguyên do tai nạn bất ngờ gây tổn thất đến tài nguyên đã kê khai nộp thuế, hồ sơ gồm",
+          "position": 5,
+          "name": "Từ 01/7/2026 đến thời điểm theo lộ trình của cơ quan thuế quy định tại khoản 2 Điều 99 Thông tư số 89/2026/TT-BTC, các mẫu 01/MGTH, 02/MGTH thực hiện theo mẫu ban hành kèm theo Thông tư số 80/2021/TT-BTC ngày 29/9/2021 của Bộ Tài chính (đã được sửa đổi, bổ sung)",
+          "component_code": "000.00.00.G12-00015780",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019fb168-1057-71dc-b4dc-c26b11bc4e2a",
+              "fileName": "01 MGTH TT 80.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fb168-1057-71dc-b4dc-c26b11bc4e2a/01 MGTH TT 80.docx"
+            },
+            {
+              "id": "019fb168-b5ff-75c3-831b-287144ebb526",
+              "fileName": "02 MGTH TT 80.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fb168-b5ff-75c3-831b-287144ebb526/02 MGTH TT 80.docx"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c71-7574-afe8-17852300bbbb",
+          "name": "Thông báo không được miễn thuế, giảm thuế theo mẫu số 04/MGTH Phụ lục III ban hành kèm theo Thông tư số 89/2026/TT-BTC",
+          "code": "KQ.G12.000558"
+        },
+        {
+          "id": "019d2bb2-1c70-724b-96df-0d8378c6d2fa",
+          "name": "Quyết định miễn thuế, giảm thuế theo mẫu số 03/MGTH Phụ lục III ban hành kèm theo Thông tư số 89/2026/TT-BTC",
+          "code": "KQ.G12.000260"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019f8db3-9765-740b-8b90-682677b9c421",
+          "name": "Thông tư quy định chi tiết một số điều của Luật Quản lý thuế và Nghị định số 252/2026/NĐ-CP của Chính phủ quy định chi tiết một số điều và biện pháp để tổ chức, hướng dẫn thi hành Luật Quản lý thuế",
+          "code": "89/2026/TT-BTC"
+        },
+        {
+          "id": "019f356e-75e3-7494-a2f3-672d8dce61a6",
+          "name": "QUY ĐỊNH CHI TIẾT MỘT SỐ ĐIỀU VÀ BIỆN PHÁP ĐỂ TỔ CHỨC, HƯỚNG DẪN THI HÀNH LUẬT QUẢN LÝ THUẾ",
+          "code": "252/2026/NĐ-CP"
+        },
+        {
+          "id": "019e5e83-1282-771d-9014-49799413a4e5",
+          "name": "Luật số 108/2025/QH15 của Quốc hội: Luật Quản lý thuế",
+          "code": "108/2025/QH15"
+        },
+        {
+          "id": "019f64ed-e026-7299-b5f2-ca44a3964050",
+          "name": "Nghị định về thực hiện thủ tục hành chính theo cơ chế một cửa, một cửa liên thông tại Bộ phận Một cửa và Cổng Dịch vụ công quốc gia.",
+          "code": "118/2025/NĐ-CP "
+        }
+      ]
+    }
+  ]
+}

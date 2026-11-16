@@ -1,0 +1,89 @@
+{
+  "id": "dvc-019d2bf7-9e46-723c-914a-295d480c9d8f",
+  "procedure_code": "1.014363",
+  "name": "Xác nhận, cung cấp thông tin liên quan đến xuất nhập cảnh của công dân  Việt Nam",
+  "domain": "Quản lý xuất nhập cảnh",
+  "managing_agency": "Bộ Công an",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:18.033945+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bf7-9e46-723c-914a-295d480c9d8f",
+      "code": "1.014363",
+      "name": "Xác nhận, cung cấp thông tin liên quan đến xuất nhập cảnh của công dân  Việt Nam",
+      "state": "ACTIVE",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1777390139812,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf7-9e46-723c-914a-295d480c9d8f",
+      "raw_path": "evidence/dvc/details/019d2bf7-9e46-723c-914a-295d480c9d8f.json",
+      "components": [
+        {
+          "section": "Trường hợp người bị mất năng lực hành vi dân sự, người có khó khăn trong nhận thức và làm chủ hành vi theo quy định của Bộ luật dân sự, người chưa đủ 14 tuổi",
+          "position": 1,
+          "name": "Người đại diện hợp pháp khai, ký thay và nộp kèm bản sao giấy tờ do cơ quan có thẩm quyền của Việt Nam cấp chứng minh người đại diện hợp pháp; trường hợp không có bản sao thì nộp kèm bản chụp và xuất trình bản chính để kiểm tra, đối chiếu.",
+          "component_code": "000.00.00.G01-KQ003544",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 1,
+          "name": "Đơn đề nghị xác nhận, cung cấp thông tin (mẫu M03b dành cho người từ đủ 14 tuổi trở lên; mẫu M04b dành cho người chưa đủ 14 tuổi) ban hành kèm theo Nghị định số 184/2025/NĐ-CP ngày 01/7/2025 của Chính phủ.",
+          "component_code": "000.00.00.G01-KQ003543",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019dcefd-dd89-7177-8951-95c6c46a8cca",
+          "name": "...",
+          "code": "KQ.G01.000279"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7f-719e-b470-660b94576cfb",
+          "name": "Nghị định số 67/2024/NĐ-CP ngày 25/6/2024 của Chính phủ sửa đổi, bổ sung một số điều của Nghị định số 76/2020/NĐ-CP ngày 01/7/2020 của Chính phủ quy định chi tiết đối tượng, trình tự, thủ tục, thẩm quyền cấp, thu hồi, hủy giá trị sử dụng giấy thông hành và Nghị định số 77/2020/NĐ-CP ngày 01/7/2020 của Chính phủ quy định việc quản lý, khai thác thông tin trong Cơ sở dữ liệu quốc gia về xuất nhập cảnh; dịch vụ công trực tuyến phục vụ cấp, quản lý, kiểm soát hộ chiếu của công dân Việt Nam; kiểm soát xuất nhập cảnh bằng cổng kiểm soát tự động.",
+          "code": "67/2024/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d86-7760-a645-08dd5ede9baf",
+          "name": "Luật Xuất cảnh, nhập cảnh của công dân Việt Nam và Luật Nhập cảnh, xuất cảnh, quá cảnh, cư trú của người nước ngoài tại Việt Nam sửa đổi 2023",
+          "code": "23/2023/QH15"
+        },
+        {
+          "id": "019d2bb3-5d87-7195-a442-1fc2d8d3cd84",
+          "name": "Luật 49/2019/QH14",
+          "code": "49/2019/QH14"
+        },
+        {
+          "id": "019d2bb3-5d87-7195-a445-a2e461afc7f1",
+          "name": "Nghị định 76/2020/NĐ-CP",
+          "code": "76/2020/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afec-c7ba7cb44bf3",
+          "name": "Nghị định số 184/2025/NĐ-CP của Chính phủ: Quy định phân định thẩm quyền khi tổ chức chính quyền địa phương 02 cấp và sửa đổi, bổ sung một số điều của các Nghị định của Chính phủ trong lĩnh vực an ninh, trật tự",
+          "code": "184/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d87-7195-a445-c113edaff81c",
+          "name": "Nghị định 77/2020/NĐ-CP",
+          "code": "77/2020/NĐ-CP"
+        }
+      ]
+    }
+  ]
+}

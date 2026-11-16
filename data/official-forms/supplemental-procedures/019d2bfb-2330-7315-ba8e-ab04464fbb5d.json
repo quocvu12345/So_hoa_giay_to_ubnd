@@ -1,0 +1,145 @@
+{
+  "id": "dvc-019d2bfb-2330-7315-ba8e-ab04464fbb5d",
+  "procedure_code": "1.014149",
+  "name": "Xét tặng danh hiệu vinh dự Nhà nước “Bà mẹ Việt Nam anh hùng”",
+  "domain": "Thi đua - khen thưởng",
+  "managing_agency": "Bộ Nội vụ",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.993471+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfb-2330-7315-ba8e-ab04464fbb5d",
+      "code": "1.014149",
+      "name": "Xét tặng danh hiệu vinh dự Nhà nước “Bà mẹ Việt Nam anh hùng”",
+      "state": "ACTIVE",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1776130864883,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-2330-7315-ba8e-ab04464fbb5d",
+      "raw_path": "evidence/dvc/details/019d2bfb-2330-7315-ba8e-ab04464fbb5d.json",
+      "components": [
+        {
+          "section": "a) Hồ sơ đề nghị xét tặng, gồm:",
+          "position": 1,
+          "name": "Bản sao được chứng thực từ Bằng “Tổ quốc ghi công”, bản sao được chứng thực từ Giấy chứng nhận thương binh tùy theo đối tượng xét tặng được quy định tại khoản 1 Điều 2 Nghị định số 56/2013/NĐ-CP..",
+          "component_code": "G09-KQ003211",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "a) Hồ sơ đề nghị xét tặng, gồm:",
+          "position": 2,
+          "name": "- Bản khai đề nghị tặng danh hiệu vinh dự Nhà nước “Bà mẹ Việt Nam anh hùng” theo Mẫu số 01/BMVNAH Phụ lục ban hành kèm theo Nghị định số 83/2025/NĐ-CP.",
+          "component_code": "G09-KQ002914",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019d865d-5c87-718d-8548-6e24e84b1151",
+              "fileName": "Mau so 01 BMVNAH.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d865d-5c87-718d-8548-6e24e84b1151/Mau so 01 BMVNAH.docx"
+            }
+          ]
+        },
+        {
+          "section": "a) Hồ sơ đề nghị xét tặng, gồm:",
+          "position": 3,
+          "name": "- Giấy tờ khác có liên quan (nếu có).",
+          "component_code": "G09-KQ002916",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "b) Hồ sơ trình xét tặng, gồm:",
+          "position": 1,
+          "name": "- Tờ trình về việc đề nghị tặng danh hiệu vinh dự Nhà nước “Bà mẹ Việt Nam anh hùng ” theo Mẫu số 05/BMVNAH và Danh sách đề nghị tặng danh hiệu vinh dự Nhà nước “Bà mẹ Việt Nam anh hùng” theo Mẫu số 06/BMVNAH Phụ lục ban hành kèm theo Nghị định số 83/2025/NĐ-CP.",
+          "component_code": "G09-KQ002917",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019d865d-e0e1-733b-9096-328813ca0ae9",
+              "fileName": "Mau so 05 BMVNAH.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d865d-e0e1-733b-9096-328813ca0ae9/Mau so 05 BMVNAH.docx"
+            },
+            {
+              "id": "019d865e-005d-700f-9fb7-a0e8b14d053a",
+              "fileName": "Mau so 06 BMVNAH.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d865e-005d-700f-9fb7-a0e8b14d053a/Mau so 06 BMVNAH.docx"
+            }
+          ]
+        },
+        {
+          "section": "b) Hồ sơ trình xét tặng, gồm:",
+          "position": 2,
+          "name": "- Biên bản kết quả niêm yết công khai đề nghị tặng danh hiệu vinh dự Nhà nước “Bà mẹ Việt Nam anh hùng ” theo Mẫu số 03/BMVNAH (nếu có); Biên bản xét đề nghị tặng danh hiệu vinh dự Nhà nước “Bà mẹ Việt Nam anh hùng ” theo Mẫu số 04/BMVNAH Phụ lục ban hành kèm theo Nghị định số 83/2025/NĐ-CP.",
+          "component_code": "G09-KQ002918",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019d865e-40e7-77b9-a3a4-a780626fb824",
+              "fileName": "Mau so 03 BMVNAH.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d865e-40e7-77b9-a3a4-a780626fb824/Mau so 03 BMVNAH.docx"
+            },
+            {
+              "id": "019d865e-b631-708f-9a17-48ad72c4b0e7",
+              "fileName": "Mau so 04 BMVNAH.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d865e-b631-708f-9a17-48ad72c4b0e7/Mau so 04 BMVNAH.docx"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c4d-7725-9d9c-15ea9e5d4628",
+          "name": "Quyết định tặng danh hiệu vinh dự Nhà nước “Bà mẹ Việt Nam anh hùng”.",
+          "code": "KQ.G09.000408"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7e-72d1-afea-1c153ca6400f",
+          "name": "Quy định về phân định thẩm quyền của chính quyền địa phương 02 cấp trong lĩnh vực quản lý nhà nước của Bộ Nội vụ",
+          "code": "129/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b679-2a2f6d0547e9",
+          "name": "Nghị định 56/2013/NĐ-CP",
+          "code": "56/2013/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7f-719e-b471-ed42597ac00a",
+          "name": "Trang chủ Nghị định số 83/2025/NĐ-CP của Chính phủ: Sửa đổi, bổ sung một số điều của Nghị định số 56/2013/NĐ-CP ngày 22 tháng 5 năm 2013 của Chính phủ quy định chi tiết và hướng dẫn thi hành Pháp lệnh quy định danh hiệu vinh dự Nhà nước \"Bà mẹ Việt Nam anh hùng\"",
+          "code": "83/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d85-73da-8eb9-8daa16ebd40f",
+          "name": "Pháp lệnh 05/2012/UBTVQH13",
+          "code": "05/2012/UBTVQH13"
+        }
+      ]
+    }
+  ]
+}

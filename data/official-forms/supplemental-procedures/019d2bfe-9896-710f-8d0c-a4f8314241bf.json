@@ -1,0 +1,70 @@
+{
+  "id": "dvc-019d2bfe-9896-710f-8d0c-a4f8314241bf",
+  "procedure_code": "2.001217",
+  "name": "Đóng, không cho phép hoạt động tại vùng nước khác không thuộc vùng nước trên tuyến đường thủy nội địa, vùng nước cảng biển hoặc khu vực hàng hải, được đánh dấu, xác định vị trí bằng phao hoặc cờ hiệu có màu sắc dễ quan sát",
+  "domain": "Hàng hải và đường thủy nội địa",
+  "managing_agency": "Bộ xây dựng (Giao thông vận tải cũ)",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.857904+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfe-9896-710f-8d0c-a4f8314241bf",
+      "code": "2.001217",
+      "name": "Đóng, không cho phép hoạt động tại vùng nước khác không thuộc vùng nước trên tuyến đường thủy nội địa, vùng nước cảng biển hoặc khu vực hàng hải, được đánh dấu, xác định vị trí bằng phao hoặc cờ hiệu có màu sắc dễ quan sát",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1776357110842,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfe-9896-710f-8d0c-a4f8314241bf",
+      "raw_path": "evidence/dvc/details/019d2bfe-9896-710f-8d0c-a4f8314241bf.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "-  Đơn đề nghị theo Mẫu.",
+          "component_code": "000.00.00.G04-KQ004656",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019d952c-b19c-73b7-b370-e259f6248247",
+              "fileName": "Mẫu đơn đề nghị Về công bố đóng vùng hoạt động vui chơi giải trí dưới nước.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d952c-b19c-73b7-b370-e259f6248247/Mẫu đơn đề nghị Về công bố đóng vùng hoạt động vui chơi giải trí dưới nước.docx"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c7a-7554-ace5-901adae49809",
+          "name": "Quyết định công bố đóng, không cho phép hoạt động vui chơi giải trí tại vùng 2",
+          "code": "KQ.G17.000293"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7f-719e-b46e-6fbdb3d1c381",
+          "name": "Quy định về quản lý hoạt động của phương tiện phục vụ vui chơi, giải trí dưới nước",
+          "code": "48/2019/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afec-ea998119a7dc",
+          "name": "Nghị định số 19/2024/NĐ-CP ngày 23/02/2024 sửa đổi, bổ sung một số điều của Nghị định số 48/2019/NĐ-CP ngày 05/6/2019 của Chính phủ quy định về quản lý hoạt động của phương tiện phục vụ vui chơi, giải trí dưới nước",
+          "code": "19/2024/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afea-f01696ee65ca",
+          "name": "Quy định về phân định thẩm quyền của chính quyền địa phương 02 cấp trong lĩnh vực quản lý nhà nước của Bộ Xây dựng",
+          "code": "140/2025/NĐ-CP"
+        }
+      ]
+    }
+  ]
+}

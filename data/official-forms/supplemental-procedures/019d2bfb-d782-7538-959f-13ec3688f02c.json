@@ -1,0 +1,255 @@
+{
+  "id": "dvc-019d2bfb-d782-7538-959f-13ec3688f02c",
+  "procedure_code": "1.002179",
+  "name": "Đăng ký, đăng ký lại, điều chỉnh đóng BHXH tự nguyện; Bảo hiểm TNLĐ theo hình thức tự nguyện; cấp sổ BHXH",
+  "domain": "Thu BHXH, BHYT, BHTN, BH tai nạn lao động, BNN",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.971177+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfb-d782-7538-959f-13ec3688f02c",
+      "code": "1.002179",
+      "name": "Đăng ký, đăng ký lại, điều chỉnh đóng BHXH tự nguyện; Bảo hiểm TNLĐ theo hình thức tự nguyện; cấp sổ BHXH",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1792931550059,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-d782-7538-959f-13ec3688f02c",
+      "raw_path": "evidence/dvc/details/019d2bfb-d782-7538-959f-13ec3688f02c.json",
+      "components": [
+        {
+          "section": "- Người tham gia",
+          "position": 1,
+          "name": "Tờ khai đăng ký, điều chỉnh thông tin tham gia BHXH, BHYT (Mẫu TK1-TS).",
+          "component_code": "TP.G12.98.033",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "01a0ec63-be1e-77cf-be2e-040501ac3cb6",
+              "fileName": "TK1-TS.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/01a0ec63-be1e-77cf-be2e-040501ac3cb6/TK1-TS.docx"
+            }
+          ]
+        },
+        {
+          "section": "- Tổ chức hỗ trợ phát triển đối tượng dịch vụ:",
+          "position": 1,
+          "name": "Tờ khai đơn vị đăng ký, điều chỉnh thông tin tham gia BHXH, BHYT, BHTN (Mẫu TK3-TS) khi đơn vị đăng ký tham gia BHXH, BHYT, BHTN lần đầu hoặc điều chỉnh thông tin",
+          "component_code": "TP.G12.98.034",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "01a0ec63-e598-777f-adb7-d1bc6267140d",
+              "fileName": "TK3-TS.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/01a0ec63-e598-777f-adb7-d1bc6267140d/TK3-TS.docx"
+            }
+          ]
+        },
+        {
+          "section": "- Tổ chức hỗ trợ phát triển đối tượng dịch vụ:",
+          "position": 2,
+          "name": "Danh sách tham gia BHXH tự nguyện (Mẫu D05-TS) khi có phát sinh tăng mới, đóng tiếp, đóng lại, thay đổi phương thức đóng, mức đóng…của người tham gia BHXH tự nguyện",
+          "component_code": "TP.G12.98.035",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "01a0ec64-09a1-7218-8356-537e24fed57b",
+              "fileName": "D05-TS.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/01a0ec64-09a1-7218-8356-537e24fed57b/D05-TS.docx"
+            }
+          ]
+        },
+        {
+          "section": "- Tổ chức hỗ trợ phát triển đối tượng dịch vụ:",
+          "position": 3,
+          "name": "Tờ khai đăng ký, điều chỉnh thông tin tham gia BHXH, BHYT (Mẫu TK1-TS).",
+          "component_code": "TP.G12.98.036",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "01a0ec64-3374-702e-a492-06d717add2de",
+              "fileName": "TK1-TS.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/01a0ec64-3374-702e-a492-06d717add2de/TK1-TS.docx"
+            }
+          ]
+        },
+        {
+          "section": "- Người tham gia:",
+          "position": 1,
+          "name": "Tờ khai đăng ký, điều chỉnh thông tin tham gia BHXH, BHYT (Mẫu TK1-TS).",
+          "component_code": "TP.G12.000131",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "01a0ec64-bb5c-761a-8aec-9dc6f4d89da6",
+              "fileName": "TK1-TS.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/01a0ec64-bb5c-761a-8aec-9dc6f4d89da6/TK1-TS.docx"
+            }
+          ]
+        },
+        {
+          "section": "- Tổ chức hỗ trợ phát triển đối tượng dịch vụ:",
+          "position": 1,
+          "name": "Tờ khai đơn vị đăng ký, điều chỉnh thông tin tham gia BHXH, BHYT, BHTN (Mẫu TK3-TS) khi đơn vị đăng ký tham gia BHXH, BHYT, BHTN lần đầu hoặc điều chỉnh thông tin",
+          "component_code": "TP.G12.98.034",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "01a0ec63-e598-777f-adb7-d1bc6267140d",
+              "fileName": "TK3-TS.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/01a0ec63-e598-777f-adb7-d1bc6267140d/TK3-TS.docx"
+            }
+          ]
+        },
+        {
+          "section": "- Tổ chức hỗ trợ phát triển đối tượng dịch vụ:",
+          "position": 2,
+          "name": "Danh sách tham gia bảo hiểm TNLĐ theo hình thức tự nguyện (Mẫu D06-TS) khi có phát sinh tăng mới, đóng tiếp, đóng lại, thay đổi phương thức đóng…của người tham gia bảo hiểm TNLĐ theo hình thức tự nguyện",
+          "component_code": "TP.G12.98.037",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "01a0ec65-102a-73fd-b8da-967322ea37a3",
+              "fileName": "D06-TS.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/01a0ec65-102a-73fd-b8da-967322ea37a3/D06-TS.docx"
+            }
+          ]
+        },
+        {
+          "section": "- Tổ chức hỗ trợ phát triển đối tượng dịch vụ:",
+          "position": 3,
+          "name": "Tờ khai đăng ký, điều chỉnh thông tin tham gia BHXH, BHYT (Mẫu TK1-TS) của người tham gia đối với trường hợp đăng ký lần đầu hoặc điều chỉnh thông tin.",
+          "component_code": "TP.G12.98.038",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "01a0ec65-3a63-711b-a4a6-093c462d50b6",
+              "fileName": "TK1-TS.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/01a0ec65-3a63-711b-a4a6-093c462d50b6/TK1-TS.docx"
+            }
+          ]
+        },
+        {
+          "section": "c) Hoàn trả tiền đóng BHXH tự nguyện (Chỉ cá nhân thực hiện)",
+          "position": 1,
+          "name": "Tờ khai đăng ký, điều chỉnh thông tin tham gia BHXH, BHYT (Mẫu TK1-TS).",
+          "component_code": "TP.G12.98.036",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "01a0ec64-3374-702e-a492-06d717add2de",
+              "fileName": "TK1-TS.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/01a0ec64-3374-702e-a492-06d717add2de/TK1-TS.docx"
+            }
+          ]
+        },
+        {
+          "section": "c) Hoàn trả tiền đóng BHXH tự nguyện (Chỉ cá nhân thực hiện)",
+          "position": 2,
+          "name": "Bản sao chứng thực hoặc bản chụp kèm theo bản chính Giấy chứng tử, Giấy khai tử hoặc Trích lục khai tử để đối chiếu đối với trường hợp người tham gia chết hoặc Tòa án tuyên bố là đã chết (Cán bộ tiếp nhận, giải quyết TTHC tự khai thác và không yêu cầu người tham gia phải nộp nếu đã có trong CSDL hộ tịch điện tử, Cơ sở dữ liệu bản án, quyết định của tòa án được chia sẻ)",
+          "component_code": "TP.G12.98.039",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c82-739b-8b99-5e1acdfdd80b",
+          "name": "Sổ bảo hiểm xã hội",
+          "code": "KQ.G12.001056"
+        },
+        {
+          "id": "01a0f1d8-b2cd-73d4-aea3-4f0c62a47992",
+          "name": "- Trường hợp Hoàn trả tiền đóng cho thời gian đóng trùng BHXH, BHTN: + Tiền hoàn trả; + Thông báo kết quả giải quyết TTHC (Mẫu số 01-TB ban hành kèm theo Quyết định số 58/QĐ-BHXH ngày 22/01/2025).",
+          "code": "KQ.G12.000115"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d87-7195-a440-f511123122ee",
+          "name": "Luật Bảo hiểm xã hội",
+          "code": "41/2024/QH15"
+        },
+        {
+          "id": "019ff547-6a69-7038-a010-d5ec1e9fd252",
+          "name": "Nghị định 118/2025/NĐ-CP ngày 09/6/2025 của Chính phủ về thực hiện thủ tục hành chính theo cơ chế một cửa, một cửa liên thông tại Bộ phận Một cửa và Cổng Dịch vụ công quốc gia",
+          "code": "Nghị định 118/2025/NĐ-CP "
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afeb-f6d50e5e6371",
+          "name": "Quy định chi tiết và hướng dẫn thi hành một số điều của Luật Bảo hiểm xã hội về bảo hiểm xã hội tự nguyện",
+          "code": "159/2025/NĐ-CP"
+        },
+        {
+          "id": "019e72e9-3b2a-77b9-9c29-023d914eb3dc",
+          "name": "Quy định về giao dịch điện tử trong lĩnh vực bảo hiểm xã hội và Cơ sở dữ liệu quốc gia về bảo hiểm",
+          "code": "164/2025/NĐ-CP "
+        },
+        {
+          "id": "01a0eb46-afe7-72ed-b43e-f41105ad120f",
+          "name": "QUY ĐỊNH VỀ VIỆC TẠO LẬP SỔ BẢO HIỂM XÃ HỘI, THẺ BẢO HIỂM Y TẾ BẢN ĐIỆN TỬ",
+          "code": "09/2026/TT-BTC"
+        },
+        {
+          "id": "01a023be-84c8-77db-ade3-9c613cd83670",
+          "name": "Quy trình thu bảo hiểm xã hội, bảo hiểm y tế, bảo hiểm thất nghiệp; cấp sổ bảo hiểm xã hội, thẻ bảo hiểm y tế",
+          "code": "366/QĐ-BHXH"
+        },
+        {
+          "id": "01a02cce-f424-7068-a9c4-54e874383981",
+          "name": "Quy định về bảo hiểm tai nạn lao động theo hình thức tự nguyện đối với người lao động làm việc không theo hợp đồng lao động",
+          "code": "143/2024/NĐ-CP"
+        },
+        {
+          "id": "01a0ec5f-ae16-74f9-99a5-3dc3b83bbdd3",
+          "name": "VỀ VIỆC CÔNG BỐ THỦ TỤC HÀNH CHÍNH MỚI BAN HÀNH VÀ BỊ BÃI BỎ TRONG LĨNH VỰC BẢO HIỂM XÃ HỘI THUỘC PHẠM VI CHỨC NĂNG QUẢN LÝ NHÀ NƯỚC CỦA BỘ NỘI VỤ",
+          "code": "863/QĐ-BNV"
+        }
+      ]
+    }
+  ]
+}

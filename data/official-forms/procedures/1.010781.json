@@ -1,0 +1,130 @@
+{
+  "ordinal": "10",
+  "managing_agency": "Sở Nội Vụ",
+  "procedure_code": "1.010781",
+  "name": "Cấp Bằng “Tổ quốc ghi công” đối với người hy sinh hoặc mất tích trong chiến tranh",
+  "domain": "Người có công",
+  "ministry_decision": "639/QĐ-BNV ngày 20/6/2026",
+  "hanoi_decision": "963/QĐ-TTPVHCC ngày 27/6/2025",
+  "workflow_decision": "1053/QĐ-TTPVHCC ngày 11/7/2025",
+  "fees": "Không quy định",
+  "execution_level": "Liên thông TW",
+  "competent_authority": "TW",
+  "delegation_decision": "",
+  "delegation_expiry": "",
+  "receiving_location": "Điểm hỗ trợ DVC số",
+  "source_page": 1,
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "inventory_date": "2026-04-27",
+  "checked_at": "2026-11-12T22:23:30.182279+07:00",
+  "details": [
+    {
+      "id": "019d2bfa-fbfa-77c8-a91c-924c856d4048",
+      "code": "1.010781",
+      "name": "Cấp Bằng “Tổ quốc ghi công” đối với người hy sinh hoặc mất tích trong chiến tranh",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1779852003582,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfa-fbfa-77c8-a91c-924c856d4048",
+      "raw_path": "evidence/dvc/details/019d2bfa-fbfa-77c8-a91c-924c856d4048.json",
+      "components": [
+        {
+          "section": "(1)\tĐối với trường hợp hy sinh:",
+          "position": 1,
+          "name": "-\tCác giấy tờ do cơ quan có thẩm quyền ban hành, xác nhận từ ngày 31 tháng 12 năm 1994 trở về trước, bao gồm:          + Giấy báo tử trận; danh sách liệt sĩ, sổ quản lý liệt sĩ lưu tại cơ quan, đơn vị có ghi tên người hy sinh, trường hợp danh sách, sổ quản lý liệt sĩ không có dấu xác nhận của cơ quan, đơn vị tại thời điểm lập, ghi sổ thì cơ quan, đơn vị đang quản lý có trách nhiệm chuyển đến sư đoàn hoặc cấp tương đương trở lên để tập hợp chốt số lượng người, xác nhận danh sách, sổ quản lý và gửi số liệu theo Mẫu số 101 Phụ lục I Nghị định số 131/2021/NĐ-CP về Bộ Quốc phòng trước ngày 01 tháng 5 năm 2022.         + Các giấy tờ, tài liệu khác có ghi nhận là liệt sĩ hoặc hy sinh trong các trường hợp quy định tại các điểm a, b, c, d, đ khoản 1 Điều 14 Pháp lệnh, cụ thể như sau:         Chiến đấu hoặc trực tiếp phục vụ chiến đấu để bảo vệ độc lập, chủ quyền, toàn vẹn lãnh thổ, an ninh quốc gia.         Làm nhiệm vụ quốc phòng, an ninh trong địa bàn địch chiếm đóng, địa bàn có chiến sự, địa bàn tiếp giáp vùng địch chiếm đóng.         Trực tiếp đấu tranh chính trị, đấu tranh binh vận có tổ chức với địch.          Hoạt động hoặc tham gia hoạt động cách mạng, kháng chiến bị địch bắt, tra tấn vẫn không chịu khuất phục, kiên quyết đấu tranh hoặc thực hiện chủ trương vượt tù, vượt ngục mà hy sinh.        Làm nghĩa vụ quốc tế.",
+          "component_code": "G09-KQ002677",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "(1)\tĐối với trường hợp hy sinh:",
+          "position": 2,
+          "name": "-\tBản khai theo Mẫu số 13 Phụ lục I Nghị định số 131/2021/NĐ-CP.",
+          "component_code": "G09-KQ003210111",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019d7075-b954-771b-825d-ff527ffbbd63",
+              "fileName": "Mauso13_ND131_2021.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d7075-b954-771b-825d-ff527ffbbd63/Mauso13_ND131_2021.docx"
+            }
+          ]
+        },
+        {
+          "section": "(2)\tĐối với trường hợp mất tích:",
+          "position": 1,
+          "name": "-\tBan khai theo Mẫu số 14 Phụ lục I Nghị định số 131/2021/NĐ-CP.",
+          "component_code": "G09-KQ002678",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019d7077-1c01-779a-9324-be7334d549a8",
+              "fileName": "Mauso14_ND131_2021.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d7077-1c01-779a-9324-be7334d549a8/Mauso14_ND131_2021.docx"
+            }
+          ]
+        },
+        {
+          "section": "(2)\tĐối với trường hợp mất tích:",
+          "position": 2,
+          "name": "-\tPhiếu xác minh theo Mẫu số 90 Phụ lục I Nghị định số 131/2021/NĐ- CP của Bộ Chỉ huy quân sự cấp tỉnh hoặc Công an cấp tỉnh đối với trường hợp mất tích sau đây:         + Chiến đấu hoặc trực tiếp phục vụ chiến đấu để bảo vệ độc lập, chủ quyền, toàn vẹn lãnh thổ, an ninh quốc gia;         + Làm nhiệm vụ quốc phòng, an ninh trong địa bàn địch chiếm đóng, địa bàn có chiến sự, địa bàn tiếp giáp vùng địch chiếm đóng;         + Trực tiếp đấu tranh chính trị, đấu tranh binh vận có tổ chức với địch;          + Hoạt động hoặc tham gia hoạt động cách mạng, kháng chiến bị địch bắt, tra tấn vẫn không chịu khuất phục, kiên quyết đấu tranh hoặc thực hiện chủ trương vượt tù, vượt ngục mà hy sinh;         + Làm nghĩa vụ quốc tế;",
+          "component_code": "G09-KQ002679",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c4d-7725-9d9c-20dc408f5f22",
+          "name": "Quyết định cấp Bằng “Tổ quốc ghi công” và Bằng “Tổ quốc ghi công”.",
+          "code": "KQ.G09.000411"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7e-72d1-afea-1c153ca6400f",
+          "name": "Quy định về phân định thẩm quyền của chính quyền địa phương 02 cấp trong lĩnh vực quản lý nhà nước của Bộ Nội vụ",
+          "code": "129/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7f-719e-b474-516a799e2145",
+          "name": "QUY ĐỊNH CHI TIẾT VÀ BIỆN PHÁP THI HÀNH PHÁP LỆNH ƯU ĐÃI NGƯỜI CÓ CÔNG VỚI CÁCH MẠNG",
+          "code": "Nghị định số 131/2021/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d85-73da-8eba-20bc75de794b",
+          "name": "ƯU ĐÃI NGƯỜI CÓ CÔNG VỚI CÁCH MẠNG",
+          "code": "Pháp lệnh số: 02/2020/UBTVQH14"
+        },
+        {
+          "id": "019d2bb3-5d7f-719e-b474-93996f3f00db",
+          "name": "Nghị định số 25/2025/NĐ-CP ngày 21 tháng 02 năm 2025 của Chính phủ quy định chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của Bộ Nội vụ",
+          "code": "Nghị định số 25/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b671-f40a5ee32475",
+          "name": "Nghị quyết số 190/2025/QH15 của Quốc hội: Quy định về xử lý một số vấn đề liên quan đến sắp xếp tổ chức bộ máy nhà nước",
+          "code": "190/2025/NQ-QH15"
+        }
+      ]
+    }
+  ],
+  "lookup_status": "retrieved",
+  "currency_status": "snapshot_requires_later_amendment_check",
+  "errors": []
+}

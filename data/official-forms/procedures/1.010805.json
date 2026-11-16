@@ -1,0 +1,139 @@
+{
+  "ordinal": "25",
+  "managing_agency": "Sở Nội Vụ",
+  "procedure_code": "1.010805",
+  "name": "Giải quyết chế độ ưu đãi đối với Anh hùng lực lượng vũ trang nhân dân, Anh hùng lao động trong thời kỳ kháng chiến hiện không công tác trong quân đội, công an",
+  "domain": "Người có công",
+  "ministry_decision": "639/QĐ-BNV ngày 20/6/2031",
+  "hanoi_decision": "963/QĐ-TTPVHCC ngày 27/6/2025",
+  "workflow_decision": "1053/QĐ-TTPVHCC ngày 11/7/2025",
+  "fees": "Không quy định",
+  "execution_level": "Cấp xã",
+  "competent_authority": "UBND cấp xã",
+  "delegation_decision": "3176/ QĐ-SNV ngày 20/6/2025",
+  "delegation_expiry": "28/02/2027",
+  "receiving_location": "Điểm hỗ trợ DVC số",
+  "source_page": 1,
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "inventory_date": "2026-04-27",
+  "checked_at": "2026-11-12T22:23:32.598686+07:00",
+  "details": [
+    {
+      "id": "019d2bfa-fc18-7204-93c4-14844eb6c354",
+      "code": "1.010805",
+      "name": "Giải quyết chế độ ưu đãi đối với Anh hùng lực lượng vũ trang nhân dân, Anh hùng lao động trong thời kỳ kháng chiến hiện không công tác trong quân đội, công an",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1793955153213,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfa-fc18-7204-93c4-14844eb6c354",
+      "raw_path": "evidence/dvc/details/019d2bfa-fc18-7204-93c4-14844eb6c354.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "- Trường hợp Anh hùng lực lượng vũ trang nhân dân, Anh hùng lao động trong thời kỳ kháng chiến được truy tặng: Bản sao được chứng thực từ quyết định truy tặng danh hiệu anh hùng.",
+          "component_code": "G09-KQ003210191",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "- Bản khai Mẫu số 04 Phụ lục I Nghị định số 131/2021/NĐ-CP",
+          "component_code": "G09-KQ003210192",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019d7146-74ee-7569-8fc9-511c96cedeab",
+              "fileName": "Mauso04_ND131_2021.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d7146-74ee-7569-8fc9-511c96cedeab/Mauso04_ND131_2021.docx"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 3,
+          "name": "- Trường hợp Anh hùng lực lượng vũ trang nhân dân, Anh hùng lao động trong thời kỳ kháng chiến còn sống: Bản sao được chứng thực từ quyết định phong tặng hoặc bản sao được chứng thực từ Bằng anh hùng.",
+          "component_code": "G09-KQ003210193",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 4,
+          "name": "- Trường hợp Anh hùng lực lượng vũ trang nhân dân, Anh hùng lao động trong thời kỳ kháng chiến được tặng danh hiệu nhưng chết mà chưa được hưởng chế độ ưu đãi: Bản sao được chứng thực từ quyết định phong tặng hoặc bản sao được chứng thực từ Bằng anh hùng",
+          "component_code": "G09-KQ003210194",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 5,
+          "name": "- Trường hợp Anh hùng lực lượng vũ trang nhân dân, Anh hùng lao động trong thời kỳ kháng chiến được tặng danh hiệu nhưng chết mà chưa được hưởng chế độ ưu đãi: Bản sao trích lục khai tử (Thay thế thành phần hồ sơ này khi CSDL hộ tịch điện tử đủ điều kiện kết nối để khai thác, sử dụng thông tin (Hệ thống tự động kết nối với CSDL hộ tịch điện tử để lấy thông tin Bản sao trích lục khai tử))",
+          "component_code": "G09-KQ003210287",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c4d-7725-9d9c-ab2ee27d3062",
+          "name": "Quyết định về việc trợ cấp ưu đãi Anh hùng lực lượng vũ trang nhân dân/Anh hùng lao động trong thời kỳ kháng chiến",
+          "code": "KQ.G09.000445"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7f-719e-b46e-3b82195c2d48",
+          "name": "Nghị định số 45/2025/NĐ-CP ngày 28/02/2025 của Chính phủ quy định tổ chức các cơ quan chuyên môn thuộc Ủy ban nhân dân tỉnh, thành phố trực thuộc trung ương và Ủy ban nhân dân huyện, quận, thị xã, thành phố thuộc tỉnh, thành phố thuộc thành phố trực thuộc trung ương",
+          "code": "45/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7f-719e-b474-93996f3f00db",
+          "name": "Nghị định số 25/2025/NĐ-CP ngày 21 tháng 02 năm 2025 của Chính phủ quy định chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của Bộ Nội vụ",
+          "code": "Nghị định số 25/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b671-f40a5ee32475",
+          "name": "Nghị quyết số 190/2025/QH15 của Quốc hội: Quy định về xử lý một số vấn đề liên quan đến sắp xếp tổ chức bộ máy nhà nước",
+          "code": "190/2025/NQ-QH15"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afea-1c153ca6400f",
+          "name": "Quy định về phân định thẩm quyền của chính quyền địa phương 02 cấp trong lĩnh vực quản lý nhà nước của Bộ Nội vụ",
+          "code": "129/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7f-719e-b474-516a799e2145",
+          "name": "QUY ĐỊNH CHI TIẾT VÀ BIỆN PHÁP THI HÀNH PHÁP LỆNH ƯU ĐÃI NGƯỜI CÓ CÔNG VỚI CÁCH MẠNG",
+          "code": "Nghị định số 131/2021/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d85-73da-8eba-20bc75de794b",
+          "name": "ƯU ĐÃI NGƯỜI CÓ CÔNG VỚI CÁCH MẠNG",
+          "code": "Pháp lệnh số: 02/2020/UBTVQH14"
+        }
+      ]
+    }
+  ],
+  "lookup_status": "retrieved",
+  "currency_status": "snapshot_requires_later_amendment_check",
+  "errors": []
+}

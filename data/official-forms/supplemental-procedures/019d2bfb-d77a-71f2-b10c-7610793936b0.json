@@ -1,0 +1,86 @@
+{
+  "id": "dvc-019d2bfb-d77a-71f2-b10c-7610793936b0",
+  "procedure_code": "1.001909",
+  "name": "Thanh toán chi phí khám bệnh, chữa bệnh giữa cơ quan bảo hiểm xã hội với cơ sở khám bệnh, chữa bệnh",
+  "domain": "Thực hiện chính sách BHYT",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.972085+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfb-d77a-71f2-b10c-7610793936b0",
+      "code": "1.001909",
+      "name": "Thanh toán chi phí khám bệnh, chữa bệnh giữa cơ quan bảo hiểm xã hội với cơ sở khám bệnh, chữa bệnh",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1787504992235,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-d77a-71f2-b10c-7610793936b0",
+      "raw_path": "evidence/dvc/details/019d2bfb-d77a-71f2-b10c-7610793936b0.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Biên bản quyết toán theo Mẫu số 06/BH Phụ lục I ban hành kèm theo Thông tư số 12/2026/TT-BTC ngày 10 tháng 02 năm 2026",
+          "component_code": "TP.G12.000170",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "01a02f6e-f8ba-725e-861f-77eb499e7ec8",
+              "fileName": "Mẫu số 06.BH.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/01a02f6e-f8ba-725e-861f-77eb499e7ec8/Mẫu số 06.BH.docx"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Hóa đơn điện tử của cơ sở khám bệnh, chữa bệnh",
+          "component_code": "TP.G12.000171",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "01a02f68-5af8-726d-b2b7-3deead596cc6",
+          "name": "Cơ sở khám bệnh, chữa bệnh nhận được chi phí khám bệnh, chữa bệnh bảo hiểm y tế theo thông báo số quyết toán của cơ quan bảo hiểm xã hội",
+          "code": "KQ.G12.001303"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d84-71c5-b672-49499e22ddad",
+          "name": "Luật 25/2008/QH12 - Bảo hiểm y tế",
+          "code": "25/2008/QH12"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afec-d63277407a6f",
+          "name": "Nghị định quy định chi tiết và hướng dẫn thi hành một số điều của Luật Bảo hiểm y tế (188/2025/NĐ-CP ngày 01/7/2025)",
+          "code": "188/2025/NĐ-CP"
+        },
+        {
+          "id": "01a02f6a-cbda-7158-a25b-e66b8861e1b9",
+          "name": "Quy định Danh mục bệnh bẩm sinh cần sàng lọc trước sinh và sơ sinh",
+          "code": "12/2026/TT-BYT"
+        },
+        {
+          "id": "01a02847-b487-751a-9e31-309ef5cd15e4",
+          "name": "Quy định cơ chế tài chính về bảo hiểm xã hội, bảo hiểm thất nghiệp, bảo hiểm y tế; chi tổ chức và hoạt động bảo hiểm xã hội, bảo hiểm thất nghiệp, bảo hiểm y tế",
+          "code": "233/2025/NĐ-CP"
+        }
+      ]
+    }
+  ]
+}

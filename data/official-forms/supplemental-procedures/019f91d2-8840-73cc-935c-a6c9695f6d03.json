@@ -1,0 +1,134 @@
+{
+  "id": "dvc-019f91d2-8840-73cc-935c-a6c9695f6d03",
+  "procedure_code": "1.115971",
+  "name": "Thu hồi chứng nhận đăng ký xe, biển số xe",
+  "domain": "Đăng ký, quản lý phương tiện giao thông cơ giới, xe máy chuyên dùng",
+  "managing_agency": "Bộ Công an",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.481517+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019f91d2-8840-73cc-935c-a6c9695f6d03",
+      "code": "1.115971",
+      "name": "Thu hồi chứng nhận đăng ký xe, biển số xe",
+      "state": "ACTIVE",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1784882399147,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019f91d2-8840-73cc-935c-a6c9695f6d03",
+      "raw_path": "evidence/dvc/details/019f91d2-8840-73cc-935c-a6c9695f6d03.json",
+      "components": [
+        {
+          "section": "Đối với trường hợp thu hồi do xe hết niên hạn sử dụng, hư hỏng không sử dụng được, xe bị thải bỏ, xe bị mất không tìm được",
+          "position": 1,
+          "name": "Giấy khai thu hồi chứng nhận đăng ký xe, biển số xe (Mẫu ĐKX11 ban hành kèm theo Thông tư số 79/2024/TT-BCA)",
+          "component_code": "000.00.00.G01-KQ003690",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "Đối với trường hợp thu hồi do xe hết niên hạn sử dụng, hư hỏng không sử dụng được, xe bị thải bỏ, xe bị mất không tìm được",
+          "position": 2,
+          "name": "Giấy tờ của chủ xe theo quy định",
+          "component_code": "000.00.00.G01-KQ003691",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "Đối với trường hợp thu hồi do xe hết niên hạn sử dụng, hư hỏng không sử dụng được, xe bị thải bỏ, xe bị mất không tìm được",
+          "position": 3,
+          "name": "Chứng nhận đăng ký xe, biển số xe (nếu còn).",
+          "component_code": "000.00.00.G01-KQ003693",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "Đối với các trường hợp chuyển quyền sở hữu xe, xe tái xuất, xe hết thời hạn đăng ký, xe tháo máy để đăng ký cho xe khác",
+          "position": 1,
+          "name": "Giấy khai thu hồi chứng nhận đăng ký xe, biển số xe (Mẫu ĐKX11 ban hành kèm theo Thông tư số 79/2024/TT-BCA)",
+          "component_code": "000.00.00.G01-KQ003694",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "Đối với các trường hợp chuyển quyền sở hữu xe, xe tái xuất, xe hết thời hạn đăng ký, xe tháo máy để đăng ký cho xe khác",
+          "position": 2,
+          "name": "Giấy tờ của chủ xe theo quy định",
+          "component_code": "000.00.00.G01-KQ003695",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "Đối với các trường hợp chuyển quyền sở hữu xe, xe tái xuất, xe hết thời hạn đăng ký, xe tháo máy để đăng ký cho xe khác",
+          "position": 3,
+          "name": "02 bản chà số máy, số khung xe",
+          "component_code": "000.00.00.G01-KQ003696",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "Đối với các trường hợp chuyển quyền sở hữu xe, xe tái xuất, xe hết thời hạn đăng ký, xe tháo máy để đăng ký cho xe khác",
+          "position": 4,
+          "name": "Chứng nhận đăng ký xe; Biển số xe",
+          "component_code": "000.00.00.G01-KQ003697",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c36-71b8-ad26-6f35bf85cb8a",
+          "name": "Giấy chứng nhận thu hồi đăng ký, biển số xe",
+          "code": "KQ.G01.000008"
+        },
+        {
+          "id": "019d2bb2-1c37-76e8-b48d-c336ce96925e",
+          "name": "Chứng nhận thu hồi đăng ký, biển số xe",
+          "code": "KQ.G01.000158"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7b-7049-8fc6-ebb0bdb9e697",
+          "name": "Thông tư số 79/2024/TT-BCA ngày 15/11/2024 của Bộ trưởng Bộ Công an quy định về cấp, thu hồi chứng nhận đăng ký, biển số xe cơ giới, xe máy chuyên dùng.",
+          "code": "79/2024/TT-BCA"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b672-dfa7472cab6e",
+          "name": "Luật Trật tự, an toàn giao thông đường bộ",
+          "code": "36/2024/QH15"
+        },
+        {
+          "id": "019f1695-2ebe-754f-a8e5-1fd2704da6db",
+          "name": "Thông tư số 62/2026/TT-BCA ngày 18/5/2026 quy định về phân cấp, cắt giảm, đơn giản hóa thủ tục hành chính thuộc phạm vi quản lý của Bộ Công an",
+          "code": "62/2026/TT-BCA "
+        }
+      ]
+    }
+  ]
+}

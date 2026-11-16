@@ -1,0 +1,16 @@
+{
+  "id": "019d2bfd-6ebc-709e-8678-a9f8b66738f2",
+  "kind": "electronic_form",
+  "filename": "1.005461.json",
+  "references": [
+    "hn87-281",
+    "dvc-019d2bfd-6ebc-709e-8678-a9f8b66738f2"
+  ],
+  "source_endpoint": "https://dichvucong.gov.vn/api/v1/configuring/formality/get-formality-form-by-citizen",
+  "source_request": {
+    "formalityId": "019d2bfd-6ebc-709e-8678-a9f8b66738f2"
+  },
+  "retrieved_at": "2026-11-12T22:30:14.682651+07:00",
+  "status": "not_provided",
+  "source_message": "Đối tượng không tồn tại"
+}

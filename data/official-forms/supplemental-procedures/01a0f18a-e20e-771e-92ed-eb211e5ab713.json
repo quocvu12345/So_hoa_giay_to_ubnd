@@ -1,0 +1,71 @@
+{
+  "id": "dvc-01a0f18a-e20e-771e-92ed-eb211e5ab713",
+  "procedure_code": "1.116842",
+  "name": "Cho phép thành lập trường tiểu học, trường trung học cơ sở và trường phổ thông có nhiều cấp học trong đó có cấp học cao nhất là trung học cơ sở",
+  "domain": "Giáo dục Phổ thông",
+  "managing_agency": "Bộ Giáo dục và Đào tạo",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.466328+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "01a0f18a-e20e-771e-92ed-eb211e5ab713",
+      "code": "1.116842",
+      "name": "Cho phép thành lập trường tiểu học, trường trung học cơ sở và trường phổ thông có nhiều cấp học trong đó có cấp học cao nhất là trung học cơ sở",
+      "state": "ACTIVE",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1790907958108,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/01a0f18a-e20e-771e-92ed-eb211e5ab713",
+      "raw_path": "evidence/dvc/details/01a0f18a-e20e-771e-92ed-eb211e5ab713.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Văn bản đề nghị thành lập hoặc cho phép thành lập trường tiểu học, trường trung học cơ sở và trường phổ thông có nhiều cấp học trong đó có cấp học cao nhất là trung học cơ sở theo Mẫu số 03 Phụ lục kèm theo Nghị định số 360/2026/NĐ-CP",
+          "component_code": "TP-G03.0001170",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "01a0f189-8f15-72ea-9398-85ef14a8c92b",
+              "fileName": "Mau so 3_VB de nghi cho phep thanh lap CSGD.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/01a0f189-8f15-72ea-9398-85ef14a8c92b/Mau so 3_VB de nghi cho phep thanh lap CSGD.docx"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Văn bản pháp lý chứng minh quyền sử dụng đất hoặc quyền sở hữu nhà hoặc hợp đồng thuê địa điểm, cơ sở vật chất với thời hạn tối thiểu 05 năm.  Tổ chức, cá nhân không phải nộp bản sao các thành phần hồ sơ nếu cơ quan có thẩm quyền có thể khai thác, sử dụng thông tin tương ứng trong cơ sở dữ liệu quốc gia, cơ sở dữ liệu chuyên ngành hoặc đã được số hóa theo quy định",
+          "component_code": "TP-G03.0001171",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "01a0f18a-c7af-7118-b90c-ca858c245bcb",
+          "name": "Quyết định của Chủ tịch Ủy ban nhân dân cấp xã cho phép thành lập trường tiểu học, trường trung học cơ sở và trường phổ thông có nhiều cấp học trong đó có cấp học cao nhất là trung học cơ sở (theo Mẫu số 08 Phụ lục kèm theo Nghị định số 360/2026/NĐ-CP)",
+          "code": "KQ-G03.00040"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "01a0eb27-0a75-75f9-a08c-6705f56edf6d",
+          "name": "Quy định về điều kiện đầu tư và hoạt động của cơ sở giáo dục mầm non, cơ sở giáo dục phổ thông, cơ sở giáo dục thường xuyên và cơ sở giáo dục khác thuộc hệ thống giáo dục quốc dân",
+          "code": "360/2026/NĐ-CP"
+        }
+      ]
+    }
+  ]
+}

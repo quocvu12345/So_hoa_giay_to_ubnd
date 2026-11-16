@@ -1,0 +1,64 @@
+{
+  "id": "dvc-019d2bfc-ca1f-7347-950d-559712f81f83",
+  "procedure_code": "1.012996",
+  "name": "Thanh toán, xóa nợ tiền sử dụng đất đối với hộ gia đình, cá nhân được ghi nợ",
+  "domain": "Tài chính đất đai",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.919906+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfc-ca1f-7347-950d-559712f81f83",
+      "code": "1.012996",
+      "name": "Thanh toán, xóa nợ tiền sử dụng đất đối với hộ gia đình, cá nhân được ghi nợ",
+      "state": "ACTIVE",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1775645797856,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-ca1f-7347-950d-559712f81f83",
+      "raw_path": "evidence/dvc/details/019d2bfc-ca1f-7347-950d-559712f81f83.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Giấy chứng nhận quyền sử dụng đất (bản gốc)",
+          "component_code": "000.00.00.G12-KQ013279",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Chứng từ nộp tiền sử dụng đất (bản gốc) hoặc Thông báo về việc xác nhận việc hoàn thành nghĩa vụ tài chính về thu tiền sử dụng đất",
+          "component_code": "000.00.00.G12-KQ013278",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c71-7574-afea-c06612d0fa22",
+          "name": "Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liên với đất trong đó có nội dung về số tiền sử dụng đất đã được xóa nợ",
+          "code": "KQ.G12.000264"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7e-72d1-afe8-2d2590ea131f",
+          "name": "Nghị định số 103/2024/NĐ-CP ngày 30/7/2024 của Chính phủ quy định về tiền sử dụng đất, tiền thuê đất",
+          "code": "103/2024/NĐ-CP"
+        }
+      ]
+    }
+  ]
+}

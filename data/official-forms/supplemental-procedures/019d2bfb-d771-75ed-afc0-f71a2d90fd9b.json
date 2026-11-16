@@ -1,0 +1,191 @@
+{
+  "id": "dvc-019d2bfb-d771-75ed-afc0-f71a2d90fd9b",
+  "procedure_code": "1.001643",
+  "name": "Giải quyết hưởng chế độ TNLĐ, BNN đối với trường hợp đã bị TNLĐ, BNN, nay tiếp tục bị TNLĐ hoặc BNN",
+  "domain": "Thực hiện chính sách BHXH",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.973146+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfb-d771-75ed-afc0-f71a2d90fd9b",
+      "code": "1.001643",
+      "name": "Giải quyết hưởng chế độ TNLĐ, BNN đối với trường hợp đã bị TNLĐ, BNN, nay tiếp tục bị TNLĐ hoặc BNN",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1792931550048,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-d771-75ed-afc0-f71a2d90fd9b",
+      "raw_path": "evidence/dvc/details/019d2bfb-d771-75ed-afc0-f71a2d90fd9b.json",
+      "components": [
+        {
+          "section": "Hồ sơ theo quy định tại Điều 8 Nghị định số 88/2020/NĐ-CP ngày 28/7/2020 của Chính phủ và khoản 2 Điều 27 Thông tư số 25/2025/TT-BYT ngày 30/6/2025 của Bộ Y tế;  gồm:",
+          "position": 1,
+          "name": "Bản sao giấy ra viện hoặc trích sao hồ sơ bệnh án sau khi đã điều trị TNLĐ, BNN của lần điều trị nội trú sau cùng",
+          "component_code": "TP.G12.98.164",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Hồ sơ theo quy định tại Điều 8 Nghị định số 88/2020/NĐ-CP ngày 28/7/2020 của Chính phủ và khoản 2 Điều 27 Thông tư số 25/2025/TT-BYT ngày 30/6/2025 của Bộ Y tế;  gồm:",
+          "position": 2,
+          "name": "Biên bản điều tra TNLĐ; nếu bị TNGT được xác định là TNLĐ thì có thêm bản sao một trong các giấy tờ sau: Biên bản khám nghiệm hiện trường, sơ đồ hiện trường vụ TNGT hoặc biên bản TNGT của cơ quan công an hoặc cơ quan điều tra hình sự quân đội",
+          "component_code": "TP.G12.98.165",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Hồ sơ theo quy định tại Điều 8 Nghị định số 88/2020/NĐ-CP ngày 28/7/2020 của Chính phủ và khoản 2 Điều 27 Thông tư số 25/2025/TT-BYT ngày 30/6/2025 của Bộ Y tế;  gồm:",
+          "position": 3,
+          "name": "Trường hợp điều trị xong, ra viện trước ngày 01/7/2016 mà lần giám định trước không đủ điều kiện về mức suy giảm KNLĐ để hưởng trợ cấp BNN: Kết quả đo đạc, quan trắc môi trường lao động",
+          "component_code": "TP.G12.98.140",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Hồ sơ theo quy định tại Điều 8 Nghị định số 88/2020/NĐ-CP ngày 28/7/2020 của Chính phủ và khoản 2 Điều 27 Thông tư số 25/2025/TT-BYT ngày 30/6/2025 của Bộ Y tế;  gồm:",
+          "position": 4,
+          "name": "Biên bản giám định tổng hợp mức suy giảm KNLĐ của Hội đồng GĐYK; trường hợp lần bị TNLĐ, BNN trước đã được giám định mức suy giảm KNLĐ nhưng không đủ điều kiện hưởng trợ cấp thì có thêm biên bản giám định mức suy giảm KNLĐ của lần giám định đó",
+          "component_code": "TP.G12.98.166",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Hồ sơ theo quy định tại Điều 8 Nghị định số 88/2020/NĐ-CP ngày 28/7/2020 của Chính phủ và khoản 2 Điều 27 Thông tư số 25/2025/TT-BYT ngày 30/6/2025 của Bộ Y tế;  gồm:",
+          "position": 5,
+          "name": "Chỉ định của cơ sở khám bệnh, chữa bệnh, cơ sở chỉnh hình, phục hồi chức năng theo quy định về việc trang cấp PTTGSH (nếu có)",
+          "component_code": "TP.G12.98.138",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Hồ sơ theo quy định tại Điều 8 Nghị định số 88/2020/NĐ-CP ngày 28/7/2020 của Chính phủ và khoản 2 Điều 27 Thông tư số 25/2025/TT-BYT ngày 30/6/2025 của Bộ Y tế;  gồm:",
+          "position": 6,
+          "name": "Văn bản đề nghị giải quyết chế độ TNLĐ, BNN theo mẫu số 05A-HSB đối với lần bị TNLĐ, BNN sau cùng; trường hợp lần bị TNLĐ, BNN trước đó tại đơn vị khác nhưng chưa được giải quyết chế độ thì có thêm văn bản đề nghị giải quyết của đơn vị nơi xảy ra TNLĐ, BNN",
+          "component_code": "TP.G12.98.167",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "01a02d5f-e63d-7548-812f-decce1b92958",
+              "fileName": "05A-HSB.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/01a02d5f-e63d-7548-812f-decce1b92958/05A-HSB.docx"
+            }
+          ]
+        },
+        {
+          "section": "Hồ sơ theo quy định tại Điều 8 Nghị định số 88/2020/NĐ-CP ngày 28/7/2020 của Chính phủ và khoản 2 Điều 27 Thông tư số 25/2025/TT-BYT ngày 30/6/2025 của Bộ Y tế;  gồm:",
+          "position": 7,
+          "name": "Trường hợp thanh toán phí GĐYK thì có thêm hóa đơn, chứng từ thu phí giám định; bảng kê các nội dung giám định của cơ sở thực hiện GĐYK",
+          "component_code": "TP.G12.98.139",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c82-739b-8b99-d6be7cc06c52",
+          "name": "Tiền trợ cấp",
+          "code": "KQ.G12.001151"
+        },
+        {
+          "id": "019d2bb2-1c82-739b-8b99-e259405a083c",
+          "name": "Bản quá trình đóng BHXH (Mẫu 04-HSB)",
+          "code": "KQ.G12.001309"
+        },
+        {
+          "id": "01a02d57-1940-7115-919c-ba642218cc56",
+          "name": "Thông báo về việc chi trả lương hưu, trợ cấp BHXH đối với trường hợp chuyển nơi nhận chế độ BHXH (Mẫu số 23-HSB)",
+          "code": "KQ.G12.001278"
+        },
+        {
+          "id": "019d2bb2-1c82-739b-8b99-7421b0c1de6e",
+          "name": "Quyết định về việc hưởng trợ cấp TNLĐ/BNN một lần do giám định tổng hợp mức suy giảm khả năng lao động: Mẫu số 03N-HSB",
+          "code": "KQ.G12.001095"
+        },
+        {
+          "id": "01a02cc8-4162-7606-babd-a7808853d3c9",
+          "name": "Thẻ BHYT đối với trường hợp nghỉ việc hưởng trợ cấp TNLĐ, BNN hằng tháng",
+          "code": "KQ.G12.001275"
+        },
+        {
+          "id": "01a02d55-58e8-70de-ab5e-d1704c0e0155",
+          "name": "Quyết định về việc hưởng trợ cấp TNLĐ/BNN hằng tháng do giám định tổng hợp mức suy giảm khả năng lao động: Mẫu số 03M-HSB",
+          "code": "KQ.G12.001094"
+        },
+        {
+          "id": "01a02cc7-64fc-76ea-8f17-25a963c88e35",
+          "name": "Quyết định cấp tiền mua phương tiện trợ giúp sinh hoạt (Mẫu số 03P-HSB)",
+          "code": "KQ.G12.001084"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7c-71ab-9f07-f538ffa2f69d",
+          "name": "BAN HÀNH QUY TRÌNH GIẢI QUYẾT HƯỞNG CÁC CHẾ ĐỘ BẢO HIỂM XÃ HỘI, CHI TRẢ CÁC CHẾ ĐỘ BẢO HIỂM XÃ HỘI, BẢO HIỂM THẤT NGHIỆP",
+          "code": "2222/QĐ-BHXH"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afe5-6de8c6e793ac",
+          "name": "THÔNG TƯ QUY ĐỊNH CHI TIẾT THI HÀNH LUẬT BẢO HIỂM XÃ HỘI, LUẬT AN TOÀN, VỆ SINH LAO ĐỘNG VỀ LĨNH VỰC Y TẾ VÀ MỘT SỐ ĐIỀU CỦA LUẬT KHÁM BỆNH, CHỮA BỆNH",
+          "code": "25/2025/TT-BYT"
+        },
+        {
+          "id": "019e72e9-3b2a-77b9-9c29-023d914eb3dc",
+          "name": "Quy định về giao dịch điện tử trong lĩnh vực bảo hiểm xã hội và Cơ sở dữ liệu quốc gia về bảo hiểm",
+          "code": "164/2025/NĐ-CP "
+        },
+        {
+          "id": "019d2bb3-5d87-7195-a446-b9df772557c6",
+          "name": "Nghị định số 88/2020/NĐ-CP ngày 28/7/2020 của Chính phủ quy định chi tiết một số điều của Luật An toàn, vệ sinh lao động về bảo hiểm tai nạn lao động, bệnh nghề nghiệp bắt buộc",
+          "code": "88/2020/NĐ-CP"
+        },
+        {
+          "id": "019d6d49-de8f-7682-83b1-0b8c61d58c2d",
+          "name": "Luật An toàn, vệ sinh lao động ",
+          "code": "84/2015/QH13 "
+        },
+        {
+          "id": "01a023be-84c8-77db-ade3-9c613cd83670",
+          "name": "Quy trình thu bảo hiểm xã hội, bảo hiểm y tế, bảo hiểm thất nghiệp; cấp sổ bảo hiểm xã hội, thẻ bảo hiểm y tế",
+          "code": "366/QĐ-BHXH"
+        },
+        {
+          "id": "019e72eb-488d-760e-abb8-0a3bb6585c78",
+          "name": "SỬA ĐỔI, BỔ SUNG MỘT SỐ ĐIỀU CỦA QUY TRÌNH GIẢI QUYẾT HƯỞNG CÁC CHẾ ĐỘ BẢO HIỂM XÃ HỘI, CHI TRẢ CÁC CHẾ ĐỘ BẢO HIỂM XÃ HỘI, BẢO HIỂM THẤT NGHIỆP BAN HÀNH KÈM THEO QUYẾT ĐỊNH SỐ 2222/QĐ-BHXH NGÀY 29/7/2025 CỦA GIÁM ĐỐC BẢO HIỂM XÃ HỘI VIỆT NAM",
+          "code": "313/QĐ-BHXH "
+        },
+        {
+          "id": "01a02cd0-b47a-7096-b169-0e3135e43619",
+          "name": "Quy định chi tiết và hướng dẫn thi hành một số điều của Luật An toàn, vệ sinh lao động về chế độ đối với người lao động bị tai nạn lao động, bệnh nghề nghiệp",
+          "code": "28/2021/TT-BLĐTBXH"
+        }
+      ]
+    }
+  ]
+}

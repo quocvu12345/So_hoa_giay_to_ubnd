@@ -1,0 +1,87 @@
+{
+  "id": "dvc-019d2bf7-7f1d-743a-a07d-d13515c4abc1",
+  "procedure_code": "1.010055",
+  "name": "Trình báo mất giấy thông hành (thực hiện tại cấp xã)",
+  "domain": "Quản lý xuất nhập cảnh",
+  "managing_agency": "Bộ Công an",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:18.037210+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bf7-7f1d-743a-a07d-d13515c4abc1",
+      "code": "1.010055",
+      "name": "Trình báo mất giấy thông hành (thực hiện tại cấp xã)",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1777629301548,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf7-7f1d-743a-a07d-d13515c4abc1",
+      "raw_path": "evidence/dvc/details/019d2bf7-7f1d-743a-a07d-d13515c4abc1.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Trường hợp nộp hồ sơ trực tuyến thì thành phần hồ sơ phải được chứng thực điện tử theo quy định, trường hợp hồ sơ chưa được chứng thực điện tử thì gửi hồ sơ về cơ quan tiếp nhận thông qua dịch vụ bưu chính công ích.",
+          "component_code": "000.00.00.G01-KQ002344",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "+ Giấy tờ chứng minh là cha, mẹ hoặc người đại diện theo pháp luật đối với trường hợp trình báo mất giấy thông hành cho trẻ em dưới 14 tuổi, người mất năng lực hành vi dân sự, người có khó khăn trong nhận thức, làm chủ hành vi.",
+          "component_code": "G01.000.000.000-KQ1936",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 3,
+          "name": "+ 01 đơn trình báo mất giấy thông hành (mẫu M02);",
+          "component_code": "G01.000.000.000-KQ1935",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019dd028-ccb3-74d8-8786-0341ef4ce427",
+              "fileName": "Mẫu M02 trình báo mất giấy thông hành - BCA.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019dd028-ccb3-74d8-8786-0341ef4ce427/Mẫu M02 trình báo mất giấy thông hành - BCA.docx"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c37-76e8-b48c-a918dc4ce9a2",
+          "name": "Thông báo hủy giá trị sử dụng giấy thông hành",
+          "code": "KQ.G01.000081"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d87-7195-a445-a2e461afc7f1",
+          "name": "Nghị định 76/2020/NĐ-CP",
+          "code": "76/2020/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d87-7195-a442-1fc2d8d3cd84",
+          "name": "Luật 49/2019/QH14",
+          "code": "49/2019/QH14"
+        }
+      ]
+    }
+  ]
+}

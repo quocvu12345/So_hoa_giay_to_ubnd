@@ -1,0 +1,109 @@
+{
+  "id": "hn87-318",
+  "ordinal": "318",
+  "procedure_code": "2.001008",
+  "name": "Chứng thực chữ ký người dịch mà người dịch không phải là cộng tác viên dịch thuật của Ủy ban nhân dân cấp xã, tổ chức hành nghề công chứng",
+  "domain": "Chứng thực",
+  "department_id": "vp",
+  "department": "Văn phòng HĐND và UBND · tư pháp, hộ tịch",
+  "authority_as_published": "UBND cấp xã",
+  "execution_level_as_published": "Cấp xã",
+  "receiving_location_as_published": "Điểm hỗ trợ DVC số",
+  "inventory_date": "2026-04-27",
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "source_urls": [
+    "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfd-95d4-72d6-be00-ed0e9e5dd66a"
+  ],
+  "current_dvc_match": true,
+  "lifecycle": null,
+  "scope": "hanoi_commune_notice_2026_04_27",
+  "scope_note": "Mốc kiểm kê cấp xã Hà Nội; áp dụng từng thủ tục tại Từ Liêm còn phải theo thẩm quyền/ủy quyền hiện hành.",
+  "status": "source_template_missing",
+  "components": [
+    {
+      "id": "hn87-318-c001",
+      "code": "000.00.00.G15-KQ004921",
+      "name": "+ Một trong các giấy tờ sau: Căn cước điện tử; bản chính hoặc bản sao của Thẻ căn cước công dân hoặc Thẻ căn cước hoặc Giấy chứng nhận căn cước hoặc Hộ chiếu hoặc giấy tờ xuất nhập cảnh hoặc giấy tờ có giá trị đi lại quốc tế còn giá trị sử dụng;",
+      "section": "Người yêu cầu chứng thực phải xuất trình các giấy tờ sau:",
+      "role": "supporting_show",
+      "scenario_status": "conditional_needs_review",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfd-95d4-72d6-be00-ed0e9e5dd66a",
+      "source_detail_id": "019d2bfd-95d4-72d6-be00-ed0e9e5dd66a",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-318-c002",
+      "code": "000.00.00.G15-KQ1994",
+      "name": "+ Bản dịch đính kèm giấy tờ, văn bản cần dịch.",
+      "section": "Người yêu cầu chứng thực phải xuất trình các giấy tờ sau:",
+      "role": "supporting_show",
+      "scenario_status": "selected_for_test",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfd-95d4-72d6-be00-ed0e9e5dd66a",
+      "source_detail_id": "019d2bfd-95d4-72d6-be00-ed0e9e5dd66a",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-318-c003",
+      "code": "000.00.00.G15-KQ004930",
+      "name": "+ Bản chính hoặc bản sao từ sổ gốc, bản sao có chứng thực bằng cử nhân (đại học) ngoại ngữ trở lên về thứ tiếng nước ngoài cần dịch hoặc có bằng tốt nghiệp đại học trở lên đối với thứ tiếng nước ngoài cần dịch; trừ trường hợp dịch những ngôn ngữ không phổ biến mà người dịch không có bằng cử nhân ngoại ngữ, bằng tốt nghiệp đại học nhưng thông thạo ngôn ngữ cần dịch.",
+      "section": "Người yêu cầu chứng thực phải xuất trình các giấy tờ sau:",
+      "role": "supporting_show",
+      "scenario_status": "conditional_needs_review",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfd-95d4-72d6-be00-ed0e9e5dd66a",
+      "source_detail_id": "019d2bfd-95d4-72d6-be00-ed0e9e5dd66a",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    }
+  ],
+  "service_cases": [
+    {
+      "id": "019d2d6a-0ad7-74fd-b4e9-4550b5b5b73c",
+      "code": "2.001008.01",
+      "name": "Chứng thực chữ ký người dịch mà người dịch không phải là cộng tác viên dịch thuật của Ủy ban nhân dân cấp xã, tổ chức hành nghề công chứng",
+      "source_processing_time": {
+        "qty": 0,
+        "type": "OTHER"
+      },
+      "has_case_specific_components": false
+    }
+  ],
+  "selected_template_ids": [],
+  "source_component_groups": [
+    {
+      "name": "Người yêu cầu chứng thực phải xuất trình các giấy tờ sau:",
+      "component_count": 3,
+      "source_detail_id": "019d2bfd-95d4-72d6-be00-ed0e9e5dd66a"
+    }
+  ],
+  "conditional_component_groups": [],
+  "default_test_scenario": {
+    "channel": "direct",
+    "applicant_submits_self": true,
+    "authorized": false,
+    "special_case_flags": [],
+    "selected_conditional_group": null,
+    "case_selection_method": "ordinary_direct_submission",
+    "case_status": "scenario_for_testing_not_a_legal_eligibility_decision"
+  },
+  "requirement_note": "required_as_published được giữ nguyên; false không chứng minh giấy tờ luôn tùy chọn. Các nhóm executionCases có thể là mục giấy tờ/hướng dẫn, không phải các phương án loại trừ nhau."
+}

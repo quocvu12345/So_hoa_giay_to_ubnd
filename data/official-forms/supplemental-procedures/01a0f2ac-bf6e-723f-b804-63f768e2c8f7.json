@@ -1,0 +1,60 @@
+{
+  "id": "dvc-01a0f2ac-bf6e-723f-b804-63f768e2c8f7",
+  "procedure_code": "1.116848",
+  "name": "Sáp nhập, chia, tách trung tâm học tập cộng đồng tư thục",
+  "domain": "Giáo dục thường xuyên",
+  "managing_agency": "Bộ Giáo dục và Đào tạo",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.464534+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "01a0f2ac-bf6e-723f-b804-63f768e2c8f7",
+      "code": "1.116848",
+      "name": "Sáp nhập, chia, tách trung tâm học tập cộng đồng tư thục",
+      "state": "ACTIVE",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1790907958134,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/01a0f2ac-bf6e-723f-b804-63f768e2c8f7",
+      "raw_path": "evidence/dvc/details/01a0f2ac-bf6e-723f-b804-63f768e2c8f7.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Văn bản đề nghị sáp nhập, chia, tách trung tâm theo Mẫu số 05 Phụ lục kèm theo Nghị định số 360/2026/NĐ-CP, trong đó thuyết minh phương án xử lý về tổ chức bộ máy, nhân sự, tài chính, tài sản, đất đai, người học và lộ trình bảo đảm hoạt động liên tục của cơ sở.",
+          "component_code": "TP-G03.0001179",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "01a0f2ab-bfd9-768e-822c-5fe7113048a2",
+              "fileName": "Mau so 5_VB de nghi sap nhap chia tach CSGD.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/01a0f2ab-bfd9-768e-822c-5fe7113048a2/Mau so 5_VB de nghi sap nhap chia tach CSGD.docx"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "id": "01a0f2ac-937b-732b-b992-8c2852e88119",
+          "name": "Quyết định của Chủ tịch Ủy ban nhân dân cấp xã sáp nhập, chia, tách trung tâm (theo Mẫu số 08 Phụ lục kèm theo Nghị định số 360/2026/NĐ-CP)",
+          "code": "KQ-G03.00047"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "01a0eb27-0a75-75f9-a08c-6705f56edf6d",
+          "name": "Quy định về điều kiện đầu tư và hoạt động của cơ sở giáo dục mầm non, cơ sở giáo dục phổ thông, cơ sở giáo dục thường xuyên và cơ sở giáo dục khác thuộc hệ thống giáo dục quốc dân",
+          "code": "360/2026/NĐ-CP"
+        }
+      ]
+    }
+  ]
+}

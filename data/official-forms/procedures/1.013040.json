@@ -1,0 +1,98 @@
+{
+  "ordinal": "124",
+  "managing_agency": "Sở Nông nghiệp Môi trường",
+  "procedure_code": "1.013040",
+  "name": "Thủ tục khai, nộp phí bảo vệ môi trường đối với khí thải",
+  "domain": "Quản lý thuế, phí, lệ phí và thu khác của ngân sách nhà nước (Bộ Tài chính)",
+  "ministry_decision": "4510/QĐ-BTC ngày 31/12/2025",
+  "hanoi_decision": "94/QĐ-TTPVHCC ngày 21/01/2026",
+  "workflow_decision": "240/QĐ-TTPVHC ngày 25/02/2026",
+  "fees": "Không quy định",
+  "execution_level": "Cấp tỉnh, cấp xã",
+  "competent_authority": "Sở; UBND cấp xã",
+  "delegation_decision": "",
+  "delegation_expiry": "",
+  "receiving_location": "Điểm hỗ trợ DVC số; Chi nhánh TTPVHCC",
+  "source_page": 5,
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "inventory_date": "2026-04-27",
+  "checked_at": "2026-11-12T22:23:46.523808+07:00",
+  "details": [
+    {
+      "id": "019d2bfc-ca45-755d-a6d4-63b33d218a43",
+      "code": "1.013040",
+      "name": "Thủ tục khai, nộp phí bảo vệ môi trường đối với khí thải",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1775640768892,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-ca45-755d-a6d4-63b33d218a43",
+      "raw_path": "evidence/dvc/details/019d2bfc-ca45-755d-a6d4-63b33d218a43.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Tờ khai nộp phí bảo vệ môi trường đối với khí thải theo Mẫu số 01 tại Phụ lục ban hành kèm theo Nghị định số 153/2024/NĐ-CP.",
+          "component_code": "000.00.00.G12-KQ013281",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c73-70ac-aa19-fa6a0bbe682a",
+          "name": "Thông báo nộp phí bảo vệ môi trường đối với khí thải theo Mẫu số 02 tại Phụ lục ban hành kèm theo Nghị định số 153/2024/NĐ-CP (được sửa đổi, bổ sung bởi điểm d khoản 3 Điều 6 Nghị định số 362/2025/NĐ-CP)",
+          "code": "KQ.G12.001428"
+        },
+        {
+          "id": "019d2bb2-1c73-70ac-aa19-fc63845e30fe",
+          "name": "Kết quả thẩm định Tờ khai nộp phí bảo vệ môi trường đối với khí thải theo Mẫu số 03 tại Phụ lục ban hành kèm theo Nghị định số 153/2024/NĐ-CP (được sửa đổi, bổ sung bởi điểm d khoản 3 Điều 6 Nghị định số 362/2025/NĐ-CP)",
+          "code": "KQ.G12.000244"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7e-72d1-afe9-e5df60a9dbdb",
+          "name": "Nghị định số 125/2025/NĐ-CP của Chính phủ: Quy định về phân định thẩm quyền của chính quyền địa phương 02 cấp trong lĩnh vực quản lý nhà nước của Bộ Tài chính",
+          "code": "125/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afeb-b224ff164fcf",
+          "name": "Nghị định số 153/2024/NĐ-CP ngày 21/11/2024 của Chính phủ quy định phí bảo vệ môi trường đối với khí thải",
+          "code": "153/2024/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b670-d45656bf8c18",
+          "name": "Phí và lệ phí",
+          "code": "97/2015/QH13"
+        },
+        {
+          "id": "019d2bb3-5d85-73da-8eb9-fbf4344c3579",
+          "name": "Luật Bảo vệ môi trường số 72/2020/QH14 ngày 17 tháng 11 năm 2020",
+          "code": "72/2020/QH14"
+        },
+        {
+          "id": "019d2bb3-5d85-73da-8eb9-e5214fd5ac79",
+          "name": "Luật Quản lý thuế",
+          "code": "38/2019/QH14"
+        },
+        {
+          "id": "019d2bb3-5d87-7195-a43f-e3a138f6b918",
+          "name": "Nghị định số 362/2025/NĐ-CP",
+          "code": "362/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d87-7195-a446-e2b043ee42d3",
+          "name": "Luật Ngân sách nhà nước số 89/2025/QH15",
+          "code": "89/2025/QH15"
+        }
+      ]
+    }
+  ],
+  "lookup_status": "retrieved",
+  "currency_status": "snapshot_requires_later_amendment_check",
+  "errors": []
+}

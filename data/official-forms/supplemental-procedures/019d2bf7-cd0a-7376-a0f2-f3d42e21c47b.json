@@ -1,0 +1,60 @@
+{
+  "id": "dvc-019d2bf7-cd0a-7376-a0f2-f3d42e21c47b",
+  "procedure_code": "3.000494",
+  "name": "Phục hồi hoạt động của cơ sở, phương tiện giao thông cơ giới, hộ gia đình và cá nhân",
+  "domain": "Phòng cháy, chữa cháy",
+  "managing_agency": "Bộ Công an",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:18.031321+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bf7-cd0a-7376-a0f2-f3d42e21c47b",
+      "code": "3.000494",
+      "name": "Phục hồi hoạt động của cơ sở, phương tiện giao thông cơ giới, hộ gia đình và cá nhân",
+      "state": "ACTIVE",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1777390214574,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf7-cd0a-7376-a0f2-f3d42e21c47b",
+      "raw_path": "evidence/dvc/details/019d2bf7-cd0a-7376-a0f2-f3d42e21c47b.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "bản chính văn bản đề nghị phục hồi hoạt động (Mẫu số PC15 ban hành kèm theo Nghị  định số 50/2024/NĐ-CP ngày 10/05/2024 của Chính phủ)",
+          "component_code": "000.00.00.G01-KQ003445",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019dcf70-beda-7135-a4d1-d16b7047bc33",
+              "fileName": "PC15.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019dcf70-beda-7135-a4d1-d16b7047bc33/PC15.docx"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c38-75c9-8e11-bd534088145b",
+          "name": "Quyết định phục hồi hoạt động (Mẫu số PC16 ban hành kèm theo Nghị định số 50/2024/NĐ-CP ngày 10/05/2024  của Chính phủ)",
+          "code": "KQ.G01.000226"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d86-7760-a63f-819b7ddce218",
+          "name": "Nghị định 136/2020/NĐ-CP",
+          "code": "136/2020/NĐ-CP"
+        }
+      ]
+    }
+  ]
+}

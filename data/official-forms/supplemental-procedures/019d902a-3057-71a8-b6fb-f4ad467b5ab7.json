@@ -1,0 +1,78 @@
+{
+  "id": "dvc-019d902a-3057-71a8-b6fb-f4ad467b5ab7",
+  "procedure_code": "1.014945",
+  "name": "THỦ TỤC CHO PHÉP QUỸ HOẠT ĐỘNG TRỞ LẠI SAU KHI BỊ ĐÌNH CHỈ CÓ THỜI HẠN HOẠT ĐỘNG (Cấp xã)",
+  "domain": "Quản lý nhà nước về hội, quỹ",
+  "managing_agency": "Bộ Nội vụ",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.848180+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d902a-3057-71a8-b6fb-f4ad467b5ab7",
+      "code": "1.014945",
+      "name": "THỦ TỤC CHO PHÉP QUỸ HOẠT ĐỘNG TRỞ LẠI SAU KHI BỊ ĐÌNH CHỈ CÓ THỜI HẠN HOẠT ĐỘNG (Cấp xã)",
+      "state": "ACTIVE",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1776677764483,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d902a-3057-71a8-b6fb-f4ad467b5ab7",
+      "raw_path": "evidence/dvc/details/019d902a-3057-71a8-b6fb-f4ad467b5ab7.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "- Đơn đề nghị được hoạt động trở lại (theo mẫu),",
+          "component_code": "G09-KQ002528",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019d9460-3117-719a-90d6-d64fb1f3b610",
+              "fileName": "Mau so 16.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d9460-3117-719a-90d6-d64fb1f3b610/Mau so 16.docx"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "- Báo cáo của Hội đồng quản lý quỹ và các tài liệu chứng minh quỹ đã khắc phục sai phạm (theo mẫu).",
+          "component_code": "G09-KQ002133",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019d9460-7aaf-76f1-85a0-3e96d6706867",
+              "fileName": "Mau so 17.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d9460-7aaf-76f1-85a0-3e96d6706867/Mau so 17.docx"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c4c-77ab-bf6e-e64c2e4c8e69",
+          "name": "Quyết định cho phép quỹ hoạt động trở lại sau khi bị tạm đình chỉ có thời hạn hoạt động",
+          "code": "KQ.G09.000304"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d89ff-5856-76d2-90d1-9790a555ebca",
+          "name": "Nghị định Về tổ chức, hoạt động của quỹ xã hội, quỹ từ thiện",
+          "code": "03/2026/NĐ-CP"
+        }
+      ]
+    }
+  ]
+}

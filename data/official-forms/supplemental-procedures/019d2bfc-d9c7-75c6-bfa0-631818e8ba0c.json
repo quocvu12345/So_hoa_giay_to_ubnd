@@ -1,0 +1,520 @@
+{
+  "id": "dvc-019d2bfc-d9c7-75c6-bfa0-631818e8ba0c",
+  "procedure_code": "2.000821",
+  "name": "Giải quyết hưởng chế độ tử tuất và truy lĩnh các chế độ BHXH, BHTN của người hưởng đã chết nhưng còn chế độ chưa nhận",
+  "domain": "Thực hiện chính sách BHXH",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.913221+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfc-d9c7-75c6-bfa0-631818e8ba0c",
+      "code": "2.000821",
+      "name": "Giải quyết hưởng chế độ tử tuất và truy lĩnh các chế độ BHXH, BHTN của người hưởng đã chết nhưng còn chế độ chưa nhận",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1792931550057,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-d9c7-75c6-bfa0-631818e8ba0c",
+      "raw_path": "evidence/dvc/details/019d2bfc-d9c7-75c6-bfa0-631818e8ba0c.json",
+      "components": [
+        {
+          "section": "1. Hồ sơ đề nghị hưởng chế độ tử tuất đối với thân nhân của người đang tham gia BHXH hoặc đang bảo lưu thời gian đóng BHXH bao gồm:",
+          "position": 1,
+          "name": "Sổ BHXH",
+          "component_code": "TP.G12.98.083",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "1. Hồ sơ đề nghị hưởng chế độ tử tuất đối với thân nhân của người đang tham gia BHXH hoặc đang bảo lưu thời gian đóng BHXH bao gồm:",
+          "position": 2,
+          "name": "Tờ khai của thân nhân/tổ chức, cá nhân lo mai táng theo Mẫu số 09-HSB",
+          "component_code": "TP.G12.98.109",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "01a02e90-010a-7614-972d-7e4763f1ab66",
+              "fileName": "09-HSB.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/01a02e90-010a-7614-972d-7e4763f1ab66/09-HSB.docx"
+            }
+          ]
+        },
+        {
+          "section": "1. Hồ sơ đề nghị hưởng chế độ tử tuất đối với thân nhân của người đang tham gia BHXH hoặc đang bảo lưu thời gian đóng BHXH bao gồm:",
+          "position": 3,
+          "name": "Biên bản giám định mức suy giảm KNLĐ của Hội đồng GĐYK hoặc bản sao giấy xác nhận mức độ khuyết tật đặc biệt nặng có thể hiện kết luận của Hội đồng GĐYK ghi rõ tỷ lệ phần trăm suy giảm KNLĐ từ 81% trở lên đối với thân nhân bị suy giảm KNLĐ",
+          "component_code": "TP.G12.98.111",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "1. Hồ sơ đề nghị hưởng chế độ tử tuất đối với thân nhân của người đang tham gia BHXH hoặc đang bảo lưu thời gian đóng BHXH bao gồm:",
+          "position": 4,
+          "name": "Trường hợp thanh toán phí GĐYK thì có thêm hóa đơn, chứng từ thu phí giám định; bảng kê các nội dung giám định của cơ sở thực hiện GĐYK",
+          "component_code": "TP.G12.98.139",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "1. Hồ sơ đề nghị hưởng chế độ tử tuất đối với thân nhân của người đang tham gia BHXH hoặc đang bảo lưu thời gian đóng BHXH bao gồm:",
+          "position": 5,
+          "name": "Bản khai cá nhân về thời gian, địa bàn phục vụ trong quân đội có hưởng phụ cấp khu vực theo mẫu số 04C-HBQP ban hành kèm theo Thông tư số 136/2020/TT-BQP đối với người có thời gian phục vụ trong quân đội trước ngày 01/01/2007 tại địa bàn có hưởng phụ cấp khu vực mà sổ BHXH không thể hiện đầy đủ thông tin làm căn cứ tính phụ cấp khu vực",
+          "component_code": "TP.G12.98.112",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "01a02e8e-feaa-75dd-b09a-8d3eef896dae",
+              "fileName": "04C-HBQP.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/01a02e8e-feaa-75dd-b09a-8d3eef896dae/04C-HBQP.docx"
+            }
+          ]
+        },
+        {
+          "section": "1. Hồ sơ đề nghị hưởng chế độ tử tuất đối với thân nhân của người đang tham gia BHXH hoặc đang bảo lưu thời gian đóng BHXH bao gồm:",
+          "position": 6,
+          "name": "Bản sao giấy chứng tử hoặc trích lục khai tử hoặc bản sao giấy báo tử hoặc bản sao quyết định của Tòa án tuyên bố là đã chết",
+          "component_code": "TP.G12.98.108",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "1. Hồ sơ đề nghị hưởng chế độ tử tuất đối với thân nhân của người đang tham gia BHXH hoặc đang bảo lưu thời gian đóng BHXH bao gồm:",
+          "position": 7,
+          "name": "Bản chính hoặc bản sao biên bản điều tra TNLĐ đối với trường hợp chết do TNLĐ; bản sao bệnh án điều trị BNN đối với trường hợp chết do BNN",
+          "component_code": "TP.G12.98.110",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "2. Hồ sơ đề nghị hưởng chế độ tử tuất đối với thân nhân của người đang hưởng lương hưu hoặc đang tạm dừng hưởng lương hưu hoặc trợ cấp TNLĐ, BNN hằng tháng đã nghỉ việc bao gồm:",
+          "position": 1,
+          "name": "Biên bản giám định mức suy giảm KNLĐ của Hội đồng GĐYK hoặc bản sao giấy xác nhận mức độ khuyết tật đặc biệt nặng có thể hiện kết luận của Hội đồng GĐYK ghi rõ tỷ lệ phần trăm suy giảm KNLĐ từ 81% trở lên đối với thân nhân bị suy giảm KNLĐ",
+          "component_code": "TP.G12.98.111",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "2. Hồ sơ đề nghị hưởng chế độ tử tuất đối với thân nhân của người đang hưởng lương hưu hoặc đang tạm dừng hưởng lương hưu hoặc trợ cấp TNLĐ, BNN hằng tháng đã nghỉ việc bao gồm:",
+          "position": 2,
+          "name": "Trường hợp thanh toán phí GĐYK thì có thêm hóa đơn, chứng từ thu phí giám định; bảng kê các nội dung giám định của cơ sở thực hiện GĐYK",
+          "component_code": "TP.G12.98.139",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "2. Hồ sơ đề nghị hưởng chế độ tử tuất đối với thân nhân của người đang hưởng lương hưu hoặc đang tạm dừng hưởng lương hưu hoặc trợ cấp TNLĐ, BNN hằng tháng đã nghỉ việc bao gồm:",
+          "position": 3,
+          "name": "Bản sao giấy chứng tử hoặc trích lục khai tử hoặc bản sao giấy báo tử hoặc bản sao quyết định của Tòa án tuyên bố là đã chết",
+          "component_code": "TP.G12.98.108",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "2. Hồ sơ đề nghị hưởng chế độ tử tuất đối với thân nhân của người đang hưởng lương hưu hoặc đang tạm dừng hưởng lương hưu hoặc trợ cấp TNLĐ, BNN hằng tháng đã nghỉ việc bao gồm:",
+          "position": 4,
+          "name": "Tờ khai của thân nhân/tổ chức, cá nhân lo mai táng theo Mẫu số 09-HSB",
+          "component_code": "TP.G12.98.109",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "01a02e90-010a-7614-972d-7e4763f1ab66",
+              "fileName": "09-HSB.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/01a02e90-010a-7614-972d-7e4763f1ab66/09-HSB.docx"
+            }
+          ]
+        },
+        {
+          "section": "3.1. Hồ sơ đề nghị hưởng chế độ tử tuất đối với thân nhân của người đang tham gia BHXH tự nguyện hoặc đang bảo lưu thời gian đóng BHXH tự nguyện gồm:",
+          "position": 1,
+          "name": "Sổ BHXH",
+          "component_code": "TP.G12.98.083",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "3.1. Hồ sơ đề nghị hưởng chế độ tử tuất đối với thân nhân của người đang tham gia BHXH tự nguyện hoặc đang bảo lưu thời gian đóng BHXH tự nguyện gồm:",
+          "position": 2,
+          "name": "Tờ khai của thân nhân/tổ chức, cá nhân lo mai táng theo Mẫu số 09-HSB",
+          "component_code": "TP.G12.98.109",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "01a02e90-010a-7614-972d-7e4763f1ab66",
+              "fileName": "09-HSB.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/01a02e90-010a-7614-972d-7e4763f1ab66/09-HSB.docx"
+            }
+          ]
+        },
+        {
+          "section": "3.1. Hồ sơ đề nghị hưởng chế độ tử tuất đối với thân nhân của người đang tham gia BHXH tự nguyện hoặc đang bảo lưu thời gian đóng BHXH tự nguyện gồm:",
+          "position": 3,
+          "name": "Bản sao giấy chứng tử hoặc trích lục khai tử hoặc bản sao giấy báo tử hoặc bản sao quyết định của Tòa án tuyên bố là đã chết",
+          "component_code": "TP.G12.98.108",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "3.1. Hồ sơ đề nghị hưởng chế độ tử tuất đối với thân nhân của người đang tham gia BHXH tự nguyện hoặc đang bảo lưu thời gian đóng BHXH tự nguyện gồm:",
+          "position": 4,
+          "name": "Biên bản giám định mức suy giảm KNLĐ của Hội đồng GĐYK hoặc bản sao giấy xác nhận mức độ khuyết tật đặc biệt nặng có thể hiện kết luận của Hội đồng GĐYK ghi rõ tỷ lệ phần trăm suy giảm KNLĐ từ 81% trở lên đối với thân nhân bị suy giảm KNLĐ",
+          "component_code": "TP.G12.98.111",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "3.1. Hồ sơ đề nghị hưởng chế độ tử tuất đối với thân nhân của người đang tham gia BHXH tự nguyện hoặc đang bảo lưu thời gian đóng BHXH tự nguyện gồm:",
+          "position": 5,
+          "name": "Trường hợp thanh toán phí GĐYK thì có thêm hóa đơn, chứng từ thu phí giám định; bảng kê các nội dung giám định của cơ sở thực hiện GĐYK",
+          "component_code": "TP.G12.98.139",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "3.1. Hồ sơ đề nghị hưởng chế độ tử tuất đối với thân nhân của người đang tham gia BHXH tự nguyện hoặc đang bảo lưu thời gian đóng BHXH tự nguyện gồm:",
+          "position": 6,
+          "name": "Trường hợp người tham gia BHXH tự nguyện mà trước đó tham gia BHXH bắt buộc có thời gian phục vụ trong quân đội trước ngày 01/01/2007 tại địa bàn có hưởng phụ cấp khu vực mà sổ BHXH không thể hiện đầy đủ thông tin làm căn cứ tính phụ cấp khu vực thì có thêm Bản khai cá nhân về thời gian, địa bàn phục vụ trong quân đội có hưởng phụ cấp khu vực theo mẫu số 04C-HBQP ban hành kèm theo Thông tư số 136/2020/TT-BQP",
+          "component_code": "TP.G12.98.114",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "01a02e90-9c45-7299-a536-834d242f4b07",
+              "fileName": "04C-HBQP.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/01a02e90-9c45-7299-a536-834d242f4b07/04C-HBQP.docx"
+            }
+          ]
+        },
+        {
+          "section": "3.2. Hồ sơ đề nghị hưởng chế độ tử tuất đối với thân nhân của người đang hưởng hoặc đang tạm dừng hưởng lương hưu gồm:",
+          "position": 1,
+          "name": "Tờ khai của thân nhân/tổ chức, cá nhân lo mai táng theo Mẫu số 09-HSB",
+          "component_code": "TP.G12.98.109",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "01a02e90-010a-7614-972d-7e4763f1ab66",
+              "fileName": "09-HSB.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/01a02e90-010a-7614-972d-7e4763f1ab66/09-HSB.docx"
+            }
+          ]
+        },
+        {
+          "section": "3.2. Hồ sơ đề nghị hưởng chế độ tử tuất đối với thân nhân của người đang hưởng hoặc đang tạm dừng hưởng lương hưu gồm:",
+          "position": 2,
+          "name": "Bản sao giấy chứng tử hoặc trích lục khai tử hoặc bản sao giấy báo tử hoặc bản sao quyết định của Tòa án tuyên bố là đã chết",
+          "component_code": "TP.G12.98.108",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "3.2. Hồ sơ đề nghị hưởng chế độ tử tuất đối với thân nhân của người đang hưởng hoặc đang tạm dừng hưởng lương hưu gồm:",
+          "position": 3,
+          "name": "Biên bản giám định mức suy giảm KNLĐ của Hội đồng GĐYK hoặc bản sao giấy xác nhận mức độ khuyết tật đặc biệt nặng có thể hiện kết luận của Hội đồng GĐYK ghi rõ tỷ lệ phần trăm suy giảm KNLĐ từ 81% trở lên đối với thân nhân bị suy giảm KNLĐ",
+          "component_code": "TP.G12.98.111",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "3.2. Hồ sơ đề nghị hưởng chế độ tử tuất đối với thân nhân của người đang hưởng hoặc đang tạm dừng hưởng lương hưu gồm:",
+          "position": 4,
+          "name": "Trường hợp thanh toán phí GĐYK thì có thêm hóa đơn, chứng từ thu phí giám định kèm theo bản chính bảng kê các nội dung giám định của cơ sở thực hiện GĐYK",
+          "component_code": "TP.G12.98.101",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "4. Hồ sơ đề nghị hưởng trợ cấp mai táng đối với trường hợp chỉ hưởng trợ cấp mai táng bao gồm:",
+          "position": 1,
+          "name": "Sổ BHXH, trừ trường hợp người đang hưởng lương hưu, trợ cấp hằng tháng",
+          "component_code": "TP.G12.98.113",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "4. Hồ sơ đề nghị hưởng trợ cấp mai táng đối với trường hợp chỉ hưởng trợ cấp mai táng bao gồm:",
+          "position": 2,
+          "name": "Tờ khai của thân nhân/tổ chức, cá nhân lo mai táng theo Mẫu số 09-HSB",
+          "component_code": "TP.G12.98.109",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "01a02e90-010a-7614-972d-7e4763f1ab66",
+              "fileName": "09-HSB.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/01a02e90-010a-7614-972d-7e4763f1ab66/09-HSB.docx"
+            }
+          ]
+        },
+        {
+          "section": "4. Hồ sơ đề nghị hưởng trợ cấp mai táng đối với trường hợp chỉ hưởng trợ cấp mai táng bao gồm:",
+          "position": 3,
+          "name": "Bản sao giấy chứng tử hoặc trích lục khai tử hoặc bản sao giấy báo tử hoặc bản sao quyết định của Tòa án tuyên bố là đã chết",
+          "component_code": "TP.G12.98.108",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "5. Hồ sơ đề nghị hưởng chế độ tử tuất đối với thân nhân của NLĐ là công dân nước ngoài Thủ tục hồ sơ như đối với công dân Việt Nam chết. Trường hợp NLĐ là công dân nước ngoài làm việc tại Việt Nam chết tại nước ngoài thì hồ sơ khai tử/chứng tử được thay thế bằng bản dịch tiếng Việt được công chứng hoặc chứng thực theo quy định của pháp luật về công chứng, chứng thực các giấy tờ do cơ quan có thẩm quyền ở nước ngoài cấp thể hiện thông tin về NLĐ là công dân nước ngoài chết (họ và tên, thời điểm chết, nơi chết).",
+          "position": 1,
+          "name": "bản dịch tiếng Việt được công chứng hoặc chứng thực theo quy định của pháp luật về công chứng, chứng thực các giấy tờ do cơ quan có thẩm quyền ở nước ngoài cấp thể hiện thông tin về NLĐ là công dân nước ngoài chết (họ và tên, thời điểm chết, nơi chết)",
+          "component_code": "TP.G12.98.115",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "6. Trường hợp NLĐ tham gia bảo hiểm TNLĐ theo hình thức tự nguyện chết do TNLĐ:",
+          "position": 1,
+          "name": "Bản sao giấy chứng tử, trích lục khai tử hoặc giấy báo tử hoặc bản sao quyết định tuyên bố là đã chết của Tòa án đã có hiệu lực pháp luật, đối với trường hợp chết do TNLĐ",
+          "component_code": "TP.G12.98.116",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "6. Trường hợp NLĐ tham gia bảo hiểm TNLĐ theo hình thức tự nguyện chết do TNLĐ:",
+          "position": 2,
+          "name": "Biên bản điều tra TNLĐ",
+          "component_code": "TP.G12.98.117",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "6. Trường hợp NLĐ tham gia bảo hiểm TNLĐ theo hình thức tự nguyện chết do TNLĐ:",
+          "position": 3,
+          "name": "Đơn đề nghị giải quyết chế độ TNLĐ của thân nhân NLĐ bị chết do TNLĐ theo Mẫu quy định tại Phụ lục VII ban hành kèm theo Nghị định số 143/2024/NĐ-CP",
+          "component_code": "TP.G12.98.118",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "01a02e91-5c4e-760f-9127-1ed526236afa",
+              "fileName": "PHỤ LỤC VII.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/01a02e91-5c4e-760f-9127-1ed526236afa/PHỤ LỤC VII.docx"
+            }
+          ]
+        },
+        {
+          "section": "7. Trợ cấp mai táng và trợ cấp một lần đối với thân nhân người đang hưởng trợ cấp hằng tháng theo Điều 23 Luật BHXH chết trước khi hết thời hạn hưởng trợ cấp",
+          "position": 1,
+          "name": "Bản sao giấy chứng tử hoặc trích lục khai tử hoặc bản sao giấy báo tử hoặc bản sao quyết định của Tòa án tuyên bố là đã chết",
+          "component_code": "TP.G12.98.108",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "7. Trợ cấp mai táng và trợ cấp một lần đối với thân nhân người đang hưởng trợ cấp hằng tháng theo Điều 23 Luật BHXH chết trước khi hết thời hạn hưởng trợ cấp",
+          "position": 2,
+          "name": "Tờ khai của thân nhân/tổ chức, cá nhân lo mai táng theo Mẫu số 09-HSB",
+          "component_code": "TP.G12.98.109",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "01a02e90-010a-7614-972d-7e4763f1ab66",
+              "fileName": "09-HSB.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/01a02e90-010a-7614-972d-7e4763f1ab66/09-HSB.docx"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c82-739b-8b99-d6be7cc06c52",
+          "name": "Tiền trợ cấp",
+          "code": "KQ.G12.001151"
+        },
+        {
+          "id": "019d2bb2-1c82-739b-8b99-f73bee8f8be9",
+          "name": "Quyết định về việc hưởng trợ cấp mai táng (đối với thân nhân người đang tham gia hoặc bảo lưu thời gian đóng BHXH bị chết) 08A- HSB",
+          "code": "KQ.G12.001118"
+        },
+        {
+          "id": "019d2bb2-1c82-739b-8b9a-050570a2295c",
+          "name": "Quyết định về việc hưởng chế độ tử tuất một lần (Mẫu số 08E-HSB) áp dụng đối với thân nhân người đang hưởng lương hưu, trợ cấp BHXH hằng tháng chết",
+          "code": "KQ.G12.001283"
+        },
+        {
+          "id": "019d2bb2-1c82-739b-8b9a-0ffae81c03cd",
+          "name": "Thông báo về việc chi trả lương hưu, trợ cấp BHXH đối với trường hợp di chuyển nơi nhận chế độ BHXH (Mẫu số 23-HSB)",
+          "code": "KQ.G12.001285"
+        },
+        {
+          "id": "019d2bb2-1c82-739b-8b99-f846ab4d24b0",
+          "name": "Quyết định về việc hưởng trợ cấp mai táng (đối với thân nhân người đang hưởng lương hưu, trợ cấp BHXH hàng tháng, chết) 08B- HSB",
+          "code": "KQ.G12.001121"
+        },
+        {
+          "id": "019d2bb2-1c82-739b-8b99-ffba67726dbf",
+          "name": "Quyết định về việc hưởng chế độ tử tuất hằng tháng (Mẫu số 08C-HSB)",
+          "code": "KQ.G12.001281"
+        },
+        {
+          "id": "019d2bb2-1c82-739b-8b9a-03e7c07c2c9b",
+          "name": "Quyết định về việc hưởng chế độ tử tuất một lần (Mẫu số 08D-HSB) áp dụng đối với thân nhân người đang tham gia hoặc bảo lưu thời gian đóng BHXH bị chết",
+          "code": "KQ.G12.001282"
+        },
+        {
+          "id": "019d2bb2-1c82-739b-8b9a-08eabd75a4a0",
+          "name": "Bản quá trình đóng BHXH đối với trường hợp người đang tham gia BHXH hoặc bảo lưu thời gian đóng BHXH bị chết (Mẫu số 04-HSB)",
+          "code": "KQ.G12.001286"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7d-7398-be46-85fda49d119e",
+          "name": "QUY ĐỊNH CHI TIẾT MỘT SỐ ĐIỀU CỦA LUẬT BẢO HIỂM XÃ HỘI VỀ BẢO HIỂM XÃ HỘI BẮT BUỘC",
+          "code": "12/2025/TT-BNV"
+        },
+        {
+          "id": "019d2bb3-5d7c-71ab-9f07-f538ffa2f69d",
+          "name": "BAN HÀNH QUY TRÌNH GIẢI QUYẾT HƯỞNG CÁC CHẾ ĐỘ BẢO HIỂM XÃ HỘI, CHI TRẢ CÁC CHẾ ĐỘ BẢO HIỂM XÃ HỘI, BẢO HIỂM THẤT NGHIỆP",
+          "code": "2222/QĐ-BHXH"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afeb-e5ff16f715c7",
+          "name": "Quy định chi tiết và hướng dẫn thi hành một số điều của Luật Bảo hiểm xã hội về bảo hiểm xã hội bắt buộc",
+          "code": "158/2025/NĐ-CP"
+        },
+        {
+          "id": "019e72e9-3b2a-77b9-9c29-023d914eb3dc",
+          "name": "Quy định về giao dịch điện tử trong lĩnh vực bảo hiểm xã hội và Cơ sở dữ liệu quốc gia về bảo hiểm",
+          "code": "164/2025/NĐ-CP "
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afeb-f6d50e5e6371",
+          "name": "Quy định chi tiết và hướng dẫn thi hành một số điều của Luật Bảo hiểm xã hội về bảo hiểm xã hội tự nguyện",
+          "code": "159/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d87-7195-a440-f511123122ee",
+          "name": "Luật Bảo hiểm xã hội",
+          "code": "41/2024/QH15"
+        },
+        {
+          "id": "019e72eb-488d-760e-abb8-0a3bb6585c78",
+          "name": "SỬA ĐỔI, BỔ SUNG MỘT SỐ ĐIỀU CỦA QUY TRÌNH GIẢI QUYẾT HƯỞNG CÁC CHẾ ĐỘ BẢO HIỂM XÃ HỘI, CHI TRẢ CÁC CHẾ ĐỘ BẢO HIỂM XÃ HỘI, BẢO HIỂM THẤT NGHIỆP BAN HÀNH KÈM THEO QUYẾT ĐỊNH SỐ 2222/QĐ-BHXH NGÀY 29/7/2025 CỦA GIÁM ĐỐC BẢO HIỂM XÃ HỘI VIỆT NAM",
+          "code": "313/QĐ-BHXH "
+        },
+        {
+          "id": "019d2bb3-5d86-7760-a63f-86fb70a72ee2",
+          "name": "Thông tư 136/2020/TT-BQP",
+          "code": "136/2020/TT-BQP"
+        },
+        {
+          "id": "019d2bb3-5d87-7195-a446-b9df772557c6",
+          "name": "Nghị định số 88/2020/NĐ-CP ngày 28/7/2020 của Chính phủ quy định chi tiết một số điều của Luật An toàn, vệ sinh lao động về bảo hiểm tai nạn lao động, bệnh nghề nghiệp bắt buộc",
+          "code": "88/2020/NĐ-CP"
+        },
+        {
+          "id": "01a02e88-a09f-7786-8fb0-385519f79875",
+          "name": "Quy định chi tiết thi hành một số điều của Luật An toàn, vệ sinh lao động",
+          "code": "39/2016/NĐ-CP"
+        },
+        {
+          "id": "019d6d49-de8f-7682-83b1-0b8c61d58c2d",
+          "name": "Luật An toàn, vệ sinh lao động ",
+          "code": "84/2015/QH13 "
+        }
+      ]
+    }
+  ]
+}

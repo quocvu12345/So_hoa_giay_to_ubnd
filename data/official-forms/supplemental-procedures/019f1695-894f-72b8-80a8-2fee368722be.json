@@ -1,0 +1,65 @@
+{
+  "id": "dvc-019f1695-894f-72b8-80a8-2fee368722be",
+  "procedure_code": "1.115377",
+  "name": "Thông báo phát triển nguồn điện mặt trời mái nhà tự sản xuất, tự tiêu thụ đấu nối với hệ thống điện quốc gia tại cấp điện áp hạ áp",
+  "domain": "Điện lực",
+  "managing_agency": "Bộ Công thương",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.484626+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019f1695-894f-72b8-80a8-2fee368722be",
+      "code": "1.115377",
+      "name": "Thông báo phát triển nguồn điện mặt trời mái nhà tự sản xuất, tự tiêu thụ đấu nối với hệ thống điện quốc gia tại cấp điện áp hạ áp",
+      "state": "ACTIVE",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1784185368666,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019f1695-894f-72b8-80a8-2fee368722be",
+      "raw_path": "evidence/dvc/details/019f1695-894f-72b8-80a8-2fee368722be.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Thông báo theo Mẫu số 01 tại Phụ lục III kèm theo Nghị định số 243/2026/NĐ-CP.",
+          "component_code": "DL-243-001",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019f1693-cee5-761e-b3fc-c106bfa15f61",
+              "fileName": "Mẫu 01.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f1693-cee5-761e-b3fc-c106bfa15f61/Mẫu 01.docx"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c4b-710f-bf4c-9e2a440d04c7",
+          "name": "không quy định",
+          "code": "KQ.G02.00031"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019f1695-2ebe-754f-a8e5-1fd2704da6db",
+          "name": "Thông tư số 62/2026/TT-BCA ngày 18/5/2026 quy định về phân cấp, cắt giảm, đơn giản hóa thủ tục hành chính thuộc phạm vi quản lý của Bộ Công an",
+          "code": "62/2026/TT-BCA "
+        },
+        {
+          "id": "019d2bb3-5d7f-719e-b46f-41a8fbdcc551",
+          "name": "Nghị định Chính phủ",
+          "code": "58/2025/NĐ-CP"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "id": "dvc-019d2bf7-966e-74ce-82ae-4e967e74eae8",
+  "procedure_code": "1.013442",
+  "name": "Khai báo vũ khí thô sơ là hiện vật trưng bày, triển lãm, làm đồ gia bảo",
+  "domain": "Quản lý vũ khí, vật liệu nổ, công cụ hỗ trợ và pháo",
+  "managing_agency": "Bộ Công an",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:18.034762+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bf7-966e-74ce-82ae-4e967e74eae8",
+      "code": "1.013442",
+      "name": "Khai báo vũ khí thô sơ là hiện vật trưng bày, triển lãm, làm đồ gia bảo",
+      "state": "ACTIVE",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1777390231663,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf7-966e-74ce-82ae-4e967e74eae8",
+      "raw_path": "evidence/dvc/details/019d2bf7-966e-74ce-82ae-4e967e74eae8.json",
+      "components": [
+        {
+          "section": "Theo quy định tại Điều 31 Luật Quản lý, sử dụng vũ khí, vật liệu nổ và công cụ hỗ trợ (Luật số 42/2024/QH15 ngày 29/6/2024), cụ thể: ",
+          "position": 1,
+          "name": "Tờ khai, trong đó ghi rõ họ tên, số định danh cá nhân hoặc số hộ chiếu của người đề nghị, lý do khai báo, số lượng, chủng loại, nhãn hiệu, số hiệu, ký hiệu vũ khí thô sơ (nếu có);",
+          "component_code": "000.00.00.G01-KQ003113",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c36-71b8-ad26-de89addbb954",
+          "name": "Thông báo xác nhận khai báo vũ khí thô sơ",
+          "code": "KQ.G01.000036"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7e-72d1-afe4-6a6a8fc5e38d",
+          "name": "Thông tư quy định chi tiết một số điều của Luật Quản lý, sử dụng vũ khí, vật liệu nổ và công cụ hỗ trợ",
+          "code": "75/2024/TT-BCA"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b673-15c26eb041eb",
+          "name": "Luật Quản lý, sử dụng vũ khí, vật liệu nổ và công cụ hỗ trợ",
+          "code": "42/2024/QH15"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afe4-6cc34750e38f",
+          "name": "Thông tư quy định về biểu mẫu và trình tự cấp giấy phép, thông báo đăng ký khai báo, chứng nhận, chứng chỉ về vũ khí, vật liệu nổ, tiền chất thuốc nổ, công cụ hỗ trợ; thông báo xác nhận khai báo vũ khí thô sơ",
+          "code": "77/2024/TT-BCA"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "database": "hoso_dev",
+  "schema": "hoso",
+  "checked_at": "2026-11-12T06:36:32.151394+00:00",
+  "dataset": "citizen-forms-v1",
+  "sample_pdf_count": 12,
+  "sample_page_count": 38,
+  "original_public_files": 8,
+  "database_file_rows": 18,
+  "demo_dossiers": 3,
+  "seed": "database/007_seed_citizen_samples_optional.sql",
+  "validation": [
+    "18 Python tests passed",
+    "Fresh PostgreSQL install and idempotent citizen seed passed",
+    "All 18 SQL file paths and SHA-256 verified",
+    "Browser sample filters and editable citizen popup passed"
+  ],
+  "note": "PostgreSQL stores sample metadata and file links; UI filing still uses local JSON/localStorage."
+}

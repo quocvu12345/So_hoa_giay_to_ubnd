@@ -1,0 +1,80 @@
+{
+  "id": "dvc-019d2bfc-359a-716e-a586-8f48efc0eb74",
+  "procedure_code": "1.007740",
+  "name": "Thủ tục hải quan đối với hàng hoá xuất khẩu, nhập khẩu chuyển cửa khẩu thực hiện thủ tục theo hình thức vận chuyển độc lập",
+  "domain": "Hải quan",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.954048+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfc-359a-716e-a586-8f48efc0eb74",
+      "code": "1.007740",
+      "name": "Thủ tục hải quan đối với hàng hoá xuất khẩu, nhập khẩu chuyển cửa khẩu thực hiện thủ tục theo hình thức vận chuyển độc lập",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1775639774124,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-359a-716e-a586-8f48efc0eb74",
+      "raw_path": "evidence/dvc/details/019d2bfc-359a-716e-a586-8f48efc0eb74.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "+ Tờ khai vận chuyển độc lập theo các chỉ tiêu thông tin quy định tại mục 6 Phụ lục II ban hành kèm Thông tư 38/2015/TT-BTC;",
+          "component_code": "000.00.00.G12-KQ8445",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "+ Giấy phép quá cảnh đối với trường hợp hàng quá cảnh phải có giấy phép: 01 bản chính.",
+          "component_code": "000.00.00.G12-KQ8447",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 3,
+          "name": "+ Vận tải đơn, trừ trường hợp hàng hóa vận chuyển qua biên giới đường bộ không có vận tải đơn: 01 bản chụp;",
+          "component_code": "000.00.00.G12-KQ8446",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c73-70ac-aa17-693644ec509a",
+          "name": "Tờ khai hải quan ( Tờ khai vận chuyển độc lập) được phê duyệt",
+          "code": "KQ.G12.001260"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7d-7398-be4d-ff62cdf67da5",
+          "name": "Luật 54/2014/QH13",
+          "code": "54/2014/QH13"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afe7-9c25863596db",
+          "name": "Nghị định 08/2015/NĐ-CP",
+          "code": "08/2015/NĐ-CP"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,133 @@
+{
+  "ordinal": "272",
+  "managing_agency": "Sở Tư pháp",
+  "procedure_code": "2.000424",
+  "name": "Thủ tục thực hiện hỗ trợ khi hòa giải viên gặp tai nạn hoặc rủi ro ảnh hưởng đến sức khỏe, tính mạng trong khi thực hiện hoạt động hòa giải",
+  "domain": "Hòa giải ở cơ sở",
+  "ministry_decision": "3753/QĐ-BTP ngày 30/12/2025",
+  "hanoi_decision": "216/QĐ-TTPVHCC ngày 13/02/2026",
+  "workflow_decision": "309/QĐ-TTPVHCC ngày 13/3/2026",
+  "fees": "Không quy định",
+  "execution_level": "Cấp xã",
+  "competent_authority": "UBND cấp xã",
+  "delegation_decision": "",
+  "delegation_expiry": "",
+  "receiving_location": "Điểm hỗ trợ DVC số",
+  "id": "hn87-272",
+  "source_page": 11,
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "inventory_date": "2026-04-27",
+  "checked_at": "2026-11-12T22:24:41.810149+07:00",
+  "details": [
+    {
+      "id": "019d2bfd-862f-7378-807f-97f4f7531da7",
+      "code": "2.000424",
+      "name": "Thủ tục thực hiện hỗ trợ khi hòa giải viên gặp tai nạn hoặc rủi ro ảnh hưởng đến sức khỏe, tính mạng trong khi thực hiện hoạt động hòa giải",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1776762453412,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfd-862f-7378-807f-97f4f7531da7",
+      "raw_path": "evidence/dvc/details/019d2bfd-862f-7378-807f-97f4f7531da7.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Bản chính hoặc bản sao có chứng thực hoặc bản sao kèm theo bản chính để đối chiếu hoặc bản sao điện tử Giấy chứng tử trong trường hợp hòa giải viên bị thiệt hại về tính mạng (Việc nộp bản chính hoặc bản sao có chứng thực hoặc bản sao điện tử Giấy chứng tử chỉ thực hiện trong trường hợp cơ quan tiếp nhận không thể khai thác được thông tin trong Cơ sở dữ liệu hộ tịch điện tử hoặc thông tin khai thác được không đầy đủ, không chính xác)",
+          "component_code": "000.00.00.G15-KQ004959",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Bản chính hoặc bản sao có chứng thực hoặc bản sao kèm theo bản chính để đối chiếu hoặc bản sao điện tử Biên bản xác nhận tình trạng của hòa giải viên bị tai nạn có xác nhận của Ủy ban nhân dân cấp xã nơi xảy ra tai nạn hoặc cơ quan công an nơi xảy ra tai nạn",
+          "component_code": "000.00.00.G15-KQ004448",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 3,
+          "name": "Bản chính hoặc bản sao có chứng thực hoặc bản sao kèm theo bản chính để đối chiếu hoặc bản sao điện tử Giấy ra viện, hóa đơn thanh toán chi phí khám bệnh, chữa bệnh",
+          "component_code": "000.00.00.G15-KQ004449",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 4,
+          "name": "Bản chính hoặc bản sao có chứng thực hoặc bản sao kèm theo bản chính để đối chiếu hoặc bản sao điện tử văn bản, giấy tờ hợp lệ về thu nhập thực tế theo tiền lương, tiền công hằng tháng của người bị tai nạn có xác nhận của tổ chức hoặc cá nhân sử dụng lao động để cơ quan nhà nước có thẩm quyền xác định thu nhập thực tế bị mất hoặc giảm sút, bao gồm: Hợp đồng lao động, quyết định nâng lương của tổ chức hoặc cá nhân sử dụng lao động hoặc bản kê có thu nhập thực tế của hòa giải viên bị tai nạn và các giấy tờ chứng minh thu nhập thực tế hợp pháp khác (nếu có)",
+          "component_code": "000.00.00.G15-KQ004450",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 5,
+          "name": "Giấy đề nghị hỗ trợ của hòa giải viên hoặc gia đình hòa giải viên trong trường hợp hòa giải viên bị thiệt hại về tính mạng có xác nhận của tổ trưởng tổ hòa giải hoặc Trưởng ban công tác Mặt trận trong trường hợp hòa giải viên bị thiệt hại là tổ trưởng tổ hòa giải. Giấy đề nghị hỗ trợ phải ghi rõ họ tên, địa chỉ của người yêu cầu hỗ trợ; lý do yêu cầu hỗ trợ",
+          "component_code": "000.00.00.G15-KQ0566",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c78-7725-a750-096bcafc4de1",
+          "name": "Quyết định hỗ trợ hòa giải viên gặp tai nạn hoặc rủi ro ảnh hưởng đến sức khỏe, tính mạng trong khi thực hiện hoạt động hòa giải",
+          "code": "KQ.G15.000055"
+        },
+        {
+          "id": "019d2bb2-1c79-762e-8b2a-681bf31a53b9",
+          "name": "Văn bản trả lời trong trường hợp không hỗ trợ hòa giải viên gặp tai nạn hoặc rủi ro ảnh hưởng đến sức khỏe, tính mạng trong khi thực hiện hoạt động hòa giải",
+          "code": "KQ.G15.000344"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7e-72d1-afe9-9d8e94b33af1",
+          "name": "Nghị định số 120/2025/NĐ-CP ngày 11/6/2025 của Chính phủ quy định về phân định thẩm quyền của chính quyền địa phương 02 cấp trong lĩnh vực quản lý nhà nước của Bộ Tư pháp.",
+          "code": "120/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7f-719e-b470-22af3c5ee091",
+          "name": "Nghị quyết số 66.7/2025/NQ-CP của Chính phủ: Quy định cắt giảm, đơn giản hóa thủ tục hành chính dựa trên dữ liệu",
+          "code": "66.7/2025/NQ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afe5-0c58fd6afafe",
+          "name": "Thông tư số 09/2025/TT-BTP ngày 16/6/2025 của Bộ trưởng Bộ Tư pháp hướng dẫn chức năng, nhiệm vụ, quyền hạn của Sở Tư pháp thuộc Ủy ban nhân dân tỉnh, thành phố trực thuộc Trung ương và chức năng, nhiệm vụ, quyền hạn của Văn phòng Hội đồng nhân dân và Ủy ban nhân dân thuộc Ủy ban nhân dân xã, phường, đặc khu trong lĩnh vực tư pháp",
+          "code": "09/2025/TT-BTP"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afeb-6f0a7fea2158",
+          "name": "quy định chi tiết một số điều và biện pháp thi hành Luật Hòa giải ở cơ sở",
+          "code": "15/2014/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b670-f33d90ef2e01",
+          "name": "Luật Hòa giải ở cơ sở năm 2013",
+          "code": "35/2013/QH13"
+        }
+      ]
+    }
+  ],
+  "lookup_status": "retrieved",
+  "currency_status": "snapshot_requires_later_amendment_check",
+  "errors": []
+}

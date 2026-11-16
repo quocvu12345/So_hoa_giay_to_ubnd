@@ -1,0 +1,115 @@
+{
+  "id": "hn87-361",
+  "ordinal": "361",
+  "procedure_code": "1.013232",
+  "name": "Cấp giấy phép di dời đối với công trình cấp cấp III, cấp IV (công trình Không theo tuyến/Theo tuyến trong đô thị/Tín ngưỡng, tôn giáo/Tượng đài, tranh hoành tráng/Theo giai đoạn cho công trình không theo tuyến/Theo giai đoạn cho công trình theo tuyến trong đô thị/Dự án) và nhà ở riêng lẻ.",
+  "domain": "Hoạt động xây dựng",
+  "department_id": "ktdt",
+  "department": "Phòng Kinh tế, Hạ tầng và Đô thị",
+  "authority_as_published": "UBND cấp xã",
+  "execution_level_as_published": "Cấp xã",
+  "receiving_location_as_published": "Điểm hỗ trợ DVC số",
+  "inventory_date": "2026-04-27",
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "source_urls": [
+    "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfe-908d-726f-a05f-7026ac241c2d"
+  ],
+  "current_dvc_match": true,
+  "lifecycle": null,
+  "scope": "hanoi_commune_notice_2026_04_27",
+  "scope_note": "Mốc kiểm kê cấp xã Hà Nội; áp dụng từng thủ tục tại Từ Liêm còn phải theo thẩm quyền/ủy quyền hiện hành.",
+  "status": "has_fillable_templates",
+  "components": [
+    {
+      "id": "hn87-361-c001",
+      "code": "TP-G17.000230",
+      "name": "Đơn đề nghị cấp giấy phép di dời công trình theo Mẫu số 1 Phụ lục số II Nghị định số 217/2026/NĐ-CP ngày 19/6/2026 của Chính phủ",
+      "section": "",
+      "role": "applicant_form",
+      "scenario_status": "selected_for_test",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfe-908d-726f-a05f-7026ac241c2d",
+      "source_detail_id": "019d2bfe-908d-726f-a05f-7026ac241c2d",
+      "embedded_other_requirements": false,
+      "template_candidates": [
+        "template-4c70b0b53d4df43f"
+      ],
+      "template_selection_method": "first_matching_source_attachment",
+      "selected_template_id": "template-4c70b0b53d4df43f",
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-361-c002",
+      "code": "TP-G17.000231",
+      "name": "Các tài liệu quy định tại khoản 3 Điều 61 bao gồm:  + Bản sao giấy tờ chứng minh quyền sử dụng đất nơi công trình sẽ di dời đến và giấy tờ hợp pháp về sở hữu công trình theo quy định của pháp luật. Trường hợp Giấy chứng nhận quyền sử dụng đất đã có trong Cơ sở dữ liệu quốc gia về đất đai thì các thông tin này được thay thế bằng dữ liệu khi Cơ sở dữ liệu quốc gia về đất đai được vận hành. + Bản vẽ hoàn công công trình (nếu có) hoặc bản vẽ thiết kế mô tả thực trạng công trình được di dời, gồm mặt bằng, mặt cắt móng và bản vẽ kết cấu chịu lực chính; bản vẽ tổng mặt bằng địa điểm công trình sẽ được di dời tới; bản vẽ mặt bằng, mặt cắt móng tại địa điểm công trình sẽ di dời đến. + Báo cáo kết quả khảo sát đánh giá chất lượng hiện trạng của công trình do tổ chức, cá nhân có đủ điều kiện năng lực thực hiện.  + Phương án di dời do tổ chức, cá nhân có đủ điều kiện năng lực thực hiện gồm:  Phần thuyết minh về hiện trạng công trình và khu vực công trình sẽ được di dời đến; giải pháp di dời, phương án bố trí sử dụng phương tiện, thiết bị, nhân lực; giải pháp bảo đảm an toàn cho công trình, người, máy móc, thiết bị và công trình lân cận; bảo đảm vệ sinh môi trường; tiến độ di dời; tổ chức, cá nhân thực hiện di dời công trình; phần bản vẽ biện pháp thi công di dời công trình.",
+      "section": "",
+      "role": "supporting_submit",
+      "scenario_status": "conditional_needs_review",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfe-908d-726f-a05f-7026ac241c2d",
+      "source_detail_id": "019d2bfe-908d-726f-a05f-7026ac241c2d",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    }
+  ],
+  "service_cases": [
+    {
+      "id": "019f1b4a-4fa0-75ca-abee-a597e70a167d",
+      "code": "1.013232.01",
+      "name": "Cấp giấy phép di dời đối với công trình cấp III, cấp IV (Công trình không theo tuyến/Theo tuyến trong đô thị/Tín ngưỡng, tôn giáo/Tượng đài, tranh hoành tráng/Theo giai đoạn cho công trình không theo tuyến/Theo giai đoạn cho công trình theo tuyến trong đô thị/Dự án) và nhà ở riêng lẻ",
+      "source_processing_time": {
+        "qty": 20,
+        "type": "DAY"
+      },
+      "has_case_specific_components": false
+    },
+    {
+      "id": "01a00e79-c494-775c-984f-932f4bc450e8",
+      "code": "1.013232.01",
+      "name": "Cấp giấy phép di dời đối với công trình cấp III, cấp IV (Công trình không theo tuyến/Theo tuyến trong đô thị/Tín ngưỡng, tôn giáo/Tượng đài, tranh hoành tráng/Theo giai đoạn cho công trình không theo tuyến/Theo giai đoạn cho công trình theo tuyến trong đô thị/Dự án) và nhà ở riêng lẻ",
+      "source_processing_time": {
+        "qty": 20,
+        "type": "DAY"
+      },
+      "has_case_specific_components": false
+    },
+    {
+      "id": "019db8a7-59ca-7484-9a0e-9bceb12b1739",
+      "code": "1.013232.01",
+      "name": "Cấp giấy phép di dời đối với công trình cấp III, cấp IV (Công trình không theo tuyến/Theo tuyến trong đô thị/Tín ngưỡng, tôn giáo/Tượng đài, tranh hoành tráng/Theo giai đoạn cho công trình không theo tuyến/Theo giai đoạn cho công trình theo tuyến trong đô thị/Dự án) và nhà ở riêng lẻ",
+      "source_processing_time": {
+        "qty": 20,
+        "type": "DAY"
+      },
+      "has_case_specific_components": false
+    }
+  ],
+  "selected_template_ids": [
+    "template-4c70b0b53d4df43f"
+  ],
+  "source_component_groups": [
+    {
+      "name": "",
+      "component_count": 2,
+      "source_detail_id": "019d2bfe-908d-726f-a05f-7026ac241c2d"
+    }
+  ],
+  "conditional_component_groups": [],
+  "default_test_scenario": {
+    "channel": "direct",
+    "applicant_submits_self": true,
+    "authorized": false,
+    "special_case_flags": [],
+    "selected_conditional_group": null,
+    "case_selection_method": "ordinary_direct_submission",
+    "case_status": "scenario_for_testing_not_a_legal_eligibility_decision"
+  },
+  "requirement_note": "required_as_published được giữ nguyên; false không chứng minh giấy tờ luôn tùy chọn. Các nhóm executionCases có thể là mục giấy tờ/hướng dẫn, không phải các phương án loại trừ nhau."
+}

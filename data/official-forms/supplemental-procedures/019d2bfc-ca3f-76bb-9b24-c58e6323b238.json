@@ -1,0 +1,95 @@
+{
+  "id": "dvc-019d2bfc-ca3f-76bb-9b24-c58e6323b238",
+  "procedure_code": "1.013481",
+  "name": "Báo cáo mất, cháy, hỏng tem điện tử thuốc lá nhập khẩu hoặc tem điện tử rượu nhập khẩu",
+  "domain": "Hải quan",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.918623+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfc-ca3f-76bb-9b24-c58e6323b238",
+      "code": "1.013481",
+      "name": "Báo cáo mất, cháy, hỏng tem điện tử thuốc lá nhập khẩu hoặc tem điện tử rượu nhập khẩu",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1784779910430,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-ca3f-76bb-9b24-c58e6323b238",
+      "raw_path": "evidence/dvc/details/019d2bfc-ca3f-76bb-9b24-c58e6323b238.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Mẫu số 11/TEM Phụ lục VI kèm theo Thông tư số 93/2026/TT-BTC.",
+          "component_code": "000.00.00.G12-KQ013488",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019f8d0d-7f4d-769b-89af-98c678e10c28",
+              "fileName": "Mẫu số 11.TEM.doc",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f8d0d-7f4d-769b-89af-98c678e10c28/Mẫu số 11.TEM.doc"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c71-7574-afeb-2571b4298f6c",
+          "name": "Tem điện tử thuốc lá nhập khẩu, tem điện tử rượu nhập khẩu được bàn giao cho doanh nghiệp, tổ chức để dán lên sản phẩm",
+          "code": "KQ.G12.000597"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019f7eee-65ff-7190-97bb-0d978182d268",
+          "name": "Nghị định số 254/2026/NĐ-CP của Chính phủ: Quy định chi tiết một số điều và biện pháp để tổ chức, hướng dẫn thi hành Luật Quản lý thuế số 108/2025/QH15 về hóa đơn điện tử, chứng từ điện tử",
+          "code": "254/2026/NĐ-CP"
+        },
+        {
+          "id": "019e5e83-1282-771d-9014-49799413a4e5",
+          "name": "Luật số 108/2025/QH15 của Quốc hội: Luật Quản lý thuế",
+          "code": "108/2025/QH15"
+        },
+        {
+          "id": "019d2bb3-5d7f-719e-b473-90474578d5bd",
+          "name": "Về kinh doanh rượu",
+          "code": "Nghị định 105/2017/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b672-0af27f5afaf6",
+          "name": "Luật Giao dịch điện tử năm 2023",
+          "code": "20/2023/QH15"
+        },
+        {
+          "id": "019f8950-f814-75e9-9794-0f1fbb579324",
+          "name": "Thông tư số 93/2026/TT-BTC ngày 01/7/2026 của Bộ Tài chính quy định việc in, phát hành, quản lý và sử dụng tem điện tử rượu và tem điện tử thuốc lá",
+          "code": "93/2026/TT-BTC "
+        },
+        {
+          "id": "019f8961-befe-72a0-bfd4-d723439f074a",
+          "name": "Luật Chuyển đổi số số 148/2025/QH15",
+          "code": "148/2025/QH15"
+        },
+        {
+          "id": "019f8962-323c-72b9-8b93-9e34d4aeb1dc",
+          "name": "Luật An ninh mạng số 116/2025/QH15",
+          "code": "116/2025/QH15"
+        },
+        {
+          "id": "019d2bb3-5d7f-719e-b470-5059d2d50a11",
+          "name": "Quy định chi tiết một số điều và biện pháp thi hành Luật Phòng, chống tác hại của thuốc lá về kinh doanh thuốc lá",
+          "code": "67/2013/NĐ-CP"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,139 @@
+{
+  "ordinal": "94",
+  "managing_agency": "Sở Văn hóa thể thao",
+  "procedure_code": "1.004650",
+  "name": "Thủ tục tiếp nhận hồ sơ thông báo sản phẩm quảng cáo trên bảng quảng cáo, băng- rôn",
+  "domain": "Quảng cáo",
+  "ministry_decision": "190/QĐ-BVHTTDL",
+  "hanoi_decision": "217/QĐ-TTPVHCC ngày 13/2/2026",
+  "workflow_decision": "314/QĐ-TTPVHCC ngày 15/3/2026",
+  "fees": "Không quy định",
+  "execution_level": "Cấp Xã",
+  "competent_authority": "UBND cấp xã",
+  "delegation_decision": "93/QĐ-SVHTT ngày 07/2/2026",
+  "delegation_expiry": "31/12/2028",
+  "receiving_location": "Điểm hỗ trợ DVC số",
+  "source_page": 4,
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "inventory_date": "2026-04-27",
+  "checked_at": "2026-11-12T22:23:42.576460+07:00",
+  "details": [
+    {
+      "id": "019d2bfd-d4c8-725d-8498-130caf913cf2",
+      "code": "1.004650",
+      "name": "Thủ tục tiếp nhận hồ sơ thông báo sản phẩm quảng cáo trên bảng quảng cáo, băng-rôn",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": false,
+      "updated_at_source": 1794449531002,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfd-d4c8-725d-8498-130caf913cf2",
+      "raw_path": "evidence/dvc/details/019d2bfd-d4c8-725d-8498-130caf913cf2.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Bản phối cảnh vị trí đặt bảng quảng cáo;",
+          "component_code": "000.00.00.G16-KQ0765",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Bản sao văn bản về việc tổ chức sự kiện của đơn vị tổ chức trong trường hợp quảng cáo cho sự kiện, chính sách xã hội;",
+          "component_code": "000.00.00.G16-KQ0762",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 3,
+          "name": "Thông báo sản phẩm quảng cáo trên bảng quảng cáo, băng-rôn (Mẫu số 01 phụ lục III ban hành kèm theo Thông tư số13/2023/TT-BVHTTDL ngày 30/10/2023 của Bộ trưởng Bộ Văn hóa, Thể thao và Du lịch sửa đổi, bổ sung quy định liên quan đến giấy tờ công dân tại một số Thông tư do Bộ trưởng Bộ Văn hóa, Thể thao và Du lịch ban hành).",
+          "component_code": "000.00.00.G16-KQ001648",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 4,
+          "name": "Ma-két sản phẩm quảng cáo in mầu có chữ ký của người kinh doanh dịch vụ quảng cáo hoặc chữ ký của người quảng cáo trong trường hợp tự thực hiện quảng cáo. Trong trường hợp người kinh doanh dịch vụ quảng cáo, người quảng cáo là tổ chức thì phải có dấu của tổ chức;",
+          "component_code": "000.00.00.G16-KQ0763",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 5,
+          "name": "Bản sao giấy phép xây dựng công trình quảng cáo đối với loại bảng quảng cáo phải có giấy phép xây dựng theo quy định tại khoản 2 Điều 31 của Luật quảng cáo.",
+          "component_code": "000.00.00.G16-KQ0766",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 6,
+          "name": "Bản sao giấy tờ chứng minh sự hợp chuẩn, hợp quy của sản phẩm, hàng hoá, dịch vụ theo quy định của pháp luật hoặc giấy tờ chứng minh đủ điều kiện để quảng cáo theo quy định tại Điều 20 của Luật quảng cáo;",
+          "component_code": "000.00.00.G16-KQ0761",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 7,
+          "name": "Văn bản chứng minh quyền sở hữu hoặc quyền sử dụng bảng quảng cáo; quyền sở hữu hoặc quyền sử dụng địa điểm quảng cáo đối với băng-rôn;",
+          "component_code": "000.00.00.G16-KQ0764",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c79-762e-8b2d-71a7b14630fc",
+          "name": "Văn bản trả lời (nếu không đồng ý)",
+          "code": "KQ.G16.000416"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7e-72d1-afdf-ebf389dc59de",
+          "name": "Thông tư của Bộ trưởng Bộ VHTTDL SĐBS quy định đến các giấy tờ công dân",
+          "code": "13/2023/TT-BVHTTDL"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afe0-5d9ced9e681d",
+          "name": "NGHỊ ĐỊNH  QUY ĐỊNH CHI TIẾT MỘT SỐ ĐIỀU CỦA LUẬT QUẢNG CÁO",
+          "code": "342/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b671-c8c8fb56933d",
+          "name": "Luật 16/2012/QH13-Quảng cáo",
+          "code": "16/2012/QH13"
+        }
+      ]
+    }
+  ],
+  "lookup_status": "retrieved",
+  "currency_status": "snapshot_requires_later_amendment_check",
+  "errors": []
+}

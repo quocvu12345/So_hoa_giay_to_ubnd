@@ -1,0 +1,103 @@
+{
+  "ordinal": "330",
+  "managing_agency": "Sở Xây dựng",
+  "procedure_code": "1.000314",
+  "name": "Chấp thuận vị trí đấu nối tạm vào đường bộ đang khai thác",
+  "domain": "Đường bộ",
+  "ministry_decision": "871/QĐ-BXD ngày 19/6/2025",
+  "hanoi_decision": "1056/QĐ-TTPVHCC ngày11/7/2025",
+  "workflow_decision": "1104/QĐ-TTPVHCC ngày 25/7/2025",
+  "fees": "Không quy định",
+  "execution_level": "Cấp tỉnh, cấp xã",
+  "competent_authority": "Sở; UBND cấp xã",
+  "delegation_decision": "",
+  "delegation_expiry": "",
+  "receiving_location": "Điểm hỗ trợ DVC số; Chi nhánh TTPVHCC",
+  "id": "hn87-330",
+  "source_page": 13,
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "inventory_date": "2026-04-27",
+  "checked_at": "2026-11-12T22:24:53.111120+07:00",
+  "details": [
+    {
+      "id": "019d2bfe-0b6a-755c-859a-4ec09fbd16c7",
+      "code": "1.000314",
+      "name": "Chấp thuận vị trí đấu nối tạm vào đường bộ đang khai thác",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1783332936825,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfe-0b6a-755c-859a-4ec09fbd16c7",
+      "raw_path": "evidence/dvc/details/019d2bfe-0b6a-755c-859a-4ec09fbd16c7.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Bản chính hoặc bản sao có chứng thực Hồ sơ thiết kế bản vẽ thi công nút giao đấu nối tạm; phương án tổ chức giao thông của nút giao đấu nối tạm",
+          "component_code": "000.00.00.G04-KQ005102",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Bản chính hoặc biểu mẫu điện tử Văn bản đề nghị theo mẫu Mẫu số 03 Phụ lục VI Nghị định 241/2026/NĐ-CP",
+          "component_code": "TP-G17.000101",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019f282d-c4ea-748b-bb13-d66727471b5f",
+              "fileName": "Mẫu 03_PLVI NĐ241.2026.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f282d-c4ea-748b-bb13-d66727471b5f/Mẫu 03_PLVI NĐ241.2026.docx"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 3,
+          "name": "Quyết định phê duyệt dự án đầu tư",
+          "component_code": "TP-G17.000102",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019f2827-d2a1-7402-a03a-328b30d6c52a",
+          "name": "Văn bản chấp thuận vị trí nút giao đấu nối tạm vào đường bộ đang khai thác",
+          "code": "KQ-G17.000023"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7e-72d1-afea-f01696ee65ca",
+          "name": "Quy định về phân định thẩm quyền của chính quyền địa phương 02 cấp trong lĩnh vực quản lý nhà nước của Bộ Xây dựng",
+          "code": "140/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afec-3d554727c630",
+          "name": "Quy định chi tiết, hướng dẫn thi hành một số điều của Luật Đường bộ và Điều 77 Luật Trật tự, an toàn giao thông đường bộ.",
+          "code": "165/2024/NĐ-CP"
+        },
+        {
+          "id": "019f20dc-8b6d-76ee-9ae1-64fa47a8e47a",
+          "name": "Nghị định số 241/2026/NĐ-CP ngày 26 tháng 6 năm 2026 sửa đổi, bổ sung một số điều của Nghị định số 165/2024/NĐ-CP ngày 26 tháng 12 năm 2024 của Chính phủ quy định chi tiết, hướng dẫn thi hành một số điều của Luật Đường bộ và Điều 77 Luật Trật tự, an toàn giao thông đường bộ",
+          "code": "241/2026/NĐ-CP"
+        }
+      ]
+    }
+  ],
+  "lookup_status": "retrieved",
+  "currency_status": "snapshot_requires_later_amendment_check",
+  "errors": []
+}

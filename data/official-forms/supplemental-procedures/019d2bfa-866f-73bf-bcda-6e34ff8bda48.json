@@ -1,0 +1,126 @@
+{
+  "id": "dvc-019d2bfa-866f-73bf-bcda-6e34ff8bda48",
+  "procedure_code": "1.013965",
+  "name": "Sử dụng đất kết hợp đa mục đích, gia hạn phương án sử dụng đất kết hợp đa mục đích.",
+  "domain": "Đất đai",
+  "managing_agency": "Bộ Nông nghiệp và Môi trường",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:18.015416+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfa-866f-73bf-bcda-6e34ff8bda48",
+      "code": "1.013965",
+      "name": "Sử dụng đất kết hợp đa mục đích, gia hạn phương án sử dụng đất kết hợp đa mục đích.",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1776326616333,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfa-866f-73bf-bcda-6e34ff8bda48",
+      "raw_path": "evidence/dvc/details/019d2bfa-866f-73bf-bcda-6e34ff8bda48.json",
+      "components": [
+        {
+          "section": "a) Hồ sơ đề nghị phê duyệt phương án sử dụng đất kết hợp đa mục đích bao gồm:",
+          "position": 1,
+          "name": "Phương án sử dụng đất kết hợp",
+          "component_code": "000.00.00.G10-KQ006049",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "a) Hồ sơ đề nghị phê duyệt phương án sử dụng đất kết hợp đa mục đích bao gồm:",
+          "position": 2,
+          "name": "Giấy chứng nhận đã cấp hoặc một trong các loại giấy tờ về quyền sử dụng đất theo quy định của pháp luật (nếu có).",
+          "component_code": "000.00.00.G10-KQ006050",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "a) Hồ sơ đề nghị phê duyệt phương án sử dụng đất kết hợp đa mục đích bao gồm:",
+          "position": 3,
+          "name": "Văn bản đề nghị sử dụng đất kết hợp đa mục đích theo Mẫu số 13",
+          "component_code": "000.00.00.G10-KQ006048",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "b) Hồ sơ gia hạn phương án sử dụng đất kết hợp đa mục đích hồ sơ: ",
+          "position": 1,
+          "name": "Văn bản đề nghị gia hạn phương án sử dụng đất kết hợp.",
+          "component_code": "000.00.00.G10-KQ006051",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c6c-7279-86b7-6e482177c969",
+          "name": "Phương án sử dụng đất kết hợp đối với trường hợp phê duyệt lần đầu",
+          "code": "KQ.G10.000910"
+        },
+        {
+          "id": "019d2bb2-1c6c-7279-86b7-78fd68d8b971",
+          "name": "Văn bản trả lời đối với trường hợp không chấp thuận gia hạn phương án sử dụng đất kết hợp",
+          "code": "KQ.G10.000913"
+        },
+        {
+          "id": "019d2bb2-1c6c-7279-86b7-74aec183e7b3",
+          "name": "Phương án sử dụng đất kết hợp được gia hạn đối với trường hợp xin gia hạn",
+          "code": "KQ.G10.000912"
+        },
+        {
+          "id": "019d2bb2-1c6c-7279-86b7-73f75f4118f2",
+          "name": "Văn bản trả lời đối với trường hợp không chấp thuận phương án sử dụng đất kết hợp",
+          "code": "KQ.G10.000911"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d84-71c5-b673-29122897c8a3",
+          "name": "Luật số 43/2024/QH15 ngày 29/6/2024",
+          "code": "43/2024/QH15"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afe8-0a00a8be7fd7",
+          "name": "Nghị định 102/2024/NĐ-CP ngày 30/7/2024 của Chính phủ quy định chi tiết thi hành một số điều của Luật Đất đai.",
+          "code": "102/2024/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afe9-61a6469bc95c",
+          "name": "Thực hiện thủ tục hành chính theo cơ chế một cửa, một cửa liên thông tại Bộ phận Một cửa và cổng Dịch vụ công quốc gia",
+          "code": "118/2025/NĐ-C"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afeb-9ac6648a4b4f",
+          "name": "Quy định về phân định thẩm quyền của chính quyền địa phương 02 cấp, phân quyền, phân cấp trong lĩnh vực đất đai",
+          "code": "151/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d86-7760-a644-ce39f72a6124",
+          "name": "Sửa đổi, bổ sung một số điều của các nghị định  quy định chi tiết thi hành Luật Đất đai",
+          "code": "226/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b672-a3322a8748a6",
+          "name": "Luật Đất đai ngày 18/01/2024;",
+          "code": "31/2024/QH15"
+        }
+      ]
+    }
+  ]
+}

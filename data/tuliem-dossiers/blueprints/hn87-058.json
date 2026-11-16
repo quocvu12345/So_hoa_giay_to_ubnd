@@ -1,0 +1,95 @@
+{
+  "id": "hn87-058",
+  "ordinal": "58",
+  "procedure_code": "1.010827",
+  "name": "Di chuyển hồ sơ khi người hưởng trợ cấp ưu đãi thay đổi nơi thường trú (Đối với trường hợp Người có công di chuyển trong Thành phố)",
+  "domain": "Người có công",
+  "department_id": "vx",
+  "department": "Phòng Văn hóa - Xã hội",
+  "authority_as_published": "UBND cấp xã",
+  "execution_level_as_published": "Cấp xã",
+  "receiving_location_as_published": "Điểm hỗ trợ DVC số",
+  "inventory_date": "2026-04-27",
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "source_urls": [
+    "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-03d1-7738-83c0-e5b7b37f5bb0"
+  ],
+  "current_dvc_match": false,
+  "lifecycle": null,
+  "scope": "hanoi_commune_notice_2026_04_27",
+  "scope_note": "Mốc kiểm kê cấp xã Hà Nội; áp dụng từng thủ tục tại Từ Liêm còn phải theo thẩm quyền/ủy quyền hiện hành.",
+  "status": "has_fillable_templates",
+  "components": [
+    {
+      "id": "hn87-058-c001",
+      "code": "G09-KQ003210236",
+      "name": "- Đơn đề nghị theo Mẫu số 27 Phụ lục I Nghị định số 131/2021/NĐ-CP.",
+      "section": "",
+      "role": "applicant_form",
+      "scenario_status": "selected_for_test",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-03d1-7738-83c0-e5b7b37f5bb0",
+      "source_detail_id": "019d2bfb-03d1-7738-83c0-e5b7b37f5bb0",
+      "embedded_other_requirements": false,
+      "template_candidates": [
+        "template-6d407810eff0a5fc"
+      ],
+      "template_selection_method": "first_matching_source_attachment",
+      "selected_template_id": "template-6d407810eff0a5fc",
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-058-c002",
+      "code": "G09-KQ003210237",
+      "name": "- Bản sao được chứng thực từ căn cước công dân hoặc giấy xác nhận của cơ quan đăng ký cư trú (Không yêu cầu cá nhân nộp, xuất trình thành phần hồ sơ là bản sao được chứng thực từ căn cước công dân mà các thông tin trong căn cước công dân đã có dữ liệu trong các cơ sở dữ liệu được cơ quan chủ quản cơ sở dữ liệu công bố).",
+      "section": "",
+      "role": "supporting_submit",
+      "scenario_status": "selected_for_test",
+      "required_as_published": false,
+      "original_quantity": 0,
+      "copy_quantity": 1,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-03d1-7738-83c0-e5b7b37f5bb0",
+      "source_detail_id": "019d2bfb-03d1-7738-83c0-e5b7b37f5bb0",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    }
+  ],
+  "service_cases": [
+    {
+      "id": "019dbd50-59c8-72f9-949c-9b0f6c064a7c",
+      "code": "1.010827.01",
+      "name": "Di chuyển hồ sơ khi người hưởng trợ cấp ưu đãi thay đổi nơi thường trú",
+      "source_processing_time": {
+        "qty": 24,
+        "type": "DAY"
+      },
+      "has_case_specific_components": false
+    }
+  ],
+  "selected_template_ids": [
+    "template-6d407810eff0a5fc"
+  ],
+  "source_component_groups": [
+    {
+      "name": "",
+      "component_count": 2,
+      "source_detail_id": "019d2bfb-03d1-7738-83c0-e5b7b37f5bb0"
+    }
+  ],
+  "conditional_component_groups": [],
+  "default_test_scenario": {
+    "channel": "direct",
+    "applicant_submits_self": true,
+    "authorized": false,
+    "special_case_flags": [],
+    "selected_conditional_group": null,
+    "case_selection_method": "ordinary_direct_submission",
+    "case_status": "scenario_for_testing_not_a_legal_eligibility_decision"
+  },
+  "requirement_note": "required_as_published được giữ nguyên; false không chứng minh giấy tờ luôn tùy chọn. Các nhóm executionCases có thể là mục giấy tờ/hướng dẫn, không phải các phương án loại trừ nhau."
+}

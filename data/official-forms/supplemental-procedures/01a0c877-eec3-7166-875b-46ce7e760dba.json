@@ -1,0 +1,136 @@
+{
+  "id": "dvc-01a0c877-eec3-7166-875b-46ce7e760dba",
+  "procedure_code": "1.116627",
+  "name": "Hỗ trợ tiền lãi vay ngân hàng hoặc lãi vay từ Quỹ đầu tư phát triển Thành phố đối với toàn bộ giá trị hợp đồng vay được thực hiện trong thời gian vay vốn",
+  "domain": "Kinh tế hợp tác và Phát triển nông thôn",
+  "managing_agency": "UBND Thành phố Hà Nội",
+  "inventory_date": null,
+  "scope": "hanoi",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.470637+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "01a0c877-eec3-7166-875b-46ce7e760dba",
+      "code": "1.116627",
+      "name": "Hỗ trợ tiền lãi vay ngân hàng hoặc lãi vay từ Quỹ đầu tư phát triển Thành phố đối với toàn bộ giá trị hợp đồng vay được thực hiện trong thời gian vay vốn",
+      "state": "ACTIVE",
+      "type": "SPECIFIC",
+      "is_ward": true,
+      "updated_at_source": 1790070001913,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/01a0c877-eec3-7166-875b-46ce7e760dba",
+      "raw_path": "evidence/dvc/details/01a0c877-eec3-7166-875b-46ce7e760dba.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Đơn đề nghị hỗ trợ lãi suất vay vốn theo Mẫu số 01 theo Phụ lục kèm theo Quyết định 104/2026/QĐ-UBND ngày 23/7/2026 của UBND Thành phố;",
+          "component_code": "1157.2026.01",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "01a0c861-9fc6-7023-a520-1119a2a676c6",
+              "fileName": "Đơn đề nghị hỗ trợ lãi suất vay vốn theo Mẫu số 01 theo Phụ lục kèm theo Quyết định 104.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/01a0c861-9fc6-7023-a520-1119a2a676c6/Đơn đề nghị hỗ trợ lãi suất vay vốn theo Mẫu số 01 theo Phụ lục kèm theo Quyết định 104.docx"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Giấy chứng nhận đăng ký doanh nghiệp đối với tổ chức, doanh nghiệp (khai thác từ Cơ sở dữ liệu quốc gia về đăng ký doanh nghiệp) hoặc thẻ Căn cước đối với cá nhân (khai thác từ Cơ sở dữ liệu quốc gia về dân cư);",
+          "component_code": "1157.2026.02",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 3,
+          "name": "Dự án đầu tư đã được cấp có thẩm quyền phê duyệt, trong dự án phải xác định và ghi rõ nội dung về mục đích sử dụng vốn vay phù hợp với nội dung đề nghị hỗ trợ;",
+          "component_code": "1157.2026.03",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 4,
+          "name": "Bảng kê dư nợ vay, lãi vay và chứng từ hoặc các giấy tờ tương đương có xác nhận của tổ chức ngân hàng, Quỹ đầu tư phát triển Thành phố xác định chủ dự án có vay vốn tại tổ chức, khoản nợ trong hạn và sử dụng vốn vay đúng mục đích để thực hiện dự án đầu tư xây dựng nhà xưởng, máy móc tại nơi di dời đến theo Quyết định của Ủy ban nhân dân Thành phố",
+          "component_code": "1157.2026.04",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 5,
+          "name": "Hợp đồng tín dụng/thỏa thuận cho vay và biên lai thu tiền",
+          "component_code": "1157.2026.05",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 6,
+          "name": "Quyết định phê duyệt danh sách di dời của Ủy ban nhân dân Thành phố",
+          "component_code": "1157.2026.06",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 7,
+          "name": "Tài liệu chứng minh đã đầu tư theo dự án (chứng từ, hoá đơn và hồ sơ liên quan trong quá trình đầu tư); các tài liệu khác có liên quan (nếu có)",
+          "component_code": "1157.2026.07",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019ff4db-e548-71ab-ba00-25b6270452d6",
+          "name": "Quyết định hỗ trợ",
+          "code": "KQ-H05.000140"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d87-7195-a445-3789c9336cec",
+          "name": "Luật Tổ chức chính quyền địa phương",
+          "code": "72/2025/QH15"
+        },
+        {
+          "id": "019f1160-be7f-70b8-a88d-afea0026d637",
+          "name": "Luật Thủ đô",
+          "code": "02/2026/QH16"
+        },
+        {
+          "id": "019d2bb3-5d7f-719e-b473-e464f5841f14",
+          "name": "Nghị định của Chính phủ về phát triển ngành nghề nông thôn",
+          "code": "Nghị định 52/2018/NĐ-CP"
+        }
+      ]
+    }
+  ]
+}

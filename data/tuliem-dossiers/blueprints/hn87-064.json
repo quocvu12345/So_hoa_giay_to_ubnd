@@ -1,0 +1,64 @@
+{
+  "id": "hn87-064",
+  "ordinal": "64",
+  "procedure_code": "1.001776",
+  "name": "Thực hiện, điều chỉnh, thôi hưởng trợ cấp xã hội hàng tháng, hỗ trợ kinh phí chăm sóc, nuôi dưỡng hàng tháng",
+  "domain": "Bảo trợ xã hội",
+  "department_id": "vx",
+  "department": "Phòng Văn hóa - Xã hội",
+  "authority_as_published": "UBND cấp xã",
+  "execution_level_as_published": "Cấp Xã",
+  "receiving_location_as_published": "Điểm hỗ trợ DVC số",
+  "inventory_date": "2026-04-27",
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "source_urls": [],
+  "current_dvc_match": false,
+  "lifecycle": {
+    "procedure_code": "1.001776",
+    "name": "Thực hiện, điều chỉnh, thôi hưởng trợ cấp xã hội hàng tháng, hỗ trợ kinh phí chăm sóc, nuôi dưỡng hàng tháng",
+    "status": "repealed",
+    "label": "Mã cũ đã bị bãi bỏ",
+    "note": "Quyết định của Bộ Y tế bãi bỏ mã cũ từ 05/10/2026. Thủ tục mới cùng nghiệp vụ được liên kết riêng nếu tìm thấy.",
+    "evidence": [
+      {
+        "name": "Quyết định 3033/QĐ-BYT ngày 29/9/2026",
+        "scope": "national",
+        "url": "https://namhailang.quangtri.gov.vn/documents/39955/0/3033-Q%C4%90-BYT+2026.pdf/f84a7f83-e2f0-f050-031e-5d69cc904adc?t=1791359945686",
+        "local_path": "originals/byt3033-2026.pdf",
+        "sha256": "e67c073b982c29899ae88bb2d9348781d6eb8ad78788d3dfdb0e93e33847747a",
+        "page": 5
+      }
+    ],
+    "effective_from": "2026-10-05",
+    "effective_until": null,
+    "reviewed_on": "2026-11-13",
+    "use_old_form_for_synthetic_data": false,
+    "related_current_procedures": [
+      {
+        "code": "1.116909",
+        "name": "Thực hiện trợ cấp xã hội và nhận chăm sóc, nuôi dưỡng, hỗ trợ kinh phí nhận chăm sóc, nuôi dưỡng hằng tháng",
+        "id": "01a0f668-d09b-7368-9850-3c8288daf506",
+        "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/01a0f668-d09b-7368-9850-3c8288daf506",
+        "mapping_basis": "Đối chiếu tên thủ tục thay thế trong quyết định với tên và căn cứ pháp lý trên DVC; mã mới lấy từ DVC, không sửa mã gốc."
+      }
+    ]
+  },
+  "scope": "hanoi_commune_notice_2026_04_27",
+  "scope_note": "Mốc kiểm kê cấp xã Hà Nội; áp dụng từng thủ tục tại Từ Liêm còn phải theo thẩm quyền/ủy quyền hiện hành.",
+  "status": "held_changed_procedure",
+  "components": [],
+  "service_cases": [],
+  "selected_template_ids": [],
+  "source_component_groups": [],
+  "conditional_component_groups": [],
+  "default_test_scenario": {
+    "channel": "direct",
+    "applicant_submits_self": true,
+    "authorized": false,
+    "special_case_flags": [],
+    "selected_conditional_group": null,
+    "case_selection_method": "ordinary_direct_submission",
+    "case_status": "scenario_for_testing_not_a_legal_eligibility_decision"
+  },
+  "requirement_note": "required_as_published được giữ nguyên; false không chứng minh giấy tờ luôn tùy chọn. Các nhóm executionCases có thể là mục giấy tờ/hướng dẫn, không phải các phương án loại trừ nhau."
+}

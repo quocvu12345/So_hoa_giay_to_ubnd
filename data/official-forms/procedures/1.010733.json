@@ -1,0 +1,167 @@
+{
+  "ordinal": "178",
+  "managing_agency": "Sở Nông nghiệp Môi trường",
+  "procedure_code": "1.010733",
+  "name": "Thẩm định báo cáo đánh giá tác động môi trường (Cấp tỉnh)",
+  "domain": "Môi trường (Bộ Nông nghiệp và Môi trường)",
+  "ministry_decision": "418/QĐ-BNNMT ngày 31/01/2026",
+  "hanoi_decision": "459/QĐ-TTPVHCC ngày 09/4/2026",
+  "workflow_decision": "551/QĐ-TTPVHCC ngày 22/4/2026",
+  "fees": "Chi tiết tại Quyết định số 209/QĐ-TTPVHCC ngày 12/02/2026",
+  "execution_level": "Cấp tỉnh, cấp xã",
+  "competent_authority": "Giám đốc Sở; Chủ tịch UBND cấp xã",
+  "delegation_decision": "231/QĐ-UBND ngày 15/01/2026; 1315/QĐ-UBND ngày 25/3/2026",
+  "delegation_expiry": "31/12/2028",
+  "receiving_location": "Chi nhánh TTPVHCC",
+  "source_page": 7,
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "inventory_date": "2026-04-27",
+  "checked_at": "2026-11-12T22:23:54.302400+07:00",
+  "details": [
+    {
+      "id": "019d2bfa-5f49-714d-b0b9-32154e480511",
+      "code": "1.010733",
+      "name": "Thẩm định báo cáo đánh giá tác động môi trường (Cấp tỉnh) (1.010733)",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": false,
+      "updated_at_source": 1779692974554,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfa-5f49-714d-b0b9-32154e480511",
+      "raw_path": "evidence/dvc/details/019d2bfa-5f49-714d-b0b9-32154e480511.json",
+      "components": [
+        {
+          "section": "Hồ sơ nộp lại sau khi họp hội đồng/thẩm định bằng lấy ý kiến  ",
+          "position": 1,
+          "name": "Văn bản đề nghị phê duyệt kết quả thẩm định báo cáo đánh giá tác động môi trường (mẫu số 09a Phụ lục II ban hành kèm theo Thông tư số 02/2022/TT-BTNMT, được sửa đổi, bổ sung tại Thông tư số 07/2025/TT-BTNMT)",
+          "component_code": "G10-KQ007914",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019e5d68-6350-7716-ac60-28ca24fa4c69",
+              "fileName": "Mẫu số 09a.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019e5d68-6350-7716-ac60-28ca24fa4c69/Mẫu số 09a.docx"
+            }
+          ]
+        },
+        {
+          "section": "Hồ sơ nộp lại sau khi họp hội đồng/thẩm định bằng lấy ý kiến  ",
+          "position": 2,
+          "name": "Báo cáo đánh giá tác động môi trường được đóng quyển, chủ dự án ký vào phía dưới của từng trang kể cả phụ lục kèm theo tệp văn bản điện tử định dạng đuôi “.doc” chứa nội dung của báo cáo và tệp văn bản điện tử định dạng đuôi “.pdf” chứa nội dung đã quét (scan) của toàn bộ báo cáo, bao gồm cả phụ lục (nếu nộp trực tiếp) hoặc tệp văn bản điện tử của toàn bộ báo cáo, bao gồm cả phụ lục được chủ dự án ký số (nếu nộp trực tuyến).",
+          "component_code": "G10-KQ007915",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Hồ sơ đề nghị thẩm định (Điều 4 Thông tư số 09/2026/TT-BNNMT)",
+          "position": 1,
+          "name": "Văn bản đề nghị thẩm định báo cáo đánh giá tác động môi trường (mẫu số 02 Phụ lục II ban hành kèm theo Thông tư số 09/2026/TT-BNNMT ngày 29 tháng 01 năm 2026 của Bộ trưởng Bộ Nông nghiệp và Môi trường sửa đổi, bổ sung một số điều của Thông tư số 02/2022/TT-BTNMT ngày 10 tháng 01 năm 2022 của Bộ trưởng Bộ Tài nguyên và Môi trường quy định chi tiết thi hành một số điều của Luật Bảo vệ môi trường được sửa đổi, bổ sung bởi Thông tư số 07/2025/TT-BTNMT ngày 28 tháng 02 năm 2025 và Thông tư số 07/2025/TT-BNNMT ngày 16 tháng 6 năm 2025)",
+          "component_code": "G10-KQ007913",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019e5d64-4daa-768b-bc12-099b9ab6985b",
+              "fileName": "Mau 02.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019e5d64-4daa-768b-bc12-099b9ab6985b/Mau 02.docx"
+            }
+          ]
+        },
+        {
+          "section": "Hồ sơ đề nghị thẩm định (Điều 4 Thông tư số 09/2026/TT-BNNMT)",
+          "position": 2,
+          "name": "Báo cáo đánh giá tác động môi trường của dự án đầu tư (mẫu số 04 Phụ lục V ban hành kèm theo Thông tư số 22/2026/TT-BNNMT ngày 19 tháng 5 năm 2026 của Bộ trưởng Bộ Nông nghiệp và Môi trường sửa đổi, bổ sung một số Thông tư liên quan phân cấp, cắt giảm, đơn giản hóa thủ tục hành chính thuộc phạm vi quản lý nhà nước của Bộ Nông nghiệp và Môi trường).",
+          "component_code": "G10-KQ007912",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019e5d64-d6e0-7348-8004-34f1de86f847",
+              "fileName": "Mau 04.docx (1).doc",
+              "bucketName": "dvc",
+              "filePath": "configuring/019e5d64-d6e0-7348-8004-34f1de86f847/Mau 04.docx (1).doc"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c6d-743d-a39d-f8c1a6f2a987",
+          "name": "Văn bản không phê duyệt kết quả thẩm định báo cáo đánh giá tác động môi trường",
+          "code": "KQ.G10.001190"
+        },
+        {
+          "id": "019d2bb2-1c6e-7797-a21b-16abbd7c53cd",
+          "name": "Quyết định phê duyệt kết quả thẩm định báo cáo đánh giá tác động môi trường (mẫu số 10 Phụ lục II ban hành kèm theo Thông tư số 09/2026/TT- BNNMT).",
+          "code": "KQ.G10.001457"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d87-7195-a447-f9a5abcd2f43",
+          "name": "Luật sửa đổi, bổ sung một số điều của 15 luật trong lĩnh vực nông nghiệp và môi trường",
+          "code": "Luật số 146/2025/QH15"
+        },
+        {
+          "id": "019d2bb3-5d85-73da-8eb9-fbf4344c3579",
+          "name": "Luật Bảo vệ môi trường số 72/2020/QH14 ngày 17 tháng 11 năm 2020",
+          "code": "72/2020/QH14"
+        },
+        {
+          "id": "019d2bb3-5d7d-7398-be50-e07228bc9a36",
+          "name": "Thông tư số 02/2022/TT-BTNMT",
+          "code": "02/2022/TT-BTNMT"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afe7-44fdf4392f79",
+          "name": "SỬA ĐỔI, BỔ SUNG MỘT SỐ ĐIỀU CỦA NGHỊ ĐỊNH SỐ 08/2022/NĐ-CP NGÀY 10 THÁNG 01 NĂM 2022 CỦA CHÍNH PHỦ QUY ĐỊNH CHI TIẾT MỘT SỐ ĐIỀU CỦA LUẬT BẢO VỆ MÔI TRƯỜNG",
+          "code": "05/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7c-71ab-9f09-16b10ce39ae8",
+          "name": "Thông tư số 09/2026/TT-BNNMT ngày 29 tháng 01 năm 2026 của Bộ trưởng Bộ Nông nghiệp và Môi trường Sửa đổi, bổ sung một số điều của Thông tư số 02/2022/TT-BTNMT ngày 10 tháng 01 năm 2022 của Bộ trưởng Bộ Tài nguyên và Môi trường quy định chi tiết thi hành một số điều của Luật Bảo vệ môi trường được sửa đổi, bổ sung bởi Thông tư số 07/2025/TT-BTNMT ngày 28 tháng 02 năm 2025 và Thông tư số 07/2025/TT-BNNMT ngày 16 tháng 6 năm 2025.",
+          "code": "09/2026/TT-BNNMT"
+        },
+        {
+          "id": "019d2bb3-5d7d-7398-be51-0247fc76aa65",
+          "name": "Sửa đổi, bổ sung một số điều của Thông tư số 02/2022/TT-BTNMT ngày 10 tháng 01 năm 2022 của Bộ trưởng Bộ Tài nguyên và Môi trường quy định chi tiết thi hành một số điều của Luật Bảo vệ môi trường",
+          "code": "07/2025/TT-BTNMT"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afe7-ac3296009dc1",
+          "name": "Nghị định số 08/2022/NĐ-CP",
+          "code": "08/2022/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7f-719e-b46e-7b374f3747d9",
+          "name": "Nghị định số 48/2026/NĐ-CP ngày 29 tháng 01 năm 2026 của Chính phủ sửa đổi, bổ sung một số điều của 08/2022/NĐ-CP ngày 10 tháng 01 năm 2022 của Chính phủ quy định chi tiết một số điều của Luật Bảo vệ môi trường sửa đổi, bổ sung bởi Nghị định số 05/2025/NĐ-CP ngày 06 tháng 01 năm 2025",
+          "code": "48/2026/NĐ-CP"
+        },
+        {
+          "id": "019e5317-4af2-76d8-bfaa-f3a4dc07a596",
+          "name": "Nghị quyết số 66.19/2026/NQ-CP của Chính phủ về cắt giảm, phân quyền, đơn giản hoá thủ tục hành chính và cắt giảm, đơn giản hoá điều kiện kinh doanh thuộc phạm vi quản lý của Bộ Nông nghiệp và Môi trường",
+          "code": "Nghị quyết số 66.19/2026/NQ-CP "
+        },
+        {
+          "id": "019e4ea9-2f5f-7707-991b-4f21629eb854",
+          "name": "Thông tư số 22/2026/TT-BNNMT ngày 19 tháng 5 năm 2026 của Bộ trưởng Bộ Nông nghiệp và Môi trường sửa đổi, bổ sung một số thông tư liên quan phân cấp, cắt giảm, đơn giản hóa thủ tục hành chính thuộc phạm vi quản lý của bộ nông nghiệp và môi trường.",
+          "code": "22/2026/TT-BNNMT "
+        }
+      ]
+    }
+  ],
+  "lookup_status": "retrieved",
+  "currency_status": "snapshot_requires_later_amendment_check",
+  "errors": []
+}

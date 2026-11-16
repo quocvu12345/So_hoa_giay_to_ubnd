@@ -1,0 +1,98 @@
+{
+  "id": "dvc-019d2bff-061e-754b-9a9b-2d642bcabeb4",
+  "procedure_code": "1.004944",
+  "name": "Chấm dứt việc chăm sóc thay thế cho trẻ em",
+  "domain": "Trẻ em",
+  "managing_agency": "Bộ Y tế",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.853757+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bff-061e-754b-9a9b-2d642bcabeb4",
+      "code": "1.004944",
+      "name": "Chấm dứt việc chăm sóc thay thế cho trẻ em",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1778034932964,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bff-061e-754b-9a9b-2d642bcabeb4",
+      "raw_path": "evidence/dvc/details/019d2bff-061e-754b-9a9b-2d642bcabeb4.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Đơn đề nghị chấm dứt việc  chăm sóc thay  thế.",
+          "component_code": "000.00.00.G18-KQ005284",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019e1f97-8d67-7730-b3c3-e859495d0c33",
+              "fileName": "Mus15.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019e1f97-8d67-7730-b3c3-e859495d0c33/Mus15.docx"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Mấu số 16 (QĐ)",
+          "component_code": "000.00.00.G18-KQ005285",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019e1f97-cab2-75d0-9c15-91b7ad77b2c4",
+              "fileName": "Mus16.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019e1f97-cab2-75d0-9c15-91b7ad77b2c4/Mus16.docx"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c7b-7208-ba4b-1e7ed5d103ed",
+          "name": "Quyết định của Người đứng đầu cơ quan chuyên môn về y tế thuộc Ủy ban nhân dân cấp tỉnh có thẩm quyền quyết định chấm dứt việc chăm sóc thay thế cho trẻ em",
+          "code": "KQ.G18.000243"
+        },
+        {
+          "id": "019d2bb2-1c7b-7208-ba4b-18a791b0be5e",
+          "name": "Quyết định của Chủ tịch Ủy ban nhân dân cấp xã chấm dứt việc chăm sóc thay thế cho trẻ em và chuyển hình thức chăm sóc thay thế cho trẻ em",
+          "code": "KQ.G18.000242"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7e-72d1-afeb-4a8713eeea9a",
+          "name": "Nghị định số 147/2025/NĐ-CP của Chính phủ: Quy định về phân định thẩm quyền của chính quyền địa phương 02 cấp trong lĩnh vực quản lý nhà nước của Bộ Y tế",
+          "code": "147/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7f-719e-b46d-d6ce43fbc8e0",
+          "name": "Nghị định số 42/2025/NĐ-CP của Chính phủ: Quy định chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của Bộ Y tế",
+          "code": "42/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7f-719e-b46e-fdfc3b2dd3aa",
+          "name": "Nghị định 56/2017/NĐ-CP - Quy định chi tiết một số điều của Luật Trẻ em",
+          "code": "56/2017/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b671-75490620578d",
+          "name": "Luật Trẻ em",
+          "code": "102/2016/QH13"
+        }
+      ]
+    }
+  ]
+}

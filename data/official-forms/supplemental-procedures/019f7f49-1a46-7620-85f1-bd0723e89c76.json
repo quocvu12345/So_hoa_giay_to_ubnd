@@ -1,0 +1,70 @@
+{
+  "id": "dvc-019f7f49-1a46-7620-85f1-bd0723e89c76",
+  "procedure_code": "1.115955",
+  "name": "Tiêu hủy hóa đơn đặt in của cơ quan thuế/ biên lai giấy",
+  "domain": "Thuế",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.482409+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019f7f49-1a46-7620-85f1-bd0723e89c76",
+      "code": "1.115955",
+      "name": "Tiêu hủy hóa đơn đặt in của cơ quan thuế/ biên lai giấy",
+      "state": "ACTIVE",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1784548236144,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019f7f49-1a46-7620-85f1-bd0723e89c76",
+      "raw_path": "evidence/dvc/details/019f7f49-1a46-7620-85f1-bd0723e89c76.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Thông báo kết quả tiêu hủy hóa đơn/biên lai giấy (Mẫu số 02/HUY-HĐBLG)",
+          "component_code": "G12.00012191",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019f7f48-05c8-717c-959a-0717f331b014",
+              "fileName": "Mẫu 02 HUY-HĐBLG.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f7f48-05c8-717c-959a-0717f331b014/Mẫu 02 HUY-HĐBLG.docx"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "id": "019f7f48-85f4-70b8-8384-514c9329c6c8",
+          "name": "Hóa đơn/biên lai giấy được tiêu hủy theo Thông báo kết quả hủy hóa đơn/biên lai giấy của người nộp thuế",
+          "code": "KQ.G12.000476"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019e5e83-1282-771d-9014-49799413a4e5",
+          "name": "Luật số 108/2025/QH15 của Quốc hội: Luật Quản lý thuế",
+          "code": "108/2025/QH15"
+        },
+        {
+          "id": "019f7eee-65ff-7190-97bb-0d978182d268",
+          "name": "Nghị định số 254/2026/NĐ-CP của Chính phủ: Quy định chi tiết một số điều và biện pháp để tổ chức, hướng dẫn thi hành Luật Quản lý thuế số 108/2025/QH15 về hóa đơn điện tử, chứng từ điện tử",
+          "code": "254/2026/NĐ-CP"
+        },
+        {
+          "id": "019f7ef5-5ff2-73cd-841d-79992569d6c6",
+          "name": "Quy định một số điều của Luật Quản lý thuế và Nghị định số 254/2026/NĐ-CP của Chính phủ quy định chi tiết một số điều và biện pháp để tổ chức, hướng dẫn thi hành Luật Quản lý thuế số 108/2025/QH15 về hóa đơn điện tử, chứng từ điện tử",
+          "code": "91/2026/TT-BTC"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "id": "dvc-019d2bfa-d4cf-73fe-a7ff-10a3f58e3a78",
+  "procedure_code": "1.001257",
+  "name": "Giải quyết trợ cấp một lần đối với người có thành tích tham gia kháng chiến đã được tặng Bằng khen của Thủ tướng Chính phủ, Bằng khen của Chủ tịch Hội đồng Bộ trưởng hoặc Bằng khen của Bộ trưởng, Thủ trưởng cơ quan ngang bộ, Thủ trưởng cơ quan thuộc Chính phủ, Bằng khen của Chủ tịch Ủy ban nhân dân tỉnh, thành phố trực thuộc Trung ương",
+  "domain": "Người có công",
+  "managing_agency": "Bộ Nội vụ",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:18.006070+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfa-d4cf-73fe-a7ff-10a3f58e3a78",
+      "code": "1.001257",
+      "name": "Giải quyết trợ cấp một lần đối với người có thành tích tham gia kháng chiến đã được tặng Bằng khen của Thủ tướng Chính phủ, Bằng khen của Chủ tịch Hội đồng Bộ trưởng hoặc Bằng khen của Bộ trưởng, Thủ trưởng cơ quan ngang bộ, Thủ trưởng cơ quan thuộc Chính phủ, Bằng khen của Chủ tịch Ủy ban nhân dân tỉnh, thành phố trực thuộc Trung ương",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1776416014691,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfa-d4cf-73fe-a7ff-10a3f58e3a78",
+      "raw_path": "evidence/dvc/details/019d2bfa-d4cf-73fe-a7ff-10a3f58e3a78.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "+ Bản sao một trong các giấy tờ sau: Bằng khen của Thủ tướng Chính phủ, Bằng khen của cấp Bộ, Bằng khen của cấp tỉnh hoặc Quyết định khen thưởng",
+          "component_code": "G09-KQ002721",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "+ Bản khai cá nhân của người được tặng Bằng khen của Thủ tướng Chính phủ, Bằng khen của cấp Bộ, Bằng khen của cấp tỉnh (gọi chung là người có bằng khen): Trường hợp người có bằng khen đã từ trần: Bản khai cá nhân của đại diện thân nhân kèm biên bản ủy quyền. Thân nhân của người có bằng khen từ trần là một trong những người sau: Vợ hoặc chồng; bố đẻ, mẹ đẻ; con đẻ, con nuôi của người từ trần.",
+          "component_code": "G09-KQ002720",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019d713b-5bad-74ec-b6b8-eb3dead76ffe",
+              "fileName": "MubnkhaiccnhnQ24.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d713b-5bad-74ec-b6b8-eb3dead76ffe/MubnkhaiccnhnQ24.docx"
+            },
+            {
+              "id": "019d713b-6fca-76c8-8e41-6676aba77e90",
+              "fileName": "MubinbnuquynThngt05.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d713b-6fca-76c8-8e41-6676aba77e90/MubinbnuquynThngt05.docx"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c4d-7725-9d9c-9f899534f7ca",
+          "name": "Quyết định hưởng trợ cấp 1 lần đối với người được tặng Bằng khen",
+          "code": "KQ.G09.000442"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7f-719e-b46e-3b82195c2d48",
+          "name": "Nghị định số 45/2025/NĐ-CP ngày 28/02/2025 của Chính phủ quy định tổ chức các cơ quan chuyên môn thuộc Ủy ban nhân dân tỉnh, thành phố trực thuộc trung ương và Ủy ban nhân dân huyện, quận, thị xã, thành phố thuộc tỉnh, thành phố thuộc thành phố trực thuộc trung ương",
+          "code": "45/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7f-719e-b474-93996f3f00db",
+          "name": "Nghị định số 25/2025/NĐ-CP ngày 21 tháng 02 năm 2025 của Chính phủ quy định chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của Bộ Nội vụ",
+          "code": "Nghị định số 25/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b671-f40a5ee32475",
+          "name": "Nghị quyết số 190/2025/QH15 của Quốc hội: Quy định về xử lý một số vấn đề liên quan đến sắp xếp tổ chức bộ máy nhà nước",
+          "code": "190/2025/NQ-QH15"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afea-1c153ca6400f",
+          "name": "Quy định về phân định thẩm quyền của chính quyền địa phương 02 cấp trong lĩnh vực quản lý nhà nước của Bộ Nội vụ",
+          "code": "129/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7c-71ab-9f06-18f654b9b048",
+          "name": "\t05/2013/TT-BLĐTBXH - Hướng dẫn về thủ tục lập hồ sơ, quản lý hồ sơ, thực hiện chế độ ưu đãi người có công với cách mạng và thân nhân",
+          "code": "05/2013/TT-BLĐTBXH"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b678-1ae4d9aaa6dc",
+          "name": "Quyết định 24/2016/QĐ-TTg - Về trợ cấp một lần đối với người có thành tích tham gia kháng chiến được tặng Bằng khen của Thủ tướng Chính phủ, Bằng khen của Bộ trưởng, Thủ trưởng cơ quan ngang bộ, Thủ trưởng cơ quan thuộc Chính phủ, Bằng khen của Chủ tịch Ủy ban nhân dân cấp tỉnh",
+          "code": "24/2016/QĐ-TTg"
+        }
+      ]
+    }
+  ]
+}

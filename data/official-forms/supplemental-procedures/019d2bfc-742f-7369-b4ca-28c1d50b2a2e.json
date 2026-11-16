@@ -1,0 +1,64 @@
+{
+  "id": "dvc-019d2bfc-742f-7369-b4ca-28c1d50b2a2e",
+  "procedure_code": "1.009062",
+  "name": "Thủ tục bán hàng miễn thuế cho tổ chức, cá nhân được hưởng quyền ưu đãi miễn trừ mua hàng tại cửa hàng miễn thuế trong nội địa",
+  "domain": "Hải quan",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.929803+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfc-742f-7369-b4ca-28c1d50b2a2e",
+      "code": "1.009062",
+      "name": "Thủ tục bán hàng miễn thuế cho tổ chức, cá nhân được hưởng quyền ưu đãi miễn trừ mua hàng tại cửa hàng miễn thuế trong nội địa",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1785982947307,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-742f-7369-b4ca-28c1d50b2a2e",
+      "raw_path": "evidence/dvc/details/019d2bfc-742f-7369-b4ca-28c1d50b2a2e.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Chỉ tiêu thông tin theo Mẫu số 14 Phụ lục II ban hành kèm theo Nghị định số 273/2026/NĐ-CP (đối với trường hợp nộp trực tuyến).",
+          "component_code": "000.00.00.G12-KQ9836",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Chỉ tiêu thông tin tại Mẫu số 12 Phụ lục II ban hành kèm theo Nghị định số 273/2026/NĐ-CP (đối với trường hợp nộp trực tuyến).",
+          "component_code": "000.00.00.G12-KQ12589",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c70-724b-96e1-33f008a12dce",
+          "name": "Xác nhận của Hải quan quản lý cửa hàng miễn thuế, kho chứa hàng miễn thuế trên Sổ định mức mua hàng miễn thuế.",
+          "code": "KQ.G12.000416"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019fc558-dd5c-7395-9a78-efc7e38e5c9f",
+          "name": "Về kinh doanh hàng miễn thuế",
+          "code": "273/2026/NĐ-CP"
+        }
+      ]
+    }
+  ]
+}

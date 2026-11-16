@@ -1,0 +1,167 @@
+{
+  "id": "dvc-019d2bfb-d748-72d1-848f-3607bc86e647",
+  "procedure_code": "1.001266",
+  "name": "Chấm dứt hoạt động hộ kinh doanh",
+  "domain": "Thành lập và hoạt động doanh nghiệp (hộ kinh doanh)",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.977090+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfb-d748-72d1-848f-3607bc86e647",
+      "code": "1.001266",
+      "name": "Chấm dứt hoạt động hộ kinh doanh",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1785469472865,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-d748-72d1-848f-3607bc86e647",
+      "raw_path": "evidence/dvc/details/019d2bfb-d748-72d1-848f-3607bc86e647.json",
+      "components": [
+        {
+          "section": "* Thành phần hồ sơ:",
+          "position": 1,
+          "name": "- Thông báo chấm dứt hoạt động hộ kinh doanh theo Mẫu số 4, Phụ lục II, Thông tư số 68/2025/TT-BTC ngày 01/7/2025 của Bộ trưởng Bộ Tài chính.",
+          "component_code": "TP-G12.000100001",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019fa82b-9d76-70c8-8391-b33fc2dff11c",
+              "fileName": "mẫu 04  chấm dứt hđ kd.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa82b-9d76-70c8-8391-b33fc2dff11c/mẫu 04  chấm dứt hđ kd.docx"
+            }
+          ]
+        },
+        {
+          "section": "* Thành phần hồ sơ:",
+          "position": 2,
+          "name": "-  Biên bản họp nhóm cá nhân tham gia hộ kinh doanh về việc chấm dứt hoạt động hộ kinh doanh đối với trường hợp hộ kinh doanh do nhóm cá nhân thành lập trước ngày Nghị định số 168/2025/NĐ-CP có hiệu lực thi hành.",
+          "component_code": "TP-G12.000100003",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "* Trường hợp ủy quyền thực hiện thủ tục thì hồ sơ phải kèm theo một trong những giấy tờ sau: - Trường hợp ủy quyền cho cá nhân thực hiện thủ tục đăng ký hộ kinh doanh, kèm theo hồ sơ đăng ký hộ kinh doanh bao gồm:",
+          "position": 1,
+          "name": "Văn bản ủy quyền cho cá nhân thực hiện thủ tục liên quan đến đăng ký hộ kinh doanh. Văn bản ủy quyền này không bắt buộc phải công chứng, chứng thực.",
+          "component_code": "000.00.00.G12-31123",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "- Trường hợp ủy quyền cho tổ chức thực hiện thủ tục đăng ký hộ kinh doanh, kèm theo hồ sơ bao gồm:",
+          "position": 1,
+          "name": "(i) Bản sao hợp đồng cung cấp dịch vụ với tổ chức làm dịch vụ thực hiện thủ tục liên quan đến đăng ký hộ kinh doanh;",
+          "component_code": "000.00.00.G12-3332134",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "- Trường hợp ủy quyền cho tổ chức thực hiện thủ tục đăng ký hộ kinh doanh, kèm theo hồ sơ bao gồm:",
+          "position": 2,
+          "name": "(ii) Giấy giới thiệu của tổ chức đó cho cá nhân trực tiếp thực hiện thủ tục liên quan đến đăng ký hộ kinh doanh.",
+          "component_code": "000.00.00.G12-1221234",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "* Trường hợp ủy quyền thực hiện thủ tục thì hồ sơ phải kèm theo một trong những giấy tờ sau:- Trường hợp ủy quyền cho đơn vị cung cấp dịch vụ bưu chính công ích thực hiện thủ tục đăng ký hộ kinh doanh, hồ sơ bao gồm:",
+          "position": 1,
+          "name": "Bản sao phiếu gửi hồ sơ theo mẫu do doanh nghiệp cung ứng dịch vụ bưu chính công ích phát hành có chữ ký xác nhận của nhân viên bưu chính và chủ hộ kinh doanh.",
+          "component_code": "000.00.00.G12-122345",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "* Trường hợp ủy quyền thực hiện thủ tục thì hồ sơ phải kèm theo một trong những giấy tờ sau:- Trường hợp ủy quyền cho đơn vị cung cấp dịch vụ bưu chính không phải là bưu chính công ích thực hiện thủ tục đăng ký hộ kinh doanh, hồ sơ bao gồm:",
+          "position": 1,
+          "name": "(i) Bản sao hợp đồng cung cấp dịch vụ với tổ chức làm dịch vụ thực hiện thủ tục liên quan đến đăng ký hộ kinh doanh;",
+          "component_code": "000.00.00.G12-1333124",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "* Trường hợp ủy quyền thực hiện thủ tục thì hồ sơ phải kèm theo một trong những giấy tờ sau:- Trường hợp ủy quyền cho đơn vị cung cấp dịch vụ bưu chính không phải là bưu chính công ích thực hiện thủ tục đăng ký hộ kinh doanh, hồ sơ bao gồm:",
+          "position": 2,
+          "name": "(ii) Giấy giới thiệu của tổ chức đó cho cá nhân trực tiếp thực hiện thủ tục liên quan đến đăng ký hộ kinh doanh. - Người ủy quyền và người được ủy quyền thực hiện thủ tục đăng ký hộ kinh doanh chịu trách nhiệm trước pháp luật về tính hợp pháp, trung thực và chính xác của việc ủy quyền. Người ủy quyền và người được ủy quyền phải thực hiện xác thực điện tử để được cấp đăng ký hộ kinh doanh khi thực hiện thủ tục đăng ký thành lập hộ kinh doanh, đăng ký thay đổi chủ hộ kinh doanh, đăng ký thay đổi thành viên hộ gia đình đăng ký hộ kinh doanh.  Trường hợp việc xác thực điện tử bị gián đoạn thì người ủy quyền thực hiện việc xác thực điện tử sau khi được cấp đăng ký hộ kinh doanh. Trường hợp người ủy quyền không xác nhận hoặc xác nhận không ủy quyền thực hiện thủ tục đăng ký hộ kinh doanh thì Cơ quan đăng ký kinh doanh cấp xã yêu cầu hộ kinh doanh báo cáo theo quy định tại khoản 6 Điều 22 Nghị định số 168/2026/NĐ-CP. Trường hợp chưa có tài khoản định danh điện tử để thực hiện xác thực điện tử thì hồ sơ đăng ký hộ kinh doanh phải kèm theo bản sao thẻ Căn cước hoặc thẻ Căn cước công dân còn hiệu lực của người ủy quyền.",
+          "component_code": "000.00.00.G12-1333125",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019fa6e2-4dba-734d-a7b6-1e7efd5266e8",
+          "name": "thông báo cho hộ kinh doanh biết khi có ý kiến từ chối à nêu rõ lý do từ chối",
+          "code": "TP-G12.000110000010"
+        },
+        {
+          "id": "019fa6e1-65f4-7055-8f48-173e29e01a88",
+          "name": "thông báo về việc chấm dứt hoạt động của hộ kinh doanh trên Cổng thông tin quốc gia về đăng ký doanh nghiệp.",
+          "code": "TP-G12.00011000009"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019e390e-9094-746b-9b67-f7d43f5290fe",
+          "name": "Luật Doanh nghiệp",
+          "code": "Luật số: 59/2020/QH14"
+        },
+        {
+          "id": "019d2bb3-5d87-7195-a445-a84d5af06feb",
+          "name": "Luật sửa đổi, bổ sung một số điều của Luật Doanh nghiệp 2020",
+          "code": "76/2025/QH15"
+        },
+        {
+          "id": "019d2bb3-5d7d-7398-be4f-24cb929dcc49",
+          "name": "Thông tư Hướng dẫn về phí và lệ phí thuộc thẩm quyền quyết định của Hội đồng nhân dân tỉnh, thành phố trực thuộc Trung ương",
+          "code": "85/2019/TT-BTC"
+        },
+        {
+          "id": "019d2bb3-5d7d-7398-be4e-87184807d6b6",
+          "name": "Thông tư số 68/2025/TT-BTC của Bộ Tài chính: Ban hành biểu mẫu sử dụng trong đăng ký doanh nghiệp, đăng ký hộ kinh doanh",
+          "code": "68/2025/TT-BTC"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afec-5e297320f06a",
+          "name": "Nghị định số 168/2025/NĐ-CP ngày 30 tháng 6 năm 2025 của Chính phủ về đăng ký doanh nghiệp",
+          "code": "168/2025/NĐ-CP"
+        },
+        {
+          "id": "019fa69e-1183-742e-afbc-44b9c703e395",
+          "name": "Nghị định số 296/2026/NĐ-CP ngày 23 tháng 7 năm 2026 của Chính phủ sửa đổi, bổ sung một số điều của Nghị định số 168/2025/NĐ-CP ngày 30 tháng 6 năm 2025 của Chính phủ về đăng ký doanh nghiệp (Nghị định số 296/2026/NĐ-CP)",
+          "code": "Nghị định số 296/2026/NĐ-CP"
+        }
+      ]
+    }
+  ]
+}

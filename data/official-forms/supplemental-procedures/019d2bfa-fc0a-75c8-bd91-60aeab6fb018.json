@@ -1,0 +1,102 @@
+{
+  "id": "dvc-019d2bfa-fc0a-75c8-bd91-60aeab6fb018",
+  "procedure_code": "1.010801",
+  "name": "Giải quyết chế độ trợ cấp ưu đãi đối với thân nhân liệt sĩ",
+  "domain": "Người có công",
+  "managing_agency": "Bộ Nội vụ",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:18.002967+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfa-fc0a-75c8-bd91-60aeab6fb018",
+      "code": "1.010801",
+      "name": "Giải quyết chế độ trợ cấp ưu đãi đối với thân nhân liệt sĩ",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1793347374502,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfa-fc0a-75c8-bd91-60aeab6fb018",
+      "raw_path": "evidence/dvc/details/019d2bfa-fc0a-75c8-bd91-60aeab6fb018.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Đơn đề nghị Mẫu số 05 Phụ lục I Nghị định số 131/2021/NĐ- CP. (Cổng DVC cấu hình văn bản đề nghị dưới dạng EForm điện tử (Cá nhân dùng mã định danh đăng nhập qua VneID, không cần ký số))",
+          "component_code": "G09-KQ00321074",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "01a181e5-de80-720b-aeee-d1230e7731f9",
+              "fileName": "Mau so 05.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/01a181e5-de80-720b-aeee-d1230e7731f9/Mau so 05.docx"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "- Bản sao được chứng thực từ Bằng “Tổ quốc ghi công”.",
+          "component_code": "G09-KQ00321075",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 3,
+          "name": "- Và một trong các giấy tờ sau: Trường hợp thân nhân là người có công nuôi liệt sĩ phải có văn bản đồng thuận của các thân nhân liệt sĩ; trường hợp liệt sĩ không còn thân nhân thì phải có văn bản đồng thuận của những người thuộc quy định tại điểm b khoản 1 Điều 651 Bộ luật Dân sự. Văn bản đồng thuận do Ủy ban nhân dân cấp xã xác nhận về chữ ký, nơi thường trú và nội dung đồng thuận. Trường hợp thân nhân là con chưa đủ 18 tuổi phải có thêm bản sao được chứng thực từ giấy khai sinh hoặc trích lục khai sinh. Trường hợp thân nhân là con từ đủ 18 tuổi trở lên đang đi học phải có thêm giấy xác nhận của cơ sở giáo dục nơi đang theo học. Trường hợp thân nhân là con từ đủ 18 tuổi trở lên bị khuyết tật nặng, khuyết tật đặc biệt nặng trước khi đủ 18 tuổi phải có thêm giấy xác nhận khuyết tật theo quy định của Luật Người khuyết tật. Trường hợp thân nhân là con từ đủ 18 tuổi trở lên bị khuyết tật nặng, khuyết tật đặc biệt nặng sau khi đủ 18 tuổi mà không có thu nhập hằng tháng hoặc có thu nhập hằng tháng thấp hơn 0,6 lần mức chuẩn phải có thêm giấy xác nhận khuyết tật theo quy định của Luật Người khuyết tật, giấy xác nhận thu nhập theo Mẫu số 47 Phụ lục I Nghị định số 131/2021/NĐ-CP của Ủy ban nhân dân cấp xã. (Thay thế thành phần hồ sơ “Giấy xác nhận của cơ sở giáo dục nơi đang theo học” bằng dữ liệu từ CSDL quốc gia về giáo dục và đào tạo khi cơ sở dữ liệu này đủ điều kiện kết nối, khai thác, chia sẻ thông tin và có dữ liệu đáp ứng yêu cầu giải quyết thủ tục hành chính); (Thay thế thành phần hồ sơ “Bản sao được chứng thực từ giấy khai sinh hoặc trích lục khai sinh” bằng dữ liệu từ Cơ sở dữ liệu hộ tịch điện tử khi cơ sở dữ liệu này đủ điều kiện kết nối, khai thác, chia sẻ thông tin và có dữ liệu đáp ứng yêu cầu giải quyết thủ tục hành chính)",
+          "component_code": "G09-KQ00321076",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c4d-7725-9d9c-4ca73d94c402",
+          "name": "Quyết định cấp giấy chứng nhận thân nhân liệt sĩ và trợ cấp một lần khi báo tử; Giấy chứng nhận thân nhân liệt sĩ; Quyết định trợ cấp tuất hằng tháng đối với thân nhân liệt sĩ; Quyết định chấm dứt chế độ ưu đãi đối với thân nhân",
+          "code": "KQ.G09.000422"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7f-719e-b474-93996f3f00db",
+          "name": "Nghị định số 25/2025/NĐ-CP ngày 21 tháng 02 năm 2025 của Chính phủ quy định chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của Bộ Nội vụ",
+          "code": "Nghị định số 25/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b671-f40a5ee32475",
+          "name": "Nghị quyết số 190/2025/QH15 của Quốc hội: Quy định về xử lý một số vấn đề liên quan đến sắp xếp tổ chức bộ máy nhà nước",
+          "code": "190/2025/NQ-QH15"
+        },
+        {
+          "id": "019d2bb3-5d7f-719e-b46e-3b82195c2d48",
+          "name": "Nghị định số 45/2025/NĐ-CP ngày 28/02/2025 của Chính phủ quy định tổ chức các cơ quan chuyên môn thuộc Ủy ban nhân dân tỉnh, thành phố trực thuộc trung ương và Ủy ban nhân dân huyện, quận, thị xã, thành phố thuộc tỉnh, thành phố thuộc thành phố trực thuộc trung ương",
+          "code": "45/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7f-719e-b474-516a799e2145",
+          "name": "QUY ĐỊNH CHI TIẾT VÀ BIỆN PHÁP THI HÀNH PHÁP LỆNH ƯU ĐÃI NGƯỜI CÓ CÔNG VỚI CÁCH MẠNG",
+          "code": "Nghị định số 131/2021/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d85-73da-8eba-20bc75de794b",
+          "name": "ƯU ĐÃI NGƯỜI CÓ CÔNG VỚI CÁCH MẠNG",
+          "code": "Pháp lệnh số: 02/2020/UBTVQH14"
+        }
+      ]
+    }
+  ]
+}

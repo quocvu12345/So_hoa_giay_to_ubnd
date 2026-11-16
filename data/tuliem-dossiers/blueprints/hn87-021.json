@@ -1,0 +1,105 @@
+{
+  "id": "hn87-021",
+  "ordinal": "21",
+  "procedure_code": "1.010824",
+  "name": "Hưởng trợ cấp khi người có công đang hưởng trợ cấp ưu đãi từ trần",
+  "domain": "Người có công",
+  "department_id": "vx",
+  "department": "Phòng Văn hóa - Xã hội",
+  "authority_as_published": "UBND cấp xã",
+  "execution_level_as_published": "Cấp xã",
+  "receiving_location_as_published": "Điểm hỗ trợ DVC số",
+  "inventory_date": "2026-04-27",
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "source_urls": [
+    "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfa-fc36-7611-9219-adb6dee5774f"
+  ],
+  "current_dvc_match": true,
+  "lifecycle": null,
+  "scope": "hanoi_commune_notice_2026_04_27",
+  "scope_note": "Mốc kiểm kê cấp xã Hà Nội; áp dụng từng thủ tục tại Từ Liêm còn phải theo thẩm quyền/ủy quyền hiện hành.",
+  "status": "has_fillable_templates",
+  "components": [
+    {
+      "id": "hn87-021-c001",
+      "code": "G09-KQ003210231",
+      "name": "a) Trợ cấp một lần, mai táng - Bản khai theo Mẫu số 12 Phụ lục I Nghị định số 131/2021/NĐ-CP. - Bản sao được chứng thực từ giấy báo tử hoặc trích lục khai tử.",
+      "section": "",
+      "role": "applicant_form",
+      "scenario_status": "selected_for_test",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 1,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfa-fc36-7611-9219-adb6dee5774f",
+      "source_detail_id": "019d2bfa-fc36-7611-9219-adb6dee5774f",
+      "embedded_other_requirements": true,
+      "template_candidates": [
+        "template-bad196afbb09751f"
+      ],
+      "template_selection_method": "first_matching_source_attachment",
+      "selected_template_id": "template-bad196afbb09751f",
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-021-c002",
+      "code": "G09-KQ002709",
+      "name": "b)\tTrợ cấp tuất hằng tháng, trợ cấp tuất nuôi dưỡng hằng tháng: -\tBản khai theo Mẫu số 12 Phụ lục I Nghị định số 131/2021/NĐ-CP. -\tBản sao được chứng thực từ giấy báo tử hoặc trích lục khai tử. -\tBản sao được chứng thực từ giấy khai sinh hoặc trích lục khai sinh đối với trường hợp thân nhân là con chưa đủ 18 tuổi. -\tGiấy xác nhận của cơ sở giáo dục nơi đang theo học đối với trường hợp thân nhân là con từ đủ 18 tuổi trở lên đang đi học; nếu đang theo học tại cơ sở giáo dục nghề nghiệp hoặc giáo dục đại học thì phải có thêm bản sao được chứng thực từ Bằng tốt nghiệp trung học phổ thông hoặc giấy xác nhận của cơ sở giáo dục trung học phổ thông về thời điểm kết thúc học.",
+      "section": "",
+      "role": "applicant_form",
+      "scenario_status": "conditional_needs_review",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 1,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfa-fc36-7611-9219-adb6dee5774f",
+      "source_detail_id": "019d2bfa-fc36-7611-9219-adb6dee5774f",
+      "embedded_other_requirements": true,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    }
+  ],
+  "service_cases": [
+    {
+      "id": "019dbd55-4465-75d7-9ad7-a893c3fbe0be",
+      "code": "1.010824.01",
+      "name": "Hưởng trợ cấp khi người có công đang hưởng trợ cấp ưu đãi từ trần",
+      "source_processing_time": {
+        "qty": 24,
+        "type": "DAY"
+      },
+      "has_case_specific_components": false
+    },
+    {
+      "id": "019dbd88-f872-7266-8b5f-dc679894170f",
+      "code": "1.010824.02",
+      "name": "Hưởng trợ cấp khi người có công đang hưởng trợ cấp ưu đãi từ trần",
+      "source_processing_time": {
+        "qty": 24,
+        "type": "DAY"
+      },
+      "has_case_specific_components": false
+    }
+  ],
+  "selected_template_ids": [
+    "template-bad196afbb09751f"
+  ],
+  "source_component_groups": [
+    {
+      "name": "",
+      "component_count": 2,
+      "source_detail_id": "019d2bfa-fc36-7611-9219-adb6dee5774f"
+    }
+  ],
+  "conditional_component_groups": [],
+  "default_test_scenario": {
+    "channel": "direct",
+    "applicant_submits_self": true,
+    "authorized": false,
+    "special_case_flags": [],
+    "selected_conditional_group": null,
+    "case_selection_method": "ordinary_direct_submission",
+    "case_status": "scenario_for_testing_not_a_legal_eligibility_decision"
+  },
+  "requirement_note": "required_as_published được giữ nguyên; false không chứng minh giấy tờ luôn tùy chọn. Các nhóm executionCases có thể là mục giấy tờ/hướng dẫn, không phải các phương án loại trừ nhau."
+}

@@ -1,0 +1,303 @@
+{
+  "id": "dvc-019d2bfc-e1fc-767b-9cdd-e482879142e7",
+  "procedure_code": "2.002184",
+  "name": "Thủ tục khai bổ sung hồ sơ hải quan hàng hoá xuất khẩu, nhập khẩu",
+  "domain": "Hải quan",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.908269+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfc-e1fc-767b-9cdd-e482879142e7",
+      "code": "2.002184",
+      "name": "Thủ tục khai bổ sung hồ sơ hải quan hàng hoá xuất khẩu, nhập khẩu",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1776304945306,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-e1fc-767b-9cdd-e482879142e7",
+      "raw_path": "evidence/dvc/details/019d2bfc-e1fc-767b-9cdd-e482879142e7.json",
+      "components": [
+        {
+          "section": "Trường hợp khai bổ sung hồ sơ hải quan sau thông quan trong trường hợp gửi thiếu hàng và hàng hóa chưa đưa hoặc đưa một phần ra khỏi khu vực giám sát hải quan",
+          "position": 1,
+          "name": "Chứng từ thanh toán (nếu có)",
+          "component_code": "000.00.00.G12-KQ012487",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Trường hợp khai bổ sung hồ sơ hải quan sau thông quan trong trường hợp gửi thiếu hàng và hàng hóa chưa đưa hoặc đưa một phần ra khỏi khu vực giám sát hải quan",
+          "position": 2,
+          "name": "Vận đơn hoặc chứng từ vận tải tương đương (trường hợp việc khai bổ sung có liên quan đến các tiêu chí số lượng container, số lượng kiện hoặc trọng lượng đối với hàng rời và hàng hóa chưa đưa ra khỏi khu vực giám sát hải quan)",
+          "component_code": "000.00.00.G12-KQ012486",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Trường hợp khai bổ sung hồ sơ hải quan sau thông quan trong trường hợp gửi thiếu hàng và hàng hóa chưa đưa hoặc đưa một phần ra khỏi khu vực giám sát hải quan",
+          "position": 3,
+          "name": "Văn bản xác nhận gửi thiếu hàng của người gửi hàng",
+          "component_code": "000.00.00.G12-KQ012483",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Trường hợp khai bổ sung hồ sơ hải quan sau thông quan trong trường hợp gửi thiếu hàng và hàng hóa chưa đưa hoặc đưa một phần ra khỏi khu vực giám sát hải quan",
+          "position": 4,
+          "name": "Hóa đơn thương mại ghi nhận việc sửa đổi các thông tin về hàng hóa và giá trị hàng hóa",
+          "component_code": "000.00.00.G12-KQ012485",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Trường hợp khai bổ sung hồ sơ hải quan sau thông quan trong trường hợp gửi thiếu hàng và hàng hóa chưa đưa hoặc đưa một phần ra khỏi khu vực giám sát hải quan",
+          "position": 5,
+          "name": "Kết quả giám định về số lượng hàng nhập khẩu thực tế của thương nhân kinh doanh dịch vụ giám định",
+          "component_code": "000.00.00.G12-KQ012488",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Trường hợp khai bổ sung hồ sơ hải quan sau thông quan trong trường hợp gửi thiếu hàng và hàng hóa chưa đưa hoặc đưa một phần ra khỏi khu vực giám sát hải quan",
+          "position": 6,
+          "name": "Hợp đồng và Phụ lục hợp đồng ghi nhận việc sửa đổi các thông tin về hàng hóa và giá trị hàng hóa hoặc các chứng từ khác có giá trị tương đương theo quy định của pháp luật",
+          "component_code": "000.00.00.G12-KQ012484",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Trường hợp khai bổ sung hồ sơ hải quan trong trường hợp gửi thừa hàng, nhầm hàng",
+          "position": 1,
+          "name": "Hóa đơn thương mại ghi nhận việc sửa đổi các thông tin về hàng hóa và giá trị hàng hóa",
+          "component_code": "000.00.00.G12-KQ012478",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Trường hợp khai bổ sung hồ sơ hải quan trong trường hợp gửi thừa hàng, nhầm hàng",
+          "position": 2,
+          "name": "Giấy chứng nhận kiểm tra chuyên ngành đã điều chỉnh về số lượng nếu trên Giấy chứng nhận kiểm tra chuyên ngành có ghi nhận số lượng",
+          "component_code": "000.00.00.G12-KQ012482",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Trường hợp khai bổ sung hồ sơ hải quan trong trường hợp gửi thừa hàng, nhầm hàng",
+          "position": 3,
+          "name": "Hợp đồng và Phụ lục hợp đồng ghi nhận việc sửa đổi các thông tin về hàng hóa và giá trị hàng hóa hoặc các chứng từ khác có giá trị tương đương theo quy định của pháp luật",
+          "component_code": "000.00.00.G12-KQ012477",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Trường hợp khai bổ sung hồ sơ hải quan trong trường hợp gửi thừa hàng, nhầm hàng",
+          "position": 4,
+          "name": "Chứng từ thanh toán (nếu có)",
+          "component_code": "000.00.00.G12-KQ012480",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Trường hợp khai bổ sung hồ sơ hải quan trong trường hợp gửi thừa hàng, nhầm hàng",
+          "position": 5,
+          "name": "Văn bản xác nhận gửi thừa hàng, nhầm hàng của người gửi hàng",
+          "component_code": "000.00.00.G12-KQ012476",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Trường hợp khai bổ sung hồ sơ hải quan trong trường hợp gửi thừa hàng, nhầm hàng",
+          "position": 6,
+          "name": "Vận đơn hoặc chứng từ vận tải tương đương (trường hợp việc khai bổ sung có liên quan đến các tiêu chí số lượng container, số lượng kiện hoặc trọng lượng đối với hàng rời và hàng hóa chưa đưa ra khỏi khu vực giám sát hải quan)",
+          "component_code": "000.00.00.G12-KQ012479",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Trường hợp khai bổ sung hồ sơ hải quan trong trường hợp gửi thừa hàng, nhầm hàng",
+          "position": 7,
+          "name": "Giấy phép đã điều chỉnh về số lượng đối với những hàng hóa phải có giấy phép và thực hiện khai bổ sung trong thông quan",
+          "component_code": "000.00.00.G12-KQ012481",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Trường hợp khai bổ sung trong trường hợp xuất khẩu, nhập khẩu được thỏa thuận mua, bán nguyên lô, nguyên tàu và có thỏa thuận về dung sai về số lượng và cấp độ thương mại của hàng hóa",
+          "position": 1,
+          "name": "Giấy phép đã điều chỉnh về số lượng đối với những hàng hóa phải có giấy phép: 01 bản chính. Trường hợp cơ quan quản lý nhà nước chuyên ngành gửi giấy phép dưới dạng điện tử thông qua Cổng thông tin một cửa quốc gia theo quy định pháp luật về một cửa quốc gia, người khai hải quan không phải nộp chứng từ này",
+          "component_code": "000.00.00.G12-KQ012475",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Trường hợp khai bổ sung trong trường hợp xuất khẩu, nhập khẩu được thỏa thuận mua, bán nguyên lô, nguyên tàu và có thỏa thuận về dung sai về số lượng và cấp độ thương mại của hàng hóa",
+          "position": 2,
+          "name": "Phiếu nhập kho của người nhập khẩu đối với tờ khai hải quan nhập khẩu hoặc Phiếu xuất kho của người xuất khẩu đối với tờ khai hải quan xuất khẩu",
+          "component_code": "000.00.00.G12-KQ012471",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Trường hợp khai bổ sung trong trường hợp xuất khẩu, nhập khẩu được thỏa thuận mua, bán nguyên lô, nguyên tàu và có thỏa thuận về dung sai về số lượng và cấp độ thương mại của hàng hóa",
+          "position": 3,
+          "name": "Phiếu cân hàng của cảng (đối với hàng rời, hàng xá) hoặc Chứng từ kiểm kiện của cảng hoặc Biên bản ghi nhận tại hiện trường giám định về số lượng, trọng lượng của thương nhân kinh doanh dịch vụ giám định hoặc Kết quả giám định số lượng, chủng loại của thương nhân kinh doanh dịch vụ giám định",
+          "component_code": "000.00.00.G12-KQ012470",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Trường hợp khai bổ sung trong trường hợp xuất khẩu, nhập khẩu được thỏa thuận mua, bán nguyên lô, nguyên tàu và có thỏa thuận về dung sai về số lượng và cấp độ thương mại của hàng hóa",
+          "position": 4,
+          "name": "Biên bản nhận hàng có đại diện người bán ký xác nhận hoặc Bảng quyết toán có xác nhận của người mua và người bán về số lượng, kết quả phân loại cấp độ thương mại của hàng hóa và số tiền thanh toán theo thực tế. Trường hợp Bảng quyết toán không có đủ xác nhận của người mua và người bán thì phải có xác nhận của người khai hải quan trên chứng từ",
+          "component_code": "000.00.00.G12-KQ012472",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Trường hợp khai bổ sung trong trường hợp xuất khẩu, nhập khẩu được thỏa thuận mua, bán nguyên lô, nguyên tàu và có thỏa thuận về dung sai về số lượng và cấp độ thương mại của hàng hóa",
+          "position": 5,
+          "name": "Chứng từ thanh toán (nếu có)",
+          "component_code": "000.00.00.G12-KQ012474",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Trường hợp khai bổ sung trong trường hợp xuất khẩu, nhập khẩu được thỏa thuận mua, bán nguyên lô, nguyên tàu và có thỏa thuận về dung sai về số lượng và cấp độ thương mại của hàng hóa",
+          "position": 6,
+          "name": "Hợp đồng mua bán hàng hóa có thể hiện nội dung thỏa thuận về việc chấp nhận sự sai lệch về số lượng, chủng loại và cách thức quyết toán số tiền thanh toán theo thực tế tương ứng và hình thức thanh toán",
+          "component_code": "000.00.00.G12-KQ012473",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 1,
+          "name": "+ Các chứng từ liên quan đến việc khai bổ sung",
+          "component_code": "000.00.00.G12-KQ012469",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "+ Tờ khai điện tủ theo mẫu số 01, mẫu số 02, mẫu số 04 hoặc mẫu số 05 phụ lục I Thông tư 39/2018/TT-BTC trong trường hợp khai báo điện tử. Trường hợp khai báo tờ khai giấy, văn bản đề nghị khai bổ sung theo mẫu số 03/KBS/GSQL Phụ lục V ban hành kèm theo Thông tư số 38/2015/TT-BTC ngày 25/3/2015 của Bộ trưởng Bộ Tài chính được sửa đổi, bổ sung tại Phụ lục II Thông tư số 39/2018/TT-BTC ngày 20/4/2018 của Bộ trưởng Bộ Tài chính: 02 bản chính.",
+          "component_code": "000.00.00.G12-KQ012468",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c70-724b-96df-e5de75229fe4",
+          "name": "Chấp nhận/ Không chấp nhận cho sửa đổi, bổ sung",
+          "code": "KQ.G12.000590"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7d-7398-be4d-ff62cdf67da5",
+          "name": "Luật 54/2014/QH13",
+          "code": "54/2014/QH13"
+        },
+        {
+          "id": "019d2bb3-5d7d-7398-be4d-1c6dbc289d7a",
+          "name": "Quy định về thủ tục hải quan; kiểm tra, giám sát hải quan; thuế xuất khẩu thuế nhập khẩu và quản lý thuế đối vớỉ hàng hoá xuất khẩu, nhập khẩu.",
+          "code": "38/2015/TT-BTC"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afe7-9c25863596db",
+          "name": "Nghị định 08/2015/NĐ-CP",
+          "code": "08/2015/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7d-7398-be48-2ce7181d92a3",
+          "name": "Thông tư số 39/2018/TT-BTC ngày 20/4/2018 của Bộ Tài chính sửa đổi, bổ sung một số điều tại Thông tư số 38/2015/TT-BTC ngày 25/3/2015 của Bộ Tài chính quy định về thủ tục hải quan; kiểm tra, giám sát hải quan; thuế xuất khẩu, thuế nhập khẩu và quản lý thuế đối với hàng hóa xuất khẩu, nhập khẩu.",
+          "code": "39/2018/TT-BTC"
+        },
+        {
+          "id": "019d2bb3-5d7f-719e-b46b-b6df3641dbeb",
+          "name": "Về giao dịch điện tử trong hoạt động tài chính",
+          "code": "27/2007/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d87-7195-a443-db1e211c2ddd",
+          "name": "Nghị định 59/2018/NĐ-CP",
+          "code": "59/2018/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b673-5f4f0ddd4079",
+          "name": "Luật 51/2005/QH11",
+          "code": "51/2005/QH11"
+        }
+      ]
+    }
+  ]
+}

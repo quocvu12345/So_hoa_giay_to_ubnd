@@ -1,0 +1,64 @@
+{
+  "ordinal": "239",
+  "managing_agency": "Sở Giáo dục Đào tạo",
+  "procedure_code": "3.000182",
+  "name": "Tuyển sinh trung học cơ sở",
+  "domain": "Giáo dục trung học",
+  "ministry_decision": "1693/QĐ-BGDĐT ngày 25/06/2025",
+  "hanoi_decision": "1168/QĐ-TTPVHCC ngày 12/08/2025",
+  "workflow_decision": "1270/QĐ-TTPVHCC ngày 9/9/2025",
+  "fees": "Không quy định",
+  "execution_level": "Cấp xã",
+  "competent_authority": "UBND cấp xã",
+  "delegation_decision": "",
+  "delegation_expiry": "",
+  "receiving_location": "Điểm hỗ trợ DVC số",
+  "id": "hn87-239",
+  "source_page": 10,
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "inventory_date": "2026-04-27",
+  "checked_at": "2026-11-12T22:24:38.059176+07:00",
+  "details": [
+    {
+      "id": "019d2bf8-d78d-7335-bc84-dc4d5274946e",
+      "code": "3.000182",
+      "name": "Tuyển sinh trung học cơ sở",
+      "state": "ACTIVE",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1776152358046,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf8-d78d-7335-bc84-dc4d5274946e",
+      "raw_path": "evidence/dvc/details/019d2bf8-d78d-7335-bc84-dc4d5274946e.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Chưa có quy định cụ thể.",
+          "component_code": "TP-G03.001944",
+          "original_quantity": 0,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c3a-7502-a841-dbf4bd14f86d",
+          "name": "Học sinh được tuyển vào học lớp 6",
+          "code": "KQ-G03.000188"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7c-71ab-9f00-f7dbdf26e82a",
+          "name": "Quy chế tuyển sinh trung học cơ sở và tuyển sinh trung học phổ thông",
+          "code": "30/2024/TT-BGDĐT"
+        }
+      ]
+    }
+  ],
+  "lookup_status": "retrieved",
+  "currency_status": "snapshot_requires_later_amendment_check",
+  "errors": []
+}

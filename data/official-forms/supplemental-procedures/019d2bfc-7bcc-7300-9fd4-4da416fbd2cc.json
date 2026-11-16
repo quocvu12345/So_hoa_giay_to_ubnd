@@ -1,0 +1,95 @@
+{
+  "id": "dvc-019d2bfc-7bcc-7300-9fd4-4da416fbd2cc",
+  "procedure_code": "1.009093",
+  "name": "Thủ tục hải quan đối với ô tô, mô tô, xe gắn máy xuất cảnh, nhập cảnh, quá cảnh",
+  "domain": "Hải quan",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.926987+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfc-7bcc-7300-9fd4-4da416fbd2cc",
+      "code": "1.009093",
+      "name": "Thủ tục hải quan đối với ô tô, mô tô, xe gắn máy xuất cảnh, nhập cảnh, quá cảnh",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1775639210017,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-7bcc-7300-9fd4-4da416fbd2cc",
+      "raw_path": "evidence/dvc/details/019d2bfc-7bcc-7300-9fd4-4da416fbd2cc.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Tờ khai phương tiện vận tải đường bộ tạm nhập - tái xuất hoặc tạm xuất - tái nhập theo mẫu quy định của Bộ Tài chính; hoặc Tờ khai phương tiện vận tải đường bộ tạm xuất - tái nhập hoặc tạm nhập-tái xuất có xác nhận tạm xuất của Chi cục Hải quan cửa khẩu làm thủ tục tạm xuất/tạm nhập",
+          "component_code": "000.00.00.G12-KQ9927",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Giấy phép liên vận hoặc văn bản cho phép của cơ quan có thẩm quyền cấp",
+          "component_code": "000.00.00.G12-KQ9924",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 3,
+          "name": "Danh sách hành khách đối với ô tô vận chuyển hành khách",
+          "component_code": "000.00.00.G12-KQ9926",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c70-724b-96df-ddc2578f60d3",
+          "name": "Xác nhận thông quan hàng hóa",
+          "code": "KQ.G12.000583"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7d-7398-be4d-ff62cdf67da5",
+          "name": "Luật 54/2014/QH13",
+          "code": "54/2014/QH13"
+        },
+        {
+          "id": "019d2bb3-5d87-7195-a442-414b51a3c119",
+          "name": "Thông tư 50/2018/TT-BTC",
+          "code": "50/2018/TT-BTC"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afe7-9c25863596db",
+          "name": "Nghị định 08/2015/NĐ-CP",
+          "code": "08/2015/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7d-7398-be49-b47412bcdb1d",
+          "name": "Thông tư quy định mức thu, chế độ thu, nộp, quản lý và sử dụng phí hải quan và lệ phí hàng hóa, phương tiện vận tải quá cảnh",
+          "code": "14/2021/TT-BTC"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afec-4c8f9cb859d2",
+          "name": "Nghị định số 167/2025/NĐ-CP ngày 30/6/2025 của Chính phủ",
+          "code": "167/2025"
+        }
+      ]
+    }
+  ]
+}

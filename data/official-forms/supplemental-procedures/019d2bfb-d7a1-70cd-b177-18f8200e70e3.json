@@ -1,0 +1,203 @@
+{
+  "id": "dvc-019d2bfb-d7a1-70cd-b177-18f8200e70e3",
+  "procedure_code": "1.001798",
+  "name": "Ký hợp đồng khám bệnh, chữa bệnh bảo hiểm y tế",
+  "domain": "Thực hiện chính sách BHYT",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.970637+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfb-d7a1-70cd-b177-18f8200e70e3",
+      "code": "1.001798",
+      "name": "Ký hợp đồng khám bệnh, chữa bệnh bảo hiểm y tế",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1787504992342,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-d7a1-70cd-b177-18f8200e70e3",
+      "raw_path": "evidence/dvc/details/019d2bfb-d7a1-70cd-b177-18f8200e70e3.json",
+      "components": [
+        {
+          "section": "a) Trường hợp ký hợp đồng lần đầu",
+          "position": 1,
+          "name": "Văn bản đề nghị ký hợp đồng khám bệnh, chữa bệnh bảo hiểm y tế của cơ sở khám bệnh, chữa bệnh theo Mẫu số 7 Phụ lục ban hành kèm theo Nghị định số 188/2025/NĐ-CP",
+          "component_code": "TP.G12.000158",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "01a02f5d-5261-70ce-a606-3e0623959097",
+              "fileName": "Mẫu số 7NĐ188.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/01a02f5d-5261-70ce-a606-3e0623959097/Mẫu số 7NĐ188.docx"
+            }
+          ]
+        },
+        {
+          "section": "a) Trường hợp ký hợp đồng lần đầu",
+          "position": 2,
+          "name": "Bản chụp giấy phép hoạt động khám bệnh, chữa bệnh do cơ quan nhà nước có thẩm quyền cấp cho cơ sở khám bệnh, chữa bệnh có đóng dấu treo của cơ sở khám bệnh, chữa bệnh để xác nhận",
+          "component_code": "TP.G12.000159",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "a) Trường hợp ký hợp đồng lần đầu",
+          "position": 3,
+          "name": "Bản chụp (có đóng dấu treo của cơ sở khám bệnh, chữa bệnh) quyết định xếp cấp hoặc tạm xếp cấp chuyên môn kỹ thuật được cấp cho cơ sở khám bệnh, chữa bệnh",
+          "component_code": "TP.G12.000160",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "a) Trường hợp ký hợp đồng lần đầu",
+          "position": 4,
+          "name": "Bản chụp (có đóng dấu treo của cơ sở khám bệnh, chữa bệnh) văn bản của cơ quan có thẩm quyền xác định cơ sở khám bệnh, chữa bệnh đã được phân tuyến chuyên môn kỹ thuật trước ngày 01 tháng 01 năm 2025 (đối với cơ sở khám bệnh, chữa bệnh theo quy định tại điểm đ và điểm h khoản 4 Điều 22 của Luật Bảo hiểm y tế và các khoản 3 và 4 Điều 19 của Nghị định số 188/2025/NĐ-CP)",
+          "component_code": "TP.G12.000161",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "a) Trường hợp ký hợp đồng lần đầu",
+          "position": 5,
+          "name": "Bản chụp (có đóng dấu treo của cơ sở khám bệnh, chữa bệnh) quyết định phê duyệt danh mục dịch vụ kỹ thuật y tế được cấp có thẩm quyền phê duyệt",
+          "component_code": "TP.G12.000162",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "a) Trường hợp ký hợp đồng lần đầu",
+          "position": 6,
+          "name": "Danh mục thuốc, thiết bị y tế sử dụng tại cơ sở khám bệnh, chữa bệnh",
+          "component_code": "TP.G12.000163",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "a) Trường hợp ký hợp đồng lần đầu",
+          "position": 7,
+          "name": "Bảng kê nhân lực, tổng số giường bệnh của cơ sở khám bệnh, chữa bệnh theo từng khoa, phòng, bộ phận chuyên môn được cấp có thẩm quyền phê duyệt",
+          "component_code": "TP.G12.000164",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "a) Trường hợp ký hợp đồng lần đầu",
+          "position": 8,
+          "name": "Bản chụp (có đóng dấu treo của cơ sở khám bệnh, chữa bệnh) quyết định phê duyệt giá dịch vụ khám bệnh, chữa bệnh thuộc danh mục do quỹ bảo hiểm y tế thanh toán được cấp có thẩm quyền phê duyệt",
+          "component_code": "TP.G12.000165",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "a) Trường hợp ký hợp đồng lần đầu",
+          "position": 9,
+          "name": "Văn bản đề xuất giá dịch vụ khám bệnh, chữa bệnh bảo hiểm y tế áp dụng để xác định mức thanh toán tại cơ sở (đối với cơ sở khám bệnh, chữa bệnh tư nhân theo quy định tại Điều 47 của Nghị định số 188/2025/NĐ-CP)",
+          "component_code": "TP.G12.000166",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "a) Trường hợp ký hợp đồng lần đầu",
+          "position": 10,
+          "name": "Bảng kê danh mục các thiết bị phần mềm, phần cứng bảo đảm việc kết nối liên thông để trích chuyển dữ liệu điện tử trong thanh toán bảo hiểm y tế theo Mẫu số 8 Phụ lục ban hành kèm theo Nghị định số 188/2025/NĐ-CP",
+          "component_code": "TP.G12.000167",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "01a02f5d-f0aa-77cb-950e-6b8540a8d620",
+              "fileName": "Mẫu số 8 NĐ 188.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/01a02f5d-f0aa-77cb-950e-6b8540a8d620/Mẫu số 8 NĐ 188.docx"
+            }
+          ]
+        },
+        {
+          "section": "Đối với các văn bản bao gồm: Giấy phép hoạt động; Quyết định xếp cấp hoặc tạm xếp cấp hoặc văn bản của cơ quan có thẩm quyền xác định cơ sở khám bệnh, chữa bệnh đã được phân tuyến chuyên môn kỹ thuật trước ngày 01 tháng 01 năm 2025; Quyết định phê duyệt danh mục dịch vụ kỹ thuật; Quyết định phê duyệt giá hoặc văn bản đề xuất giá dịch vụ khám bệnh, chữa bệnh, cơ sở khám bệnh, chữa bệnh không phải nộp bản chụp khi thuộc một trong các trường hợp sau:",
+          "position": 1,
+          "name": "Cơ quan có thẩm quyền khi ban hành văn bản đã gửi cho cơ quan bảo hiểm xã hội",
+          "component_code": "TP.G12.000168",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Đối với các văn bản bao gồm: Giấy phép hoạt động; Quyết định xếp cấp hoặc tạm xếp cấp hoặc văn bản của cơ quan có thẩm quyền xác định cơ sở khám bệnh, chữa bệnh đã được phân tuyến chuyên môn kỹ thuật trước ngày 01 tháng 01 năm 2025; Quyết định phê duyệt danh mục dịch vụ kỹ thuật; Quyết định phê duyệt giá hoặc văn bản đề xuất giá dịch vụ khám bệnh, chữa bệnh, cơ sở khám bệnh, chữa bệnh không phải nộp bản chụp khi thuộc một trong các trường hợp sau:",
+          "position": 2,
+          "name": "Trường hợp có thể tra cứu trên hệ thống trực tuyến của cơ quan có thẩm quyền nhưng cơ sở khám bệnh, chữa bệnh phải dẫn chiếu địa chỉ trang thông tin điện tử có thể tra cứu trong văn bản đề nghị ký hợp đồng khám bệnh, chữa bệnh bảo hiểm y tế",
+          "component_code": "TP.G12.000169",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c82-739b-8b99-c3789943879f",
+          "name": "Hợp đồng KCB BHYT",
+          "code": "KQ.G12.001302"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d84-71c5-b672-49499e22ddad",
+          "name": "Luật 25/2008/QH12 - Bảo hiểm y tế",
+          "code": "25/2008/QH12"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b673-669988af5f4c",
+          "name": "Luật số 51/2024/QH15 ngày 27/11/2024 của Quốc hội sửa đổi, bổ sung một số điều của Luật Bảo hiểm y tế",
+          "code": "51/2024/QH15"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afec-d63277407a6f",
+          "name": "Nghị định quy định chi tiết và hướng dẫn thi hành một số điều của Luật Bảo hiểm y tế (188/2025/NĐ-CP ngày 01/7/2025)",
+          "code": "188/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b674-ae46cb2804d7",
+          "name": "46/2014/QH13 Sửa đổi, bổ sung một số điều của Luật Bảo hiểm y tế",
+          "code": "Luật 46/2014/QH13"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "id": "dvc-019d2bf7-b5d4-75ed-a3db-16ee15d99e2f",
+  "procedure_code": "3.000244",
+  "name": "Cấp đổi Giấy chứng nhận đủ điều kiện về an ninh, trật tự (thực hiện tại Công an cấp xã)",
+  "domain": "Quản lý ngành nghề đầu tư, kinh doanh có điều kiện về an ninh, trật tự",
+  "managing_agency": "Bộ Công an",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:18.032965+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bf7-b5d4-75ed-a3db-16ee15d99e2f",
+      "code": "3.000244",
+      "name": "Cấp đổi Giấy chứng nhận đủ điều kiện về an ninh, trật tự (thực hiện tại Công an cấp xã)",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1782139529160,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf7-b5d4-75ed-a3db-16ee15d99e2f",
+      "raw_path": "evidence/dvc/details/019d2bf7-b5d4-75ed-a3db-16ee15d99e2f.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "- Văn bản đề nghị cấp đổi Giấy chứng nhận đủ điều kiện về an ninh, trật tự của cơ sở kinh doanh (Mẫu số 03 tại Phụ lục ban hành kèm theo Nghị định số 56/2023/NĐ-CP)",
+          "component_code": "000.00.00.G01-KQ002516",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Bản chính Giấy chứng nhận đủ điều kiện về an ninh, trật tự đã được cấp trước đó (nếu có)",
+          "component_code": "000.00.00.G01-KQ002519",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 3,
+          "name": "Tài liệu quy định tại điểm b khoản 4 Điều 19 Nghị định số 96/2016/NĐ-CP hoặc tại điểm b khoản 3 Điều 1 Nghị định số 56/2023/NĐ-CP trong trường hợp thay đổi người đứng tên trong Giấy chứng nhận đủ điều kiện về an ninh, trật tự của cơ sở kinh doanh",
+          "component_code": "000.00.00.G01-KQ002518",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 4,
+          "name": "Bản sao hợp lệ các tài liệu chứng minh sự thay đổi của các thông tin ghi trên Giấy chứng nhận đủ điều kiện về an ninh, trật tự (nếu có)",
+          "component_code": "000.00.00.G01-KQ002517",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c37-76e8-b48c-614b96822f5a",
+          "name": "Giấy chứng nhận đủ điều kiện về an ninh, trật tự",
+          "code": "KQ.G01.000063"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7d-7398-be4f-d83c997ff751",
+          "name": "Quy định mức thu, chế độ thu, nộp, quản lý và sử dụng phí thẩm định điều kiện thuộc lĩnh vực an ninh; phí sát hạch cấp chứng chỉ nghiệp vụ bảo vệ; lệ phí cấp giấy phép quản lý pháo; lệ phí cấp giấy phép quản lý vũ khí, vật liệu nổ, công cụ hỗ trợ",
+          "code": "Thông tư 218/2016/TT-BTC"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afe6-93e458cb5e43",
+          "name": "Nghị định 96/2016/NĐ-CP",
+          "code": "96/2016/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7f-719e-b46f-0ca240576c04",
+          "name": "Nghị định 56/2023/NĐ-CP",
+          "code": "56/2023/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d86-7760-a640-a84d6eed6a9d",
+          "name": "Thông tư 15/2022/TT-BCA",
+          "code": "15/2022/TT-BCA"
+        },
+        {
+          "id": "019dcfee-fd2f-7257-b25b-a657391e4330",
+          "name": "Thông tư số 43/2017/TT-BCA ngày 20/10/2017 của Bộ Công an",
+          "code": "43/2017/TT-BCA"
+        },
+        {
+          "id": "019d2bb3-5d7d-7398-be4b-ac80f48de214",
+          "name": "Thông tư 23/2019/TT-BTC",
+          "code": "23/2019/TT-BTC"
+        },
+        {
+          "id": "019d2bb3-5d87-7195-a441-064feb0005fc",
+          "name": "Thông tư 42/2017/TT-BCA",
+          "code": "42/2017/TT-BCA"
+        }
+      ]
+    }
+  ]
+}

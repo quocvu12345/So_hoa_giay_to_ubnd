@@ -1,0 +1,234 @@
+{
+  "id": "dvc-01a1195b-5f04-737a-b168-c2e4bf61f63f",
+  "procedure_code": "1.117102",
+  "name": "Thủ tục tặng, truy tặng \"Huy chương Thanh niên xung phong vẻ vang\" cho cá nhân",
+  "domain": "Thi đua - khen thưởng",
+  "managing_agency": "Bộ Nội vụ",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.462857+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "01a1195b-5f04-737a-b168-c2e4bf61f63f",
+      "code": "1.117102",
+      "name": "Thủ tục tặng, truy tặng \"Huy chương Thanh niên xung phong vẻ vang\" cho cá nhân",
+      "state": "ACTIVE",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1791511926407,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/01a1195b-5f04-737a-b168-c2e4bf61f63f",
+      "raw_path": "evidence/dvc/details/01a1195b-5f04-737a-b168-c2e4bf61f63f.json",
+      "components": [
+        {
+          "section": "a) Hồ sơ đề nghị của Thanh niên xung phong có 01 bộ (bản chính), gồm:",
+          "position": 1,
+          "name": "- Bản khai đề nghị xét tặng “Huy chương Thanh niên xung phong vẻ vang”: + Đối với trường hợp Thanh niên xung phong tự kê khai thực hiện theo Mẫu số 01 Phụ lục I kèm theo Quyết định số 45/2026/QĐ-TTg. + Đối với trường hợp Thanh niên xung phong già, yếu hoặc đã hy sinh, từ trần do đại diện thân nhân đứng tên lập bản khai theo Mẫu số 02 Phụ lục I kèm theo Quyết định số 45/2026/QĐ-TTg.",
+          "component_code": "G09-KQ003279",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "a) Hồ sơ đề nghị của Thanh niên xung phong có 01 bộ (bản chính), gồm:",
+          "position": 2,
+          "name": "- Nếu cá nhân là Thanh niên xung phong qua các thời kỳ theo quy định thì phải thể hiện đơn vị tham gia thanh niên xung phong và có tổng thời gian tham gia thanh niên xung phong cộng dồn đủ 24 tháng trở lên (viết tắt là: thông tin về thời gian tham gia thanh niên xung phong) hoặc nếu là liệt sĩ thì có giấy tờ chứng minh liệt sĩ khi là thanh niên xung phong.  Giấy tờ minh chứng là một hoặc một số giấy tờ sau đây đảm bảo tính pháp lý (gồm bản chính hoặc bản sao y theo quy định):",
+          "component_code": "G09-KQ0032100",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "a) Hồ sơ đề nghị của Thanh niên xung phong có 01 bộ (bản chính), gồm:",
+          "position": 3,
+          "name": "+ Lý lịch cán bộ hoặc phiếu cá nhân hoặc lý lịch đảng viên (kể cả lý lịch đảng viên của thân nhân theo quy định) có thể hiện thời gian tham gia Thanh niên xung phong khai trước thời điểm ban hành Quyết định số 104/1999/QĐ-TTg ngày 14 tháng 4 năm 1999 của Thủ tướng Chính phủ; riêng đối với Thanh niên xung phong cơ sở miền Nam, lý lịch khai trước năm 1995. Lý lịch đảng viên phải do cấp ủy đảng nơi đảng viên sinh hoạt xác nhận sao y bản chính hoặc trích sao;",
+          "component_code": "G09-KQ0032101",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "a) Hồ sơ đề nghị của Thanh niên xung phong có 01 bộ (bản chính), gồm:",
+          "position": 4,
+          "name": "+ Quyết định nghỉ hưu, hưởng bảo hiểm xã hội trong đó thể hiện thông tin về thời gian tham gia Thanh niên xung phong theo quy định;",
+          "component_code": "G09-KQ0032102",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "a) Hồ sơ đề nghị của Thanh niên xung phong có 01 bộ (bản chính), gồm:",
+          "position": 5,
+          "name": "+ Quyết định hưởng trợ cấp, hưởng chính sách đối với Thanh niên xung phong hoàn thành nhiệm vụ trong kháng chiến, bảo vệ Tổ quốc của cơ quan có thẩm quyền ban hành; trong đó, ghi rõ thông tin cá nhân về thời gian tham gia Thanh niên xung phong và mức chi trợ cấp cho cá nhân theo quy định của Nhà nước phải phù hợp với thời gian tham gia thanh niên xung phong của cá nhân trong quyết định hưởng chế độ, chính sách;",
+          "component_code": "G09-KQ0032103",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "a) Hồ sơ đề nghị của Thanh niên xung phong có 01 bộ (bản chính), gồm:",
+          "position": 6,
+          "name": "+ Quyết định hưởng chế độ một lần theo Quyết định số 176-HĐBT ngày 09 tháng 9 năm 1989 của Hội đồng Bộ trưởng nay là Chính phủ về sắp xếp lại lao động trong các đơn vị kinh tế quốc doanh, trong đó có thông tin về thời gian tham gia thanh niên xung phong theo quy định;",
+          "component_code": "G09-KQ0032104",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "a) Hồ sơ đề nghị của Thanh niên xung phong có 01 bộ (bản chính), gồm:",
+          "position": 7,
+          "name": "+ Giấy chứng nhận (xác nhận) thanh niên xung phong của Tổng hội Thanh niên xung phong được cấp tại thời điểm cá nhân hoàn thành nhiệm vụ. Riêng đối với các trường hợp Giấy chứng nhận (xác nhận) hoặc Kỷ niệm chương thanh niên xung phong của Tổng hội Thanh niên xung phong, Hội Thanh niên xung phong tỉnh, thành phố cấp sau năm 1999, trong đó thể hiện thời gian tham gia thanh niên xung phong, phiên hiệu đơn vị thanh niên xung phong phải kèm theo các căn cứ để xác nhận, cấp giấy chứng nhận;",
+          "component_code": "G09-KQ0032105",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "a) Hồ sơ đề nghị của Thanh niên xung phong có 01 bộ (bản chính), gồm:",
+          "position": 8,
+          "name": "+ Giấy tờ do cơ quan có thẩm quyền cấp trước thời điểm thanh niên xung phong hoàn thành nhiệm vụ trở về địa phương như: Giấy chứng nhận hoàn thành nhiệm vụ của đơn vị quản lý Thanh niên xung phong; Giấy chuyển thương, chuyển viện, phiếu sức khỏe; Giấy khen trong thời gian tham gia lực lượng Thanh niên xung phong; Giấy điều động công tác, bổ nhiệm, giao nhiệm vụ… có thông tin về thời gian tham gia thanh niên xung phong;",
+          "component_code": "G09-KQ0032106",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "a) Hồ sơ đề nghị của Thanh niên xung phong có 01 bộ (bản chính), gồm:",
+          "position": 9,
+          "name": "+ Đối với trường hợp đã được khen thưởng thành tích kháng chiến cá nhân có thể nộp: Bản sao y Bằng Huân chương Kháng chiến, Huy chương Kháng chiến, Bằng khen của Thủ tướng Chính phủ hoặc Bằng khen của Bộ trưởng, Thủ trưởng cơ quan ngang bộ, Chủ tịch Ủy ban nhân dân các tỉnh, thành phố theo Quyết định số 98/2006/QĐ-TTg ngày 05 tháng 5 năm 2006 của Thủ tướng Chính phủ và kèm theo bản khai thành tích khi đề nghị khen thưởng thành tích kháng chiến đó. Trong bản khai đã được xét duyệt khen thưởng kháng chiến có thông tin về thời gian tham gia thanh niên xung phong;",
+          "component_code": "G09-KQ0032107",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "a) Hồ sơ đề nghị của Thanh niên xung phong có 01 bộ (bản chính), gồm:",
+          "position": 10,
+          "name": "+ Đối với liệt sĩ: Bản sao y Bằng Tổ quốc ghi công có ghi thông tin là Thanh niên xung phong. Trường hợp Bằng Tổ quốc ghi công không ghi thông tin thanh niên xung phong thì phải có giấy tờ được cấp có thẩm quyền xác nhận liệt sĩ khi hy sinh là thanh niên xung phong (trích lục hồ sơ liệt sĩ).",
+          "component_code": "G09-KQ0032108",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "a) Hồ sơ đề nghị của Thanh niên xung phong có 01 bộ (bản chính), gồm:",
+          "position": 11,
+          "name": "+ Đối với trường hợp đã được khen thưởng thành tích kháng chiến cá nhân có thể nộp: Bản sao y Bằng Huân chương Kháng chiến, Huy chương Kháng chiến, Bằng khen của Thủ tướng Chính phủ hoặc Bằng khen của Bộ trưởng, Thủ trưởng cơ quan ngang bộ, Chủ tịch Ủy ban nhân dân các tỉnh, thành phố theo Quyết định số 98/2006/QĐ-TTg ngày 05 tháng 5 năm 2006 của Thủ tướng Chính phủ và kèm theo bản khai thành tích khi đề nghị khen thưởng thành tích kháng chiến đó. Trong bản khai đã được xét duyệt khen thưởng kháng chiến có thông tin về thời gian tham gia thanh niên xung phong;",
+          "component_code": "G09-KQ0032109",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "b) Hồ sơ trình Chủ tịch Ủy ban nhân dân cấp tỉnh (01 bộ bản chính và các tệp tin điện tử của hồ sơ đề nghị khen thưởng), gồm:",
+          "position": 1,
+          "name": "- Tờ trình của Ủy ban nhân dân cấp xã kèm theo danh sách các trường hợp đề nghị tặng, truy tặng “Huy chương Thanh niên xung phong vẻ vang”;",
+          "component_code": "G09-KQ003281",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "b) Hồ sơ trình Chủ tịch Ủy ban nhân dân cấp tỉnh (01 bộ bản chính và các tệp tin điện tử của hồ sơ đề nghị khen thưởng), gồm:",
+          "position": 2,
+          "name": "- Biên bản hội nghị xét tặng, truy tặng “Huy chương Thanh niên xung phong vẻ vang” của cấp xã;",
+          "component_code": "G09-KQ003282",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "b) Hồ sơ trình Chủ tịch Ủy ban nhân dân cấp tỉnh (01 bộ bản chính và các tệp tin điện tử của hồ sơ đề nghị khen thưởng), gồm:",
+          "position": 3,
+          "name": "- Hồ sơ đề nghị của Thanh niên xung phong theo quy định tại điểm a nêu trên.",
+          "component_code": "G09-KQ00321010",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "b) Hồ sơ trình Chủ tịch Ủy ban nhân dân cấp tỉnh (01 bộ bản chính và các tệp tin điện tử của hồ sơ đề nghị khen thưởng), gồm:",
+          "position": 4,
+          "name": "- Kết quả công khai các trường hợp đề nghị khen thưởng theo quy định.",
+          "component_code": "G09-KQ003284",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "c) Hồ sơ Bộ Nội vụ trình Thủ tướng Chính phủ (01 bộ bản chính và các tệp tin điện tử của hồ sơ đề nghị khen thưởng), gồm:",
+          "position": 1,
+          "name": "- Tờ trình của Ủy ban nhân dân cấp tỉnh kèm theo danh sách các trường hợp đề nghị tặng, truy tặng “Huy chương Thanh niên xung phong vẻ vang”;",
+          "component_code": "G09-KQ003285",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "c) Hồ sơ Bộ Nội vụ trình Thủ tướng Chính phủ (01 bộ bản chính và các tệp tin điện tử của hồ sơ đề nghị khen thưởng), gồm:",
+          "position": 2,
+          "name": "- Hồ sơ đề nghị của Thanh niên xung phong theo quy định. Riêng bản khai phải có xác nhận của cơ quan thẩm định hồ sơ cấp tỉnh và ghi rõ thời gian xét khen thưởng.",
+          "component_code": "G09-KQ00321011",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "01a1195a-0b7a-7016-bd7a-b8d3d9186f9d",
+          "name": "Quyết định của Chủ tịch nước tặng, truy tặng “Huy chương Thanh niên xung phong vẻ vang”.",
+          "code": "KQ.G09.001714"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "01a0b3db-d59d-7129-90b4-dea934ba09d2",
+          "name": "Luật sửa đổi, bổ sung một số điều của Luật Thi đua, khen thưởng số 06/2022/QH15",
+          "code": "Luật số: 06/2026/QH16"
+        },
+        {
+          "id": "01a11971-9586-70e5-bea1-f4619969d436",
+          "name": "Quy định thi hành một số điều của Luật Thi đua, khen thưởng",
+          "code": "45/2026/QĐ-TTg"
+        }
+      ]
+    }
+  ]
+}

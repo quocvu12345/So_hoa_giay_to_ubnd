@@ -1,0 +1,104 @@
+{
+  "id": "dvc-019d2bfc-54eb-719d-a37e-b10adefc162e",
+  "procedure_code": "1.008344",
+  "name": "Khai thuế thu nhập doanh nghiệp đối với hoạt động chuyển nhượng vốn của nhà thầu nước ngoài",
+  "domain": "Thuế",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.942179+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfc-54eb-719d-a37e-b10adefc162e",
+      "code": "1.008344",
+      "name": "Khai thuế thu nhập doanh nghiệp đối với hoạt động chuyển nhượng vốn của nhà thầu nước ngoài",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1785399197738,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-54eb-719d-a37e-b10adefc162e",
+      "raw_path": "evidence/dvc/details/019d2bfc-54eb-719d-a37e-b10adefc162e.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Tờ khai thuế thu nhập doanh nghiệp (Áp dụng đối với hoạt động chuyển nhượng vốn của doanh nghiệp nước ngoài) theo mẫu số 05/TNDN ban hành kèm theo Thông tư số 89/2026/TT-BTC ngày 30/06/2026 của Bộ trưởng Bộ Tài chính",
+          "component_code": "G12.0001181",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019fa341-1474-778a-bb73-f1e36983691e",
+              "fileName": "16. 05.TNDN.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa341-1474-778a-bb73-f1e36983691e/16. 05.TNDN.docx"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Bản sao hợp đồng chuyển nhượng",
+          "component_code": "G12.0001182",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 3,
+          "name": "Từ 01/7/2026 đến thời điểm theo lộ trình của cơ quan thuế quy định tại khoản 2 Điều 99 Thông tư số 89/2026/TT-BTC thì thực hiện theo mẫu 05/TNDN ban hành kèm theo Thông tư số 21/2026/TT-BTC ngày 17/3/2026 của Bộ trưởng Bộ Tài chính",
+          "component_code": "G12.0002555",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019fa341-8547-777f-9ee1-9ad583003000",
+              "fileName": "05 TNDN.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa341-8547-777f-9ee1-9ad583003000/05 TNDN.docx"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c70-724b-96e1-59c6a510ec9f",
+          "name": "Hồ sơ gửi đến cơ quan thuế không có kết quả giải quyết.",
+          "code": "KQ.G12.000429"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019f8db3-9765-740b-8b90-682677b9c421",
+          "name": "Thông tư quy định chi tiết một số điều của Luật Quản lý thuế và Nghị định số 252/2026/NĐ-CP của Chính phủ quy định chi tiết một số điều và biện pháp để tổ chức, hướng dẫn thi hành Luật Quản lý thuế",
+          "code": "89/2026/TT-BTC"
+        },
+        {
+          "id": "019e5e83-1282-771d-9014-49799413a4e5",
+          "name": "Luật số 108/2025/QH15 của Quốc hội: Luật Quản lý thuế",
+          "code": "108/2025/QH15"
+        },
+        {
+          "id": "019f64ed-e026-7299-b5f2-ca44a3964050",
+          "name": "Nghị định về thực hiện thủ tục hành chính theo cơ chế một cửa, một cửa liên thông tại Bộ phận Một cửa và Cổng Dịch vụ công quốc gia.",
+          "code": "118/2025/NĐ-CP "
+        },
+        {
+          "id": "019fa333-90c9-70c8-8723-5c4b476b5aa4",
+          "name": "Luật Thuế thu nhập doanh nghiệp số 68/2025/QH15 ngày 16/6/2025 và các văn bản pháp luật quy định chi tiết, hướng dẫn thi hành và sửa đổi, bổ sung có liên quan",
+          "code": "672025/QH15"
+        }
+      ]
+    }
+  ]
+}

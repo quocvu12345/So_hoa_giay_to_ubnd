@@ -1,0 +1,87 @@
+{
+  "id": "dvc-019d2bfb-2af9-73cb-9dbc-1af8c5ddec7b",
+  "procedure_code": "1.014197",
+  "name": "Cấp lại giấy xác nhận không thuộc diện cấp giấy phép lao động đối với người lao động nước ngoài làm việc tại Việt Nam",
+  "domain": "Việc làm",
+  "managing_agency": "Bộ Nội vụ",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.990773+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfb-2af9-73cb-9dbc-1af8c5ddec7b",
+      "code": "1.014197",
+      "name": "Cấp lại giấy xác nhận không thuộc diện cấp giấy phép lao động đối với người lao động nước ngoài làm việc tại Việt Nam",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1779698986018,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-2af9-73cb-9dbc-1af8c5ddec7b",
+      "raw_path": "evidence/dvc/details/019d2bfb-2af9-73cb-9dbc-1af8c5ddec7b.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "(1) Văn bản đề nghị cấp lại giấy xác nhận không thuộc diện cấp giấy phép lao động của người sử dụng lao động theo Mẫu số 01 Phụ lục ban hành kèm theo Nghị định số 219/2025/NĐ-CP;",
+          "component_code": "G09-KQ003060",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019d7657-60f6-72bd-ba16-fe5f263af07a",
+              "fileName": "Mauso01.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d7657-60f6-72bd-ba16-fe5f263af07a/Mauso01.docx"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "(2) Giấy tờ chứng minh việc thay đổi một trong các nội dung sau: họ và tên, quốc tịch, số hộ chiếu, địa điểm làm việc, đổi tên người sử dụng lao động mà không thay đổi mã số định danh của người sử dụng lao động;",
+          "component_code": "G09-KQ003061",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 3,
+          "name": "(3) Giấy xác nhận không thuộc diện cấp giấy phép lao động còn thời hạn, trừ trường hợp bị mất hoặc bị hư hỏng không sử dụng được.",
+          "component_code": "G09-KQ003062",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c4c-77ab-bf70-0eac604cd34a",
+          "name": "- Giấy xác nhận không thuộc diện cấp giấy phép lao động; - Hoặc văn bản trả lời trong trường hợp không cấp lại giấy xác nhận không thuộc diện cấp giấy phép lao động và nêu rõ lý do.",
+          "code": "KQ.G09.000378"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7e-72d1-afed-66700cf36a77",
+          "name": "QUY ĐỊNH VỀ NGƯỜI LAO ĐỘNG NƯỚC NGOÀI LÀM VIỆC TẠI VIỆT NAM",
+          "code": "219/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b673-3e33a4649d19",
+          "name": "Bộ Luật lao động",
+          "code": "45/2019/QH14"
+        }
+      ]
+    }
+  ]
+}

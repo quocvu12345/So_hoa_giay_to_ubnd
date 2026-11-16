@@ -1,0 +1,75 @@
+{
+  "id": "dvc-019d2bfc-ab02-72f7-8377-62acdf116a4c",
+  "procedure_code": "1.010337",
+  "name": "Đăng ký sử dụng hoá đơn điện tử/Thay đổi nội dung đăng ký sử dụng hoá đơn điện tử/Ủy nhiệm lập hóa đơn điện tử/Chuyển đổi áp dụng hóa đơn điện tử có mã của cơ quan thuế/Khai thác dữ liệu của chi nhánh, đơn vị phụ thuộc/Thông báo tạm ngừng sử dụng hóa đơn điện tử/Tích hợp hóa đơn điện tử với biên lai thu thuế, phí, lệ phí",
+  "domain": "Thuế",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.925710+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfc-ab02-72f7-8377-62acdf116a4c",
+      "code": "1.010337",
+      "name": "Đăng ký sử dụng hoá đơn điện tử/Thay đổi nội dung đăng ký sử dụng hoá đơn điện tử/Ủy nhiệm lập hóa đơn điện tử/Chuyển đổi áp dụng hóa đơn điện tử có mã của cơ quan thuế/Khai thác dữ liệu của chi nhánh, đơn vị phụ thuộc/Thông báo tạm ngừng sử dụng hóa đơn điện tử/Tích hợp hóa đơn điện tử với biên lai thu thuế, phí, lệ phí",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1784548236166,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-ab02-72f7-8377-62acdf116a4c",
+      "raw_path": "evidence/dvc/details/019d2bfc-ab02-72f7-8377-62acdf116a4c.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Tờ khai đăng ký/ Thay đổi thông tin sử dụng hoá đơn điện tử (Mẫu số 01/ĐKTĐ-HĐĐT)",
+          "component_code": "G12.0001211",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019f7f1e-e2d3-76af-acbe-dd43e5e65839",
+              "fileName": "Mẫu 01 ĐKTĐ-HĐĐT.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019f7f1e-e2d3-76af-acbe-dd43e5e65839/Mẫu 01 ĐKTĐ-HĐĐT.docx"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c71-7574-afec-73ae9b6a2329",
+          "name": "Thông báo về việc chấp nhận/không chấp nhận đăng ký/thay đổi thông tin sử dụng hóa đơn điện tử/chứng từ điện tử và thực hiện kết nối kỹ thuật và kiểm tra truyền nhận dữ liệu (Mẫu số 01/TB-ĐKĐT)",
+          "code": "KQ.G12.000964"
+        },
+        {
+          "id": "019d2bb2-1c71-7574-afec-6c69313f5154",
+          "name": "Thông báo về việc tiếp nhận/không tiếp nhận tờ khai đăng ký/thay đổi thông tin sử dụng hóa đơn điện tử/chứng từ điện tử (Mẫu số 01/TB-TNĐT)",
+          "code": "KQ.G12.000477"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019f7eee-65ff-7190-97bb-0d978182d268",
+          "name": "Nghị định số 254/2026/NĐ-CP của Chính phủ: Quy định chi tiết một số điều và biện pháp để tổ chức, hướng dẫn thi hành Luật Quản lý thuế số 108/2025/QH15 về hóa đơn điện tử, chứng từ điện tử",
+          "code": "254/2026/NĐ-CP"
+        },
+        {
+          "id": "019f7ef5-5ff2-73cd-841d-79992569d6c6",
+          "name": "Quy định một số điều của Luật Quản lý thuế và Nghị định số 254/2026/NĐ-CP của Chính phủ quy định chi tiết một số điều và biện pháp để tổ chức, hướng dẫn thi hành Luật Quản lý thuế số 108/2025/QH15 về hóa đơn điện tử, chứng từ điện tử",
+          "code": "91/2026/TT-BTC"
+        },
+        {
+          "id": "019f64ed-e026-7299-b5f2-ca44a3964050",
+          "name": "Nghị định về thực hiện thủ tục hành chính theo cơ chế một cửa, một cửa liên thông tại Bộ phận Một cửa và Cổng Dịch vụ công quốc gia.",
+          "code": "118/2025/NĐ-CP "
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "ordinal": "4",
+  "managing_agency": "Sở Nội Vụ",
+  "procedure_code": "1.013744",
+  "name": "Giải quyết chế độ đối với quân nhân, cán bộ đi chiến trường B,C,K trong thời kỳ chống Mỹ cứu nước không có thân nhân phải trực tiếp nuôi dưỡng và quân nhân, cán bộ được đảng cử ở lại miền Nam hoạt động sau Hiệp định Giơnevơ năm 1954 đối với cán bộ dân, chính, đảng thuộc diện Trung ương quản lý",
+  "domain": "Người có công",
+  "ministry_decision": "639/QĐ-BNV ngày 20/6/2025",
+  "hanoi_decision": "963/QĐ-TTPVHCC ngày 27/6/2025",
+  "workflow_decision": "1053/QĐ-TTPVHCC ngày 11/7/2025",
+  "fees": "Không quy định",
+  "execution_level": "Liên thông TW",
+  "competent_authority": "TW",
+  "delegation_decision": "",
+  "delegation_expiry": "",
+  "receiving_location": "Điểm hỗ trợ DVC số",
+  "source_page": 1,
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "inventory_date": "2026-04-27",
+  "checked_at": "2026-11-12T22:23:29.173904+07:00",
+  "details": [
+    {
+      "id": "019d2bfb-1bb7-748a-b5ba-e5aebd37adb2",
+      "code": "1.013744",
+      "name": "Giải quyết chế độ đối với quân nhân, cán bộ đi chiến trường B,C,K trong thời kỳ chống Mỹ cứu nước không có thân nhân phải trực tiếp nuôi dưỡng và quân nhân, cán bộ được đảng cử ở lại miền nam hoạt động sau hiệp định Giơnevơ năm 1954 đối với cán bộ dân, chính, đảng thuộc diện Trung ương quản lý",
+      "state": "ACTIVE",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1776416013670,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-1bb7-748a-b5ba-e5aebd37adb2",
+      "raw_path": "evidence/dvc/details/019d2bfb-1bb7-748a-b5ba-e5aebd37adb2.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Tờ khai cá nhân theo Mẫu số 03 Phụ lục kèm theo Thông tư số 09/2025/TT-BNV ngày 18/6/2025,",
+          "component_code": "G09-KQ003210124",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019d7109-348e-708c-bd7c-c7d667fac7f4",
+              "fileName": "Mauso03_TT09_2025.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d7109-348e-708c-bd7c-c7d667fac7f4/Mauso03_TT09_2025.docx"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Tờ khai của thân nhân theo Mẫu số 04 Phụ lục I kèm theo Thông tư số 09/2025/TT-BNV đối với người đã từ trần hoặc hy sinh.",
+          "component_code": "G09-KQ003210125",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019d7109-5999-72ef-8a7f-026dc0064dbb",
+              "fileName": "Mauso04_TT09_2025.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d7109-5999-72ef-8a7f-026dc0064dbb/Mauso04_TT09_2025.docx"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c4c-77ab-bf6f-68805c4eafc7",
+          "name": "Duyệt đối tượng được hưởng chế độ và chi trả theo đối tượng",
+          "code": "KQ.G09.000337"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7d-7398-be46-59b9b0aa1881",
+          "name": "Quy định về phân định thẩm quyền và phân cấp thực hiện nhiệm vụ quản lý nhà nước trong lĩnh vực nội vụ",
+          "code": "09/2025/TT-BNV"
+        },
+        {
+          "id": "019d2bb3-5d86-7760-a63e-c89ed5085b30",
+          "name": "HƯỚNG DẪN BỔ SUNG THÔNG TƯ SỐ 17/1999/TTLT-BLĐTBXH-BTC-BTCCBCP NGÀY 21-7-1999 HƯỚNG DẪN THI HÀNH NGHỊ ĐỊNH SỐ 23/1999/NĐ-CP NGÀY 15-4-1999 CỦA CHÍNH PHỦ VỀ CHẾ ĐỘ ĐỐI VỚI QUÂN NHÂN, CÁN BỘ ĐI CHIẾN TRƯỜNG B, C, K TRONG THỜI KỲ CHỐNG MỸ CỨU NƯỚC KHÔNG CÓ THÂN NHÂN PHẢI TRỰC TIẾP NUÔI DƯỠNG VÀ QUÂN NHÂN, CÁN BỘ ĐƯỢC ĐẢNG CỬ Ở LẠI MIỀN NAM HOẠT ĐỘNG SAU HIỆP ĐỊNH GIƠNEVƠ NĂM 1954",
+          "code": "13/2002/BLĐTBXH-TT"
+        },
+        {
+          "id": "019d2bb3-5d86-7760-a641-d435d966074c",
+          "name": "ỦA BỘ LAO ĐỘNG - THƯƠNG BINH VÀ XÃ HỘI - BỘ TÀI CHÍNH - BAN TỔ CHỨC CÁN BỘ CHÍNH PHỦ SỐ 17/1999/TTLT-BLĐTBXH- BTC-BTCCBCP NGÀY 21 THÁNG 7 NĂM 1999 HƯỚNG DẪN THI HÀNH NGHỊ ĐỊNH SỐ 23/1999/NĐ-CP NGÀY 15/4/1999 CỦA CHÍNH PHỦ VỀ CHẾ ĐỘ ĐỐI VỚI QUÂN NHÂN, CÁN BỘ ĐI CHIẾN TRƯỜNG B, C, K TRONG THỜI KỲ CHỐNG MỸ CỨU NƯỚC KHÔNG CÓ THÂN NHÂN PHẢI TRỰC TIẾP NUÔI DƯỠNG VÀ QUÂN NHÂN, CÁN BỘ ĐƯỢC ĐẢNG CỬ Ở LẠI MIỀN NAM HOẠT ĐỘNG SAU HIỆP ĐỊNH GIƠNEVƠ NĂM 1954",
+          "code": "17/1999/TTLT-BLĐTBXH-BTC-BTCCBCP"
+        }
+      ]
+    }
+  ],
+  "lookup_status": "retrieved",
+  "currency_status": "snapshot_requires_later_amendment_check",
+  "errors": []
+}

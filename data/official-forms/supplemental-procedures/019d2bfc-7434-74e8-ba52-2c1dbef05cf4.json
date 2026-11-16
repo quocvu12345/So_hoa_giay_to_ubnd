@@ -1,0 +1,71 @@
+{
+  "id": "dvc-019d2bfc-7434-74e8-ba52-2c1dbef05cf4",
+  "procedure_code": "1.009076",
+  "name": "Thủ tục hải quan, kiểm tra, giám sát hải quan đối với hàng hoá từ nội địa đưa vào cửa hàng miễn thuế, kho chứa hàng miễn thuế",
+  "domain": "Hải quan",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.928673+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfc-7434-74e8-ba52-2c1dbef05cf4",
+      "code": "1.009076",
+      "name": "Thủ tục hải quan, kiểm tra, giám sát hải quan đối với hàng hoá từ nội địa đưa vào cửa hàng miễn thuế, kho chứa hàng miễn thuế",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1785982947172,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-7434-74e8-ba52-2c1dbef05cf4",
+      "raw_path": "evidence/dvc/details/019d2bfc-7434-74e8-ba52-2c1dbef05cf4.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Danh sách hàng hóa theo Mẫu số 08/DSHH Phụ lục III ban hành kèm theo Nghị định số 273/2026/NĐ-CP (đối với trường hợp nộp trực tiếp)",
+          "component_code": "000.00.00.G12-KQ9865",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019fb797-6234-74bc-9378-b15e5c897f89",
+              "fileName": "Mẫu số 08.DSHH.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fb797-6234-74bc-9378-b15e5c897f89/Mẫu số 08.DSHH.docx"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Chỉ tiêu thông tin theo Mẫu số 08a, Mẫu số 08b, Mẫu số 08c Phụ lục II ban hành kèm theo Nghị định số 273/2026/NĐ-CP (đối với trường hợp nộp trực tuyến).",
+          "component_code": "000.00.00.G12-KQ78956",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c73-70ac-aa18-0c88791d7b28",
+          "name": "Xác nhận thực tế hàng hóa đưa vào cửa hàng miễn thuế, kho chứa hàng miễn thuế của Cơ quan hải quan",
+          "code": "KQ.G12.001238"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019fc558-dd5c-7395-9a78-efc7e38e5c9f",
+          "name": "Về kinh doanh hàng miễn thuế",
+          "code": "273/2026/NĐ-CP"
+        }
+      ]
+    }
+  ]
+}

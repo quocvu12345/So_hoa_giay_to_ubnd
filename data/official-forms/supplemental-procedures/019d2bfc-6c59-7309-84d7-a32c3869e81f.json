@@ -1,0 +1,238 @@
+{
+  "id": "dvc-019d2bfc-6c59-7309-84d7-a32c3869e81f",
+  "procedure_code": "1.008579",
+  "name": "Miễn thuế, giảm thuế theo Hiệp định thuế đối với thu nhập từ hoạt động vận tải quốc tế",
+  "domain": "Thuế",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.935500+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfc-6c59-7309-84d7-a32c3869e81f",
+      "code": "1.008579",
+      "name": "Miễn thuế, giảm thuế theo Hiệp định thuế đối với thu nhập từ hoạt động vận tải quốc tế",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1785399200253,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-6c59-7309-84d7-a32c3869e81f",
+      "raw_path": "evidence/dvc/details/019d2bfc-6c59-7309-84d7-a32c3869e81f.json",
+      "components": [
+        {
+          "section": "i. Đối với hãng hàng không nước ngoài",
+          "position": 1,
+          "name": "Văn bản đề nghị theo mẫu số 01/HTQT Phụ lục III ban hành kèm theo Thông tư số 89/2026/TT-BTC",
+          "component_code": "000.00.00.G12-00012005",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019fa815-2fed-74ee-af8e-820a8b17ade5",
+              "fileName": "01-HTQT -TT89.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa815-2fed-74ee-af8e-820a8b17ade5/01-HTQT -TT89.docx"
+            }
+          ]
+        },
+        {
+          "section": "i. Đối với hãng hàng không nước ngoài",
+          "position": 2,
+          "name": "Bản chính hoặc bản sao có chứng thực Giấy chứng nhận cư trú của nước cư trú do cơ quan thuế cấp ghi rõ là đối tượng cư trú trong năm tính thuế nào đã được hợp pháp hóa lãnh sự. Trường hợp tại thời điểm nộp hồ sơ chưa có Giấy chứng nhận cư trú tương ứng với năm đề nghị miễn, giảm thuế theo Hiệp định thuế, hãng hàng không nước ngoài, hãng vận tải nước ngoài nộp cho cơ quan thuế bản chính hoặc bản sao có chứng thực Giấy chứng nhận cư trú của nước cư trú do cơ quan thuế cấp ngay trước năm đề nghị miễn, giảm thuế theo Hiệp định thuế đã được hợp pháp hóa lãnh sự",
+          "component_code": "000.00.00.G12-00012004",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "i. Đối với hãng hàng không nước ngoài",
+          "position": 3,
+          "name": "Bản sao có chứng thực văn bản ủy quyền trong trường hợp người nộp thuế ủy quyền cho đại diện hợp pháp thực hiện thủ tục áp dụng Hiệp định thuế",
+          "component_code": "G12.0012002",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "i. Đối với hãng hàng không nước ngoài",
+          "position": 4,
+          "name": "Bản chính hoặc bản sao có chứng thực giấy phép khai thác thị trường Việt Nam (phép bay) của Cục Hàng không Việt Nam cấp theo quy định của Luật Hàng không dân dụng Việt Nam có xác nhận của người nộp thuế",
+          "component_code": "000.00.00.G12-00012003",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "i. Đối với hãng hàng không nước ngoài",
+          "position": 5,
+          "name": "Trường hợp năm trước đó đã có hồ sơ đề nghị miễn, giảm thuế theo Hiệp định thuế thì các năm tiếp theo người nộp thuế chỉ phải nộp lại hồ sơ nếu có bất kỳ thay đổi nào liên quan đến giấy phép khai thác thị trường Việt Nam (phép bay) của Cục Hàng không Việt Nam, Giấy chứng nhận cư trú đã gửi cơ quan thuế",
+          "component_code": "000.00.00.G12-00012006",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "i. Đối với hãng hàng không nước ngoài",
+          "position": 6,
+          "name": "Trường hợp tại thời điểm nộp hồ sơ đề nghị miễn, giảm thuế theo Hiệp định thuế, nhà thầu nước ngoài chỉ nộp cho cơ quan thuế bản chính hoặc bản sao có chứng thực Giấy chứng nhận cư trú của nước cư trú do cơ quan thuế cấp ngay trước năm đề nghị miễn, giảm thuế theo Hiệp định thuế thì trong thời hạn 15 ngày trước khi kết thúc hợp đồng làm việc tại Việt Nam hoặc trước khi kết thúc năm tính thuế (tuỳ theo thời điểm nào diễn ra trước) văn phòng tại Việt Nam của hãng hàng không nước ngoài gửi bản chính hoặc bản sao có chứng thực Giấy chứng nhận cư trú đã được hợp pháp hoá lãnh sự của năm tính thuế tương ứng với năm đề nghị miễn, giảm thuế theo Hiệp định thuế và Bảng kê thu nhập vận tải quốc tế dành cho trường hợp bán vé tại thị trường Việt Nam theo mẫu số 01-1/HKNN Phụ lục III ban hành kèm theo Thông tư số 89/2026/TT-BTC, Bảng kê thu nhập vận tải quốc tế dành cho trường hợp hoán đổi, chia chỗ trong vận tải hàng không quốc tế theo mẫu số 01-2/HKNN Phụ lục III ban hành kèm theo Thông tư số 89/2026/TT-BTC của năm tính thuế liên quan cho cơ quan thuế làm căn cứ áp dụng miễn, giảm thuế thu nhập doanh nghiệp từ hoạt động vận tải quốc tế của hãng hàng không nước ngoài",
+          "component_code": "TP-G12.0001048",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "ii. Đối với hãng vận tải nước ngoài",
+          "position": 1,
+          "name": "Đại lý của hãng vận tải nước ngoài tại Việt Nam hoặc văn phòng đại diện của hãng vận tải nước ngoài có trách nhiệm lưu trữ các hồ sơ, tài liệu, chứng từ theo quy định pháp luật và xuất trình khi cơ quan thuế yêu cầu",
+          "component_code": "TP-G12.0001049",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "ii. Đối với hãng vận tải nước ngoài",
+          "position": 2,
+          "name": "Trường hợp tại thời điểm nộp hồ sơ đề nghị miễn, giảm thuế theo Hiệp định, hãng vận tải nước ngoài chỉ nộp cho cơ quan thuế bản chính hoặc bản sao có chứng thực Giấy chứng nhận cư trú của nước cư trú do cơ quan thuế cấp ngay trước năm đề nghị miễn, giảm thuế theo Hiệp định thuế thì thời hạn chậm nhất là ngày 31/3 của năm tiếp theo, hãng vận tải nước ngoài hoặc đại lý của hãng vận tải nước ngoài gửi cơ quan thuế bản chính hoặc bản sao có chứng thực Giấy chứng nhận cư trú đã được hợp pháp hóa lãnh sự tương ứng với năm đề nghị miễn, giảm thuế theo Hiệp định",
+          "component_code": "KQ.G12.0001050",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "ii. Đối với hãng vận tải nước ngoài",
+          "position": 3,
+          "name": "Trường hợp năm trước đó đã có hồ sơ đề nghị miễn, giảm thuế theo Hiệp định thuế thì các năm tiếp theo hãng vận tải nước ngoài hoặc đại lý của hãng vận tải nước ngoài chỉ cần thông báo bất kỳ sự thay đổi nào về các thông tin đã đề nghị tại mẫu số 01/HTQT của năm trước đó và cung cấp các tài liệu tương ứng với việc thay đổi",
+          "component_code": "TP-G12.0001051",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "ii. Đối với hãng vận tải nước ngoài",
+          "position": 4,
+          "name": "Trường hợp các hãng vận tải nước ngoài có các đại lý tại nhiều địa phương ở Việt Nam hoặc các đại lý của hãng vận tải nước ngoài có các chi nhánh hoặc văn phòng đại diện (sau đây gọi chung là chi nhánh) tại nhiều tỉnh ở Việt Nam thì các hãng vận tải nước ngoài hoặc đại lý của hãng vận tải nước ngoài nộp bản chính hoặc bản sao có chứng thực Giấy chứng nhận cư trú đã hợp pháp hóa lãnh sự cho Thuế tỉnh nơi đại lý của hãng vận tải nước ngoài có trụ sở chính; gửi bản chính hoặc bản sao có chứng thực Giấy chứng nhận cư trú đã hợp pháp hóa lãnh sự tại các Thuế tỉnh nơi hãng vận tải nước ngoài có chi nhánh",
+          "component_code": "TP-G12.0001052",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "ii. Đối với hãng vận tải nước ngoài",
+          "position": 5,
+          "name": "Trường hợp người nộp thuế không cung cấp đủ các thông tin hoặc các tài liệu theo yêu cầu của Hồ sơ thông báo thuộc diện miễn, giảm thuế theo Hiệp định thuế, người nộp thuế có trách nhiệm giải trình cụ thể tại Văn bản mẫu số 01/HTQT Phụ lục III ban hành kèm theo Thông tư số 89/2026/TT-BTC",
+          "component_code": "TP-G12.0001053",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "ii. Đối với hãng vận tải nước ngoài",
+          "position": 6,
+          "name": "Văn bản đề nghị theo mẫu số 01/HTQT Phụ lục III ban hành kèm theo Thông tư số 89/2026/TT-BTC",
+          "component_code": "000.00.00.G12-00012005",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019fa815-2fed-74ee-af8e-820a8b17ade5",
+              "fileName": "01-HTQT -TT89.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fa815-2fed-74ee-af8e-820a8b17ade5/01-HTQT -TT89.docx"
+            }
+          ]
+        },
+        {
+          "section": "ii. Đối với hãng vận tải nước ngoài",
+          "position": 7,
+          "name": "Bản chính hoặc bản sao có chứng thực Giấy chứng nhận cư trú của nước cư trú do cơ quan thuế cấp ghi rõ là đối tượng cư trú trong năm tính thuế nào đã được hợp pháp hóa lãnh sự. Trường hợp tại thời điểm nộp hồ sơ chưa có Giấy chứng nhận cư trú tương ứng với năm đề nghị miễn, giảm thuế theo Hiệp định thuế, hãng hàng không nước ngoài, hãng vận tải nước ngoài nộp cho cơ quan thuế bản chính hoặc bản sao có chứng thực Giấy chứng nhận cư trú của nước cư trú do cơ quan thuế cấp ngay trước năm đề nghị miễn, giảm thuế theo Hiệp định thuế đã được hợp pháp hóa lãnh sự",
+          "component_code": "000.00.00.G12-00012004",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "ii. Đối với hãng vận tải nước ngoài",
+          "position": 8,
+          "name": "Bản sao có chứng thực văn bản ủy quyền trong trường hợp người nộp thuế ủy quyền cho đại diện hợp pháp thực hiện thủ tục áp dụng Hiệp định thuế",
+          "component_code": "G12.0012002",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 1,
+          "name": "Từ 01/7/2026 đến thời điểm theo lộ trình của cơ quan thuế quy định tại khoản 2 Điều 99 Thông tư số 89/2026/TT-BTC, tờ khai số 01/HTQT thực hiện theo mẫu ban hành kèm theo Thông tư số 80/2021/TT-BTC ngày 29/9/2021 của Bộ Tài chính (đã được sửa đổi, bổ sung)",
+          "component_code": "G12.0012005",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019fb1e0-8fee-70d3-93a7-a70686cdff85",
+              "fileName": "01 HTQT TT 80.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fb1e0-8fee-70d3-93a7-a70686cdff85/01 HTQT TT 80.docx"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c71-7574-afe7-f63bc8a369b7",
+          "name": "Trường hợp xác định người nộp thuế không thuộc diện được miễn thuế, giảm thuế theo Hiệp định thuế hoặc Điều ước quốc tế khác, cơ quan thuế gửi người nộp thuế Thông báo mẫu số 03-1/MGTH Phụ lục III ban hành kèm theo Thông tư số 89/2026/TT-BTC ngày 30/6/2026 của Bộ Tài chính. Người nộp thuế có trách nhiệm khai chính xác, trung thực, đầy đủ các nội dung trong hồ sơ miễn thuế, giảm thuế theo Hiệp định thuế hoặc Điều ước quốc tế khác. Trường hợp qua kiểm tra phát hiện người nộp thuế không thuộc diện được miễn thuế, giảm thuế theo Hiệp định thuế hoặc Điều ước quốc tế khác thì người nộp thuế có trách nhiệm hoàn thành nghĩa vụ nộp thuế theo quy định.",
+          "code": "KQ.G12.000520"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019e5e83-1282-771d-9014-49799413a4e5",
+          "name": "Luật số 108/2025/QH15 của Quốc hội: Luật Quản lý thuế",
+          "code": "108/2025/QH15"
+        },
+        {
+          "id": "019f8db3-9765-740b-8b90-682677b9c421",
+          "name": "Thông tư quy định chi tiết một số điều của Luật Quản lý thuế và Nghị định số 252/2026/NĐ-CP của Chính phủ quy định chi tiết một số điều và biện pháp để tổ chức, hướng dẫn thi hành Luật Quản lý thuế",
+          "code": "89/2026/TT-BTC"
+        },
+        {
+          "id": "019f356e-75e3-7494-a2f3-672d8dce61a6",
+          "name": "QUY ĐỊNH CHI TIẾT MỘT SỐ ĐIỀU VÀ BIỆN PHÁP ĐỂ TỔ CHỨC, HƯỚNG DẪN THI HÀNH LUẬT QUẢN LÝ THUẾ",
+          "code": "252/2026/NĐ-CP"
+        }
+      ]
+    }
+  ]
+}

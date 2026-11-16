@@ -1,0 +1,241 @@
+{
+  "id": "dvc-019d2bfe-90c2-742a-9dfb-c6d2bdd9aac8",
+  "procedure_code": "1.013239",
+  "name": "Thẩm định Báo cáo nghiên cứu khả thi đầu tư xây dựng/Báo cáo nghiên cứu khả thi đầu tư xây dựng điều chỉnh",
+  "domain": "Hoạt động xây dựng",
+  "managing_agency": "Bộ Xây dựng",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.859918+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfe-90c2-742a-9dfb-c6d2bdd9aac8",
+      "code": "1.013239",
+      "name": "Thẩm định Báo cáo nghiên cứu khả thi đầu tư xây dựng/Báo cáo nghiên cứu khả thi đầu tư xây dựng điều chỉnh",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1786949253295,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfe-90c2-742a-9dfb-c6d2bdd9aac8",
+      "raw_path": "evidence/dvc/details/019d2bfe-90c2-742a-9dfb-c6d2bdd9aac8.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Tờ trình thẩm định theo quy định tại Mẫu số 01 Phụ lục I ban hành kèm theo Nghị định số 217/2026/NĐ-CP",
+          "component_code": "TP-G17.000134",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019fe046-deb9-7743-ba2e-9c9de85d4914",
+              "fileName": "G 17. 000119 , 134, 215.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fe046-deb9-7743-ba2e-9c9de85d4914/G 17. 000119 , 134, 215.docx"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Văn bản về chủ trương đầu tư xây dựng dự án hoặc văn bản phê duyệt thông tin dự án hoặc quyết định phê duyệt Đề án du lịch sinh thái, nghỉ dưỡng, giải trí trong rừng đối với dự án du lịch sinh thái, nghỉ dưỡng, giải trí trong rừng theo quy định của pháp luật về lâm nghiệp;",
+          "component_code": "TP-G17.000135",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 3,
+          "name": "Giấy phép đầu tư, Giấy chứng nhận ưu đãi đầu tư, Giấy chứng nhận đầu tư, Giấy chứng nhận đăng ký đầu tư, Quyết định phê duyệt kết quả trúng đấu giá quyền sử dụng đất, trúng đấu thầu dự án có sử dụng đất hoặc văn bản pháp lý khác có giá trị tương đương đối với dự án thuộc trường hợp được chuyển tiếp theo quy định pháp luật về đầu tư không có yêu cầu phải thực hiện chấp thuận chủ trương đầu tư;",
+          "component_code": "TP-G17.000136",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 4,
+          "name": "Văn bản phê duyệt phương án thiết kế kiến trúc được lựa chọn theo pháp luật về kiến trúc thông qua thi tuyển và bản vẽ kèm theo (nếu có yêu cầu thi tuyển);",
+          "component_code": "TP-G17.000137",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 5,
+          "name": "Văn bản chấp thuận/quyết định phê duyệt và các bản vẽ quy hoạch có liên quan của quy hoạch sử dụng làm căn cứ lập dự án theo quy định tại Điều 26 Nghị định số 217/2026/NĐ-CP",
+          "component_code": "TP-G17.000138",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 6,
+          "name": "Các văn bản thỏa thuận, xác nhận về đấu nối hạ tầng kỹ thuật của dự án; văn bản chấp thuận độ cao công trình theo quy định của Chính phủ về quản lý độ cao chướng ngại vật hàng không và các trận địa quản lý, bảo vệ vùng trời tại Việt Nam (trường hợp dự án không thuộc khu vực hoặc đối tượng có yêu cầu lấy ý kiến thống nhất về bề mặt quản lý độ cao công trình tại giai đoạn phê duyệt quy hoạch xây dựng) (nếu có);",
+          "component_code": "TP-G17.000139",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 7,
+          "name": "Hồ sơ khảo sát xây dựng được phê duyệt;",
+          "component_code": "TP-G17.000141",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 8,
+          "name": "Báo cáo nghiên cứu khả thi (gồm thuyết minh và hồ sơ thiết kế xây dựng được lập tại Báo cáo nghiên cứu khả thi); Báo cáo kết quả thẩm tra thiết kế xây dựng theo Mẫu số 02 Phụ lục I ban hành kèm theo Nghị định số 217/2026/NĐ-CP (nếu có)",
+          "component_code": "TP-G17.000142",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 9,
+          "name": "Đối với dự án đầu tư xây dựng tuyến đường sắt có yêu cầu chấp thuận danh mục tiêu chuẩn theo quy định của pháp luật về đường sắt, hồ sơ trình thẩm định phải có văn bản chấp thuận danh mục tiêu chuẩn của cơ quan có thẩm quyền;",
+          "component_code": "TP-G17.000143",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 10,
+          "name": "Đối với dự án quy định tại điểm a, b và c khoản 1 Điều 17 Luật Xây dựng năm 2025, ngoài các nội dung quy định nêu trên, hồ sơ trình thẩm định phải có các nội dung sau: tổng mức đầu tư; các thông tin, số liệu có liên quan về giá, định mức, báo giá, kết quả thẩm định giá (nếu có) để xác định tổng mức đầu tư;",
+          "component_code": "TP-G17.000144",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 11,
+          "name": "Đối với dự án có vi phạm hành chính về xây dựng đã bị xử phạt và biện pháp khắc phục hậu quả có yêu cầu thực hiện thẩm định, thẩm định điều chỉnh, cấp giấy phép xây dựng hoặc điều chỉnh giấy phép xây dựng, hồ sơ trình thẩm định còn phải có các nội dung: Báo cáo của chủ đầu tư về quá trình thực hiện dự án, tình hình thực tế thi công các công trình xây dựng của dự án đến thời điểm trình thẩm định; biên bản, quyết định xử phạt vi phạm hành chính của cấp có thẩm quyền; Báo cáo kiểm định của tổ chức kiểm định xây dựng đánh giá về khả năng chịu lực của phần công trình đã thi công xây dựng;",
+          "component_code": "TP-G17.000145",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 12,
+          "name": "Đối với dự án sửa chữa, cải tạo, hồ sơ trình thẩm định còn phải có các nội dung: Hồ sơ khảo sát hiện trạng, Báo cáo kiểm định của tổ chức kiểm định xây dựng đánh giá về khả năng chịu lực của công trình (trường hợp nội dung sửa chữa, cải tạo có liên quan).",
+          "component_code": "TP-G17.000146",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 13,
+          "name": "Đối với hồ sơ trình thẩm định Báo cáo nghiên cứu khả thi đầu tư xây dựng điều chỉnh, ngoài các thành phần hồ sơ nêu trên còn phải làm rõ các nội dung sau: + Lý do, mục tiêu điều chỉnh dự án, việc đáp ứng điều kiện điều chỉnh dự án theo pháp luật có liên quan đối với dự án đầu tư xây dựng sử dụng vốn đầu tư công, dự án PPP; + Báo cáo của chủ đầu tư hoặc cơ quan chuẩn bị dự án về quá trình thực hiện dự án, tình hình thực tế thi công các công trình xây dựng của dự án đến thời điểm đề xuất điều chỉnh.",
+          "component_code": "TP-G17.000147",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 14,
+          "name": "Ngoài các hồ sơ nêu trên, đối với các công trình xây dựng mới từ cấp II trở lên, người đề nghị thẩm định có trách nhiệm cung cấp dữ liệu BIM được nộp theo các định dạng chuẩn mở IFC hoặc các định dạng mở khác phù hợp với đặc thù, tính chất của công trình (trừ trường hợp người quyết định đầu tư quyết định việc không áp dụng BIM đối với dự án đầu tư xây dựng công trình theo tuyến, dự án đầu tư xây dựng tại khu vực có tính chất đặc thù, dự án có yêu cầu bảo đảm bí mật nhà nước).",
+          "component_code": "TP-G17.000148",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 15,
+          "name": "Báo cáo nghiên cứu khả thi (gồm thuyết minh và hồ sơ thiết kế xây dựng được lập tại Báo cáo nghiên cứu khả thi); Báo cáo kết quả thẩm tra thiết kế xây dựng theo Mẫu số 02 Phụ lục I ban hành kèm theo Nghị định số 217/2026/NĐ-CP (nếu có);",
+          "component_code": "TP-G17.000127",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "019fe046-7360-708b-ba90-d1748f6a5f50",
+              "fileName": "G17. 000 127.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019fe046-7360-708b-ba90-d1748f6a5f50/G17. 000 127.docx"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "id": "019f6541-ac4d-7698-869e-5ba0259d9e8a",
+          "name": "Văn bản thông báo kết quả thẩm định Báo cáo nghiên cứu khả thi đầu tư xây dựng/ Báo cáo nghiên cứu khả thi đầu tư xây dựng điều chỉnh",
+          "code": "KQ.G17.000095"
+        },
+        {
+          "id": "019fe048-3aa6-74af-b73c-abafc320ff9d",
+          "name": "Thông báo bổ sung hoàn thiện hồ sơ",
+          "code": "KQ-G17.000096"
+        },
+        {
+          "id": "019fe048-97d4-77d4-92a5-807e58a9d526",
+          "name": "Thông báo dừng Thẩm định",
+          "code": "KQ-G17.000097"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019e1a20-4bcb-77ce-8a33-9b18a804996e",
+          "name": " Nghị định quy định chi tiết một số điều và biện pháp thi hành Luật Phòng cháy, chữa cháy và cứu nạn, cứu hộ.\n",
+          "code": "105/2025/NĐ- CP"
+        },
+        {
+          "id": "019f1d67-d525-7040-bc15-3156f4c4411c",
+          "name": "Luật Xây dựng",
+          "code": "135/2025/QH15"
+        },
+        {
+          "id": "019f3666-e3d6-702f-926b-ced690d453d0",
+          "name": "Nghị định số 217/2026/NĐ-CP ngày 19/6/2026 của Chính phủ quy định chi tiết một số điều của Luật Xây dựng về quản lý hoạt động xây dựng",
+          "code": "217/2026/NĐ-CP"
+        }
+      ]
+    }
+  ]
+}

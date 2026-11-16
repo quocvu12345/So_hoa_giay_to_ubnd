@@ -1,0 +1,104 @@
+{
+  "ordinal": "153",
+  "managing_agency": "Sở Nông nghiệp Môi trường",
+  "procedure_code": "1.012531",
+  "name": "Hỗ trợ lãi suất vốn vay ngân hàng để trồng rừng gỗ lớn đối với chủ rừng là hộ gia đình, cá nhân",
+  "domain": "Lâm nghiệp (Bộ Nông nghiệp và Môi trường)",
+  "ministry_decision": "364/QĐ-BNNMT ngày 29/01/2026",
+  "hanoi_decision": "276/QĐ-TTPVHCC ngày 05/3/2026",
+  "workflow_decision": "439/QĐ-TTPVHCC ngày 06/4/2026",
+  "fees": "Không quy định",
+  "execution_level": "Cấp Xã",
+  "competent_authority": "UBND cấp xã",
+  "delegation_decision": "",
+  "delegation_expiry": "",
+  "receiving_location": "Điểm hỗ trợ DVC số",
+  "source_page": 6,
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "inventory_date": "2026-04-27",
+  "checked_at": "2026-11-12T22:23:50.781698+07:00",
+  "details": [
+    {
+      "id": "019d2bfa-675f-7649-b8b2-b92e5c359abf",
+      "code": "1.012531",
+      "name": "Hỗ trợ tín dụng đầu tư trồng rừng gỗ lớn đối với chủ rừng là hộ gia đình, cá nhân",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1776754076858,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfa-675f-7649-b8b2-b92e5c359abf",
+      "raw_path": "evidence/dvc/details/019d2bfa-675f-7649-b8b2-b92e5c359abf.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "- Văn bản đề nghị hỗ trợ lãi suất vay vốn ngân hàng theo Mẫu số 03 Phụ lục kèm theo Nghị định số 58/2024/NĐ-CP ngày 24/5/2024 của Chính phủ;",
+          "component_code": "000.00.00.G10-KQ004683",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019daea8-f54c-735d-b968-1689bbd175eb",
+              "fileName": "Mẫu số 03.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019daea8-f54c-735d-b968-1689bbd175eb/Mẫu số 03.docx"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "- Bản sao hợp đồng tín dụng đã ký giữa chủ rừng và ngân hàng thương mại.",
+          "component_code": "000.00.00.G10-KQ004685",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 3,
+          "name": "- Bản thiết kế trồng rừng, chăm sóc năm thứ nhất theo Mẫu số 04 Phụ lục kèm theo Nghị định số 58/2024/NĐ-CP ngày 24/5/2024 của Chính phủ;",
+          "component_code": "000.00.00.G10-KQ004684",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019daeab-4233-74bc-9a49-98e0060d8585",
+              "fileName": "Mẫu số 04.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019daeab-4233-74bc-9a49-98e0060d8585/Mẫu số 04.docx"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c6e-7797-a21a-0ec6d68b1aa4",
+          "name": "Quyết định hỗ trợ lãi suất vốn vay ngân hàng.",
+          "code": "KQ.G10.001390"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7f-719e-b46d-d938ebadb1a8",
+          "name": "Sửa đổi, bổ sung một số điều của các Nghị định trong lĩnh vực lâm nghiệp và Kiểm lâm",
+          "code": "42/2026/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7f-719e-b46f-3e5acf3122f2",
+          "name": "Nghị định số 58/2024/NĐ-CP ngày 24/5/2024 của Chính phủ về một số chính sách đầu tư trong lâm nghiệp.",
+          "code": "58/2024/NĐ-CP"
+        }
+      ]
+    }
+  ],
+  "lookup_status": "retrieved",
+  "currency_status": "snapshot_requires_later_amendment_check",
+  "errors": []
+}

@@ -1,0 +1,91 @@
+{
+  "id": "dvc-019d2bf9-7485-727e-84f5-6aae3b9d6020",
+  "procedure_code": "1.014452",
+  "name": "Thủ tục sửa đổi, chấm dứt Hợp đồng tài trợ thực hiện nhiệm vụ đổi mới sáng tạo.",
+  "domain": "Hoạt động khoa học và công nghệ",
+  "managing_agency": "Bộ Khoa học và Công nghệ",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:18.022767+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bf9-7485-727e-84f5-6aae3b9d6020",
+      "code": "1.014452",
+      "name": "Thủ tục sửa đổi, chấm dứt Hợp đồng tài trợ thực hiện nhiệm vụ đổi mới sáng tạo.",
+      "state": "ACTIVE",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1793093138476,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf9-7485-727e-84f5-6aae3b9d6020",
+      "raw_path": "evidence/dvc/details/019d2bf9-7485-727e-84f5-6aae3b9d6020.json",
+      "components": [
+        {
+          "section": "Trường hợp chấm dứt thực hiện nhiệm vụ",
+          "position": 1,
+          "name": "Tài liệu khác (nếu có) .",
+          "component_code": "G06-KQ004564",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Trường hợp chấm dứt thực hiện nhiệm vụ",
+          "position": 2,
+          "name": "Báo cáo tổng hợp kết quả thực hiện nhiệm vụ theo Mẫu số I.15 Phụ lục I ban hành kèm theo Nghị định số 268/2025/NĐ-CP",
+          "component_code": "G06-KQ004563",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Trường hợp chấm dứt thực hiện nhiệm vụ",
+          "position": 3,
+          "name": "Văn bản của tổ chức chủ trì đề nghị chấm dứt hợp đồng hoặc thông báo tạm dừng thực hiện nhiệm vụ của cơ quan quản lý nhiệm vụ đổi mới sáng tạo ;",
+          "component_code": "G06-KQ004562",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Trường hợp sửa đổi hợp đồng",
+          "position": 1,
+          "name": "Văn bản đề xuất điều chỉnh kèm theo hồ sơ liên quan đến cơ quan quản lý nhiệm vụ đổi mới sáng tạo ;",
+          "component_code": "G06-KQ004561",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c41-7141-b6bb-2f61378418ea",
+          "name": "Quyết định phê duyệt nội dung sửa đổi để tiến hành ký kết phụ lục điều chỉnh hợp đồng hoặc không phê duyệt",
+          "code": "KQ.G06.000841"
+        },
+        {
+          "id": "019d2bb2-1c41-7141-b6bb-30ba676cda2e",
+          "name": "Quyết định chấm dứt việc thực hiện nhiệm vụ, xử lý kinh phí và tiến hành thủ tục thanh lý hợp đồng",
+          "code": "KQ.G06.000842"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d85-73da-8eba-0eadc81b4d09",
+          "name": "Luật số 93/2025/QH15 của Quốc hội: Luật Khoa học, công nghệ và đổi mới sáng tạo",
+          "code": "93/2025/QH15"
+        }
+      ]
+    }
+  ]
+}

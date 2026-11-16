@@ -1,0 +1,163 @@
+{
+  "id": "dvc-019d2bfb-d76f-738b-9ca4-34d78e084f23",
+  "procedure_code": "1.001656",
+  "name": "Thanh toán trực tiếp chi phí khám bệnh, chữa bệnh giữa cơ quan bảo hiểm xã hội và người tham gia bảo hiểm y tế",
+  "domain": "Thực hiện chính sách BHYT",
+  "managing_agency": "Bộ Tài chính",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.973339+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfb-d76f-738b-9ca4-34d78e084f23",
+      "code": "1.001656",
+      "name": "Thanh toán trực tiếp chi phí khám bệnh, chữa bệnh giữa cơ quan bảo hiểm xã hội và người tham gia bảo hiểm y tế",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1787504991655,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-d76f-738b-9ca4-34d78e084f23",
+      "raw_path": "evidence/dvc/details/019d2bfb-d76f-738b-9ca4-34d78e084f23.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Văn bản đề nghị thanh toán trực tiếp theo Mẫu số 10 Phụ lục ban hành kèm theo Nghị định số 188/2025/NĐ-CP",
+          "component_code": "TP.G12.000172",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "01a02f88-366f-700a-9d32-ea0745ff56ca",
+              "fileName": "Mẫu số 10 NĐ 188.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/01a02f88-366f-700a-9d32-ea0745ff56ca/Mẫu số 10 NĐ 188.docx"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Bản chụp (có dấu treo của cơ sở khám bệnh, chữa bệnh) của giấy ra viện hoặc phiếu khám bệnh hoặc sổ khám bệnh của lần khám bệnh, chữa bệnh đề nghị thanh toán. (Trường hợp Giấy ra viện hoặc phiếu khám bệnh hoặc sổ khám bệnh đã được cơ sở khám bệnh, chữa bệnh gửi lên Hệ thống thông tin giám định BHYT thì người dân không cần phải cung cấp)",
+          "component_code": "TP.G12.000173",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 3,
+          "name": "Bản chụp của đơn thuốc (nếu có)",
+          "component_code": "TP.G12.000174",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 4,
+          "name": "Hóa đơn và bảng kê chi phí",
+          "component_code": "TP.G12.000175",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 5,
+          "name": "Phiếu chỉ định thiết bị y tế cho người bệnh trong trường hợp chỉ định thiết bị y tế (đối với trường hợp đề nghị thanh toán trực tiếp khi người bệnh tự mua thuốc, thiết bị y tế).",
+          "component_code": "TP.G12.000176",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 6,
+          "name": "Phiếu xác nhận tình trạng thiếu thuốc, thiết bị y tế theo quy định tại Mẫu số 11 Phụ lục ban hành kèm theo Nghị định số 188/2025/NĐ-CP của Chính phủ (cơ sở khám bệnh, chữa bệnh cấp cho người bệnh đối với trường hợp đề nghị thanh toán trực tiếp khi người bệnh tự mua thuốc, thiết bị y tế)",
+          "component_code": "TP.G12.000177",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "01a02f88-86a7-7017-946b-814cb5a6713f",
+              "fileName": "Mẫu số 11 NĐ188.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/01a02f88-86a7-7017-946b-814cb5a6713f/Mẫu số 11 NĐ188.docx"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 7,
+          "name": "Bảng kê chi phí xác định số tiền người bệnh đã thanh toán cho cơ sở khám bệnh, chữa bệnh kèm theo hoá đơn hợp pháp (do cơ sở khám bệnh, chữa bệnh cung cấp đối với đề nghị thanh toán chi phí khám bệnh, chữa bệnh bảo hiểm y tế cho người lao động trong trường hợp cơ quan, tổ chức, người sử dụng lao động chậm đóng, trốn đóng bảo hiểm y tế)",
+          "component_code": "TP.G12.000178",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "01a02f7c-3a39-7391-bb4a-ef7dc8a75fc0",
+          "name": "Thông báo kết quả giải quyết TTHC (Mẫu số 01-TB)",
+          "code": "KQ.G12.001154"
+        },
+        {
+          "id": "01a02f7c-b424-77ec-b437-a10da526f6d5",
+          "name": "Nhận tiền thanh toán chi phí khám bệnh chữa bệnh theo phương thức đăng ký (chuyển khoản hoặc nhận tiền mặt tại Phòng/bộ phận Tài chính - Kế toán của cơ quan bảo hiểm xã hội)",
+          "code": "KQ.G12.001306"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d84-71c5-b673-669988af5f4c",
+          "name": "Luật số 51/2024/QH15 ngày 27/11/2024 của Quốc hội sửa đổi, bổ sung một số điều của Luật Bảo hiểm y tế",
+          "code": "51/2024/QH15"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b672-49499e22ddad",
+          "name": "Luật 25/2008/QH12 - Bảo hiểm y tế",
+          "code": "25/2008/QH12"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afec-d63277407a6f",
+          "name": "Nghị định quy định chi tiết và hướng dẫn thi hành một số điều của Luật Bảo hiểm y tế (188/2025/NĐ-CP ngày 01/7/2025)",
+          "code": "188/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b674-ae46cb2804d7",
+          "name": "46/2014/QH13 Sửa đổi, bổ sung một số điều của Luật Bảo hiểm y tế",
+          "code": "Luật 46/2014/QH13"
+        },
+        {
+          "id": "01a02f84-cef2-71be-b227-eeee4e878c90",
+          "name": "VỀ VIỆC CÔNG BỐ PHƯƠNG ÁN TÁI CẤU TRÚC QUY TRÌNH GIẢI QUYẾT THỦ TỤC HÀNH CHÍNH MỚI BAN HÀNH TRONG LĨNH VỰC BẢO HIỂM Y TẾ CÓ THÀNH PHẦN HỒ SƠ ĐƯỢC THAY THẾ BẰNG VIỆC SỬ DỤNG THÔNG TIN TRONG CƠ SỞ DỮ LIỆU QUY ĐỊNH TẠI ĐIỀU 4 NGHỊ QUYẾT SỐ 66.7/2025/NQ-CP NGÀY 15/11/2025 CỦA CHÍNH PHỦ",
+          "code": "580/QĐ-BYT"
+        },
+        {
+          "id": "01a02f81-83e2-779e-8fe2-558a803f5751",
+          "name": "VỀ VIỆC CÔNG BỐ DỮ LIỆU QUỐC GIA VỀ BẢO HIỂM VÀ HƯỚNG DẪN KẾT NỐI, KHAI THÁC SỬ DỤNG DỮ LIỆU QUỐC GIA VỀ BẢO HIỂM THAY THẾ GIẤY TỜ TRONG GIẢI QUYẾT THỦ TỤC HÀNH CHÍNH",
+          "code": "241/QĐ-BTC"
+        }
+      ]
+    }
+  ]
+}

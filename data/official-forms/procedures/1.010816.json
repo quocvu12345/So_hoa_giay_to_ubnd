@@ -1,0 +1,128 @@
+{
+  "ordinal": "52",
+  "managing_agency": "Sở Nội Vụ",
+  "procedure_code": "1.010816",
+  "name": "Công nhận và giải quyết chế độ ưu đãi người hoạt động kháng chiến bị nhiễm chất độc hóa học",
+  "domain": "Người có công",
+  "ministry_decision": "639/QĐ-BNV ngày 20/6/2025",
+  "hanoi_decision": "95/QĐ-TTPVHCC ngày 21/01/2026",
+  "workflow_decision": "105/QĐ-TTPVHCC ngày 22/01/2026",
+  "fees": "Không quy định",
+  "execution_level": "Cấp xã",
+  "competent_authority": "UBND cấp xã",
+  "delegation_decision": "số 71/QĐ-SNV ngày 13/01/2026",
+  "delegation_expiry": "31/12/2028",
+  "receiving_location": "Điểm hỗ trợ DVC số",
+  "source_page": 2,
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "inventory_date": "2026-04-27",
+  "checked_at": "2026-11-12T22:23:36.719700+07:00",
+  "details": [
+    {
+      "id": "019d2bfa-fc29-7229-b30a-9311da45f3ca",
+      "code": "1.010816",
+      "name": "Công nhận và giải quyết chế độ ưu đãi người hoạt động kháng chiến bị nhiễm chất độc hóa học",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1779870585512,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfa-fc29-7229-b30a-9311da45f3ca",
+      "raw_path": "evidence/dvc/details/019d2bfa-fc29-7229-b30a-9311da45f3ca.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Bản khai theo Mẫu số 09 Phụ lục I Nghị định số 131/2021/NĐ-CP.",
+          "component_code": "G09-KQ002695",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019d718e-89ba-763c-ab7e-89a2ced3ce91",
+              "fileName": "Mauso09_ND131_2021.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d718e-89ba-763c-ab7e-89a2ced3ce91/Mauso09_ND131_2021.docx"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "b) Một trong các giấy tờ có ghi nhận thời gian tham gia kháng chiến tại vùng quân đội Mỹ sử dụng chất độc hóa học sau: -\tGiấy X Y Z. -\tBản sao được chứng thực từ một trong các giấy tờ sau: quyết định phục viên, xuất ngũ; giấy chuyển thương, chuyển viện, giấy điều trị; lý lịch cán bộ; lý lịch đảng viên; lý lịch quân nhân; lý lịch công an nhân dân; hồ sơ hưởng chế độ bảo hiểm xã hội; Huân chương, Huy chương chiến sĩ giải phóng; hồ sơ khen thưởng thành tích tham gia kháng chiến, hồ sơ người có công được xác lập trước ngày 01 tháng 01 năm 2000. -\tGiấy tờ do cơ quan có thẩm quyền ban hành, xác nhận trước ngày 01 tháng 01 năm 2000.        Trường hợp danh sách, sổ quản lý quân nhân, sổ chi trả trợ cấp quân nhân đi B đang lưu tại cơ quan chức năng của địa phương mà chưa có xác nhận thì Sở Lao động - Thương binh và Xã hội (nay là Sở Nội vụ) có trách nhiệm phối hợp với Bộ chỉ huy quân sự tỉnh tập hợp, chốt số lượng người và xác nhận danh sách, sổ quản lý đang do cơ quan, đơn vị quản lý, hoàn thành trước ngày 01 tháng 5 năm 2022 và gửi số liệu về Bộ Lao động - Thương binh và Xã hội (nay là Bộ Nội vụ) trước ngày 01 tháng 6 năm 2022.        Trường hợp các giấy tờ trên chỉ thể hiện phiên hiệu, ký hiệu đơn vị thì kèm theo giấy xác nhận thông tin giải mã phiên hiệu, ký hiệu, thời gian, địa bàn hoạt động của đơn vị theo Mẫu số 37 Phụ lục I Nghị định số 131/2021/NĐ-CP",
+          "component_code": "G09-KQ002696",
+          "original_quantity": 1,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 3,
+          "name": "d) Trường hợp có vợ hoặc có chồng nhưng không có con đẻ thì bổ sung thêm Giấy xác nhận người hoạt động kháng chiến có vợ hoặc có chồng nhưng không có con đẻ của Ủy ban nhân dân cấp xã,",
+          "component_code": "G09-KQ002698",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 4,
+          "name": "c) Một trong các giấy tờ ghi nhận mắc bệnh (trừ trường hợp có vợ hoặc có chồng nhưng không có con đẻ) như sau:       + Bản tóm tắt hồ sơ bệnh án của Bệnh viện hoặc Trung tâm y tế khu vực (bao gồm cả bệnh viện quân đội, công an) theo mẫu quy định của Bộ Y tế.        + Bản tóm tắt hồ sơ bệnh án ngoại trú của Phòng khám Ban Bảo vệ sức khỏe cán bộ tỉnh, thành phố trực thuộc trung ương theo mẫu quy định của Bộ Y tế.        + Giấy tờ do cơ quan, đơn vị có thẩm quyền ban hành được xác lập từ ngày 30 tháng 4 năm 1975 trở về trước ghi nhận mắc bệnh thuộc nhóm bệnh thần kinh ngoại biên trong thời gian từ một đến năm tuần sau phơi nhiễm đối với trường hợp mắc bệnh thần kinh ngoại biên cấp tính hoặc bán cấp tính.        + Bản tóm tắt hồ sơ bệnh án của lần điều trị cuối cùng ghi nhận quá trình điều trị về bệnh rối loạn tâm thần liên tiếp trong 03 năm trở lên của Bệnh viện hoặc Trung tâm y tế khu vực (bao gồm cả bệnh viện quân đội, công an) với các bệnh rối loạn tâm thần có liên quan đến phơi nhiễm với chất độc hóa học theo.",
+          "component_code": "G09-KQ002697",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c4d-7725-9d9c-66a7b922dd4d",
+          "name": "Quyết định về việc cấp giấy chứng nhận người hoạt động kháng chiến bị nhiễm chất độc hóa học và trợ cấp, phụ cấp ưu đãi. Giấy chứng nhận người có công",
+          "code": "KQ.G09.000428"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7f-719e-b46e-3b82195c2d48",
+          "name": "Nghị định số 45/2025/NĐ-CP ngày 28/02/2025 của Chính phủ quy định tổ chức các cơ quan chuyên môn thuộc Ủy ban nhân dân tỉnh, thành phố trực thuộc trung ương và Ủy ban nhân dân huyện, quận, thị xã, thành phố thuộc tỉnh, thành phố thuộc thành phố trực thuộc trung ương",
+          "code": "45/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7f-719e-b474-93996f3f00db",
+          "name": "Nghị định số 25/2025/NĐ-CP ngày 21 tháng 02 năm 2025 của Chính phủ quy định chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của Bộ Nội vụ",
+          "code": "Nghị định số 25/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b671-f40a5ee32475",
+          "name": "Nghị quyết số 190/2025/QH15 của Quốc hội: Quy định về xử lý một số vấn đề liên quan đến sắp xếp tổ chức bộ máy nhà nước",
+          "code": "190/2025/NQ-QH15"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afea-1c153ca6400f",
+          "name": "Quy định về phân định thẩm quyền của chính quyền địa phương 02 cấp trong lĩnh vực quản lý nhà nước của Bộ Nội vụ",
+          "code": "129/2025/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7f-719e-b474-516a799e2145",
+          "name": "QUY ĐỊNH CHI TIẾT VÀ BIỆN PHÁP THI HÀNH PHÁP LỆNH ƯU ĐÃI NGƯỜI CÓ CÔNG VỚI CÁCH MẠNG",
+          "code": "Nghị định số 131/2021/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d85-73da-8eba-20bc75de794b",
+          "name": "ƯU ĐÃI NGƯỜI CÓ CÔNG VỚI CÁCH MẠNG",
+          "code": "Pháp lệnh số: 02/2020/UBTVQH14"
+        }
+      ]
+    }
+  ],
+  "lookup_status": "retrieved",
+  "currency_status": "snapshot_requires_later_amendment_check",
+  "errors": []
+}

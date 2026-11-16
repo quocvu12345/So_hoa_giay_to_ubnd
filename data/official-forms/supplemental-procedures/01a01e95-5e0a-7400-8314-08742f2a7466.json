@@ -1,0 +1,226 @@
+{
+  "id": "dvc-01a01e95-5e0a-7400-8314-08742f2a7466",
+  "procedure_code": "1.116446",
+  "name": "(Hà Nội) Tặng cho quyền sử dụng đất cho Nhà nước hoặc cộng đồng dân cư hoặc mở rộng đường giao thông đối với trường hợp thửa đất chưa được cấp Giấy chứng nhận",
+  "domain": "Đất đai",
+  "managing_agency": "UBND Thành phố Hà Nội",
+  "inventory_date": null,
+  "scope": "hanoi",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.477221+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "01a01e95-5e0a-7400-8314-08742f2a7466",
+      "code": "1.116446",
+      "name": "(Hà Nội) Tặng cho quyền sử dụng đất cho Nhà nước hoặc cộng đồng dân cư hoặc mở rộng đường giao thông đối với trường hợp thửa đất chưa được cấp Giấy chứng nhận",
+      "state": "ACTIVE",
+      "type": "SPECIFIC",
+      "is_ward": true,
+      "updated_at_source": 1787306783798,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/01a01e95-5e0a-7400-8314-08742f2a7466",
+      "raw_path": "evidence/dvc/details/01a01e95-5e0a-7400-8314-08742f2a7466.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Đơn đăng ký biến động đất đai, tài sản gắn liền với đất theo Quyết định số 105/2026/QĐ-UBND ngày 25/7/2026 của UBND Thành phố.",
+          "component_code": "39.TH1.TPHS01.105.2026",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Giấy chứng nhận đã cấp",
+          "component_code": "45.TH2.TPHS01.105.2026",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 3,
+          "name": "Hợp đồng hoặc văn bản về việc chuyển quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất đối với trường hợp chuyển đổi, chuyển nhượng, thừa kế, góp vốn bằng quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất.",
+          "component_code": "39.TH1.TPHS03.105.2026",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 4,
+          "name": "Hợp đồng hoặc văn bản về việc bán hoặc tặng cho hoặc để thừa kế hoặc góp vốn bằng tài sản gắn liền với đất theo quy định của pháp luật về dân sự đối với trường hợp đất thuê của Nhà nước theo hình thức thuê đất trả tiền hằng năm.",
+          "component_code": "39.TH1.TPHS04.105.2026",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 5,
+          "name": "Văn bản về việc cho thuê, cho thuê lại quyền sử dụng đất đối với trường hợp cho thuê, cho thuê lại quyền sử dụng đất trong dự án xây dựng kinh doanh kết cấu hạ tầng.",
+          "component_code": "39.TH1.TPHS05.105.2026",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 6,
+          "name": "Bản vẽ tách thửa đất, hợp thửa đất theo Mẫu số 22 ban hành kèm theo Quyết định số 105/2026/QĐ-UBND ngày 25/7/2026 của UBND Thành phố đối với trường hợp đăng ký biến động đất đai mà phải tách thửa đất, hợp thửa đất.",
+          "component_code": "39.TH1.TPHS06.105.2026",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": [
+            {
+              "id": "01a01ea3-c4fe-7272-bc0f-af4be7872608",
+              "fileName": "Mẫu số 22.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/01a01ea3-c4fe-7272-bc0f-af4be7872608/Mẫu số 22.docx"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 7,
+          "name": "Mảnh trích đo bản đồ địa chính thửa đất đối với trường hợp người sử dụng đất có nhu cầu đo đạc để xác định lại kích thước các cạnh, diện tích của thửa đất.",
+          "component_code": "46.TH2.TPHS02.105.2026",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 8,
+          "name": "Văn bản thỏa thuận về việc cấp chung một Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất đối với trường hợp có nhiều người nhận chuyển quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất.",
+          "component_code": "39.TH1.TPHS08.105.2026",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 9,
+          "name": "Văn bản của người sử dụng đất đồng ý cho chủ sở hữu tài sản gắn liền với đất được chuyển nhượng, tặng cho, góp vốn bằng tài sản gắn liền với đất đối với trường hợp chuyển nhượng, tặng cho, góp vốn bằng tài sản gắn liền với đất mà chủ sở hữu tài sản không có quyền sử dụng đất đối với thửa đất đó, trừ trường hợp tổ chức nước ngoài, cá nhân nước ngoài được sở hữu nhà ở theo quy định của pháp luật về nhà ở.",
+          "component_code": "39.TH1.TPHS09.105.2026",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 10,
+          "name": "Văn bản của bên nhận thế chấp về việc đồng ý cho bên thế chấp được chuyển nhượng, tặng cho quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất đối với trường hợp chuyển nhượng, tặng cho quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất mà quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất đang được thế chấp và đã đăng ký tại Văn phòng đăng ký đất đai, Chi nhánh Văn phòng đăng ký đất đai.",
+          "component_code": "39.TH1.TPHS10.105.2026",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 11,
+          "name": "Văn bản về việc đại diện theo quy định của pháp luật về dân sự đối với trường hợp thực hiện thủ tục đăng ký đất đai, tài sản gắn liền với đất thông qua người đại diện",
+          "component_code": "41.TH1.TPHS04.105.2026",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 12,
+          "name": "Các tờ khai thuế: Tờ khai lệ phí trước bạ nhà, đất (theo mẫu số 01/LPTB); Tờ khai thuế TNCN (theo mẫu số 03/BĐS-TNCN); Tờ khai Thuế phi nông nghiệp (theo mẫu 01/TK-SDDPNN); Tờ khai Thuế phi nông nghiệp (theo mẫu 02/TK-SDDPNN).",
+          "component_code": "41.TH1.TPHS05.105.2026",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": true,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019fdf8f-5c71-72eb-90b7-40f4b2432e0e",
+          "name": "Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất.",
+          "code": "KQ.H26.105.2026.1"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019eab71-e707-70af-996a-4e5b8b36e53e",
+          "name": "Luật Đất đai số 31/2024/QH15 ngày 18/01/2024 được sửa đổi bổ sung  một số điều bởi Luật số 43/2024/QH15, Luật số 47/2024/QH15 và Luật số 58/2024/QH15 của Quốc hội.",
+          "code": "31/2024/QH15 "
+        },
+        {
+          "id": "019fdfab-0f98-7309-b6da-edcf4b3418a4",
+          "name": "Về việc phân cấp thực hiện một số nhiệm vụ trong lĩnh vực đất đai trên địa bàn thành phố Hà Nội",
+          "code": "33/2026/QĐ-UBND "
+        },
+        {
+          "id": "019fdfab-9c87-71de-a747-04badf16fb31",
+          "name": "Về việc ban hành Quy định về điều chỉnh, sửa đổi, bổ sung, bãi bỏ một số nội dung của Quyết định số 33/2026/QĐ-UBND ngày 25/3/2026 của UBND Thành phố về việc phân cấp thực hiện một số nhiệm vụ trong lĩnh vực đất đai trên địa bàn thành phố Hà Nội; ban hành trình tự, thủ tục hành chính về đất đai trên địa bàn thành phố Hà Nội",
+          "code": "105/2026/QĐ-UBND"
+        },
+        {
+          "id": "019eab72-e75f-7064-886d-9dddc82fa4a4",
+          "name": "Nghị định quy định về điều tra cơ bản đất đai, đăng ký, cấp Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất và Hệ thống thông tin đất đai.",
+          "code": "101/2024/NĐ-CP "
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afeb-9ac6648a4b4f",
+          "name": "Quy định về phân định thẩm quyền của chính quyền địa phương 02 cấp, phân quyền, phân cấp trong lĩnh vực đất đai",
+          "code": "151/2025/NĐ-CP"
+        },
+        {
+          "id": "019ed889-689c-754e-8006-5ba0214fab5a",
+          "name": "Quy định một số cơ chế, chính sách tháo gỡ khó khăn vướng mắc trong tổ chức thi hành Luật Đất đai",
+          "code": "254/2025/QH15"
+        },
+        {
+          "id": "019ed88c-73bf-73ed-a2c9-ebbe831f989d",
+          "name": "quy định chi tiết và hướng dẫn một số điều của Nghị quyết số 254/2025/QH15 của Quốc hội quy định một số cơ chế, chính sách tháo gỡ khó khăn vướng mắc trong tổ chức thi hành Luật Đất đai",
+          "code": "49/2026/NĐ-CP"
+        },
+        {
+          "id": "019fb0eb-7629-732a-ae85-4507d8b9cbc8",
+          "name": "Nghị định số 102/2024/NĐ-CP ngày 30/7/2024 của Chính phủ quy định chi tiết thi hành một số điều của Luật Đất đai",
+          "code": "102/2024/NĐ-CP "
+        },
+        {
+          "id": "019fe63e-5ffc-73a2-9971-335d80f4d73f",
+          "name": "Luật số 43/2024/QH15 ngày 29/6/2024 sửa đổi, bổ sung một số điều của Luật Đất đai số 31/2024/QH15, Luật Nhà ở số 27/2023/QH15, Luật Kinh doanh bất động sản số 29/2023/QH15 và Luật Các tổ chức tín dụng số 32/2024/QH15",
+          "code": "43/2024/QH15 ngày 29/6/2024"
+        },
+        {
+          "id": "01a01e74-dd72-763f-9c17-f48b2f32f60c",
+          "name": "Quy chế phối hợp số 01/QCPH-CT-CQLĐĐ ngày 07/01/2026 của Cục Thuế và Cục Quản lý đất đai",
+          "code": "01/QCPH-CT-CQLĐĐ "
+        }
+      ]
+    }
+  ]
+}

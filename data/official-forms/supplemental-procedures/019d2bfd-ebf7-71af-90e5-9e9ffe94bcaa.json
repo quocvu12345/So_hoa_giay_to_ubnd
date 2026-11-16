@@ -1,0 +1,58 @@
+{
+  "id": "dvc-019d2bfd-ebf7-71af-90e5-9e9ffe94bcaa",
+  "procedure_code": "1.012084",
+  "name": "Thủ tục cấm tiếp xúc theo Quyết định của Chủ tịch Ủy ban nhân dân cấp xã theo đề nghị của cơ quan, tổ chức cá nhân",
+  "domain": "Gia đình",
+  "managing_agency": "Bộ Văn hóa, Thể thao và Du lịch",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.870856+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfd-ebf7-71af-90e5-9e9ffe94bcaa",
+      "code": "1.012084",
+      "name": "Thủ tục cấm tiếp xúc theo Quyết định của Chủ tịch Ủy ban nhân dân cấp xã theo đề nghị của cơ quan, tổ chức cá nhân",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1794449530999,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfd-ebf7-71af-90e5-9e9ffe94bcaa",
+      "raw_path": "evidence/dvc/details/019d2bfd-ebf7-71af-90e5-9e9ffe94bcaa.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Đơn đề nghị về việc cấm tiếp xúc theo Quyết định của Chủ tịch Ủy ban nhân dân cấp xã (Mẫu số 06 Nghị định 76).",
+          "component_code": "G16-KQ002147",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c79-762e-8b2c-2ae90db54bdd",
+          "name": "Quyết định của Chủ tịch Ủy ban nhân dân cấp xã về việc cấm tiếp xúc",
+          "code": "KQ.G16.000274"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d85-73da-8eb9-a2bab221b934",
+          "name": "Luật Phòng, chống bạo lực gia đình",
+          "code": "13/2022/QH15"
+        },
+        {
+          "id": "019d2bb3-5d7f-719e-b471-0adb78b6e896",
+          "name": "Nghị định Chính phủ",
+          "code": "76/2023/NĐ-CP"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,191 @@
+{
+  "id": "hn87-395",
+  "ordinal": "395",
+  "procedure_code": "2.002668",
+  "name": "Đăng ký nhu cầu hỗ trợ của tổ hợp tác, hợp tác xã, liên hiệp hợp tác xã",
+  "domain": "Hỗ trợ tổ hợp tác, hợp tác xã, liên hiệp hợp tác xã (Bộ Tài chính)",
+  "department_id": "ktdt",
+  "department": "Phòng Kinh tế, Hạ tầng và Đô thị",
+  "authority_as_published": "UBND cấp xã",
+  "execution_level_as_published": "Cấp xã",
+  "receiving_location_as_published": "Điểm hỗ trợ DVC số",
+  "inventory_date": "2026-04-27",
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "source_urls": [
+    "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-f190-74c4-92a2-f5b630b1b1ae"
+  ],
+  "current_dvc_match": true,
+  "lifecycle": null,
+  "scope": "hanoi_commune_notice_2026_04_27",
+  "scope_note": "Mốc kiểm kê cấp xã Hà Nội; áp dụng từng thủ tục tại Từ Liêm còn phải theo thẩm quyền/ủy quyền hiện hành.",
+  "status": "source_template_missing",
+  "components": [
+    {
+      "id": "hn87-395-c001",
+      "code": "G05-KQ006891",
+      "name": "- Trường hợp hợp tác xã, liên hiệp hợp tác xã đăng ký thụ hưởng khoản hỗ trợ từ ngân sách nhà nước có giá trị từ 03 tỷ đồng trở lên thì phải có Báo cáo tài chính năm trước liền kề đã được kiểm toán bởi tổ chức kiểm toán độc lập tại thời điểm nộp đơn đăng ký nhu cầu hỗ trợ.",
+      "section": "b) Bản sao tài liệu, hồ sơ liên quan thể hiện sự phù hợp các tiêu chí thụ hưởng theo quy định: Đối với hợp tác xã, liên hiệp hợp tác xã:",
+      "role": "needs_review",
+      "scenario_status": "conditional_needs_review",
+      "required_as_published": false,
+      "original_quantity": 0,
+      "copy_quantity": 1,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-f190-74c4-92a2-f5b630b1b1ae",
+      "source_detail_id": "019d2bfc-f190-74c4-92a2-f5b630b1b1ae",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-395-c002",
+      "code": "G05-KQ006890",
+      "name": "- Tài liệu, hồ sơ chứng minh hợp tác xã, liên hiệp hợp tác xã đáp ứng một (bắt buộc) hoặc nhiều (nếu có) tiêu chí sau, cụ thể: số lượng thành viên tăng trong 02 năm liên tiếp liền kề với năm nộp đơn đăng ký nhu cầu hỗ trợ; tỷ lệ giá trị giao dịch nội bộ tăng trong năm trước liền kề với năm nộp đơn đăng ký nhu cầu hỗ trợ; tỷ lệ trích lập quỹ chung không chia cao hơn so với mức tối thiểu quy định tại Điều 84 Luật Hợp tác xã 2023 trong năm trước liền kề với năm nộp đơn đăng ký nhu cầu hỗ trợ; tăng giá trị tài sản chung không chia trong năm trước liền kề với năm nộp đơn đăng ký nhu cầu hỗ trợ; có ít nhất 5% tổng số thành viên, người lao động được tham gia các lớp giáo dục, đào tạo, phổ biến, bồi dưỡng, tập huấn do hợp tác xã, liên hiệp hợp tác xã tự tổ chức hoặc do các cơ quan, đoàn thể, tổ chức khác tổ chức và đã được cấp chứng nhận tham gia khóa học hoặc có danh sách thành viên, người lao động tham gia khóa học có đóng dấu của hợp tác xã, liên hiệp hợp tác xã (đối với các khóa học do hợp tác xã, liên hiệp hợp tác xã tự tổ chức, thì hợp tác xã, liên hiệp hợp tác xã phải có kế hoạch tổ chức khóa học, nội dung khóa học và danh sách khóa học có chữ ký của người tham gia khóa học) tính đến thời điểm năm trước liền kề với năm nộp đơn đăng ký nhu cầu hỗ trợ; đã thành lập không quá 36 tháng tại địa bàn kinh tế - xã hội khó khăn, địa bàn kinh tế - xã hội đặc biệt khó khăn theo quy định của pháp luật về đầu tư tính đến thời điểm nộp đơn đăng ký nhu cầu hỗ trợ;",
+      "section": "b) Bản sao tài liệu, hồ sơ liên quan thể hiện sự phù hợp các tiêu chí thụ hưởng theo quy định: Đối với hợp tác xã, liên hiệp hợp tác xã:",
+      "role": "needs_review",
+      "scenario_status": "conditional_needs_review",
+      "required_as_published": false,
+      "original_quantity": 0,
+      "copy_quantity": 1,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-f190-74c4-92a2-f5b630b1b1ae",
+      "source_detail_id": "019d2bfc-f190-74c4-92a2-f5b630b1b1ae",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-395-c003",
+      "code": "G05-KQ006892",
+      "name": "- Bản sao Giấy chứng nhận đăng ký tổ hợp tác;",
+      "section": "b) Bản sao tài liệu, hồ sơ liên quan thể hiện sự phù hợp các tiêu chí thụ hưởng theo quy định: Đối với tổ hợp tác:",
+      "role": "supporting_submit",
+      "scenario_status": "conditional_needs_review",
+      "required_as_published": false,
+      "original_quantity": 0,
+      "copy_quantity": 1,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-f190-74c4-92a2-f5b630b1b1ae",
+      "source_detail_id": "019d2bfc-f190-74c4-92a2-f5b630b1b1ae",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-395-c004",
+      "code": "G05-KQ006893",
+      "name": "- Tài liệu, hồ sơ chứng minh tổ hợp tác đáp ứng một tiêu chí (bắt buộc) hoặc nhiều tiêu chí (nếu có), cụ thể: số lượng thành viên tăng trong 02 năm liên tiếp liền kề với năm nộp đơn đăng ký nhu cầu hỗ trợ; có ít nhất 5% tổng số thành viên, người lao động được tham gia các lớp giáo dục, đào tạo, phổ biến, bồi dưỡng, tập huấn do tổ hợp tác tự tổ chức hoặc do các cơ quan, đoàn thể, tổ chức khác tổ chức và đã được cấp chứng nhận tham gia khóa học hoặc có danh sách thành viên, người lao động tham gia khóa học có xác nhận của tổ hợp tác (đối với các khóa học do tổ hợp tác tự tổ chức, thì tổ hợp tác phải có kế hoạch tổ chức khóa học, nội dung khóa học và danh sách khóa học có chữ ký của người tham gia khóa học) tính đến thời điểm năm trước liền kề với năm nộp đơn đăng ký nhu cầu hỗ trợ; đã thành lập không quá 36 tháng tại địa bàn kinh tế - xã hội khó khăn, địa bàn kinh tế - xã hội đặc biệt khó khăn theo quy định của pháp luật về đầu tư tính đến thời điểm nộp đơn đăng ký nhu cầu hỗ trợ.",
+      "section": "b) Bản sao tài liệu, hồ sơ liên quan thể hiện sự phù hợp các tiêu chí thụ hưởng theo quy định: Đối với tổ hợp tác:",
+      "role": "needs_review",
+      "scenario_status": "conditional_needs_review",
+      "required_as_published": false,
+      "original_quantity": 0,
+      "copy_quantity": 1,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-f190-74c4-92a2-f5b630b1b1ae",
+      "source_detail_id": "019d2bfc-f190-74c4-92a2-f5b630b1b1ae",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-395-c005",
+      "code": "G05-KQ006894",
+      "name": "Tổ hợp tác, hợp tác xã, liên hiệp hợp tác xã tự chịu trách nhiệm trước pháp luật về tính chính xác, trung thực của các thông tin cung cấp tại hồ sơ đăng ký nhu cầu hỗ trợ nêu trên.",
+      "section": "b) Bản sao tài liệu, hồ sơ liên quan thể hiện sự phù hợp các tiêu chí thụ hưởng theo quy định: Đối với tổ hợp tác:",
+      "role": "instruction",
+      "scenario_status": "instruction_only",
+      "required_as_published": false,
+      "original_quantity": 0,
+      "copy_quantity": 1,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-f190-74c4-92a2-f5b630b1b1ae",
+      "source_detail_id": "019d2bfc-f190-74c4-92a2-f5b630b1b1ae",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-395-c006",
+      "code": "G05-KQ006888",
+      "name": "a) Đơn đăng ký nhu cầu hỗ trợ trong đó có nội dung cam kết không vi phạm các hành vi bị nghiêm cấm theo quy định tại khoản 2 Điều 7 của Luật Hợp tác xã 2023, không trong thời gian chấp hành bản án hình sự của Tòa án đã có hiệu lực pháp luật theo Mẫu số 01 tại Phụ lục ban hành kèm theo Nghị định số 113/2024/NĐ-CP ngày 12/9/2024 của Chính phủ quy định chi tiết một số điều của Luật Hợp tác xã;",
+      "section": "",
+      "role": "applicant_form",
+      "scenario_status": "selected_for_test",
+      "required_as_published": false,
+      "original_quantity": 1,
+      "copy_quantity": 0,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-f190-74c4-92a2-f5b630b1b1ae",
+      "source_detail_id": "019d2bfc-f190-74c4-92a2-f5b630b1b1ae",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    },
+    {
+      "id": "hn87-395-c007",
+      "code": "G05-KQ006889",
+      "name": "b) Bản sao tài liệu, hồ sơ liên quan thể hiện sự phù hợp các tiêu chí thụ hưởng theo quy định:",
+      "section": "",
+      "role": "supporting_submit",
+      "scenario_status": "selected_for_test",
+      "required_as_published": false,
+      "original_quantity": 0,
+      "copy_quantity": 1,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-f190-74c4-92a2-f5b630b1b1ae",
+      "source_detail_id": "019d2bfc-f190-74c4-92a2-f5b630b1b1ae",
+      "embedded_other_requirements": false,
+      "template_candidates": [],
+      "template_selection_method": null,
+      "selected_template_id": null,
+      "selection_requires_review": false
+    }
+  ],
+  "service_cases": [
+    {
+      "id": "019f6e47-f1b0-71dd-9425-437f1754be75",
+      "code": "2.002668.01",
+      "name": "Đăng ký nhu cầu hỗ trợ của tổ hợp tác, hợp tác xã, liên hiệp hợp tác xã",
+      "source_processing_time": {
+        "qty": 10,
+        "type": "DAY"
+      },
+      "has_case_specific_components": false
+    }
+  ],
+  "selected_template_ids": [],
+  "source_component_groups": [
+    {
+      "name": "b) Bản sao tài liệu, hồ sơ liên quan thể hiện sự phù hợp các tiêu chí thụ hưởng theo quy định: Đối với hợp tác xã, liên hiệp hợp tác xã:",
+      "component_count": 2,
+      "source_detail_id": "019d2bfc-f190-74c4-92a2-f5b630b1b1ae"
+    },
+    {
+      "name": "b) Bản sao tài liệu, hồ sơ liên quan thể hiện sự phù hợp các tiêu chí thụ hưởng theo quy định: Đối với tổ hợp tác:",
+      "component_count": 3,
+      "source_detail_id": "019d2bfc-f190-74c4-92a2-f5b630b1b1ae"
+    },
+    {
+      "name": "",
+      "component_count": 2,
+      "source_detail_id": "019d2bfc-f190-74c4-92a2-f5b630b1b1ae"
+    }
+  ],
+  "conditional_component_groups": [],
+  "default_test_scenario": {
+    "channel": "direct",
+    "applicant_submits_self": true,
+    "authorized": false,
+    "special_case_flags": [],
+    "selected_conditional_group": null,
+    "case_selection_method": "ordinary_direct_submission",
+    "case_status": "scenario_for_testing_not_a_legal_eligibility_decision"
+  },
+  "requirement_note": "required_as_published được giữ nguyên; false không chứng minh giấy tờ luôn tùy chọn. Các nhóm executionCases có thể là mục giấy tờ/hướng dẫn, không phải các phương án loại trừ nhau."
+}

@@ -1,0 +1,79 @@
+{
+  "ordinal": "50",
+  "managing_agency": "Sở Nội Vụ",
+  "procedure_code": "1.013709",
+  "name": "Thủ tục cho phép hội hoạt động trở lại sau khi bị đình chỉ có thời hạn",
+  "domain": "Hội",
+  "ministry_decision": "627/QĐ-BNV ngày 20/6/2025",
+  "hanoi_decision": "963/QĐ-TTPVHCC ngày 27/6/2025",
+  "workflow_decision": "1062/QĐ-TTPVHCC ngày 12/7/2025",
+  "fees": "Không quy định",
+  "execution_level": "Cấp xã",
+  "competent_authority": "UBND cấp xã",
+  "delegation_decision": "",
+  "delegation_expiry": "",
+  "receiving_location": "Điểm hỗ trợ DVC số",
+  "source_page": 2,
+  "inventory_source_url": "https://datafiles.hanoi.gov.vn/gov-hni/7034/VanBan/2026/4/28_1/DANH%20M%E1%BB%A4C%20TTHC%20C%E1%BA%A4P%20X%C3%83%20%28FINAL%2024.4.26%29_1.pdf",
+  "inventory_date": "2026-04-27",
+  "checked_at": "2026-11-12T22:23:36.377065+07:00",
+  "details": [
+    {
+      "id": "019d2bfb-1b5c-7417-b2be-99660746eb49",
+      "code": "1.013709",
+      "name": "Cho phép hội hoạt động trở lại sau khi bị đình chỉ có thời hạn",
+      "state": "ACTIVE",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1776324066462,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-1b5c-7417-b2be-99660746eb49",
+      "raw_path": "evidence/dvc/details/019d2bfb-1b5c-7417-b2be-99660746eb49.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "- Đơn đề nghị được hoạt động trở lại của hội",
+          "component_code": "G09-KQ002434",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "- Báo cáo của ban chấp hành hội và các tài liệu chứng minh hội đã khắc phục sai phạm",
+          "component_code": "G09-KQ002435",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c4c-77ab-bf6e-c7c783468c4f",
+          "name": "Quyết định cho phép hội hoạt động trở lại",
+          "code": "KQ.G09.000296"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7e-72d1-afe9-f1533335aca7",
+          "name": "Nghị định số 126/2024/NĐ-CP của Chính phủ: Quy định về tổ chức, hoạt động và quản lý hội",
+          "code": "126/2024/NĐ-CP"
+        },
+        {
+          "id": "019d2bb3-5d7e-72d1-afea-1c153ca6400f",
+          "name": "Quy định về phân định thẩm quyền của chính quyền địa phương 02 cấp trong lĩnh vực quản lý nhà nước của Bộ Nội vụ",
+          "code": "129/2025/NĐ-CP"
+        }
+      ]
+    }
+  ],
+  "lookup_status": "retrieved",
+  "currency_status": "snapshot_requires_later_amendment_check",
+  "errors": []
+}

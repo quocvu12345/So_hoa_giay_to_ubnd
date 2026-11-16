@@ -1,0 +1,173 @@
+{
+  "id": "dvc-019d2bfe-51d5-757f-b5c5-97ba7e88aed2",
+  "procedure_code": "1.005040",
+  "name": "Xác nhận trình báo đường thủy nội địa hoặc trình báo đường thủy nội địa bổ sung",
+  "domain": "Hàng hải và đường thủy nội địa",
+  "managing_agency": "Bộ xây dựng (Giao thông vận tải cũ)",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:17.866915+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bfe-51d5-757f-b5c5-97ba7e88aed2",
+      "code": "1.005040",
+      "name": "Xác nhận trình báo đường thủy nội địa hoặc trình báo đường thủy nội địa bổ sung",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1776357035058,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfe-51d5-757f-b5c5-97ba7e88aed2",
+      "raw_path": "evidence/dvc/details/019d2bfe-51d5-757f-b5c5-97ba7e88aed2.json",
+      "components": [
+        {
+          "section": "Các giấy tờ phải nộp đối với phương tiện thủy nội địa, tàu cá",
+          "position": 1,
+          "name": "Trình báo đường thủy nội địa theo mẫu (02 bản)",
+          "component_code": "000.00.00.G04-KQ2217",
+          "original_quantity": 2,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019d95cc-c1c9-772f-b7b1-d72bd28ca6f4",
+              "fileName": "MauTrinhbaoTN.docx",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d95cc-c1c9-772f-b7b1-d72bd28ca6f4/MauTrinhbaoTN.docx"
+            }
+          ]
+        },
+        {
+          "section": "Các giấy tờ phải nộp đối với phương tiện thủy nội địa, tàu cá",
+          "position": 2,
+          "name": "Bản sao Tự họa có mô tả sơ đồ vị trí xảy ra tai nạn, sự cố và đính kèm hình ảnh (nếu có), (02 bản)",
+          "component_code": "000.00.00.G04-KQ2218",
+          "original_quantity": 0,
+          "copy_quantity": 2,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Các giấy tờ phải nộp đối với tàu biển",
+          "position": 1,
+          "name": "Bản trích sao Nhật ký hàng hải những phần có liên quan đến vụ việc (02 bản)",
+          "component_code": "000.00.00.G04-KQ2215",
+          "original_quantity": 0,
+          "copy_quantity": 2,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Các giấy tờ phải nộp đối với tàu biển",
+          "position": 2,
+          "name": "Bản trích sao Hải đồ liên quan đến vụ việc (02 bản)",
+          "component_code": "000.00.00.G04-KQ2216",
+          "original_quantity": 0,
+          "copy_quantity": 2,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Các giấy tờ phải nộp đối với tàu biển",
+          "position": 3,
+          "name": "Trình báo đường thủy nội địa theo mẫu (02 bản)",
+          "component_code": "000.00.00.G04-KQ2214",
+          "original_quantity": 2,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Các giấy tờ phải xuất trình (bản chính):",
+          "position": 1,
+          "name": "Đối với tàu biển: Bản trích sao Nhật ký hàng hải những phần có liên quan đến vụ việc, Bản trích sao Hải đồ liên quan đến vụ việc;",
+          "component_code": "000.00.00.G04-KQ2219",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Các giấy tờ phải xuất trình (bản chính):",
+          "position": 2,
+          "name": "Đối với phương tiện thủy nội địa, tàu cá: Bản sao Tự họa có mô tả sơ đồ vị trí xảy ra tai nạn, sự cố và đính kèm hình ảnh (nếu có).",
+          "component_code": "000.00.00.G04-KQ2220",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Hồ sơ khác",
+          "position": 1,
+          "name": "Ngoài số lượng trình báo đường thủy nội địa được quy định nói trên, thuyền trưởng hoặc người lái phương tiện có thể đề nghị xác nhận thêm các bản khác có cùng nội dung, nếu thấy cần thiết.",
+          "component_code": "000.00.00.G04-KQ2222",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "Hồ sơ khác",
+          "position": 2,
+          "name": "Đối với bản trình báo đường thủy nội địa, ngoài chữ ký của thuyền trưởng hoặc người lái phương tiện và đóng dấu của tàu biển, phương tiện thủy nội địa, tàu cá (nếu có con dấu), còn phải có chữ ký của máy trưởng hoặc 01 (một) thủy thủ với tư cách là người làm chứng.",
+          "component_code": "000.00.00.G04-KQ2221",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c7a-7554-ace6-0f150cb375be",
+          "name": "Xác nhận việc trình báo đường thủy nội địa.",
+          "code": "KQ.G17.000324"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7e-72d1-afe1-1e8732e4a2c4",
+          "name": "Thông tư sửa đổi, bổ sung một số điều của các Thông tư thuộc lĩnh vực quản lý nhà nước của Bộ Xây dựng liên quan đến sắp xếp tổ chức bộ máy, thực hiện chính quyền địa phương hai cấp và phân cấp cho chính quyền địa phương.",
+          "code": "09/2025/TT-BXD"
+        },
+        {
+          "id": "019d2bb3-5d7c-71ab-9eff-6b45bb034f95",
+          "name": "Quy định thủ tục xác nhận việc trình báo đường thủy nội địa",
+          "code": "69/2014/TT-BGTVT"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b673-4c2d13d60f2a",
+          "name": "sửa đổi, bổ sung một số Điều của Luật 23/2004/QH11 2004",
+          "code": "48/2014/QH13"
+        },
+        {
+          "id": "019d2bb3-5d7d-7398-be4b-e85edce6cd09",
+          "name": "Quy định mức thu, chế độ thu, nộp, quản lý và sử dụng phí, lệ phí áp dụng tại cảng, bến thủy nội địa",
+          "code": "248/2016/TT-BTC"
+        },
+        {
+          "id": "019d2bb3-5d7d-7398-be4d-7fccad76a3e1",
+          "name": "Thông tư 43/2024/TT-BTC của Bộ Tài chính",
+          "code": "43/2024/TT-BTC"
+        },
+        {
+          "id": "019d2bb3-5d84-71c5-b672-345fa89f8a03",
+          "name": "Giao thông đường thủy nội địa",
+          "code": "23/2004/QH11"
+        }
+      ]
+    }
+  ]
+}

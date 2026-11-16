@@ -1,0 +1,80 @@
+{
+  "id": "dvc-019d2bf7-bdb8-71ce-b6c1-a3c964a0956f",
+  "procedure_code": "3.000351",
+  "name": "Đổi giấy phép lái xe hoặc bằng lái xe của người nước ngoài",
+  "domain": "Sát hạch, cấp giấy phép lái xe",
+  "managing_agency": "Bộ Công an",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:18.032122+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bf7-bdb8-71ce-b6c1-a3c964a0956f",
+      "code": "3.000351",
+      "name": "Đổi giấy phép lái xe hoặc bằng lái xe của người nước ngoài",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1784882400664,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf7-bdb8-71ce-b6c1-a3c964a0956f",
+      "raw_path": "evidence/dvc/details/019d2bf7-bdb8-71ce-b6c1-a3c964a0956f.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "Bản sao hoặc bản sao điện tử một trong các giấy tờ sau: chứng minh thư ngoại giao, giấy chứng minh thư công vụ, thị thực hoặc thẻ tạm trú còn thời hạn từ 90 ngày trở lên, thẻ thường trú còn giá trị (đối với người nước ngoài). Trường hợp cá nhân thực hiện thủ tục nộp bản sao, bản sao điện tử không có chứng thực thì phải xuất trình bản chính để đối chiếu; trường hợp cá nhân nộp bản sao, bản sao điện tử có giá trị sử dụng thay bản chính theo quy định của pháp luật về chứng thực thì không phải xuất trình bản chính",
+          "component_code": "000.00.00.G01-KQ003274",
+          "original_quantity": 0,
+          "copy_quantity": 1,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "Giấy khám sức khỏe của người lái xe còn hiệu lực (bản điện tử), trường hợp do lỗi kỹ thuật không sử dụng được bản điện tử thì sử dụng bản giấy do cơ sở khám bệnh, chữa bệnh đủ tiêu chuẩn theo quy định của pháp luật về khám bệnh, chữa bệnh cấp (trừ người nước ngoài đổi giấy phép lái xe theo thời hạn ghi trong thị thực nhập cảnh hoặc thẻ tạm trú).",
+          "component_code": "000.00.00.G01-KQ003273",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        },
+        {
+          "section": "",
+          "position": 3,
+          "name": "Bản dịch giấy phép lái xe nước ngoài ra tiếng Việt được bảo chứng chất lượng dịch thuật của cơ quan Công chứng tại Việt Nam, cơ quan đại diện Việt Nam ở nước ngoài mà người dịch làm việc, đóng dấu giáp lai với bản sao giấy phép lái xe;",
+          "component_code": "000.00.00.G01-KQ003272",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": []
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c37-76e8-b48e-2f04c36d5aab",
+          "name": "Giấy phép lái xe",
+          "code": "KQ.G01.000185"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019f8e17-f623-730d-81fb-0572cf565239",
+          "name": "Thông tư số 154/2025/TT-BTC ngày 31/12/2025 của Bộ Tài chính quy định mức thu, chế độ thu, nộp phí sát hạch lái xe, lệ phí cấp bằng, chứng chỉ được hoạt động trên các loại phương tiện và lệ phí đăng ký, cấp biển xe máy chuyên dùng",
+          "code": "154/2025/TT-BTC "
+        },
+        {
+          "id": "019f9217-1d7c-73d3-b912-fb5218cb4d8f",
+          "name": "Thông tư số 108/2026/TT-BCA ngày 29/6/2026 của Bộ trưởng Bộ Công an quy định về sát hạch, cấp giấy phép lái xe; cấp, sử dụng giấy phép lái xe quốc tế.",
+          "code": "108/2026/TT-BCA "
+        }
+      ]
+    }
+  ]
+}

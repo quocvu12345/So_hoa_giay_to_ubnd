@@ -1,0 +1,690 @@
+{
+  "dataset_id": "tuliem-public-documents-2026-11-11",
+  "description": "Metadata được tuyển chọn từ nguồn công khai, không phải trích xuất cơ sở dữ liệu hồ sơ nội bộ.",
+  "records": [
+    {
+      "id": "public-001",
+      "document_number": "446/KH-UBND",
+      "title": "KẾ HOẠCH Tổ chức lấy ý kiến Nhân dân đối với Đề án điều chỉnh địa giới đơn vị hành chính giữa thành phố Hà Nội và tỉnh Phú Thọ",
+      "document_form": "Kế hoạch",
+      "issued_on": "2026-10-22",
+      "published_at": null,
+      "issuer_code": "tl-ubnd",
+      "issuer_name": "Ủy ban nhân dân phường Từ Liêm",
+      "metadata_status": "registry_verified",
+      "verification_note": "Đã đọc metadata trên trang công khai; tệp đính kèm tải được và đã tính SHA-256. Chưa xác thực chữ ký số. Phần đầu PDF còn để trống số/ngày; số và ngày trong seed lấy theo trang đăng ký, cần đối chiếu bản ban hành khi sử dụng.",
+      "source_observations": {
+        "registry_issued_on": "2026-10-22",
+        "registry_document_number": "446/KH-UBND"
+      },
+      "suggested_work_group": "U05",
+      "source": {
+        "url": "https://tuliem.hanoi.gov.vn/chi-tiet-van-ban/ke-hoach-to-chuc-lay-y-kien-nhan-dan-doi-voi-de-an-dieu-chinh-dia-gioi-don-vi-hanh-chinh-giua-thanh-284718",
+        "resolved_url": "https://tuliem.hanoi.gov.vn/chi-tiet-van-ban/ke-hoach-to-chuc-lay-y-kien-nhan-dan-doi-voi-de-an-dieu-chinh-dia-gioi-don-vi-hanh-chinh-giua-thanh-284718",
+        "publisher": "Trang thông tin điện tử phường Từ Liêm, thành phố Hà Nội",
+        "retrieved_at": "2026-11-11T09:12:27.320934+00:00",
+        "response_sha256": "56fac372d577adb025dd0ad6d844da31c3735dc4230c625ea82fd0f9364be11c"
+      },
+      "file": {
+        "url": "https://datafiles.hanoi.gov.vn/gov-hni/6977/VanBan/KẾ HOẠCH LẤY Ý KIẾN.639283749318391613.pdf",
+        "resolved_url": "https://datafiles.hanoi.gov.vn/gov-hni/6977/VanBan/K%E1%BA%BE%20HO%E1%BA%A0CH%20L%E1%BA%A4Y%20%C3%9D%20KI%E1%BA%BEN.639283749318391613.pdf",
+        "original_name": "KẾ HOẠCH LẤY Ý KIẾN.639283749318391613.pdf",
+        "media_type": "application/pdf",
+        "byte_size": 1053925,
+        "sha256": "7926ecbedc7725509ed829eb83a609dabf6e1554538999a4c6c541314569112c",
+        "page_count": 16,
+        "role": "published_pdf",
+        "local_path": null
+      }
+    },
+    {
+      "id": "public-002",
+      "document_number": "92/QĐ-UBND",
+      "title": "Quyết định về việc công bố, công khai dự toán thu, chi ngân sách năm 2025 của phường Từ Liêm",
+      "document_form": "Quyết định",
+      "issued_on": "2025-07-14",
+      "published_at": null,
+      "issuer_code": "tl-ubnd",
+      "issuer_name": "Ủy ban nhân dân phường Từ Liêm",
+      "metadata_status": "header_checked",
+      "verification_note": "Đã đối chiếu số, cơ quan và ngày ở phần đầu trang 1 của PDF. Chưa xác thực chữ ký số hoặc toàn bộ nội dung.",
+      "source_observations": {
+        "registry_issued_on": "2025-07-14",
+        "registry_document_number": "92/QĐ-UBND",
+        "pdf_header_issued_on": "2025-07-14"
+      },
+      "suggested_work_group": "U11",
+      "source": {
+        "url": "https://tuliem.hanoi.gov.vn/chi-tiet-van-ban/quyet-dinh-ve-viec-cong-bo-cong-khai-du-toan-thu-chi-ngan-sach-nam-2025-cua-phuong-tu-liem-221905",
+        "resolved_url": "https://tuliem.hanoi.gov.vn/chi-tiet-van-ban/quyet-dinh-ve-viec-cong-bo-cong-khai-du-toan-thu-chi-ngan-sach-nam-2025-cua-phuong-tu-liem-221905",
+        "publisher": "Trang thông tin điện tử phường Từ Liêm, thành phố Hà Nội",
+        "retrieved_at": "2026-11-11T09:12:27.318763+00:00",
+        "response_sha256": "1a441f48a94e298fd2b1b99d6e4822e6c50ff71a24252a5fa0888755f49a9132"
+      },
+      "file": {
+        "url": "https://storage-vnportal.vnpt.vn/gov-hni/6977/VanBan/2025/7/24/92.pdf",
+        "resolved_url": "https://storage-vnportal.vnpt.vn/gov-hni/6977/VanBan/2025/7/24/92.pdf",
+        "original_name": "92.pdf",
+        "media_type": "application/pdf",
+        "byte_size": 3109346,
+        "sha256": "416b24cb2abc210aae2b7ec424933746f9f497da77d3c6da053ebceed2c65945",
+        "page_count": 5,
+        "role": "published_pdf",
+        "local_path": "samples/public-002.pdf"
+      }
+    },
+    {
+      "id": "public-003",
+      "document_number": "22/NQ-HĐND",
+      "title": "Điều chỉnh đầu tư công trung hạn 5 năm giai đoạn 2026-2030; điều chỉnh, phân bổ vốn kế hoạch đầu tư công năm 2026 phường Từ Liêm",
+      "document_form": "Nghị quyết",
+      "issued_on": "2026-07-29",
+      "published_at": null,
+      "issuer_code": "tl-hdnd",
+      "issuer_name": "Hội đồng nhân dân phường Từ Liêm",
+      "metadata_status": "registry_verified",
+      "verification_note": "Đã đọc metadata trên trang công khai; tệp đính kèm tải được và đã tính SHA-256. Chưa xác thực chữ ký số.",
+      "source_observations": {
+        "registry_issued_on": "2026-07-29",
+        "registry_document_number": "22/NQ-HĐND"
+      },
+      "suggested_work_group": "H02",
+      "source": {
+        "url": "https://tuliem.hanoi.gov.vn/chi-tiet-van-ban/dieu-chinh-dau-tu-cong-trung-han-5-nam-giai-doan-2026-2030-dieu-chinh-phan-bo-von-ke-hoach-dau-tu-c-273392",
+        "resolved_url": "https://tuliem.hanoi.gov.vn/chi-tiet-van-ban/dieu-chinh-dau-tu-cong-trung-han-5-nam-giai-doan-2026-2030-dieu-chinh-phan-bo-von-ke-hoach-dau-tu-c-273392",
+        "publisher": "Trang thông tin điện tử phường Từ Liêm, thành phố Hà Nội",
+        "retrieved_at": "2026-11-11T09:12:27.326306+00:00",
+        "response_sha256": "7b6deec3c3c5f664db5bd6538126ae3568cc983861843ffd7b070653f3633f60"
+      },
+      "file": {
+        "url": "https://datafiles.hanoi.gov.vn/gov-hni/6977/VanBan/2026/8/19/22-nqhd-2026.signed.pdf",
+        "resolved_url": "https://datafiles.hanoi.gov.vn/gov-hni/6977/VanBan/2026/8/19/22-nqhd-2026.signed.pdf",
+        "original_name": "22-nqhd-2026.signed.pdf",
+        "media_type": "application/pdf",
+        "byte_size": 8845390,
+        "sha256": "d3b156ba5da62d52c71426dec6940b9bfd8029ed401f4f4a92d1b343b0cdd886",
+        "page_count": 34,
+        "role": "published_pdf",
+        "local_path": null
+      }
+    },
+    {
+      "id": "public-004",
+      "document_number": "19/NQ-HĐND",
+      "title": "Thành lập Đoàn giám sát chuyên đề của HĐND phường Từ Liêm giám sát công tác quản lý nhà nước về lĩnh vực bảo vệ môi trường trên địa bàn phường",
+      "document_form": "Nghị quyết",
+      "issued_on": "2026-06-24",
+      "published_at": null,
+      "issuer_code": "tl-hdnd",
+      "issuer_name": "Hội đồng nhân dân phường Từ Liêm",
+      "metadata_status": "registry_verified",
+      "verification_note": "Đã đọc metadata trên trang công khai; tệp đính kèm tải được và đã tính SHA-256. Chưa xác thực chữ ký số.",
+      "source_observations": {
+        "registry_issued_on": "2026-06-24",
+        "registry_document_number": "19/NQ-HĐND"
+      },
+      "suggested_work_group": "H05",
+      "source": {
+        "url": "https://tuliem.hanoi.gov.vn/chi-tiet-van-ban/thanh-lap-doan-giam-sat-chuyen-de-cua-hdnd-phuong-tu-liem-giam-sat-cong-tac-quan-ly-nha-nuoc-ve-lin-273388",
+        "resolved_url": "https://tuliem.hanoi.gov.vn/chi-tiet-van-ban/thanh-lap-doan-giam-sat-chuyen-de-cua-hdnd-phuong-tu-liem-giam-sat-cong-tac-quan-ly-nha-nuoc-ve-lin-273388",
+        "publisher": "Trang thông tin điện tử phường Từ Liêm, thành phố Hà Nội",
+        "retrieved_at": "2026-11-11T09:12:27.320771+00:00",
+        "response_sha256": "c2cad16f00e8ecd48fb5a1e9c36a0cd4b253c0d3bdf69eb209cc1d688b48bd59"
+      },
+      "file": {
+        "url": "https://datafiles.hanoi.gov.vn/gov-hni/6977/VanBan/2026/8/19/19-nqhd-2026.signed.pdf",
+        "resolved_url": "https://datafiles.hanoi.gov.vn/gov-hni/6977/VanBan/2026/8/19/19-nqhd-2026.signed.pdf",
+        "original_name": "19-nqhd-2026.signed.pdf",
+        "media_type": "application/pdf",
+        "byte_size": 1600348,
+        "sha256": "125d19d8098ecb4ceec3026600b394fa3a33e534132211c0212a039e8d2195c8",
+        "page_count": 6,
+        "role": "published_pdf",
+        "local_path": null
+      }
+    },
+    {
+      "id": "public-005",
+      "document_number": "18/NQ-HĐND",
+      "title": "Về việc ban hành Nội quy kỳ họp Hội đồng nhân dân phường Từ Liêm khóa II, nhiệm kỳ 2026-2031",
+      "document_form": "Nghị quyết",
+      "issued_on": "2026-06-24",
+      "published_at": null,
+      "issuer_code": "tl-hdnd",
+      "issuer_name": "Hội đồng nhân dân phường Từ Liêm",
+      "metadata_status": "registry_verified",
+      "verification_note": "Đã đọc metadata trên trang công khai; tệp đính kèm tải được và đã tính SHA-256. Chưa xác thực chữ ký số.",
+      "source_observations": {
+        "registry_issued_on": "2026-06-24",
+        "registry_document_number": "18/NQ-HĐND"
+      },
+      "suggested_work_group": "H01",
+      "source": {
+        "url": "https://tuliem.hanoi.gov.vn/chi-tiet-van-ban/ve-viec-ban-hanh-noi-quy-ky-hop-hoi-dong-nhan-dan-phuong-tu-liem-khoa-ii-nhiem-ky-2026-2031-273387",
+        "resolved_url": "https://tuliem.hanoi.gov.vn/chi-tiet-van-ban/ve-viec-ban-hanh-noi-quy-ky-hop-hoi-dong-nhan-dan-phuong-tu-liem-khoa-ii-nhiem-ky-2026-2031-273387",
+        "publisher": "Trang thông tin điện tử phường Từ Liêm, thành phố Hà Nội",
+        "retrieved_at": "2026-11-11T09:12:27.321158+00:00",
+        "response_sha256": "cf5ea728e5bb7d825a4ab7586a2692eb131b341001c6d443014558c1d4242c50"
+      },
+      "file": {
+        "url": "https://datafiles.hanoi.gov.vn/gov-hni/6977/VanBan/2026/8/19/18-nqhd-2026.signed.pdf",
+        "resolved_url": "https://datafiles.hanoi.gov.vn/gov-hni/6977/VanBan/2026/8/19/18-nqhd-2026.signed.pdf",
+        "original_name": "18-nqhd-2026.signed.pdf",
+        "media_type": "application/pdf",
+        "byte_size": 3286765,
+        "sha256": "332a1572e0923ae290f73d41e78df5394cff173d126d10695e2cac70634ebc08",
+        "page_count": 12,
+        "role": "published_pdf",
+        "local_path": null
+      }
+    },
+    {
+      "id": "public-006",
+      "document_number": "17/NQ-HĐND",
+      "title": "Về việc ban hành Quy chế làm việc của Hội đồng nhân dân phường Từ Liêm",
+      "document_form": "Nghị quyết",
+      "issued_on": "2026-06-24",
+      "published_at": null,
+      "issuer_code": "tl-hdnd",
+      "issuer_name": "Hội đồng nhân dân phường Từ Liêm",
+      "metadata_status": "registry_verified",
+      "verification_note": "Đã đọc metadata trên trang công khai; tệp đính kèm tải được và đã tính SHA-256. Chưa xác thực chữ ký số.",
+      "source_observations": {
+        "registry_issued_on": "2026-06-24",
+        "registry_document_number": "17/NQ-HĐND"
+      },
+      "suggested_work_group": "H10",
+      "source": {
+        "url": "https://tuliem.hanoi.gov.vn/chi-tiet-van-ban/ve-viec-ban-hanh-quy-che-lam-viec-cua-hoi-dong-nhan-dan-phuong-tu-liem-273383",
+        "resolved_url": "https://tuliem.hanoi.gov.vn/chi-tiet-van-ban/ve-viec-ban-hanh-quy-che-lam-viec-cua-hoi-dong-nhan-dan-phuong-tu-liem-273383",
+        "publisher": "Trang thông tin điện tử phường Từ Liêm, thành phố Hà Nội",
+        "retrieved_at": "2026-11-11T09:12:28.879058+00:00",
+        "response_sha256": "638c40188f04309dbff5346bbd1d579bd5f93a29346ee7fcbe72cf831bd0014c"
+      },
+      "file": {
+        "url": "https://datafiles.hanoi.gov.vn/gov-hni/6977/VanBan/2026/8/19/17-nqhd-2026.signed.pdf",
+        "resolved_url": "https://datafiles.hanoi.gov.vn/gov-hni/6977/VanBan/2026/8/19/17-nqhd-2026.signed.pdf",
+        "original_name": "17-nqhd-2026.signed.pdf",
+        "media_type": "application/pdf",
+        "byte_size": 12566037,
+        "sha256": "1c7a710bd97af0f118897e52bf0425f61d3b3897aa8319f9fc36f352b0e25482",
+        "page_count": 40,
+        "role": "published_pdf",
+        "local_path": null
+      }
+    },
+    {
+      "id": "public-007",
+      "document_number": "16/NQ-HĐND",
+      "title": "Về việc thành lập, sắp xếp, tổ chức lại tổ dân phố trên địa bàn phường Từ Liêm",
+      "document_form": "Nghị quyết",
+      "issued_on": "2026-06-24",
+      "published_at": null,
+      "issuer_code": "tl-hdnd",
+      "issuer_name": "Hội đồng nhân dân phường Từ Liêm",
+      "metadata_status": "registry_verified",
+      "verification_note": "Đã đọc metadata trên trang công khai; tệp đính kèm tải được và đã tính SHA-256. Chưa xác thực chữ ký số.",
+      "source_observations": {
+        "registry_issued_on": "2026-06-24",
+        "registry_document_number": "16/NQ-HĐND"
+      },
+      "suggested_work_group": "H02",
+      "source": {
+        "url": "https://tuliem.hanoi.gov.vn/chi-tiet-van-ban/ve-viec-thanh-lap-sap-xep-to-chuc-lai-to-dan-pho-tren-dia-ban-phuong-tu-liem-273380",
+        "resolved_url": "https://tuliem.hanoi.gov.vn/chi-tiet-van-ban/ve-viec-thanh-lap-sap-xep-to-chuc-lai-to-dan-pho-tren-dia-ban-phuong-tu-liem-273380",
+        "publisher": "Trang thông tin điện tử phường Từ Liêm, thành phố Hà Nội",
+        "retrieved_at": "2026-11-11T09:12:28.878963+00:00",
+        "response_sha256": "4f3b4d46a3ade2470833dab107c0b80ce6d1bc0c29ee6088cc4e7b33839ad47a"
+      },
+      "file": {
+        "url": "https://datafiles.hanoi.gov.vn/gov-hni/6977/VanBan/2026/8/19/16-nqhd-2026.signed.pdf",
+        "resolved_url": "https://datafiles.hanoi.gov.vn/gov-hni/6977/VanBan/2026/8/19/16-nqhd-2026.signed.pdf",
+        "original_name": "16-nqhd-2026.signed.pdf",
+        "media_type": "application/pdf",
+        "byte_size": 3037063,
+        "sha256": "bc4d0a3c9f51729ce40d9170a0b1e44937a8299bf9553a5ab249c21be93f825a",
+        "page_count": 10,
+        "role": "published_pdf",
+        "local_path": null
+      }
+    },
+    {
+      "id": "public-008",
+      "document_number": "15/NQ-HĐND",
+      "title": "Về việc điều chỉnh, phân bổ vốn Kế hoạch đầu tư công năm 2026 phường Từ Liêm",
+      "document_form": "Nghị quyết",
+      "issued_on": "2026-06-24",
+      "published_at": null,
+      "issuer_code": "tl-hdnd",
+      "issuer_name": "Hội đồng nhân dân phường Từ Liêm",
+      "metadata_status": "registry_verified",
+      "verification_note": "Đã đọc metadata trên trang công khai; tệp đính kèm tải được và đã tính SHA-256. Chưa xác thực chữ ký số.",
+      "source_observations": {
+        "registry_issued_on": "2026-06-24",
+        "registry_document_number": "15/NQ-HĐND"
+      },
+      "suggested_work_group": "H02",
+      "source": {
+        "url": "https://tuliem.hanoi.gov.vn/chi-tiet-van-ban/ve-viec-dieu-chinh-phan-bo-von-ke-hoach-dau-tu-cong-nam-2026-phuong-tu-liem-273378",
+        "resolved_url": "https://tuliem.hanoi.gov.vn/chi-tiet-van-ban/ve-viec-dieu-chinh-phan-bo-von-ke-hoach-dau-tu-cong-nam-2026-phuong-tu-liem-273378",
+        "publisher": "Trang thông tin điện tử phường Từ Liêm, thành phố Hà Nội",
+        "retrieved_at": "2026-11-11T09:12:28.904804+00:00",
+        "response_sha256": "c40c60b4dda7eded6f25db5c080758b4eb567e17d0286eb991d640244794e4f1"
+      },
+      "file": {
+        "url": "https://datafiles.hanoi.gov.vn/gov-hni/6977/VanBan/2026/8/19/15-nqhd-2026.signed.pdf",
+        "resolved_url": "https://datafiles.hanoi.gov.vn/gov-hni/6977/VanBan/2026/8/19/15-nqhd-2026.signed.pdf",
+        "original_name": "15-nqhd-2026.signed.pdf",
+        "media_type": "application/pdf",
+        "byte_size": 1996398,
+        "sha256": "af5e6effcce9144b246c27c7d6b42fafdd2e03a8b8942a2e0a443c51850dccbf",
+        "page_count": 7,
+        "role": "published_pdf",
+        "local_path": null
+      }
+    },
+    {
+      "id": "public-009",
+      "document_number": "14/NQ-HĐND",
+      "title": "Về nhiệm vụ trọng tâm phát triển kinh tế - xã hội, quốc phòng an ninh phường Từ Liêm 6 tháng cuối năm 2026",
+      "document_form": "Nghị quyết",
+      "issued_on": "2026-06-24",
+      "published_at": null,
+      "issuer_code": "tl-hdnd",
+      "issuer_name": "Hội đồng nhân dân phường Từ Liêm",
+      "metadata_status": "registry_verified",
+      "verification_note": "Đã đọc metadata trên trang công khai; tệp đính kèm tải được và đã tính SHA-256. Chưa xác thực chữ ký số.",
+      "source_observations": {
+        "registry_issued_on": "2026-06-24",
+        "registry_document_number": "14/NQ-HĐND"
+      },
+      "suggested_work_group": "H02",
+      "source": {
+        "url": "https://tuliem.hanoi.gov.vn/chi-tiet-van-ban/ve-nhiem-vu-trong-tam-phat-trien-kinh-te-xa-hoi-quoc-phong-an-ninh-phuong-tu-liem-6-thang-cuoi-nam--273377",
+        "resolved_url": "https://tuliem.hanoi.gov.vn/chi-tiet-van-ban/ve-nhiem-vu-trong-tam-phat-trien-kinh-te-xa-hoi-quoc-phong-an-ninh-phuong-tu-liem-6-thang-cuoi-nam--273377",
+        "publisher": "Trang thông tin điện tử phường Từ Liêm, thành phố Hà Nội",
+        "retrieved_at": "2026-11-11T09:12:29.483310+00:00",
+        "response_sha256": "6721a143f9cc652dca3b0e95acbb10798de4c3c5dd54b639fa65f7a0d87ecc47"
+      },
+      "file": {
+        "url": "https://datafiles.hanoi.gov.vn/gov-hni/6977/VanBan/2026/8/19/14-nqhd-2026.signed.pdf",
+        "resolved_url": "https://datafiles.hanoi.gov.vn/gov-hni/6977/VanBan/2026/8/19/14-nqhd-2026.signed.pdf",
+        "original_name": "14-nqhd-2026.signed.pdf",
+        "media_type": "application/pdf",
+        "byte_size": 4623289,
+        "sha256": "19abdf6960c83973de6422fb80b3d50e58b51a464120de351ce7a269adfc4966",
+        "page_count": 14,
+        "role": "published_pdf",
+        "local_path": null
+      }
+    },
+    {
+      "id": "public-010",
+      "document_number": "13/NQ-HĐND",
+      "title": "Về việc ban hành Nội quy kỳ họp Hội đồng nhân dân phường Từ Liêm khóa I, nhiệm kỳ 2021 - 2026",
+      "document_form": "Nghị quyết",
+      "issued_on": "2025-12-08",
+      "published_at": null,
+      "issuer_code": "tl-hdnd",
+      "issuer_name": "Hội đồng nhân dân phường Từ Liêm",
+      "metadata_status": "registry_verified",
+      "verification_note": "Đã đọc metadata trên trang công khai; tệp đính kèm tải được và đã tính SHA-256. Chưa xác thực chữ ký số.",
+      "source_observations": {
+        "registry_issued_on": "2025-12-08",
+        "registry_document_number": "13/NQ-HĐND"
+      },
+      "suggested_work_group": "H01",
+      "source": {
+        "url": "https://tuliem.hanoi.gov.vn/chi-tiet-van-ban/ve-viec-ban-hanh-noi-quy-ky-hop-hoi-dong-nhan-dan-phuong-tu-liem-khoa-i-nhiem-ky-2021-2026-252899",
+        "resolved_url": "https://tuliem.hanoi.gov.vn/chi-tiet-van-ban/ve-viec-ban-hanh-noi-quy-ky-hop-hoi-dong-nhan-dan-phuong-tu-liem-khoa-i-nhiem-ky-2021-2026-252899",
+        "publisher": "Trang thông tin điện tử phường Từ Liêm, thành phố Hà Nội",
+        "retrieved_at": "2026-11-11T09:12:29.563058+00:00",
+        "response_sha256": "abc014b3c825cd85bbe3f093a4aa9920ff9a3e48d3f4b663a7ba5accea1daadb"
+      },
+      "file": {
+        "url": "https://datafiles.hanoi.gov.vn/gov-hni/6977/VanBan/2026/6/5/13-nqhd-2025tl.signed.pdf",
+        "resolved_url": "https://datafiles.hanoi.gov.vn/gov-hni/6977/VanBan/2026/6/5/13-nqhd-2025tl.signed.pdf",
+        "original_name": "13-nqhd-2025tl.signed.pdf",
+        "media_type": "application/pdf",
+        "byte_size": 3095314,
+        "sha256": "a371633285dbbb56c9deb555ac28452ce77cd15a8a030bc072346be08a40325c",
+        "page_count": 12,
+        "role": "published_pdf",
+        "local_path": null
+      }
+    },
+    {
+      "id": "public-011",
+      "document_number": "12/NQ-HĐND",
+      "title": "Về Kế hoạch phát triển kinh tế - xã hội, quốc phòng an ninh phường Từ Liêm năm 2026",
+      "document_form": "Nghị quyết",
+      "issued_on": "2025-12-08",
+      "published_at": null,
+      "issuer_code": "tl-hdnd",
+      "issuer_name": "Hội đồng nhân dân phường Từ Liêm",
+      "metadata_status": "registry_verified",
+      "verification_note": "Đã đọc metadata trên trang công khai; tệp đính kèm tải được và đã tính SHA-256. Chưa xác thực chữ ký số.",
+      "source_observations": {
+        "registry_issued_on": "2025-12-08",
+        "registry_document_number": "12/NQ-HĐND"
+      },
+      "suggested_work_group": "H02",
+      "source": {
+        "url": "https://tuliem.hanoi.gov.vn/chi-tiet-van-ban/ve-ke-hoach-phat-trien-kinh-te-xa-hoi-quoc-phong-an-ninh-phuong-tu-liem-nam-2026-252898",
+        "resolved_url": "https://tuliem.hanoi.gov.vn/chi-tiet-van-ban/ve-ke-hoach-phat-trien-kinh-te-xa-hoi-quoc-phong-an-ninh-phuong-tu-liem-nam-2026-252898",
+        "publisher": "Trang thông tin điện tử phường Từ Liêm, thành phố Hà Nội",
+        "retrieved_at": "2026-11-11T09:12:29.849320+00:00",
+        "response_sha256": "32c30987657b1e25cddb549bf634952b2c79ee59bcd422d59844dbee0f90d5e4"
+      },
+      "file": {
+        "url": "https://datafiles.hanoi.gov.vn/gov-hni/6977/VanBan/2026/6/5/12-nqhd-2025tl.signed.pdf",
+        "resolved_url": "https://datafiles.hanoi.gov.vn/gov-hni/6977/VanBan/2026/6/5/12-nqhd-2025tl.signed.pdf",
+        "original_name": "12-nqhd-2025tl.signed.pdf",
+        "media_type": "application/pdf",
+        "byte_size": 5325296,
+        "sha256": "fb209d3f95a48378d70195f6bb571967227df9a33dbaf977fde4ae8d8c9bc98b",
+        "page_count": 15,
+        "role": "published_pdf",
+        "local_path": null
+      }
+    },
+    {
+      "id": "public-012",
+      "document_number": "16/NQ-HĐND",
+      "title": "Về kế hoạch đầu tư công năm 2026 phường Từ Liêm",
+      "document_form": "Nghị quyết",
+      "issued_on": "2025-12-08",
+      "published_at": null,
+      "issuer_code": "tl-hdnd",
+      "issuer_name": "Hội đồng nhân dân phường Từ Liêm",
+      "metadata_status": "registry_verified",
+      "verification_note": "Đã đọc metadata trên trang công khai; tệp đính kèm tải được và đã tính SHA-256. Chưa xác thực chữ ký số.",
+      "source_observations": {
+        "registry_issued_on": "2025-12-08",
+        "registry_document_number": "16/NQ-HĐND"
+      },
+      "suggested_work_group": "H02",
+      "source": {
+        "url": "https://tuliem.hanoi.gov.vn/chi-tiet-van-ban/ve-ke-hoach-dau-tu-cong-nam-2026-phuong-tu-liem-252897",
+        "resolved_url": "https://tuliem.hanoi.gov.vn/chi-tiet-van-ban/ve-ke-hoach-dau-tu-cong-nam-2026-phuong-tu-liem-252897",
+        "publisher": "Trang thông tin điện tử phường Từ Liêm, thành phố Hà Nội",
+        "retrieved_at": "2026-11-11T09:12:29.666158+00:00",
+        "response_sha256": "2eb35d80ef866986292561dbc8b3fea9261bf513f8ea8a1907e63f9f6c9e21a5"
+      },
+      "file": {
+        "url": "https://datafiles.hanoi.gov.vn/gov-hni/6977/VanBan/2026/6/5/16-nqhd-2025 chuan.signed.pdf",
+        "resolved_url": "https://datafiles.hanoi.gov.vn/gov-hni/6977/VanBan/2026/6/5/16-nqhd-2025%20chuan.signed.pdf",
+        "original_name": "16-nqhd-2025 chuan.signed.pdf",
+        "media_type": "application/pdf",
+        "byte_size": 2585527,
+        "sha256": "ea101d7c0bbba183d441bf0a511a6d15d56be3e48e5854870151a9736e3f64de",
+        "page_count": 8,
+        "role": "published_pdf",
+        "local_path": null
+      }
+    },
+    {
+      "id": "public-013",
+      "document_number": "15/NQ-HĐND",
+      "title": "Về dự toán ngân sách Phường và phương án phân bổ ngân sách Phường năm 2026",
+      "document_form": "Nghị quyết",
+      "issued_on": "2025-12-08",
+      "published_at": null,
+      "issuer_code": "tl-hdnd",
+      "issuer_name": "Hội đồng nhân dân phường Từ Liêm",
+      "metadata_status": "registry_verified",
+      "verification_note": "Đã đọc metadata trên trang công khai; tệp đính kèm tải được và đã tính SHA-256. Chưa xác thực chữ ký số.",
+      "source_observations": {
+        "registry_issued_on": "2025-12-08",
+        "registry_document_number": "15/NQ-HĐND"
+      },
+      "suggested_work_group": "H02",
+      "source": {
+        "url": "https://tuliem.hanoi.gov.vn/chi-tiet-van-ban/ve-du-toan-ngan-sach-phuong-va-phuong-an-phan-bo-ngan-sach-phuong-nam-2026-252896",
+        "resolved_url": "https://tuliem.hanoi.gov.vn/chi-tiet-van-ban/ve-du-toan-ngan-sach-phuong-va-phuong-an-phan-bo-ngan-sach-phuong-nam-2026-252896",
+        "publisher": "Trang thông tin điện tử phường Từ Liêm, thành phố Hà Nội",
+        "retrieved_at": "2026-11-11T09:12:30.207537+00:00",
+        "response_sha256": "cafb3e22d6dcccaf06571391d6456683e7fb79bdeb1fb40650e3389a38ad7358"
+      },
+      "file": {
+        "url": "https://datafiles.hanoi.gov.vn/gov-hni/6977/VanBan/2026/6/5/15-nqhd-2025-01.signed.pdf",
+        "resolved_url": "https://datafiles.hanoi.gov.vn/gov-hni/6977/VanBan/2026/6/5/15-nqhd-2025-01.signed.pdf",
+        "original_name": "15-nqhd-2025-01.signed.pdf",
+        "media_type": "application/pdf",
+        "byte_size": 12349074,
+        "sha256": "5c991d4c3e21f068b05c4e33a73c365a96b2a0e18e35fdf8699d512b3fe06dce",
+        "page_count": 44,
+        "role": "published_pdf",
+        "local_path": null
+      }
+    },
+    {
+      "id": "public-014",
+      "document_number": "17/NQ-HĐND",
+      "title": "Về việc ban hành Quy chế làm việc Hội đồng nhân dân, Thường trực Hội đồng nhân dân, các Ban Hội đồng nhân dân, Tổ đại biểu Hội đồng nhân dân và Đại biểu Hội đồng nhân dân phường Từ Liêm khóa I, nhiệm kỳ 2021 - 2026",
+      "document_form": "Nghị quyết",
+      "issued_on": "2025-12-08",
+      "published_at": null,
+      "issuer_code": "tl-hdnd",
+      "issuer_name": "Hội đồng nhân dân phường Từ Liêm",
+      "metadata_status": "registry_verified",
+      "verification_note": "Đã đọc metadata trên trang công khai; tệp đính kèm tải được và đã tính SHA-256. Chưa xác thực chữ ký số.",
+      "source_observations": {
+        "registry_issued_on": "2025-12-08",
+        "registry_document_number": "17/NQ-HĐND"
+      },
+      "suggested_work_group": "H10",
+      "source": {
+        "url": "https://tuliem.hanoi.gov.vn/chi-tiet-van-ban/ve-viec-ban-hanh-quy-che-lam-viec-hoi-dong-nhan-dan-thuong-truc-hoi-dong-nhan-dan-cac-ban-hoi-dong--252895",
+        "resolved_url": "https://tuliem.hanoi.gov.vn/chi-tiet-van-ban/ve-viec-ban-hanh-quy-che-lam-viec-hoi-dong-nhan-dan-thuong-truc-hoi-dong-nhan-dan-cac-ban-hoi-dong--252895",
+        "publisher": "Trang thông tin điện tử phường Từ Liêm, thành phố Hà Nội",
+        "retrieved_at": "2026-11-11T09:12:30.691492+00:00",
+        "response_sha256": "5163128daf224bf986fed3f3f8080bcae1ceb19e448853353253544d1128470a"
+      },
+      "file": {
+        "url": "https://datafiles.hanoi.gov.vn/gov-hni/6977/VanBan/2026/6/5/17-nqhd-2025.signed.pdf",
+        "resolved_url": "https://datafiles.hanoi.gov.vn/gov-hni/6977/VanBan/2026/6/5/17-nqhd-2025.signed.pdf",
+        "original_name": "17-nqhd-2025.signed.pdf",
+        "media_type": "application/pdf",
+        "byte_size": 5950278,
+        "sha256": "6883e6acb3897ca5b361aca2146a6fcac00979b55d5d3d54346e184e19408eb5",
+        "page_count": 20,
+        "role": "published_pdf",
+        "local_path": null
+      }
+    },
+    {
+      "id": "public-015",
+      "document_number": "01/NQ-HĐND",
+      "title": "Về việc phê chuẩn Quyết toán thu ngân sách nhà nước trên địa bàn, quyết toán thu, chi ngân sách phường Từ Liêm năm 2025",
+      "document_form": "Nghị quyết",
+      "issued_on": "2026-03-23",
+      "published_at": null,
+      "issuer_code": "tl-hdnd",
+      "issuer_name": "Hội đồng nhân dân phường Từ Liêm",
+      "metadata_status": "header_checked",
+      "verification_note": "Đã đối chiếu phần đầu PDF nghị quyết: 01/NQ-HĐND ngày 23/03/2026. Có thêm phụ lục XLSX. Chưa xác thực chữ ký số.",
+      "source_observations": {
+        "registry_issued_on": "2026-03-23",
+        "registry_document_number": "01/NQ-HĐND",
+        "pdf_header_issued_on": "2026-03-23"
+      },
+      "suggested_work_group": "H02",
+      "source": {
+        "url": "https://tuliem.hanoi.gov.vn/chi-tiet-van-ban/ve-viec-phe-chuan-quyet-toan-thu-ngan-sach-nha-nuoc-tren-dia-ban-quyet-toan-thu-chi-ngan-sach-phuon-252894",
+        "resolved_url": "https://tuliem.hanoi.gov.vn/chi-tiet-van-ban/ve-viec-phe-chuan-quyet-toan-thu-ngan-sach-nha-nuoc-tren-dia-ban-quyet-toan-thu-chi-ngan-sach-phuon-252894",
+        "publisher": "Trang thông tin điện tử phường Từ Liêm, thành phố Hà Nội",
+        "retrieved_at": "2026-11-11T09:12:30.708464+00:00",
+        "response_sha256": "191faeaf934eee899d9325bf3eb1c3147b862c28ee29b84686abe4127c1d1f86"
+      },
+      "file": {
+        "url": "https://datafiles.hanoi.gov.vn/gov-hni/6977/VanBan/01-nqhd-2026.signed.639162425165282945.pdf",
+        "resolved_url": "https://datafiles.hanoi.gov.vn/gov-hni/6977/VanBan/01-nqhd-2026.signed.639162425165282945.pdf",
+        "original_name": "01-nqhd-2026.signed.639162425165282945.pdf",
+        "media_type": "application/pdf",
+        "byte_size": 6560215,
+        "sha256": "41c97806a1a2269578098c9ecf022f58c27c5f542c94ebe51c75ec4a1c7d891b",
+        "page_count": 22,
+        "role": "published_pdf",
+        "local_path": null
+      },
+      "extra_files": [
+        {
+          "url": "https://datafiles.hanoi.gov.vn/gov-hni/6977/VanBan/BAN SUA SO THU-PHU LUC KEM THEO NGHI QUYET QT 2025.639162425156376318.xlsx",
+          "resolved_url": "https://datafiles.hanoi.gov.vn/gov-hni/6977/VanBan/BAN%20SUA%20SO%20THU-PHU%20LUC%20KEM%20THEO%20NGHI%20QUYET%20QT%202025.639162425156376318.xlsx",
+          "original_name": "BAN SUA SO THU-PHU LUC KEM THEO NGHI QUYET QT 2025.639162425156376318.xlsx",
+          "media_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+          "byte_size": 1253559,
+          "sha256": "6d7beea011c5f8724cf136115f62d8d3c885d69868ea82d4cf5a4589ec666dfc",
+          "page_count": null,
+          "role": "published_attachment",
+          "local_path": null
+        }
+      ]
+    },
+    {
+      "id": "public-016",
+      "document_number": "04/NQ-HĐND",
+      "title": "Về Kế hoạch tổ chức các kỳ họp trong năm 2026 của Hội đồng nhân dân phường Từ Liêm",
+      "document_form": "Nghị quyết",
+      "issued_on": "2026-03-27",
+      "published_at": null,
+      "issuer_code": "tl-hdnd",
+      "issuer_name": "Hội đồng nhân dân phường Từ Liêm",
+      "metadata_status": "header_checked",
+      "verification_note": "Đã đối chiếu số, cơ quan và ngày ở phần đầu trang 1 của PDF. Chưa xác thực chữ ký số hoặc toàn bộ nội dung.",
+      "source_observations": {
+        "registry_issued_on": "2026-03-27",
+        "registry_document_number": "04/NQ-HĐND",
+        "pdf_header_issued_on": "2026-03-27"
+      },
+      "suggested_work_group": "H01",
+      "source": {
+        "url": "https://tuliem.hanoi.gov.vn/chi-tiet-van-ban/ve-ke-hoach-to-chuc-cac-ky-hop-trong-nam-2026-cua-hoi-dong-nhan-dan-phuong-tu-liem-252892",
+        "resolved_url": "https://tuliem.hanoi.gov.vn/chi-tiet-van-ban/ve-ke-hoach-to-chuc-cac-ky-hop-trong-nam-2026-cua-hoi-dong-nhan-dan-phuong-tu-liem-252892",
+        "publisher": "Trang thông tin điện tử phường Từ Liêm, thành phố Hà Nội",
+        "retrieved_at": "2026-11-11T09:12:30.804139+00:00",
+        "response_sha256": "1fd657a493e17895622446e0c7450db367dae4d59b551a55636e996365f60942"
+      },
+      "file": {
+        "url": "https://datafiles.hanoi.gov.vn/gov-hni/6977/VanBan/04-nqhd-2026.signed.639162425071155689.pdf",
+        "resolved_url": "https://datafiles.hanoi.gov.vn/gov-hni/6977/VanBan/04-nqhd-2026.signed.639162425071155689.pdf",
+        "original_name": "04-nqhd-2026.signed.639162425071155689.pdf",
+        "media_type": "application/pdf",
+        "byte_size": 341277,
+        "sha256": "98e21cbef45d3d1bb8a7237e35f6f372e27d6cc4d3a9e7e43b4e8656036d499b",
+        "page_count": 1,
+        "role": "published_pdf",
+        "local_path": "samples/public-016.pdf"
+      }
+    },
+    {
+      "id": "public-017",
+      "document_number": "1360/QĐ-UBND",
+      "title": "Về việc công bố công khai số liệu dự toán ngân sách phường Từ Liêm và kế hoạch hoạt động tài chính khác ở phường Từ Liêm năm 2026",
+      "document_form": "Quyết định",
+      "issued_on": "2025-12-29",
+      "published_at": "2025-12-31T08:06:00+07:00",
+      "issuer_code": "tl-ubnd",
+      "issuer_name": "Ủy ban nhân dân phường Từ Liêm",
+      "metadata_status": "header_checked",
+      "verification_note": "Đã đối chiếu số, cơ quan và ngày ở phần đầu trang 1 của PDF. Chưa xác thực chữ ký số hoặc toàn bộ nội dung.",
+      "source_observations": {
+        "registry_issued_on": null,
+        "registry_document_number": "1360/QĐ-UBND",
+        "pdf_header_issued_on": "2025-12-29"
+      },
+      "suggested_work_group": "U11",
+      "source": {
+        "url": "https://tuliem.hanoi.gov.vn/tin-tuc-hoat-dong-cua-ubnd/quyet-dinh-cua-ubnd-phuong-tu-liem-2695251231080657503.htm",
+        "resolved_url": "https://tuliem.hanoi.gov.vn/tin-tuc-hoat-dong-cua-ubnd/quyet-dinh-cua-ubnd-phuong-tu-liem-2695251231080657503.htm",
+        "publisher": "Trang thông tin điện tử phường Từ Liêm, thành phố Hà Nội",
+        "retrieved_at": "2026-11-11T09:12:32.028804+00:00",
+        "response_sha256": "e4b5b124e43ebba5abe3411e86ec2b9f63c7cf7a46ac7803a04f1b2fc82346de"
+      },
+      "file": {
+        "url": "https://sqhx-hanoi.mediacdn.vn/91579363132710912/2025/12/31/1360-17671431718241860003344.pdf",
+        "resolved_url": "https://sqhx-hanoi.mediacdn.vn/91579363132710912/2025/12/31/1360-17671431718241860003344.pdf",
+        "original_name": "1360-17671431718241860003344.pdf",
+        "media_type": "application/pdf",
+        "byte_size": 7275907,
+        "sha256": "a00777d147518e638d44ce2f458bc4f13c77b9c8b74c0833b0cfe94963eb31e6",
+        "page_count": 11,
+        "role": "published_pdf",
+        "local_path": null
+      }
+    },
+    {
+      "id": "public-018",
+      "document_number": "518/QĐ-UBND",
+      "title": "Về việc công khai Quyết toán thu ngân sách nhà nước trên địa bàn, quyết toán thu, chi ngân sách năm 2025 của phường Từ Liêm",
+      "document_form": "Quyết định",
+      "issued_on": "2026-03-27",
+      "published_at": "2026-05-04T14:19:00+07:00",
+      "issuer_code": "tl-ubnd",
+      "issuer_name": "Ủy ban nhân dân phường Từ Liêm",
+      "metadata_status": "header_checked",
+      "verification_note": "Đã đối chiếu số, cơ quan và ngày ở phần đầu trang 1 của PDF. Chưa xác thực chữ ký số hoặc toàn bộ nội dung.",
+      "source_observations": {
+        "registry_issued_on": "2026-03-27",
+        "registry_document_number": "518/QĐ-UBND",
+        "pdf_header_issued_on": "2026-03-27"
+      },
+      "suggested_work_group": "U11",
+      "source": {
+        "url": "https://tuliem.hanoi.gov.vn/tin-tuc-hoat-dong-cua-ubnd/quyet-dinh-so518--qd-ubnd-ngay-27-thang-3-nam-2026-cua-uy-ban-nhan-dan-phuong-tu-liem-2695260504141912509.htm",
+        "resolved_url": "https://tuliem.hanoi.gov.vn/tin-tuc-hoat-dong-cua-ubnd/quyet-dinh-so518--qd-ubnd-ngay-27-thang-3-nam-2026-cua-uy-ban-nhan-dan-phuong-tu-liem-2695260504141912509.htm",
+        "publisher": "Trang thông tin điện tử phường Từ Liêm, thành phố Hà Nội",
+        "retrieved_at": "2026-11-11T09:12:33.223018+00:00",
+        "response_sha256": "acc4c51411ba2bff9084c961d913f3bd49106ccfe9526cfd80053fb4147d4b47"
+      },
+      "file": {
+        "url": "https://sqhx-hanoi.mediacdn.vn/91579363132710912/2026/5/4/qd518cong-khai-quyet-toan-thu-chi-2025-phuong-tu-liem-17778789987811134995459.pdf",
+        "resolved_url": "https://sqhx-hanoi.mediacdn.vn/91579363132710912/2026/5/4/qd518cong-khai-quyet-toan-thu-chi-2025-phuong-tu-liem-17778789987811134995459.pdf",
+        "original_name": "qd518cong-khai-quyet-toan-thu-chi-2025-phuong-tu-liem-17778789987811134995459.pdf",
+        "media_type": "application/pdf",
+        "byte_size": 7259155,
+        "sha256": "bb2289f6a2b0f05093f4ff6ac6f92fb713210aa82198a7c22c9233aedd4b1bcd",
+        "page_count": 11,
+        "role": "published_pdf",
+        "local_path": null
+      }
+    },
+    {
+      "id": "public-019",
+      "document_number": "26/KH-UBND",
+      "title": "Về việc tổ chức Chợ hoa xuân phục vụ tết Nguyên đán Bính Ngọ năm 2026 trên địa bàn phường Từ Liêm",
+      "document_form": "Kế hoạch",
+      "issued_on": null,
+      "published_at": "2026-01-27T09:58:00+07:00",
+      "issuer_code": "tl-ubnd",
+      "issuer_name": "Ủy ban nhân dân phường Từ Liêm",
+      "metadata_status": "needs_review",
+      "verification_note": "XUNG ĐỘT: trang đăng ghi 26/01/2026, phần đầu PDF ghi 20/01/2026. issued_on để NULL chờ đối chiếu; không tự chọn ngày.",
+      "source_observations": {
+        "registry_issued_on": "2026-01-26",
+        "registry_document_number": "26/KH-UBND",
+        "pdf_header_issued_on": "2026-01-20"
+      },
+      "suggested_work_group": "U14",
+      "source": {
+        "url": "https://tuliem.hanoi.gov.vn/thong-bao/ke-hoach-so-26--kh-ubnd-ngay-26-thang-01-nam-2026-2695260127095856973.htm",
+        "resolved_url": "https://tuliem.hanoi.gov.vn/thong-bao/ke-hoach-so-26--kh-ubnd-ngay-26-thang-01-nam-2026-2695260127095856973.htm",
+        "publisher": "Trang thông tin điện tử phường Từ Liêm, thành phố Hà Nội",
+        "retrieved_at": "2026-11-11T09:12:33.315552+00:00",
+        "response_sha256": "22b6e6c5989a53ed82698399a5a8116ae0edf99d45c11ba8dcecb477193717f7"
+      },
+      "file": {
+        "url": "https://sqhx-hanoi.mediacdn.vn/91579363132710912/2026/1/27/26-ke-hoach-to-chuc-cho-hoa-xuan-nam-2026-176948268993060438575.pdf",
+        "resolved_url": "https://sqhx-hanoi.mediacdn.vn/91579363132710912/2026/1/27/26-ke-hoach-to-chuc-cho-hoa-xuan-nam-2026-176948268993060438575.pdf",
+        "original_name": "26-ke-hoach-to-chuc-cho-hoa-xuan-nam-2026-176948268993060438575.pdf",
+        "media_type": "application/pdf",
+        "byte_size": 3303640,
+        "sha256": "da9808fd8b09f50bed9446ff07eedfe75cf674366942bdce4873d49cdc8be18e",
+        "page_count": 8,
+        "role": "published_pdf",
+        "local_path": "samples/public-019.pdf"
+      }
+    }
+  ]
+}

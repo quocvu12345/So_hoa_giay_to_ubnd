@@ -1,0 +1,78 @@
+{
+  "id": "dvc-019d2bf8-4a88-761c-a413-252b766cc878",
+  "procedure_code": "2.002620",
+  "name": "Thông báo về việc thực hiện hoạt động bán hàng không tại địa điểm giao dịch thường xuyên",
+  "domain": "bảo vệ quyền lợi người tiêu dùng",
+  "managing_agency": "Bộ Công thương",
+  "inventory_date": null,
+  "scope": "national_commune",
+  "lookup_status": "retrieved",
+  "currency_status": "published_on_dvc_not_local_applicability_certificate",
+  "checked_at": "2026-11-12T22:41:18.029727+07:00",
+  "is_internal": false,
+  "details": [
+    {
+      "id": "019d2bf8-4a88-761c-a413-252b766cc878",
+      "code": "2.002620",
+      "name": "Thông báo về việc thực hiện hoạt động bán hàng không tại địa điểm giao dịch thường xuyên",
+      "state": "UPDATED",
+      "type": "STANDARD",
+      "is_ward": true,
+      "updated_at_source": 1776322173144,
+      "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf8-4a88-761c-a413-252b766cc878",
+      "raw_path": "evidence/dvc/details/019d2bf8-4a88-761c-a413-252b766cc878.json",
+      "components": [
+        {
+          "section": "",
+          "position": 1,
+          "name": "+) Lần đầu: 01 Thông báo thực hiện bán hàng không tại địa điểm giao dịch thường xuyên theo Mẫu số 10 Phụ lục ban hành kèm theo Nghị định số 55/2024/NĐ-CP.",
+          "component_code": "000.00.00.G02-KQ004794",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019d9441-9a38-77c8-b301-14cfa210b4e0",
+              "fileName": "mẫu đơn số 10.doc",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d9441-9a38-77c8-b301-14cfa210b4e0/mẫu đơn số 10.doc"
+            }
+          ]
+        },
+        {
+          "section": "",
+          "position": 2,
+          "name": "+) Trường hợp sửa đổi bổ sung thông báo: 01 thông báo sửa đổi, bổ sung theo Mẫu số 11 Phụ lục ban hành kèm theo Nghị định số 55/2024/NĐ-CP.",
+          "component_code": "000.00.00.G02-KQ004795",
+          "original_quantity": 1,
+          "copy_quantity": 0,
+          "required_as_published": false,
+          "has_electronic_form": false,
+          "attachments": [
+            {
+              "id": "019d9441-b9eb-774a-8689-0d9bce3e9f9e",
+              "fileName": "mẫu đơn 11.doc",
+              "bucketName": "dvc",
+              "filePath": "configuring/019d9441-b9eb-774a-8689-0d9bce3e9f9e/mẫu đơn 11.doc"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "id": "019d2bb2-1c39-7291-ba49-0a4ccbc0b711",
+          "name": "Tổ chức, cá nhân kinh doanh thực hiện hoạt động bán hàng không tại địa điểm giao dịch thường xuyên sau khi thông báo.",
+          "code": "KQ.G02.000351"
+        }
+      ],
+      "legal_bases": [
+        {
+          "id": "019d2bb3-5d7e-72d1-afe5-d7028dda8f46",
+          "name": "Quy định chi tiết một số điều của Luật Bảo vệ quyền lợi người tiêu dùng",
+          "code": "55/2024/NĐ-CP"
+        }
+      ]
+    }
+  ]
+}
