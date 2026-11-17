@@ -11,6 +11,7 @@
 | [07-khung-giao-dien.md](07-khung-giao-dien.md) | Bản đồ 36 đường dẫn trang, bố cục, thành phần dùng chung, quy tắc tương tác |
 | [tasks/backend.md](tasks/backend.md) | Từng task backend: trạng thái khung, tệp, các bước, cách kiểm tra |
 | [tasks/frontend.md](tasks/frontend.md) | Từng task frontend Next.js: trạng thái khung, tệp, các bước, cách kiểm tra |
+| [tasks/ai.md](tasks/ai.md) | Worker AI: phương án tốc độ trên Mac M4 16 GB, mức ưu tiên và khay nền, task AI-12 trở đi |
 
 Mã nguồn mới:
 - [backend/](../backend/): .NET 10, khung đã viết, chưa build;

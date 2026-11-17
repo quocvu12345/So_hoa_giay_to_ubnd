@@ -7,6 +7,7 @@ from __future__ import annotations
 
 import json
 import threading
+from contextlib import contextmanager
 
 from ..contracts import Job, JobType, PageResult, Progress, Suggestion
 from .repository import Catalog, DocumentTypeDef, FieldDef, JobCancelled, JobLost
@@ -14,8 +15,8 @@ from .repository import Catalog, DocumentTypeDef, FieldDef, JobCancelled, JobLos
 CLAIM_SQL = """
 WITH next AS (
   SELECT id FROM hoso.ocr_jobs
-  WHERE status = 'queued'
-  ORDER BY priority, created_at
+  WHERE status = 'queued' AND (%(exclude_from)s::int IS NULL OR priority < %(exclude_from)s::int)
+  ORDER BY priority, coalesce(prioritized_at, created_at)
   FOR UPDATE SKIP LOCKED
   LIMIT 1
 ), claimed AS (
@@ -23,17 +24,32 @@ WITH next AS (
   SET status = 'running', locked_by = %(worker)s, attempt = j.attempt + 1,
       started_at = coalesce(j.started_at, now()), heartbeat_at = now(), stage = 'preparing'
   FROM next WHERE j.id = next.id
-  RETURNING j.id, j.file_id, j.job_type, j.options, j.attempt
+  RETURNING j.id, j.file_id, j.job_type, j.options, j.attempt, j.priority, j.preempted_count
 )
 SELECT c.id::text, c.file_id::text, f.document_id::text, f.storage_key, f.sha256, coalesce(f.page_count, 0),
-       c.job_type, c.options, c.attempt
+       c.job_type, c.options, c.attempt, c.priority, c.preempted_count
 FROM claimed c JOIN hoso.files f ON f.id = c.file_id
+"""
+
+YIELD_CHECK_SQL = """
+SELECT q.id::text FROM hoso.ocr_jobs j, hoso.ocr_jobs q
+WHERE j.id = %(job)s AND j.status = 'running' AND j.locked_by = %(worker)s AND j.attempt = %(attempt)s
+  AND j.priority >= %(bg)s          -- đã được nâng mức thì không còn là việc nền, không nhường
+  AND q.status = 'queued' AND q.priority < %(bg)s
+ORDER BY q.priority, coalesce(q.prioritized_at, q.created_at)
+LIMIT 1
+"""
+
+YIELD_SQL = """
+UPDATE hoso.ocr_jobs
+SET status = 'queued', locked_by = NULL, stage = 'preparing', preempted_count = preempted_count + 1
+WHERE id = %(job)s AND locked_by = %(worker)s AND attempt = %(attempt)s AND status = 'running'
 """
 
 HEARTBEAT_SQL = """
 UPDATE hoso.ocr_jobs
-SET heartbeat_at = now(), stage = %(stage)s, processed_pages = %(processed)s, page_count = %(page_count)s
-WHERE id = %(job)s AND locked_by = %(worker)s
+SET heartbeat_at = now(), stage = %(stage)s, processed_pages = %(processed)s, page_count = nullif(%(page_count)s, 0)
+WHERE id = %(job)s AND locked_by = %(worker)s AND attempt = %(attempt)s AND status = 'running'
 RETURNING status
 """
 
@@ -48,8 +64,9 @@ SET method = EXCLUDED.method, text = EXCLUDED.text, native_text = EXCLUDED.nativ
 FINISH_SQL = """
 UPDATE hoso.ocr_jobs
 SET status = %(status)s, finished_at = CASE WHEN %(status)s = 'queued' THEN NULL ELSE now() END,
-    locked_by = NULL, warnings = %(warnings)s::jsonb, error_message = %(error)s, stage = %(stage)s
-WHERE id = %(job)s AND locked_by = %(worker)s
+    locked_by = NULL, warnings = %(warnings)s::jsonb, error_message = %(error)s, stage = %(stage)s,
+    model_version = coalesce(nullif(%(model_version)s, ''), model_version)
+WHERE id = %(job)s AND locked_by = %(worker)s AND attempt = %(attempt)s AND status = 'running'
 """
 
 
@@ -70,24 +87,37 @@ class PostgresRepository:
     def _notify(self, conn, channel: str, payload: str) -> None:
         conn.execute("SELECT pg_notify(%s, %s)", (channel, payload))
 
-    def claim(self, worker_id: str) -> Job | None:
-        row = self._main.execute(CLAIM_SQL, {"worker": worker_id}).fetchone()
+    def claim(self, worker_id: str, *, exclude_priority_from: int | None = None) -> Job | None:
+        row = self._main.execute(CLAIM_SQL, {"worker": worker_id, "exclude_from": exclude_priority_from}).fetchone()
         if row is None:
             return None
-        job_id, file_id, document_id, storage_key, sha256, page_count, job_type, options, attempt = row
+        job_id, file_id, document_id, storage_key, sha256, page_count, job_type, options, attempt, priority, preempted = row
         return Job(job_id, file_id, document_id, storage_key, sha256, page_count,
-                   JobType(job_type or JobType.READ_CLASSIFY), options or {}, attempt)
+                   JobType(job_type or JobType.READ_CLASSIFY), options or {}, attempt, worker_id, int(priority), int(preempted))
+
+    @contextmanager
+    def _owned_job(self, job: Job, worker_id: str | None = None):
+        # Khóa hàng tới khi ghi xong: hủy/thu hồi job không thể xen giữa kiểm tra và ghi.
+        with self._main.transaction():
+            row = self._main.execute(
+                "SELECT status, locked_by, attempt FROM hoso.ocr_jobs WHERE id = %s FOR UPDATE", (job.id,)).fetchone()
+            if row is not None and row[0] == "cancelled":
+                raise JobCancelled(job.id)
+            if row != ("running", worker_id or job.worker_id, job.attempt):
+                raise JobLost(job.id)
+            yield
 
     def heartbeat(self, job: Job, worker_id: str, progress: Progress) -> None:
         with self._side_lock:
             row = self._side.execute(HEARTBEAT_SQL, {
                 "stage": progress.stage.value, "processed": progress.processed_pages,
-                "page_count": progress.page_count, "job": job.id, "worker": worker_id,
+                "page_count": progress.page_count, "job": job.id, "worker": worker_id, "attempt": job.attempt,
             }).fetchone()
             if row is None:
+                state = self._side.execute("SELECT status FROM hoso.ocr_jobs WHERE id = %s", (job.id,)).fetchone()
+                if state == ("cancelled",) and worker_id == job.worker_id:
+                    raise JobCancelled(job.id)
                 raise JobLost(job.id)
-            if row[0] == "cancelled":
-                raise JobCancelled(job.id)
             self._notify(self._side, "job_progress", json.dumps({
                 "jobId": job.id, "documentId": job.document_id, "stage": progress.stage.value,
                 "processed": progress.processed_pages, "pageCount": progress.page_count,
@@ -100,14 +130,15 @@ class PostgresRepository:
         return {r[0]: PageResult(r[0], r[1], r[2], r[3] or "", r[4] or [], r[5], float(r[6] or 0)) for r in rows}
 
     def save_page(self, job: Job, page: PageResult) -> None:
-        self._main.execute(SAVE_PAGE_SQL, {
-            "job": job.target_job_id, "page": page.page_no, "method": page.method, "text": page.text,
-            "native": page.native_text, "blocks": json.dumps(page.blocks, ensure_ascii=False),
-            "status": page.status, "elapsed": page.elapsed_seconds,
-        })
+        with self._owned_job(job):
+            self._main.execute(SAVE_PAGE_SQL, {
+                "job": job.target_job_id, "page": page.page_no, "method": page.method, "text": page.text,
+                "native": page.native_text, "blocks": json.dumps(page.blocks, ensure_ascii=False),
+                "status": page.status, "elapsed": page.elapsed_seconds,
+            })
 
     def save_suggestion(self, job: Job, suggestion: Suggestion) -> None:
-        with self._main.transaction():
+        with self._owned_job(job):
             suggestion_id = self._main.execute(
                 "INSERT INTO hoso.ai_suggestions (job_id, document_id, work_group_code, document_type_code, document_form, "
                 "title, reason, quote, evidence_verified, mixed_documents, model_key) "
@@ -123,20 +154,23 @@ class PostgresRepository:
 
     def save_quality(self, job: Job, page_no: int, flags: tuple[str, ...]) -> None:
         status = "suspect" if flags else "ok"
-        self._main.execute(
-            "INSERT INTO hoso.page_images (file_id, page_no, quality_flags, quality_status) VALUES (%s,%s,%s,%s) "
-            "ON CONFLICT (file_id, page_no) DO UPDATE SET quality_flags = EXCLUDED.quality_flags, "
-            "quality_status = CASE WHEN hoso.page_images.quality_status IN ('rescan_required','rescanned') "
-            "THEN hoso.page_images.quality_status ELSE EXCLUDED.quality_status END",
-            (job.file_id, page_no, list(flags), status))
+        with self._owned_job(job):
+            self._main.execute(
+                "INSERT INTO hoso.page_images (file_id, page_no, quality_flags, quality_status) VALUES (%s,%s,%s,%s) "
+                "ON CONFLICT (file_id, page_no) DO UPDATE SET quality_flags = EXCLUDED.quality_flags, "
+                "quality_status = CASE WHEN hoso.page_images.quality_status IN ('rescan_required','rescanned') "
+                "THEN hoso.page_images.quality_status ELSE EXCLUDED.quality_status END",
+                (job.file_id, page_no, list(flags), status))
 
-    def _finish(self, job: Job, worker_id: str, status: str, stage: str, warnings=(), error=None) -> None:
-        self._main.execute(FINISH_SQL, {"status": status, "warnings": json.dumps(list(warnings), ensure_ascii=False),
-                                        "error": error, "stage": stage, "job": job.id, "worker": worker_id})
-        self._notify(self._main, "job_progress", json.dumps({"jobId": job.id, "documentId": job.document_id, "status": status}))
+    def _finish(self, job: Job, worker_id: str, status: str, stage: str, warnings=(), error=None, model_version: str = "") -> None:
+        with self._owned_job(job, worker_id):
+            self._main.execute(FINISH_SQL, {"status": status, "warnings": json.dumps(list(warnings), ensure_ascii=False),
+                                           "error": error, "stage": stage, "job": job.id, "worker": worker_id,
+                                           "attempt": job.attempt, "model_version": model_version})
+            self._notify(self._main, "job_progress", json.dumps({"jobId": job.id, "documentId": job.document_id, "status": status}))
 
-    def complete(self, job: Job, worker_id: str, warnings: tuple[str, ...], all_pages_read: bool) -> None:
-        self._finish(job, worker_id, "completed", "done", warnings)
+    def complete(self, job: Job, worker_id: str, warnings: tuple[str, ...], all_pages_read: bool, model_version: str = "") -> None:
+        self._finish(job, worker_id, "completed", "done", warnings, model_version=model_version)
 
     def fail(self, job: Job, worker_id: str, error: str, retry: bool) -> None:
         self._finish(job, worker_id, "queued" if retry else "failed", "preparing" if retry else "failed", error=error[:1500])
@@ -144,16 +178,32 @@ class PostgresRepository:
     def release(self, job: Job, worker_id: str) -> None:
         self._finish(job, worker_id, "queued", "preparing")
 
+    def priority_of(self, job: Job) -> int:
+        with self._side_lock:
+            row = self._side.execute("SELECT priority FROM hoso.ocr_jobs WHERE id = %s", (job.id,)).fetchone()
+        return int(row[0]) if row else job.priority
+
+    def should_yield(self, job: Job, worker_id: str, background_from: int) -> str | None:
+        with self._side_lock:
+            row = self._side.execute(YIELD_CHECK_SQL, {"job": job.id, "worker": worker_id, "attempt": job.attempt, "bg": background_from}).fetchone()
+        return row[0] if row else None
+
+    def yield_job(self, job: Job, worker_id: str) -> None:
+        with self._owned_job(job, worker_id):
+            self._main.execute(YIELD_SQL, {"job": job.id, "worker": worker_id, "attempt": job.attempt})
+            self._notify(self._main, "job_progress", json.dumps({"jobId": job.id, "documentId": job.document_id, "status": "queued"}))
+
     def catalog(self) -> Catalog:
         groups = dict(self._main.execute("SELECT code, title FROM hoso.work_groups WHERE active").fetchall())
         rows = self._main.execute(
             "SELECT t.code, t.name, t.work_group_code, f.code, f.label, f.value_type, f.is_key_field "
-            "FROM hoso.document_types t JOIN hoso.field_definitions f ON f.document_type_code = t.code "
+            "FROM hoso.document_types t LEFT JOIN hoso.field_definitions f ON f.document_type_code = t.code "
             "WHERE t.active AND t.work_group_code IN (SELECT code FROM hoso.work_groups WHERE active) ORDER BY t.code, f.position").fetchall()
         types: dict[str, DocumentTypeDef] = {}
         for code, name, group, f_code, label, value_type, key in rows:
             current = types.get(code) or DocumentTypeDef(code, name, group, ())
-            types[code] = DocumentTypeDef(code, name, group, current.fields + (FieldDef(f_code, label, value_type, key),))
+            fields = current.fields + (FieldDef(f_code, label, value_type, key),) if f_code else current.fields
+            types[code] = DocumentTypeDef(code, name, group, fields)
         return Catalog(groups, types)
 
     def wait_for_work(self, timeout_seconds: float) -> None:

@@ -13,8 +13,13 @@ def build_engines(settings: Settings) -> Engines:
 
         return Engines(PdfiumReader(), FakeOcr(), FakeClassifier(), PillowQualityChecker())
     if settings.profile == "mac-mlx":
+        from ..settings import SettingsError
         from .mlx import PaddleVlMlxOcr, QwenMlxClassifier
 
-        return Engines(PdfiumReader(), PaddleVlMlxOcr(settings.work_root / "mlx"), QwenMlxClassifier(), PillowQualityChecker())
+        try:
+            classifier = QwenMlxClassifier(settings.classifier_model)
+        except (FileNotFoundError, ValueError) as error:
+            raise SettingsError(str(error)) from error
+        return Engines(PdfiumReader(), PaddleVlMlxOcr(settings.work_root / "mlx"), classifier, PillowQualityChecker())
     raise NotImplementedError(
         f"Hồ sơ {settings.profile!r} chưa làm (task AI-11): PaddleOCR trên CUDA/CPU, LLM qua máy chủ tương thích OpenAI cục bộ.")

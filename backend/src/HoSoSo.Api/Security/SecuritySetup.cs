@@ -21,6 +21,7 @@ public static class SecuritySetup
 {
     public const string UploadPolicy = "upload";
     public const string OpsPolicy = "ops";
+    public const string AiExtractPolicy = "ai-extract";
 
     public static IServiceCollection AddHoSoSecurity(this IServiceCollection services, IConfiguration configuration, IHostEnvironment environment)
     {
@@ -150,6 +151,7 @@ public static class SecuritySetup
 
         var requestsPerMinute = configuration.GetValue("Limits:RequestsPerMinute", 300);   // đã kiểm giá trị ở LimitsOptions
         var opsPerMinute = Math.Max(1, configuration.GetValue("Limits:OpsRequestsPerMinute", 20));
+        var aiExtractPerMinute = Math.Max(1, configuration.GetValue("Limits:AiExtractPerMinute", 20));
         services.AddRateLimiter(options =>
         {
             options.RejectionStatusCode = StatusCodes.Status429TooManyRequests;
@@ -162,6 +164,11 @@ public static class SecuritySetup
                 RateLimitPartition.GetFixedWindowLimiter(
                     context.Connection.RemoteIpAddress?.ToString() ?? "unknown",
                     _ => new FixedWindowRateLimiterOptions { PermitLimit = opsPerMinute, Window = TimeSpan.FromMinutes(1) }));
+            // "Trích xuất ngay" (BE-98): mỗi người tối đa 20 lần mỗi phút, đủ cho thao tác tay, chặn vòng lặp bấm liên tục làm ngập hàng đợi.
+            options.AddPolicy(AiExtractPolicy, context =>
+                RateLimitPartition.GetFixedWindowLimiter(
+                    context.User.FindFirstValue(HoSoClaims.Subject) ?? context.Connection.RemoteIpAddress?.ToString() ?? "anonymous",
+                    _ => new FixedWindowRateLimiterOptions { PermitLimit = aiExtractPerMinute, Window = TimeSpan.FromMinutes(1) }));
             // Mỗi người tối đa 3 tệp tải lên cùng lúc, thêm tối đa 10 tệp chờ.
             options.AddPolicy(UploadPolicy, context =>
                 RateLimitPartition.GetConcurrencyLimiter(

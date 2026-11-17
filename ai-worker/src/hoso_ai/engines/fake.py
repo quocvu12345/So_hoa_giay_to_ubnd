@@ -50,7 +50,7 @@ class FakeClassifier:
     def unload(self) -> None:
         self.loaded = False
 
-    def suggest(self, pages: list[PageResult], catalog: Catalog) -> Suggestion:
+    def suggest(self, pages: list[PageResult], catalog: Catalog, prompt_style: str = "production") -> Suggestion:
         doc_type = next(iter(catalog.document_types.values()), None)
         fields = tuple(
             FieldSuggestion(f.code, f.label, "", "", (), False) for f in (doc_type.fields if doc_type else ())

@@ -67,7 +67,7 @@ public sealed class IntakeReviewTests(DbApiFactory api) : IClassFixture<DbApiFac
         var job = await (await http.GetAsync($"/api/v1/jobs/{up.JobId}")).ReadAsync<JobDto>();
         job.Status.ShouldBe("queued");
         job.QueuePosition.ShouldNotBeNull().ShouldBeGreaterThanOrEqualTo(1);
-        (await api.ScalarAsync<short>("SELECT priority FROM hoso.ocr_jobs WHERE id = $1", up.JobId)).ShouldBe((short)3, "tải lên của người dùng chạy trước việc hàng loạt");
+        (await api.ScalarAsync<short>("SELECT priority FROM hoso.ocr_jobs WHERE id = $1", up.JobId)).ShouldBe((short)7, "PDF mới tải lên vào khay nền (BE-97)");
         (await api.ScalarAsync<string>("SELECT options->>'classify' FROM hoso.ocr_jobs WHERE id = $1", up.JobId)).ShouldBe("true");
 
         var inbox = await (await http.GetAsync("/api/v1/intake/inbox")).ReadAsync<List<InboxDto>>();

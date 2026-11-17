@@ -1,5 +1,12 @@
 BỘ DỮ LIỆU GIẢ ĐẦY ĐỦ GIẤY TỜ - 425 x 2 = 850 BỘ
 
+ĐÃ NẠP VÀO BACKEND LOCAL (16/11/2026)
+hoso_dev: 850 hồ sơ TEST-TL-*, 3560 giấy tờ thành phần và 850 PDF gộp tham chiếu.
+Origin demo, trạng thái nháp/chờ đối chiếu; nhóm tiếp nhận U27. Các thủ tục lịch sử giữ mã nguồn
+trong ghi chú, không gán thành thủ tục hiện hành. Chưa chạy OCR, đáp án JSON vẫn giữ riêng.
+Script chạy lại không tạo trùng: backend/scripts/import_synthetic_dossiers.py --apply.
+Hướng dẫn, số liệu kiểm chứng và cách chọn phân công để xem: backend/README.md.
+
 425 mục trong danh mục cấp xã Hà Nội ngày 27/4/2026, mỗi mục đúng 2 bộ giả.
 850 PDF gộp thực tế; 3560 file giấy tờ, 4228 trang.
 Trong đó 404 biểu mẫu nguồn đã điền được giữ nguyên; 3156 giấy tờ tự dựng có nhãn GIẢ LẬP.

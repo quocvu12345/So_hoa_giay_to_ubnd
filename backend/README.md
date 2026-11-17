@@ -34,6 +34,57 @@ Migration `*_optional.sql` (dữ liệu mẫu 004, 007, 021) mặc định chạ
 
 ## Đăng nhập thử khi dev
 
+### Bộ 850 hồ sơ giả lập Từ Liêm
+
+Đã nhập vào `hoso_dev` local ngày 16/11/2026 bằng `scripts/import_synthetic_dossiers.py`:
+850 hồ sơ `TEST-TL-*`, 3.560 giấy tờ thành phần và 850 PDF gộp tham chiếu. Cộng dữ liệu cũ:
+**853 hồ sơ, 4.441 giấy tờ, 4.448 tệp**. Toàn bộ bộ mới có `origin=demo`, hồ sơ `draft`,
+giấy tờ `pending`/`needs_review`, `intake_status=filed`. PDF được chép vào `Storage:Root`
+theo khóa `blobs/ab/cd/<sha256>`; chỉ có đường dẫn nguồn trên ổ đĩa thì API không mở được tệp.
+
+Các bộ được xếp vào **U27 · Hồ sơ tiếp nhận và trả kết quả TTHC** (`mc`, `tl-ubnd`) để kiểm thử tiếp nhận.
+Đơn vị trong bộ nguồn được giữ trong ghi chú/metadata, chưa xác nhận phân phòng chuyên môn.
+786 bộ gắn thủ tục theo đúng ID nguồn; 64 bộ mô phỏng lịch sử có mã thủ tục trong ghi chú và
+`source_observations`, để `procedure_id=NULL` vì backend không cho chọn thủ tục đã bị thay thế/bãi bỏ khi tạo hồ sơ mới.
+PDF gộp có `relation_kind=reference`, tránh đếm hai lần thành phần. Không nhập đáp án JSON vào
+`document_field_values`, không tạo kết quả OCR hoặc tự chạy hàng nghìn job OCR.
+
+Đăng nhập `dev_admin`, chọn **Văn thư / lưu trữ · UBND**, **Trưởng phòng Một cửa** hoặc **Chủ tịch UBND** để xem.
+`technical_admin` không có quyền đọc nội dung hồ sơ. Trên DBeaver, Refresh bảng `hoso.dossiers`
+hoặc chạy `SELECT count(*) FROM hoso.dossiers WHERE code LIKE 'TEST-TL-%';` để thấy 850 bộ.
+
+Chạy từ thư mục gốc repository:
+
+```sh
+python3 -m venv backend/.venv
+backend/.venv/bin/python -m pip install -r backend/scripts/requirements-import.txt
+# Mặc định kiểm toàn bộ PDF, thử INSERT cùng constraints/triggers rồi ROLLBACK.
+# Sequence nhật ký PostgreSQL vẫn có thể tăng khi rollback; không tạo bản ghi nghiệp vụ.
+backend/.venv/bin/python backend/scripts/import_synthetic_dossiers.py
+# Chép PDF, pg_dump đầy đủ trước khi ghi, rồi COMMIT một giao dịch.
+backend/.venv/bin/python backend/scripts/import_synthetic_dossiers.py --apply \
+  --report artifacts/tuliem-import/applied.json
+```
+
+Kết nối mặc định `host=127.0.0.1 port=5432 dbname=hoso_dev`, user theo môi trường PostgreSQL.
+Có thể đặt `HOSO_IMPORT_DSN` và `--storage-root` để khớp môi trường dev. Script chỉ nhận host local
+và database `hoso_dev`/`hoso_import_test_*`, xác minh SHA-256/kích thước/số trang và dùng UUID ổn định.
+Chạy lại không sửa dữ liệu đã có; xung đột mã hoặc nội dung tệp sẽ hủy giao dịch. Nếu ghi DB thất bại sau
+khi chép tệp, blob chưa được tham chiếu được giữ lại để lần chạy sau tái sử dụng.
+Bản sao lưu đầy đủ ở `data/db-backups/before-tuliem-import-*.dump` gồm cả extension (khác bản dump lọc schema).
+
+**Đã kiểm:** 4.410 blob khớp SHA-256; liên kết của đủ 850 bộ; nhập lần hai tạo 0 dòng;
+API phân trang trả đủ 850 bộ; chi tiết/checklist và PDF đầy đủ/HTTP Range cho ba bộ đại diện
+(có bộ lịch sử); tài khoản quản trị kỹ thuật bị chặn đọc nội dung; 29 test
+`DossierWorkflowTests`, `IntakeReviewTests`, `AssignmentScopeTests`, `ProcedureChecklistTests` đạt.
+Biên bản local: `artifacts/tuliem-import/verification.json`, `applied.json`, `repeated.json`, `backend-tests.log`.
+
+Máy Homebrew hiện dùng PostgreSQL role `quoc`; cấu hình kết nối API và migrator đã lưu vào
+.NET user-secrets (`hoso-api-dev`) trên máy này. Cấu hình Docker trong repository vẫn dùng các role dev riêng.
+Trên máy khác, đặt chuỗi kết nối đúng bằng biến môi trường hoặc `dotnet user-secrets set` trước khi chạy API.
+
+### Tài khoản và phân công dev
+
 Môi trường Development dùng `Auth:Mode=Dev`: mở `/api/v1/auth/login` để chọn người dùng GIẢ LẬP (cột `users.is_demo`), hoặc gọi thẳng
 `/api/v1/auth/dev-login?username=<tên>`. Tài khoản quản trị dev là `dev_admin` (xem migration `021_dev_admin_optional.sql`); có 18 phân công để thử mọi vai trò.
 `technical_admin` quản trị người dùng/cấu hình nhưng **không đọc nội dung hồ sơ** theo thiết kế; đổi sang phân công khác để xem hồ sơ.

@@ -27,7 +27,7 @@ Mã task giữ nguyên như `docs/04-ke-hoach-task.md`. Đường dẫn tệp t�
 - **Khóa tài khoản trước đây không thu hồi phiên:** cookie tự chứa vé nên người bị khóa chỉ bị chặn gián tiếp (không còn phân công, API trả 403) và **được mở khóa là phiên cũ sống lại**. Nay phiên nằm trong CSDL: khóa là thu hồi ngay (401), mở khóa không làm sống lại, phải đăng nhập lại (BE-12). Test `AdminSafetyTests` đã đổi theo hành vi mới.
 - Tra cứu cũ cắt 300 khớp tốt nhất **trước** khi lọc phạm vi: một từ phổ biến khớp hàng trăm giấy tờ ngoài phạm vi có thể đẩy giấy tờ trong phạm vi ra khỏi danh sách. Nay lọc phạm vi trong cùng truy vấn, trước khi cắt và đếm (BE-80).
 
-**CSDL dev của bạn (`hoso_dev` trên PostgreSQL 5432):** đã nâng cấp lên schema mới (sao lưu trước ở `data/db-backups/`, đánh dấu baseline `000–003, 007` rồi chạy 008–031; **không** nạp dữ liệu mẫu `004`). Nâng cấp tiếp bằng `backend/scripts/migrate-hoso-dev.sh` (mặc định chỉ liệt kê, `--apply` mới chạy, bỏ qua mọi `*_optional`), vì `migrate` trần ở Development tự chạy cả `*_optional.sql`. Dữ liệu cũ (3 hồ sơ TEST-CITIZEN, 31 giấy tờ, 38 tệp) còn nguyên. Có tài khoản quản trị dev `dev_admin` (migration `021_dev_admin_optional.sql`, 18 phân công): mặc định `technical_admin`, đổi bằng bộ chọn phân công sang Chủ tịch, Lãnh đạo HĐND, văn thư, trưởng phòng từng đơn vị, chuyên viên Hạ tầng. Theo thiết kế `technical_admin` **không đọc nội dung hồ sơ** nên muốn xem hồ sơ thì đổi phân công.
+**CSDL dev của bạn (`hoso_dev` trên PostgreSQL 5432):** đã nâng cấp lên schema mới (sao lưu trước ở `data/db-backups/`, đánh dấu baseline `000–003, 007` rồi chạy 008–031; **không** nạp dữ liệu mẫu `004`). Nâng cấp tiếp bằng `backend/scripts/migrate-hoso-dev.sh` (mặc định chỉ liệt kê, `--apply` mới chạy, bỏ qua mọi `*_optional`), vì `migrate` trần ở Development tự chạy cả `*_optional.sql`. Dữ liệu cũ (3 hồ sơ TEST-CITIZEN, 31 giấy tờ, 38 tệp) còn nguyên. Ngày 16/11/2026 đã nạp thêm 850 bộ Từ Liêm: tổng 853 hồ sơ, 4.441 giấy tờ, 4.448 tệp; chưa chạy OCR. Chi tiết cách nạp, nhãn giả lập, 64 bộ lịch sử và kiểm chứng ở [backend/README.md](../../backend/README.md). Có tài khoản quản trị dev `dev_admin` (migration `021_dev_admin_optional.sql`, 18 phân công): mặc định `technical_admin`, đổi bằng bộ chọn phân công sang Chủ tịch, Lãnh đạo HĐND, văn thư, trưởng phòng từng đơn vị, chuyên viên Hạ tầng. Theo thiết kế `technical_admin` **không đọc nội dung hồ sơ** nên muốn xem hồ sơ thì đổi phân công.
 
 **Cách chạy test:** xem [backend/README.md](../../backend/README.md) mục "Chạy test".
 
@@ -610,3 +610,81 @@ Kiểm lại bản rà soát bảo mật bên ngoài trên mã hiện tại. B�
 - **Chưa làm (ngoài backend):** mã hóa kho tệp và bản sao lưu ở mức hệ điều hành (mã hóa ổ đĩa/đối tượng), ghi vào sổ tay vận hành OPS-06.
 
 **Ngoài backend (ghi để không sót):** SEC-01 (cấu hình MFA phía Keycloak, xem BE-95); OPS-06 (sổ tay: mã hóa đĩa kho tệp và bản sao lưu, bảo vệ thư mục khóa Data Protection, giới hạn bộ nhớ ở mức hệ điều hành cho tiến trình PDF). Đã làm: AI-08 (xem BE-93); `docker-compose.dev.yml` nay bind mọi cổng về `127.0.0.1`.
+
+## P5 · Đấu nối AI: khay nền và ưu tiên (17/11/2026)
+
+Phương án tốc độ và thiết kế mức ưu tiên ở `docs/tasks/ai.md`. Tóm tắt các mức:
+- **1 · Làm ngay:** người dùng chỉ định hồ sơ hoặc giấy tờ.
+- **3 · Tương tác:** đọc lại trang, tách văn bản, phân loại lại.
+- **7 · Khay nền:** PDF mới tải lên.
+
+Worker chỉ chạy khay nền khi không còn việc mức 1–3. Job nền đang đọc sẽ nhường chỗ sau trang hiện tại (AI-15).
+
+**Trạng thái 17/11/2026:** BE-97, BE-98, BE-99, BE-100 đã xong và đã kiểm trên PostgreSQL thật: 314 test (299 qua, 15 bỏ qua vì cần S3 cục bộ, 0 lỗi). Thêm 26 test so với trước đợt này (288 → 314), ở `AiQueuePriorityTests`, `AiExtractTests`, `AiExtractLimitTests`, `AiQueueEtaTests`, `AiQueueEtaShareTests` và `AdminOpsTests`. Migration 032 và 033 đã áp vào `hoso_dev` (có sao lưu `data/db-backups/hoso_dev-truoc-032-033-*.dump`). Test `PdfSandboxTests+ApiTests` từng đỏ một lần khi chạy cả bộ trên máy đang thiếu RAM, chạy riêng và chạy lại cả bộ đều qua.
+
+### BE-97 · Khay nền cho PDF mới tải ✅ · 0,5 ngày
+- **Tệp:**
+  - `database/migrations/032_ai_queue_priority.sql`;
+  - `Application/Intake/IntakeHandler.cs`, `Domain/Entities/Processing.cs`, `Infrastructure/Persistence/ModelMapping.cs`;
+  - `appsettings.json` (`Ai:BackgroundPriority`).
+- **Làm:**
+  1. Migration 032:
+     - `ocr_jobs` thêm `prioritized_at timestamptz`, `prioritized_by uuid REFERENCES users(id)`, `preempted_count integer NOT NULL DEFAULT 0`;
+     - chỉ mục hàng đợi đổi thành `(priority, coalesce(prioritized_at, created_at)) WHERE status = 'queued'`;
+     - trigger `ocr_jobs_notify` báo `job_queued` cả khi đổi `priority`, không chỉ khi đổi `status`.
+  2. Tải lên tạo job mức `Ai:BackgroundPriority` (mặc định 7) thay vì 3. Đọc lại trang và tách văn bản giữ mức 3.
+  3. `QueuePositionAsync` xếp theo cùng thứ tự với worker: `priority`, rồi `coalesce(prioritized_at, created_at)`.
+  4. Hộp tiếp nhận và `GET /jobs/{id}` trả thêm `queueKind` (`priority` | `interactive` | `background`).
+- **Kiểm tra:**
+  - tải PDF thì job ở mức 7;
+  - có job mức 1 chen vào thì vị trí trong hàng của job nền tăng đúng;
+  - đổi mức một job đang chờ thì có `NOTIFY job_queued`;
+  - worker cũ chưa có AI-15 vẫn lấy được việc.
+
+### BE-98 · Trích xuất ngay theo hồ sơ hoặc giấy tờ chỉ định ✅ · 1,5 ngày
+- **Endpoint:**
+  - `POST /api/v1/dossiers/{id}/ai/extract`: quyền `dossier.prepare`; hồ sơ ngoài phạm vi trả 404.
+  - `POST /api/v1/documents/{id}/ai/extract`: quyền `intake.upload` **hoặc** `dossier.prepare` (người chuẩn bị hồ sơ cũng cần bấm được ở màn đối chiếu); giấy tờ ngoài phạm vi trả 404.
+  - Body `{ "force": false }`; ở hồ sơ thêm `documentIds` (tùy chọn) để chọn một phần giấy tờ, giấy tờ không thuộc hồ sơ trả 400 `validation_failed`.
+- **Tệp:** `Application/Intake/AiExtractHandler.cs` (mới), `Api/Endpoints/DossierEndpoints.cs`, `DocumentEndpoints.cs`.
+- **Làm:**
+  1. Với tệp quét chính của từng giấy tờ, xử lý theo trạng thái job:
+     - **đang chờ:** đặt `priority = 1`, `prioritized_at = now`, `prioritized_by = người bấm`;
+     - **đang chạy:** đặt `priority = 1` để job không bị nhường nữa;
+     - **đã xong, không `force`:** giữ kết quả, trả `alreadyDone`;
+     - **đã xong, có `force`:** tạo job `reclassify` mức 1, không OCR lại;
+     - **lỗi, đã hủy hoặc chưa có job:** tạo job `read_classify` mức 1.
+  2. Cập nhật bằng một câu lệnh có điều kiện trạng thái, như `JobsHandler.CancelAsync`, để không đè lên job vừa xong.
+  3. Gọi hai lần không tạo job trùng: đã có job mức 1 đang chờ hoặc đang chạy thì trả lại job đó.
+  4. Giới hạn:
+     - tối đa `Ai:ExtractMaxDocuments` (50) giấy tờ mỗi lần, vượt thì 400 `validation_failed` (quy ước của API: lỗi dữ liệu vào là 400);
+     - rate limit theo người dùng;
+     - ghi nhật ký: `access_events.action` chỉ nhận các hành động xem/tải nên dùng log có cấu trúc `ai_extract` (kèm người và phân công do nhật ký yêu cầu gắn sẵn); người nâng mức lưu ở `ocr_jobs.prioritized_by`.
+  5. Trả danh sách `{ documentId, jobId, outcome, queuePosition, etaSeconds }`. `outcome` là `raised`, `running`, `alreadyDone` hoặc `created`. Tiến độ dùng sự kiện SSE của job đã có.
+- **Kiểm tra (tích hợp):**
+  - hồ sơ có 4 giấy tờ (đang chờ mức 7, đang chạy, đã xong, lỗi) cho lần lượt `raised`, `running`, `alreadyDone`, `created`;
+  - có `force` thì giấy tờ đã xong tạo job `reclassify`;
+  - ngoài phạm vi trả 404, thiếu quyền trả 403, quá 50 giấy tờ trả 400;
+  - gọi hai lần cho cùng hồ sơ không thêm job.
+
+### BE-99 · Hàng đợi AI theo mức và ước tính thời gian chờ ✅ · 0,5 ngày
+- **Tệp:** `Application/Admin/AdminOpsHandler.cs`, `Application/Intake/AiQueueEstimator.cs` (mới).
+- **Làm:**
+  1. Màn vận hành (`AiStatus`) đếm job đang chờ theo mức (làm ngay, tương tác, khay nền), tổng số lần nhường chỗ 24 giờ qua, và tuổi job nền lâu nhất.
+  2. Ước tính thời gian chờ của một job đang chờ:
+     - lấy tổng số trang chưa đọc của các job đứng trước, nhân giây/trang = trung vị giây/trang OCR 24 giờ qua (`ocr_pages.elapsed_seconds`, `method = 'ocr'`, cần ít nhất 3 trang) × tỉ lệ trang phải OCR (trang có lớp chữ gần như không tốn thời gian);
+     - việc nền đang chạy chỉ chắn một trang nếu job cần ước tính là việc ưu tiên (worker nhường chỗ, AI-15);
+     - cộng thời gian gợi ý trung bình;
+     - chưa có số liệu thì trả `null`, không đoán.
+  3. Dùng ước tính này ở BE-98, ở hộp tiếp nhận và ở `GET /jobs/{id}`.
+- **Kiểm tra:** dữ liệu mẫu có 3 job đứng trước (2, 3, 1 trang chưa đọc) và trung vị 12 giây/trang thì ước tính khoảng 72 giây cộng thời gian gợi ý; không có số liệu thì `etaSeconds = null`.
+
+### BE-100 · Trang vận hành cho biết mô hình đang chạy thật ✅ · 0,5 ngày
+- **Vì sao:** mô hình đổi bằng cấu hình của worker (AI-13, AI-17), còn bảng `ai_models` chỉ là ghi nhận. Cần thấy ngay khi worker chạy khác với điều đã ghi.
+- **Tệp:** `Application/Admin/AdminOpsHandler.cs`.
+- **Làm:**
+  1. `AiStatus` thêm `RunningModels`: các giá trị `ocr_jobs.model_version` của job hoàn tất trong 24 giờ, kèm số job và lần gần nhất.
+  2. Cảnh báo `model_mismatch` khi mô hình phân loại đang chạy khác dòng `classifier` trong `ai_models`.
+  3. Trang vận hành (FE-44) hiện mục này cạnh "Hàng đợi AI theo khay".
+- **Kết quả:** `AiStatus.RunningModels` (mô hình thật của job hoàn tất 24 giờ qua, kèm số job) và `ModelMismatch` (so job gần nhất với dòng `classifier` trong `ai_models`; job chưa ghi mô hình thì bỏ qua). Test `AdminOpsTests`: worker còn chạy 4B trong khi `ai_models` ghi 1.7B thì có cảnh báo nêu cả hai tên; có job mới hơn chạy 1.7B thì hết cảnh báo mà 4B vẫn nằm trong lịch sử. **Chưa có chỗ hiện trên giao diện:** phần `runningModels`/`modelMismatch` chưa được đưa vào `AiQueuePanel` (FE-44).
+

@@ -37,8 +37,8 @@ class Classifier(Protocol):
 
     def unload(self) -> None: ...
 
-    def suggest(self, pages: list[PageResult], catalog: Catalog) -> Suggestion:
-        """Gợi ý nhóm, loại, trường. Chỉ trả giá trị có trích dẫn thật trong văn bản."""
+    def suggest(self, pages: list[PageResult], catalog: Catalog, prompt_style: str = "production") -> Suggestion:
+        """Gợi ý nhóm, loại, trường. Chỉ trả giá trị có trích dẫn thật trong văn bản. prompt_style: production | short."""
 
 
 class QualityChecker(Protocol):

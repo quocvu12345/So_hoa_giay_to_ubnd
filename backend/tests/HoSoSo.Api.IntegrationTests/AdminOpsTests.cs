@@ -13,7 +13,10 @@ public sealed class AdminOpsTests(DbApiFactory api) : IClassFixture<DbApiFactory
     private sealed record Worker(string WorkerId, Guid JobId, string? Stage, int HeartbeatAgeSeconds);
     private sealed record Failure(Guid JobId, string FileName, string? Error);
     private sealed record Model(string Key, bool Active);
-    private sealed record AiStatusDto(Counts Queue, int? OldestQueuedSeconds, List<Worker> Workers, List<Failure> RecentFailures, List<Model> Models);
+    private sealed record ByKindDto(int Priority, int Interactive, int Background, int Preempted24h, int? OldestBackgroundSeconds, double? SecondsPerPage);
+    private sealed record RunningModelDto(string ModelVersion, int Jobs);
+    private sealed record AiStatusDto(Counts Queue, int? OldestQueuedSeconds, List<Worker> Workers, List<Failure> RecentFailures, List<Model> Models, ByKindDto ByKind,
+        List<RunningModelDto> RunningModels, string? ModelMismatch);
     private sealed record AuditDto(long Id, string Kind, string? Actor, string Action, string? ObjectType, string? ObjectId, List<string>? ChangedColumns);
     private sealed record SettingDto(string Key, System.Text.Json.JsonElement Value);
     private sealed record BackupDto(Guid Id, string Kind, string Status, long? ByteSize, DateTimeOffset? RestoreTestedAt);
@@ -48,10 +51,49 @@ public sealed class AdminOpsTests(DbApiFactory api) : IClassFixture<DbApiFactory
         (worker.WorkerId, worker.Stage).ShouldBe(("mac-mini-01", "ocr"));
         worker.HeartbeatAgeSeconds.ShouldBeInRange(5, 60);
         status.RecentFailures.Single().Error.ShouldBe("Mã băm tệp không khớp");
+        // BE-99: việc đang chờ chia theo khay; PDF tải lên vào khay nền; chưa có số đo thì không đoán giây/trang.
+        (status.ByKind.Priority, status.ByKind.Interactive, status.ByKind.Background).ShouldBe((0, 0, 1));
+        status.ByKind.OldestBackgroundSeconds.ShouldNotBeNull().ShouldBeGreaterThanOrEqualTo(90);
+        (status.ByKind.Preempted24h, status.ByKind.SecondsPerPage).ShouldBe((0, null));
         status.Models.Select(m => m.Key).ShouldContain("classifier");
         status.Models.Single(m => m.Key == "fake").Active.ShouldBeFalse("mô hình giả lập luôn tắt");
 
         (await cv.GetAsync("/api/v1/admin/ai/status")).StatusCode.ShouldBe(HttpStatusCode.Forbidden);
+    }
+
+    [Fact]
+    public async Task Trang_van_hanh_bao_mo_hinh_that_su_chay_va_canh_bao_khi_lech_voi_ai_models()
+    {
+        var cv = await api.LoginAsync("demo_cv_ht");
+        var older = await UploadAsync(cv, "mo-hinh-4b");
+        var newer = await UploadAsync(cv, "mo-hinh-17b");
+        // Worker cũ còn chạy 4B, bảng ai_models (migration 033) ghi Qwen3-1.7B.
+        await api.ExecuteAsync("UPDATE hoso.ocr_jobs SET status='completed', started_at=now() - interval '5 minutes', finished_at=now() - interval '4 minutes', model_version=$2 WHERE id=$1",
+            older.JobId, "ocr=PaddleOCR-VL-1.6@132c45f classifier=Qwen3-4B-Instruct-2507-4bit@50d4277/short");
+        var admin = await api.LoginAsync("demo_admin");
+        var status = await (await admin.GetAsync("/api/v1/admin/ai/status")).ReadAsync<AiStatusDto>();
+        status.RunningModels.Single().ModelVersion.ShouldContain("Qwen3-4B-Instruct-2507-4bit@50d4277");
+        status.ModelMismatch.ShouldNotBeNull().ShouldContain("Qwen3-4B-Instruct-2507-4bit");
+        status.ModelMismatch.ShouldContain("Qwen3-1.7B-4bit");
+
+        // Worker đã đổi sang 1.7B (job mới hơn): khớp ai_models nên hết cảnh báo; mô hình cũ vẫn nằm trong lịch sử 24 giờ.
+        await api.ExecuteAsync("UPDATE hoso.ocr_jobs SET status='completed', started_at=now() - interval '2 minutes', finished_at=now() - interval '1 minute', model_version=$2 WHERE id=$1",
+            newer.JobId, "classifier=Qwen3-1.7B-4bit@3b1b176/production");
+        status = await (await admin.GetAsync("/api/v1/admin/ai/status")).ReadAsync<AiStatusDto>();
+        status.ModelMismatch.ShouldBeNull();
+        status.RunningModels.Select(m => m.ModelVersion).ShouldContain("classifier=Qwen3-1.7B-4bit@3b1b176/production");
+        status.RunningModels.Count.ShouldBe(2);
+    }
+
+    [Fact]
+    public async Task Job_chua_ghi_mo_hinh_khong_bi_tinh_va_khong_tao_canh_bao()
+    {
+        var cv = await api.LoginAsync("demo_cv_ht");
+        var up = await UploadAsync(cv, "chua-ghi-mo-hinh");
+        await api.ExecuteAsync("UPDATE hoso.ocr_jobs SET status='completed', started_at=now(), finished_at=now() WHERE id=$1", up.JobId);      // model_version vẫn là 'unspecified'
+        var admin = await api.LoginAsync("demo_admin");
+        var status = await (await admin.GetAsync("/api/v1/admin/ai/status")).ReadAsync<AiStatusDto>();
+        status.ModelMismatch.ShouldBeNull();
     }
 
     [Fact]

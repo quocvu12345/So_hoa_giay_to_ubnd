@@ -6,11 +6,12 @@ import { ButtonLink } from "@/components/ui/button";
 import { EmptyState, PageBody, PlannedScreen } from "@/components/ui/blocks";
 import { NoAccess } from "@/components/ui/no-access";
 import { PageHeader } from "@/components/ui/page-header";
-import { Chip } from "@/components/ui/status-chip";
 import { routes } from "@/config/routes";
 import { pageSession } from "@/lib/auth/page-guard";
 import { cn } from "@/lib/cn";
-import { MOCK_INBOX, type MockInboxItem } from "@/lib/mock/data";
+import { MOCK_INBOX } from "@/lib/mock/data";
+import { AiStatusChip } from "@/features/intake/ai-status";
+import { ExtractNowButton } from "@/features/intake/extract-now-button";
 
 export const metadata: Metadata = { title: "Tiếp nhận PDF" };
 
@@ -19,13 +20,6 @@ const TABS = [
   { key: "da-xep", label: "Đã xếp" },
   { key: "da-bo", label: "Đã bỏ" },
 ] as const;
-
-function Stage({ item }: { item: MockInboxItem }) {
-  if (item.stage === "ready") return <Chip tone="ok">Đã đọc xong{item.attentionCount ? ` · ${item.attentionCount} trường cần xem` : ""}</Chip>;
-  if (item.stage === "reading") return <Chip tone="info">{item.progress}</Chip>;
-  if (item.stage === "queued") return <Chip>Thứ {item.queuePosition} trong hàng đợi</Chip>;
-  return <Chip tone="bad">Đọc lỗi một phần</Chip>;
-}
 
 /** Hộp tiếp nhận: mọi PDF đã nạp, trạng thái đọc của AI và việc tiếp theo cho từng tệp. */
 export default async function IntakePage({ searchParams }: PageProps<"/tiep-nhan">) {
@@ -38,7 +32,7 @@ export default async function IntakePage({ searchParams }: PageProps<"/tiep-nhan
     <>
       <PageHeader
         title="Tiếp nhận PDF"
-        description="Nạp bản quét, AI đọc và gợi ý; bạn đối chiếu rồi xếp vào hồ sơ. Máy đang đọc tệp khác thì tệp mới tự xếp hàng."
+        description="Nạp bản quét, AI đọc và gợi ý; bạn đối chiếu rồi xếp vào hồ sơ. PDF mới nạp vào khay chờ, AI đọc khi rảnh. Cần ngay thì bấm Trích xuất ngay để đưa lên đầu hàng."
         breadcrumbs={[{ label: "Việc của tôi", href: routes.home }, { label: "Tiếp nhận PDF" }]}
         actions={
           <>
@@ -70,7 +64,7 @@ export default async function IntakePage({ searchParams }: PageProps<"/tiep-nhan
           </EmptyState>
         ) : (
           <div className="overflow-x-auto border border-line bg-surface">
-            <table className="w-full min-w-[720px] text-sm">
+            <table className="w-full min-w-[820px] text-sm">
               <thead className="bg-soft text-left text-[13px] text-heading">
                 <tr>
                   <th className="px-3 py-2 font-semibold">Tệp</th>
@@ -88,12 +82,19 @@ export default async function IntakePage({ searchParams }: PageProps<"/tiep-nhan
                       <span className="block text-xs text-muted">Nạp lúc {item.uploadedAt}</span>
                     </td>
                     <td className="px-3 py-2.5 tabular-nums">{item.pages}</td>
-                    <td className="px-3 py-2.5"><Stage item={item} /></td>
+                    <td className="px-3 py-2.5"><AiStatusChip item={item} /></td>
                     <td className="px-3 py-2.5 text-muted">{item.suggestion ?? "—"}</td>
                     <td className="px-3 py-2.5 text-right">
-                      {item.stage === "ready" && <ButtonLink size="sm" variant="primary" href={routes.intakeReview(item.id)}>Đối chiếu</ButtonLink>}
+                      {item.stage === "ready" && (
+                        <span className="inline-flex items-start justify-end gap-2">
+                          <ExtractNowButton scope="document" id={item.id} force />
+                          <ButtonLink size="sm" variant="primary" href={routes.intakeReview(item.id)}>Đối chiếu</ButtonLink>
+                        </span>
+                      )}
                       {item.stage === "failed" && <ButtonLink size="sm" href={routes.intakeReview(item.id)}>Xem và đọc lại</ButtonLink>}
-                      {(item.stage === "queued" || item.stage === "reading") && <span className="text-xs text-muted">Chờ AI đọc xong</span>}
+                      {item.stage === "queued" && item.queueKind !== "priority" && <ExtractNowButton scope="document" id={item.id} variant="primary" />}
+                      {item.stage === "queued" && item.queueKind === "priority" && <span className="text-xs text-muted">Đã đưa lên đầu hàng</span>}
+                      {item.stage === "reading" && <span className="text-xs text-muted">Chờ AI đọc xong</span>}
                     </td>
                   </tr>
                 ))}

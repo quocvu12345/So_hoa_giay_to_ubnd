@@ -11,12 +11,14 @@ public sealed record BatchDetail(BatchSummary Batch, IReadOnlyList<BatchFile> Fi
 
 public sealed record UploadResult(Guid DocumentId, Guid FileId, Guid JobId, string FileName, long ByteSize);
 
-/// <summary>Stage: queued | reading | ready | failed | cancelled. Khớp MockInboxItem của frontend.</summary>
+/// <summary>Stage: queued | reading | ready | failed | cancelled. Khớp MockInboxItem của frontend. QueueKind: priority | interactive | background (BE-97).</summary>
 public sealed record InboxItem(
     Guid DocumentId, Guid FileId, string FileName, int? PageCount, DateTimeOffset UploadedAt, string Stage,
-    int? QueuePosition, string? Progress, string? Suggestion, int AttentionCount, Guid? JobId, string? Error, string IntakeStatus);
+    int? QueuePosition, string? Progress, string? Suggestion, int AttentionCount, Guid? JobId, string? Error, string IntakeStatus,
+    string? QueueKind = null, int? EtaSeconds = null);
 
 public sealed record JobDto(
     Guid Id, Guid DocumentId, Guid FileId, string JobType, string Status, string? Stage, int ProcessedPages, int? PageCount,
     int Attempt, int? QueuePosition, string? Error, IReadOnlyList<string> Warnings,
-    DateTimeOffset CreatedAt, DateTimeOffset? StartedAt, DateTimeOffset? FinishedAt);
+    DateTimeOffset CreatedAt, DateTimeOffset? StartedAt, DateTimeOffset? FinishedAt,
+    string QueueKind = QueuePriority.KindBackground, int? EtaSeconds = null);

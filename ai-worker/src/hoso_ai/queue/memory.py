@@ -18,6 +18,9 @@ class _Row:
     error: str | None = None
     warnings: tuple[str, ...] = ()
     all_pages_read: bool = False
+    model_version: str = ""
+    preempted: int = 0
+    prioritized_seq: int | None = None      # thứ tự nâng mức (thay cho prioritized_at)
 
 
 class InMemoryRepository:
@@ -44,15 +47,27 @@ class InMemoryRepository:
         return self.rows[job_id].status
 
     # --- JobRepository -----------------------------------------------------
-    def claim(self, worker_id: str) -> Job | None:
+    def set_priority(self, job_id: str, priority: int) -> None:
+        """Như người dùng bấm "Trích xuất ngay": đổi mức và xếp theo lúc nâng."""
         with self._lock:
-            for job_id in self._order:
-                row = self.rows[job_id]
-                if row.status is JobStatus.QUEUED:
-                    row.status, row.locked_by = JobStatus.RUNNING, worker_id
-                    row.job = replace(row.job, attempt=row.job.attempt + 1)
-                    return row.job
-        return None
+            row = self.rows[job_id]
+            row.job = replace(row.job, priority=priority)
+            row.prioritized_seq = len(self._order) + sum(1 for r in self.rows.values() if r.prioritized_seq is not None) + 1
+
+    def _queue_key(self, job_id: str) -> tuple:
+        row = self.rows[job_id]
+        return (row.job.priority, row.prioritized_seq if row.prioritized_seq is not None else self._order.index(job_id))
+
+    def claim(self, worker_id: str, *, exclude_priority_from: int | None = None) -> Job | None:
+        with self._lock:
+            eligible = [j for j in self._order if self.rows[j].status is JobStatus.QUEUED
+                        and (exclude_priority_from is None or self.rows[j].job.priority < exclude_priority_from)]
+            if not eligible:
+                return None
+            row = self.rows[min(eligible, key=self._queue_key)]
+            row.status, row.locked_by = JobStatus.RUNNING, worker_id
+            row.job = replace(row.job, attempt=row.job.attempt + 1, worker_id=worker_id)
+            return row.job
 
     def heartbeat(self, job: Job, worker_id: str, progress: Progress) -> None:
         with self._lock:
@@ -76,9 +91,10 @@ class InMemoryRepository:
     def save_quality(self, job: Job, page_no: int, flags: tuple[str, ...]) -> None:
         self.quality[(job.file_id, page_no)] = flags
 
-    def complete(self, job: Job, worker_id: str, warnings: tuple[str, ...], all_pages_read: bool) -> None:
+    def complete(self, job: Job, worker_id: str, warnings: tuple[str, ...], all_pages_read: bool, model_version: str = "") -> None:
         row = self.rows[job.id]
         row.status, row.locked_by, row.warnings, row.all_pages_read = JobStatus.COMPLETED, None, warnings, all_pages_read
+        row.model_version = model_version or row.model_version
 
     def fail(self, job: Job, worker_id: str, error: str, retry: bool) -> None:
         row = self.rows[job.id]
@@ -89,6 +105,25 @@ class InMemoryRepository:
         row = self.rows[job.id]
         if row.status is JobStatus.RUNNING:
             row.status, row.locked_by = JobStatus.QUEUED, None
+
+    def priority_of(self, job: Job) -> int:
+        with self._lock:
+            return self.rows[job.id].job.priority
+
+    def should_yield(self, job: Job, worker_id: str, background_from: int) -> str | None:
+        with self._lock:
+            row = self.rows[job.id]
+            if row.status is not JobStatus.RUNNING or row.locked_by != worker_id or row.job.priority < background_from:
+                return None
+            waiting = [j for j in self._order if self.rows[j].status is JobStatus.QUEUED and self.rows[j].job.priority < background_from]
+            return min(waiting, key=self._queue_key) if waiting else None
+
+    def yield_job(self, job: Job, worker_id: str) -> None:
+        with self._lock:
+            row = self.rows[job.id]
+            if row.status is JobStatus.RUNNING and row.locked_by == worker_id:
+                row.status, row.locked_by, row.preempted = JobStatus.QUEUED, None, row.preempted + 1
+                row.job = replace(row.job, preempted=row.job.preempted + 1)
 
     def catalog(self) -> Catalog:
         return self._catalog

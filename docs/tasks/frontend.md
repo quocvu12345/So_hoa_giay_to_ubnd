@@ -168,6 +168,7 @@ Mỗi màn đã có tệp `page.tsx` trong `src/app/(app)/…`, đầu trang đ�
   3. Đổi loại giấy tờ (BE-48); lưu nháp tự động mỗi 5 giây vào `sessionStorage`.
   4. Rời trang khi còn thay đổi chưa lưu thì hỏi lại trong trang.
   5. `Ctrl+Enter` lưu và sang bước 3.
+  6. Bản đầu để thông luồng (docs/tasks/ai.md) được xem bản gốc bằng ảnh trang WebP của BE-43 (`/files/{id}/pages/{n}/preview`), chưa cần trình xem PDF đầy đủ của FE-22.
 - **Kiểm tra:** nhập ngày sai hiện lỗi tại ô; lưu xong tải lại trang thấy đúng giá trị.
 
 ### FE-24 · Xếp vào hồ sơ 🟡 · 2 ngày
@@ -282,6 +283,35 @@ Mỗi màn đã có tệp `page.tsx` trong `src/app/(app)/…`, đầu trang đ�
 ### FE-44 · Quản trị vận hành 🟡 · 2 ngày
 - **Làm:** hàng đợi AI, đọc lại hoặc hủy job, mô hình, sao lưu, cài đặt (BE-88, BE-89); liên kết công cụ thử nghiệm SAM 3.
 - **Kiểm tra:** chỉ `technical_admin` thấy.
+
+### FE-45 · Khay chờ AI và "Trích xuất ngay" ✅ · 1,5 ngày (chế độ giả lập; nối API thật cùng FE-21)
+- **Phụ thuộc:** BE-97, BE-98, BE-99. Thiết kế mức ưu tiên ở `docs/tasks/ai.md`.
+- **Trạng thái 17/11/2026:** `tsc`, `eslint`, `next build` sạch; đã bấm thử bằng Chromium (Playwright) với `HOSO_MOCK=1`: nút "Trích xuất ngay", "Trích xuất lại" và "cả hồ sơ" chạy Server Action, kết quả hiện cạnh nút, không có lỗi trình duyệt. **Chưa thử với API thật** (hộp tiếp nhận còn dữ liệu mẫu cho tới FE-21):
+  - `lib/ai-queue.ts` (nhãn khay, thời gian chờ, tóm tắt kết quả);
+  - Server Action `app/actions/ai-extract.ts` (gọi BE-98; ở chế độ giả lập trả kết quả mẫu; lỗi 403/404/409/422/429 thành thông báo cạnh nút);
+  - `features/intake/extract-now-button.tsx`, `ai-status.tsx`;
+  - gắn vào hộp tiếp nhận, màn đối chiếu, tab Giấy tờ của hồ sơ, trang vận hành (`features/ops/ai-queue-panel.tsx`).
+  Hộp tiếp nhận vẫn đọc dữ liệu mẫu cho tới khi FE-21 nối API thật.
+- **Tệp:**
+  - `features/intake/ai-status.tsx` (mới);
+  - `features/intake/extract-now-button.tsx` (mới, client);
+  - `tiep-nhan/page.tsx`, trang hồ sơ tab Giấy tờ (FE-29), màn đối chiếu (FE-23), quản trị vận hành (FE-44).
+- **Làm:**
+  1. Hộp tiếp nhận có cột trạng thái AI, lọc được theo trạng thái:
+     - "Chờ trong khay · thứ N · khoảng X phút" (không có ước tính thì bỏ phần thời gian);
+     - "Ưu tiên · thứ N";
+     - "Đang đọc trang a/b";
+     - "Đã đọc xong" hoặc "Lỗi".
+  2. Nút **Trích xuất ngay**:
+     - có ở từng giấy tờ (hộp tiếp nhận, màn đối chiếu) và ở hồ sơ (tab Giấy tờ: cả hồ sơ);
+     - gọi BE-98 rồi báo kết quả, ví dụ "Đã đưa 3 giấy tờ lên đầu hàng · 1 giấy tờ đã đọc xong";
+     - giấy tờ đã xong có thêm lựa chọn "Trích xuất lại" (`force`).
+  3. Tiến độ cập nhật qua SSE, không tải lại trang.
+  4. Màn vận hành hiển thị số việc theo mức và số lần nhường chỗ (BE-99).
+- **Kiểm tra:** E2E:
+  - tải 3 PDF, cả ba ở trạng thái "Chờ trong khay";
+  - bấm **Trích xuất ngay** ở PDF thứ 3 thì PDF này chuyển sang "Ưu tiên" và được đọc xong trước hai PDF còn lại;
+  - người không có quyền không thấy nút.
 
 ---
 

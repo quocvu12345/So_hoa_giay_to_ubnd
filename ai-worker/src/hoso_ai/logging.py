@@ -21,7 +21,8 @@ def _sanitize(value, depth=0):
     if isinstance(value, str):
         return value if len(value) <= _MAX else value[:_MAX] + "…"
     if isinstance(value, dict):
-        return {k: "[đã ẩn]" if _REDACT.search(str(k)) else _sanitize(v, depth + 1) for k, v in value.items()}
+        # Khóa nhạy cảm bị ẩn, trừ khi giá trị là số/bool (bộ đếm như pages_text không chứa nội dung giấy tờ).
+        return {k: "[đã ẩn]" if _REDACT.search(str(k)) and not isinstance(v, (int, float, bool)) else _sanitize(v, depth + 1) for k, v in value.items()}
     if isinstance(value, (list, tuple)):
         return [_sanitize(v, depth + 1) for v in value[:50]]
     return value

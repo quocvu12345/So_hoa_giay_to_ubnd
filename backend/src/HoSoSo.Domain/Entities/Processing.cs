@@ -49,7 +49,13 @@ public sealed class OcrJob
     public string? Stage { get; set; }
     public int? PageCount { get; set; }
     public int ProcessedPages { get; set; }
+    /// <summary>Số nhỏ chạy trước: 1 làm ngay, 3 tương tác, 7 khay nền (xem <c>QueuePriority</c>).</summary>
     public short Priority { get; set; } = 5;
+    /// <summary>Lúc người dùng nâng mức; hàng đợi xếp theo <c>coalesce(PrioritizedAt, CreatedAt)</c>.</summary>
+    public DateTimeOffset? PrioritizedAt { get; set; }
+    public Guid? PrioritizedBy { get; set; }
+    /// <summary>Số lần job nền tự nhường chỗ cho việc ưu tiên; không tính vào số lần thử lại.</summary>
+    public int PreemptedCount { get; set; }
     public short Attempt { get; set; }
     public Guid? RequestedBy { get; set; }
     public string? LockedBy { get; set; }

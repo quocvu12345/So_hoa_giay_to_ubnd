@@ -6,7 +6,7 @@ import json
 import os
 from datetime import datetime, timezone
 
-from .config import AI_HOME, MODELS, OPTIONAL_MODELS, model_path
+from .config import AI_HOME, MODEL_ROOT, MODELS, OPTIONAL_MODELS
 
 
 def main():
@@ -25,7 +25,7 @@ def main():
     for name in dict.fromkeys(args.model or MODELS):
         repo, revision, directory, weights = specs[name]
         print(f"Downloading {repo} @ {revision}", flush=True)
-        path = model_path(name)
+        path = MODEL_ROOT / directory     # thư mục đã ghim của đúng mô hình đang tải, không phụ thuộc cấu hình HOSO_AI_CLASSIFIER_MODEL
         info = HfApi().model_info(repo, revision=revision, files_metadata=True, token=False)
         if info.sha != revision:
             raise ValueError("Model revision did not match the pinned commit.")

@@ -39,8 +39,18 @@ class Catalog:
 
 
 class JobRepository(Protocol):
-    def claim(self, worker_id: str) -> Job | None:
-        """Lấy một job queued (ưu tiên nhỏ trước, cũ trước) và đánh dấu running cho worker này."""
+    def claim(self, worker_id: str, *, exclude_priority_from: int | None = None) -> Job | None:
+        """Lấy một job queued (mức ưu tiên nhỏ trước, rồi lúc nâng mức hoặc lúc tạo) và đánh dấu running cho worker này.
+        exclude_priority_from: bỏ qua việc có mức từ giá trị này trở lên (khay nền ngoài khung giờ); None: lấy mọi việc."""
+
+    def priority_of(self, job: Job) -> int:
+        """Mức ưu tiên HIỆN TẠI của job (người dùng có thể nâng mức khi job đang chạy, lúc đó job nên dùng lời nhắc nhanh)."""
+
+    def should_yield(self, job: Job, worker_id: str, background_from: int) -> str | None:
+        """Job nền đang chạy có nên nhường chỗ không: trả mã job ưu tiên đang chờ, hoặc None. Job đã được nâng mức thì không nhường."""
+
+    def yield_job(self, job: Job, worker_id: str) -> None:
+        """Trả job nền về hàng đợi để nhường chỗ: giữ các trang đã đọc, KHÔNG tính vào số lần thử lại (tăng preempted_count; attempt vẫn tăng đều làm mã chống nhầm chủ)."""
 
     def heartbeat(self, job: Job, worker_id: str, progress: Progress) -> None:
         """Cập nhật tiến độ + heartbeat và NOTIFY. Ném JobCancelled hoặc JobLost khi cần dừng."""
@@ -54,7 +64,8 @@ class JobRepository(Protocol):
 
     def save_quality(self, job: Job, page_no: int, flags: tuple[str, ...]) -> None: ...
 
-    def complete(self, job: Job, worker_id: str, warnings: tuple[str, ...], all_pages_read: bool) -> None: ...
+    def complete(self, job: Job, worker_id: str, warnings: tuple[str, ...], all_pages_read: bool, model_version: str = "") -> None:
+        """model_version: mô hình đã dùng cho job này (ghi vào ocr_jobs.model_version); rỗng thì giữ giá trị cũ."""
 
     def fail(self, job: Job, worker_id: str, error: str, retry: bool) -> None:
         """retry=True: trả về queued để chạy lại; False: failed."""

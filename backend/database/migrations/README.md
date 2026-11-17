@@ -31,6 +31,8 @@ DbUp chạy các tệp `*.sql` trong thư mục này theo thứ tự tên, mỗi
 | `029` | Phạm vi theo ĐÚNG phân công đang chọn: `assignment_scope`, `scope_matches(user, dossier, mã phân công)`, `transition_dossier`, `assign_dossier`, `my_queue` nhận mã phân công thay cho vai trò | Xóa các hàm cũ nhận vai trò |
 | `030` | Gói xuất ghi phân công đã tạo, trạng thái `revoked`, hàm `revoke_exports` | |
 | `031` | `access_events.assignment`: phân công đã dùng khi xem/tải/xuất | |
+| `032` | Khay nền và ưu tiên hàng đợi AI: `ocr_jobs.prioritized_at/prioritized_by/preempted_count`, chỉ mục theo thứ tự lấy việc, trigger báo khi đổi mức, `requeue_stale_jobs` không tính lần nhường chỗ | BE-97, AI-15 |
+| `033` | Dòng `classifier` của `ai_models` ghi Qwen3-1.7B (kèm lý do và cách quay lại) | AI-14 |
 
 Số thứ tự giữ nguyên theo `docs/03-thiet-ke-csdl.md` mục 15; `005`, `006` không dùng (dành cho bản gốc ngoài thư mục này).
 

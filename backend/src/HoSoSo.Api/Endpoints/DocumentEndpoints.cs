@@ -1,6 +1,7 @@
 using HoSoSo.Domain.Identity;
 
 using HoSoSo.Application.Documents;
+using HoSoSo.Application.Intake;
 
 namespace HoSoSo.Api.Endpoints;
 
@@ -21,6 +22,10 @@ internal static class DocumentEndpoints
         documents.MapPut("/{id:guid}/classification", async (Guid id, ClassifyRequest body, ReviewHandler h, CancellationToken ct) => TypedResults.Ok(await h.ClassifyAsync(id, body, ct))).RequirePermission(Permissions.DocumentEdit).WithSummary("Chấp nhận hoặc đổi nhóm, loại giấy tờ");
         documents.MapPatch("/{id:guid}/fields", async (Guid id, EditFieldsRequest body, ReviewHandler h, CancellationToken ct) => TypedResults.Ok(await h.EditFieldsAsync(id, body, ct))).RequirePermission(Permissions.DocumentEdit).WithSummary("Sửa, chuẩn hóa, xác nhận nhiều trường");
         documents.MapPost("/{id:guid}/verify", async (Guid id, ReviewHandler h, CancellationToken ct) => TypedResults.Ok(await h.VerifyAsync(id, ct))).RequirePermission(Permissions.DocumentEdit).WithSummary("Đánh dấu giấy tờ đã đối chiếu");
+        documents.MapPost("/{id:guid}/ai/extract", async (Guid id, AiExtractRequest? body, AiExtractHandler h, CancellationToken ct) =>
+                TypedResults.Ok(await h.ExtractDocumentAsync(id, body ?? new AiExtractRequest(), ct)))
+            .WithTags("Xử lý AI").RequirePermission(Permissions.IntakeUpload, Permissions.DossierPrepare).RequireRateLimiting(SecuritySetup.AiExtractPolicy)
+            .WithSummary("Trích xuất ngay: đưa giấy tờ lên đầu hàng đợi AI (hoặc tạo việc mới); body tùy chọn { force }");
         documents.MapGet("/{id:guid}/segments", async (Guid id, SegmentsHandler h, CancellationToken ct) => TypedResults.Ok(await h.ListAsync(id, ct)))
             .RequirePermission(Permissions.DocumentEdit).WithSummary("Đề xuất tách văn bản và số trang của tệp");
         documents.MapPost("/{id:guid}/segments", async (Guid id, ProposeSegmentsRequest body, SegmentsHandler h, CancellationToken ct) => TypedResults.Ok(await h.ProposeAsync(id, body, ct)))

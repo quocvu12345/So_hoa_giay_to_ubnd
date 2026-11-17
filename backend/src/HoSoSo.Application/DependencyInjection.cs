@@ -23,6 +23,8 @@ public static class DependencyInjection
         services.AddScoped<DossierCommands>();
         services.AddScoped<IntakeHandler>();
         services.AddScoped<JobsHandler>();
+        services.AddScoped<AiQueueEstimator>();
+        services.AddScoped<AiExtractHandler>();
         services.AddScoped<QualityHandler>();
         services.AddScoped<ReviewHandler>();
         services.AddScoped<RelationsHandler>();

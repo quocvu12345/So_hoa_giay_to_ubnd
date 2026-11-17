@@ -2,6 +2,7 @@ using System.Text.Json;
 using System.Text.RegularExpressions;
 using FluentValidation;
 using HoSoSo.Application.Common;
+using HoSoSo.Application.Intake;
 using HoSoSo.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 
@@ -13,7 +14,14 @@ public sealed record FailureInfo(Guid JobId, string FileName, string? Error, Dat
 public sealed record ModelInfo(string Key, string Repo, string Revision, string Purpose, bool Active);
 public sealed record Throughput(int JobsLastHour, int PagesLastHour, double? AverageSecondsPerOcrPage);
 public sealed record AiStatus(QueueCounts Queue, int? OldestQueuedSeconds, IReadOnlyList<WorkerInfo> Workers, IReadOnlyList<FailureInfo> RecentFailures,
-    IReadOnlyList<ModelInfo> Models, Throughput Throughput);
+    IReadOnlyList<ModelInfo> Models, Throughput Throughput, QueueByKind? ByKind = null,
+    IReadOnlyList<RunningModel>? RunningModels = null, string? ModelMismatch = null);
+
+/// <summary>BE-100. Mô hình mà worker THẬT SỰ đã dùng cho các job hoàn tất trong 24 giờ qua (từ <c>ocr_jobs.model_version</c>), không phải điều bảng <c>ai_models</c> ghi.</summary>
+public sealed record RunningModel(string ModelVersion, int Jobs, DateTimeOffset LastFinishedAt);
+
+/// <summary>BE-99. Việc đang chờ theo mức (Intake/AiQueue.cs), số lần việc nền nhường chỗ trong 24 giờ, tuổi việc nền lâu nhất.</summary>
+public sealed record QueueByKind(int Priority, int Interactive, int Background, int Preempted24h, int? OldestBackgroundSeconds, double? SecondsPerPage);
 
 /// <summary>Một dòng nhật ký. KHÔNG chứa giá trị cũ/mới của dữ liệu (có thể là thông tin cá nhân): chỉ tên cột đã đổi.</summary>
 public sealed record AuditRow(long Id, DateTimeOffset At, string Kind, string? Actor, string Action, string? ObjectType, string? ObjectId,
@@ -28,7 +36,7 @@ public sealed record FinishBackupRequest(string? Status, DateTimeOffset? Finishe
 public sealed record RestoreTestRequest(DateTimeOffset? TestedAt, string? Note);
 
 /// <summary>BE-88, BE-89: vận hành. Trạng thái hàng đợi AI, tra nhật ký, cài đặt không nhạy cảm, kết quả sao lưu.</summary>
-public sealed partial class AdminOpsHandler(IHoSoDb db, ICurrentUser user, IClock clock)
+public sealed partial class AdminOpsHandler(IHoSoDb db, ICurrentUser user, IClock clock, AiQueueEstimator queue)
 {
     private static readonly string[] SecretWords = ["password", "passwd", "secret", "token", "apikey", "api_key", "private", "credential", "mat_khau", "bi_mat"];
 
@@ -61,11 +69,49 @@ public sealed partial class AdminOpsHandler(IHoSoDb db, ICurrentUser user, ICloc
         var averageSeconds = ids.Count == 0 ? null : await db.Read<OcrPage>().Where(p => ids.Contains(p.JobId) && p.Method == "ocr")
             .Select(p => (double?)p.ElapsedSeconds).AverageAsync(ct);
 
+        var waiting = await jobs.Where(j => j.Status == JobStatus.Queued).GroupBy(j => j.Priority).Select(g => new { Priority = g.Key, N = g.Count() }).ToListAsync(ct);
+        var oldestBackground = await jobs.Where(j => j.Status == JobStatus.Queued && j.Priority >= QueuePriority.BackgroundFrom)
+            .OrderBy(j => j.CreatedAt).Select(j => (DateTimeOffset?)j.CreatedAt).FirstOrDefaultAsync(ct);
+        var preempted = await jobs.Where(j => j.PreemptedCount > 0 && (j.FinishedAt == null || j.FinishedAt >= day)).SumAsync(j => (int?)j.PreemptedCount, ct) ?? 0;
+        var byKind = new QueueByKind(
+            waiting.Where(w => QueuePriority.KindOf(w.Priority) == QueuePriority.KindPriority).Sum(w => w.N),
+            waiting.Where(w => QueuePriority.KindOf(w.Priority) == QueuePriority.KindInteractive).Sum(w => w.N),
+            waiting.Where(w => QueuePriority.KindOf(w.Priority) == QueuePriority.KindBackground).Sum(w => w.N),
+            preempted, oldestBackground is { } b ? (int)(now - b).TotalSeconds : null, (await queue.LoadAsync(ct)).SecondsPerPage is { } spp ? Math.Round(spp, 1) : null);
+
+        var finished = await jobs.Where(j => j.Status == JobStatus.Completed && j.FinishedAt >= day && j.ModelVersion != "" && j.ModelVersion != "unspecified")
+            .Select(j => new { j.ModelVersion, j.FinishedAt }).ToListAsync(ct);
+        var modelsInUse = finished.GroupBy(x => x.ModelVersion)
+            .Select(g => new RunningModel(g.Key, g.Count(), g.Max(x => x.FinishedAt!.Value))).OrderByDescending(r => r.LastFinishedAt).ToList();
+
         return new AiStatus(
             new QueueCounts(counts.GetValueOrDefault(JobStatus.Queued), counts.GetValueOrDefault(JobStatus.Running),
                 recent.GetValueOrDefault(JobStatus.Completed), recent.GetValueOrDefault(JobStatus.Failed), recent.GetValueOrDefault(JobStatus.Cancelled)),
             oldest is { } o ? (int)(now - o).TotalSeconds : null, workers, failures, models,
-            new Throughput(lastHour.Count, lastHour.Sum(x => x.ProcessedPages), averageSeconds is { } a ? Math.Round(a, 1) : null));
+            new Throughput(lastHour.Count, lastHour.Sum(x => x.ProcessedPages), averageSeconds is { } a ? Math.Round(a, 1) : null), byKind,
+            modelsInUse, DetectModelMismatch(modelsInUse, models));
+    }
+
+    /// <summary>
+    /// So mô hình phân loại của job gần nhất với dòng <c>classifier</c> trong <c>ai_models</c>. Lệch thường do đổi <c>HOSO_AI_CLASSIFIER_MODEL</c>
+    /// ở worker mà chưa ghi nhận bằng migration (hoặc ngược lại). Chỉ xét job gần nhất: các job cũ hơn là lịch sử.
+    /// </summary>
+    internal static string? DetectModelMismatch(IReadOnlyList<RunningModel> running, IReadOnlyList<ModelInfo> models)
+    {
+        var latest = running.FirstOrDefault(r => r.ModelVersion.Contains("classifier="));
+        var recorded = models.FirstOrDefault(m => m.Key == "classifier");
+        if (latest is null || recorded is null) return null;
+        var token = latest.ModelVersion.Split(' ').First(p => p.StartsWith("classifier=", StringComparison.Ordinal))["classifier=".Length..];
+        var withoutStyle = token.Split('/')[0];                      // Tên@phiên bản7 (phần sau "/" là kiểu lời nhắc)
+        var at = withoutStyle.IndexOf('@');
+        var name = at >= 0 ? withoutStyle[..at] : withoutStyle;
+        var revision = at >= 0 ? withoutStyle[(at + 1)..] : "";
+        var recordedName = recorded.Repo.Split('/').Last();
+        var sameName = string.Equals(name, recordedName, StringComparison.OrdinalIgnoreCase);
+        var sameRevision = revision.Length == 0 || recorded.Revision.StartsWith(revision, StringComparison.OrdinalIgnoreCase);
+        if (sameName && sameRevision) return null;
+        return $"Worker đang chạy {withoutStyle} nhưng bảng ai_models ghi {recordedName}@{recorded.Revision[..Math.Min(7, recorded.Revision.Length)]}. " +
+               "Ghi nhận mô hình mới bằng migration, hoặc đặt lại HOSO_AI_CLASSIFIER_MODEL của worker cho khớp.";
     }
 
     private sealed record ChangeRow(long id, DateTimeOffset happened_at, string table_name, string operation, string? actor_name, string? object_id, string[]? changed_columns);

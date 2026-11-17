@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import argparse
+import faulthandler
 import json
 import signal
 import sys
@@ -24,6 +25,8 @@ def cmd_run(settings: Settings) -> int:
     from .status_http import start_status_server
     from .queue.postgres import PostgresRepository
 
+    # `kill -USR1 <pid>` ghi vết ngăn xếp của mọi luồng ra nhật ký: cách duy nhất để biết worker đang kẹt ở đâu (không có py-spy trên máy dịch vụ).
+    faulthandler.register(signal.SIGUSR1, all_threads=True)
     stop = threading.Event()
     for sig in (signal.SIGTERM, signal.SIGINT):
         signal.signal(sig, lambda *_: stop.set())

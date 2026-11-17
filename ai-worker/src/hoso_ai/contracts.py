@@ -40,6 +40,9 @@ class Job:
     job_type: JobType = JobType.READ_CLASSIFY
     options: dict = field(default_factory=dict)
     attempt: int = 0   # số lần đã được lấy chạy, tăng khi claim
+    worker_id: str | None = None
+    priority: int = 5  # số nhỏ chạy trước: 1 làm ngay, 3 tương tác, 7 khay nền (ocr_jobs.priority)
+    preempted: int = 0 # số lần đã nhường chỗ; số lần thử THẬT = attempt - preempted
 
     @property
     def correlation_id(self) -> str | None:
@@ -121,3 +124,5 @@ class JobOutcome:
     warnings: tuple[str, ...]
     ocr_seconds: float
     elapsed_seconds: float
+    model_version: str = ""      # ví dụ "ocr=PaddleOCR-VL-1.6@132c45f classifier=Qwen3-1.7B-4bit@3b1b176/short"
+    classify_seconds: float = 0.0  # thời gian bước phân loại và trích trường (không gồm OCR)

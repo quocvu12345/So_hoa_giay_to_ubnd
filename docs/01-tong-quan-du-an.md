@@ -22,7 +22,7 @@ Ngoài phạm vi: phòng họp điện tử, biểu quyết, điều hành văn 
 | Giao diện quản lý hồ sơ thí điểm | `quan-ly-ho-so.html`, `assets/quan-ly-ho-so.js` | JS thuần | Dữ liệu ở **localStorage**, vai trò chọn tay |
 | Danh mục hồ sơ | `assets/danh-muc-ho-so.js` | JS (≈12.000 dòng) | 11 đầu mối, 38 nhóm, 427 loại giấy tờ, 2.624 trường |
 | Tiếp nhận & đọc PDF | `scan-inbox.html`, `sam3_service/inbox.py` | FastAPI | Lưu ở **tệp JSON** `data/sam3/runtime` |
-| Pipeline AI | `document_ai/worker.py`, `classify.py` | PDFium, PaddleOCR-VL 1.6 (MLX), Qwen3-4B (MLX) | Chạy local trên Mac M4, một tác vụ mỗi lúc |
+| Pipeline AI | `document_ai/worker.py`, `classify.py` | PDFium, PaddleOCR-VL 1.6 (MLX), Qwen3-1.7B (MLX; đổi bản lớn hơn bằng cấu hình) | Chạy local trên Mac M4, một tác vụ mỗi lúc |
 | Thử SAM 3 | `sam3-lab.html`, `sam3_service/inference.py` | Transformers, MPS | Công cụ thử nghiệm |
 | Cơ sở dữ liệu | `database/001…007` | PostgreSQL 16 | 23 bảng, hàm `transition_dossier`, chưa có API |
 | Kho thủ tục hành chính | `data/official-forms/` | JSON/CSV | 425 thủ tục Hà Nội, 861 mục gộp DVC, 2.738 thành phần, 3.964 loại giấy, 1.085 tệp mẫu |

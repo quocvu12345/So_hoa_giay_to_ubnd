@@ -56,3 +56,6 @@ data/official-forms/originals/
 data/official-forms/procedure-pdf/
 data/official-forms/templates/
 data/official-forms/index.html
+
+# Tiến trình và nhật ký của scripts/dev-up.sh
+data/dev-run/

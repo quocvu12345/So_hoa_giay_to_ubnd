@@ -74,3 +74,25 @@ def repo(catalog: Catalog) -> InMemoryRepository:
 def make_job(job_id: str = "job-1", **options) -> Job:
     return Job(id=job_id, file_id="file-1", document_id="doc-1", storage_key="blobs/aa/bb/" + "a" * 64,
                sha256="a" * 64, page_count=3, options=options)
+
+
+REVISIONS = {"Qwen3-4B-Instruct-2507-4bit": "50d427756c6b1b2fe0c0a10f67fbda1fc8e82c1b", "Qwen3-1.7B-4bit": "3b1b1768f8f8cf8351c712464f906e86c2b8269e"}
+
+
+@pytest.fixture
+def fake_models(tmp_path: Path, monkeypatch) -> Path:
+    """Thư mục mô hình giả (chỉ có tệp mô tả, không có trọng số thật) để thử chọn mô hình mà không cần máy AI."""
+    import document_ai.config as config
+
+    root = tmp_path / "models"
+    for name, revision in REVISIONS.items():
+        folder = root / name
+        (folder / ".cache/huggingface/download").mkdir(parents=True)
+        (folder / "config.json").write_text("{}", encoding="utf-8")
+        (folder / "model.safetensors").write_bytes(b"")
+        (folder / "README.md").write_text(f"# mlx-community/{name}\n", encoding="utf-8")
+        (folder / ".cache/huggingface/download/config.json.metadata").write_text(f"{revision}\netag\n123\n", encoding="utf-8")
+    monkeypatch.setattr(config, "MODEL_ROOT", root)
+    monkeypatch.delenv("HOSO_AI_CLASSIFIER_MODEL", raising=False)
+    monkeypatch.delenv("HOSO_AI_CLASSIFIER_GB", raising=False)
+    return root

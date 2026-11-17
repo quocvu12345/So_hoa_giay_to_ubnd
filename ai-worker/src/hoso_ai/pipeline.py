@@ -15,7 +15,7 @@ from pathlib import Path
 from . import logging as log
 from .contracts import Job, JobOutcome, JobStatus, JobType, PageResult, Progress, Stage
 from .engines.base import Engines
-from .queue.repository import JobRepository
+from .queue.repository import JobCancelled, JobLost, JobRepository
 from .runtime.scheduler import ModelScheduler
 from .runtime.watchdog import Watchdog
 from .settings import Settings
@@ -23,6 +23,14 @@ from .settings import Settings
 
 class WorkerStopping(Exception):
     """Worker đang tắt: trả job về hàng đợi, giữ các trang đã đọc."""
+
+
+class JobYielded(Exception):
+    """Job nền nhường chỗ cho việc ưu tiên đang chờ: trả về hàng đợi, giữ các trang đã đọc, không tính là một lần thử (AI-15)."""
+
+    def __init__(self, job_id: str, for_job_id: str):
+        super().__init__(job_id)
+        self.for_job_id = for_job_id
 
 
 class JobTimeout(Exception):
@@ -102,21 +110,31 @@ class DocumentPipeline:
                         image.unlink(missing_ok=True)
                         processed = len(self.repo.completed_pages(job))
                         self._beat(job, Stage.OCR, processed, page_count, page_no=info.page_no, deadline=deadline)
+                        self._yield_if_needed(job)     # chỉ nhường ở ranh giới trang: trang vừa đọc đã được lưu
 
             completed = self.repo.completed_pages(job)
             all_read = len(completed) == page_count
             classified = False
+            classify_seconds = 0.0
+            # Việc có người đang chờ dùng lời nhắc nhanh; khay nền không ai chờ nên dùng lời nhắc chính xác hơn (cấu hình HOSO_AI_PROMPT_*).
+            # Mức hiện tại, không phải mức lúc lấy việc: bấm "Trích xuất ngay" khi job đang chạy thì phần phân loại còn lại dùng lời nhắc nhanh.
+            prompt_style = self.settings.prompt_background if self.repo.priority_of(job) >= self.settings.background_from else self.settings.prompt_interactive
             if job.options.get("classify", True):
+                self._yield_if_needed(job)
                 self._beat(job, Stage.CLASSIFYING, len(completed), page_count, deadline=deadline)
                 readable = [completed[n] for n in sorted(completed) if completed[n].text.strip()]
                 if readable:
                     with self.scheduler.use(self.engines.classifier) as classifier:
+                        classify_started = time.monotonic()
                         try:
                             with self.watchdog.guard(self.settings.page_timeout_seconds * 2, "classify"):
-                                suggestion = classifier.suggest(readable, self.repo.catalog())
+                                suggestion = classifier.suggest(readable, self.repo.catalog(), prompt_style=prompt_style)
                             self.repo.save_suggestion(job, suggestion)
                             warnings.extend(suggestion.warnings)
                             classified = True
+                            classify_seconds = round(time.monotonic() - classify_started, 2)
+                        except (JobCancelled, JobLost):
+                            raise
                         except Exception as error:
                             warnings.append("Chưa gợi ý được loại hồ sơ; cán bộ chọn tay.")
                             log.warning("classify_failed", job_id=job.id, error_type=type(error).__name__)
@@ -125,9 +143,26 @@ class DocumentPipeline:
 
             self._beat(job, Stage.DONE, len(completed), page_count, deadline=deadline)
             return JobOutcome(JobStatus.COMPLETED, page_count, pages_text, pages_ocr, pages_failed, all_read,
-                              classified, tuple(warnings), round(ocr_seconds, 2), round(time.monotonic() - started, 2))
+                              classified, tuple(warnings), round(ocr_seconds, 2), round(time.monotonic() - started, 2),
+                              self._model_version(pages_ocr > 0 or any(p.method == "ocr" for p in completed.values()), classified, prompt_style), classify_seconds)
         finally:
             shutil.rmtree(workdir, ignore_errors=True)
+
+    def _yield_if_needed(self, job: Job) -> None:
+        if job.priority < self.settings.background_from:
+            return      # việc có người chờ không bao giờ nhường
+        other = self.repo.should_yield(job, self.worker_id, self.settings.background_from)
+        if other:
+            raise JobYielded(job.id, other)
+
+    def _model_version(self, used_ocr: bool, used_classifier: bool, prompt_style: str) -> str:
+        """Mô hình thật sự đã dùng cho job này (không ghi OCR nếu mọi trang lấy từ lớp chữ PDF). Trang đã OCR ở lần chạy trước (job từng nhường chỗ hoặc bị ngắt) vẫn tính."""
+        parts = []
+        if used_ocr:
+            parts.append(f"ocr={getattr(self.engines.ocr, 'version', self.engines.ocr.key)}")
+        if used_classifier:
+            parts.append(f"classifier={getattr(self.engines.classifier, 'version', self.engines.classifier.key)}/{prompt_style}")
+        return " ".join(parts)
 
     @staticmethod
     def _wanted_pages(job: Job, page_count: int) -> set[int]:

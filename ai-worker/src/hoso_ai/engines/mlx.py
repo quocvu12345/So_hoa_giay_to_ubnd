@@ -1,4 +1,4 @@
-"""Mac Apple Silicon: dùng lại đúng mã đã kiểm thử của document_ai/ (PaddleOCR-VL 1.6 + Qwen3-4B qua MLX).
+"""Mac Apple Silicon: dùng lại đúng mã đã kiểm thử của document_ai/ (PaddleOCR-VL 1.6 + Qwen3 qua MLX).
 
 Khác bản thí điểm: mô hình được nạp một lần và giữ lại giữa các job (ModelScheduler quyết định khi nào bỏ).
 TODO(AI-01): chuyển mã từ document_ai/ vào gói này khi bỏ bản thí điểm; hiện import để chỉ có một nguồn.
@@ -31,6 +31,7 @@ def catalog_from_pilot() -> Catalog:
 class PaddleVlMlxOcr:
     key = "ocr"
     approx_gb = 4.5   # PaddleOCR-VL-1.6 (MLX) + PP-DocLayoutV3 + PP-LCNet, đo lại ở AI-12
+    version = "PaddleOCR-VL-1.6@132c45f"
 
     def __init__(self, work_dir: Path):
         self.work_dir = work_dir
@@ -84,21 +85,52 @@ class PaddleVlMlxOcr:
 
 
 class QwenMlxClassifier:
+    """Phân loại và trích trường bằng Qwen (MLX). Mô hình chọn bằng HOSO_AI_CLASSIFIER_MODEL (tên thư mục trong models/), nạp MỘT lần và giữ giữa các job."""
     key = "classifier"
-    approx_gb = 3.0   # Qwen3-4B-Instruct-2507 MLX 4-bit
+
+    def __init__(self, model_name: str | None = None):
+        from document_ai.config import check_classifier, classifier_approx_gb, classifier_name, model_version
+
+        self.model_name = model_name or classifier_name()
+        self.approx_gb = classifier_approx_gb(self.model_name)
+        self.version = model_version(check_classifier(self.model_name))    # thiếu mô hình thì dừng ngay lúc khởi động, không đợi job đầu tiên
+        self._llm = None
 
     def load(self) -> None:
-        # document_ai.classify hiện tự nạp mô hình trong mỗi lần gọi.
-        # TODO(AI-05): giữ model/tokenizer ở đây và truyền vào, nhận danh mục từ DB thay cho danh-muc-ho-so.js.
-        pass
+        # Áp dụng cả khi PDF có lớp chữ và không cần nạp OCR trước đó.
+        import os
+        from document_ai.classify import load_classifier
+        from document_ai.config import local_environment
+
+        os.environ.update(local_environment())
+        self._llm = load_classifier(self.model_name)
 
     def unload(self) -> None:
+        self._llm = None
         gc.collect()
+        try:
+            import mlx.core as mx
 
-    def suggest(self, pages: list[PageResult], catalog: Catalog) -> Suggestion:
+            mx.clear_cache()      # trả bộ nhớ GPU cho mô hình khác (trước đó chỉ gc.collect nên bộ nhớ vẫn bị giữ)
+        except ImportError:
+            pass
+
+    def suggest(self, pages: list[PageResult], catalog: Catalog, prompt_style: str = "production") -> Suggestion:
         from document_ai.classify import classify
+        from document_ai.config import shortlist_enabled
 
-        raw = classify([{"page": p.page_no, "text": p.text} for p in pages])
+        if self._llm is None:
+            self.load()
+
+        categories = [
+            {"code": code, "title": title, "group": "", "documentTypes": [
+                {"id": t.code, "name": t.name, "fields": [f.label for f in t.fields]}
+                for t in catalog.document_types.values() if t.work_group_code == code
+            ]}
+            for code, title in catalog.work_groups.items()
+        ]
+        raw = classify([{"page": p.page_no, "text": p.text} for p in pages], categories,
+                       restrict_types_to_group=True, llm=self._llm, prompt_style=prompt_style, shortlist=shortlist_enabled())
         group = raw.get("category_code")
         type_code, type_warning = reconcile_type(group, raw.get("type_id"), catalog)
         type_def = catalog.document_types.get(type_code) if type_code else None

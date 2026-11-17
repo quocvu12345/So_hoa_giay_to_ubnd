@@ -7,6 +7,7 @@ import { PlannedScreen } from "@/components/ui/blocks";
 import { NoAccess } from "@/components/ui/no-access";
 import { Chip } from "@/components/ui/status-chip";
 import { routes } from "@/config/routes";
+import { ExtractNowButton } from "@/features/intake/extract-now-button";
 import { pageSession } from "@/lib/auth/page-guard";
 import { cn } from "@/lib/cn";
 import { MOCK_INBOX, MOCK_REVIEW_FIELDS } from "@/lib/mock/data";
@@ -34,7 +35,8 @@ export default async function ReviewPage({ params }: PageProps<"/tiep-nhan/[docu
           <h1 className="text-xl font-bold">{item.fileName}</h1>
           <p className="text-[13px] text-muted">{item.pages} trang · còn {MOCK_INBOX.length - 1} PDF trong hộp tiếp nhận</p>
         </div>
-        <div className="flex flex-wrap gap-2">
+        <div className="flex flex-wrap items-start gap-2">
+          {item.stage !== "reading" && item.queueKind !== "priority" && <ExtractNowButton scope="document" id={documentId} force={item.stage === "ready"} />}
           <ButtonLink size="sm" href={routes.intakeSplit(documentId)}>
             <Scissors aria-hidden className="size-4" /> Tách thành nhiều văn bản
           </ButtonLink>

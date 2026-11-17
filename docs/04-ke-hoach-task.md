@@ -186,6 +186,10 @@ gantt
 | BE-94 | Nhật ký truy cập không mất dòng: ghi đồng bộ cho tải/in/xuất, đếm đúng dòng bỏ, thử lại, ghi `user_role_id` | CSDL lỗi thì tải tệp trả 503; có chỉ số và cảnh báo khi mất dòng | BE-16 | 1,5 | BE |
 | BE-95 | Bắt buộc MFA (`amr`/`acr`) cho phân công đặc quyền | Phiên chưa MFA không dùng được phân công quản trị | BE-12, SEC-01 | 1 | BE |
 | BE-96 | Kiểm cấu hình an toàn khi chạy Production (khóa Data Protection, chống virus, S3) | Cấu hình thiếu dừng khởi động với đúng khóa | BE-02 | 0,5 | BE |
+| BE-97 | Khay nền: PDF mới tải lên vào hàng mức 7; migration 032 (`prioritized_at`, `preempted_count`, trigger báo khi đổi mức) | Tải PDF → job mức 7; vị trí trong hàng đúng khi có việc ưu tiên chen vào | BE-41 | 0,5 | BE |
+| BE-98 | `POST /dossiers/{id}/ai/extract`, `POST /documents/{id}/ai/extract`: nâng mức 1 cho hồ sơ/giấy tờ chỉ định, tạo job khi chưa có hoặc lỗi | Hồ sơ 4 giấy tờ ở 4 trạng thái cho đúng 4 kết quả; gọi lại không tạo job trùng; ngoài phạm vi 404 | BE-97, BE-15 | 1,5 | BE |
+| BE-99 | Hàng đợi AI theo mức và ước tính thời gian chờ từ số liệu giây/trang thật | Không có số liệu thì không trả ước tính | BE-97, BE-88 | 0,5 | BE |
+| BE-100 | Trang vận hành cho biết mô hình đang chạy thật (từ `ocr_jobs.model_version`), cảnh báo khi khác `ai_models` | Lệch mô hình thì có cảnh báo `model_mismatch` | BE-99, AI-13 | 0,5 | BE |
 
 ## P4 · Worker AI (Python) nối vào CSDL
 
@@ -202,6 +206,14 @@ gantt
 | AI-09 | Đóng gói chạy dịch vụ: `launchd` (macOS) / `systemd` (Linux), cấu hình qua biến môi trường, log JSON | Máy khởi động lại, worker tự chạy | AI-02 | 1 | AI |
 | AI-10 | Cập nhật `scripts/report-citizen-benchmark.py` đọc kết quả từ DB, ghi `v_ai_accuracy` | Báo cáo theo loại giấy tờ, trường | AI-05, DB-14 | 1 | AI |
 | AI-11 | Spike chạy trên Linux không có Apple Silicon (PaddleOCR CPU/CUDA, Qwen qua llama.cpp/vLLM) | Báo cáo tốc độ và chất lượng trên 20 trang mẫu, so với MLX | AI-01 | 2 | AI |
+| AI-12 | Đo chuẩn từng bước trên M4 16 GB (nạp, OCR, chọn nhóm/loại, trích trường, bộ nhớ) cho Qwen3-4B và Qwen3-1.7B; đo lại trên giấy tờ thật sau khi luồng chạy. **Không còn là cổng chặn** (chốt 1.7B ngày 17/11/2026) | Báo cáo số liệu, ghi rõ dữ liệu giả và giới hạn | AI-05 | 1 | AI |
+| AI-13 | Giữ OCR và LLM trong bộ nhớ, không nạp lại mỗi job; chọn mô hình bằng cấu hình; `enable_thinking=False`; ghi `model_version` | Hai job liên tiếp chỉ nạp mỗi mô hình một lần | AI-12 | 1 | AI |
+| AI-14 | Qwen3-1.7B làm mặc định: phiên bản ghim trong công cụ tải, lời nhắc nhanh cho việc có người chờ và đầy đủ cho khay nền, ngân sách bộ nhớ 7 GB, migration 033 cập nhật `ai_models` | Job thật ghi `model_version` có `Qwen3-1.7B-4bit@3b1b176`; giá trị vẫn phải có nguyên văn trong văn bản | AI-13 | 1 | AI |
+| AI-15 | Khay nền chạy khi rảnh (tùy chọn khung giờ); job nền nhường chỗ sau trang hiện tại khi có việc ưu tiên | Job nền 10 trang nhả sau trang 3, việc ưu tiên xong trước, quay lại chỉ đọc trang 4–10 | BE-97, AI-04 | 1,5 | AI |
+| AI-16 | (Tùy chọn) Kết quả sớm cho việc ưu tiên nhiều trang: gợi ý tạm sau trang 1–2 | PDF 10 trang thấy loại giấy tờ sau khoảng 30 giây | AI-15 | 1,5 | AI |
+| AI-17 | Đổi sang mô hình lớn hơn khi có phần cứng: công cụ tải ghim phiên bản bất kỳ, đo so sánh trên giấy tờ thật, sổ tay đổi và quay lại | Diễn tập đổi sang 4B rồi về 1.7B, QA-07 qua cả hai lần | AI-14, QA-07 | 1 | AI |
+| AI-18 | Worker đọc kho tệp S3/MinIO (khi máy AI tách khỏi máy API), khóa chỉ đọc, kiểm SHA-256 | Test với moto; không để lại tệp tạm | AI-03 | 1 | AI |
+| AI-19 | Chạy worker thật như dịch vụ (LaunchAgent) trên máy AI với `hoso_dev`, theo dõi một ngày | Khởi động lại máy thì worker tự chạy; dừng giữa chừng thì job chạy tiếp từ trang còn thiếu | OPS-07, AI-14 | 0,5 | AI |
 
 ## P5 · Frontend nền tảng (Next.js 16, render phía máy chủ)
 
@@ -249,6 +261,7 @@ gantt
 | FE-42 | Quản trị · Người dùng, phân công, ủy quyền | Phân công có thời hạn, căn cứ | FE-03, BE-34 | 2,5 | FE |
 | FE-43 | Quản trị · Danh mục: sửa nhóm, loại, trường; xác nhận; thời hạn bảo quản | — | FE-03, BE-32, BE-35 | 2,5 | FE |
 | FE-44 | Quản trị · Vận hành: hàng đợi AI, mô hình, cài đặt, nhật ký kiểm toán, sao lưu; liên kết công cụ thử nghiệm (SAM 3) | Chỉ `technical_admin` thấy | FE-03, BE-88, BE-89 | 2 | FE |
+| FE-45 | Khay chờ AI trong hộp tiếp nhận (vị trí, ước tính, tiến độ) và nút **Trích xuất ngay** cho giấy tờ và hồ sơ | Tải 3 PDF, bấm Trích xuất ngay ở PDF thứ 3 thì PDF đó xong trước | BE-98, BE-99, FE-21 | 1,5 | FE |
 
 ## P7 · Chuyển đổi từ bản thí điểm
 
@@ -274,7 +287,9 @@ gantt
 | OPS-04 | Diễn tập khôi phục trên máy khác, đo thời gian, lập biên bản | Biên bản đạt (tiêu chí nhóm chức năng 11) | OPS-03 | 1 | OPS |
 | OPS-05 | Giám sát: dashboard (Grafana hoặc tương đương) độ dài hàng đợi AI, thời gian đọc/trang, lỗi 5xx, dung lượng kho; cảnh báo | Cảnh báo khi hàng đợi treo quá 15 phút | OPS-02 | 1,5 | OPS |
 | OPS-06 | Sổ tay vận hành: khởi động, dừng, cập nhật, thêm mô hình AI, xử lý sự cố thường gặp | `docs/05-van-hanh.md` | OPS-04 | 1 | OPS |
+| OPS-07 | Môi trường dev chạy đủ luồng AI: áp migration 032/033 vào `hoso_dev` (sao lưu trước), mở đăng nhập cho `hoso_ai_worker`, `ai-worker/.env`, `scripts/dev-up.sh` chạy API, worker, web | Một lệnh chạy đủ ba phần; đăng nhập web bằng tài khoản giả lập | BE-97, AI-14 | 0,5 | OPS |
 | QA-06 | UAT với cán bộ phường: 5 kịch bản theo vai trò trên hồ sơ mẫu, thu phản hồi | Biên bản UAT, danh sách việc sửa | QA-02 | 3 | QA |
+| QA-07 | Kịch bản kiểm tra thông luồng AI qua API `scripts/smoke-ai-flow.py`: tải lên → khay nền → Trích xuất ngay → đọc xong (SSE) → đối chiếu → xếp hồ sơ | Qua trọn kịch bản; giấy tờ được nâng mức xong trước; `model_version` ghi 1.7B | OPS-07, AI-19 | 1 | QA |
 
 ---
 
@@ -306,14 +321,14 @@ gantt
 | P0 Chuẩn bị | 6 | 4,5 |
 | P1 Cơ sở dữ liệu | 19 | 21 |
 | P2 Backend nền tảng | 23 | 24,5 |
-| P3 Backend nghiệp vụ | 43 | 52 |
-| P4 Worker AI | 11 | 12,5 |
+| P3 Backend nghiệp vụ | 54 | 63 |
+| P4 Worker AI | 19 | 21,5 |
 | P5 Frontend nền tảng | 12 | 13,5 |
-| P6 Màn hình nghiệp vụ | 25 | 47,5 |
+| P6 Màn hình nghiệp vụ | 26 | 49 |
 | P7 Chuyển đổi | 4 | 3,5 |
-| P8 Kiểm thử, vận hành | 12 | 20 |
+| P8 Kiểm thử, vận hành | 14 | 21,5 |
 | P9 Bảo mật, ghi log | 16 | 18,5 |
-| **Tổng** | **171** | **217,5** |
+| **Tổng** | **193** | **240,5** |
 
 Ước lượng chưa tính dự phòng; nên cộng thêm 20% cho khảo sát lại nghiệp vụ và sửa sau UAT.
 
@@ -323,3 +338,10 @@ gantt
 2. Song song: DB-01 → DB-02… và BE-01 → BE-05, FE-01 → FE-03.
 3. Lát cắt dọc đầu tiên để chứng minh kiến trúc: **BE-01 (build khung), BE-12, BE-13, BE-30, BE-31, FE-05, FE-06** — đăng nhập Keycloak và thấy menu theo phân công thật. Khung frontend (FE-04) đã chạy được với dữ liệu giả lập.
 4. Lát cắt thứ hai: **BE-41, AI-02, AI-04, BE-45, FE-21** — tải PDF và thấy tiến độ đọc realtime.
+5. **Thông luồng AI với Qwen3-1.7B** (chốt 17/11/2026, chi tiết và bản đồ luồng ở `docs/tasks/ai.md`):
+   - bước 0: build và test BE-97, BE-98, BE-99, FE-45;
+   - bước 1: AI-14, OPS-07;
+   - bước 2: AI-19, QA-07 (thông luồng phía máy chủ);
+   - bước 3: FE-05, FE-06, FE-08, FE-21, FE-23, FE-24 (thông luồng trên giao diện);
+   - bước 4: BE-100, AI-12 trên giấy tờ thật;
+   - khi tách máy AI hoặc có phần cứng mới: AI-18, AI-17, AI-11.

@@ -18,8 +18,8 @@ public sealed record FieldDto(string Code, string Label, int Position);
 public sealed record DocumentTypeDto(string Code, string Name, List<FieldDto> Fields);
 
 public sealed record UploadDto(Guid DocumentId, Guid FileId, Guid JobId, string FileName, long ByteSize);
-public sealed record InboxDto(Guid DocumentId, Guid FileId, string FileName, string Stage, int? QueuePosition, string? Progress, string? Suggestion, int AttentionCount, Guid? JobId, string IntakeStatus);
-public sealed record JobDto(Guid Id, string Status, string? Stage, int ProcessedPages, int? PageCount, int? QueuePosition, string? Error);
+public sealed record InboxDto(Guid DocumentId, Guid FileId, string FileName, string Stage, int? QueuePosition, string? Progress, string? Suggestion, int AttentionCount, Guid? JobId, string IntakeStatus, string? QueueKind = null);
+public sealed record JobDto(Guid Id, string Status, string? Stage, int ProcessedPages, int? PageCount, int? QueuePosition, string? Error, string? QueueKind = null, int? EtaSeconds = null);
 public sealed record ReviewFieldDto(string FieldCode, string Label, string? SuggestedValue, bool QuoteVerified, string? Value, bool NeedsReview, bool Verified, string? Attention);
 public sealed record ReviewSuggestionDto(string? WorkGroupCode, string? DocumentTypeCode, string DocumentForm, string Title, bool EvidenceVerified, string? Decision);
 public sealed record ReviewDocumentDto(Guid Id, string Title, string DocumentForm, string IntakeStatus, string ReviewStatus, ClassificationDto? Classification);

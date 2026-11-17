@@ -1,4 +1,5 @@
 using HoSoSo.Application.Dossiers;
+using HoSoSo.Application.Intake;
 using HoSoSo.Application.Operations;
 using HoSoSo.Application.Search;
 using HoSoSo.Domain.Identity;
@@ -55,6 +56,11 @@ internal static class DossierEndpoints
                 return TypedResults.NoContent();
             })
             .RequirePermission(Permissions.DossierPrepare).WithSummary("Gỡ giấy tờ khỏi hồ sơ");
+
+        dossiers.MapPost("/{id:guid}/ai/extract", async (Guid id, AiExtractRequest? body, AiExtractHandler h, CancellationToken ct) =>
+                TypedResults.Ok(await h.ExtractDossierAsync(id, body ?? new AiExtractRequest(), ct)))
+            .WithTags("Xử lý AI").RequirePermission(Permissions.DossierPrepare).RequireRateLimiting(SecuritySetup.AiExtractPolicy)
+            .WithSummary("Trích xuất ngay: đưa giấy tờ của hồ sơ lên đầu hàng đợi AI (hoặc tạo việc mới); body tùy chọn { force, documentIds }");
 
         dossiers.MapGet("/{id:guid}/checklist", async (Guid id, DossierQueries q, CancellationToken ct) => TypedResults.Ok(await q.ChecklistAsync(id, ct)))
             .RequirePermission(Permissions.DossierRead).WithSummary("Thành phần đủ / thiếu / chưa đối chiếu");

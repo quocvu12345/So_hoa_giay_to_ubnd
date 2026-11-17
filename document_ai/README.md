@@ -19,7 +19,7 @@ Môi trường, trọng số, cache nằm ở `/Volumes/quocDisk/AI/paddleocr`, 
 | Xác định chiều trang | PP-LCNet_x1_0_doc_ori | CPU |
 | Phát hiện bố cục, vùng bảng | PP-DocLayoutV3 | CPU |
 | Đọc vùng chữ/bảng/ảnh | PaddleOCR-VL-1.6, trọng số chính thức | GPU M4 qua MLX |
-| Gợi ý nhóm hồ sơ, loại giấy tờ và trường | Qwen3-4B-Instruct-2507, bản MLX 4-bit của mlx-community | GPU M4 qua MLX |
+| Gợi ý nhóm hồ sơ, loại giấy tờ và trường | Qwen3-1.7B, bản MLX 4-bit của mlx-community (mặc định từ 17/11/2026; đổi bằng `HOSO_AI_CLASSIFIER_MODEL`) | GPU M4 qua MLX |
 
 OCR chạy trước; tiến trình OCR giải phóng bộ nhớ rồi Qwen xử lý nội dung. Dịch vụ không chạy đồng thời OCR và SAM 3; giải phóng SAM khỏi RAM trước khi đọc PDF. SAM 3 vẫn dùng được tại `/sam3-lab.html`.
 
@@ -57,7 +57,7 @@ Model được khai báo trong `OPTIONAL_MODELS["qwen_vl"]`; gọi `model_path("
 
 Ngày 12/11/2026 đã chạy thử với `sandbox-exec` chặn toàn bộ mạng trên Mac M4 16 GB. Một ảnh mẫu xe 828 × 1171 px: đọc đúng 3 trường được hỏi (tên chủ xe, chủ mới, số khung), sinh 47 token và dừng bình thường, tổng thời gian gồm nạp model 16,59 giây. Bộ nhớ MLX cao nhất 6,59 GB, không phải tổng RAM của cả máy. Báo cáo: `data/sam3/runtime/qwen3-vl-download-check.json`. Đây là kiểm tra hoạt động trên một ảnh mô phỏng bằng font; chưa so sánh độ chính xác với OCR hiện tại.
 
-Luồng **Lấy dữ liệu PDF** hiện vẫn dùng PaddleOCR-VL và Qwen3-4B. Tải model này chưa chuyển luồng sang phân tích ảnh bằng Qwen3-VL; bước đó cần nối ảnh trang/vùng vào bộ trích xuất và đánh giá riêng. Trên máy M4 16 GB, nên chạy một lượt AI tại một thời điểm.
+Luồng **Lấy dữ liệu PDF** hiện vẫn dùng PaddleOCR-VL và Qwen3-1.7B (trước 17/11/2026 là Qwen3-4B). Tải model này chưa chuyển luồng sang phân tích ảnh bằng Qwen3-VL; bước đó cần nối ảnh trang/vùng vào bộ trích xuất và đánh giá riêng. Trên máy M4 16 GB, nên chạy một lượt AI tại một thời điểm.
 
 ## Luồng sử dụng
 

@@ -43,6 +43,10 @@ export type MockInboxItem = {
   uploadedAt: string;
   stage: "queued" | "reading" | "ready" | "failed";
   queuePosition?: number;
+  /** Khay của việc đang chờ: priority (làm ngay) | interactive (có người chờ) | background (khay nền, PDF mới nạp). */
+  queueKind?: "priority" | "interactive" | "background";
+  /** Giây chờ ước tính từ số đo thật; thiếu thì không hiện. */
+  etaSeconds?: number;
   progress?: string;
   suggestion?: string;
   attentionCount?: number;
@@ -51,7 +55,9 @@ export type MockInboxItem = {
 export const MOCK_INBOX: MockInboxItem[] = [
   { id: "doc-26kh", fileName: "26-KH-UBND.pdf", pages: 4, uploadedAt: "08:41", stage: "ready", suggestion: "Kế hoạch · U02 Chỉ đạo, điều hành", attentionCount: 1 },
   { id: "doc-bbkt", fileName: "bien-ban-kiem-tra-hien-truong.pdf", pages: 3, uploadedAt: "08:43", stage: "reading", progress: "Đang đọc trang 2/3" },
-  { id: "doc-tt12", fileName: "to-trinh-12.pdf", pages: 2, uploadedAt: "08:44", stage: "queued", queuePosition: 2 },
+  { id: "doc-tt12", fileName: "to-trinh-12.pdf", pages: 2, uploadedAt: "08:44", stage: "queued", queuePosition: 2, queueKind: "background", etaSeconds: 95 },
+  { id: "doc-ct05", fileName: "cong-van-05.pdf", pages: 1, uploadedAt: "08:44", stage: "queued", queuePosition: 3, queueKind: "background" },
+  { id: "doc-hd88", fileName: "hop-dong-88.pdf", pages: 3, uploadedAt: "08:45", stage: "queued", queuePosition: 1, queueKind: "priority", etaSeconds: 40 },
   { id: "doc-scan7", fileName: "scan_0007.pdf", pages: 12, uploadedAt: "08:45", stage: "failed", progress: "Trang 7 đọc lỗi, có thể đọc lại riêng trang này" },
 ];
 

@@ -30,6 +30,11 @@ class Settings:
     page_timeout_seconds: int
     http_port: int | None
     document_ai_home: Path
+    classifier_model: str | None = None     # tên thư mục mô hình phân loại (None: mặc định của document_ai)
+    background_from: int = 7                # job có ocr_jobs.priority từ mức này trở lên là khay nền
+    prompt_interactive: str = "short"        # kiểu lời nhắc trích trường cho việc có người đang chờ (production | short)
+    prompt_background: str = "production"   # ... cho việc khay nền
+    background_windows: str = ""             # khung giờ khay nền được chạy (runtime/windows.py); rỗng: bất cứ lúc nào rảnh
 
     @classmethod
     def from_env(cls, env: dict[str, str] | None = None) -> "Settings":
@@ -48,6 +53,22 @@ class Settings:
                 raise SettingsError(f"{name} phải ≥ {minimum}.")
             return value
 
+        def style(name: str, default: str) -> str:
+            value = env.get(name) or default
+            if value not in ("production", "short"):
+                raise SettingsError(f"{name} phải là production hoặc short, đang là {value!r}.")
+            return value
+
+        def windows() -> str:
+            from .runtime.windows import BackgroundWindows
+
+            text = env.get("HOSO_AI_BACKGROUND_WINDOWS", "")
+            try:
+                BackgroundWindows.parse(text)
+            except ValueError as error:
+                raise SettingsError(f"HOSO_AI_BACKGROUND_WINDOWS: {error}") from error
+            return text
+
         port = env.get("HOSO_AI_HTTP_PORT", "9108")
         return cls(
             profile=profile,
@@ -55,8 +76,9 @@ class Settings:
             storage_root=Path(env.get("HOSO_AI_STORAGE_ROOT", "data/blobs")).resolve(),
             work_root=Path(env.get("HOSO_AI_WORK_ROOT", "data/ai-work")).resolve(),
             worker_id=env.get("HOSO_AI_WORKER_ID") or f"{socket.gethostname()}-{os.getpid()}",
-            # Mac 16 GB: chừa RAM cho hệ điều hành; mặc định chỉ một mô hình lớn trong bộ nhớ.
-            model_budget_gb=number("HOSO_AI_MODEL_BUDGET_GB", 6, 1),
+            # Mac 16 GB: chừa RAM cho hệ điều hành. 7 GB đủ giữ cùng lúc OCR (ước 4,5 GB) và Qwen3-1.7B (ước 2 GB) để không nạp lại OCR mỗi job.
+            # Dùng mô hình phân loại lớn hơn (ví dụ Qwen3-4B, 3 GB) thì đặt 8 trở lên hoặc chấp nhận nạp lại OCR giữa các job.
+            model_budget_gb=number("HOSO_AI_MODEL_BUDGET_GB", 7, 1),
             poll_seconds=number("HOSO_AI_POLL_SECONDS", 15, 1),
             heartbeat_seconds=number("HOSO_AI_HEARTBEAT_SECONDS", 30, 5),
             max_attempts=int(number("HOSO_AI_MAX_ATTEMPTS", 3, 1)),
@@ -64,6 +86,11 @@ class Settings:
             page_timeout_seconds=int(number("HOSO_AI_PAGE_TIMEOUT_SECONDS", 300, 10)),
             http_port=int(port) if port and port != "0" else None,
             document_ai_home=Path(env.get("DOCUMENT_AI_HOME", "/Volumes/quocDisk/AI/paddleocr")),
+            classifier_model=env.get("HOSO_AI_CLASSIFIER_MODEL") or None,
+            background_from=int(number("HOSO_AI_BACKGROUND_FROM", 7, 2)),
+            prompt_interactive=style("HOSO_AI_PROMPT_INTERACTIVE", "short"),
+            prompt_background=style("HOSO_AI_PROMPT_BACKGROUND", "production"),
+            background_windows=windows(),
         )
 
     def require_database(self) -> str:

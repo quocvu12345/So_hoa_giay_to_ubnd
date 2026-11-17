@@ -4,13 +4,15 @@ using HoSoSo.Application.Documents;
 using HoSoSo.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Options;
 
 namespace HoSoSo.Application.Intake;
 
 /// <summary>BE-40, BE-41, BE-42: lô quét, tải PDF lên (chống trùng), hộp tiếp nhận.</summary>
-public sealed class IntakeHandler(IHoSoDb db, IScopeFilter scope, ICurrentUser user, IClock clock, IFileStorage storage, IVirusScanner scanner, IPdfTools pdf, ILogger<IntakeHandler> logger)
+public sealed class IntakeHandler(IHoSoDb db, IScopeFilter scope, ICurrentUser user, IClock clock, IFileStorage storage, IVirusScanner scanner, IPdfTools pdf, ILogger<IntakeHandler> logger,
+    IOptions<AiQueueOptions> aiQueue, AiQueueEstimator queue)
 {
-    public const int InteractivePriority = 3;
+    public const int InteractivePriority = QueuePriority.Interactive;
     public static readonly TimeSpan UndoWindow = TimeSpan.FromDays(30);
     private static readonly TimeSpan VietnamOffset = TimeSpan.FromHours(7);
 
@@ -129,7 +131,8 @@ public sealed class IntakeHandler(IHoSoDb db, IScopeFilter scope, ICurrentUser u
         };
         var job = new OcrJob
         {
-            FileId = file.Id, Priority = InteractivePriority, RequestedBy = me,
+            // PDF mới tải lên vào khay nền: máy AI xử lý khi rảnh; ai cần ngay thì bấm "Trích xuất ngay" (BE-98) để nâng mức.
+            FileId = file.Id, Priority = (short)aiQueue.Value.BackgroundPriority, RequestedBy = me,
             Options = JsonSerializer.Serialize(new { correlation_id = user.CorrelationId, classify = true }),
         };
         await using var transaction = await db.Database.BeginTransactionAsync(ct);
@@ -213,7 +216,7 @@ public sealed class IntakeHandler(IHoSoDb db, IScopeFilter scope, ICurrentUser u
             {
                 d.Id, FileId = f.Id, f.OriginalName, f.PageCount, f.UploadedAt, d.IntakeStatus,
                 Job = jobs.Where(j => j.FileId == f.Id && j.JobType == "read_classify").OrderByDescending(j => j.CreatedAt)
-                    .Select(j => new { j.Id, j.Status, j.Priority, j.CreatedAt, j.ProcessedPages, j.PageCount, j.ErrorMessage }).FirstOrDefault(),
+                    .Select(j => new { j.Id, j.Status, j.Priority, j.CreatedAt, j.PrioritizedAt, j.ProcessedPages, j.PageCount, j.ErrorMessage }).FirstOrDefault(),
                 Suggestion = suggestions.Where(s => s.DocumentId == d.Id).OrderByDescending(s => s.CreatedAt).ThenByDescending(s => s.Id)
                     .Select(s => new { s.Id, s.DocumentForm, s.WorkGroupCode }).FirstOrDefault(),
             }).Take(200).ToListAsync(ct);
@@ -223,6 +226,7 @@ public sealed class IntakeHandler(IHoSoDb db, IScopeFilter scope, ICurrentUser u
         var attention = await db.Read<AiFieldSuggestion>().Where(a => suggestionIds.Contains(a.SuggestionId) && (a.Value == "" || !a.QuoteVerified))
             .GroupBy(a => a.SuggestionId).Select(g => new { Id = g.Key, N = g.Count() }).ToDictionaryAsync(x => x.Id, x => x.N, ct);
 
+        var queueModel = rows.Any(r => r.Job is { Status: JobStatus.Queued or JobStatus.Running }) ? await queue.LoadAsync(ct) : null;
         var items = new List<InboxItem>();
         foreach (var r in rows)
         {
@@ -231,18 +235,20 @@ public sealed class IntakeHandler(IHoSoDb db, IScopeFilter scope, ICurrentUser u
                 JobStatus.Queued => "queued", JobStatus.Running => "reading", JobStatus.Completed => "ready",
                 JobStatus.Failed => "failed", JobStatus.Cancelled => "cancelled", _ => "queued",
             };
-            int? position = r.Job is { Status: JobStatus.Queued } q ? await QueuePositionAsync(q.Priority, q.CreatedAt, ct) : null;
+            var pagesLeft = r.Job is null ? 1 : Math.Max(1, (r.Job.PageCount ?? r.PageCount ?? 1) - r.Job.ProcessedPages);
+            int? position = queueModel is not null && r.Job is { Status: JobStatus.Queued } q ? queueModel.Position(q.Priority, q.PrioritizedAt ?? q.CreatedAt) : null;
+            int? eta = queueModel is null || r.Job is null ? null
+                : r.Job.Status == JobStatus.Queued ? queueModel.EtaSeconds(r.Job.Priority, r.Job.PrioritizedAt ?? r.Job.CreatedAt, pagesLeft)
+                : r.Job.Status == JobStatus.Running ? queueModel.RemainingSeconds(pagesLeft) : null;
             string? progress = r.Job is { Status: JobStatus.Running } run ? $"Đang đọc trang {Math.Min(run.ProcessedPages + 1, run.PageCount ?? run.ProcessedPages + 1)}/{run.PageCount?.ToString() ?? "?"}" : null;
             string? label = r.Suggestion is null ? null
                 : r.Suggestion.WorkGroupCode is { } g ? $"{r.Suggestion.DocumentForm} · {g} {groupTitles.GetValueOrDefault(g)}" : r.Suggestion.DocumentForm;
             items.Add(new InboxItem(r.Id, r.FileId, r.OriginalName, r.PageCount ?? r.Job?.PageCount, r.UploadedAt ?? DateTimeOffset.MinValue, stage, position, progress, label,
-                r.Suggestion is null ? 0 : attention.GetValueOrDefault(r.Suggestion.Id), r.Job?.Id, r.Job?.ErrorMessage, r.IntakeStatus));
+                r.Suggestion is null ? 0 : attention.GetValueOrDefault(r.Suggestion.Id), r.Job?.Id, r.Job?.ErrorMessage, r.IntakeStatus,
+                r.Job is null ? null : QueuePriority.KindOf(r.Job.Priority), eta));
         }
         return items;
     }
-
-    internal async Task<int> QueuePositionAsync(short priority, DateTimeOffset createdAt, CancellationToken ct) =>
-        1 + await db.Read<OcrJob>().CountAsync(j => j.Status == JobStatus.Queued && (j.Priority < priority || (j.Priority == priority && j.CreatedAt < createdAt)), ct);
 
     public async Task DiscardAsync(Guid documentId, CancellationToken ct)
     {

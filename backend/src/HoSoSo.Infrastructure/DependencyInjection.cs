@@ -99,6 +99,8 @@ public static class DependencyInjection
             services.AddHostedService<SessionCleanupService>();
         }
         services.AddOptions<HoSoSo.Application.Admin.BackupPolicy>().Bind(configuration.GetSection("Backup"));
+        services.AddOptions<HoSoSo.Application.Intake.AiQueueOptions>().Bind(configuration.GetSection("Ai")).ValidateOnStart();
+        services.AddSingleton<Microsoft.Extensions.Options.IValidateOptions<HoSoSo.Application.Intake.AiQueueOptions>, HoSoSo.Application.Intake.AiQueueOptionsValidator>();
         services.AddHealthChecks()
             .AddCheck<DatabaseHealthCheck>("database", tags: ["ready"])
             .AddCheck<StorageHealthCheck>("storage", tags: ["ready"])
