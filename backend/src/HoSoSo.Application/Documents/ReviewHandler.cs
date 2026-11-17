@@ -57,6 +57,8 @@ public sealed partial class ReviewHandler(IHoSoDb db, IScopeFilter scope, ICurre
 
     public async Task<ReviewData> ClassifyAsync(Guid id, ClassifyRequest r, CancellationToken ct)
     {
+        await using var transaction = await db.Database.BeginTransactionAsync(ct);
+        await MutationLocks.DocumentAndDossiersAsync(db, id, ct);
         var doc = await EditableDocumentAsync(id, ct);
         var type = await db.Read<DocumentType>().SingleOrDefaultAsync(t => t.Code == r.DocumentTypeCode && t.WorkGroupCode == r.WorkGroupCode && t.Active
                 && db.Set<WorkGroup>().Any(g => g.Code == t.WorkGroupCode && g.Active), ct)
@@ -67,7 +69,6 @@ public sealed partial class ReviewHandler(IHoSoDb db, IScopeFilter scope, ICurre
         var suggestion = await db.Set<AiSuggestion>().Where(s => s.DocumentId == id).OrderByDescending(s => s.CreatedAt).ThenByDescending(s => s.Id).FirstOrDefaultAsync(ct);
         var matches = suggestion is not null && suggestion.WorkGroupCode == r.WorkGroupCode && suggestion.DocumentTypeCode == r.DocumentTypeCode;
 
-        await using var transaction = await db.Database.BeginTransactionAsync(ct);
         if (!unchanged)
         {
             if (current.Count > 0)
@@ -94,12 +95,16 @@ public sealed partial class ReviewHandler(IHoSoDb db, IScopeFilter scope, ICurre
         }
         if (matches)
         {
-            if (suggestion!.DocumentForm.Length > 0) doc.DocumentForm = suggestion.DocumentForm;
-            if (suggestion.Title.Length > 0) doc.Title = suggestion.Title;
+            // Không ghi đè thông tin đầu văn bản mà người dùng đã xác nhận.
+            if (doc.MetadataReviewedAt is null)
+            {
+                if (suggestion!.DocumentForm.Length > 0) doc.DocumentForm = suggestion.DocumentForm;
+                if (suggestion.Title.Length > 0) doc.Title = suggestion.Title;
+            }
             var fileId = await db.Read<FileRecord>().Where(f => f.DocumentId == id && f.FileRole == "scan").Select(f => (Guid?)f.Id).FirstOrDefaultAsync(ct);
             var existing = (await db.Read<DocumentFieldValue>().Where(v => v.DocumentId == id).Select(v => v.FieldDefinitionCode).ToListAsync(ct)).ToHashSet();
             var typeFields = await db.Read<FieldDefinition>().Where(f => f.DocumentTypeCode == type.Code).ToDictionaryAsync(f => f.Code, ct);
-            var suggested = await db.Read<AiFieldSuggestion>().Where(f => f.SuggestionId == suggestion.Id).ToListAsync(ct);
+            var suggested = await db.Read<AiFieldSuggestion>().Where(f => f.SuggestionId == suggestion!.Id).ToListAsync(ct);
             foreach (var field in suggested.Where(f => typeFields.ContainsKey(f.FieldDefinitionCode) && !existing.Contains(f.FieldDefinitionCode)))
             {
                 // Giá trị AI sao sang bảng chính nhưng LUÔN chờ đối chiếu; nguồn trang/vùng được giữ để người dùng kiểm tra.
@@ -121,6 +126,8 @@ public sealed partial class ReviewHandler(IHoSoDb db, IScopeFilter scope, ICurre
 
     public async Task<ReviewData> EditFieldsAsync(Guid id, EditFieldsRequest r, CancellationToken ct)
     {
+        await using var transaction = await db.Database.BeginTransactionAsync(ct);
+        await MutationLocks.DocumentAndDossiersAsync(db, id, ct);
         var doc = await EditableDocumentAsync(id, ct);
         var typeCode = await db.Read<DocumentClassification>().Where(c => c.DocumentId == id).Select(c => c.DocumentTypeCode).FirstOrDefaultAsync(ct)
             ?? throw AppException.Conflict("Chọn loại giấy tờ trước khi nhập trường dữ liệu.");
@@ -160,11 +167,43 @@ public sealed partial class ReviewHandler(IHoSoDb db, IScopeFilter scope, ICurre
         if (doc.DataReviewStatus == "verified") { doc.DataReviewStatus = "pending"; doc.ReviewedBy = null; doc.ReviewedAt = null; }
         doc.UpdatedAt = now;
         await db.SaveChangesAsync(ct);
+        await transaction.CommitAsync(ct);
+        return await ReviewAsync(id, ct);
+    }
+
+    public async Task<ReviewData> ReviewMetadataAsync(Guid id, ReviewMetadataRequest r, CancellationToken ct)
+    {
+        await using var transaction = await db.Database.BeginTransactionAsync(ct);
+        await MutationLocks.DocumentAndDossiersAsync(db, id, ct);
+        var doc = await EditableDocumentAsync(id, ct);
+        if (doc.Version != r.Version) throw AppException.Conflict("Giấy tờ vừa được cập nhật. Tải lại trước khi xác nhận thông tin.");
+        var title = r.Title.Trim();
+        var form = r.DocumentForm.Trim();
+        var number = string.IsNullOrWhiteSpace(r.DocumentNumber) ? null : r.DocumentNumber.Trim();
+        if (doc.Title != title || doc.DocumentForm != form || doc.DocumentNumber != number || doc.IssuedOn != r.IssuedOn)
+        {
+            doc.DataReviewStatus = "pending";
+            doc.ReviewedBy = null;
+            doc.ReviewedAt = null;
+        }
+        doc.Title = title;
+        doc.DocumentForm = form;
+        doc.DocumentNumber = number;
+        doc.IssuedOn = r.IssuedOn;
+        doc.MetadataStatus = "header_checked";
+        doc.MetadataReviewedBy = user.RequireUserId();
+        doc.MetadataReviewedAt = clock.UtcNow;
+        doc.MetadataReviewNote = r.Note?.Trim() ?? "";
+        doc.UpdatedAt = clock.UtcNow;
+        await db.SaveChangesAsync(ct);
+        await transaction.CommitAsync(ct);
         return await ReviewAsync(id, ct);
     }
 
     public async Task<ReviewData> VerifyAsync(Guid id, CancellationToken ct)
     {
+        await using var transaction = await db.Database.BeginTransactionAsync(ct);
+        await MutationLocks.DocumentAndDossiersAsync(db, id, ct);
         var doc = await EditableDocumentAsync(id, ct);
         var typeCode = await db.Read<DocumentClassification>().Where(c => c.DocumentId == id).Select(c => c.DocumentTypeCode).FirstOrDefaultAsync(ct)
             ?? throw new AppException(422, "review_incomplete", "Chưa chọn loại giấy tờ nên chưa xác nhận được.");
@@ -179,6 +218,7 @@ public sealed partial class ReviewHandler(IHoSoDb db, IScopeFilter scope, ICurre
         doc.ReviewedAt = clock.UtcNow;
         doc.UpdatedAt = clock.UtcNow;
         await db.SaveChangesAsync(ct);
+        await transaction.CommitAsync(ct);
         return await ReviewAsync(id, ct);
     }
 
@@ -198,7 +238,7 @@ public sealed partial class ReviewHandler(IHoSoDb db, IScopeFilter scope, ICurre
                               join x in scope.Dossiers(db.Read<Dossier>()) on l.DossierId equals x.Id
                               where l.DocumentId == id
                               select new DossierRef(x.Id, x.Code, x.Title, x.Status)).ToListAsync(ct);
-        return new DocumentDetail(d.Id, d.Title, d.DocumentForm, d.DocumentNumber, d.IssuedOn, d.Origin, d.IntakeStatus, d.DataReviewStatus, d.MetadataStatus, d.Version, file, classification, dossiers);
+        return new DocumentDetail(d.Id, d.Title, d.DocumentForm, d.DocumentNumber, d.IssuedOn, d.Origin, d.IntakeStatus, d.DataReviewStatus, d.MetadataStatus, d.Version, file, classification, dossiers, d.MetadataReviewedBy, d.MetadataReviewedAt, d.MetadataReviewNote);
     }
 
     private async Task<(bool CanEdit, string? Reason)> EditStateAsync(Guid id, string origin, string intakeStatus, CancellationToken ct)
@@ -225,7 +265,7 @@ public sealed partial class ReviewHandler(IHoSoDb db, IScopeFilter scope, ICurre
     {
         var definitions = await db.Read<FieldDefinition>().Where(f => f.DocumentTypeCode == typeCode).OrderBy(f => f.Position).ToListAsync(ct);
         var values = await db.Read<DocumentFieldValue>().Where(v => v.DocumentId == documentId).ToDictionaryAsync(v => v.FieldDefinitionCode, ct);
-        var suggested = suggestion is null ? [] : await db.Read<AiFieldSuggestion>().Where(f => f.SuggestionId == suggestion.Id).ToDictionaryAsync(f => f.FieldDefinitionCode, ct);
+        var suggested = suggestion is null ? [] : await db.Read<AiFieldSuggestion>().Where(f => f.SuggestionId == suggestion!.Id).ToDictionaryAsync(f => f.FieldDefinitionCode, ct);
         var result = new List<ReviewField>();
         foreach (var f in definitions)
         {

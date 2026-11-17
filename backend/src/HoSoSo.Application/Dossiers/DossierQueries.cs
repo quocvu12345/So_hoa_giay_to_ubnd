@@ -38,7 +38,7 @@ public sealed class DossierQueries(IHoSoDb db, IScopeFilter scope, ICurrentUser 
                 u.DisplayName, d.InternalDueOn, d.UpdatedAt,
                 links.Count(l => l.DossierId == d.Id && l.RelationKind == "component"),
                 links.Count(l => l.DossierId == d.Id && l.RelationKind == "component"
-                                 && documents.Any(x => x.Id == l.DocumentId && x.DataReviewStatus == "verified")),
+                                 && documents.Any(x => x.Id == l.DocumentId && x.DataReviewStatus == "verified" && x.MetadataStatus != "needs_review" && !db.Read<DocumentFieldValue>().Any(v => v.DocumentId == x.Id && v.NeedsReview))),
                 d.Version))
             .Take(limit + 1).ToListAsync(ct);
 
@@ -70,7 +70,7 @@ public sealed class DossierQueries(IHoSoDb db, IScopeFilter scope, ICurrentUser 
             orderby d.UpdatedAt descending, d.Id descending
             select new DossierListItem(d.Id, d.Code, d.Title, d.Status, s.Label, d.WorkGroupCode, g.Title, d.DepartmentCode, u.DisplayName, d.InternalDueOn, d.UpdatedAt,
                 links.Count(l => l.DossierId == d.Id && l.RelationKind == "component"),
-                links.Count(l => l.DossierId == d.Id && l.RelationKind == "component" && documents.Any(x => x.Id == l.DocumentId && x.DataReviewStatus == "verified")), d.Version))
+                links.Count(l => l.DossierId == d.Id && l.RelationKind == "component" && documents.Any(x => x.Id == l.DocumentId && x.DataReviewStatus == "verified" && x.MetadataStatus != "needs_review" && !db.Read<DocumentFieldValue>().Any(v => v.DocumentId == x.Id && v.NeedsReview))), d.Version))
             .Take(10).ToListAsync(ct);
     }
 
@@ -96,7 +96,7 @@ public sealed class DossierQueries(IHoSoDb db, IScopeFilter scope, ICurrentUser 
             where l.DossierId == dossierId
             orderby l.Position
             select new DossierDocumentItem(doc.Id, l.Position, doc.Title, doc.DocumentForm, doc.DocumentNumber, doc.IssuedOn,
-                l.Direction, l.RelationKind, doc.DataReviewStatus, doc.IntakeStatus, pending.Count(f => f.DocumentId == doc.Id), l.ProcedureComponentId))
+                l.Direction, l.RelationKind, doc.DataReviewStatus, doc.IntakeStatus, pending.Count(f => f.DocumentId == doc.Id), l.ProcedureComponentId, doc.MetadataStatus))
             .ToListAsync(ct);
     }
 
@@ -104,13 +104,15 @@ public sealed class DossierQueries(IHoSoDb db, IScopeFilter scope, ICurrentUser 
     internal static Completeness CompletenessOf(IReadOnlyList<DossierDocumentItem> documents)
     {
         var components = documents.Where(x => x.RelationKind == "component").ToList();
-        var verified = components.Count(x => x.ReviewStatus == "verified" && x.PendingFields == 0);
+        var verified = components.Count(x => x.ReviewStatus == "verified" && x.PendingFields == 0 && x.MetadataStatus != "needs_review");
         var pendingFields = components.Sum(x => x.PendingFields);
         var reasons = new List<string>();
         if (components.Count == 0) reasons.Add("Hồ sơ chưa có giấy tờ thành phần nào.");
         var notReviewed = components.Count(x => x.ReviewStatus != "verified");
         if (notReviewed > 0) reasons.Add($"Còn {notReviewed} giấy tờ chưa đối chiếu xong.");
         if (pendingFields > 0) reasons.Add($"Còn {pendingFields} trường dữ liệu chờ đối chiếu.");
+        var metadataPending = components.Count(x => x.MetadataStatus == "needs_review");
+        if (metadataPending > 0) reasons.Add($"Còn {metadataPending} giấy tờ cần xác nhận thông tin đầu văn bản.");
         return new Completeness(components.Count, verified, pendingFields, reasons.Count == 0, reasons);
     }
 
@@ -129,7 +131,7 @@ public sealed class DossierQueries(IHoSoDb db, IScopeFilter scope, ICurrentUser 
         var classifiedIds = await classified.Where(c => ids.Contains(c.DocumentId)).Select(c => c.DocumentId).Distinct().ToListAsync(ct);
         var items = documents.Where(x => x.RelationKind == "component").Select(x => new ChecklistItem(
             x.DocumentId, x.Title,
-            x.ReviewStatus == "verified" && x.PendingFields == 0 ? "verified" : classifiedIds.Contains(x.DocumentId) ? "needs_review" : "unclassified",
+            x.ReviewStatus == "verified" && x.PendingFields == 0 && x.MetadataStatus != "needs_review" ? "verified" : classifiedIds.Contains(x.DocumentId) ? "needs_review" : "unclassified",
             x.PendingFields, classifiedIds.Contains(x.DocumentId), x.ProcedureComponentId)).ToList();
         var (name, components, summary) = await ProcedureChecklistAsync(dossier.ProcedureId, documents, ct);
         if (summary is not null) summary = summary with { Enforced = await ProcedureEnforcedAsync(ct) };
@@ -154,11 +156,11 @@ public sealed class DossierQueries(IHoSoDb db, IScopeFilter scope, ICurrentUser 
         {
             var linked = byComponent[c.Id].ToList();
             var state = linked.Count == 0 ? "missing"
-                : linked.All(d => d.ReviewStatus == "verified" && d.PendingFields == 0) ? "ok" : "pending";
+                : linked.All(d => d.ReviewStatus == "verified" && d.PendingFields == 0 && d.MetadataStatus != "needs_review") ? "ok" : "pending";
             var todo = state switch
             {
                 "ok" => "",
-                "pending" => $"Đối chiếu {linked.Count(d => d.ReviewStatus != "verified" || d.PendingFields > 0)} giấy tờ đã xếp vào mục này.",
+                "pending" => $"Đối chiếu {linked.Count(d => d.ReviewStatus != "verified" || d.PendingFields > 0 || d.MetadataStatus == "needs_review")} giấy tờ đã xếp vào mục này.",
                 _ when c.RequiredAsPublished => $"Thiếu «{c.Name}»: tải lên rồi xếp giấy tờ vào mục này.",
                 _ => "Không bắt buộc theo bản công bố; xếp giấy tờ vào mục này nếu hồ sơ có.",
             };

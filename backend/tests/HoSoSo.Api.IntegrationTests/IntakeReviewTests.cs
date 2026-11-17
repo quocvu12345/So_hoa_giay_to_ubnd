@@ -70,7 +70,7 @@ public sealed class IntakeReviewTests(DbApiFactory api) : IClassFixture<DbApiFac
         (await api.ScalarAsync<short>("SELECT priority FROM hoso.ocr_jobs WHERE id = $1", up.JobId)).ShouldBe((short)7, "PDF mới tải lên vào khay nền (BE-97)");
         (await api.ScalarAsync<string>("SELECT options->>'classify' FROM hoso.ocr_jobs WHERE id = $1", up.JobId)).ShouldBe("true");
 
-        var inbox = await (await http.GetAsync("/api/v1/intake/inbox")).ReadAsync<List<InboxDto>>();
+        var inbox = (await (await http.GetAsync("/api/v1/intake/inbox")).ReadAsync<PageDto<InboxDto>>()).Items;
         var item = inbox.Single(i => i.DocumentId == up.DocumentId);
         (item.Stage, item.FileName).ShouldBe(("queued", "kiem-tra-hien-truong.pdf"));
         item.QueuePosition.ShouldBe(job.QueuePosition);
@@ -128,7 +128,7 @@ public sealed class IntakeReviewTests(DbApiFactory api) : IClassFixture<DbApiFac
         (await other.PostJsonAsync($"/api/v1/jobs/{up.JobId}/cancel")).StatusCode.ShouldBe(HttpStatusCode.NotFound);
         (await other.GetAsync($"/api/v1/files/{up.FileId}/content")).StatusCode.ShouldBe(HttpStatusCode.NotFound);
         (await other.PostJsonAsync($"/api/v1/intake/documents/{up.DocumentId}/discard")).StatusCode.ShouldBe(HttpStatusCode.NotFound);
-        (await (await other.GetAsync("/api/v1/intake/inbox")).ReadAsync<List<InboxDto>>()).ShouldNotContain(i => i.DocumentId == up.DocumentId);
+        (await (await other.GetAsync("/api/v1/intake/inbox")).ReadAsync<PageDto<InboxDto>>()).Items.ShouldNotContain(i => i.DocumentId == up.DocumentId);
     }
 
     [Fact]
@@ -160,8 +160,8 @@ public sealed class IntakeReviewTests(DbApiFactory api) : IClassFixture<DbApiFac
         var http = await api.LoginAsync("demo_cv_ht");
         var up = await UploadAsync(http, "bo-va-hoan-tac");
         (await http.PostJsonAsync($"/api/v1/intake/documents/{up.DocumentId}/discard")).StatusCode.ShouldBe(HttpStatusCode.NoContent);
-        (await (await http.GetAsync("/api/v1/intake/inbox?status=discarded")).ReadAsync<List<InboxDto>>()).ShouldContain(i => i.DocumentId == up.DocumentId);
-        (await (await http.GetAsync("/api/v1/intake/inbox")).ReadAsync<List<InboxDto>>()).ShouldNotContain(i => i.DocumentId == up.DocumentId);
+        (await (await http.GetAsync("/api/v1/intake/inbox?status=discarded")).ReadAsync<PageDto<InboxDto>>()).Items.ShouldContain(i => i.DocumentId == up.DocumentId);
+        (await (await http.GetAsync("/api/v1/intake/inbox")).ReadAsync<PageDto<InboxDto>>()).Items.ShouldNotContain(i => i.DocumentId == up.DocumentId);
         (await http.PostJsonAsync($"/api/v1/intake/documents/{up.DocumentId}/restore")).StatusCode.ShouldBe(HttpStatusCode.NoContent);
 
         (await http.PostJsonAsync($"/api/v1/intake/documents/{up.DocumentId}/discard")).StatusCode.ShouldBe(HttpStatusCode.NoContent);
@@ -199,13 +199,13 @@ public sealed class IntakeReviewTests(DbApiFactory api) : IClassFixture<DbApiFac
         // Đang đọc → hộp tiếp nhận hiện tiến độ.
         await WorkerRunAsync(up.JobId, complete: false);
         await api.ExecuteAsync("UPDATE hoso.ocr_jobs SET processed_pages = 1 WHERE id = $1", up.JobId);
-        var reading = (await (await cv.GetAsync("/api/v1/intake/inbox")).ReadAsync<List<InboxDto>>()).Single(i => i.DocumentId == up.DocumentId);
+        var reading = (await (await cv.GetAsync("/api/v1/intake/inbox")).ReadAsync<PageDto<InboxDto>>()).Items.Single(i => i.DocumentId == up.DocumentId);
         (reading.Stage, reading.Progress).ShouldBe(("reading", "Đang đọc trang 2/2"));
 
         // Xong → có gợi ý, còn trường cần chú ý (địa điểm trống).
         await api.ExecuteAsync("UPDATE hoso.ocr_jobs SET status = 'queued', locked_by = NULL WHERE id = $1", up.JobId);
         await WorkerRunAsync(up.JobId, complete: true);
-        var ready = (await (await cv.GetAsync("/api/v1/intake/inbox")).ReadAsync<List<InboxDto>>()).Single(i => i.DocumentId == up.DocumentId);
+        var ready = (await (await cv.GetAsync("/api/v1/intake/inbox")).ReadAsync<PageDto<InboxDto>>()).Items.Single(i => i.DocumentId == up.DocumentId);
         ready.Stage.ShouldBe("ready");
         ready.Suggestion.ShouldBe("Biên bản · U15 Đất đai và hồ sơ địa chính");
         ready.AttentionCount.ShouldBe(1);
@@ -262,7 +262,7 @@ public sealed class IntakeReviewTests(DbApiFactory api) : IClassFixture<DbApiFac
         var dossier = await (await cv.PostJsonAsync("/api/v1/dossiers", new { title = "Hồ sơ kiểm tra hiện trạng đất thôn Hạ", workGroupCode = "U15" })).ReadAsync<DossierDetailDto>();
         (await cv.PostJsonAsync($"/api/v1/dossiers/{dossier.Id}/documents", new { documentId = up.DocumentId, direction = "internal" })).StatusCode.ShouldBe(HttpStatusCode.OK);
         (await api.ScalarAsync<string>("SELECT intake_status FROM hoso.documents WHERE id = $1", up.DocumentId)).ShouldBe("filed");
-        (await (await cv.GetAsync("/api/v1/intake/inbox")).ReadAsync<List<InboxDto>>()).ShouldNotContain(i => i.DocumentId == up.DocumentId);
+        (await (await cv.GetAsync("/api/v1/intake/inbox")).ReadAsync<PageDto<InboxDto>>()).Items.ShouldNotContain(i => i.DocumentId == up.DocumentId);
 
         var submitted = await (await cv.PostJsonAsync($"/api/v1/dossiers/{dossier.Id}/transitions", new { action = "submit" })).ReadAsync<TransitionDto>();
         submitted.Status.ShouldBe("department_review");

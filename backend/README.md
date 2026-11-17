@@ -32,6 +32,18 @@ dotnet run --project src/HoSoSo.Api                          # http://localhost:
 Migration `*_optional.sql` (dữ liệu mẫu 004, 007, 021) mặc định chạy ngoài Production; đặt `Database:OptionalSeeds=["004"]` để chọn đúng tệp.
 **Với CSDL dev có sẵn dữ liệu (như `hoso_dev`) đừng chạy `migrate` trần**: nó nạp luôn mọi tệp `*_optional.sql` chưa có trong nhật ký (kể cả 004: người dùng và hồ sơ GIẢ LẬP). Dùng `scripts/migrate-hoso-dev.sh` (mặc định chỉ liệt kê; thêm `--apply` để chạy thật) rồi sao lưu trước bằng `pg_dump -Fc -n hoso -n public`. **Muốn khôi phục bản dump đó phải tạo extension trước và bỏ mục `CREATE SCHEMA public`** (xem [ops/backup/README.md](../ops/backup/README.md)).
 
+## Bản sửa luồng backend 17/11/2026 (BE-101–109)
+
+Chạy migration **034_disposal_recovery.sql** và **035_metadata_review.sql** trước khi khởi động API mới. Dùng quy trình migration/sao lưu ở trên; các lần kiểm thử bản sửa chỉ migrate CSDL thử nghiệm riêng, chưa áp dụng lên `hoso_dev` hoặc production. Không hạ về API cũ khi còn yêu cầu hủy `executing`.
+
+- Hủy hồ sơ ghi `executing`, chặn nội dung và lưu `disposal_blob_deletions` trong cùng giao dịch; xóa kho chỉ bắt đầu sau commit. `POST /disposals/{id}/execute` trả 200 với `disposal.status` là `executed` hoặc `executing`. Trường hợp sau, đọc lại `GET /disposals/{id}` để theo dõi; gọi execute lần hai trả 409. Bật `Background:Enabled=true` trên máy chủ để worker tiếp tục sau khi request bị ngắt hoặc tiến trình khởi động lại.
+- Worker kiểm việc mỗi 5 giây, thử lại lỗi kho với khoảng chờ tăng dần, tối đa một giờ. `attempts`, `next_attempt_at`, `last_error` ghi trong bảng hàng đợi; `last_error` chỉ chứa loại lỗi. Khi DB lỗi lúc chốt kết quả, xóa lại cùng khóa là an toàn. `blobsDeleted` đếm các lần xóa có kết quả được commit; không thể xác định chính xác lần xóa trước một sự cố commit. Nội dung còn tham chiếu từ tệp, preview, mẫu biểu hoặc gói xuất được giữ lại.
+- `PUT /documents/{id}/metadata`: gửi `version`, `title`, `documentForm`, `documentNumber`, `issuedOn`, `note`. Xác nhận lưu người/thời điểm/ghi chú và audit; sửa giá trị làm giấy tờ cần đối chiếu lại. Dữ liệu cũ không được tự xác nhận. `needs_review` chặn checklist và thao tác trình như quy tắc SQL.
+- **Đổi hợp đồng inbox:** `GET /intake/inbox?status=inbox&limit=50&cursor=...` trả `{ items, nextCursor }` thay mảng. `limit` từ 1–200, mặc định 50; dùng `nextCursor` tới khi null. Thứ tự giảm dần theo thời điểm tải và ID tệp; dữ liệu cũ thiếu thời điểm tải dùng thời điểm tạo giấy tờ.
+- OpenAPI tại `frontend/src/api/openapi.json` đã cập nhật. Trang tiếp nhận/đối chiếu frontend hiện dùng dữ liệu mẫu; phần nối API cần dùng hợp đồng mới và cung cấp bước xác nhận metadata (xem `docs/tasks/frontend.md`).
+
+Các kiểm thử hồi quy nằm ở `BackendReliabilityTests` (đồng thời, quyền, metadata, hủy/khôi phục, tìm kiếm và phân trang) và `AiQueueModelTests` (thứ tự, ước tính, tràn số). Bộ kiểm thử hiện có tiếp tục kiểm tra dữ liệu dùng chung, SSE theo phân công, nộp lưu và các thao tác lô quét.
+
 ## Đăng nhập thử khi dev
 
 ### Bộ 850 hồ sơ giả lập Từ Liêm

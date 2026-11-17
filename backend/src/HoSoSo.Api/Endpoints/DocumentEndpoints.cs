@@ -21,6 +21,8 @@ internal static class DocumentEndpoints
         documents.MapGet("/{id:guid}/review", async (Guid id, ReviewHandler h, CancellationToken ct) => TypedResults.Ok(await h.ReviewAsync(id, ct))).RequirePermission(Permissions.DocumentEdit).WithSummary("Dữ liệu đối chiếu: gợi ý AI, trường, trang/vùng nguồn, trường cần chú ý");
         documents.MapPut("/{id:guid}/classification", async (Guid id, ClassifyRequest body, ReviewHandler h, CancellationToken ct) => TypedResults.Ok(await h.ClassifyAsync(id, body, ct))).RequirePermission(Permissions.DocumentEdit).WithSummary("Chấp nhận hoặc đổi nhóm, loại giấy tờ");
         documents.MapPatch("/{id:guid}/fields", async (Guid id, EditFieldsRequest body, ReviewHandler h, CancellationToken ct) => TypedResults.Ok(await h.EditFieldsAsync(id, body, ct))).RequirePermission(Permissions.DocumentEdit).WithSummary("Sửa, chuẩn hóa, xác nhận nhiều trường");
+        documents.MapPut("/{id:guid}/metadata", async (Guid id, ReviewMetadataRequest body, ReviewHandler h, CancellationToken ct) => TypedResults.Ok(await h.ReviewMetadataAsync(id, body, ct)))
+            .Validate<ReviewMetadataRequest>().RequirePermission(Permissions.DocumentEdit).WithSummary("Xác nhận thông tin đầu văn bản và ghi nhận người đối chiếu");
         documents.MapPost("/{id:guid}/verify", async (Guid id, ReviewHandler h, CancellationToken ct) => TypedResults.Ok(await h.VerifyAsync(id, ct))).RequirePermission(Permissions.DocumentEdit).WithSummary("Đánh dấu giấy tờ đã đối chiếu");
         documents.MapPost("/{id:guid}/ai/extract", async (Guid id, AiExtractRequest? body, AiExtractHandler h, CancellationToken ct) =>
                 TypedResults.Ok(await h.ExtractDocumentAsync(id, body ?? new AiExtractRequest(), ct)))

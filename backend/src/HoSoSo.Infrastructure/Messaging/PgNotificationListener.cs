@@ -118,16 +118,19 @@ internal sealed class PgNotificationListener(NpgsqlDataSource dataSource, IEvent
     {
         if (!root.TryGetProperty("dossierId", out var idElement) || !idElement.TryGetGuid(out var dossierId)) return;
         var status = root.TryGetProperty("status", out var s) ? s.GetString() : null;
-        foreach (var subscriber in bus.Subscribers.DistinctBy(x => (x.UserId, x.Assignment)))
-        {
-            if (string.IsNullOrEmpty(subscriber.Assignment)) continue;
-            // Cùng hàm scope_matches như mọi API: người ngoài phạm vi không biết hồ sơ vừa đổi.
-            await using var command = dataSource.CreateCommand("SELECT hoso.scope_matches($1, $2, $3)");
-            command.Parameters.AddWithValue(subscriber.UserId);
-            command.Parameters.AddWithValue(dossierId);
-            command.Parameters.AddWithValue(subscriber.Assignment);
-            if (await command.ExecuteScalarAsync(ct) is true) bus.Publish(subscriber.UserId, "dossier.changed", new { dossierId, status }, subscriber.Assignment);
-        }
+        var subscribers = bus.Subscribers.Where(x => !string.IsNullOrEmpty(x.Assignment)).DistinctBy(x => (x.UserId, x.Assignment)).ToArray();
+        if (subscribers.Length == 0) return;
+        // Giữ nguyên phạm vi theo từng phân công; một lượt DB cho toàn bộ người đang nghe.
+        await using var command = dataSource.CreateCommand("""
+            SELECT s.user_id, s.assignment FROM unnest($1::uuid[], $2::text[]) AS s(user_id, assignment)
+            WHERE hoso.scope_matches(s.user_id, $3, s.assignment)
+            """);
+        command.Parameters.AddWithValue(subscribers.Select(s => s.UserId).ToArray());
+        command.Parameters.AddWithValue(subscribers.Select(s => s.Assignment!).ToArray());
+        command.Parameters.AddWithValue(dossierId);
+        await using var reader = await command.ExecuteReaderAsync(ct);
+        while (await reader.ReadAsync(ct))
+            bus.Publish(reader.GetGuid(0), "dossier.changed", new { dossierId, status }, reader.GetString(1));
     }
 
     private async Task<Guid?> RequesterAsync(Guid jobId, CancellationToken ct) =>

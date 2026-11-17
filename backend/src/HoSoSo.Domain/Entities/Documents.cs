@@ -19,6 +19,9 @@ public sealed class Document
     public DateOnly? IssuedOn { get; set; }
     public string? IssuerOrganizationCode { get; set; }
     public string? IssuerName { get; set; }
+    public Guid? MetadataReviewedBy { get; set; }
+    public DateTimeOffset? MetadataReviewedAt { get; set; }
+    public string MetadataReviewNote { get; set; } = "";
     public string MetadataStatus { get; set; } = "unverified";
     public string DataReviewStatus { get; set; } = "pending";
     public Guid? ReviewedBy { get; set; }

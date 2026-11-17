@@ -37,6 +37,7 @@ public static class LoanStatus
 
 public sealed class Loan
 {
+    public uint Version { get; set; }
     public Guid Id { get; init; } = Guid.NewGuid();
     public Guid DossierId { get; set; }
     public Guid BorrowerId { get; set; }
@@ -54,6 +55,7 @@ public sealed class Loan
 
 public sealed class ArchiveSubmission
 {
+    public uint Version { get; set; }
     public Guid Id { get; init; } = Guid.NewGuid();
     public required string Code { get; set; }
     public required string OrganizationCode { get; set; }
@@ -102,6 +104,9 @@ public sealed class ExportPackage
 
 public sealed class DisposalRequest
 {
+    public int FilesDisposed { get; set; }
+    public int DocumentsKept { get; set; }
+    public uint Version { get; set; }
     public Guid Id { get; init; } = Guid.NewGuid();
     public Guid DossierId { get; set; }
     public Guid RetentionRuleId { get; set; }
@@ -115,4 +120,16 @@ public sealed class DisposalRequest
     public DateTimeOffset? DecidedAt { get; set; }
     public Guid? ExecutedBy { get; set; }
     public DateTimeOffset? ExecutedAt { get; set; }
+}
+
+/// <summary>Danh sách xóa bền vững; worker chỉ hoàn tất sau khi xóa hoặc xác nhận nội dung còn được dùng chung.</summary>
+public sealed class DisposalBlobDeletion
+{
+    public Guid RequestId { get; set; }
+    public required string StorageKey { get; set; }
+    public DateTimeOffset? CompletedAt { get; set; }
+    public bool Deleted { get; set; }
+    public int Attempts { get; set; }
+    public DateTimeOffset NextAttemptAt { get; set; }
+    public string? LastError { get; set; }
 }

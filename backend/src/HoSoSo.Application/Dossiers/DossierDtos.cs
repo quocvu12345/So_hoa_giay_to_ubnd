@@ -8,7 +8,7 @@ public sealed record DossierListItem(
 
 public sealed record DossierDocumentItem(
     Guid DocumentId, int Position, string Title, string DocumentForm, string? DocumentNumber, DateOnly? IssuedOn,
-    string? Direction, string RelationKind, string ReviewStatus, string IntakeStatus, int PendingFields, Guid? ProcedureComponentId = null);
+    string? Direction, string RelationKind, string ReviewStatus, string IntakeStatus, int PendingFields, Guid? ProcedureComponentId = null, string MetadataStatus = "unverified");
 
 public sealed record DossierDetail(
     Guid Id, string Code, string Title, string Status, string StatusLabel, string WorkflowCode,

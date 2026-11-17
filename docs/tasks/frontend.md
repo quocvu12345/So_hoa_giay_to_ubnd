@@ -323,3 +323,15 @@ Mỗi màn đã có tệp `page.tsx` trong `src/app/(app)/…`, đầu trang đ�
 | QA-02 | E2E đủ kịch bản theo vai trò trong `nghiep-vu-vai-tro.html` | 3 |
 | QA-05 | Kiểm tra tiếp cận (axe + bàn phím) 10 màn chính | 1 |
 | OPS-01 | Docker image `node .next/standalone/server.js` (không dùng `next start` với `output: standalone`), chạy không phải root | 0,5 |
+
+
+## Hợp đồng backend cập nhật 17/11/2026 (BE-103, BE-107)
+
+Các trang `tiep-nhan` và đối chiếu đang dùng dữ liệu mẫu, chưa có nơi gọi inbox thật cần đổi trong đợt backend này. Khi nối API:
+
+- Inbox nhận `{ items, nextCursor }` từ `GET /intake/inbox`, mặc định 50, tối đa 200; nút tải thêm dùng `cursor=nextCursor`, reset cursor khi đổi bộ lọc. Không coi phản hồi là mảng.
+- Màn đối chiếu cần cho người dùng kiểm tra và xác nhận tiêu đề, hình thức, số văn bản, ngày ban hành qua `PUT /documents/{id}/metadata` kèm `version` mới nhất. Hiển thị người/thời điểm/ghi chú xác nhận; khi 409 tải lại dữ liệu để người dùng kiểm tra.
+- `needs_review` ở metadata làm checklist/actions chưa sẵn sàng dù các trường OCR đã xác nhận. Nếu sửa giá trị metadata, backend đặt review về `pending`; cần xác nhận giấy tờ lại. Không tự động gọi xác nhận thay người dùng.
+- Màn hủy chỉ báo hoàn tất khi trạng thái `executed`. `executing` nghĩa là đã nhận yêu cầu và đang xử lý/thử lại; đọc lại trạng thái, không tự gửi execute lần nữa.
+
+OpenAPI đã xuất lại ở `frontend/src/api/openapi.json`; các phần nối API/UI trên vẫn thuộc task frontend hiện có.

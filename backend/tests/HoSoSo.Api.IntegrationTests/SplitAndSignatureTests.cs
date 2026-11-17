@@ -84,7 +84,7 @@ public sealed class SplitAndSignatureTests(DbApiFactory api) : IClassFixture<DbA
         // Tệp gốc nguyên vẹn.
         (await api.ScalarAsync<string>("SELECT sha256 FROM hoso.files WHERE id = $1", up.FileId)).ShouldBe(Convert.ToHexStringLower(System.Security.Cryptography.SHA256.HashData(await File.ReadAllBytesAsync(Path.Combine(Samples, "public-019.pdf"), TestContext.Current.CancellationToken))));
 
-        var inbox = await (await http.GetAsync("/api/v1/intake/inbox")).ReadAsync<List<InboxDto>>();
+        var inbox = (await (await http.GetAsync("/api/v1/intake/inbox")).ReadAsync<PageDto<InboxDto>>()).Items;
         inbox.Count(i => result.Children.Any(c => c.DocumentId == i.DocumentId)).ShouldBe(3);
         inbox.ShouldNotContain(i => i.DocumentId == up.DocumentId);
 

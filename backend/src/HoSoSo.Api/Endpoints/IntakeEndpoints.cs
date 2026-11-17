@@ -31,7 +31,7 @@ internal static class IntakeEndpoints
             .RequireRateLimiting(SecuritySetup.UploadPolicy)
             .WithMetadata(new RequestSizeLimitAttribute(uploadMaxBytes))
             .WithSummary("Tải PDF lên: tính SHA-256, chống trùng, xếp hàng đọc. Trùng trả 409 duplicate_file kèm id giấy tờ cũ");
-        intake.MapGet("/inbox", async (string? status, IntakeHandler h, CancellationToken ct) => TypedResults.Ok(await h.InboxAsync(status, ct)))
+        intake.MapGet("/inbox", async (string? status, string? cursor, int? limit, IntakeHandler h, CancellationToken ct) => TypedResults.Ok(await h.InboxAsync(status, cursor, limit ?? 50, ct)))
             .RequirePermission(Permissions.IntakeUpload).WithSummary("Hộp tiếp nhận theo trạng thái inbox | filed | discarded");
         intake.MapPost("/documents/{id:guid}/discard", async (Guid id, IntakeHandler h, CancellationToken ct) =>
             {

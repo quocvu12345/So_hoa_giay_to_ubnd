@@ -181,8 +181,8 @@ internal static class ModelMapping
             e.Property(x => x.Id).UseIdentityAlwaysColumn();
             e.Property(x => x.MovedAt).HasDefaultValueSql("now()");
         });
-        m.Entity<Loan>(e => { e.ToTable("loans"); e.HasKey(x => x.Id); e.Property(x => x.RequestedAt).HasDefaultValueSql("now()"); });
-        m.Entity<ArchiveSubmission>(e => { e.ToTable("archive_submissions"); e.HasKey(x => x.Id); e.Property(x => x.CreatedAt).HasDefaultValueSql("now()"); });
+        m.Entity<Loan>(e => { e.ToTable("loans"); e.HasKey(x => x.Id); Xmin(e.Property(x => x.Version)); e.Property(x => x.RequestedAt).HasDefaultValueSql("now()"); });
+        m.Entity<ArchiveSubmission>(e => { e.ToTable("archive_submissions"); e.HasKey(x => x.Id); Xmin(e.Property(x => x.Version)); e.Property(x => x.CreatedAt).HasDefaultValueSql("now()"); });
         m.Entity<ArchiveSubmissionItem>(e => { e.ToTable("archive_submission_items"); e.HasKey(x => new { x.SubmissionId, x.DossierId }); });
         m.Entity<ExportPackage>(e =>
         {
@@ -190,7 +190,8 @@ internal static class ModelMapping
             e.Property(x => x.Scope).HasColumnType("jsonb");
             e.Property(x => x.CreatedAt).HasDefaultValueSql("now()");
         });
-        m.Entity<DisposalRequest>(e => { e.ToTable("disposal_requests"); e.HasKey(x => x.Id); e.Property(x => x.RequestedAt).HasDefaultValueSql("now()"); });
+        m.Entity<DisposalBlobDeletion>(e => { e.ToTable("disposal_blob_deletions"); e.HasKey(x => new { x.RequestId, x.StorageKey }); e.Property(x => x.NextAttemptAt).HasDefaultValueSql("now()"); });
+        m.Entity<DisposalRequest>(e => { e.ToTable("disposal_requests"); e.HasKey(x => x.Id); Xmin(e.Property(x => x.Version)); e.Property(x => x.RequestedAt).HasDefaultValueSql("now()"); });
         m.Entity<Notification>(e =>
         {
             e.ToTable("notifications"); e.HasKey(x => x.Id);

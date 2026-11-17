@@ -86,6 +86,8 @@ public static class DependencyInjection
         }
         services.AddSingleton<HoSoSo.Application.Documents.IDocumentRenderer, HoSoSo.Infrastructure.Pdf.DocumentRenderer>();
         services.AddSingleton<IEventBus, InMemoryEventBus>();
+        services.AddSingleton<DisposalProcessor>();
+        services.AddSingleton<HoSoSo.Application.Operations.IDisposalProcessor>(p => p.GetRequiredService<DisposalProcessor>());
         // Tác vụ nền (LISTEN, outbox, thu hồi job treo). Tắt bằng Background:Enabled=false (kiểm thử không có CSDL, lệnh migrate).
         if (configuration.GetValue("Background:Enabled", true))
         {
@@ -95,6 +97,7 @@ public static class DependencyInjection
             services.AddHostedService<DueReminderService>();
             services.AddHostedService<StorageMaintenanceService>();
             services.AddHostedService<ExportWorker>();
+            services.AddHostedService(p => p.GetRequiredService<DisposalProcessor>());
             services.AddHostedService<BackupWatchdogService>();
             services.AddHostedService<SessionCleanupService>();
         }

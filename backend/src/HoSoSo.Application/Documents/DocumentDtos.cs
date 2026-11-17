@@ -6,7 +6,7 @@ public sealed record DossierRef(Guid Id, string Code, string Title, string Statu
 
 public sealed record DocumentDetail(
     Guid Id, string Title, string DocumentForm, string? DocumentNumber, DateOnly? IssuedOn, string Origin, string IntakeStatus,
-    string ReviewStatus, string MetadataStatus, uint Version, FileInfoDto? File, ClassificationDto? Classification, IReadOnlyList<DossierRef> Dossiers);
+    string ReviewStatus, string MetadataStatus, uint Version, FileInfoDto? File, ClassificationDto? Classification, IReadOnlyList<DossierRef> Dossiers, Guid? MetadataReviewedBy = null, DateTimeOffset? MetadataReviewedAt = null, string MetadataReviewNote = "");
 
 public sealed record ReviewSuggestion(
     long Id, string? WorkGroupCode, string? WorkGroupTitle, string? DocumentTypeCode, string? DocumentTypeName, string DocumentForm,
@@ -25,3 +25,6 @@ public sealed record ReviewData(DocumentDetail Document, ReviewSuggestion? Sugge
 public sealed record ClassifyRequest(string WorkGroupCode, string DocumentTypeCode);
 public sealed record FieldEdit(string FieldCode, string? Value, bool Verify);
 public sealed record EditFieldsRequest(IReadOnlyList<FieldEdit> Fields);
+
+/// <summary>Người dùng đã kiểm tra thông tin đầu văn bản; Version chống ghi đè bản người khác vừa sửa.</summary>
+public sealed record ReviewMetadataRequest(uint Version, string Title, string DocumentForm, string? DocumentNumber, DateOnly? IssuedOn, string? Note);

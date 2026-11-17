@@ -688,3 +688,34 @@ Worker chỉ chạy khay nền khi không còn việc mức 1–3. Job nền đa
   3. Trang vận hành (FE-44) hiện mục này cạnh "Hàng đợi AI theo khay".
 - **Kết quả:** `AiStatus.RunningModels` (mô hình thật của job hoàn tất 24 giờ qua, kèm số job) và `ModelMismatch` (so job gần nhất với dòng `classifier` trong `ai_models`; job chưa ghi mô hình thì bỏ qua). Test `AdminOpsTests`: worker còn chạy 4B trong khi `ai_models` ghi 1.7B thì có cảnh báo nêu cả hai tên; có job mới hơn chạy 1.7B thì hết cảnh báo mà 4B vẫn nằm trong lịch sử. **Chưa có chỗ hiện trên giao diện:** phần `runningModels`/`modelMismatch` chưa được đưa vào `AiQueuePanel` (FE-44).
 
+
+## P6 · Sửa lỗi luồng tổng thể (17/11/2026)
+
+Căn cứ: `artifacts/backend-review-2026-11-17/REPORT.md`. Mỗi task phải có test hồi quy kiểm hành vi đúng trước khi đánh dấu hoàn tất.
+
+| Task | Phạm vi | Tiêu chí hoàn tất | Trạng thái |
+|---|---|---|---|
+| BE-101 | Hủy tệp có thể phục hồi | Commit metadata và hàng đợi trước khi xóa blob; lỗi kho/tiến trình được thử lại; không phục hồi tham chiếu tệp đã xóa | Hoàn tất |
+| BE-102 | Sửa giấy tờ và chuyển bước đồng thời | Sửa/phân loại/xác nhận và thêm/gỡ giấy tờ dùng khóa thống nhất; không ghi sau khi đã trình | Hoàn tất |
+| BE-103 | Đối chiếu metadata | Có bước xác nhận metadata có dấu vết; checklist/actions khớp SQL; không tự xác nhận dữ liệu cũ | Hoàn tất |
+| BE-104 | Mượn trả và hủy | Chặn mượn hồ sơ đang/đã hủy; quyết định đối nghịch chỉ một bên thành công | Hoàn tất |
+| BE-105 | Tìm kiếm trong phạm vi | Lọc quyền/bộ lọc trước LIMIT; không bỏ sót vì 5.000 kết quả ngoài phạm vi | Hoàn tất |
+| BE-106 | Vòng đời preview | Ảnh khác kích thước cache không ghi blob mồ côi | Hoàn tất |
+| BE-107 | Phân trang inbox | Cursor ổn định, lấy đủ trên 200 mục; cập nhật hợp đồng API và nơi dùng | Hoàn tất |
+| BE-108 | Giảm truy vấn dư | Truy vấn riêng một lô, tính thứ hạng hàng đợi một lần, gom kiểm quyền SSE; kiểm đo trước/sau thích hợp | Hoàn tất |
+| BE-109 | Kiểm thử và tài liệu | Test tích hợp PostgreSQL, build, hợp đồng frontend, hướng dẫn migration và trạng thái cuối | Hoàn tất |
+
+
+**Kết quả triển khai:**
+
+- **BE-101:** migration 034, `IDisposalProcessor` và worker xóa sau commit. Có kiểm thử lỗi commit ở cả bước chuẩn bị và bước hoàn tất, lỗi kho/thử lại, nội dung dùng chung. Hủy đồng thời dừng job OCR; chặn tạo job/đọc lại trang và gắn giấy tờ đã hủy vào hồ sơ khác. Trạng thái `executing` là đang xử lý, chưa báo hoàn tất.
+- **BE-102:** `MutationLocks` giữ khóa giấy tờ rồi khóa hồ sơ theo thứ tự thống nhất; có kiểm thử cả sửa trước trình và trình trước sửa. Thêm/gỡ giấy tờ cũng tuân thủ khóa này.
+- **BE-103:** `PUT /documents/{id}/metadata` với `version`; migration 035 lưu người/thời điểm/ghi chú, nhật ký ghi cả thay đổi. Checklist, danh sách, thành phần thủ tục và actions phản ánh `needs_review`. Sửa giá trị làm review về `pending`; dữ liệu cũ giữ nguyên trạng thái.
+- **BE-104:** các thao tác mượn khóa cùng hồ sơ với hủy; chặn `executing`/`executed`; xmin bảo vệ quyết định mượn, đề nghị hủy và đợt nộp lưu. Kiểm thử approve/reject đồng thời chỉ tạo một quyết định/thông báo.
+- **BE-105:** bỏ LIMIT toàn cục trong CTE tìm kiếm; kết quả và tổng được tính sau lọc phạm vi/bộ lọc. Kiểm thử một giấy tờ nhìn thấy được sau 5.001 kết quả xếp hạng cao ngoài phạm vi.
+- **BE-106:** preview ngoài 800 px chỉ trả nội dung/ETag, không ghi kho. Cache 800 px khóa và kiểm lại tệp chưa hủy trước khi lưu tham chiếu.
+- **BE-107:** inbox trả `Page<InboxItem>`, cursor theo thời điểm tải + ID tệp, mặc định 50/tối đa 200. Kiểm thử lấy đủ 201 tệp trùng thời điểm, không lặp, cursor sai trả 400; cập nhật nơi dùng trong test và OpenAPI. Frontend tiếp nhận hiện là dữ liệu mẫu; ghi rõ hợp đồng tích hợp trong task frontend.
+- **BE-108:** đọc/tạo/đóng một lô chỉ truy vấn lô đó; hàng đợi sắp xếp một lần, cộng dồn số trang và tìm nhị phân; SSE dùng một truy vấn kiểm phạm vi cho mọi phân công đang nghe. Thử nghiệm cục bộ 10.000 job/1.000 lượt tra cứu: quét lại 115,47 ms, dựng chỉ mục + tra cứu 3,62 ms, kết quả giống nhau; đây là phép đo thuật toán, chưa phải benchmark tải production. Các test SSE/phân công và lô quét hiện có đạt.
+- **BE-109:** build, kiểm thử PostgreSQL thật và hợp đồng OpenAPI; hướng dẫn áp dụng migration/vận hành được bổ sung ở `backend/README.md`. Migration chỉ chạy trên CSDL kiểm thử riêng, chưa áp dụng lên `hoso_dev`/production. Không tự xác nhận metadata cho dữ liệu đang có.
+
+**Kiểm chứng:** `BackendReliabilityTests` có 12 ca hồi quy; `AiQueueModelTests` có 2 ca tính đúng/giới hạn. Lệnh kiểm toàn bộ: chạy từ `backend/`, đặt `HOSO_TEST_PG` trỏ PostgreSQL kiểm thử và `DOTNET_ROLL_FORWARD=Major`, rồi `dotnet test --solution HoSoSo.slnx --no-restore`. Lần chạy toàn bộ ngày 17/11/2026: **328 test, 313 đạt, 0 lỗi, 15 S3 bỏ qua** vì cần môi trường S3/MinIO riêng.

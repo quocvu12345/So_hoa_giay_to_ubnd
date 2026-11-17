@@ -107,13 +107,14 @@ public sealed class AiExtractHandler(IHoSoDb db, IScopeFilter scope, ICurrentUse
 
     private async Task<Outcome> ExtractOneAsync(Guid documentId, Guid me, bool force, CancellationToken ct)
     {
+        await using var transaction = await db.Database.BeginTransactionAsync(ct);
+        await MutationLocks.DocumentAsync(db, documentId, ct);
         var file = await db.Read<FileRecord>()
             .Where(f => f.DocumentId == documentId && f.FileRole == "scan" && f.DisposedAt == null && f.StorageKey != null)
             .OrderByDescending(f => f.UploadedAt).ThenByDescending(f => f.VersionNo)
             .Select(f => new { f.Id, f.PageCount }).FirstOrDefaultAsync(ct);
         if (file is null) return new Outcome(documentId, null, null, "skipped", "Giấy tờ chưa có tệp quét để đọc.");
 
-        await using var transaction = await db.Database.BeginTransactionAsync(ct);
         // Hai người cùng bấm cho một giấy tờ: tuần tự theo tệp, nên không tạo việc trùng.
         await db.Database.ExecuteSqlAsync($"SELECT pg_advisory_xact_lock(hashtextextended({file.Id.ToString()}, 0))", ct);
         Outcome? result = null;

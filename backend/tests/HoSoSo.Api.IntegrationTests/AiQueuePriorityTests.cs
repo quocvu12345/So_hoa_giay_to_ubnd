@@ -34,7 +34,7 @@ public sealed class AiQueuePriorityTests(DbApiFactory api) : IClassFixture<DbApi
 
         (await api.ScalarAsync<short>("SELECT priority FROM hoso.ocr_jobs WHERE id = $1", up.JobId)).ShouldBe((short)7);
         (await JobAsync(http, up.JobId)).QueueKind.ShouldBe("background");
-        var inbox = await (await http.GetAsync("/api/v1/intake/inbox")).ReadAsync<List<InboxDto>>();
+        var inbox = (await (await http.GetAsync("/api/v1/intake/inbox")).ReadAsync<PageDto<InboxDto>>()).Items;
         inbox.Single(i => i.DocumentId == up.DocumentId).QueueKind.ShouldBe("background");
     }
 

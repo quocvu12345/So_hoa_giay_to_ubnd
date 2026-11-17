@@ -13,14 +13,24 @@ public sealed class AiQueueModel
     /// <summary>Số trang OCR tối thiểu trong 24 giờ để tin con số trung vị.</summary>
     public const int MinSamples = 3;
 
-    private readonly IReadOnlyList<Entry> _active;
+    private readonly Entry[] _queued;
+    private readonly long[] _prefixPages;
+    private readonly long _runningPages, _foregroundRunningPages;
+    private readonly int _runningJobs, _foregroundRunningJobs;
     private readonly double? _secondsPerOcrPage;
     private readonly double _ocrShare;
     private readonly double _otherSecondsPerJob;
 
     internal AiQueueModel(IReadOnlyList<Entry> active, double? secondsPerOcrPage, double ocrShare, double otherSecondsPerJob)
     {
-        _active = active;
+        _queued = active.Where(e => e.Queued).OrderBy(e => e.Priority).ThenBy(e => e.At).ToArray();
+        _prefixPages = new long[_queued.Length + 1];
+        for (var i = 0; i < _queued.Length; i++) _prefixPages[i + 1] = _prefixPages[i] + _queued[i].PagesLeft;
+        var running = active.Where(e => !e.Queued).ToArray();
+        _runningPages = running.Sum(e => (long)e.PagesLeft);
+        _runningJobs = running.Length;
+        _foregroundRunningPages = running.Sum(e => (long)(e.Priority >= QueuePriority.BackgroundFrom ? Math.Min(1, e.PagesLeft) : e.PagesLeft));
+        _foregroundRunningJobs = running.Count(e => e.Priority < QueuePriority.BackgroundFrom);
         _secondsPerOcrPage = secondsPerOcrPage;
         _ocrShare = ocrShare;
         _otherSecondsPerJob = otherSecondsPerJob;
@@ -34,7 +44,20 @@ public sealed class AiQueueModel
     private static bool Before(Entry e, short priority, DateTimeOffset at) => e.Priority < priority || (e.Priority == priority && e.At < at);
 
     /// <summary>Vị trí trong hàng đợi, đúng thứ tự worker lấy việc: mức ưu tiên, rồi lúc nâng mức (nếu có) hoặc lúc tạo.</summary>
-    public int Position(short priority, DateTimeOffset queuedAt) => 1 + _active.Count(e => e.Queued && Before(e, priority, queuedAt));
+    public int Position(short priority, DateTimeOffset queuedAt) => 1 + BeforeCount(priority, queuedAt);
+
+    private int BeforeCount(short priority, DateTimeOffset at)
+    {
+        var lo = 0;
+        var hi = _queued.Length;
+        while (lo < hi)
+        {
+            var mid = lo + (hi - lo) / 2;
+            if (Before(_queued[mid], priority, at)) lo = mid + 1;
+            else hi = mid;
+        }
+        return lo;
+    }
 
     /// <summary>
     /// Giây chờ ước tính tới khi việc này xong. Việc đang chạy luôn ở trước; riêng việc nền đang chạy chỉ chắn một trang nếu việc này là việc ưu tiên
@@ -43,21 +66,17 @@ public sealed class AiQueueModel
     public int? EtaSeconds(short priority, DateTimeOffset queuedAt, int ownPages)
     {
         if (SecondsPerPage is not { } perPage) return null;
-        var pages = Math.Max(1, ownPages);
-        var jobs = 1;
-        foreach (var e in _active)
-        {
-            if (e.Queued && !Before(e, priority, queuedAt)) continue;
-            var yields = !e.Queued && e.Priority >= QueuePriority.BackgroundFrom && priority < QueuePriority.BackgroundFrom;
-            pages += yields ? Math.Min(1, e.PagesLeft) : e.PagesLeft;
-            if (!yields) jobs++;
-        }
-        return (int)Math.Round(pages * perPage + jobs * _otherSecondsPerJob);
+        var before = BeforeCount(priority, queuedAt);
+        var foreground = priority < QueuePriority.BackgroundFrom;
+        var pages = Math.Max(1, ownPages) + _prefixPages[before] + (foreground ? _foregroundRunningPages : _runningPages);
+        var jobs = 1 + before + (foreground ? _foregroundRunningJobs : _runningJobs);
+        return Seconds(pages * perPage + jobs * _otherSecondsPerJob);
     }
 
     /// <summary>Giây còn lại của việc đang chạy.</summary>
     public int? RemainingSeconds(int pagesLeft) =>
-        SecondsPerPage is { } perPage ? (int)Math.Round(Math.Max(0, pagesLeft) * perPage + _otherSecondsPerJob) : null;
+        SecondsPerPage is { } perPage ? Seconds(Math.Max(0, pagesLeft) * perPage + _otherSecondsPerJob) : null;
+    private static int Seconds(double value) => (int)Math.Clamp(Math.Round(value), 0, int.MaxValue);
 }
 
 public sealed class AiQueueEstimator(IHoSoDb db)

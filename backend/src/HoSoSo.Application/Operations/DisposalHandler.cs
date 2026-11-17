@@ -21,9 +21,8 @@ public sealed record DisposalResult(DisposalDto Disposal, int FilesDisposed, int
 /// và đã đủ số năm, không đang được mượn, mới được đề nghị. Người phê duyệt khác người đề nghị.
 /// Thực hiện xóa nội dung (tệp, ảnh trang, chữ OCR) của các giấy tờ nội bộ chỉ thuộc hồ sơ này; giữ dòng metadata, nhật ký và văn bản quyết định.
 /// </summary>
-public sealed class DisposalHandler(IHoSoDb db, IScopeFilter scope, ICurrentUser user, IClock clock, IFileStorage storage)
+public sealed class DisposalHandler(IHoSoDb db, IScopeFilter scope, ICurrentUser user, IClock clock, IDisposalProcessor processor)
 {
-    private static readonly string[] OpenStatuses = ["requested", "approved"];
     private static readonly string[] ActiveLoans = [LoanStatus.Approved, LoanStatus.Lent, LoanStatus.Overdue];
 
     private sealed record FileKeyRow(Guid id, string? storage_key);
@@ -54,7 +53,7 @@ public sealed class DisposalHandler(IHoSoDb db, IScopeFilter scope, ICurrentUser
         var latest = now.AddYears(-rules.Min(r => r.RetentionYears!.Value));
         var candidates = await scope.Dossiers(db.Read<Dossier>())
             .Where(d => d.OrganizationCode == organization && d.Status == "archived" && d.ArchivedAt <= latest
-                        && !db.Read<DisposalRequest>().Any(x => x.DossierId == d.Id && (x.Status == "requested" || x.Status == "approved" || x.Status == "executed")))
+                        && !db.Read<DisposalRequest>().Any(x => x.DossierId == d.Id && (x.Status == "requested" || x.Status == "approved" || x.Status == "executing" || x.Status == "executed")))
             .OrderBy(d => d.ArchivedAt).Take(500).ToListAsync(ct);
         var result = new List<EligibleDossierDto>();
         foreach (var d in candidates)
@@ -71,21 +70,29 @@ public sealed class DisposalHandler(IHoSoDb db, IScopeFilter scope, ICurrentUser
     {
         var me = user.RequireUserId();
         var organization = RequireOrganization();
+        await using var transaction = await db.Database.BeginTransactionAsync(ct);
+        await MutationLocks.DossierAsync(db, r.DossierId, ct);
         var dossier = await scope.Dossiers(db.Set<Dossier>()).SingleOrDefaultAsync(d => d.Id == r.DossierId && d.OrganizationCode == organization, ct) ?? throw AppException.NotFound("hồ sơ");
         var rule = await EnsureEligibleAsync(dossier, ct);
-        if (await db.Read<DisposalRequest>().AnyAsync(x => x.DossierId == dossier.Id && (x.Status == "requested" || x.Status == "approved" || x.Status == "executed"), ct))
+        if (await db.Read<DisposalRequest>().AnyAsync(x => x.DossierId == dossier.Id && (x.Status == "requested" || x.Status == "approved" || x.Status == "executing" || x.Status == "executed"), ct))
             throw new AppException(409, "disposal_conflict", "Hồ sơ này đã có đề nghị hủy đang xử lý hoặc đã được hủy.");
         var request = new DisposalRequest { DossierId = dossier.Id, RetentionRuleId = rule.Id, Reason = r.Reason.Trim(), RequestedBy = me };
         dossier.RetentionRuleId = rule.Id;   // ghi lại quy tắc đã dùng làm căn cứ
         db.Set<DisposalRequest>().Add(request);
         Notify("disposal.requested", request, organization);
         await db.SaveChangesAsync(ct);   // hai người cùng đề nghị: chỉ mục duy nhất → 409 disposal_conflict
+        await transaction.CommitAsync(ct);
         return await GetAsync(request.Id, ct);
     }
 
     public async Task<DisposalDto> ApproveAsync(Guid id, ApproveDisposalRequest r, CancellationToken ct)
     {
         var me = user.RequireUserId();
+        await using var transaction = await db.Database.BeginTransactionAsync(ct);
+        await MutationLocks.DocumentAsync(db, r.DecisionDocumentId, ct);
+        var dossierId = await db.Read<DisposalRequest>().Where(x => x.Id == id).Select(x => (Guid?)x.DossierId).SingleOrDefaultAsync(ct)
+            ?? throw AppException.NotFound("đề nghị hủy");
+        await MutationLocks.DossierAsync(db, dossierId, ct);
         var (request, dossier) = await LoadAsync(id, ct);
         if (request.Status != "requested") throw AppException.Conflict("Chỉ phê duyệt được đề nghị đang chờ.");
         if (request.RequestedBy == me) throw new AppException(403, ErrorCodes.Forbidden, "Người phê duyệt phải khác người đề nghị hủy.");
@@ -105,6 +112,7 @@ public sealed class DisposalHandler(IHoSoDb db, IScopeFilter scope, ICurrentUser
         request.DecisionNote = r.Note?.Trim() ?? "";
         Notify("disposal.approved", request, dossier.OrganizationCode);
         await db.SaveChangesAsync(ct);
+        await transaction.CommitAsync(ct);
         return await GetAsync(id, ct);
     }
 
@@ -123,22 +131,29 @@ public sealed class DisposalHandler(IHoSoDb db, IScopeFilter scope, ICurrentUser
     }
 
     /// <summary>
-    /// Xóa nội dung. Một giao dịch cho phần dữ liệu; các tệp trên kho xóa TRƯỚC khi xác nhận giao dịch: nếu lần xác nhận hỏng thì đề nghị vẫn "approved"
-    /// và thực hiện lại là an toàn (tệp đã mất thì bỏ qua), còn ngược lại sẽ để lại tệp mồ côi mà dữ liệu báo là đã hủy.
+    /// Chặn nội dung và ghi hàng đợi xóa trong một giao dịch; chỉ xóa blob sau COMMIT. Worker tiếp tục khi kho lỗi hoặc request bị ngắt.
     /// </summary>
     public async Task<DisposalResult> ExecuteAsync(Guid id, CancellationToken ct)
     {
         var me = user.RequireUserId();
+        // Giữ liên kết giấy tờ ổn định trong lúc chọn nội dung cần hủy.
+        var initial = await LoadAsync(id, ct);
+        var documentLocks = await db.Read<DossierDocument>().Where(l => l.DossierId == initial.Dossier.Id).OrderBy(l => l.DocumentId).Select(l => l.DocumentId).ToListAsync(ct);
+        db.ChangeTracker.Clear();
+        await using var transaction = await db.Database.BeginTransactionAsync(ct);
+        foreach (var documentId in documentLocks) await MutationLocks.DocumentAsync(db, documentId, ct);
+        await MutationLocks.DossierAsync(db, initial.Dossier.Id, ct);
         var (request, dossier) = await LoadAsync(id, ct);
+        if (request.Status == "executing")
+            throw AppException.Conflict("Đề nghị này đang thực hiện; hệ thống sẽ tiếp tục thử lại khi kho tệp sẵn sàng.");
         if (request.Status != "approved")
             throw AppException.Conflict(request.Status == "executed" ? "Đề nghị này đã được thực hiện." : "Chỉ thực hiện được đề nghị đã phê duyệt kèm văn bản quyết định.");
-        await EnsureNoActiveLoanAsync(dossier.Id, ct);
+        await EnsureEligibleAsync(dossier, ct);
         var now = clock.UtcNow;
 
-        await using var transaction = await db.Database.BeginTransactionAsync(ct);
-        // Chốt trạng thái trước tiên bằng một câu lệnh có điều kiện: hai yêu cầu thực hiện cùng lúc thì yêu cầu sau chờ khóa dòng rồi thấy "executed" và bị từ chối.
+        // Chốt trạng thái trước tiên bằng một câu lệnh có điều kiện: hai yêu cầu thực hiện cùng lúc chỉ một yêu cầu được nhận.
         var claimed = await db.Database.ExecuteSqlInterpolatedAsync(
-            $"UPDATE hoso.disposal_requests SET status = 'executed', executed_by = {me}, executed_at = {now} WHERE id = {request.Id} AND status = 'approved'", ct);
+            $"UPDATE hoso.disposal_requests SET status = 'executing', executed_by = {me} WHERE id = {request.Id} AND status = 'approved'", ct);
         if (claimed != 1) throw AppException.Conflict("Đề nghị này vừa được thực hiện bởi người khác.");
         // Giấy tờ chỉ thuộc hồ sơ này và do nội bộ tạo: giấy tờ công khai, giấy tờ dùng chung nhiều hồ sơ, văn bản quyết định và biên bản nộp lưu được giữ nguyên.
         var documents = await db.Database.SqlQuery<Guid>($"""
@@ -151,6 +166,9 @@ public sealed class DisposalHandler(IHoSoDb db, IScopeFilter scope, ICurrentUser
         var totalDocuments = await db.Read<DossierDocument>().CountAsync(l => l.DossierId == dossier.Id, ct);
         var documentIds = documents.ToArray();
 
+        // Worker khóa job trước khi ghi trang; lấy khóa cùng thứ tự job → file để tránh deadlock.
+        // Khóa giấy tờ phía trên cũng ngăn API tạo job mới trong lúc hủy.
+        await db.Database.ExecuteSqlInterpolatedAsync($"UPDATE hoso.ocr_jobs SET status = 'cancelled', started_at = coalesce(started_at, {now}), finished_at = {now}, locked_by = NULL WHERE file_id IN (SELECT id FROM hoso.files WHERE document_id = ANY({documentIds})) AND status IN ('queued','running')", ct);
         var files = await db.Database.SqlQuery<FileKeyRow>($"SELECT id, storage_key FROM hoso.files WHERE document_id = ANY({documentIds}) AND disposed_at IS NULL FOR UPDATE").ToListAsync(ct);
         var fileIds = files.Select(f => f.id).ToArray();
         var keys = files.Where(f => f.storage_key is not null).Select(f => f.storage_key!).ToList();
@@ -168,21 +186,21 @@ public sealed class DisposalHandler(IHoSoDb db, IScopeFilter scope, ICurrentUser
         await db.Database.ExecuteSqlInterpolatedAsync($"UPDATE hoso.dossiers SET storage_location_id = NULL, physical_location = NULL, updated_at = {now} WHERE id = {dossier.Id}", ct);
 
 
-        var deleted = 0;
         foreach (var key in keys.Distinct())
-        {
-            var shared = (await db.Database.SqlQuery<bool>($"""
-                SELECT (EXISTS (SELECT 1 FROM hoso.files WHERE storage_key = {key} AND disposed_at IS NULL)
-                     OR EXISTS (SELECT 1 FROM hoso.form_templates WHERE storage_key = {key})
-                     OR EXISTS (SELECT 1 FROM hoso.export_packages WHERE storage_key = {key} AND status = 'ready')) AS "Value"
-                """).ToListAsync(ct)).Single();
-            if (shared) continue;
-            try { if (await storage.DeleteAsync(key, ct)) deleted++; }
-            catch (ArgumentException) { /* khóa không đúng dạng kho tệp: không có gì để xóa */ }
-        }
-        await transaction.CommitAsync(ct);
+            await db.Database.ExecuteSqlInterpolatedAsync($"INSERT INTO hoso.disposal_blob_deletions(request_id, storage_key) VALUES ({id}, {key}) ON CONFLICT DO NOTHING", ct);
+        var kept = totalDocuments - documentIds.Length;
+        await db.Database.ExecuteSqlInterpolatedAsync($"UPDATE hoso.disposal_requests SET files_disposed = {fileIds.Length}, documents_kept = {kept} WHERE id = {id}", ct);
+        await transaction.CommitAsync(ct); // Tới đây metadata và danh sách xóa đã bền vững. Chưa xóa blob nào.
 
-        return new DisposalResult(await GetAsync(id, ct), fileIds.Length, deleted, totalDocuments - documentIds.Length);
+        await processor.ProcessAsync(id, ct); // Cố gắng hoàn tất ngay; lỗi kho được worker thử lại.
+        return await ResultAsync(id, ct);
+    }
+
+    private async Task<DisposalResult> ResultAsync(Guid id, CancellationToken ct)
+    {
+        var counts = await db.Read<DisposalRequest>().Where(r => r.Id == id).Select(r => new { r.FilesDisposed, r.DocumentsKept }).SingleAsync(ct);
+        var deleted = (await db.Database.SqlQuery<int>($"SELECT count(*)::int AS \"Value\" FROM hoso.disposal_blob_deletions WHERE request_id = {id} AND deleted").ToListAsync(ct)).Single();
+        return new DisposalResult(await GetAsync(id, ct), counts.FilesDisposed, deleted, counts.DocumentsKept);
     }
 
     // ---- nội bộ ----

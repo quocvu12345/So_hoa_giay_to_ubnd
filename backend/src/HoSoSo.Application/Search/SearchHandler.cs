@@ -33,9 +33,6 @@ public sealed record SearchFilters(string? DocumentType = null, string? WorkGrou
 /// </summary>
 public sealed partial class SearchHandler(IHoSoDb db, IScopeFilter scope, ICurrentUser user, IAccessLog access)
 {
-    /// <summary>Số khớp tối đa lấy từ SQL trước khi lọc phạm vi; tránh một từ quá phổ biến quét cả kho.</summary>
-    private const int CandidateCap = 5000;
-
     [GeneratedRegex(@"[\p{L}\p{N}]+")]
     private static partial Regex Tokens();
 
@@ -109,7 +106,7 @@ public sealed partial class SearchHandler(IHoSoDb db, IScopeFilter scope, ICurre
             SELECT document_id, max(rank) AS rank, (array_agg(page ORDER BY rank DESC) FILTER (WHERE page IS NOT NULL))[1] AS page,
                    (array_agg(snippet ORDER BY rank DESC) FILTER (WHERE snippet IS NOT NULL))[1] AS snippet
             FROM (SELECT * FROM meta UNION ALL SELECT * FROM body) u
-            GROUP BY document_id ORDER BY max(rank) DESC LIMIT {CandidateCap}
+            GROUP BY document_id
             """);
 
         var documents = scope.Documents(db.Read<Document>()).Where(d => d.IntakeStatus != IntakeStatus.Discarded);

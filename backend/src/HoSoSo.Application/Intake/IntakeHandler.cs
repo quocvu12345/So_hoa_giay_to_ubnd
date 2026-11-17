@@ -32,25 +32,26 @@ public sealed class IntakeHandler(IHoSoDb db, IScopeFilter scope, ICurrentUser u
         };
         db.Set<ScanBatch>().Add(batch);
         await db.SaveChangesAsync(ct);
-        return (await ListBatchesAsync(ct)).Single(b => b.Id == batch.Id);
+        return await BatchesQuery(batch.Id).SingleAsync(ct);
     }
 
-    public async Task<IReadOnlyList<BatchSummary>> ListBatchesAsync(CancellationToken ct)
+    public async Task<IReadOnlyList<BatchSummary>> ListBatchesAsync(CancellationToken ct) => await BatchesQuery().ToListAsync(ct);
+
+    private IQueryable<BatchSummary> BatchesQuery(Guid? id = null)
     {
         var organization = user.OrganizationCode;
         var files = db.Read<FileRecord>();
         var issues = db.Read<QualityIssue>();
-        return await db.Read<ScanBatch>().Where(b => b.OrganizationCode == organization)
+        return db.Read<ScanBatch>().Where(b => b.OrganizationCode == organization && (id == null || b.Id == id))
             .OrderByDescending(b => b.OpenedAt)
             .Select(b => new BatchSummary(b.Id, b.Code, b.OrganizationCode, b.DepartmentCode, b.BoxLabel, b.HandedOverBy, b.ExpectedSheetCount,
                 b.ScannedPageCount, files.Count(f => f.ScanBatchId == b.Id), b.Status, b.OpenedAt, b.ClosedAt,
-                issues.Count(i => i.ScanBatchId == b.Id && i.Status == "open")))
-            .ToListAsync(ct);
+                issues.Count(i => i.ScanBatchId == b.Id && i.Status == "open")));
     }
 
     public async Task<BatchDetail> GetBatchAsync(Guid id, CancellationToken ct)
     {
-        var summary = (await ListBatchesAsync(ct)).FirstOrDefault(b => b.Id == id) ?? throw AppException.NotFound("lô quét");
+        var summary = await BatchesQuery(id).SingleOrDefaultAsync(ct) ?? throw AppException.NotFound("lô quét");
         var jobs = db.Read<OcrJob>();
         var files = await db.Read<FileRecord>().Where(f => f.ScanBatchId == id).OrderBy(f => f.UploadedAt)
             .Select(f => new BatchFile(f.DocumentId, f.Id, f.OriginalName, f.PageCount,
@@ -70,7 +71,7 @@ public sealed class IntakeHandler(IHoSoDb db, IScopeFilter scope, ICurrentUser u
         batch.Status = "closed";
         batch.ClosedAt = clock.UtcNow;
         await db.SaveChangesAsync(ct);
-        return (await ListBatchesAsync(ct)).Single(b => b.Id == id);
+        return await BatchesQuery(id).SingleAsync(ct);
     }
 
     // ---- Tải PDF lên ----
@@ -201,26 +202,36 @@ public sealed class IntakeHandler(IHoSoDb db, IScopeFilter scope, ICurrentUser u
     }
 
     // ---- Hộp tiếp nhận ----
-    public async Task<IReadOnlyList<InboxItem>> InboxAsync(string? status, CancellationToken ct)
+    public async Task<Page<InboxItem>> InboxAsync(string? status, string? cursor, int limit, CancellationToken ct)
     {
         var me = user.RequireUserId();
         var wanted = status is IntakeStatus.Filed or IntakeStatus.Discarded ? status : IntakeStatus.Inbox;
         var jobs = db.Read<OcrJob>();
         var suggestions = db.Read<AiSuggestion>();
+        limit = Math.Clamp(limit, 1, 200);
+        var after = Cursor.Decode(cursor);
+        var source = from f in db.Read<FileRecord>()
+                     join d in db.Read<Document>() on f.DocumentId equals d.Id
+                     where d.UploadedBy == me && d.IntakeStatus == wanted && f.FileRole == "scan"
+                     select new { f, d, At = f.UploadedAt ?? d.CreatedAt };
+        if (after is { } key)
+            source = source.Where(x => x.At < key.At || (x.At == key.At && x.f.Id.CompareTo(key.Id) < 0));
         var rows = await (
-            from f in db.Read<FileRecord>()
-            join d in db.Read<Document>() on f.DocumentId equals d.Id
-            where d.UploadedBy == me && d.IntakeStatus == wanted && f.FileRole == "scan"
-            orderby f.UploadedAt descending
+            from x in source
+            let f = x.f
+            let d = x.d
+            orderby x.At descending, f.Id descending
             select new
             {
-                d.Id, FileId = f.Id, f.OriginalName, f.PageCount, f.UploadedAt, d.IntakeStatus,
+                d.Id, FileId = f.Id, f.OriginalName, f.PageCount, UploadedAt = x.At, d.IntakeStatus,
                 Job = jobs.Where(j => j.FileId == f.Id && j.JobType == "read_classify").OrderByDescending(j => j.CreatedAt)
                     .Select(j => new { j.Id, j.Status, j.Priority, j.CreatedAt, j.PrioritizedAt, j.ProcessedPages, j.PageCount, j.ErrorMessage }).FirstOrDefault(),
                 Suggestion = suggestions.Where(s => s.DocumentId == d.Id).OrderByDescending(s => s.CreatedAt).ThenByDescending(s => s.Id)
                     .Select(s => new { s.Id, s.DocumentForm, s.WorkGroupCode }).FirstOrDefault(),
-            }).Take(200).ToListAsync(ct);
+            }).Take(limit + 1).ToListAsync(ct);
 
+        var next = rows.Count > limit ? Cursor.Encode(rows[limit - 1].UploadedAt, rows[limit - 1].FileId) : null;
+        if (rows.Count > limit) rows.RemoveAt(limit);
         var groupTitles = await db.Read<WorkGroup>().ToDictionaryAsync(g => g.Code, g => g.Title, ct);
         var suggestionIds = rows.Where(r => r.Suggestion is not null).Select(r => r.Suggestion!.Id).ToList();
         var attention = await db.Read<AiFieldSuggestion>().Where(a => suggestionIds.Contains(a.SuggestionId) && (a.Value == "" || !a.QuoteVerified))
@@ -243,11 +254,11 @@ public sealed class IntakeHandler(IHoSoDb db, IScopeFilter scope, ICurrentUser u
             string? progress = r.Job is { Status: JobStatus.Running } run ? $"Đang đọc trang {Math.Min(run.ProcessedPages + 1, run.PageCount ?? run.ProcessedPages + 1)}/{run.PageCount?.ToString() ?? "?"}" : null;
             string? label = r.Suggestion is null ? null
                 : r.Suggestion.WorkGroupCode is { } g ? $"{r.Suggestion.DocumentForm} · {g} {groupTitles.GetValueOrDefault(g)}" : r.Suggestion.DocumentForm;
-            items.Add(new InboxItem(r.Id, r.FileId, r.OriginalName, r.PageCount ?? r.Job?.PageCount, r.UploadedAt ?? DateTimeOffset.MinValue, stage, position, progress, label,
+            items.Add(new InboxItem(r.Id, r.FileId, r.OriginalName, r.PageCount ?? r.Job?.PageCount, r.UploadedAt, stage, position, progress, label,
                 r.Suggestion is null ? 0 : attention.GetValueOrDefault(r.Suggestion.Id), r.Job?.Id, r.Job?.ErrorMessage, r.IntakeStatus,
                 r.Job is null ? null : QueuePriority.KindOf(r.Job.Priority), eta));
         }
-        return items;
+        return new Page<InboxItem>(items, next);
     }
 
     public async Task DiscardAsync(Guid documentId, CancellationToken ct)

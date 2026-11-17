@@ -78,6 +78,18 @@ public sealed class DisposalTests(DbApiFactory api) : IClassFixture<DbApiFactory
 
     private Task DispatchAsync() => api.DrainOutboxAsync();
 
+    private async Task<Result> ExecuteAndWaitAsync(HttpClient clerk, Guid id)
+    {
+        var result = await (await clerk.PostJsonAsync($"/api/v1/disposals/{id}/execute")).ReadAsync<Result>();
+        new[] { "executing", "executed" }.ShouldContain(result.Disposal.Status);
+        var disposal = await Eventually.ForAsync(async () =>
+            await (await clerk.GetAsync($"/api/v1/disposals/{id}")).ReadAsync<Disposal>(), d => d.Status == "executed", TimeSpan.FromSeconds(15));
+        disposal.Status.ShouldBe("executed");
+        var deleted = await api.ScalarAsync<long>("SELECT count(*) FROM hoso.disposal_blob_deletions WHERE request_id=$1 AND deleted", id);
+        return result with { Disposal = disposal, BlobsDeleted = (int)deleted };
+    }
+
+
     [Fact]
     public async Task Huy_du_ba_buoc_xoa_noi_dung_rieng_cua_ho_so_giu_metadata_nhat_ky_tep_dung_chung_va_chan_goi_som()
     {
@@ -133,7 +145,7 @@ public sealed class DisposalTests(DbApiFactory api) : IClassFixture<DbApiFactory
         (await (await clerk.GetAsync("/api/v1/notifications?unread=true")).ReadAsync<Notifications>()).Items.ShouldContain(n => n.Kind == "disposal.approved" && n.DossierId == s.Dossier.Id);
 
         // Thực hiện.
-        var done = await (await clerk.PostJsonAsync($"/api/v1/disposals/{created.Id}/execute")).ReadAsync<Result>();
+        var done = await ExecuteAndWaitAsync(clerk, created.Id);
         done.Disposal.Status.ShouldBe("executed");
         done.Disposal.ExecutedByName.ShouldBe("GIẢ LẬP · demo_clerk_ubnd");
         done.FilesDisposed.ShouldBe(2, "chỉ hai giấy tờ nội bộ riêng của hồ sơ");
@@ -258,7 +270,7 @@ public sealed class DisposalTests(DbApiFactory api) : IClassFixture<DbApiFactory
 
         var request = await (await clerk.PostJsonAsync("/api/v1/disposals", new { dossierId = s.Dossier.Id, reason = "Hết hạn bảo quản, kiểm tra dùng chung nội dung" })).ReadAsync<Disposal>();
         await chair.PostJsonAsync($"/api/v1/disposals/{request.Id}/approve", new { decisionDocumentId = await api.ScalarAsync<Guid>("SELECT id FROM hoso.documents WHERE external_key = 'public-016'") });
-        var done = await (await clerk.PostJsonAsync($"/api/v1/disposals/{request.Id}/execute")).ReadAsync<Result>();
+        var done = await ExecuteAndWaitAsync(clerk, request.Id);
 
         done.FilesDisposed.ShouldBe(2);
         done.BlobsDeleted.ShouldBe(1, "chỉ nội dung của tệp B; nội dung của tệp A vẫn được bản ghi khác dùng");
@@ -281,6 +293,8 @@ public sealed class DisposalTests(DbApiFactory api) : IClassFixture<DbApiFactory
         responses.Count(r => r.StatusCode == HttpStatusCode.OK).ShouldBe(1);
         responses.Count(r => r.StatusCode == HttpStatusCode.Conflict).ShouldBe(1);
         (await api.ScalarAsync<long>("SELECT count(*) FROM hoso.files WHERE id = ANY($1) AND disposed_at IS NOT NULL", new[] { s.A.FileId, s.B.FileId })).ShouldBe(2);
+        var status = await Eventually.ForAsync(() => api.ScalarAsync<string>("SELECT status FROM hoso.disposal_requests WHERE id=$1", request.Id), x => x == "executed", TimeSpan.FromSeconds(15));
+        status.ShouldBe("executed");
         File.Exists(Path.Combine(api.StorageRoot, s.A.Key)).ShouldBeFalse();
     }
 }

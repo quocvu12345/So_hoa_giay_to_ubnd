@@ -1,3 +1,4 @@
+using System.Security.Cryptography;
 using HoSoSo.Application.Common;
 using HoSoSo.Application.Intake;
 using HoSoSo.Domain.Entities;
@@ -67,6 +68,13 @@ public sealed class PreviewHandler(IHoSoDb db, IScopeFilter scope, IFileStorage 
         }
         finally { Gate.Release(); }
 
+        if (w != DefaultWidth)
+            return new PagePreview(new MemoryStream(bytes), "\"" + Convert.ToHexStringLower(SHA256.HashData(bytes)) + "\"");
+
+        // Hủy hồ sơ cũng khóa dòng tệp: không tạo cache sau khi nội dung đã bị chặn.
+        await using var transaction = await db.Database.BeginTransactionAsync(ct);
+        var available = await db.Database.SqlQuery<Guid>($"SELECT id AS \"Value\" FROM hoso.files WHERE id = {fileId} AND disposed_at IS NULL AND storage_key IS NOT NULL FOR UPDATE").ToListAsync(ct);
+        if (available.Count == 0) throw AppException.NotFound("nội dung tệp");
         await using var content = new MemoryStream(bytes);
         var stored = await storage.SaveAsync(content, ct);
         if (w == DefaultWidth)
@@ -74,6 +82,7 @@ public sealed class PreviewHandler(IHoSoDb db, IScopeFilter scope, IFileStorage 
                 INSERT INTO hoso.page_images(file_id, page_no, preview_storage_key) VALUES ({fileId}, {page}, {stored.StorageKey})
                 ON CONFLICT (file_id, page_no) DO UPDATE SET preview_storage_key = EXCLUDED.preview_storage_key
                 """, ct);
+        await transaction.CommitAsync(ct);
         return new PagePreview(new MemoryStream(bytes), ETag(stored.StorageKey));
     }
 

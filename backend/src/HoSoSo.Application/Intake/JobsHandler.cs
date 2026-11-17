@@ -49,6 +49,12 @@ public sealed class JobsHandler(IHoSoDb db, IScopeFilter scope, ICurrentUser use
     public async Task<JobDto> RetryPageAsync(Guid id, int page, CancellationToken ct)
     {
         var original = await VisibleJobAsync(id, ct);
+        var documentId = await db.Read<FileRecord>().Where(f => f.Id == original.FileId).Select(f => f.DocumentId).SingleAsync(ct);
+        await using var transaction = await db.Database.BeginTransactionAsync(ct);
+        await MutationLocks.DocumentAsync(db, documentId, ct);
+        if (!await db.Read<FileRecord>().AnyAsync(f => f.Id == original.FileId && f.DisposedAt == null && f.StorageKey != null, ct))
+            throw AppException.Conflict("Nội dung tệp đã bị hủy nên không đọc lại được.");
+        original = await VisibleJobAsync(id, ct);
         if (original.Status is JobStatus.Queued or JobStatus.Running) throw AppException.Conflict("Việc đọc đang chạy, chờ xong rồi đọc lại trang.");
         if (page < 1 || page > (original.PageCount ?? int.MaxValue))
             throw new ValidationFailedException(new Dictionary<string, string[]> { ["page"] = ["Số trang không nằm trong tệp."] });
@@ -59,6 +65,7 @@ public sealed class JobsHandler(IHoSoDb db, IScopeFilter scope, ICurrentUser use
         };
         db.Set<OcrJob>().Add(job);
         await db.SaveChangesAsync(ct);
+        await transaction.CommitAsync(ct);
         return await GetAsync(job.Id, ct);
     }
 

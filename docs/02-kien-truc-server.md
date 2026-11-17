@@ -311,13 +311,13 @@ Mọi đường dẫn có tiền tố `/api/v1`. Danh sách đầy đủ sinh t�
 | | `GET /form-templates/{id}/file` | Tải mẫu biểu | Đăng nhập |
 | Intake | `POST /intake/batches`, `GET /intake/batches/{id}`, `POST /intake/batches/{id}/close` | Lô quét | `intake.manage` |
 | | `POST /intake/files` | Tải tệp (multipart, tối đa 200 MB, cấu hình được) | `intake.upload` |
-| | `GET /intake/inbox?status=inbox\|filed\|discarded` | Hộp tiếp nhận | `intake.upload` |
+| | `GET /intake/inbox?status=inbox\|filed\|discarded&limit=50&cursor=` | Hộp tiếp nhận, trả `{items,nextCursor}` | `intake.upload` |
 | | `POST /intake/documents/{id}/discard`, `/restore` | Bỏ, hoàn tác | `intake.upload` |
 | | `GET/POST/PATCH /quality-issues` | Lỗi ảnh, quét lại | `intake.qc` |
 | Processing | `GET /jobs/{id}`, `POST /jobs/{id}/cancel`, `POST /jobs/{id}/pages/{n}/retry` | Tiến độ, hủy, đọc lại trang | Chủ job hoặc `processing.manage` |
 | | `GET /events` (SSE) | Tiến độ đọc PDF và thông báo realtime | Đăng nhập |
 | Documents | `GET /documents/{id}`, `GET /documents/{id}/review` | Chi tiết, dữ liệu đối chiếu | Phạm vi |
-| | `PUT /documents/{id}/classification`, `PATCH /documents/{id}/fields`, `POST /documents/{id}/verify` | Đối chiếu | `document.edit` |
+| | `PUT /documents/{id}/classification`, `PUT /documents/{id}/metadata`, `PATCH /documents/{id}/fields`, `POST /documents/{id}/verify` | Đối chiếu | `document.edit` |
 | | `GET/POST /documents/{id}/segments`, `POST /segments/{id}/confirm` | Tách văn bản | `document.edit` |
 | | `POST /documents/{id}/relations` | Liên kết phụ lục, thay thế, trả lời | `document.edit` |
 | | `GET /files/{id}/content` (Range), `GET /files/{id}/pages/{n}/preview` | Xem, tải tệp | `document.view` / `document.download` |
@@ -336,7 +336,7 @@ Mọi đường dẫn có tiền tố `/api/v1`. Danh sách đầy đủ sinh t�
 | | `POST /loans`, `/loans/{id}/approve`, `/lend`, `/return` | Mượn trả | `loan.*` |
 | Archive | `POST /archive-submissions`, `/submit`, `/receive`, `/return` | Nộp lưu theo đợt | `dossier.archive` |
 | | `POST /exports`, `GET /exports/{id}`, `GET /exports/{id}/file` | Xuất gói bàn giao | `export.create` |
-| | `POST /disposals`, `/approve`, `/reject` | Đề nghị hủy | `disposal.*` |
+| | `POST /disposals`, `/approve`, `/reject`, `/execute` | Đề nghị hủy; thực hiện có trạng thái `executing` và thử lại bền vững | `disposal.*` |
 | Notifications | `GET /notifications`, `POST /notifications/{id}/read` | Thông báo (realtime qua `GET /events`) | Đăng nhập |
 | Admin | `GET /admin/ai/status`, `GET/PATCH /admin/settings`, `GET /admin/audit`, `GET /admin/backups` | Vận hành | `technical_admin` |
 | Health | `GET /health/live`, `GET /health/ready` | Kiểm tra sống, DB, kho tệp | Không cần đăng nhập, chỉ mạng nội bộ |

@@ -41,7 +41,10 @@ public sealed class LoansHandler(IHoSoDb db, IScopeFilter scope, ICurrentUser us
     public async Task<LoanDto> RequestAsync(RequestLoanRequest r, CancellationToken ct)
     {
         var me = user.RequireUserId();
+        await using var transaction = await db.Database.BeginTransactionAsync(ct);
+        await MutationLocks.DossierAsync(db, r.DossierId, ct);
         var dossier = await scope.Dossiers(db.Read<Dossier>()).SingleOrDefaultAsync(d => d.Id == r.DossierId, ct) ?? throw AppException.NotFound("hồ sơ");
+        await EnsureBorrowableAsync(r.DossierId, ct);
         var active = await db.Read<Loan>().Where(l => l.DossierId == r.DossierId && (l.Status == LoanStatus.Approved || l.Status == LoanStatus.Lent || l.Status == LoanStatus.Overdue))
             .Select(l => new { l.Status, l.DueOn }).FirstOrDefaultAsync(ct);
         if (active is not null) throw LoanConflict(active.Status, active.DueOn);
@@ -50,12 +53,18 @@ public sealed class LoansHandler(IHoSoDb db, IScopeFilter scope, ICurrentUser us
         db.Set<Loan>().Add(loan);
         Notify("loan.requested", loan, dossier.OrganizationCode);
         await db.SaveChangesAsync(ct);
+        await transaction.CommitAsync(ct);
         return await GetAsync(loan.Id, ct);
     }
 
     public async Task<LoanDto> ApproveAsync(Guid id, ApproveLoanRequest r, CancellationToken ct)
     {
+        await using var transaction = await db.Database.BeginTransactionAsync(ct);
+        var dossierId = await db.Read<Loan>().Where(l => l.Id == id).Select(l => (Guid?)l.DossierId).SingleOrDefaultAsync(ct)
+            ?? throw AppException.NotFound("khoản mượn");
+        await MutationLocks.DossierAsync(db, dossierId, ct);
         var (loan, dossier) = await LoadAsync(id, ct);
+        await EnsureBorrowableAsync(dossier.Id, ct);
         Require(loan, LoanStatus.Requested, "Chỉ duyệt được đề nghị đang chờ.");
         var due = r.DueOn ?? Today().AddDays((int)DefaultLoan.TotalDays);
         if (due < Today() || due > Today().AddDays((int)MaxLoan.TotalDays))
@@ -67,39 +76,56 @@ public sealed class LoansHandler(IHoSoDb db, IScopeFilter scope, ICurrentUser us
         loan.DecisionNote = r.Note?.Trim() ?? "";
         Notify("loan.approved", loan, dossier.OrganizationCode);
         await db.SaveChangesAsync(ct);      // đã có khoản khác đang hiệu lực: chỉ mục duy nhất → 409 loan_conflict
+        await transaction.CommitAsync(ct);
         return await GetAsync(id, ct);
     }
 
     public async Task<LoanDto> RejectAsync(Guid id, RejectLoanRequest r, CancellationToken ct)
     {
+        await using var transaction = await db.Database.BeginTransactionAsync(ct);
+        var dossierId = await db.Read<Loan>().Where(l => l.Id == id).Select(l => (Guid?)l.DossierId).SingleOrDefaultAsync(ct)
+            ?? throw AppException.NotFound("khoản mượn");
+        await MutationLocks.DossierAsync(db, dossierId, ct);
         var (loan, dossier) = await LoadAsync(id, ct);
         Require(loan, LoanStatus.Requested, "Chỉ từ chối được đề nghị đang chờ.");
         loan.Status = LoanStatus.Rejected;
         loan.DecisionNote = r.Note.Trim();
         Notify("loan.rejected", loan, dossier.OrganizationCode);
         await db.SaveChangesAsync(ct);
+        await transaction.CommitAsync(ct);
         return await GetAsync(id, ct);
     }
 
     public async Task<LoanDto> LendAsync(Guid id, CancellationToken ct)
     {
+        await using var transaction = await db.Database.BeginTransactionAsync(ct);
+        var dossierId = await db.Read<Loan>().Where(l => l.Id == id).Select(l => (Guid?)l.DossierId).SingleOrDefaultAsync(ct)
+            ?? throw AppException.NotFound("khoản mượn");
+        await MutationLocks.DossierAsync(db, dossierId, ct);
         var (loan, dossier) = await LoadAsync(id, ct);
+        await EnsureBorrowableAsync(dossier.Id, ct);
         Require(loan, LoanStatus.Approved, "Chỉ giao được khoản mượn đã duyệt.");
         loan.Status = LoanStatus.Lent;
         loan.LentAt = clock.UtcNow;
         Notify("loan.lent", loan, dossier.OrganizationCode);
         await db.SaveChangesAsync(ct);
+        await transaction.CommitAsync(ct);
         return await GetAsync(id, ct);
     }
 
     public async Task<LoanDto> ReturnAsync(Guid id, ReturnLoanRequest r, CancellationToken ct)
     {
+        await using var transaction = await db.Database.BeginTransactionAsync(ct);
+        var dossierId = await db.Read<Loan>().Where(l => l.Id == id).Select(l => (Guid?)l.DossierId).SingleOrDefaultAsync(ct)
+            ?? throw AppException.NotFound("khoản mượn");
+        await MutationLocks.DossierAsync(db, dossierId, ct);
         var (loan, _) = await LoadAsync(id, ct);
         if (loan.Status is not (LoanStatus.Lent or LoanStatus.Overdue)) throw AppException.Conflict("Chỉ nhận trả được khoản đang mượn hoặc quá hạn.");
         loan.Status = LoanStatus.Returned;
         loan.ReturnedAt = clock.UtcNow;
         loan.ConditionNote = r.ConditionNote?.Trim() ?? "";
         await db.SaveChangesAsync(ct);
+        await transaction.CommitAsync(ct);
         return await GetAsync(id, ct);
     }
 
@@ -118,6 +144,12 @@ public sealed class LoansHandler(IHoSoDb db, IScopeFilter scope, ICurrentUser us
         var dossier = await db.Read<Dossier>().SingleAsync(d => d.Id == loan.DossierId, ct);
         if (dossier.OrganizationCode != user.OrganizationCode) throw AppException.NotFound("khoản mượn");
         return (loan, dossier);
+    }
+
+    private async Task EnsureBorrowableAsync(Guid dossierId, CancellationToken ct)
+    {
+        if (await db.Read<DisposalRequest>().AnyAsync(r => r.DossierId == dossierId && (r.Status == "executing" || r.Status == "executed"), ct))
+            throw new AppException(409, "dossier_disposed", "Hồ sơ đang hoặc đã được hủy nên không thể mượn hay giao bản giấy.");
     }
 
     private static void Require(Loan loan, string status, string message)

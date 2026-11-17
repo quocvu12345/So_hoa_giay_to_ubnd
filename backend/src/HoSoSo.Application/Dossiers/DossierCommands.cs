@@ -81,8 +81,13 @@ public sealed class DossierCommands(IHoSoDb db, IScopeFilter scope, ICurrentUser
 
     public async Task<IReadOnlyList<DossierDocumentItem>> AddDocumentAsync(Guid id, AddDocumentRequest r, CancellationToken ct)
     {
+        await using var transaction = await db.Database.BeginTransactionAsync(ct);
+        await MutationLocks.DocumentAsync(db, r.DocumentId, ct);
+        await MutationLocks.DossierAsync(db, id, ct);
         var d = await LoadEditableAsync(id, ct);
         var doc = await scope.Documents(db.Set<Document>()).SingleOrDefaultAsync(x => x.Id == r.DocumentId, ct) ?? throw AppException.NotFound("giấy tờ");
+        if (await db.Read<FileRecord>().AnyAsync(f => f.DocumentId == doc.Id && f.DisposedAt != null, ct))
+            throw AppException.Conflict("Nội dung giấy tờ đã bị hủy nên không xếp vào hồ sơ khác được.");
         if (doc.IntakeStatus is IntakeStatus.Discarded or IntakeStatus.Split)
             throw AppException.Conflict(doc.IntakeStatus == IntakeStatus.Split ? "Giấy tờ này đã được tách thành các văn bản con; hãy xếp các văn bản con." : "Giấy tờ này đã bị bỏ khỏi hộp tiếp nhận. Hoàn tác trước khi xếp vào hồ sơ.");
         var links = db.Set<DossierDocument>();
@@ -93,6 +98,7 @@ public sealed class DossierCommands(IHoSoDb db, IScopeFilter scope, ICurrentUser
         if (doc.IntakeStatus == IntakeStatus.Inbox) doc.IntakeStatus = IntakeStatus.Filed;
         d.UpdatedAt = clock.UtcNow;
         await db.SaveChangesAsync(ct);
+        await transaction.CommitAsync(ct);
         return await queries.DocumentItemsAsync(id, ct);
     }
 
@@ -133,6 +139,9 @@ public sealed class DossierCommands(IHoSoDb db, IScopeFilter scope, ICurrentUser
 
     public async Task RemoveDocumentAsync(Guid id, Guid documentId, CancellationToken ct)
     {
+        await using var transaction = await db.Database.BeginTransactionAsync(ct);
+        await MutationLocks.DocumentAsync(db, documentId, ct);
+        await MutationLocks.DossierAsync(db, id, ct);
         var d = await LoadEditableAsync(id, ct);
         var link = await db.Set<DossierDocument>().SingleOrDefaultAsync(l => l.DossierId == id && l.DocumentId == documentId, ct)
             ?? throw AppException.NotFound("giấy tờ trong hồ sơ");
@@ -143,6 +152,7 @@ public sealed class DossierCommands(IHoSoDb db, IScopeFilter scope, ICurrentUser
         if (!stillLinked && doc is { Origin: "internal", UploadedBy: not null, IntakeStatus: IntakeStatus.Filed }) doc.IntakeStatus = IntakeStatus.Inbox;
         d.UpdatedAt = clock.UtcNow;
         await db.SaveChangesAsync(ct);
+        await transaction.CommitAsync(ct);
     }
 
     public async Task<DossierDetail> AssignAsync(Guid id, AssignRequest r, CancellationToken ct)

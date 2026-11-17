@@ -49,7 +49,7 @@ public sealed class AiQueueEtaTests(DbApiFactory api) : IClassFixture<DbApiFacto
         (await EtaAsync(http, c.JobId)).ShouldBe(90);
 
         // Hộp tiếp nhận và trang vận hành dùng cùng số liệu.
-        var inbox = await (await http.GetAsync("/api/v1/intake/inbox")).ReadAsync<List<InboxDto>>();
+        var inbox = (await (await http.GetAsync("/api/v1/intake/inbox")).ReadAsync<PageDto<InboxDto>>()).Items;
         inbox.Single(i => i.DocumentId == own.DocumentId).QueueKind.ShouldBe("priority");
     }
 }
