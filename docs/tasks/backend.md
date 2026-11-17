@@ -719,3 +719,21 @@ Căn cứ: `artifacts/backend-review-2026-11-17/REPORT.md`. Mỗi task phải c�
 - **BE-109:** build, kiểm thử PostgreSQL thật và hợp đồng OpenAPI; hướng dẫn áp dụng migration/vận hành được bổ sung ở `backend/README.md`. Migration chỉ chạy trên CSDL kiểm thử riêng, chưa áp dụng lên `hoso_dev`/production. Không tự xác nhận metadata cho dữ liệu đang có.
 
 **Kiểm chứng:** `BackendReliabilityTests` có 12 ca hồi quy; `AiQueueModelTests` có 2 ca tính đúng/giới hạn. Lệnh kiểm toàn bộ: chạy từ `backend/`, đặt `HOSO_TEST_PG` trỏ PostgreSQL kiểm thử và `DOTNET_ROLL_FORWARD=Major`, rồi `dotnet test --solution HoSoSo.slnx --no-restore`. Lần chạy toàn bộ ngày 17/11/2026: **328 test, 313 đạt, 0 lỗi, 15 S3 bỏ qua** vì cần môi trường S3/MinIO riêng.
+
+## P7 · API còn thiếu cho các màn frontend (rà soát 17/11/2026)
+
+Tìm ra khi đối chiếu từng màn frontend với `openapi.json`. Màn nào ghi trong cột "Chặn" chưa làm trọn được nếu thiếu task này.
+
+| Task | Việc | Tiêu chí hoàn tất | Chặn | Trạng thái |
+|---|---|---|---|---|
+| BE-110 | Danh sách người có thể giao cho một hồ sơ: chuyên viên trong đơn vị của hồ sơ (kể cả ủy quyền còn hạn), số hồ sơ mỗi người đang giữ và số quá hạn. Ví dụ `GET /dossiers/{id}/assignees` | Trưởng phòng gọi được (không cần `admin.users`); không lộ người ngoài đơn vị; ngoài phạm vi trả 404 | FE-31 | ⬜ |
+| BE-111 | Mở rộng `GET /dossiers`: lọc năm, người chủ trì, quá hạn, vị trí kho (`locationId`, gồm vị trí con); sắp xếp theo cột (mã, tên, hạn, cập nhật) mà vẫn phân trang keyset; xuất CSV theo cùng bộ lọc | Gửi đường dẫn có bộ lọc ra đúng kết quả; CSV không vượt phạm vi; 20.000 hồ sơ < 200 ms | FE-26, FE-36 | ⬜ |
+| BE-112 | `GET /search`: phân trang bằng cursor, lọc cơ quan ban hành | Trang 2 không lặp trang 1; tổng số vẫn chỉ tính trong phạm vi | FE-34 | ⬜ |
+| BE-113 | Phiên bản tệp của giấy tờ (bản quét, bản dẫn xuất, bản thay thế) và ghi nhật ký **in** (`access_events.action = print`), ví dụ `GET /files/{id}/download?purpose=print` | Chi tiết giấy tờ liệt kê đủ phiên bản; in ghi đúng một dòng nhật ký | FE-33 | ⬜ |
+| BE-114 | Trả vùng nguồn của trường AI (`source_region`: trang, khung toạ độ) trong `GET /documents/{id}/review` | Bấm trường làm nổi đúng vùng trên trang | FE-22, FE-23 | ⬜ |
+| BE-115 | Số liệu tổng hợp cho lãnh đạo: Chủ tịch UBND theo phòng (đang chuẩn bị, chờ kiểm tra, chờ ý kiến, quá hạn); lãnh đạo HĐND theo hoạt động (kỳ họp và nghị quyết, thẩm tra, giám sát và kiến nghị) | Mỗi con số chỉ đếm hồ sơ trong phạm vi phân công đang dùng | FE-47 | ⬜ |
+| BE-116 | Trả tên người đã xác nhận đầu văn bản (hiện chỉ có `metadataReviewedBy` là mã) | Màn đối chiếu hiện "Đã xác nhận bởi … lúc …" | FE-23 | ⬜ |
+| BE-117 | Tra nhật ký theo Mã lỗi người dùng gửi (`errorId` → mã tương quan → request) | Nhập Mã lỗi ra đúng request và người | LOG-08 | ⬜ |
+| BE-118 | (Đề xuất, cần rà bảo mật) `ActiveAssignmentMiddleware` nhận phân công từ cookie `hoso_assignment` khi thiếu header `X-Assignment-Id`, hoặc Caddy chuyển cookie thành header | `<img>`, `EventSource` và tải tệp trực tiếp dùng đúng phân công; frontend bỏ được đường vòng bằng `fetch` | FE-08, FE-22, FE-33 | ⬜ |
+| BE-119 | Trường dữ liệu đã đối chiếu của giấy tờ cho người chỉ có `document.view` (hiện `GET /documents/{id}/review` cần `document.edit`). Ví dụ `GET /documents/{id}/fields` chỉ đọc, kèm cờ "đã sửa so với AI" | Trưởng phòng, lãnh đạo mở Chi tiết giấy tờ thấy trường đã đối chiếu; không lộ trường của giấy tờ ngoài phạm vi | FE-33 | ⬜ |
+

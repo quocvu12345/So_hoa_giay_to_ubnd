@@ -59,3 +59,5 @@ data/official-forms/index.html
 
 # Tiến trình và nhật ký của scripts/dev-up.sh
 data/dev-run/
+# Thư mục làm việc của worker AI (ảnh trang tạm)
+data/ai-work/

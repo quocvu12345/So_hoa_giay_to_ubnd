@@ -52,9 +52,24 @@ Máy khởi động lại thì worker tự chạy, lỗi thì tự chạy lại.
 - **Chọn mô hình bằng cấu hình:** `HOSO_AI_CLASSIFIER_MODEL` (tên thư mục trong `models/`). Mô hình được nạp **một lần** và giữ giữa các job; bỏ mô hình thì trả bộ nhớ GPU (`mx.clear_cache`). Thiếu thư mục thì worker dừng ngay lúc khởi động, kèm danh sách mô hình đang có. Mỗi job ghi `ocr_jobs.model_version`, ví dụ `ocr=PaddleOCR-VL-1.6@132c45f classifier=Qwen3-1.7B-4bit@3b1b176/short` (không ghi OCR nếu mọi trang lấy từ lớp chữ PDF).
 - **Thứ tự lấy việc:** `priority` (số nhỏ trước), rồi lúc người dùng nâng mức (`prioritized_at`) hoặc lúc tạo. Mức: 1 làm ngay, 3 có người chờ, 7 khay nền (PDF mới tải lên).
 - **Khay nền:** chỉ chạy khi không còn việc mức thấp hơn; ngoài khung giờ `HOSO_AI_BACKGROUND_WINDOWS` chỉ lấy việc có người chờ. Việc nền đang chạy kiểm tra sau **mỗi trang** (và trước bước phân loại) xem có việc có người chờ không; có thì trả về hàng đợi, giữ các trang đã đọc. Việc đã được nâng mức thì không còn bị nhường. Nhường chỗ KHÔNG tính là một lần thử: `attempt` vẫn tăng đều (là mã chống nhầm chủ sở hữu), giới hạn thử lại tính `attempt - preempted_count`.
+- **Thu hẹp ứng viên bằng từ khóa (`HOSO_AI_SHORTLIST`, mặc định bật):** mô hình nhỏ như Qwen3-1.7B tự chọn nhóm và loại rất kém trên danh mục 38 nhóm. `document_ai/shortlist.py` chấm điểm tên loại với phần đầu tài liệu (ưu tiên dòng tiêu đề in hoa), chỉ đưa cho mô hình 8 nhóm và 10 loại khớp nhất; tài liệu tự in tên loại và không loại nào khác sát bằng thì dùng loại đó, nhiều trang tự ghi tên loại khác nhau thì báo gói nhiều giấy tờ cần tách. Không khớp gì thì giữ nguyên như cũ. **Mới đo trên tài liệu giả lập (in sẵn tên loại làm tiêu đề), chưa đo trên giấy tờ thật.**
+- **Chẩn đoán:** `kill -USR1 <pid worker>` ghi ngăn xếp mọi luồng vào nhật ký. Watchdog cấp vòng lặp thoát mã 75 khi vòng lặp rảnh không quay quá 120 giây hoặc tắt máy quá 180 giây.
 - **Lời nhắc:** `HOSO_AI_PROMPT_INTERACTIVE` (mặc định `short`) cho việc có người chờ, `HOSO_AI_PROMPT_BACKGROUND` (mặc định `production`) cho khay nền. Lời nhắc ngắn chỉ đổi bước trích trường; nhanh khoảng 3 lần nhưng sai nhiều hơn một chút (4,3% so với 3,0% trên dữ liệu giả); giá trị vẫn phải có nguyên văn trong văn bản.
 
 ## Kiểm thử
+
+So sánh bản tinh chỉnh tuân thủ JSON/schema IFStruct với Qwen3-4B: [kết quả và cách chạy](training/SO-SANH-IFSTRUCT-QWEN4B.md).
+Từ gốc repo, tải `scripts/document-ai.sh download --model ifstruct_source`, rồi chạy `scripts/document-ai.sh convert-ifstruct`.
+Bản MLX dùng cùng prompt/pipeline Qwen; chọn cho worker thử bằng `HOSO_AI_CLASSIFIER_MODEL=Qwen3-4B-Instruct-2507-ifstruct-4bit` trong tệp môi trường riêng.
+Khi đo `bench_pipeline.py llm`, thêm `--exclusive` để từ chối nếu có worker/model khác lúc bắt đầu và ghi nhận tiến trình xuất hiện giữa lượt đo.
+
+So sánh BKEE entity-extraction với Qwen3-4B trên cùng bộ 20 tài liệu/79 giá trị có nhãn: [kết quả và cách chạy](training/SO-SANH-BKEE-QWEN4B.md).
+Tải `scripts/document-ai.sh download --model bkee_source`, chuyển bằng `scripts/document-ai.sh convert-bkee`,
+rồi chọn `--model qwen3-4b-bkee` trong benchmark. `probe_bkee.py` thử riêng prompt NER gốc; kết quả này không chấm bằng nhãn trường hành chính.
+
+So sánh Qwen3.5-4B với Qwen3-4B trên cùng văn bản OCR và danh mục: [báo cáo và cách chạy](training/SO-SANH-QWEN-4B.md).
+Tải bản thử đã ghim phiên bản bằng `./scripts/document-ai.sh download --model classifier_35_4b` từ thư mục gốc repo;
+chọn bằng `HOSO_AI_CLASSIFIER_MODEL=Qwen3.5-4B-4bit`. Model mới dùng chế độ không thinking như các bản hiện tại.
 
 ```sh
 pip install -e '.[dev]'
@@ -76,6 +91,13 @@ Mỗi lần ghi kết quả kiểm tra worker, số lượt chạy và trạng t
 
 Xem [training/](training/): `select_docs.py` → `ocr_batch.py` → `build_sft.py` → LoRA (`mlx_lm.lora`) → `eval_extract.py`.
 Dữ liệu và kết quả nằm ngoài repo, ở `$DOCUMENT_AI_HOME/training/`.
+
+Thử NuExtract3-kie-vi bằng bộ trích trường riêng: [so sánh với Qwen3-4B và cách chạy](training/SO-SANH-NUEXTRACT-QWEN4B.md).
+Từ gốc repo, `scripts/document-ai.sh download --model nuextract_source` tải nguồn đã ghim và xác minh SHA-256;
+`scripts/document-ai.sh convert-nuextract` chuyển sang MLX 4-bit, giữ vision tower và chat template gốc.
+Trước khi chuyển/chạy ảnh, cài `document_ai/requirements-nuextract.txt` vào venv AI (phụ thuộc processor; inference vẫn dùng MLX).
+`scripts/document-ai.sh extract-fields --help` là giao diện chạy local trên OCR hoặc ảnh với schema đã biết.
+NuExtract dùng prompt riêng, chưa tích hợp thay thế classifier trong worker; không chọn nó bằng `HOSO_AI_CLASSIFIER_MODEL`.
 
 ## Bảo mật
 

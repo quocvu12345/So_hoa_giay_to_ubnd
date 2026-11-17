@@ -4,9 +4,12 @@ import { Bell, LogOut, Search } from "lucide-react";
 import { mockSignOut } from "@/app/actions/session";
 import { routes } from "@/config/routes";
 import { can } from "@/lib/auth/session";
-import type { Session } from "@/lib/auth/types";
+import { scopeLabel, type Session } from "@/lib/auth/types";
 import { AssignmentSwitcher } from "./assignment-switcher";
 import { CommandPalette } from "./command-palette";
+import { ConnectionBanner } from "./connection-banner";
+import { LogoutButton } from "./logout-button";
+import { SessionNotices } from "./session-notices";
 import { MobileNav } from "./mobile-nav";
 import { NavList, type NavBadges } from "./nav-list";
 import { OpenCommandButton } from "./open-command-button";
@@ -55,7 +58,7 @@ export function AppShell({ session, badges, unread, children }: { session: Sessi
               {unread > 0 && <span className="absolute -top-1 -right-1 min-w-5 bg-bad px-1 text-center text-[11px] font-bold text-white">{unread}</span>}
             </Link>
             <AssignmentSwitcher assignments={session.assignments} activeId={session.activeAssignment.id} />
-            <Link href={routes.account} className="hidden h-10 items-center border border-line px-3 text-[13px] font-semibold hover:border-primary md:inline-flex">
+            <Link href={routes.account} className="hidden h-10 max-w-48 items-center truncate border border-line px-3 text-[13px] font-semibold hover:border-primary xl:inline-flex">
               {session.user.displayName}
             </Link>
             {session.isMock ? (
@@ -65,15 +68,12 @@ export function AppShell({ session, badges, unread, children }: { session: Sessi
                 </button>
               </form>
             ) : (
-              // Đăng xuất do API .NET xử lý: xóa cookie phiên và kết thúc phiên ở Keycloak.
-              <form action="/api/v1/auth/logout" method="post">
-                <button type="submit" className="grid size-10 place-items-center border border-line hover:border-primary" aria-label="Đăng xuất">
-                  <LogOut aria-hidden className="size-5" />
-                </button>
-              </form>
+              <LogoutButton />
             )}
           </div>
         </header>
+        <SessionNotices assignmentReset={Boolean(session.assignmentReset)} mfaRequired={Boolean(session.mfaRequired)} activeLabel={scopeLabel(session.activeAssignment)} />
+        <ConnectionBanner />
         <main id="noi-dung" tabIndex={-1} className="min-w-0 flex-1 outline-none">
           {children}
         </main>

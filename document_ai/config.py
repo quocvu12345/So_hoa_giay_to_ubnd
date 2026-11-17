@@ -15,6 +15,14 @@ MODELS = {
 }
 # Downloaded separately for image + text evaluation; not required by the PDF pipeline.
 OPTIONAL_MODELS = {
+    # Bộ nhận diện thực thể theo câu tiếng Việt; đánh giá trước khi dùng thay classifier.
+    "bkee_source": ("hadeseus/qwen3-4b-bkee-entity-extraction", "a531480d0f4ee265dfebc86d37dde309662f36e4", "Qwen3-4B-BKEE-Entity-Extraction-bf16", "model.safetensors.index.json"),
+    # Qwen tinh chỉnh tuân thủ JSON/schema; nguồn BF16, chuyển local bằng convert_ifstruct.
+    "ifstruct_source": ("ChetanDhembreAI/Qwen3-4B-Instruct-2507-ifstruct", "00161de525486e01ba505e6c24f39472fdfe4a23", "Qwen3-4B-Instruct-2507-ifstruct-bf16", "model.safetensors"),
+    # Nguồn BF16 cho bộ trích trường chuyên biệt; chuyển MLX bằng document_ai.convert_nuextract.
+    "nuextract_source": ("jester6136/NuExtract3-kie-vi", "33083e5c51719a0d659ae11689f1b5fddfa60055", "NuExtract3-kie-vi-bf16", "model.safetensors"),
+    # Bản thử nghiệm: so sánh trên cùng OCR trước khi đổi mặc định của worker.
+    "classifier_35_4b": ("mlx-community/Qwen3.5-4B-4bit", "0e7ffd5c629ef7719d4cbc04069232580bfa9d9c", "Qwen3.5-4B-4bit", "model.safetensors"),
     # Bản lớn hơn đã dùng trước đây; tải bằng `python -m document_ai.download --model classifier_4b` rồi đặt HOSO_AI_CLASSIFIER_MODEL=Qwen3-4B-Instruct-2507-4bit.
     "classifier_4b": ("mlx-community/Qwen3-4B-Instruct-2507-4bit", "50d427756c6b1b2fe0c0a10f67fbda1fc8e82c1b", "Qwen3-4B-Instruct-2507-4bit", "model.safetensors"),
     "qwen_vl": ("mlx-community/Qwen3-VL-8B-Instruct-4bit", "defcdea7cc7a4b0858fea563cbbce171d328e457", "Qwen3-VL-8B-Instruct-4bit", "model.safetensors.index.json"),
@@ -25,7 +33,13 @@ OPTIONAL_MODELS = {
 CLASSIFIER_ENV = "HOSO_AI_CLASSIFIER_MODEL"
 DEFAULT_CLASSIFIER = MODELS["classifier"][2]
 # RAM ước tính khi nạp (GB), cho ModelScheduler quyết định giữ hay bỏ mô hình; số đo thật ghi ở docs/tasks/ai.md (AI-12).
-CLASSIFIER_APPROX_GB = {"Qwen3-4B-Instruct-2507-4bit": 3.0, "Qwen3-1.7B-4bit": 2.0}
+CLASSIFIER_APPROX_GB = {
+    "Qwen3-4B-Instruct-2507-4bit": 3.0,
+    "Qwen3-4B-Instruct-2507-ifstruct-4bit": 3.0,
+    "Qwen3-4B-BKEE-Entity-Extraction-4bit": 3.0,
+    "Qwen3-1.7B-4bit": 2.0,
+    "Qwen3.5-4B-4bit": 4.5,  # chừa dư cho context; ngân sách 7 GB sẽ bỏ OCR trước khi nạp model này
+}
 CLASSIFIER_GB_ENV = "HOSO_AI_CLASSIFIER_GB"
 SHORTLIST_ENV = "HOSO_AI_SHORTLIST"
 
@@ -40,9 +54,10 @@ def classifier_name(env=None):
 
 
 def shortlist_enabled(env=None):
-    """AI-20: thu hẹp ứng viên bằng từ khóa trước khi hỏi mô hình. Giá trị on/off."""
+    """AI-20: thu hẹp ứng viên bằng từ khóa trước khi hỏi mô hình. Mặc định BẬT vì mô hình mặc định là Qwen3-1.7B, tự chọn nhóm/loại gần như đoán bừa.
+    Dùng mô hình lớn hơn thì đo rồi đặt off nếu thu hẹp làm kém đi."""
     env = os.environ if env is None else env
-    return (env.get(SHORTLIST_ENV) or "off").strip().lower() in ("on", "1", "true", "yes")
+    return (env.get(SHORTLIST_ENV) or "on").strip().lower() in ("on", "1", "true", "yes")
 
 
 def classifier_path(name=None):
@@ -81,6 +96,11 @@ def classifier_label(name):
 def model_identity(path):
     """Mã định danh mô hình để ghi vào job: repo (từ tiêu đề README do công cụ tải ghi) và phiên bản cố định (commit)."""
     path = Path(path)
+    conversion = path / "conversion-receipt.json"
+    if conversion.is_file():
+        import json
+        receipt = json.loads(conversion.read_text(encoding="utf-8"))
+        return {"name": path.name, "repo": receipt["repo"], "revision": receipt["revision"]}
     repo = next((line[2:].strip() for line in (path / "README.md").read_text(encoding="utf-8").splitlines() if line.startswith("# ")), "") \
         if (path / "README.md").is_file() else ""
     revision = ""

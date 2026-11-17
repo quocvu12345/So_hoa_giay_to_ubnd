@@ -21,7 +21,7 @@ export function AssignmentSwitcher({ assignments, activeId }: { assignments: Ass
         name="assignmentId"
         defaultValue={active.id}
         onChange={(e) => e.currentTarget.form?.requestSubmit()}
-        className="h-10 max-w-[280px] border border-line bg-surface px-2 text-[13px]"
+        className="h-10 max-w-[220px] border border-line bg-surface px-2 text-[13px] lg:max-w-[280px]"
       >
         {assignments.map((a) => (
           <option key={a.id} value={a.id}>

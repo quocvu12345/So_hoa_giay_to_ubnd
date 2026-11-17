@@ -46,3 +46,11 @@ export async function mockSignOut() {
   store.delete(ASSIGNMENT_COOKIE);
   redirect("/dang-nhap");
 }
+
+/**
+ * Xóa cookie phân công: gọi khi cookie trỏ tới phân công không còn dùng được, và ngay trước khi đăng xuất
+ * (để người đăng nhập sau trên cùng máy không mang phân công của người trước).
+ */
+export async function clearAssignment() {
+  (await cookies()).delete(ASSIGNMENT_COOKIE);
+}

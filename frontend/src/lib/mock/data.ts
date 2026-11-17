@@ -9,7 +9,7 @@ export const WORKFLOW_LABELS: Record<WorkflowState, string> = {
   returned: "Yêu cầu bổ sung",
   department_review: "Chờ trưởng phòng / Ban",
   leadership_review: "Chờ lãnh đạo cho ý kiến",
-  ready_archive: "Chờ nộp lưu",
+  ready_archive: "Chờ tiếp nhận nộp lưu",
   archived: "Đã lưu trữ",
 };
 
@@ -59,22 +59,6 @@ export const MOCK_INBOX: MockInboxItem[] = [
   { id: "doc-ct05", fileName: "cong-van-05.pdf", pages: 1, uploadedAt: "08:44", stage: "queued", queuePosition: 3, queueKind: "background" },
   { id: "doc-hd88", fileName: "hop-dong-88.pdf", pages: 3, uploadedAt: "08:45", stage: "queued", queuePosition: 1, queueKind: "priority", etaSeconds: 40 },
   { id: "doc-scan7", fileName: "scan_0007.pdf", pages: 12, uploadedAt: "08:45", stage: "failed", progress: "Trang 7 đọc lỗi, có thể đọc lại riêng trang này" },
-];
-
-export type MockField = {
-  label: string;
-  value: string;
-  page: number | null;
-  attention?: string;
-  key?: boolean;
-};
-
-export const MOCK_REVIEW_FIELDS: MockField[] = [
-  { label: "Ngày ban hành", value: "20/01/2026", page: 1, key: true, attention: "Phần đầu PDF ghi 20/01/2026, trang đăng ghi 26/01/2026. Chọn ngày đúng hoặc để trống." },
-  { label: "Số, ký hiệu", value: "26/KH-UBND", page: 1, key: true },
-  { label: "Cơ quan ban hành", value: "UBND phường Từ Liêm", page: 1 },
-  { label: "Trích yếu", value: "Kế hoạch thực hiện nhiệm vụ năm 2026", page: 1 },
-  { label: "Người ký", value: "", page: null, key: true, attention: "AI không đọc được chữ ký. Để trống nếu không thấy, không suy đoán." },
 ];
 
 export const MOCK_CHECKLIST = [

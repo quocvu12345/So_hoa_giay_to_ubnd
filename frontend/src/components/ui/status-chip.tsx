@@ -29,7 +29,11 @@ const WORKFLOW_TONES: Record<WorkflowState, Tone> = {
   archived: "ok",
 };
 
-/** Trạng thái hồ sơ: luôn có chữ, không chỉ dựa vào màu. */
-export function WorkflowChip({ state }: { state: WorkflowState }) {
-  return <Chip tone={WORKFLOW_TONES[state]}>{WORKFLOW_LABELS[state]}</Chip>;
+/**
+ * Trạng thái hồ sơ: luôn có chữ, không chỉ dựa vào màu.
+ * Nhận cả trạng thái lạ từ API (dùng `label` API trả về, màu trung tính) để giao diện không vỡ khi thêm bước mới.
+ */
+export function WorkflowChip({ state, label }: { state: WorkflowState | string; label?: string }) {
+  const known = state in WORKFLOW_LABELS ? (state as WorkflowState) : null;
+  return <Chip tone={known ? WORKFLOW_TONES[known] : "neutral"}>{label ?? (known ? WORKFLOW_LABELS[known] : state)}</Chip>;
 }

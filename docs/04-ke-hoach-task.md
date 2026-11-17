@@ -162,7 +162,7 @@ gantt
 | BE-67 | `POST /dossiers/{id}/transitions`: gọi `transition_dossier`, kiểm tra `row_version`, ghi outbox | Hai người bấm cùng lúc: một thành công, một nhận 409 | BE-66, BE-20 | 1,5 | BE |
 | BE-68 | `GET /dossiers/{id}/history`: gộp `workflow_events`, thay đổi phân công, thêm/gỡ giấy tờ (từ audit) | Có tên người, vai trò, thời điểm, ý kiến | BE-67 | 1 | BE |
 | BE-69 | Màn “Việc của tôi”: `GET /workspace/summary`, `/workspace/queue` từ `my_queue` | Mỗi vai trò thấy đúng hàng việc trong tài liệu 01 mục 3 | DB-14, BE-13 | 1 | BE |
-| BE-70 | Thông báo: tạo từ outbox (được giao, bị trả lại, chờ ý kiến, sắp đến hạn), đánh dấu đã đọc, đẩy SignalR | Thông báo đến đúng người, không trùng | BE-20, BE-23 | 1,5 | BE |
+| BE-70 | Thông báo: tạo từ outbox (được giao, bị trả lại, chờ ý kiến, sắp đến hạn), đánh dấu đã đọc, đẩy qua SSE (`notification.created`) | Thông báo đến đúng người, không trùng | BE-20, BE-23 | 1,5 | BE |
 | BE-71 | Nhắc hạn (HostedService chạy hằng ngày): hồ sơ còn 2 ngày đến hạn, quá hạn | Mỗi hồ sơ nhắc tối đa 1 lần/ngày | BE-70 | 0,5 | BE |
 
 ### P3d · Tra cứu, kho bản giấy, nộp lưu, xuất dữ liệu
@@ -190,6 +190,7 @@ gantt
 | BE-98 | `POST /dossiers/{id}/ai/extract`, `POST /documents/{id}/ai/extract`: nâng mức 1 cho hồ sơ/giấy tờ chỉ định, tạo job khi chưa có hoặc lỗi | Hồ sơ 4 giấy tờ ở 4 trạng thái cho đúng 4 kết quả; gọi lại không tạo job trùng; ngoài phạm vi 404 | BE-97, BE-15 | 1,5 | BE |
 | BE-99 | Hàng đợi AI theo mức và ước tính thời gian chờ từ số liệu giây/trang thật | Không có số liệu thì không trả ước tính | BE-97, BE-88 | 0,5 | BE |
 | BE-100 | Trang vận hành cho biết mô hình đang chạy thật (từ `ocr_jobs.model_version`), cảnh báo khi khác `ai_models` | Lệch mô hình thì có cảnh báo `model_mismatch` | BE-99, AI-13 | 0,5 | BE |
+| BE-110…BE-119 | API còn thiếu cho các màn frontend (người có thể giao, lọc/sắp xếp/CSV hồ sơ, phân trang tra cứu, phiên bản tệp và nhật ký in, vùng nguồn, tổng hợp lãnh đạo, tên người xác nhận, tra theo Mã lỗi, phân công từ cookie, trường chỉ đọc cho người chỉ có quyền xem) | Xem `docs/tasks/backend.md` mục P7 | BE-60…BE-99 | 6 | BE |
 
 ## P4 · Worker AI (Python) nối vào CSDL
 
@@ -214,6 +215,7 @@ gantt
 | AI-17 | Đổi sang mô hình lớn hơn khi có phần cứng: công cụ tải ghim phiên bản bất kỳ, đo so sánh trên giấy tờ thật, sổ tay đổi và quay lại | Diễn tập đổi sang 4B rồi về 1.7B, QA-07 qua cả hai lần | AI-14, QA-07 | 1 | AI |
 | AI-18 | Worker đọc kho tệp S3/MinIO (khi máy AI tách khỏi máy API), khóa chỉ đọc, kiểm SHA-256 | Test với moto; không để lại tệp tạm | AI-03 | 1 | AI |
 | AI-19 | Chạy worker thật như dịch vụ (LaunchAgent) trên máy AI với `hoso_dev`, theo dõi một ngày | Khởi động lại máy thì worker tự chạy; dừng giữa chừng thì job chạy tiếp từ trang còn thiếu | OPS-07, AI-14 | 0,5 | AI |
+| AI-20 | Giúp Qwen3-1.7B chọn đúng nhóm và loại: thu hẹp ứng viên bằng từ khóa tiêu đề, tin tiêu đề in hoa khi chắc chắn, phát hiện gói quét nhiều giấy tờ; đo trên giấy tờ thật | Trên giấy tờ thật đã có nhãn: đúng loại không thấp hơn bản 4B quá mức chấp nhận được (đặt ngưỡng sau khi có số đo); gói nhiều giấy tờ được báo cần tách | AI-14, AI-12 | 1 | AI |
 
 ## P5 · Frontend nền tảng (Next.js 16, render phía máy chủ)
 
@@ -256,12 +258,15 @@ gantt
 | FE-37 | Nộp lưu: hàng chờ `ready_archive`, tạo đợt, kiểm tra từng hồ sơ, tiếp nhận/trả lại, tải biên bản | — | FE-26, BE-84, BE-85 | 2 | FE |
 | FE-38 | Xuất dữ liệu: chọn phạm vi, theo dõi tiến độ, tải gói | — | FE-08, BE-86 | 1 | FE |
 | FE-39 | Đề nghị hủy: tạo, duyệt, thực hiện | Cần xác nhận hai bước trong trang | FE-03, BE-87 | 1 | FE |
-| FE-40 | Thông báo: chuông, danh sách, đánh dấu đã đọc, mở đúng hồ sơ | Realtime qua SignalR | FE-08, BE-70 | 1 | FE |
+| FE-40 | Thông báo: chuông, danh sách, đánh dấu đã đọc, mở đúng hồ sơ | Realtime qua SSE `notification.created` (API không dùng SignalR) | FE-08, BE-70 | 1 | FE |
 | FE-41 | Lô quét và lỗi ảnh: danh sách lô, chi tiết lô, lỗi ảnh theo trang, đánh dấu đã quét lại | — | FE-21, BE-40, BE-53 | 2 | FE |
 | FE-42 | Quản trị · Người dùng, phân công, ủy quyền | Phân công có thời hạn, căn cứ | FE-03, BE-34 | 2,5 | FE |
 | FE-43 | Quản trị · Danh mục: sửa nhóm, loại, trường; xác nhận; thời hạn bảo quản | — | FE-03, BE-32, BE-35 | 2,5 | FE |
 | FE-44 | Quản trị · Vận hành: hàng đợi AI, mô hình, cài đặt, nhật ký kiểm toán, sao lưu; liên kết công cụ thử nghiệm (SAM 3) | Chỉ `technical_admin` thấy | FE-03, BE-88, BE-89 | 2 | FE |
 | FE-45 | Khay chờ AI trong hộp tiếp nhận (vị trí, ước tính, tiến độ) và nút **Trích xuất ngay** cho giấy tờ và hồ sơ | Tải 3 PDF, bấm Trích xuất ngay ở PDF thứ 3 thì PDF đó xong trước | BE-98, BE-99, FE-21 | 1,5 | FE |
+| FE-46 | Thông báo phiên: cookie phân công cũ tự quay về phân công mặc định; phân công cần MFA có thanh báo và liên kết đăng nhập lại; tài khoản chưa có phân công có màn riêng; đăng xuất xóa cookie phân công | Không kẹt vòng đăng nhập | FE-05, BE-95 | 0,5 | FE |
+| FE-47 | Bảng tổng hợp cho lãnh đạo: Chủ tịch UBND theo phòng; lãnh đạo HĐND ba lối vào (kỳ họp và nghị quyết, thẩm tra, giám sát và kiến nghị) | Lãnh đạo mở ra thấy đúng việc được trình và tổng hợp trong phạm vi | FE-20, BE-115 | 1,5 | FE |
+| FE-48 | Đi trong danh sách bằng phím ↑ ↓ Enter (hộp tiếp nhận, hồ sơ, tra cứu, thông báo) | Dùng hết một danh sách không cần chuột | FE-03 | 0,5 | FE |
 
 ## P7 · Chuyển đổi từ bản thí điểm
 
@@ -321,14 +326,14 @@ gantt
 | P0 Chuẩn bị | 6 | 4,5 |
 | P1 Cơ sở dữ liệu | 19 | 21 |
 | P2 Backend nền tảng | 23 | 24,5 |
-| P3 Backend nghiệp vụ | 54 | 63 |
-| P4 Worker AI | 19 | 21,5 |
+| P3 Backend nghiệp vụ | 64 | 69,5 |
+| P4 Worker AI | 20 | 22,5 |
 | P5 Frontend nền tảng | 12 | 13,5 |
-| P6 Màn hình nghiệp vụ | 26 | 49 |
+| P6 Màn hình nghiệp vụ | 29 | 51,5 |
 | P7 Chuyển đổi | 4 | 3,5 |
 | P8 Kiểm thử, vận hành | 14 | 21,5 |
 | P9 Bảo mật, ghi log | 16 | 18,5 |
-| **Tổng** | **193** | **240,5** |
+| **Tổng** | **207** | **250,5** |
 
 Ước lượng chưa tính dự phòng; nên cộng thêm 20% cho khảo sát lại nghiệp vụ và sửa sau UAT.
 
@@ -342,6 +347,6 @@ gantt
    - bước 0: build và test BE-97, BE-98, BE-99, FE-45;
    - bước 1: AI-14, OPS-07;
    - bước 2: AI-19, QA-07 (thông luồng phía máy chủ);
-   - bước 3: FE-05, FE-06, FE-08, FE-21, FE-23, FE-24 (thông luồng trên giao diện);
+   - bước 3: FE-05, FE-06, FE-08, FE-21, FE-23, FE-24 (thông luồng trên giao diện): **đã làm 17/11/2026**, còn đăng nhập Keycloak thật (FE-05);
    - bước 4: BE-100, AI-12 trên giấy tờ thật;
    - khi tách máy AI hoặc có phần cứng mới: AI-18, AI-17, AI-11.

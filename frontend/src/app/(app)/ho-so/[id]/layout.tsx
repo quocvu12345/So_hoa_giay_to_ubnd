@@ -1,15 +1,18 @@
 import { notFound } from "next/navigation";
 import { Pencil } from "lucide-react";
 import { ActionBar } from "@/components/dossier/action-bar";
+import { NeedsRealApi } from "@/components/ui/blocks";
 import { ButtonLink } from "@/components/ui/button";
 import { NoAccess } from "@/components/ui/no-access";
 import { PageHeader } from "@/components/ui/page-header";
 import { WorkflowChip } from "@/components/ui/status-chip";
 import { TabsNav, type TabItem } from "@/components/ui/tabs-nav";
 import { routes } from "@/config/routes";
+import { acceptsDocuments, getActions, getDossier, UUID } from "@/features/dossier/dossier-data";
 import { pageSession } from "@/lib/auth/page-guard";
-import { MOCK_CHECKLIST, MOCK_DOSSIERS } from "@/lib/mock/data";
-import { mockAllowedActions } from "@/lib/workflow";
+import { serverEnv } from "@/lib/env";
+import { formatDate } from "@/lib/format";
+import { loadOrNotFound } from "@/lib/load-or-not-found";
 
 const WAITING: Record<string, string> = {
   draft: "Hồ sơ đang được chuyên viên chuẩn bị.",
@@ -22,24 +25,21 @@ const WAITING: Record<string, string> = {
 
 /**
  * Khung trang hồ sơ: đầu trang (mã, tên, trạng thái, hạn) → tab là đường dẫn thật → nội dung tab
- * → thanh thao tác dính đáy. Hồ sơ ngoài phạm vi trả 404, không tiết lộ hồ sơ có tồn tại.
+ * → thanh thao tác dính đáy (FE-28, FE-30). Dữ liệu từ API; thao tác lấy từ /actions.
  */
 export default async function DossierLayout({ children, params }: LayoutProps<"/ho-so/[id]">) {
   const { session, allowed } = await pageSession("dossier.read");
   if (!allowed) return <NoAccess session={session} what="xem hồ sơ" />;
+  if (serverEnv().mock) return <NeedsRealApi what="Trang hồ sơ" />;
   const { id } = await params;
-  const dossier = MOCK_DOSSIERS.find((d) => d.id === id);
-  if (!dossier) notFound();
+  if (!UUID.test(id)) notFound();
 
-  const missing = MOCK_CHECKLIST.filter((c) => c.state !== "ok").length;
-  const actions = mockAllowedActions(dossier.status, session.activeAssignment.role);
-  const blockedReason =
-    actions.some((a) => a.action === "submit") && missing > 0 ? `Chưa trình được: còn ${missing} thành phần chưa đủ hoặc chưa đối chiếu (xem Tổng quan).` : undefined;
-  const editable = ["draft", "returned"].includes(dossier.status) && session.permissions.includes("dossier.prepare");
+  const [dossier, actions] = await loadOrNotFound(() => Promise.all([getDossier(id), getActions(id)]));
+  const editable = acceptsDocuments(dossier.status) && session.permissions.includes("dossier.prepare");
 
   const tabs: TabItem[] = [
     { href: routes.dossier(id), label: "Tổng quan" },
-    { href: routes.dossierDocuments(id), label: "Giấy tờ", count: dossier.documentCount },
+    { href: routes.dossierDocuments(id), label: "Giấy tờ", count: dossier.documents.length },
     ...(session.permissions.includes("dossier.assign") ? [{ href: routes.dossierAssignment(id), label: "Phân công" }] : []),
     { href: routes.dossierHistory(id), label: "Nhật ký" },
   ];
@@ -52,10 +52,10 @@ export default async function DossierLayout({ children, params }: LayoutProps<"/
         meta={
           <>
             <span className="font-mono">{dossier.code}</span>
-            <WorkflowChip state={dossier.status} />
-            <span>{dossier.workGroup}</span>
-            <span>· Chủ trì: {dossier.assignee}</span>
-            {dossier.dueOn && <span>· Hạn nội bộ {dossier.dueOn.split("-").reverse().join("/")}</span>}
+            <WorkflowChip state={dossier.status} label={dossier.statusLabel} />
+            <span>{dossier.workGroupCode} · {dossier.workGroupTitle}</span>
+            <span>· Chủ trì: {dossier.assigneeName ?? "chưa giao"}</span>
+            {dossier.dueOn && <span>· Hạn nội bộ {formatDate(dossier.dueOn)}</span>}
           </>
         }
         actions={
@@ -68,7 +68,7 @@ export default async function DossierLayout({ children, params }: LayoutProps<"/
       />
       <TabsNav tabs={tabs} label="Các phần của hồ sơ" />
       <div className="flex-1">{children}</div>
-      <ActionBar actions={actions} blockedReason={blockedReason} waitingFor={WAITING[dossier.status]} />
+      <ActionBar dossierId={id} version={dossier.version} actions={actions} waitingFor={WAITING[dossier.status] ?? ""} />
     </div>
   );
 }

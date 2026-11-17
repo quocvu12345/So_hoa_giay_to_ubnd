@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import { redirect } from "next/navigation";
 import { KeyRound } from "lucide-react";
 import { mockSignIn } from "@/app/actions/session";
-import { getSession } from "@/lib/auth/session";
+import { LogoutButton } from "@/components/layout/logout-button";
+import { getSessionState } from "@/lib/auth/session";
 import { serverEnv } from "@/lib/env";
 import { MOCK_ACCOUNTS } from "@/lib/mock/accounts";
 
@@ -21,8 +22,27 @@ function safeReturnTo(value: string | string[] | undefined) {
 export default async function LoginPage({ searchParams }: PageProps<"/dang-nhap">) {
   const params = await searchParams;
   const returnTo = safeReturnTo(params.tiep);
-  if (await getSession()) redirect(returnTo as "/viec-cua-toi");
+  const { session, problem } = await getSessionState();
+  if (session) redirect(returnTo as "/viec-cua-toi");
   const { mock } = serverEnv();
+
+  // Đã đăng nhập nhưng chưa có phân công nào còn hiệu lực: đăng nhập lại cũng không giúp được, phải nhờ quản trị.
+  if (problem === "no_assignment") {
+    return (
+      <main className="grid min-h-dvh place-items-center bg-page px-4 py-10">
+        <div className="grid w-full max-w-md gap-4 border border-line bg-surface p-6">
+          <h1 className="text-2xl font-bold">Tài khoản chưa có phân công</h1>
+          <p className="text-sm">
+            Bạn đã đăng nhập, nhưng tài khoản chưa có phân công nào còn hiệu lực (phân công hoặc ủy quyền có thể đã hết hạn).
+            Liên hệ quản trị hệ thống của phường để được phân công, rồi đăng nhập lại.
+          </p>
+          <div className="flex items-center gap-2 text-sm">
+            <LogoutButton /> Đăng xuất
+          </div>
+        </div>
+      </main>
+    );
+  }
 
   return (
     <main className="grid min-h-dvh place-items-center bg-page px-4 py-10">

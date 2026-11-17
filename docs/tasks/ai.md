@@ -21,18 +21,18 @@ AI-01…AI-11 nằm ở `docs/04-ke-hoach-task.md` (mục P4). File này chi ti�
 
 | # | Bước | Thành phần | Hiện trạng | Task |
 |---|---|---|---|---|
-| 1 | Đăng nhập | API BE-12 (dev: chọn tài khoản giả lập; thật: Keycloak); web FE-05 | API ✅. Web có nút đăng nhập và đọc phiên qua `/api/v1/me`, nhưng chưa chạy thử với API thật | FE-05, QA-07 |
-| 2 | Tải PDF lên | API BE-41 ✅; web FE-21 | Web còn dùng dữ liệu mẫu, chưa gửi tệp thật | FE-06, FE-21 |
+| 1 | Đăng nhập | API BE-12 (dev: chọn tài khoản giả lập; thật: Keycloak); web FE-05 | API ✅. Web ✅ với đăng nhập dev (E2E `signIn`, đọc phiên qua `/api/v1/me`, đổi phân công); chưa thử Keycloak thật | FE-05 |
+| 2 | Tải PDF lên | API BE-41 ✅; web FE-21 | ✅ Web gửi tệp thật (XHR, 3 tệp song song, báo trùng, thử lại); 17/11/2026 | FE-06, FE-21 |
 | 3 | Lưu tệp, worker đọc tệp | API ghi kho tệp; worker đọc `HOSO_AI_STORAGE_ROOT` | Cùng một máy: đọc được (hai đường dẫn trùng nhau). Máy AI tách riêng (sơ đồ docs/02): worker chỉ đọc ổ đĩa local, chưa đọc được S3/MinIO | AI-18 |
-| 4 | Vào khay | BE-97 (mức 7, migration 032) | Đã viết mã, chưa build và test; migration chưa áp vào `hoso_dev` | BE-97, OPS-07 |
-| 5 | Worker lấy việc | AI-13, AI-15 ✅ (86 test, gồm PostgreSQL thật) | Chưa chạy thật: chưa có `.env`, role `hoso_ai_worker` còn NOLOGIN, chưa cài launchd | OPS-07, AI-19 |
+| 4 | Vào khay | BE-97 (mức 7, migration 032) | ✅ chạy thật: PDF mới tải lên ở khay nền, `queueKind=background` | — |
+| 5 | Worker lấy việc | AI-13, AI-15 ✅ (107 test, gồm PostgreSQL thật) | ✅ chạy thật trên `hoso_dev`: lấy việc theo mức, việc nền nhường chỗ rồi chạy tiếp từ trang còn thiếu. Chưa cài launchd | AI-19 |
 | 6 | OCR | PaddleOCR-VL 1.6 | ✅ | — |
-| 7 | Phân loại, trích trường | Qwen3-1.7B | Mã chọn mô hình và lời nhắc ✅, nhưng mặc định vẫn là 4B; `ai_models` vẫn ghi 4B; công cụ tải chưa ghim phiên bản 1.7B | AI-14 |
-| 8 | Ghi gợi ý, báo tiến độ | worker ghi `ai_suggestions` và NOTIFY; API đẩy SSE (BE-45 ✅); web FE-08 | Web chưa mở luồng SSE | FE-08 |
-| 9 | Đối chiếu | API BE-47…50 ✅; web FE-22, FE-23 | Web dùng dữ liệu mẫu; trình xem PDF chưa làm | FE-23 (bản đầu xem bằng ảnh trang `/files/{id}/pages/{n}/preview` của BE-43), FE-22 |
-| 10 | Xếp vào hồ sơ | API BE-62, BE-63 ✅; web FE-24 | Web dùng dữ liệu mẫu | FE-24 |
-| 11 | Trích xuất ngay, khay chờ | BE-98, BE-99; FE-45 | Đã viết mã, chưa build và test | BE-98, BE-99, FE-45 |
-| 12 | Theo dõi | Trang vận hành (BE-88, BE-99, FE-44); `ocr_jobs.model_version` | Trang vận hành chưa cho biết mô hình nào đang chạy thật | BE-100 |
+| 7 | Phân loại, trích trường | Qwen3-1.7B | ✅ mặc định 1.7B, ghim phiên bản, `ai_models` ghi 1.7B. **Trích trường tốt; tự chọn nhóm/loại kém**, đã giảm bằng thu hẹp từ khóa (chỉ chắc trên dữ liệu giả lập) | AI-20, AI-12 |
+| 8 | Ghi gợi ý, báo tiến độ | worker ghi `ai_suggestions` và NOTIFY; API đẩy SSE (BE-45 ✅); web FE-08 | ✅ Web mở một luồng SSE (fetch có header phân công), hộp tiếp nhận và màn đối chiếu cập nhật trực tiếp | FE-08 |
+| 9 | Đối chiếu | API BE-47…50 ✅; web FE-22, FE-23 | ✅ Web đối chiếu với dữ liệu thật, xem bản gốc bằng ảnh trang. Trình xem pdf.js và vùng nguồn (FE-22) chưa làm | FE-22 |
+| 10 | Xếp vào hồ sơ | API BE-62, BE-63 ✅; web FE-24 | ✅ Web xếp hồ sơ thật, tạo hồ sơ tại chỗ, mở PDF kế tiếp | FE-24 |
+| 11 | Trích xuất ngay, khay chờ | BE-98, BE-99; FE-45 | ✅ API chạy thật (nâng mức, không tạo việc trùng, ước tính thời gian); web ✅ nối API thật ở hộp tiếp nhận | — |
+| 12 | Theo dõi | Trang vận hành (BE-88, BE-99, BE-100, FE-44); `ocr_jobs.model_version` | API ✅ (mô hình thật, cảnh báo lệch, số việc theo khay); web chưa hiện `runningModels`/`modelMismatch` | FE-44 |
 
 ### Thứ tự làm
 
@@ -45,7 +45,44 @@ AI-01…AI-11 nằm ở `docs/04-ke-hoach-task.md` (mục P4). File này chi ti�
 | 4 | Theo dõi: **BE-100**; AI-12 đo tiếp trên giấy tờ thật | Trang vận hành cho biết mô hình đang chạy và tốc độ thật |
 | 5 | Khi tách máy AI hoặc có phần cứng mới: **AI-18** (S3/MinIO), **AI-17** (đổi mô hình), AI-11 (Linux GPU) | Theo từng task |
 
-Bước 0–2 thông luồng ở phía máy chủ (API, worker, mô hình). Bước 3 thông luồng trên giao diện.
+Bước 0–2 thông luồng ở phía máy chủ (API, worker, mô hình): **đã chạy thật ngày 17/11/2026**, xem mục dưới. Bước 3 (giao diện) đã làm ngày 17/11/2026 và có E2E `frontend/e2e/tiep-nhan.spec.ts`: nạp 3 PDF → khay → AI đọc xong → đối chiếu → tạo hồ sơ và xếp vào.
+
+### Kết quả chạy thật phía máy chủ · 17/11/2026 và vấn đề còn lại
+
+Chạy trên stack dev thật (API .NET, worker Python, PostgreSQL `hoso_dev`, Qwen3-1.7B), bằng `scripts/smoke-ai-flow.py` (luồng chính, 65 giây, 0 hỏng) và `scripts/smoke-ai-edge.py` (các đường phụ). Số đo chi tiết: [ai-worker/training/BAO-CAO-TOC-DO-M4.md](../../ai-worker/training/BAO-CAO-TOC-DO-M4.md).
+
+**Chạy đúng:**
+- đăng nhập, tải PDF vào khay nền, "Trích xuất ngay" nâng mức và không tạo việc trùng, SSE báo `job.progress` và `job.completed`;
+- việc nền nhường chỗ rồi chạy tiếp từ trang còn thiếu; ngoài ra `/jobs/{id}` báo `queueKind`;
+- PDF có lớp chữ không OCR (hợp đồng đất 3 trang); PDF lẫn trang quét chỉ OCR trang ảnh (8 trang, 1 trang OCR, 24 giây);
+- đọc lại một trang (chỉ trang đó, không đổi gợi ý cũ); "Trích xuất lại" chỉ gợi ý lại (reclassify, không OCR lại, giữ gợi ý cũ làm lịch sử);
+- hủy việc đang chờ và đang chạy: worker dừng, không để lại gợi ý;
+- web: đăng nhập dev qua proxy của Next rồi mở trang với phiên thật (`/api/v1/me`).
+
+**Vấn đề tìm thấy và đã sửa:**
+
+| # | Vấn đề | Sửa |
+|---|---|---|
+| 1 | 1.7B chọn nhóm 70%, loại 8% (4B: 98% và 92%) | Thu hẹp ứng viên bằng từ khóa tiêu đề (AI-20) |
+| 2 | 1.7B chép dòng phụ đề vào `document_form` làm danh sách loại rỗng, bỏ luôn bước chọn loại | Danh sách rỗng thì quay về các loại của nhóm đã chọn |
+| 3 | Biểu mẫu xe điền tay bị xếp nhầm vào nhóm công văn (U01-D02) và 0/9 trường: hai loại cùng khớp tên, mô hình chọn bừa | Tên loại nằm trong dòng tiêu đề in hoa được cộng điểm; nhóm khớp áp đảo thì dùng nhóm đó. Sau sửa: đúng loại, 7/9 trường (bằng bản 4B) |
+| 4 | Gói quét 7 trang gồm ba loại giấy tờ không được báo "cần tách" (`mixedDocuments=false`) | Nhiều trang tự ghi tên loại khác nhau ở tiêu đề thì đánh dấu gói nhiều giấy tờ |
+| 5 | Bấm "Trích xuất ngay" khi job đã được worker lấy: phần phân loại vẫn dùng lời nhắc chậm (mức ưu tiên đọc lúc lấy việc) | Đọc mức hiện tại trong CSDL |
+| 6 | Job từng nhường chỗ ghi `model_version` thiếu mô hình OCR | Tính cả trang đã OCR ở lần chạy trước |
+| 7 | Nhật ký worker ẩn cả bộ đếm `pages_text` (khóa chứa "text") nên mất số liệu | Chỉ ẩn khi giá trị là chuỗi/cấu trúc |
+| 8 | Worker từng **kẹt 13 phút ở 197% CPU**, không trả lời `/health`, giữ cổng 9108 và không nhận việc (máy đang dùng 9 GB swap trên 10 GB). Không tìm ra nguyên nhân. Dấu vết: kẹt ngay sau khi ghi `completed` vào CSDL cho job biểu mẫu xe (chưa có dòng nhật ký `job_completed`, thư mục làm việc rỗng còn sót); lệnh dừng (TERM) không được xử lý nên vòng lặp chính nằm trong một lệnh gọi không trả về. Các lần tắt/bật sau đều êm (kể cả khi đã nạp OCR và LLM, thoát sau 2 giây) | Watchdog cấp vòng lặp: vòng lặp rảnh không quay quá 120 giây hoặc tắt máy quá 180 giây thì thoát mã 75 để launchd/systemd chạy lại; `kill -USR1 <pid>` ghi ngăn xếp mọi luồng vào nhật ký |
+| 9 | `dev-up.sh` chạy worker mới khi worker cũ chưa thoát: "Address already in use", worker chết im lặng | `stop` chờ tối đa 30 giây rồi buộc dừng; `start` từ chối khi cổng 9108 đang bị giữ; thêm `restart` |
+| 10 | Bản đo tốc độ đầu tiên của 1.7B chạy đường thí điểm cũ, không giống worker | Đo lại đúng đường của worker (ghi rõ trong báo cáo) |
+
+**Còn lại, chưa giải quyết:**
+1. **Chưa có số đo trên giấy tờ thật.** Mọi con số đúng nhóm/loại của cách thu hẹp từ khóa là trên tài liệu giả lập in sẵn tên loại làm tiêu đề, nên chỉ là cận trên. Giấy tờ thật chỉ ghi "Công văn" hoặc "Thông báo" sẽ không khớp, và khi đó chất lượng trở lại mức yếu của 1.7B. Cần ít nhất 20 giấy tờ thật đã có nhãn (AI-12, AI-20).
+2. **Giá trị trích có thể thừa hoặc sai chữ nhỏ.** Ví dụ biển số: AI trả "TEST-001 - Màu biển: Trắng" thay vì "TEST-001"; địa chỉ "Thứ Nghiệm" do OCR đọc sai "Thử". Bộ lọc chỉ kiểm giá trị có nằm trong văn bản, không kiểm đúng hình thức của trường (biển số, ngày, số). Cần chuẩn hóa theo `value_type` của trường.
+3. **Tốc độ do OCR trang dày chữ quyết định:** một trang A4 in dày chữ ≈ 29 giây, gói quét 7 trang ≈ 134 giây; bản điền mô phỏng ≈ 7 giây/trang. Phần LLM sau khi đã nạp mô hình chỉ 7–15 giây. Ước tính thời gian chờ (`etaSeconds`) sẽ bằng `null` cho tới khi có ít nhất 3 trang OCR trong 24 giờ.
+4. **Thu hồi sau khi worker chết** phải chờ API phát hiện mất nhịp sống (mặc định 5 phút) rồi chờ chu kỳ quét 1 phút: việc dở đứng yên tối đa khoảng 6 phút. Kịch bản kiểm tra giả lập mất nhịp bằng cách đặt lùi `heartbeat_at`.
+5. ~~Giao diện chưa nối API thật~~ đã nối (FE-06, FE-08, FE-21, FE-23, FE-24). Còn lại: trang vận hành chưa hiện `runningModels`, `modelMismatch` (FE-44); trình xem PDF và vùng nguồn (FE-22).
+6. **Chưa cài worker thành dịch vụ** (launchd, AI-19) nên chưa kiểm được tự khởi động lại sau khi máy khởi động lại hay sau mã thoát 75.
+7. **Chưa đo bộ nhớ thật khi OCR và 1.7B cùng nằm trong bộ nhớ** (pha `coresident`): ước tính 6,5 GB trên ngân sách 7 GB, trong khi máy dev đang dùng gần hết swap.
+8. `access_events.action` chỉ nhận các hành động xem/tải, nên "Trích xuất ngay" chỉ ghi log có cấu trúc (`ai_extract`) và `ocr_jobs.prioritized_by`, chưa có trong nhật ký truy cập.
 
 ---
 
@@ -162,26 +199,19 @@ Tình trạng sau đợt làm 17/11/2026: mục 1 và 2 đã sửa (AI-13); mụ
   Hợp đồng PostgreSQL: `complete()` ghi `model_version`.
 - **Chưa làm:** `HOSO_AI_CLASSIFIER_ADAPTER`. LoRA không cho lợi ích đo được nên chưa cần.
 
-### AI-14 · Chuyển mặc định sang Qwen3-1.7B 🟡 · 1 ngày
+### AI-14 · Chuyển mặc định sang Qwen3-1.7B ✅ · 1 ngày
 - **Phụ thuộc:** AI-13. Không còn chờ AI-12 (quyết định 17/11/2026).
 - **Đã làm:**
   - Lời nhắc ngắn đưa vào `document_ai/prompts.py`; `ai-worker/training/prompts.py` dùng lại đúng bản này.
   - `classify(..., prompt_style="production"|"short")` chỉ đổi bước trích trường. Bản ngắn không xin trích dẫn: lấy chính giá trị làm dẫn chứng, và giá trị vẫn phải có nguyên văn trong văn bản mới được nhận.
   - Job mang mức ưu tiên từ CSDL (`Job.priority`). `HOSO_AI_PROMPT_INTERACTIVE` dùng cho việc có người chờ, `HOSO_AI_PROMPT_BACKGROUND` cho khay nền (`HOSO_AI_BACKGROUND_FROM`, mặc định 7).
   - Test: lời nhắc ngắn chỉ hỏi label/value, tối đa 1.200 token; giá trị bịa bị loại; mức 1/3/6 dùng lời nhắc nhanh, mức 7/9 dùng lời nhắc đầy đủ.
-- **Còn làm:**
-  1. `document_ai/config.py`:
-     - mặc định `DEFAULT_CLASSIFIER = "Qwen3-1.7B-4bit"`;
-     - mục `classifier` trong `MODELS` đổi sang `mlx-community/Qwen3-1.7B-4bit` @ `3b1b1768f8f8cf8351c712464f906e86c2b8269e`, để `document_ai/download.py` tải đúng phiên bản ghim trên máy mới;
-     - Qwen3-4B chuyển sang `OPTIONAL_MODELS` để đổi lại được.
-  2. Mặc định lời nhắc theo ưu tiên tốc độ: việc có người chờ `short`, khay nền `production`.
-  3. `HOSO_AI_MODEL_BUDGET_GB` mặc định 7 (OCR ước 4,5 GB, 1.7B 2 GB) để không phải nạp lại OCR mỗi job. Kiểm lại bằng số đo bộ nhớ của AI-12.
-  4. Migration `033_ai_model_qwen3_17b.sql`: dòng `classifier` của `ai_models` đổi sang 1.7B. `receipt` ghi lý do (quyết định 17/11/2026, phần cứng), mô hình cũ và cách quay lại.
-  5. Cập nhật `.env.example`, `ai-worker/README.md`, `document_ai/README.md`, `docs/01-tong-quan-du-an.md` (hiện vẫn ghi Qwen3-4B).
-- **Kiểm tra:**
-  - test worker và `tests/test_document_ai.py` qua;
-  - `hoso-ai once --pdf <mẫu>` với 1.7B in ra nhóm, loại, trường;
-  - job thật ghi `model_version` có `Qwen3-1.7B-4bit@3b1b176/short` hoặc `/production` theo mức ưu tiên.
+- **Kết quả (phần còn lại đã làm):**
+  - `document_ai/config.py`: mặc định `Qwen3-1.7B-4bit`, `MODELS["classifier"]` ghim `mlx-community/Qwen3-1.7B-4bit` @ `3b1b176`; Qwen3-4B chuyển sang `OPTIONAL_MODELS["classifier_4b"]` (tải: `python -m document_ai.download --model classifier_4b`, đổi lại bằng `HOSO_AI_CLASSIFIER_MODEL`). `download.py` tải đúng thư mục đã ghim, không phụ thuộc cấu hình.
+  - Mặc định lời nhắc: việc có người chờ `short`, khay nền `production`; ngân sách bộ nhớ 7 GB.
+  - Migration 033 (`ai_models` ghi 1.7B kèm lý do và cách quay lại), đã áp vào `hoso_dev`.
+  - Cập nhật `.env.example`, README các nơi, `scripts/evaluate-form-test-data.py` (trước đây gọi mẫu chat không tắt chế độ suy nghĩ, sẽ hỏng với 1.7B).
+  - Trên worker thật: `model_version` ghi `classifier=Qwen3-1.7B-4bit@3b1b176/short` hoặc `/production`; mức ưu tiên đang xét là mức **hiện tại** trong CSDL (bấm "Trích xuất ngay" khi job đang chạy thì phần còn lại dùng lời nhắc nhanh); job từng nhường chỗ vẫn ghi mô hình OCR đã dùng ở lần chạy trước.
 
 ### AI-15 · Khay nền và nhường chỗ cho việc ưu tiên ✅ · 1,5 ngày
 - **Kết quả:**
@@ -261,7 +291,7 @@ Tình trạng sau đợt làm 17/11/2026: mục 1 và 2 đã sửa (AI-13); mụ
   - khởi động lại máy thì worker tự chạy và lấy việc;
   - dừng worker giữa chừng thì job quay lại hàng đợi, lần sau chỉ đọc trang còn thiếu.
 
-### OPS-07 · Môi trường dev chạy đủ luồng AI ⬜ · 0,5 ngày
+### OPS-07 · Môi trường dev chạy đủ luồng AI ✅ · 0,5 ngày
 - **Làm:**
   1. Sao lưu `hoso_dev`, rồi áp migration 032 và 033 bằng `backend/scripts/migrate-hoso-dev.sh`: xem danh sách trước, sau đó mới `--apply`. Không chạy `migrate` trần, không chạy 004.
   2. `ALTER ROLE hoso_ai_worker LOGIN PASSWORD ...`. Mật khẩu chỉ ghi trong `ai-worker/.env` (không đưa vào repo). Kiểm lại: role này chỉ ghi được các bảng xử lý.
@@ -275,7 +305,7 @@ Tình trạng sau đợt làm 17/11/2026: mục 1 và 2 đã sửa (AI-13); mụ
      - web với `HOSO_API_INTERNAL_URL=http://localhost:5080` và `HOSO_SESSION_COOKIE=hoso_session_dev`. Next chuyển tiếp `/api/*` sang API, nên cookie và SSE cùng origin.
 - **Kiểm tra:** một lệnh chạy đủ ba phần; đăng nhập web bằng tài khoản giả lập qua `/api/v1/auth/login`.
 
-### QA-07 · Kịch bản kiểm tra thông luồng AI qua API ⬜ · 1 ngày
+### QA-07 · Kịch bản kiểm tra thông luồng AI qua API ✅ · 1 ngày
 - **Tệp:** `scripts/smoke-ai-flow.py`.
 - **Làm:**
   1. Đăng nhập `demo_cv_ht` bằng dev-login; mở SSE `/api/v1/events`.
@@ -286,6 +316,10 @@ Tình trạng sau đợt làm 17/11/2026: mục 1 và 2 đã sửa (AI-13); mụ
   6. `ocr_jobs.model_version` ghi `Qwen3-1.7B-4bit@3b1b176`.
   7. In thời gian từng bước.
 - **Kiểm tra:** chạy lặp lại được. Dùng làm bài kiểm tra sau mỗi lần cập nhật worker hoặc đổi mô hình (AI-17).
+- **Kết quả 17/11/2026 (đã chạy thật, 0 kiểm tra hỏng ở từng lượt):**
+  - `smoke-ai-flow.py`: 3 PDF, 65 giây; thêm `--file-to-dossier` (xác nhận phân loại, xác nhận trường, tạo hồ sơ, xếp giấy tờ vào, mở hồ sơ): 46 giây.
+  - `smoke-ai-edge.py`: `text`, `mixed`, `reread`, `force`, `packet`, `handsim`, `cancel`, `crash`, mỗi kịch bản qua ít nhất một lượt. Các lượt chạy trên các phiên bản mã khác nhau trong ngày vì có sửa lỗi giữa chừng (xem bảng "Vấn đề tìm thấy"); chưa chạy lại cả bộ trong một lượt trên bản mã cuối.
+  - Dữ liệu thử nằm lại trong `hoso_dev` (giấy tờ ở trạng thái đã bỏ khỏi hộp tiếp nhận, một hồ sơ `UBND-2026-000001` do `--file-to-dossier` tạo).
 
 ---
 

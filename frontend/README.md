@@ -49,15 +49,38 @@ src/
 │  ├─ ui/                      Button, Chip, PageHeader, TabsNav, Stepper, EmptyState, ErrorPanel, NoAccess…
 │  └─ dossier/action-bar.tsx   Thanh thao tác chuyển bước
 ├─ lib/
-│  ├─ api/server.ts            apiFetch: gọi API .NET từ máy chủ, chuyển tiếp cookie, ApiError
+│  ├─ api/server.ts            serverApi() có kiểu theo openapi.json, apiFetch, chuyển tiếp cookie, ApiError
+│  ├─ api/client.ts            Trình duyệt: header API, tải PDF lên bằng XHR có tiến độ
+│  ├─ api/problem.ts           ProblemDetails, ApiError, thông báo lỗi tiếng Việt
+│  ├─ actions.ts · action-result.ts · use-server-action.ts   Khung Server Action và hook gọi action
+│  ├─ events/                  Luồng SSE dùng chung (fetch + bộ đọc SSE), hook useServerEvent
 │  ├─ auth/                    permissions, session (DAL), page-guard, types
 │  ├─ env.ts · log.ts · workflow.ts · cn.ts
 │  └─ mock/                    Dữ liệu GIẢ LẬP, xóa dần khi nối API
+├─ features/                   Mã theo nghiệp vụ: intake (hộp tiếp nhận, nạp PDF), review (đối chiếu), dossier (xếp hồ sơ), ops
+├─ api/                        openapi.json (backend xuất) và schema.d.ts (npm run gen:api)
 └─ types/global.d.ts
 ```
 
 ## Kiểm tra trước khi đẩy code
 
 ```sh
-npx tsc --noEmit && npm run lint && npm run build
+npm run typecheck && npm run lint && npm test && npm run build
 ```
+
+Đổi `openapi.json` (backend xuất bằng `backend/scripts/export-openapi.sh`) thì chạy `npm run gen:api` rồi `npm run typecheck`: chỗ nào đã lệch hợp đồng sẽ lỗi biên dịch.
+
+## E2E (Playwright)
+
+Hai chế độ chọn bằng `E2E_MODE`:
+
+| Chế độ | Cần | Chạy |
+|---|---|---|
+| `integration` | Stack thật: `scripts/dev-up.sh start` (API, worker AI, web, CSDL `hoso_dev`) | `E2E_MODE=integration npx playwright test` |
+| mặc định | Web chạy `HOSO_MOCK=1` (chưa có kịch bản giả lập) | `npx playwright test` |
+
+Kịch bản `@integration` (`e2e/tiep-nhan.spec.ts`) nạp 3 PDF mẫu, chờ AI đọc xong (1–3 phút), đối chiếu và xếp vào hồ sơ mới; dữ liệu thử nằm lại trong `hoso_dev` với tên bắt đầu bằng "E2E". Đăng nhập bằng `dev_admin` (API dev-login). Nếu Playwright báo thiếu trình duyệt, chạy `npx playwright install chromium` hoặc đặt `E2E_CHROMIUM` tới tệp chromium có sẵn. Luồng SSE luôn mở nên đừng dùng `waitForLoadState("networkidle")`.
+
+## Gọi API từ trình duyệt
+
+API chỉ nhận phân công đang dùng qua header `X-Assignment-Id`. Thẻ `<img>` và `EventSource` không gửi được header, còn cookie `hoso_assignment` là httpOnly. Vì vậy mọi lệnh gọi trực tiếp từ trình duyệt (tải lên, ảnh trang, SSE) lấy mã phân công từ `useAssignmentId()` và gắn `browserHeaders()` (`src/lib/api/client.ts`); ảnh trang và SSE đọc bằng `fetch`, không dùng `<img src>` hay `EventSource`.

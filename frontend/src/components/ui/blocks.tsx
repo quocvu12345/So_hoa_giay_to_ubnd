@@ -77,3 +77,12 @@ export function PlannedScreen({ task, items }: { task: string; items: string[] }
 export function PageBody({ children, className }: { children: ReactNode; className?: string }) {
   return <div className={cn("grid gap-4 px-4 py-5 sm:px-6", className)}>{children}</div>;
 }
+
+/** Màn đã nối API thật nhưng đang chạy dữ liệu mẫu (HOSO_MOCK=1): nói rõ cách bật, không hiện dữ liệu giả. */
+export function NeedsRealApi({ what }: { what: string }) {
+  return (
+    <EmptyState icon={Hammer} title="Màn này cần API thật">
+      {what} đã nối với API .NET nên không có dữ liệu giả lập. Chạy <code className="font-mono">scripts/dev-up.sh start</code> rồi đặt <code className="font-mono">HOSO_MOCK=0</code> trong <code className="font-mono">.env.local</code>.
+    </EmptyState>
+  );
+}

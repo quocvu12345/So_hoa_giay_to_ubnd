@@ -1,6 +1,7 @@
 """Vòng lặp worker: lấy job → xử lý → ghi kết quả; heartbeat chạy nền; tắt an toàn khi nhận SIGTERM."""
 from __future__ import annotations
 
+import os
 import threading
 import time
 from dataclasses import dataclass, field
@@ -13,6 +14,7 @@ from .engines.base import Engines
 from .pipeline import DocumentPipeline, JobTimeout, JobYielded, WorkerStopping
 from .queue.repository import JobCancelled, JobLost, JobRepository
 from .runtime.scheduler import ModelScheduler
+from .runtime.watchdog import EXIT_STUCK
 from .runtime.windows import BackgroundWindows
 from .settings import Settings
 from .storage import LocalBlobStorage, StorageError
@@ -39,8 +41,13 @@ def should_retry(job: Job, max_attempts: int, error: Exception) -> bool:
 class Worker:
     def __init__(self, settings: Settings, repo: JobRepository, engines: Engines, storage: LocalBlobStorage,
                  scheduler: ModelScheduler, state: WorkerState | None = None, stop: threading.Event | None = None,
-                 now: Callable[[], datetime] = datetime.now):
+                 now: Callable[[], datetime] = datetime.now, exit_fn: Callable[[int], None] = os._exit):
         self.settings = settings
+        self.exit_fn = exit_fn
+        # Vòng lặp rảnh phải quay ít nhất mỗi poll_seconds; quá lâu hơn nhiều là kẹt (xem stuck_reason). Tắt máy êm không được quá 180 giây.
+        self.idle_stuck_seconds = max(120.0, settings.poll_seconds * 8)
+        self.shutdown_grace_seconds = 180.0
+        self._stop_seen_at: float | None = None
         self.windows = BackgroundWindows.parse(settings.background_windows)
         self.now = now
         self.repo = repo
@@ -50,9 +57,31 @@ class Worker:
         self.stop = stop or threading.Event()
         self.pipeline = DocumentPipeline(engines, scheduler, repo, settings, settings.worker_id, self.stop)
 
+    def stuck_reason(self, now_ts: float) -> str | None:
+        """Lý do worker coi là KẸT, hoặc None. Phần đang xử lý job đã có Watchdog theo từng thao tác (AI-08); đây là lớp ngoài cùng cho phần còn lại:
+        vòng lặp rảnh không quay (nghẽn ở lấy việc, đợi thông báo, ghi log, nạp/bỏ mô hình...) và tắt máy không kết thúc."""
+        if self.stop.is_set():
+            self._stop_seen_at = self._stop_seen_at or now_ts
+            if now_ts - self._stop_seen_at > self.shutdown_grace_seconds:
+                return f"tắt máy quá {self.shutdown_grace_seconds:.0f} giây"
+            return None
+        if self.state.current_job is None and now_ts - self.state.last_loop_at > self.idle_stuck_seconds:
+            return f"vòng lặp rảnh không quay {now_ts - self.state.last_loop_at:.0f} giây"
+        return None
+
+    def _loop_watchdog(self, interval: float = 5.0) -> None:
+        while True:
+            time.sleep(interval)
+            reason = self.stuck_reason(time.time())
+            if reason:
+                log.error("worker_loop_stuck", reason=reason, worker=self.settings.worker_id)
+                self.exit_fn(EXIT_STUCK)       # launchd/systemd chạy lại; job dở dang được thu hồi sau khi mất nhịp sống
+                return
+
     def run_forever(self) -> None:
         log.info("worker_started", worker=self.settings.worker_id, profile=self.settings.profile,
                  model_budget_gb=self.settings.model_budget_gb)
+        threading.Thread(target=self._loop_watchdog, name="loop-watchdog", daemon=True).start()
         try:
             while not self.stop.is_set():
                 self.state.last_loop_at = time.time()
@@ -126,6 +155,7 @@ class Worker:
         finally:
             beating.set()
             heartbeat.join(timeout=5)
+            self.state.last_loop_at = time.time()       # trước khi bỏ current_job, để watchdog không lấy thời gian của cả job làm thời gian kẹt
             self.state.current_job = None
 
     def _heartbeat_loop(self, job: Job, done: threading.Event) -> None:

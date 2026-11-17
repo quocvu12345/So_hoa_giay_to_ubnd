@@ -26,6 +26,10 @@ export type Session = {
   activeAssignment: Assignment;
   permissions: Permission[];
   isMock: boolean;
+  /** Phân công đang dùng cần xác thực hai lớp mà phiên chưa qua (BE-95): API chưa gắn quyền nào, phải đăng nhập lại có MFA. */
+  mfaRequired?: boolean;
+  /** Phân công lưu trong cookie không còn dùng được nên đã quay về phân công mặc định trong request này. */
+  assignmentReset?: boolean;
 };
 
 export function scopeLabel(a: Assignment): string {

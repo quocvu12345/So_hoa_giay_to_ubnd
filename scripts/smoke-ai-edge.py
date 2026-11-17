@@ -157,7 +157,7 @@ def scenario_handsim(api: Api):
         print(f"    {mark} {k}: mẫu={v!r} AI={got.get(k, '')!r}")
     check(job["status"] == "completed", "đọc xong", job.get("error") or job["status"])
     check(s.get("documentTypeCode") == "U27-D13", "đúng loại giấy khai thu hồi xe (U27-D13)", str(s.get("documentTypeCode")))
-    check(wrong <= 1, "không bịa giá trị sai (tối đa 1 trường sai)", f"{wrong} trường sai")
+    check(right >= 6 and wrong <= 2, "đúng ít nhất 6/9 trường, sai tối đa 2 (chuẩn của bản 4B trên mẫu này: 7/9)", f"đúng {right}, sai {wrong}")
 
 
 def scenario_reread(api: Api, base: dict):

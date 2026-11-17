@@ -43,7 +43,7 @@ export const NAVIGATION: NavGroup[] = [
     label: "Công việc",
     items: [
       { href: routes.home, label: "Việc của tôi", description: "Những việc đang chờ bạn xử lý theo phân công", icon: ClipboardList, keywords: "viec cua toi trang chu" },
-      { href: routes.intake, label: "Tiếp nhận PDF", description: "Nạp bản quét, xem AI đọc, đối chiếu và xếp vào hồ sơ", icon: Inbox, permission: ["intake.upload", "intake.manage"], keywords: "tiep nhan scan quet pdf doi chieu" },
+      { href: routes.intake, label: "Tiếp nhận PDF", description: "Nạp bản quét, xem AI đọc, đối chiếu và xếp vào hồ sơ", icon: Inbox, permission: "intake.upload", keywords: "tiep nhan scan quet pdf doi chieu" },
       { href: routes.dossiers, label: "Hồ sơ", description: "Danh sách hồ sơ trong phạm vi của bạn", icon: FileStack, permission: "dossier.read", keywords: "ho so danh sach" },
       { href: routes.archive, label: "Nộp lưu", description: "Hồ sơ chờ tiếp nhận nộp lưu và các đợt nộp lưu", icon: Archive, permission: "dossier.archive", keywords: "nop luu luu tru" },
     ],

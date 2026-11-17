@@ -66,3 +66,54 @@ def test_tien_trinh_ket_that_su_bi_thoat_ma_75_dung_han():
     assert time.monotonic() - started < 15
     assert "không bao giờ tới đây" not in result.stdout
     assert '"event": "operation_stuck"' in result.stdout and '"what": "ocr"' in result.stdout, "có dòng log JSON báo thao tác kẹt"
+
+
+# ---- Lớp ngoài cùng: vòng lặp rảnh và tắt máy ----------------------------------------------------------------------------------------
+
+def _worker(settings, repo, **kw):
+    from pathlib import Path
+
+    from conftest import FakeReader, FakeStorage
+    from hoso_ai.engines.base import Engines
+    from hoso_ai.engines.fake import FakeClassifier, FakeOcr
+    from hoso_ai.engines.quality import PillowQualityChecker
+    from hoso_ai.runtime.scheduler import ModelScheduler
+    from hoso_ai.worker import Worker
+
+    return Worker(settings, repo, Engines(FakeReader(), FakeOcr(), FakeClassifier(), PillowQualityChecker()), FakeStorage(Path("/tmp/fake.pdf")), ModelScheduler(6), **kw)
+
+
+def test_vong_lap_ranh_khong_quay_qua_lau_thi_bi_coi_la_ket(settings, repo):
+    worker = _worker(settings, repo)
+    base = worker.state.last_loop_at
+    assert worker.stuck_reason(base + 30) is None, "đang chờ việc bình thường"
+    assert "vòng lặp rảnh" in worker.stuck_reason(base + worker.idle_stuck_seconds + 1)
+    worker.state.current_job = "job-1"
+    assert worker.stuck_reason(base + 10_000) is None, "đang xử lý job thì đã có watchdog theo từng thao tác"
+
+
+def test_tat_may_qua_han_thi_bi_coi_la_ket(settings, repo):
+    worker = _worker(settings, repo)
+    worker.stop.set()
+    assert worker.stuck_reason(1000.0) is None, "mới nhận lệnh dừng"
+    assert worker.stuck_reason(1000.0 + worker.shutdown_grace_seconds - 1) is None
+    assert "tắt máy" in worker.stuck_reason(1000.0 + worker.shutdown_grace_seconds + 1)
+
+
+def test_watchdog_vong_lap_thoat_tien_trinh_voi_ma_75(settings, repo, monkeypatch):
+    import hoso_ai.worker as worker_module
+
+    codes = []
+    worker = _worker(settings, repo, exit_fn=codes.append)
+    worker.state.last_loop_at -= 10_000
+    monkeypatch.setattr(worker_module.time, "sleep", lambda seconds: None)
+    worker._loop_watchdog(0)
+    assert codes == [75]
+
+
+def test_xu_ly_xong_job_dai_khong_bi_watchdog_hieu_nham_la_ket(settings, repo):
+    worker = _worker(settings, repo)
+    repo.enqueue(__import__("conftest").make_job())
+    worker.state.last_loop_at -= 5_000        # job chạy rất lâu: vòng lặp chưa quay từ lúc bắt đầu
+    assert worker.run_once()
+    assert worker.stuck_reason(__import__("time").time()) is None

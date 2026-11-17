@@ -62,7 +62,20 @@ Bước **trích trường** của 1.7B vẫn tốt khi đã biết đúng loạ
 | SSE | có `job.progress` và `job.completed` cho từng giấy tờ |
 | Loại đúng, mọi trường có trích dẫn khớp văn bản | 3/3 giấy tờ |
 
-`scripts/smoke-ai-edge.py`: xem mục "Vấn đề tìm thấy" ở [docs/tasks/ai.md](../../docs/tasks/ai.md).
+`scripts/smoke-ai-edge.py` (số đo thực trên stack dev):
+
+| Kịch bản | Kết quả |
+|---|---|
+| PDF có lớp chữ 3 trang | 0 trang OCR; 58 giây khi bị dùng lời nhắc chậm (đã sửa) |
+| PDF 8 trang lẫn 1 trang ảnh | 1 trang OCR, 24 giây |
+| Đọc lại 1 trang dày chữ | 30 giây (OCR 29 giây) |
+| "Trích xuất lại" (reclassify) | 14 giây, không OCR |
+| Gói quét 7 trang, 3 loại giấy tờ | 134 giây; sau sửa báo `mixedDocuments=true` |
+| Biểu mẫu xe điền tay mô phỏng | 35 giây; đúng loại U27-D13; 7/9 trường (2 sai: "TEST-001 - Màu biển: Trắng" thừa chữ, "Thứ Nghiệm" do OCR) |
+| Hủy việc đang chờ và đang chạy | worker dừng việc đã hủy, không để lại gợi ý |
+| Giết worker khi xong 2/7 trang | API thu hồi sau 24 giây (đã đặt lùi nhịp sống), worker mới chỉ đọc 5 trang còn thiếu |
+
+Lúc chạy các kịch bản này swap đã dùng 9 GB trên 10 GB rồi 17 GB trên 18 GB: máy dev rất thiếu RAM, nên thời gian có thể chậm hơn máy chuyên dụng.
 
 ## 4. Kết luận cho việc dùng Qwen3-1.7B
 

@@ -1,4 +1,4 @@
-"""AI-12: đo từng bước của luồng AI thật trên máy hiện tại (Mac M4 16 GB), cho Qwen3-4B và Qwen3-1.7B.
+"""AI-12: đo từng bước của luồng AI thật trên máy hiện tại (Mac M4 16 GB), cho các model trong common.MODELS.
 
 Ba pha, chạy riêng để không tranh bộ nhớ (trừ pha `coresident` cố ý chạy chung):
 
@@ -14,6 +14,9 @@ Dữ liệu (đều là bản GIẢ LẬP hoặc mẫu công khai, không phải
 from __future__ import annotations
 
 import argparse
+import hashlib
+import importlib.metadata
+import math
 import json
 import os
 import shutil
@@ -22,9 +25,11 @@ import subprocess
 import sys
 import time
 from collections import defaultdict
+from datetime import datetime, timezone
 
 import psutil
 from common import REPO, WORK, MODELS, append_jsonl, read_jsonl
+from bench_activity import ModelActivity
 
 from hoso_ai.engines.mlx import PaddleVlMlxOcr
 from hoso_ai.engines.pdfium import PdfiumReader
@@ -148,32 +153,40 @@ class Instrumented:
         answer = self._real_generate(model, tokenizer, prompt=prompt, **kwargs)
         self.calls.append({"seconds": round(time.perf_counter() - began, 2),
                            "prompt_tokens": len(tokenizer.encode(prompt)), "output_tokens": len(tokenizer.encode(answer)),
-                           "max_tokens": kwargs.get("max_tokens")})
+                           "max_tokens": kwargs.get("max_tokens"), "answer": answer})
         return answer
 
     def peak_gb(self) -> float:
         return gb(self.mx.get_peak_memory())
 
 
-def run_classify(instrument: Instrumented, row: dict, restrict: bool = True, prompt_style: str = "production", shortlist: bool = False) -> dict:
+def run_classify(instrument: Instrumented, row: dict, restrict: bool = True, prompt_style: str = "production", shortlist: bool = False, categories=None) -> dict:
     from document_ai.classify import classify
 
     pages = [{"page": p["page"], "text": p["text"]} for p in row["pages"]]
     instrument.calls.clear()
+    started_at = datetime.now(timezone.utc).isoformat()
     began = time.perf_counter()
     error, result = None, {}
     try:
         # restrict=True là cách worker thật gọi (QwenMlxClassifier): chỉ chọn loại trong nhóm đã chọn. False là bản thí điểm cũ, chọn trong mọi nhóm có tên giống.
-        result = classify(pages, restrict_types_to_group=restrict, llm=instrument, prompt_style=prompt_style, shortlist=shortlist)
+        result = classify(pages, categories, restrict_types_to_group=restrict, llm=instrument, prompt_style=prompt_style, shortlist=shortlist)
     except Exception as exc:
         error = f"{type(exc).__name__}: {str(exc)[:200]}"
     seconds = round(time.perf_counter() - began, 2)
     calls = list(instrument.calls)
-    steps = {"group": calls[0]["seconds"] if calls else None, "type": calls[1]["seconds"] if len(calls) > 1 else None,
-             "fields": round(sum(c["seconds"] for c in calls[2:]), 2), "field_calls": max(0, len(calls) - 2)}
+    # Chọn loại theo tiêu đề bỏ qua một lần gọi; không gán nhầm lần trích trường thành bước chọn loại.
+    group_calls = [c for c in calls if c["max_tokens"] == 1000]
+    type_calls = [c for c in calls if c["max_tokens"] == 200]
+    field_calls = [c for c in calls if c["max_tokens"] not in (1000, 200)]
+    steps = {"group": sum(c["seconds"] for c in group_calls) if group_calls else None,
+             "type": sum(c["seconds"] for c in type_calls) if type_calls else None,
+             "fields": round(sum(c["seconds"] for c in field_calls), 2), "field_calls": len(field_calls)}
     predicted = {f["label"]: f["value"] for f in result.get("fields", [])}
     truth = row.get("expected_fields") or {}
     return {"id": row["id"], "kind": row["kind"], "seconds": seconds, "steps": steps, "error": error,
+            "started_at": started_at, "finished_at": datetime.now(timezone.utc).isoformat(),
+            "warnings": result.get("field_extraction_warnings", []), "result": result, "calls": calls,
             "expected_type_id": row["expected_type_id"], "predicted_type_id": result.get("type_id"),
             "predicted_group": result.get("category_code"),
             "fields": [{"label": k, "truth": v, "pred": predicted.get(k, ""),
@@ -182,21 +195,57 @@ def run_classify(instrument: Instrumented, row: dict, restrict: bool = True, pro
 
 
 def phase_llm(args) -> None:
-    rows = [r for r in read_jsonl(BENCH / "ocr.jsonl") if r["pages"] and not r["error"]]
+    with ModelActivity(require_idle=args.exclusive) as activity:
+        _phase_llm(args, activity)
+
+
+def _phase_llm(args, activity) -> None:
+    from document_ai.config import local_environment, model_identity
+    from pathlib import Path
+
+    os.environ.update(local_environment())
+    source = Path(args.input) if args.input else BENCH / "ocr.jsonl"
+    categories = json.loads(Path(args.catalog).read_text()) if args.catalog else None
+    rows = [r for r in read_jsonl(source) if r["pages"] and not r["error"]]
     rows = rows[:args.limit] if args.limit else rows
+    if not rows:
+        raise ValueError("Không có tài liệu OCR hợp lệ để đo")
+    BENCH.mkdir(parents=True, exist_ok=True)
+    target = BENCH / f"llm-{args.model}{args.tag}.json"
+    if target.exists():
+        raise FileExistsError(f"Không ghi đè kết quả đã có: {target}")
+    before = system_state()
     instrument = Instrumented(args.model)
     instrument.mx.reset_peak_memory()
     print(f"{args.model}: nạp {instrument.load_seconds}s, {len(rows)} tài liệu", flush=True)
     docs = []
+    metadata = {"model": args.model, "identity": model_identity(MODELS[args.model]),
+                "prompt": args.prompt, "shortlist": args.shortlist, "restrict_types_to_group": not args.legacy_catalog_scope,
+                "thinking": False, "temperature": 0,
+                "input_sha256": hashlib.sha256(json.dumps(rows, ensure_ascii=False, sort_keys=True).encode()).hexdigest(),
+                "catalog_sha256": hashlib.sha256(json.dumps(categories, ensure_ascii=False, sort_keys=True).encode()).hexdigest() if categories else None,
+                "document_ids": [r["id"] for r in rows], "system_before": before,
+                "versions": {p: importlib.metadata.version(p) for p in ("mlx", "mlx-lm", "transformers")}}
+    receipt = MODELS[args.model] / "conversion-receipt.json"
+    if receipt.exists():
+        metadata["conversion"] = json.loads(receipt.read_text())
+    def save(complete):
+        summary = summarize(docs)
+        summary.update({"model": args.model, "load_seconds": instrument.load_seconds, "peak_memory_gb": instrument.peak_gb(),
+                        "documents": len(docs), "date": time.strftime("%F %T")})
+        data = {"metadata": {**metadata, "system_after": system_state(), "complete": complete,
+                              "gpu_activity": activity.report()}, "summary": summary, "documents": docs}
+        temporary = target.with_suffix(".json.tmp")
+        temporary.write_text(json.dumps(data, ensure_ascii=False, indent=1), encoding="utf-8")
+        temporary.replace(target)
+        return summary
     for index, row in enumerate(rows, 1):
-        doc = run_classify(instrument, row, restrict=not args.legacy_catalog_scope, prompt_style=args.prompt, shortlist=args.shortlist)
+        doc = run_classify(instrument, row, restrict=not args.legacy_catalog_scope, prompt_style=args.prompt, shortlist=args.shortlist, categories=categories)
         docs.append(doc)
+        save(False)
         mark = "đúng" if doc["predicted_type_id"] == doc["expected_type_id"] else f"SAI ({doc['predicted_type_id']})"
         print(f"[{index}/{len(rows)}] {doc['id']} {doc['seconds']:.0f}s loại {mark}" + (f" LỖI {doc['error']}" if doc["error"] else ""), flush=True)
-    summary = summarize(docs)
-    summary.update({"model": args.model, "load_seconds": instrument.load_seconds, "peak_memory_gb": instrument.peak_gb(),
-                    "documents": len(docs), "date": time.strftime("%F %T")})
-    (BENCH / f"llm-{args.model}{args.tag}.json").write_text(json.dumps({"summary": summary, "documents": docs}, ensure_ascii=False, indent=1), encoding="utf-8")
+    summary = save(True)
     print(json.dumps(summary, ensure_ascii=False, indent=1))
 
 
@@ -222,13 +271,14 @@ def summarize(docs: list[dict]) -> dict:
         step = lambda key: [d["steps"][key] for d in items if d["steps"][key] is not None]
         return {"documents": n,
                 "errors": sum(1 for d in items if d["error"]),
+                "documents_with_field_warnings": sum(bool(d.get("warnings")) for d in items),
                 "group_correct": rate(sum(1 for d in items if (d["predicted_group"] or "") == d["expected_type_id"].split("-")[0]), n),
                 "type_correct": rate(sum(1 for d in items if d["predicted_type_id"] == d["expected_type_id"]), n),
                 "truth_fields": field["truth"], "field_correct": rate(field["correct"], field["truth"]),
                 "field_wrong": rate(field["wrong"], field["truth"]), "field_missed": rate(field["missed"], field["truth"]),
                 "field_correct_of_readable": rate(field["correct_readable"], field["readable"]),
                 "seconds_median": round(statistics.median(seconds), 1) if seconds else None,
-                "seconds_p90": round(sorted(seconds)[int(len(seconds) * 0.9) - 1], 1) if seconds else None,
+                "seconds_p90": round(sorted(seconds)[math.ceil(len(seconds) * 0.9) - 1], 1) if seconds else None,
                 "step_group_median": round(statistics.median(step("group")), 1) if step("group") else None,
                 "step_type_median": round(statistics.median(step("type")), 1) if step("type") else None,
                 "step_fields_median": round(statistics.median(step("fields")), 1) if step("fields") else None,
@@ -299,13 +349,16 @@ def main() -> None:
     parser = argparse.ArgumentParser()
     sub = parser.add_subparsers(dest="phase", required=True)
     ocr = sub.add_parser("ocr"); ocr.add_argument("--filled", type=int, default=36); ocr.set_defaults(run=phase_ocr)
-    llm = sub.add_parser("llm"); llm.add_argument("--model", choices=("qwen3-4b", "qwen3-1.7b"), required=True)
+    llm = sub.add_parser("llm"); llm.add_argument("--model", choices=MODELS, required=True)
+    llm.add_argument("--input", help="JSONL OCR cố định cho phép đo ghép cặp")
+    llm.add_argument("--catalog", help="JSON danh mục cố định, cùng cấu trúc worker chuyển cho classify")
     llm.add_argument("--limit", type=int)
     llm.add_argument("--prompt", choices=("production", "short"), default="production", help="kiểu lời nhắc bước trích trường")
     llm.add_argument("--legacy-catalog-scope", action="store_true", help="chọn loại trong mọi nhóm như bản thí điểm cũ (không giống worker thật)")
     llm.add_argument("--shortlist", action="store_true", help="AI-20: chỉ đưa cho mô hình các nhóm/loại khớp từ khóa nhất")
+    llm.add_argument("--exclusive", action="store_true", help="Từ chối đo nếu có worker/model khác; theo dõi tiến trình khởi động lại khi đo")
     llm.add_argument("--tag", default="", help="hậu tố tên tệp kết quả"); llm.set_defaults(run=phase_llm)
-    co = sub.add_parser("coresident"); co.add_argument("--model", choices=("qwen3-4b", "qwen3-1.7b"), required=True)
+    co = sub.add_parser("coresident"); co.add_argument("--model", choices=MODELS, required=True)
     co.add_argument("--docs", type=int, default=4); co.set_defaults(run=phase_coresident)
     sub.add_parser("report").set_defaults(run=phase_report)
     args = parser.parse_args()

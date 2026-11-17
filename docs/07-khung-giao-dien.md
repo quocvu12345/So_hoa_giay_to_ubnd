@@ -54,7 +54,7 @@ flowchart LR
 | `/dang-nhap` | Đăng nhập tài khoản cơ quan; chế độ giả lập hiện tài khoản mẫu | Công khai | FE-05 |
 | `/` | Chuyển tới Việc của tôi | Đăng nhập | — |
 | `/viec-cua-toi` | Hàng việc theo vai trò, số PDF chờ đối chiếu | Đăng nhập | FE-20 |
-| `/tiep-nhan` | Hộp tiếp nhận; lọc `?trang-thai=cho-xep\|da-xep\|da-bo` | `intake.upload`, `intake.manage` | FE-21 |
+| `/tiep-nhan` | Hộp tiếp nhận; lọc `?trang-thai=cho-xep\|da-xep\|da-bo` | `intake.upload` (API của hộp tiếp nhận chỉ nhận quyền này) | FE-21 |
 | `/tiep-nhan/tai-len` | Bước 1 · Nạp PDF | `intake.upload` | FE-21 |
 | `/tiep-nhan/lo-quet`, `/tiep-nhan/lo-quet/[batchId]` | Lô quét, lỗi ảnh | `intake.manage`, `intake.upload` | FE-41 |
 | `/tiep-nhan/[documentId]/doi-chieu` | Bước 2 · Đối chiếu (màn chia đôi) | `document.edit` | FE-22, FE-23 |
@@ -147,8 +147,8 @@ flowchart LR
 2. Nếu là mục menu: thêm vào `src/config/navigation.ts` (nhãn, một câu mô tả, biểu tượng, quyền, từ khóa không dấu).
 3. Tạo `src/app/(app)/<duong-dan>/page.tsx`:
    - gọi `pageSession(quyền)`; nếu `allowed=false`, trả `<NoAccess/>`;
-   - lấy dữ liệu bằng `apiFetch` trong Server Component;
+   - lấy dữ liệu bằng `serverApi()` (client có kiểu theo `openapi.json`) trong Server Component;
    - bắt đầu bằng `<PageHeader>` có breadcrumb.
-4. Ghi dữ liệu bằng Server Action (`"use server"`, gọi `requireSession()` đầu hàm) hoặc gọi thẳng `/api/v1/...` từ client kèm header `X-CSRF: 1`.
+4. Ghi dữ liệu bằng Server Action bọc trong `runAction()` (`lib/actions.ts`: kiểm phiên, trả lỗi theo ô) và gọi từ client bằng `useServerAction()`. Chỉ tải tệp lên, ảnh trang và luồng SSE mới gọi thẳng `/api/v1/...` từ trình duyệt, luôn kèm `browserHeaders()` (`X-CSRF: 1` và `X-Assignment-Id`); không dùng `<img src>` hay `EventSource` trỏ thẳng vào API vì chúng không gửi được header phân công.
 5. Có trạng thái rỗng (`EmptyState`) nói rõ sẽ có gì và cách tạo mục đầu tiên; `loading.tsx` có sẵn ở `(app)`.
 6. Chạy `npx tsc --noEmit`, `npm run lint`, `npm run build`.

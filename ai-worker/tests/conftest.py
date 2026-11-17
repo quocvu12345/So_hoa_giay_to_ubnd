@@ -95,4 +95,5 @@ def fake_models(tmp_path: Path, monkeypatch) -> Path:
     monkeypatch.setattr(config, "MODEL_ROOT", root)
     monkeypatch.delenv("HOSO_AI_CLASSIFIER_MODEL", raising=False)
     monkeypatch.delenv("HOSO_AI_CLASSIFIER_GB", raising=False)
+    monkeypatch.setenv("HOSO_AI_SHORTLIST", "off")      # các test này kiểm đường hỏi mô hình đủ ba bước; thu hẹp có test riêng (test_shortlist.py)
     return root
