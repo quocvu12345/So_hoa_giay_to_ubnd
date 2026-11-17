@@ -6,14 +6,15 @@ import json
 import os
 from datetime import datetime, timezone
 
-from .config import AI_HOME, MODEL_ROOT, MODELS, OPTIONAL_MODELS
+from .config import AI_HOME, MODEL_ROOT, MODELS
 
 
 def main():
-    specs = {**MODELS, **OPTIONAL_MODELS}
+    specs = MODELS
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--model", action="append", choices=list(specs),
-                        help="Download only this model; repeat to select several. Default: required PDF models.")
+                        help="Download only this model; repeat to select several. Default: all models. "
+                             "The classifier is a BF16 source: convert it afterwards with `python -m document_ai.convert`.")
     args = parser.parse_args()
     os.environ["HF_HOME"] = str(AI_HOME / "cache/huggingface")
     os.environ["HF_HUB_DISABLE_TELEMETRY"] = "1"
@@ -53,28 +54,10 @@ def main():
                     raise ValueError(f"Git blob checksum mismatch: {remote.rfilename}")
         if not (path / weights).is_file():
             raise ValueError(f"Model weights/index missing: {weights}")
-        source_index = None
-        if weights.endswith(".index.json"):
-            index = json.loads((path / weights).read_text())
-            referenced = sorted(set(index["weight_map"].values()))
-            missing = [shard for shard in referenced if shard not in digests]
-            source_index = {"file": weights, "referenced_shards": referenced, "valid_for_downloaded_weights": not missing}
-            if missing:
-                # This pinned MLX conversion retained the original BF16 index.
-                # MLX-VLM 0.7.12 falls back to the actual *.safetensors files when
-                # none of the index's shard paths exist. Keep the source intact.
-                actual = sorted(file for file in digests if file.endswith(".safetensors"))
-                if name != "qwen_vl" or actual != ["model-00001-of-00002.safetensors", "model-00002-of-00002.safetensors"] or len(missing) != len(referenced):
-                    raise ValueError(f"Unverified model shards: {missing}")
-                source_index.update(actual_verified_shards=actual,
-                                    handling="Upstream BF16 index retained unchanged; MLX-VLM loads the two verified MLX shards via glob fallback.")
-                print("Source index is for the original BF16 model; using both SHA-256-verified MLX shards.", flush=True)
         timestamp = datetime.now(timezone.utc).isoformat()
         receipt["downloaded_at"] = timestamp
         receipt["models"][name] = {"repo": repo, "revision": revision, "directory": str(path), "weights": digests}
         receipt["models"][name]["verified_at"] = timestamp
-        if source_index:
-            receipt["models"][name]["source_index"] = source_index
         temporary = receipt_path.with_suffix(".json.tmp")
         temporary.write_text(json.dumps(receipt, ensure_ascii=False, indent=2))
         temporary.replace(receipt_path)

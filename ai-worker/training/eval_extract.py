@@ -2,7 +2,7 @@
 Mọi model đều đi qua cùng bộ lọc bằng chứng `evidence_fields` như bản chạy thật: giá trị không có trong văn bản bị bỏ.
 
   python eval_extract.py --model qwen3-4b   --prompt production --tag base-qwen3-4b
-  python eval_extract.py --model qwen3.5-2b --prompt short      --tag lora --adapter <thư mục>
+  python eval_extract.py --model qwen3-1.7b --prompt short      --tag lora --adapter <thư mục>
 """
 from __future__ import annotations
 

@@ -128,27 +128,28 @@ def test_dung_che_do_khong_suy_nghi_cho_moi_lan_dung_loi_nhac(monkeypatch, fake_
 
 def test_doi_mo_hinh_bang_bien_moi_truong_va_ghi_dung_nhan_phien_ban(monkeypatch, fake_models):
     mlx = FakeMlx(monkeypatch)
+    default = QwenMlxClassifier()
+    assert (default.model_name, default.approx_gb) == ("Qwen3-4B-Instruct-2507-ifstruct-4bit", 3.0)
+    assert default.version == "Qwen3-4B-Instruct-2507-ifstruct-4bit@00161de", "phiên bản là commit của nguồn, lấy từ phiếu chuyển đổi"
+
     monkeypatch.setenv("HOSO_AI_CLASSIFIER_MODEL", "Qwen3-1.7B-4bit")
+    monkeypatch.setenv("HOSO_AI_CLASSIFIER_GB", "2")
     classifier = QwenMlxClassifier()
     assert (classifier.model_name, classifier.approx_gb) == ("Qwen3-1.7B-4bit", 2.0)
     assert classifier.version == "Qwen3-1.7B-4bit@3b1b176"
     classifier.suggest(PAGES, CATALOG)
     assert mlx.loads == [str(fake_models / "Qwen3-1.7B-4bit")]
 
-    default = QwenMlxClassifier("Qwen3-4B-Instruct-2507-4bit")
-    assert (default.approx_gb, default.version) == (3.0, "Qwen3-4B-Instruct-2507-4bit@50d4277")
-
 
 def test_nhan_mo_hinh_trong_ket_qua_lay_tu_mo_hinh_dang_chay_khong_ghi_cung(monkeypatch, fake_models):
     import document_ai.classify as classify_module
 
     FakeMlx(monkeypatch)
-    monkeypatch.setenv("HOSO_AI_CLASSIFIER_MODEL", "Qwen3-1.7B-4bit")
     llm = classify_module.load_classifier()
     result = classify_module.classify([{"page": 1, "text": "Kế hoạch thử\nMã tiếp nhận mới: TEST-123"}],
                                       [{"code": "CUSTOM", "title": "Nhóm mới", "group": "", "documentTypes": [
                                           {"id": "CUSTOM-D01", "name": "Kế hoạch mới", "fields": ["Mã tiếp nhận mới"]}]}], llm=llm)
-    assert result["model"] == "Qwen3-1.7B · MLX 4-bit"
+    assert result["model"] == "Qwen3-4B-Instruct-2507-ifstruct · MLX 4-bit"
 
 
 @pytest.mark.parametrize("bad", ["../Qwen3-4B", "/etc", "a/b", "Qwen3 4B", "-x", ""])
@@ -164,7 +165,7 @@ def test_ten_mo_hinh_khong_duoc_tro_ra_ngoai_thu_muc_mo_hinh(bad):
 
 def test_thieu_mo_hinh_dung_ngay_luc_khoi_dong_kem_goi_y(monkeypatch, fake_models):
     monkeypatch.setenv("HOSO_AI_CLASSIFIER_MODEL", "Qwen3-9B-4bit")
-    with pytest.raises(FileNotFoundError, match="Qwen3-1.7B-4bit"):
+    with pytest.raises(FileNotFoundError, match="Qwen3-4B-Instruct-2507-ifstruct-4bit"):
         QwenMlxClassifier()
 
     from hoso_ai.engines.factory import build_engines
@@ -205,6 +206,11 @@ def test_mo_ta_mo_hinh_lay_repo_va_phien_ban_tu_tep_tai_ve(fake_models):
     identity = model_identity(fake_models / "Qwen3-1.7B-4bit")
     assert identity == {"name": "Qwen3-1.7B-4bit", "repo": "mlx-community/Qwen3-1.7B-4bit", "revision": "3b1b1768f8f8cf8351c712464f906e86c2b8269e"}
     assert model_version(fake_models / "Qwen3-1.7B-4bit") == "Qwen3-1.7B-4bit@3b1b176"
+
+    # Bản tự chuyển: repo và commit lấy từ phiếu chuyển đổi, không lấy tiêu đề README do công cụ chuyển ghi.
+    converted = fake_models / "Qwen3-4B-Instruct-2507-ifstruct-4bit"
+    assert model_identity(converted) == {"name": converted.name, "repo": "ChetanDhembreAI/Qwen3-4B-Instruct-2507-ifstruct",
+                                         "revision": "00161de525486e01ba505e6c24f39472fdfe4a23"}
 
 
 # ---- AI-14: kiểu lời nhắc theo mức ưu tiên ---------------------------------------------------------------------------------------
@@ -250,7 +256,7 @@ def test_kieu_loi_nhac_la_gia_tri_hop_le(monkeypatch, fake_models):
         Settings.from_env({"HOSO_AI_PROFILE": "fake", "HOSO_AI_PROMPT_BACKGROUND": "nhanh"})
     settings = Settings.from_env({"HOSO_AI_PROFILE": "fake"})
     assert (settings.prompt_interactive, settings.prompt_background, settings.background_from) == ("short", "production", 7)
-    assert settings.model_budget_gb == 7, "đủ giữ OCR (4,5 GB) và Qwen3-1.7B (2 GB) cùng lúc"
+    assert settings.model_budget_gb == 7, "Mac 16 GB: OCR (4,5 GB) và IFStruct (3 GB) thay phiên nạp; máy nhiều RAM hơn đặt 8 để giữ cả hai"
 
 
 def test_viec_nen_va_viec_co_nguoi_cho_dung_kieu_loi_nhac_rieng(repo):
@@ -273,16 +279,17 @@ def test_viec_nen_va_viec_co_nguoi_cho_dung_kieu_loi_nhac_rieng(repo):
     assert repo.rows["job-0"].model_version.endswith("/short") and repo.rows["job-3"].model_version.endswith("/production")
 
 
-def test_mac_dinh_la_qwen3_1_7b_va_ban_lon_hon_doi_lai_bang_cau_hinh(monkeypatch, fake_models):
-    """Chốt 17/11/2026: máy hiện tại chưa đủ cho mô hình lớn hơn. Đổi mô hình chỉ bằng biến môi trường."""
-    from document_ai.config import DEFAULT_CLASSIFIER, MODELS, OPTIONAL_MODELS, classifier_name
+def test_mac_dinh_la_ifstruct_va_doi_mo_hinh_bang_cau_hinh(monkeypatch, fake_models):
+    """Chốt 17/11/2026: IFStruct (Qwen3-4B-Instruct-2507 tinh chỉnh tuân thủ JSON/schema) thay Qwen3-4B gốc và 1.7B. Đổi mô hình chỉ bằng biến môi trường."""
+    from document_ai.config import DEFAULT_CLASSIFIER, MODELS, classifier_name, model_path
 
-    assert DEFAULT_CLASSIFIER == "Qwen3-1.7B-4bit" == classifier_name({})
-    assert MODELS["classifier"][:3] == ("mlx-community/Qwen3-1.7B-4bit", "3b1b1768f8f8cf8351c712464f906e86c2b8269e", "Qwen3-1.7B-4bit")
-    assert OPTIONAL_MODELS["classifier_4b"][2] == "Qwen3-4B-Instruct-2507-4bit", "bản 4B vẫn tải và đổi lại được"
+    assert DEFAULT_CLASSIFIER == "Qwen3-4B-Instruct-2507-ifstruct-4bit" == classifier_name({})
+    assert MODELS["classifier"][:3] == ("ChetanDhembreAI/Qwen3-4B-Instruct-2507-ifstruct", "00161de525486e01ba505e6c24f39472fdfe4a23",
+                                        "Qwen3-4B-Instruct-2507-ifstruct-bf16")
+    assert model_path("classifier") == fake_models / DEFAULT_CLASSIFIER, "worker nạp bản 4-bit đã chuyển, không nạp nguồn BF16"
+    assert QwenMlxClassifier().model_name == DEFAULT_CLASSIFIER
+    monkeypatch.setenv("HOSO_AI_CLASSIFIER_MODEL", "Qwen3-1.7B-4bit")
     assert QwenMlxClassifier().model_name == "Qwen3-1.7B-4bit"
-    monkeypatch.setenv("HOSO_AI_CLASSIFIER_MODEL", "Qwen3-4B-Instruct-2507-4bit")
-    assert QwenMlxClassifier().model_name == "Qwen3-4B-Instruct-2507-4bit"
 
 
 def test_hinh_thuc_giong_cong_van_nhung_nhom_khong_co_loai_trung_ten_thi_van_chon_loai_trong_nhom():

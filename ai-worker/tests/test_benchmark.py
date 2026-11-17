@@ -131,11 +131,3 @@ def test_activity_monitor_distinguishes_inference_from_inspection(bench):
     assert model_process_kind(["python", "-m", "hoso_ai", "run"]) == "hoso_ai"
     assert model_process_kind(["python", "-m", "uvicorn", "document_ai.vlm:app", "--port", "1234"]) == "document_ai.vlm:app"
 
-
-def test_native_ner_diagnostic_accepts_reasoning_but_rejects_wrong_schema(bench):
-    from probe_bkee import entities_object
-
-    answer = 'Giải thích {không phải JSON}. ```json\n{"entities":[{"text":"Nguyễn An","type":"Person"}]}\n```'
-    assert entities_object(answer) == {"entities": [{"text": "Nguyễn An", "type": "Person"}]}
-    assert entities_object('{"entities": [{"text": "An"}]}') is None
-    assert entities_object('{"fields": []}') is None

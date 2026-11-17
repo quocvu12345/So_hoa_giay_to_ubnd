@@ -1,6 +1,6 @@
 """Thu hẹp danh sách ứng viên trước khi hỏi mô hình (AI-20).
 
-Mô hình nhỏ (Qwen3-1.7B) chọn kém khi phải chọn trong 38 nhóm rồi hàng chục loại có tên gần giống nhau.
+Mô hình nhỏ (như Qwen3-1.7B) chọn kém khi phải chọn trong 38 nhóm rồi hàng chục loại có tên gần giống nhau.
 Tên loại giấy tờ thường chính là tiêu đề in trên văn bản, nên chấm điểm bằng từ khóa rất rẻ (vài mili giây, không dùng GPU) và đủ để
 chỉ đưa cho mô hình vài ứng viên đáng nghi nhất. Mô hình vẫn là bên quyết định, và vẫn có thể trả "không chắc".
 

@@ -5,41 +5,23 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 AI_HOME = Path(os.environ.get("DOCUMENT_AI_HOME", "/Volumes/quocDisk/AI/paddleocr")).resolve()
 MODEL_ROOT = AI_HOME / "models"
+# (repo, commit ghim, thư mục trong MODEL_ROOT, tệp trọng số để kiểm tra đã tải đủ). Không mô hình nào nằm trong git.
 MODELS = {
     "ocr": ("PaddlePaddle/PaddleOCR-VL-1.6", "132c45f52c0a26ed5a6b2f6bd8e3985794cc27dd", "PaddleOCR-VL-1.6", "model.safetensors"),
     "layout": ("PaddlePaddle/PP-DocLayoutV3", "241f8bdfc77a7c7bee915a5057aaee58c235a8d3", "PP-DocLayoutV3", "inference.pdiparams"),
     "orientation": ("PaddlePaddle/PP-LCNet_x1_0_doc_ori", "d3b95a6dff5fe8a94f2748e12b61cb26818a0df8", "PP-LCNet_x1_0_doc_ori", "inference.pdiparams"),
-    # Mô hình phân loại/trích trường mặc định (AI-14, chốt 17/11/2026): Qwen3-1.7B vì máy Mac M4 16 GB chưa đủ cho mô hình lớn hơn.
-    # Có phần cứng tốt hơn thì đổi bằng HOSO_AI_CLASSIFIER_MODEL (xem classifier_name), không sửa mã.
-    "classifier": ("mlx-community/Qwen3-1.7B-4bit", "3b1b1768f8f8cf8351c712464f906e86c2b8269e", "Qwen3-1.7B-4bit", "model.safetensors"),
-}
-# Downloaded separately for image + text evaluation; not required by the PDF pipeline.
-OPTIONAL_MODELS = {
-    # Bộ nhận diện thực thể theo câu tiếng Việt; đánh giá trước khi dùng thay classifier.
-    "bkee_source": ("hadeseus/qwen3-4b-bkee-entity-extraction", "a531480d0f4ee265dfebc86d37dde309662f36e4", "Qwen3-4B-BKEE-Entity-Extraction-bf16", "model.safetensors.index.json"),
-    # Qwen tinh chỉnh tuân thủ JSON/schema; nguồn BF16, chuyển local bằng convert_ifstruct.
-    "ifstruct_source": ("ChetanDhembreAI/Qwen3-4B-Instruct-2507-ifstruct", "00161de525486e01ba505e6c24f39472fdfe4a23", "Qwen3-4B-Instruct-2507-ifstruct-bf16", "model.safetensors"),
-    # Nguồn BF16 cho bộ trích trường chuyên biệt; chuyển MLX bằng document_ai.convert_nuextract.
-    "nuextract_source": ("jester6136/NuExtract3-kie-vi", "33083e5c51719a0d659ae11689f1b5fddfa60055", "NuExtract3-kie-vi-bf16", "model.safetensors"),
-    # Bản thử nghiệm: so sánh trên cùng OCR trước khi đổi mặc định của worker.
-    "classifier_35_4b": ("mlx-community/Qwen3.5-4B-4bit", "0e7ffd5c629ef7719d4cbc04069232580bfa9d9c", "Qwen3.5-4B-4bit", "model.safetensors"),
-    # Bản lớn hơn đã dùng trước đây; tải bằng `python -m document_ai.download --model classifier_4b` rồi đặt HOSO_AI_CLASSIFIER_MODEL=Qwen3-4B-Instruct-2507-4bit.
-    "classifier_4b": ("mlx-community/Qwen3-4B-Instruct-2507-4bit", "50d427756c6b1b2fe0c0a10f67fbda1fc8e82c1b", "Qwen3-4B-Instruct-2507-4bit", "model.safetensors"),
-    "qwen_vl": ("mlx-community/Qwen3-VL-8B-Instruct-4bit", "defcdea7cc7a4b0858fea563cbbce171d328e457", "Qwen3-VL-8B-Instruct-4bit", "model.safetensors.index.json"),
+    # Phân loại và trích trường (chốt 17/11/2026): Qwen3-4B-Instruct-2507 tinh chỉnh tuân thủ JSON/schema (IFStruct), thay Qwen3-4B gốc và Qwen3-1.7B.
+    # Đây là nguồn BF16 (khoảng 7,5 GB), chỉ dùng để chuyển. Worker nạp bản MLX 4-bit DEFAULT_CLASSIFIER, tạo bằng `python -m document_ai.convert`.
+    # Số đo so với Qwen3-4B gốc: ai-worker/training/SO-SANH-IFSTRUCT-QWEN4B.md.
+    "classifier": ("ChetanDhembreAI/Qwen3-4B-Instruct-2507-ifstruct", "00161de525486e01ba505e6c24f39472fdfe4a23", "Qwen3-4B-Instruct-2507-ifstruct-bf16", "model.safetensors"),
 }
 
 
-# Mô hình phân loại/trích trường chọn bằng cấu hình (AI-13): tên thư mục trong MODEL_ROOT. Mặc định giữ bản đã dùng từ đầu.
+# Mô hình phân loại/trích trường chọn bằng cấu hình (AI-13): tên thư mục trong MODEL_ROOT.
 CLASSIFIER_ENV = "HOSO_AI_CLASSIFIER_MODEL"
-DEFAULT_CLASSIFIER = MODELS["classifier"][2]
-# RAM ước tính khi nạp (GB), cho ModelScheduler quyết định giữ hay bỏ mô hình; số đo thật ghi ở docs/tasks/ai.md (AI-12).
-CLASSIFIER_APPROX_GB = {
-    "Qwen3-4B-Instruct-2507-4bit": 3.0,
-    "Qwen3-4B-Instruct-2507-ifstruct-4bit": 3.0,
-    "Qwen3-4B-BKEE-Entity-Extraction-4bit": 3.0,
-    "Qwen3-1.7B-4bit": 2.0,
-    "Qwen3.5-4B-4bit": 4.5,  # chừa dư cho context; ngân sách 7 GB sẽ bỏ OCR trước khi nạp model này
-}
+DEFAULT_CLASSIFIER = "Qwen3-4B-Instruct-2507-ifstruct-4bit"
+# RAM ước tính khi nạp (GB), cho ModelScheduler quyết định giữ hay bỏ mô hình. Đo trên M4: bộ nhớ MLX đỉnh 2,98 GiB.
+CLASSIFIER_APPROX_GB = {DEFAULT_CLASSIFIER: 3.0}
 CLASSIFIER_GB_ENV = "HOSO_AI_CLASSIFIER_GB"
 SHORTLIST_ENV = "HOSO_AI_SHORTLIST"
 
@@ -54,8 +36,8 @@ def classifier_name(env=None):
 
 
 def shortlist_enabled(env=None):
-    """AI-20: thu hẹp ứng viên bằng từ khóa trước khi hỏi mô hình. Mặc định BẬT vì mô hình mặc định là Qwen3-1.7B, tự chọn nhóm/loại gần như đoán bừa.
-    Dùng mô hình lớn hơn thì đo rồi đặt off nếu thu hẹp làm kém đi."""
+    """AI-20: thu hẹp ứng viên bằng từ khóa trước khi hỏi mô hình. Mặc định BẬT: số đo chọn IFStruct (100% đúng nhóm và loại trên bộ thử) chạy với chế độ này.
+    Muốn tắt thì đo lại trước rồi mới đặt off."""
     env = os.environ if env is None else env
     return (env.get(SHORTLIST_ENV) or "on").strip().lower() in ("on", "1", "true", "yes")
 
@@ -119,8 +101,8 @@ def model_version(path):
 
 def model_path(name):
     if name == "classifier":
-        return classifier_path()      # theo cấu hình; đường dẫn đã ghim để tải về là MODEL_ROOT / MODELS["classifier"][2] (xem download.py)
-    return MODEL_ROOT / {**MODELS, **OPTIONAL_MODELS}[name][2]
+        return classifier_path()      # bản 4-bit theo cấu hình; nguồn BF16 để tải và chuyển là MODEL_ROOT / MODELS["classifier"][2]
+    return MODEL_ROOT / MODELS[name][2]
 
 
 def local_environment():

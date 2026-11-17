@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import json
 from pathlib import Path
 
 import pytest
@@ -76,7 +77,11 @@ def make_job(job_id: str = "job-1", **options) -> Job:
                sha256="a" * 64, page_count=3, options=options)
 
 
-REVISIONS = {"Qwen3-4B-Instruct-2507-4bit": "50d427756c6b1b2fe0c0a10f67fbda1fc8e82c1b", "Qwen3-1.7B-4bit": "3b1b1768f8f8cf8351c712464f906e86c2b8269e"}
+# Mô hình mặc định: bản 4-bit tự chuyển từ nguồn BF16, nhận diện qua conversion-receipt.json.
+CLASSIFIER = "Qwen3-4B-Instruct-2507-ifstruct-4bit"
+CLASSIFIER_SOURCE = {"repo": "ChetanDhembreAI/Qwen3-4B-Instruct-2507-ifstruct", "revision": "00161de525486e01ba505e6c24f39472fdfe4a23"}
+# Mô hình khác tải thẳng từ mlx-community (nhận diện qua README và siêu dữ liệu tải), để thử đổi mô hình bằng cấu hình.
+REVISIONS = {"Qwen3-1.7B-4bit": "3b1b1768f8f8cf8351c712464f906e86c2b8269e"}
 
 
 @pytest.fixture
@@ -92,6 +97,12 @@ def fake_models(tmp_path: Path, monkeypatch) -> Path:
         (folder / "model.safetensors").write_bytes(b"")
         (folder / "README.md").write_text(f"# mlx-community/{name}\n", encoding="utf-8")
         (folder / ".cache/huggingface/download/config.json.metadata").write_text(f"{revision}\netag\n123\n", encoding="utf-8")
+    converted = root / CLASSIFIER
+    converted.mkdir(parents=True)
+    (converted / "config.json").write_text("{}", encoding="utf-8")
+    (converted / "model.safetensors").write_bytes(b"")
+    (converted / "README.md").write_text("# Tiêu đề do công cụ chuyển ghi\n", encoding="utf-8")
+    (converted / "conversion-receipt.json").write_text(json.dumps(CLASSIFIER_SOURCE), encoding="utf-8")
     monkeypatch.setattr(config, "MODEL_ROOT", root)
     monkeypatch.delenv("HOSO_AI_CLASSIFIER_MODEL", raising=False)
     monkeypatch.delenv("HOSO_AI_CLASSIFIER_GB", raising=False)

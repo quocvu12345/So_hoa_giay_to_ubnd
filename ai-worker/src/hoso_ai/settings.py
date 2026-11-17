@@ -76,8 +76,8 @@ class Settings:
             storage_root=Path(env.get("HOSO_AI_STORAGE_ROOT", "data/blobs")).resolve(),
             work_root=Path(env.get("HOSO_AI_WORK_ROOT", "data/ai-work")).resolve(),
             worker_id=env.get("HOSO_AI_WORKER_ID") or f"{socket.gethostname()}-{os.getpid()}",
-            # Mac 16 GB: chừa RAM cho hệ điều hành. 7 GB đủ giữ cùng lúc OCR (ước 4,5 GB) và Qwen3-1.7B (ước 2 GB) để không nạp lại OCR mỗi job.
-            # Dùng mô hình phân loại lớn hơn (ví dụ Qwen3-4B, 3 GB) thì đặt 8 trở lên hoặc chấp nhận nạp lại OCR giữa các job.
+            # Mac 16 GB: chừa RAM cho hệ điều hành. Với 7 GB, OCR (ước 4,5 GB) và IFStruct (ước 3 GB) thay phiên nạp giữa các bước.
+            # Máy từ 24 GB RAM đặt 8 trở lên để giữ cả hai, đỡ nạp lại OCR mỗi job.
             model_budget_gb=number("HOSO_AI_MODEL_BUDGET_GB", 7, 1),
             poll_seconds=number("HOSO_AI_POLL_SECONDS", 15, 1),
             heartbeat_seconds=number("HOSO_AI_HEARTBEAT_SECONDS", 30, 5),

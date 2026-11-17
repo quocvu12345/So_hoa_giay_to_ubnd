@@ -119,7 +119,7 @@ class ClassifierModel:
 
     def render(self, system, prompt):
         # enable_thinking=False: Qwen3 loại "hybrid" (như 1.7B) mặc định viết phần suy nghĩ trước khi trả lời, làm chậm và hỏng JSON.
-        # Mẫu chat của Qwen3-4B-Instruct-2507 không có chế độ này nên bỏ qua tham số, kết quả dựng không đổi.
+        # Mẫu chat của Qwen3-4B-Instruct-2507 (và IFStruct tinh chỉnh từ nó) không có chế độ này nên bỏ qua tham số, kết quả dựng không đổi.
         return self.tokenizer.apply_chat_template(
             [{"role": "system", "content": system}, {"role": "user", "content": prompt}],
             add_generation_prompt=True, tokenize=False, enable_thinking=False)

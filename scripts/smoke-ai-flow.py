@@ -129,7 +129,7 @@ def main() -> int:
     parser.add_argument("--pdf", action="append", help="id mẫu trong data/filled-samples/pdf (lặp lại để chọn nhiều); mặc định 3 mẫu")
     parser.add_argument("--timeout", type=int, default=420, help="giây chờ tối đa cho cả ba giấy tờ đọc xong")
     parser.add_argument("--file-to-dossier", action="store_true", help="thêm bước xác nhận phân loại, sửa trường và xếp vào hồ sơ mới")
-    parser.add_argument("--expect-model", default="Qwen3-1.7B-4bit", help="tên mô hình phải có trong ocr_jobs.model_version (rỗng để bỏ qua)")
+    parser.add_argument("--expect-model", default="Qwen3-4B-Instruct-2507-ifstruct-4bit", help="tên mô hình phải có trong ocr_jobs.model_version (rỗng để bỏ qua)")
     parser.add_argument("--db", default="hoso_dev", help="CSDL để kiểm model_version bằng psql (rỗng để bỏ qua)")
     args = parser.parse_args()
     samples = args.pdf or DEFAULT_PDFS

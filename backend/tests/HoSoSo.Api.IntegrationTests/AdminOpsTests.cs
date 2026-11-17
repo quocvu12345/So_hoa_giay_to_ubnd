@@ -66,22 +66,22 @@ public sealed class AdminOpsTests(DbApiFactory api) : IClassFixture<DbApiFactory
     {
         var cv = await api.LoginAsync("demo_cv_ht");
         var older = await UploadAsync(cv, "mo-hinh-4b");
-        var newer = await UploadAsync(cv, "mo-hinh-17b");
-        // Worker cũ còn chạy 4B, bảng ai_models (migration 033) ghi Qwen3-1.7B.
+        var newer = await UploadAsync(cv, "mo-hinh-ifstruct");
+        // Worker cũ còn chạy Qwen3-4B gốc, bảng ai_models (migration 036) ghi IFStruct.
         await api.ExecuteAsync("UPDATE hoso.ocr_jobs SET status='completed', started_at=now() - interval '5 minutes', finished_at=now() - interval '4 minutes', model_version=$2 WHERE id=$1",
             older.JobId, "ocr=PaddleOCR-VL-1.6@132c45f classifier=Qwen3-4B-Instruct-2507-4bit@50d4277/short");
         var admin = await api.LoginAsync("demo_admin");
         var status = await (await admin.GetAsync("/api/v1/admin/ai/status")).ReadAsync<AiStatusDto>();
         status.RunningModels.Single().ModelVersion.ShouldContain("Qwen3-4B-Instruct-2507-4bit@50d4277");
         status.ModelMismatch.ShouldNotBeNull().ShouldContain("Qwen3-4B-Instruct-2507-4bit");
-        status.ModelMismatch.ShouldContain("Qwen3-1.7B-4bit");
+        status.ModelMismatch.ShouldContain("Qwen3-4B-Instruct-2507-ifstruct@00161de");
 
-        // Worker đã đổi sang 1.7B (job mới hơn): khớp ai_models nên hết cảnh báo; mô hình cũ vẫn nằm trong lịch sử 24 giờ.
+        // Worker đã đổi sang IFStruct 4-bit tự chuyển (job mới hơn): khớp ai_models nên hết cảnh báo; mô hình cũ vẫn nằm trong lịch sử 24 giờ.
         await api.ExecuteAsync("UPDATE hoso.ocr_jobs SET status='completed', started_at=now() - interval '2 minutes', finished_at=now() - interval '1 minute', model_version=$2 WHERE id=$1",
-            newer.JobId, "classifier=Qwen3-1.7B-4bit@3b1b176/production");
+            newer.JobId, "classifier=Qwen3-4B-Instruct-2507-ifstruct-4bit@00161de/production");
         status = await (await admin.GetAsync("/api/v1/admin/ai/status")).ReadAsync<AiStatusDto>();
         status.ModelMismatch.ShouldBeNull();
-        status.RunningModels.Select(m => m.ModelVersion).ShouldContain("classifier=Qwen3-1.7B-4bit@3b1b176/production");
+        status.RunningModels.Select(m => m.ModelVersion).ShouldContain("classifier=Qwen3-4B-Instruct-2507-ifstruct-4bit@00161de/production");
         status.RunningModels.Count.ShouldBe(2);
     }
 

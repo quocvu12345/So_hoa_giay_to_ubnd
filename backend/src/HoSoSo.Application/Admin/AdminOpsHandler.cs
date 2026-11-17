@@ -96,6 +96,8 @@ public sealed partial class AdminOpsHandler(IHoSoDb db, ICurrentUser user, ICloc
     /// So mô hình phân loại của job gần nhất với dòng <c>classifier</c> trong <c>ai_models</c>. Lệch thường do đổi <c>HOSO_AI_CLASSIFIER_MODEL</c>
     /// ở worker mà chưa ghi nhận bằng migration (hoặc ngược lại). Chỉ xét job gần nhất: các job cũ hơn là lịch sử.
     /// </summary>
+    private static readonly Regex QuantizationSuffix = new("-(?:[2-8]bit|bf16|fp16)$", RegexOptions.IgnoreCase | RegexOptions.CultureInvariant);
+
     internal static string? DetectModelMismatch(IReadOnlyList<RunningModel> running, IReadOnlyList<ModelInfo> models)
     {
         var latest = running.FirstOrDefault(r => r.ModelVersion.Contains("classifier="));
@@ -107,7 +109,9 @@ public sealed partial class AdminOpsHandler(IHoSoDb db, ICurrentUser user, ICloc
         var name = at >= 0 ? withoutStyle[..at] : withoutStyle;
         var revision = at >= 0 ? withoutStyle[(at + 1)..] : "";
         var recordedName = recorded.Repo.Split('/').Last();
-        var sameName = string.Equals(name, recordedName, StringComparison.OrdinalIgnoreCase);
+        // Mô hình tự chuyển trên máy AI (ví dụ IFStruct BF16 → MLX 4-bit) có tên thư mục = tên repo nguồn + hậu tố lượng tử hóa; phiên bản vẫn là commit của nguồn.
+        var sameName = string.Equals(name, recordedName, StringComparison.OrdinalIgnoreCase)
+                       || string.Equals(QuantizationSuffix.Replace(name, ""), recordedName, StringComparison.OrdinalIgnoreCase);
         var sameRevision = revision.Length == 0 || recorded.Revision.StartsWith(revision, StringComparison.OrdinalIgnoreCase);
         if (sameName && sameRevision) return null;
         return $"Worker đang chạy {withoutStyle} nhưng bảng ai_models ghi {recordedName}@{recorded.Revision[..Math.Min(7, recorded.Revision.Length)]}. " +

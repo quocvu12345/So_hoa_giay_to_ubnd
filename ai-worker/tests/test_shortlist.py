@@ -84,7 +84,7 @@ def test_worker_bat_thu_hep_ung_vien_bang_bien_moi_truong(monkeypatch, fake_mode
     from hoso_ai.engines.mlx import QwenMlxClassifier
     from hoso_ai.queue.repository import Catalog, DocumentTypeDef
 
-    assert shortlist_enabled({}) is True, "mặc định bật vì mô hình mặc định là 1.7B"
+    assert shortlist_enabled({}) is True, "mặc định bật: số đo chọn IFStruct chạy với chế độ thu hẹp"
     assert shortlist_enabled({"HOSO_AI_SHORTLIST": "on"}) is True and shortlist_enabled({"HOSO_AI_SHORTLIST": "off"}) is False
     seen = []
 

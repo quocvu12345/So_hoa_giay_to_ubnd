@@ -1,0 +1,21 @@
+# Mô hình, môi trường Python và dữ liệu chạy KHÔNG vào git (nằm ở $DOCUMENT_AI_HOME hoặc thư mục data/).
+*.safetensors
+*.gguf
+*.pdiparams
+*.npz
+models/
+venv/
+.venv/
+data/
+
+# Cấu hình riêng của máy (có mật khẩu CSDL); giữ tệp mẫu
+.env
+.env.*
+!.env.example
+
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+*.log
+.DS_Store

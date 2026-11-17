@@ -19,8 +19,7 @@ def model_process_kind(args):
         tail.pop(0)
     if not tail or "--help" in tail or "-h" in tail:
         return None
-    modules = {"hoso_ai", "document_ai.vlm:app", "mlx_lm.server", "mlx_vlm.server",
-               "document_ai.field_extract", "document_ai.convert_ifstruct", "document_ai.convert_qwen", "document_ai.convert_nuextract"}
+    modules = {"hoso_ai", "document_ai.vlm:app", "mlx_lm.server", "mlx_vlm.server", "document_ai.convert"}
     if tail[0] == "-m" and len(tail) > 1:
         module = tail[1]
         if module == "hoso_ai":
@@ -29,8 +28,6 @@ def model_process_kind(args):
             return "document_ai.vlm:app"
         return module if module in modules else None
     script = Path(tail[0]).name
-    if script in {"bench_fields.py", "probe_bkee.py"}:
-        return script
     if script == "bench_pipeline.py" and len(tail) > 1 and tail[1] in {"llm", "ocr", "coresident"}:
         return script
     return None

@@ -124,5 +124,5 @@ class JobOutcome:
     warnings: tuple[str, ...]
     ocr_seconds: float
     elapsed_seconds: float
-    model_version: str = ""      # ví dụ "ocr=PaddleOCR-VL-1.6@132c45f classifier=Qwen3-1.7B-4bit@3b1b176/short"
+    model_version: str = ""      # ví dụ "ocr=PaddleOCR-VL-1.6@132c45f classifier=Qwen3-4B-Instruct-2507-ifstruct-4bit@00161de/short"
     classify_seconds: float = 0.0  # thời gian bước phân loại và trích trường (không gồm OCR)

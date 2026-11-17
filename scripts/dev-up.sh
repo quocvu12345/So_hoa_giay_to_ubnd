@@ -60,7 +60,7 @@ HOSO_AI_DATABASE_URL=postgresql://hoso_ai_worker:$DEV_PASSWORD@$PG_HOST:$PG_PORT
 HOSO_AI_STORAGE_ROOT=$root/data/blobs
 HOSO_AI_WORK_ROOT=$root/data/ai-work
 DOCUMENT_AI_HOME=${DOCUMENT_AI_HOME:-/Volumes/quocDisk/AI/paddleocr}
-HOSO_AI_CLASSIFIER_MODEL=Qwen3-1.7B-4bit
+HOSO_AI_CLASSIFIER_MODEL=Qwen3-4B-Instruct-2507-ifstruct-4bit
 HOSO_AI_MODEL_BUDGET_GB=7
 EOF
   fi

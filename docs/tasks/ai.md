@@ -8,7 +8,18 @@ AI-01…AI-11 nằm ở `docs/04-ke-hoach-task.md` (mục P4). File này chi ti�
 
 ---
 
+## Đổi mô hình mặc định sang IFStruct · chốt 17/11/2026 (tối)
+
+**Quyết định:** mô hình chọn nhóm, loại và trích trường là **Qwen3-4B-Instruct-2507 IFStruct** (`ChetanDhembreAI/Qwen3-4B-Instruct-2507-ifstruct`, commit `00161de525486e01ba505e6c24f39472fdfe4a23`). Mô hình này thay Qwen3-1.7B và Qwen3-4B gốc. Worker nạp bản MLX 4-bit tự chuyển (`Qwen3-4B-Instruct-2507-ifstruct-4bit`) bằng `python -m document_ai.convert`.
+
+- **Lý do:** cùng 20 tài liệu, 79 giá trị có nhãn, so với Qwen3-4B gốc: trích trường đúng 86,1% so với 78,5%, bỏ sót 3 so với 8, không lỗi JSON; bộ nhớ MLX như nhau (2,98 GiB). Chi tiết: `ai-worker/training/SO-SANH-IFSTRUCT-QWEN4B.md`. Dữ liệu giả lập, chưa đo trên giấy tờ thật.
+- **Đã gỡ:** các phương án thử nghiệm bị loại (NuExtract3-kie-vi, Qwen3-4B BKEE, Qwen3.5-4B, Qwen3-VL-8B) cùng mã chuyển đổi, bộ trích trường riêng và báo cáo của chúng. Xem lại bằng lịch sử git (commit `bba886b`).
+- **Đã đổi:** `document_ai/config.py` (mặc định IFStruct, chỉ còn 4 mô hình cần cho luồng PDF), `scripts/setup-document-ai.sh` (chạy được trên Mac khác: tải, chuyển, kiểm tra), migration `036` ghi `ai_models`. Trang vận hành coi thư mục `…-4bit` khớp với repo nguồn cùng commit (`AdminOpsHandler.DetectModelMismatch`).
+- **Bộ nhớ:** với ngân sách mặc định 7 GB, OCR (4,5 GB) và IFStruct (3 GB) thay phiên nạp. Máy AI từ 24 GB RAM nên đặt `HOSO_AI_MODEL_BUDGET_GB=8`.
+
 ## Thông luồng với Qwen3-1.7B · chốt 17/11/2026
+
+> Mô hình mặc định đã đổi sang IFStruct (mục trên). Phần dưới giữ làm lịch sử của bước thông luồng.
 
 **Quyết định:**
 - Dùng **Qwen3-1.7B-4bit gốc** làm mô hình mặc định ngay, vì máy hiện tại (Mac M4 16 GB) chưa đáp ứng mô hình lớn hơn.

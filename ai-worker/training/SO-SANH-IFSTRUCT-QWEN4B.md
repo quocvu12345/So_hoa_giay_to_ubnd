@@ -97,7 +97,7 @@ IFStruct được tinh chỉnh bằng GRPO để tuân thủ JSON/YAML và ràng
 - Nguồn giữ tại thư mục cùng tên đuôi `-bf16`.
 - Chuyển bằng MLX-LM 0.32.2, affine 4-bit/group 64; chuẩn lượng tử giống Qwen tham chiếu. Đây là kết quả của bản **4-bit local**, chưa đo BF16 gốc.
 - Trọng số hai bản cùng 2.263.022.417 byte (~2,26 GB thập phân). Tokenizer JSON có cùng SHA-256 `aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4`; template chat và token IDs của prompt kiểm tra khớp nhau.
-- Biên nhận: `AI_HOME/download-receipt.json` mục `ifstruct_source`; `models/Qwen3-4B-Instruct-2507-ifstruct-4bit/conversion-receipt.json` ghi hash nguồn, hash bản chuyển, cấu hình và phiên bản thư viện. Không chạy mã từ xa.
+- Biên nhận: `AI_HOME/download-receipt.json` mục `ifstruct_source` lúc đo (cài mới từ 17/11/2026 tối ghi ở mục `classifier`); `models/Qwen3-4B-Instruct-2507-ifstruct-4bit/conversion-receipt.json` ghi hash nguồn, hash bản chuyển, cấu hình và phiên bản thư viện. Không chạy mã từ xa.
 
 ## Kiểm tra qua API và worker thật
 
@@ -117,8 +117,8 @@ Chạy từ gốc repo. Model đã có trên máy này; hai bước download/con
 AI_PYTHON=/Volumes/quocDisk/AI/paddleocr/venv/bin/python
 BENCH_DIR=/Volumes/quocDisk/AI/paddleocr/training/bench
 
-HF_HUB_DISABLE_XET=1 scripts/document-ai.sh download --model ifstruct_source
-scripts/document-ai.sh convert-ifstruct
+HF_HUB_DISABLE_XET=1 scripts/document-ai.sh download --model classifier
+scripts/document-ai.sh convert
 
 "$AI_PYTHON" ai-worker/training/bench_pipeline.py llm --model qwen3-4b \
   --input "$BENCH_DIR/qwen4b-paired-input.jsonl" --catalog "$BENCH_DIR/qwen4b-catalog.json" \

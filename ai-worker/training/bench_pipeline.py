@@ -3,7 +3,7 @@
 Ba pha, chạy riêng để không tranh bộ nhớ (trừ pha `coresident` cố ý chạy chung):
 
   python bench_pipeline.py ocr        [--filled 36]        # đọc chữ, lưu cache bench/ocr.jsonl (chạy tiếp được)
-  python bench_pipeline.py llm        --model qwen3-4b     # chạy ĐÚNG document_ai.classify.classify() trên chữ đã cache
+  python bench_pipeline.py llm        --model qwen3-4b-ifstruct  # chạy ĐÚNG document_ai.classify.classify() trên chữ đã cache
   python bench_pipeline.py coresident --model qwen3-1.7b   # OCR + LLM cùng nằm trong bộ nhớ, đo RAM và swap
   python bench_pipeline.py report                          # gộp kết quả thành bảng
 

@@ -14,12 +14,10 @@ sys.path[:0] = [str(HERE.parent / "src"), str(REPO)]
 AI_HOME = Path(os.environ.get("DOCUMENT_AI_HOME", "/Volumes/quocDisk/AI/paddleocr"))
 WORK = AI_HOME / "training"          # dữ liệu huấn luyện nằm ngoài repo
 DATASET = REPO / "data/tuliem-dossiers-full"
+# Mô hình mặc định của worker là qwen3-4b-ifstruct; các bản còn lại chỉ để đo đối chiếu nếu máy còn giữ thư mục.
 MODELS = {
-    "qwen3-4b": AI_HOME / "models/Qwen3-4B-Instruct-2507-4bit",
     "qwen3-4b-ifstruct": AI_HOME / "models/Qwen3-4B-Instruct-2507-ifstruct-4bit",
-    "qwen3-4b-bkee": AI_HOME / "models/Qwen3-4B-BKEE-Entity-Extraction-4bit",
-    "qwen3.5-4b": AI_HOME / "models/Qwen3.5-4B-4bit",
-    "qwen3.5-2b": AI_HOME / "models/Qwen3.5-2B-4bit",   # KHÔNG huấn luyện được trên 16 GB: hết bộ nhớ GPU ở ~1.000 token
+    "qwen3-4b": AI_HOME / "models/Qwen3-4B-Instruct-2507-4bit",
     "qwen3-1.7b": AI_HOME / "models/Qwen3-1.7B-4bit",
 }
 

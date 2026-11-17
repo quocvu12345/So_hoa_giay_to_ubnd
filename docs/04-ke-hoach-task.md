@@ -343,7 +343,7 @@ gantt
 2. Song song: DB-01 → DB-02… và BE-01 → BE-05, FE-01 → FE-03.
 3. Lát cắt dọc đầu tiên để chứng minh kiến trúc: **BE-01 (build khung), BE-12, BE-13, BE-30, BE-31, FE-05, FE-06** — đăng nhập Keycloak và thấy menu theo phân công thật. Khung frontend (FE-04) đã chạy được với dữ liệu giả lập.
 4. Lát cắt thứ hai: **BE-41, AI-02, AI-04, BE-45, FE-21** — tải PDF và thấy tiến độ đọc realtime.
-5. **Thông luồng AI với Qwen3-1.7B** (chốt 17/11/2026, chi tiết và bản đồ luồng ở `docs/tasks/ai.md`):
+5. **Thông luồng AI với Qwen3-1.7B** (chốt 17/11/2026, chi tiết và bản đồ luồng ở `docs/tasks/ai.md`; tối 17/11/2026 mô hình mặc định đổi sang Qwen3-4B IFStruct):
    - bước 0: build và test BE-97, BE-98, BE-99, FE-45;
    - bước 1: AI-14, OPS-07;
    - bước 2: AI-19, QA-07 (thông luồng phía máy chủ);
