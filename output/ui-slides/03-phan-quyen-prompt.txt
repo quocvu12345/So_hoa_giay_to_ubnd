@@ -1,0 +1,82 @@
+Use case: infographic-diagram / ui-mockup.
+Create ONE detailed Vietnamese infographic image about dossier viewing permissions in the real software project "HỒ SƠ SỐ UBND". It must explain which organizational role can see which records, accurately reflecting the supplied backend rules below. This is a new image, not an edit. Use a large landscape 4:3 canvas (ideally 2400 x 1800) for readable detail.
+Style: match the prior series: premium enterprise UI, white background, dark navy headings and text, subtle teal for permitted scopes, amber for conditional access, muted red for denied access. Thin gray dividers, neat rounded rectangles, small outline role/folder/shield icons. Restrained and professional, no gradients or 3D, no people photos, no fake metrics or charts. Vietnamese text must be sharply legible, correct diacritics, exact English code identifiers. A generous but compact layout; use the main access matrix as the dominant visual. No watermark.
+Header: slim brand "HỒ SƠ SỐ UBND"; small active label "Phân quyền".
+Large main title: "Ai được xem những hồ sơ nào?"
+Subtitle: "Theo backend hiện tại · Phạm vi tính theo phân công đang chọn"
+
+A compact horizontal prerequisite strip beneath the title, with arrows pointing ONLY forward:
+"Đăng nhập" → "Phân công còn hiệu lực" → "Có quyền xem" → "Đúng phạm vi" → "Kiểm tra hồ sơ hạn chế"
+This is a check sequence, not levels in an organizational hierarchy.
+
+MAIN ACCESS MATRIX, roughly half of the image height. Heading "PHẠM VI XEM THEO VAI TRÒ".
+Three columns, headers exactly "Vai trò", "Được xem", "Ngoài phạm vi".
+Render six rows, each with a small role icon and the English role code below the name. The following cells are exact content; wrap naturally, not tiny:
+Row 1:
+"Chủ tịch UBND" / "chair"
+"Toàn khối UBND (tl-ubnd)*"
+"Hồ sơ khối HĐND"
+Row 2:
+"Lãnh đạo HĐND" / "council"
+"Toàn khối HĐND (tl-hdnd)*"
+"Hồ sơ khối UBND"
+Row 3:
+"Trưởng phòng / Trưởng Ban" / "manager"
+"Toàn bộ hồ sơ của phòng/Ban đang chọn"
+"Phòng/Ban khác, kể cả cùng cơ quan"
+Row 4:
+"Văn thư / lưu trữ" / "clerk"
+"Toàn bộ hồ sơ của cơ quan đang chọn*"
+"Cơ quan khác"
+Row 5:
+"Chuyên viên" / "employee"
+"Hồ sơ được giao chủ trì, phối hợp hoặc kiểm tra trong cùng cơ quan và đơn vị"
+"Hồ sơ chưa được giao, kể cả cùng phòng"
+Row 6:
+"Quản trị kỹ thuật" / "technical_admin"
+"Quản trị tài khoản, cấu hình, danh mục và hàng đợi AI"
+"Không có quyền đọc nội dung hồ sơ"
+Visually distinguish the admin row: its middle cell is gray and labeled "Phạm vi quản trị"; NEVER put a green permission check next to this row's ability to view dossiers. All other permitted rows use a restrained green check and denied scopes a small red x with clear text.
+Mandatory matrix footnotes, legible:
+"* Nếu phân công gắn đơn vị, phạm vi thu hẹp về đơn vị đó."
+"Các dòng trên vẫn chịu điều kiện hồ sơ hạn chế bên dưới."
+
+LOWER DETAIL AREA: two balanced sections side by side.
+Left section with amber shield, title "HỒ SƠ HẠN CHẾ (restricted)".
+Display a simple AND relationship, not an OR:
+"Đúng phạm vi" + "Cấp quyền riêng còn hiệu lực" = "Được xem"
+Three short readable supporting lines:
+"Quyền cấp cho đúng người và đúng hồ sơ, chưa thu hồi."
+"Áp dụng cả lãnh đạo, trưởng phòng và văn thư."
+"Cấp quyền riêng không mở rộng phạm vi sang đơn vị khác."
+Tiny code tag only if space: "document_access_grants".
+
+Right section with layered-person outline icon, title "KIÊM NHIỆM, CẤP PHÓ VÀ ỦY QUYỀN".
+Four short lines, each clearly separated:
+"Kiêm nhiệm: chọn một phân công, không cộng gộp các đơn vị."
+"Cấp phó: theo vai trò/phân công được cấp."
+"Ủy quyền: chọn đúng phân công, đúng quyền được giao, còn hạn."
+"Được xem không tự có quyền sửa, tải, xuất hoặc duyệt."
+Add a compact example, visually distinct but not large:
+"Trưởng phòng A kiêm nhiệm B: đang chọn A thì chỉ thấy A."
+
+BOTTOM STRIP, heading "GIẤY TỜ VÀ VĂN BẢN".
+Two short columns or two lines:
+"Giấy tờ trong hồ sơ: xem qua ít nhất một hồ sơ được phép."
+"PDF ở inbox/đã bỏ: người tải lên. Văn bản nguồn công khai: cần đăng nhập và document.view."
+An extra tiny but readable accuracy line:
+"Hồ sơ access_level=public vẫn kiểm phạm vi. Quyền xem hồ sơ không chỉ giới hạn ở bước đang chờ xử lý."
+
+Footer: "Nguồn: migration 029 · ScopeFilter · IdentityService · 17/11/2026"
+
+ACCURACY REQUIREMENTS:
+- Chair and council are separate organizational domains; never show one above the other inheriting all data.
+- Clerk is organization-scoped, NOT global across UBND and HĐND.
+- Manager sees own selected department records, not only those waiting for approval.
+- Employee must match org and department AND be the current assignee or have a non-ended dossier assignment. Do not suggest merely creating/uploading a dossier gives viewing rights to that dossier.
+- Each role is always bounded by the selected active assignment. No union of multiple assignments.
+- Restricted dossier access requires both existing scope and a valid dossier-specific grant to the current user. Grants alone do not bypass role/org/department scope.
+- The technical_admin role cannot read dossier contents through the application.
+- Do not confuse a public-source document (origin=public_source) with a dossier marked access_level=public.
+- Document exceptions still require endpoint permissions.
+Preserve the exact meaning of every matrix row and condition. This is one complete image, not multiple slides.

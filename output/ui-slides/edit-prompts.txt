@@ -1,0 +1,18 @@
+SLIDE 1 — CHỈNH SỬA
+Edit this existing slide image. Preserve its exact dimensions, style, layout, all cards, Vietnamese text, colors and fonts. Change ONLY the following workflow connectors to make the state machine correct:
+1. The upper teal arc labeled "Đạt" between "Phòng / Ban kiểm tra" and "Chờ nộp lưu" must have ONE arrowhead only at "Chờ nộp lưu". Remove the erroneous downward arrowhead where the arc starts at "Phòng / Ban kiểm tra". This is a one-way forward bypass of leadership.
+2. Replace the long amber arrow from "Bổ sung" (returned) back to "Đang soạn" (draft). Returned must NOT go back to draft. Instead draw a short amber return-loop from "Bổ sung" back into "Phòng / Ban kiểm tra", with arrowhead at "Phòng / Ban kiểm tra", labeled "Trình lại". Keep the existing downward arrow "Trả lại" from department review to "Bổ sung". The two arrows can use different left/right ports so they do not overlap.
+3. Add a thin unobtrusive connection from "Lập / bổ sung hồ sơ" in the first zone to "Đang soạn" in the second zone, routing in the horizontal gap between the zones and around the left edge without crossing text. One arrowhead at "Đang soạn". If this is too crowded, just use a small matching endpoint label "Hồ sơ draft" on the first card and leave the inter-zone connection out.
+Do not alter any other content. Keep text sharp, correctly spelled Vietnamese, no new decorative elements.
+
+SLIDE 2 — CHỈNH SỬA
+Edit this existing slide image. Preserve dimensions, style, all boxes, Vietnamese text, entire lower ERD and two bottom migration callouts unchanged. Correct ONLY the top runtime notification return path.
+The lower green return connector is currently incorrectly attached to Worker Python and splits directly to both Next.js and API. Remove that entire notification connector (but preserve the ordinary worker-to-database and worker-to-file-storage arrows).
+Replace it with these EXACT serial steps:
+"PostgreSQL / hoso" -> "LISTEN / NOTIFY" -> "API .NET" -> "Next.js".
+Connect PostgreSQL to the existing LISTEN / NOTIFY box by routing from the right outer edge of the PostgreSQL box down the right outer margin and then left along the bottom of the runtime area. The start MUST visually attach to PostgreSQL, NOT Worker Python.
+From LISTEN / NOTIFY, draw a connector to the bottom of API .NET, with arrowhead at API.
+Draw a separate connector from API .NET to Next.js below their boxes, with arrowhead pointing into Next.js. Its only label is "SSE /events". This can form a horizontal U-shaped return underneath API and Next.js while the longer DB-to-LISTEN line stays lower.
+Keep the original top rightward HTTPS /api/v1 arrow from Next.js to API untouched.
+Do not draw any direct notification link from LISTEN/NOTIFY to Next.js or from Worker to API.
+The diagram should communicate DB notifications are received by the .NET listener; the API delivers SSE to the UI. Absolutely preserve all of the lower database schema unchanged.

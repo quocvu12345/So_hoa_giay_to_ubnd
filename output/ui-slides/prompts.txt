@@ -1,0 +1,68 @@
+SLIDE 1
+Use case: productivity-visual / ui-mockup.
+Create ONE finished Vietnamese presentation slide as a high-resolution raster image, 16:9 landscape, ideally 3840 x 2160. This is slide 1 of 2 for a real project called "HỒ SƠ SỐ UBND". The user wants a polished UI-style image explaining the complete operating workflow. Exact Vietnamese diacritics, readable labels and accurate directed arrows are essential.
+Visual direction: refined enterprise software architecture UI, white canvas, dark navy typography, muted teal for the main flow, restrained amber for human review and returning work. Fine light-gray rules, small tasteful outline icons, generous whitespace, aligned rounded rectangular process nodes. Flat front view, no laptop frame, no photography, no perspective, no ornament, no invented metrics. Use a very slim application header "HỒ SƠ SỐ UBND", with two tabs "Luồng tổng thể" (active) and "Backend & CSDL". Main title large: "Luồng hoạt động tổng thể". Small subtitle: "Tiếp nhận, đối chiếu và hoàn thiện gói hồ sơ số". Small slide number "01 / 02".
+Draw the following three horizontal zones, with a coherent connected reading path:
+ZONE 1 heading "01  TIẾP NHẬN VÀ CHUẨN HÓA", four equally sized process cards left to right, connected by arrows:
+A "Tiếp nhận PDF", subtitle "Lô quét / tải lên", small role label "Văn thư, chuyên viên".
+B "AI đọc và trích xuất", subtitle "OCR · phân loại · gợi ý trường", small role label "Worker Python".
+C "Đối chiếu dữ liệu", subtitle "Xác nhận metadata và trường", small role label "Chuyên viên".
+D "Lập / bổ sung hồ sơ", subtitle "Xếp thành phần, kiểm checklist", small role label "Chuyên viên".
+Below B a short annotation "AI xử lý nền; kết quả là gợi ý".
+Below C a short annotation "Người dùng xác nhận trước khi trình".
+ZONE 2 heading "02  KIỂM TRA VÀ NỘP LƯU", draw an accurate branched state flow, with arrow from D into initial state:
+"Đang soạn" (small code "draft") -- arrow labeled "Trình" --> "Phòng / Ban kiểm tra" (small code "department_review").
+From "Phòng / Ban kiểm tra", one arrow labeled "Đạt" directly to "Chờ nộp lưu" (small code "ready_archive").
+An alternate branch labeled "Cần ý kiến" goes through "Lãnh đạo cho ý kiến" (small code "leadership_review"), then an arrow labeled "Hoàn tất" to "Chờ nộp lưu".
+"Chờ nộp lưu" -- arrow labeled "Tiếp nhận" --> "Đã lưu trữ" (small code "archived").
+A clearly marked amber return branch from "Phòng / Ban kiểm tra" to a small "Bổ sung" node (code "returned"), then back to "Đang soạn"; label the branch "Trả lại". Do not imply every dossier must go through leadership. Label this zone small "Luồng hồ sơ đang xử lý (in_progress)".
+ZONE 3 heading "03  KHAI THÁC SAU LƯU TRỮ", three compact output nodes attached from "Đã lưu trữ": "Tra cứu và tải tệp", "Kho giấy và mượn trả", "Xuất gói dữ liệu". A fourth smaller conditional node: "Hủy theo quyết định", subtitle "Đề nghị → phê duyệt → thực hiện".
+A discreet bottom strip with two accurate rules, fully legible:
+"Chặn trình khi thành phần chưa đối chiếu hoặc metadata còn needs_review."
+"Số hóa hồ sơ đã kết thúc bỏ nhánh lãnh đạo. Luồng A/C trong cấu hình còn ghi chú đề xuất."
+Footer tiny but readable: "Nguồn: mã nguồn backend và SQL migration 001–035 · 17/11/2026"
+Constraints: preserve all named main stages and the direct path bypassing leadership; no fictitious statistics, no claim of legal approval or digital signing; don't draw a system that automatically deletes on expiry. Native clear Vietnamese text, no misspelling, no watermarks. One slide only.
+
+SLIDE 2
+Use case: productivity-visual / ui-mockup.
+Create ONE finished Vietnamese presentation slide as a high-resolution raster image, 16:9 landscape, ideally 3840 x 2160. This is slide 2 of 2 for "HỒ SƠ SỐ UBND". The user specifically wants a detailed backend operation and database-design UI image based on actual source code. Prioritize accurate labels, relationships, Vietnamese diacritics and legibility.
+Visual direction: polished enterprise technical UI matching slide 1: clean white canvas, navy text, restrained teal paths, amber review annotations, light-gray rules, aligned rounded rectangles, small outline icons, no photography, no gradients, no 3D. A slim header "HỒ SƠ SỐ UBND", tabs "Luồng tổng thể" and "Backend & CSDL" (active). Large title "Backend và thiết kế cơ sở dữ liệu". Small subtitle "ASP.NET Core 10 · PostgreSQL 16 · Worker Python". Slide number "02 / 02".
+Composition: TOP 40% is runtime architecture, LOWER 48% is core entity relationship diagram, BOTTOM 12% is two short recent-change callouts. Draw exact labels from below, avoid other filler text.
+TOP heading "LUỒNG XỬ LÝ BACKEND".
+Runtime blocks arranged with clear directed connectors:
+1. "Next.js" / "Giao diện" sends "HTTPS /api/v1" to
+2. "API .NET" / "Cookie · CSRF · phân công · quyền", sends to
+3. "Application handlers" / "Tiếp nhận · đối chiếu · chuyển bước", which reads and writes
+4. "PostgreSQL / hoso" / "EF Core + Npgsql".
+Inside or below the handler/database link, show "transition_dossier()" with small text "Khóa dòng, kiểm xmin, kiểm checklist".
+A separate "Kho tệp" / "Local / S3 · PDF và preview" block connected to application handlers, label "storage_key". Keep actual PDF bytes outside PostgreSQL.
+A "Worker Python" / "OCR · phân loại · trích trường" block connected bidirectionally ONLY to PostgreSQL and to the file store, NEVER directly to API. DB-to-worker connector label "ocr_jobs / SKIP LOCKED"; worker-to-DB connector label "ocr_pages + ai_suggestions".
+A thin return path from PostgreSQL via a small "LISTEN / NOTIFY" block to API, and then API to Next.js labeled "SSE /events".
+Small legend under runtime: "SQL-first migration: DbUp. API gồm Api, Application, Domain, Infrastructure."
+LOWER heading "QUAN HỆ DỮ LIỆU CỐT LÕI". This is a selected core ERD, not all tables.
+Draw 9 compact relational-table cards, with the following exact names and two or three fields each. Use monospace for table and field names; show PK/FK tags and cardinalities clearly. Arrange to minimize crossed lines.
+Card "users": "PK id", "display_name".
+Card "user_roles": "PK id", "FK user_id", "role_code, organization_code".
+Card "dossiers": "PK id", "status, workflow_code", "FK assignee_id".
+Card "dossier_documents": "PK/FK dossier_id", "PK/FK document_id", "relation_kind".
+Card "documents": "PK id", "metadata_status", "data_review_status".
+Card "files": "PK id", "FK document_id", "storage_key, sha256".
+Card "ocr_jobs": "PK id", "FK file_id", "status, priority".
+Card "ai_suggestions": "PK id", "FK job_id, document_id", "decision".
+Card "document_field_values": "PK/FK document_id", "PK/FK field_definition_code", "value_text, needs_review".
+Exact relations to depict:
+users 1 to N user_roles via user_id.
+users 1 to N dossiers via assignee_id (assignee optional).
+dossiers 1 to N dossier_documents.
+documents 1 to N dossier_documents. This is the explicit N–N join between dossiers and documents, no direct one-to-many between dossiers and documents.
+documents 1 to N files.
+files 1 to N ocr_jobs.
+ocr_jobs 1 to N ai_suggestions.
+documents 1 to N document_field_values.
+Do not add a direct relation between users and documents. If there isn't space for a connector from ai_suggestions.document_id to documents, retain its FK field without inventing a different connection.
+Below ERD in a small legible single line: "Bảng hỗ trợ: field_definitions · ai_field_suggestions · workflow_events · outbox_messages · audit_events".
+BOTTOM two aligned callouts:
+"035  XÁC NHẬN METADATA" with text "documents: metadata_reviewed_by, metadata_reviewed_at, metadata_review_note".
+"034  HỦY CÓ KHẢ NĂNG TIẾP TỤC" with text "disposal_requests (executing) → disposal_blob_deletions → COMMIT → xóa kho → executed". Supporting very short text "Lỗi kho: thử lại. Giữ blob còn tham chiếu."
+Footer "Mô hình rút gọn theo migration 001–035 · 17/11/2026".
+Constraints: exact table names, no invented broker like Redis/RabbitMQ, no direct API-to-AI HTTP call, DB stores metadata and queue while binary documents live in Local/S3, distinguish AI suggestions from verified document values, no unrequested data or performance claims. Make arrows unambiguous and all text readable. One slide only.
