@@ -11,6 +11,7 @@ namespace HoSoSo.Api.IntegrationTests;
 /// QA-01. Ma trận quyền: mỗi endpoint của API × 6 vai trò, sinh từ chính mã (EndpointDataSource + DefaultRolePermissions) và ghi vào
 /// docs/ma-tran-quyen.md. Test kiểm tài liệu KHÔNG lệch khỏi mã: đổi quyền của endpoint hay của vai trò mà quên cập nhật tài liệu thì đỏ.
 /// Cập nhật tài liệu: <c>HOSO_WRITE_PERMISSION_MATRIX=1 dotnet test --project tests/HoSoSo.Api.IntegrationTests -- --filter-class "*PermissionMatrixTests"</c>.
+/// Việc endpoint CHẶN thật vai trò không có quyền (403), vai trò có quyền không bị chặn, và chưa đăng nhập thì 401: <see cref="PermissionEnforcementTests"/> gọi từng endpoint để kiểm.
 /// Giới hạn: đây là ma trận QUYỀN (vai trò có quyền gì). Việc người đó chỉ thấy hồ sơ trong phạm vi phân công do IScopeFilter lọc, được kiểm ở
 /// ScopeTests, AssignmentScopeTests và ScopePrefilterTests; ma trận không thay cho các test đó.
 /// </summary>
@@ -52,7 +53,7 @@ public sealed class PermissionMatrixTests(ApiFactory factory) : IClassFixture<Ap
         text.AppendLine("> **Tệp này do test sinh ra từ mã** (`PermissionMatrixTests`), không sửa tay. Đổi quyền của endpoint hay của vai trò thì test đỏ cho tới khi cập nhật:");
         text.AppendLine("> `HOSO_WRITE_PERMISSION_MATRIX=1 dotnet test --project tests/HoSoSo.Api.IntegrationTests -- --filter-class \"*PermissionMatrixTests\"` (chạy từ thư mục `backend/`).");
         text.AppendLine();
-        text.AppendLine("Đây là ma trận **quyền**: vai trò có được gọi endpoint hay không. Việc chỉ thấy hồ sơ, giấy tờ trong **phạm vi phân công** do `IScopeFilter` lọc ở mọi truy vấn, được kiểm riêng ở `ScopeTests`, `AssignmentScopeTests`, `ScopePrefilterTests`; ma trận này không thay cho các test đó.");
+        text.AppendLine("Đây là ma trận **quyền**: vai trò có được gọi endpoint hay không. Việc từ chối thật được kiểm ở `PermissionEnforcementTests` (gọi từng endpoint bằng từng vai trò không có quyền, mong 403; chưa đăng nhập mong 401). Việc chỉ thấy hồ sơ, giấy tờ trong **phạm vi phân công** do `IScopeFilter` lọc ở mọi truy vấn, được kiểm riêng ở `ScopeTests`, `AssignmentScopeTests`, `ScopePrefilterTests`; ma trận này không thay cho các test đó.");
         text.AppendLine();
         var byAccess = rows.GroupBy(r => r.Access).ToDictionary(g => g.Key, g => g.Count());
         text.AppendLine($"**{rows.Count} endpoint**: {byAccess.GetValueOrDefault("quyền")} cần quyền riêng, {byAccess.GetValueOrDefault("đăng nhập")} chỉ cần đăng nhập (phạm vi do use case kiểm tra), {byAccess.GetValueOrDefault("khóa máy")} dùng khóa máy (script sao lưu), {byAccess.GetValueOrDefault("ẩn danh")} ẩn danh (chỉ dưới `/auth`).");

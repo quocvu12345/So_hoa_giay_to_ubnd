@@ -3,7 +3,7 @@
 > **Tệp này do test sinh ra từ mã** (`PermissionMatrixTests`), không sửa tay. Đổi quyền của endpoint hay của vai trò thì test đỏ cho tới khi cập nhật:
 > `HOSO_WRITE_PERMISSION_MATRIX=1 dotnet test --project tests/HoSoSo.Api.IntegrationTests -- --filter-class "*PermissionMatrixTests"` (chạy từ thư mục `backend/`).
 
-Đây là ma trận **quyền**: vai trò có được gọi endpoint hay không. Việc chỉ thấy hồ sơ, giấy tờ trong **phạm vi phân công** do `IScopeFilter` lọc ở mọi truy vấn, được kiểm riêng ở `ScopeTests`, `AssignmentScopeTests`, `ScopePrefilterTests`; ma trận này không thay cho các test đó.
+Đây là ma trận **quyền**: vai trò có được gọi endpoint hay không. Việc từ chối thật được kiểm ở `PermissionEnforcementTests` (gọi từng endpoint bằng từng vai trò không có quyền, mong 403; chưa đăng nhập mong 401). Việc chỉ thấy hồ sơ, giấy tờ trong **phạm vi phân công** do `IScopeFilter` lọc ở mọi truy vấn, được kiểm riêng ở `ScopeTests`, `AssignmentScopeTests`, `ScopePrefilterTests`; ma trận này không thay cho các test đó.
 
 **144 endpoint**: 119 cần quyền riêng, 20 chỉ cần đăng nhập (phạm vi do use case kiểm tra), 2 dùng khóa máy (script sao lưu), 3 ẩn danh (chỉ dưới `/auth`).
 
