@@ -170,7 +170,7 @@ Mỗi cảnh báo có đường dẫn tới bảng Grafana hoặc nhóm lỗi Gl
 | LOG-02 | Dựng GlitchTip, tạo 3 dự án (web, api, ai-worker), đặt DSN qua biến môi trường | Ném lỗi thử ở API → có nhóm lỗi trong GlitchTip kèm `error_id` | OPS-02 | 1 |
 | LOG-03 | Worker Python: log JSON cùng định dạng, gắn `job_id`, `correlation_id` (lấy từ `ocr_jobs.options`) | Truy được job AI từ mã tương quan của lần tải lên | AI-02 | 1 |
 | LOG-04 | Next.js gửi lỗi máy chủ sang GlitchTip (`@sentry/nextjs` trỏ DSN nội bộ, chỉ bật khi có DSN) | Lỗi render có digest xuất hiện trong GlitchTip | LOG-02 | 1 |
-| LOG-05 | Thêm `correlation_id` vào `audit_events` (đọc `hoso.correlation_id` trong trigger) | Thay đổi hồ sơ tra được ngược về request | DB-13 | 0,5 |
+| LOG-05 | Thêm `correlation_id` vào `audit_events` (đọc `hoso.correlation_id` trong trigger) | Thay đổi hồ sơ tra được ngược về request ✅ 19/11/2026 (migration 041, BE-131) | DB-13 | 0,5 |
 | LOG-06 | Ghi `access_events` (xem, tải, in, xuất, tìm kiếm) ở nền, không chặn request | Tải tệp tạo đúng 1 dòng; mất DB tạm thời không làm lỗi request | BE-16 | 1 |
 | LOG-07 | 5 bảng Grafana và các cảnh báo ở mục 7, kèm liên kết sổ tay | Tắt worker AI → cảnh báo hàng đợi treo sau 15 phút | LOG-01 | 2 |
 | LOG-08 | Màn “Nhật ký hệ thống”: lọc theo người, hành động, thời gian, mã tương quan; tìm theo Mã lỗi người dùng gửi | Nhập mã lỗi ra đúng request và người | BE-88, FE-44 | 1,5 |

@@ -1,14 +1,15 @@
 "use client";
 
-import { useId, useState } from "react";
+import { useEffect, useId, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { ArrowDown, ArrowUp, FilePlus2, FileText, Trash2 } from "lucide-react";
-import { addDocuments, loadReadyInbox, placeDocuments, removeDocument, type Direction } from "@/app/actions/dossier";
+import { addDocuments, findDocuments, loadReadyInbox, placeDocuments, removeDocument, type Direction, type FoundDocument } from "@/app/actions/dossier";
 import { Button, ButtonLink } from "@/components/ui/button";
 import { EmptyState } from "@/components/ui/blocks";
 import { Dialog } from "@/components/ui/dialog";
 import { Chip } from "@/components/ui/status-chip";
+import { Input } from "@/components/ui/input";
 import { useToast } from "@/components/ui/toast";
 import { routes } from "@/config/routes";
 import type { InboxItem } from "@/features/intake/inbox-data";
@@ -80,7 +81,7 @@ export function DocumentList({ dossierId, documents, editable, components = [] }
       {editable && (
         <div className="flex justify-end">
           <Button variant="primary" onClick={() => setAdding(true)}>
-            <FilePlus2 aria-hidden className="size-4" /> Thêm từ hộp tiếp nhận
+            <FilePlus2 aria-hidden className="size-4" /> Thêm giấy tờ
           </Button>
         </div>
       )}
@@ -186,7 +187,8 @@ export function DocumentList({ dossierId, documents, editable, components = [] }
       )}
       <p role="status" aria-live="polite" className="sr-only">{busy ? "Đang lưu thay đổi" : ""}</p>
 
-      <AddFromInboxDialog open={adding} onClose={() => setAdding(false)} dossierId={dossierId} existing={new Set(documents.map((d) => d.documentId))} />
+      {/* Chỉ dựng khi đang mở: mỗi lần mở là một lần tải mới và trạng thái (đã chọn, ô tìm) tự làm mới, không phải đặt lại bằng tay. */}
+      {adding && <AddFromInboxDialog open onClose={() => setAdding(false)} dossierId={dossierId} existing={new Set(documents.map((d) => d.documentId))} />}
     </div>
   );
 }
@@ -201,19 +203,49 @@ function AddFromInboxDialog({ open, onClose, dossierId, existing }: { open: bool
   // Hộp thoại modal làm vùng toast bị vô hiệu: lỗi hiện ngay trong hộp thoại.
   const add = useServerAction(addDocuments, { toastErrors: false });
   const [failure, setFailure] = useState<string | null>(null);
-  const [loadedFor, setLoadedFor] = useState(false);
+  // Giấy tờ ĐÃ CÓ (đã đối chiếu, nằm ở hồ sơ khác hoặc công khai): tìm bằng tra cứu rồi chọn chung với PDF trong hộp tiếp nhận (FE-29).
+  const [query, setQuery] = useState("");
+  const [found, setFound] = useState<FoundDocument[] | null>(null);
+  const [known, setKnown] = useState<Map<string, FoundDocument>>(new Map());
+  const [finding, setFinding] = useState(false);
 
-  // Mở hộp thoại lần đầu thì tải danh sách PDF đã đọc xong.
-  if (open && !loadedFor) {
-    setLoadedFor(true);
-    void load.run().then((outcome) => outcome.ok && setItems(outcome.data));
-  }
-  if (!open && loadedFor) {
-    setLoadedFor(false);
-    setItems(null);
-    setPicked(new Set());
-    setFailure(null);
-  }
+  // Tìm sau khi ngừng gõ 300 ms; kết quả về muộn của lần gõ cũ bị bỏ để không ghi đè kết quả mới hơn.
+  useEffect(() => {
+    const text = query.trim();
+    let stale = false;
+    const timer = setTimeout(async () => {
+      if (text.length < 2) {
+        setFound(null);
+        setFinding(false);
+        return;
+      }
+      setFinding(true);
+      const outcome = await findDocuments(text).catch(() => null);
+      if (stale) return;
+      setFinding(false);
+      if (outcome?.ok) {
+        setFound(outcome.data);
+        setKnown((current) => new Map([...current, ...outcome.data.map((d): [string, FoundDocument] => [d.documentId, d])]));
+      }
+    }, 300);
+    return () => {
+      stale = true;
+      clearTimeout(timer);
+    };
+  }, [query]);
+
+  // Tải danh sách PDF đã đọc xong đúng MỘT lần khi hộp thoại mở. (Trước đây gọi Server Action ngay trong lúc render nên lặp vô hạn, hàng trăm lần mỗi giây.)
+  useEffect(() => {
+    let stale = false;
+    void load.run().then((outcome) => {
+      if (!stale && outcome.ok) setItems(outcome.data);
+    });
+    return () => {
+      stale = true;
+    };
+    // `load.run` đổi theo mỗi lần render của hook; chỉ cần chạy một lần khi hộp thoại được dựng.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   const available = (items ?? []).filter((i) => !existing.has(i.documentId));
 
@@ -248,8 +280,8 @@ function AddFromInboxDialog({ open, onClose, dossierId, existing }: { open: bool
     <Dialog
       open={open}
       onClose={onClose}
-      title="Thêm giấy tờ từ hộp tiếp nhận"
-      description="Chỉ hiện PDF đã đọc xong. Thêm xong, đối chiếu từng giấy tờ ở tab Tổng quan hoặc hộp tiếp nhận."
+      title="Thêm giấy tờ vào hồ sơ"
+      description="Chọn PDF đã đọc xong trong hộp tiếp nhận, hoặc tìm giấy tờ đã có (đã đối chiếu, nằm ở hồ sơ khác hoặc văn bản công khai). Thêm xong, đối chiếu từng giấy tờ chưa đối chiếu."
       className="w-[min(40rem,calc(100vw-2rem))]"
       footer={
         <>
@@ -277,6 +309,39 @@ function AddFromInboxDialog({ open, onClose, dossierId, existing }: { open: bool
             ))}
           </fieldset>
         )}
+        <div className="mt-2 grid gap-2 border-t border-line pt-3">
+          <Input
+            label="Hoặc tìm giấy tờ đã có"
+            type="search"
+            value={query}
+            onChange={(e) => setQuery(e.target.value)}
+            placeholder="Số ký hiệu, trích yếu hoặc nội dung…"
+            hint="Chỉ hiện giấy tờ bạn được xem. Giấy tờ đã nằm trong hồ sơ khác vẫn thêm được (dùng chung)."
+          />
+          <p role="status" aria-live="polite" className="text-xs text-muted">
+            {finding ? "Đang tìm…" : found ? (found.filter((d) => !existing.has(d.documentId)).length === 0 ? "Không có giấy tờ nào khớp, hoặc đã nằm trong hồ sơ này." : `${found.filter((d) => !existing.has(d.documentId)).length} giấy tờ khớp.`) : ""}
+          </p>
+          {found && found.some((d) => !existing.has(d.documentId)) && (
+            <fieldset className="grid max-h-[30vh] gap-1.5 overflow-auto">
+              <legend className="sr-only">Giấy tờ đã có, chọn để thêm</legend>
+              {found.filter((d) => !existing.has(d.documentId)).map((doc) => (
+                <label key={doc.documentId} className="flex cursor-pointer items-start gap-3 border border-line p-2.5 has-checked:border-primary has-checked:bg-accent-soft">
+                  <input type="checkbox" checked={picked.has(doc.documentId)} onChange={() => toggle(doc.documentId)} className="mt-1 size-4 accent-primary" />
+                  <span className="grid min-w-0 gap-0.5 text-sm">
+                    <span className="font-semibold">{doc.title}</span>
+                    <span className="text-xs text-muted">
+                      {[doc.number, doc.subtitle, doc.issuedOn ? formatDate(doc.issuedOn) : null].filter(Boolean).join(" · ") || "Chưa có số ký hiệu"}
+                      {doc.inDossiers.length > 0 && ` · đang ở hồ sơ ${doc.inDossiers.join(", ")}`}
+                    </span>
+                  </span>
+                </label>
+              ))}
+            </fieldset>
+          )}
+          {[...picked].some((id) => known.has(id) && !items?.some((i) => i.documentId === id)) && (
+            <p className="text-xs text-muted">Đã chọn: {[...picked].filter((id) => known.has(id) && !items?.some((i) => i.documentId === id)).map((id) => known.get(id)!.title).join("; ")}</p>
+          )}
+        </div>
         {failure && <p role="alert" className="border border-bad bg-bad-soft p-2 text-sm text-bad">{failure}</p>}
       </div>
     </Dialog>

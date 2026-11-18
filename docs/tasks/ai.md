@@ -351,6 +351,12 @@ Tình trạng sau đợt làm 17/11/2026: mục 1 và 2 đã sửa (AI-13); mụ
 - **Kiểm tra:** `tests/test_fake_engine.py` (9 test), hợp đồng PostgreSQL kiểm vùng nguồn và độ tin cậy ghi xuống CSDL;
   `scripts/smoke-ai-flow.py --file-to-dossier` qua hết với worker giả (bước 6 tự kiểm `fake-classifier`).
 
+### AI-10 · Báo cáo độ đúng của AI từ việc cán bộ đối chiếu ✅ · 1 ngày (19/11/2026)
+- **Cách đo:** mỗi trường cán bộ đã xác nhận (`document_field_values`, `needs_review = false`, có `verified_by`, còn trỏ về gợi ý qua `ai_field_suggestion_id`) được so với giá trị AI gợi ý, sau khi gộp khoảng trắng: `accepted` (giữ nguyên), `edited` (sửa), `cleared` (xóa trống: AI đọc cái không có), `missed` (AI để trống, người điền). Trường cả hai để trống không tính.
+- **Đã làm:** view `hoso.v_ai_accuracy` (migration 042, đã áp vào `hoso_dev`, sao lưu `data/db-backups/hoso_dev-truoc-042-*.dump`) và `scripts/report-ai-accuracy.py` (chỉ dùng `psql` và thư viện chuẩn): ba bảng (theo mô hình, theo loại giấy tờ thấp nhất trước, 15 trường khó nhất), trường ít mẫu gom riêng (`--min`, mặc định 5); mặc định bỏ mô hình `fake`. Cờ `--model`, `--db`, `--include-fake`, `--out`.
+- **Hạn chế phải đọc trước khi dùng con số:** (1) chỉ tính gợi ý ĐÃ được chấp nhận sao sang bảng chính, gợi ý bị bỏ qua không có dòng; (2) dữ liệu do E2E hay smoke tự bấm "đã kiểm" luôn cho 100% chấp nhận, **không phải độ đúng**; số có ý nghĩa chỉ khi cán bộ thật đã đối chiếu (xem AI-12, AI-20).
+- **Kiểm tra:** `AiAccuracyViewTests` (backend, 2 ca: đủ bốn loại kết quả, trường chưa đối chiếu không lọt vào) và `tests/test_report_accuracy.py` (3 ca).
+
 ### OPS-07 · Môi trường dev chạy đủ luồng AI ✅ · 0,5 ngày
 - **Làm:**
   1. Sao lưu `hoso_dev`, rồi áp migration 032 và 033 bằng `backend/scripts/migrate-hoso-dev.sh`: xem danh sách trước, sau đó mới `--apply`. Không chạy `migrate` trần, không chạy 004.

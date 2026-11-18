@@ -38,6 +38,8 @@ DbUp chạy các tệp `*.sql` trong thư mục này theo thứ tự tên, mỗi
 | `038` | Chỉ mục sắp danh sách hồ sơ theo tên và hạn nội bộ (20.000 hồ sơ: ~350 ms → vài ms) | BE-111 |
 | `039` | Bản quét thay thế: `files.replaces_file_id` (cùng giấy tờ, mỗi bản bị thay tối đa một lần), `files.replacement_reason` (bắt buộc, 10–500 ký tự) | BE-126 |
 | `040` | `access_events.action` nhận thêm `ai_extract`: ai bấm "Trích xuất ngay" cho giấy tờ nào (BE-128) | |
+| `041` | `audit_events.correlation_id` + trigger `audit_change()` đọc `hoso.correlation_id`: tra một thay đổi dữ liệu về request gây ra nó (LOG-05) | |
+| `042` | `v_ai_accuracy`: độ đúng của AI theo mô hình, loại giấy tờ và trường, đo từ giá trị cán bộ đã đối chiếu (accepted, edited, cleared, missed) (DB-14, AI-10) | |
 
 Số thứ tự giữ nguyên theo `docs/03-thiet-ke-csdl.md` mục 15; `005`, `006` không dùng (dành cho bản gốc ngoài thư mục này).
 

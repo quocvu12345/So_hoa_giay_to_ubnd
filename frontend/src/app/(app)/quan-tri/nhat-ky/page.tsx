@@ -220,10 +220,16 @@ function AuditTable({ rows, href, kind }: { rows: AuditRow[]; href: (patch: Part
               <td className="px-3 py-2">
                 {kind === "access" ? (
                   r.correlationId ? <Link href={href({ correlationId: r.correlationId, view: "truy-cap" })} className="font-mono text-xs break-all text-primary hover:underline">{r.correlationId}</Link> : "—"
-                ) : r.changedColumns?.length ? (
-                  <span className="font-mono text-xs">{r.changedColumns.join(", ")}</span>
                 ) : (
-                  <span className="text-muted">—</span>
+                  <>
+                    {r.changedColumns?.length ? <span className="font-mono text-xs">{r.changedColumns.join(", ")}</span> : <span className="text-muted">—</span>}
+                    {/* LOG-05: mã tương quan của request đã gây ra thay đổi này; bấm để xem mọi thay đổi cùng request. Dòng cũ (trước migration 041) không có mã. */}
+                    {r.correlationId && (
+                      <span className="mt-0.5 block text-xs text-muted">
+                        Request <Link href={href({ correlationId: r.correlationId, view: "thay-doi" })} className="font-mono break-all text-primary hover:underline">{r.correlationId}</Link>
+                      </span>
+                    )}
+                  </>
                 )}
               </td>
             </tr>

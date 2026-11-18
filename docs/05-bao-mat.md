@@ -184,7 +184,7 @@ Sổ tay chi tiết: SEC-08.
 | SEC-01 | Cấu hình Keycloak: chính sách mật khẩu, khóa sau 10 lần sai, MFA (TOTP) bắt buộc cho quản trị và lãnh đạo, phiên SSO 8 giờ | Xuất realm JSON có các chính sách; thử đăng nhập quản trị không MFA bị từ chối | P0-04 | 1 |
 | SEC-02 | Lưu phiên phía máy chủ (`ITicketStore` PostgreSQL), thu hồi phiên khi khóa tài khoản hoặc kết thúc phân công | Khóa tài khoản → request tiếp theo 401 | BE-12 | 1,5 |
 | SEC-03 | CI bảo mật: CodeQL/Semgrep, npm audit, `dotnet list package --vulnerable`, pip-audit, SBOM CycloneDX | Pipeline đỏ khi có lỗ hổng mức cao | P0-06 | 1 |
-| SEC-04 | Quy tắc lint: cấm `dangerouslySetInnerHTML`, `eval`; cấm import `server-only` vào client; kiểm tra `"use server"` luôn gọi `requireSession` | ESLint báo lỗi khi vi phạm | FE-01 | 0,5 |
+| SEC-04 | Quy tắc lint: cấm `dangerouslySetInnerHTML`, `eval`; cấm import `server-only` vào client; kiểm tra `"use server"` luôn gọi `requireSession` | ESLint báo lỗi khi vi phạm ✅ 19/11/2026 (`frontend/eslint-rules/hoso.mjs`, xem `tasks/frontend.md`) | FE-01 | 0,5 |
 | SEC-05 | ClamAV quét tệp tải lên trước khi xếp hàng đọc; giới hạn số trang; timeout worker | Tệp EICAR bị chặn, ghi lỗi rõ cho người dùng | BE-41, AI-02 | 1,5 |
 | SEC-06 | OWASP ZAP baseline tự động trên staging, báo cáo HTML | Không có cảnh báo mức cao | OPS-02 | 1 |
 | SEC-07 | Kiểm thử không lộ dữ liệu cá nhân trong log: chạy luồng mẫu, quét log tìm số CCCD, tên trong bộ test | Không tìm thấy | LOG-03 | 0,5 |

@@ -5,6 +5,7 @@ import { getInbox, READY_ONLY } from "@/features/intake/inbox-data";
 import type { InboxItem } from "@/features/intake/inbox-data";
 import { UUID } from "@/features/dossier/dossier-data";
 import { isProcedureId } from "@/features/procedure/procedure-filter";
+import { search } from "@/features/search/search-data";
 import type { ActionResult } from "@/lib/action-result";
 import { ApiError } from "@/lib/api/problem";
 import { ok, serverApi } from "@/lib/api/server";
@@ -73,6 +74,23 @@ export async function addDocuments(dossierId: string, documentIds: string[]): Pr
     }
     refresh(dossierId);
     return { added, failures };
+  });
+}
+
+export type FoundDocument = { documentId: string; title: string; subtitle: string | null; number: string | null; issuedOn: string | null; inDossiers: string[] };
+
+/**
+ * Tìm giấy tờ ĐÃ CÓ để thêm vào hồ sơ (FE-29): giấy tờ đã đối chiếu, nằm trong hồ sơ khác hoặc văn bản công khai, không qua hộp tiếp nhận (BE-62 cho phép thêm giấy tờ
+ * có sẵn trong phạm vi). Dùng tra cứu (BE-80) nên kết quả chỉ gồm giấy tờ người dùng được xem; dưới 2 ký tự không gửi.
+ */
+export async function findDocuments(q: string): Promise<ActionResult<FoundDocument[]>> {
+  return runAction("dossier_find_documents", async () => {
+    const text = String(q ?? "").trim().slice(0, 100);
+    if (text.length < 2) return [];
+    const result = await search({ q: text, kind: "documents", limit: 10 });
+    return result.hits
+      .filter((h) => h.kind === "document")
+      .map((h) => ({ documentId: h.id, title: h.title, subtitle: h.subtitle ?? null, number: h.number ?? null, issuedOn: h.issuedOn ?? null, inDossiers: h.dossiers.map((d) => d.code) }));
   });
 }
 

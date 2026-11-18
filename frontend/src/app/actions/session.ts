@@ -40,6 +40,7 @@ export async function mockSignIn(formData: FormData) {
   redirect(safeReturnTo(formData.get("returnTo")) as "/viec-cua-toi");
 }
 
+// eslint-disable-next-line hoso/server-action-guard -- đăng xuất chỉ xóa cookie của chính người gọi và phải chạy được cả khi phiên đã hỏng
 export async function mockSignOut() {
   const store = await cookies();
   store.delete(MOCK_USER_COOKIE);
@@ -51,6 +52,7 @@ export async function mockSignOut() {
  * Xóa cookie phân công: gọi khi cookie trỏ tới phân công không còn dùng được, và ngay trước khi đăng xuất
  * (để người đăng nhập sau trên cùng máy không mang phân công của người trước).
  */
+// eslint-disable-next-line hoso/server-action-guard -- chỉ xóa cookie phân công của chính người gọi, không đọc hay ghi dữ liệu nào
 export async function clearAssignment() {
   (await cookies()).delete(ASSIGNMENT_COOKIE);
 }

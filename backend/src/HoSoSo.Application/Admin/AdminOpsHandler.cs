@@ -130,7 +130,7 @@ public sealed partial class AdminOpsHandler(IHoSoDb db, ICurrentUser user, ICloc
                "Ghi nhận mô hình mới bằng migration, hoặc đặt lại HOSO_AI_CLASSIFIER_MODEL của worker cho khớp.";
     }
 
-    private sealed record ChangeRow(long id, DateTimeOffset happened_at, string table_name, string operation, string? actor_name, string? object_id, string[]? changed_columns);
+    private sealed record ChangeRow(long id, DateTimeOffset happened_at, string table_name, string operation, string? actor_name, string? object_id, string[]? changed_columns, string? correlation_id);
     private sealed record AccessRow(long id, DateTimeOffset happened_at, string? actor_name, string action, string? object_type, string? object_id, string? correlation_id);
 
     public async Task<IReadOnlyList<AuditRow>> AuditAsync(string kind, Guid? actor, string? objectType, Guid? objectId, string? correlationId,
@@ -158,7 +158,7 @@ public sealed partial class AdminOpsHandler(IHoSoDb db, ICurrentUser user, ICloc
         }
         if (kind != "change") throw new ValidationFailedException(new Dictionary<string, string[]> { ["kind"] = ["kind chỉ nhận access hoặc change."] });
         var changes = await db.Database.SqlQuery<ChangeRow>($"""
-            SELECT a.id, a.happened_at, a.table_name, a.operation, u.display_name AS actor_name,
+            SELECT a.id, a.happened_at, a.table_name, a.operation, u.display_name AS actor_name, a.correlation_id,
                    coalesce(a.new_row->>'id', a.old_row->>'id') AS object_id,
                    CASE WHEN a.operation = 'UPDATE' THEN
                      (SELECT array_agg(k ORDER BY k) FROM jsonb_object_keys(a.new_row) k WHERE a.new_row -> k IS DISTINCT FROM a.old_row -> k)
@@ -168,11 +168,12 @@ public sealed partial class AdminOpsHandler(IHoSoDb db, ICurrentUser user, ICloc
               AND ({actorText}::text IS NULL OR a.actor_subject = {actorText}::text)
               AND ({objectType}::text IS NULL OR a.table_name = {objectType}::text)
               AND ({objectText}::text IS NULL OR coalesce(a.new_row->>'id', a.old_row->>'id') = {objectText}::text)
+              AND ({correlationId}::text IS NULL OR a.correlation_id = {correlationId}::text)
               AND ({from}::timestamptz IS NULL OR a.happened_at >= {from}::timestamptz)
               AND ({to}::timestamptz IS NULL OR a.happened_at < {to}::timestamptz)
             ORDER BY a.id DESC LIMIT {limit}
             """).ToListAsync(ct);
-        return changes.Select(r => new AuditRow(r.id, r.happened_at, "change", r.actor_name, r.operation, r.table_name, r.object_id, null, r.changed_columns)).ToList();
+        return changes.Select(r => new AuditRow(r.id, r.happened_at, "change", r.actor_name, r.operation, r.table_name, r.object_id, r.correlation_id, r.changed_columns)).ToList();
     }
 
     private sealed record ErrorRow(long id, string error_id, DateTimeOffset happened_at, short status, string error_code, string method, string path,

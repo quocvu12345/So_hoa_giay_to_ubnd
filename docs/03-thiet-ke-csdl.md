@@ -920,6 +920,7 @@ classDiagram
     +text operation
     +text database_user
     +text actor_subject
+    +text correlation_id
     +jsonb old_row
     +jsonb new_row
     +timestamptz happened_at
@@ -979,7 +980,7 @@ classDiagram
 | `v_public_documents`, `v_dossier_summary`, `v_catalog_composition` | View (đã có) | Giữ nguyên |
 | `v_dossier_completeness` | View mới | Mỗi hồ sơ: loại giấy tờ/thành phần bắt buộc, số đã có, số đã đối chiếu, còn thiếu |
 | `v_my_queue` | Hàm mới `my_queue(p_user, p_user_role)` | Hàng việc theo phân công: hồ sơ được giao, chờ kiểm tra, chờ ý kiến, chờ nộp lưu, PDF chờ xếp |
-| `v_ai_accuracy` | View mới | Theo loại giấy tờ, trường: tỉ lệ gợi ý được chấp nhận nguyên, bị sửa, bị bỏ |
+| `v_ai_accuracy` | View (migration 042, ✅) | Theo mô hình, nhóm, loại giấy tờ, trường: số gợi ý được chấp nhận nguyên, bị sửa, bị xóa trắng, bị bỏ sót và tỉ lệ chấp nhận; chỉ tính trường cán bộ đã đối chiếu. Báo cáo: `scripts/report-ai-accuracy.py` |
 | `scope_matches` | Hàm (sửa) | Thêm ủy quyền, `restricted`, `is_deputy` |
 | `transition_dossier` | Hàm (sửa) | Thêm `workflow_code`, kiểm tra qua `v_dossier_completeness`, kiểm tra `row_version`, ghi `outbox_messages` |
 | `next_dossier_code(org, year)` | Hàm mới | Sinh mã hồ sơ an toàn khi chạy đồng thời |

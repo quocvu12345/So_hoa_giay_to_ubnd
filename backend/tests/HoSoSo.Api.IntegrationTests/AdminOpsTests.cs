@@ -17,7 +17,7 @@ public sealed class AdminOpsTests(DbApiFactory api) : IClassFixture<DbApiFactory
     private sealed record RunningModelDto(string ModelVersion, int Jobs);
     private sealed record AiStatusDto(Counts Queue, int? OldestQueuedSeconds, List<Worker> Workers, List<Failure> RecentFailures, List<Model> Models, ByKindDto ByKind,
         List<RunningModelDto> RunningModels, string? ModelMismatch);
-    private sealed record AuditDto(long Id, string Kind, string? Actor, string Action, string? ObjectType, string? ObjectId, List<string>? ChangedColumns);
+    private sealed record AuditDto(long Id, string Kind, string? Actor, string Action, string? ObjectType, string? ObjectId, List<string>? ChangedColumns, string? CorrelationId = null);
     private sealed record SettingDto(string Key, System.Text.Json.JsonElement Value);
     private sealed record BackupDto(Guid Id, string Kind, string Status, long? ByteSize, DateTimeOffset? RestoreTestedAt);
 
@@ -94,6 +94,33 @@ public sealed class AdminOpsTests(DbApiFactory api) : IClassFixture<DbApiFactory
         var admin = await api.LoginAsync("demo_admin");
         var status = await (await admin.GetAsync("/api/v1/admin/ai/status")).ReadAsync<AiStatusDto>();
         status.ModelMismatch.ShouldBeNull();
+    }
+
+    [Fact]
+    public async Task Thay_doi_du_lieu_tra_nguoc_duoc_ve_request_gay_ra_no_bang_ma_tuong_quan()
+    {
+        var cv = await api.LoginAsync("demo_cv_ht");
+        var dossier = await (await cv.PostJsonAsync("/api/v1/dossiers", new { title = "Hồ sơ tra mã tương quan", workGroupCode = "U15" })).ReadAsync<DossierDetailDto>();
+        var correlation = "log05-" + Guid.NewGuid().ToString("N")[..12];
+        using var request = new HttpRequestMessage(HttpMethod.Patch, $"/api/v1/dossiers/{dossier.Id}")
+        {
+            Content = System.Net.Http.Json.JsonContent.Create(new { version = dossier.Version, notes = "Sửa để thử LOG-05" }),
+        };
+        request.Headers.Add("X-Correlation-Id", correlation);
+        var patched = await cv.SendAsync(request, TestContext.Current.CancellationToken);
+        patched.StatusCode.ShouldBe(HttpStatusCode.OK);
+        patched.Headers.GetValues("X-Correlation-Id").Single().ShouldBe(correlation);
+
+        // Dòng thay đổi do đúng request đó mang mã tương quan; dòng tạo hồ sơ (request khác) mang mã khác.
+        (await api.ScalarAsync<long>("SELECT count(*) FROM hoso.audit_events WHERE correlation_id = $1 AND table_name = 'dossiers' AND operation = 'UPDATE'", correlation)).ShouldBe(1);
+        (await api.ScalarAsync<long>("SELECT count(*) FROM hoso.audit_events WHERE table_name = 'dossiers' AND operation = 'INSERT' AND new_row->>'id' = $1 AND correlation_id IS NOT NULL AND correlation_id <> $2", dossier.Id.ToString(), correlation)).ShouldBe(1);
+
+        var admin = await api.LoginAsync("demo_admin");
+        var byCorrelation = await (await admin.GetAsync($"/api/v1/admin/audit?kind=change&correlationId={correlation}")).ReadAsync<List<AuditDto>>();
+        byCorrelation.ShouldNotBeEmpty();
+        byCorrelation.ShouldAllBe(r => r.CorrelationId == correlation, "lọc theo mã tương quan chỉ trả các thay đổi của đúng request đó");
+        byCorrelation.ShouldContain(r => r.ObjectType == "dossiers" && r.Action == "UPDATE" && r.ChangedColumns != null && r.ChangedColumns.Contains("notes"));
+        (await (await admin.GetAsync("/api/v1/admin/audit?kind=change&correlationId=khong-co-ma-nay")).ReadAsync<List<AuditDto>>()).ShouldBeEmpty();
     }
 
     [Fact]

@@ -5,8 +5,9 @@ import type { Route } from "next";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { CircleStop, Trash2, Undo2, Upload } from "lucide-react";
-import { cancelReading, discardDocument, loadMoreInbox, restoreDocument } from "@/app/actions/intake";
+import { cancelReading, discardDocument, discardMany, loadMoreInbox, restoreDocument, restoreMany } from "@/app/actions/intake";
 import { Button, ButtonLink } from "@/components/ui/button";
+import { ConfirmInline } from "@/components/ui/confirm-inline";
 import { EmptyState } from "@/components/ui/blocks";
 import { RowNavigation } from "@/components/ui/row-navigation";
 import { useToast } from "@/components/ui/toast";
@@ -15,9 +16,11 @@ import { cn } from "@/lib/cn";
 import { useServerEvent } from "@/lib/events/server-events";
 import { useServerAction } from "@/lib/use-server-action";
 import { AiStatusChip, toAiStage, toQueueKind } from "./ai-status";
+import { BulkFileDialog } from "./bulk-file-dialog";
 import { ExtractNowButton } from "./extract-now-button";
 import type { InboxItem, InboxStatus, InboxSummary } from "./inbox-data";
 import { inboxHref, isFiltered, type InboxFilters } from "./inbox-filter";
+import { allState, describeSelection, pruneSelection, setMany, toggleId } from "./inbox-selection";
 import { AI_FILTERS, withLiveProgress, type AiFilterKey, type LiveProgress } from "./inbox-live";
 
 type Props = {
@@ -99,6 +102,16 @@ export function InboxTable({ status, tabKey, items: initial, nextCursor: initial
     [loaded, live],
   );
   const filtered = isFiltered(filters);
+
+  // Chọn nhiều (FE-21), chỉ ở thẻ "Chờ xếp". Lựa chọn của PDF không còn hiện (đã xếp, đã bỏ, bộ lọc đổi) tự rơi khỏi tập khi vẽ.
+  const [chosen, setChosen] = useState<ReadonlySet<string>>(new Set());
+  const rowIds = rows.map((r) => r.documentId);
+  const selected = pruneSelection(chosen, rowIds);
+  const selection = describeSelection(rows, selected);
+  const header = allState(selected, rowIds);
+  const [bulkFiling, setBulkFiling] = useState(false);
+  const discardAll = useServerAction(discardMany);
+  const restoreAll = useServerAction(restoreMany);
   const total = loaded.source.length + loaded.more.length;
 
   async function onLoadMore() {
@@ -136,6 +149,29 @@ export function InboxTable({ status, tabKey, items: initial, nextCursor: initial
     const outcome = await restore.run(item.documentId);
     if (!outcome.ok) return;
     toast.success(`Đã khôi phục “${item.fileName}” vào hộp tiếp nhận.`);
+    router.refresh();
+  }
+
+  async function onDiscardSelected() {
+    const ids = [...selected];
+    const outcome = await discardAll.run(ids);
+    if (!outcome.ok) return;
+    const { done, failures } = outcome.data;
+    setChosen(new Set(failures.map((f) => f.documentId)));          // PDF nào chưa bỏ được vẫn được chọn để thử lại hoặc xem lỗi
+    if (failures.length > 0) toast.error(`Chưa bỏ được ${failures.length} PDF: ${[...new Set(failures.map((f) => f.message))].join(" ")}`);
+    if (done.length > 0) {
+      toast.success(`Đã bỏ ${done.length} PDF khỏi hộp tiếp nhận. Hoàn tác được trong 30 ngày ở thẻ Đã bỏ.`, {
+        label: "Hoàn tác",
+        onClick: () => {
+          void restoreAll.run(done).then((r) => {
+            if (r.ok) {
+              toast.success(`Đã khôi phục ${r.data.done.length} PDF vào hộp tiếp nhận.`);
+              router.refresh();
+            }
+          });
+        },
+      });
+    }
     router.refresh();
   }
 
@@ -181,6 +217,30 @@ export function InboxTable({ status, tabKey, items: initial, nextCursor: initial
         </nav>
       )}
 
+      {status === "inbox" && selection.total > 0 && (
+        <div role="region" aria-label="Thao tác với PDF đã chọn" className="sticky top-14 z-10 flex flex-wrap items-center gap-3 border border-primary bg-accent-soft px-3 py-2 text-sm">
+          <span className="font-semibold tabular-nums">Đã chọn {selection.total} PDF</span>
+          <Button size="sm" variant="primary" onClick={() => setBulkFiling(true)} disabled={selection.readyIds.length === 0}>
+            Xếp {selection.readyIds.length} PDF vào một hồ sơ
+          </Button>
+          <ConfirmInline label="Bỏ khỏi hộp" question={`Bỏ ${selection.total} PDF khỏi hộp tiếp nhận?`} confirmLabel="Bỏ" onConfirm={onDiscardSelected} pending={discardAll.pending} variant="danger" />
+          <Button size="sm" variant="ghost" onClick={() => setChosen(new Set())}>Bỏ chọn</Button>
+          {selection.skipped > 0 && <span className="text-xs text-muted">{selection.skipped} PDF chưa đọc xong: chưa xếp được, vẫn bỏ khỏi hộp được.</span>}
+        </div>
+      )}
+      {bulkFiling && (
+        <BulkFileDialog
+          documentIds={selection.readyIds}
+          skipped={selection.skipped}
+          onClose={() => setBulkFiling(false)}
+          onDone={() => {
+            setBulkFiling(false);
+            setChosen(new Set());
+            router.refresh();
+          }}
+        />
+      )}
+
       {/* Dưới 1280px (kể cả 1024px có menu trái): mỗi PDF một thẻ, không phải cuộn ngang để thấy nút. */}
       <ul className="grid gap-2 xl:hidden" aria-label="Danh sách PDF trong hộp tiếp nhận">
         {rows.length === 0 && (
@@ -192,11 +252,16 @@ export function InboxTable({ status, tabKey, items: initial, nextCursor: initial
           const stage = toAiStage(item.stage);
           return (
             <li key={item.documentId} className="grid gap-2 border border-line bg-surface p-3 text-sm">
-              <div className="grid gap-0.5">
+              <div className="flex items-start gap-3">
+                {status === "inbox" && (
+                  <input type="checkbox" aria-label={`Chọn ${item.fileName}`} checked={selected.has(item.documentId)} onChange={() => setChosen(toggleId(selected, item.documentId))} className="mt-1 size-4 flex-none accent-primary" />
+                )}
+                <div className="grid min-w-0 gap-0.5">
                 <span className="font-semibold break-all">{item.fileName}</span>
                 <span className="text-xs text-muted">
                   {item.pageCount ?? "?"} trang · nạp lúc <time dateTime={item.uploadedAt}>{formatTime(item.uploadedAt)}</time>
                 </span>
+                </div>
               </div>
               <div className="flex flex-wrap items-center gap-2">
                 <AiStatusChip
@@ -232,6 +297,20 @@ export function InboxTable({ status, tabKey, items: initial, nextCursor: initial
           <caption className="sr-only">Danh sách PDF trong hộp tiếp nhận</caption>
           <thead className="bg-soft text-left text-[13px] text-heading">
             <tr>
+              {status === "inbox" && (
+                <th scope="col" className="w-10 px-3 py-2">
+                  <input
+                    type="checkbox"
+                    aria-label="Chọn tất cả PDF đang hiện"
+                    checked={header === "all"}
+                    ref={(el) => {
+                      if (el) el.indeterminate = header === "some";
+                    }}
+                    onChange={() => setChosen(setMany(selected, rowIds, header !== "all"))}
+                    className="size-4 accent-primary"
+                  />
+                </th>
+              )}
               <th scope="col" className="px-3 py-2 font-semibold">
                 Tệp
               </th>
@@ -252,7 +331,7 @@ export function InboxTable({ status, tabKey, items: initial, nextCursor: initial
           <tbody>
             {rows.length === 0 && (
               <tr>
-                <td colSpan={5} className="px-3 py-6 text-center text-muted">
+                <td colSpan={status === "inbox" ? 6 : 5} className="px-3 py-6 text-center text-muted">
                   {filtered ? "Không có PDF nào khớp bộ lọc." : `Không có PDF nào ở tình trạng này trong ${total} PDF đã tải.`}
                 </td>
               </tr>
@@ -262,6 +341,11 @@ export function InboxTable({ status, tabKey, items: initial, nextCursor: initial
               const queueKind = toQueueKind(item.queueKind);
               return (
                 <tr key={item.documentId} className="border-t border-line align-top">
+                  {status === "inbox" && (
+                    <td className="px-3 py-2.5">
+                      <input type="checkbox" aria-label={`Chọn ${item.fileName}`} checked={selected.has(item.documentId)} onChange={() => setChosen(toggleId(selected, item.documentId))} className="size-4 accent-primary" />
+                    </td>
+                  )}
                   <td className="px-3 py-2.5">
                     <span className="font-semibold break-all">{item.fileName}</span>
                     <span className="block text-xs text-muted">

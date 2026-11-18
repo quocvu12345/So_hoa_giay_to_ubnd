@@ -4,6 +4,7 @@ import { revalidatePath } from "next/cache";
 import { getInbox, type InboxPage, type InboxStatus } from "@/features/intake/inbox-data";
 import { NO_FILTERS, parseInboxFilters, type InboxFilters } from "@/features/intake/inbox-filter";
 import { type ActionResult } from "@/lib/action-result";
+import { ApiError } from "@/lib/api/problem";
 import { ok, serverApi } from "@/lib/api/server";
 import { runAction } from "@/lib/actions";
 
@@ -35,6 +36,40 @@ export async function restoreDocument(documentId: string): Promise<ActionResult>
     ok(await serverApi().POST("/api/v1/intake/documents/{id}/restore", { params: { path: { id: documentId } } }));
     revalidatePath("/tiep-nhan");
   });
+}
+
+export type BulkResult = { done: string[]; failures: { documentId: string; message: string }[] };
+
+const MAX_BULK = 100;
+
+/**
+ * Bỏ nhiều PDF khỏi hộp tiếp nhận cùng lúc (FE-21). Mỗi PDF một lệnh riêng: PDF nào lỗi (đã xếp vào hồ sơ, không còn quyền…) thì báo riêng,
+ * không làm hỏng các PDF khác. Hoàn tác được 30 ngày bằng `restoreMany`.
+ */
+export async function discardMany(documentIds: string[]): Promise<ActionResult<BulkResult>> {
+  return runAction("inbox_discard_many", async () => bulk(documentIds, (id) => serverApi().POST("/api/v1/intake/documents/{id}/discard", { params: { path: { id } } })));
+}
+
+/** Hoàn tác `discardMany`: đưa các PDF đã bỏ về hộp tiếp nhận. */
+export async function restoreMany(documentIds: string[]): Promise<ActionResult<BulkResult>> {
+  return runAction("inbox_restore_many", async () => bulk(documentIds, (id) => serverApi().POST("/api/v1/intake/documents/{id}/restore", { params: { path: { id } } })));
+}
+
+async function bulk(documentIds: string[], call: (id: string) => Promise<{ data?: unknown }>): Promise<BulkResult> {
+  const ids = [...new Set(documentIds)].slice(0, MAX_BULK);
+  if (ids.some((id) => !UUID.test(id))) throw new TypeError("Mã giấy tờ không hợp lệ.");
+  const result: BulkResult = { done: [], failures: [] };
+  for (const id of ids) {
+    try {
+      ok(await call(id));
+      result.done.push(id);
+    } catch (error) {
+      if (!(error instanceof ApiError)) throw error;
+      result.failures.push({ documentId: id, message: error.message });
+    }
+  }
+  revalidatePath("/tiep-nhan");
+  return result;
 }
 
 /** Hủy đọc PDF đang chờ hoặc đang đọc (dừng sau trang hiện tại). Đọc lại được bằng nút "Đọc lại". Chỉ người tải lên hoặc quản trị hàng đợi. */
