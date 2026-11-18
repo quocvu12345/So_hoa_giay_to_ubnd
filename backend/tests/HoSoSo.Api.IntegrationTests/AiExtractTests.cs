@@ -1,6 +1,8 @@
 using System.Net;
 using System.Net.Http.Headers;
 using HoSoSo.Api.IntegrationTests.Support;
+using HoSoSo.Infrastructure.Auditing;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace HoSoSo.Api.IntegrationTests;
 
@@ -99,6 +101,29 @@ public sealed class AiExtractTests(DbApiFactory api) : IClassFixture<DbApiFactor
         var forcedAgain = await ExtractAsync(cv, $"/api/v1/dossiers/{dossierId}/ai/extract", new { force = true });
         forcedAgain.Items.Single(i => i.DocumentId == done.DocumentId).Outcome.ShouldBe("raised");
         (await JobCountAsync(done.FileId)).ShouldBe(2);
+    }
+
+    [Fact]
+    public async Task Trich_xuat_ngay_ghi_nhat_ky_truy_cap_cho_giay_to_that_su_thay_doi_va_khong_ghi_cho_giay_to_khong_doi()
+    {
+        await ResetQueueAsync();
+        var cv = await api.LoginAsync("demo_cv_ht");
+        var me = await api.UserIdAsync("demo_cv_ht");
+        var (dossierId, docs) = await DossierWithDocumentsAsync(cv, 4);
+        var (queued, running, done, failed) = (docs[0], docs[1], docs[2], docs[3]);
+        await api.ExecuteAsync("UPDATE hoso.ocr_jobs SET status='running', locked_by='w1', attempt=1, started_at=now(), heartbeat_at=now(), stage='ocr', page_count=4, processed_pages=1 WHERE id=$1", running.JobId);
+        await api.ExecuteAsync("UPDATE hoso.ocr_jobs SET status='completed', started_at=now(), finished_at=now(), stage='done', processed_pages=1 WHERE id=$1", done.JobId);
+        await api.ExecuteAsync("UPDATE hoso.ocr_jobs SET status='failed', attempt=3, started_at=now(), finished_at=now(), error_message='lỗi thử' WHERE id=$1", failed.JobId);
+
+        await ExtractAsync(cv, $"/api/v1/dossiers/{dossierId}/ai/extract");
+        await api.Services.GetRequiredService<AccessEventQueue>().DrainAsync(TimeSpan.FromSeconds(20));
+
+        Task<long> Rows(Guid documentId) => api.ScalarAsync<long>(
+            "SELECT count(*) FROM hoso.access_events WHERE action = 'ai_extract' AND object_type = 'document' AND object_id = $1 AND user_id = $2", documentId, me);
+        // Nâng việc đang chờ (raised) và tạo việc mới cho việc lỗi (created) là hai hành động thật; đang chạy hay đã xong thì không có gì đổi.
+        (await Rows(queued.DocumentId), await Rows(failed.DocumentId), await Rows(running.DocumentId), await Rows(done.DocumentId)).ShouldBe((1L, 1L, 0L, 0L));
+        (await api.ScalarAsync<string>("SELECT assignment FROM hoso.access_events WHERE action = 'ai_extract' AND object_id = $1", queued.DocumentId))
+            .ShouldNotBeNullOrWhiteSpace("dòng nhật ký ghi cả phân công đang dùng");
     }
 
     [Fact]

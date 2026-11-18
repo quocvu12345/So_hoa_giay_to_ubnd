@@ -45,7 +45,7 @@ def cmd_run(settings: Settings) -> int:
 def cmd_once(settings: Settings, pdf: Path, classify: bool, force_ocr: bool, show_text: bool) -> int:
     """Đọc một PDF trên máy, không cần DB hay kho tệp: dùng để thử mô hình và đo tốc độ."""
     catalog = None
-    if settings.profile in ("mac-mlx", "fake"):
+    if settings.profile in ("mac-mlx", "ollama", "fake"):
         from .engines.mlx import catalog_from_pilot     # chỉ đọc tệp danh mục JS, không nạp MLX
 
         catalog = catalog_from_pilot()
@@ -82,6 +82,10 @@ def cmd_status(settings: Settings) -> int:
         from document_ai.config import readiness
 
         info["models"] = readiness()
+    if settings.profile == "ollama":
+        from .engines.ollama import OllamaClient, readiness as ollama_readiness
+
+        info["models"] = ollama_readiness(OllamaClient(settings.ollama_url), settings.ollama_ocr_model, settings.ollama_classifier_model)
     print(json.dumps(info, ensure_ascii=False, indent=2))
     return 0
 

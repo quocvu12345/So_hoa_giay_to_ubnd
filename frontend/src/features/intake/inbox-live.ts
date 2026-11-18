@@ -21,13 +21,14 @@ export function withLiveProgress(item: InboxItem, live: LiveProgress | undefined
   return { ...item, stage: "reading", progress: progressLabel(live), queuePosition: null, etaSeconds: null };
 }
 
+/** `read`: giá trị gửi cho API `GET /intake/inbox?read=` (BE-129), lọc trên toàn hộp chứ không chỉ phần đã tải. */
 export const AI_FILTERS = [
-  { key: "tat-ca", label: "Tất cả", stages: null },
-  { key: "dang-cho", label: "Chờ trong khay", stages: ["queued"] },
-  { key: "dang-doc", label: "Đang đọc", stages: ["reading"] },
-  { key: "da-doc", label: "Đã đọc xong", stages: ["ready"] },
-  { key: "loi", label: "Lỗi", stages: ["failed", "cancelled"] },
-] as const satisfies readonly { key: string; label: string; stages: readonly AiStage[] | null }[];
+  { key: "tat-ca", label: "Tất cả", stages: null, read: null },
+  { key: "dang-cho", label: "Chờ trong khay", stages: ["queued"], read: "queued" },
+  { key: "dang-doc", label: "Đang đọc", stages: ["reading"], read: "reading" },
+  { key: "da-doc", label: "Đã đọc xong", stages: ["ready"], read: "ready" },
+  { key: "loi", label: "Lỗi", stages: ["failed", "cancelled"], read: "failed,cancelled" },
+] as const satisfies readonly { key: string; label: string; stages: readonly AiStage[] | null; read: string | null }[];
 
 export type AiFilterKey = (typeof AI_FILTERS)[number]["key"];
 

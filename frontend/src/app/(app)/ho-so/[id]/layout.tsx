@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import { Pencil } from "lucide-react";
 import { ActionBar } from "@/components/dossier/action-bar";
+import { RefreshOnEvents } from "@/components/layout/refresh-on-events";
 import { NeedsRealApi } from "@/components/ui/blocks";
 import { ButtonLink } from "@/components/ui/button";
 import { NoAccess } from "@/components/ui/no-access";
@@ -66,6 +67,7 @@ export default async function DossierLayout({ children, params }: LayoutProps<"/
           ) : undefined
         }
       />
+      <RefreshOnEvents events={["dossier.changed", "resync"]} dossierId={id} />
       <TabsNav tabs={tabs} label="Các phần của hồ sơ" />
       <div className="flex-1">{children}</div>
       <ActionBar dossierId={id} version={dossier.version} actions={actions} waitingFor={WAITING[dossier.status] ?? ""} />

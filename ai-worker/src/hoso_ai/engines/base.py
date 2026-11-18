@@ -9,6 +9,11 @@ from ..contracts import PageInfo, PageResult, Suggestion
 from ..queue.repository import Catalog
 
 
+class EngineUnavailable(RuntimeError):
+    """Máy chạy mô hình không trả lời (mất mạng, máy tắt, thiếu mô hình trên máy đó). Không phải lỗi của tài liệu:
+    pipeline không ghi trang lỗi, worker trả job về hàng đợi và đợi một lúc rồi mới lấy việc tiếp."""
+
+
 class PdfReader(Protocol):
     def inspect(self, pdf: Path, max_pages: int) -> list[PageInfo]:
         """Đếm trang, lấy lớp chữ có sẵn, biết trang nào chứa ảnh."""

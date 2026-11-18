@@ -10,6 +10,8 @@
 #   scripts/dev-up.sh ai fake  worker dùng AI GIẢ (không cần mô hình, máy AI ở nơi khác): chọn loại theo tiêu đề, trích trường có
 #                              trích dẫn, vùng nguồn, độ tin cậy; chỉ chạy lại worker. Chỉnh độ chậm/lỗi/gói nhiều giấy tờ trong ai-worker/.env
 #   scripts/dev-up.sh ai real  worker dùng mô hình thật trên máy này (mac-mlx)
+#   scripts/dev-up.sh ai ollama [URL]  worker ở máy này, mô hình thật chạy ở máy AI khác qua Ollama (Windows qua Tailscale).
+#                              URL mặc định lấy từ HOSO_AI_OLLAMA_URL trong ai-worker/.env; lần đầu phải truyền, ví dụ http://100.78.102.53:11434
 #   scripts/dev-up.sh ai       cho biết worker đang dùng AI nào
 #
 # Không áp migration: dùng backend/scripts/migrate-hoso-dev.sh (xem trước, rồi --apply) sau khi sao lưu hoso_dev.
@@ -55,7 +57,8 @@ start_worker() {
     echo "Cổng $WORKER_PORT đang có tiến trình khác giữ (worker cũ chưa thoát?). Không chạy worker mới: dừng nó trước (scripts/dev-up.sh stop)." >&2
     exit 75
   fi
-  detach worker "$root/ai-worker/deploy/run-worker.sh" run
+  # supervise.sh chạy lại worker khi nó thoát vì kẹt (mã 75) hay bị giết; `stop` dừng cả nhóm tiến trình nên giám sát dừng theo.
+  detach worker "$root/ai-worker/deploy/supervise.sh" run
 }
 
 # Đổi AI của worker trên máy dev rồi chỉ chạy lại worker (API, web giữ nguyên).
@@ -66,8 +69,21 @@ cmd_ai() {
     "") echo "Worker đang cấu hình AI: $(ai_profile) (ai-worker/.env)"; return ;;
     fake) want=fake ;;
     real|mac-mlx) want=mac-mlx ;;
-    *) echo "Dùng: scripts/dev-up.sh ai fake|real" >&2; exit 64 ;;
+    ollama) want=ollama ;;
+    *) echo "Dùng: scripts/dev-up.sh ai fake|real|ollama [URL]" >&2; exit 64 ;;
   esac
+  if [[ "$want" == ollama ]]; then
+    local url="${2:-$(sed -n 's/^HOSO_AI_OLLAMA_URL=//p' "$env_file" | tail -1)}"
+    [[ "$url" == http://* || "$url" == https://* ]] || {
+      echo "Cần địa chỉ Ollama của máy AI: scripts/dev-up.sh ai ollama http://<IP Tailscale>:11434" >&2; exit 64; }
+    curl -fsS --max-time 5 "$url/api/version" >/dev/null || {
+      echo "Không gọi được Ollama ở $url (máy AI tắt, Tailscale chưa nối, hoặc Ollama chỉ nghe localhost: đặt OLLAMA_HOST=0.0.0.0 trên máy đó)." >&2; exit 69; }
+    if grep -q '^HOSO_AI_OLLAMA_URL=' "$env_file"; then
+      sed -i '' "s|^HOSO_AI_OLLAMA_URL=.*|HOSO_AI_OLLAMA_URL=$url|" "$env_file"
+    else
+      printf '\n# Mô hình ở máy AI khác qua Ollama (scripts/dev-up.sh ai ollama URL). Tên mô hình đổi bằng HOSO_AI_OLLAMA_OCR_MODEL, HOSO_AI_OLLAMA_CLASSIFIER_MODEL\nHOSO_AI_OLLAMA_URL=%s\n' "$url" >>"$env_file"
+    fi
+  fi
   if grep -q '^HOSO_AI_PROFILE=' "$env_file"; then
     sed -i '' "s/^HOSO_AI_PROFILE=.*/HOSO_AI_PROFILE=$want/" "$env_file"
   else
@@ -198,7 +214,7 @@ case "${1:-}" in
   status) cmd_status ;;
   stop) cmd_stop ;;
   restart) cmd_stop; cmd_start ;;
-  ai) cmd_ai "${2:-}" ;;
+  ai) cmd_ai "${2:-}" "${3:-}" ;;
   logs) ls -1 "$run_dir"/*.log 2>/dev/null || echo "Chưa có nhật ký ở $run_dir" ;;
-  *) sed -n '2,17p' "$0"; exit 64 ;;
+  *) sed -n '2,19p' "$0"; exit 64 ;;
 esac

@@ -32,6 +32,58 @@ class PdfiumReader:
                 result.append(PageInfo(index + 1, native, has_images))
         return result
 
+    def locate_texts(self, pdf: Path, requests: list[tuple[int, list[str]]]) -> list[dict | None]:
+        """Vùng chứa chữ trên trang có lớp chữ PDF (AI-21). Mỗi yêu cầu là (số trang, các chuỗi thử theo thứ tự); trả vùng theo tỉ lệ trang
+        của chuỗi đầu tiên tìm thấy, hoặc None. Mở PDF một lần cho mọi yêu cầu. Trang bị xoay thì bỏ vùng (khung không trùng ảnh người dùng xem)."""
+        import pypdfium2 as pdfium
+
+        results: list[dict | None] = []
+        with pdfium.PdfDocument(str(pdf)) as document:
+            for page_no, queries in requests:
+                results.append(self._locate(document, page_no, queries))
+        return results
+
+    @staticmethod
+    def _locate(document, page_no: int, queries: list[str]) -> dict | None:
+        if not 1 <= page_no <= len(document):
+            return None
+        page = document[page_no - 1]
+        try:
+            if page.get_rotation():
+                return None
+            left, bottom, right, top = page.get_bbox()
+            width, height = right - left, top - bottom
+            if width <= 0 or height <= 0:
+                return None
+            textpage = page.get_textpage()
+            try:
+                for query in queries:
+                    text = " ".join(query.split())
+                    if len(text) < 2:
+                        continue
+                    searcher = textpage.search(text, match_case=False)
+                    try:
+                        found = searcher.get_next()
+                    finally:
+                        searcher.close()
+                    if not found:
+                        continue
+                    rects = [textpage.get_rect(i) for i in range(textpage.count_rects(*found))]
+                    if not rects:
+                        continue
+                    x1, x2 = min(r[0] for r in rects), max(r[2] for r in rects)
+                    y1, y2 = min(r[1] for r in rects), max(r[3] for r in rects)
+                    ratio = lambda v: round(min(1.0, max(0.0, v)), 4)  # noqa: E731
+                    box = {"x": ratio((x1 - left) / width), "y": ratio((top - y2) / height),
+                           "width": ratio((x2 - x1) / width), "height": ratio((y2 - y1) / height)}
+                    if box["width"] > 0 and box["height"] > 0:
+                        return {"page": page_no, **box}
+            finally:
+                textpage.close()
+        finally:
+            page.close()
+        return None
+
     def render(self, pdf: Path, page_no: int, out_dir: Path) -> Path:
         import pypdfium2 as pdfium
 

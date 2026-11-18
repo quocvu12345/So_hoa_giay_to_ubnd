@@ -20,7 +20,7 @@ public sealed record AiExtractResult(IReadOnlyList<AiExtractItem> Items, int Rai
 /// đã xong thì giữ kết quả (hoặc gợi ý lại khi <c>force</c>); lỗi, đã hủy hoặc chưa có việc thì tạo việc mới. Gọi nhiều lần không tạo việc trùng.
 /// </summary>
 public sealed class AiExtractHandler(IHoSoDb db, IScopeFilter scope, ICurrentUser user, IClock clock, AiQueueEstimator estimator,
-    IOptions<AiQueueOptions> options, ILogger<AiExtractHandler> logger)
+    IOptions<AiQueueOptions> options, IAccessLog access, ILogger<AiExtractHandler> logger)
 {
     private sealed record Outcome(Guid DocumentId, Guid? FileId, Guid? JobId, string Name, string? Message = null);
     private sealed record JobSnapshot(string Status, short Priority, DateTimeOffset At, int Pages);
@@ -97,7 +97,10 @@ public sealed class AiExtractHandler(IHoSoDb db, IScopeFilter scope, ICurrentUse
         }).ToList();
 
         var result = new AiExtractResult(items, Count(items, "raised"), Count(items, "running"), Count(items, "alreadyDone"), Count(items, "created"), Count(items, "skipped"));
-        // Nhật ký tác vụ: người và phân công do nhật ký yêu cầu gắn sẵn (userSubject, assignment). access_events chỉ nhận các hành động xem/tải, nên dùng log có cấu trúc.
+        // Nhật ký truy cập (BE-128): một dòng cho mỗi giấy tờ mà lần bấm này THẬT SỰ làm AI đọc sớm hơn (nâng mức hoặc tạo việc mới). Giấy tờ đang đọc,
+        // đã xong, hay bị bỏ qua không có gì thay đổi nên không ghi; gọi lại nhiều lần thì chỉ "raised" lặp lại, mỗi lần một dòng (mỗi lần bấm là một hành động).
+        foreach (var item in items.Where(i => i.Outcome is "raised" or "created")) access.Record("ai_extract", "document", item.DocumentId);
+        // Nhật ký tác vụ: người và phân công do nhật ký yêu cầu gắn sẵn (userSubject, assignment).
         logger.LogInformation("ai_extract {scope} {scopeId} {documents} {raised} {running} {alreadyDone} {created} {skipped} {force}",
             scopeKind, scopeId, items.Count, result.Raised, result.Running, result.AlreadyDone, result.Created, result.Skipped, force);
         return result;

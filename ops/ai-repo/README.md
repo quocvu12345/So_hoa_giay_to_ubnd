@@ -75,6 +75,14 @@ deploy/run-worker.sh                    # chạy tay; Ctrl+C để dừng
 
 Kiểm tra: `curl http://127.0.0.1:9108/health`. Mỗi job ghi mô hình đã dùng vào `ocr_jobs.model_version`, ví dụ `classifier=Qwen3-4B-Instruct-2507-ifstruct-4bit@00161de/short`. Trang vận hành của API cảnh báo nếu giá trị này lệch với `ai_models`.
 
+## Máy AI là Windows/Linux có GPU: chạy mô hình qua Ollama
+
+Máy này không chạy MLX được. Cách khác: worker vẫn chạy ở máy cạnh API (như mục trên, hồ sơ `mac-mlx` hoặc `ollama`), còn **mô hình** chạy ở máy GPU qua [Ollama](https://ollama.com) và worker gọi sang bằng `HOSO_AI_PROFILE=ollama`. Khi đó không phải mount kho tệp hay mở PostgreSQL sang máy GPU.
+
+- Trên máy GPU: tạo hai mô hình từ GGUF với `TEMPLATE {{ .Prompt }}` (worker tự dựng mẫu chat): `hoso-paddleocr-vl:1.6-q8_0` (PaddleOCR-VL 1.6) và `hoso-ifstruct:q8_0` (IFStruct, `num_ctx 16384`). Ollama phải nghe ngoài localhost (`OLLAMA_HOST=0.0.0.0`), chỉ cho mạng riêng (Tailscale) vào, chặn các mạng khác: Ollama không có xác thực và ảnh/chữ giấy tờ đi qua cổng này.
+- Ở máy worker (vẫn cần venv, mô hình dò bố cục `PP-DocLayoutV3`, `PP-LCNet_x1_0_doc_ori`): đặt `HOSO_AI_PROFILE=ollama`, `HOSO_AI_OLLAMA_URL=http://<IP Tailscale>:11434`; kiểm bằng `python -m hoso_ai status`. Biến khác và cách hoạt động: [ai-worker/README.md](ai-worker/README.md) mục "Mô hình ở máy AI khác qua Ollama".
+- Máy GPU tắt thì job trả về hàng đợi (không tính lần thử, không mất dữ liệu) và worker thử lại sau khoảng 30 giây.
+
 ## Chạy như dịch vụ
 
 ```sh

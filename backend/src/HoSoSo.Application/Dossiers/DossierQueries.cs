@@ -259,7 +259,25 @@ public sealed partial class DossierQueries(IHoSoDb db, IScopeFilter scope, ICurr
         var procedureName = d.ProcedureId is { } pid ? await db.Read<Procedure>().Where(p => p.Id == pid).Select(p => p.Name).SingleOrDefaultAsync(ct) : null;
         return new DossierDetail(d.Id, d.Code, d.Title, d.Status, statusLabel, d.WorkflowCode, d.OrganizationCode, d.DepartmentCode,
             d.WorkGroupCode, group, d.AccessLevel, d.Notes, d.PhysicalLocation, d.CreatorOrganizationName, d.AssigneeId, assignee,
-            d.InternalDueOn, d.Year, d.CreatedAt, d.UpdatedAt, d.ArchivedAt, d.Version, documents, CompletenessOf(documents), d.ProcedureId, procedureName);
+            d.InternalDueOn, d.Year, d.CreatedAt, d.UpdatedAt, d.ArchivedAt, d.Version, documents, CompletenessOf(documents), d.ProcedureId, procedureName,
+            await RetentionOfAsync(d, ct));
+    }
+
+    /// <summary>BE-130. Cùng luật chọn quy tắc với đề nghị hủy (<see cref="HoSoSo.Application.Operations.DisposalHandler.Resolve"/>): chỉ quy tắc đã xác nhận mới có hiệu lực.</summary>
+    private async Task<DossierRetention> RetentionOfAsync(Dossier d, CancellationToken ct)
+    {
+        var rules = await db.Read<RetentionRule>().Where(r => (r.WorkGroupCode == d.WorkGroupCode && r.DocumentTypeCode == null) || r.Id == d.RetentionRuleId).ToListAsync(ct);
+        var confirmed = rules.Where(r => r.Status == "confirmed" && r.RetentionYears != null).ToList();
+        if (HoSoSo.Application.Operations.DisposalHandler.Resolve(d, confirmed) is { } applied)
+        {
+            var years = applied.RetentionYears!.Value;
+            DateTimeOffset? since = d.ArchivedAt?.AddYears(years);
+            return new DossierRetention("confirmed", applied.RetentionLabel, years, applied.LegalReference, since, since is { } s && s <= clock.UtcNow);
+        }
+        if (confirmed.Count(r => r.DocumentTypeCode is null) > 1) return new DossierRetention("ambiguous", null, null, null, null, false);
+        return rules.FirstOrDefault(r => r.Status == "proposed") is { } proposed
+            ? new DossierRetention("proposed", proposed.RetentionLabel, proposed.RetentionYears, proposed.LegalReference, null, false)
+            : new DossierRetention("none", null, null, null, null, false);
     }
 
     public async Task<IReadOnlyList<DossierDocumentItem>> DocumentItemsAsync(Guid dossierId, CancellationToken ct)

@@ -5,6 +5,7 @@ import { PageBody, Section } from "@/components/ui/blocks";
 import { Chip, type Tone } from "@/components/ui/status-chip";
 import { routes } from "@/config/routes";
 import { acceptsDocuments, getChecklist, getDossier } from "@/features/dossier/dossier-data";
+import { describeRetention } from "@/features/dossier/retention";
 import { PlaceDossierButton } from "@/features/storage/location-panels";
 import { placementChoices } from "@/features/storage/location-rules";
 import { getLocations } from "@/features/storage/storage-data";
@@ -59,6 +60,7 @@ export default async function DossierOverview({ params }: PageProps<"/ho-so/[id]
         icon: c.state === "verified" ? Check : CircleAlert,
       }));
   const canAdd = acceptsDocuments(dossier.status);
+  const retention = describeRetention(dossier.retention);
   const { summary } = checklist;
 
   return (
@@ -107,6 +109,11 @@ export default async function DossierOverview({ params }: PageProps<"/ho-so/[id]
             <dt className="text-muted">Năm</dt><dd className="tabular-nums">{dossier.year}</dd>
             <dt className="text-muted">Người chủ trì</dt><dd>{dossier.assigneeName ?? "Chưa giao"}</dd>
             <dt className="text-muted">Hạn nội bộ</dt><dd className="tabular-nums">{formatDate(dossier.dueOn)}</dd>
+            <dt className="text-muted">Thời hạn bảo quản</dt>
+            <dd>
+              {retention.text}
+              {retention.hint && <span className={retention.tone === "warn" ? "block text-xs font-semibold text-warn" : "block text-xs text-muted"}>{retention.hint}</span>}
+            </dd>
             <dt className="text-muted">Vị trí bản giấy</dt>
             <dd className="flex flex-wrap items-center gap-2">
               {dossier.physicalLocation ? <Link href={routes.storage} className="text-primary hover:underline">{dossier.physicalLocation}</Link> : <span className="text-muted">Chưa đặt</span>}

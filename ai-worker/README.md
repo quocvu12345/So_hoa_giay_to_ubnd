@@ -2,7 +2,7 @@
 
 Worker lấy việc từ bảng `hoso.ocr_jobs` trong PostgreSQL (`FOR UPDATE SKIP LOCKED`), đọc PDF, OCR, gợi ý loại giấy tờ và trường,
 rồi ghi kết quả về CSDL. API .NET không gọi worker trực tiếp; hai bên chỉ gặp nhau qua CSDL (giao kèo: `backend/database/migrations/013_processing.sql`).
-Không gửi dữ liệu ra ngoài máy. Mô hình: PaddleOCR-VL 1.6 và Qwen3-4B-Instruct-2507 IFStruct (MLX 4-bit, mặc định từ 17/11/2026; đổi bằng `HOSO_AI_CLASSIFIER_MODEL`) trên Mac Apple Silicon, nạp từ `DOCUMENT_AI_HOME`.
+Không gửi dữ liệu ra ngoài máy (trừ hồ sơ `ollama`: gửi tới máy AI của mình trong mạng riêng, xem bên dưới). Mô hình: PaddleOCR-VL 1.6 và Qwen3-4B-Instruct-2507 IFStruct (MLX 4-bit, mặc định từ 17/11/2026; đổi bằng `HOSO_AI_CLASSIFIER_MODEL`) trên Mac Apple Silicon, nạp từ `DOCUMENT_AI_HOME`.
 
 ```
 PDFium (lớp chữ có sẵn?) ─ có ─▶ dùng luôn
@@ -61,6 +61,58 @@ Không có venv mô hình thì AI giả chạy được với venv nhẹ: `pytho
 
 Giới hạn: không nói được gì về chất lượng AI; loại chọn cho bản quét là ngẫu nhiên theo mẫu chữ, có thể thuộc nhóm ngoài phạm vi
 của người đang thử (khi đó chọn tay loại khác trên màn đối chiếu). Kịch bản `scripts/smoke-ai-flow.py` tự nhận ra worker giả qua `/health`.
+
+## Mô hình ở máy AI khác qua Ollama (`HOSO_AI_PROFILE=ollama`)
+
+Worker vẫn chạy cạnh API (đọc CSDL và kho tệp như mọi khi, không phải mở PostgreSQL hay chia sẻ thư mục kho ra mạng). Chỉ phần sinh chữ
+chạy ở máy AI có GPU, ví dụ máy Windows nối bằng Tailscale. Mã: `src/hoso_ai/engines/ollama.py`.
+
+- **OCR:** pipeline PaddleOCR-VL vẫn chạy ở máy worker (dò bố cục PP-DocLayoutV3, xoay trang; CPU, khoảng 1 GB), nên vẫn có khối bố cục
+  và toạ độ như bản MLX. Từng vùng cắt gửi sang mô hình PaddleOCR-VL trên Ollama. Máy worker vẫn cần `DOCUMENT_AI_HOME` có venv
+  và hai mô hình `PP-DocLayoutV3`, `PP-LCNet_x1_0_doc_ori`.
+- **Phân loại, trích trường:** đúng mã `document_ai.classify` như bản MLX (cùng lời nhắc, shortlist, kiểm trích dẫn); chỉ khác chỗ sinh chữ.
+- Mô hình trên Ollama tạo với `TEMPLATE {{ .Prompt }}`, nên worker tự dựng lời nhắc theo mẫu chat của từng mô hình (ChatML của Qwen,
+  mẫu `User:/Assistant:` của PaddleOCR-VL) rồi gửi `/api/generate` với `raw=true`. **Đừng đổi sang `/v1/chat/completions`:** đường đó
+  không bọc đúng mẫu và PaddleOCR-VL sinh thêm chữ rác. Vì vậy, pipeline Paddle gọi một bộ chuyển nhỏ trong worker (chỉ nghe 127.0.0.1)
+  thay vì gọi thẳng Ollama.
+- **Máy AI tắt hoặc mất mạng:** worker trả job về hàng đợi (không tính vào số lần thử, không ghi trang lỗi, không mất gợi ý), rồi
+  ngừng lấy việc khoảng 30 giây. `/metrics` đếm ở `hoso_ai_jobs_total{result="engine_unavailable"}`.
+- **Dữ liệu đi qua mạng:** ảnh vùng cắt và chữ của giấy tờ được gửi tới máy AI. Ollama không có xác thực và nói HTTP thường, nên chỉ
+  dùng trong mạng riêng mã hóa (Tailscale/WireGuard), và chặn cổng 11434 với mọi mạng khác trên máy AI (tường lửa Windows).
+- `ocr_jobs.model_version` ghi tên mô hình trên Ollama kèm digest, ví dụ
+  `ocr=hoso-paddleocr-vl:1.6-q8_0@ecc8315 classifier=hoso-ifstruct:q8_0@a6ac33e/short`. Trang vận hành của API sẽ cảnh báo lệch với
+  `ai_models` (bảng đó ghi IFStruct theo repo HF), vì tên Ollama không cho biết commit nguồn.
+
+| Biến | Mặc định | Ghi chú |
+|---|---|---|
+| `HOSO_AI_OLLAMA_URL` | (bắt buộc) | Ví dụ `http://100.78.102.53:11434`. Trên máy AI, Ollama phải nghe ngoài localhost (`OLLAMA_HOST=0.0.0.0`) |
+| `HOSO_AI_OLLAMA_OCR_MODEL` | `hoso-paddleocr-vl:1.6-q8_0` | Tên đã tạo bằng `ollama create` trên máy AI |
+| `HOSO_AI_OLLAMA_CLASSIFIER_MODEL` | `hoso-ifstruct:q8_0` | |
+| `HOSO_AI_OLLAMA_OCR_CONCURRENCY` | 1 | Số vùng cắt gửi cùng lúc; tăng khi máy AI đặt `OLLAMA_NUM_PARALLEL` > 1 |
+| `HOSO_AI_OLLAMA_CLASSIFIER_SOURCE` | (trống) | `repo@commit` mà mô hình trên Ollama được chuyển từ đó, ví dụ `ChetanDhembreAI/Qwen3-4B-Instruct-2507-ifstruct@00161de…`. Người vận hành tự khai (worker không kiểm được); khai thì `model_version` ghi `Qwen3-4B-Instruct-2507-ifstruct-q8_0@00161de` và trang vận hành hết báo lệch với `ai_models`, digest thật ghi ở `classifier-via=` |
+
+Máy dev: `scripts/dev-up.sh ai ollama http://<IP Tailscale>:11434` (kiểm Ollama trả lời, ghi `.env`, chạy lại worker); lần sau chỉ cần
+`scripts/dev-up.sh ai ollama`. `python -m hoso_ai status` cho biết Ollama có trả lời và có đủ hai mô hình chưa.
+Giới hạn ngữ cảnh do `num_ctx` trong Modelfile trên máy AI quyết định (IFStruct 16384 token). `classification_context` cắt văn bản ở
+24.000 ký tự, đo bằng tokenizer IFStruct trên chữ OCR tiếng Việt là khoảng 8.900 token. Cộng cả danh mục (khoảng 1.200 token) và phần
+trả lời (tối đa 2.600 token) vẫn dưới 16384, nhưng văn bản nhiều số hoặc bảng thì sát hơn: đừng hạ `num_ctx`. Mỗi lần hỏi IFStruct ghi
+`ollama_generate` (giây, số token) vào nhật ký worker.
+
+## Vùng nguồn của trường (AI-21)
+
+Sau khi engine gợi ý xong, `src/hoso_ai/regions.py` điền `ai_field_suggestions.source_region` cho trường chưa có vùng (mọi engine dùng chung, kể cả MLX và Ollama): khối bố cục OCR (đã kèm `region` theo tỉ lệ trang khi đọc),
+ô của khối bảng, hoặc khung chữ PDFium với trang có lớp chữ. Chỉ khung trích dẫn trọn một khối hoặc khung PDFium là chính xác; còn lại `approximate` (giao diện vẽ nét đứt). Trang bị xoay khi nhận dạng hướng thì không có vùng.
+`confidence` để trống với AI thật. Lỗi tìm vùng chỉ ghi `regions_failed` vào nhật ký, không làm mất gợi ý.
+
+## Chuẩn hóa giá trị theo kiểu trường (AI-23)
+
+`src/hoso_ai/field_values.py` (gọi trong `engines/llm_suggest.py`, nên mọi engine thật dùng chung) đưa giá trị AI trích ra về đúng kiểu của trường: trường ngày về `dd/mm/yyyy`
+(giao diện đối chiếu chỉ nhận dạng này; giờ bị bỏ khỏi giá trị nhưng còn trong trích dẫn), cắt câu hướng dẫn in sẵn và nhãn dòng kế bên ở trường ngắn,
+và bỏ hẳn giá trị không phải dữ liệu (kèm cảnh báo `“Nhãn”: giá trị AI đọc … nên để trống`). Không chắc thì giữ nguyên (nhiều ngày, ngày sai lịch). Trích dẫn luôn nguyên văn.
+
+## Máy dev: worker tự chạy lại
+
+`scripts/dev-up.sh` chạy worker qua `deploy/supervise.sh`: worker thoát ngoài ý muốn (kẹt mã 75, bị giết) thì chạy lại sau 5 giây (giãn dần tới 60 giây nếu thoát liên tục); thoát êm (mã 0), cấu hình sai (78) hoặc `dev-up.sh stop` thì dừng hẳn. Bản dịch vụ (launchd, systemd) đã có cơ chế riêng.
 
 ## Chạy như dịch vụ (AI-09)
 

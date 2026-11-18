@@ -89,7 +89,7 @@ class FieldSuggestion:
     quote_verified: bool
     # Vùng chứa trích dẫn trên trang (ai_field_suggestions.source_region), toạ độ theo TỈ LỆ trang, gốc ở góc trên bên trái:
     # {"page": 2, "x": 0.12, "y": 0.30, "width": 0.40, "height": 0.03}; thêm "approximate": true khi chỉ ước theo vị trí dòng.
-    # None khi engine chưa biết vùng (bản MLX hiện chưa ghi; sẽ lấy từ block_bbox của PaddleOCR-VL).
+    # None khi không biết vùng. Engine không tự điền: pipeline gọi regions.locate_regions sau khi gợi ý xong (AI-21).
     source_region: dict | None = field(default=None, hash=False)
     confidence: float | None = None    # 0..1, ai_field_suggestions.confidence; None khi engine không ước được
 

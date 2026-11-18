@@ -37,6 +37,7 @@ DbUp chạy các tệp `*.sql` trong thư mục này theo thứ tự tên, mỗi
 | `037` | `error_events`: Mã lỗi người dùng nhận → mã tương quan, request, người (quản trị tra ở `/admin/errors`); giữ 90 ngày | BE-117 |
 | `038` | Chỉ mục sắp danh sách hồ sơ theo tên và hạn nội bộ (20.000 hồ sơ: ~350 ms → vài ms) | BE-111 |
 | `039` | Bản quét thay thế: `files.replaces_file_id` (cùng giấy tờ, mỗi bản bị thay tối đa một lần), `files.replacement_reason` (bắt buộc, 10–500 ký tự) | BE-126 |
+| `040` | `access_events.action` nhận thêm `ai_extract`: ai bấm "Trích xuất ngay" cho giấy tờ nào (BE-128) | |
 
 Số thứ tự giữ nguyên theo `docs/03-thiet-ke-csdl.md` mục 15; `005`, `006` không dùng (dành cho bản gốc ngoài thư mục này).
 

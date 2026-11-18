@@ -24,5 +24,11 @@ def build_engines(settings: Settings) -> Engines:
         except (FileNotFoundError, ValueError) as error:
             raise SettingsError(str(error)) from error
         return Engines(PdfiumReader(), PaddleVlMlxOcr(settings.work_root / "mlx"), classifier, PillowQualityChecker())
+    if settings.profile == "ollama":
+        from .ollama import OllamaClassifier, OllamaClient, PaddleVlOllamaOcr
+
+        client = OllamaClient(settings.ollama_url, timeout_seconds=settings.page_timeout_seconds)
+        return Engines(PdfiumReader(), PaddleVlOllamaOcr(client, settings.ollama_ocr_model, settings.ollama_ocr_concurrency),
+                       OllamaClassifier(client, settings.ollama_classifier_model, settings.ollama_classifier_source), PillowQualityChecker())
     raise NotImplementedError(
         f"Hồ sơ {settings.profile!r} chưa làm (task AI-11): PaddleOCR trên CUDA/CPU, LLM qua máy chủ tương thích OpenAI cục bộ.")

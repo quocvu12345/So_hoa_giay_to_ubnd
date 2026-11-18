@@ -45,8 +45,13 @@ internal static class IntakeEndpoints
             .RequireRateLimiting(SecuritySetup.UploadPolicy)
             .WithMetadata(new RequestSizeLimitAttribute(uploadMaxBytes))
             .WithSummary("Tải bản quét thay thế (phiên bản kế tiếp) kèm lý do 10–500 ký tự; bản cũ giữ nguyên. Trùng bản đã có trả 409 duplicate_file");
-        intake.MapGet("/inbox", async (string? status, string? cursor, int? limit, IntakeHandler h, CancellationToken ct) => TypedResults.Ok(await h.InboxAsync(status, cursor, limit ?? 50, ct)))
-            .RequirePermission(Permissions.IntakeUpload).WithSummary("Hộp tiếp nhận theo trạng thái inbox | filed | discarded");
+        intake.MapGet("/inbox", async (string? status, string? cursor, int? limit, string? read, Guid? batch, string? group, string? type, IntakeHandler h, CancellationToken ct) =>
+                TypedResults.Ok(await h.InboxAsync(status, cursor, limit ?? 50, new InboxFilter(read, batch, group, type), ct)))
+            .RequirePermission(Permissions.IntakeUpload)
+            .WithSummary("Hộp tiếp nhận theo trạng thái inbox | filed | discarded; lọc trên toàn hộp theo tình trạng đọc (read, nhiều giá trị cách nhau dấu phẩy), lô quét (batch), nhóm (group), loại giấy tờ (type) của gợi ý AI mới nhất");
+        intake.MapGet("/inbox/summary", async (string? status, Guid? batch, string? group, string? type, IntakeHandler h, CancellationToken ct) =>
+                TypedResults.Ok(await h.InboxSummaryAsync(status, new InboxFilter(null, batch, group, type), ct)))
+            .RequirePermission(Permissions.IntakeUpload).WithSummary("Số PDF theo tình trạng đọc của một thẻ hộp tiếp nhận (cùng lô/nhóm/loại), cho các nút lọc");
         intake.MapPost("/documents/{id:guid}/discard", async (Guid id, IntakeHandler h, CancellationToken ct) =>
             {
                 await h.DiscardAsync(id, ct);

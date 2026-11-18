@@ -1,7 +1,7 @@
 "use server";
 
 import { revalidatePath } from "next/cache";
-import { getInbox } from "@/features/intake/inbox-data";
+import { getInbox, READY_ONLY } from "@/features/intake/inbox-data";
 import type { InboxItem } from "@/features/intake/inbox-data";
 import { UUID } from "@/features/dossier/dossier-data";
 import { isProcedureId } from "@/features/procedure/procedure-filter";
@@ -49,7 +49,7 @@ export async function transitionDossier(input: { dossierId: string; action: stri
 
 /** PDF đã đọc xong đang chờ ở hộp tiếp nhận, để thêm vào hồ sơ từ tab Giấy tờ. */
 export async function loadReadyInbox(): Promise<ActionResult<InboxItem[]>> {
-  return runAction("dossier_ready_inbox", async () => (await getInbox("inbox", undefined, 100)).items.filter((i) => i.stage === "ready"));
+  return runAction("dossier_ready_inbox", async () => (await getInbox("inbox", undefined, 100, READY_ONLY)).items);
 }
 
 export type AddResult = { added: number; failures: { documentId: string; message: string }[] };

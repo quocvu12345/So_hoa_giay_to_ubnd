@@ -1,6 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import type { Route } from "next";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { CircleStop, Trash2, Undo2, Upload } from "lucide-react";
@@ -15,15 +16,32 @@ import { useServerEvent } from "@/lib/events/server-events";
 import { useServerAction } from "@/lib/use-server-action";
 import { AiStatusChip, toAiStage, toQueueKind } from "./ai-status";
 import { ExtractNowButton } from "./extract-now-button";
-import type { InboxItem, InboxStatus } from "./inbox-data";
-import { AI_FILTERS, filterByStage, withLiveProgress, type AiFilterKey, type LiveProgress } from "./inbox-live";
+import type { InboxItem, InboxStatus, InboxSummary } from "./inbox-data";
+import { inboxHref, isFiltered, type InboxFilters } from "./inbox-filter";
+import { AI_FILTERS, withLiveProgress, type AiFilterKey, type LiveProgress } from "./inbox-live";
 
 type Props = {
   status: InboxStatus;
+  tabKey: string;
   items: InboxItem[];
   nextCursor: string | null;
   canExtract: boolean;
+  /** Bộ lọc đang áp (từ địa chỉ); máy chủ đã lọc trên toàn hộp. */
+  filters: InboxFilters;
+  /** Số PDF theo tình trạng đọc của cùng lô/nhóm; null ở thẻ không có nút lọc tình trạng đọc. */
+  summary: InboxSummary | null;
 };
+
+/** Số hiển thị ở mỗi nút lọc, lấy từ tổng hợp của máy chủ (không phải phần đã tải). */
+function summaryCount(summary: InboxSummary, key: AiFilterKey): number {
+  switch (key) {
+    case "dang-cho": return summary.queued;
+    case "dang-doc": return summary.reading;
+    case "da-doc": return summary.ready;
+    case "loi": return summary.failed + summary.cancelled;
+    default: return summary.total;
+  }
+}
 
 const REFRESH_DELAY_MS = 400;
 
@@ -31,9 +49,10 @@ const REFRESH_DELAY_MS = 400;
  * Bảng hộp tiếp nhận (FE-21, FE-45). Dữ liệu trang đầu do máy chủ cấp; sau đó:
  * - SSE `job.progress` cập nhật nhãn "Đang đọc trang a/b" ngay trên dòng, không tải lại trang;
  * - SSE `job.completed|failed|cancelled` và `resync` gọi router.refresh() để lấy lại thứ tự, vị trí hàng đợi, gợi ý mới;
- * - "Tải thêm" dùng cursor của API và quay về đầu khi đổi bộ lọc (đổi tab là đổi trang, nên state tự làm mới).
+ * - Bộ lọc (tình trạng đọc, lô, nhóm) nằm trên địa chỉ và máy chủ lọc trên toàn hộp (BE-129), nên đổi bộ lọc là đổi trang và state tự làm mới;
+ * - "Tải thêm" dùng cursor của API kèm đúng bộ lọc đó.
  */
-export function InboxTable({ status, items: initial, nextCursor: initialCursor, canExtract }: Props) {
+export function InboxTable({ status, tabKey, items: initial, nextCursor: initialCursor, canExtract, filters, summary }: Props) {
   const router = useRouter();
   const toast = useToast();
   const [loaded, setLoaded] = useState({ source: initial, more: [] as InboxItem[], cursor: initialCursor });
@@ -41,7 +60,6 @@ export function InboxTable({ status, items: initial, nextCursor: initialCursor, 
   if (loaded.source !== initial) setLoaded({ source: initial, more: [], cursor: initialCursor });
 
   const [live, setLive] = useState<Record<string, LiveProgress>>({});
-  const [aiFilter, setAiFilter] = useState<AiFilterKey>("tat-ca");
   const refreshTimer = useRef<ReturnType<typeof setTimeout> | undefined>(undefined);
 
   const scheduleRefresh = useCallback(() => {
@@ -77,18 +95,15 @@ export function InboxTable({ status, items: initial, nextCursor: initialCursor, 
   const cancel = useServerAction(cancelReading);
 
   const rows = useMemo(
-    () =>
-      filterByStage(
-        [...loaded.source, ...loaded.more].map((item) => withLiveProgress(item, live[item.documentId])),
-        aiFilter,
-      ),
-    [loaded, live, aiFilter],
+    () => [...loaded.source, ...loaded.more].map((item) => withLiveProgress(item, live[item.documentId])),
+    [loaded, live],
   );
+  const filtered = isFiltered(filters);
   const total = loaded.source.length + loaded.more.length;
 
   async function onLoadMore() {
     if (!loaded.cursor) return;
-    const outcome = await more.run(status, loaded.cursor);
+    const outcome = await more.run(status, loaded.cursor, filters);
     if (outcome.ok) setLoaded((current) => ({ ...current, more: [...current.more, ...outcome.data.items], cursor: outcome.data.nextCursor }));
   }
 
@@ -124,7 +139,8 @@ export function InboxTable({ status, items: initial, nextCursor: initialCursor, 
     router.refresh();
   }
 
-  if (total === 0) {
+  // Không lọc mà hộp rỗng: lời mời nạp PDF. Đang lọc mà không có dòng nào: vẫn giữ các nút lọc để đổi hoặc bỏ lọc, nên không thoát sớm.
+  if (total === 0 && !filtered) {
     return status === "inbox" ? (
       <EmptyState
         icon={Upload}
@@ -147,33 +163,29 @@ export function InboxTable({ status, items: initial, nextCursor: initialCursor, 
   return (
     <div className="grid gap-3">
       <RowNavigation />
-      {status === "inbox" && (
-        <div role="group" aria-label="Lọc theo tình trạng đọc" className="flex flex-wrap items-center gap-1.5">
-          {AI_FILTERS.map((f) => {
-            const count = filterByStage([...loaded.source, ...loaded.more], f.key).length;
-            return (
-              <button
-                key={f.key}
-                type="button"
-                aria-pressed={aiFilter === f.key}
-                onClick={() => setAiFilter(f.key)}
-                className={cn(
-                  "h-8 border px-3 text-[13px] font-semibold",
-                  aiFilter === f.key ? "border-primary bg-primary text-white" : "border-line-strong bg-surface text-ink hover:border-primary",
-                )}
-              >
-                {f.label} <span className={cn("tabular-nums", aiFilter !== f.key && "text-muted")}>({count})</span>
-              </button>
-            );
-          })}
-        </div>
+      {status === "inbox" && summary && (
+        <nav aria-label="Lọc theo tình trạng đọc" className="flex flex-wrap items-center gap-1.5">
+          {AI_FILTERS.map((f) => (
+            <Link
+              key={f.key}
+              href={inboxHref(tabKey, { ...filters, doc: f.key }) as Route}
+              aria-current={filters.doc === f.key ? "true" : undefined}
+              className={cn(
+                "inline-flex h-8 items-center border px-3 text-[13px] font-semibold",
+                filters.doc === f.key ? "border-primary bg-primary text-white" : "border-line-strong bg-surface text-ink hover:border-primary",
+              )}
+            >
+              {f.label} <span className={cn("ml-1 tabular-nums", filters.doc !== f.key && "text-muted")}>({summaryCount(summary, f.key)})</span>
+            </Link>
+          ))}
+        </nav>
       )}
 
       {/* Dưới 1280px (kể cả 1024px có menu trái): mỗi PDF một thẻ, không phải cuộn ngang để thấy nút. */}
       <ul className="grid gap-2 xl:hidden" aria-label="Danh sách PDF trong hộp tiếp nhận">
         {rows.length === 0 && (
           <li className="border border-line bg-surface px-3 py-6 text-center text-sm text-muted">
-            Không có PDF nào ở tình trạng này trong {total} PDF đã tải.
+            {filtered ? "Không có PDF nào khớp bộ lọc." : `Không có PDF nào ở tình trạng này trong ${total} PDF đã tải.`}
           </li>
         )}
         {rows.map((item) => {
@@ -241,7 +253,7 @@ export function InboxTable({ status, items: initial, nextCursor: initialCursor, 
             {rows.length === 0 && (
               <tr>
                 <td colSpan={5} className="px-3 py-6 text-center text-muted">
-                  Không có PDF nào ở tình trạng này trong {total} PDF đã tải.
+                  {filtered ? "Không có PDF nào khớp bộ lọc." : `Không có PDF nào ở tình trạng này trong ${total} PDF đã tải.`}
                 </td>
               </tr>
             )}

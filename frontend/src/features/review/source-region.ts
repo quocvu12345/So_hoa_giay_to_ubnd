@@ -39,3 +39,17 @@ export function parseRegionParam(text: string | undefined, page: number): Source
   const region = { page, x, y, width, height, approximate: parts[4] === "u" };
   return isValidRegion(region) ? region : null;
 }
+
+/**
+ * Vùng nguồn của trường nằm trên bản quét nào (BE-126). Giấy tờ đã thay bản quét thì vùng của lần đọc cũ nằm trên bản cũ: số trang và toạ độ
+ * không còn đúng với bản hiện hành, nên không dựng khung lên bản đang xem. `olderScanId` có giá trị khi vùng thuộc bản khác.
+ */
+export function regionTarget(
+  field: { sourceRegion?: Partial<SourceRegion> | null; sourcePages: number[]; sourceFileId?: string | null },
+  currentFileId: string | undefined,
+): { region: SourceRegion | null; page: number | null; olderScanId: string | null } {
+  const sourcePage = field.sourceRegion?.page ?? field.sourcePages[0] ?? null;
+  if (field.sourceFileId && currentFileId && field.sourceFileId !== currentFileId) return { region: null, page: sourcePage, olderScanId: field.sourceFileId };
+  const region = isValidRegion(field.sourceRegion) ? field.sourceRegion : null;
+  return { region, page: region?.page ?? field.sourcePages[0] ?? null, olderScanId: null };
+}

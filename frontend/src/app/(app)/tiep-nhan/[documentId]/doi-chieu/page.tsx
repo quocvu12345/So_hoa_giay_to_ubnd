@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { NeedsRealApi } from "@/components/ui/blocks";
 import { NoAccess } from "@/components/ui/no-access";
-import { getInbox } from "@/features/intake/inbox-data";
+import { getInbox, READY_ONLY } from "@/features/intake/inbox-data";
 import { getDocumentTypes, getReview, getWorkGroups } from "@/features/review/review-data";
 import { ReviewScreen } from "@/features/review/review-screen";
 import { ApiError } from "@/lib/api/server";
@@ -35,9 +35,9 @@ export default async function ReviewPage({ params }: PageProps<"/tiep-nhan/[docu
     getWorkGroups(session.activeAssignment.organizationCode),
     groupCode ? getDocumentTypes(groupCode) : Promise.resolve([]),
     // Chỉ để đếm "còn bao nhiêu PDF đã đọc xong"; lỗi ở đây không được làm hỏng màn đối chiếu.
-    getInbox("inbox", undefined, 200).catch(() => null),
+    getInbox("inbox", undefined, 200, READY_ONLY).catch(() => null),
   ]);
-  const othersReady = inbox ? inbox.items.filter((i) => i.stage === "ready" && i.documentId !== documentId).length : 0;
+  const othersReady = inbox ? inbox.items.filter((i) => i.documentId !== documentId).length : 0;
 
   return (
     <ReviewScreen

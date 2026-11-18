@@ -316,25 +316,85 @@ public sealed class IntakeHandler(IHoSoDb db, IScopeFilter scope, ICurrentUser u
     }
 
     // ---- Hộp tiếp nhận ----
-    public async Task<Page<InboxItem>> InboxAsync(string? status, string? cursor, int limit, CancellationToken ct)
+    private static readonly string[] ReadStages = ["queued", "reading", "ready", "failed", "cancelled"];
+
+    private sealed class InboxSource
+    {
+        public required FileRecord F { get; init; }
+        public required Document D { get; init; }
+        public DateTimeOffset At { get; init; }
+    }
+
+    /// <summary>Hộp tiếp nhận của người đang dùng: một dòng mỗi giấy tờ (bản quét hiện hành, BE-126), có thể lọc theo lô, nhóm, loại (BE-129).</summary>
+    private IQueryable<InboxSource> InboxSourceFor(string wanted, InboxFilter filter)
     {
         var me = user.RequireUserId();
+        var suggestions = db.Read<AiSuggestion>();
+        var source = from f in DocumentFiles.CurrentScans(db.Read<FileRecord>())
+                     join d in db.Read<Document>() on f.DocumentId equals d.Id
+                     where d.UploadedBy == me && d.IntakeStatus == wanted
+                     select new InboxSource { F = f, D = d, At = f.UploadedAt ?? d.CreatedAt };
+        if (filter.Batch is { } batch) source = source.Where(x => x.F.ScanBatchId == batch);
+        // Nhóm và loại theo gợi ý AI MỚI NHẤT của giấy tờ (cùng cách chọn gợi ý với dòng hiển thị).
+        if (!string.IsNullOrWhiteSpace(filter.Group))
+        {
+            var group = filter.Group.Trim();
+            source = source.Where(x => suggestions.Where(s => s.DocumentId == x.D.Id).OrderByDescending(s => s.CreatedAt).ThenByDescending(s => s.Id)
+                .Select(s => s.WorkGroupCode).FirstOrDefault() == group);
+        }
+        if (!string.IsNullOrWhiteSpace(filter.Type))
+        {
+            var type = filter.Type.Trim();
+            source = source.Where(x => suggestions.Where(s => s.DocumentId == x.D.Id).OrderByDescending(s => s.CreatedAt).ThenByDescending(s => s.Id)
+                .Select(s => s.DocumentTypeCode).FirstOrDefault() == type);
+        }
+        return source;
+    }
+
+    /// <summary>Tình trạng đọc của giấy tờ = trạng thái việc đọc mới nhất, cùng cách đặt tên với <see cref="InboxItem.Stage"/>; chưa có việc thì coi là đang chờ.</summary>
+    private static string StageOf(string? jobStatus) => jobStatus switch
+    {
+        JobStatus.Running => "reading", JobStatus.Completed => "ready", JobStatus.Failed => "failed", JobStatus.Cancelled => "cancelled", _ => "queued",
+    };
+
+    private static HashSet<string> ParseReadFilter(string? read)
+    {
+        if (string.IsNullOrWhiteSpace(read)) return [];
+        var wanted = read.Split(',', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries).Select(r => r.ToLowerInvariant()).ToHashSet();
+        var unknown = wanted.Where(w => !ReadStages.Contains(w)).ToList();
+        if (unknown.Count > 0)
+            throw new ValidationFailedException(new Dictionary<string, string[]> { ["read"] = [$"Tình trạng đọc không hợp lệ: {string.Join(", ", unknown)}. Dùng {string.Join(" | ", ReadStages)}."] });
+        return wanted;
+    }
+
+    public async Task<Page<InboxItem>> InboxAsync(string? status, string? cursor, int limit, InboxFilter? filter, CancellationToken ct)
+    {
+        filter ??= new InboxFilter();
         var wanted = status is IntakeStatus.Filed or IntakeStatus.Discarded ? status : IntakeStatus.Inbox;
         var jobs = db.Read<OcrJob>();
         var suggestions = db.Read<AiSuggestion>();
         limit = Math.Clamp(limit, 1, 200);
         var after = Cursor.Decode(cursor);
-        // Một dòng mỗi giấy tờ: chỉ bản quét hiện hành (BE-126), bản đã bị thay không hiện thành dòng riêng.
-        var source = from f in DocumentFiles.CurrentScans(db.Read<FileRecord>())
-                     join d in db.Read<Document>() on f.DocumentId equals d.Id
-                     where d.UploadedBy == me && d.IntakeStatus == wanted
-                     select new { f, d, At = f.UploadedAt ?? d.CreatedAt };
+        var source = InboxSourceFor(wanted, filter);
+        var readWanted = ParseReadFilter(filter.Read);
+        if (readWanted.Count > 0)
+        {
+            // Lọc theo việc đọc mới nhất TRƯỚC khi phân trang, nên trang sau không lặp và không thiếu.
+            var statuses = readWanted.SelectMany(r => r switch
+            {
+                "queued" => new[] { JobStatus.Queued }, "reading" => [JobStatus.Running], "ready" => [JobStatus.Completed],
+                "failed" => [JobStatus.Failed], _ => [JobStatus.Cancelled],
+            }).ToList();
+            var includeNoJob = readWanted.Contains("queued");
+            source = source.Where(x => statuses.Contains(jobs.Where(j => j.FileId == x.F.Id && j.JobType == "read_classify").OrderByDescending(j => j.CreatedAt).Select(j => j.Status).FirstOrDefault()!)
+                || (includeNoJob && !jobs.Any(j => j.FileId == x.F.Id && j.JobType == "read_classify")));
+        }
         if (after is { } key)
-            source = source.Where(x => x.At < key.At || (x.At == key.At && x.f.Id.CompareTo(key.Id) < 0));
+            source = source.Where(x => x.At < key.At || (x.At == key.At && x.F.Id.CompareTo(key.Id) < 0));
         var rows = await (
             from x in source
-            let f = x.f
-            let d = x.d
+            let f = x.F
+            let d = x.D
             orderby x.At descending, f.Id descending
             select new
             {
@@ -374,6 +434,19 @@ public sealed class IntakeHandler(IHoSoDb db, IScopeFilter scope, ICurrentUser u
                 r.Job is null ? null : QueuePriority.KindOf(r.Job.Priority), eta));
         }
         return new Page<InboxItem>(items, next);
+    }
+
+    /// <summary>BE-129. Số PDF theo tình trạng đọc của một thẻ (cùng lô/nhóm/loại), cho các nút lọc ở hộp tiếp nhận.</summary>
+    public async Task<InboxSummary> InboxSummaryAsync(string? status, InboxFilter? filter, CancellationToken ct)
+    {
+        var wanted = status is IntakeStatus.Filed or IntakeStatus.Discarded ? status : IntakeStatus.Inbox;
+        var jobs = db.Read<OcrJob>();
+        var latest = await InboxSourceFor(wanted, (filter ?? new InboxFilter()) with { Read = null })
+            .Select(x => jobs.Where(j => j.FileId == x.F.Id && j.JobType == "read_classify").OrderByDescending(j => j.CreatedAt).Select(j => j.Status).FirstOrDefault())
+            .ToListAsync(ct);
+        var counts = latest.GroupBy(StageOf).ToDictionary(g => g.Key, g => g.Count());
+        return new InboxSummary(latest.Count, counts.GetValueOrDefault("queued"), counts.GetValueOrDefault("reading"), counts.GetValueOrDefault("ready"),
+            counts.GetValueOrDefault("failed"), counts.GetValueOrDefault("cancelled"));
     }
 
     public async Task DiscardAsync(Guid documentId, CancellationToken ct)

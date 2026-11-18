@@ -2,8 +2,9 @@ import { expect, signIn, test, watchConsole } from "./fixtures";
 import type { Page } from "@playwright/test";
 
 /**
- * FE-22, FE-23 (BE-114): bấm một trường thì trang nguồn mở đúng và khung làm nổi hiện đúng vùng chứa giá trị. Cần stack thật với worker AI GIẢ
- * (scripts/dev-up.sh ai fake): bản giả ghi vùng nguồn cho từng trường. AI thật chưa ghi vùng (AI-21) nên trường không có vùng thì không có khung.
+ * FE-22, FE-23 (BE-114): bấm một trường thì trang nguồn mở đúng và khung làm nổi hiện đúng vùng chứa giá trị. Cần stack thật với worker AI đã ghi
+ * vùng nguồn: AI giả (scripts/dev-up.sh ai fake) hoặc AI thật qua Ollama/MLX (AI-21, từ 18/11/2026; vùng thật chỉ có khi trường tìm thấy trong khối bố cục
+ * hoặc lớp chữ PDF). Trường không có vùng thì không có khung.
  */
 
 type Region = { x: number; y: number; width: number; height: number; page: number };
@@ -35,7 +36,7 @@ test("Bấm trường ở màn đối chiếu: khung làm nổi hiện đúng v�
   await signIn(page, "employee");
   await page.goto("/viec-cua-toi");
   const found = await documentWithRegion(page);
-  test.skip(!found, "Hộp tiếp nhận chưa có giấy tờ nào do AI giả đọc có vùng nguồn: chạy scripts/smoke-ai-flow.py hoặc nạp một PDF khi worker ở chế độ fake");
+  test.skip(!found, "Hộp tiếp nhận chưa có giấy tờ đã đọc xong mang vùng nguồn: chạy `python3 scripts/smoke-ai-flow.py --keep` (giữ lại giấy tờ sau khi đọc)");
   const [first, second] = found!.fields;
 
   await page.goto(`/tiep-nhan/${found!.id}/doi-chieu`);

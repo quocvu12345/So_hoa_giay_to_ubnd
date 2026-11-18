@@ -12,7 +12,8 @@ test("Vận hành: xem máy AI, chạy lại việc lỗi, hủy việc đang ch
   // Người không có quyền (chuyên viên) không vào được.
   await signIn(page, "employee");
   await page.goto("/quan-tri/van-hanh");
-  await expect(page.getByText(/Bạn chưa có quyền xem vận hành/)).toBeVisible();
+  // Khoanh vào vùng nội dung chính: trang có ranh giới loading nên lúc vừa tải xong còn một bản ẩn của luồng streaming (strict mode báo 2 phần tử).
+  await expect(page.locator("#noi-dung").getByText(/Bạn chưa có quyền xem vận hành/)).toBeVisible();
 
   // Nạp một PDF bằng tài khoản chuyên viên, rồi ép việc đọc của nó thành "lỗi" (đã thử 3 lần).
   const me = (await (await page.request.get("/api/v1/me")).json()) as { activeAssignment: { id: string } };

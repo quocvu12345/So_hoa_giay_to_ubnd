@@ -8,6 +8,19 @@ AI-01…AI-11 nằm ở `docs/04-ke-hoach-task.md` (mục P4). File này chi ti�
 
 ---
 
+## Máy AI Windows qua Ollama · 18/11/2026 (tối) · AI-22 ✅
+
+**Bối cảnh:** mô hình thật chạy trên máy Windows của người dùng (GPU), Ollama ở `100.78.102.53:11434` qua Tailscale, với hai mô hình `hoso-paddleocr-vl:1.6-q8_0` và `hoso-ifstruct:q8_0` (IFStruct 4B, GGUF Q8_0). Máy Mac không còn chạy mô hình.
+
+**Cách nối (`HOSO_AI_PROFILE=ollama`, `ai-worker/src/hoso_ai/engines/ollama.py`):** worker vẫn chạy cạnh API (đọc CSDL và kho tệp như cũ, không phải mở PostgreSQL hay chia sẻ kho tệp ra mạng); chỉ phần sinh chữ gọi sang máy Windows.
+- **OCR:** pipeline PaddleOCR-VL (dò bố cục, xoay trang) vẫn chạy ở máy worker; từng vùng cắt gửi sang Ollama qua một bộ chuyển OpenAI → `/api/generate raw` trong worker. Mô hình trên Ollama tạo với `TEMPLATE {{ .Prompt }}` nên worker tự dựng mẫu chat (`User:/Assistant:` của PaddleOCR-VL, ChatML của Qwen, đã so trùng tokenizer); đi `/v1/chat/completions` thì PaddleOCR-VL sinh chữ rác.
+- **Phân loại, trích trường:** đúng mã `document_ai.classify` như bản MLX (tách `ClassifierModel.complete`, `engines/llm_suggest.py`), chỉ khác chỗ sinh chữ.
+- **Máy AI tắt, mất mạng:** `EngineUnavailable` → job trả về hàng đợi (như nhường chỗ, **không tính lần thử**, không ghi trang lỗi, không mất gợi ý), worker ngừng lấy việc ~30 giây; `hoso_ai_jobs_total{result="engine_unavailable"}`. **Đã thử với sự cố thật (18/11/2026 tối, người dùng tắt rồi bật Ollama trên máy Windows khi worker đang chạy):** 3 lần ngắt (2 "Connection reset by peer", 1 hết giờ khi kiểm nhanh); mỗi lần job về hàng đợi, worker chờ 30 giây rồi chạy lại. Việc bị ngắt 2 lần (`attempt=3`, `preempted=2`, tức chỉ tính 1 lần thử thật) vẫn đọc đủ 4/4 trang; việc bị ngắt giữa chừng khác vẫn ra gợi ý đúng loại, 6 trường. Không việc nào bị đánh `failed` oan.
+- **Cấu hình, bật, kiểm:** `ai-worker/README.md` mục "Mô hình ở máy AI khác qua Ollama"; `scripts/dev-up.sh ai ollama [URL]`.
+- **Model version:** `ocr=hoso-paddleocr-vl:1.6-q8_0@ecc8315 classifier=hoso-ifstruct:q8_0@a6ac33e/short`. Tên thẻ Ollama không cho biết commit nguồn nên trang vận hành báo lệch với `ai_models` cho tới khi người vận hành khai nguồn bằng `HOSO_AI_OLLAMA_CLASSIFIER_SOURCE=repo@commit` (worker không kiểm được lời khai; digest thật vẫn ghi ở `classifier-via=`). **Chưa khai trên máy dev**: chưa ai xác nhận GGUF trên Windows chuyển từ đúng commit `00161de`.
+- **Số đo (18/11/2026, máy dev ↔ Windows qua Tailscale):** IFStruct ~12 token/giây; OCR một trang ~28 giây; một giấy tờ đọc và phân loại 36–130 giây. `scripts/smoke-ai-flow.py` 0 hỏng (3 giấy tờ đúng loại, 6/6 trường), `scripts/smoke-ai-edge.py` 0 hỏng cả 8 tình huống (handsim 8/9 trường).
+- **Bảo mật:** ảnh vùng cắt và chữ giấy tờ đi qua mạng tới máy AI; Ollama không có xác thực nên chỉ dùng trong mạng riêng mã hóa và chặn cổng 11434 với mạng khác (cổng LAN của máy Windows đã kiểm: đóng).
+
 ## Đổi mô hình mặc định sang IFStruct · chốt 17/11/2026 (tối)
 
 **Quyết định:** mô hình chọn nhóm, loại và trích trường là **Qwen3-4B-Instruct-2507 IFStruct** (`ChetanDhembreAI/Qwen3-4B-Instruct-2507-ifstruct`, commit `00161de525486e01ba505e6c24f39472fdfe4a23`). Mô hình này thay Qwen3-1.7B và Qwen3-4B gốc. Worker nạp bản MLX 4-bit tự chuyển (`Qwen3-4B-Instruct-2507-ifstruct-4bit`) bằng `python -m document_ai.convert`.
@@ -34,16 +47,16 @@ AI-01…AI-11 nằm ở `docs/04-ke-hoach-task.md` (mục P4). File này chi ti�
 |---|---|---|---|---|
 | 1 | Đăng nhập | API BE-12 (dev: chọn tài khoản giả lập; thật: Keycloak); web FE-05 | API ✅. Web ✅ với đăng nhập dev (E2E `signIn`, đọc phiên qua `/api/v1/me`, đổi phân công); chưa thử Keycloak thật | FE-05 |
 | 2 | Tải PDF lên | API BE-41 ✅; web FE-21 | ✅ Web gửi tệp thật (XHR, 3 tệp song song, báo trùng, thử lại); 17/11/2026 | FE-06, FE-21 |
-| 3 | Lưu tệp, worker đọc tệp | API ghi kho tệp; worker đọc `HOSO_AI_STORAGE_ROOT` | Cùng một máy: đọc được (hai đường dẫn trùng nhau). Máy AI tách riêng (sơ đồ docs/02): worker chỉ đọc ổ đĩa local, chưa đọc được S3/MinIO | AI-18 |
+| 3 | Lưu tệp, worker đọc tệp | API ghi kho tệp; worker đọc `HOSO_AI_STORAGE_ROOT` | Cùng một máy: đọc được (hai đường dẫn trùng nhau). Máy AI tách riêng **và chạy worker ở đó**: worker chỉ đọc ổ đĩa local, chưa đọc được S3/MinIO (AI-18). Từ 18/11/2026 có đường khác: worker ở cạnh API, chỉ gọi mô hình sang máy AI qua Ollama (AI-22), không cần AI-18 | AI-18, AI-22 |
 | 4 | Vào khay | BE-97 (mức 7, migration 032) | ✅ chạy thật: PDF mới tải lên ở khay nền, `queueKind=background` | — |
 | 5 | Worker lấy việc | AI-13, AI-15 ✅ (107 test, gồm PostgreSQL thật) | ✅ chạy thật trên `hoso_dev`: lấy việc theo mức, việc nền nhường chỗ rồi chạy tiếp từ trang còn thiếu. Chưa cài launchd | AI-19 |
 | 6 | OCR | PaddleOCR-VL 1.6 | ✅ | — |
-| 7 | Phân loại, trích trường | Qwen3-1.7B | ✅ mặc định 1.7B, ghim phiên bản, `ai_models` ghi 1.7B. **Trích trường tốt; tự chọn nhóm/loại kém**, đã giảm bằng thu hẹp từ khóa (chỉ chắc trên dữ liệu giả lập) | AI-20, AI-12 |
+| 7 | Phân loại, trích trường | Qwen3-1.7B | ✅ mặc định đã đổi sang **IFStruct** (17/11 tối; 1.7B là lịch sử); chạy thật ở máy Windows qua Ollama (AI-22). Thu hẹp từ khóa (AI-20) vẫn bật; chỉ đo trên dữ liệu giả lập | AI-20, AI-12, AI-22 |
 | 8 | Ghi gợi ý, báo tiến độ | worker ghi `ai_suggestions` và NOTIFY; API đẩy SSE (BE-45 ✅); web FE-08 | ✅ Web mở một luồng SSE (fetch có header phân công), hộp tiếp nhận và màn đối chiếu cập nhật trực tiếp | FE-08 |
-| 9 | Đối chiếu | API BE-47…50 ✅; web FE-22, FE-23 | ✅ Web đối chiếu với dữ liệu thật, xem bản gốc bằng ảnh trang. Trình xem pdf.js và vùng nguồn (FE-22) chưa làm | FE-22 |
+| 9 | Đối chiếu | API BE-47…50 ✅; web FE-22, FE-23 | ✅ Web đối chiếu với dữ liệu thật, xem bản gốc bằng ảnh trang, làm nổi vùng nguồn của trường (AI thật ghi vùng từ 18/11: AI-21); vùng nằm trên bản quét cũ thì báo và dẫn tới bản đó. Trình xem pdf.js chưa làm | FE-22 |
 | 10 | Xếp vào hồ sơ | API BE-62, BE-63 ✅; web FE-24 | ✅ Web xếp hồ sơ thật, tạo hồ sơ tại chỗ, mở PDF kế tiếp | FE-24 |
 | 11 | Trích xuất ngay, khay chờ | BE-98, BE-99; FE-45 | ✅ API chạy thật (nâng mức, không tạo việc trùng, ước tính thời gian); web ✅ nối API thật ở hộp tiếp nhận | — |
-| 12 | Theo dõi | Trang vận hành (BE-88, BE-99, BE-100, FE-44); `ocr_jobs.model_version` | API ✅ (mô hình thật, cảnh báo lệch, số việc theo khay); web chưa hiện `runningModels`/`modelMismatch` | FE-44 |
+| 12 | Theo dõi | Trang vận hành (BE-88, BE-99, BE-100, FE-44); `ocr_jobs.model_version` | ✅ API và web (FE-44) hiện mô hình thật, cảnh báo lệch, số việc theo khay | — |
 
 ### Thứ tự làm
 
@@ -87,13 +100,13 @@ Chạy trên stack dev thật (API .NET, worker Python, PostgreSQL `hoso_dev`, Q
 
 **Còn lại, chưa giải quyết:**
 1. **Chưa có số đo trên giấy tờ thật.** Mọi con số đúng nhóm/loại của cách thu hẹp từ khóa là trên tài liệu giả lập in sẵn tên loại làm tiêu đề, nên chỉ là cận trên. Giấy tờ thật chỉ ghi "Công văn" hoặc "Thông báo" sẽ không khớp, và khi đó chất lượng trở lại mức yếu của 1.7B. Cần ít nhất 20 giấy tờ thật đã có nhãn (AI-12, AI-20).
-2. **Giá trị trích có thể thừa hoặc sai chữ nhỏ.** Ví dụ biển số: AI trả "TEST-001 - Màu biển: Trắng" thay vì "TEST-001"; địa chỉ "Thứ Nghiệm" do OCR đọc sai "Thử". Bộ lọc chỉ kiểm giá trị có nằm trong văn bản, không kiểm đúng hình thức của trường (biển số, ngày, số). Cần chuẩn hóa theo `value_type` của trường.
+2. ~~**Giá trị trích có thể thừa hoặc sai chữ nhỏ.**~~ Phần thừa và sai kiểu đã xử lý ở AI-23 (18/11/2026); sai chữ do OCR ("Thứ" thay "Thử") vẫn còn. Ghi lại: **Giá trị trích có thể thừa hoặc sai chữ nhỏ.** Ví dụ biển số: AI trả "TEST-001 - Màu biển: Trắng" thay vì "TEST-001"; địa chỉ "Thứ Nghiệm" do OCR đọc sai "Thử". Bộ lọc chỉ kiểm giá trị có nằm trong văn bản, không kiểm đúng hình thức của trường (biển số, ngày, số). Cần chuẩn hóa theo `value_type` của trường.
 3. **Tốc độ do OCR trang dày chữ quyết định:** một trang A4 in dày chữ ≈ 29 giây, gói quét 7 trang ≈ 134 giây; bản điền mô phỏng ≈ 7 giây/trang. Phần LLM sau khi đã nạp mô hình chỉ 7–15 giây. Ước tính thời gian chờ (`etaSeconds`) sẽ bằng `null` cho tới khi có ít nhất 3 trang OCR trong 24 giờ.
 4. **Thu hồi sau khi worker chết** phải chờ API phát hiện mất nhịp sống (mặc định 5 phút) rồi chờ chu kỳ quét 1 phút: việc dở đứng yên tối đa khoảng 6 phút. Kịch bản kiểm tra giả lập mất nhịp bằng cách đặt lùi `heartbeat_at`.
 5. ~~Giao diện chưa nối API thật~~ đã nối (FE-06, FE-08, FE-21, FE-23, FE-24). Còn lại: trang vận hành chưa hiện `runningModels`, `modelMismatch` (FE-44); trình xem PDF và vùng nguồn (FE-22).
 6. **Chưa cài worker thành dịch vụ** (launchd, AI-19) nên chưa kiểm được tự khởi động lại sau khi máy khởi động lại hay sau mã thoát 75.
 7. **Chưa đo bộ nhớ thật khi OCR và 1.7B cùng nằm trong bộ nhớ** (pha `coresident`): ước tính 6,5 GB trên ngân sách 7 GB, trong khi máy dev đang dùng gần hết swap.
-8. `access_events.action` chỉ nhận các hành động xem/tải, nên "Trích xuất ngay" chỉ ghi log có cấu trúc (`ai_extract`) và `ocr_jobs.prioritized_by`, chưa có trong nhật ký truy cập.
+8. ~~`access_events.action` chỉ nhận các hành động xem/tải~~: đã làm ở BE-128 (migration 040), "Trích xuất ngay" nay có trong nhật ký truy cập.
 
 ---
 
@@ -211,6 +224,7 @@ Tình trạng sau đợt làm 17/11/2026: mục 1 và 2 đã sửa (AI-13); mụ
 - **Chưa làm:** `HOSO_AI_CLASSIFIER_ADAPTER`. LoRA không cho lợi ích đo được nên chưa cần.
 
 ### AI-14 · Chuyển mặc định sang Qwen3-1.7B ✅ · 1 ngày
+> **Lịch sử:** mặc định này đã bị thay bằng IFStruct tối 17/11/2026 (mục đầu tệp, migration 036). Phần mã (lời nhắc ngắn/đầy đủ, khay nền, ngân sách bộ nhớ) vẫn đang dùng.
 - **Phụ thuộc:** AI-13. Không còn chờ AI-12 (quyết định 17/11/2026).
 - **Đã làm:**
   - Lời nhắc ngắn đưa vào `document_ai/prompts.py`; `ai-worker/training/prompts.py` dùng lại đúng bản này.
@@ -253,7 +267,8 @@ Tình trạng sau đợt làm 17/11/2026: mục 1 và 2 đã sửa (AI-13); mụ
 
 ## Task vận hành, thông luồng và đổi mô hình
 
-### AI-20 · Giúp Qwen3-1.7B chọn đúng nhóm và loại giấy tờ 🟡 · 1 ngày
+### AI-20 · Giúp mô hình nhỏ chọn đúng nhóm và loại giấy tờ 🟡 · 1 ngày
+> Viết cho 1.7B; mặc định nay là IFStruct 4B, số đo chọn IFStruct (100% đúng nhóm và loại trên bộ thử) chạy cùng cách thu hẹp này nên vẫn bật (`HOSO_AI_SHORTLIST`). Phần "đo trên giấy tờ thật" còn nguyên.
 - **Vì sao:** dùng 1.7B cho cả ba bước thì bước chọn nhóm và loại gần như đoán bừa. Đo trên 47 tài liệu giả lập với đúng đường chạy của worker (chỉ chọn loại trong nhóm đã chọn): đúng nhóm 70% (4B: 98%), đúng loại 8% (4B: 92%). Hai nguyên nhân:
   1. 1.7B chọn trong 38 nhóm rồi hàng chục loại tên gần giống thì chọn kém;
   2. bước chọn loại dựa vào `document_form` do mô hình trả về. 1.7B hay chép cả dòng phụ đề của tài liệu ("Công văn, quyết định, thông báo và sổ đăng ký") nên `type_candidates` thu hẹp ra danh sách **rỗng** và bỏ luôn bước chọn loại. Đã sửa: danh sách rỗng thì quay về các loại của nhóm đã chọn (có test).
@@ -285,6 +300,7 @@ Tình trạng sau đợt làm 17/11/2026: mục 1 và 2 đã sửa (AI-13); mụ
 - **Kiểm tra:** diễn tập đổi sang Qwen3-4B (đã có trên máy) rồi quay về 1.7B. Job sau mỗi lần đổi ghi đúng `model_version`, và QA-07 qua ở cả hai lần.
 
 ### AI-18 · Worker đọc kho tệp S3/MinIO ⬜ · 1 ngày
+> Không còn cần cho trường hợp máy AI tách riêng: hồ sơ `ollama` (AI-22) giữ worker cạnh API. Chỉ cần khi chạy **worker** ở máy khác API.
 - **Khi cần:** máy AI tách khỏi máy chạy API (sơ đồ docs/02) và kho tệp là MinIO hoặc S3. Chạy cùng máy thì không cần, vì worker đọc thẳng ổ đĩa.
 - **Làm:**
   1. `S3BlobStorage` theo cùng giao kèo `open_verified(storage_key, sha256)`: tải về tệp tạm trong `HOSO_AI_WORK_ROOT`, kiểm SHA-256, xóa khi job xong.
@@ -293,6 +309,8 @@ Tình trạng sau đợt làm 17/11/2026: mục 1 và 2 đã sửa (AI-13); mụ
 - **Kiểm tra:** test với moto như backend; sai mã băm thì job `failed`, không có lỗi kết nối thì thử lại; không để lại tệp tạm.
 
 ### AI-19 · Chạy worker thật như dịch vụ trên máy AI ⬜ · 0,5 ngày
+- **Máy dev (đã làm 18/11/2026):** worker từng tự thoát lúc 20:11 ("vòng lặp rảnh không quay 141 giây", mã 75 của watchdog) và không có gì chạy lại. `scripts/dev-up.sh` nay chạy worker qua `ai-worker/deploy/supervise.sh`: chạy lại khi thoát ngoài ý muốn (giãn dần 5 → 60 giây), dừng hẳn khi `stop`, mã 0 hoặc 78. Đã thử giết tiến trình worker: sống lại sau ~12 giây; `stop` không để lại tiến trình mồ côi. Nguyên nhân worker kẹt lúc 20:11 vẫn **chưa rõ** (nhật ký nguồn điện không cho thấy máy ngủ).
+- **Còn lại (dịch vụ thật):** cài LaunchAgent/systemd như dưới.
 - **Phụ thuộc:** OPS-07, AI-14.
 - **Làm:**
   1. Cài LaunchAgent (`deploy/launchd/install.sh`) để worker tự chạy khi máy khởi động lại; log ở `data/logs/ai-worker.log`. Bước này cũng là lần cài thật đầu tiên của AI-09.
@@ -302,14 +320,28 @@ Tình trạng sau đợt làm 17/11/2026: mục 1 và 2 đã sửa (AI-13); mụ
   - khởi động lại máy thì worker tự chạy và lấy việc;
   - dừng worker giữa chừng thì job quay lại hàng đợi, lần sau chỉ đọc trang còn thiếu.
 
-### AI-21 · Vùng nguồn và độ tin cậy thật cho từng trường ⬜ · 1 ngày
-- **Vì sao:** BE-114, FE-22, FE-23 cần `ai_field_suggestions.source_region` để bấm trường thì làm nổi đúng vùng trên trang. Từ 18/11/2026
-  hợp đồng `FieldSuggestion` đã có `source_region` và `confidence`, worker đã ghi xuống CSDL, nhưng chỉ AI giả điền; bản MLX vẫn để `NULL`.
-- **Làm:**
-  1. Trang OCR: tìm khối trong `parsing_res_list` của PaddleOCR-VL chứa trích dẫn, đổi `block_bbox` (pixel) sang tỉ lệ theo kích thước ảnh đã xuất.
-  2. Trang lấy từ lớp chữ PDF: tìm trích dẫn bằng `PdfTextPage.search` (PDFium) để có khung thật; không tìm được thì ước theo dòng kèm `"approximate": true`.
-  3. `confidence`: chưa có nguồn đáng tin thì để `NULL`, đừng bịa số.
-- **Kiểm tra:** 20 giấy tờ có nhãn, vùng chứa đúng trích dẫn khi vẽ lên ảnh trang; hình dạng JSON đúng docs/03.
+### AI-21 · Vùng nguồn và độ tin cậy thật cho từng trường ✅ · 1 ngày (18/11/2026)
+- **Vì sao:** BE-114, FE-22, FE-23 cần `ai_field_suggestions.source_region` để bấm trường thì làm nổi đúng vùng trên trang. Trước đó chỉ AI giả điền.
+- **Đã làm** (`ai-worker/src/hoso_ai/regions.py`, chạy trong pipeline sau khi engine gợi ý xong nên dùng chung cho MLX, Ollama và engine sau này; lỗi tìm vùng chỉ làm trường đó không có khung, không mất gợi ý):
+  1. **Trang OCR:** khi đọc xong, mỗi khối của PaddleOCR-VL được kèm `region` theo tỉ lệ trang (`block_bbox` pixel chia `width`/`height` của ảnh đã dựng; bỏ vùng nếu trang bị xoay khi nhận dạng hướng). Trích dẫn trọn một khối: khung chính xác. Chỉ chiếm một phần khối: ước theo dòng và vị trí chữ, `approximate`.
+  2. **Khối bảng (`table`, HTML):** biểu mẫu của dự án chủ yếu là bảng, nên định vị **theo ô**: cột chia theo `colspan`, hàng chia theo số dòng chữ lớn nhất trong hàng, rồi lấy dòng giá trị trong ô; luôn `approximate` (chiều cao thật của hàng không có trong kết quả OCR). Giá trị xuất hiện ở nhiều ô (cùng một tên người) thì ưu tiên ô có nhãn của trường.
+  3. **Trang lấy từ lớp chữ PDF:** tìm bằng PDFium (`PdfiumReader.locate_texts`, mở PDF một lần) để có khung chữ thật; không tìm được thì ước theo dòng, `approximate`. Trang xoay thì bỏ vùng.
+  4. `confidence` **để NULL** với AI thật (chưa có nguồn đáng tin; không bịa số).
+- **Kiểm tra:** `tests/test_regions.py` (13 test, gồm PDFium thật trên `public-019.pdf` và khối bảng lấy từ lần chạy thật); chạy thật qua Ollama: 12/12 trường có giá trị đều có vùng, vẽ lên trang thấy 4/6 khung đúng dòng giá trị, 2 khung lệch nửa dòng ở ô có giá trị tự xuống dòng (đã đánh dấu ước tính, giao diện vẽ nét đứt). E2E `vung-nguon.spec.ts` chạy với AI thật.
+- **Còn lại:** vẽ khung trên 20 giấy tờ có nhãn để đo độ lệch (chưa làm); vị trí ngang trong khối nhiều chữ chỉ ước theo số ký tự (chữ căn giữa lệch).
+
+### AI-22 · Hồ sơ `ollama`: mô hình ở máy AI khác ✅ · 1 ngày (18/11/2026)
+- Xem mục "Máy AI Windows qua Ollama" đầu tệp. Mã: `engines/ollama.py`, `engines/llm_suggest.py`, `EngineUnavailable` (`engines/base.py`), `Worker` trả job về hàng đợi khi máy AI không trả lời; test `tests/test_ollama_engine.py` (12).
+
+### AI-23 · Chuẩn hóa giá trị trích theo kiểu trường ✅ · 0,5 ngày (18/11/2026)
+- **Vì sao:** `evidence_fields` chỉ kiểm giá trị có nằm trong văn bản, không kiểm đúng hình thức của trường. Giao diện đối chiếu chỉ nhận trường ngày dạng `dd/mm/yyyy` nên AI trả "27 tháng 3 năm 2026" hay "09 giờ 30 phút, ngày 12/11/2026" thì cán bộ phải gõ lại mới xác nhận được. **E2E `duyet-ho-so` hỏng với AI thật vì đúng lỗi này** (ô "Ngày, giờ lập" không hợp lệ), trong khi qua với AI giả vì AI giả luôn trả `dd/mm/yyyy`. 399 trường ngày của danh mục đều bị ảnh hưởng.
+- **Đã làm** (`ai-worker/src/hoso_ai/field_values.py`, gọi trong `engines/llm_suggest.py` nên dùng chung MLX và Ollama): chỉ ba việc, không bịa.
+  1. Trường kiểu `date`: một ngày duy nhất đọc được (số `12/11/2026`, `12-11-2026`, hoặc chữ "ngày 5 tháng 3 năm 2026") thì đổi về `dd/mm/yyyy`; giờ bị bỏ khỏi giá trị nhưng còn trong `quote`. Nhiều ngày hoặc sai lịch (31/02) thì **giữ nguyên** cho người đối chiếu quyết định.
+  2. Cắt phần thừa: câu hướng dẫn in sẵn `(Chọn một trong…)`; ở trường ngắn (không phải trích yếu, nội dung, kết quả…) cắt nhãn dòng kế bên (`TEST-001 - Màu biển: Trắng` → `TEST-001`).
+  3. Bỏ hẳn (để trống, kèm cảnh báo cho cán bộ) khi không phải dữ liệu: trường ngày không có ngày nào ("Hợp đồng có hiệu lực từ ngày:"), giá trị chỉ là nhãn kết thúc bằng dấu hai chấm, hoặc chỉ là câu hướng dẫn ("Bên mua (…): (Chọn một trong các chủ thể nêu trên)"). Cả ba kiểu này lấy từ giá trị thật trong `hoso_dev`.
+  - `quote` luôn giữ nguyên văn làm dẫn chứng; giá trị đã chuẩn hóa không còn phải nằm nguyên văn trong văn bản.
+- **Kiểm tra:** `tests/test_field_values.py` (19 test, gồm đường xuyên `suggest_with`); chạy thật qua Ollama: ngày về `12/11/2026` kèm trích dẫn nguyên văn; E2E `duyet-ho-so` qua với AI thật.
+- **Còn lại:** trường kiểu `number` chưa có trong danh mục (2.624 trường đều là `text` hoặc `date`) nên chưa có quy tắc riêng; biển số, số hiệu chưa kiểm theo mẫu.
 
 ### OPS-08 · AI giả cho máy dev không có mô hình ✅ · 0,5 ngày (18/11/2026)
 - **Vì sao:** mô hình đã chuyển sang máy AI riêng; backend và frontend vẫn cần kết quả AI để làm màn đối chiếu, vùng nguồn, tách văn bản, hàng đợi.

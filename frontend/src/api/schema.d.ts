@@ -2815,13 +2815,17 @@ export interface paths {
             path?: never;
             cookie?: never;
         };
-        /** Hộp tiếp nhận theo trạng thái inbox | filed | discarded */
+        /** Hộp tiếp nhận theo trạng thái inbox | filed | discarded; lọc trên toàn hộp theo tình trạng đọc (read, nhiều giá trị cách nhau dấu phẩy), lô quét (batch), nhóm (group), loại giấy tờ (type) của gợi ý AI mới nhất */
         get: {
             parameters: {
                 query?: {
                     status?: string;
                     cursor?: string;
                     limit?: number;
+                    read?: string;
+                    batch?: string;
+                    group?: string;
+                    type?: string;
                 };
                 header?: never;
                 path?: never;
@@ -2836,6 +2840,74 @@ export interface paths {
                     };
                     content: {
                         "application/json": components["schemas"]["PageOfInboxItem"];
+                    };
+                };
+                /** @description Chưa đăng nhập hoặc phiên đã hết hạn (unauthenticated). */
+                401: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/problem+json": unknown;
+                    };
+                };
+                /** @description Phân công đang dùng không có quyền thực hiện (forbidden), hoặc thiếu X-CSRF (csrf_failed). */
+                403: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/problem+json": unknown;
+                    };
+                };
+                /** @description Gọi quá nhiều lần trong một phút; thử lại sau. */
+                429: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/problem+json": unknown;
+                    };
+                };
+            };
+        };
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/v1/intake/inbox/summary": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        /** Số PDF theo tình trạng đọc của một thẻ hộp tiếp nhận (cùng lô/nhóm/loại), cho các nút lọc */
+        get: {
+            parameters: {
+                query?: {
+                    status?: string;
+                    batch?: string;
+                    group?: string;
+                    type?: string;
+                };
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: never;
+            responses: {
+                /** @description OK */
+                200: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/json": components["schemas"]["InboxSummary"];
                     };
                 };
                 /** @description Chưa đăng nhập hoặc phiên đã hết hạn (unauthenticated). */
@@ -12302,6 +12374,7 @@ export interface components {
             completeness: components["schemas"]["Completeness"];
             procedureId?: null | string;
             procedureName?: null | string;
+            retention?: null | components["schemas"]["DossierRetention"];
         };
         DossierDocumentItem: {
             /** Format: uuid */
@@ -12365,6 +12438,16 @@ export interface components {
             code: string;
             title: string;
             status: string;
+        };
+        DossierRetention: {
+            status: string;
+            label: null | string;
+            /** Format: int16 */
+            years: null | number;
+            legalReference: null | string;
+            /** Format: date-time */
+            eligibleSince: null | string;
+            eligible: boolean;
         };
         EditFieldsRequest: {
             fields: components["schemas"]["FieldEdit"][];
@@ -12532,6 +12615,20 @@ export interface components {
             queueKind?: null | string;
             /** Format: int32 */
             etaSeconds?: null | number;
+        };
+        InboxSummary: {
+            /** Format: int32 */
+            total: number;
+            /** Format: int32 */
+            queued: number;
+            /** Format: int32 */
+            reading: number;
+            /** Format: int32 */
+            ready: number;
+            /** Format: int32 */
+            failed: number;
+            /** Format: int32 */
+            cancelled: number;
         };
         ItemIssueRequest: {
             /** Format: uuid */

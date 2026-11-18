@@ -137,8 +137,12 @@ test("Danh mục: thêm nhóm, loại giấy tờ và trường; sửa, ngừng 
   await expect(page.getByText("Đã xóa loại giấy tờ.")).toBeVisible({ timeout: 30_000 });
   await expect(main(page).getByText(typeName)).toHaveCount(0);
 
-  await main(page).getByRole("button", { name: "Xác nhận thông tin" }).click();
-  await expect(page.getByText("Đã xác nhận thông tin nhóm.")).toBeVisible({ timeout: 30_000 });
+  // Nhóm thử đã được xác nhận ở lần chạy trước thì nút này không còn (không có thao tác đưa về "đề xuất").
+  if (await main(page).getByRole("button", { name: "Xác nhận thông tin" }).count()) {
+    await main(page).getByRole("button", { name: "Xác nhận thông tin" }).click();
+    await expect(page.getByText("Đã xác nhận thông tin nhóm.")).toBeVisible({ timeout: 30_000 });
+  }
+  await expect(main(page).getByText("Đã xác nhận", { exact: true }).first()).toBeVisible();
   await main(page).getByRole("button", { name: "Ngừng dùng", exact: true }).first().click();
   await expect(page.getByText(/Đã ngừng dùng nhóm/)).toBeVisible({ timeout: 30_000 });
   await expect(main(page).getByText("Đã ngừng dùng").first()).toBeVisible();

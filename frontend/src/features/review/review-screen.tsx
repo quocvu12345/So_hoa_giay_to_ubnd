@@ -1,6 +1,8 @@
 "use client";
 
 import { useCallback, useEffect, useId, useMemo, useRef, useState } from "react";
+import type { Route } from "next";
+import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { AlertTriangle, CheckCircle2, Loader2, RotateCw, Scissors, Trash2 } from "lucide-react";
 import { discardDocument } from "@/app/actions/intake";
@@ -16,7 +18,7 @@ import { useServerAction } from "@/lib/use-server-action";
 import { ExtractNowButton } from "@/features/intake/extract-now-button";
 import { progressLabel, type LiveProgress } from "@/features/intake/inbox-live";
 import { PageViewer, type Highlight } from "./page-viewer";
-import { isValidRegion } from "./source-region";
+import { regionTarget } from "./source-region";
 import {
   buildFieldEdits,
   buildMetaPayload,
@@ -68,6 +70,7 @@ export function ReviewScreen({ data: serverData, groups, types: initialTypes, ca
   const [errors, setErrors] = useState<ReviewErrors>({});
   const [page, setPage] = useState(1);
   const [highlight, setHighlight] = useState<Highlight | null>(null);
+  const [olderScan, setOlderScan] = useState<{ label: string; fileId: string; page: number } | null>(null);
   const [restoredAt, setRestoredAt] = useState<string | null>(null);
   const [newerData, setNewerData] = useState<ReviewData | null>(null);
   const [leaveTo, setLeaveTo] = useState<string | null>(null);
@@ -229,10 +232,11 @@ export function ReviewScreen({ data: serverData, groups, types: initialTypes, ca
   }
   /** Bấm vào trường: nhảy tới trang nguồn và làm nổi vùng chứa giá trị (BE-114). Trường không có vùng thì bỏ khung cũ, không để khung của trường khác. */
   function jumpTo(field: ReviewField) {
-    const region = isValidRegion(field.sourceRegion) ? field.sourceRegion : null;
-    const target = region?.page ?? field.sourcePages[0];
-    if (target && target >= 1 && target <= pageCount) setPage(target);
+    const { region, page: target, olderScanId } = regionTarget(field, doc.file?.id);
+    if (target && target >= 1 && target <= pageCount && !olderScanId) setPage(target);
     setHighlight(region && region.page <= pageCount ? { region, label: field.label } : null);
+    // BE-126: vùng của lần đọc cũ nằm trên bản quét đã được thay: nói rõ thay vì im lặng không có khung.
+    setOlderScan(olderScanId ? { label: field.label, fileId: olderScanId, page: target ?? 1 } : null);
   }
 
   // ---- xác nhận ----
@@ -377,7 +381,15 @@ export function ReviewScreen({ data: serverData, groups, types: initialTypes, ca
       <div className="grid min-h-[60vh] lg:grid-cols-2">
         <section aria-label="Bản gốc" className="grid content-start gap-3 border-b border-line bg-soft p-4 lg:sticky lg:top-14 lg:max-h-[calc(100dvh-3.5rem)] lg:self-start lg:overflow-auto lg:border-r lg:border-b-0">
           {doc.file ? (
-            <PageViewer fileId={doc.file.id} pageCount={pageCount} page={page} onPageChange={setPage} highlight={highlight} />
+            <>
+              <PageViewer fileId={doc.file.id} pageCount={pageCount} page={page} onPageChange={setPage} highlight={highlight} />
+              {olderScan && (
+                <p role="status" className="text-xs text-muted">
+                  Vùng chứa giá trị của “{olderScan.label}” nằm trên bản quét cũ (đã được thay), nên không vẽ khung lên bản hiện hành.{" "}
+                  <Link href={`${routes.document(docId)}?trang=${olderScan.page}&tep=${olderScan.fileId}` as Route} className="text-primary hover:underline">Xem bản quét cũ</Link>
+                </p>
+              )}
+            </>
           ) : (
             <p className="text-sm text-muted">Giấy tờ này chưa có tệp để xem.</p>
           )}

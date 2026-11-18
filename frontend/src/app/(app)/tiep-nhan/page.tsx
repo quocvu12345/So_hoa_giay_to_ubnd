@@ -7,8 +7,12 @@ import { NeedsRealApi, PageBody } from "@/components/ui/blocks";
 import { NoAccess } from "@/components/ui/no-access";
 import { PageHeader } from "@/components/ui/page-header";
 import { routes } from "@/config/routes";
-import { getInbox, INBOX_TABS, inboxTab } from "@/features/intake/inbox-data";
+import { getBatches } from "@/features/intake/batch-data";
+import { getInbox, getInboxSummary, INBOX_TABS, inboxTab } from "@/features/intake/inbox-data";
+import { InboxFilterBar } from "@/features/intake/inbox-filter-bar";
+import { inboxHref, NO_FILTERS, parseInboxFilters } from "@/features/intake/inbox-filter";
 import { InboxTable } from "@/features/intake/inbox-table";
+import { getWorkGroups } from "@/features/review/review-data";
 import { pageSession } from "@/lib/auth/page-guard";
 import { can } from "@/lib/auth/session";
 import { cn } from "@/lib/cn";
@@ -20,9 +24,21 @@ export const metadata: Metadata = { title: "Tiếp nhận PDF" };
 export default async function IntakePage({ searchParams }: PageProps<"/tiep-nhan">) {
   const { session, allowed } = await pageSession("intake.upload");
   if (!allowed) return <NoAccess session={session} what="tiếp nhận PDF" />;
-  const tab = inboxTab((await searchParams)["trang-thai"]);
+  const params = await searchParams;
+  const tab = inboxTab(params["trang-thai"]);
   const canUpload = can(session, "intake.upload");
-  const page = serverEnv().mock ? null : await getInbox(tab.status);
+  const real = !serverEnv().mock;
+  // Nút lọc tình trạng đọc chỉ có ở thẻ "Chờ xếp": PDF đã xếp hay đã bỏ không còn việc đọc để theo dõi.
+  const parsed = parseInboxFilters(params);
+  const filters = tab.status === "inbox" ? parsed : { ...parsed, doc: NO_FILTERS.doc };
+  const [page, summary, batches, groups] = real
+    ? await Promise.all([
+        getInbox(tab.status, undefined, 50, filters),
+        tab.status === "inbox" ? getInboxSummary(tab.status, filters) : null,
+        getBatches().catch(() => []),
+        getWorkGroups(session.activeAssignment.organizationCode).catch(() => []),
+      ])
+    : [null, null, [], []];
 
   return (
     <>
@@ -47,7 +63,7 @@ export default async function IntakePage({ searchParams }: PageProps<"/tiep-nhan
         {INBOX_TABS.map((t) => (
           <Link
             key={t.key}
-            href={`${routes.intake}?trang-thai=${t.key}` as Route}
+            href={inboxHref(t.key, { batch: filters.batch, group: filters.group }) as Route}
             aria-current={tab.key === t.key ? "page" : undefined}
             className={cn("border-b-[3px] px-3 py-2.5 text-sm font-semibold", tab.key === t.key ? "border-primary text-primary" : "border-transparent text-muted hover:text-ink")}
           >
@@ -57,8 +73,25 @@ export default async function IntakePage({ searchParams }: PageProps<"/tiep-nhan
       </nav>
       <PageBody>
         {page ? (
-          // key theo thẻ: đổi thẻ là đổi bộ lọc, bắt đầu lại từ trang đầu và bỏ cursor cũ.
-          <InboxTable key={tab.key} status={tab.status} items={page.items} nextCursor={page.nextCursor} canExtract={can(session, ["intake.upload", "dossier.prepare"])} />
+          <div className="grid gap-3">
+            <InboxFilterBar
+              tabKey={tab.key}
+              filters={filters}
+              batches={batches.map((b) => ({ id: b.id, code: b.code, boxLabel: b.boxLabel ?? null }))}
+              groups={groups.map((g) => ({ code: g.code, title: g.title }))}
+            />
+            {/* key theo thẻ và bộ lọc: đổi một trong hai là bắt đầu lại từ trang đầu và bỏ cursor cũ. */}
+            <InboxTable
+              key={`${tab.key}|${filters.doc}|${filters.batch}|${filters.group}`}
+              status={tab.status}
+              tabKey={tab.key}
+              items={page.items}
+              nextCursor={page.nextCursor}
+              canExtract={can(session, ["intake.upload", "dossier.prepare"])}
+              filters={filters}
+              summary={summary}
+            />
+          </div>
         ) : (
           <NeedsRealApi what="Hộp tiếp nhận" />
         )}

@@ -9,8 +9,8 @@ import gc
 from contextlib import ExitStack
 from pathlib import Path
 
-from ..catalog_rules import reconcile_type
-from ..contracts import FieldSuggestion, PageResult, Suggestion
+from ..contracts import PageResult, Suggestion
+from ..regions import blocks_with_regions
 from ..queue.repository import Catalog, DocumentTypeDef, FieldDef
 
 
@@ -79,7 +79,7 @@ class PaddleVlMlxOcr:
         # Hạn thời gian do pipeline cưỡng chế bằng Watchdog (runtime/watchdog.py): quá hạn thì tiến trình thoát và job được thu hồi.
         result = next(iter(self._pipeline.predict(str(image), max_new_tokens=4096)))
         data = result.json.get("res", result.json)
-        blocks = data.get("parsing_res_list", [])
+        blocks = blocks_with_regions(data)      # AI-21: kèm vùng theo tỉ lệ trang để sau này tìm vùng nguồn của trường
         text = "\n\n".join(str(b.get("block_content", "")) for b in blocks).strip()
         return text, blocks
 
@@ -116,42 +116,8 @@ class QwenMlxClassifier:
             pass
 
     def suggest(self, pages: list[PageResult], catalog: Catalog, prompt_style: str = "production") -> Suggestion:
-        from document_ai.classify import classify
-        from document_ai.config import shortlist_enabled
+        from .llm_suggest import suggest_with
 
         if self._llm is None:
             self.load()
-
-        categories = [
-            {"code": code, "title": title, "group": "", "documentTypes": [
-                {"id": t.code, "name": t.name, "fields": [f.label for f in t.fields]}
-                for t in catalog.document_types.values() if t.work_group_code == code
-            ]}
-            for code, title in catalog.work_groups.items()
-        ]
-        raw = classify([{"page": p.page_no, "text": p.text} for p in pages], categories,
-                       restrict_types_to_group=True, llm=self._llm, prompt_style=prompt_style, shortlist=shortlist_enabled())
-        group = raw.get("category_code")
-        type_code, type_warning = reconcile_type(group, raw.get("type_id"), catalog)
-        type_def = catalog.document_types.get(type_code) if type_code else None
-        labels = {f.label: f.code for f in (type_def.fields if type_def else ())}
-        fields = tuple(
-            FieldSuggestion(labels.get(f["label"], f["label"]), f["label"], f.get("value", ""), f.get("quote", ""),
-                            tuple(f.get("source_pages", [])), bool(f.get("value")))
-            for f in raw.get("fields", [])
-            if f["label"] in labels
-        )
-        warnings = tuple(raw.get("field_extraction_warnings", [])) + ((type_warning,) if type_warning else ())
-        return Suggestion(
-            model_key=self.key,
-            work_group_code=group,
-            document_type_code=type_code,
-            document_form=raw.get("document_form", "Chưa xác định"),
-            title=raw.get("title", ""),
-            reason=raw.get("reason", ""),
-            quote=raw.get("quote", ""),
-            evidence_verified=bool(raw.get("classification_evidence_verified")),
-            mixed_documents=bool(raw.get("mixed_documents")),
-            fields=fields,
-            warnings=warnings,
-        )
+        return suggest_with(self._llm, self.key, pages, catalog, prompt_style)

@@ -6,7 +6,7 @@
   },
   "servers": [
     {
-      "url": "http://127.0.0.1:5099/"
+      "url": "http://127.0.0.1:5198/"
     }
   ],
   "paths": {
@@ -2270,7 +2270,7 @@
         "tags": [
           "Tiếp nhận"
         ],
-        "summary": "Hộp tiếp nhận theo trạng thái inbox | filed | discarded",
+        "summary": "Hộp tiếp nhận theo trạng thái inbox | filed | discarded; lọc trên toàn hộp theo tình trạng đọc (read, nhiều giá trị cách nhau dấu phẩy), lô quét (batch), nhóm (group), loại giấy tờ (type) của gợi ý AI mới nhất",
         "parameters": [
           {
             "name": "status",
@@ -2297,6 +2297,35 @@
               ],
               "format": "int32"
             }
+          },
+          {
+            "name": "read",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "batch",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          },
+          {
+            "name": "group",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "type",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
           }
         ],
         "responses": {
@@ -2306,6 +2335,75 @@
               "application/json": {
                 "schema": {
                   "$ref": "#/components/schemas/PageOfInboxItem"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Chưa đăng nhập hoặc phiên đã hết hạn (unauthenticated).",
+            "content": {
+              "application/problem+json": { }
+            }
+          },
+          "403": {
+            "description": "Phân công đang dùng không có quyền thực hiện (forbidden), hoặc thiếu X-CSRF (csrf_failed).",
+            "content": {
+              "application/problem+json": { }
+            }
+          },
+          "429": {
+            "description": "Gọi quá nhiều lần trong một phút; thử lại sau.",
+            "content": {
+              "application/problem+json": { }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/intake/inbox/summary": {
+      "get": {
+        "tags": [
+          "Tiếp nhận"
+        ],
+        "summary": "Số PDF theo tình trạng đọc của một thẻ hộp tiếp nhận (cùng lô/nhóm/loại), cho các nút lọc",
+        "parameters": [
+          {
+            "name": "status",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "batch",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          },
+          {
+            "name": "group",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "type",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/InboxSummary"
                 }
               }
             }
@@ -12416,6 +12514,16 @@
               "null",
               "string"
             ]
+          },
+          "retention": {
+            "oneOf": [
+              {
+                "type": "null"
+              },
+              {
+                "$ref": "#/components/schemas/DossierRetention"
+              }
+            ]
           }
         }
       },
@@ -12657,6 +12765,53 @@
           },
           "status": {
             "type": "string"
+          }
+        }
+      },
+      "DossierRetention": {
+        "required": [
+          "status",
+          "label",
+          "years",
+          "legalReference",
+          "eligibleSince",
+          "eligible"
+        ],
+        "type": "object",
+        "properties": {
+          "status": {
+            "type": "string"
+          },
+          "label": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "years": {
+            "pattern": "^-?(?:0|[1-9]\\d*)$",
+            "type": [
+              "null",
+              "integer",
+              "string"
+            ],
+            "format": "int16"
+          },
+          "legalReference": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "eligibleSince": {
+            "type": [
+              "null",
+              "string"
+            ],
+            "format": "date-time"
+          },
+          "eligible": {
+            "type": "boolean"
           }
         }
       },
@@ -13345,6 +13500,67 @@
             "pattern": "^-?(?:0|[1-9]\\d*)$",
             "type": [
               "null",
+              "integer",
+              "string"
+            ],
+            "format": "int32"
+          }
+        }
+      },
+      "InboxSummary": {
+        "required": [
+          "total",
+          "queued",
+          "reading",
+          "ready",
+          "failed",
+          "cancelled"
+        ],
+        "type": "object",
+        "properties": {
+          "total": {
+            "pattern": "^-?(?:0|[1-9]\\d*)$",
+            "type": [
+              "integer",
+              "string"
+            ],
+            "format": "int32"
+          },
+          "queued": {
+            "pattern": "^-?(?:0|[1-9]\\d*)$",
+            "type": [
+              "integer",
+              "string"
+            ],
+            "format": "int32"
+          },
+          "reading": {
+            "pattern": "^-?(?:0|[1-9]\\d*)$",
+            "type": [
+              "integer",
+              "string"
+            ],
+            "format": "int32"
+          },
+          "ready": {
+            "pattern": "^-?(?:0|[1-9]\\d*)$",
+            "type": [
+              "integer",
+              "string"
+            ],
+            "format": "int32"
+          },
+          "failed": {
+            "pattern": "^-?(?:0|[1-9]\\d*)$",
+            "type": [
+              "integer",
+              "string"
+            ],
+            "format": "int32"
+          },
+          "cancelled": {
+            "pattern": "^-?(?:0|[1-9]\\d*)$",
+            "type": [
               "integer",
               "string"
             ],

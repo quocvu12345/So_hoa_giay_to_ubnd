@@ -2,13 +2,15 @@
 from __future__ import annotations
 
 import os
+import re
 import socket
 from dataclasses import dataclass
 from pathlib import Path
 
 # mac-mlx: Mac Apple Silicon (MLX). linux-cuda, cpu: máy chủ Linux (task AI-11).
+# ollama: mô hình chạy ở máy khác qua Ollama (ví dụ Windows có GPU, nối bằng Tailscale); worker vẫn ở cạnh CSDL và kho tệp.
 # fake: mô hình giả, cho đội backend/frontend chạy đủ luồng khi không có máy AI.
-PROFILES = ("mac-mlx", "linux-cuda", "cpu", "fake")
+PROFILES = ("mac-mlx", "linux-cuda", "cpu", "ollama", "fake")
 
 
 class SettingsError(ValueError):
@@ -40,6 +42,12 @@ class Settings:
     fake_classify_seconds: float = 0.0       # chờ ở bước phân loại giả
     fake_fail_rate: float = 0.0              # tỉ lệ trang OCR giả bị lỗi (ngẫu nhiên mỗi lần, nên "đọc lại trang" có thể thành công)
     fake_mixed_from_pages: int = 0           # PDF từ chừng này trang trở lên luôn báo gói nhiều giấy tờ; 0 = chỉ báo khi các trang ghi tên loại khác nhau
+    # Chỉ dùng với HOSO_AI_PROFILE=ollama (engines/ollama.py). Tên mô hình là tên đã tạo trên máy Ollama (ollama create).
+    ollama_url: str | None = None            # ví dụ http://100.78.102.53:11434 (địa chỉ Tailscale của máy AI)
+    ollama_ocr_model: str = "hoso-paddleocr-vl:1.6-q8_0"
+    ollama_classifier_model: str = "hoso-ifstruct:q8_0"
+    ollama_ocr_concurrency: int = 1          # số vùng cắt gửi cùng lúc; tăng khi Ollama đặt OLLAMA_NUM_PARALLEL > 1
+    ollama_classifier_source: str | None = None   # "repo@commit" mô hình phân loại trên Ollama được chuyển từ đó (người vận hành tự khai), để API so với ai_models
 
     @classmethod
     def from_env(cls, env: dict[str, str] | None = None) -> "Settings":
@@ -84,6 +92,16 @@ class Settings:
         if profile == "fake" and env.get("HOSO_ENV", "development") == "production":
             raise SettingsError("HOSO_AI_PROFILE=fake không được dùng khi HOSO_ENV=production (kết quả giả sẽ lẫn vào hồ sơ thật).")
 
+        ollama_url = (env.get("HOSO_AI_OLLAMA_URL") or "").strip() or None
+        if ollama_url and not ollama_url.startswith(("http://", "https://")):
+            raise SettingsError(f"HOSO_AI_OLLAMA_URL phải bắt đầu bằng http:// hoặc https://, đang là {ollama_url!r}.")
+        if profile == "ollama" and not ollama_url:
+            raise SettingsError("HOSO_AI_PROFILE=ollama cần HOSO_AI_OLLAMA_URL, ví dụ http://100.78.102.53:11434 (máy AI qua Tailscale).")
+
+        source = (env.get("HOSO_AI_OLLAMA_CLASSIFIER_SOURCE") or "").strip() or None
+        if source and not re.fullmatch(r"[\w.-]+/[\w.-]+@[0-9a-f]{7,40}", source):
+            raise SettingsError(f"HOSO_AI_OLLAMA_CLASSIFIER_SOURCE phải có dạng repo@commit, ví dụ ChetanDhembreAI/Qwen3-4B-Instruct-2507-ifstruct@00161de; đang là {source!r}.")
+
         port = env.get("HOSO_AI_HTTP_PORT", "9108")
         return cls(
             profile=profile,
@@ -110,6 +128,11 @@ class Settings:
             fake_classify_seconds=number("HOSO_AI_FAKE_CLASSIFY_SECONDS", 0, 0),
             fake_fail_rate=fail_rate(),
             fake_mixed_from_pages=int(number("HOSO_AI_FAKE_MIXED_FROM_PAGES", 0, 0)),
+            ollama_url=ollama_url,
+            ollama_ocr_model=env.get("HOSO_AI_OLLAMA_OCR_MODEL") or "hoso-paddleocr-vl:1.6-q8_0",
+            ollama_classifier_model=env.get("HOSO_AI_OLLAMA_CLASSIFIER_MODEL") or "hoso-ifstruct:q8_0",
+            ollama_ocr_concurrency=int(number("HOSO_AI_OLLAMA_OCR_CONCURRENCY", 1, 1)),
+            ollama_classifier_source=source,
         )
 
     def require_database(self) -> str:

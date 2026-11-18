@@ -2,6 +2,7 @@
 
 import { revalidatePath } from "next/cache";
 import { getInbox, type InboxPage, type InboxStatus } from "@/features/intake/inbox-data";
+import { NO_FILTERS, parseInboxFilters, type InboxFilters } from "@/features/intake/inbox-filter";
 import { type ActionResult } from "@/lib/action-result";
 import { ok, serverApi } from "@/lib/api/server";
 import { runAction } from "@/lib/actions";
@@ -10,10 +11,12 @@ const UUID = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
 const STATUSES: readonly InboxStatus[] = ["inbox", "filed", "discarded"];
 
 /** "Tải thêm" của hộp tiếp nhận: `cursor` lấy từ `nextCursor` của lần trước, đổi bộ lọc thì bắt đầu lại không cursor. */
-export async function loadMoreInbox(status: InboxStatus, cursor: string): Promise<ActionResult<InboxPage>> {
+export async function loadMoreInbox(status: InboxStatus, cursor: string, filters: InboxFilters = NO_FILTERS): Promise<ActionResult<InboxPage>> {
   return runAction("inbox_more", async () => {
     if (!STATUSES.includes(status)) throw new TypeError("Trạng thái hộp tiếp nhận không hợp lệ.");
-    return getInbox(status, cursor);
+    // Bộ lọc đến từ trình duyệt: đi qua bộ đọc để chỉ còn giá trị đúng dạng (không chuyển nguyên văn lên API).
+    const safe = parseInboxFilters({ doc: filters.doc, lo: filters.batch ?? undefined, nhom: filters.group ?? undefined });
+    return getInbox(status, cursor, 50, safe);
   });
 }
 

@@ -14,8 +14,9 @@ from pathlib import Path
 
 from . import logging as log
 from .contracts import Job, JobOutcome, JobStatus, JobType, PageResult, Progress, Stage
-from .engines.base import Engines
+from .engines.base import EngineUnavailable, Engines
 from .queue.repository import JobCancelled, JobLost, JobRepository
+from .regions import locate_regions
 from .runtime.scheduler import ModelScheduler
 from .runtime.watchdog import Watchdog
 from .settings import Settings
@@ -97,6 +98,8 @@ class DocumentPipeline:
                             page = PageResult(info.page_no, "ocr", text, info.native_text, blocks, status, elapsed)
                             if status == "empty":
                                 warnings.append(f"Trang {info.page_no}: không đọc được chữ; cần xem bản gốc.")
+                        except EngineUnavailable:   # máy chạy mô hình không trả lời: không phải lỗi của trang, cả job đợi
+                            raise
                         except Exception as error:  # một trang lỗi không dừng cả job
                             elapsed = round(time.monotonic() - page_started, 2)
                             page = PageResult(info.page_no, "failed", info.native_text, info.native_text, [], "failed",
@@ -129,11 +132,12 @@ class DocumentPipeline:
                         try:
                             with self.watchdog.guard(self.settings.page_timeout_seconds * 2, "classify"):
                                 suggestion = classifier.suggest(readable, self.repo.catalog(), prompt_style=prompt_style)
+                            suggestion = self._with_regions(suggestion, completed, pdf)
                             self.repo.save_suggestion(job, suggestion)
                             warnings.extend(suggestion.warnings)
                             classified = True
                             classify_seconds = round(time.monotonic() - classify_started, 2)
-                        except (JobCancelled, JobLost):
+                        except (JobCancelled, JobLost, EngineUnavailable):
                             raise
                         except Exception as error:
                             warnings.append("Chưa gợi ý được loại hồ sơ; cán bộ chọn tay.")
@@ -147,6 +151,15 @@ class DocumentPipeline:
                               self._model_version(pages_ocr > 0 or any(p.method == "ocr" for p in completed.values()), classified, prompt_style), classify_seconds)
         finally:
             shutil.rmtree(workdir, ignore_errors=True)
+
+    def _with_regions(self, suggestion, pages: dict[int, PageResult], pdf: Path):
+        """AI-21: vùng nguồn cho trường engine chưa tự điền. Vùng chỉ phục vụ làm nổi trên bản gốc nên lỗi ở đây không được làm mất gợi ý."""
+        try:
+            with self.watchdog.guard(self.settings.page_timeout_seconds, "regions"):
+                return locate_regions(suggestion, pages, pdf, self.engines.reader)
+        except Exception as error:
+            log.warning("regions_failed", error_type=type(error).__name__)
+            return suggestion
 
     def _yield_if_needed(self, job: Job) -> None:
         if job.priority < self.settings.background_from:
@@ -162,6 +175,8 @@ class DocumentPipeline:
             parts.append(f"ocr={getattr(self.engines.ocr, 'version', self.engines.ocr.key)}")
         if used_classifier:
             parts.append(f"classifier={getattr(self.engines.classifier, 'version', self.engines.classifier.key)}/{prompt_style}")
+            if deployment := getattr(self.engines.classifier, "deployment", None):
+                parts.append(f"classifier-via={deployment}")      # nơi thật sự chạy mô hình (digest trên Ollama) khi `version` là nguồn do người vận hành khai
         return " ".join(parts)
 
     @staticmethod

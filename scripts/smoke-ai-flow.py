@@ -145,16 +145,19 @@ def main() -> int:
     parser.add_argument("--role", default="employee", help="vai trò của phân công dùng để thử")
     parser.add_argument("--pdf", action="append", help="id mẫu trong data/filled-samples/pdf (lặp lại để chọn nhiều); mặc định 3 mẫu")
     parser.add_argument("--timeout", type=int, default=420, help="giây chờ tối đa cho cả ba giấy tờ đọc xong")
+    parser.add_argument("--keep", action="store_true", help="không dọn: giữ các giấy tờ đã đọc xong trong hộp tiếp nhận (cho E2E vung-nguon.spec.ts cần giấy tờ có vùng nguồn)")
     parser.add_argument("--file-to-dossier", action="store_true", help="thêm bước xác nhận phân loại, sửa trường và xếp vào hồ sơ mới")
     parser.add_argument("--expect-model", default=None, help="tên mô hình phải có trong ocr_jobs.model_version (rỗng để bỏ qua); "
-                        "mặc định IFStruct, hoặc fake-classifier khi worker chạy AI giả")
+                        "mặc định IFStruct (bản MLX, hoặc hoso-ifstruct khi worker gọi Ollama ở máy AI khác), fake-classifier khi worker chạy AI giả")
     parser.add_argument("--worker", default="http://127.0.0.1:9108/health", help="địa chỉ /health của worker, để biết worker dùng AI thật hay giả")
     parser.add_argument("--db", default="hoso_dev", help="CSDL để kiểm model_version bằng psql (rỗng để bỏ qua)")
     args = parser.parse_args()
     samples = args.pdf or DEFAULT_PDFS
-    fake = worker_profile(args.worker) == "fake"
+    profile = worker_profile(args.worker)
+    fake = profile == "fake"
     if args.expect_model is None:
-        args.expect_model = "fake-classifier" if fake else "Qwen3-4B-Instruct-2507-ifstruct-4bit"
+        # ollama: tên mô hình là tên tạo trên máy Ollama (HOSO_AI_OLLAMA_CLASSIFIER_MODEL, mặc định hoso-ifstruct:q8_0).
+        args.expect_model = {"fake": "fake-classifier", "ollama": "classifier=hoso-ifstruct"}.get(profile, "Qwen3-4B-Instruct-2507-ifstruct-4bit")
     if fake:
         print("Worker đang dùng AI GIẢ (HOSO_AI_PROFILE=fake): kiểm luồng, không kiểm độ đúng của loại giấy tờ.")
     api = Api(args.api)
@@ -287,6 +290,8 @@ def main() -> int:
             check(status == 200, "xếp giấy tờ vào hồ sơ", f"HTTP {status}")
             status, detail = api.get(f"/api/v1/dossiers/{dossier['id']}")
             check(status == 200, f"mở hồ sơ {dossier.get('code')}", f"HTTP {status}")
+    elif args.keep:
+        print("\n== 7. Giữ lại: các giấy tờ đã đọc xong nằm trong hộp tiếp nhận (--keep)")
     else:
         step("7. Dọn: bỏ các giấy tờ thử khỏi hộp tiếp nhận")
         for item in uploads:

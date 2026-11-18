@@ -26,6 +26,21 @@ public sealed class ModelMismatchTests
     }
 
     [Fact]
+    public void Ban_gguf_tren_ollama_khop_khi_nguon_duoc_khai_bao()
+    {
+        // Worker khai nguồn (HOSO_AI_OLLAMA_CLASSIFIER_SOURCE) nên ghi tên repo nguồn + hậu tố lượng tử hóa GGUF + commit nguồn.
+        Detect("ocr=hoso-paddleocr-vl:1.6-q8_0@ecc8315 classifier=Qwen3-4B-Instruct-2507-ifstruct-q8_0@00161de/short classifier-via=hoso-ifstruct:q8_0@a6ac33e", IfStruct).ShouldBeNull();
+        Detect("classifier=Qwen3-4B-Instruct-2507-ifstruct-q4_k_m@00161de/short", IfStruct).ShouldBeNull();
+        Detect("classifier=Qwen3-4B-Instruct-2507-ifstruct-q8_0@1234567/short", IfStruct).ShouldNotBeNull("sai commit nguồn vẫn phải báo lệch");
+    }
+
+    [Fact]
+    public void The_ollama_chua_khai_nguon_thi_bao_lech_kem_cach_sua()
+    {
+        Detect("classifier=hoso-ifstruct:q8_0@a6ac33e/short", IfStruct).ShouldNotBeNull().ShouldContain("HOSO_AI_OLLAMA_CLASSIFIER_SOURCE");
+    }
+
+    [Fact]
     public void Repo_mlx_community_van_so_dung_ten_thu_muc()
     {
         var mlx = IfStruct with { Repo = "mlx-community/Qwen3-1.7B-4bit", Revision = "3b1b1768f8f8cf8351c712464f906e86c2b8269e" };

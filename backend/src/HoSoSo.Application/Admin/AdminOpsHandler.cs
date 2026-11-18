@@ -103,7 +103,7 @@ public sealed partial class AdminOpsHandler(IHoSoDb db, ICurrentUser user, ICloc
     /// So mô hình phân loại của job gần nhất với dòng <c>classifier</c> trong <c>ai_models</c>. Lệch thường do đổi <c>HOSO_AI_CLASSIFIER_MODEL</c>
     /// ở worker mà chưa ghi nhận bằng migration (hoặc ngược lại). Chỉ xét job gần nhất: các job cũ hơn là lịch sử.
     /// </summary>
-    private static readonly Regex QuantizationSuffix = new("-(?:[2-8]bit|bf16|fp16)$", RegexOptions.IgnoreCase | RegexOptions.CultureInvariant);
+    private static readonly Regex QuantizationSuffix = new("-(?:[2-8]bit|bf16|fp16|q[2-8](?:_[0-9a-z]+)+)$", RegexOptions.IgnoreCase | RegexOptions.CultureInvariant);
 
     internal static string? DetectModelMismatch(IReadOnlyList<RunningModel> running, IReadOnlyList<ModelInfo> models)
     {
@@ -121,7 +121,12 @@ public sealed partial class AdminOpsHandler(IHoSoDb db, ICurrentUser user, ICloc
                        || string.Equals(QuantizationSuffix.Replace(name, ""), recordedName, StringComparison.OrdinalIgnoreCase);
         var sameRevision = revision.Length == 0 || recorded.Revision.StartsWith(revision, StringComparison.OrdinalIgnoreCase);
         if (sameName && sameRevision) return null;
-        return $"Worker đang chạy {withoutStyle} nhưng bảng ai_models ghi {recordedName}@{recorded.Revision[..Math.Min(7, recorded.Revision.Length)]}. " +
+        var recordedAs = $"{recordedName}@{recorded.Revision[..Math.Min(7, recorded.Revision.Length)]}";
+        // Thẻ Ollama (hoso-ifstruct:q8_0) là tên do người vận hành đặt trên máy AI, không cho biết commit nguồn nên không so được với repo.
+        if (name.Contains(':'))
+            return $"Worker đang dùng mô hình Ollama {withoutStyle} nhưng bảng ai_models ghi {recordedAs}; tên trên Ollama không cho biết commit nguồn. " +
+                   "Nếu mô hình đó được chuyển từ đúng bản đã ghi, khai báo HOSO_AI_OLLAMA_CLASSIFIER_SOURCE ở worker.";
+        return $"Worker đang chạy {withoutStyle} nhưng bảng ai_models ghi {recordedAs}. " +
                "Ghi nhận mô hình mới bằng migration, hoặc đặt lại HOSO_AI_CLASSIFIER_MODEL của worker cho khớp.";
     }
 

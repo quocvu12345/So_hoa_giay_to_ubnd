@@ -23,6 +23,16 @@ public sealed record InboxItem(
     int? QueuePosition, string? Progress, string? Suggestion, int AttentionCount, Guid? JobId, string? Error, string IntakeStatus,
     string? QueueKind = null, int? EtaSeconds = null);
 
+/// <summary>
+/// BE-129. Bộ lọc hộp tiếp nhận, áp trên TOÀN BỘ hộp (không chỉ trang đã tải). <c>Read</c>: một hoặc nhiều tình trạng đọc cách nhau dấu phẩy
+/// (queued | reading | ready | failed | cancelled, trùng <see cref="InboxItem.Stage"/>); <c>Batch</c>: lô quét của tệp; <c>Group</c>, <c>Type</c>: nhóm hồ sơ và loại giấy tờ
+/// của gợi ý AI mới nhất.
+/// </summary>
+public sealed record InboxFilter(string? Read = null, Guid? Batch = null, string? Group = null, string? Type = null);
+
+/// <summary>BE-129. Số PDF theo tình trạng đọc của một thẻ hộp tiếp nhận, áp cùng lô/nhóm/loại nhưng KHÔNG áp <c>Read</c> (để các nút lọc hiện đúng số).</summary>
+public sealed record InboxSummary(int Total, int Queued, int Reading, int Ready, int Failed, int Cancelled);
+
 public sealed record JobDto(
     Guid Id, Guid DocumentId, Guid FileId, string JobType, string Status, string? Stage, int ProcessedPages, int? PageCount,
     int Attempt, int? QueuePosition, string? Error, IReadOnlyList<string> Warnings,

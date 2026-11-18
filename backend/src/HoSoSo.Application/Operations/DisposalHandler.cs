@@ -234,7 +234,7 @@ public sealed class DisposalHandler(IHoSoDb db, IScopeFilter scope, ICurrentUser
     }
 
     /// <summary>Quy tắc đã gán cho hồ sơ; nếu chưa gán thì quy tắc đã xác nhận duy nhất của nhóm công việc (không đoán khi có nhiều quy tắc).</summary>
-    private static RetentionRule? Resolve(Dossier d, IReadOnlyList<RetentionRule> confirmed)
+    internal static RetentionRule? Resolve(Dossier d, IReadOnlyList<RetentionRule> confirmed)
     {
         if (d.RetentionRuleId is { } assigned) return confirmed.FirstOrDefault(r => r.Id == assigned);
         var byGroup = confirmed.Where(r => r.WorkGroupCode == d.WorkGroupCode && r.DocumentTypeCode is null).ToList();

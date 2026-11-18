@@ -16,6 +16,21 @@ Nhóm thực hiện: **DB** cơ sở dữ liệu · **BE** backend .NET · **AI*
 - [ ] Thông báo lỗi nói rõ sai gì và cách sửa, bằng tiếng Việt.
 - [ ] Không log nội dung giấy tờ, số định danh cá nhân.
 
+## Trạng thái thực tế (đối chiếu với mã, 18/11/2026 tối)
+
+Các bảng bên dưới là **kế hoạch**, không có cột trạng thái. Trạng thái chi tiết của BE, FE, AI từ AI-12 trở đi nằm ở `tasks/backend.md`, `tasks/frontend.md`, `tasks/ai.md`. Phần còn lại (đã đối chiếu với mã và tài liệu, không phải do nghiệm thu):
+
+| Nhóm | Đã làm (có bằng chứng) | Làm dở | Chưa làm |
+|---|---|---|---|
+| **P0** môi trường | P0-01, P0-02 (git, `.gitignore`), P0-03 một phần (`docker-compose.dev.yml` có, **Docker không chạy trên máy dev nên chưa thử**) | P0-04 (compose trỏ `infra/keycloak` nhưng thư mục chưa có) | P0-05 (`CONTRIBUTING.md`), P0-06 (không có `.github`) |
+| **P1** CSDL | DB-01…DB-19: migration 000–040 chạy trên CSDL mới và CSDL cũ, có test; DB-19 đã đo 20.000 hồ sơ (mọi ca 2–8 ms) | | |
+| **P4** AI | AI-02…AI-08, AI-12…AI-15, AI-20 (một phần), AI-21, AI-22, AI-23 | AI-01 (còn `TODO(AI-01)`), AI-09 (có script dịch vụ, chưa cài thật), AI-10 (chưa dùng `v_ai_accuracy`), AI-12 và AI-20 (chưa đo giấy tờ thật) | AI-11 (phần lớn thay bằng Ollama), AI-16, AI-17, AI-18 (không còn cần với hồ sơ `ollama`), AI-19 (bản dev có `supervise.sh`; dịch vụ launchd/systemd chưa cài thật) |
+| **P7** chuyển đổi | | | MG-01…MG-04 (`scan-inbox.html` vẫn dùng scan-bridge) |
+| **P8** kiểm thử, vận hành | QA-07, OPS-04 (diễn tập khôi phục có biên bản), OPS-07, OPS-08 | QA-01 (có test quyền, chưa có báo cáo ma trận), QA-02 (có E2E 27 ca, chưa chạy trong CI), QA-05 (axe mới ở một phần), OPS-03 (chưa sao lưu WAL), OPS-05 (mới có profile Loki trong compose) | QA-03, QA-04, QA-06, OPS-01, OPS-02, OPS-06 |
+| **P9** bảo mật, log | SEC-02, SEC-05 (ClamAV mới thử với máy chủ `clamd` giả), SEC-07, LOG-03, LOG-06, LOG-08 | LOG-01 (profile Loki trong compose, chưa chạy) | SEC-01, SEC-03, SEC-04, SEC-06, SEC-08, LOG-02, LOG-04, LOG-05 (`audit_events` chưa có `correlation_id`), LOG-07 |
+
+Chưa kiểm chứng với hạ tầng thật: Keycloak, MinIO/S3 thật, ClamAV thật, runtime .NET 10 thật (máy dev chỉ có runtime 11), tải nhiều người dùng. Chi tiết ở đầu `tasks/backend.md`.
+
 ## 1. Mốc tiến độ
 
 Ước lượng cho đội 2 BE, 1–2 FE, 1 AI/DB bán thời gian. Khớp khung 10–14 tuần trong đề xuất.
@@ -191,6 +206,9 @@ gantt
 | BE-99 | Hàng đợi AI theo mức và ước tính thời gian chờ từ số liệu giây/trang thật | Không có số liệu thì không trả ước tính | BE-97, BE-88 | 0,5 | BE |
 | BE-100 | Trang vận hành cho biết mô hình đang chạy thật (từ `ocr_jobs.model_version`), cảnh báo khi khác `ai_models` | Lệch mô hình thì có cảnh báo `model_mismatch` | BE-99, AI-13 | 0,5 | BE |
 | BE-110…BE-119 | API còn thiếu cho các màn frontend (người có thể giao, lọc/sắp xếp/CSV hồ sơ, phân trang tra cứu, phiên bản tệp và nhật ký in, vùng nguồn, tổng hợp lãnh đạo, tên người xác nhận, tra theo Mã lỗi, phân công từ cookie, trường chỉ đọc cho người chỉ có quyền xem) | Xem `docs/tasks/backend.md` mục P7 | BE-60…BE-99 | 6 | BE |
+| BE-128 | "Trích xuất ngay" vào nhật ký truy cập (`access_events.action = ai_extract`, migration 040) ✅ (18/11/2026) | Giấy tờ được nâng hoặc tạo việc có một dòng nhật ký; giấy tờ không đổi thì không | BE-98 | 0,5 | BE |
+| BE-129 | Hộp tiếp nhận lọc trên toàn hộp theo tình trạng đọc, lô quét, nhóm, loại; `GET /intake/inbox/summary` ✅ (18/11/2026) | Trang sau không lặp, không thiếu khi đang lọc; số đếm đúng | BE-42, BE-97 | 1 | BE |
+| BE-130 | Thời hạn bảo quản trong chi tiết hồ sơ (`retention`), dùng chung luật chọn quy tắc với đề nghị hủy ✅ (18/11/2026) | Đề xuất chưa xác nhận không có hiệu lực | BE-35, BE-87 | 0,5 | BE |
 
 ## P4 · Worker AI (Python) nối vào CSDL
 
@@ -216,6 +234,9 @@ gantt
 | AI-18 | Worker đọc kho tệp S3/MinIO (khi máy AI tách khỏi máy API), khóa chỉ đọc, kiểm SHA-256 | Test với moto; không để lại tệp tạm | AI-03 | 1 | AI |
 | AI-19 | Chạy worker thật như dịch vụ (LaunchAgent) trên máy AI với `hoso_dev`, theo dõi một ngày | Khởi động lại máy thì worker tự chạy; dừng giữa chừng thì job chạy tiếp từ trang còn thiếu | OPS-07, AI-14 | 0,5 | AI |
 | AI-20 | Giúp Qwen3-1.7B chọn đúng nhóm và loại: thu hẹp ứng viên bằng từ khóa tiêu đề, tin tiêu đề in hoa khi chắc chắn, phát hiện gói quét nhiều giấy tờ; đo trên giấy tờ thật | Trên giấy tờ thật đã có nhãn: đúng loại không thấp hơn bản 4B quá mức chấp nhận được (đặt ngưỡng sau khi có số đo); gói nhiều giấy tờ được báo cần tách | AI-14, AI-12 | 1 | AI |
+| AI-21 | Vùng nguồn và độ tin cậy thật cho từng trường: khối bố cục OCR, ô bảng, khung chữ PDFium; `confidence` để trống khi chưa có nguồn đáng tin ✅ (18/11/2026) | Vẽ vùng lên ảnh trang thấy đúng dòng giá trị; JSON đúng docs/03 | AI-20, BE-114 | 1 | AI |
+| AI-22 | Hồ sơ `ollama`: mô hình chạy ở máy AI khác (Windows, Tailscale) qua Ollama, worker vẫn cạnh API; máy AI tắt thì job về hàng đợi không tính lần thử ✅ (18/11/2026) | `smoke-ai-flow.py` và `smoke-ai-edge.py` qua với mô hình trên máy Windows | AI-14, QA-07 | 1 | AI |
+| AI-23 | Chuẩn hóa giá trị trích theo kiểu trường: ngày chữ về `dd/mm/yyyy`, cắt nhãn và câu hướng dẫn thừa, bỏ giá trị không phải dữ liệu ✅ (18/11/2026) | E2E `duyet-ho-so` qua với AI thật; trích dẫn vẫn nguyên văn | AI-21 | 0,5 | AI |
 
 ## P5 · Frontend nền tảng (Next.js 16, render phía máy chủ)
 
@@ -327,7 +348,7 @@ gantt
 | P1 Cơ sở dữ liệu | 19 | 21 |
 | P2 Backend nền tảng | 23 | 24,5 |
 | P3 Backend nghiệp vụ | 64 | 69,5 |
-| P4 Worker AI | 20 | 22,5 |
+| P4 Worker AI | 23 | 25 |
 | P5 Frontend nền tảng | 12 | 13,5 |
 | P6 Màn hình nghiệp vụ | 29 | 51,5 |
 | P7 Chuyển đổi | 4 | 3,5 |
@@ -349,4 +370,4 @@ gantt
    - bước 2: AI-19, QA-07 (thông luồng phía máy chủ);
    - bước 3: FE-05, FE-06, FE-08, FE-21, FE-23, FE-24 (thông luồng trên giao diện): **đã làm 17/11/2026**, còn đăng nhập Keycloak thật (FE-05);
    - bước 4: BE-100, AI-12 trên giấy tờ thật;
-   - khi tách máy AI hoặc có phần cứng mới: AI-18, AI-17, AI-11.
+   - khi tách máy AI hoặc có phần cứng mới: AI-17, AI-11; AI-18 chỉ cần khi chạy **worker** ở máy khác API (từ 18/11/2026 máy AI Windows chạy qua Ollama, worker vẫn cạnh API: AI-22).

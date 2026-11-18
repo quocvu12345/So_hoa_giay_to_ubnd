@@ -124,6 +124,13 @@ class ClassifierModel:
             [{"role": "system", "content": system}, {"role": "user", "content": prompt}],
             add_generation_prompt=True, tokenize=False, enable_thinking=False)
 
+    def complete(self, system, prompt, max_tokens):
+        """Sinh câu trả lời, nhiệt độ 0. Bản gọi mô hình qua mạng (hoso_ai.engines.ollama) cài cùng phương thức này."""
+        from mlx_lm import generate
+        from mlx_lm.sample_utils import make_sampler
+        return generate(self.model, self.tokenizer, prompt=self.render(system, prompt), max_tokens=max_tokens,
+                        sampler=make_sampler(temp=0), verbose=False)
+
 
 def load_classifier(name=None):
     from mlx_lm import load
@@ -134,13 +141,11 @@ def load_classifier(name=None):
 
 def classify(pages, categories=None, *, restrict_types_to_group=False, llm=None, prompt_style="production", shortlist=False):
     """prompt_style: production (chính xác hơn, chậm) hoặc short (nhanh khoảng 3 lần, sai nhiều hơn một chút; chỉ đổi bước trích trường).
-    shortlist: chỉ đưa cho mô hình vài nhóm và loại khớp tiêu đề nhất thay vì cả danh mục (AI-20, cho mô hình nhỏ); mô hình vẫn là bên quyết định."""
+    shortlist: chỉ đưa cho mô hình vài nhóm và loại khớp tiêu đề nhất thay vì cả danh mục (AI-20, cho mô hình nhỏ); mô hình vẫn là bên quyết định.
+    llm: mô hình đã nạp, có .label và .complete(system, prompt, max_tokens); None thì nạp bản MLX theo cấu hình."""
     if prompt_style not in PROMPT_STYLES:
         raise ValueError(f"prompt_style phải là một trong {PROMPT_STYLES}, nhận {prompt_style!r}")
-    from mlx_lm import generate
-    from mlx_lm.sample_utils import make_sampler
     llm = llm or load_classifier()
-    model, tokenizer = llm.model, llm.tokenizer
     text, excerpted = classification_context(pages)
     if not text.strip():
         raise ValueError("Không có nội dung đọc được để phân loại.")
@@ -167,10 +172,7 @@ def classify(pages, categories=None, *, restrict_types_to_group=False, llm=None,
     )
 
     def ask(prompt, max_tokens=1800, system_prompt=None):
-        rendered = llm.render(system_prompt or system, prompt)
-        answer = generate(model, tokenizer, prompt=rendered, max_tokens=max_tokens,
-                          sampler=make_sampler(temp=0), verbose=False)
-        return parse_json(answer)
+        return parse_json(llm.complete(system_prompt or system, prompt, max_tokens))
 
     raw = ask('Chọn category_code từ CATALOG, hoặc null nếu không phù hợp. Trích document_form và title. '
               'Trả {"category_code": "...", "document_form": "...", "title": "...", "reason": "...", '

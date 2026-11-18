@@ -10,7 +10,7 @@ from typing import Callable
 
 from . import logging as log
 from .contracts import Job, Progress, Stage
-from .engines.base import Engines
+from .engines.base import EngineUnavailable, Engines
 from .pipeline import DocumentPipeline, JobTimeout, JobYielded, WorkerStopping
 from .queue.repository import JobCancelled, JobLost, JobRepository
 from .runtime.scheduler import ModelScheduler
@@ -26,7 +26,8 @@ class WorkerState:
     started_at: float = field(default_factory=time.time)
     last_loop_at: float = field(default_factory=time.time)
     current_job: str | None = None
-    jobs: dict[str, int] = field(default_factory=lambda: {"completed": 0, "failed": 0, "retried": 0, "cancelled": 0, "released": 0, "yielded": 0})
+    jobs: dict[str, int] = field(default_factory=lambda: {"completed": 0, "failed": 0, "retried": 0, "cancelled": 0, "released": 0, "yielded": 0,
+                                                          "engine_unavailable": 0})
     pages: dict[str, int] = field(default_factory=lambda: {"pdf_text": 0, "ocr": 0, "failed": 0})
     ocr_seconds_total: float = 0.0
 
@@ -47,6 +48,9 @@ class Worker:
         # Vòng lặp rảnh phải quay ít nhất mỗi poll_seconds; quá lâu hơn nhiều là kẹt (xem stuck_reason). Tắt máy êm không được quá 180 giây.
         self.idle_stuck_seconds = max(120.0, settings.poll_seconds * 8)
         self.shutdown_grace_seconds = 180.0
+        # Máy chạy mô hình (Ollama ở máy khác) không trả lời: trả job về hàng đợi rồi ngừng lấy việc chừng này giây.
+        self.engine_retry_seconds = max(30.0, settings.poll_seconds * 2)
+        self._engine_retry_at = 0.0
         self._stop_seen_at: float | None = None
         self.windows = BackgroundWindows.parse(settings.background_windows)
         self.now = now
@@ -92,7 +96,9 @@ class Worker:
             log.info("worker_stopped", worker=self.settings.worker_id)
 
     def run_once(self) -> bool:
-        """Xử lý tối đa một job. Trả False khi hàng đợi trống."""
+        """Xử lý tối đa một job. Trả False khi hàng đợi trống hoặc đang đợi máy chạy mô hình trả lời lại."""
+        if time.monotonic() < self._engine_retry_at:
+            return False
         # Ngoài khung giờ khay nền chỉ lấy việc có người đang chờ; việc nền để lại cho lúc được phép.
         background_open = self.windows.is_open(self.now())
         job = self.repo.claim(self.settings.worker_id, exclude_priority_from=None if background_open else self.settings.background_from)
@@ -133,6 +139,15 @@ class Worker:
                 self.repo.yield_job(job, self.settings.worker_id)
                 self.state.jobs["yielded"] += 1
                 log.info("job_yielded", **fields, for_job_id=yielded.for_job_id, priority=job.priority)
+            except (JobCancelled, JobLost):
+                log.info("job_no_longer_owned", **fields)
+        except EngineUnavailable as error:
+            # Không tính là một lần thử (như nhường chỗ): máy AI tắt cả buổi thì job vẫn đợi trong hàng, không thành "lỗi" sau 3 lần.
+            self._engine_retry_at = time.monotonic() + self.engine_retry_seconds
+            try:
+                self.repo.yield_job(job, self.settings.worker_id)
+                self.state.jobs["engine_unavailable"] += 1
+                log.warning("engine_unavailable", **fields, error=str(error), retry_in_seconds=self.engine_retry_seconds)
             except (JobCancelled, JobLost):
                 log.info("job_no_longer_owned", **fields)
         except WorkerStopping:

@@ -2,7 +2,7 @@
 
 import { revalidatePath } from "next/cache";
 import { findDossiers, type DossierListItem } from "@/features/dossier/dossier-data";
-import { getInbox } from "@/features/intake/inbox-data";
+import { getInbox, READY_ONLY } from "@/features/intake/inbox-data";
 import type { ActionResult } from "@/lib/action-result";
 import { ok, serverApi } from "@/lib/api/server";
 import { runAction } from "@/lib/actions";
@@ -55,8 +55,8 @@ export async function fileDocument(input: { documentId: string; dossierId: strin
     if (input.openNext) {
       // Việc tìm PDF kế tiếp chỉ để tiện; lỗi ở đây không được làm hỏng việc đã xếp xong.
       try {
-        const inbox = await getInbox("inbox", undefined, 200);
-        nextDocumentId = inbox.items.find((i) => i.stage === "ready" && i.documentId !== input.documentId)?.documentId ?? null;
+        const inbox = await getInbox("inbox", undefined, 50, READY_ONLY);
+        nextDocumentId = inbox.items.find((i) => i.documentId !== input.documentId)?.documentId ?? null;
       } catch {
         nextDocumentId = null;
       }

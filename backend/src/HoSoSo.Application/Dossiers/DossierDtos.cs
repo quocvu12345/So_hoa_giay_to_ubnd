@@ -16,7 +16,14 @@ public sealed record DossierDetail(
     string AccessLevel, string Notes, string? PhysicalLocation, string? CreatorOrganizationName,
     Guid? AssigneeId, string? AssigneeName, DateOnly? DueOn, int Year,
     DateTimeOffset CreatedAt, DateTimeOffset UpdatedAt, DateTimeOffset? ArchivedAt, uint Version,
-    IReadOnlyList<DossierDocumentItem> Documents, Completeness Completeness, string? ProcedureId = null, string? ProcedureName = null);
+    IReadOnlyList<DossierDocumentItem> Documents, Completeness Completeness, string? ProcedureId = null, string? ProcedureName = null, DossierRetention? Retention = null);
+
+/// <summary>
+/// BE-130. Thời hạn bảo quản áp cho hồ sơ. <c>Status</c>: <c>confirmed</c> (có quy tắc ĐÃ xác nhận, kèm <c>Label</c>, <c>Years</c>, căn cứ pháp lý) |
+/// <c>proposed</c> (nhóm chỉ có đề xuất, chưa có hiệu lực) | <c>ambiguous</c> (nhóm có nhiều quy tắc đã xác nhận mà hồ sơ chưa gán quy tắc nào: không đoán) | <c>none</c>.
+/// <c>EligibleSince</c> chỉ có khi đã lưu trữ và có số năm; <c>Eligible</c>: đã đủ hạn để đề nghị hủy.
+/// </summary>
+public sealed record DossierRetention(string Status, string? Label, short? Years, string? LegalReference, DateTimeOffset? EligibleSince, bool Eligible);
 
 public sealed record Completeness(int ComponentCount, int VerifiedCount, int PendingFieldCount, bool Ready, IReadOnlyList<string> Reasons);
 

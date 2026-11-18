@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { encodeRegionParam, isValidRegion, parseRegionParam, regionStyle, type SourceRegion } from "./source-region";
+import { encodeRegionParam, isValidRegion, parseRegionParam, regionStyle, regionTarget, type SourceRegion } from "./source-region";
 
 const region: SourceRegion = { page: 2, x: 0.58, y: 0.84, width: 0.32, height: 0.025, approximate: false };
 
@@ -39,5 +39,25 @@ describe("tham số ?vung=", () => {
   it("bỏ qua tham số hỏng thay vì dựng khung sai", () => {
     for (const bad of [undefined, "", "1,2,3", "a,b,c,d", "0.1,0.1,2,0.1", "0.1,0.1,0.1,0.1,x,y", "0.1,0.1,0,0.1"]) expect(parseRegionParam(bad, 1)).toBeNull();
     expect(parseRegionParam("0.1,0.1,0.2,0.2,u", 3)?.page).toBe(3);
+  });
+});
+
+describe("regionTarget", () => {
+  const field = { sourceRegion: region, sourcePages: [2] };
+
+  it("vùng trên bản hiện hành (hoặc không ghi bản) thì dựng khung ở trang của vùng", () => {
+    expect(regionTarget(field, "file-2")).toEqual({ region, page: 2, olderScanId: null });
+    expect(regionTarget({ ...field, sourceFileId: "file-2" }, "file-2")).toEqual({ region, page: 2, olderScanId: null });
+    expect(regionTarget({ ...field, sourceFileId: null }, "file-2").region).toEqual(region);
+  });
+
+  it("vùng trên bản quét cũ thì không dựng khung và không nhảy sang trang của bản cũ", () => {
+    expect(regionTarget({ ...field, sourceFileId: "file-1" }, "file-2")).toEqual({ region: null, page: 2, olderScanId: "file-1" });
+  });
+
+  it("trường không có vùng (AI không biết) vẫn nhảy tới trang nguồn; vùng hỏng bị bỏ", () => {
+    expect(regionTarget({ sourceRegion: null, sourcePages: [3] }, "file-2")).toEqual({ region: null, page: 3, olderScanId: null });
+    expect(regionTarget({ sourceRegion: { ...region, width: 0 }, sourcePages: [3] }, "file-2")).toEqual({ region: null, page: 3, olderScanId: null });
+    expect(regionTarget({ sourcePages: [] }, undefined)).toEqual({ region: null, page: null, olderScanId: null });
   });
 });
