@@ -35,6 +35,7 @@ public static class DependencyInjection
         services.AddScoped<NotificationsHandler>();
         services.AddScoped<AdminHandler>();
         services.AddScoped<AdminOpsHandler>();
+        services.AddScoped<AdminJobsHandler>();
         services.AddScoped<BackupMonitor>();
         services.AddScoped<CatalogAdminHandler>();
         services.AddScoped<SearchHandler>();

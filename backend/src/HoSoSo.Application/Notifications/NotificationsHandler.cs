@@ -5,20 +5,30 @@ using Microsoft.EntityFrameworkCore;
 namespace HoSoSo.Application.Notifications;
 
 public sealed record NotificationDto(Guid Id, string Kind, string Title, string Body, string? Link, Guid? DossierId, DateTimeOffset CreatedAt, bool Read);
-public sealed record NotificationList(IReadOnlyList<NotificationDto> Items, int Unread);
+/// <summary><c>NextCursor</c>: gửi lại làm <c>cursor</c> để lấy trang cũ hơn (BE-124); null là hết.</summary>
+public sealed record NotificationList(IReadOnlyList<NotificationDto> Items, int Unread, string? NextCursor = null);
 
 /// <summary>BE-70. Thông báo của chính người dùng; người khác không đọc hay đánh dấu được.</summary>
 public sealed class NotificationsHandler(IHoSoDb db, ICurrentUser user, IClock clock)
 {
-    public async Task<NotificationList> ListAsync(bool unreadOnly, int limit, CancellationToken ct)
+    public async Task<NotificationList> ListAsync(bool unreadOnly, int limit, CancellationToken ct, string? cursor = null)
     {
         var me = user.RequireUserId();
+        limit = Math.Clamp(limit, 1, 100);
         var query = db.Read<Notification>().Where(n => n.UserId == me);
         if (unreadOnly) query = query.Where(n => n.ReadAt == null);
-        var items = await query.OrderByDescending(n => n.CreatedAt).ThenByDescending(n => n.Id).Take(Math.Clamp(limit, 1, 100))
+        if (Cursor.Decode(cursor) is { } after)
+            query = query.Where(n => n.CreatedAt < after.At || (n.CreatedAt == after.At && n.Id.CompareTo(after.Id) < 0));
+        var items = await query.OrderByDescending(n => n.CreatedAt).ThenByDescending(n => n.Id).Take(limit + 1)
             .Select(n => new NotificationDto(n.Id, n.Kind, n.Title, n.Body, n.Link, n.DossierId, n.CreatedAt, n.ReadAt != null)).ToListAsync(ct);
+        string? next = null;
+        if (items.Count > limit)
+        {
+            items.RemoveAt(limit);
+            next = Cursor.Encode(items[^1].CreatedAt, items[^1].Id);
+        }
         var unread = await db.Read<Notification>().CountAsync(n => n.UserId == me && n.ReadAt == null, ct);
-        return new NotificationList(items, unread);
+        return new NotificationList(items, unread, next);
     }
 
     public async Task MarkReadAsync(Guid id, CancellationToken ct)

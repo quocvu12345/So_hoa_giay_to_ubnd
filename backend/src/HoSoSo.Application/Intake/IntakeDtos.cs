@@ -2,6 +2,9 @@ namespace HoSoSo.Application.Intake;
 
 public sealed record CreateBatchRequest(string? OrganizationCode, string? DepartmentCode, string? HandedOverBy, string? BoxLabel, int? ExpectedSheetCount, string? Note);
 
+/// <summary>BE-125. Có lý do (từ 10 ký tự) thì các lỗi ảnh còn mở của lô được chấp nhận bỏ qua cùng lúc đóng lô.</summary>
+public sealed record CloseBatchRequest(string? AcceptOpenIssuesNote);
+
 public sealed record BatchSummary(
     Guid Id, string Code, string OrganizationCode, string? DepartmentCode, string? BoxLabel, string? HandedOverBy,
     int? ExpectedSheetCount, int ScannedPageCount, int FileCount, string Status, DateTimeOffset OpenedAt, DateTimeOffset? ClosedAt, int OpenIssues);
@@ -10,6 +13,9 @@ public sealed record BatchFile(Guid DocumentId, Guid FileId, string FileName, in
 public sealed record BatchDetail(BatchSummary Batch, IReadOnlyList<BatchFile> Files);
 
 public sealed record UploadResult(Guid DocumentId, Guid FileId, Guid JobId, string FileName, long ByteSize);
+/// <summary>BE-126. <c>Classify</c>: AI có phân loại/trích lại không (chỉ khi giấy tờ còn ở hộp tiếp nhận). <c>ReviewReset</c>: giấy tờ đã xác nhận dữ liệu nên về chờ xác nhận lại.</summary>
+public sealed record ReplacementResult(Guid DocumentId, Guid FileId, Guid ReplacedFileId, int VersionNo, Guid JobId, string FileName, long ByteSize, int? PageCount,
+    bool Classify, int IssuesClosed, bool ReviewReset);
 
 /// <summary>Stage: queued | reading | ready | failed | cancelled. Khớp MockInboxItem của frontend. QueueKind: priority | interactive | background (BE-97).</summary>
 public sealed record InboxItem(

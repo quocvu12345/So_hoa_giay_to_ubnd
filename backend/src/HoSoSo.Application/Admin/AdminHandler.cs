@@ -17,10 +17,17 @@ public sealed class AdminHandler(IHoSoDb db, ICurrentUser user, IClock clock, II
 {
     public static readonly TimeSpan MaxDelegation = TimeSpan.FromDays(90);
 
-    public async Task<IReadOnlyList<AdminUserListItem>> ListUsersAsync(string? q, bool? active, CancellationToken ct)
+    /// <param name="expiring">true: chỉ người có phân công đang hiệu lực hết trong <see cref="ExpiringWithinDays"/> ngày tới (BE-121).</param>
+    public async Task<IReadOnlyList<AdminUserListItem>> ListUsersAsync(string? q, bool? active, CancellationToken ct, bool expiring = false)
     {
         var users = db.Read<User>();
         if (active is { } a) users = users.Where(u => u.Active == a);
+        if (expiring)
+        {
+            var now = clock.UtcNow;
+            var soon = now.AddDays(ExpiringWithinDays);
+            users = users.Where(u => db.Read<UserRole>().Any(r => r.UserId == u.Id && r.ValidFrom <= now && r.ValidUntil > now && r.ValidUntil <= soon));
+        }
         if (q is { Length: > 1 } text)
             users = users.Where(u => HoSoDbContextFunctions.Fold(u.Username + " " + u.DisplayName).Contains(HoSoDbContextFunctions.Fold(text)));
         var rows = await users.OrderBy(u => u.Username).Take(500).ToListAsync(ct);
@@ -214,18 +221,26 @@ public sealed class AdminHandler(IHoSoDb db, ICurrentUser user, IClock clock, II
         var ids = users.Select(u => u.Id).ToList();
         var now = clock.UtcNow;
         var roles = await db.Read<UserRole>().Where(r => ids.Contains(r.UserId) && r.ValidFrom <= now && (r.ValidUntil == null || r.ValidUntil > now))
-            .Select(r => new { r.UserId, r.RoleCode }).ToListAsync(ct);
+            .Select(r => new { r.UserId, r.RoleCode, r.ValidUntil }).ToListAsync(ct);
+        var soon = now.AddDays(ExpiringWithinDays);
         return users.Select(u =>
         {
             var mine = roles.Where(r => r.UserId == u.Id).ToList();
             return new AdminUserListItem(u.Id, u.Username, u.DisplayName, u.Email, u.Active, u.IsDemo, u.LastLoginAt, mine.Count,
-                mine.Select(r => r.RoleCode).Distinct().Order().ToList());
+                mine.Select(r => r.RoleCode).Distinct().Order().ToList(),
+                mine.Count(r => r.ValidUntil <= soon), mine.Where(r => r.ValidUntil is not null).Min(r => r.ValidUntil));
         }).ToList();
     }
 
-    private static AdminAssignmentDto ToDto(UserRole r, DateTimeOffset now) => new(r.Id, r.RoleCode, r.OrganizationCode, r.DepartmentCode,
-        r.ValidFrom, r.ValidUntil, r.AssignmentBasis, r.IsDeputy,
-        r.ValidUntil is { } until && until <= now ? "ended" : r.ValidFrom > now ? "upcoming" : "active");
+    /// <summary>Phân công hết trong số ngày này được coi là "sắp hết hạn" (FE-42: chip vàng).</summary>
+    public const int ExpiringWithinDays = 7;
+
+    private static AdminAssignmentDto ToDto(UserRole r, DateTimeOffset now)
+    {
+        var state = r.ValidUntil is { } until && until <= now ? "ended" : r.ValidFrom > now ? "upcoming" : "active";
+        return new(r.Id, r.RoleCode, r.OrganizationCode, r.DepartmentCode, r.ValidFrom, r.ValidUntil, r.AssignmentBasis, r.IsDeputy, state,
+            state == "active" && r.ValidUntil <= now.AddDays(ExpiringWithinDays));
+    }
 }
 
 public sealed partial class CreateUserValidator : AbstractValidator<CreateUserRequest>

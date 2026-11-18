@@ -151,7 +151,8 @@ public sealed class SegmentsHandler(IHoSoDb db, IScopeFilter scope, ICurrentUser
         if (owned is null) throw AppException.NotFound("giấy tờ");
         if (owned == IntakeStatus.Split) throw AppException.Conflict("Văn bản này đã được tách thành các văn bản con.");
         var document = await scope.Documents(db.Set<Document>()).SingleOrDefaultAsync(d => d.Id == documentId, ct) ?? throw AppException.NotFound("giấy tờ");
-        var file = await db.Set<FileRecord>().Where(f => f.DocumentId == documentId && f.FileRole == "scan").OrderBy(f => f.VersionNo).FirstOrDefaultAsync(ct)
+        // Tách theo bản quét hiện hành (BE-126: bản đã bị thay không còn là nguồn).
+        var file = await DocumentFiles.CurrentScans(db.Set<FileRecord>()).Where(f => f.DocumentId == documentId).OrderByDescending(f => f.VersionNo).FirstOrDefaultAsync(ct)
             ?? throw AppException.NotFound("tệp quét của giấy tờ");
         if (file.StorageKey is null) throw AppException.NotFound("nội dung tệp");
         return (document, file);

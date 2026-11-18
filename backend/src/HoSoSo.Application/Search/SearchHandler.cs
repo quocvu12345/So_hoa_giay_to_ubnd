@@ -130,6 +130,8 @@ public sealed partial class SearchHandler(IHoSoDb db, IScopeFilter scope, ICurre
                      '…' || substr(p.text, greatest(position(hoso.f_fold({tokens[0]}) in hoso.f_fold(p.text)) - 60, 1), 180) || '…' AS snippet
               FROM hoso.ocr_pages p JOIN hoso.ocr_jobs j ON j.id = p.job_id JOIN hoso.files f ON f.id = j.file_id, q
               WHERE p.search_vector @@ q.tsq
+                -- BE-126: bản quét đã bị thay mà bản mới đã đọc xong thì số trang trúng phải theo bản mới; bản mới chưa đọc xong thì tạm dùng bản cũ.
+                AND NOT EXISTS (SELECT 1 FROM hoso.files n JOIN hoso.ocr_jobs nj ON nj.file_id = n.id AND nj.status = 'completed' WHERE n.replaces_file_id = f.id)
               ORDER BY f.document_id, ts_rank(p.search_vector, q.tsq) DESC
             )
             SELECT document_id, max(rank) AS rank, (array_agg(page ORDER BY rank DESC) FILTER (WHERE page IS NOT NULL))[1] AS page,

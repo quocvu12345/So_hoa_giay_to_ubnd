@@ -84,7 +84,9 @@ internal static class OperationsEndpoints
             .RequirePermission(Permissions.DisposalRequest).WithSummary("Thực hiện hủy đã phê duyệt: xóa nội dung tệp, giữ metadata và nhật ký (đường duy nhất xóa tệp)");
 
         var notifications = api.MapGroup("/notifications").WithTags("Thông báo");
-        notifications.MapGet("/", async (bool? unread, int? limit, NotificationsHandler h, CancellationToken ct) => TypedResults.Ok(await h.ListAsync(unread ?? false, limit ?? 50, ct))).WithSummary("Thông báo của tôi");
+        notifications.MapGet("/", async (bool? unread, int? limit, string? cursor, NotificationsHandler h, CancellationToken ct) =>
+                TypedResults.Ok(await h.ListAsync(unread ?? false, limit ?? 50, ct, cursor)))
+            .WithSummary("Thông báo của tôi, mới nhất trước; trang cũ hơn bằng cursor = nextCursor của trang trước");
         notifications.MapPost("/{id:guid}/read", async (Guid id, NotificationsHandler h, CancellationToken ct) =>
             {
                 await h.MarkReadAsync(id, ct);
@@ -94,8 +96,9 @@ internal static class OperationsEndpoints
             .WithSummary("Đánh dấu tất cả đã đọc");
 
         var admin = api.MapGroup("/admin").WithTags("Quản trị");
-        admin.MapGet("/users", async (string? q, bool? active, AdminHandler h, CancellationToken ct) => TypedResults.Ok(await h.ListUsersAsync(q, active, ct)))
-            .RequirePermission(Permissions.AdminUsers).WithSummary("Người dùng");
+        admin.MapGet("/users", async (string? q, bool? active, bool? expiring, AdminHandler h, CancellationToken ct) =>
+                TypedResults.Ok(await h.ListUsersAsync(q, active, ct, expiring ?? false)))
+            .RequirePermission(Permissions.AdminUsers).WithSummary("Người dùng; mỗi dòng kèm số phân công sắp hết hạn (≤ 7 ngày); expiring=true chỉ lấy những người đó");
         admin.MapGet("/users/{id:guid}", async (Guid id, AdminHandler h, CancellationToken ct) => TypedResults.Ok(await h.GetUserAsync(id, ct)))
             .RequirePermission(Permissions.AdminUsers).WithSummary("Chi tiết người dùng: phân công (kể cả đã kết thúc) và ủy quyền");
         admin.MapPost("/users", async (CreateUserRequest body, AdminHandler h, CancellationToken ct) =>
@@ -122,6 +125,14 @@ internal static class OperationsEndpoints
             .RequirePermission(Permissions.AdminUsers).WithSummary("Thu hồi ủy quyền");
         admin.MapGet("/ai/status", async (AdminOpsHandler h, CancellationToken ct) => TypedResults.Ok(await h.AiStatusAsync(ct)))
             .RequirePermission(Permissions.ProcessingManage).WithSummary("Hàng đợi AI, worker, mô hình");
+        admin.MapGet("/ai/jobs", async (string? status, string? cursor, int? limit, AdminJobsHandler h, CancellationToken ct) =>
+                TypedResults.Ok(await h.ListAsync(status, cursor, limit ?? 50, ct)))
+            .RequirePermission(Permissions.ProcessingManage)
+            .WithSummary("Việc AI mới nhất trước (status=active|queued|running|failed|cancelled|completed), kèm có hủy/chạy lại được không và lý do");
+        admin.MapPost("/ai/jobs/{id:guid}/cancel", async (Guid id, AdminJobsHandler h, CancellationToken ct) => TypedResults.Ok(await h.CancelAsync(id, ct)))
+            .RequirePermission(Permissions.ProcessingManage).WithSummary("Hủy việc AI đang chờ hoặc đang chạy (không cần phạm vi giấy tờ)");
+        admin.MapPost("/ai/jobs/{id:guid}/retry", async (Guid id, AdminJobsHandler h, CancellationToken ct) => TypedResults.Ok(await h.RetryAsync(id, ct)))
+            .RequirePermission(Permissions.ProcessingManage).WithSummary("Chạy lại việc đã lỗi/đã hủy: tạo việc mới cùng tệp, cùng tùy chọn, mức tương tác");
         admin.MapGet("/settings", async (AdminOpsHandler h, CancellationToken ct) => TypedResults.Ok(await h.SettingsAsync(ct)))
             .RequirePermission(Permissions.AdminSettings).WithSummary("Cài đặt hệ thống");
         admin.MapPatch("/settings", async (UpdateSettingRequest body, AdminOpsHandler h, CancellationToken ct) => TypedResults.Ok(await h.UpdateSettingAsync(body, ct)))

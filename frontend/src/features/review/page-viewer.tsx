@@ -5,6 +5,7 @@ import { ChevronLeft, ChevronRight, Maximize2, Minimize2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { browserHeaders } from "@/lib/api/client";
 import { useAssignmentId } from "@/lib/auth/client-session";
+import { isValidRegion, regionStyle, type SourceRegion } from "./source-region";
 
 const WIDTHS = { fit: 900, large: 1500 } as const;
 
@@ -51,13 +52,29 @@ function usePageImages(fileId: string) {
   return { images, request };
 }
 
+export type Highlight = { region: SourceRegion; label: string };
+
 /**
- * Xem bản gốc bằng ảnh trang, đủ để đối chiếu trong bản đầu. Trình xem PDF đầy đủ (pdf.js, vùng nguồn, ảnh thu nhỏ) là FE-22.
- * Trang hiện tại do màn cha giữ để bấm trường thì nhảy đúng trang.
+ * Xem bản gốc bằng ảnh trang. Trang hiện tại do màn cha giữ để bấm trường thì nhảy đúng trang.
+ * `highlight` (FE-22, BE-114): làm nổi vùng chứa giá trị của một trường bằng khung đặt theo phần trăm của ảnh, nên khớp ở cả hai mức phóng;
+ * vùng ở trang khác thì không hiện, và khung tự cuộn vào giữa khung nhìn khi ảnh đã tải.
  */
-export function PageViewer({ fileId, pageCount, page, onPageChange }: { fileId: string; pageCount: number; page: number; onPageChange: (page: number) => void }) {
+export function PageViewer({ fileId, pageCount, page, onPageChange, highlight }: { fileId: string; pageCount: number; page: number; onPageChange: (page: number) => void; highlight?: Highlight | null }) {
   const [zoom, setZoom] = useState<Zoom>("fit");
   const { images, request } = usePageImages(fileId);
+  const scroller = useRef<HTMLDivElement>(null);
+  const box = useRef<HTMLDivElement>(null);
+  const region = highlight && isValidRegion(highlight.region) && highlight.region.page === page ? highlight.region : null;
+
+  // Cuộn trong chính khung xem (không cuộn cả trang) để đưa vùng nguồn vào giữa. Chạy lại khi ảnh vừa tải xong hoặc đổi mức phóng.
+  const reveal = useCallback(() => {
+    const container = scroller.current;
+    const target = box.current;
+    if (!container || !target) return;
+    const top = target.offsetTop - container.clientHeight / 2 + target.offsetHeight / 2;
+    const left = target.offsetLeft - container.clientWidth / 2 + target.offsetWidth / 2;
+    container.scrollTo({ top: Math.max(0, top), left: Math.max(0, left), behavior: "smooth" });
+  }, []);
 
   useEffect(() => {
     request(page, zoom);
@@ -66,6 +83,9 @@ export function PageViewer({ fileId, pageCount, page, onPageChange }: { fileId: 
 
   const key = `${fileId}:${page}:${WIDTHS[zoom]}`;
   const image = images[key];
+  useEffect(() => {
+    if (region && image?.url) requestAnimationFrame(reveal);
+  }, [region, image?.url, reveal, zoom]);
   const go = (next: number) => onPageChange(Math.min(Math.max(1, next), pageCount));
 
   return (
@@ -104,19 +124,35 @@ export function PageViewer({ fileId, pageCount, page, onPageChange }: { fileId: 
         </Button>
       </div>
 
-      <div tabIndex={0} aria-label={`Bản gốc, trang ${page} trên ${pageCount}. Dùng mũi tên trái phải để đổi trang`} className="relative max-h-[calc(100dvh-14rem)] min-h-64 overflow-auto border border-line bg-surface">
+      <div ref={scroller} tabIndex={0} aria-label={`Bản gốc, trang ${page} trên ${pageCount}. Dùng mũi tên trái phải để đổi trang`} className="relative max-h-[calc(100dvh-14rem)] min-h-64 overflow-auto border border-line bg-surface">
         {image?.failed ? (
           <div className="grid place-items-center gap-2 p-6 text-center text-sm">
             <p className="text-bad">Chưa dựng được ảnh trang {page}. Thử lại sau ít giây.</p>
             <Button size="sm" onClick={() => request(page, zoom, true)}>Thử lại</Button>
           </div>
         ) : image?.url ? (
-          // eslint-disable-next-line @next/next/no-img-element -- blob URL từ API có phiên đăng nhập, không qua trình tối ưu ảnh của Next
-          <img src={image.url} alt={`Trang ${page} của bản gốc`} className={zoom === "fit" ? "block h-auto w-full" : "block h-auto w-[1500px] max-w-none"} />
+          <div className={zoom === "fit" ? "relative w-full" : "relative w-[1500px] max-w-none"}>
+            {/* eslint-disable-next-line @next/next/no-img-element -- blob URL từ API có phiên đăng nhập, không qua trình tối ưu ảnh của Next */}
+            <img src={image.url} alt={`Trang ${page} của bản gốc`} className="block h-auto w-full" />
+            {region && highlight && (
+              <div
+                ref={box}
+                role="img"
+                aria-label={`Vùng chứa giá trị của trường ${highlight.label}${region.approximate ? " (vị trí ước theo dòng)" : ""}`}
+                style={regionStyle(region)}
+                className={`pointer-events-none absolute border-2 ${region.approximate ? "border-dashed border-warn bg-warn/15" : "border-solid border-warn bg-warn/25"} shadow-[0_0_0_2px_rgba(255,255,255,0.7)]`}
+              />
+            )}
+          </div>
         ) : (
           <p className="p-6 text-center text-xs text-muted" role="status">Đang tải trang {page}…</p>
         )}
       </div>
+      {region && highlight && (
+        <p role="status" className="text-xs text-muted">
+          Khung vàng: vùng chứa giá trị của “{highlight.label}”{region.approximate ? ". Vị trí chỉ ước theo dòng chữ, kiểm tra lại trên bản gốc." : "."}
+        </p>
+      )}
     </div>
   );
 }

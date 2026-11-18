@@ -60,17 +60,38 @@ public sealed class IntakeHandler(IHoSoDb db, IScopeFilter scope, ICurrentUser u
         return new BatchDetail(summary, files);
     }
 
-    public async Task<BatchSummary> CloseBatchAsync(Guid id, CancellationToken ct)
+    /// <summary>
+    /// Đóng lô. Còn lỗi ảnh đang mở: không có <c>AcceptOpenIssuesNote</c> thì 409 kèm số lỗi (giao diện cảnh báo);
+    /// có lý do (từ 10 ký tự) thì BE-125: mọi lỗi đang mở của lô chuyển "chấp nhận bỏ qua" (wont_fix) kèm lý do và lô đóng, cùng một giao dịch.
+    /// </summary>
+    public async Task<BatchSummary> CloseBatchAsync(Guid id, CloseBatchRequest? request, CancellationToken ct)
     {
+        var note = request?.AcceptOpenIssuesNote?.Trim();
+        if (note is not null && note.Length < 10)
+            throw new ValidationFailedException(new Dictionary<string, string[]> { ["acceptOpenIssuesNote"] = ["Chấp nhận bỏ qua lỗi cần ghi lý do từ 10 ký tự."] });
+        await using var transaction = await db.Database.BeginTransactionAsync(ct);
+        // Khóa dòng lô: hai người cùng đóng, hoặc vừa có người mở lỗi mới, thì xử lý tuần tự.
+        await db.Database.SqlQuery<Guid>($"SELECT id AS \"Value\" FROM hoso.scan_batches WHERE id = {id} FOR UPDATE").ToListAsync(ct);
         var batch = await db.Set<ScanBatch>().SingleOrDefaultAsync(b => b.Id == id && b.OrganizationCode == user.OrganizationCode, ct)
             ?? throw AppException.NotFound("lô quét");
         if (batch.Status == "closed") throw AppException.Conflict("Lô quét này đã đóng.");
-        var open = await db.Read<QualityIssue>().CountAsync(i => i.ScanBatchId == id && i.Status == "open", ct);
-        if (open > 0) throw AppException.Conflict($"Còn {open} lỗi ảnh chưa xử lý. Quét lại hoặc đánh dấu chấp nhận trước khi đóng lô.");
+        var open = await db.Set<QualityIssue>().Where(i => i.ScanBatchId == id && i.Status == "open").ToListAsync(ct);
+        if (open.Count > 0 && note is null)
+            throw AppException.Conflict($"Còn {open.Count} lỗi ảnh chưa xử lý. Quét lại, hoặc ghi lý do chấp nhận bỏ qua để vẫn đóng lô.");
+        var now = clock.UtcNow;
+        var me = user.RequireUserId();
+        foreach (var issue in open)
+        {
+            issue.Status = "wont_fix";
+            issue.ResolvedBy = me;
+            issue.ResolvedAt = now;
+            issue.Description = $"{issue.Description}{(issue.Description.Length > 0 ? " · " : "")}Chấp nhận khi đóng lô: {note}";
+        }
         batch.ScannedPageCount = await db.Read<FileRecord>().Where(f => f.ScanBatchId == id).SumAsync(f => f.PageCount ?? 0, ct);
         batch.Status = "closed";
-        batch.ClosedAt = clock.UtcNow;
+        batch.ClosedAt = now;
         await db.SaveChangesAsync(ct);
+        await transaction.CommitAsync(ct);
         return await BatchesQuery(id).SingleAsync(ct);
     }
 
@@ -82,16 +103,7 @@ public sealed class IntakeHandler(IHoSoDb db, IScopeFilter scope, ICurrentUser u
     public async Task<UploadResult> UploadAsync(Stream content, string fileName, Guid? batchId, CancellationToken ct)
     {
         var me = user.RequireUserId();
-        var name = Path.GetFileName(fileName ?? "").Trim();
-        if (name.Length == 0 || name.Length > 255 || !name.EndsWith(".pdf", StringComparison.OrdinalIgnoreCase))
-            throw new ValidationFailedException(new Dictionary<string, string[]> { ["file"] = ["Chỉ nhận tệp PDF (đuôi .pdf, tên tối đa 255 ký tự)."] });
-        if (!content.CanSeek) throw new ArgumentException("Luồng tệp phải tua lại được.", nameof(content));
-        var header = new byte[5];
-        var read = await content.ReadAtLeastAsync(header, header.Length, throwOnEndOfStream: false, ct);
-        content.Seek(0, SeekOrigin.Begin);
-        if (read < 5 || !header.AsSpan().SequenceEqual("%PDF-"u8))
-            throw new ValidationFailedException(new Dictionary<string, string[]> { ["file"] = ["Tệp không phải PDF hợp lệ. Xuất lại tệp từ máy quét hoặc phần mềm tạo PDF."] });
-
+        var name = await CheckPdfAsync(content, fileName, ct);
         var pageCount = await CheckPageLimitAsync(content, ct);
         await CheckVirusAsync(content, ct);
 
@@ -103,20 +115,7 @@ public sealed class IntakeHandler(IHoSoDb db, IScopeFilter scope, ICurrentUser u
         }
 
         var stored = await storage.SaveAsync(content, ct);
-        var duplicate = await db.Read<FileRecord>().Where(f => f.FileRole == "scan" && f.Sha256 == stored.Sha256)
-            .Select(f => new { f.DocumentId, f.Id, f.OriginalName, f.UploadedAt }).FirstOrDefaultAsync(ct);
-        if (duplicate is not null)
-        {
-            // BE-92. Chỉ chỉ đường tới giấy tờ cũ khi người tải THẤY được nó. Giấy tờ ngoài phạm vi (hộp tiếp nhận riêng, hồ sơ đơn vị khác)
-            // không được lộ mã, tên tệp gốc (có thể chứa tên người, số định danh) hay giờ tải.
-            if (await scope.Documents(db.Read<Document>()).AnyAsync(d => d.Id == duplicate.DocumentId, ct))
-            {
-                throw new AppException(409, ErrorCodes.DuplicateFile, "PDF này đã được tải lên trước đó. Mở giấy tờ cũ thay vì tải lại.",
-                    new { documentId = duplicate.DocumentId, fileId = duplicate.Id, fileName = duplicate.OriginalName, uploadedAt = duplicate.UploadedAt });
-            }
-            logger.LogWarning("duplicate_outside_scope");
-            throw new AppException(409, ErrorCodes.DuplicateFile, "Tệp này đã có trong hệ thống ở nơi bạn không có quyền xem nên không tải lại được. Liên hệ văn thư hoặc quản trị để được hướng dẫn.");
-        }
+        await RejectDuplicateAsync(stored.Sha256, null, ct);
 
         var title = Path.GetFileNameWithoutExtension(name);
         var document = new Document
@@ -146,6 +145,114 @@ public sealed class IntakeHandler(IHoSoDb db, IScopeFilter scope, ICurrentUser u
         await db.SaveChangesAsync(ct);
         await transaction.CommitAsync(ct);
         return new UploadResult(document.Id, file.Id, job.Id, name, stored.ByteSize);
+    }
+
+    /// <summary>
+    /// BE-126. Tải bản quét thay thế cho giấy tờ (quét lại trang mờ, thiếu trang…). Bản cũ giữ nguyên (vẫn mở, tải được; trường đã đối chiếu vẫn trỏ vùng trên bản cũ).
+    /// Cùng luật sửa với dữ liệu giấy tờ (không phải văn bản công khai, không bị bỏ/tách, hồ sơ chứa nó còn ở bước nháp hoặc bị trả lại); lý do bắt buộc.
+    /// Bản mới: phiên bản kế tiếp, xếp việc đọc mức tương tác. AI chỉ phân loại/trích lại khi giấy tờ còn ở hộp tiếp nhận; đã vào hồ sơ thì chỉ OCR để tìm kiếm.
+    /// Kèm theo: hủy việc đọc còn chờ của bản cũ, đóng lỗi ảnh đang mở của bản cũ ("đã thay"), giấy tờ đã xác nhận dữ liệu thì về "chờ xác nhận lại".
+    /// </summary>
+    public async Task<ReplacementResult> ReplaceScanAsync(Guid documentId, Stream content, string fileName, string? reason, CancellationToken ct)
+    {
+        var me = user.RequireUserId();
+        var why = reason?.Trim() ?? "";
+        if (why.Length is < 10 or > 500)
+            throw new ValidationFailedException(new Dictionary<string, string[]> { ["reason"] = ["Ghi lý do thay bản quét (10–500 ký tự), ví dụ \"Quét lại trang 3 bị mờ\"."] });
+        var name = await CheckPdfAsync(content, fileName, ct);
+        var visible = await scope.Documents(db.Read<Document>()).Where(d => d.Id == documentId).Select(d => new { d.Origin, d.IntakeStatus }).SingleOrDefaultAsync(ct)
+            ?? throw AppException.NotFound("giấy tờ");
+        if (await DocumentEditRules.LockReasonAsync(db, documentId, visible.Origin, visible.IntakeStatus, ct) is { } early) throw AppException.Conflict(early);
+        var pageCount = await CheckPageLimitAsync(content, ct);
+        await CheckVirusAsync(content, ct);
+        var stored = await storage.SaveAsync(content, ct);
+        await RejectDuplicateAsync(stored.Sha256, documentId, ct);
+
+        await using var transaction = await db.Database.BeginTransactionAsync(ct);
+        // Cùng khóa với sửa dữ liệu giấy tờ: trình hồ sơ chạy song song thì một bên chờ bên kia, không thay bản quét của hồ sơ vừa trình.
+        await MutationLocks.DocumentAndDossiersAsync(db, documentId, ct);
+        var document = await db.Set<Document>().SingleAsync(d => d.Id == documentId, ct);
+        if (await DocumentEditRules.LockReasonAsync(db, documentId, document.Origin, document.IntakeStatus, ct) is { } locked) throw AppException.Conflict(locked);
+        var current = await DocumentFiles.CurrentScans(db.Read<FileRecord>()).Where(f => f.DocumentId == documentId).OrderByDescending(f => f.VersionNo)
+            .Select(f => new { f.Id, f.ComponentKey, f.DisposedAt, f.StorageKey }).FirstOrDefaultAsync(ct)
+            ?? throw AppException.Conflict("Giấy tờ chưa có bản quét nên không có gì để thay. Tải PDF mới ở Tiếp nhận.");
+        if (current.DisposedAt is not null || current.StorageKey is null) throw AppException.Conflict("Nội dung giấy tờ đã bị hủy nên không thay bản quét được.");
+
+        var now = clock.UtcNow;
+        var versionNo = await db.Read<FileRecord>().Where(f => f.DocumentId == documentId && f.ComponentKey == current.ComponentKey).MaxAsync(f => f.VersionNo, ct) + 1;
+        var file = new FileRecord
+        {
+            DocumentId = documentId, ComponentKey = current.ComponentKey, VersionNo = versionNo, FileRole = DocumentFiles.Scan, OriginalName = name,
+            MediaType = "application/pdf", ByteSize = stored.ByteSize, Sha256 = stored.Sha256, StorageKey = stored.StorageKey, PageCount = pageCount,
+            UploadedBy = me, UploadedAt = now, ReplacesFileId = current.Id, ReplacementReason = why,
+        };
+        db.Set<FileRecord>().Add(file);
+        await db.SaveChangesAsync(ct);
+
+        var classify = document.IntakeStatus == IntakeStatus.Inbox;
+        var job = new OcrJob
+        {
+            FileId = file.Id, Priority = QueuePriority.Interactive, RequestedBy = me, PageCount = pageCount,
+            Options = JsonSerializer.Serialize(new { correlation_id = user.CorrelationId, classify, replaces_file_id = current.Id }),
+        };
+        db.Set<OcrJob>().Add(job);
+        // Đọc bản đã bị thay là phí máy AI: hủy việc còn chờ hoặc đang chạy của nó (worker dừng sau trang hiện tại).
+        var cancelledJobs = await db.Set<OcrJob>().Where(j => j.FileId == current.Id && (j.Status == JobStatus.Queued || j.Status == JobStatus.Running))
+            .ExecuteUpdateAsync(u => u.SetProperty(j => j.Status, JobStatus.Cancelled).SetProperty(j => j.StartedAt, j => j.StartedAt ?? now).SetProperty(j => j.FinishedAt, now), ct);
+        var openIssues = await db.Set<QualityIssue>().Where(i => i.FileId == current.Id && i.Status == "open").ToListAsync(ct);
+        foreach (var issue in openIssues)
+        {
+            issue.Status = "fixed";
+            issue.ResolvedBy = me;
+            issue.ResolvedAt = now;
+            issue.Description = $"{issue.Description}{(issue.Description.Length > 0 ? " · " : "")}Đã thay bằng bản quét phiên bản {versionNo}: {why}";
+        }
+        await db.Set<PageImage>().Where(p => p.FileId == current.Id && (p.QualityStatus == "suspect" || p.QualityStatus == "rescan_required"))
+            .ExecuteUpdateAsync(u => u.SetProperty(p => p.QualityStatus, "rescanned"), ct);
+        var reviewReset = document.DataReviewStatus == "verified";
+        if (reviewReset) { document.DataReviewStatus = "pending"; document.ReviewedBy = null; document.ReviewedAt = null; }
+        document.UpdatedAt = now;
+        await db.SaveChangesAsync(ct);
+        await transaction.CommitAsync(ct);
+        logger.LogInformation("file_replaced {DocumentId} {OldFileId} {NewFileId} {VersionNo} {Classify} {CancelledJobs} {IssuesClosed}",
+            documentId, current.Id, file.Id, versionNo, classify, cancelledJobs, openIssues.Count);
+        return new ReplacementResult(documentId, file.Id, current.Id, versionNo, job.Id, name, stored.ByteSize, pageCount, classify, openIssues.Count, reviewReset);
+    }
+
+    /// <summary>Tên đuôi .pdf, đầu tệp "%PDF-". Trả tên tệp đã bỏ đường dẫn.</summary>
+    private static async Task<string> CheckPdfAsync(Stream content, string? fileName, CancellationToken ct)
+    {
+        var name = Path.GetFileName(fileName ?? "").Trim();
+        if (name.Length == 0 || name.Length > 255 || !name.EndsWith(".pdf", StringComparison.OrdinalIgnoreCase))
+            throw new ValidationFailedException(new Dictionary<string, string[]> { ["file"] = ["Chỉ nhận tệp PDF (đuôi .pdf, tên tối đa 255 ký tự)."] });
+        if (!content.CanSeek) throw new ArgumentException("Luồng tệp phải tua lại được.", nameof(content));
+        var header = new byte[5];
+        var read = await content.ReadAtLeastAsync(header, header.Length, throwOnEndOfStream: false, ct);
+        content.Seek(0, SeekOrigin.Begin);
+        if (read < 5 || !header.AsSpan().SequenceEqual("%PDF-"u8))
+            throw new ValidationFailedException(new Dictionary<string, string[]> { ["file"] = ["Tệp không phải PDF hợp lệ. Xuất lại tệp từ máy quét hoặc phần mềm tạo PDF."] });
+        return name;
+    }
+
+    /// <summary>
+    /// Bản quét trùng SHA-256 với một bản đã có: 409 duplicate_file. BE-92: chỉ chỉ đường tới giấy tờ cũ khi người tải THẤY được nó; giấy tờ ngoài phạm vi
+    /// (hộp tiếp nhận riêng, hồ sơ đơn vị khác) không được lộ mã, tên tệp gốc (có thể chứa tên người, số định danh) hay giờ tải.
+    /// </summary>
+    private async Task RejectDuplicateAsync(string sha256, Guid? replacingDocument, CancellationToken ct)
+    {
+        var duplicate = await db.Read<FileRecord>().Where(f => f.FileRole == DocumentFiles.Scan && f.Sha256 == sha256)
+            .Select(f => new { f.DocumentId, f.Id, f.OriginalName, f.UploadedAt }).FirstOrDefaultAsync(ct);
+        if (duplicate is null) return;
+        if (duplicate.DocumentId == replacingDocument)
+            throw new AppException(409, ErrorCodes.DuplicateFile, "Bản này giống hệt một bản quét đã có của giấy tờ, không cần thay.",
+                new { documentId = duplicate.DocumentId, fileId = duplicate.Id, fileName = duplicate.OriginalName, uploadedAt = duplicate.UploadedAt });
+        if (await scope.Documents(db.Read<Document>()).AnyAsync(d => d.Id == duplicate.DocumentId, ct))
+        {
+            throw new AppException(409, ErrorCodes.DuplicateFile, "PDF này đã được tải lên trước đó. Mở giấy tờ cũ thay vì tải lại.",
+                new { documentId = duplicate.DocumentId, fileId = duplicate.Id, fileName = duplicate.OriginalName, uploadedAt = duplicate.UploadedAt });
+        }
+        logger.LogWarning("duplicate_outside_scope");
+        throw new AppException(409, ErrorCodes.DuplicateFile, "Tệp này đã có trong hệ thống ở nơi bạn không có quyền xem nên không tải lại được. Liên hệ văn thư hoặc quản trị để được hướng dẫn.");
     }
 
     /// <summary>Chặn cuối khi đếm trang lúc tải lên (chế độ InProcess). Khi chạy sandbox, tiến trình con bị giết đúng hạn của nó trước mốc này.</summary>
@@ -210,9 +317,10 @@ public sealed class IntakeHandler(IHoSoDb db, IScopeFilter scope, ICurrentUser u
         var suggestions = db.Read<AiSuggestion>();
         limit = Math.Clamp(limit, 1, 200);
         var after = Cursor.Decode(cursor);
-        var source = from f in db.Read<FileRecord>()
+        // Một dòng mỗi giấy tờ: chỉ bản quét hiện hành (BE-126), bản đã bị thay không hiện thành dòng riêng.
+        var source = from f in DocumentFiles.CurrentScans(db.Read<FileRecord>())
                      join d in db.Read<Document>() on f.DocumentId equals d.Id
-                     where d.UploadedBy == me && d.IntakeStatus == wanted && f.FileRole == "scan"
+                     where d.UploadedBy == me && d.IntakeStatus == wanted
                      select new { f, d, At = f.UploadedAt ?? d.CreatedAt };
         if (after is { } key)
             source = source.Where(x => x.At < key.At || (x.At == key.At && x.f.Id.CompareTo(key.Id) < 0));

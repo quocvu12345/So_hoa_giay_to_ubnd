@@ -132,4 +132,35 @@ public sealed class AdminTests(DbApiFactory api) : IClassFixture<DbApiFactory>
         var detail = await (await admin.GetAsync($"/api/v1/admin/users/{to}")).ReadAsync<UserDetail>();
         detail.Delegations.Single().State.ShouldBe("revoked");
     }
+
+    private sealed record ExpiringUser(Guid Id, string Username, int ActiveAssignments, int ExpiringAssignments, DateTimeOffset? NextAssignmentEndsAt);
+    private sealed record ExpiringAssignment(Guid Id, string Role, DateTimeOffset? ValidUntil, string State, bool EndsSoon);
+    private sealed record ExpiringDetail(ExpiringUser User, List<ExpiringAssignment> Assignments);
+
+    [Fact]
+    public async Task Phan_cong_sap_het_han_trong_7_ngay_duoc_dem_va_loc_rieng()
+    {
+        var admin = await api.LoginAsync("demo_admin");
+        var user = await NewUserAsync(admin, "thu.sap.het.han");
+        var basis = "Quyết định 15/QĐ-UBND ngày 01/11/2026";
+        var soon = DateTimeOffset.UtcNow.AddDays(3);
+        var later = DateTimeOffset.UtcNow.AddDays(40);
+        (await admin.PostJsonAsync("/api/v1/admin/assignments", new { userId = user, roleCode = "employee", organizationCode = "tl-ubnd", departmentCode = "ht", validUntil = soon, basis }))
+            .StatusCode.ShouldBe(HttpStatusCode.OK);
+        (await admin.PostJsonAsync("/api/v1/admin/assignments", new { userId = user, roleCode = "clerk", organizationCode = "tl-ubnd", validUntil = later, basis }))
+            .StatusCode.ShouldBe(HttpStatusCode.OK);
+
+        var listed = (await (await admin.GetAsync("/api/v1/admin/users?q=thu.sap.het.han")).ReadAsync<List<ExpiringUser>>()).Single();
+        (listed.ActiveAssignments, listed.ExpiringAssignments).ShouldBe((2, 1));
+        listed.NextAssignmentEndsAt.ShouldNotBeNull().ShouldBe(soon, TimeSpan.FromSeconds(1));
+        var detail = await (await admin.GetAsync($"/api/v1/admin/users/{user}")).ReadAsync<ExpiringDetail>();
+        detail.Assignments.Single(a => a.Role == "employee").EndsSoon.ShouldBeTrue();
+        detail.Assignments.Single(a => a.Role == "clerk").EndsSoon.ShouldBeFalse();
+
+        // Lọc riêng: có người này; người chỉ có phân công không thời hạn (demo_admin) thì không.
+        var expiring = await (await admin.GetAsync("/api/v1/admin/users?expiring=true")).ReadAsync<List<ExpiringUser>>();
+        expiring.Select(u => u.Id).ShouldContain(user);
+        expiring.ShouldNotContain(u => u.Username == "demo_admin");
+        expiring.ShouldAllBe(u => u.ExpiringAssignments > 0);
+    }
 }

@@ -144,7 +144,8 @@ Mỗi màn đã có tệp `page.tsx` trong `src/app/(app)/…`, đầu trang đ�
   - hàng việc lấy từ `GET /workspace/queue` và số lượng từ `/workspace/summary` theo phân công đang dùng; mỗi vai trò mở ra đúng hàng mặc định: chuyên viên "Cần bạn làm", văn thư "Chờ tiếp nhận nộp lưu" rồi "Cần bạn làm", trưởng phòng "Chờ bạn kiểm tra" rồi "Cần bạn làm", lãnh đạo "Chờ bạn cho ý kiến", quản trị kỹ thuật chỉ có lối vào vận hành (`workspace-queue.ts`, có test);
   - thứ tự: quá hạn lên đầu (chip đỏ "Quá hạn N ngày"), bị trả lại, sắp đến hạn (≤ 2 ngày, chip vàng), còn lại; mỗi hàng hiện 10 hồ sơ ưu tiên nhất vì API trả cả nghìn hồ sơ cho văn thư, có "Xem tất cả";
   - số trên menu và chuông lấy từ summary (FE-04); trang tự làm mới khi có `dossier.changed`, `notification.created`, `job.completed` hoặc `resync` qua SSE (`RefreshOnEvents`).
-- **Còn lại:** bảng tổng hợp theo phòng cho Chủ tịch và ba lối vào của lãnh đạo HĐND (FE-47, cần BE-115); lối "Xem tất cả" của hàng Cần bạn làm mở danh sách hồ sơ tôi chủ trì (`?cua-toi=1`), chưa lọc riêng "bị trả lại".
+- **Đã nối thêm (18/11/2026):** bảng tổng hợp theo phòng cho Chủ tịch và ba lối vào của lãnh đạo HĐND (FE-47, BE-115).
+- **Còn lại:** lối "Xem tất cả" của hàng Cần bạn làm mở danh sách hồ sơ tôi chủ trì (`?cua-toi=1`), chưa lọc riêng "bị trả lại".
 - **Kiểm tra:** E2E đăng nhập từng vai trò thấy đúng hàng việc (đã thử văn thư và chuyên viên bằng API thật).
 
 ### FE-21 · Hộp tiếp nhận và nạp PDF ✅ · 2 ngày
@@ -155,16 +156,13 @@ Mỗi màn đã có tệp `page.tsx` trong `src/app/(app)/…`, đầu trang đ�
 - **Còn lại:** lọc theo lô quét và người nạp; chọn nhiều để bỏ hoặc xếp cùng một hồ sơ; bộ lọc tình trạng đọc mới lọc trong phần đã tải (chưa có tham số lọc ở API).
 - **Kiểm tra:** E2E `e2e/tiep-nhan.spec.ts` tải 3 PDF mẫu, thấy "Chờ trong khay"/"Đang đọc" rồi "Đã đọc xong".
 
-### FE-22 · Trình xem PDF ⬜ · 3 ngày
-- **Tệp:** `components/pdf/pdf-viewer.tsx` (client, tải động `pdfjs-dist`).
-- **Làm:**
-  1. Đọc theo Range từ `/api/v1/files/{id}/content`; tắt `isEvalSupported`.
-  2. Phóng to, xoay hiển thị, chuyển trang, ảnh thu nhỏ.
-  3. Làm nổi vùng theo `source_region`; API `scrollTo(page, region)`.
-- **Kiểm tra:** PDF 300 trang mở dưới 2 giây, cuộn mượt.
+### FE-22 · Trình xem PDF 🟡 · 3 ngày
+- **Đã có (18/11/2026, BE-114):** làm nổi vùng nguồn của trường trên ảnh trang. `features/review/page-viewer.tsx` nhận `highlight` (khung đặt theo PHẦN TRĂM của ảnh nên đúng ở cả hai mức phóng; tự cuộn vào giữa khung nhìn; nét liền khi vùng lấy từ khối bố cục, nét đứt kèm lời nhắc khi chỉ ước theo dòng); `features/review/source-region.ts` (kiểm vùng, đổi sang CSS, đọc/ghi `?vung=`, có test). Dùng ở màn đối chiếu (bấm trường: nhảy trang và làm nổi vùng) và chi tiết giấy tờ (`?trang=2&vung=x,y,w,h&truong=…`, liên kết "Trang N · chỉ vùng" ở từng trường).
+- **Còn lại:** trình xem PDF đầy đủ bằng pdf.js (đọc theo Range từ `/files/{id}/content`, tắt `isEvalSupported`, xoay, ảnh thu nhỏ). Ảnh trang WebP hiện đủ cho đối chiếu; chỉ làm khi cần xoay hoặc tài liệu rất dài. Lưu ý CSP của trang (`object-src 'none'`, khung `blob:` không được phép) khi chọn cách nhúng PDF.
+- **Kiểm tra:** E2E `vung-nguon.spec.ts` (khung đúng toạ độ API trả, di chuyển khi đổi trường, đúng sau khi phóng to, `?vung=` hỏng thì không dựng khung). **Chưa đo** PDF 300 trang.
 
 ### FE-23 · Đối chiếu ✅ (bản đầu, xem bản gốc bằng ảnh trang) · 3 ngày
-- **Phụ thuộc API mới:** BE-114 (vùng nguồn), BE-116 (tên người xác nhận đầu văn bản).
+- **Đã nối (18/11/2026):** BE-114 (bấm trường làm nổi vùng nguồn trên trang, xem FE-22) và BE-116 ("Đã xác nhận bởi … lúc …").
 - **Đã có (17/11/2026, chạy với API thật):** `tiep-nhan/[documentId]/doi-chieu/page.tsx`, `features/review/review-screen.tsx`, `page-viewer.tsx`, `review-state.ts`, `app/actions/review.ts`.
   - dữ liệu từ `GET /documents/{id}/review`; trường lấy từ `field_definitions` theo `value_type` (ngày `dd/mm/yyyy` kiểm ngay khi rời ô, số, có/không, văn bản), trường cần chú ý lên đầu và phải đánh dấu "đã kiểm" (tự bật khi sửa giá trị) mới xác nhận được;
   - bấm vào trường thì bản gốc nhảy tới trang nguồn; xem bản gốc bằng ảnh trang (`/files/{id}/pages/{n}/preview`, tải bằng `fetch` có header phân công), đổi trang, phóng to;
@@ -172,7 +170,7 @@ Mỗi màn đã có tệp `page.tsx` trong `src/app/(app)/…`, đầu trang đ�
   - phần "Thông tin đầu văn bản": tiêu đề, hình thức, số, ngày ban hành, ghi chú; hiện thời điểm và ghi chú đã xác nhận; xác nhận qua `PUT /documents/{id}/metadata` kèm `version` mới nhất (BE-103/107). Một lần bấm xác nhận gửi lần lượt loại giấy tờ (nếu chưa) → trường → đầu văn bản → đánh dấu đã đối chiếu, không tự xác nhận thay người dùng; sửa đầu văn bản thì đặt lại về chưa đối chiếu nên bước xác nhận luôn ở cuối;
   - nháp tự lưu mỗi 5 giây vào `sessionStorage` (khôi phục sau khi hết phiên đăng nhập hoặc tải lại, bỏ nếu giấy tờ đã đổi phiên bản), `beforeunload` và hộp thoại trong trang khi bấm liên kết rời đi lúc còn thay đổi; `Ctrl+Enter` xác nhận và sang bước xếp hồ sơ;
   - AI đang đọc thì hiện tiến độ và tự cập nhật khi xong; AI vừa cập nhật lúc có thay đổi chưa lưu thì hỏi trước khi nạp dữ liệu mới; "Đọc lại trang này" (BE-44); 409 thì tải lại; ngoài phạm vi hiện "Không tìm thấy".
-- **Còn lại (FE-22):** trình xem PDF đầy đủ, làm nổi vùng nguồn (API chưa trả vùng, mới có số trang). Không có nút "Lưu tạm" lên máy chủ: nháp chỉ ở trình duyệt, ghi lên máy chủ khi xác nhận.
+- **Còn lại (FE-22):** trình xem PDF đầy đủ bằng pdf.js. Vùng nguồn chỉ có khi AI giả ghi (`scripts/dev-up.sh ai fake`); AI thật chưa ghi vùng (AI-21) nên trường không có khung. Không có nút "Lưu tạm" lên máy chủ: nháp chỉ ở trình duyệt, ghi lên máy chủ khi xác nhận.
 - **Kiểm tra:** E2E nhập ngày sai (31/02/2026) hiện lỗi tại ô, sửa rồi `Ctrl+Enter` sang bước xếp hồ sơ; test đơn vị `review-state.test.ts`.
 
 ### FE-24 · Xếp vào hồ sơ ✅ · 2 ngày
@@ -191,10 +189,13 @@ Mỗi màn đã có tệp `page.tsx` trong `src/app/(app)/…`, đầu trang đ�
   3. Hoàn tác trước khi xác nhận; gọi BE-51.
 - **Kiểm tra:** PDF 12 trang tách 4 phần đúng dải trang.
 
-### FE-26 · Danh sách hồ sơ 🟡 · 2 ngày
-- **Đã có (17/11/2026, API thật):** `ho-so/page.tsx` đọc `GET /dossiers`; bộ lọc là form GET trên URL (từ khóa, trạng thái, nhóm hồ sơ, "chỉ hồ sơ tôi chủ trì"); trang sau dùng cursor của API trên URL ("Trang sau →", "← Về trang đầu"); hạn nội bộ có chip đỏ khi quá hạn và vàng khi còn tối đa 2 ngày (`DueChip`); bảng từ 1280px, dưới đó mỗi hồ sơ một thẻ.
-- **Còn lại (chờ BE-111):** lọc năm, người chủ trì, quá hạn; sắp xếp theo cột; xuất CSV (nút "Xuất danh sách" đang khóa kèm lý do).
-- **Kiểm tra:** gửi đường dẫn có bộ lọc thì mở đúng bộ lọc; E2E tìm hồ sơ theo từ khóa trên URL.
+### FE-26 · Danh sách hồ sơ ✅ · 2 ngày
+- **Đã có (17–18/11/2026, API thật):** `ho-so/page.tsx` đọc `GET /dossiers`; mọi bộ lọc là form GET trên URL (từ khóa, trạng thái, nhóm hồ sơ, năm, chỉ hồ sơ tôi chủ trì, chỉ hồ sơ quá hạn, sắp xếp theo cột), trang sau dùng con trỏ keyset của API; hạn nội bộ có chip đỏ/vàng (`DueChip`); bảng từ 1280px, dưới đó mỗi hồ sơ một thẻ.
+  - **Sắp xếp theo cột** (BE-111): tiêu đề Mã, Tên, Cập nhật, Hạn nội bộ là liên kết đổi cột hoặc đảo chiều, có mũi tên và `aria-sort`; ô chọn "Sắp xếp theo" cho màn hẹp. Hồ sơ chưa có hạn luôn cuối.
+  - **Lọc từ liên kết ở màn khác** (không có ô chọn vì cần danh sách người/vị trí): `?nguoi=<mã>` (người chủ trì, kèm chip bỏ lọc), `?vi-tri=<mã>` (gồm vị trí con), `?phong=<mã>`; `?trang-thai=` và `?nhom=` nhận nhiều giá trị cách nhau dấu phẩy.
+  - **Xuất danh sách:** liên kết tải CSV theo đúng bộ lọc và thứ tự (`/api/v1/dossiers/export.csv?...`, một GET chỉ mang cookie, phân công theo BE-118); khóa kèm lý do nếu không có `export.create`. Tối đa 10.000 hồ sơ.
+  - Logic nằm ở `features/dossier/dossier-filter.ts` (phân tích URL, đổi sang tham số API, có test).
+- **Kiểm tra:** gửi đường dẫn có bộ lọc thì mở đúng bộ lọc; E2E `danh-sach-va-phan-cong.spec.ts` (lọc năm, quá hạn, bấm cột đảo chiều, tải CSV có BOM và đúng hồ sơ, chuyên viên không xuất được).
 
 ### FE-27 · Tạo, sửa hồ sơ 🟡 · 1,5 ngày
 - **Đã có (17/11/2026, API thật):** `ho-so/tao-moi`, `ho-so/[id]/sua`, `features/dossier/dossier-form.tsx` (luật kiểm tra ở `dossier-form-rules.ts`, có test):
@@ -218,36 +219,38 @@ Mỗi màn đã có tệp `page.tsx` trong `src/app/(app)/…`, đầu trang đ�
 - **Đã có (17/11/2026, API thật):** `components/dossier/action-bar.tsx` lấy mọi nút từ `GET /dossiers/{id}/actions` (bỏ `mockAllowedActions`); nút API khóa vẫn hiện mờ kèm lý do ngay cạnh; nút cần ý kiến mở ô ý kiến cạnh nút, đếm đủ 10 ký tự; gửi qua Server Action `transitionDossier` kèm `version`; thành công thì toast và `router.refresh()`; 409 thì báo "hồ sơ vừa được người khác thay đổi" và tải lại; không có thao tác thì nói hồ sơ đang chờ ai.
 - **Kiểm tra:** E2E `e2e/duyet-ho-so.spec.ts`: trình → trưởng phòng trả lại (ý kiến ngắn thì nút Gửi khóa) → trình lại → đạt → văn thư nộp lưu, nhật ký ghi đủ kể cả ý kiến trả lại.
 
-### FE-31 · Hồ sơ · Phân công ⬜ (chặn bởi BE-110) · 1 ngày
-- **Đã có:** tab chỉ hiện với `dossier.assign`; trang hiện người chủ trì và hạn hiện tại (`phan-cong/page.tsx`).
-- **Chặn:** API chưa có danh sách chuyên viên trong đơn vị kèm số hồ sơ đang giữ (BE-110); `GET /admin/users` cần `admin.users` mà trưởng phòng không có. `PUT /dossiers/{id}/assignment` đã có nhưng cần `userId`.
-- **Làm khi có BE-110:** ô chọn chuyên viên có tìm kiếm, hiện số hồ sơ mỗi người đang giữ; hạn không trước hôm nay; đổi người chủ trì phải ghi lý do.
+### FE-31 · Hồ sơ · Phân công ✅ · 1 ngày
+- **Đã có (18/11/2026, BE-110):** tab chỉ hiện với `dossier.assign`; `phan-cong/page.tsx` + `features/dossier/assign-panel.tsx` + `assign-rules.ts` (có test). Danh sách chuyên viên của phòng từ `GET /dossiers/{id}/assignees`, gõ tên không dấu để lọc, mỗi người kèm "Đang giữ N hồ sơ, M quá hạn" và liên kết "Xem hồ sơ" (`/ho-so?nguoi=…`); người đang chủ trì có nhãn. Hạn không trước hôm nay (giờ Việt Nam, `min` của ô ngày + kiểm lại trước khi gửi); **đổi sang người khác bắt buộc ghi lý do ≥ 10 ký tự**, chỉ đổi hạn cho cùng người thì không bắt buộc. Gửi bằng Server Action `assignDossier` (`PUT /dossiers/{id}/assignment`), lỗi theo ô hoặc kèm Mã lỗi. Hồ sơ đã lưu trữ khóa.
+- **Lưu ý:** danh sách chỉ gồm người có phân công **riêng** còn hiệu lực ở đúng phòng (khớp `assign_dossier`); người chỉ có ủy quyền không có trong danh sách.
+- **Kiểm tra:** E2E `danh-sach-va-phan-cong.spec.ts` (danh sách hiện, lọc tên, hạn quá khứ bị chặn ở giao diện, lưu hạn hợp lệ, đầu trang cập nhật, chuyên viên không có tab). **Chưa thử đổi sang người khác trong E2E** vì CSDL dev chỉ có một chuyên viên ở Hạ tầng (`dev_admin`); phần đó có test ở backend và test quy tắc ở `assign-rules.test.ts`.
 
 ### FE-32 · Hồ sơ · Nhật ký ✅ · 0,5 ngày
 - **Đã có (17/11/2026, API thật):** `ho-so/[id]/nhat-ky/page.tsx` đọc `GET /dossiers/{id}/history`: việc gần nhất ở trên, mỗi dòng có người, vai trò, loại sự kiện, chuyển từ bước nào sang bước nào, thời điểm (giờ Việt Nam) và ý kiến; lọc theo loại sự kiện và "Hiện thêm" nằm trên URL.
 - **Còn lại:** API trả toàn bộ nhật ký một lần (chưa phân trang phía API), nên "Hiện thêm" chỉ cắt phía máy chủ Next.
 
 ### FE-33 · Chi tiết giấy tờ 🟡 · 2 ngày
-- **Đã có (17/11/2026, API thật):** `giay-to/[id]/page.tsx`: trình xem bản gốc mở đúng trang theo `?trang=`; thông tin (loại, nhóm, tình trạng, tệp, SHA-256, người đã xác nhận đầu văn bản); các hồ sơ chứa giấy tờ trong phạm vi; trường đã đối chiếu kèm nhãn "Đã sửa" và giá trị AI đọc (chỉ với người có `document.edit`); kết quả kiểm tra kỹ thuật chữ ký số; liên kết văn bản (phụ lục, thay thế, sửa đổi, trả lời); tải tệp gốc (`DownloadButton` dùng `fetch` có header phân công).
-- **Còn lại:** phiên bản tệp và nút in ghi nhật ký in (BE-113); trường dữ liệu cho người chỉ có quyền xem (BE-119: `/review` cần `document.edit`); thêm, gỡ liên kết văn bản.
-- **Kiểm tra:** từ Tra cứu bấm kết quả mở đúng trang trúng (đã thử bằng trình duyệt).
+- **Đã có (17–18/11/2026, API thật):** `giay-to/[id]/page.tsx`: trình xem bản gốc mở đúng trang theo `?trang=` và đúng phiên bản theo `?tep=`; thông tin (loại, nhóm, tình trạng, tệp, SHA-256, **người** và thời điểm xác nhận đầu văn bản); các hồ sơ chứa giấy tờ trong phạm vi; kết quả kiểm tra kỹ thuật chữ ký số; liên kết văn bản (phụ lục, thay thế, sửa đổi, trả lời); tải tệp gốc (`DownloadButton`).
+  - **Phiên bản tệp** (BE-113, `features/document/file-versions.tsx`): bản gốc, bản thay thế, bản dẫn xuất, bản ký số; nhãn Hiện hành và Đã hủy nội dung; người nạp, dung lượng, trang; "Xem" mở đúng bản đó.
+  - **In** (BE-113): liên kết thường mở `?purpose=print` ở thẻ mới (phân công theo cookie, BE-118), chỉ hiện với `document.print`; mỗi lần mở ghi một dòng nhật ký `print`. Không dùng fetch + blob vì CSP của trang không cho trình xem PDF hiện bản blob.
+  - **Trường dữ liệu cho mọi người có quyền xem** (BE-119, `GET /documents/{id}/fields`): giá trị đã đối chiếu, nhãn Đã đối chiếu / Chưa đối chiếu / Đã sửa / Nhập tay, người đối chiếu, liên kết "Trang N · chỉ vùng"; người có quyền sửa thấy thêm giá trị AI đã đọc. Trưởng phòng và lãnh đạo (chỉ có `document.view`) giờ thấy trường.
+- **Còn lại:** thêm, gỡ liên kết văn bản (API đã có: `POST/DELETE /documents/{id}/relations`); thao tác tạo bản thay thế (BE-126 chưa làm, chờ quyết định).
+- **Kiểm tra:** từ Tra cứu bấm kết quả mở đúng trang trúng; đã thử với trưởng phòng (thấy trường, không có nút In) và văn thư (có In, một dòng nhật ký, chuyên viên bị 403). **Chưa thử** in thật bằng trình duyệt có bộ xem PDF (chỉ kiểm phản hồi: 200 `application/pdf`, mở tại chỗ, không Range).
 
-### FE-34 · Tra cứu ✅ (bản đầu) · 2 ngày
-- **Đã có (17/11/2026, API thật):** `tra-cuu/page.tsx`: từ khóa, phạm vi (giấy tờ/hồ sơ), nhóm hồ sơ, hình thức văn bản, ban hành từ ngày/đến ngày đều nằm trên URL (form GET); đoạn trích tô đậm bằng `<mark>` (`features/search/highlight.ts`, tô được cả khi gõ không dấu) kèm số trang trúng, bấm mở đúng trang; hiện số giấy tờ và hồ sơ tìm thấy trong phạm vi; kiểm tra từ khóa (≥ 2 ký tự) và ngày ngay ở giao diện, lỗi của API hiện dưới ô.
-- **Còn lại (chờ BE-112):** phân trang (hiện lấy 30 kết quả khớp nhất và báo còn thêm), lọc cơ quan ban hành.
-- **Kiểm tra:** gõ "to khai khai sinh" (không dấu) ra "Tổ khai đăng ký khai sinh" có tô đậm (đã thử bằng trình duyệt).
+### FE-34 · Tra cứu ✅ · 2 ngày
+- **Đã có (17–18/11/2026, API thật):** `tra-cuu/page.tsx`: từ khóa, phạm vi (giấy tờ/hồ sơ), nhóm hồ sơ, hình thức văn bản, ban hành từ ngày/đến ngày, **cơ quan ban hành** đều nằm trên URL (form GET); đoạn trích tô đậm bằng `<mark>` (`features/search/highlight.ts`) kèm số trang trúng; số giấy tờ và hồ sơ tìm thấy trong phạm vi.
+  - **Phân trang** (BE-112): "Trang sau →" và "← Về trang đầu" dùng con trỏ `con-tro` trên URL; tổng số không đổi giữa các trang. Địa chỉ dựng ở `features/search/search-url.ts` (có test; không dùng khóa `trang` vì đã dùng để mở đúng trang của giấy tờ).
+  - **Cơ quan ban hành:** gõ tên (không dấu cũng được) hoặc mã; chỉ lọc giấy tờ nên bỏ phần hồ sơ (có ghi chú dưới ô).
+- **Kiểm tra:** gõ "to khai khai sinh" (không dấu) ra "Tổ khai đăng ký khai sinh" có tô đậm. **Chưa có E2E** cho phân trang.
 
 ### FE-35 · Thủ tục hành chính 🟡 · 2 ngày
+- **API sẵn (18/11/2026):** BE-122 lọc `GET /procedures?level=` và `GET /procedures/levels` (đã gộp "Cấp xã"/"Cấp Xã").
 - **Làm:** danh sách, lọc, chi tiết thành phần, tải mẫu (BE-33); thủ tục bãi bỏ có cảnh báo; nút “Tạo hồ sơ theo thủ tục này”.
 - **Kiểm tra:** thay được trang `data/official-forms/index.html` của bản thí điểm.
 
 ### FE-36 · Kho bản giấy, mượn trả 🟡 · 3 ngày
-- **Phụ thuộc API mới:** BE-111 (hồ sơ trong một vị trí kho; hiện vị trí chỉ có `dossierCount`).
-- **Làm:**
-  1. Cây vị trí và hồ sơ trong vị trí; in nhãn QR (BE-81).
-  2. Ô tìm nhận mã từ đầu đọc mã vạch (nhập như bàn phím, Enter để mở).
-  3. Chuyển vị trí; mượn trả theo tab (BE-83).
-- **Kiểm tra:** quét QR mở đúng hộp.
+- **Đã có (18/11/2026, BE-111):** `kho-ban-giay/page.tsx` (cây vị trí kho › phòng › tủ › kệ › hộp, mỗi dòng kèm số hồ sơ **cộng dồn cả vị trí con**; ô tìm nhận nội dung mã QR từ đầu đọc mã vạch: đúng mã thì mở thẳng vị trí, không thì lọc theo mã/tên/đường dẫn không dấu) và `kho-ban-giay/[locationId]/page.tsx` (đường dẫn đầy đủ, mã QR SVG nạp qua `<img>` nhờ BE-118, vị trí con, các hồ sơ đang ở đó kể cả vị trí con, "In nhãn QR"). Số hồ sơ bấm được ra `/ho-so?vi-tri=<mã>` cùng đúng con số. `features/storage/` có test (lọc, cộng dồn, chống vòng).
+- **Còn lại:** thêm/sửa/ngừng dùng vị trí; chuyển vị trí hồ sơ (`PUT /dossiers/{id}/location`, chỉ đặt ở cấp hộp hoặc kệ); in nhãn hàng loạt; mượn trả theo tab (BE-83).
+- **Kiểm tra:** quét QR mở đúng hộp (đã thử: trang trả `meta refresh` tới đúng vị trí vì `loading.tsx` làm trang stream); cây và trang vị trí và danh sách lọc cùng ra đúng 2 hồ sơ. **Chưa có E2E** cho màn kho. CSDL dev có cây thử `E2E-KHO` (xóa được bằng cách ngừng dùng).
 
 ### FE-37 · Nộp lưu 🟡 · 2 ngày
 - **Làm:** hàng chờ; chọn nhiều để tạo đợt; kiểm tra từng hồ sơ; tiếp nhận hoặc trả lại; tải biên bản (BE-84, BE-85).
@@ -262,15 +265,18 @@ Mỗi màn đã có tệp `page.tsx` trong `src/app/(app)/…`, đầu trang đ�
 - **Kiểm tra:** không thể thực hiện khi chưa duyệt.
 
 ### FE-40 · Thông báo 🟡 · 1 ngày
+- **API sẵn (18/11/2026):** BE-124 phân trang `GET /notifications?cursor=` → `nextCursor`.
 - **Lưu ý:** API đẩy thông báo qua SSE `notification.created` (không có SignalR); nghe bằng `useServerEvent`.
 - **Làm:** danh sách (BE-70), đánh dấu đã đọc, đánh dấu tất cả; chuông cập nhật qua SSE; bấm thông báo mở đúng hồ sơ.
 - **Kiểm tra:** thông báo mới đến trong 1 giây.
 
 ### FE-41 · Lô quét và lỗi ảnh 🟡 · 2 ngày
+- **API sẵn (18/11/2026):** BE-125 `POST /intake/batches/{id}/close`: không thân → 409 kèm số lỗi (hiện cảnh báo); gửi `{ acceptOpenIssuesNote }` (từ 10 ký tự) → chấp nhận bỏ qua mọi lỗi đang mở và đóng lô trong một lần.
 - **Làm:** danh sách lô, tạo lô, chi tiết lô, bảng lỗi ảnh theo trang, đánh dấu đã quét lại (BE-40, BE-53).
 - **Kiểm tra:** đóng lô còn lỗi thì hiện cảnh báo nhưng vẫn cho đóng.
 
 ### FE-42 · Tài khoản, người dùng, phân công 🟡 · 2,5 ngày
+- **API sẵn (18/11/2026):** BE-121 `expiringAssignments`, `nextAssignmentEndsAt`, `endsSoon`, `GET /admin/users?expiring=true` (chip vàng); BE-123 `GET /me/logins` (mục "Lịch sử đăng nhập gần đây" của trang Tài khoản).
 - **Làm:** trang tài khoản (BE-30); quản trị người dùng, phân công có thời hạn và căn cứ, ủy quyền, khóa tài khoản (BE-34).
 - **Kiểm tra:** phân công sắp hết hạn (≤ 7 ngày) có chip vàng.
 
@@ -279,6 +285,7 @@ Mỗi màn đã có tệp `page.tsx` trong `src/app/(app)/…`, đầu trang đ�
 - **Kiểm tra:** ngừng dùng loại đã có giấy tờ, không có nút xóa.
 
 ### FE-44 · Quản trị vận hành 🟡 · 2 ngày
+- **API sẵn (18/11/2026):** BE-120 `GET /admin/ai/jobs`, `POST /admin/ai/jobs/{id}/cancel|retry` cho `processing.manage` (không cần phạm vi giấy tờ; `/jobs/{id}` của người dùng luôn 404 với quản trị). Mỗi dòng có `canCancel`, `canRetry`, `retryBlockedReason` để khóa nút kèm lý do.
 - **Làm:** hàng đợi AI, đọc lại hoặc hủy job, mô hình, sao lưu, cài đặt (BE-88, BE-89); liên kết công cụ thử nghiệm SAM 3.
 - **Kiểm tra:** chỉ `technical_admin` thấy.
 
@@ -326,13 +333,15 @@ Tìm ra khi đối chiếu frontend với `nghiep-vu-vai-tro.html`, docs/05, doc
   - `LogoutButton`: xóa cookie phân công trước khi gửi form đăng xuất.
 - **Kiểm tra:** đã thử bằng trình duyệt với API thật (cookie phân công giả, đăng nhập dev `mfa=false` rồi chọn phân công văn thư, đăng xuất).
 
-### FE-47 · Bảng tổng hợp cho lãnh đạo ⬜ · 1,5 ngày
-- **Làm:** Chủ tịch UBND: tổng hợp theo phòng (đang chuẩn bị, chờ kiểm tra, chờ ý kiến, quá hạn) và danh sách việc được trình. Lãnh đạo HĐND: ba lối vào kỳ họp và nghị quyết, thẩm tra các Ban, giám sát và kiến nghị.
-- **Phụ thuộc:** FE-20, BE-115.
+### FE-47 · Bảng tổng hợp cho lãnh đạo ✅ · 1,5 ngày
+- **Đã có (18/11/2026, BE-115):** `features/workspace/leadership-overview.tsx` hiện đầu màn Việc của tôi cho Chủ tịch UBND (bảng theo phòng, kể cả phòng chưa có hồ sơ) và lãnh đạo HĐND (ba lối vào: kỳ họp và nghị quyết, thẩm tra của các Ban, giám sát và kiến nghị, thêm dòng hoạt động khác khi có). Cột: Đang chuẩn bị, Chờ kiểm tra, Chờ ý kiến, Chờ nộp lưu, Quá hạn (đỏ khi > 0, nằm trong Đang xử lý), Đang xử lý; dòng Tổng cộng. Danh sách việc được trình vẫn là hàng "Chờ bạn cho ý kiến" bên dưới.
+  - Bấm một số mở danh sách hồ sơ đúng con số đó (`leadership-links.ts`, có test; đã đối chiếu: ô "Hạ tầng · Đang chuẩn bị" = 9 và danh sách ra 9); số 0 không có liên kết.
+- **Cần xác nhận nghiệp vụ:** cách gom nhóm hồ sơ HĐND vào ba lối vào (H01–H02, H03–H04, H05–H08, còn lại là "khác") do tôi đề xuất, nằm ở `HdndActivities` (backend). CSDL dev hiện không có hồ sơ HĐND nên bảng HĐND mới thấy toàn số 0.
 - **Nguồn:** `nghiep-vu-vai-tro.html` mục 05.
 
-### FE-48 · Đi trong danh sách bằng bàn phím ⬜ · 0,5 ngày
-- **Làm:** ↑ ↓ chọn dòng, Enter mở, ở hộp tiếp nhận, danh sách hồ sơ, tra cứu, thông báo (docs/07 quy tắc 8). Nên làm cùng `DataTable` của FE-03.
+### FE-48 · Đi trong danh sách bằng bàn phím 🟡 · 0,5 ngày
+- **Đã có (18/11/2026):** `components/ui/row-navigation.tsx` (có test): ↑ ↓ chuyển giữa các dòng, Home/End về đầu/cuối, Enter mở (dòng là liên kết nên Enter có sẵn). Gắn trình nghe phím cho cả trang, chỉ chiếm phím khi trang có liên kết `a[data-row]` đang hiện; nhường phím cho ô nhập, danh sách chọn, hộp thoại và mọi tổ hợp có Ctrl/Alt/⌘/Shift. Dòng đánh dấu bằng `data-row` ở danh sách hồ sơ (bảng và thẻ), tra cứu, hàng việc ở Việc của tôi và hồ sơ trong vị trí kho.
+- **Còn lại:** hộp tiếp nhận (dòng dùng `ButtonLink`, chưa nhận thuộc tính `data-row`) và danh sách thông báo (FE-40 chưa có danh sách). **Chưa thử bằng trình duyệt thật**, mới có test jsdom.
 
 ## Sau khi xong các màn
 
@@ -341,7 +350,7 @@ Tìm ra khi đối chiếu frontend với `nghiep-vu-vai-tro.html`, docs/05, doc
 | MG-04 | Chuyển `index.html`, `nghiep-vu-vai-tro.html` vào `public/nghien-cuu/` dạng tĩnh, liên kết từ trang đăng nhập | 0,5 |
 | SEC-04 | Quy tắc lint an toàn: cấm `dangerouslySetInnerHTML`, `eval`, import `server-only` vào client; Server Action phải qua `runAction`/`requireSession` (docs/05) | 0,5 |
 | LOG-04 | Gửi lỗi máy chủ Next sang GlitchTip (gộp với FE-11) | 1 |
-| LOG-08 | Màn Nhật ký hệ thống `/quan-tri/nhat-ky` (đang là khung): lọc người, hành động, thời gian, mã tương quan; tìm theo Mã lỗi (cần BE-117) | 1,5 |
+| LOG-08 ✅ | Màn Nhật ký hệ thống `/quan-tri/nhat-ky` (18/11/2026, BE-88, BE-117): ba cách xem (Mã lỗi, Truy cập, Thay đổi dữ liệu), bộ lọc trên URL (mã lỗi, mã tương quan, đối tượng, khoảng ngày giờ Việt Nam), phân trang theo id. Tra Mã lỗi (không phân biệt hoa thường) ra request, người, mã tương quan và các lần truy cập cùng request; mã sai định dạng hoặc không có đều có thông báo riêng. Nhật ký thay đổi chỉ hiện tên cột, không giá trị. Đã thử với một lỗi thật. Chưa làm: xuất CSV, lọc theo người (cần ô chọn người) | 1,5 |
 | QA-02 | E2E đủ kịch bản theo vai trò trong `nghiep-vu-vai-tro.html` | 3 |
 | QA-05 | Kiểm tra tiếp cận (axe + bàn phím) 10 màn chính | 1 |
 | OPS-01 | Docker image `node .next/standalone/server.js` (không dùng `next start` với `output: standalone`), chạy không phải root | 0,5 |

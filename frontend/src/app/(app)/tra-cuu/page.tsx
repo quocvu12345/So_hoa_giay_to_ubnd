@@ -4,6 +4,7 @@ import { FileSearch, Search } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { EmptyState, NeedsRealApi, PageBody } from "@/components/ui/blocks";
 import { NoAccess } from "@/components/ui/no-access";
+import { RowNavigation } from "@/components/ui/row-navigation";
 import { PageHeader } from "@/components/ui/page-header";
 import { routes } from "@/config/routes";
 import { highlight } from "@/features/search/highlight";
@@ -156,6 +157,7 @@ export default async function SearchPage({ searchParams }: PageProps<"/tra-cuu">
               </EmptyState>
             ) : result ? (
               <div className="grid gap-4">
+                <RowNavigation />
                 <p role="status" className="text-sm text-muted">
                   Tìm thấy <b className="text-ink">{result.totalDocuments}</b> giấy tờ và <b className="text-ink">{result.totalDossiers}</b> hồ sơ cho “{q}”.
                   {cursor && " Đang xem các trang sau."}
@@ -168,7 +170,7 @@ export default async function SearchPage({ searchParams }: PageProps<"/tra-cuu">
                         const href = `${routes.document(hit.id)}${hit.page ? `?trang=${hit.page}` : ""}` as never;
                         return (
                           <li key={hit.id} className="grid gap-1 border border-line bg-surface p-3 text-sm">
-                            <Link href={href} className="font-semibold text-primary hover:underline">
+                            <Link href={href} data-row className="font-semibold text-primary hover:underline">
                               <Highlighted text={hit.title} query={q} />
                             </Link>
                             <span className="text-xs text-muted">
@@ -202,7 +204,7 @@ export default async function SearchPage({ searchParams }: PageProps<"/tra-cuu">
                     <ul className="grid gap-2">
                       {dossiers.map((hit) => (
                         <li key={hit.id} className="grid gap-0.5 border border-line bg-surface p-3 text-sm">
-                          <Link href={routes.dossier(hit.id)} className="font-semibold text-primary hover:underline"><Highlighted text={hit.title} query={q} /></Link>
+                          <Link href={routes.dossier(hit.id)} data-row className="font-semibold text-primary hover:underline"><Highlighted text={hit.title} query={q} /></Link>
                           <span className="font-mono text-xs text-muted">{hit.number}</span>
                         </li>
                       ))}

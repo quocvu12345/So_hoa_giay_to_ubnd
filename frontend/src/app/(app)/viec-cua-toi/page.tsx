@@ -7,9 +7,11 @@ import { DueChip } from "@/components/dossier/due-chip";
 import { ButtonLink } from "@/components/ui/button";
 import { EmptyState, NeedsRealApi, PageBody, Section } from "@/components/ui/blocks";
 import { PageHeader } from "@/components/ui/page-header";
+import { RowNavigation } from "@/components/ui/row-navigation";
 import { WorkflowChip } from "@/components/ui/status-chip";
 import { routes } from "@/config/routes";
-import { getQueues, getSummary } from "@/features/workspace/workspace-data";
+import { LeadershipOverview } from "@/features/workspace/leadership-overview";
+import { getLeadership, getQueues, getSummary } from "@/features/workspace/workspace-data";
 import { orderQueue, sectionsFor, type QueueKind } from "@/features/workspace/workspace-queue";
 import { pageSession } from "@/lib/auth/page-guard";
 import { can } from "@/lib/auth/session";
@@ -30,7 +32,8 @@ export default async function MyWorkPage() {
   const role = session.activeAssignment.role;
   const canUpload = can(session, "intake.upload");
   const real = !serverEnv().mock;
-  const [summary, queues] = real ? await Promise.all([getSummary(), getQueues()]) : [null, null];
+  const isLeader = role === "chair" || role === "council";
+  const [summary, queues, leadership] = real ? await Promise.all([getSummary(), getQueues(), isLeader ? getLeadership() : null]) : [null, null, null];
   const sections = sectionsFor(role);
 
   return (
@@ -48,6 +51,7 @@ export default async function MyWorkPage() {
         }
       />
       <RefreshOnEvents events={["dossier.changed", "notification.created", "job.completed", "resync"]} />
+      <RowNavigation />
       <PageBody>
         {!real || !summary || !queues ? (
           <NeedsRealApi what="Việc của tôi" />
@@ -61,6 +65,8 @@ export default async function MyWorkPage() {
                 <ArrowRight aria-hidden className="size-5 text-primary" />
               </Link>
             )}
+
+            {leadership && <LeadershipOverview summary={leadership} />}
 
             {role === "technical_admin" && (
               <Section title="Vận hành" description="Quản trị kỹ thuật không xem nội dung hồ sơ.">
@@ -88,7 +94,7 @@ export default async function MyWorkPage() {
                     <ul>
                       {rows.slice(0, VISIBLE).map((d) => (
                         <li key={d.dossierId} className="flex flex-wrap items-center gap-x-4 gap-y-1 border-t border-line py-2.5 first:border-t-0">
-                          <Link href={routes.dossier(d.dossierId)} className="grid min-w-0 flex-1 gap-0.5 hover:text-primary">
+                          <Link href={routes.dossier(d.dossierId)} data-row className="grid min-w-0 flex-1 gap-0.5 hover:text-primary">
                             <span className="font-mono text-xs text-muted">{d.code}</span>
                             <span className="font-semibold">{d.title}</span>
                           </Link>

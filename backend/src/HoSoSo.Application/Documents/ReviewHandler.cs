@@ -13,7 +13,6 @@ namespace HoSoSo.Application.Documents;
 /// </summary>
 public sealed partial class ReviewHandler(IHoSoDb db, IScopeFilter scope, ICurrentUser user, IClock clock, IAccessLog access)
 {
-    private static readonly string[] EditableDossierStatuses = ["draft", "returned"];
 
     /// <summary>Ngày/tháng/năm, có thể kèm giờ ("20/01/2026 14:30", "20/01/2026, 14h30"); chỉ phần ngày được chuẩn hóa, giờ nằm lại ở chuỗi gốc.</summary>
     [GeneratedRegex(@"^\s*(\d{1,2})/(\d{1,2})/(\d{4})(?:[\s,]+(?:lúc\s+)?\d{1,2}\s*[:hH]\s*\d{2})?\s*$")]
@@ -78,7 +77,8 @@ public sealed partial class ReviewHandler(IHoSoDb db, IScopeFilter scope, ICurre
                 var edited = v?.AiFieldSuggestionId is { } sid && aiValues.TryGetValue(sid, out var ai) && !string.IsNullOrWhiteSpace(ai)
                     && !string.Equals(HoSoText.Fold(ai), HoSoText.Fold(v.ValueText ?? ""), StringComparison.Ordinal);
                 views.Add(new DocumentFieldView(f.Code, f.Label, f.Position, f.ValueType, v?.ValueText, v is { NeedsReview: false }, v?.ValueOrigin ?? "none", edited,
-                    v?.VerifiedBy is { } by && names.TryGetValue(by, out var name) ? name : null, v?.VerifiedAt, v?.SourcePage, SourceRegions.Parse(v?.SourceRegion)));
+                    v?.VerifiedBy is { } by && names.TryGetValue(by, out var name) ? name : null, v?.VerifiedAt, v?.SourcePage, SourceRegions.Parse(v?.SourceRegion),
+                    v?.SourcePage is not null || v?.SourceRegion is not null ? v.SourceFileId : null));
             }
         }
         var reviewer = await db.Read<Document>().Where(d => d.Id == id).Select(d => new { d.ReviewedBy, d.ReviewedAt }).SingleAsync(ct);
@@ -133,7 +133,9 @@ public sealed partial class ReviewHandler(IHoSoDb db, IScopeFilter scope, ICurre
                 if (suggestion!.DocumentForm.Length > 0) doc.DocumentForm = suggestion.DocumentForm;
                 if (suggestion.Title.Length > 0) doc.Title = suggestion.Title;
             }
-            var fileId = await db.Read<FileRecord>().Where(f => f.DocumentId == id && f.FileRole == "scan").Select(f => (Guid?)f.Id).FirstOrDefaultAsync(ct);
+            // Vùng nguồn thuộc bản quét mà AI đã đọc (có thể là bản cũ nếu giấy tờ đã được thay bản quét sau lần đọc đó).
+            var fileId = await db.Read<OcrJob>().Where(j => j.Id == suggestion!.JobId).Select(j => (Guid?)j.FileId).FirstOrDefaultAsync(ct)
+                         ?? await DocumentFiles.CurrentScanIdAsync(db, id, ct);
             var existing = (await db.Read<DocumentFieldValue>().Where(v => v.DocumentId == id).Select(v => v.FieldDefinitionCode).ToListAsync(ct)).ToHashSet();
             var typeFields = await db.Read<FieldDefinition>().Where(f => f.DocumentTypeCode == type.Code).ToDictionaryAsync(f => f.Code, ct);
             var suggested = await db.Read<AiFieldSuggestion>().Where(f => f.SuggestionId == suggestion!.Id).ToListAsync(ct);
@@ -168,7 +170,6 @@ public sealed partial class ReviewHandler(IHoSoDb db, IScopeFilter scope, ICurre
         var values = await db.Set<DocumentFieldValue>().Where(v => v.DocumentId == id).ToDictionaryAsync(v => v.FieldDefinitionCode, ct);
         var latest = await db.Read<AiSuggestion>().Where(s => s.DocumentId == id).OrderByDescending(s => s.CreatedAt).ThenByDescending(s => s.Id).Select(s => (long?)s.Id).FirstOrDefaultAsync(ct);
         var suggested = latest is null ? [] : await db.Read<AiFieldSuggestion>().Where(f => f.SuggestionId == latest).ToDictionaryAsync(f => f.FieldDefinitionCode, ct);
-        var fileId = await db.Read<FileRecord>().Where(f => f.DocumentId == id && f.FileRole == "scan").Select(f => (Guid?)f.Id).FirstOrDefaultAsync(ct);
         var me = user.RequireUserId();
         var now = clock.UtcNow;
 
@@ -268,7 +269,10 @@ public sealed partial class ReviewHandler(IHoSoDb db, IScopeFilter scope, ICurre
     private async Task<DocumentDetail> DetailAsync(Guid id, CancellationToken ct)
     {
         var d = await scope.Documents(db.Read<Document>()).SingleOrDefaultAsync(x => x.Id == id, ct) ?? throw AppException.NotFound("giấy tờ");
-        var file = await db.Read<FileRecord>().Where(f => f.DocumentId == id && f.FileRole != "derivative").OrderBy(f => f.VersionNo)
+        // Tệp chính = bản hiện hành của thành phần "main" (BE-126: bản quét đã bị thay xếp sau bản thay nó).
+        var allFiles = db.Read<FileRecord>();
+        var file = await allFiles.Where(f => f.DocumentId == id && f.FileRole != "derivative")
+            .OrderByDescending(f => f.ComponentKey == "main").ThenBy(f => allFiles.Any(n => n.ReplacesFileId == f.Id)).ThenByDescending(f => f.VersionNo)
             .Select(f => new FileInfoDto(f.Id, f.OriginalName, f.MediaType, f.ByteSize, f.PageCount, f.Sha256)).FirstOrDefaultAsync(ct);
         var classification = await (from c in db.Read<DocumentClassification>()
                                     join g in db.Read<WorkGroup>() on c.WorkGroupCode equals g.Code
@@ -293,10 +297,12 @@ public sealed partial class ReviewHandler(IHoSoDb db, IScopeFilter scope, ICurre
                           from u in uploaders.DefaultIfEmpty()
                           where f.DocumentId == documentId
                           orderby f.ComponentKey, f.VersionNo, f.UploadedAt
-                          select new { f.Id, f.ComponentKey, f.VersionNo, f.FileRole, f.OriginalName, f.MediaType, f.ByteSize, f.PageCount, f.Sha256, f.UploadedAt, UploaderName = u.DisplayName, f.DisposedAt }).ToListAsync(ct);
+                          select new { f.Id, f.ComponentKey, f.VersionNo, f.FileRole, f.OriginalName, f.MediaType, f.ByteSize, f.PageCount, f.Sha256, f.UploadedAt, UploaderName = u.DisplayName, f.DisposedAt,
+                              f.ReplacesFileId, f.ReplacementReason }).ToListAsync(ct);
         var newest = rows.Where(r => r.DisposedAt is null).GroupBy(r => (r.ComponentKey, r.FileRole)).ToDictionary(g => g.Key, g => g.Max(r => r.VersionNo));
         return rows.Select(r => new FileVersionDto(r.Id, r.ComponentKey, r.VersionNo, r.FileRole, KindOf(r.FileRole, r.VersionNo), r.OriginalName, r.MediaType, r.ByteSize, r.PageCount, r.Sha256,
-            r.UploadedAt, r.UploaderName, r.DisposedAt is not null, r.DisposedAt is null && newest.TryGetValue((r.ComponentKey, r.FileRole), out var top) && top == r.VersionNo)).ToList();
+            r.UploadedAt, r.UploaderName, r.DisposedAt is not null, r.DisposedAt is null && newest.TryGetValue((r.ComponentKey, r.FileRole), out var top) && top == r.VersionNo,
+            r.ReplacesFileId, r.ReplacementReason)).ToList();
     }
 
     private static string KindOf(string role, int versionNo) => role switch
@@ -309,13 +315,8 @@ public sealed partial class ReviewHandler(IHoSoDb db, IScopeFilter scope, ICurre
     private async Task<(bool CanEdit, string? Reason)> EditStateAsync(Guid id, string origin, string intakeStatus, CancellationToken ct)
     {
         if (!user.Has(HoSoSo.Domain.Identity.Permissions.DocumentEdit)) return (false, "Phân công đang dùng không có quyền sửa giấy tờ.");
-        if (origin == "public_source") return (false, "Văn bản công khai lấy từ nguồn chính thức, không sửa tại đây.");
-        if (intakeStatus is IntakeStatus.Discarded or IntakeStatus.Split) return (false, "Giấy tờ đã bị bỏ hoặc đã tách.");
-        var locked = await (from l in db.Read<DossierDocument>()
-                            join d in db.Read<Dossier>() on l.DossierId equals d.Id
-                            where l.DocumentId == id && !EditableDossierStatuses.Contains(d.Status)
-                            select d.Code).FirstOrDefaultAsync(ct);
-        return locked is null ? (true, null) : (false, $"Giấy tờ đang nằm trong hồ sơ {locked} ở bước chờ xử lý nên không sửa được.");
+        var reason = await DocumentEditRules.LockReasonAsync(db, id, origin, intakeStatus, ct);
+        return (reason is null, reason);
     }
 
     private async Task<Document> EditableDocumentAsync(Guid id, CancellationToken ct)
@@ -331,6 +332,7 @@ public sealed partial class ReviewHandler(IHoSoDb db, IScopeFilter scope, ICurre
         var definitions = await db.Read<FieldDefinition>().Where(f => f.DocumentTypeCode == typeCode).OrderBy(f => f.Position).ToListAsync(ct);
         var values = await db.Read<DocumentFieldValue>().Where(v => v.DocumentId == documentId).ToDictionaryAsync(v => v.FieldDefinitionCode, ct);
         var suggested = suggestion is null ? [] : await db.Read<AiFieldSuggestion>().Where(f => f.SuggestionId == suggestion!.Id).ToDictionaryAsync(f => f.FieldDefinitionCode, ct);
+        var suggestionFile = suggestion is null ? null : await db.Read<OcrJob>().Where(j => j.Id == suggestion.JobId).Select(j => (Guid?)j.FileId).FirstOrDefaultAsync(ct);
         var result = new List<ReviewField>();
         foreach (var f in definitions)
         {
@@ -340,7 +342,11 @@ public sealed partial class ReviewHandler(IHoSoDb db, IScopeFilter scope, ICurre
             result.Add(new ReviewField(f.Code, f.Label, f.Position, f.ValueType, f.RequiredForReview,
                 s?.Value is { Length: > 0 } ? s.Value : null, s?.Quote is { Length: > 0 } ? s.Quote : null, s?.SourcePages ?? [], s?.QuoteVerified ?? false,
                 v?.ValueText, v?.NeedsReview ?? true, v is { NeedsReview: false }, Attention(f, s, current),
-                SourceRegions.Parse(s?.SourceRegion ?? v?.SourceRegion), s?.Confidence));
+                SourceRegions.Parse(s?.SourceRegion ?? v?.SourceRegion), s?.Confidence,
+                // Cùng nguồn với vùng đang trả: vùng của gợi ý thuộc bản AI đã đọc, vùng của giá trị đã lưu thuộc source_file_id.
+                s?.SourceRegion is not null ? suggestionFile
+                : v?.SourceRegion is not null ? v.SourceFileId
+                : s?.SourcePages is { Length: > 0 } ? suggestionFile : v?.SourceFileId));
         }
         return result;
     }

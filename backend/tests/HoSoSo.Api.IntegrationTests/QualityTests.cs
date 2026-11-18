@@ -50,6 +50,28 @@ public sealed class QualityTests(DbApiFactory api) : IClassFixture<DbApiFactory>
     }
 
     [Fact]
+    public async Task Dong_lo_con_loi_kem_ly_do_thi_chap_nhan_bo_qua_tat_ca_va_dong_trong_mot_lan()
+    {
+        var (clerk, batch, file) = await NewBatchWithFileAsync("lo-chap-nhan");
+        await clerk.PostJsonAsync("/api/v1/quality-issues", new { batchId = batch.Id, fileId = file.FileId, pageNo = 1, issueType = "blurry", description = "Trang 1 mờ" });
+        await clerk.PostJsonAsync("/api/v1/quality-issues", new { batchId = batch.Id, fileId = file.FileId, pageNo = 2, issueType = "skewed", description = "Trang 2 nghiêng" });
+
+        // Không có lý do: 409 kèm số lỗi để giao diện cảnh báo. Lý do quá ngắn: 400, lô và lỗi giữ nguyên.
+        var blocked = await clerk.PostJsonAsync($"/api/v1/intake/batches/{batch.Id}/close", new { });
+        blocked.StatusCode.ShouldBe(HttpStatusCode.Conflict);
+        (await blocked.Content.ReadAsStringAsync(TestContext.Current.CancellationToken)).ShouldContain("2 lỗi ảnh");
+        (await clerk.PostJsonAsync($"/api/v1/intake/batches/{batch.Id}/close", new { acceptOpenIssuesNote = "ngắn" })).StatusCode.ShouldBe(HttpStatusCode.BadRequest);
+        (await (await clerk.GetAsync($"/api/v1/quality-issues?batchId={batch.Id}&status=open")).ReadAsync<Overview>()).Issues.Count.ShouldBe(2);
+
+        var closed = await (await clerk.PostJsonAsync($"/api/v1/intake/batches/{batch.Id}/close",
+            new { acceptOpenIssuesNote = "Bản gốc đã mờ sẵn, không quét tốt hơn được" })).ReadAsync<Batch>();
+        (closed.Status, closed.OpenIssues).ShouldBe(("closed", 0));
+        var all = (await (await clerk.GetAsync($"/api/v1/quality-issues?batchId={batch.Id}")).ReadAsync<Overview>()).Issues;
+        all.Count.ShouldBe(2);
+        all.ShouldAllBe(i => i.Status == "wont_fix" && i.Description.Contains("Chấp nhận khi đóng lô: Bản gốc đã mờ sẵn"));
+    }
+
+    [Fact]
     public async Task Trang_AI_gan_co_dang_ngo_hien_trong_danh_sach_va_danh_dau_quet_lai_mo_loi()
     {
         var (clerk, batch, file) = await NewBatchWithFileAsync("trang-mo");

@@ -45,10 +45,10 @@ test("Nạp 3 PDF, đọc xong, đối chiếu và xếp vào hồ sơ mới @in
   await expect(page.getByText("Thông tin đầu văn bản")).toBeVisible();
   await expect(page.getByRole("img", { name: /Trang 1 của bản gốc/ })).toBeVisible({ timeout: 30_000 });
   await expectAccessible(page);
-  await page.getByLabel("Ngày ban hành").fill("31/02/2026");
+  await page.getByLabel("Ngày ban hành", { exact: true }).fill("31/02/2026");
   await page.getByRole("button", { name: /Xác nhận, xếp vào hồ sơ/ }).click();
   await expect(page.getByText("Nhập ngày dạng ngày/tháng/năm")).toBeVisible(); // lỗi hiện tại đúng ô, không gửi lên API
-  await page.getByLabel("Ngày ban hành").fill("17/11/2026");
+  await page.getByLabel("Ngày ban hành", { exact: true }).fill("17/11/2026");
   for (const box of await page.getByLabel("Tôi đã kiểm trường này trên bản gốc").all()) await box.check();
   await page.keyboard.press("Control+Enter");
 

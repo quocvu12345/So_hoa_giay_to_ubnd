@@ -15,7 +15,8 @@ import { useServerEvent } from "@/lib/events/server-events";
 import { useServerAction } from "@/lib/use-server-action";
 import { ExtractNowButton } from "@/features/intake/extract-now-button";
 import { progressLabel, type LiveProgress } from "@/features/intake/inbox-live";
-import { PageViewer } from "./page-viewer";
+import { PageViewer, type Highlight } from "./page-viewer";
+import { isValidRegion } from "./source-region";
 import {
   buildFieldEdits,
   buildMetaPayload,
@@ -66,6 +67,7 @@ export function ReviewScreen({ data: serverData, groups, types: initialTypes, ca
   const [draft, setDraft] = useState<ReviewDraft>(baseline);
   const [errors, setErrors] = useState<ReviewErrors>({});
   const [page, setPage] = useState(1);
+  const [highlight, setHighlight] = useState<Highlight | null>(null);
   const [restoredAt, setRestoredAt] = useState<string | null>(null);
   const [newerData, setNewerData] = useState<ReviewData | null>(null);
   const [leaveTo, setLeaveTo] = useState<string | null>(null);
@@ -225,9 +227,12 @@ export function ReviewScreen({ data: serverData, groups, types: initialTypes, ca
     setDraft((current) => ({ ...current, meta: { ...current.meta, [key]: value } }));
     setErrors((current) => (current[`meta.${key}`] ? { ...current, [`meta.${key}`]: "" } : current));
   }
+  /** Bấm vào trường: nhảy tới trang nguồn và làm nổi vùng chứa giá trị (BE-114). Trường không có vùng thì bỏ khung cũ, không để khung của trường khác. */
   function jumpTo(field: ReviewField) {
-    const target = field.sourcePages[0];
+    const region = isValidRegion(field.sourceRegion) ? field.sourceRegion : null;
+    const target = region?.page ?? field.sourcePages[0];
     if (target && target >= 1 && target <= pageCount) setPage(target);
+    setHighlight(region && region.page <= pageCount ? { region, label: field.label } : null);
   }
 
   // ---- xác nhận ----
@@ -372,7 +377,7 @@ export function ReviewScreen({ data: serverData, groups, types: initialTypes, ca
       <div className="grid min-h-[60vh] lg:grid-cols-2">
         <section aria-label="Bản gốc" className="grid content-start gap-3 border-b border-line bg-soft p-4 lg:sticky lg:top-14 lg:max-h-[calc(100dvh-3.5rem)] lg:self-start lg:overflow-auto lg:border-r lg:border-b-0">
           {doc.file ? (
-            <PageViewer fileId={doc.file.id} pageCount={pageCount} page={page} onPageChange={setPage} />
+            <PageViewer fileId={doc.file.id} pageCount={pageCount} page={page} onPageChange={setPage} highlight={highlight} />
           ) : (
             <p className="text-sm text-muted">Giấy tờ này chưa có tệp để xem.</p>
           )}
@@ -433,7 +438,7 @@ export function ReviewScreen({ data: serverData, groups, types: initialTypes, ca
             <legend className="px-1 text-sm font-bold text-heading">Thông tin đầu văn bản</legend>
             <p className="text-xs text-muted">
               Kiểm tra với bản gốc rồi xác nhận.
-              {reviewedAt && <> Đã xác nhận lúc {reviewedAt.toLocaleString("vi-VN")}{doc.metadataReviewNote ? ` · ghi chú: ${doc.metadataReviewNote}` : ""}.</>}
+              {reviewedAt && <> Đã xác nhận{doc.metadataReviewedByName ? ` bởi ${doc.metadataReviewedByName}` : ""} lúc {reviewedAt.toLocaleString("vi-VN")}{doc.metadataReviewNote ? ` · ghi chú: ${doc.metadataReviewNote}` : ""}.</>}
             </p>
             <TextField id={fieldDomId(docId, "meta.title")} label="Tiêu đề, trích yếu" required value={draft.meta.title} onChange={(v) => setMeta("title", v)} error={errors["meta.title"]} />
             <div className="grid gap-3 sm:grid-cols-2">

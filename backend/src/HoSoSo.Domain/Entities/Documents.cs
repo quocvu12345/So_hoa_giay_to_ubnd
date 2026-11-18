@@ -55,6 +55,10 @@ public sealed class FileRecord
     public DateTimeOffset? UploadedAt { get; set; }
     /// <summary>Đã hủy theo đề nghị hủy được phê duyệt: còn dòng metadata nhưng không còn nội dung.</summary>
     public DateTimeOffset? DisposedAt { get; set; }
+    /// <summary>BE-126. Bản quét mà tệp này thay thế (cùng giấy tờ). NULL: bản gốc.</summary>
+    public Guid? ReplacesFileId { get; set; }
+    /// <summary>Lý do thay bản quét; bắt buộc khi có <see cref="ReplacesFileId"/>.</summary>
+    public string? ReplacementReason { get; set; }
 }
 
 public sealed class DocumentClassification

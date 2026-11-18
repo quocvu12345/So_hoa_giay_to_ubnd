@@ -6,7 +6,7 @@
   },
   "servers": [
     {
-      "url": "http://127.0.0.1:5198/"
+      "url": "http://127.0.0.1:5099/"
     }
   ],
   "paths": {
@@ -102,6 +102,55 @@
               "application/json": {
                 "schema": {
                   "$ref": "#/components/schemas/MeResponse"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Chưa đăng nhập hoặc phiên đã hết hạn (unauthenticated).",
+            "content": {
+              "application/problem+json": { }
+            }
+          },
+          "429": {
+            "description": "Gọi quá nhiều lần trong một phút; thử lại sau.",
+            "content": {
+              "application/problem+json": { }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/me/logins": {
+      "get": {
+        "tags": [
+          "Tài khoản"
+        ],
+        "summary": "Các lần đăng nhập gần đây của tôi (thời điểm, địa chỉ IP), mới nhất trước",
+        "parameters": [
+          {
+            "name": "limit",
+            "in": "query",
+            "schema": {
+              "pattern": "^-?(?:0|[1-9]\\d*)$",
+              "type": [
+                "integer",
+                "string"
+              ],
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/LoginEventDto"
+                  }
                 }
               }
             }
@@ -1576,7 +1625,7 @@
         "tags": [
           "Thủ tục hành chính"
         ],
-        "summary": "Tìm thủ tục theo tên (không dấu), mã, lĩnh vực, tình trạng hiệu lực",
+        "summary": "Tìm thủ tục theo tên (không dấu), mã, lĩnh vực, cấp thực hiện (không phân biệt hoa thường), tình trạng hiệu lực",
         "parameters": [
           {
             "name": "q",
@@ -1594,6 +1643,13 @@
           },
           {
             "name": "status",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "level",
             "in": "query",
             "schema": {
               "type": "string"
@@ -1665,6 +1721,41 @@
                   "type": "array",
                   "items": {
                     "$ref": "#/components/schemas/DomainCount"
+                  }
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Chưa đăng nhập hoặc phiên đã hết hạn (unauthenticated).",
+            "content": {
+              "application/problem+json": { }
+            }
+          },
+          "429": {
+            "description": "Gọi quá nhiều lần trong một phút; thử lại sau.",
+            "content": {
+              "application/problem+json": { }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/procedures/levels": {
+      "get": {
+        "tags": [
+          "Thủ tục hành chính"
+        ],
+        "summary": "Cấp thực hiện và số thủ tục (gộp cách ghi hoa/thường khác nhau)",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/LevelCount"
                   }
                 }
               }
@@ -1898,7 +1989,7 @@
         "tags": [
           "Tiếp nhận"
         ],
-        "summary": "Đóng lô quét",
+        "summary": "Đóng lô quét. Còn lỗi ảnh mở: 409 kèm số lỗi; gửi acceptOpenIssuesNote (từ 10 ký tự) để chấp nhận bỏ qua tất cả và đóng luôn",
         "parameters": [
           {
             "name": "id",
@@ -1910,6 +2001,22 @@
             }
           }
         ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "oneOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "$ref": "#/components/schemas/CloseBatchRequest"
+                  }
+                ]
+              }
+            }
+          }
+        },
         "responses": {
           "200": {
             "description": "OK",
@@ -7344,7 +7451,7 @@
         "tags": [
           "Thông báo"
         ],
-        "summary": "Thông báo của tôi",
+        "summary": "Thông báo của tôi, mới nhất trước; trang cũ hơn bằng cursor = nextCursor của trang trước",
         "parameters": [
           {
             "name": "unread",
@@ -7363,6 +7470,13 @@
                 "string"
               ],
               "format": "int32"
+            }
+          },
+          {
+            "name": "cursor",
+            "in": "query",
+            "schema": {
+              "type": "string"
             }
           }
         ],
@@ -7507,7 +7621,7 @@
         "tags": [
           "Quản trị"
         ],
-        "summary": "Người dùng",
+        "summary": "Người dùng; mỗi dòng kèm số phân công sắp hết hạn (≤ 7 ngày); expiring=true chỉ lấy những người đó",
         "parameters": [
           {
             "name": "q",
@@ -7518,6 +7632,13 @@
           },
           {
             "name": "active",
+            "in": "query",
+            "schema": {
+              "type": "boolean"
+            }
+          },
+          {
+            "name": "expiring",
             "in": "query",
             "schema": {
               "type": "boolean"
@@ -8128,6 +8249,218 @@
           },
           "403": {
             "description": "Phân công đang dùng không có quyền thực hiện (forbidden), hoặc thiếu X-CSRF (csrf_failed).",
+            "content": {
+              "application/problem+json": { }
+            }
+          },
+          "429": {
+            "description": "Gọi quá nhiều lần trong một phút; thử lại sau.",
+            "content": {
+              "application/problem+json": { }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/admin/ai/jobs": {
+      "get": {
+        "tags": [
+          "Quản trị"
+        ],
+        "summary": "Việc AI mới nhất trước (status=active|queued|running|failed|cancelled|completed), kèm có hủy/chạy lại được không và lý do",
+        "parameters": [
+          {
+            "name": "status",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "cursor",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "schema": {
+              "pattern": "^-?(?:0|[1-9]\\d*)$",
+              "type": [
+                "integer",
+                "string"
+              ],
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PageOfAdminJobRow"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Chưa đăng nhập hoặc phiên đã hết hạn (unauthenticated).",
+            "content": {
+              "application/problem+json": { }
+            }
+          },
+          "403": {
+            "description": "Phân công đang dùng không có quyền thực hiện (forbidden), hoặc thiếu X-CSRF (csrf_failed).",
+            "content": {
+              "application/problem+json": { }
+            }
+          },
+          "429": {
+            "description": "Gọi quá nhiều lần trong một phút; thử lại sau.",
+            "content": {
+              "application/problem+json": { }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/admin/ai/jobs/{id}/cancel": {
+      "post": {
+        "tags": [
+          "Quản trị"
+        ],
+        "summary": "Hủy việc AI đang chờ hoặc đang chạy (không cần phạm vi giấy tờ)",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AdminJobRow"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Chưa đăng nhập hoặc phiên đã hết hạn (unauthenticated).",
+            "content": {
+              "application/problem+json": { }
+            }
+          },
+          "403": {
+            "description": "Phân công đang dùng không có quyền thực hiện (forbidden), hoặc thiếu X-CSRF (csrf_failed).",
+            "content": {
+              "application/problem+json": { }
+            }
+          },
+          "404": {
+            "description": "Không tìm thấy, hoặc bản ghi nằm ngoài phạm vi của người dùng (not_found). Không phân biệt hai trường hợp để không lộ sự tồn tại.",
+            "content": {
+              "application/problem+json": { }
+            }
+          },
+          "400": {
+            "description": "Dữ liệu gửi lên chưa hợp lệ: ProblemDetails kèm errors theo từng trường (validation_failed).",
+            "content": {
+              "application/problem+json": { }
+            }
+          },
+          "409": {
+            "description": "Xung đột: sai bước quy trình (workflow_conflict), dữ liệu vừa bị người khác sửa (concurrency_conflict) hoặc bị trùng (duplicate_value, duplicate_file).",
+            "content": {
+              "application/problem+json": { }
+            }
+          },
+          "422": {
+            "description": "Nghiệp vụ không cho phép: hồ sơ chưa đủ (dossier_incomplete), thiếu ý kiến (note_required), tham chiếu không hợp lệ.",
+            "content": {
+              "application/problem+json": { }
+            }
+          },
+          "429": {
+            "description": "Gọi quá nhiều lần trong một phút; thử lại sau.",
+            "content": {
+              "application/problem+json": { }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/admin/ai/jobs/{id}/retry": {
+      "post": {
+        "tags": [
+          "Quản trị"
+        ],
+        "summary": "Chạy lại việc đã lỗi/đã hủy: tạo việc mới cùng tệp, cùng tùy chọn, mức tương tác",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AdminJobRow"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Chưa đăng nhập hoặc phiên đã hết hạn (unauthenticated).",
+            "content": {
+              "application/problem+json": { }
+            }
+          },
+          "403": {
+            "description": "Phân công đang dùng không có quyền thực hiện (forbidden), hoặc thiếu X-CSRF (csrf_failed).",
+            "content": {
+              "application/problem+json": { }
+            }
+          },
+          "404": {
+            "description": "Không tìm thấy, hoặc bản ghi nằm ngoài phạm vi của người dùng (not_found). Không phân biệt hai trường hợp để không lộ sự tồn tại.",
+            "content": {
+              "application/problem+json": { }
+            }
+          },
+          "400": {
+            "description": "Dữ liệu gửi lên chưa hợp lệ: ProblemDetails kèm errors theo từng trường (validation_failed).",
+            "content": {
+              "application/problem+json": { }
+            }
+          },
+          "409": {
+            "description": "Xung đột: sai bước quy trình (workflow_conflict), dữ liệu vừa bị người khác sửa (concurrency_conflict) hoặc bị trùng (duplicate_value, duplicate_file).",
+            "content": {
+              "application/problem+json": { }
+            }
+          },
+          "422": {
+            "description": "Nghiệp vụ không cho phép: hồ sơ chưa đủ (dossier_incomplete), thiếu ý kiến (note_required), tham chiếu không hợp lệ.",
             "content": {
               "application/problem+json": { }
             }
@@ -8970,6 +9303,10 @@
           },
           "state": {
             "type": "string"
+          },
+          "endsSoon": {
+            "type": "boolean",
+            "default": false
           }
         }
       },
@@ -9033,6 +9370,132 @@
           },
           "state": {
             "type": "string"
+          }
+        }
+      },
+      "AdminJobRow": {
+        "required": [
+          "id",
+          "fileId",
+          "fileName",
+          "jobType",
+          "status",
+          "stage",
+          "processedPages",
+          "pageCount",
+          "attempts",
+          "priorityKind",
+          "error",
+          "createdAt",
+          "startedAt",
+          "finishedAt",
+          "requestedByName",
+          "retryOf",
+          "canCancel",
+          "canRetry",
+          "retryBlockedReason"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "fileId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "fileName": {
+            "type": "string"
+          },
+          "jobType": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          },
+          "stage": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "processedPages": {
+            "pattern": "^-?(?:0|[1-9]\\d*)$",
+            "type": [
+              "integer",
+              "string"
+            ],
+            "format": "int32"
+          },
+          "pageCount": {
+            "pattern": "^-?(?:0|[1-9]\\d*)$",
+            "type": [
+              "null",
+              "integer",
+              "string"
+            ],
+            "format": "int32"
+          },
+          "attempts": {
+            "pattern": "^-?(?:0|[1-9]\\d*)$",
+            "type": [
+              "integer",
+              "string"
+            ],
+            "format": "int32"
+          },
+          "priorityKind": {
+            "type": "string"
+          },
+          "error": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "startedAt": {
+            "type": [
+              "null",
+              "string"
+            ],
+            "format": "date-time"
+          },
+          "finishedAt": {
+            "type": [
+              "null",
+              "string"
+            ],
+            "format": "date-time"
+          },
+          "requestedByName": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "retryOf": {
+            "type": [
+              "null",
+              "string"
+            ],
+            "format": "uuid"
+          },
+          "canCancel": {
+            "type": "boolean"
+          },
+          "canRetry": {
+            "type": "boolean"
+          },
+          "retryBlockedReason": {
+            "type": [
+              "null",
+              "string"
+            ]
           }
         }
       },
@@ -9124,6 +9587,22 @@
             "items": {
               "type": "string"
             }
+          },
+          "expiringAssignments": {
+            "pattern": "^-?(?:0|[1-9]\\d*)$",
+            "type": [
+              "integer",
+              "string"
+            ],
+            "format": "int32",
+            "default": 0
+          },
+          "nextAssignmentEndsAt": {
+            "type": [
+              "null",
+              "string"
+            ],
+            "format": "date-time"
           }
         }
       },
@@ -10336,6 +10815,20 @@
           },
           "documentTypeCode": {
             "type": "string"
+          }
+        }
+      },
+      "CloseBatchRequest": {
+        "required": [
+          "acceptOpenIssuesNote"
+        ],
+        "type": "object",
+        "properties": {
+          "acceptOpenIssuesNote": {
+            "type": [
+              "null",
+              "string"
+            ]
           }
         }
       },
@@ -12875,6 +13368,26 @@
           }
         }
       },
+      "LevelCount": {
+        "required": [
+          "level",
+          "count"
+        ],
+        "type": "object",
+        "properties": {
+          "level": {
+            "type": "string"
+          },
+          "count": {
+            "pattern": "^-?(?:0|[1-9]\\d*)$",
+            "type": [
+              "integer",
+              "string"
+            ],
+            "format": "int32"
+          }
+        }
+      },
       "LifecycleDto": {
         "required": [
           "status",
@@ -13059,6 +13572,25 @@
           }
         }
       },
+      "LoginEventDto": {
+        "required": [
+          "at",
+          "clientIp"
+        ],
+        "type": "object",
+        "properties": {
+          "at": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "clientIp": {
+            "type": [
+              "null",
+              "string"
+            ]
+          }
+        }
+      },
       "MeResponse": {
         "required": [
           "user",
@@ -13191,6 +13723,12 @@
               "string"
             ],
             "format": "int32"
+          },
+          "nextCursor": {
+            "type": [
+              "null",
+              "string"
+            ]
           }
         }
       },
@@ -13214,6 +13752,27 @@
           },
           "locality": {
             "type": "string"
+          }
+        }
+      },
+      "PageOfAdminJobRow": {
+        "required": [
+          "items",
+          "nextCursor"
+        ],
+        "type": "object",
+        "properties": {
+          "items": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/AdminJobRow"
+            }
+          },
+          "nextCursor": {
+            "type": [
+              "null",
+              "string"
+            ]
           }
         }
       },

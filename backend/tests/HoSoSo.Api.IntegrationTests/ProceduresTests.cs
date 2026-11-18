@@ -37,12 +37,12 @@ public sealed class ProceduresTests : IClassFixture<DbApiFactory>
         Directory.CreateDirectory(Path.GetDirectoryName(path)!);
         await File.WriteAllBytesAsync(path, FileBytes, TestContext.Current.CancellationToken);
         await _api.ExecuteAsync("""
-            INSERT INTO hoso.procedures(id, procedure_code, name, domain, managing_agency, lifecycle_status) VALUES
-              ('hn87-901','1.001001','Thủ tục đăng ký khai sinh','Hộ tịch','Sở Tư pháp','active'),
-              ('dvc-aaa','1.001001','Thủ tục đăng ký khai sinh','Hộ tịch','Bộ Tư pháp','active'),
-              ('hn87-902','2.000181','Cấp Giấy phép bán lẻ sản phẩm thuốc lá','Thương mại','Sở Công Thương','repealed'),
-              ('hn87-903','1.002002','Thủ tục đăng ký kết hôn','Hộ tịch','Sở Tư pháp','unverified'),
-              ('hn87-904','1.003003','Cấp giấy chứng nhận quyền sử dụng đất','Đất đai','Sở Nông nghiệp','active')
+            INSERT INTO hoso.procedures(id, procedure_code, name, domain, managing_agency, lifecycle_status, execution_level) VALUES
+              ('hn87-901','1.001001','Thủ tục đăng ký khai sinh','Hộ tịch','Sở Tư pháp','active','Cấp xã'),
+              ('dvc-aaa','1.001001','Thủ tục đăng ký khai sinh','Hộ tịch','Bộ Tư pháp','active',NULL),
+              ('hn87-902','2.000181','Cấp Giấy phép bán lẻ sản phẩm thuốc lá','Thương mại','Sở Công Thương','repealed','Cấp tỉnh, cấp xã'),
+              ('hn87-903','1.002002','Thủ tục đăng ký kết hôn','Hộ tịch','Sở Tư pháp','unverified','Cấp Xã'),
+              ('hn87-904','1.003003','Cấp giấy chứng nhận quyền sử dụng đất','Đất đai','Sở Nông nghiệp','active','Cấp xã')
             """);
         await _api.ExecuteAsync("INSERT INTO hoso.procedure_lifecycle_events(procedure_code, status, label, note, evidence) VALUES ('2.000181','repealed','Đã có quyết định bãi bỏ','Giữ lịch sử','[{\"name\":\"Quyết định 762/QĐ-TTPVHCC\"}]'::jsonb)");
         await _api.ExecuteAsync("INSERT INTO hoso.form_templates(id, kind, filename, sha256, byte_size, media_type, storage_key) VALUES ($1,'blank_form','To khai khai sinh.docx',$2,$3,'application/vnd.openxmlformats-officedocument.wordprocessingml.document',$4)",
@@ -75,6 +75,21 @@ public sealed class ProceduresTests : IClassFixture<DbApiFactory>
     }
 
     private sealed record DomainItem(string Domain, int Count);
+    private sealed record LevelItem(string Level, int Count);
+
+    [Fact]
+    public async Task Loc_theo_cap_thuc_hien_gop_cach_ghi_hoa_thuong()
+    {
+        await SeedAsync();
+        var http = await _api.LoginAsync("demo_cv_ht");
+        // Nguồn ghi "Cấp xã" và "Cấp Xã": một nhóm, nhãn theo cách ghi phổ biến hơn; thủ tục không ghi cấp thì không có nhóm.
+        var levels = await (await http.GetAsync("/api/v1/procedures/levels")).ReadAsync<List<LevelItem>>();
+        levels.ShouldBe([new LevelItem("Cấp xã", 3), new LevelItem("Cấp tỉnh, cấp xã", 1)]);
+        var commune = await (await http.GetAsync("/api/v1/procedures?level=c%E1%BA%A5p%20x%C3%A3&pageSize=100")).ReadAsync<Page>();
+        commune.Items.Select(i => i.Id).Order().ToList().ShouldBe(["hn87-901", "hn87-903", "hn87-904"]);
+        (await (await http.GetAsync("/api/v1/procedures?level=C%E1%BA%A5p%20x%C3%A3&domain=H%E1%BB%99%20t%E1%BB%8Bch")).ReadAsync<Page>()).Total.ShouldBe(2);
+        (await (await http.GetAsync("/api/v1/procedures?level=Li%C3%AAn%20th%C3%B4ng")).ReadAsync<Page>()).Total.ShouldBe(0);
+    }
 
     [Fact]
     public async Task Chi_tiet_thu_tuc_co_thanh_phan_mau_va_canh_bao_khi_da_bai_bo()

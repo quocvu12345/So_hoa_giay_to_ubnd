@@ -20,7 +20,8 @@ test("Trình → trả lại → trình lại → đạt → nộp lưu, đổi 
   await page.getByRole("link", { name: "Đối chiếu ngay →" }).click({ timeout: 240_000 });
   await expect(page).toHaveURL(/\/doi-chieu$/);
   await expect(page.getByText("Thông tin đầu văn bản")).toBeVisible();
-  await page.getByLabel("Ngày ban hành").fill("17/11/2026");
+  // exact: loại giấy tờ do AI chọn có thể có trường "Ngày ban hành/lập", getByLabel khớp theo chuỗi con sẽ trúng cả hai ô.
+  await page.getByLabel("Ngày ban hành", { exact: true }).fill("17/11/2026");
   for (const box of await page.getByLabel("Tôi đã kiểm trường này trên bản gốc").all()) await box.check();
   await page.keyboard.press("Control+Enter");
   await expect(page).toHaveURL(/\/xep-ho-so$/, { timeout: 60_000 });

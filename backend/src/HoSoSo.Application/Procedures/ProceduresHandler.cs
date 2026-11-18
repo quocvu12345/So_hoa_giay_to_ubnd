@@ -10,6 +10,8 @@ namespace HoSoSo.Application.Procedures;
 public sealed record ProcedureListItem(string Id, string? ProcedureCode, string Name, string? Domain, string? ManagingAgency, string? ExecutionLevel, string LifecycleStatus, int ComponentCount);
 public sealed record ProcedurePage(IReadOnlyList<ProcedureListItem> Items, int Total);
 public sealed record DomainCount(string Domain, int Count);
+/// <summary>BE-122. Cấp thực hiện và số thủ tục; dữ liệu nguồn ghi không thống nhất hoa/thường ("Cấp xã", "Cấp Xã") nên gộp không phân biệt hoa thường.</summary>
+public sealed record LevelCount(string Level, int Count);
 public sealed record TemplateDto(Guid Id, string Kind, string Filename, long ByteSize, string MediaType, bool Downloadable);
 public sealed record ComponentDto(Guid Id, string Section, int Position, string Name, string? PaperCode, int OriginalQuantity, int CopyQuantity,
     bool RequiredAsPublished, bool HasElectronicForm, IReadOnlyList<TemplateDto> Templates);
@@ -26,12 +28,17 @@ public sealed record TemplateFile(Stream Stream, string FileName, string MediaTy
 /// </summary>
 public sealed class ProceduresHandler(IHoSoDb db, IFileStorage storage, IAccessLog access)
 {
-    public async Task<ProcedurePage> SearchAsync(string? q, string? domain, string? status, int page, int pageSize, CancellationToken ct)
+    public async Task<ProcedurePage> SearchAsync(string? q, string? domain, string? status, int page, int pageSize, CancellationToken ct, string? level = null)
     {
         pageSize = Math.Clamp(pageSize, 1, 100);
         page = Math.Max(1, page);
         var query = db.Read<Procedure>();
         if (domain is { Length: > 0 }) query = query.Where(p => p.Domain == domain);
+        if (level is { Length: > 0 })
+        {
+            var wanted = level.Trim().ToLower();
+            query = query.Where(p => p.ExecutionLevel != null && p.ExecutionLevel.Trim().ToLower() == wanted);
+        }
         if (status is { Length: > 0 }) query = query.Where(p => p.LifecycleStatus == status);
         if (q is { Length: > 1 } text)
         {
@@ -49,6 +56,16 @@ public sealed class ProceduresHandler(IHoSoDb db, IFileStorage storage, IAccessL
 
     public async Task<IReadOnlyList<DomainCount>> DomainsAsync(CancellationToken ct) =>
         await db.Read<Procedure>().Where(p => p.Domain != null).GroupBy(p => p.Domain!).OrderBy(g => g.Key).Select(g => new DomainCount(g.Key, g.Count())).ToListAsync(ct);
+
+    /// <summary>Nhãn của mỗi nhóm là cách ghi phổ biến nhất trong dữ liệu; lọc bằng nhãn này (không phân biệt hoa thường).</summary>
+    public async Task<IReadOnlyList<LevelCount>> LevelsAsync(CancellationToken ct)
+    {
+        var raw = await db.Read<Procedure>().Where(p => p.ExecutionLevel != null && p.ExecutionLevel.Trim() != "")
+            .GroupBy(p => p.ExecutionLevel!.Trim()).Select(g => new { Level = g.Key, N = g.Count() }).ToListAsync(ct);
+        return raw.GroupBy(x => x.Level.ToLowerInvariant())
+            .Select(g => new LevelCount(g.OrderByDescending(x => x.N).ThenBy(x => x.Level, StringComparer.Ordinal).First().Level, g.Sum(x => x.N)))
+            .OrderByDescending(l => l.Count).ThenBy(l => l.Level, StringComparer.Ordinal).ToList();
+    }
 
     public async Task<ProcedureDetail> GetAsync(string id, CancellationToken ct)
     {

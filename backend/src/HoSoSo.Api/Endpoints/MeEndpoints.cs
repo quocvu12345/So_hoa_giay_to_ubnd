@@ -1,5 +1,7 @@
 using HoSoSo.Application.Common;
+using HoSoSo.Domain.Entities;
 using HoSoSo.Domain.Identity;
+using Microsoft.EntityFrameworkCore;
 
 namespace HoSoSo.Api.Endpoints;
 
@@ -10,6 +12,8 @@ public sealed record AssignmentDto(
     string? OrganizationCode, string? OrganizationName,
     string? DepartmentCode, string? DepartmentName,
     DateTimeOffset? DelegatedUntil);
+
+public sealed record LoginEventDto(DateTimeOffset At, string? ClientIp);
 
 /// <summary>Khớp kiểu Session trong frontend/src/lib/auth/types.ts.</summary>
 public sealed record MeResponse(
@@ -51,6 +55,18 @@ internal static class MeEndpoints
         })
         .WithTags("Tài khoản")
         .WithSummary("Người dùng hiện tại, các phân công còn hiệu lực và quyền của phân công đang dùng");
+
+        // BE-123 (FE-42): lịch sử đăng nhập của CHÍNH MÌNH (để tự phát hiện đăng nhập lạ). Không nhận mã người khác.
+        api.MapGet("/me/logins", async (int? limit, ICurrentUser user, IHoSoDb db, CancellationToken ct) =>
+            {
+                var me = user.RequireUserId();
+                var rows = await db.Read<AccessEvent>().Where(e => e.UserId == me && e.Action == "login")
+                    .OrderByDescending(e => e.HappenedAt).ThenByDescending(e => e.Id).Take(Math.Clamp(limit ?? 20, 1, 100))
+                    .Select(e => new { e.HappenedAt, e.ClientIp }).ToListAsync(ct);
+                return TypedResults.Ok(rows.Select(r => new LoginEventDto(r.HappenedAt, r.ClientIp?.ToString())).ToList());
+            })
+            .WithTags("Tài khoản")
+            .WithSummary("Các lần đăng nhập gần đây của tôi (thời điểm, địa chỉ IP), mới nhất trước");
         return api;
     }
 }

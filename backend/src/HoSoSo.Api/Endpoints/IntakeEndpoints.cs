@@ -16,8 +16,9 @@ internal static class IntakeEndpoints
             .RequirePermission(Permissions.IntakeManage, Permissions.IntakeUpload).WithSummary("Danh sách lô quét");
         intake.MapGet("/batches/{id:guid}", async (Guid id, IntakeHandler h, CancellationToken ct) => TypedResults.Ok(await h.GetBatchAsync(id, ct)))
             .RequirePermission(Permissions.IntakeManage, Permissions.IntakeUpload).WithSummary("Chi tiết lô quét");
-        intake.MapPost("/batches/{id:guid}/close", async (Guid id, IntakeHandler h, CancellationToken ct) => TypedResults.Ok(await h.CloseBatchAsync(id, ct)))
-            .RequirePermission(Permissions.IntakeManage).WithSummary("Đóng lô quét");
+        intake.MapPost("/batches/{id:guid}/close", async (Guid id, CloseBatchRequest? body, IntakeHandler h, CancellationToken ct) => TypedResults.Ok(await h.CloseBatchAsync(id, body, ct)))
+            .RequirePermission(Permissions.IntakeManage)
+            .WithSummary("Đóng lô quét. Còn lỗi ảnh mở: 409 kèm số lỗi; gửi acceptOpenIssuesNote (từ 10 ký tự) để chấp nhận bỏ qua tất cả và đóng luôn");
 
         // Xác thực CSRF do CsrfMiddleware (header X-CSRF); antiforgery token của MVC không dùng ở API này.
         intake.MapPost("/files", async (IFormFile file, [FromForm] Guid? batchId, IntakeHandler h, CancellationToken ct) =>
@@ -31,6 +32,19 @@ internal static class IntakeEndpoints
             .RequireRateLimiting(SecuritySetup.UploadPolicy)
             .WithMetadata(new RequestSizeLimitAttribute(uploadMaxBytes))
             .WithSummary("Tải PDF lên: tính SHA-256, chống trùng, xếp hàng đọc. Trùng trả 409 duplicate_file kèm id giấy tờ cũ");
+        // BE-126. Bản quét thay thế: cùng giới hạn tải lên và quét virus như tải PDF mới; quyền là quyền sửa giấy tờ.
+        api.MapPost("/documents/{id:guid}/files", async (Guid id, IFormFile file, [FromForm] string? reason, IntakeHandler h, CancellationToken ct) =>
+            {
+                await using var stream = file.OpenReadStream();
+                var result = await h.ReplaceScanAsync(id, stream, file.FileName, reason, ct);
+                return TypedResults.Created($"/api/v1/documents/{id}", result);
+            })
+            .WithTags("Giấy tờ")
+            .DisableAntiforgery()
+            .RequirePermission(Permissions.DocumentEdit)
+            .RequireRateLimiting(SecuritySetup.UploadPolicy)
+            .WithMetadata(new RequestSizeLimitAttribute(uploadMaxBytes))
+            .WithSummary("Tải bản quét thay thế (phiên bản kế tiếp) kèm lý do 10–500 ký tự; bản cũ giữ nguyên. Trùng bản đã có trả 409 duplicate_file");
         intake.MapGet("/inbox", async (string? status, string? cursor, int? limit, IntakeHandler h, CancellationToken ct) => TypedResults.Ok(await h.InboxAsync(status, cursor, limit ?? 50, ct)))
             .RequirePermission(Permissions.IntakeUpload).WithSummary("Hộp tiếp nhận theo trạng thái inbox | filed | discarded");
         intake.MapPost("/documents/{id:guid}/discard", async (Guid id, IntakeHandler h, CancellationToken ct) =>

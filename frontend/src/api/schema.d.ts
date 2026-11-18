@@ -164,6 +164,62 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
+    "/api/v1/me/logins": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        /** Các lần đăng nhập gần đây của tôi (thời điểm, địa chỉ IP), mới nhất trước */
+        get: {
+            parameters: {
+                query?: {
+                    limit?: number;
+                };
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: never;
+            responses: {
+                /** @description OK */
+                200: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/json": components["schemas"]["LoginEventDto"][];
+                    };
+                };
+                /** @description Chưa đăng nhập hoặc phiên đã hết hạn (unauthenticated). */
+                401: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/problem+json": unknown;
+                    };
+                };
+                /** @description Gọi quá nhiều lần trong một phút; thử lại sau. */
+                429: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/problem+json": unknown;
+                    };
+                };
+            };
+        };
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
     "/api/v1/events": {
         parameters: {
             query?: never;
@@ -1997,13 +2053,14 @@ export interface paths {
             path?: never;
             cookie?: never;
         };
-        /** Tìm thủ tục theo tên (không dấu), mã, lĩnh vực, tình trạng hiệu lực */
+        /** Tìm thủ tục theo tên (không dấu), mã, lĩnh vực, cấp thực hiện (không phân biệt hoa thường), tình trạng hiệu lực */
         get: {
             parameters: {
                 query?: {
                     q?: string;
                     domain?: string;
                     status?: string;
+                    level?: string;
                     page?: number;
                     pageSize?: number;
                 };
@@ -2074,6 +2131,60 @@ export interface paths {
                     };
                     content: {
                         "application/json": components["schemas"]["DomainCount"][];
+                    };
+                };
+                /** @description Chưa đăng nhập hoặc phiên đã hết hạn (unauthenticated). */
+                401: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/problem+json": unknown;
+                    };
+                };
+                /** @description Gọi quá nhiều lần trong một phút; thử lại sau. */
+                429: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/problem+json": unknown;
+                    };
+                };
+            };
+        };
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/v1/procedures/levels": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        /** Cấp thực hiện và số thủ tục (gộp cách ghi hoa/thường khác nhau) */
+        get: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: never;
+            responses: {
+                /** @description OK */
+                200: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/json": components["schemas"]["LevelCount"][];
                     };
                 };
                 /** @description Chưa đăng nhập hoặc phiên đã hết hạn (unauthenticated). */
@@ -2393,7 +2504,7 @@ export interface paths {
         };
         get?: never;
         put?: never;
-        /** Đóng lô quét */
+        /** Đóng lô quét. Còn lỗi ảnh mở: 409 kèm số lỗi; gửi acceptOpenIssuesNote (từ 10 ký tự) để chấp nhận bỏ qua tất cả và đóng luôn */
         post: {
             parameters: {
                 query?: never;
@@ -2403,7 +2514,11 @@ export interface paths {
                 };
                 cookie?: never;
             };
-            requestBody?: never;
+            requestBody?: {
+                content: {
+                    "application/json": null | components["schemas"]["CloseBatchRequest"];
+                };
+            };
             responses: {
                 /** @description OK */
                 200: {
@@ -9166,12 +9281,13 @@ export interface paths {
             path?: never;
             cookie?: never;
         };
-        /** Thông báo của tôi */
+        /** Thông báo của tôi, mới nhất trước; trang cũ hơn bằng cursor = nextCursor của trang trước */
         get: {
             parameters: {
                 query?: {
                     unread?: boolean;
                     limit?: number;
+                    cursor?: string;
                 };
                 header?: never;
                 path?: never;
@@ -9394,12 +9510,13 @@ export interface paths {
             path?: never;
             cookie?: never;
         };
-        /** Người dùng */
+        /** Người dùng; mỗi dòng kèm số phân công sắp hết hạn (≤ 7 ngày); expiring=true chỉ lấy những người đó */
         get: {
             parameters: {
                 query?: {
                     q?: string;
                     active?: boolean;
+                    expiring?: boolean;
                 };
                 header?: never;
                 path?: never;
@@ -10246,6 +10363,275 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
+    "/api/v1/admin/ai/jobs": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        /** Việc AI mới nhất trước (status=active|queued|running|failed|cancelled|completed), kèm có hủy/chạy lại được không và lý do */
+        get: {
+            parameters: {
+                query?: {
+                    status?: string;
+                    cursor?: string;
+                    limit?: number;
+                };
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: never;
+            responses: {
+                /** @description OK */
+                200: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/json": components["schemas"]["PageOfAdminJobRow"];
+                    };
+                };
+                /** @description Chưa đăng nhập hoặc phiên đã hết hạn (unauthenticated). */
+                401: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/problem+json": unknown;
+                    };
+                };
+                /** @description Phân công đang dùng không có quyền thực hiện (forbidden), hoặc thiếu X-CSRF (csrf_failed). */
+                403: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/problem+json": unknown;
+                    };
+                };
+                /** @description Gọi quá nhiều lần trong một phút; thử lại sau. */
+                429: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/problem+json": unknown;
+                    };
+                };
+            };
+        };
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/v1/admin/ai/jobs/{id}/cancel": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        /** Hủy việc AI đang chờ hoặc đang chạy (không cần phạm vi giấy tờ) */
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path: {
+                    id: string;
+                };
+                cookie?: never;
+            };
+            requestBody?: never;
+            responses: {
+                /** @description OK */
+                200: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/json": components["schemas"]["AdminJobRow"];
+                    };
+                };
+                /** @description Dữ liệu gửi lên chưa hợp lệ: ProblemDetails kèm errors theo từng trường (validation_failed). */
+                400: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/problem+json": unknown;
+                    };
+                };
+                /** @description Chưa đăng nhập hoặc phiên đã hết hạn (unauthenticated). */
+                401: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/problem+json": unknown;
+                    };
+                };
+                /** @description Phân công đang dùng không có quyền thực hiện (forbidden), hoặc thiếu X-CSRF (csrf_failed). */
+                403: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/problem+json": unknown;
+                    };
+                };
+                /** @description Không tìm thấy, hoặc bản ghi nằm ngoài phạm vi của người dùng (not_found). Không phân biệt hai trường hợp để không lộ sự tồn tại. */
+                404: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/problem+json": unknown;
+                    };
+                };
+                /** @description Xung đột: sai bước quy trình (workflow_conflict), dữ liệu vừa bị người khác sửa (concurrency_conflict) hoặc bị trùng (duplicate_value, duplicate_file). */
+                409: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/problem+json": unknown;
+                    };
+                };
+                /** @description Nghiệp vụ không cho phép: hồ sơ chưa đủ (dossier_incomplete), thiếu ý kiến (note_required), tham chiếu không hợp lệ. */
+                422: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/problem+json": unknown;
+                    };
+                };
+                /** @description Gọi quá nhiều lần trong một phút; thử lại sau. */
+                429: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/problem+json": unknown;
+                    };
+                };
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/v1/admin/ai/jobs/{id}/retry": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        /** Chạy lại việc đã lỗi/đã hủy: tạo việc mới cùng tệp, cùng tùy chọn, mức tương tác */
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path: {
+                    id: string;
+                };
+                cookie?: never;
+            };
+            requestBody?: never;
+            responses: {
+                /** @description OK */
+                200: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/json": components["schemas"]["AdminJobRow"];
+                    };
+                };
+                /** @description Dữ liệu gửi lên chưa hợp lệ: ProblemDetails kèm errors theo từng trường (validation_failed). */
+                400: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/problem+json": unknown;
+                    };
+                };
+                /** @description Chưa đăng nhập hoặc phiên đã hết hạn (unauthenticated). */
+                401: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/problem+json": unknown;
+                    };
+                };
+                /** @description Phân công đang dùng không có quyền thực hiện (forbidden), hoặc thiếu X-CSRF (csrf_failed). */
+                403: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/problem+json": unknown;
+                    };
+                };
+                /** @description Không tìm thấy, hoặc bản ghi nằm ngoài phạm vi của người dùng (not_found). Không phân biệt hai trường hợp để không lộ sự tồn tại. */
+                404: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/problem+json": unknown;
+                    };
+                };
+                /** @description Xung đột: sai bước quy trình (workflow_conflict), dữ liệu vừa bị người khác sửa (concurrency_conflict) hoặc bị trùng (duplicate_value, duplicate_file). */
+                409: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/problem+json": unknown;
+                    };
+                };
+                /** @description Nghiệp vụ không cho phép: hồ sơ chưa đủ (dossier_incomplete), thiếu ý kiến (note_required), tham chiếu không hợp lệ. */
+                422: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/problem+json": unknown;
+                    };
+                };
+                /** @description Gọi quá nhiều lần trong một phút; thử lại sau. */
+                429: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/problem+json": unknown;
+                    };
+                };
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
     "/api/v1/admin/settings": {
         parameters: {
             query?: never;
@@ -11057,6 +11443,8 @@ export interface components {
             basis: string;
             isDeputy: boolean;
             state: string;
+            /** @default false */
+            endsSoon: boolean;
         };
         AdminDelegationDto: {
             /** Format: uuid */
@@ -11077,6 +11465,36 @@ export interface components {
             revokedAt: null | string;
             state: string;
         };
+        AdminJobRow: {
+            /** Format: uuid */
+            id: string;
+            /** Format: uuid */
+            fileId: string;
+            fileName: string;
+            jobType: string;
+            status: string;
+            stage: null | string;
+            /** Format: int32 */
+            processedPages: number;
+            /** Format: int32 */
+            pageCount: null | number;
+            /** Format: int32 */
+            attempts: number;
+            priorityKind: string;
+            error: null | string;
+            /** Format: date-time */
+            createdAt: string;
+            /** Format: date-time */
+            startedAt: null | string;
+            /** Format: date-time */
+            finishedAt: null | string;
+            requestedByName: null | string;
+            /** Format: uuid */
+            retryOf: null | string;
+            canCancel: boolean;
+            canRetry: boolean;
+            retryBlockedReason: null | string;
+        };
         AdminUserDetail: {
             user: components["schemas"]["AdminUserListItem"];
             externalAuthSubject: null | string;
@@ -11096,6 +11514,13 @@ export interface components {
             /** Format: int32 */
             activeAssignments: number;
             roles: string[];
+            /**
+             * Format: int32
+             * @default 0
+             */
+            expiringAssignments: number;
+            /** Format: date-time */
+            nextAssignmentEndsAt?: null | string;
         };
         AiExtractItem: {
             /** Format: uuid */
@@ -11375,6 +11800,9 @@ export interface components {
         ClassifyRequest: {
             workGroupCode: string;
             documentTypeCode: string;
+        };
+        CloseBatchRequest: {
+            acceptOpenIssuesNote: null | string;
         };
         Completeness: {
             /** Format: int32 */
@@ -11974,6 +12402,11 @@ export interface components {
             departments: components["schemas"]["DepartmentSummary"][];
             activities: components["schemas"]["ActivitySummary"][];
         };
+        LevelCount: {
+            level: string;
+            /** Format: int32 */
+            count: number;
+        };
         LifecycleDto: {
             status: string;
             label: string;
@@ -12024,6 +12457,11 @@ export interface components {
             /** Format: int32 */
             dossierCount: number;
         };
+        LoginEventDto: {
+            /** Format: date-time */
+            at: string;
+            clientIp: null | string;
+        };
         MeResponse: {
             user: components["schemas"]["SessionUserDto"];
             assignments: components["schemas"]["AssignmentDto"][];
@@ -12057,12 +12495,17 @@ export interface components {
             items: components["schemas"]["NotificationDto"][];
             /** Format: int32 */
             unread: number;
+            nextCursor?: null | string;
         };
         OrganizationDto: {
             code: string;
             name: string;
             kind: string;
             locality: string;
+        };
+        PageOfAdminJobRow: {
+            items: components["schemas"]["AdminJobRow"][];
+            nextCursor: null | string;
         };
         PageOfDossierListItem: {
             items: components["schemas"]["DossierListItem"][];

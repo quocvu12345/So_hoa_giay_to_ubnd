@@ -4,6 +4,15 @@ import { ok, serverApi } from "@/lib/api/server";
 
 export type WorkspaceSummary = components["schemas"]["WorkspaceSummary"];
 export type QueueItem = components["schemas"]["QueueItem"];
+export type LeadershipSummary = components["schemas"]["LeadershipSummary"];
+
+/**
+ * Số liệu tổng hợp cho lãnh đạo theo phân công đang dùng (BE-115): Chủ tịch UBND theo phòng, lãnh đạo HĐND theo hoạt động.
+ * Chỉ vai trò có `dossier.decide` gọi được; mỗi con số chỉ đếm hồ sơ trong phạm vi phân công.
+ */
+export async function getLeadership(): Promise<LeadershipSummary> {
+  return ok(await serverApi().GET("/api/v1/workspace/leadership"));
+}
 
 /** Số liệu cho menu và màn Việc của tôi (BE-69). */
 export async function getSummary(): Promise<WorkspaceSummary> {

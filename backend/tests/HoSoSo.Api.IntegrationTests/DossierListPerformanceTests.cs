@@ -90,8 +90,9 @@ public sealed class DossierListPerformanceTests(DbApiFactory api) : IClassFixtur
     public async Task Nguoi_chi_thay_vai_ho_so_trong_20000_van_nhanh_ca_khi_sap_theo_ten_va_han()
     {
         await SeedAsync();
-        // Trưởng phòng Kinh tế: gần như mọi hồ sơ nằm ngoài phạm vi. Phạm vi là hàm SQL nên PostgreSQL phải gọi nó cho từng dòng đi qua chỉ mục:
-        // đây là trường hợp xấu nhất của cả danh sách (kể cả sắp mặc định), không riêng BE-111.
+        // Trưởng phòng Kinh tế: gần như mọi hồ sơ nằm ngoài phạm vi. Trước đây PostgreSQL gọi hàm scope_matches cho từng dòng đi qua chỉ mục
+        // (~350 ms một mình, ~1,1 giây khi chạy song song). Từ 18/11/2026 ScopeFilter loại trước theo cơ quan/phòng/vai trò của phân công
+        // (điều kiện cần, vẫn AND với scope_matches) nên trường hợp này cũng phải đạt tiêu chí < 200 ms.
         var other = await api.LoginAsync("demo_head_kt");
         var report = new List<string>();
         foreach (var (name, url) in new[]
@@ -111,8 +112,7 @@ public sealed class DossierListPerformanceTests(DbApiFactory api) : IClassFixtur
             }
             runs.Sort();
             report.Add($"{name}: {runs[1]:F0} ms");
-            // Đo ~350 ms (xem ghi chú BE-111 trong docs/tasks/backend.md): vượt 200 ms của tiêu chí vì phải gọi scope_matches cho từng dòng; chặn ở 1 giây để bắt hồi quy.
-            runs[1].ShouldBeLessThan(1000, $"{name}: trường hợp xấu nhất không được tệ hơn mức đã đo (~350 ms)");
+            runs[1].ShouldBeLessThan(200, $"{name}: tiêu chí BE-111 < 200 ms cả khi người dùng gần như không thấy hồ sơ nào");
         }
         if (Environment.GetEnvironmentVariable("HOSO_PERF_REPORT") is { Length: > 0 } path) await File.AppendAllTextAsync(path, "BE-111 · người gần như không thấy hồ sơ nào trong 20.000\n  " + string.Join("\n  ", report) + "\n", TestContext.Current.CancellationToken);
     }

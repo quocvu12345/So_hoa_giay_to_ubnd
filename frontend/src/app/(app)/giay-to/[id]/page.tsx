@@ -9,9 +9,11 @@ import { Chip, WorkflowChip } from "@/components/ui/status-chip";
 import { routes } from "@/config/routes";
 import { DocumentViewer } from "@/features/document/document-viewer";
 import { DownloadButton } from "@/features/document/download-button";
-import { getDocument, getRelations, getSignatures } from "@/features/document/document-data";
-import { INTAKE_STATUS, RELATION_LABELS, REVIEW_STATUS, SIGNATURE_STATUS } from "@/features/document/labels";
+import { getDocument, getFields, getRelations, getSignatures } from "@/features/document/document-data";
+import { FileVersions, PrintLink } from "@/features/document/file-versions";
+import { FIELD_ORIGIN, INTAKE_STATUS, RELATION_LABELS, REVIEW_STATUS, SIGNATURE_STATUS } from "@/features/document/labels";
 import { getReview } from "@/features/review/review-data";
+import { encodeRegionParam, isValidRegion, parseRegionParam } from "@/features/review/source-region";
 import { ApiError } from "@/lib/api/server";
 import { pageSession } from "@/lib/auth/page-guard";
 import { can } from "@/lib/auth/session";
@@ -34,8 +36,9 @@ async function optional<T>(load: () => Promise<T>): Promise<T | null> {
 }
 
 /**
- * Chi tiết giấy tờ (FE-33): trình xem bản gốc (mở đúng trang theo `?trang=`), thông tin, trường đã đối chiếu kèm nhãn "đã sửa" so với AI,
- * chữ ký số, liên kết văn bản, các hồ sơ chứa giấy tờ. Tải tệp ghi nhật ký truy cập; in cần API ghi nhật ký in (BE-113).
+ * Chi tiết giấy tờ (FE-33): trình xem bản gốc (mở đúng trang theo `?trang=`, đúng phiên bản theo `?tep=`), thông tin, các phiên bản tệp,
+ * trường đã đối chiếu kèm nhãn "đã sửa" so với AI (cho mọi người có quyền xem, BE-119), chữ ký số, liên kết văn bản, các hồ sơ chứa giấy tờ.
+ * Tải tệp và in đều ghi nhật ký truy cập (in cần quyền `document.print`, BE-113).
  */
 export default async function DocumentPage({ params, searchParams }: PageProps<"/giay-to/[id]">) {
   const { session, allowed } = await pageSession("document.view");
@@ -43,17 +46,29 @@ export default async function DocumentPage({ params, searchParams }: PageProps<"
   if (serverEnv().mock) return <NeedsRealApi what="Chi tiết giấy tờ" />;
   const { id } = await params;
   if (!UUID.test(id)) notFound();
-  const initialPage = Number((await searchParams).trang) || 1;
+  const query = await searchParams;
+  const initialPage = Number(query.trang) || 1;
+  const requestedFile = typeof query.tep === "string" && UUID.test(query.tep) ? query.tep : null;
+  const requestedRegion = typeof query.vung === "string" ? query.vung : undefined;
+  const highlightLabel = typeof query.truong === "string" ? query.truong.slice(0, 120) : "";
 
   const doc = await loadOrNotFound(() => getDocument(id));
-  const file = doc.file;
+  const versions = doc.files ?? [];
+  // Bản đang xem: ?tep= nếu thuộc giấy tờ này và còn nội dung; không thì tệp chính như trước. Id lạ trong ?tep= bị bỏ qua, không lộ gì.
+  const chosen = requestedFile ? versions.find((v) => v.id === requestedFile && !v.disposed) : undefined;
+  const file = chosen ? { id: chosen.id, name: chosen.name, pageCount: chosen.pageCount ?? null, sha256: chosen.sha256 } : doc.file;
   const canEdit = can(session, "document.edit");
-  // Trường dữ liệu chỉ lấy được qua API đối chiếu, cần quyền sửa giấy tờ (BE-119: bản chỉ đọc cho người chỉ có quyền xem).
-  const [relations, signatures, review] = await Promise.all([
+  const canPrint = can(session, "document.print");
+  // Trường đã đối chiếu: bản chỉ đọc cho mọi người có quyền xem (BE-119). Người có quyền sửa thêm giá trị AI đọc từ màn đối chiếu để so.
+  const [relations, signatures, fields, review] = await Promise.all([
     optional(() => getRelations(id)),
     file ? optional(() => getSignatures(file.id)) : Promise.resolve([]),
+    optional(() => getFields(id)),
     canEdit ? optional(() => getReview(id)) : Promise.resolve(null),
   ]);
+  // Vùng nguồn từ ?vung= chỉ dùng khi hợp lệ và đúng trang đang mở; sai thì bỏ, không dựng khung lệch.
+  const highlightRegion = parseRegionParam(requestedRegion, initialPage);
+  const suggested = new Map((review?.fields ?? []).map((f) => [f.fieldCode, f.suggestedValue]));
 
   return (
     <>
@@ -68,11 +83,18 @@ export default async function DocumentPage({ params, searchParams }: PageProps<"
             <Chip tone={doc.reviewStatus === "verified" ? "ok" : "warn"}>{REVIEW_STATUS[doc.reviewStatus] ?? doc.reviewStatus}</Chip>
           </>
         }
-        actions={file && can(session, "document.download") ? <DownloadButton fileId={file.id} fileName={file.name} /> : undefined}
+        actions={
+          file ? (
+            <>
+              {canPrint && <PrintLink fileId={file.id} />}
+              {can(session, "document.download") && <DownloadButton fileId={file.id} fileName={file.name} />}
+            </>
+          ) : undefined
+        }
       />
       <PageBody className="lg:grid-cols-[minmax(0,1.2fr)_minmax(0,1fr)]">
         <section aria-label="Bản gốc" className="min-w-0 border border-line bg-soft p-3">
-          {file ? <DocumentViewer fileId={file.id} pageCount={file.pageCount ?? 1} initialPage={initialPage} /> : <p className="text-sm text-muted">Giấy tờ này không có tệp để xem.</p>}
+          {file ? <DocumentViewer key={file.id} fileId={file.id} pageCount={file.pageCount ?? 1} initialPage={initialPage} highlight={highlightRegion ? { region: highlightRegion, label: highlightLabel || "trường dữ liệu" } : null} /> : <p className="text-sm text-muted">Giấy tờ này không có tệp để xem.</p>}
         </section>
 
         <div className="grid min-w-0 content-start gap-4">
@@ -84,8 +106,12 @@ export default async function DocumentPage({ params, searchParams }: PageProps<"
               <dt className="text-muted">Tình trạng</dt><dd>{INTAKE_STATUS[doc.intakeStatus] ?? doc.intakeStatus}</dd>
               {file && (<><dt className="text-muted">Tệp</dt><dd className="break-all">{file.name} · {file.pageCount ?? "?"} trang</dd></>)}
               {file && (<><dt className="text-muted">SHA-256</dt><dd className="font-mono text-xs break-all">{file.sha256}</dd></>)}
-              {doc.metadataReviewedAt && (<><dt className="text-muted">Đầu văn bản</dt><dd>Đã xác nhận lúc {formatDateTime(doc.metadataReviewedAt)}{doc.metadataReviewNote ? ` · ${doc.metadataReviewNote}` : ""}</dd></>)}
+              {doc.metadataReviewedAt && (<><dt className="text-muted">Đầu văn bản</dt><dd>Đã xác nhận{doc.metadataReviewedByName ? ` bởi ${doc.metadataReviewedByName}` : ""} lúc {formatDateTime(doc.metadataReviewedAt)}{doc.metadataReviewNote ? ` · ${doc.metadataReviewNote}` : ""}</dd></>)}
             </dl>
+          </Section>
+
+          <Section title="Phiên bản tệp" description="Bản gốc, bản thay thế và bản dẫn xuất của giấy tờ. Bấm Xem để mở đúng bản đó ở khung bên trái.">
+            <FileVersions documentId={id} files={versions} viewingId={file?.id ?? null} canPrint={canPrint} />
           </Section>
 
           <Section title="Hồ sơ chứa giấy tờ này">
@@ -104,29 +130,34 @@ export default async function DocumentPage({ params, searchParams }: PageProps<"
             )}
           </Section>
 
-          <Section title="Trường dữ liệu" description="Giá trị đã đối chiếu. Nhãn “đã sửa” nghĩa là khác giá trị AI đọc ban đầu.">
-            {!canEdit ? (
-              <p className="text-sm text-muted">Trường dữ liệu chỉ hiện cho người có quyền sửa giấy tờ. Phân công đang dùng chỉ có quyền xem.</p>
-            ) : !review ? (
+          <Section title="Trường dữ liệu" description="Giá trị đã đối chiếu. Nhãn “đã sửa” nghĩa là người dùng đã đổi hoặc xóa giá trị AI đọc ban đầu.">
+            {!fields ? (
               <p className="text-sm text-bad" role="alert">Chưa tải được trường dữ liệu. Tải lại trang sau ít giây.</p>
-            ) : review.fields.length === 0 ? (
-              <p className="text-sm text-muted">Giấy tờ chưa có trường dữ liệu (chưa chọn loại giấy tờ).</p>
+            ) : fields.fields.length === 0 ? (
+              <p className="text-sm text-muted">Giấy tờ chưa có trường dữ liệu (chưa xác nhận loại giấy tờ).</p>
             ) : (
               <dl className="grid gap-2 text-sm">
-                {review.fields.map((f) => {
-                  const edited = f.value !== null && f.suggestedValue !== null && f.value.trim() !== f.suggestedValue.trim();
+                {fields.fields.map((f) => {
+                  const ai = suggested.get(f.fieldCode);
                   return (
                     <div key={f.fieldCode} className="grid gap-0.5 border-t border-dashed border-line pt-2 first:border-t-0 first:pt-0">
                       <dt className="flex flex-wrap items-center gap-2 text-xs text-muted">
                         {f.label}
                         {f.verified ? <Chip tone="ok"><CheckCircle2 aria-hidden className="size-3" /> Đã đối chiếu</Chip> : <Chip tone="warn">Chưa đối chiếu</Chip>}
-                        {edited && <Chip tone="info">Đã sửa</Chip>}
-                        {f.sourcePages[0] && (
-                          <Link href={`${routes.document(id)}?trang=${f.sourcePages[0]}` as never} className="text-primary hover:underline">Trang {f.sourcePages.join(", ")}</Link>
+                        {f.editedFromAi && <Chip tone="info">Đã sửa</Chip>}
+                        {!f.editedFromAi && f.origin === "manual" && <Chip tone="neutral">{FIELD_ORIGIN.manual}</Chip>}
+                        {f.sourcePage && (
+                          <Link
+                            href={`${routes.document(id)}?trang=${f.sourceRegion?.page ?? f.sourcePage}${isValidRegion(f.sourceRegion) ? `&vung=${encodeRegionParam(f.sourceRegion)}` : ""}&truong=${encodeURIComponent(f.label)}` as never}
+                            className="text-primary hover:underline"
+                          >
+                            Trang {f.sourceRegion?.page ?? f.sourcePage}{isValidRegion(f.sourceRegion) ? " · chỉ vùng" : ""}
+                          </Link>
                         )}
                       </dt>
-                      <dd>{f.value ?? f.suggestedValue ?? <span className="text-muted">Để trống</span>}</dd>
-                      {edited && <dd className="text-xs text-muted">AI đọc: “{f.suggestedValue}”</dd>}
+                      <dd>{f.value ?? <span className="text-muted">Để trống</span>}</dd>
+                      {f.verified && f.verifiedByName && <dd className="text-xs text-muted">Đối chiếu bởi {f.verifiedByName}{f.verifiedAt ? ` lúc ${formatDateTime(f.verifiedAt)}` : ""}</dd>}
+                      {f.editedFromAi && ai && <dd className="text-xs text-muted">AI đọc: “{ai}”</dd>}
                     </div>
                   );
                 })}

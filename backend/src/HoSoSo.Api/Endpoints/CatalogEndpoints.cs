@@ -46,10 +46,12 @@ internal static class CatalogEndpoints
             .WithSummary("Xóa đề xuất chưa xác nhận");
 
         var procedures = api.MapGroup("/procedures").WithTags("Thủ tục hành chính");
-        procedures.MapGet("/", async (string? q, string? domain, string? status, int? page, int? pageSize, ProceduresHandler h, CancellationToken ct) =>
-                TypedResults.Ok(await h.SearchAsync(q, domain, status, page ?? 1, pageSize ?? 25, ct)))
-            .WithSummary("Tìm thủ tục theo tên (không dấu), mã, lĩnh vực, tình trạng hiệu lực");
+        procedures.MapGet("/", async (string? q, string? domain, string? status, string? level, int? page, int? pageSize, ProceduresHandler h, CancellationToken ct) =>
+                TypedResults.Ok(await h.SearchAsync(q, domain, status, page ?? 1, pageSize ?? 25, ct, level)))
+            .WithSummary("Tìm thủ tục theo tên (không dấu), mã, lĩnh vực, cấp thực hiện (không phân biệt hoa thường), tình trạng hiệu lực");
         procedures.MapGet("/domains", async (ProceduresHandler h, CancellationToken ct) => TypedResults.Ok(await h.DomainsAsync(ct))).WithSummary("Lĩnh vực và số thủ tục");
+        procedures.MapGet("/levels", async (ProceduresHandler h, CancellationToken ct) => TypedResults.Ok(await h.LevelsAsync(ct)))
+            .WithSummary("Cấp thực hiện và số thủ tục (gộp cách ghi hoa/thường khác nhau)");
         procedures.MapGet("/{id}", async (string id, ProceduresHandler h, CancellationToken ct) => TypedResults.Ok(await h.GetAsync(id, ct)))
             .WithSummary("Chi tiết thủ tục, thành phần hồ sơ, mẫu biểu, lịch sử hiệu lực");
         api.MapGet("/form-templates/{id:guid}/file", async (Guid id, ProceduresHandler h, CancellationToken ct) =>

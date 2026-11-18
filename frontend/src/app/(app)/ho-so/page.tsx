@@ -6,6 +6,7 @@ import { DueChip } from "@/components/dossier/due-chip";
 import { Button, ButtonLink, buttonClass } from "@/components/ui/button";
 import { EmptyState, NeedsRealApi, PageBody } from "@/components/ui/blocks";
 import { NoAccess } from "@/components/ui/no-access";
+import { RowNavigation } from "@/components/ui/row-navigation";
 import { PageHeader } from "@/components/ui/page-header";
 import { WorkflowChip } from "@/components/ui/status-chip";
 import { routes } from "@/config/routes";
@@ -176,6 +177,7 @@ export default async function DossiersPage({ searchParams }: PageProps<"/ho-so">
               </EmptyState>
             ) : (
               <>
+                <RowNavigation />
                 <DossierCards rows={page.items} />
                 <DossierTable rows={page.items} filter={filter} sortHref={(column) => hrefFor(sortedBy(filter, column))} />
               </>
@@ -235,7 +237,7 @@ function DossierTable({ rows, filter, sortHref }: { rows: DossierListItem[]; fil
           {rows.map((d) => (
             <tr key={d.id} className="border-t border-line hover:bg-soft/60">
               <td className="px-3 py-2.5">
-                <Link href={routes.dossier(d.id)} className="grid gap-0.5 hover:text-primary">
+                <Link href={routes.dossier(d.id)} data-row className="grid gap-0.5 hover:text-primary">
                   <span className="font-mono text-xs text-muted">{d.code}</span>
                   <span className="font-semibold">{d.title}</span>
                 </Link>
@@ -260,7 +262,7 @@ function DossierCards({ rows }: { rows: DossierListItem[] }) {
     <ul className="grid gap-2 xl:hidden" aria-label={`Danh sách hồ sơ, ${rows.length} kết quả`}>
       {rows.map((d) => (
         <li key={d.id} className="grid gap-1.5 border border-line bg-surface p-3 text-sm">
-          <Link href={routes.dossier(d.id)} className="grid gap-0.5 hover:text-primary">
+          <Link href={routes.dossier(d.id)} data-row className="grid gap-0.5 hover:text-primary">
             <span className="font-mono text-xs text-muted">{d.code} · {d.workGroupCode} {d.workGroupTitle}</span>
             <span className="font-semibold">{d.title}</span>
           </Link>

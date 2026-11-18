@@ -14,5 +14,16 @@ export const SIGNATURE_STATUS: Record<string, { label: string; tone: "ok" | "bad
   unknown: { label: "Chưa xác định được", tone: "warn" },
 };
 
+/** Loại phiên bản tệp (BE-113 FileVersionDto.kind). */
+export const FILE_KIND: Record<string, string> = {
+  original: "Bản gốc",
+  replacement: "Bản thay thế",
+  derivative: "Bản dẫn xuất",
+  signed: "Bản có chữ ký số",
+};
+
+/** Nguồn của giá trị trường đã lưu (DocumentFieldView.origin). */
+export const FIELD_ORIGIN: Record<string, string> = { ocr: "Từ AI, đã người kiểm", manual: "Nhập tay", public_metadata: "Từ nguồn công khai", demo: "Dữ liệu mẫu", none: "Chưa có" };
+
 export const REVIEW_STATUS: Record<string, string> = { verified: "Đã đối chiếu", pending: "Chưa đối chiếu" };
 export const INTAKE_STATUS: Record<string, string> = { inbox: "Ở hộp tiếp nhận", filed: "Đã xếp vào hồ sơ", discarded: "Đã bỏ", split: "Đã tách thành văn bản con" };

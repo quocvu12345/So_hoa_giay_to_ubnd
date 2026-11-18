@@ -6,9 +6,10 @@ public sealed record FileInfoDto(Guid Id, string Name, string MediaType, long By
 /// derivative (bản dẫn xuất: PDF có lớp chữ, biên bản), signed (bản có chữ ký số). <c>IsCurrent</c>: phiên bản mới nhất còn nội dung của cùng thành phần và loại.
 /// <c>Disposed</c>: đã hủy theo đề nghị được duyệt, còn dòng metadata nhưng không còn nội dung. Không có khóa kho hay đường dẫn trên máy.
 /// </summary>
+/// <summary><c>ReplacesFileId</c>/<c>ReplacementReason</c>: bản quét thay thế ghi bản nó thay và lý do (BE-126).</summary>
 public sealed record FileVersionDto(
     Guid Id, string ComponentKey, int VersionNo, string Role, string Kind, string Name, string MediaType, long ByteSize, int? PageCount, string Sha256,
-    DateTimeOffset? UploadedAt, string? UploadedByName, bool Disposed, bool IsCurrent);
+    DateTimeOffset? UploadedAt, string? UploadedByName, bool Disposed, bool IsCurrent, Guid? ReplacesFileId = null, string? ReplacementReason = null);
 public sealed record ClassificationDto(string WorkGroupCode, string WorkGroupTitle, string? DocumentTypeCode, string? DocumentTypeName, string Status);
 public sealed record DossierRef(Guid Id, string Code, string Title, string Status);
 
@@ -26,11 +27,12 @@ public sealed record ReviewSuggestion(
 /// SourceRegion (BE-114): vùng chứa trích dẫn trên trang để làm nổi khi bấm trường; null nếu engine không biết vùng.
 /// Confidence: 0..1 do engine ước, null nếu không có (không phải xác suất đúng đã hiệu chỉnh).
 /// </summary>
+/// <summary><c>SourceFileId</c>: bản quét chứa trang/vùng nguồn; khác tệp chính của giấy tờ khi giấy tờ đã được thay bản quét (BE-126).</summary>
 public sealed record ReviewField(
     string FieldCode, string Label, int Position, string ValueType, bool Required,
     string? SuggestedValue, string? SuggestedQuote, IReadOnlyList<int> SourcePages, bool QuoteVerified,
     string? Value, bool NeedsReview, bool Verified, string? Attention,
-    SourceRegionDto? SourceRegion = null, decimal? Confidence = null);
+    SourceRegionDto? SourceRegion = null, decimal? Confidence = null, Guid? SourceFileId = null);
 
 /// <summary>
 /// BE-119. Một trường đã đối chiếu, cho người chỉ xem. Không kèm giá trị AI gợi ý hay trích dẫn thô: chỉ giá trị đang lưu,
@@ -38,7 +40,7 @@ public sealed record ReviewField(
 /// </summary>
 public sealed record DocumentFieldView(
     string FieldCode, string Label, int Position, string ValueType, string? Value, bool Verified, string Origin, bool EditedFromAi,
-    string? VerifiedByName, DateTimeOffset? VerifiedAt, int? SourcePage, SourceRegionDto? SourceRegion);
+    string? VerifiedByName, DateTimeOffset? VerifiedAt, int? SourcePage, SourceRegionDto? SourceRegion, Guid? SourceFileId = null);
 
 /// <summary>Trường của giấy tờ theo loại ĐÃ XÁC NHẬN (chưa xác nhận loại thì danh sách rỗng: chưa có gợi ý AI nào được lộ ra cho người chỉ xem).</summary>
 public sealed record DocumentFieldsData(
