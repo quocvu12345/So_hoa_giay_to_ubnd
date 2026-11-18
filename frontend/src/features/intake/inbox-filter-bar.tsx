@@ -7,14 +7,15 @@ import { inboxHref, isFiltered, type InboxFilters } from "./inbox-filter";
 
 export type BatchOption = { id: string; code: string; boxLabel: string | null };
 export type GroupOption = { code: string; title: string };
+export type TypeOption = { code: string; name: string };
 
 const selectClass = "h-9 max-w-64 border border-line-strong bg-surface px-2 text-[13px]";
 
 /**
- * Lọc hộp tiếp nhận theo lô quét và nhóm hồ sơ AI gợi ý (FE-21, BE-129). Chọn xong là đổi địa chỉ (máy chủ lọc trên toàn hộp),
+ * Lọc hộp tiếp nhận theo lô quét, nhóm hồ sơ và loại giấy tờ AI gợi ý (FE-21, BE-129; ô loại chỉ hiện khi đã chọn nhóm). Chọn xong là đổi địa chỉ (máy chủ lọc trên toàn hộp),
  * nên gửi đường dẫn là mở đúng bộ lọc. Tình trạng đọc lọc bằng các nút ở bảng.
  */
-export function InboxFilterBar({ tabKey, filters, batches, groups }: { tabKey: string; filters: InboxFilters; batches: BatchOption[]; groups: GroupOption[] }) {
+export function InboxFilterBar({ tabKey, filters, batches, groups, types }: { tabKey: string; filters: InboxFilters; batches: BatchOption[]; groups: GroupOption[]; types: TypeOption[] }) {
   const router = useRouter();
   const go = (change: Partial<InboxFilters>) => router.push(inboxHref(tabKey, { ...filters, ...change }) as Route);
   // Giá trị đang lọc mà không còn trong danh sách (lô đã đóng quá cũ, nhóm ngừng dùng) vẫn hiện để biết đang lọc gì và bỏ được.
@@ -35,7 +36,8 @@ export function InboxFilterBar({ tabKey, filters, batches, groups }: { tabKey: s
       </label>
       <label className="flex items-center gap-2">
         <span className="text-muted">Nhóm hồ sơ</span>
-        <select className={selectClass} value={filters.group ?? ""} onChange={(e) => go({ group: e.target.value || null })}>
+        {/* Đổi nhóm thì bỏ loại đang chọn: loại thuộc nhóm cũ không còn nghĩa. */}
+        <select className={selectClass} value={filters.group ?? ""} onChange={(e) => go({ group: e.target.value || null, type: null })}>
           <option value="">Tất cả nhóm</option>
           {!groupKnown && <option value={filters.group ?? ""}>{filters.group}</option>}
           {groups.map((g) => (
@@ -43,6 +45,18 @@ export function InboxFilterBar({ tabKey, filters, batches, groups }: { tabKey: s
           ))}
         </select>
       </label>
+      {filters.group && (
+        <label className="flex items-center gap-2">
+          <span className="text-muted">Loại giấy tờ</span>
+          <select className={selectClass} value={filters.type ?? ""} onChange={(e) => go({ type: e.target.value || null })}>
+            <option value="">Tất cả loại</option>
+            {filters.type && !types.some((t) => t.code === filters.type) && <option value={filters.type}>{filters.type}</option>}
+            {types.map((t) => (
+              <option key={t.code} value={t.code}>{t.name}</option>
+            ))}
+          </select>
+        </label>
+      )}
       {isFiltered(filters) && (
         <Link href={inboxHref(tabKey) as Route} className="text-primary hover:underline">Bỏ bộ lọc</Link>
       )}

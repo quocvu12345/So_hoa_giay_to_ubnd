@@ -1,0 +1,107 @@
+# P0-06, FE-01. Kiểm tra mỗi lần đẩy mã hoặc mở PR: frontend, backend, worker AI.
+# Chưa có bước nào cần Keycloak, MinIO/S3, ClamAV, Docker hay mô hình AI thật: test dùng PostgreSQL dịch vụ, máy chủ giả và AI giả.
+# E2E tích hợp (cần cả stack: API, worker, web, CSDL dev) KHÔNG chạy ở đây; chạy tay bằng scripts/dev-up.sh start rồi E2E_MODE=integration npx playwright test.
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  frontend:
+    name: Frontend (kiểm kiểu, lint, test, build, E2E giả lập)
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: frontend
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json
+      - run: npm ci
+      - run: npm run typecheck
+      - run: npm run lint
+      - run: npm test
+      - run: npm run build
+        env:
+          HOSO_MOCK: "1"
+      # SEC-03: lỗ hổng mức cao trong thư viện chạy thật chặn merge (mức trung bình của bộ lint chỉ dùng khi phát triển thì không).
+      - run: npm audit --omit=dev --audit-level=high
+      # E2E chế độ giả lập: web tự chạy với HOSO_MOCK=1 (playwright.config.ts), không cần API.
+      - run: npx playwright install --with-deps chromium
+      - run: npx playwright test
+        env:
+          CI: "true"
+      - uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: playwright-ket-qua
+          path: frontend/test-results
+          retention-days: 7
+
+  backend:
+    name: Backend (build không cảnh báo, test với PostgreSQL)
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:16
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U postgres"
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 10
+    env:
+      # Bộ test tự tạo và xóa CSDL hoso_tpl_*, hoso_test_* trên máy chủ này (cần quyền tạo CSDL và extension).
+      HOSO_TEST_PG: Host=localhost;Port=5432;Username=postgres;Password=postgres
+      DOTNET_CLI_TELEMETRY_OPTOUT: "1"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 10.0.x
+      - name: Build (cảnh báo là lỗi)
+        working-directory: backend
+        run: dotnet build HoSoSo.slnx
+        env:
+          CI: "true"
+      # 15 test kho S3 cần máy chủ tương thích S3 cục bộ nên tự báo "bỏ qua" khi không đặt HOSO_TEST_S3_URL.
+      - name: Test
+        working-directory: backend
+        run: dotnet test --solution HoSoSo.slnx
+      - name: Gói có lỗ hổng đã biết (chỉ báo, chưa chặn)
+        working-directory: backend
+        continue-on-error: true
+        run: dotnet list HoSoSo.slnx package --vulnerable --include-transitive
+
+  ai-worker:
+    name: Worker AI (test với AI giả)
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ai-worker
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      # Không cài MLX hay PaddleOCR: các test mô hình dùng mô hình giả. Test hợp đồng PostgreSQL tự bỏ qua khi chưa đặt HOSO_AI_TEST_ADMIN_URL.
+      - run: pip install pytest pillow pypdfium2 "psycopg[binary]"
+      - run: python -m pytest -q
+        env:
+          PYTHONPATH: src:..

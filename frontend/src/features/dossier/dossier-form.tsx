@@ -1,32 +1,33 @@
 "use client";
 
-import { useId, useState } from "react";
+import { useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import { createDossier, updateDossier } from "@/app/actions/dossier";
+import type { ProcedureSummary } from "@/app/actions/procedure";
 import { Button, ButtonLink } from "@/components/ui/button";
+import { DateInput, Input, Select, Textarea } from "@/components/ui/input";
 import { useToast } from "@/components/ui/toast";
 import { routes } from "@/config/routes";
-import { cn } from "@/lib/cn";
 import { useServerAction } from "@/lib/use-server-action";
+import { ProcedurePicker } from "./procedure-picker";
 import { ACCESS_LEVELS, dueOnForApi, mapApiErrors, validateDossierForm, type DossierFormErrors, type DossierFormValues } from "./dossier-form-rules";
 
 export type GroupChoice = { code: string; title: string; departmentCode: string; departmentName: string };
 
-export type ProcedureChoice = { id: string; name: string; code: string | null };
-
 type Props =
-  | { mode: "create"; groups: GroupChoice[]; initial?: Partial<DossierFormValues>; procedure?: ProcedureChoice }
+  | { mode: "create"; groups: GroupChoice[]; initial?: Partial<DossierFormValues>; procedure?: ProcedureSummary }
   | { mode: "edit"; dossierId: string; version: number; groups: GroupChoice[]; initial: DossierFormValues; groupLabel: string };
 
 /**
  * Tạo và sửa hồ sơ (FE-27). Kiểm tra ngay khi rời ô, lỗi của API hiện dưới đúng ô.
  * Nhóm hồ sơ gom theo đầu mối (phòng, Ban) và chỉ gồm nhóm phân công đang dùng được tạo. Sửa gửi kèm `version`: người khác vừa sửa thì báo và cho tải lại.
- * Tạo xong mở tab Giấy tờ của hồ sơ mới.
+ * Tạo hồ sơ có thể chọn thủ tục hành chính ngay trong form (`ProcedurePicker`); tạo xong mở tab Giấy tờ của hồ sơ mới.
  */
 export function DossierForm(props: Props) {
   const router = useRouter();
   const toast = useToast();
-  const ids = { title: useId(), group: useId(), access: useId(), due: useId(), year: useId(), creator: useId(), notes: useId() };
+  const formRef = useRef<HTMLFormElement>(null);
+  const [procedure, setProcedure] = useState<ProcedureSummary | null>(props.mode === "create" ? (props.procedure ?? null) : null);
   const [values, setValues] = useState<DossierFormValues>({
     title: "", workGroupCode: props.groups.length === 1 ? props.groups[0].code : "", accessLevel: "internal", internalDueOn: "", notes: "", year: "", creatorOrganizationName: "",
     ...props.initial,
@@ -51,15 +52,14 @@ export function DossierForm(props: Props) {
     setFormError(null);
     const found = validateDossierForm(values, props.mode);
     setErrors(found);
-    const first = (Object.keys(found) as (keyof DossierFormValues)[])[0];
-    if (first) {
-      const idOf = { title: ids.title, workGroupCode: ids.group, accessLevel: ids.access, internalDueOn: ids.due, notes: ids.notes, year: ids.year, creatorOrganizationName: ids.creator }[first];
-      document.getElementById(idOf)?.focus();
+    if (Object.keys(found).length > 0) {
+      // Chờ biểu mẫu vẽ lại các ô lỗi rồi đưa tiêu điểm tới ô lỗi đầu tiên theo thứ tự trên trang.
+      setTimeout(() => formRef.current?.querySelector<HTMLElement>('[aria-invalid="true"]')?.focus(), 0);
       return;
     }
     const payload = { ...values, internalDueOn: dueOnForApi(values.internalDueOn) };
     if (props.mode === "create") {
-      const outcome = await create.run(payload, props.procedure?.id);
+      const outcome = await create.run(payload, procedure?.id);
       if (outcome.ok) {
         toast.success(`Đã tạo hồ sơ ${outcome.data.code}. Thêm giấy tờ vào hồ sơ ở bước này.`);
         router.push(routes.dossierDocuments(outcome.data.id));
@@ -94,11 +94,9 @@ export function DossierForm(props: Props) {
     byDepartment.set(g.departmentCode, entry);
   }
 
-  const field = (key: keyof DossierFormValues) => cn("border bg-surface px-2 text-sm", errors[key] ? "border-bad" : "border-line-strong");
-  const message = (key: keyof DossierFormValues) => errors[key] && <p className="text-xs text-bad">{errors[key]}</p>;
-
   return (
     <form
+      ref={formRef}
       noValidate
       className="grid max-w-3xl gap-4"
       onSubmit={(event) => {
@@ -113,76 +111,84 @@ export function DossierForm(props: Props) {
         </div>
       )}
 
-      <div className="grid gap-1">
-        <label htmlFor={ids.title} className="text-[13px] font-semibold">Tên hồ sơ <span className="text-bad" title="Bắt buộc">*</span></label>
-        <input id={ids.title} value={values.title} onChange={(e) => set("title", e.target.value)} onBlur={() => check("title")} aria-invalid={errors.title ? true : undefined} className={cn(field("title"), "h-10")} />
-        <p className="text-xs text-muted">Thể hiện vụ việc, kỳ họp hoặc dự án, ví dụ “Hồ sơ kiểm tra môi trường tại cơ sở A”.</p>
-        {message("title")}
-      </div>
+      <Input
+        label="Tên hồ sơ"
+        required
+        value={values.title}
+        onChange={(e) => set("title", e.target.value)}
+        onBlur={() => check("title")}
+        error={errors.title}
+        hint="Thể hiện vụ việc, kỳ họp hoặc dự án, ví dụ “Hồ sơ kiểm tra môi trường tại cơ sở A”."
+      />
 
       {props.mode === "create" ? (
-        <div className="grid gap-1">
-          <label htmlFor={ids.group} className="text-[13px] font-semibold">Nhóm hồ sơ <span className="text-bad" title="Bắt buộc">*</span></label>
-          <select id={ids.group} value={values.workGroupCode} onChange={(e) => set("workGroupCode", e.target.value)} aria-invalid={errors.workGroupCode ? true : undefined} className={cn(field("workGroupCode"), "h-10")}>
-            <option value="">Chọn nhóm…</option>
-            {[...byDepartment.entries()].map(([code, entry]) => (
-              <optgroup key={code} label={entry.name}>
-                {entry.groups.map((g) => (
-                  <option key={g.code} value={g.code}>{g.code} · {g.title}</option>
-                ))}
-              </optgroup>
-            ))}
-          </select>
-          <p className="text-xs text-muted">
-            {props.groups.length === 0 ? "Phân công đang dùng không có nhóm hồ sơ nào để tạo." : "Chỉ hiện nhóm thuộc đơn vị của phân công đang dùng. Mã hồ sơ do hệ thống cấp."}
-          </p>
-          {message("workGroupCode")}
-        </div>
+        <Select
+          label="Nhóm hồ sơ"
+          required
+          value={values.workGroupCode}
+          onChange={(e) => set("workGroupCode", e.target.value)}
+          error={errors.workGroupCode}
+          hint={props.groups.length === 0 ? "Phân công đang dùng không có nhóm hồ sơ nào để tạo." : "Chỉ hiện nhóm thuộc đơn vị của phân công đang dùng. Mã hồ sơ do hệ thống cấp."}
+        >
+          <option value="">Chọn nhóm…</option>
+          {[...byDepartment.entries()].map(([code, entry]) => (
+            <optgroup key={code} label={entry.name}>
+              {entry.groups.map((g) => (
+                <option key={g.code} value={g.code}>{g.code} · {g.title}</option>
+              ))}
+            </optgroup>
+          ))}
+        </Select>
       ) : (
         <p className="text-sm"><span className="text-muted">Nhóm hồ sơ: </span><b>{props.groupLabel}</b> <span className="text-xs text-muted">(không đổi được sau khi tạo; giấy tờ đã đối chiếu giữ nguyên)</span></p>
       )}
 
+      {props.mode === "create" && <ProcedurePicker value={procedure} onChange={setProcedure} />}
+
       <div className="grid gap-4 sm:grid-cols-3">
-        <div className="grid gap-1">
-          <label htmlFor={ids.access} className="text-[13px] font-semibold">Mức tiếp cận</label>
-          <select id={ids.access} value={values.accessLevel} onChange={(e) => set("accessLevel", e.target.value)} className={cn(field("accessLevel"), "h-10")}>
-            {ACCESS_LEVELS.map((l) => (
-              <option key={l.value} value={l.value}>{l.label}</option>
-            ))}
-          </select>
-          <p className="text-xs text-muted">{ACCESS_LEVELS.find((l) => l.value === values.accessLevel)?.hint}</p>
-        </div>
-        <div className="grid gap-1">
-          <label htmlFor={ids.due} className="text-[13px] font-semibold">Hạn nội bộ</label>
-          <input id={ids.due} value={values.internalDueOn} inputMode="numeric" placeholder="dd/mm/yyyy" onChange={(e) => set("internalDueOn", e.target.value)} onBlur={() => check("internalDueOn")} aria-invalid={errors.internalDueOn ? true : undefined} className={cn(field("internalDueOn"), "h-10")} />
-          {message("internalDueOn")}
-        </div>
+        <Select label="Mức tiếp cận" value={values.accessLevel} onChange={(e) => set("accessLevel", e.target.value)} hint={ACCESS_LEVELS.find((l) => l.value === values.accessLevel)?.hint}>
+          {ACCESS_LEVELS.map((l) => (
+            <option key={l.value} value={l.value}>{l.label}</option>
+          ))}
+        </Select>
+        <DateInput
+          label="Hạn nội bộ"
+          value={values.internalDueOn}
+          onValueChange={(value) => set("internalDueOn", value)}
+          onBlur={() => check("internalDueOn")}
+          error={errors.internalDueOn}
+        />
         {props.mode === "create" && (
-          <div className="grid gap-1">
-            <label htmlFor={ids.year} className="text-[13px] font-semibold">Năm</label>
-            <input id={ids.year} value={values.year} inputMode="numeric" placeholder={String(new Date().getFullYear())} onChange={(e) => set("year", e.target.value)} onBlur={() => check("year")} aria-invalid={errors.year ? true : undefined} className={cn(field("year"), "h-10 tabular-nums")} />
-            <p className="text-xs text-muted">Để trống thì lấy năm hiện tại.</p>
-            {message("year")}
-          </div>
+          <Input
+            label="Năm"
+            value={values.year}
+            inputMode="numeric"
+            placeholder={String(new Date().getFullYear())}
+            onChange={(e) => set("year", e.target.value)}
+            onBlur={() => check("year")}
+            error={errors.year}
+            hint="Để trống thì lấy năm hiện tại."
+          />
         )}
       </div>
 
       {props.mode === "create" && (
-        <div className="grid gap-1">
-          <label htmlFor={ids.creator} className="text-[13px] font-semibold">Cơ quan hình thành (tùy chọn)</label>
-          <input id={ids.creator} value={values.creatorOrganizationName} onChange={(e) => set("creatorOrganizationName", e.target.value)} className={cn(field("creatorOrganizationName"), "h-10")} />
-          <p className="text-xs text-muted">Chỉ điền khi hồ sơ do cơ quan khác hình thành rồi bàn giao.</p>
-        </div>
+        <Input
+          label="Cơ quan hình thành (tùy chọn)"
+          value={values.creatorOrganizationName}
+          onChange={(e) => set("creatorOrganizationName", e.target.value)}
+          hint="Chỉ điền khi hồ sơ do cơ quan khác hình thành rồi bàn giao."
+        />
       )}
 
-      <div className="grid gap-1">
-        <label htmlFor={ids.notes} className="flex justify-between text-[13px] font-semibold">
-          <span>Ghi chú (tùy chọn)</span>
-          <span className="font-normal text-muted tabular-nums">{values.notes.length}/4000</span>
-        </label>
-        <textarea id={ids.notes} rows={3} maxLength={4000} value={values.notes} onChange={(e) => set("notes", e.target.value)} className={cn(field("notes"), "py-1.5")} />
-        {message("notes")}
-      </div>
+      <Textarea
+        label="Ghi chú (tùy chọn)"
+        rows={3}
+        maxLength={4000}
+        value={values.notes}
+        onChange={(e) => set("notes", e.target.value)}
+        error={errors.notes}
+      />
 
       {formError && <p role="alert" className="border border-bad bg-bad-soft p-3 text-sm text-bad">{formError}</p>}
 

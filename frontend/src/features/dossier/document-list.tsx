@@ -33,8 +33,11 @@ export function reviewState(doc: Pick<DossierDocument, "reviewStatus" | "pending
 /**
  * Giấy tờ trong hồ sơ (FE-29): theo thứ tự, đổi thứ tự bằng nút lên/xuống (dùng được bằng bàn phím), đổi chiều đến/đi/nội bộ,
  * gỡ (giấy tờ quay về hộp tiếp nhận), thêm từ hộp tiếp nhận. Chỉ sửa được ở bước Đang chuẩn bị / Yêu cầu bổ sung.
+ * Hồ sơ làm theo thủ tục có thêm cột "Thành phần": gán giấy tờ vào thành phần của thủ tục (hoặc bỏ gán) để hồ sơ tính đủ thành phần.
  */
-export function DocumentList({ dossierId, documents, editable }: { dossierId: string; documents: DossierDocument[]; editable: boolean }) {
+export type ComponentOption = { id: string; name: string; required: boolean };
+
+export function DocumentList({ dossierId, documents, editable, components = [] }: { dossierId: string; documents: DossierDocument[]; editable: boolean; components?: ComponentOption[] }) {
   const router = useRouter();
   const toast = useToast();
   const place = useServerAction(placeDocuments);
@@ -50,6 +53,11 @@ export function DocumentList({ dossierId, documents, editable }: { dossierId: st
       { documentId: a.documentId, position: b.position },
       { documentId: b.documentId, position: a.position },
     ]);
+    if (outcome.ok) router.refresh();
+  }
+
+  async function changeComponent(doc: DossierDocument, componentId: string) {
+    const outcome = await place.run(dossierId, [componentId ? { documentId: doc.documentId, procedureComponentId: componentId } : { documentId: doc.documentId, clearComponent: true }]);
     if (outcome.ok) router.refresh();
   }
 
@@ -83,7 +91,7 @@ export function DocumentList({ dossierId, documents, editable }: { dossierId: st
         </EmptyState>
       ) : (
         <div className="overflow-x-auto border border-line bg-surface">
-          <table className="w-full min-w-[760px] text-sm">
+          <table className={components.length > 0 ? "w-full min-w-[980px] text-sm" : "w-full min-w-[760px] text-sm"}>
             <caption className="sr-only">Giấy tờ trong hồ sơ theo thứ tự, {ordered.length} giấy tờ</caption>
             <thead className="bg-soft text-left text-[13px] text-heading">
               <tr>
@@ -91,6 +99,7 @@ export function DocumentList({ dossierId, documents, editable }: { dossierId: st
                 <th scope="col" className="px-3 py-2 font-semibold">Giấy tờ</th>
                 <th scope="col" className="px-3 py-2 font-semibold">Số, ngày</th>
                 <th scope="col" className="px-3 py-2 font-semibold">Chiều</th>
+                {components.length > 0 && <th scope="col" className="px-3 py-2 font-semibold">Thành phần</th>}
                 <th scope="col" className="px-3 py-2 font-semibold">Đối chiếu</th>
                 {editable && <th scope="col" className="px-3 py-2 text-right font-semibold">Thao tác</th>}
               </tr>
@@ -127,6 +136,26 @@ export function DocumentList({ dossierId, documents, editable }: { dossierId: st
                         (DIRECTIONS.find((d) => d.value === doc.direction)?.label ?? "—")
                       )}
                     </td>
+                    {components.length > 0 && (
+                      <td className="px-3 py-2.5">
+                        {editable ? (
+                          <select
+                            aria-label={`Thành phần của thủ tục mà ${doc.title} đáp ứng`}
+                            value={doc.procedureComponentId ?? ""}
+                            disabled={busy}
+                            onChange={(e) => void changeComponent(doc, e.target.value)}
+                            className="h-8 max-w-56 border border-line-strong bg-surface px-1 text-[13px]"
+                          >
+                            <option value="">Chưa gán</option>
+                            {components.map((c) => (
+                              <option key={c.id} value={c.id}>{c.name}{c.required ? " · bắt buộc" : ""}</option>
+                            ))}
+                          </select>
+                        ) : (
+                          (components.find((c) => c.id === doc.procedureComponentId)?.name ?? "Chưa gán")
+                        )}
+                      </td>
+                    )}
                     <td className="px-3 py-2.5">
                       <Chip tone={state.tone}>{state.text}</Chip>
                       {state.tone !== "ok" && editable && (

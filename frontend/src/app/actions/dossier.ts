@@ -88,7 +88,8 @@ export async function removeDocument(dossierId: string, documentId: string): Pro
 
 export type Direction = "incoming" | "outgoing" | "internal";
 
-export type PlacementChange = { documentId: string; position?: number; direction?: Direction };
+/** `procedureComponentId`: gán giấy tờ vào một thành phần của thủ tục; `clearComponent`: bỏ gán (FE-29). Không đặt thì giữ nguyên. */
+export type PlacementChange = { documentId: string; position?: number; direction?: Direction; procedureComponentId?: string; clearComponent?: boolean };
 
 /**
  * Đổi thứ tự hoặc chiều luân chuyển (BE-62). Hai giấy tờ không được cùng một vị trí nên đổi chỗ phải gửi cả hai trong một lệnh.
@@ -97,11 +98,14 @@ export type PlacementChange = { documentId: string; position?: number; direction
 export async function placeDocuments(dossierId: string, changes: PlacementChange[]): Promise<ActionResult> {
   return runAction("dossier_place_documents", async () => {
     assertId(dossierId);
-    for (const change of changes) assertId(change.documentId);
+    for (const change of changes) {
+      assertId(change.documentId);
+      if (change.procedureComponentId) assertId(change.procedureComponentId);
+    }
     ok(
       await serverApi().PATCH("/api/v1/dossiers/{id}/documents", {
         params: { path: { id: dossierId } },
-        body: changes.slice(0, 50).map((c) => ({ documentId: c.documentId, position: c.position ?? null, direction: c.direction ?? null, relationKind: null, clearProcedureComponent: false })),
+        body: changes.slice(0, 50).map((c) => ({ documentId: c.documentId, position: c.position ?? null, direction: c.direction ?? null, relationKind: null, procedureComponentId: c.procedureComponentId ?? null, clearProcedureComponent: c.clearComponent === true })),
       }),
     );
     refresh(dossierId);

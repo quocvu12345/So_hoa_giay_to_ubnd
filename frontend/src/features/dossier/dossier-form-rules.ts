@@ -1,4 +1,4 @@
-import { parseViDate } from "@/features/review/review-state";
+import { parseViDate } from "@/lib/vi-date";
 
 /** Giá trị biểu mẫu tạo/sửa hồ sơ, kiểm tra ngay khi nhập (FE-27). Hàm thuần, kiểm thử ở dossier-form.test.ts. */
 export type DossierFormValues = { title: string; workGroupCode: string; accessLevel: string; internalDueOn: string; notes: string; year: string; creatorOrganizationName: string };

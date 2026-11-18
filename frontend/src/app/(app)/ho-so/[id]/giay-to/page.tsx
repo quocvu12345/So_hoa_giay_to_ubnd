@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { PageBody } from "@/components/ui/blocks";
-import { acceptsDocuments, getDossier } from "@/features/dossier/dossier-data";
+import { acceptsDocuments, getChecklist, getDossier } from "@/features/dossier/dossier-data";
 import { DocumentList } from "@/features/dossier/document-list";
 import { ExtractNowButton } from "@/features/intake/extract-now-button";
 import { pageSession } from "@/lib/auth/page-guard";
@@ -18,6 +18,9 @@ export default async function DossierDocuments({ params }: PageProps<"/ho-so/[id
   const dossier = await loadOrNotFound(() => getDossier(id));
   const canPrepare = can(session, "dossier.prepare");
   const editable = canPrepare && acceptsDocuments(dossier.status);
+  // Hồ sơ làm theo thủ tục: các thành phần để gán giấy tờ vào (FE-29). Không tải được thì chỉ mất cột này, không làm hỏng tab.
+  const checklist = dossier.procedureId ? await getChecklist(id).catch(() => null) : null;
+  const components = (checklist?.components ?? []).map((c) => ({ id: c.componentId, name: c.name, required: c.required }));
 
   return (
     <PageBody>
@@ -29,7 +32,7 @@ export default async function DossierDocuments({ params }: PageProps<"/ho-so/[id
           <ExtractNowButton scope="dossier" id={id} variant="primary" size="md" />
         </div>
       )}
-      <DocumentList dossierId={id} documents={dossier.documents} editable={editable} />
+      <DocumentList dossierId={id} documents={dossier.documents} editable={editable} components={components} />
     </PageBody>
   );
 }

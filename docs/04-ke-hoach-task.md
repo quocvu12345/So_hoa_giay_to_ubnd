@@ -22,11 +22,11 @@ Các bảng bên dưới là **kế hoạch**, không có cột trạng thái. T
 
 | Nhóm | Đã làm (có bằng chứng) | Làm dở | Chưa làm |
 |---|---|---|---|
-| **P0** môi trường | P0-01, P0-02 (git, `.gitignore`), P0-03 một phần (`docker-compose.dev.yml` có, **Docker không chạy trên máy dev nên chưa thử**) | P0-04 (compose trỏ `infra/keycloak` nhưng thư mục chưa có) | P0-05 (`CONTRIBUTING.md`), P0-06 (không có `.github`) |
+| **P0** môi trường | P0-01, P0-02 (git, `.gitignore`), P0-03 một phần (`docker-compose.dev.yml` có, **Docker không chạy trên máy dev nên chưa thử**) | P0-04 (compose trỏ `infra/keycloak` nhưng thư mục chưa có); P0-06 (`.github/workflows/ci.yml` đã viết và tập dượt cục bộ, **chưa chạy trên GitHub Actions**) | P0-05 (`CONTRIBUTING.md`) |
 | **P1** CSDL | DB-01…DB-19: migration 000–040 chạy trên CSDL mới và CSDL cũ, có test; DB-19 đã đo 20.000 hồ sơ (mọi ca 2–8 ms) | | |
 | **P4** AI | AI-02…AI-08, AI-12…AI-15, AI-20 (một phần), AI-21, AI-22, AI-23 | AI-01 (còn `TODO(AI-01)`), AI-09 (có script dịch vụ, chưa cài thật), AI-10 (chưa dùng `v_ai_accuracy`), AI-12 và AI-20 (chưa đo giấy tờ thật) | AI-11 (phần lớn thay bằng Ollama), AI-16, AI-17, AI-18 (không còn cần với hồ sơ `ollama`), AI-19 (bản dev có `supervise.sh`; dịch vụ launchd/systemd chưa cài thật) |
 | **P7** chuyển đổi | | | MG-01…MG-04 (`scan-inbox.html` vẫn dùng scan-bridge) |
-| **P8** kiểm thử, vận hành | QA-07, OPS-04 (diễn tập khôi phục có biên bản), OPS-07, OPS-08 | QA-01 (có test quyền, chưa có báo cáo ma trận), QA-02 (có E2E 27 ca, chưa chạy trong CI), QA-05 (axe mới ở một phần), OPS-03 (chưa sao lưu WAL), OPS-05 (mới có profile Loki trong compose) | QA-03, QA-04, QA-06, OPS-01, OPS-02, OPS-06 |
+| **P8** kiểm thử, vận hành | QA-05 (một phần, xem bên cạnh), QA-07, OPS-04 (diễn tập khôi phục có biên bản), OPS-07, OPS-08 | QA-01 (có test quyền, chưa có báo cáo ma trận), QA-02 (có E2E tích hợp 34 ca + giả lập 7 ca; giả lập có trong CI, tích hợp cần stack thật nên chạy tay), QA-05 (axe quét mọi màn trong menu của 6 vai trò; chưa quét mọi màn con), OPS-03 (chưa sao lưu WAL), OPS-05 (mới có profile Loki trong compose) | QA-03, QA-04, QA-06, OPS-01, OPS-02, OPS-06 |
 | **P9** bảo mật, log | SEC-02, SEC-05 (ClamAV mới thử với máy chủ `clamd` giả), SEC-07, LOG-03, LOG-06, LOG-08 | LOG-01 (profile Loki trong compose, chưa chạy) | SEC-01, SEC-03, SEC-04, SEC-06, SEC-08, LOG-02, LOG-04, LOG-05 (`audit_events` chưa có `correlation_id`), LOG-07 |
 
 Chưa kiểm chứng với hạ tầng thật: Keycloak, MinIO/S3 thật, ClamAV thật, runtime .NET 10 thật (máy dev chỉ có runtime 11), tải nhiều người dùng. Chi tiết ở đầu `tasks/backend.md`.

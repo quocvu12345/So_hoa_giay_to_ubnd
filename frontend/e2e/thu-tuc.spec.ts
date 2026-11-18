@@ -48,7 +48,7 @@ test("Thủ tục: tìm không dấu, lọc trên URL, xem thành phần và t�
   const procedureName = (await main.getByRole("heading", { level: 1 }).or(page.locator("header h1")).first().innerText()).trim();
   await page.getByRole("link", { name: "Tạo hồ sơ theo thủ tục này" }).click();
   await expect(page).toHaveURL(/\/ho-so\/tao-moi\?thu-tuc=/);
-  await expect(main.getByText("Hồ sơ theo thủ tục:")).toBeVisible();
+  await expect(main.getByText(/Hồ sơ theo thủ tục này có \d+ thành phần/)).toBeVisible();
   await main.getByLabel(/Tên hồ sơ/).fill(`E2E hồ sơ theo thủ tục ${tag}`);
   await main.getByLabel(/Nhóm hồ sơ/).selectOption({ index: 1 });
   await main.getByRole("button", { name: /^Tạo hồ sơ$/ }).click();
@@ -65,7 +65,7 @@ test("Thủ tục: tìm không dấu, lọc trên URL, xem thành phần và t�
   const retiredId = page.url().split("/").pop()!;
   await page.goto(`/ho-so/tao-moi?thu-tuc=${retiredId}`);
   await expect(main.getByText(/đã bãi bỏ hoặc được thay thế nên không dùng để tạo hồ sơ mới/)).toBeVisible();
-  await expect(main.getByText("Hồ sơ theo thủ tục:")).toHaveCount(0);
+  await expect(main.getByText(/Hồ sơ theo thủ tục này có \d+ thành phần/)).toHaveCount(0);
 
   expect(problems, "không có lỗi console/CSP").toEqual([]);
 });

@@ -1,8 +1,8 @@
 "use server";
 
 import { revalidatePath } from "next/cache";
-import { ApiError, apiFetch } from "@/lib/api/server";
-import type { ExtractResult } from "@/lib/ai-queue";
+import { ApiError, ok, serverApi } from "@/lib/api/server";
+import { toExtractResult, type ExtractResult } from "@/lib/ai-queue";
 import { getSession } from "@/lib/auth/session";
 import { hasAny } from "@/lib/auth/permissions";
 import { serverEnv } from "@/lib/env";
@@ -26,13 +26,14 @@ export async function extractNow(input: { scope: "document" | "dossier"; id: str
 
   if (serverEnv().mock) return { ok: true, result: mockResult(input.id, input.scope, Boolean(input.force)) };
 
-  const path = input.scope === "dossier" ? (`/api/v1/dossiers/${input.id}/ai/extract` as const) : (`/api/v1/documents/${input.id}/ai/extract` as const);
   try {
-    const result = await apiFetch<ExtractResult>(path, {
-      method: "POST",
-      headers: { "content-type": "application/json" },
-      body: JSON.stringify({ force: Boolean(input.force), ...(input.documentIds?.length ? { documentIds: input.documentIds } : {}) }),
-    });
+    const body = { force: Boolean(input.force), ...(input.documentIds?.length ? { documentIds: input.documentIds } : {}) };
+    const api = serverApi();
+    // Hai điểm vào khác đường dẫn: gọi client có kiểu (đổi đường dẫn hay tên trường ở API là lỗi biên dịch), rồi kiểm giá trị lạ ở biên.
+    const raw = input.scope === "dossier"
+      ? ok(await api.POST("/api/v1/dossiers/{id}/ai/extract", { params: { path: { id: input.id } }, body }))
+      : ok(await api.POST("/api/v1/documents/{id}/ai/extract", { params: { path: { id: input.id } }, body }));
+    const result = toExtractResult(raw);
     log.info("ai_extract_requested", { scope: input.scope, id: input.id, items: result.items.length, force: Boolean(input.force) });
     revalidatePath("/tiep-nhan");
     return { ok: true, result };

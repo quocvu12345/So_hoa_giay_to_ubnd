@@ -29,6 +29,6 @@ export async function getInbox(status: InboxStatus, cursor?: string, limit = 50,
 
 /** Số PDF theo tình trạng đọc, cùng lô/nhóm với `filters` nhưng không áp tình trạng đọc, cho các nút lọc. */
 export async function getInboxSummary(status: InboxStatus, filters: InboxFilters = NO_FILTERS): Promise<InboxSummary> {
-  const { batch, group } = inboxQuery(filters);
-  return ok(await serverApi().GET("/api/v1/intake/inbox/summary", { params: { query: { status, batch, group } } }));
+  const { batch, group, type } = inboxQuery(filters);
+  return ok(await serverApi().GET("/api/v1/intake/inbox/summary", { params: { query: { status, batch, group, type } } }));
 }

@@ -45,3 +45,18 @@ describe("lỗi theo từng ô", () => {
     expect(normalizeFieldErrors(undefined)).toBeUndefined();
   });
 });
+
+describe("ApiError.digest", () => {
+  it("mang đúng mã lỗi của API để màn lỗi hiện mã quản trị tra được", () => {
+    const error = new ApiError(problemFrom(500, { type: "https://hoso/errors/internal_error", detail: "Lỗi hệ thống", errorId: "K7M2QX4P" }));
+    expect(error.digest).toBe("K7M2QX4P");
+    expect(error.message).toBe("Lỗi hệ thống");
+    expect(error.errorId).toBe("K7M2QX4P");
+  });
+
+  it("không có mã lỗi thì không đặt digest (Next tự sinh như mọi lỗi khác)", () => {
+    const error = new ApiError(problemFrom(502, undefined));
+    expect(error.digest).toBeUndefined();
+    expect(error.code).toBe("http_502");
+  });
+});

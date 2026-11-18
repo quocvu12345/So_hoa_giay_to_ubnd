@@ -81,9 +81,21 @@ test("Hộp tiếp nhận: lọc theo lô quét và theo nhóm của gợi ý AI
   const expected = await summary(page, `?group=${code}`);
   await expect(page.getByRole("navigation", { name: "Lọc theo tình trạng đọc" }).getByRole("link", { name: /^Tất cả/ })).toContainText(`(${expected.total})`);
 
-  // Bỏ nhóm bằng ô chọn: địa chỉ không còn tham số.
+  // Đã chọn nhóm thì có ô lọc theo loại giấy tờ của nhóm; đổi nhóm thì loại bị bỏ.
+  const typeSelect = page.getByLabel("Loại giấy tờ");
+  await expect(typeSelect).toBeVisible();
+  const typeOptions = await typeSelect.locator("option").evaluateAll((options) => options.map((o) => (o as HTMLOptionElement).value).filter(Boolean));
+  expect(typeOptions.length).toBeGreaterThan(0);
+  await typeSelect.selectOption(typeOptions[0]);
+  await expect(page).toHaveURL(new RegExp(`[?&]loai=${typeOptions[0]}\\b`));
+  const byType = await summary(page, `?group=${code}&type=${typeOptions[0]}`);
+  await expect(page.getByRole("navigation", { name: "Lọc theo tình trạng đọc" }).getByRole("link", { name: /^Tất cả/ })).toContainText(`(${byType.total})`);
+  expect(byType.total).toBeLessThanOrEqual(expected.total);
+
+  // Bỏ nhóm bằng ô chọn: địa chỉ không còn tham số (loại đi theo nhóm nên cũng mất).
   await groupSelect.selectOption("");
-  await expect(page).not.toHaveURL(/nhom=/);
+  await expect(page).not.toHaveURL(/nhom=|loai=/);
+  await expect(page.getByLabel("Loại giấy tờ")).toHaveCount(0);
 
   // Lô: nếu có lô thì chọn được và số khớp; không có lô thì ô vẫn dùng được (chỉ có "Tất cả lô").
   const batchOptions = await batchSelect.locator("option").evaluateAll((options) => options.map((o) => (o as HTMLOptionElement).value).filter(Boolean));

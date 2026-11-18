@@ -40,6 +40,7 @@ export const getSessionState = cache(async (): Promise<{ session: Session | null
   }
 
   try {
+    // apiFetch có chủ ý: `Session.permissions` là union `Permission` hẹp hơn chuỗi tự do của schema, nên client có kiểu vẫn phải ép kiểu ở đây.
     return { session: await apiFetch<Session>("/api/v1/me"), problem: null };
   } catch (error) {
     if (!(error instanceof ApiError)) throw error;

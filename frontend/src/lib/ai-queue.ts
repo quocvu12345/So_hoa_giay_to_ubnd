@@ -28,6 +28,33 @@ export type ExtractResult = {
   skipped: number;
 };
 
+const OUTCOMES: readonly ExtractOutcome[] = ["raised", "running", "alreadyDone", "created", "skipped"];
+const KINDS: readonly QueueKind[] = ["priority", "interactive", "background"];
+
+type RawExtractResult = {
+  items: { documentId: string; fileId: string | null; jobId: string | null; outcome: string; queueKind: string | null; queuePosition: number | null; etaSeconds: number | null; message: string | null }[];
+  raised: number;
+  running: number;
+  alreadyDone: number;
+  created: number;
+  skipped: number;
+};
+
+/**
+ * Đổi phản hồi của API (chuỗi tự do) sang kiểu chặt của giao diện. Kết quả lạ (API thêm giá trị mới mà giao diện chưa biết) không làm vỡ màn:
+ * `outcome` lạ coi là "skipped" kèm thông điệp của API, `queueKind` lạ bỏ trống.
+ */
+export function toExtractResult(raw: RawExtractResult): ExtractResult {
+  return {
+    ...raw,
+    items: raw.items.map((item) => ({
+      ...item,
+      outcome: OUTCOMES.find((o) => o === item.outcome) ?? "skipped",
+      queueKind: KINDS.find((k) => k === item.queueKind) ?? null,
+    })),
+  };
+}
+
 /** "khoảng 20 giây" · "khoảng 3 phút" · "khoảng 1 giờ 5 phút". Không có số đo thì trả null để không hiện con số đoán. */
 export function etaText(seconds: number | null | undefined): string | null {
   if (seconds == null || !Number.isFinite(seconds) || seconds < 0) return null;

@@ -33,7 +33,7 @@ Khung frontend đã kiểm tra trên máy:
 
 ## Cập nhật tối 18/11/2026
 
-**Số liệu hiện tại:** 33 ✅ · 8 🟡 (FE-01, 03, 05, 10, 11, 12, 22, 27) · 0 ⬜ trên 41 task; không trang nào còn khung `ScaffoldPage` (`components/ui/scaffold-page.tsx` không còn nơi dùng). Mục "Rà soát tổng thể" ngay dưới là bản sáng cùng ngày: số liệu (20/13/8) và "thứ tự đề xuất" trong đó **đã lỗi thời**, chỉ giữ làm lịch sử các lỗi đã bắt được.
+**Số liệu hiện tại (cuối ngày 18/11/2026):** 38 ✅ · 3 🟡 (FE-01 CI chưa chạy trên GitHub, FE-05 Keycloak thật, FE-11 GlitchTip) · 0 ⬜ trên 41 task (sáng cùng ngày còn 33 ✅ · 8 🟡); không trang nào còn khung `ScaffoldPage` (`components/ui/scaffold-page.tsx` không còn nơi dùng). Mục "Rà soát tổng thể" ngay dưới là bản sáng cùng ngày: số liệu (20/13/8) và "thứ tự đề xuất" trong đó **đã lỗi thời**, chỉ giữ làm lịch sử các lỗi đã bắt được.
 
 **Luồng AI (tối 18/11):** AI thật chạy qua Ollama ở máy Windows (docs/tasks/ai.md, AI-22) và ghi vùng nguồn cho trường (AI-21); màn đối chiếu và chi tiết giấy tờ làm nổi vùng đó. Màn đối chiếu nay xử lý `sourceFileId` (`regionTarget` ở `features/review/source-region.ts`, có test): vùng của lần đọc cũ nằm trên bản quét đã thay thì không vẽ khung lên bản hiện hành, nói rõ và dẫn tới `giay-to/{id}?tep=`.
 
@@ -63,20 +63,19 @@ Khung frontend đã kiểm tra trên máy:
   - `.env.example`;
   - (17/11/2026) Vitest 3 + Testing Library + jsdom (`vitest.config.ts`), Playwright 1.64 + `@axe-core/playwright` (`playwright.config.ts`, thư mục `e2e/`), Prettier (`.prettierrc.json`);
   - script `typecheck`, `test`, `test:watch`, `test:e2e`, `gen:api`, `format`; `engines.node >= 22`.
-- **Còn lại:** nối `typecheck`, `lint`, `test`, `build` vào CI (P0-06); chạy `npm run format` một lần cho cả cây mã (chưa chạy để diff không lẫn việc khác).
+- **Đã có (18/11/2026 tối):** `.github/workflows/ci.yml` chạy frontend (`typecheck`, `lint`, `test`, `build` với `HOSO_MOCK=1`, `npm audit --omit=dev --audit-level=high`, E2E giả lập), backend (build không cảnh báo, test với PostgreSQL 16 dịch vụ) và worker AI (test với AI giả). Đã tập dượt cục bộ: `npm audit` 0 lỗ hổng, `next build` qua, job worker chạy trong venv sạch (143 qua), YAML hợp lệ. **Chưa chạy trên GitHub Actions**, nên chưa biết có bước nào cần chỉnh theo môi trường runner.
+- **Còn lại:** xem CI chạy xanh lần đầu sau khi đẩy mã; chạy `npm run format` một lần cho cả cây mã trong **commit riêng** (chưa chạy để diff không lẫn việc khác).
 - **Kiểm tra:** `npm run typecheck && npm run lint && npm test && npm run build` chạy được cục bộ (đã chạy 17/11/2026).
 
 ### FE-02 · Token giao diện ✅ · 1 ngày
 - **Đã có:** `src/app/globals.css` (`@theme`: màu theo `government-theme.css`, màu trạng thái riêng, font hệ thống để build được khi không có internet).
 - **Còn lại:** nếu cần chế độ tối, thêm token tối theo đúng cấu trúc biến (không bắt buộc cho bản đầu).
 
-### FE-03 · Bộ thành phần 🟡 · 3 ngày
+### FE-03 · Bộ thành phần ✅ · 3 ngày
 - **Đã có:** `Button`, `ButtonLink`, `Chip`, `WorkflowChip`, `PageHeader`, `Section`, `EmptyState`, `TabsNav`, `Stepper`, `ErrorPanel`, `NoAccess`, `NeedsRealApi`; (17/11/2026) `Dialog` (phần tử `<dialog>` gốc: bẫy tiêu điểm, Esc, nền bị vô hiệu), `Toast` (có nút hành động như "Hoàn tác", lỗi kèm Mã lỗi, `role=alert`), `ConnectionBanner`.
-- **Làm:**
-  1. Thêm `Input`, `Textarea` (đếm ký tự), `Select`, `Combobox` có tìm kiếm, `DatePicker` nhập `dd/mm/yyyy`. Hiện các màn đối chiếu và xếp hồ sơ tự viết ô nhập tại chỗ; gom lại khi làm FE-27.
-  2. Thêm `ConfirmInline` (xác nhận hai bước trong trang), `DataTable` (sắp xếp, chọn nhiều), `Pagination` keyset, `FieldError`.
-  3. Dùng Radix UI (MIT) cho Popover, Combobox để có sẵn tiếp cận (Dialog đã dùng `<dialog>` gốc nên không cần Radix).
-- **Kiểm tra:** mỗi thành phần có test render và test bàn phím; axe không lỗi.
+- **Đã làm (18/11/2026 tối):** `components/ui/field.tsx` (`Field`, `FieldError`: nhãn, gợi ý, lỗi nối ô bằng `aria-describedby`, `aria-invalid`), `input.tsx` (`Input`, `Textarea` có bộ đếm ký tự, `Select`, `DateInput` nhập `dd/mm/yyyy` và đổi `-`, `.` thành `/`), `combobox.tsx` (`Combobox` theo mẫu WAI-ARIA: ↓ ↑ Enter Esc, báo số kết quả cho trình đọc màn hình, Esc không đóng hộp thoại chứa nó), `confirm-inline.tsx` (`ConfirmInline`: hỏi hai bước tại chỗ, tiêu điểm vào "Hủy"). Ngày dùng chung `lib/vi-date.ts`. Dùng thật ở form tạo hồ sơ, hộp thoại tạo hồ sơ ở bước xếp hồ sơ và bộ chọn thủ tục.
+- **Không làm, có chủ ý:** `DataTable` và `Pagination` dùng chung: mỗi bảng hiện có (hồ sơ, hộp tiếp nhận, giấy tờ, nhật ký…) khác nhau về cột, con trỏ phân trang và hành vi dòng, gom lại lúc này chỉ thêm rủi ro hồi quy mà không gỡ được việc nào đang chờ. Làm khi có màn mới thứ ba cần cùng một khuôn. Không dùng Radix UI: `Combobox` tự viết theo mẫu ARIA và có test bàn phím; `Dialog` vẫn là `<dialog>` gốc.
+- **Kiểm tra:** `controls.test.tsx` (22 ca: nhãn và lỗi đọc đúng, bàn phím, tiêu điểm), `procedure-picker.test.tsx`; axe quét mọi màn trong menu ở `vai-tro.spec.ts` và `mock-vai-tro.spec.ts`.
 
 ### FE-04 · Khung trang và menu ✅ · 1,5 ngày
 - **Đã có:**
@@ -86,7 +85,7 @@ Khung frontend đã kiểm tra trên máy:
   - `config/navigation.ts`, `config/routes.ts`;
   - `loading.tsx`, `error.tsx`, `not-found.tsx`, `global-error.tsx`.
 - **Đã làm thêm 17/11/2026:** số đếm trên menu và chuông lấy từ `GET /workspace/summary` khi chạy thật (`(app)/layout.tsx`); thanh trên gọn ở 768–1279px (nút Đi nhanh chỉ hiện từ 1024px, tên người dùng từ 1280px).
-- **Còn lại:** chuông chưa tăng theo SSE `notification.created` (FE-40).
+- **Đã làm (FE-40):** chuông tăng theo SSE `notification.created` (E2E `thong-bao.spec.ts`).
 
 ### FE-05 · Phiên đăng nhập 🟡 · 1,5 ngày
 - **Đã có:**
@@ -106,7 +105,7 @@ Khung frontend đã kiểm tra trên máy:
   - `serverApi()` + `ok()` (`lib/api/server.ts`): client `openapi-fetch` có kiểu theo đường dẫn và tham số, tự chuyển tiếp cookie phiên, `X-Assignment-Id`, `X-Correlation-Id`, `X-CSRF`; mọi lỗi HTTP thành `ApiError` (`lib/api/problem.ts`: mã lỗi, Mã lỗi, lỗi theo ô, `details`);
   - `createBrowserApi(assignmentId)`, `browserHeaders()`, `uploadPdf()` (XHR có tiến độ) ở `lib/api/client.ts`.
 - **Lưu ý quan trọng:** API chỉ nhận phân công đang dùng qua header `X-Assignment-Id`. `<img>` và `EventSource` không gửi được header, cookie `hoso_assignment` lại là httpOnly. Vì vậy mọi lệnh gọi trực tiếp từ trình duyệt phải gắn header bằng `useAssignmentId()` (`lib/auth/client-session.tsx`), và ảnh trang, SSE đọc bằng `fetch`. Nếu không, người kiêm nhiệm nhiều phân công bị tính theo phân công đầu danh sách (ảnh trang trả 403).
-- **Còn lại:** chuyển các chỗ cũ còn dùng `apiFetch<T>` viết tay (`getSession`, `app/actions/ai-extract.ts`, `quan-tri/van-hanh/page.tsx`) sang `serverApi()`.
+- **Đã làm (18/11/2026 tối):** `app/actions/ai-extract.ts` gọi qua `serverApi()` có kiểu, phản hồi đi qua `toExtractResult` (giá trị lạ về `skipped`, có test); `quan-tri/van-hanh/page.tsx` đã bỏ `apiFetch` từ trước. **Giữ có chủ ý** ở `getSession`: `Session.permissions` là union `Permission` hẹp hơn chuỗi tự do của schema nên vẫn phải ép kiểu, đã ghi lý do ở mã.
 - **Kiểm tra:** đổi tên trường hoặc đường dẫn trong `openapi.json` rồi `npm run gen:api && npm run typecheck` thì chỗ gọi lỗi biên dịch.
 
 ### FE-07 · Mẫu ghi dữ liệu ✅ · 1 ngày
@@ -124,19 +123,20 @@ Khung frontend đã kiểm tra trên máy:
   - tự nối lại 1→30 giây, gửi `Last-Event-ID`, đánh thức khi có mạng hoặc quay lại tab, phát `resync` sau khi nối lại; coi kết nối treo khi 70 giây không có byte nào (API gửi nhịp tim mỗi 25 giây);
   - hộp tiếp nhận và trang Nạp PDF nghe `job.progress`/`job.completed`/`job.failed`/`job.cancelled`; màn đối chiếu nghe tiến độ của đúng giấy tờ đang mở.
 - **Khác kế hoạch:** đọc luồng bằng `fetch` + bộ đọc SSE tự viết (`lib/events/sse-parser.ts`, có test), không dùng `EventSource`, vì `EventSource` không gửi được header `X-Assignment-Id` (xem FE-06). Hệ quả: luồng luôn mở nên `networkidle` của Playwright không bao giờ đạt, E2E không dùng.
-- **Còn lại:** `notification.created` tăng số trên chuông và `dossier.changed` gọi `router.refresh()` khi đang xem hồ sơ đó (làm cùng FE-40 và FE-28).
+- **Đã làm:** `notification.created` tăng số trên chuông (FE-40); `dossier.changed` gọi `router.refresh()` khi đang xem đúng hồ sơ đó (`RefreshOnEvents dossierId`, ở layout `ho-so/[id]`).
 - **Kiểm tra:** E2E thấy bảng hộp tiếp nhận đổi sang "Đã đọc xong" không cần tải lại. **Chưa kiểm** kịch bản tắt mạng 30 giây rồi bật lại.
 
 ### FE-09 · Trạng thái trên URL ✅ · 0,5 ngày
 - **Đã có:** bộ lọc là form GET (`/ho-so?q=&trang-thai=`, `/tiep-nhan?trang-thai=`, `/tra-cuu?q=`), tab là đường dẫn.
 - **Còn lại:** áp dụng cho các màn mới.
 
-### FE-10 · Hạ tầng kiểm thử 🟡 · 1 ngày
+### FE-10 · Hạ tầng kiểm thử ✅ · 1 ngày
 - **Đã có (17/11/2026):**
   - Vitest: `npm test` (18/11/2026: 119 test trong 21 tệp: logic đối chiếu, hàng đợi tải lên, tiến độ hộp tiếp nhận, bộ đọc SSE, ProblemDetails, nhãn khay AI, Toast, bộ lọc danh sách hồ sơ, phân công, tra cứu, vùng nguồn, nhật ký, kho, bảng lãnh đạo, đi bằng bàn phím);
   - E2E tích hợp: 9 kịch bản trong 5 tệp (`tiep-nhan`, `duyet-ho-so`, `danh-sach-va-phan-cong`, `vung-nguon`, `phien`);
   - Playwright 1.64 + axe: `e2e/fixtures.ts` (`signIn` theo vai trò qua dev-login, `samplePdf`, `watchConsole` bắt lỗi CSP, `expectAccessible`), `playwright.config.ts` có hai chế độ qua `E2E_MODE`.
-- **Còn lại:** chế độ giả lập (`HOSO_MOCK=1`, `webServer` tự chạy) và chạy trong CI; fixture đủ 6 vai trò (hiện mới `employee`, `manager`, `clerk` qua tài khoản `dev_admin`); axe trên mọi trang.
+- **Đã làm (18/11/2026 tối):** (1) **chế độ giả lập tự chạy:** `playwright.config.ts` có `webServer` (`next dev` cổng 3100, `HOSO_MOCK=1`, thư mục build riêng `.next-mock` vì Next 16 không cho hai `next dev` cùng `.next`), không cần API; `E2E_MODE=mock` là mặc định. (2) **fixture đủ 6 vai trò** (`ROLES`: employee, manager, clerk, chair, council, technical_admin). (3) **ma trận vai trò:** `vai-tro.spec.ts` (API thật) và `mock-vai-tro.spec.ts` (giả lập, 7 ca, ~13 giây): mỗi vai trò thấy đúng các mục menu theo quyền (một nguồn `config/navigation`), mở từng màn trong menu không lỗi 5xx, không lỗi console/CSP, **axe WCAG 2 A/AA không lỗi nghiêm trọng** (mỗi màn quét một lần). (4) CI: `.github/workflows/ci.yml` chạy E2E giả lập (chưa chạy trên GitHub, xem FE-01).
+- **Giới hạn:** axe quét các màn trong menu, chưa quét mọi màn con (chi tiết giấy tờ, đối chiếu có quét riêng ở `tiep-nhan.spec.ts`).
 - **Chạy E2E tích hợp:** xem `frontend/README.md`.
 
 ### FE-11 · Log và báo lỗi phía web 🟡 · 1 ngày
@@ -145,14 +145,15 @@ Khung frontend đã kiểm tra trên máy:
   - `instrumentation.ts` (`onRequestError` kèm digest);
   - `instrumentation-client.ts` (lỗi trình duyệt), `/client-log` (giới hạn kích thước, tần suất, kiểm tra Origin);
   - `ErrorPanel` hiện Mã lỗi.
-- **Làm:**
-  1. Gửi lỗi sang GlitchTip khi có DSN (LOG-04).
-  2. `ErrorPanel` hiện cả `errorId` của API khi lỗi đến từ `ApiError`.
+- **Đã làm (18/11/2026 tối):** `ErrorPanel` hiện **mã lỗi của API**: `ApiError.digest = errorId` và Next giữ nguyên `digest` đặt sẵn (đã đối chiếu mã nguồn Next), nên mã người dùng thấy chính là mã quản trị nhập ở Quản trị › Nhật ký hệ thống › Mã lỗi (BE-117); có nút "Sao chép mã" (`error-panel.test.tsx`, `problem.test.ts`).
+- **Còn lại:**
+  1. Gửi lỗi sang GlitchTip khi có DSN (LOG-04): cần dựng GlitchTip (LOG-02) và chọn SDK; chưa làm.
 - **Kiểm tra:** ném lỗi thử trong một trang thì có dòng `request_failed` với digest trùng mã trên màn hình.
 
-### FE-12 · CSP và header 🟡 · 0,5 ngày
+### FE-12 · CSP và header ✅ · 0,5 ngày
 - **Đã có:** CSP nonce với `strict-dynamic` trong `proxy.ts`; header tĩnh trong `next.config.ts`; đã kiểm tra bằng `curl`; E2E tiếp nhận (`e2e/tiep-nhan.spec.ts`) kiểm console không có cảnh báo CSP trên các màn nạp, hộp tiếp nhận, đối chiếu, xếp hồ sơ (ảnh trang dùng blob URL, `img-src` đã có `blob:`).
-- **Làm:** khi thêm pdf.js, cho phép `worker-src 'self' blob:` (đã có) và đặt `pdf.worker` ở `public/`; chạy kiểm tra CSP trên mọi trang trong E2E (không lỗi console).
+- **Đã làm (18/11/2026 tối):** kiểm CSP trên mọi màn trong menu của cả 6 vai trò (`vai-tro.spec.ts`, `mock-vai-tro.spec.ts` bắt lỗi console và vi phạm CSP).
+- **Không áp dụng:** phần pdf.js (cho phép `worker-src 'self' blob:`, đặt `pdf.worker` ở `public/`) vì không dùng pdf.js, xem FE-22. Làm nếu mở lại FE-22.
 - **Kiểm tra:** E2E không có cảnh báo vi phạm CSP.
 
 ---
@@ -176,14 +177,16 @@ Mỗi màn đã có tệp `page.tsx` trong `src/app/(app)/…`, đầu trang đ�
   - `tiep-nhan`: `features/intake/inbox-table.tsx` đọc `GET /intake/inbox` (`{ items, nextCursor }`, không coi là mảng), nút "Tải thêm" dùng `cursor`, đổi thẻ là bắt đầu lại; ba thẻ Chờ xếp / Đã xếp / Đã bỏ; lọc theo tình trạng đọc; "Bỏ" có "Hoàn tác" (toast và thẻ Đã bỏ); tiến độ và thứ tự cập nhật qua SSE.
   - dưới 1280px mỗi PDF hiện thành một thẻ (bảng cần 820px nên ở 1024px có menu trái sẽ đẩy nút ra ngoài); nút "Hủy đọc" cho PDF đang chờ hoặc đang đọc (`POST /jobs/{id}/cancel`, chỉ người tải lên hoặc quản trị hàng đợi).
 - **Đã có (18/11/2026 tối, BE-129):** lọc ở máy chủ trên TOÀN hộp, không còn chỉ phần đã tải: nút tình trạng đọc (Chờ trong khay, Đang đọc, Đã đọc xong, Lỗi) kèm số lấy từ `GET /intake/inbox/summary`, ô chọn **lô quét** và **nhóm hồ sơ** do AI gợi ý; bộ lọc nằm trên địa chỉ (`?doc=`, `?lo=`, `?nhom=`; `features/intake/inbox-filter.ts` có test, giá trị lạ bị bỏ). Đang lọc mà không có dòng nào thì vẫn giữ các nút và có "Bỏ bộ lọc". Các chỗ cần "PDF đã đọc xong" (PDF kế tiếp sau khi xếp, đếm ở màn đối chiếu, danh sách ở tab Giấy tờ) nay lọc ở máy chủ thay vì tải 100–200 PDF đầu rồi tự lọc, nên đúng cả khi hộp có nhiều PDF.
-- **Còn lại:** lọc theo người nạp (hộp chỉ của chính mình nên chưa cần); lọc theo loại giấy tờ (API `type` có, chưa có ô chọn); chọn nhiều để bỏ hoặc xếp cùng một hồ sơ.
+- **Đã làm thêm (18/11/2026 tối):** ô lọc **Loại giấy tờ** (hiện khi đã chọn nhóm, `?loai=`; đổi nhóm thì bỏ loại; nhóm không có trong danh sách thì không gọi API lấy loại).
+- **Còn lại:** lọc theo người nạp (hộp chỉ của chính mình nên chưa cần); chọn nhiều để bỏ hoặc xếp cùng một hồ sơ.
 - **Kiểm tra:** E2E `tiep-nhan-loc.spec.ts` (số trên nút khớp tổng hợp, lọc đổi địa chỉ, rỗng vẫn giữ nút, giá trị lạ bị bỏ, ô chọn nhóm và lô).
 - **Kiểm tra:** E2E `e2e/tiep-nhan.spec.ts` tải 3 PDF mẫu, thấy "Chờ trong khay"/"Đang đọc" rồi "Đã đọc xong".
 
-### FE-22 · Trình xem PDF 🟡 · 3 ngày
+### FE-22 · Trình xem PDF ✅ (bản ảnh trang; pdf.js hoãn có điều kiện) · 3 ngày
 - **Đã có (18/11/2026, BE-114):** làm nổi vùng nguồn của trường trên ảnh trang. `features/review/page-viewer.tsx` nhận `highlight` (khung đặt theo PHẦN TRĂM của ảnh nên đúng ở cả hai mức phóng; tự cuộn vào giữa khung nhìn; nét liền khi vùng lấy từ khối bố cục, nét đứt kèm lời nhắc khi chỉ ước theo dòng); `features/review/source-region.ts` (kiểm vùng, đổi sang CSS, đọc/ghi `?vung=`, có test). Dùng ở màn đối chiếu (bấm trường: nhảy trang và làm nổi vùng) và chi tiết giấy tờ (`?trang=2&vung=x,y,w,h&truong=…`, liên kết "Trang N · chỉ vùng" ở từng trường).
 - **Đã nối (18/11/2026 tối):** vùng nguồn nằm trên **bản cũ** (BE-126, `sourceFileId` khác tệp đang xem): chi tiết giấy tờ mở đúng bản; màn đối chiếu không dựng khung lên bản hiện hành mà hiện "Xem bản quét cũ" (`regionTarget`, có test).
-- **Còn lại:** Trình xem PDF đầy đủ bằng pdf.js (đọc theo Range từ `/files/{id}/content`, tắt `isEvalSupported`, xoay, ảnh thu nhỏ). Ảnh trang WebP hiện đủ cho đối chiếu; chỉ làm khi cần xoay hoặc tài liệu rất dài. Lưu ý CSP của trang (`object-src 'none'`, khung `blob:` không được phép) khi chọn cách nhúng PDF.
+- **Quyết định (18/11/2026): không dùng pdf.js lúc này.** Bản ảnh trang (WebP do API dựng, đổi trang, phóng to, làm nổi vùng nguồn) đủ cho đối chiếu và đã có E2E; pdf.js thêm một thư viện lớn, một worker và phải sửa CSP (FE-12) mà chưa có nhu cầu đo được. **Mở lại khi** có một trong: cần xoay trang bị quét ngang, tài liệu quá dài khiến tải ảnh từng trang chậm (chưa đo PDF 300 trang), hoặc cần chọn chữ/tìm trong trang.
+- **Còn lại (nếu mở lại):** Trình xem PDF đầy đủ bằng pdf.js (đọc theo Range từ `/files/{id}/content`, tắt `isEvalSupported`, xoay, ảnh thu nhỏ). Ảnh trang WebP hiện đủ cho đối chiếu; chỉ làm khi cần xoay hoặc tài liệu rất dài. Lưu ý CSP của trang (`object-src 'none'`, khung `blob:` không được phép) khi chọn cách nhúng PDF.
 - **Kiểm tra:** E2E `vung-nguon.spec.ts` (khung đúng toạ độ API trả, di chuyển khi đổi trường, đúng sau khi phóng to, `?vung=` hỏng thì không dựng khung). **Chưa đo** PDF 300 trang.
 
 ### FE-23 · Đối chiếu ✅ (bản đầu, xem bản gốc bằng ảnh trang) · 3 ngày
@@ -204,7 +207,7 @@ Mỗi màn đã có tệp `page.tsx` trong `src/app/(app)/…`, đầu trang đ�
   - tạo hồ sơ mới trong hộp thoại, không rời luồng; chỉ liệt kê nhóm thuộc đơn vị của phân công (API từ chối nhóm của đầu mối khác với 403); lỗi hiện ngay trong hộp thoại vì hộp thoại modal làm vùng toast bị vô hiệu;
   - chọn chiều đến/đi/nội bộ; "Lưu" về hộp tiếp nhận; "Lưu và mở PDF tiếp theo" mở thẳng bước đối chiếu của PDF đã đọc xong kế tiếp, hết thì về hộp tiếp nhận;
   - cảnh báo khi giấy tờ chưa đối chiếu xong, liệt kê hồ sơ đã chứa giấy tờ.
-- **Còn lại:** gán thành phần hồ sơ thủ tục (`procedureComponentId`) khi hồ sơ có thủ tục; dùng lại form tạo hồ sơ đầy đủ của FE-27 (hộp thoại hiện chỉ có tên, nhóm, ghi chú).
+- **Đã làm (18/11/2026 tối):** hồ sơ làm theo thủ tục thì có ô **Thành phần của thủ tục** (tên, bắt buộc, đã có bao nhiêu giấy tờ) để gán giấy tờ vào thành phần ngay lúc xếp (`procedureComponentId`, API checklist BE-64); hộp thoại tạo hồ sơ dùng bộ thành phần chung (FE-03) và có **chọn thủ tục** (`ProcedurePicker`). E2E `ho-so-thanh-phan.spec.ts`.
 - **Kiểm tra:** E2E tạo hồ sơ mới trong hộp thoại rồi xếp giấy tờ vào. **Chưa kiểm** E2E xếp liên tiếp 3 PDF bằng "Lưu và mở PDF tiếp theo".
 
 ### FE-25 · Tách văn bản ✅ · 2,5 ngày
@@ -225,24 +228,26 @@ Mỗi màn đã có tệp `page.tsx` trong `src/app/(app)/…`, đầu trang đ�
   - Logic nằm ở `features/dossier/dossier-filter.ts` (phân tích URL, đổi sang tham số API, có test).
 - **Kiểm tra:** gửi đường dẫn có bộ lọc thì mở đúng bộ lọc; E2E `danh-sach-va-phan-cong.spec.ts` (lọc năm, quá hạn, bấm cột đảo chiều, tải CSV có BOM và đúng hồ sơ, chuyên viên không xuất được).
 
-### FE-27 · Tạo, sửa hồ sơ 🟡 · 1,5 ngày
+### FE-27 · Tạo, sửa hồ sơ ✅ · 1,5 ngày
 - **Đã có (17/11/2026, API thật):** `ho-so/tao-moi`, `ho-so/[id]/sua`, `features/dossier/dossier-form.tsx` (luật kiểm tra ở `dossier-form-rules.ts`, có test):
   - tên (5–300 ký tự), nhóm hồ sơ gom theo đầu mối (chỉ nhóm phân công đang dùng được tạo: `creatable-groups.ts`), mức tiếp cận, hạn nội bộ `dd/mm/yyyy` không trước hôm nay, năm, cơ quan hình thành, ghi chú; kiểm tra khi rời ô, lỗi của API hiện dưới đúng ô;
   - tạo xong mở tab Giấy tờ của hồ sơ mới; sửa gửi kèm `version`, 409 thì báo "hồ sơ vừa được người khác sửa" và nút Tải lại; hồ sơ không còn ở bước sửa được thì nói rõ thay vì hiện biểu mẫu.
-- **Còn lại:** chọn thủ tục hành chính (ô tìm `GET /procedures`; FE-35 đã xong nên **không còn bị chặn**) và gợi ý thành phần ngay khi chọn nhóm hoặc thủ tục; đổi nhóm hồ sơ (API `PATCH /dossiers/{id}` không nhận nhóm, giấy tờ giữ nguyên) nên màn sửa hiện nhóm chỉ đọc.
-- **Kiểm tra:** E2E tạo hồ sơ (qua hộp thoại ở bước xếp hồ sơ); biểu mẫu đầy đủ chưa có E2E riêng.
+- **Đã làm (18/11/2026 tối):** **chọn thủ tục ngay trong form tạo hồ sơ** (`features/dossier/procedure-picker.tsx`, Server Action `app/actions/procedure.ts`): gõ tên không dấu hoặc mã (đợi 300 ms, bỏ kết quả về muộn, không gọi API khi dưới 2 ký tự), thủ tục đã bãi bỏ/thay thế không hiện, chọn xong thấy ngay các thành phần và số bắt buộc, "Bỏ thủ tục" để tạo hồ sơ thường. Form dùng bộ thành phần chung (FE-03); lỗi đưa tiêu điểm tới ô lỗi đầu tiên bằng `aria-invalid`.
+- **Giới hạn của API, không phải của giao diện:** `PATCH /dossiers/{id}` không nhận nhóm hồ sơ (giấy tờ đã đối chiếu giữ nguyên) nên màn sửa hiện nhóm chỉ đọc; thủ tục cũng chỉ chọn lúc tạo.
+- **Kiểm tra:** `procedure-picker.test.tsx` (6 ca), E2E `ho-so-thanh-phan.spec.ts` (tạo hồ sơ chọn thủ tục, đối chiếu `procedureId` với API) và `thu-tuc.spec.ts` (tạo hồ sơ theo thủ tục từ trang thủ tục).
 
 ### FE-28 · Hồ sơ · Tổng quan ✅ · 2 ngày
 - **Đã có (17/11/2026, API thật):** khung `ho-so/[id]/layout.tsx` (đầu trang, trạng thái, tab có số giấy tờ, thanh thao tác) và `page.tsx`:
   - danh sách kiểm tra từ `GET /dossiers/{id}/checklist`: hồ sơ theo thủ tục liệt kê từng thành phần (đủ, chưa đối chiếu xong, thiếu), hồ sơ thường liệt kê từng giấy tờ; nói rõ lý do chưa đủ điều kiện trình (`summary.reasons`);
   - thông tin: nhóm, mức tiếp cận, năm, người chủ trì, hạn, vị trí bản giấy (liên kết sang Kho bản giấy), thủ tục, cơ quan hình thành, ghi chú; hồ sơ ngoài phạm vi hoặc mã sai dạng hiện "Không tìm thấy".
 - **Đã có (18/11/2026 tối, BE-130):** dòng **Thời hạn bảo quản** ở tab Tổng quan (`features/dossier/retention.ts` có test): số năm và căn cứ pháp lý khi đã xác nhận, ngày đủ hạn khi hồ sơ đã lưu trữ (và nhắc có thể đề nghị hủy khi đã đủ), nói rõ "Chưa xác nhận" khi nhóm mới có đề xuất, "Chưa xác định" khi nhiều quy tắc chưa gán. E2E `ho-so-bao-quan.spec.ts`.
-- **Còn lại:** "thành phần thiếu có nút mở hộp tiếp nhận lọc sẵn loại giấy tờ": API lọc `type` đã có (BE-129), còn thiếu ô lọc theo loại ở hộp tiếp nhận và ánh xạ từ thành phần thủ tục sang loại giấy tờ.
+- **Còn lại:** "thành phần thiếu có nút mở hộp tiếp nhận lọc sẵn loại giấy tờ": hộp tiếp nhận đã lọc được theo loại (`?nhom=&loai=`); còn thiếu **ánh xạ từ thành phần thủ tục sang loại giấy tờ** (API checklist chưa trả loại giấy tờ tương ứng của thành phần), nên chưa có nút này.
 
 ### FE-29 · Hồ sơ · Giấy tờ ✅ · 1,5 ngày
 - **Đã có (17/11/2026, API thật):** `ho-so/[id]/giay-to/page.tsx`, `features/dossier/document-list.tsx`: danh sách theo thứ tự với tình trạng đối chiếu (có liên kết Đối chiếu); chỉ ở bước Đang chuẩn bị / Yêu cầu bổ sung và có `dossier.prepare` mới sửa được: đổi thứ tự bằng nút lên/xuống (đổi chỗ hai giấy tờ trong một lệnh vì API không cho trùng vị trí), đổi chiều đến/đi/nội bộ, gỡ (giấy tờ về hộp tiếp nhận), "Thêm từ hộp tiếp nhận" (hộp thoại liệt kê PDF đã đọc xong, giấy tờ nào lỗi thì báo riêng); "Trích xuất ngay cả hồ sơ" (FE-45); bấm tên mở Chi tiết giấy tờ.
 - **Khác kế hoạch:** sắp xếp bằng nút lên/xuống thay cho kéo thả (dùng được bằng bàn phím, đọc được bằng trình đọc màn hình); kéo thả có thể thêm sau.
-- **Còn lại:** gán thành phần thủ tục cho giấy tờ; thêm giấy tờ "có sẵn" ngoài hộp tiếp nhận.
+- **Đã làm (18/11/2026 tối):** hồ sơ làm theo thủ tục thì tab Giấy tờ có cột **Thành phần**: chọn thành phần mà giấy tờ đáp ứng hoặc "Chưa gán" (`PATCH /dossiers/{id}/documents` với `procedureComponentId` hoặc `clearProcedureComponent`), chỉ sửa được ở bước còn sửa được. E2E đối chiếu `documentIds` của thành phần ở checklist.
+- **Còn lại:** thêm giấy tờ "có sẵn" ngoài hộp tiếp nhận (API `AddDocumentRequest` nhận giấy tờ bất kỳ trong phạm vi; còn thiếu ô tìm giấy tờ ở hộp thoại thêm).
 
 ### FE-30 · Hồ sơ · Thanh thao tác ✅ · 1,5 ngày
 - **Đã có (17/11/2026, API thật):** `components/dossier/action-bar.tsx` lấy mọi nút từ `GET /dossiers/{id}/actions` (bỏ `mockAllowedActions`); nút API khóa vẫn hiện mờ kèm lý do ngay cạnh; nút cần ý kiến mở ô ý kiến cạnh nút, đếm đủ 10 ký tự; gửi qua Server Action `transitionDossier` kèm `version`; thành công thì toast và `router.refresh()`; 409 thì báo "hồ sơ vừa được người khác thay đổi" và tải lại; không có thao tác thì nói hồ sơ đang chờ ai.

@@ -4,9 +4,11 @@ import { useEffect, useId, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { AlertTriangle, FolderPlus, Search } from "lucide-react";
-import { createDossierInline, fileDocument, searchDossiers, type Direction } from "@/app/actions/file-dossier";
+import { createDossierInline, fileDocument, loadDossierComponents, searchDossiers, type Direction, type DossierComponents } from "@/app/actions/file-dossier";
+import type { ProcedureSummary } from "@/app/actions/procedure";
 import { Button, ButtonLink } from "@/components/ui/button";
 import { Dialog } from "@/components/ui/dialog";
+import { Input, Select, Textarea } from "@/components/ui/input";
 import { Section } from "@/components/ui/blocks";
 import { Chip, WorkflowChip } from "@/components/ui/status-chip";
 import { useToast } from "@/components/ui/toast";
@@ -15,6 +17,7 @@ import { cn } from "@/lib/cn";
 import { WORKFLOW_LABELS, type WorkflowState } from "@/lib/mock/data";
 import { useServerAction } from "@/lib/use-server-action";
 import type { DossierListItem } from "./dossier-data";
+import { ProcedurePicker } from "./procedure-picker";
 
 export type FileScreenProps = {
   document: {
@@ -50,6 +53,10 @@ export function FileScreen({ document: doc, suggestions, groups }: FileScreenPro
   const [query, setQuery] = useState("");
   const [results, setResults] = useState<DossierListItem[] | null>(null);
   const [creating, setCreating] = useState(false);
+  // Hồ sơ làm theo thủ tục: chọn giấy tờ này đáp ứng thành phần nào (FE-24). Cả thành phần đã tải lẫn lựa chọn đi kèm mã hồ sơ,
+  // nên đổi hồ sơ là tự bỏ chúng (không cần đặt lại trạng thái trong effect).
+  const [loaded, setLoaded] = useState<{ dossierId: string; data: DossierComponents | null } | null>(null);
+  const [pick, setPick] = useState<{ dossierId: string; componentId: string } | null>(null);
 
   const search = useServerAction(searchDossiers);
   const file = useServerAction(fileDocument);
@@ -74,14 +81,30 @@ export function FileScreen({ document: doc, suggestions, groups }: FileScreenPro
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [query]);
 
+  // Đổi hồ sơ được chọn thì tải lại thành phần của hồ sơ đó; kết quả về muộn của hồ sơ trước bị bỏ.
+  useEffect(() => {
+    if (!selected) return;
+    let stale = false;
+    loadDossierComponents(selected)
+      .then((outcome) => {
+        if (!stale && outcome.ok) setLoaded({ dossierId: selected, data: outcome.data });
+      })
+      .catch(() => {});       // chỉ là tiện ích: không tải được thì vẫn xếp được, không gán thành phần
+    return () => {
+      stale = true;
+    };
+  }, [selected]);
+
   const listed = new Map<string, DossierListItem>();
   for (const item of [...extra, ...suggestions, ...(results ?? [])]) listed.set(item.id, item);
   const choices = [...listed.values()];
   const selectedItem = selected ? listed.get(selected) : undefined;
+  const components = loaded && loaded.dossierId === selected ? loaded.data : null;
+  const componentId = pick && pick.dossierId === selected ? pick.componentId : "";
 
   async function save(openNext: boolean) {
     if (!selectedItem) return;
-    const outcome = await file.run({ documentId: doc.id, dossierId: selectedItem.id, dossierCode: selectedItem.code, direction, openNext });
+    const outcome = await file.run({ documentId: doc.id, dossierId: selectedItem.id, dossierCode: selectedItem.code, direction, openNext, procedureComponentId: componentId || null });
     if (!outcome.ok) return;
     toast.success(`Đã xếp “${doc.fileName}” vào hồ sơ ${selectedItem.code}.`);
     if (openNext && outcome.data.nextDocumentId) router.push(routes.intakeReview(outcome.data.nextDocumentId));
@@ -159,6 +182,23 @@ export function FileScreen({ document: doc, suggestions, groups }: FileScreenPro
               <FolderPlus aria-hidden className="size-4" /> Tạo hồ sơ mới
             </Button>
           </div>
+
+          {components && (
+            <Select
+              label={`Thành phần của thủ tục “${components.procedureName}”`}
+              value={componentId}
+              onChange={(e) => selected && setPick({ dossierId: selected, componentId: e.target.value })}
+              hint="Hồ sơ này làm theo thủ tục. Chọn thành phần mà giấy tờ đang xếp đáp ứng để hồ sơ tính đủ thành phần; bỏ trống thì gán sau ở tab Giấy tờ."
+              fieldClassName="max-w-xl"
+            >
+              <option value="">Chưa gán thành phần</option>
+              {components.components.map((c) => (
+                <option key={c.id} value={c.id}>
+                  {c.name}{c.required ? " · bắt buộc" : ""}{c.filled > 0 ? ` · đã có ${c.filled} giấy tờ` : ""}
+                </option>
+              ))}
+            </Select>
+          )}
         </Section>
 
         <div className="flex flex-wrap justify-end gap-2">
@@ -202,12 +242,10 @@ function CreateDossierDialog({
   groups: { code: string; title: string }[];
   onCreated: (created: DossierListItem) => void;
 }) {
-  const titleId = useId();
-  const groupId = useId();
-  const notesId = useId();
   const [title, setTitle] = useState(defaultTitle);
   const [group, setGroup] = useState(defaultGroup);
   const [notes, setNotes] = useState("");
+  const [procedure, setProcedure] = useState<ProcedureSummary | null>(null);
   const [errors, setErrors] = useState<Record<string, string>>({});
   // Hộp thoại modal làm phần còn lại của trang bị vô hiệu (kể cả vùng toast), nên lỗi hiện ngay trong hộp thoại.
   const create = useServerAction(createDossierInline, { toastErrors: false });
@@ -220,7 +258,7 @@ function CreateDossierDialog({
     setErrors(found);
     setFailure(null);
     if (Object.keys(found).length > 0) return;
-    const outcome = await create.run({ title, workGroupCode: group, notes });
+    const outcome = await create.run({ title, workGroupCode: group, notes, procedureId: procedure?.id ?? null });
     if (outcome.ok) {
       onCreated(outcome.data);
       return;
@@ -249,28 +287,22 @@ function CreateDossierDialog({
           void submit();
         }}
       >
-        <div className="grid gap-1">
-          <label htmlFor={titleId} className="text-xs font-semibold">Tên hồ sơ <span className="text-bad">*</span></label>
-          <input id={titleId} value={title} onChange={(e) => setTitle(e.target.value)} aria-invalid={errors.title ? true : undefined} className={cn("h-9 border bg-surface px-2 text-sm", errors.title ? "border-bad" : "border-line-strong")} />
-          {errors.title && <p className="text-xs text-bad">{errors.title}</p>}
-        </div>
-        <div className="grid gap-1">
-          <label htmlFor={groupId} className="text-xs font-semibold">Nhóm hồ sơ <span className="text-bad">*</span></label>
-          <select id={groupId} value={group} onChange={(e) => setGroup(e.target.value)} aria-invalid={errors.workGroupCode ? true : undefined} className={cn("h-9 border bg-surface px-2 text-sm", errors.workGroupCode ? "border-bad" : "border-line-strong")}>
-            <option value="">Chọn nhóm…</option>
-            {groups.map((g) => (
-              <option key={g.code} value={g.code}>{g.code} · {g.title}</option>
-            ))}
-          </select>
-          {errors.workGroupCode && <p className="text-xs text-bad">{errors.workGroupCode}</p>}
-          <p className="text-xs text-muted">
-            {groups.length === 0 ? "Phân công đang dùng không có nhóm hồ sơ nào để tạo." : "Chỉ hiện các nhóm thuộc đơn vị của phân công đang dùng."}
-          </p>
-        </div>
-        <div className="grid gap-1">
-          <label htmlFor={notesId} className="text-xs font-semibold">Ghi chú (tùy chọn)</label>
-          <textarea id={notesId} rows={2} value={notes} onChange={(e) => setNotes(e.target.value)} maxLength={4000} className="border border-line-strong bg-surface px-2 py-1.5 text-sm" />
-        </div>
+        <Input label="Tên hồ sơ" required value={title} onChange={(e) => setTitle(e.target.value)} error={errors.title} />
+        <Select
+          label="Nhóm hồ sơ"
+          required
+          value={group}
+          onChange={(e) => setGroup(e.target.value)}
+          error={errors.workGroupCode}
+          hint={groups.length === 0 ? "Phân công đang dùng không có nhóm hồ sơ nào để tạo." : "Chỉ hiện các nhóm thuộc đơn vị của phân công đang dùng."}
+        >
+          <option value="">Chọn nhóm…</option>
+          {groups.map((g) => (
+            <option key={g.code} value={g.code}>{g.code} · {g.title}</option>
+          ))}
+        </Select>
+        <ProcedurePicker value={procedure} onChange={setProcedure} />
+        <Textarea label="Ghi chú (tùy chọn)" rows={2} maxLength={4000} value={notes} onChange={(e) => setNotes(e.target.value)} />
         {failure && <p role="alert" className="border border-bad bg-bad-soft p-2 text-sm text-bad">{failure}</p>}
       </form>
     </Dialog>

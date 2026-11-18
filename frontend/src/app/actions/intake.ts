@@ -15,7 +15,7 @@ export async function loadMoreInbox(status: InboxStatus, cursor: string, filters
   return runAction("inbox_more", async () => {
     if (!STATUSES.includes(status)) throw new TypeError("Trạng thái hộp tiếp nhận không hợp lệ.");
     // Bộ lọc đến từ trình duyệt: đi qua bộ đọc để chỉ còn giá trị đúng dạng (không chuyển nguyên văn lên API).
-    const safe = parseInboxFilters({ doc: filters.doc, lo: filters.batch ?? undefined, nhom: filters.group ?? undefined });
+    const safe = parseInboxFilters({ doc: filters.doc, lo: filters.batch ?? undefined, nhom: filters.group ?? undefined, loai: filters.type ?? undefined });
     return getInbox(status, cursor, 50, safe);
   });
 }

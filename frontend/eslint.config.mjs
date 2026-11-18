@@ -7,6 +7,8 @@ const eslintConfig = defineConfig([
   ...nextTs,
   // Override default ignores of eslint-config-next.
   globalIgnores([
+    // Thư mục build của máy chủ giả lập E2E (NEXT_DIST_DIR=.next-mock): mã sinh ra, không phải mã nguồn.
+    ".next-mock/**",
     // Default ignores of eslint-config-next:
     ".next/**",
     "out/**",

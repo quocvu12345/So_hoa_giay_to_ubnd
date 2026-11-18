@@ -13,7 +13,10 @@ import AxeBuilder from "@axe-core/playwright";
  * Đăng nhập bằng `dev_admin` rồi chọn phân công theo vai trò (và đầu mối nếu có nhiều phân công cùng vai trò, ví dụ trưởng phòng),
  * như khi người dùng bấm đổi phân công. Gọi lại để đổi vai giữa chừng; trang đang mở cần tải lại để thấy phân công mới.
  */
-export async function signIn(page: Page, role: "employee" | "manager" | "clerk" | "technical_admin" | "chair" = "employee", department?: string, username = "dev_admin") {
+export const ROLES = ["employee", "manager", "clerk", "chair", "council", "technical_admin"] as const;
+export type Role = (typeof ROLES)[number];
+
+export async function signIn(page: Page, role: Role = "employee", department?: string, username = "dev_admin") {
   const login = await page.request.get(`/api/v1/auth/dev-login?username=${encodeURIComponent(username)}&returnUrl=/`);
   expect(login.ok(), `đăng nhập dev ${username} phải thành công`).toBeTruthy();
   const me = (await (await page.request.get("/api/v1/me")).json()) as { assignments: { id: string; role: string; departmentCode: string | null }[] };

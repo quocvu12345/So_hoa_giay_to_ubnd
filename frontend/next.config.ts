@@ -14,6 +14,8 @@ const securityHeaders = [
 ];
 
 const nextConfig: NextConfig = {
+  // Thư mục build riêng cho máy chủ giả lập của E2E (NEXT_DIST_DIR=.next-mock): Next không cho hai `next dev` cùng thư mục .next chạy một lúc.
+  distDir: process.env.NEXT_DIST_DIR || ".next",
   output: "standalone",
   poweredByHeader: false,
   typedRoutes: true,

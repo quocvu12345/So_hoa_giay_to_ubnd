@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { NeedsRealApi, PageBody } from "@/components/ui/blocks";
 import { NoAccess } from "@/components/ui/no-access";
 import { PageHeader } from "@/components/ui/page-header";
@@ -15,7 +14,7 @@ import { serverEnv } from "@/lib/env";
 
 export const metadata: Metadata = { title: "Tạo hồ sơ" };
 
-/** Tạo hồ sơ (FE-27): tên → nhóm hồ sơ (gom theo đầu mối, chỉ nhóm được phép tạo) → mức tiếp cận, hạn, ghi chú. Mã do hệ thống cấp. */
+/** Tạo hồ sơ (FE-27): tên → nhóm hồ sơ (gom theo đầu mối, chỉ nhóm được phép tạo) → thủ tục (tùy chọn) → mức tiếp cận, hạn, ghi chú. Mã do hệ thống cấp. */
 export default async function NewDossierPage({ searchParams }: PageProps<"/ho-so/tao-moi">) {
   const { session, allowed } = await pageSession("dossier.prepare");
   if (!allowed) return <NoAccess session={session} what="tạo hồ sơ" />;
@@ -42,14 +41,7 @@ export default async function NewDossierPage({ searchParams }: PageProps<"/ho-so
             {procedure ? "Thủ tục này đã bãi bỏ hoặc được thay thế nên không dùng để tạo hồ sơ mới." : "Không tìm thấy thủ tục đã chọn."} Bạn vẫn tạo được hồ sơ thường bên dưới.
           </p>
         )}
-        {usable && (
-          <div className="grid gap-1 border border-primary/40 bg-accent-soft/40 p-3 text-sm">
-            <p><b>Hồ sơ theo thủ tục:</b> {usable.name}{usable.procedureCode ? ` (mã ${usable.procedureCode})` : ""}</p>
-            <p className="text-muted">Hồ sơ có {usable.components.length} thành phần theo thủ tục; thành phần bắt buộc phải có đủ và đã đối chiếu mới trình được.{" "}
-              <Link href={routes.dossierNew} className="text-primary hover:underline">Bỏ chọn thủ tục</Link></p>
-          </div>
-        )}
-        {real ? <DossierForm mode="create" groups={choices} procedure={usable ? { id: usable.id, name: usable.name, code: usable.procedureCode ?? null } : undefined} /> : <NeedsRealApi what="Tạo hồ sơ" />}
+        {real ? <DossierForm mode="create" groups={choices} procedure={usable ? { id: usable.id, name: usable.name, code: usable.procedureCode ?? null, components: [...usable.components].sort((x, y) => x.position - y.position).map((c) => ({ id: c.id, section: c.section, name: c.name, required: c.requiredAsPublished })) } : undefined} /> : <NeedsRealApi what="Tạo hồ sơ" />}
       </PageBody>
     </>
   );

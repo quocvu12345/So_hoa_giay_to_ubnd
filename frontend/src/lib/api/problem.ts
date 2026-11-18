@@ -45,9 +45,15 @@ export class ApiError extends Error {
   readonly errorId?: string;
   readonly errors?: FieldErrors;
   readonly details?: unknown;
+  /**
+   * Mã lỗi hiện cho người dùng trên màn lỗi. Next giữ nguyên `digest` đã đặt sẵn trên lỗi (thay vì băm lại), nên lỗi từ API mang đúng mã lỗi của API:
+   * người dùng đọc mã này, quản trị nhập vào Quản trị › Nhật ký hệ thống để tra ra request và người gặp lỗi (LOG-08, BE-117).
+   */
+  readonly digest?: string;
 
   constructor(problem: Problem) {
     super(problem.message);
+    if (problem.errorId) this.digest = problem.errorId;
     this.name = "ApiError";
     this.status = problem.status;
     this.code = problem.code;

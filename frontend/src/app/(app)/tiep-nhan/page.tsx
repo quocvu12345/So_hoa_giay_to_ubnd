@@ -12,7 +12,7 @@ import { getInbox, getInboxSummary, INBOX_TABS, inboxTab } from "@/features/inta
 import { InboxFilterBar } from "@/features/intake/inbox-filter-bar";
 import { inboxHref, NO_FILTERS, parseInboxFilters } from "@/features/intake/inbox-filter";
 import { InboxTable } from "@/features/intake/inbox-table";
-import { getWorkGroups } from "@/features/review/review-data";
+import { getDocumentTypes, getWorkGroups } from "@/features/review/review-data";
 import { pageSession } from "@/lib/auth/page-guard";
 import { can } from "@/lib/auth/session";
 import { cn } from "@/lib/cn";
@@ -39,6 +39,8 @@ export default async function IntakePage({ searchParams }: PageProps<"/tiep-nhan
         getWorkGroups(session.activeAssignment.organizationCode).catch(() => []),
       ])
     : [null, null, [], []];
+  // Loại giấy tờ của nhóm đang lọc. Nhóm không có trong danh sách (địa chỉ gõ tay) thì không gọi API, tránh 404 vô ích.
+  const types = real && filters.group && groups.some((g) => g.code === filters.group) ? await getDocumentTypes(filters.group).catch(() => []) : [];
 
   return (
     <>
@@ -63,7 +65,7 @@ export default async function IntakePage({ searchParams }: PageProps<"/tiep-nhan
         {INBOX_TABS.map((t) => (
           <Link
             key={t.key}
-            href={inboxHref(t.key, { batch: filters.batch, group: filters.group }) as Route}
+            href={inboxHref(t.key, { batch: filters.batch, group: filters.group, type: filters.type }) as Route}
             aria-current={tab.key === t.key ? "page" : undefined}
             className={cn("border-b-[3px] px-3 py-2.5 text-sm font-semibold", tab.key === t.key ? "border-primary text-primary" : "border-transparent text-muted hover:text-ink")}
           >
@@ -79,10 +81,11 @@ export default async function IntakePage({ searchParams }: PageProps<"/tiep-nhan
               filters={filters}
               batches={batches.map((b) => ({ id: b.id, code: b.code, boxLabel: b.boxLabel ?? null }))}
               groups={groups.map((g) => ({ code: g.code, title: g.title }))}
+              types={types.map((t) => ({ code: t.code, name: t.name }))}
             />
             {/* key theo thẻ và bộ lọc: đổi một trong hai là bắt đầu lại từ trang đầu và bỏ cursor cũ. */}
             <InboxTable
-              key={`${tab.key}|${filters.doc}|${filters.batch}|${filters.group}`}
+              key={`${tab.key}|${filters.doc}|${filters.batch}|${filters.group}|${filters.type}`}
               status={tab.status}
               tabKey={tab.key}
               items={page.items}
