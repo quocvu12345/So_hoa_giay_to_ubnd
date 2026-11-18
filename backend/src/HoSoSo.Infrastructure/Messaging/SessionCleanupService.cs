@@ -6,7 +6,7 @@ namespace HoSoSo.Infrastructure.Messaging;
 
 /// <summary>
 /// BE-12. Mỗi giờ xóa dòng phiên đã hết hạn quá 1 ngày hoặc đã thu hồi quá 7 ngày (giữ lại một thời gian để điều tra khi cần).
-/// Phiên còn hạn hay mới thu hồi không bị động tới.
+/// Phiên còn hạn hay mới thu hồi không bị động tới. Cùng nhịp này dọn sự kiện lỗi quá 90 ngày (BE-117).
 /// </summary>
 internal sealed class SessionCleanupService(NpgsqlDataSource dataSource, ILogger<SessionCleanupService> logger) : BackgroundService
 {
@@ -33,6 +33,9 @@ internal sealed class SessionCleanupService(NpgsqlDataSource dataSource, ILogger
     {
         await using var command = dataSource.CreateCommand(
             "DELETE FROM hoso.auth_sessions WHERE expires_at < now() - interval '1 day' OR revoked_at < now() - interval '7 days'");
-        return await command.ExecuteNonQueryAsync(ct);
+        var removed = await command.ExecuteNonQueryAsync(ct);
+        await using var errors = dataSource.CreateCommand("DELETE FROM hoso.error_events WHERE happened_at < now() - interval '90 days'");
+        await errors.ExecuteNonQueryAsync(ct);
+        return removed;
     }
 }

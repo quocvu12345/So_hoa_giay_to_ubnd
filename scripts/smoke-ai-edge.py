@@ -183,7 +183,10 @@ def scenario_force(api: Api, base: dict):
     jtype = sql(f"SELECT job_type FROM hoso.ocr_jobs WHERE id = '{item['jobId']}'")
     print(f"  {timed(job):.0f} giây · {jtype} · {model_version(item['jobId'])} · gợi ý hiện có: {sql(chr(83)+'ELECT count(*) FROM hoso.ai_suggestions WHERE document_id = ' + chr(39) + base['documentId'] + chr(39))}")
     check(job["status"] == "completed" and jtype == "reclassify", "việc reclassify xong", f"{job['status']} {jtype}")
-    check("ocr=" not in model_version(item["jobId"]), "không OCR lại")
+    # Đếm trang OCR của CHÍNH việc này trong nhật ký worker. Không dùng model_version: nó ghi mô hình đã đọc ra chữ đang dùng,
+    # nên có "ocr=" khi kịch bản reread chạy trước đã OCR lại một trang của giấy tờ này.
+    done = [json.loads(l) for l in (ROOT / "data/dev-run/worker.log").read_text(encoding="utf-8").splitlines() if '"job_completed"' in l and item["jobId"] in l]
+    check(bool(done) and done[-1].get("pages_ocr") == 0, "không OCR lại", f"pages_ocr={done[-1].get('pages_ocr') if done else 'không thấy trong nhật ký'}")
     check(int(sql(f"SELECT count(*) FROM hoso.ai_suggestions WHERE document_id = '{base['documentId']}'")) == 2, "có thêm một gợi ý mới (gợi ý cũ giữ lại làm lịch sử)")
 
 

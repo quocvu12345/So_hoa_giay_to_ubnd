@@ -54,6 +54,12 @@ internal static class ModelMapping
             e.Property(x => x.Id).UseIdentityAlwaysColumn();
             e.Property(x => x.HappenedAt).HasDefaultValueSql("now()");
         });
+        m.Entity<ErrorEvent>(e =>
+        {
+            e.ToTable("error_events"); e.HasKey(x => x.Id);
+            e.Property(x => x.Id).UseIdentityAlwaysColumn();
+            e.Property(x => x.HappenedAt).HasDefaultValueSql("now()");
+        });
         m.Entity<AuditEvent>(e =>
         {
             e.ToTable("audit_events"); e.HasKey(x => x.Id);
@@ -116,6 +122,7 @@ internal static class ModelMapping
         {
             e.ToTable("document_field_values");
             e.HasKey(x => new { x.DocumentId, x.FieldDefinitionCode });
+            e.Property(x => x.SourceRegion).HasColumnType("jsonb");
             Xmin(e.Property(x => x.Version));
         });
 
@@ -169,6 +176,7 @@ internal static class ModelMapping
         {
             e.ToTable("ai_field_suggestions"); e.HasKey(x => x.Id);
             e.Property(x => x.Id).UseIdentityAlwaysColumn();
+            e.Property(x => x.SourceRegion).HasColumnType("jsonb");
         });
 
         m.Entity<SystemSetting>(e => { e.ToTable("system_settings"); e.HasKey(x => x.Key); e.Property(x => x.Value).HasColumnType("jsonb"); e.Property(x => x.UpdatedAt).HasDefaultValueSql("now()"); });

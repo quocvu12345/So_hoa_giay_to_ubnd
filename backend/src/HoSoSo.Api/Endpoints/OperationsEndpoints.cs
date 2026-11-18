@@ -130,6 +130,9 @@ internal static class OperationsEndpoints
                 long? before, int? limit, AdminOpsHandler h, CancellationToken ct) =>
                 TypedResults.Ok(await h.AuditAsync(kind ?? "change", actor, objectType, objectId, correlationId, from, to, before, limit ?? 50, ct)))
             .RequirePermission(Permissions.AdminSettings).WithSummary("Nhật ký truy cập (kind=access) và thay đổi (kind=change, chỉ tên cột), lọc theo người, đối tượng, mã tương quan");
+        admin.MapGet("/errors", async (string? errorId, string? correlationId, Guid? actor, DateTimeOffset? from, DateTimeOffset? to, long? before, int? limit, AdminOpsHandler h, CancellationToken ct) =>
+                TypedResults.Ok(await h.ErrorsAsync(errorId, correlationId, actor, from, to, before, limit ?? 50, ct)))
+            .RequirePermission(Permissions.AdminSettings).WithSummary("Tra Mã lỗi người dùng gửi: request, người, mã tương quan và các lần truy cập cùng request");
         admin.MapGet("/backups", async (AdminOpsHandler h, CancellationToken ct) => TypedResults.Ok(await h.BackupsAsync(ct)))
             .RequirePermission(Permissions.AdminSettings).WithSummary("Kết quả sao lưu");
         admin.MapPost("/backups", async (RecordBackupRequest body, AdminOpsHandler h, CancellationToken ct) => TypedResults.Ok(await h.RecordBackupAsync(body, ct)))

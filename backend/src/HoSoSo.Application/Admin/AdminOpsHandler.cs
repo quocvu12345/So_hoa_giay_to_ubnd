@@ -27,6 +27,13 @@ public sealed record QueueByKind(int Priority, int Interactive, int Background, 
 public sealed record AuditRow(long Id, DateTimeOffset At, string Kind, string? Actor, string Action, string? ObjectType, string? ObjectId,
     string? CorrelationId, IReadOnlyList<string>? ChangedColumns);
 
+/// <summary>
+/// BE-117. Một Mã lỗi đã trả cho người dùng: request nào (phương thức, đường dẫn không kèm chuỗi truy vấn), người nào, mã tương quan.
+/// Related: các dòng nhật ký truy cập cùng mã tương quan (cùng request) để biết người đó đang xem gì; chỉ có khi lọc theo Mã lỗi hoặc mã tương quan.
+/// </summary>
+public sealed record ErrorEventRow(long Id, string ErrorId, DateTimeOffset At, int Status, string Code, string Method, string Path, string? CorrelationId,
+    Guid? UserId, string? Actor, string? Assignment, IReadOnlyList<AuditRow> Related);
+
 public sealed record SettingDto(string Key, JsonElement Value, DateTimeOffset UpdatedAt);
 public sealed record UpdateSettingRequest(string Key, JsonElement Value);
 public sealed record BackupDto(Guid Id, string Kind, string Status, DateTimeOffset StartedAt, DateTimeOffset? FinishedAt, long? ByteSize, string? Location, DateTimeOffset? RestoreTestedAt, string Note);
@@ -161,6 +168,54 @@ public sealed partial class AdminOpsHandler(IHoSoDb db, ICurrentUser user, ICloc
             ORDER BY a.id DESC LIMIT {limit}
             """).ToListAsync(ct);
         return changes.Select(r => new AuditRow(r.id, r.happened_at, "change", r.actor_name, r.operation, r.table_name, r.object_id, null, r.changed_columns)).ToList();
+    }
+
+    private sealed record ErrorRow(long id, string error_id, DateTimeOffset happened_at, short status, string error_code, string method, string path,
+        string? correlation_id, Guid? user_id, string? actor_name, string? assignment);
+
+    /// <summary>
+    /// BE-117. Tra theo Mã lỗi người dùng gửi (không phân biệt hoa thường, 8 ký tự 0-9 A-F), hoặc theo mã tương quan, người, khoảng thời gian.
+    /// Không lọc gì thì trả các lỗi gần nhất. Mã lỗi hết hạn lưu (90 ngày) hoặc chưa ghi kịp thì không có dòng nào: lúc đó tra log theo Mã lỗi.
+    /// </summary>
+    public async Task<IReadOnlyList<ErrorEventRow>> ErrorsAsync(string? errorId, string? correlationId, Guid? actor, DateTimeOffset? from, DateTimeOffset? to,
+        long? beforeId, int limit, CancellationToken ct)
+    {
+        limit = Math.Clamp(limit, 1, 200);
+        errorId = string.IsNullOrWhiteSpace(errorId) ? null : errorId.Trim().ToUpperInvariant();
+        correlationId = string.IsNullOrWhiteSpace(correlationId) ? null : correlationId.Trim();
+        if (errorId is not null && !(errorId.Length == 8 && errorId.All(Uri.IsHexDigit)))
+            throw new ValidationFailedException(new Dictionary<string, string[]> { ["errorId"] = ["Mã lỗi gồm 8 ký tự 0-9 và A-F, ví dụ 9FA13718."] });
+        var before = beforeId ?? long.MaxValue;
+        var rows = await db.Database.SqlQuery<ErrorRow>($"""
+            SELECT e.id, e.error_id, e.happened_at, e.status, e.error_code, e.method, e.path, e.correlation_id, e.user_id, u.display_name AS actor_name, e.assignment
+            FROM hoso.error_events e LEFT JOIN hoso.users u ON u.id = e.user_id
+            WHERE e.id < {before}
+              AND ({errorId}::text IS NULL OR e.error_id = {errorId}::text)
+              AND ({correlationId}::text IS NULL OR e.correlation_id = {correlationId}::text)
+              AND ({actor}::uuid IS NULL OR e.user_id = {actor}::uuid)
+              AND ({from}::timestamptz IS NULL OR e.happened_at >= {from}::timestamptz)
+              AND ({to}::timestamptz IS NULL OR e.happened_at < {to}::timestamptz)
+            ORDER BY e.id DESC LIMIT {limit}
+            """).ToListAsync(ct);
+
+        var related = new Dictionary<string, List<AuditRow>>();
+        if ((errorId is not null || correlationId is not null) && rows.Count > 0)
+        {
+            var ids = rows.Select(r => r.correlation_id).Where(c => c is not null).Distinct().ToArray();
+            var access = await db.Database.SqlQuery<AccessRow>($"""
+                SELECT e.id, e.happened_at, u.display_name AS actor_name, e.action, e.object_type, e.object_id::text AS object_id, e.correlation_id
+                FROM hoso.access_events e LEFT JOIN hoso.users u ON u.id = e.user_id
+                WHERE e.correlation_id = ANY({ids})
+                ORDER BY e.id DESC LIMIT 200
+                """).ToListAsync(ct);
+            foreach (var a in access)
+            {
+                if (!related.TryGetValue(a.correlation_id!, out var list)) related[a.correlation_id!] = list = [];
+                if (list.Count < 20) list.Add(new AuditRow(a.id, a.happened_at, "access", a.actor_name, a.action, a.object_type, a.object_id, a.correlation_id, null));
+            }
+        }
+        return rows.Select(r => new ErrorEventRow(r.id, r.error_id, r.happened_at, r.status, r.error_code, r.method, r.path, r.correlation_id, r.user_id, r.actor_name, r.assignment,
+            r.correlation_id is not null && related.TryGetValue(r.correlation_id, out var items) ? items : [])).ToList();
     }
 
     public async Task<IReadOnlyList<SettingDto>> SettingsAsync(CancellationToken ct) =>

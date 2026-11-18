@@ -2,6 +2,7 @@ import "server-only";
 import { cache } from "react";
 import type { components } from "@/api/schema";
 import { ok, serverApi } from "@/lib/api/server";
+import { toApiQuery, type DossierFilterState } from "./dossier-filter";
 
 export type DossierListItem = components["schemas"]["DossierListItem"];
 export type DossierDetail = components["schemas"]["DossierDetail"];
@@ -10,6 +11,12 @@ export type Checklist = components["schemas"]["Checklist"];
 export type AllowedAction = components["schemas"]["AllowedAction"];
 export type HistoryItem = components["schemas"]["HistoryItem"];
 export type DossierPage = components["schemas"]["PageOfDossierListItem"];
+export type { AssigneeOption } from "./assign-rules";
+
+/** Người có thể giao chủ trì hồ sơ này (chuyên viên của phòng) kèm số hồ sơ đang giữ và quá hạn (BE-110). Chỉ người có `dossier.assign`. */
+export async function getAssignees(id: string): Promise<components["schemas"]["AssigneeOption"][]> {
+  return ok(await serverApi().GET("/api/v1/dossiers/{id}/assignees", { params: { path: { id } } }));
+}
 
 /** Hồ sơ gợi ý khi xếp một giấy tờ: cùng nhóm, đang chuẩn bị, trong phạm vi, gần đây trước, tối đa 10 (BE-63). */
 export async function getSuggestions(documentId: string): Promise<DossierListItem[]> {
@@ -22,21 +29,26 @@ export async function findDossiers(q: string, limit = 10): Promise<DossierListIt
   return page.items;
 }
 
-export type DossierFilter = { q?: string; status?: string; workGroup?: string; department?: string; mine?: boolean; cursor?: string; limit?: number };
-
-/** Danh sách hồ sơ trong phạm vi, phân trang keyset (BE-60). */
-export async function listDossiers(filter: DossierFilter): Promise<DossierPage> {
+/** Danh sách hồ sơ trong phạm vi, phân trang keyset theo cột đang sắp (BE-60, BE-111). */
+export async function listDossiers(filter: DossierFilterState, limit = 50): Promise<DossierPage> {
+  const query = toApiQuery(filter);
   return ok(
     await serverApi().GET("/api/v1/dossiers", {
       params: {
         query: {
-          Q: filter.q || undefined,
-          Status: filter.status || undefined,
-          WorkGroup: filter.workGroup || undefined,
-          Department: filter.department || undefined,
-          Mine: filter.mine || undefined,
+          Q: query.Q as string | undefined,
+          Status: query.Status as string | undefined,
+          WorkGroup: query.WorkGroup as string | undefined,
+          Department: query.Department as string | undefined,
+          Mine: query.Mine as boolean | undefined,
+          Year: query.Year as number | undefined,
+          Overdue: query.Overdue as boolean | undefined,
+          Assignee: query.Assignee as string | undefined,
+          LocationId: query.LocationId as string | undefined,
+          Sort: query.Sort as string,
+          Dir: query.Dir as string,
           Cursor: filter.cursor || undefined,
-          Limit: filter.limit ?? 50,
+          Limit: limit,
         },
       },
     }),

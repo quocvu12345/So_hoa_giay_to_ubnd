@@ -34,6 +34,8 @@ DbUp chạy các tệp `*.sql` trong thư mục này theo thứ tự tên, mỗi
 | `032` | Khay nền và ưu tiên hàng đợi AI: `ocr_jobs.prioritized_at/prioritized_by/preempted_count`, chỉ mục theo thứ tự lấy việc, trigger báo khi đổi mức, `requeue_stale_jobs` không tính lần nhường chỗ | BE-97, AI-15 |
 | `033` | Dòng `classifier` của `ai_models` ghi Qwen3-1.7B (kèm lý do và cách quay lại) | AI-14 |
 | `036` | Dòng `classifier` của `ai_models` ghi Qwen3-4B-Instruct-2507 IFStruct (thay 1.7B; worker nạp bản MLX 4-bit tự chuyển) | |
+| `037` | `error_events`: Mã lỗi người dùng nhận → mã tương quan, request, người (quản trị tra ở `/admin/errors`); giữ 90 ngày | BE-117 |
+| `038` | Chỉ mục sắp danh sách hồ sơ theo tên và hạn nội bộ (20.000 hồ sơ: ~350 ms → vài ms) | BE-111 |
 
 Số thứ tự giữ nguyên theo `docs/03-thiet-ke-csdl.md` mục 15; `005`, `006` không dùng (dành cho bản gốc ngoài thư mục này).
 

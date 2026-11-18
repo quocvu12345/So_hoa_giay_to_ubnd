@@ -14,10 +14,22 @@ internal static class DocumentEndpoints
         return TypedResults.File(content.Stream, content.MediaType, download ? content.FileName : null, enableRangeProcessing: true);
     }
 
+    /// <summary>
+    /// In (BE-113): trả nguyên tệp trong MỘT phản hồi, không hỗ trợ Range và không đặt tên tải về (trình duyệt mở tại chỗ để in). Không Range vì mỗi yêu cầu
+    /// là một dòng nhật ký: trình xem PDF đọc từng khúc sẽ ghi nhiều dòng "print" cho một lần in.
+    /// </summary>
+    private static async Task<IResult> PrintAsync(FileContentHandler handler, Guid id, CancellationToken ct)
+    {
+        var content = await handler.OpenAsync(id, FilePurpose.Print, ct);
+        return TypedResults.File(content.Stream, content.MediaType, fileDownloadName: null, enableRangeProcessing: false);
+    }
+
     public static RouteGroupBuilder MapDocumentEndpoints(this RouteGroupBuilder api)
     {
         var documents = api.MapGroup("/documents").WithTags("Giấy tờ");
         documents.MapGet("/{id:guid}", async (Guid id, ReviewHandler h, CancellationToken ct) => TypedResults.Ok(await h.GetAsync(id, ct))).RequirePermission(Permissions.DocumentView).WithSummary("Chi tiết giấy tờ");
+        documents.MapGet("/{id:guid}/fields", async (Guid id, ReviewHandler h, CancellationToken ct) => TypedResults.Ok(await h.FieldsAsync(id, ct)))
+            .RequirePermission(Permissions.DocumentView).WithSummary("Trường dữ liệu đã đối chiếu (chỉ đọc), kèm cờ đã sửa so với AI; theo loại đã xác nhận");
         documents.MapGet("/{id:guid}/review", async (Guid id, ReviewHandler h, CancellationToken ct) => TypedResults.Ok(await h.ReviewAsync(id, ct))).RequirePermission(Permissions.DocumentEdit).WithSummary("Dữ liệu đối chiếu: gợi ý AI, trường, trang/vùng nguồn, trường cần chú ý");
         documents.MapPut("/{id:guid}/classification", async (Guid id, ClassifyRequest body, ReviewHandler h, CancellationToken ct) => TypedResults.Ok(await h.ClassifyAsync(id, body, ct))).RequirePermission(Permissions.DocumentEdit).WithSummary("Chấp nhận hoặc đổi nhóm, loại giấy tờ");
         documents.MapPatch("/{id:guid}/fields", async (Guid id, EditFieldsRequest body, ReviewHandler h, CancellationToken ct) => TypedResults.Ok(await h.EditFieldsAsync(id, body, ct))).RequirePermission(Permissions.DocumentEdit).WithSummary("Sửa, chuẩn hóa, xác nhận nhiều trường");
@@ -59,7 +71,15 @@ internal static class DocumentEndpoints
                 return TypedResults.File(preview.Content, "image/webp", entityTag: new Microsoft.Net.Http.Headers.EntityTagHeaderValue(preview.ETag));
             })
             .RequirePermission(Permissions.DocumentView).WithSummary("Ảnh xem trước một trang (WebP, w = bề rộng 120–1600, mặc định 800 và được lưu cache)");
-        files.MapGet("/{id:guid}/download", async (Guid id, FileContentHandler h, CancellationToken ct) => await ServeAsync(h, id, true, ct)).RequirePermission(Permissions.DocumentDownload).WithSummary("Tải tệp gốc (ghi nhật ký truy cập)");
+        files.MapGet("/{id:guid}/download", async (Guid id, string? purpose, FileContentHandler h, CancellationToken ct) =>
+            {
+                if (string.Equals(purpose, "print", StringComparison.OrdinalIgnoreCase)) return await PrintAsync(h, id, ct);
+                if (!string.IsNullOrEmpty(purpose) && !string.Equals(purpose, "download", StringComparison.OrdinalIgnoreCase))
+                    throw new HoSoSo.Application.Common.ValidationFailedException(new Dictionary<string, string[]> { ["purpose"] = ["purpose chỉ nhận download hoặc print."] });
+                return await ServeAsync(h, id, true, ct);
+            })
+            .RequirePermission(Permissions.DocumentDownload, Permissions.DocumentPrint)
+            .WithSummary("Tải tệp gốc (mặc định, cần document.download) hoặc ?purpose=print để in (cần document.print, mở tại chỗ); mỗi lần ghi một dòng nhật ký truy cập");
         return api;
     }
 }

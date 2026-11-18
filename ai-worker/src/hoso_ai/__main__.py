@@ -45,8 +45,8 @@ def cmd_run(settings: Settings) -> int:
 def cmd_once(settings: Settings, pdf: Path, classify: bool, force_ocr: bool, show_text: bool) -> int:
     """Đọc một PDF trên máy, không cần DB hay kho tệp: dùng để thử mô hình và đo tốc độ."""
     catalog = None
-    if settings.profile == "mac-mlx":
-        from .engines.mlx import catalog_from_pilot
+    if settings.profile in ("mac-mlx", "fake"):
+        from .engines.mlx import catalog_from_pilot     # chỉ đọc tệp danh mục JS, không nạp MLX
 
         catalog = catalog_from_pilot()
     repo = InMemoryRepository(catalog)
@@ -65,7 +65,11 @@ def cmd_once(settings: Settings, pdf: Path, classify: bool, force_ocr: bool, sho
         "suggestion": None if suggestion is None else {
             "model": suggestion.model_key, "workGroup": suggestion.work_group_code, "documentType": suggestion.document_type_code,
             "documentForm": suggestion.document_form, "evidenceVerified": suggestion.evidence_verified,
-            "fieldsWithValue": sum(1 for f in suggestion.fields if f.value), "warnings": list(suggestion.warnings)},
+            "fieldsWithValue": sum(1 for f in suggestion.fields if f.value), "warnings": list(suggestion.warnings),
+            **({"title": suggestion.title, "reason": suggestion.reason, "mixedDocuments": suggestion.mixed_documents,
+                "fields": [{"label": f.label, "value": f.value, "quote": f.quote, "pages": list(f.source_pages),
+                            "region": f.source_region, "confidence": f.confidence} for f in suggestion.fields if f.value]}
+               if show_text else {})},
         "quality": {str(k[1]): list(v) for k, v in repo.quality.items()},
     }, ensure_ascii=False, indent=2))
     return 0

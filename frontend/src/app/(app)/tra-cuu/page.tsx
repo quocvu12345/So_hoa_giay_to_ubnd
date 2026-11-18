@@ -8,6 +8,7 @@ import { PageHeader } from "@/components/ui/page-header";
 import { routes } from "@/config/routes";
 import { highlight } from "@/features/search/highlight";
 import { search, type SearchResult } from "@/features/search/search-data";
+import { hasSearchFilters, searchHref, type SearchUrlState } from "@/features/search/search-url";
 import { parseViDate } from "@/features/review/review-state";
 import { getWorkGroups } from "@/features/review/review-data";
 import { ApiError } from "@/lib/api/server";
@@ -58,6 +59,8 @@ export default async function SearchPage({ searchParams }: PageProps<"/tra-cuu">
   const form = param(params["hinh-thuc"]);
   const fromText = param(params["tu-ngay"]);
   const toText = param(params["den-ngay"]);
+  const issuer = param(params["co-quan"]).slice(0, 200);
+  const cursor = param(params["con-tro"]);
   const real = !serverEnv().mock;
 
   const from = fromText ? parseViDate(fromText) : null;
@@ -68,7 +71,7 @@ export default async function SearchPage({ searchParams }: PageProps<"/tra-cuu">
   let failure: string | null = null;
   if (real && q.length >= 2 && !inputError) {
     try {
-      result = await search({ q, kind, workGroup, form, issuedFrom: from ?? undefined, issuedTo: to ?? undefined });
+      result = await search({ q, kind, workGroup, form, issuedFrom: from ?? undefined, issuedTo: to ?? undefined, issuer, cursor });
     } catch (error) {
       if (!(error instanceof ApiError)) throw error;
       failure = error.status === 400 ? (error.errors ? Object.values(error.errors).flat().join(" ") : error.message) : `Chưa tìm được. Thử lại sau ít giây. Mã lỗi: ${error.errorId ?? error.code}.`;
@@ -77,7 +80,9 @@ export default async function SearchPage({ searchParams }: PageProps<"/tra-cuu">
   const groups = real && can(session, "document.view") ? await getWorkGroups(session.activeAssignment.organizationCode).catch(() => []) : [];
   const documents = result?.hits.filter((h) => h.kind === "document") ?? [];
   const dossiers = result?.hits.filter((h) => h.kind === "dossier") ?? [];
-  const filtered = Boolean(workGroup || form || from || to);
+  const state: SearchUrlState = { q, kind, workGroup, form, fromText, toText, issuer };
+  const filtered = hasSearchFilters(state);
+  const hrefWith = (next?: string) => searchHref(routes.search, state, next) as never;
 
   return (
     <>
@@ -123,6 +128,11 @@ export default async function SearchPage({ searchParams }: PageProps<"/tra-cuu">
                   <input name="hinh-thuc" defaultValue={form} placeholder="Công văn, Quyết định…" className="h-9 w-44 border border-line-strong bg-surface px-2 font-normal" />
                 </label>
                 <label className="grid gap-1">
+                  Cơ quan ban hành
+                  <input name="co-quan" defaultValue={issuer} maxLength={200} placeholder="Sở Tài chính, UBND…" aria-describedby="issuer-hint" className="h-9 w-48 border border-line-strong bg-surface px-2 font-normal" />
+                  <span id="issuer-hint" className="text-xs font-normal text-muted">Chỉ lọc giấy tờ; bỏ qua hồ sơ.</span>
+                </label>
+                <label className="grid gap-1">
                   Ban hành từ ngày
                   <input name="tu-ngay" defaultValue={fromText} inputMode="numeric" placeholder="dd/mm/yyyy" className="h-9 w-32 border border-line-strong bg-surface px-2 font-normal" />
                 </label>
@@ -130,7 +140,7 @@ export default async function SearchPage({ searchParams }: PageProps<"/tra-cuu">
                   đến ngày
                   <input name="den-ngay" defaultValue={toText} inputMode="numeric" placeholder="dd/mm/yyyy" className="h-9 w-32 border border-line-strong bg-surface px-2 font-normal" />
                 </label>
-                {(filtered || kind !== "all") && <Link href={q ? `${routes.search}?q=${encodeURIComponent(q)}` as never : routes.search} className="h-9 content-center font-normal text-primary hover:underline">Xóa bộ lọc</Link>}
+                {filtered && <Link href={q ? `${routes.search}?q=${encodeURIComponent(q)}` as never : routes.search} className="h-9 content-center font-normal text-primary hover:underline">Xóa bộ lọc</Link>}
               </div>
             </form>
 
@@ -148,7 +158,7 @@ export default async function SearchPage({ searchParams }: PageProps<"/tra-cuu">
               <div className="grid gap-4">
                 <p role="status" className="text-sm text-muted">
                   Tìm thấy <b className="text-ink">{result.totalDocuments}</b> giấy tờ và <b className="text-ink">{result.totalDossiers}</b> hồ sơ cho “{q}”.
-                  {(result.totalDocuments > documents.length || result.totalDossiers > dossiers.length) && " Đang hiện các kết quả khớp nhất; thu hẹp bằng bộ lọc để thấy phần còn lại."}
+                  {cursor && " Đang xem các trang sau."}
                 </p>
                 {documents.length > 0 && (
                   <section aria-label="Giấy tờ" className="grid gap-2">
@@ -198,6 +208,15 @@ export default async function SearchPage({ searchParams }: PageProps<"/tra-cuu">
                       ))}
                     </ul>
                   </section>
+                )}
+                {(cursor || result.nextCursor) && (
+                  <nav aria-label="Các trang kết quả" className="flex flex-wrap items-center justify-between gap-2 text-[13px] text-muted">
+                    <span aria-live="polite">{documents.length} giấy tờ và {dossiers.length} hồ sơ trên trang này.</span>
+                    <span className="flex gap-3">
+                      {cursor && <Link href={hrefWith()} className="font-semibold text-primary hover:underline">← Về trang đầu</Link>}
+                      {result.nextCursor && <Link href={hrefWith(result.nextCursor)} className="font-semibold text-primary hover:underline">Trang sau →</Link>}
+                    </span>
+                  </nav>
                 )}
               </div>
             ) : null}

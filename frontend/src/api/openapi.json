@@ -446,6 +446,20 @@
               "type": "string",
               "format": "date"
             }
+          },
+          {
+            "name": "Issuer",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Cursor",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
           }
         ],
         "responses": {
@@ -2688,6 +2702,142 @@
         }
       }
     },
+    "/api/v1/documents/{id}/fields": {
+      "get": {
+        "tags": [
+          "Giấy tờ"
+        ],
+        "summary": "Trường dữ liệu đã đối chiếu (chỉ đọc), kèm cờ đã sửa so với AI; theo loại đã xác nhận",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DocumentFieldsData"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Chưa đăng nhập hoặc phiên đã hết hạn (unauthenticated).",
+            "content": {
+              "application/problem+json": { }
+            }
+          },
+          "403": {
+            "description": "Phân công đang dùng không có quyền thực hiện (forbidden), hoặc thiếu X-CSRF (csrf_failed).",
+            "content": {
+              "application/problem+json": { }
+            }
+          },
+          "404": {
+            "description": "Không tìm thấy, hoặc bản ghi nằm ngoài phạm vi của người dùng (not_found). Không phân biệt hai trường hợp để không lộ sự tồn tại.",
+            "content": {
+              "application/problem+json": { }
+            }
+          },
+          "429": {
+            "description": "Gọi quá nhiều lần trong một phút; thử lại sau.",
+            "content": {
+              "application/problem+json": { }
+            }
+          }
+        }
+      },
+      "patch": {
+        "tags": [
+          "Giấy tờ"
+        ],
+        "summary": "Sửa, chuẩn hóa, xác nhận nhiều trường",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/EditFieldsRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ReviewData"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Chưa đăng nhập hoặc phiên đã hết hạn (unauthenticated).",
+            "content": {
+              "application/problem+json": { }
+            }
+          },
+          "403": {
+            "description": "Phân công đang dùng không có quyền thực hiện (forbidden), hoặc thiếu X-CSRF (csrf_failed).",
+            "content": {
+              "application/problem+json": { }
+            }
+          },
+          "404": {
+            "description": "Không tìm thấy, hoặc bản ghi nằm ngoài phạm vi của người dùng (not_found). Không phân biệt hai trường hợp để không lộ sự tồn tại.",
+            "content": {
+              "application/problem+json": { }
+            }
+          },
+          "400": {
+            "description": "Dữ liệu gửi lên chưa hợp lệ: ProblemDetails kèm errors theo từng trường (validation_failed).",
+            "content": {
+              "application/problem+json": { }
+            }
+          },
+          "409": {
+            "description": "Xung đột: sai bước quy trình (workflow_conflict), dữ liệu vừa bị người khác sửa (concurrency_conflict) hoặc bị trùng (duplicate_value, duplicate_file).",
+            "content": {
+              "application/problem+json": { }
+            }
+          },
+          "422": {
+            "description": "Nghiệp vụ không cho phép: hồ sơ chưa đủ (dossier_incomplete), thiếu ý kiến (note_required), tham chiếu không hợp lệ.",
+            "content": {
+              "application/problem+json": { }
+            }
+          },
+          "429": {
+            "description": "Gọi quá nhiều lần trong một phút; thử lại sau.",
+            "content": {
+              "application/problem+json": { }
+            }
+          }
+        }
+      }
+    },
     "/api/v1/documents/{id}/review": {
       "get": {
         "tags": [
@@ -2765,89 +2915,6 @@
             "application/json": {
               "schema": {
                 "$ref": "#/components/schemas/ClassifyRequest"
-              }
-            }
-          },
-          "required": true
-        },
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/ReviewData"
-                }
-              }
-            }
-          },
-          "401": {
-            "description": "Chưa đăng nhập hoặc phiên đã hết hạn (unauthenticated).",
-            "content": {
-              "application/problem+json": { }
-            }
-          },
-          "403": {
-            "description": "Phân công đang dùng không có quyền thực hiện (forbidden), hoặc thiếu X-CSRF (csrf_failed).",
-            "content": {
-              "application/problem+json": { }
-            }
-          },
-          "404": {
-            "description": "Không tìm thấy, hoặc bản ghi nằm ngoài phạm vi của người dùng (not_found). Không phân biệt hai trường hợp để không lộ sự tồn tại.",
-            "content": {
-              "application/problem+json": { }
-            }
-          },
-          "400": {
-            "description": "Dữ liệu gửi lên chưa hợp lệ: ProblemDetails kèm errors theo từng trường (validation_failed).",
-            "content": {
-              "application/problem+json": { }
-            }
-          },
-          "409": {
-            "description": "Xung đột: sai bước quy trình (workflow_conflict), dữ liệu vừa bị người khác sửa (concurrency_conflict) hoặc bị trùng (duplicate_value, duplicate_file).",
-            "content": {
-              "application/problem+json": { }
-            }
-          },
-          "422": {
-            "description": "Nghiệp vụ không cho phép: hồ sơ chưa đủ (dossier_incomplete), thiếu ý kiến (note_required), tham chiếu không hợp lệ.",
-            "content": {
-              "application/problem+json": { }
-            }
-          },
-          "429": {
-            "description": "Gọi quá nhiều lần trong một phút; thử lại sau.",
-            "content": {
-              "application/problem+json": { }
-            }
-          }
-        }
-      }
-    },
-    "/api/v1/documents/{id}/fields": {
-      "patch": {
-        "tags": [
-          "Giấy tờ"
-        ],
-        "summary": "Sửa, chuẩn hóa, xác nhận nhiều trường",
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "string",
-              "format": "uuid"
-            }
-          }
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/EditFieldsRequest"
               }
             }
           },
@@ -3772,7 +3839,7 @@
         "tags": [
           "Tệp"
         ],
-        "summary": "Tải tệp gốc (ghi nhật ký truy cập)",
+        "summary": "Tải tệp gốc (mặc định, cần document.download) hoặc ?purpose=print để in (cần document.print, mở tại chỗ); mỗi lần ghi một dòng nhật ký truy cập",
         "parameters": [
           {
             "name": "id",
@@ -3781,6 +3848,13 @@
             "schema": {
               "type": "string",
               "format": "uuid"
+            }
+          },
+          {
+            "name": "purpose",
+            "in": "query",
+            "schema": {
+              "type": "string"
             }
           }
         ],
@@ -3875,6 +3949,55 @@
               ],
               "format": "int32"
             }
+          },
+          {
+            "name": "Year",
+            "in": "query",
+            "schema": {
+              "pattern": "^-?(?:0|[1-9]\\d*)$",
+              "type": [
+                "integer",
+                "string"
+              ],
+              "format": "int32"
+            }
+          },
+          {
+            "name": "Assignee",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          },
+          {
+            "name": "Overdue",
+            "in": "query",
+            "schema": {
+              "type": "boolean"
+            }
+          },
+          {
+            "name": "LocationId",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          },
+          {
+            "name": "Sort",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Dir",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
           }
         ],
         "responses": {
@@ -3960,6 +4083,142 @@
           },
           "422": {
             "description": "Nghiệp vụ không cho phép: hồ sơ chưa đủ (dossier_incomplete), thiếu ý kiến (note_required), tham chiếu không hợp lệ.",
+            "content": {
+              "application/problem+json": { }
+            }
+          },
+          "429": {
+            "description": "Gọi quá nhiều lần trong một phút; thử lại sau.",
+            "content": {
+              "application/problem+json": { }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/dossiers/export.csv": {
+      "get": {
+        "tags": [
+          "Hồ sơ"
+        ],
+        "summary": "Xuất danh sách hồ sơ dạng CSV theo cùng bộ lọc và thứ tự với danh sách (tối đa 10.000 dòng)",
+        "parameters": [
+          {
+            "name": "Status",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Q",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Department",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "WorkGroup",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Mine",
+            "in": "query",
+            "schema": {
+              "type": "boolean"
+            }
+          },
+          {
+            "name": "Cursor",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Limit",
+            "in": "query",
+            "schema": {
+              "pattern": "^-?(?:0|[1-9]\\d*)$",
+              "type": [
+                "integer",
+                "string"
+              ],
+              "format": "int32"
+            }
+          },
+          {
+            "name": "Year",
+            "in": "query",
+            "schema": {
+              "pattern": "^-?(?:0|[1-9]\\d*)$",
+              "type": [
+                "integer",
+                "string"
+              ],
+              "format": "int32"
+            }
+          },
+          {
+            "name": "Assignee",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          },
+          {
+            "name": "Overdue",
+            "in": "query",
+            "schema": {
+              "type": "boolean"
+            }
+          },
+          {
+            "name": "LocationId",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          },
+          {
+            "name": "Sort",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Dir",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "401": {
+            "description": "Chưa đăng nhập hoặc phiên đã hết hạn (unauthenticated).",
+            "content": {
+              "application/problem+json": { }
+            }
+          },
+          "403": {
+            "description": "Phân công đang dùng không có quyền thực hiện (forbidden), hoặc thiếu X-CSRF (csrf_failed).",
             "content": {
               "application/problem+json": { }
             }
@@ -4553,6 +4812,64 @@
         }
       }
     },
+    "/api/v1/dossiers/{id}/assignees": {
+      "get": {
+        "tags": [
+          "Hồ sơ"
+        ],
+        "summary": "Người có thể giao chủ trì hồ sơ này (chuyên viên của phòng), kèm số hồ sơ đang giữ và quá hạn",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/AssigneeOption"
+                  }
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Chưa đăng nhập hoặc phiên đã hết hạn (unauthenticated).",
+            "content": {
+              "application/problem+json": { }
+            }
+          },
+          "403": {
+            "description": "Phân công đang dùng không có quyền thực hiện (forbidden), hoặc thiếu X-CSRF (csrf_failed).",
+            "content": {
+              "application/problem+json": { }
+            }
+          },
+          "404": {
+            "description": "Không tìm thấy, hoặc bản ghi nằm ngoài phạm vi của người dùng (not_found). Không phân biệt hai trường hợp để không lộ sự tồn tại.",
+            "content": {
+              "application/problem+json": { }
+            }
+          },
+          "429": {
+            "description": "Gọi quá nhiều lần trong một phút; thử lại sau.",
+            "content": {
+              "application/problem+json": { }
+            }
+          }
+        }
+      }
+    },
     "/api/v1/dossiers/{id}/assignment": {
       "put": {
         "tags": [
@@ -4937,6 +5254,44 @@
           },
           "401": {
             "description": "Chưa đăng nhập hoặc phiên đã hết hạn (unauthenticated).",
+            "content": {
+              "application/problem+json": { }
+            }
+          },
+          "429": {
+            "description": "Gọi quá nhiều lần trong một phút; thử lại sau.",
+            "content": {
+              "application/problem+json": { }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/workspace/leadership": {
+      "get": {
+        "tags": [
+          "Việc của tôi"
+        ],
+        "summary": "Số liệu tổng hợp cho lãnh đạo: Chủ tịch UBND theo phòng; lãnh đạo HĐND theo hoạt động. Chỉ đếm hồ sơ trong phạm vi phân công đang dùng",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/LeadershipSummary"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Chưa đăng nhập hoặc phiên đã hết hạn (unauthenticated).",
+            "content": {
+              "application/problem+json": { }
+            }
+          },
+          "403": {
+            "description": "Phân công đang dùng không có quyền thực hiện (forbidden), hoặc thiếu X-CSRF (csrf_failed).",
             "content": {
               "application/problem+json": { }
             }
@@ -8011,6 +8366,111 @@
         }
       }
     },
+    "/api/v1/admin/errors": {
+      "get": {
+        "tags": [
+          "Quản trị"
+        ],
+        "summary": "Tra Mã lỗi người dùng gửi: request, người, mã tương quan và các lần truy cập cùng request",
+        "parameters": [
+          {
+            "name": "errorId",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "correlationId",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "actor",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          },
+          {
+            "name": "from",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "date-time"
+            }
+          },
+          {
+            "name": "to",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "date-time"
+            }
+          },
+          {
+            "name": "before",
+            "in": "query",
+            "schema": {
+              "pattern": "^-?(?:0|[1-9]\\d*)$",
+              "type": [
+                "integer",
+                "string"
+              ],
+              "format": "int64"
+            }
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "schema": {
+              "pattern": "^-?(?:0|[1-9]\\d*)$",
+              "type": [
+                "integer",
+                "string"
+              ],
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ErrorEventRow"
+                  }
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Chưa đăng nhập hoặc phiên đã hết hạn (unauthenticated).",
+            "content": {
+              "application/problem+json": { }
+            }
+          },
+          "403": {
+            "description": "Phân công đang dùng không có quyền thực hiện (forbidden), hoặc thiếu X-CSRF (csrf_failed).",
+            "content": {
+              "application/problem+json": { }
+            }
+          },
+          "429": {
+            "description": "Gọi quá nhiều lần trong một phút; thử lại sau.",
+            "content": {
+              "application/problem+json": { }
+            }
+          }
+        }
+      }
+    },
     "/api/v1/admin/backups": {
       "get": {
         "tags": [
@@ -8383,6 +8843,32 @@
   },
   "components": {
     "schemas": {
+      "ActivitySummary": {
+        "required": [
+          "activity",
+          "label",
+          "workGroupCodes",
+          "counts"
+        ],
+        "type": "object",
+        "properties": {
+          "activity": {
+            "type": "string"
+          },
+          "label": {
+            "type": "string"
+          },
+          "workGroupCodes": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "counts": {
+            "$ref": "#/components/schemas/StageCounts"
+          }
+        }
+      },
       "AddDocumentRequest": {
         "required": [
           "documentId",
@@ -9097,6 +9583,48 @@
             "items": {
               "$ref": "#/components/schemas/ArchiveItemDto"
             }
+          }
+        }
+      },
+      "AssigneeOption": {
+        "required": [
+          "userId",
+          "displayName",
+          "isDeputy",
+          "isCurrent",
+          "holding",
+          "overdue"
+        ],
+        "type": "object",
+        "properties": {
+          "userId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "displayName": {
+            "type": "string"
+          },
+          "isDeputy": {
+            "type": "boolean"
+          },
+          "isCurrent": {
+            "type": "boolean"
+          },
+          "holding": {
+            "pattern": "^-?(?:0|[1-9]\\d*)$",
+            "type": [
+              "integer",
+              "string"
+            ],
+            "format": "int32"
+          },
+          "overdue": {
+            "pattern": "^-?(?:0|[1-9]\\d*)$",
+            "type": [
+              "integer",
+              "string"
+            ],
+            "format": "int32"
           }
         }
       },
@@ -10566,6 +11094,25 @@
           }
         }
       },
+      "DepartmentSummary": {
+        "required": [
+          "departmentCode",
+          "departmentName",
+          "counts"
+        ],
+        "type": "object",
+        "properties": {
+          "departmentCode": {
+            "type": "string"
+          },
+          "departmentName": {
+            "type": "string"
+          },
+          "counts": {
+            "$ref": "#/components/schemas/StageCounts"
+          }
+        }
+      },
       "DisposalDto": {
         "required": [
           "id",
@@ -10813,6 +11360,153 @@
           "metadataReviewNote": {
             "type": "string",
             "default": ""
+          },
+          "metadataReviewedByName": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "files": {
+            "type": [
+              "null",
+              "array"
+            ],
+            "items": {
+              "$ref": "#/components/schemas/FileVersionDto"
+            }
+          }
+        }
+      },
+      "DocumentFieldsData": {
+        "required": [
+          "documentId",
+          "classification",
+          "reviewStatus",
+          "reviewedByName",
+          "reviewedAt",
+          "fields"
+        ],
+        "type": "object",
+        "properties": {
+          "documentId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "classification": {
+            "oneOf": [
+              {
+                "type": "null"
+              },
+              {
+                "$ref": "#/components/schemas/ClassificationDto"
+              }
+            ]
+          },
+          "reviewStatus": {
+            "type": "string"
+          },
+          "reviewedByName": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "reviewedAt": {
+            "type": [
+              "null",
+              "string"
+            ],
+            "format": "date-time"
+          },
+          "fields": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DocumentFieldView"
+            }
+          }
+        }
+      },
+      "DocumentFieldView": {
+        "required": [
+          "fieldCode",
+          "label",
+          "position",
+          "valueType",
+          "value",
+          "verified",
+          "origin",
+          "editedFromAi",
+          "verifiedByName",
+          "verifiedAt",
+          "sourcePage",
+          "sourceRegion"
+        ],
+        "type": "object",
+        "properties": {
+          "fieldCode": {
+            "type": "string"
+          },
+          "label": {
+            "type": "string"
+          },
+          "position": {
+            "pattern": "^-?(?:0|[1-9]\\d*)$",
+            "type": [
+              "integer",
+              "string"
+            ],
+            "format": "int32"
+          },
+          "valueType": {
+            "type": "string"
+          },
+          "value": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "verified": {
+            "type": "boolean"
+          },
+          "origin": {
+            "type": "string"
+          },
+          "editedFromAi": {
+            "type": "boolean"
+          },
+          "verifiedByName": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "verifiedAt": {
+            "type": [
+              "null",
+              "string"
+            ],
+            "format": "date-time"
+          },
+          "sourcePage": {
+            "pattern": "^-?(?:0|[1-9]\\d*)$",
+            "type": [
+              "null",
+              "integer",
+              "string"
+            ],
+            "format": "int32"
+          },
+          "sourceRegion": {
+            "oneOf": [
+              {
+                "type": "null"
+              },
+              {
+                "$ref": "#/components/schemas/SourceRegionDto"
+              }
+            ]
           }
         }
       },
@@ -11378,6 +12072,88 @@
           }
         }
       },
+      "ErrorEventRow": {
+        "required": [
+          "id",
+          "errorId",
+          "at",
+          "status",
+          "code",
+          "method",
+          "path",
+          "correlationId",
+          "userId",
+          "actor",
+          "assignment",
+          "related"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "pattern": "^-?(?:0|[1-9]\\d*)$",
+            "type": [
+              "integer",
+              "string"
+            ],
+            "format": "int64"
+          },
+          "errorId": {
+            "type": "string"
+          },
+          "at": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "status": {
+            "pattern": "^-?(?:0|[1-9]\\d*)$",
+            "type": [
+              "integer",
+              "string"
+            ],
+            "format": "int32"
+          },
+          "code": {
+            "type": "string"
+          },
+          "method": {
+            "type": "string"
+          },
+          "path": {
+            "type": "string"
+          },
+          "correlationId": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "userId": {
+            "type": [
+              "null",
+              "string"
+            ],
+            "format": "uuid"
+          },
+          "actor": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "assignment": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "related": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/AuditRow"
+            }
+          }
+        }
+      },
       "ExportDto": {
         "required": [
           "id",
@@ -11611,6 +12387,93 @@
           },
           "sha256": {
             "type": "string"
+          }
+        }
+      },
+      "FileVersionDto": {
+        "required": [
+          "id",
+          "componentKey",
+          "versionNo",
+          "role",
+          "kind",
+          "name",
+          "mediaType",
+          "byteSize",
+          "pageCount",
+          "sha256",
+          "uploadedAt",
+          "uploadedByName",
+          "disposed",
+          "isCurrent"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "componentKey": {
+            "type": "string"
+          },
+          "versionNo": {
+            "pattern": "^-?(?:0|[1-9]\\d*)$",
+            "type": [
+              "integer",
+              "string"
+            ],
+            "format": "int32"
+          },
+          "role": {
+            "type": "string"
+          },
+          "kind": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "mediaType": {
+            "type": "string"
+          },
+          "byteSize": {
+            "pattern": "^-?(?:0|[1-9]\\d*)$",
+            "type": [
+              "integer",
+              "string"
+            ],
+            "format": "int64"
+          },
+          "pageCount": {
+            "pattern": "^-?(?:0|[1-9]\\d*)$",
+            "type": [
+              "null",
+              "integer",
+              "string"
+            ],
+            "format": "int32"
+          },
+          "sha256": {
+            "type": "string"
+          },
+          "uploadedAt": {
+            "type": [
+              "null",
+              "string"
+            ],
+            "format": "date-time"
+          },
+          "uploadedByName": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "disposed": {
+            "type": "boolean"
+          },
+          "isCurrent": {
+            "type": "boolean"
           }
         }
       },
@@ -11971,6 +12834,47 @@
         }
       },
       "JsonElement": { },
+      "LeadershipSummary": {
+        "required": [
+          "role",
+          "organizationCode",
+          "asOf",
+          "totals",
+          "departments",
+          "activities"
+        ],
+        "type": "object",
+        "properties": {
+          "role": {
+            "type": "string"
+          },
+          "organizationCode": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "asOf": {
+            "type": "string",
+            "format": "date"
+          },
+          "totals": {
+            "$ref": "#/components/schemas/StageCounts"
+          },
+          "departments": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DepartmentSummary"
+            }
+          },
+          "activities": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ActivitySummary"
+            }
+          }
+        }
+      },
       "LifecycleDto": {
         "required": [
           "status",
@@ -13366,6 +14270,25 @@
               "null",
               "string"
             ]
+          },
+          "sourceRegion": {
+            "oneOf": [
+              {
+                "type": "null"
+              },
+              {
+                "$ref": "#/components/schemas/SourceRegionDto"
+              }
+            ]
+          },
+          "confidence": {
+            "pattern": "^-?(?:0|[1-9]\\d*)(?:\\.\\d+)?$",
+            "type": [
+              "null",
+              "number",
+              "string"
+            ],
+            "format": "double"
           }
         }
       },
@@ -13667,6 +14590,12 @@
               "string"
             ],
             "format": "int32"
+          },
+          "nextCursor": {
+            "type": [
+              "null",
+              "string"
+            ]
           }
         }
       },
@@ -13866,6 +14795,62 @@
           }
         }
       },
+      "SourceRegionDto": {
+        "required": [
+          "page",
+          "x",
+          "y",
+          "width",
+          "height",
+          "approximate"
+        ],
+        "type": "object",
+        "properties": {
+          "page": {
+            "pattern": "^-?(?:0|[1-9]\\d*)$",
+            "type": [
+              "integer",
+              "string"
+            ],
+            "format": "int32"
+          },
+          "x": {
+            "pattern": "^-?(?:0|[1-9]\\d*)(?:\\.\\d+)?(?:[eE][+-]?\\d+)?$",
+            "type": [
+              "number",
+              "string"
+            ],
+            "format": "double"
+          },
+          "y": {
+            "pattern": "^-?(?:0|[1-9]\\d*)(?:\\.\\d+)?(?:[eE][+-]?\\d+)?$",
+            "type": [
+              "number",
+              "string"
+            ],
+            "format": "double"
+          },
+          "width": {
+            "pattern": "^-?(?:0|[1-9]\\d*)(?:\\.\\d+)?(?:[eE][+-]?\\d+)?$",
+            "type": [
+              "number",
+              "string"
+            ],
+            "format": "double"
+          },
+          "height": {
+            "pattern": "^-?(?:0|[1-9]\\d*)(?:\\.\\d+)?(?:[eE][+-]?\\d+)?$",
+            "type": [
+              "number",
+              "string"
+            ],
+            "format": "double"
+          },
+          "approximate": {
+            "type": "boolean"
+          }
+        }
+      },
       "SplitResult": {
         "required": [
           "sourceDocumentId",
@@ -13882,6 +14867,67 @@
             "items": {
               "$ref": "#/components/schemas/ChildDocument"
             }
+          }
+        }
+      },
+      "StageCounts": {
+        "required": [
+          "preparing",
+          "awaitingCheck",
+          "awaitingOpinion",
+          "awaitingArchive",
+          "overdue",
+          "open"
+        ],
+        "type": "object",
+        "properties": {
+          "preparing": {
+            "pattern": "^-?(?:0|[1-9]\\d*)$",
+            "type": [
+              "integer",
+              "string"
+            ],
+            "format": "int32"
+          },
+          "awaitingCheck": {
+            "pattern": "^-?(?:0|[1-9]\\d*)$",
+            "type": [
+              "integer",
+              "string"
+            ],
+            "format": "int32"
+          },
+          "awaitingOpinion": {
+            "pattern": "^-?(?:0|[1-9]\\d*)$",
+            "type": [
+              "integer",
+              "string"
+            ],
+            "format": "int32"
+          },
+          "awaitingArchive": {
+            "pattern": "^-?(?:0|[1-9]\\d*)$",
+            "type": [
+              "integer",
+              "string"
+            ],
+            "format": "int32"
+          },
+          "overdue": {
+            "pattern": "^-?(?:0|[1-9]\\d*)$",
+            "type": [
+              "integer",
+              "string"
+            ],
+            "format": "int32"
+          },
+          "open": {
+            "pattern": "^-?(?:0|[1-9]\\d*)$",
+            "type": [
+              "integer",
+              "string"
+            ],
+            "format": "int32"
           }
         }
       },

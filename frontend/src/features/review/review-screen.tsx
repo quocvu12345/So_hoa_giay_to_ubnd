@@ -697,7 +697,11 @@ function ClassificationCard({
   return (
     <div className="grid gap-2 border border-line p-3">
       <div className="flex flex-wrap items-center justify-between gap-2">
-        <span className="text-xs text-muted">{saved ? "Loại giấy tờ đã xác nhận" : "Gợi ý của AI · cần bạn xác nhận"}</span>
+        <span className="flex flex-wrap items-center gap-2 text-xs text-muted">
+          {saved ? "Loại giấy tờ đã xác nhận" : "Gợi ý của AI · cần bạn xác nhận"}
+          {/* Worker chạy HOSO_AI_PROFILE=fake (máy dev không có mô hình): gắn nhãn để không ai nhầm là kết quả AI thật. */}
+          {!saved && suggestion?.modelKey === "fake" && <Chip tone="warn">AI giả lập</Chip>}
+        </span>
         {saved ? (
           <Chip tone="ok"><CheckCircle2 aria-hidden className="size-3" /> Đã xác nhận</Chip>
         ) : suggestion && !suggestion.evidenceVerified ? (

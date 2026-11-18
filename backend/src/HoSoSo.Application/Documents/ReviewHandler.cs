@@ -55,6 +55,38 @@ public sealed partial class ReviewHandler(IHoSoDb db, IScopeFilter scope, ICurre
         return new ReviewData(document, suggestionDto, fields, job, canEdit, reason);
     }
 
+    /// <summary>
+    /// BE-119. Trường đã đối chiếu của giấy tờ cho người chỉ có <c>document.view</c> (trưởng phòng, lãnh đạo). Phạm vi áp theo phân công đang dùng
+    /// như <see cref="GetAsync"/>: giấy tờ ngoài phạm vi trả 404. Chỉ theo loại đã xác nhận, và không đưa giá trị AI gợi ý ra ngoài.
+    /// </summary>
+    public async Task<DocumentFieldsData> FieldsAsync(Guid id, CancellationToken ct)
+    {
+        var document = await DetailAsync(id, ct);
+        var typeCode = document.Classification?.DocumentTypeCode;
+        var views = new List<DocumentFieldView>();
+        if (typeCode is not null)
+        {
+            var definitions = await db.Read<FieldDefinition>().Where(f => f.DocumentTypeCode == typeCode).OrderBy(f => f.Position).ToListAsync(ct);
+            var values = await db.Read<DocumentFieldValue>().Where(v => v.DocumentId == id).ToDictionaryAsync(v => v.FieldDefinitionCode, ct);
+            var suggestionIds = values.Values.Where(v => v.AiFieldSuggestionId is not null).Select(v => v.AiFieldSuggestionId!.Value).ToList();
+            var aiValues = suggestionIds.Count == 0 ? [] : await db.Read<AiFieldSuggestion>().Where(s => suggestionIds.Contains(s.Id)).ToDictionaryAsync(s => s.Id, s => s.Value, ct);
+            var names = await DisplayNamesAsync(values.Values.Where(v => v.VerifiedBy is not null).Select(v => v.VerifiedBy!.Value), ct);
+            foreach (var f in definitions)
+            {
+                values.TryGetValue(f.Code, out var v);
+                // Chỉ tính khi AI ĐÃ có giá trị mà người dùng đổi hoặc xóa. AI để trống mà người dùng tự điền thì không có gì để "sửa": Origin = manual.
+                var edited = v?.AiFieldSuggestionId is { } sid && aiValues.TryGetValue(sid, out var ai) && !string.IsNullOrWhiteSpace(ai)
+                    && !string.Equals(HoSoText.Fold(ai), HoSoText.Fold(v.ValueText ?? ""), StringComparison.Ordinal);
+                views.Add(new DocumentFieldView(f.Code, f.Label, f.Position, f.ValueType, v?.ValueText, v is { NeedsReview: false }, v?.ValueOrigin ?? "none", edited,
+                    v?.VerifiedBy is { } by && names.TryGetValue(by, out var name) ? name : null, v?.VerifiedAt, v?.SourcePage, SourceRegions.Parse(v?.SourceRegion)));
+            }
+        }
+        var reviewer = await db.Read<Document>().Where(d => d.Id == id).Select(d => new { d.ReviewedBy, d.ReviewedAt }).SingleAsync(ct);
+        access.Record("view", "document", id);
+        return new DocumentFieldsData(id, document.Classification, document.ReviewStatus,
+            reviewer.ReviewedBy is { } reviewedBy ? await DisplayNameAsync(reviewedBy, ct) : null, reviewer.ReviewedAt, views);
+    }
+
     public async Task<ReviewData> ClassifyAsync(Guid id, ClassifyRequest r, CancellationToken ct)
     {
         await using var transaction = await db.Database.BeginTransactionAsync(ct);
@@ -114,6 +146,7 @@ public sealed partial class ReviewHandler(IHoSoDb db, IScopeFilter scope, ICurre
                     ValueNormalized = Normalize(field.Value, IsDate(typeFields[field.FieldDefinitionCode])), ValueOrigin = "ocr", Confidence = field.Confidence,
                     SourceFileId = fileId is not null && field.SourcePages.Length > 0 ? fileId : null,
                     SourcePage = field.SourcePages.Length > 0 && fileId is not null ? field.SourcePages[0] : null,
+                    SourceRegion = fileId is not null ? field.SourceRegion : null,
                     NeedsReview = true, AiFieldSuggestionId = field.Id,
                 });
             }
@@ -223,6 +256,15 @@ public sealed partial class ReviewHandler(IHoSoDb db, IScopeFilter scope, ICurre
     }
 
     // ---- nội bộ ----
+    private async Task<string?> DisplayNameAsync(Guid userId, CancellationToken ct) =>
+        await db.Read<User>().Where(u => u.Id == userId).Select(u => u.DisplayName).FirstOrDefaultAsync(ct);
+
+    private async Task<Dictionary<Guid, string>> DisplayNamesAsync(IEnumerable<Guid> userIds, CancellationToken ct)
+    {
+        var ids = userIds.Distinct().ToList();
+        return ids.Count == 0 ? [] : await db.Read<User>().Where(u => ids.Contains(u.Id)).ToDictionaryAsync(u => u.Id, u => u.DisplayName, ct);
+    }
+
     private async Task<DocumentDetail> DetailAsync(Guid id, CancellationToken ct)
     {
         var d = await scope.Documents(db.Read<Document>()).SingleOrDefaultAsync(x => x.Id == id, ct) ?? throw AppException.NotFound("giấy tờ");
@@ -238,8 +280,31 @@ public sealed partial class ReviewHandler(IHoSoDb db, IScopeFilter scope, ICurre
                               join x in scope.Dossiers(db.Read<Dossier>()) on l.DossierId equals x.Id
                               where l.DocumentId == id
                               select new DossierRef(x.Id, x.Code, x.Title, x.Status)).ToListAsync(ct);
-        return new DocumentDetail(d.Id, d.Title, d.DocumentForm, d.DocumentNumber, d.IssuedOn, d.Origin, d.IntakeStatus, d.DataReviewStatus, d.MetadataStatus, d.Version, file, classification, dossiers, d.MetadataReviewedBy, d.MetadataReviewedAt, d.MetadataReviewNote);
+        var reviewer = d.MetadataReviewedBy is { } reviewerId ? await DisplayNameAsync(reviewerId, ct) : null;
+        return new DocumentDetail(d.Id, d.Title, d.DocumentForm, d.DocumentNumber, d.IssuedOn, d.Origin, d.IntakeStatus, d.DataReviewStatus, d.MetadataStatus, d.Version, file, classification, dossiers, d.MetadataReviewedBy, d.MetadataReviewedAt, d.MetadataReviewNote, reviewer,
+            await FileVersionsAsync(id, ct));
     }
+
+    /// <summary>BE-113. Mọi tệp của giấy tờ, cũ nhất trước: bản quét, bản thay thế, bản dẫn xuất, bản ký số.</summary>
+    private async Task<IReadOnlyList<FileVersionDto>> FileVersionsAsync(Guid documentId, CancellationToken ct)
+    {
+        var rows = await (from f in db.Read<FileRecord>()
+                          join u in db.Read<User>() on f.UploadedBy equals u.Id into uploaders
+                          from u in uploaders.DefaultIfEmpty()
+                          where f.DocumentId == documentId
+                          orderby f.ComponentKey, f.VersionNo, f.UploadedAt
+                          select new { f.Id, f.ComponentKey, f.VersionNo, f.FileRole, f.OriginalName, f.MediaType, f.ByteSize, f.PageCount, f.Sha256, f.UploadedAt, UploaderName = u.DisplayName, f.DisposedAt }).ToListAsync(ct);
+        var newest = rows.Where(r => r.DisposedAt is null).GroupBy(r => (r.ComponentKey, r.FileRole)).ToDictionary(g => g.Key, g => g.Max(r => r.VersionNo));
+        return rows.Select(r => new FileVersionDto(r.Id, r.ComponentKey, r.VersionNo, r.FileRole, KindOf(r.FileRole, r.VersionNo), r.OriginalName, r.MediaType, r.ByteSize, r.PageCount, r.Sha256,
+            r.UploadedAt, r.UploaderName, r.DisposedAt is not null, r.DisposedAt is null && newest.TryGetValue((r.ComponentKey, r.FileRole), out var top) && top == r.VersionNo)).ToList();
+    }
+
+    private static string KindOf(string role, int versionNo) => role switch
+    {
+        "derivative" or "ocr_pdf" => "derivative",
+        "signed" => "signed",
+        _ => versionNo > 1 ? "replacement" : "original",
+    };
 
     private async Task<(bool CanEdit, string? Reason)> EditStateAsync(Guid id, string origin, string intakeStatus, CancellationToken ct)
     {
@@ -274,7 +339,8 @@ public sealed partial class ReviewHandler(IHoSoDb db, IScopeFilter scope, ICurre
             var current = v is not null ? v.ValueText : s?.Value is { Length: > 0 } sv ? sv : null;
             result.Add(new ReviewField(f.Code, f.Label, f.Position, f.ValueType, f.RequiredForReview,
                 s?.Value is { Length: > 0 } ? s.Value : null, s?.Quote is { Length: > 0 } ? s.Quote : null, s?.SourcePages ?? [], s?.QuoteVerified ?? false,
-                v?.ValueText, v?.NeedsReview ?? true, v is { NeedsReview: false }, Attention(f, s, current)));
+                v?.ValueText, v?.NeedsReview ?? true, v is { NeedsReview: false }, Attention(f, s, current),
+                SourceRegions.Parse(s?.SourceRegion ?? v?.SourceRegion), s?.Confidence));
         }
         return result;
     }

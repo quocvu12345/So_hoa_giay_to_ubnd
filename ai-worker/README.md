@@ -34,7 +34,33 @@ Nếu môi trường mô hình không có pip, từ thư mục gốc repo dùng 
 API chạy được hoặc mô hình đã tải đủ cũng không có nghĩa worker đã chạy: cần cấu hình `.env`, role DB đăng nhập được,
 kho tệp khớp API và tiến trình `run` đang hoạt động.
 
-Với `HOSO_AI_PROFILE=fake` mọi thứ chạy không cần mô hình; kết quả ghi `model_key='fake'` (bản ghi `ai_models.active=false`) nên không bao giờ lẫn với kết quả thật.
+## AI giả cho máy không có mô hình (`HOSO_AI_PROFILE=fake`)
+
+Dùng khi mô hình chạy ở máy AI riêng mà vẫn cần làm backend/frontend trên máy dev. Worker đi **đúng đường thật** (lấy việc,
+nhịp sống, SSE, nhường chỗ, thu hồi, đọc lại trang, gợi ý lại, hủy), chỉ thay hai mô hình bằng quy tắc ở `src/hoso_ai/engines/fake.py`:
+
+- **OCR giả** không đọc ảnh: trang quét nhận một văn bản hành chính mẫu (số, ngày, tiêu đề là tên một loại trong danh mục,
+  trích yếu, địa điểm, thành phần, người ký) kèm khối bố cục có toạ độ. Trang có lớp chữ PDF sạch vẫn dùng chữ thật.
+  PDF vừa có trang chữ thật vừa có trang ảnh thì phân loại chỉ dùng chữ thật.
+- **Phân loại giả:** tên loại in ở tiêu đề (bộ chấm từ khóa `document_ai/shortlist.py`), rồi từ khóa gần nhất, rồi mã băm nội dung.
+- **Trích trường giả:** chỉ lấy giá trị có **nguyên văn** trong chữ của trang (ngày, `Số:`, `Về việc`/`V/v`, người ký dưới chức danh,
+  dòng `Nhãn: giá trị`); không tìm được thì để trống. Mỗi giá trị kèm trang, `source_region` và `confidence` (xem `contracts.py`).
+- **Gói nhiều giấy tờ:** các trang ghi tên loại khác nhau ở tiêu đề thì `mixed_documents=true` (cùng quy tắc với bản thật).
+- Cùng nội dung luôn ra cùng kết quả. Kết quả ghi `model_key='fake'` (`ai_models.active=false`), tiêu đề gợi ý có tiền tố `[GIẢ LẬP]`.
+  Worker từ chối chạy profile này khi `HOSO_ENV=production`.
+
+Máy dev: `scripts/dev-up.sh ai fake` (đổi `.env` và chỉ chạy lại worker), quay lại mô hình thật: `scripts/dev-up.sh ai real`.
+Không có venv mô hình thì AI giả chạy được với venv nhẹ: `python3 -m venv ai-worker/.venv && ai-worker/.venv/bin/pip install -e ai-worker`.
+
+| Biến (chỉ khi `fake`) | Mặc định | Dùng để thử |
+|---|---|---|
+| `HOSO_AI_FAKE_PAGE_SECONDS` | 0 | Chờ mỗi trang OCR giả: thấy tiến độ, hàng đợi, nâng mức qua SSE (`dev-up.sh ai fake` đặt 1) |
+| `HOSO_AI_FAKE_CLASSIFY_SECONDS` | 0 | Chờ ở bước phân loại (`dev-up.sh` đặt 2) |
+| `HOSO_AI_FAKE_FAIL_RATE` | 0 | Tỉ lệ 0..1 trang OCR lỗi ngẫu nhiên: cảnh báo trang lỗi, "đọc lại trang" (lần đọc lại có thể thành công) |
+| `HOSO_AI_FAKE_MIXED_FROM_PAGES` | 0 | >0: PDF từ chừng này trang luôn báo gói nhiều giấy tờ, để thử tách văn bản với bản quét (OCR giả không biết trang nào là giấy tờ mới) |
+
+Giới hạn: không nói được gì về chất lượng AI; loại chọn cho bản quét là ngẫu nhiên theo mẫu chữ, có thể thuộc nhóm ngoài phạm vi
+của người đang thử (khi đó chọn tay loại khác trên màn đối chiếu). Kịch bản `scripts/smoke-ai-flow.py` tự nhận ra worker giả qua `/health`.
 
 ## Chạy như dịch vụ (AI-09)
 

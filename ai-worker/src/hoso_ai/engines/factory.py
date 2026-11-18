@@ -11,7 +11,10 @@ def build_engines(settings: Settings) -> Engines:
     if settings.profile == "fake":
         from .fake import FakeClassifier, FakeOcr
 
-        return Engines(PdfiumReader(), FakeOcr(), FakeClassifier(), PillowQualityChecker())
+        return Engines(PdfiumReader(),
+                       FakeOcr(page_seconds=settings.fake_page_seconds, fail_rate=settings.fake_fail_rate),
+                       FakeClassifier(seconds=settings.fake_classify_seconds, mixed_from_pages=settings.fake_mixed_from_pages),
+                       PillowQualityChecker())
     if settings.profile == "mac-mlx":
         from ..settings import SettingsError
         from .mlx import PaddleVlMlxOcr, QwenMlxClassifier

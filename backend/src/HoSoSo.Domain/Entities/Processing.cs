@@ -105,6 +105,8 @@ public sealed class AiFieldSuggestion
     public string Value { get; set; } = "";
     public string Quote { get; set; } = "";
     public int[] SourcePages { get; set; } = [];
+    /// <summary>Vùng chứa trích dẫn trên trang (jsonb): {"page","x","y","width","height"[,"approximate"]}, tọa độ theo tỉ lệ trang. Hình dạng: docs/03.</summary>
+    public string? SourceRegion { get; set; }
     public bool QuoteVerified { get; set; }
     public decimal? Confidence { get; set; }
 }

@@ -40,6 +40,8 @@ public static class DependencyInjection
 
         services.AddSingleton<AccessEventQueue>();
         services.AddHostedService<AccessEventWriter>();
+        services.AddSingleton<ErrorEventRecorder>();      // BE-117
+        services.AddHostedService(p => p.GetRequiredService<ErrorEventRecorder>());
 
         services.AddOptions<StorageOptions>().Bind(configuration.GetSection("Storage"))
             .Validate(o => o.Provider is not null && (o.UsesS3 || string.Equals(o.Provider, "Local", StringComparison.OrdinalIgnoreCase)), "Storage:Provider chỉ nhận Local hoặc S3.")

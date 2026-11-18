@@ -110,6 +110,23 @@ class Events(threading.Thread):
 failures: list[str] = []
 
 
+def worker_profile(url: str) -> str | None:
+    """AI worker đang dùng (mac-mlx, fake…), từ /health; None khi không hỏi được."""
+    try:
+        with urllib.request.urlopen(url, timeout=3) as response:
+            return json.loads(response.read().decode()).get("profile")
+    except Exception:
+        return None
+
+
+def scope_groups(api: "Api", me: dict, role: str) -> list[str]:
+    """Mã nhóm hồ sơ thuộc phòng của phân công đang dùng (nơi phân công được tạo hồ sơ)."""
+    mine = next((a for a in me["assignments"] if a["role"] == role), {})
+    query = urllib.parse.urlencode({k: v for k, v in (("organization", mine.get("organizationCode")), ("department", mine.get("departmentCode"))) if v})
+    status, groups = api.get("/api/v1/catalog/work-groups" + (f"?{query}" if query else ""))
+    return [g["code"] for g in groups] if status == 200 and isinstance(groups, list) else []
+
+
 def check(condition: bool, message: str, detail: str = "") -> bool:
     print(("  ✓ " if condition else "  ✗ ") + message + (f"  [{detail}]" if detail and not condition else ""))
     if not condition:
@@ -129,10 +146,17 @@ def main() -> int:
     parser.add_argument("--pdf", action="append", help="id mẫu trong data/filled-samples/pdf (lặp lại để chọn nhiều); mặc định 3 mẫu")
     parser.add_argument("--timeout", type=int, default=420, help="giây chờ tối đa cho cả ba giấy tờ đọc xong")
     parser.add_argument("--file-to-dossier", action="store_true", help="thêm bước xác nhận phân loại, sửa trường và xếp vào hồ sơ mới")
-    parser.add_argument("--expect-model", default="Qwen3-4B-Instruct-2507-ifstruct-4bit", help="tên mô hình phải có trong ocr_jobs.model_version (rỗng để bỏ qua)")
+    parser.add_argument("--expect-model", default=None, help="tên mô hình phải có trong ocr_jobs.model_version (rỗng để bỏ qua); "
+                        "mặc định IFStruct, hoặc fake-classifier khi worker chạy AI giả")
+    parser.add_argument("--worker", default="http://127.0.0.1:9108/health", help="địa chỉ /health của worker, để biết worker dùng AI thật hay giả")
     parser.add_argument("--db", default="hoso_dev", help="CSDL để kiểm model_version bằng psql (rỗng để bỏ qua)")
     args = parser.parse_args()
     samples = args.pdf or DEFAULT_PDFS
+    fake = worker_profile(args.worker) == "fake"
+    if args.expect_model is None:
+        args.expect_model = "fake-classifier" if fake else "Qwen3-4B-Instruct-2507-ifstruct-4bit"
+    if fake:
+        print("Worker đang dùng AI GIẢ (HOSO_AI_PROFILE=fake): kiểm luồng, không kiểm độ đúng của loại giấy tờ.")
     api = Api(args.api)
     started = time.monotonic()
 
@@ -239,11 +263,20 @@ def main() -> int:
         if not check(target is not None, "có giấy tờ đã được AI gợi ý"):
             return 1
         suggestion = target["review"]["suggestion"]
+        if fake:
+            in_scope = scope_groups(api, me, args.role)
+            if in_scope and suggestion.get("workGroupCode") not in in_scope:
+                # AI giả chọn loại theo mẫu chữ, không theo phạm vi người dùng: chọn tay một loại trong phạm vi, như cán bộ sẽ làm trên màn đối chiếu.
+                status, types = api.get(f"/api/v1/catalog/work-groups/{in_scope[0]}/document-types")
+                if check(status == 200 and bool(types), f"AI giả chọn nhóm {suggestion.get('workGroupCode')} ngoài phạm vi; lấy loại của nhóm {in_scope[0]}", f"HTTP {status}"):
+                    suggestion = {**suggestion, "workGroupCode": in_scope[0], "documentTypeCode": types[0]["code"]}
+        fields = target["review"]["fields"]
         if suggestion.get("documentTypeCode"):
-            status, _ = api.request("PUT", f"/api/v1/documents/{target['documentId']}/classification",
-                                    body={"workGroupCode": suggestion["workGroupCode"], "documentTypeCode": suggestion["documentTypeCode"]})
-            check(status == 200, "xác nhận phân loại", f"HTTP {status}")
-        first = next((f for f in target["review"]["fields"] if f.get("suggestedValue")), None)
+            status, classified = api.request("PUT", f"/api/v1/documents/{target['documentId']}/classification",
+                                             body={"workGroupCode": suggestion["workGroupCode"], "documentTypeCode": suggestion["documentTypeCode"]})
+            if check(status == 200, "xác nhận phân loại", f"HTTP {status}") and isinstance(classified, dict):
+                fields = classified.get("fields", fields)     # trường theo loại vừa xác nhận
+        first = next((f for f in fields if f.get("suggestedValue")), None)
         if first:
             status, _ = api.request("PATCH", f"/api/v1/documents/{target['documentId']}/fields",
                                     body={"fields": [{"fieldCode": first["fieldCode"], "value": first["suggestedValue"], "verify": True}]})

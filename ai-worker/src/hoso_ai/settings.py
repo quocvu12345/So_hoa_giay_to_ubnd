@@ -35,6 +35,11 @@ class Settings:
     prompt_interactive: str = "short"        # kiểu lời nhắc trích trường cho việc có người đang chờ (production | short)
     prompt_background: str = "production"   # ... cho việc khay nền
     background_windows: str = ""             # khung giờ khay nền được chạy (runtime/windows.py); rỗng: bất cứ lúc nào rảnh
+    # Chỉ dùng với HOSO_AI_PROFILE=fake (engines/fake.py): giả thời gian chạy, lỗi trang và gói nhiều giấy tờ để thử giao diện.
+    fake_page_seconds: float = 0.0           # chờ mỗi trang OCR giả, để thấy tiến độ qua SSE
+    fake_classify_seconds: float = 0.0       # chờ ở bước phân loại giả
+    fake_fail_rate: float = 0.0              # tỉ lệ trang OCR giả bị lỗi (ngẫu nhiên mỗi lần, nên "đọc lại trang" có thể thành công)
+    fake_mixed_from_pages: int = 0           # PDF từ chừng này trang trở lên luôn báo gói nhiều giấy tờ; 0 = chỉ báo khi các trang ghi tên loại khác nhau
 
     @classmethod
     def from_env(cls, env: dict[str, str] | None = None) -> "Settings":
@@ -69,6 +74,16 @@ class Settings:
                 raise SettingsError(f"HOSO_AI_BACKGROUND_WINDOWS: {error}") from error
             return text
 
+        def fail_rate() -> float:
+            value = number("HOSO_AI_FAKE_FAIL_RATE", 0, 0)
+            if value > 1:
+                raise SettingsError("HOSO_AI_FAKE_FAIL_RATE là tỉ lệ từ 0 đến 1 (ví dụ 0.2 = khoảng 1/5 số trang OCR lỗi).")
+            return value
+
+        # Giống HOSO_MOCK ở frontend: kết quả giả không bao giờ được chạy ở môi trường thật.
+        if profile == "fake" and env.get("HOSO_ENV", "development") == "production":
+            raise SettingsError("HOSO_AI_PROFILE=fake không được dùng khi HOSO_ENV=production (kết quả giả sẽ lẫn vào hồ sơ thật).")
+
         port = env.get("HOSO_AI_HTTP_PORT", "9108")
         return cls(
             profile=profile,
@@ -91,6 +106,10 @@ class Settings:
             prompt_interactive=style("HOSO_AI_PROMPT_INTERACTIVE", "short"),
             prompt_background=style("HOSO_AI_PROMPT_BACKGROUND", "production"),
             background_windows=windows(),
+            fake_page_seconds=number("HOSO_AI_FAKE_PAGE_SECONDS", 0, 0),
+            fake_classify_seconds=number("HOSO_AI_FAKE_CLASSIFY_SECONDS", 0, 0),
+            fake_fail_rate=fail_rate(),
+            fake_mixed_from_pages=int(number("HOSO_AI_FAKE_MIXED_FROM_PAGES", 0, 0)),
         )
 
     def require_database(self) -> str:

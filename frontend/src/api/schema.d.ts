@@ -510,6 +510,8 @@ export interface paths {
                     Form?: string;
                     IssuedFrom?: string;
                     IssuedTo?: string;
+                    Issuer?: string;
+                    Cursor?: string;
                 };
                 header?: never;
                 path?: never;
@@ -3420,6 +3422,169 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
+    "/api/v1/documents/{id}/fields": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        /** Trường dữ liệu đã đối chiếu (chỉ đọc), kèm cờ đã sửa so với AI; theo loại đã xác nhận */
+        get: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path: {
+                    id: string;
+                };
+                cookie?: never;
+            };
+            requestBody?: never;
+            responses: {
+                /** @description OK */
+                200: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/json": components["schemas"]["DocumentFieldsData"];
+                    };
+                };
+                /** @description Chưa đăng nhập hoặc phiên đã hết hạn (unauthenticated). */
+                401: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/problem+json": unknown;
+                    };
+                };
+                /** @description Phân công đang dùng không có quyền thực hiện (forbidden), hoặc thiếu X-CSRF (csrf_failed). */
+                403: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/problem+json": unknown;
+                    };
+                };
+                /** @description Không tìm thấy, hoặc bản ghi nằm ngoài phạm vi của người dùng (not_found). Không phân biệt hai trường hợp để không lộ sự tồn tại. */
+                404: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/problem+json": unknown;
+                    };
+                };
+                /** @description Gọi quá nhiều lần trong một phút; thử lại sau. */
+                429: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/problem+json": unknown;
+                    };
+                };
+            };
+        };
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        /** Sửa, chuẩn hóa, xác nhận nhiều trường */
+        patch: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path: {
+                    id: string;
+                };
+                cookie?: never;
+            };
+            requestBody: {
+                content: {
+                    "application/json": components["schemas"]["EditFieldsRequest"];
+                };
+            };
+            responses: {
+                /** @description OK */
+                200: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/json": components["schemas"]["ReviewData"];
+                    };
+                };
+                /** @description Dữ liệu gửi lên chưa hợp lệ: ProblemDetails kèm errors theo từng trường (validation_failed). */
+                400: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/problem+json": unknown;
+                    };
+                };
+                /** @description Chưa đăng nhập hoặc phiên đã hết hạn (unauthenticated). */
+                401: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/problem+json": unknown;
+                    };
+                };
+                /** @description Phân công đang dùng không có quyền thực hiện (forbidden), hoặc thiếu X-CSRF (csrf_failed). */
+                403: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/problem+json": unknown;
+                    };
+                };
+                /** @description Không tìm thấy, hoặc bản ghi nằm ngoài phạm vi của người dùng (not_found). Không phân biệt hai trường hợp để không lộ sự tồn tại. */
+                404: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/problem+json": unknown;
+                    };
+                };
+                /** @description Xung đột: sai bước quy trình (workflow_conflict), dữ liệu vừa bị người khác sửa (concurrency_conflict) hoặc bị trùng (duplicate_value, duplicate_file). */
+                409: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/problem+json": unknown;
+                    };
+                };
+                /** @description Nghiệp vụ không cho phép: hồ sơ chưa đủ (dossier_incomplete), thiếu ý kiến (note_required), tham chiếu không hợp lệ. */
+                422: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/problem+json": unknown;
+                    };
+                };
+                /** @description Gọi quá nhiều lần trong một phút; thử lại sau. */
+                429: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/problem+json": unknown;
+                    };
+                };
+            };
+        };
+        trace?: never;
+    };
     "/api/v1/documents/{id}/review": {
         parameters: {
             query?: never;
@@ -3597,111 +3762,6 @@ export interface paths {
         options?: never;
         head?: never;
         patch?: never;
-        trace?: never;
-    };
-    "/api/v1/documents/{id}/fields": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post?: never;
-        delete?: never;
-        options?: never;
-        head?: never;
-        /** Sửa, chuẩn hóa, xác nhận nhiều trường */
-        patch: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path: {
-                    id: string;
-                };
-                cookie?: never;
-            };
-            requestBody: {
-                content: {
-                    "application/json": components["schemas"]["EditFieldsRequest"];
-                };
-            };
-            responses: {
-                /** @description OK */
-                200: {
-                    headers: {
-                        [name: string]: unknown;
-                    };
-                    content: {
-                        "application/json": components["schemas"]["ReviewData"];
-                    };
-                };
-                /** @description Dữ liệu gửi lên chưa hợp lệ: ProblemDetails kèm errors theo từng trường (validation_failed). */
-                400: {
-                    headers: {
-                        [name: string]: unknown;
-                    };
-                    content: {
-                        "application/problem+json": unknown;
-                    };
-                };
-                /** @description Chưa đăng nhập hoặc phiên đã hết hạn (unauthenticated). */
-                401: {
-                    headers: {
-                        [name: string]: unknown;
-                    };
-                    content: {
-                        "application/problem+json": unknown;
-                    };
-                };
-                /** @description Phân công đang dùng không có quyền thực hiện (forbidden), hoặc thiếu X-CSRF (csrf_failed). */
-                403: {
-                    headers: {
-                        [name: string]: unknown;
-                    };
-                    content: {
-                        "application/problem+json": unknown;
-                    };
-                };
-                /** @description Không tìm thấy, hoặc bản ghi nằm ngoài phạm vi của người dùng (not_found). Không phân biệt hai trường hợp để không lộ sự tồn tại. */
-                404: {
-                    headers: {
-                        [name: string]: unknown;
-                    };
-                    content: {
-                        "application/problem+json": unknown;
-                    };
-                };
-                /** @description Xung đột: sai bước quy trình (workflow_conflict), dữ liệu vừa bị người khác sửa (concurrency_conflict) hoặc bị trùng (duplicate_value, duplicate_file). */
-                409: {
-                    headers: {
-                        [name: string]: unknown;
-                    };
-                    content: {
-                        "application/problem+json": unknown;
-                    };
-                };
-                /** @description Nghiệp vụ không cho phép: hồ sơ chưa đủ (dossier_incomplete), thiếu ý kiến (note_required), tham chiếu không hợp lệ. */
-                422: {
-                    headers: {
-                        [name: string]: unknown;
-                    };
-                    content: {
-                        "application/problem+json": unknown;
-                    };
-                };
-                /** @description Gọi quá nhiều lần trong một phút; thử lại sau. */
-                429: {
-                    headers: {
-                        [name: string]: unknown;
-                    };
-                    content: {
-                        "application/problem+json": unknown;
-                    };
-                };
-            };
-        };
         trace?: never;
     };
     "/api/v1/documents/{id}/metadata": {
@@ -4771,10 +4831,12 @@ export interface paths {
             path?: never;
             cookie?: never;
         };
-        /** Tải tệp gốc (ghi nhật ký truy cập) */
+        /** Tải tệp gốc (mặc định, cần document.download) hoặc ?purpose=print để in (cần document.print, mở tại chỗ); mỗi lần ghi một dòng nhật ký truy cập */
         get: {
             parameters: {
-                query?: never;
+                query?: {
+                    purpose?: string;
+                };
                 header?: never;
                 path: {
                     id: string;
@@ -4854,6 +4916,12 @@ export interface paths {
                     Mine?: boolean;
                     Cursor?: string;
                     Limit?: number;
+                    Year?: number;
+                    Assignee?: string;
+                    Overdue?: boolean;
+                    LocationId?: string;
+                    Sort?: string;
+                    Dir?: string;
                 };
                 header?: never;
                 path?: never;
@@ -4979,6 +5047,81 @@ export interface paths {
                 };
             };
         };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/v1/dossiers/export.csv": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        /** Xuất danh sách hồ sơ dạng CSV theo cùng bộ lọc và thứ tự với danh sách (tối đa 10.000 dòng) */
+        get: {
+            parameters: {
+                query?: {
+                    Status?: string;
+                    Q?: string;
+                    Department?: string;
+                    WorkGroup?: string;
+                    Mine?: boolean;
+                    Cursor?: string;
+                    Limit?: number;
+                    Year?: number;
+                    Assignee?: string;
+                    Overdue?: boolean;
+                    LocationId?: string;
+                    Sort?: string;
+                    Dir?: string;
+                };
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: never;
+            responses: {
+                /** @description OK */
+                200: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content?: never;
+                };
+                /** @description Chưa đăng nhập hoặc phiên đã hết hạn (unauthenticated). */
+                401: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/problem+json": unknown;
+                    };
+                };
+                /** @description Phân công đang dùng không có quyền thực hiện (forbidden), hoặc thiếu X-CSRF (csrf_failed). */
+                403: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/problem+json": unknown;
+                    };
+                };
+                /** @description Gọi quá nhiều lần trong một phút; thử lại sau. */
+                429: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/problem+json": unknown;
+                    };
+                };
+            };
+        };
+        put?: never;
+        post?: never;
         delete?: never;
         options?: never;
         head?: never;
@@ -5686,6 +5829,80 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
+    "/api/v1/dossiers/{id}/assignees": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        /** Người có thể giao chủ trì hồ sơ này (chuyên viên của phòng), kèm số hồ sơ đang giữ và quá hạn */
+        get: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path: {
+                    id: string;
+                };
+                cookie?: never;
+            };
+            requestBody?: never;
+            responses: {
+                /** @description OK */
+                200: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/json": components["schemas"]["AssigneeOption"][];
+                    };
+                };
+                /** @description Chưa đăng nhập hoặc phiên đã hết hạn (unauthenticated). */
+                401: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/problem+json": unknown;
+                    };
+                };
+                /** @description Phân công đang dùng không có quyền thực hiện (forbidden), hoặc thiếu X-CSRF (csrf_failed). */
+                403: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/problem+json": unknown;
+                    };
+                };
+                /** @description Không tìm thấy, hoặc bản ghi nằm ngoài phạm vi của người dùng (not_found). Không phân biệt hai trường hợp để không lộ sự tồn tại. */
+                404: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/problem+json": unknown;
+                    };
+                };
+                /** @description Gọi quá nhiều lần trong một phút; thử lại sau. */
+                429: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/problem+json": unknown;
+                    };
+                };
+            };
+        };
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
     "/api/v1/dossiers/{id}/assignment": {
         parameters: {
             query?: never;
@@ -6177,6 +6394,69 @@ export interface paths {
                 };
                 /** @description Chưa đăng nhập hoặc phiên đã hết hạn (unauthenticated). */
                 401: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/problem+json": unknown;
+                    };
+                };
+                /** @description Gọi quá nhiều lần trong một phút; thử lại sau. */
+                429: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/problem+json": unknown;
+                    };
+                };
+            };
+        };
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/v1/workspace/leadership": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        /** Số liệu tổng hợp cho lãnh đạo: Chủ tịch UBND theo phòng; lãnh đạo HĐND theo hoạt động. Chỉ đếm hồ sơ trong phạm vi phân công đang dùng */
+        get: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: never;
+            responses: {
+                /** @description OK */
+                200: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/json": components["schemas"]["LeadershipSummary"];
+                    };
+                };
+                /** @description Chưa đăng nhập hoặc phiên đã hết hạn (unauthenticated). */
+                401: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/problem+json": unknown;
+                    };
+                };
+                /** @description Phân công đang dùng không có quyền thực hiện (forbidden), hoặc thiếu X-CSRF (csrf_failed). */
+                403: {
                     headers: {
                         [name: string]: unknown;
                     };
@@ -10180,6 +10460,77 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
+    "/api/v1/admin/errors": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        /** Tra Mã lỗi người dùng gửi: request, người, mã tương quan và các lần truy cập cùng request */
+        get: {
+            parameters: {
+                query?: {
+                    errorId?: string;
+                    correlationId?: string;
+                    actor?: string;
+                    from?: string;
+                    to?: string;
+                    before?: number;
+                    limit?: number;
+                };
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: never;
+            responses: {
+                /** @description OK */
+                200: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/json": components["schemas"]["ErrorEventRow"][];
+                    };
+                };
+                /** @description Chưa đăng nhập hoặc phiên đã hết hạn (unauthenticated). */
+                401: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/problem+json": unknown;
+                    };
+                };
+                /** @description Phân công đang dùng không có quyền thực hiện (forbidden), hoặc thiếu X-CSRF (csrf_failed). */
+                403: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/problem+json": unknown;
+                    };
+                };
+                /** @description Gọi quá nhiều lần trong một phút; thử lại sau. */
+                429: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/problem+json": unknown;
+                    };
+                };
+            };
+        };
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
     "/api/v1/admin/backups": {
         parameters: {
             query?: never;
@@ -10674,6 +11025,12 @@ export interface paths {
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
+        ActivitySummary: {
+            activity: string;
+            label: string;
+            workGroupCodes: string[];
+            counts: components["schemas"]["StageCounts"];
+        };
         AddDocumentRequest: {
             /** Format: uuid */
             documentId: string;
@@ -10842,6 +11199,17 @@ export interface components {
             /** Format: int32 */
             pageCount: number;
             items: null | components["schemas"]["ArchiveItemDto"][];
+        };
+        AssigneeOption: {
+            /** Format: uuid */
+            userId: string;
+            displayName: string;
+            isDeputy: boolean;
+            isCurrent: boolean;
+            /** Format: int32 */
+            holding: number;
+            /** Format: int32 */
+            overdue: number;
         };
         AssignmentDto: {
             id: string;
@@ -11172,6 +11540,11 @@ export interface components {
             verificationStatus: string;
             organizationCodes: string[];
         };
+        DepartmentSummary: {
+            departmentCode: string;
+            departmentName: string;
+            counts: components["schemas"]["StageCounts"];
+        };
         DisposalDto: {
             /** Format: uuid */
             id: string;
@@ -11230,6 +11603,35 @@ export interface components {
             metadataReviewedAt?: null | string;
             /** @default  */
             metadataReviewNote: string;
+            metadataReviewedByName?: null | string;
+            files?: null | components["schemas"]["FileVersionDto"][];
+        };
+        DocumentFieldsData: {
+            /** Format: uuid */
+            documentId: string;
+            classification: null | components["schemas"]["ClassificationDto"];
+            reviewStatus: string;
+            reviewedByName: null | string;
+            /** Format: date-time */
+            reviewedAt: null | string;
+            fields: components["schemas"]["DocumentFieldView"][];
+        };
+        DocumentFieldView: {
+            fieldCode: string;
+            label: string;
+            /** Format: int32 */
+            position: number;
+            valueType: string;
+            value: null | string;
+            verified: boolean;
+            origin: string;
+            editedFromAi: boolean;
+            verifiedByName: null | string;
+            /** Format: date-time */
+            verifiedAt: null | string;
+            /** Format: int32 */
+            sourcePage: null | number;
+            sourceRegion: null | components["schemas"]["SourceRegionDto"];
         };
         DocumentPlacement: {
             /** Format: uuid */
@@ -11378,6 +11780,24 @@ export interface components {
             /** Format: date-time */
             eligibleSince: string;
         };
+        ErrorEventRow: {
+            /** Format: int64 */
+            id: number;
+            errorId: string;
+            /** Format: date-time */
+            at: string;
+            /** Format: int32 */
+            status: number;
+            code: string;
+            method: string;
+            path: string;
+            correlationId: null | string;
+            /** Format: uuid */
+            userId: null | string;
+            actor: null | string;
+            assignment: null | string;
+            related: components["schemas"]["AuditRow"][];
+        };
         ExportDto: {
             /** Format: uuid */
             id: string;
@@ -11435,6 +11855,27 @@ export interface components {
             /** Format: int32 */
             pageCount: null | number;
             sha256: string;
+        };
+        FileVersionDto: {
+            /** Format: uuid */
+            id: string;
+            componentKey: string;
+            /** Format: int32 */
+            versionNo: number;
+            role: string;
+            kind: string;
+            name: string;
+            mediaType: string;
+            /** Format: int64 */
+            byteSize: number;
+            /** Format: int32 */
+            pageCount: null | number;
+            sha256: string;
+            /** Format: date-time */
+            uploadedAt: null | string;
+            uploadedByName: null | string;
+            disposed: boolean;
+            isCurrent: boolean;
         };
         FinishBackupRequest: {
             status: null | string;
@@ -11524,6 +11965,15 @@ export interface components {
             etaSeconds?: null | number;
         };
         JsonElement: unknown;
+        LeadershipSummary: {
+            role: string;
+            organizationCode: null | string;
+            /** Format: date */
+            asOf: string;
+            totals: components["schemas"]["StageCounts"];
+            departments: components["schemas"]["DepartmentSummary"][];
+            activities: components["schemas"]["ActivitySummary"][];
+        };
         LifecycleDto: {
             status: string;
             label: string;
@@ -11842,6 +12292,9 @@ export interface components {
             needsReview: boolean;
             verified: boolean;
             attention: null | string;
+            sourceRegion?: null | components["schemas"]["SourceRegionDto"];
+            /** Format: double */
+            confidence?: null | number;
         };
         ReviewJob: {
             /** Format: uuid */
@@ -11908,6 +12361,7 @@ export interface components {
             totalDocuments: number;
             /** Format: int32 */
             totalDossiers: number;
+            nextCursor?: null | string;
         };
         SegmentDto: {
             /** Format: uuid */
@@ -11959,10 +12413,37 @@ export interface components {
             verifiedAt: string;
             details: components["schemas"]["JsonElement"];
         };
+        SourceRegionDto: {
+            /** Format: int32 */
+            page: number;
+            /** Format: double */
+            x: number;
+            /** Format: double */
+            y: number;
+            /** Format: double */
+            width: number;
+            /** Format: double */
+            height: number;
+            approximate: boolean;
+        };
         SplitResult: {
             /** Format: uuid */
             sourceDocumentId: string;
             children: components["schemas"]["ChildDocument"][];
+        };
+        StageCounts: {
+            /** Format: int32 */
+            preparing: number;
+            /** Format: int32 */
+            awaitingCheck: number;
+            /** Format: int32 */
+            awaitingOpinion: number;
+            /** Format: int32 */
+            awaitingArchive: number;
+            /** Format: int32 */
+            overdue: number;
+            /** Format: int32 */
+            open: number;
         };
         SuspectPage: {
             /** Format: uuid */

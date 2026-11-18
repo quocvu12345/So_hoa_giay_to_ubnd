@@ -76,6 +76,8 @@ public sealed class DocumentFieldValue
     public decimal? Confidence { get; set; }
     public Guid? SourceFileId { get; set; }
     public int? SourcePage { get; set; }
+    /// <summary>Sao từ gợi ý AI khi chấp nhận (jsonb, cùng hình dạng với ai_field_suggestions.source_region).</summary>
+    public string? SourceRegion { get; set; }
     public bool NeedsReview { get; set; } = true;
     public Guid? VerifiedBy { get; set; }
     public DateTimeOffset? VerifiedAt { get; set; }

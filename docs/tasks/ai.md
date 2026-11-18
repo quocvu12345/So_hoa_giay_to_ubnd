@@ -302,6 +302,23 @@ Tình trạng sau đợt làm 17/11/2026: mục 1 và 2 đã sửa (AI-13); mụ
   - khởi động lại máy thì worker tự chạy và lấy việc;
   - dừng worker giữa chừng thì job quay lại hàng đợi, lần sau chỉ đọc trang còn thiếu.
 
+### AI-21 · Vùng nguồn và độ tin cậy thật cho từng trường ⬜ · 1 ngày
+- **Vì sao:** BE-114, FE-22, FE-23 cần `ai_field_suggestions.source_region` để bấm trường thì làm nổi đúng vùng trên trang. Từ 18/11/2026
+  hợp đồng `FieldSuggestion` đã có `source_region` và `confidence`, worker đã ghi xuống CSDL, nhưng chỉ AI giả điền; bản MLX vẫn để `NULL`.
+- **Làm:**
+  1. Trang OCR: tìm khối trong `parsing_res_list` của PaddleOCR-VL chứa trích dẫn, đổi `block_bbox` (pixel) sang tỉ lệ theo kích thước ảnh đã xuất.
+  2. Trang lấy từ lớp chữ PDF: tìm trích dẫn bằng `PdfTextPage.search` (PDFium) để có khung thật; không tìm được thì ước theo dòng kèm `"approximate": true`.
+  3. `confidence`: chưa có nguồn đáng tin thì để `NULL`, đừng bịa số.
+- **Kiểm tra:** 20 giấy tờ có nhãn, vùng chứa đúng trích dẫn khi vẽ lên ảnh trang; hình dạng JSON đúng docs/03.
+
+### OPS-08 · AI giả cho máy dev không có mô hình ✅ · 0,5 ngày (18/11/2026)
+- **Vì sao:** mô hình đã chuyển sang máy AI riêng; backend và frontend vẫn cần kết quả AI để làm màn đối chiếu, vùng nguồn, tách văn bản, hàng đợi.
+- **Đã làm:** `HOSO_AI_PROFILE=fake` sinh chữ OCR mẫu có khối bố cục, chọn loại theo tiêu đề, trích trường có trích dẫn nguyên văn kèm
+  `source_region` và `confidence`, báo gói nhiều giấy tờ; chỉnh độ chậm, tỉ lệ lỗi trang bằng `HOSO_AI_FAKE_*` (ai-worker/README mục "AI giả").
+  `scripts/dev-up.sh ai fake|real` đổi qua lại và chỉ chạy lại worker. Worker từ chối profile giả khi `HOSO_ENV=production`.
+- **Kiểm tra:** `tests/test_fake_engine.py` (9 test), hợp đồng PostgreSQL kiểm vùng nguồn và độ tin cậy ghi xuống CSDL;
+  `scripts/smoke-ai-flow.py --file-to-dossier` qua hết với worker giả (bước 6 tự kiểm `fake-classifier`).
+
 ### OPS-07 · Môi trường dev chạy đủ luồng AI ✅ · 0,5 ngày
 - **Làm:**
   1. Sao lưu `hoso_dev`, rồi áp migration 032 và 033 bằng `backend/scripts/migrate-hoso-dev.sh`: xem danh sách trước, sau đó mới `--apply`. Không chạy `migrate` trần, không chạy 004.

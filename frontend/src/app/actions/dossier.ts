@@ -107,6 +107,26 @@ export async function placeDocuments(dossierId: string, changes: PlacementChange
   });
 }
 
+/**
+ * Giao người chủ trì và hạn nội bộ (BE-110, assign_dossier). Kiểm tra quyền và phạm vi ở API; người không thuộc danh sách chuyên viên của phòng bị từ chối.
+ * Lý do bắt buộc khi đổi sang người khác được kiểm ở giao diện (assign-rules.ts) và ghi vào nhật ký hồ sơ.
+ */
+export async function assignDossier(dossierId: string, input: { userId: string; dueOn: string; note: string }): Promise<ActionResult> {
+  return runAction("dossier_assign", async () => {
+    assertId(dossierId);
+    assertId(input.userId);
+    if (input.dueOn && !/^\d{4}-\d{2}-\d{2}$/.test(input.dueOn)) throw new TypeError("Hạn nội bộ không hợp lệ.");
+    ok(
+      await serverApi().PUT("/api/v1/dossiers/{id}/assignment", {
+        params: { path: { id: dossierId } },
+        body: { userId: input.userId, dueOn: input.dueOn || null, note: input.note.trim() || null },
+      }),
+    );
+    log.info("dossier_assigned", { dossierId, userId: input.userId });
+    refresh(dossierId);
+  });
+}
+
 export type DossierFormInput = { title: string; workGroupCode: string; accessLevel: string; internalDueOn: string; notes: string; year: string; creatorOrganizationName: string };
 
 function dossierBody(input: DossierFormInput) {

@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import { PageBody, Section } from "@/components/ui/blocks";
 import { NoAccess } from "@/components/ui/no-access";
 import { DueChip } from "@/components/dossier/due-chip";
-import { getDossier } from "@/features/dossier/dossier-data";
+import { AssignPanel } from "@/features/dossier/assign-panel";
+import { getAssignees, getDossier } from "@/features/dossier/dossier-data";
 import { pageSession } from "@/lib/auth/page-guard";
 import { serverEnv } from "@/lib/env";
 import { loadOrNotFound } from "@/lib/load-or-not-found";
@@ -10,16 +11,16 @@ import { loadOrNotFound } from "@/lib/load-or-not-found";
 export const metadata: Metadata = { title: "Phân công hồ sơ" };
 
 /**
- * Tab Phân công (FE-31, chỉ trưởng phòng/Ban có `dossier.assign`). Hiện người chủ trì và hạn hiện tại.
- * Đổi người chủ trì cần danh sách chuyên viên trong đơn vị kèm số hồ sơ đang giữ: API chưa có (BE-110;
- * `admin/users` cần quyền quản trị mà trưởng phòng không có), nên chưa làm ô chọn người.
+ * Tab Phân công (FE-31, chỉ trưởng phòng/Ban có `dossier.assign`). Hiện người chủ trì và hạn hiện tại, và cho đổi:
+ * danh sách chuyên viên của phòng đến từ `GET /dossiers/{id}/assignees` (BE-110) kèm số hồ sơ mỗi người đang giữ.
  */
 export default async function DossierAssignment({ params }: PageProps<"/ho-so/[id]/phan-cong">) {
   const { session, allowed } = await pageSession("dossier.assign");
   if (!allowed) return <NoAccess session={session} what="phân công hồ sơ" />;
   if (serverEnv().mock) return null;
   const { id } = await params;
-  const dossier = await loadOrNotFound(() => getDossier(id));
+  const [dossier, options] = await loadOrNotFound(() => Promise.all([getDossier(id), getAssignees(id)]));
+  const current = options.find((o) => o.isCurrent) ?? null;
 
   return (
     <PageBody>
@@ -30,9 +31,15 @@ export default async function DossierAssignment({ params }: PageProps<"/ho-so/[i
           <dt className="text-muted">Hạn nội bộ</dt>
           <dd><DueChip dueOn={dossier.dueOn} /></dd>
         </dl>
-        <p role="status" className="border border-dashed border-line-strong p-3 text-sm text-muted">
-          Chưa đổi được người chủ trì tại đây: cần API liệt kê chuyên viên trong đơn vị kèm số hồ sơ mỗi người đang giữ (task BE-110). Khi có, màn này có ô chọn người có tìm kiếm, đặt hạn không trước hôm nay và bắt buộc ghi lý do khi đổi người.
-        </p>
+      </Section>
+      <Section title="Giao việc" description="Chọn chuyên viên của phòng. Số bên dưới tên là số hồ sơ họ đang chủ trì (chưa lưu trữ) trên toàn phòng, để cân tải trước khi giao.">
+        <AssignPanel
+          dossierId={id}
+          options={options}
+          currentAssigneeId={current?.userId ?? null}
+          currentDueOn={dossier.dueOn ?? null}
+          locked={dossier.status === "archived" ? "Hồ sơ đã lưu trữ và khóa sửa: không giao lại người chủ trì." : undefined}
+        />
       </Section>
     </PageBody>
   );

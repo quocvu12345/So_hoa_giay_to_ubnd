@@ -149,8 +149,10 @@ class PostgresRepository:
             for f in suggestion.fields:
                 self._main.execute(
                     "INSERT INTO hoso.ai_field_suggestions (suggestion_id, field_definition_code, value, quote, "
-                    "source_pages, quote_verified) VALUES (%s,%s,%s,%s,%s,%s)",
-                    (suggestion_id, f.field_code, f.value, f.quote, list(f.source_pages), f.quote_verified))
+                    "source_pages, quote_verified, source_region, confidence) VALUES (%s,%s,%s,%s,%s,%s,%s::jsonb,%s)",
+                    (suggestion_id, f.field_code, f.value, f.quote, list(f.source_pages), f.quote_verified,
+                     None if f.source_region is None else json.dumps(f.source_region, ensure_ascii=False),
+                     None if f.confidence is None else round(min(1.0, max(0.0, f.confidence)), 4)))
 
     def save_quality(self, job: Job, page_no: int, flags: tuple[str, ...]) -> None:
         status = "suspect" if flags else "ok"

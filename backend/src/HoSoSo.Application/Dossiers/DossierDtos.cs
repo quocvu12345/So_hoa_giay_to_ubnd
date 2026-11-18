@@ -49,7 +49,13 @@ public sealed record Workspace(IReadOnlyDictionary<string, IReadOnlyList<QueueIt
 public sealed record WorkspaceSummary(IReadOnlyDictionary<string, int> Counts, int Inbox, int UnreadNotifications);
 
 // Yêu cầu
-public sealed record ListDossiersQuery(string? Status, string? Q, string? DepartmentCode, string? WorkGroupCode, bool Mine, string? Cursor, int Limit = 25);
+/// <summary>
+/// Bộ lọc danh sách hồ sơ (BE-111). Year: năm hồ sơ; AssigneeId: người chủ trì; Overdue: quá hạn nội bộ; LocationId: vị trí kho và mọi vị trí con.
+/// Sort: updated (mặc định, mới nhất trước), code, title, due (chưa có hạn xếp cuối); Dir: asc hoặc desc.
+/// Status, WorkGroupCode: một hoặc nhiều giá trị cách nhau dấu phẩy (tối đa 12).
+/// </summary>
+public sealed record ListDossiersQuery(string? Status, string? Q, string? DepartmentCode, string? WorkGroupCode, bool Mine, string? Cursor, int Limit = 25,
+    int? Year = null, Guid? AssigneeId = null, bool Overdue = false, Guid? LocationId = null, string? Sort = null, string? Dir = null);
 public sealed record CreateDossierRequest(string Title, string WorkGroupCode, string? WorkflowCode, string? AccessLevel, string? Notes, DateOnly? InternalDueOn, string? CreatorOrganizationName, int? Year, string? ProcedureId = null);
 /// <summary><c>ProcedureId</c>: null giữ nguyên, chuỗi rỗng bỏ thủ tục, giá trị khác đổi thủ tục (giấy tờ đã gán thành phần của thủ tục cũ được gỡ gán).</summary>
 public sealed record UpdateDossierRequest(uint Version, string? Title, string? Notes, DateOnly? InternalDueOn, string? AccessLevel, string? PhysicalLocation, string? ProcedureId = null);
@@ -57,4 +63,10 @@ public sealed record AddDocumentRequest(Guid DocumentId, string? Direction, Guid
 /// <summary><c>ProcedureComponentId</c> gán giấy tờ vào thành phần của thủ tục; <c>ClearProcedureComponent</c> gỡ gán.</summary>
 public sealed record DocumentPlacement(Guid DocumentId, int? Position, string? Direction, string? RelationKind, Guid? ProcedureComponentId = null, bool ClearProcedureComponent = false);
 public sealed record AssignRequest(Guid UserId, DateOnly? DueOn, string? Note);
+
+/// <summary>
+/// BE-110. Một người có thể được giao làm người chủ trì hồ sơ. <c>Holding</c>: số hồ sơ họ đang chủ trì và chưa lưu trữ; <c>Overdue</c>: trong đó số hồ sơ quá hạn nội bộ
+/// (hạn trước hôm nay, giờ Việt Nam). <c>IsDeputy</c>: phân công kiêm nhiệm. <c>IsCurrent</c>: đang là người chủ trì hồ sơ này.
+/// </summary>
+public sealed record AssigneeOption(Guid UserId, string DisplayName, bool IsDeputy, bool IsCurrent, int Holding, int Overdue);
 public sealed record TransitionRequest(string Action, string? Note, long? Version);

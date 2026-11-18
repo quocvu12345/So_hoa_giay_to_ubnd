@@ -198,6 +198,16 @@ def test_worker_that_doc_pdf_that_trong_kho_dung_bo_cuc_va_ghi_ket_qua_vao_csdl(
     assert scalar(db_url, "SELECT count(*) FROM hoso.ocr_pages WHERE job_id = %s", ids["job"]) >= 1
     assert scalar(db_url, "SELECT count(*) FROM hoso.ai_suggestions WHERE job_id = %s AND model_key = 'fake'", ids["job"]) == 1
     assert scalar(db_url, "SELECT count(*) FROM hoso.page_images WHERE file_id = %s", ids["file"]) >= 0
+    # Bản giả trích được trường từ chữ OCR giả: mỗi giá trị kèm trang, vùng nguồn theo tỉ lệ trang và độ tin cậy (BE-114 đọc các cột này).
+    with psycopg.connect(db_url) as conn:
+        rows = conn.execute(
+            "SELECT f.value, f.quote, f.source_pages, f.source_region, f.confidence, f.quote_verified FROM hoso.ai_field_suggestions f "
+            "JOIN hoso.ai_suggestions s ON s.id = f.suggestion_id WHERE s.job_id = %s AND f.value <> ''", (ids["job"],)).fetchall()
+    assert rows, "bản giả phải trích được ít nhất một trường"
+    for value, quote, pages, region, confidence, verified in rows:
+        assert verified and quote and pages == [region["page"]]
+        assert all(0 <= region[k] <= 1 for k in ("x", "y", "width", "height"))
+        assert 0.5 <= float(confidence) <= 0.99
 
 
 def test_role_worker_khong_doc_duoc_nguoi_dung_va_phan_quyen(db_url):

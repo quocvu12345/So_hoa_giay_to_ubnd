@@ -15,7 +15,7 @@ namespace HoSoSo.Api.Errors;
 /// - Lỗi hệ thống (5xx): ghi Error kèm stack, gửi GlitchTip nếu bật, người dùng chỉ thấy Mã lỗi.
 /// Mọi phản hồi lỗi có errorId (mã ngắn để người dùng báo) và correlationId.
 /// </summary>
-internal sealed class GlobalExceptionHandler(IProblemDetailsService problemDetails, ILogger<GlobalExceptionHandler> logger) : IExceptionHandler
+internal sealed class GlobalExceptionHandler(IProblemDetailsService problemDetails, ILogger<GlobalExceptionHandler> logger, HoSoSo.Infrastructure.Auditing.ErrorEventRecorder errorEvents) : IExceptionHandler
 {
     public async ValueTask<bool> TryHandleAsync(HttpContext context, Exception exception, CancellationToken cancellationToken)
     {
@@ -41,6 +41,8 @@ internal sealed class GlobalExceptionHandler(IProblemDetailsService problemDetai
             logger.LogWarning("request_rejected {ErrorId} {ErrorCode} {Status} {Path}", errorId, code, status, context.Request.Path.Value);
         }
 
+        RecordErrorEvent(context, errorId, code, status);
+
         context.Response.StatusCode = status;
         var problem = new ProblemDetails
         {
@@ -65,6 +67,23 @@ internal sealed class GlobalExceptionHandler(IProblemDetailsService problemDetai
             Exception = exception,
             ProblemDetails = problem,
         });
+    }
+
+    /// <summary>BE-117. Lưu Mã lỗi để quản trị tra ra request và người. Không bao giờ được làm hỏng việc trả lỗi cho người dùng.</summary>
+    private void RecordErrorEvent(HttpContext context, string errorId, string code, int status)
+    {
+        try
+        {
+            var user = context.RequestServices.GetService<ICurrentUser>();
+            var path = context.Request.Path.Value ?? "";      // không có chuỗi truy vấn: có thể chứa từ khóa tìm kiếm
+            errorEvents.Record(new HoSoSo.Infrastructure.Auditing.ErrorEventRecord(
+                errorId, context.TraceIdentifier, status, code, context.Request.Method, path.Length > 300 ? path[..300] : path,
+                user?.UserId, user?.ActiveAssignmentId, DateTimeOffset.UtcNow));
+        }
+        catch (Exception exception)
+        {
+            logger.LogWarning(exception, "error_event_record_failed {ErrorId}", errorId);
+        }
     }
 
     /// <summary>

@@ -6,14 +6,23 @@ using Microsoft.Extensions.Options;
 namespace HoSoSo.Api.Middleware;
 
 /// <summary>
-/// BE-13. Sau khi xác thực, chọn phân công đang dùng cho request này:
-///   - header X-Assignment-Id (Next đặt từ cookie hoso_assignment): phải là phân công còn hiệu lực của chính người dùng, hoặc ủy quyền còn hiệu lực;
-///   - không có header: dùng phân công mặc định (đầu danh sách).
-/// Gắn vai trò, đơn vị và quyền của phân công đó vào claims. Id của người khác hoặc đã hết hạn trả 403.
+/// BE-13, BE-118. Sau khi xác thực, chọn phân công đang dùng cho request này:
+///   - header X-Assignment-Id (Next đặt từ cookie hoso_assignment; trình duyệt đặt qua fetch): LỰA CHỌN TƯỜNG MINH, phải là phân công còn hiệu lực
+///     của chính người dùng, hoặc ủy quyền còn hiệu lực; sai thì 403;
+///   - không có header, request ĐỌC (chỉ GET; mọi endpoint của API là GET hoặc ghi, không có HEAD): dùng cookie hoso_assignment. Đây là cách duy nhất cho &lt;img&gt;, EventSource và liên kết tải tệp
+///     (không đặt được header). Cookie chỉ là gợi ý ngầm: giá trị sai hoặc cũ (hết hạn, thu hồi, của người đăng nhập trước trên cùng máy,
+///     của người khác) bị BỎ QUA và dùng phân công mặc định, không 403, vì không có lựa chọn nào của người dùng đang bị từ chối. Không bao giờ
+///     chọn được phân công không thuộc người dùng: cùng một phép kiểm với header, nên giá trị cookie bị giả cũng không nâng được quyền;
+///   - request GHI không bao giờ lấy phân công từ cookie (giữ nguyên: hành động thay đổi dữ liệu phải nêu rõ dùng phân công nào);
+///   - không có gì: phân công mặc định (đầu danh sách).
+/// Gắn vai trò, đơn vị và quyền của phân công đó vào claims.
 /// </summary>
-public sealed class ActiveAssignmentMiddleware(RequestDelegate next, IOptions<AuthOptions> authOptions)
+public sealed class ActiveAssignmentMiddleware(RequestDelegate next, IOptions<AuthOptions> authOptions, ILogger<ActiveAssignmentMiddleware> logger)
 {
     public const string HeaderName = "X-Assignment-Id";
+
+    /// <summary>Cookie httpOnly do Next đặt khi người dùng đổi phân công (frontend/src/lib/env.ts ASSIGNMENT_COOKIE).</summary>
+    public const string CookieName = "hoso_assignment";
 
     public async Task InvokeAsync(HttpContext context, IIdentityService identity)
     {
@@ -33,11 +42,23 @@ public sealed class ActiveAssignmentMiddleware(RequestDelegate next, IOptions<Au
 
         var assignments = await identity.ListAssignmentsAsync(userId, context.RequestAborted);
         var requested = context.Request.Headers[HeaderName].FirstOrDefault();
+        var fromCookie = false;
+        if (string.IsNullOrWhiteSpace(requested) && IsReadOnly(context.Request.Method)
+            && context.Request.Cookies.TryGetValue(CookieName, out var cookie) && !string.IsNullOrWhiteSpace(cookie))
+        {
+            requested = cookie;
+            fromCookie = true;
+        }
         var active = string.IsNullOrWhiteSpace(requested)
             ? assignments.FirstOrDefault()
             : assignments.FirstOrDefault(a => string.Equals(a.Id, requested, StringComparison.OrdinalIgnoreCase));
 
-        if (!string.IsNullOrWhiteSpace(requested) && active is null)
+        if (fromCookie && active is null)
+        {
+            logger.LogDebug("assignment_cookie_ignored");      // không ghi giá trị cookie: có thể là mã phân công của người khác
+            active = assignments.FirstOrDefault();
+        }
+        else if (!string.IsNullOrWhiteSpace(requested) && active is null)
         {
             await Results.Problem(statusCode: 403, title: "Phân công không dùng được",
                 detail: "Phân công này không còn hiệu lực hoặc không phải của bạn. Chọn lại phân công ở góc trên bên phải.",
@@ -72,6 +93,8 @@ public sealed class ActiveAssignmentMiddleware(RequestDelegate next, IOptions<Au
         }
         await next(context);
     }
+
+    private static bool IsReadOnly(string method) => HttpMethods.IsGet(method);
 
     /// <summary>Các đường dẫn dùng được khi phiên chưa qua MFA: báo trạng thái (/me), đăng nhập/đăng xuất, kiểm tra sống.</summary>
     private static bool IsStepUpAllowedPath(PathString path) =>

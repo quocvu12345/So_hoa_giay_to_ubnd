@@ -1,39 +1,151 @@
 using HoSoSo.Application.Common;
 using HoSoSo.Domain.Entities;
+using HoSoSo.Domain.Identity;
 using Microsoft.EntityFrameworkCore;
 
 namespace HoSoSo.Application.Dossiers;
 
 /// <summary>BE-60, BE-64, BE-66, BE-68, BE-69: đọc hồ sơ. Mọi truy vấn đi qua IScopeFilter nên ngoài phạm vi là "không thấy" (404).</summary>
-public sealed class DossierQueries(IHoSoDb db, IScopeFilter scope, ICurrentUser user)
+public sealed partial class DossierQueries(IHoSoDb db, IScopeFilter scope, ICurrentUser user, IClock clock)
 {
-    public async Task<Page<DossierListItem>> ListAsync(ListDossiersQuery q, CancellationToken ct)
+    public static readonly string[] SortColumns = ["updated", "code", "title", "due"];
+    /// <summary>Số hồ sơ tối đa một lần xuất CSV. Vượt thì từ chối thay vì cắt bớt âm thầm (người dùng sẽ tưởng bản xuất đầy đủ).</summary>
+    public const int MaxExportRows = 10_000;
+
+    /// <summary>
+    /// Bộ lọc dùng chung cho danh sách và xuất CSV (BE-60, BE-111), luôn qua phạm vi của phân công đang dùng. Năm, người chủ trì, quá hạn
+    /// (hạn nội bộ trước hôm nay giờ Việt Nam, hồ sơ chưa lưu trữ), vị trí kho (gồm mọi vị trí con) đều AND với các bộ lọc còn lại.
+    /// </summary>
+    private async Task<IQueryable<Dossier>> FilteredAsync(ListDossiersQuery q, CancellationToken ct)
     {
-        var limit = Math.Clamp(q.Limit, 1, 100);
         var dossiers = scope.Dossiers(db.Read<Dossier>());
-        if (q.Status is { Length: > 0 }) dossiers = dossiers.Where(d => d.Status == q.Status);
+        if (Values(q.Status, "status") is { Count: > 0 } statuses) dossiers = statuses.Count == 1 ? dossiers.Where(d => d.Status == statuses[0]) : dossiers.Where(d => statuses.Contains(d.Status));
         if (q.DepartmentCode is { Length: > 0 }) dossiers = dossiers.Where(d => d.DepartmentCode == q.DepartmentCode);
-        if (q.WorkGroupCode is { Length: > 0 }) dossiers = dossiers.Where(d => d.WorkGroupCode == q.WorkGroupCode);
+        if (Values(q.WorkGroupCode, "workGroup") is { Count: > 0 } groups) dossiers = groups.Count == 1 ? dossiers.Where(d => d.WorkGroupCode == groups[0]) : dossiers.Where(d => groups.Contains(d.WorkGroupCode));
+        if (q.Year is { } year) dossiers = dossiers.Where(d => d.Year == year);
+        if (q.AssigneeId is { } assignee) dossiers = dossiers.Where(d => d.AssigneeId == assignee);
+        if (q.Overdue)
+        {
+            var today = clock.Today();
+            dossiers = dossiers.Where(d => d.InternalDueOn != null && d.InternalDueOn < today && d.Status != "archived");
+        }
+        if (q.LocationId is { } location)
+        {
+            var ids = await LocationWithDescendantsAsync(location, ct);
+            dossiers = dossiers.Where(d => d.StorageLocationId != null && ids.Contains(d.StorageLocationId.Value));
+        }
         if (q.Mine) { var me = user.RequireUserId(); dossiers = dossiers.Where(d => d.AssigneeId == me); }
         if (q.Q is { Length: > 1 } text)
         {
             // Tìm không dấu theo tên hoặc mã hồ sơ: "dat dai" khớp "Đất đai".
             dossiers = dossiers.Where(d => HoSoDbContextFunctions.Fold(d.Title).Contains(HoSoDbContextFunctions.Fold(text)) || d.Code.ToLower().Contains(text.ToLower()));
         }
-        if (Cursor.Decode(q.Cursor) is var (at, id))
+        return dossiers;
+    }
+
+    /// <summary>
+    /// Bộ lọc nhận một hoặc nhiều giá trị cách nhau dấu phẩy ("draft,returned"), để một liên kết từ bảng tổng hợp ra đúng con số (BE-115).
+    /// Tối đa 12 giá trị, mỗi giá trị tối đa 40 ký tự; vượt thì 400 thay vì tạo truy vấn lớn tùy ý.
+    /// </summary>
+    private static List<string> Values(string? text, string field)
+    {
+        if (string.IsNullOrWhiteSpace(text)) return [];
+        var values = text.Split(',', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries).Distinct(StringComparer.Ordinal).ToList();
+        if (values.Count > 12 || values.Any(v => v.Length > 40))
+            throw new ValidationFailedException(new Dictionary<string, string[]> { [field] = ["Tối đa 12 giá trị, mỗi giá trị tối đa 40 ký tự, cách nhau bằng dấu phẩy."] });
+        return values;
+    }
+
+    /// <summary>Cây vị trí chỉ có 5 cấp (kho › phòng › tủ › kệ › hộp), nên đi từng cấp vài truy vấn nhỏ thay cho truy vấn đệ quy.</summary>
+    private async Task<List<Guid>> LocationWithDescendantsAsync(Guid root, CancellationToken ct)
+    {
+        var all = new List<Guid> { root };
+        var level = new List<Guid> { root };
+        for (var depth = 0; depth < 5 && level.Count > 0; depth++)
         {
-            dossiers = dossiers.Where(d => d.UpdatedAt < at || (d.UpdatedAt == at && d.Id.CompareTo(id) < 0));
+            level = await db.Read<StorageLocation>().Where(l => l.ParentId != null && level.Contains(l.ParentId.Value)).Select(l => l.Id).ToListAsync(ct);
+            all.AddRange(level);
         }
+        return all;
+    }
+
+    private static (string Sort, bool Descending) Ordering(ListDossiersQuery q)
+    {
+        var sort = string.IsNullOrWhiteSpace(q.Sort) ? "updated" : q.Sort.Trim().ToLowerInvariant();
+        if (!SortColumns.Contains(sort))
+            throw new ValidationFailedException(new Dictionary<string, string[]> { ["sort"] = [$"Chỉ sắp xếp theo: {string.Join(", ", SortColumns)}."] });
+        if (q.Dir is { Length: > 0 } dir && dir.ToLowerInvariant() is not ("asc" or "desc"))
+            throw new ValidationFailedException(new Dictionary<string, string[]> { ["dir"] = ["Chiều sắp xếp là asc hoặc desc."] });
+        // Mặc định: mới cập nhật trước; các cột còn lại tăng dần (hạn gần nhất trước).
+        var descending = q.Dir is { Length: > 0 } d ? d.Equals("desc", StringComparison.OrdinalIgnoreCase) : sort == "updated";
+        return (sort, descending);
+    }
+
+    private static IOrderedQueryable<Dossier> Sorted(IQueryable<Dossier> dossiers, string sort, bool descending) => (sort, descending) switch
+    {
+        ("code", false) => dossiers.OrderBy(d => d.Code).ThenBy(d => d.Id),
+        ("code", true) => dossiers.OrderByDescending(d => d.Code).ThenByDescending(d => d.Id),
+        ("title", false) => dossiers.OrderBy(d => d.Title).ThenBy(d => d.Id),
+        ("title", true) => dossiers.OrderByDescending(d => d.Title).ThenByDescending(d => d.Id),
+        // Hồ sơ chưa có hạn luôn xếp CUỐI, cả khi sắp giảm dần (PostgreSQL mặc định đặt NULL đầu khi giảm dần).
+        ("due", false) => dossiers.OrderBy(d => d.InternalDueOn == null).ThenBy(d => d.InternalDueOn).ThenBy(d => d.Id),
+        ("due", true) => dossiers.OrderBy(d => d.InternalDueOn == null).ThenByDescending(d => d.InternalDueOn).ThenByDescending(d => d.Id),
+        (_, false) => dossiers.OrderBy(d => d.UpdatedAt).ThenBy(d => d.Id),
+        _ => dossiers.OrderByDescending(d => d.UpdatedAt).ThenByDescending(d => d.Id),
+    };
+
+    /// <summary>Lấy các hồ sơ đứng SAU điểm cursor theo đúng thứ tự đang sắp (keyset: không lặp, không sót, nhanh ở trang sâu).</summary>
+    private static IQueryable<Dossier> After(IQueryable<Dossier> dossiers, string sort, bool descending, SortCursor c)
+    {
+        var id = c.Id;
+        switch (sort)
+        {
+            case "code":
+                var code = c.Key ?? "";
+                return descending ? dossiers.Where(d => string.Compare(d.Code, code) < 0 || (d.Code == code && d.Id.CompareTo(id) < 0))
+                                  : dossiers.Where(d => string.Compare(d.Code, code) > 0 || (d.Code == code && d.Id.CompareTo(id) > 0));
+            case "title":
+                var title = c.Key ?? "";
+                return descending ? dossiers.Where(d => string.Compare(d.Title, title) < 0 || (d.Title == title && d.Id.CompareTo(id) < 0))
+                                  : dossiers.Where(d => string.Compare(d.Title, title) > 0 || (d.Title == title && d.Id.CompareTo(id) > 0));
+            case "due":
+                if (c.Key is null)      // đang ở nhóm chưa có hạn (cuối danh sách): chỉ còn các hồ sơ chưa có hạn đứng sau theo Id
+                    return dossiers.Where(d => d.InternalDueOn == null && (descending ? d.Id.CompareTo(id) < 0 : d.Id.CompareTo(id) > 0));
+                var due = DateOnly.ParseExact(c.Key, "yyyy-MM-dd", System.Globalization.CultureInfo.InvariantCulture);
+                return descending
+                    ? dossiers.Where(d => d.InternalDueOn == null || d.InternalDueOn < due || (d.InternalDueOn == due && d.Id.CompareTo(id) < 0))
+                    : dossiers.Where(d => d.InternalDueOn == null || d.InternalDueOn > due || (d.InternalDueOn == due && d.Id.CompareTo(id) > 0));
+            default:
+                var at = new DateTimeOffset(long.Parse(c.Key ?? "0", System.Globalization.CultureInfo.InvariantCulture), TimeSpan.Zero);
+                return descending ? dossiers.Where(d => d.UpdatedAt < at || (d.UpdatedAt == at && d.Id.CompareTo(id) < 0))
+                                  : dossiers.Where(d => d.UpdatedAt > at || (d.UpdatedAt == at && d.Id.CompareTo(id) > 0));
+        }
+    }
+
+    private static string KeyOf(string sort, DossierListItem item) => sort switch
+    {
+        "code" => item.Code,
+        "title" => item.Title,
+        "due" => item.DueOn?.ToString("yyyy-MM-dd", System.Globalization.CultureInfo.InvariantCulture)!,
+        _ => item.UpdatedAt.UtcTicks.ToString(System.Globalization.CultureInfo.InvariantCulture),
+    };
+
+    public async Task<Page<DossierListItem>> ListAsync(ListDossiersQuery q, CancellationToken ct)
+    {
+        var limit = Math.Clamp(q.Limit, 1, 100);
+        var (sort, descending) = Ordering(q);
+        var dossiers = await FilteredAsync(q, ct);
+        if (SortCursor.Decode(q.Cursor, sort, descending) is { } cursor) dossiers = After(dossiers, sort, descending, cursor);
 
         var links = db.Read<DossierDocument>();
         var documents = db.Read<Document>();
+        var ordered = Sorted(dossiers, sort, descending);
         var rows = await (
-            from d in dossiers
+            from d in ordered
             join g in db.Read<WorkGroup>() on d.WorkGroupCode equals g.Code
             join s in db.Read<WorkflowState>() on d.Status equals s.Code
             join u in db.Read<User>() on d.AssigneeId equals u.Id into assignees
             from u in assignees.DefaultIfEmpty()
-            orderby d.UpdatedAt descending, d.Id descending
             select new DossierListItem(d.Id, d.Code, d.Title, d.Status, s.Label, d.WorkGroupCode, g.Title, d.DepartmentCode,
                 u.DisplayName, d.InternalDueOn, d.UpdatedAt,
                 links.Count(l => l.DossierId == d.Id && l.RelationKind == "component"),
@@ -42,8 +154,39 @@ public sealed class DossierQueries(IHoSoDb db, IScopeFilter scope, ICurrentUser 
                 d.Version))
             .Take(limit + 1).ToListAsync(ct);
 
-        var next = rows.Count > limit ? Cursor.Encode(rows[limit - 1].UpdatedAt, rows[limit - 1].Id) : null;
+        var last = rows.Count > limit ? rows[limit - 1] : null;
+        var next = last is null ? null : SortCursor.Encode(sort, descending, KeyOf(sort, last), last.Id);
         return new Page<DossierListItem>(rows.Take(limit).ToList(), next);
+    }
+
+    /// <summary>Một dòng của bản xuất CSV: những gì hiển thị ở danh sách cộng vị trí kho. Không có nội dung giấy tờ.</summary>
+    public sealed record ExportRow(string Code, string Title, string WorkGroupTitle, string DepartmentCode, string StatusLabel, string? AssigneeName,
+        DateOnly? DueOn, DateTimeOffset UpdatedAt, int DocumentCount, string? Location);
+
+    /// <summary>
+    /// BE-111. Cùng bộ lọc và thứ tự với danh sách, nhưng không phân trang. Quá <see cref="MaxExportRows"/> hồ sơ thì 422 (thu hẹp bộ lọc),
+    /// không cắt bớt: bản xuất thiếu mà tưởng đủ nguy hiểm hơn là không có.
+    /// </summary>
+    public async Task<IReadOnlyList<ExportRow>> ExportAsync(ListDossiersQuery q, CancellationToken ct)
+    {
+        var (sort, descending) = Ordering(q);
+        var ordered = Sorted(await FilteredAsync(q with { Cursor = null }, ct), sort, descending);
+        var links = db.Read<DossierDocument>();
+        var rows = await (
+            from d in ordered
+            join g in db.Read<WorkGroup>() on d.WorkGroupCode equals g.Code
+            join s in db.Read<WorkflowState>() on d.Status equals s.Code
+            join u in db.Read<User>() on d.AssigneeId equals u.Id into assignees
+            from u in assignees.DefaultIfEmpty()
+            join l in db.Read<StorageLocation>() on d.StorageLocationId equals l.Id into locations
+            from l in locations.DefaultIfEmpty()
+            select new ExportRow(d.Code, d.Title, g.Title, d.DepartmentCode, s.Label, u.DisplayName, d.InternalDueOn, d.UpdatedAt,
+                links.Count(x => x.DossierId == d.Id && x.RelationKind == "component"),
+                l == null ? d.PhysicalLocation : l.Code + " · " + l.Name))
+            .Take(MaxExportRows + 1).ToListAsync(ct);
+        if (rows.Count > MaxExportRows)
+            throw new AppException(422, "export_too_large", $"Có hơn {MaxExportRows:N0} hồ sơ khớp bộ lọc. Thu hẹp bộ lọc (năm, trạng thái, phòng) rồi xuất lại.");
+        return rows;
     }
 
     /// <summary>
@@ -72,6 +215,38 @@ public sealed class DossierQueries(IHoSoDb db, IScopeFilter scope, ICurrentUser 
                 links.Count(l => l.DossierId == d.Id && l.RelationKind == "component"),
                 links.Count(l => l.DossierId == d.Id && l.RelationKind == "component" && documents.Any(x => x.Id == l.DocumentId && x.DataReviewStatus == "verified" && x.MetadataStatus != "needs_review" && !db.Read<DocumentFieldValue>().Any(v => v.DocumentId == x.Id && v.NeedsReview))), d.Version))
             .Take(10).ToListAsync(ct);
+    }
+
+    /// <summary>
+    /// BE-110. Người có thể giao chủ trì hồ sơ này, cho trưởng phòng chọn. Cùng quy tắc với hàm SQL assign_dossier (nơi quyết định cuối cùng): người dùng còn hoạt động
+    /// có phân công RIÊNG "chuyên viên" còn hiệu lực ở đúng cơ quan và phòng của hồ sơ. Ủy quyền không được tính vì assign_dossier từ chối người chỉ có ủy quyền,
+    /// nên đưa họ vào danh sách sẽ mời chọn người mà lúc giao bị từ chối. Hồ sơ ngoài phạm vi phân công đang dùng: 404 (không lộ có hồ sơ hay không).
+    /// Không trả email, tên đăng nhập hay vai trò khác của người đó: chỉ những gì cần để chọn.
+    /// </summary>
+    public async Task<IReadOnlyList<AssigneeOption>> AssigneesAsync(Guid dossierId, CancellationToken ct)
+    {
+        var d = await scope.Dossiers(db.Read<Dossier>()).Where(x => x.Id == dossierId)
+            .Select(x => new { x.OrganizationCode, x.DepartmentCode, x.AssigneeId }).SingleOrDefaultAsync(ct) ?? throw AppException.NotFound("hồ sơ");
+        var now = clock.UtcNow;
+        var today = clock.Today();
+        var candidates = await (
+            from ur in db.Read<UserRole>()
+            join u in db.Read<User>() on ur.UserId equals u.Id
+            where u.Active && ur.RoleCode == RoleCode.Employee && ur.OrganizationCode == d.OrganizationCode && ur.DepartmentCode == d.DepartmentCode
+                  && ur.ValidFrom <= now && (ur.ValidUntil == null || ur.ValidUntil > now)
+            group ur by new { u.Id, u.DisplayName } into g
+            select new { g.Key.Id, g.Key.DisplayName, IsDeputy = g.All(x => x.IsDeputy) }).ToListAsync(ct);
+        var ids = candidates.Select(c => c.Id).ToList();
+        // Đếm trên mọi hồ sơ họ chủ trì, KHÔNG qua phạm vi của người đang xem: trưởng phòng cần biết tải thật của chuyên viên (số liệu, không phải nội dung).
+        var held = await db.Read<Dossier>().Where(x => x.AssigneeId != null && ids.Contains(x.AssigneeId.Value) && x.Status != "archived")
+            .GroupBy(x => x.AssigneeId!.Value)
+            .Select(g => new { UserId = g.Key, Holding = g.Count(), Overdue = g.Count(x => x.InternalDueOn != null && x.InternalDueOn < today) }).ToListAsync(ct);
+        var load = held.ToDictionary(x => x.UserId);
+        return candidates
+            .Select(c => new AssigneeOption(c.Id, c.DisplayName, c.IsDeputy, c.Id == d.AssigneeId,
+                load.TryGetValue(c.Id, out var l) ? l.Holding : 0, load.TryGetValue(c.Id, out l) ? l.Overdue : 0))
+            .OrderByDescending(a => a.IsCurrent).ThenBy(a => a.Holding).ThenBy(a => a.DisplayName, StringComparer.Create(new System.Globalization.CultureInfo("vi-VN"), true))
+            .ToList();
     }
 
     public async Task<DossierDetail> GetAsync(Guid id, CancellationToken ct)

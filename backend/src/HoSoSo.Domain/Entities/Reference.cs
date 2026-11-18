@@ -118,6 +118,24 @@ public sealed class AccessEvent : IAppendOnly
     public DateTimeOffset HappenedAt { get; set; }
 }
 
+/// <summary>
+/// BE-117. Một Mã lỗi đã trả cho người dùng, để quản trị tra ra request và người. Ghi ở nền bằng <c>ErrorEventRecorder</c> (không qua EF); EF chỉ đọc.
+/// Không có nội dung request, chuỗi truy vấn hay thông điệp ngoại lệ.
+/// </summary>
+public sealed class ErrorEvent : IAppendOnly
+{
+    public long Id { get; set; }
+    public required string ErrorId { get; set; }
+    public string? CorrelationId { get; set; }
+    public short Status { get; set; }
+    public required string ErrorCode { get; set; }
+    public required string Method { get; set; }
+    public required string Path { get; set; }
+    public Guid? UserId { get; set; }
+    public string? Assignment { get; set; }
+    public DateTimeOffset HappenedAt { get; set; }
+}
+
 /// <summary>Nhật ký thay đổi do trigger ghi. <c>OldRow</c>/<c>NewRow</c> là JSON của dòng; có thể chứa dữ liệu cá nhân nên API quản trị chỉ trả tên cột đã đổi.</summary>
 public sealed class AuditEvent : IAppendOnly
 {

@@ -674,6 +674,12 @@ RETURNING *;
 
 Job `running` có `heartbeat_at` cũ hơn 5 phút được trả về `queued` (tối đa 3 lần, sau đó `failed`). Trang đã đọc giữ nguyên, lần sau chỉ đọc trang còn thiếu.
 
+`ai_field_suggestions.source_region` (và `document_field_values.source_region` khi sao sang) là vùng chứa trích dẫn trên trang,
+toạ độ theo **tỉ lệ** kích thước trang (0..1), gốc ở góc trên bên trái, trang đánh số từ 1:
+`{"page": 2, "x": 0.12, "y": 0.30, "width": 0.40, "height": 0.03}`. Thêm `"approximate": true` khi engine chỉ ước theo vị trí dòng
+(trang lấy chữ từ lớp chữ PDF, chưa có khung chữ). `NULL` khi engine không biết vùng. `confidence` từ 0 đến 1, `NULL` khi engine không ước được.
+Hiện chỉ AI giả (`HOSO_AI_PROFILE=fake`) ghi hai cột này; bản MLX ghi `NULL` cho tới AI-21.
+
 `ai_suggestions` không bao giờ ghi đè dữ liệu đã đối chiếu: khi người dùng chấp nhận, API sao giá trị sang `document_field_values` (`value_origin = 'ocr'`, `needs_review = true`, `ai_field_suggestion_id`), người dùng xác nhận thì `needs_review = false`. Từ hai bảng này đo được tỉ lệ AI đúng theo từng loại giấy tờ và trường.
 
 ---

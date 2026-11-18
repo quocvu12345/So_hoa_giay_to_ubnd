@@ -9,14 +9,18 @@ namespace HoSoSo.Api.Endpoints;
 
 internal static class DossierEndpoints
 {
-    private sealed record ListParams(string? Status, string? Q, string? Department, string? WorkGroup, bool? Mine, string? Cursor, int? Limit);
-    private sealed record SearchParams(string? Q, string? Kind, int? Limit, string? DocumentType, string? WorkGroup, string? Department, string? Form, DateOnly? IssuedFrom, DateOnly? IssuedTo);
+    private sealed record ListParams(string? Status, string? Q, string? Department, string? WorkGroup, bool? Mine, string? Cursor, int? Limit,
+        int? Year, Guid? Assignee, bool? Overdue, Guid? LocationId, string? Sort, string? Dir)
+    {
+        public ListDossiersQuery ToQuery() => new(Status, Q, Department, WorkGroup, Mine ?? false, Cursor, Limit ?? 25, Year, Assignee, Overdue ?? false, LocationId, Sort, Dir);
+    }
+    private sealed record SearchParams(string? Q, string? Kind, int? Limit, string? DocumentType, string? WorkGroup, string? Department, string? Form, DateOnly? IssuedFrom, DateOnly? IssuedTo,
+        string? Issuer, string? Cursor);
 
     public static RouteGroupBuilder MapDossierEndpoints(this RouteGroupBuilder api)
     {
         var dossiers = api.MapGroup("/dossiers").WithTags("Hồ sơ");
-        dossiers.MapGet("/", async ([AsParameters] ListParams p, DossierQueries q, CancellationToken ct) =>
-                TypedResults.Ok(await q.ListAsync(new ListDossiersQuery(p.Status, p.Q, p.Department, p.WorkGroup, p.Mine ?? false, p.Cursor, p.Limit ?? 25), ct)))
+        dossiers.MapGet("/", async ([AsParameters] ListParams p, DossierQueries q, CancellationToken ct) => TypedResults.Ok(await q.ListAsync(p.ToQuery(), ct)))
             .RequirePermission(Permissions.DossierRead).WithSummary("Danh sách hồ sơ trong phạm vi, lọc và phân trang keyset");
 
         dossiers.MapPost("/", async (CreateDossierRequest body, DossierCommands c, CancellationToken ct) =>
@@ -26,6 +30,14 @@ internal static class DossierEndpoints
             })
             .Validate<CreateDossierRequest>().RequirePermission(Permissions.DossierPrepare).WithSummary("Tạo hồ sơ, mã do hệ thống cấp");
 
+        dossiers.MapGet("/export.csv", async ([AsParameters] ListParams p, DossierQueries q, IAccessLog access, CancellationToken ct) =>
+            {
+                var bytes = DossierCsv.Build(await q.ExportAsync(p.ToQuery(), ct));
+                // Đưa dữ liệu ra khỏi hệ thống: ghi nhật ký TRƯỚC khi trả (không ghi được thì không trả, như xuất gói và tải tệp).
+                await access.RecordDurableAsync("export", "dossier_list", null, ct);
+                return TypedResults.File(bytes, "text/csv; charset=utf-8", $"danh-sach-ho-so-{DateTime.UtcNow.AddHours(7):yyyyMMdd-HHmm}.csv");
+            })
+            .RequirePermission(Permissions.ExportCreate).WithSummary("Xuất danh sách hồ sơ dạng CSV theo cùng bộ lọc và thứ tự với danh sách (tối đa 10.000 dòng)");
         dossiers.MapGet("/suggestions", async (Guid documentId, DossierQueries q, CancellationToken ct) => TypedResults.Ok(await q.SuggestAsync(documentId, ct))).RequirePermission(Permissions.DossierPrepare).WithSummary("Hồ sơ gợi ý khi xếp một giấy tờ");
 
         dossiers.MapGet("/{id:guid}", async (Guid id, DossierQueries q, IAccessLog access, CancellationToken ct) =>
@@ -65,6 +77,8 @@ internal static class DossierEndpoints
         dossiers.MapGet("/{id:guid}/checklist", async (Guid id, DossierQueries q, CancellationToken ct) => TypedResults.Ok(await q.ChecklistAsync(id, ct)))
             .RequirePermission(Permissions.DossierRead).WithSummary("Thành phần đủ / thiếu / chưa đối chiếu");
 
+        dossiers.MapGet("/{id:guid}/assignees", async (Guid id, DossierQueries q, CancellationToken ct) => TypedResults.Ok(await q.AssigneesAsync(id, ct)))
+            .RequirePermission(Permissions.DossierAssign).WithSummary("Người có thể giao chủ trì hồ sơ này (chuyên viên của phòng), kèm số hồ sơ đang giữ và quá hạn");
         dossiers.MapPut("/{id:guid}/assignment", async (Guid id, AssignRequest body, DossierCommands c, CancellationToken ct) =>
                 TypedResults.Ok(await c.AssignAsync(id, body, ct)))
             .Validate<AssignRequest>().RequirePermission(Permissions.DossierAssign).WithSummary("Giao người chủ trì, phối hợp, hạn nội bộ");
@@ -84,12 +98,15 @@ internal static class DossierEndpoints
         var workspace = api.MapGroup("/workspace").WithTags("Việc của tôi");
         workspace.MapGet("/summary", async (DossierQueries q, CancellationToken ct) => TypedResults.Ok(await q.SummaryAsync(ct)))
             .WithSummary("Số liệu cho menu và màn Việc của tôi");
+        workspace.MapGet("/leadership", async (DossierQueries q, CancellationToken ct) => TypedResults.Ok(await q.LeadershipAsync(ct)))
+            .RequirePermission(Permissions.DossierDecide)
+            .WithSummary("Số liệu tổng hợp cho lãnh đạo: Chủ tịch UBND theo phòng; lãnh đạo HĐND theo hoạt động. Chỉ đếm hồ sơ trong phạm vi phân công đang dùng");
         workspace.MapGet("/queue", async (DossierQueries q, CancellationToken ct) => TypedResults.Ok(await q.QueueAsync(ct)))
             .WithSummary("Hàng việc theo phân công đang dùng");
 
         api.MapGet("/search", async ([AsParameters] SearchParams p, SearchHandler h, CancellationToken ct) =>
                 TypedResults.Ok(await h.SearchAsync(p.Q, p.Kind is "documents" or "dossiers" ? p.Kind : "all", p.Limit ?? 20,
-                    new SearchFilters(p.DocumentType, p.WorkGroup, p.Department, p.Form, p.IssuedFrom, p.IssuedTo), ct)))
+                    new SearchFilters(p.DocumentType, p.WorkGroup, p.Department, p.Form, p.IssuedFrom, p.IssuedTo, p.Issuer), ct, p.Cursor)))
             .WithTags("Tra cứu").RequirePermission(Permissions.DocumentView)
             .WithSummary("Tìm số ký hiệu (gần đúng), trích yếu, mã hồ sơ, toàn văn OCR (không dấu); lọc theo loại giấy tờ, nhóm, đơn vị, hình thức, ngày ban hành");
         return api;
