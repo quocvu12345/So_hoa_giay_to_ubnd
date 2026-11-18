@@ -31,7 +31,8 @@ function newId() {
  * Bước 1 · Nạp PDF (FE-21): kéo thả hoặc chọn nhiều tệp, tải 3 tệp song song bằng XHR để có tiến độ, hủy từng tệp,
  * báo trùng kèm liên kết tới giấy tờ cũ, báo sai định dạng ngay tại tệp đó. Sau khi tải xong, tiến độ đọc của AI cập nhật qua SSE.
  */
-export function Uploader({ batches }: { batches: BatchOption[] }) {
+/** `presetBatchId`: lô chọn sẵn khi mở từ trang lô quét (`?lo=`); thắng lô nhớ lần trước. Không còn trong danh sách lô mở thì bỏ qua. */
+export function Uploader({ batches, presetBatchId }: { batches: BatchOption[]; presetBatchId?: string | null }) {
   const inputId = useId();
   const [items, setItems] = useState<UploadItem[]>([]);
   const [reads, setReads] = useState<Record<string, ReadState>>({});
@@ -45,13 +46,13 @@ export function Uploader({ batches }: { batches: BatchOption[] }) {
   // Nhớ lô vừa dùng; không còn trong danh sách lô mở thì bỏ qua.
   useEffect(() => {
     try {
-      const saved = localStorage.getItem(LAST_BATCH_KEY);
+      const saved = presetBatchId && batches.some((b) => b.id === presetBatchId) ? presetBatchId : localStorage.getItem(LAST_BATCH_KEY);
       // eslint-disable-next-line react-hooks/set-state-in-effect -- localStorage chỉ có ở trình duyệt; đọc ở lần render đầu sẽ lệch với HTML máy chủ gửi về
       if (saved && batches.some((b) => b.id === saved)) setBatchId(saved);
     } catch {
       /* Không đọc được bộ nhớ trình duyệt thì thôi, không ảnh hưởng nạp tệp. */
     }
-  }, [batches]);
+  }, [batches, presetBatchId]);
 
   const patch = useCallback((id: string, change: Partial<UploadItem>) => {
     setItems((current) => current.map((item) => (item.id === id ? { ...item, ...change } : item)));

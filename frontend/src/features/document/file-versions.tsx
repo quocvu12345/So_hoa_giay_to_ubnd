@@ -56,6 +56,11 @@ export function FileVersions({ documentId, files, viewingId, canPrint }: Props) 
             {f.uploadedAt && <> · {formatDateTime(f.uploadedAt)}</>}
             {f.uploadedByName && <> · {f.uploadedByName}</>}
           </span>
+          {f.replacementReason && (
+            <span className="text-xs text-muted">
+              Thay bản quét{f.replacesFileId ? ` (thay ${files.find((o) => o.id === f.replacesFileId)?.name ?? "bản trước"}, phiên bản ${files.find((o) => o.id === f.replacesFileId)?.versionNo ?? "trước"})` : ""}: {f.replacementReason}
+            </span>
+          )}
           <span className="font-mono text-[11px] break-all text-muted">SHA-256 {f.sha256}</span>
           {!f.disposed && (
             <span className="flex flex-wrap items-center gap-2">

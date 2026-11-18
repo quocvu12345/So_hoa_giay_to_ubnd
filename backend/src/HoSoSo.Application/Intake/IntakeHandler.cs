@@ -1,6 +1,7 @@
 using System.Text.Json;
 using HoSoSo.Application.Common;
 using HoSoSo.Application.Documents;
+using FluentValidation;
 using HoSoSo.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
@@ -40,7 +41,7 @@ public sealed class IntakeHandler(IHoSoDb db, IScopeFilter scope, ICurrentUser u
     private IQueryable<BatchSummary> BatchesQuery(Guid? id = null)
     {
         var organization = user.OrganizationCode;
-        var files = db.Read<FileRecord>();
+        var files = DocumentFiles.CurrentScans(db.Read<FileRecord>());     // BE-126: bản đã bị thay không tính thêm một tệp
         var issues = db.Read<QualityIssue>();
         return db.Read<ScanBatch>().Where(b => b.OrganizationCode == organization && (id == null || b.Id == id))
             .OrderByDescending(b => b.OpenedAt)
@@ -53,7 +54,7 @@ public sealed class IntakeHandler(IHoSoDb db, IScopeFilter scope, ICurrentUser u
     {
         var summary = await BatchesQuery(id).SingleOrDefaultAsync(ct) ?? throw AppException.NotFound("lô quét");
         var jobs = db.Read<OcrJob>();
-        var files = await db.Read<FileRecord>().Where(f => f.ScanBatchId == id).OrderBy(f => f.UploadedAt)
+        var files = await DocumentFiles.CurrentScans(db.Read<FileRecord>()).Where(f => f.ScanBatchId == id).OrderBy(f => f.UploadedAt)
             .Select(f => new BatchFile(f.DocumentId, f.Id, f.OriginalName, f.PageCount,
                 jobs.Where(j => j.FileId == f.Id && j.JobType == "read_classify").OrderByDescending(j => j.CreatedAt).Select(j => j.Status).FirstOrDefault(),
                 f.UploadedAt)).ToListAsync(ct);
@@ -87,7 +88,7 @@ public sealed class IntakeHandler(IHoSoDb db, IScopeFilter scope, ICurrentUser u
             issue.ResolvedAt = now;
             issue.Description = $"{issue.Description}{(issue.Description.Length > 0 ? " · " : "")}Chấp nhận khi đóng lô: {note}";
         }
-        batch.ScannedPageCount = await db.Read<FileRecord>().Where(f => f.ScanBatchId == id).SumAsync(f => f.PageCount ?? 0, ct);
+        batch.ScannedPageCount = await DocumentFiles.CurrentScans(db.Read<FileRecord>()).Where(f => f.ScanBatchId == id).SumAsync(f => f.PageCount ?? 0, ct);
         batch.Status = "closed";
         batch.ClosedAt = now;
         await db.SaveChangesAsync(ct);
@@ -174,7 +175,7 @@ public sealed class IntakeHandler(IHoSoDb db, IScopeFilter scope, ICurrentUser u
         var document = await db.Set<Document>().SingleAsync(d => d.Id == documentId, ct);
         if (await DocumentEditRules.LockReasonAsync(db, documentId, document.Origin, document.IntakeStatus, ct) is { } locked) throw AppException.Conflict(locked);
         var current = await DocumentFiles.CurrentScans(db.Read<FileRecord>()).Where(f => f.DocumentId == documentId).OrderByDescending(f => f.VersionNo)
-            .Select(f => new { f.Id, f.ComponentKey, f.DisposedAt, f.StorageKey }).FirstOrDefaultAsync(ct)
+            .Select(f => new { f.Id, f.ComponentKey, f.DisposedAt, f.StorageKey, f.ScanBatchId }).FirstOrDefaultAsync(ct)
             ?? throw AppException.Conflict("Giấy tờ chưa có bản quét nên không có gì để thay. Tải PDF mới ở Tiếp nhận.");
         if (current.DisposedAt is not null || current.StorageKey is null) throw AppException.Conflict("Nội dung giấy tờ đã bị hủy nên không thay bản quét được.");
 
@@ -185,6 +186,7 @@ public sealed class IntakeHandler(IHoSoDb db, IScopeFilter scope, ICurrentUser u
             DocumentId = documentId, ComponentKey = current.ComponentKey, VersionNo = versionNo, FileRole = DocumentFiles.Scan, OriginalName = name,
             MediaType = "application/pdf", ByteSize = stored.ByteSize, Sha256 = stored.Sha256, StorageKey = stored.StorageKey, PageCount = pageCount,
             UploadedBy = me, UploadedAt = now, ReplacesFileId = current.Id, ReplacementReason = why,
+            ScanBatchId = current.ScanBatchId,       // cùng lô quét: lô chỉ đếm bản hiện hành nên số tệp không đổi
         };
         db.Set<FileRecord>().Add(file);
         await db.SaveChangesAsync(ct);
@@ -209,6 +211,11 @@ public sealed class IntakeHandler(IHoSoDb db, IScopeFilter scope, ICurrentUser u
         }
         await db.Set<PageImage>().Where(p => p.FileId == current.Id && (p.QualityStatus == "suspect" || p.QualityStatus == "rescan_required"))
             .ExecuteUpdateAsync(u => u.SetProperty(p => p.QualityStatus, "rescanned"), ct);
+        // Lô đã đóng đã ghi số trang tại lúc đóng: cập nhật theo bản hiện hành để biên bản lô không lệch.
+        if (current.ScanBatchId is { } batchId)
+            await db.Set<ScanBatch>().Where(b => b.Id == batchId && b.Status == "closed")
+                .ExecuteUpdateAsync(u => u.SetProperty(b => b.ScannedPageCount, db.Set<FileRecord>().Where(f => f.ScanBatchId == batchId && f.FileRole == DocumentFiles.Scan
+                    && !db.Set<FileRecord>().Any(n => n.ReplacesFileId == f.Id)).Sum(f => f.PageCount ?? 0)), ct);
         var reviewReset = document.DataReviewStatus == "verified";
         if (reviewReset) { document.DataReviewStatus = "pending"; document.ReviewedBy = null; document.ReviewedAt = null; }
         document.UpdatedAt = now;
@@ -394,5 +401,17 @@ public sealed class IntakeHandler(IHoSoDb db, IScopeFilter scope, ICurrentUser u
         var me = user.RequireUserId();
         return await db.Set<Document>().SingleOrDefaultAsync(d => d.Id == id && d.UploadedBy == me && d.Origin == "internal", ct)
             ?? throw AppException.NotFound("giấy tờ");
+    }
+}
+
+/// <summary>FE-41. Giới hạn chữ nhập khi tạo lô (giao diện dùng cùng số: <c>features/intake/batch-rules.ts</c>).</summary>
+public sealed class CreateBatchValidator : AbstractValidator<CreateBatchRequest>
+{
+    public CreateBatchValidator()
+    {
+        RuleFor(x => x.HandedOverBy).MaximumLength(200).WithMessage("Đơn vị bàn giao tối đa 200 ký tự.");
+        RuleFor(x => x.BoxLabel).MaximumLength(100).WithMessage("Nhãn hộp tối đa 100 ký tự.");
+        RuleFor(x => x.ExpectedSheetCount).InclusiveBetween(0, 100_000).When(x => x.ExpectedSheetCount is not null).WithMessage("Số tờ dự kiến từ 0 đến 100.000.");
+        RuleFor(x => x.Note).MaximumLength(1000).WithMessage("Ghi chú tối đa 1000 ký tự.");
     }
 }

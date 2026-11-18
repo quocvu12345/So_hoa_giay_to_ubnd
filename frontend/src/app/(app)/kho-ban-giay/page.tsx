@@ -10,6 +10,7 @@ import { PageHeader } from "@/components/ui/page-header";
 import { Chip } from "@/components/ui/status-chip";
 import { routes } from "@/config/routes";
 import { filterLocations, indentClass, KIND_LABELS, subtreeCounts } from "@/features/storage/location-labels";
+import { AddLocationButton } from "@/features/storage/location-panels";
 import { findLocationByQr, getLocations } from "@/features/storage/storage-data";
 import { ApiError } from "@/lib/api/server";
 import { pageSession } from "@/lib/auth/page-guard";
@@ -51,6 +52,7 @@ export default async function StoragePage({ searchParams }: PageProps<"/kho-ban-
         title="Kho bản giấy"
         description="Cây vị trí kho → phòng → tủ → kệ → hộp. Quét mã QR trên hộp để mở ngay."
         breadcrumbs={[{ label: "Việc của tôi", href: routes.home }, { label: "Kho bản giấy" }]}
+        actions={real ? <AddLocationButton parent={null} /> : undefined}
       />
       <PageBody>
         {!real ? (

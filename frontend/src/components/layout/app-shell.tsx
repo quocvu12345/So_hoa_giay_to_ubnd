@@ -12,6 +12,7 @@ import { LogoutButton } from "./logout-button";
 import { SessionNotices } from "./session-notices";
 import { MobileNav } from "./mobile-nav";
 import { NavList, type NavBadges } from "./nav-list";
+import { NotificationBell } from "./notification-bell";
 import { OpenCommandButton } from "./open-command-button";
 
 /**
@@ -53,10 +54,14 @@ export function AppShell({ session, badges, unread, children }: { session: Sessi
           )}
           <div className="ml-auto flex items-center gap-2">
             <OpenCommandButton />
-            <Link href={routes.notifications} className="relative grid size-10 place-items-center border border-line hover:border-primary" aria-label={`Thông báo, ${unread} chưa đọc`}>
-              <Bell aria-hidden className="size-5" />
-              {unread > 0 && <span className="absolute -top-1 -right-1 min-w-5 bg-bad px-1 text-center text-[11px] font-bold text-white">{unread}</span>}
-            </Link>
+            {session.isMock ? (
+              <Link href={routes.notifications} className="relative grid size-10 place-items-center border border-line hover:border-primary" aria-label={`Thông báo, ${unread} chưa đọc`}>
+                <Bell aria-hidden className="size-5" />
+                {unread > 0 && <span className="absolute -top-1 -right-1 min-w-5 bg-bad px-1 text-center text-[11px] font-bold text-white">{unread}</span>}
+              </Link>
+            ) : (
+              <NotificationBell unread={unread} />
+            )}
             <AssignmentSwitcher assignments={session.assignments} activeId={session.activeAssignment.id} />
             <Link href={routes.account} className="hidden h-10 max-w-48 items-center truncate border border-line px-3 text-[13px] font-semibold hover:border-primary xl:inline-flex">
               {session.user.displayName}

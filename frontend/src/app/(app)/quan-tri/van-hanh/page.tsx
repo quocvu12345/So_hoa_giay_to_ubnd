@@ -1,44 +1,85 @@
 import type { Metadata } from "next";
-import { Settings2 } from "lucide-react";
+import Link from "next/link";
+import { NeedsRealApi, PageBody } from "@/components/ui/blocks";
 import { NoAccess } from "@/components/ui/no-access";
-import { ScaffoldPage } from "@/components/ui/scaffold-page";
-import { ApiError, apiFetch } from "@/lib/api/server";
+import { PageHeader } from "@/components/ui/page-header";
+import { routes } from "@/config/routes";
+import { AiJobsList } from "@/features/ops/ai-jobs-list";
+import { AiStatusPanel } from "@/features/ops/ai-status-panel";
+import { BackupsPanel } from "@/features/ops/backups-panel";
+import { getAiJobs, getAiStatus, getBackups, getBackupStatus, getSettings } from "@/features/ops/ops-data";
+import { JOB_FILTERS, parseJobFilter } from "@/features/ops/ops-rules";
+import { SettingsPanel } from "@/features/ops/settings-panel";
 import { pageSession } from "@/lib/auth/page-guard";
+import { can } from "@/lib/auth/session";
 import { serverEnv } from "@/lib/env";
-import { AiQueuePanel, type QueueByKind } from "@/features/ops/ai-queue-panel";
+import { cn } from "@/lib/cn";
 
 export const metadata: Metadata = { title: "Vận hành" };
 
-const MOCK_BY_KIND: QueueByKind = { priority: 1, interactive: 0, background: 7, preempted24h: 3, oldestBackgroundSeconds: 1260, secondsPerPage: 7.4 };
+type Section = "ai" | "viec" | "sao-luu" | "cai-dat";
 
-/** Số liệu khay AI: bản thật gọi /admin/ai/status; lỗi gọi API thì hiện thông báo, không làm hỏng cả trang vận hành. */
-async function loadByKind(): Promise<{ data: QueueByKind | null; error: string | null }> {
-  if (serverEnv().mock) return { data: MOCK_BY_KIND, error: null };
-  try {
-    const status = await apiFetch<{ byKind: QueueByKind | null }>("/api/v1/admin/ai/status");
-    return { data: status.byKind, error: null };
-  } catch (error) {
-    if (error instanceof ApiError) return { data: null, error: `Chưa đọc được hàng đợi AI (${error.errorId ?? error.code}).` };
-    throw error;
-  }
-}
-
-export default async function AdminOperationsPage() {
+/**
+ * Vận hành (FE-44, BE-88, BE-89, BE-120): máy AI (hàng đợi, worker, mô hình), việc AI (hủy, chạy lại), sao lưu, cài đặt hệ thống.
+ * Mỗi mục là một giá trị `?muc=` trên URL; chỉ hiện mục mà phân công đang dùng có quyền (`processing.manage` cho hai mục AI, `admin.settings` cho sao lưu và cài đặt).
+ */
+export default async function AdminOperationsPage({ searchParams }: PageProps<"/quan-tri/van-hanh">) {
   const { session, allowed } = await pageSession(["processing.manage", "admin.settings"]);
   if (!allowed) return <NoAccess session={session} what="xem vận hành" />;
-  const { data, error } = await loadByKind();
+  const params = await searchParams;
+  const canAi = can(session, "processing.manage");
+  const canSettings = can(session, "admin.settings");
+  const available: { value: Section; label: string }[] = [
+    ...(canAi ? [{ value: "ai" as const, label: "Máy AI" }, { value: "viec" as const, label: "Việc AI" }] : []),
+    ...(canSettings ? [{ value: "sao-luu" as const, label: "Sao lưu" }, { value: "cai-dat" as const, label: "Cài đặt" }] : []),
+  ];
+  const wanted = typeof params.muc === "string" ? params.muc : "";
+  const section = available.find((s) => s.value === wanted)?.value ?? available[0].value;
+  const jobFilter = parseJobFilter(params["trang-thai"]);
+  const real = !serverEnv().mock;
+
   return (
-    <ScaffoldPage
-      title="Vận hành"
-      description="Hàng đợi AI, máy đọc PDF, phiên bản mô hình, lần sao lưu gần nhất và cài đặt hệ thống."
-      breadcrumbs={[{ label: "Quản trị" }, { label: "Vận hành" }]}
-      icon={Settings2}
-      emptyTitle="Tình trạng hệ thống"
-      emptyText="Độ dài hàng đợi, job lỗi, thời gian đọc trung bình mỗi trang, dung lượng kho tệp, kết quả sao lưu."
-      task="FE-44 (API: BE-88, BE-89)"
-      plan={["Đọc lại job lỗi, hủy job treo", "Liên kết công cụ thử nghiệm SAM 3 (chỉ quản trị kỹ thuật)"]}
-    >
-      {data ? <AiQueuePanel data={data} /> : error ? <p role="alert" className="border border-bad bg-bad-soft p-3 text-sm text-bad">{error}</p> : null}
-    </ScaffoldPage>
+    <>
+      <PageHeader
+        title="Vận hành"
+        description="Máy AI và hàng đợi, việc đọc lỗi cần chạy lại, sao lưu và cài đặt hệ thống."
+        breadcrumbs={[{ label: "Quản trị" }, { label: "Vận hành" }]}
+      />
+      <nav aria-label="Mục vận hành" className="flex gap-1 overflow-x-auto border-b border-line bg-surface px-4 sm:px-6">
+        {available.map((s) => (
+          <Link key={s.value} href={`${routes.adminOperations}?muc=${s.value}` as "/quan-tri/van-hanh"} aria-current={s.value === section ? "page" : undefined}
+            className={cn("flex-none border-b-[3px] px-3 py-2.5 text-sm font-semibold", s.value === section ? "border-primary text-primary" : "border-transparent text-muted hover:text-ink")}>
+            {s.label}
+          </Link>
+        ))}
+      </nav>
+      <PageBody>
+        {!real ? <NeedsRealApi what="Vận hành" /> : <SectionBody section={section} jobFilter={jobFilter} />}
+      </PageBody>
+    </>
+  );
+}
+
+async function SectionBody({ section, jobFilter }: { section: Section; jobFilter: ReturnType<typeof parseJobFilter> }) {
+  if (section === "ai") return <AiStatusPanel status={await getAiStatus()} />;
+  if (section === "sao-luu") {
+    const [status, runs] = await Promise.all([getBackupStatus(), getBackups()]);
+    return <BackupsPanel status={status} runs={runs} />;
+  }
+  if (section === "cai-dat") return <SettingsPanel settings={await getSettings()} />;
+
+  const page = await getAiJobs(jobFilter);
+  return (
+    <div className="grid gap-3">
+      <nav aria-label="Lọc việc AI" className="flex flex-wrap gap-2 text-sm">
+        {JOB_FILTERS.map((f) => (
+          <Link key={f.value} href={`${routes.adminOperations}?muc=viec&trang-thai=${f.value}` as "/quan-tri/van-hanh"} aria-current={f.value === jobFilter ? "page" : undefined}
+            className={cn("border px-3 py-1.5", f.value === jobFilter ? "border-primary bg-primary text-white" : "border-line-strong hover:border-primary")}>
+            {f.label}
+          </Link>
+        ))}
+      </nav>
+      <AiJobsList key={`${jobFilter}-${page.items[0]?.id ?? "rong"}-${page.items[0]?.status ?? ""}`} initial={page.items} initialCursor={page.nextCursor ?? null} filter={jobFilter} />
+    </div>
   );
 }

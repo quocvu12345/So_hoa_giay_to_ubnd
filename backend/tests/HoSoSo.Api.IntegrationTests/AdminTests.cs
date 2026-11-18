@@ -163,4 +163,21 @@ public sealed class AdminTests(DbApiFactory api) : IClassFixture<DbApiFactory>
         expiring.ShouldNotContain(u => u.Username == "demo_admin");
         expiring.ShouldAllBe(u => u.ExpiringAssignments > 0);
     }
+
+    private sealed record Permission(string Code, string Description);
+    private sealed record Role(string Code, string Name, List<Permission> Permissions);
+
+    [Fact]
+    public async Task Danh_sach_vai_tro_kem_quyen_cho_man_uy_quyen_va_chi_quan_tri_nguoi_dung_xem_duoc()
+    {
+        var admin = await api.LoginAsync("demo_admin");
+        var roles = await (await admin.GetAsync("/api/v1/admin/roles")).ReadAsync<List<Role>>();
+        roles.Select(r => r.Code).ShouldBe(["chair", "clerk", "council", "employee", "manager", "technical_admin"], ignoreOrder: true);
+        var manager = roles.Single(r => r.Code == "manager");
+        manager.Permissions.Select(p => p.Code).ShouldContain("dossier.assign");
+        manager.Permissions.ShouldAllBe(p => p.Description.Length > 0);
+        manager.Permissions.Select(p => p.Code).ShouldNotContain("dossier.decide", "trưởng phòng không có quyền cho ý kiến lãnh đạo");
+        roles.Single(r => r.Code == "technical_admin").Permissions.Select(p => p.Code).ShouldContain("admin.users");
+        (await (await api.LoginAsync("demo_cv_ht")).GetAsync("/api/v1/admin/roles")).StatusCode.ShouldBe(HttpStatusCode.Forbidden);
+    }
 }

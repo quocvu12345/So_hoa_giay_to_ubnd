@@ -7,6 +7,7 @@ import { CircleStop, Trash2, Undo2, Upload } from "lucide-react";
 import { cancelReading, discardDocument, loadMoreInbox, restoreDocument } from "@/app/actions/intake";
 import { Button, ButtonLink } from "@/components/ui/button";
 import { EmptyState } from "@/components/ui/blocks";
+import { RowNavigation } from "@/components/ui/row-navigation";
 import { useToast } from "@/components/ui/toast";
 import { routes } from "@/config/routes";
 import { cn } from "@/lib/cn";
@@ -145,6 +146,7 @@ export function InboxTable({ status, items: initial, nextCursor: initialCursor, 
 
   return (
     <div className="grid gap-3">
+      <RowNavigation />
       {status === "inbox" && (
         <div role="group" aria-label="Lọc theo tình trạng đọc" className="flex flex-wrap items-center gap-1.5">
           {AI_FILTERS.map((f) => {
@@ -330,7 +332,7 @@ function RowActions({
           {stage === "ready" && (
             <>
               {canExtract && <ExtractNowButton scope="document" id={item.documentId} force />}
-              <ButtonLink size="sm" variant="primary" href={routes.intakeReview(item.documentId)}>
+              <ButtonLink size="sm" variant="primary" href={routes.intakeReview(item.documentId)} row>
                 Đối chiếu
               </ButtonLink>
             </>
@@ -338,7 +340,7 @@ function RowActions({
           {(stage === "failed" || stage === "cancelled") && (
             <>
               {canExtract && <ExtractNowButton scope="document" id={item.documentId} variant="primary" label="Đọc lại" />}
-              <ButtonLink size="sm" href={routes.intakeReview(item.documentId)}>
+              <ButtonLink size="sm" href={routes.intakeReview(item.documentId)} row>
                 Xem
               </ButtonLink>
             </>

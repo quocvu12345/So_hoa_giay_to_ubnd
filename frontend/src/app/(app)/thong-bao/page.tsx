@@ -1,32 +1,45 @@
 import type { Metadata } from "next";
 import { Bell } from "lucide-react";
-import { ScaffoldPage } from "@/components/ui/scaffold-page";
+import { RefreshOnEvents } from "@/components/layout/refresh-on-events";
+import { EmptyState, NeedsRealApi, PageBody } from "@/components/ui/blocks";
+import { PageHeader } from "@/components/ui/page-header";
 import { routes } from "@/config/routes";
+import { getNotifications } from "@/features/notifications/notification-data";
+import { NotificationList } from "@/features/notifications/notification-list";
 import { pageSession } from "@/lib/auth/page-guard";
-import { MOCK_NOTIFICATIONS } from "@/lib/mock/data";
+import { serverEnv } from "@/lib/env";
 
 export const metadata: Metadata = { title: "Thông báo" };
 
-export default async function NotificationsPage() {
+/**
+ * Thông báo (FE-40): việc được giao, hồ sơ bị trả lại, chờ ý kiến, sắp đến hạn, nộp lưu, mượn trả, đề nghị hủy.
+ * Thông báo mới đến qua SSE thì trang tự làm mới và chuông tăng số (`NotificationBell`).
+ */
+export default async function NotificationsPage({ searchParams }: PageProps<"/thong-bao">) {
   await pageSession();
+  const unreadOnly = (await searchParams)["chua-doc"] === "1";
+  const real = !serverEnv().mock;
+  const page = real ? await getNotifications({ unread: unreadOnly }) : null;
+
   return (
-    <ScaffoldPage
-      title="Thông báo"
-      description="Việc được giao, hồ sơ bị trả lại, chờ ý kiến, sắp đến hạn và PDF đã đọc xong."
-      breadcrumbs={[{ label: "Việc của tôi", href: routes.home }, { label: "Thông báo" }]}
-      icon={Bell}
-      task="FE-40 (API: BE-70)"
-      plan={["Thông báo mới đến trực tiếp qua SSE, chuông cập nhật số", "Đánh dấu tất cả đã đọc"]}
-    >
-      <ul className="grid border border-line bg-surface">
-        {MOCK_NOTIFICATIONS.map((n) => (
-          <li key={n.id} className={`grid gap-0.5 border-t border-line px-4 py-3 first:border-t-0 ${n.read ? "" : "bg-accent-soft/50"}`}>
-            <span className="text-sm font-semibold">{n.read ? "" : "● "}{n.title}</span>
-            <span className="text-sm text-muted">{n.body}</span>
-            <span className="text-xs text-muted">{n.at}</span>
-          </li>
-        ))}
-      </ul>
-    </ScaffoldPage>
+    <>
+      <PageHeader
+        title="Thông báo"
+        description="Việc được giao, hồ sơ bị trả lại, chờ ý kiến, sắp đến hạn, nộp lưu, mượn trả và đề nghị hủy."
+        breadcrumbs={[{ label: "Việc của tôi", href: routes.home }, { label: "Thông báo" }]}
+      />
+      <PageBody>
+        {!page ? (
+          <NeedsRealApi what="Thông báo" />
+        ) : page.items.length === 0 ? (
+          <EmptyState icon={Bell} title={unreadOnly ? "Không có thông báo chưa đọc" : "Chưa có thông báo nào"}>
+            {unreadOnly ? "Bạn đã đọc hết. Bỏ lọc để xem lại các thông báo cũ." : "Khi có hồ sơ giao cho bạn, bị trả lại hoặc sắp đến hạn, thông báo hiện ở đây."}
+          </EmptyState>
+        ) : (
+          <NotificationList key={`${unreadOnly}-${page.items[0]?.id}-${page.unread}`} initial={page.items} initialCursor={page.nextCursor ?? null} unread={page.unread} unreadOnly={unreadOnly} />
+        )}
+        {real && <RefreshOnEvents events={["notification.created", "resync"]} />}
+      </PageBody>
+    </>
   );
 }

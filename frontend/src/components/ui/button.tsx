@@ -38,15 +38,18 @@ export function ButtonLink({
   size = "md",
   className,
   children,
+  row,
 }: {
   href: Route;
   variant?: Variant;
   size?: Size;
   className?: string;
   children: ReactNode;
+  /** Đánh dấu là liên kết chính của một dòng danh sách để đi bằng ↑ ↓ (FE-48, `RowNavigation`). */
+  row?: boolean;
 }) {
   return (
-    <Link href={href} className={buttonClass(variant, size, className)}>
+    <Link href={href} className={buttonClass(variant, size, className)} data-row={row ? "" : undefined}>
       {children}
     </Link>
   );

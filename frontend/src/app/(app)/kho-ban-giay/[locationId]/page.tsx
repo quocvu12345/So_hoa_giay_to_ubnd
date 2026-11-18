@@ -9,11 +9,13 @@ import { EmptyState, NeedsRealApi, PageBody, Section } from "@/components/ui/blo
 import { NoAccess } from "@/components/ui/no-access";
 import { PageHeader } from "@/components/ui/page-header";
 import { RowNavigation } from "@/components/ui/row-navigation";
-import { WorkflowChip } from "@/components/ui/status-chip";
+import { Chip, WorkflowChip } from "@/components/ui/status-chip";
 import { routes } from "@/config/routes";
 import { listDossiers, UUID } from "@/features/dossier/dossier-data";
 import { parseDossierFilter } from "@/features/dossier/dossier-filter";
 import { KIND_LABELS, subtreeCounts } from "@/features/storage/location-labels";
+import { LocationActions } from "@/features/storage/location-panels";
+import { labelsHref, subtreeIds } from "@/features/storage/location-rules";
 import { getLocation, getLocations } from "@/features/storage/storage-data";
 import { pageSession } from "@/lib/auth/page-guard";
 import { serverEnv } from "@/lib/env";
@@ -53,9 +55,13 @@ export default async function StorageLocationPage({ params }: PageProps<"/kho-ba
             <Printer aria-hidden className="size-4" /> In nhãn QR
           </a>
         }
+        meta={!location.active ? <Chip tone="neutral">Đã ngừng dùng</Chip> : undefined}
       />
       <PageBody className="lg:grid-cols-[minmax(0,1fr)_240px]">
         <div className="grid min-w-0 content-start gap-4">
+          <Section title="Quản lý vị trí" description="Thêm vị trí con, sửa tên, ngừng dùng khi không còn hồ sơ và vị trí con đang dùng, in nhãn QR cả nhánh.">
+            <LocationActions location={location} labelsHref={labelsHref(subtreeIds(all, location.id))} />
+          </Section>
           <Section title={`Hồ sơ ở đây · ${here}`} description="Gồm hồ sơ ở các vị trí con. Chỉ hiện hồ sơ trong phạm vi phân công của bạn.">
             {page.items.length === 0 ? (
               <EmptyState title="Chưa có hồ sơ nào ở vị trí này">Hồ sơ được xếp vào vị trí khi nộp lưu hoặc khi sửa thông tin hồ sơ.</EmptyState>

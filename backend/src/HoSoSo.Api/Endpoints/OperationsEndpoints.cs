@@ -99,6 +99,8 @@ internal static class OperationsEndpoints
         admin.MapGet("/users", async (string? q, bool? active, bool? expiring, AdminHandler h, CancellationToken ct) =>
                 TypedResults.Ok(await h.ListUsersAsync(q, active, ct, expiring ?? false)))
             .RequirePermission(Permissions.AdminUsers).WithSummary("Người dùng; mỗi dòng kèm số phân công sắp hết hạn (≤ 7 ngày); expiring=true chỉ lấy những người đó");
+        admin.MapGet("/roles", async (AdminHandler h, CancellationToken ct) => TypedResults.Ok(await h.RolesAsync(ct)))
+            .RequirePermission(Permissions.AdminUsers).WithSummary("Vai trò và quyền của từng vai trò (cho màn phân công và ủy quyền)");
         admin.MapGet("/users/{id:guid}", async (Guid id, AdminHandler h, CancellationToken ct) => TypedResults.Ok(await h.GetUserAsync(id, ct)))
             .RequirePermission(Permissions.AdminUsers).WithSummary("Chi tiết người dùng: phân công (kể cả đã kết thúc) và ủy quyền");
         admin.MapPost("/users", async (CreateUserRequest body, AdminHandler h, CancellationToken ct) =>

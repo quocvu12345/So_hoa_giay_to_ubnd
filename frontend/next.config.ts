@@ -22,6 +22,12 @@ const nextConfig: NextConfig = {
       "*.css": { loaders: ["@tailwindcss/turbopack"], as: "*.css" },
     },
   },
+  /**
+   * Khi dev, Next nén gzip mọi phản hồi, kể cả luồng SSE `/api/v1/events` đi qua phép chuyển tiếp bên dưới: bộ nén giữ byte lại nên sự kiện
+   * (chuông thông báo, tiến độ job) tới trễ hoặc không tới. Khi triển khai Caddy đứng trước và định tuyến /api/* thẳng tới API nên không bị;
+   * giữ nén của Next cho trang ở đó.
+   */
+  compress: process.env.NODE_ENV === "production",
   async headers() {
     return [{ source: "/:path*", headers: securityHeaders }];
   },

@@ -1,3 +1,4 @@
+import { execFileSync } from "node:child_process";
 import { readFileSync } from "node:fs";
 import { resolve } from "node:path";
 import { test as base, expect, type Page } from "@playwright/test";
@@ -12,12 +13,12 @@ import AxeBuilder from "@axe-core/playwright";
  * Đăng nhập bằng `dev_admin` rồi chọn phân công theo vai trò (và đầu mối nếu có nhiều phân công cùng vai trò, ví dụ trưởng phòng),
  * như khi người dùng bấm đổi phân công. Gọi lại để đổi vai giữa chừng; trang đang mở cần tải lại để thấy phân công mới.
  */
-export async function signIn(page: Page, role: "employee" | "manager" | "clerk" = "employee", department?: string) {
-  const login = await page.request.get("/api/v1/auth/dev-login?username=dev_admin&returnUrl=/");
-  expect(login.ok(), "đăng nhập dev phải thành công").toBeTruthy();
+export async function signIn(page: Page, role: "employee" | "manager" | "clerk" | "technical_admin" | "chair" = "employee", department?: string, username = "dev_admin") {
+  const login = await page.request.get(`/api/v1/auth/dev-login?username=${encodeURIComponent(username)}&returnUrl=/`);
+  expect(login.ok(), `đăng nhập dev ${username} phải thành công`).toBeTruthy();
   const me = (await (await page.request.get("/api/v1/me")).json()) as { assignments: { id: string; role: string; departmentCode: string | null }[] };
   const assignment = me.assignments.find((a) => a.role === role && (department === undefined || a.departmentCode === department));
-  expect(assignment, `tài khoản dev_admin phải có phân công ${role}${department ? ` ở ${department}` : ""}`).toBeTruthy();
+  expect(assignment, `tài khoản ${username} phải có phân công ${role}${department ? ` ở ${department}` : ""}`).toBeTruthy();
   const base = new URL(page.url() === "about:blank" ? (process.env.E2E_BASE_URL ?? "http://localhost:3000") : page.url());
   await page.context().addCookies([{ name: "hoso_assignment", value: assignment!.id, url: base.origin }]);
 }
@@ -46,6 +47,52 @@ export function samplePdf(sample: string, tag: string) {
   return { name: `e2e-${sample}-${tag}.pdf`, mimeType: "application/pdf", buffer: bytes };
 }
 
+/**
+ * Chạy một câu SQL trên CSDL dev (`psql`) để dựng dữ liệu mà giao diện không tạo được (ví dụ thông báo cho chính người đang thử:
+ * API loại người thao tác khỏi người nhận). Chỉ dùng cho dữ liệu thử có tiền tố "E2E"; địa chỉ đổi được bằng `E2E_DATABASE_URL`.
+ * Trả về từng dòng kết quả (cột cách nhau `|`), rỗng nếu không có.
+ */
+export function sql(statement: string): string[] {
+  const url = process.env.E2E_DATABASE_URL ?? "postgresql://quoc@127.0.0.1:5432/hoso_dev";
+  const out = execFileSync("psql", [url, "-v", "ON_ERROR_STOP=1", "-At", "-c", statement], { encoding: "utf8" });
+  return out.split("\n").filter(Boolean);
+}
+
+/**
+ * Tài khoản dev THỨ HAI có một phân công (idempotent): cần khi luật bắt "người khác" làm bước kế tiếp (phê duyệt hủy khác người đề nghị) mà `dev_admin`
+ * là người duy nhất mọi E2E dùng. `is_demo` để đăng nhập được bằng đường dev. Dữ liệu thử mang tên đăng nhập bắt đầu "e2e.".
+ */
+export function ensureDevUser(username: string, displayName: string, role: string, organization: string) {
+  sql(`INSERT INTO hoso.users(username, display_name, is_demo) VALUES ('${username}', '${displayName}', true) ON CONFLICT (username) DO UPDATE SET is_demo = true, active = true`);
+  sql(`INSERT INTO hoso.user_roles(user_id, role_code, organization_code, assignment_basis)
+       SELECT u.id, '${role}', '${organization}', 'E2E tài khoản thử, không dùng thật' FROM hoso.users u
+       WHERE u.username = '${username}' AND NOT EXISTS (SELECT 1 FROM hoso.user_roles r WHERE r.user_id = u.id AND r.role_code = '${role}' AND r.organization_code = '${organization}')`);
+}
+
+/**
+ * PDF nhiều trang hợp lệ tự dựng (bảng xref đúng): mẫu trong data/filled-samples đều một trang nên không dùng được để thử tách văn bản.
+ * Mỗi trang ghi "Trang N" bằng chữ; `marker` làm mã băm khác nhau giữa các lần chạy (không bị chặn tải trùng).
+ */
+export function multiPagePdf(pages: number, marker: string) {
+  const objects: string[] = [];
+  const kids = Array.from({ length: pages }, (_, i) => `${3 + i * 2} 0 R`).join(" ");
+  objects.push("<< /Type /Catalog /Pages 2 0 R >>");
+  objects.push(`<< /Type /Pages /Kids [${kids}] /Count ${pages} >>`);
+  for (let i = 0; i < pages; i++) {
+    const pageObject = 3 + i * 2;
+    const stream = `BT /F1 24 Tf 20 160 Td (Trang ${i + 1} - ${marker}) Tj ET`;
+    objects.push(`<< /Type /Page /Parent 2 0 R /MediaBox [0 0 240 320] /Resources << /Font << /F1 << /Type /Font /Subtype /Type1 /BaseFont /Helvetica >> >> >> /Contents ${pageObject + 1} 0 R >>`);
+    objects.push(`<< /Length ${stream.length} >>\nstream\n${stream}\nendstream`);
+  }
+  let body = "%PDF-1.4\n";
+  const offsets: number[] = [];
+  objects.forEach((o, i) => { offsets.push(body.length); body += `${i + 1} 0 obj\n${o}\nendobj\n`; });
+  const xref = body.length;
+  body += `xref\n0 ${objects.length + 1}\n0000000000 65535 f \n${offsets.map((o) => `${String(o).padStart(10, "0")} 00000 n \n`).join("")}`;
+  body += `trailer\n<< /Size ${objects.length + 1} /Root 1 0 R >>\nstartxref\n${xref}\n%%EOF\n`;
+  return { name: `e2e-nhieu-trang-${marker}.pdf`, mimeType: "application/pdf", buffer: Buffer.from(body, "latin1") };
+}
+
 /** Lỗi CSP và lỗi script trong console. Màn đạt khi không có dòng nào. */
 export function watchConsole(page: Page) {
   const problems: string[] = [];
@@ -61,7 +108,7 @@ export function watchConsole(page: Page) {
 export async function expectAccessible(page: Page) {
   const result = await new AxeBuilder({ page }).withTags(["wcag2a", "wcag2aa"]).analyze();
   const serious = result.violations.filter((v) => v.impact === "serious" || v.impact === "critical");
-  expect(serious.map((v) => `${v.id}: ${v.help} (${v.nodes.length} chỗ)`), "lỗi tiếp cận nghiêm trọng").toEqual([]);
+  expect(serious.map((v) => `${v.id}: ${v.help} (${v.nodes.length} chỗ) ${v.nodes.slice(0, 2).map((n) => n.target.join(" ")).join(" | ")}`), "lỗi tiếp cận nghiêm trọng").toEqual([]);
 }
 
 export const test = base.extend({});

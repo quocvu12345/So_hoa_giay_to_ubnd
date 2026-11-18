@@ -50,6 +50,17 @@ public sealed class QualityTests(DbApiFactory api) : IClassFixture<DbApiFactory>
     }
 
     [Fact]
+    public async Task Tao_lo_gioi_han_do_dai_chu_va_so_to_du_kien()
+    {
+        var clerk = await api.LoginAsync("demo_clerk_ubnd");
+        (await clerk.PostJsonAsync("/api/v1/intake/batches", new { handedOverBy = new string('a', 201) })).StatusCode.ShouldBe(HttpStatusCode.BadRequest);
+        (await clerk.PostJsonAsync("/api/v1/intake/batches", new { boxLabel = new string('b', 101) })).StatusCode.ShouldBe(HttpStatusCode.BadRequest);
+        (await clerk.PostJsonAsync("/api/v1/intake/batches", new { expectedSheetCount = 100_001 })).StatusCode.ShouldBe(HttpStatusCode.BadRequest);
+        (await clerk.PostJsonAsync("/api/v1/intake/batches", new { note = new string('c', 1001) })).StatusCode.ShouldBe(HttpStatusCode.BadRequest);
+        (await clerk.PostJsonAsync("/api/v1/intake/batches", new { handedOverBy = new string('a', 200), boxLabel = new string('b', 100), expectedSheetCount = 0, note = "ok" })).StatusCode.ShouldBe(HttpStatusCode.OK);
+    }
+
+    [Fact]
     public async Task Dong_lo_con_loi_kem_ly_do_thi_chap_nhan_bo_qua_tat_ca_va_dong_trong_mot_lan()
     {
         var (clerk, batch, file) = await NewBatchWithFileAsync("lo-chap-nhan");

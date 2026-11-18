@@ -4,6 +4,7 @@ import { revalidatePath } from "next/cache";
 import { getInbox } from "@/features/intake/inbox-data";
 import type { InboxItem } from "@/features/intake/inbox-data";
 import { UUID } from "@/features/dossier/dossier-data";
+import { isProcedureId } from "@/features/procedure/procedure-filter";
 import type { ActionResult } from "@/lib/action-result";
 import { ApiError } from "@/lib/api/problem";
 import { ok, serverApi } from "@/lib/api/server";
@@ -141,11 +142,12 @@ function dossierBody(input: DossierFormInput) {
   };
 }
 
-/** Tạo hồ sơ (BE-61). Mã do hệ thống cấp. */
-export async function createDossier(input: DossierFormInput): Promise<ActionResult<{ id: string; code: string }>> {
+/** Tạo hồ sơ (BE-61). Mã do hệ thống cấp. `procedureId`: hồ sơ theo thủ tục hành chính (FE-35); API kiểm thành phần bắt buộc khi trình. */
+export async function createDossier(input: DossierFormInput, procedureId?: string | null): Promise<ActionResult<{ id: string; code: string }>> {
   return runAction("dossier_create", async () => {
     const body = dossierBody(input);
-    const created = ok(await serverApi().POST("/api/v1/dossiers", { body: { ...body, workGroupCode: input.workGroupCode, workflowCode: null } }));
+    if (procedureId && !isProcedureId(procedureId)) throw new TypeError("Mã thủ tục không hợp lệ.");
+    const created = ok(await serverApi().POST("/api/v1/dossiers", { body: { ...body, workGroupCode: input.workGroupCode, workflowCode: null, procedureId: procedureId || null } }));
     log.info("dossier_created", { dossierId: created.id });
     revalidatePath("/ho-so");
     return { id: created.id, code: created.code };

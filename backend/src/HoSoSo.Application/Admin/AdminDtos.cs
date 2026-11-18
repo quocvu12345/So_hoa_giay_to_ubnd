@@ -23,3 +23,7 @@ public sealed record CreateAssignmentRequest(Guid UserId, string RoleCode, strin
     DateTimeOffset? ValidFrom, DateTimeOffset? ValidUntil, string Basis, bool? IsDeputy);
 public sealed record CreateDelegationRequest(Guid FromAssignmentId, Guid ToUserId, IReadOnlyList<string> PermissionCodes,
     DateTimeOffset? ValidFrom, DateTimeOffset ValidUntil, string Basis);
+
+/// <summary>BE-127 (FE-42). Một vai trò kèm quyền (mã và mô tả) theo bảng role_permissions: nguồn để màn ủy quyền chỉ cho chọn phần quyền người ủy quyền thật sự có.</summary>
+public sealed record RoleInfo(string Code, string Name, string ScopeKind, IReadOnlyList<PermissionInfo> Permissions);
+public sealed record PermissionInfo(string Code, string Description);

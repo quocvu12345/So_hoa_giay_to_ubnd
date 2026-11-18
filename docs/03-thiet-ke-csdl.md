@@ -427,6 +427,8 @@ classDiagram
     +text local_path
     +text storage_key
     +uuid scan_batch_id ★ FK
+    +uuid replaces_file_id ★ FK bản quét mà tệp này thay (cùng giấy tờ, migration 039)
+    +text replacement_reason ★ bắt buộc khi thay, 10-500 ký tự
     +uuid uploaded_by ★ FK
     +timestamptz uploaded_at ★
   }

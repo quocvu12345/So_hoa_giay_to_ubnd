@@ -11,7 +11,7 @@ internal static class IntakeEndpoints
         var intake = api.MapGroup("/intake").WithTags("Tiếp nhận");
         intake.MapPost("/batches", async (CreateBatchRequest body, IntakeHandler h, CancellationToken ct) =>
                 TypedResults.Ok(await h.CreateBatchAsync(body, ct)))
-            .RequirePermission(Permissions.IntakeManage).WithSummary("Tạo lô quét");
+            .Validate<CreateBatchRequest>().RequirePermission(Permissions.IntakeManage).WithSummary("Tạo lô quét");
         intake.MapGet("/batches", async (IntakeHandler h, CancellationToken ct) => TypedResults.Ok(await h.ListBatchesAsync(ct)))
             .RequirePermission(Permissions.IntakeManage, Permissions.IntakeUpload).WithSummary("Danh sách lô quét");
         intake.MapGet("/batches/{id:guid}", async (Guid id, IntakeHandler h, CancellationToken ct) => TypedResults.Ok(await h.GetBatchAsync(id, ct)))

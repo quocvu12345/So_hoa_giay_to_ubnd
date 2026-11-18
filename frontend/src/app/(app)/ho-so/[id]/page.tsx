@@ -5,7 +5,11 @@ import { PageBody, Section } from "@/components/ui/blocks";
 import { Chip, type Tone } from "@/components/ui/status-chip";
 import { routes } from "@/config/routes";
 import { acceptsDocuments, getChecklist, getDossier } from "@/features/dossier/dossier-data";
+import { PlaceDossierButton } from "@/features/storage/location-panels";
+import { placementChoices } from "@/features/storage/location-rules";
+import { getLocations } from "@/features/storage/storage-data";
 import { pageSession } from "@/lib/auth/page-guard";
+import { can } from "@/lib/auth/session";
 import { serverEnv } from "@/lib/env";
 import { formatDate, formatDateTime } from "@/lib/format";
 import { loadOrNotFound } from "@/lib/load-or-not-found";
@@ -30,10 +34,13 @@ function RowView({ row }: { row: Row }) {
 
 /** Tab Tổng quan: danh sách kiểm tra đủ thành phần thay cho thông báo lỗi chung khi trình (FE-28). */
 export default async function DossierOverview({ params }: PageProps<"/ho-so/[id]">) {
-  await pageSession("dossier.read");
+  const { session } = await pageSession("dossier.read");
   if (serverEnv().mock) return null;
   const { id } = await params;
   const [dossier, checklist] = await loadOrNotFound(() => Promise.all([getDossier(id), getChecklist(id)]));
+  // Đặt/chuyển vị trí bản giấy (BE-82): chỉ người quản lý kho; danh sách hộp/kệ chỉ tải khi có quyền.
+  const canPlace = can(session, "storage.manage");
+  const placements = canPlace ? placementChoices(await getLocations()).map((n) => ({ id: n.id, path: n.path })) : [];
 
   // Hồ sơ theo thủ tục: liệt kê từng thành phần của thủ tục. Hồ sơ thường: liệt kê từng giấy tờ đã xếp.
   const rows: Row[] = checklist.components
@@ -101,7 +108,10 @@ export default async function DossierOverview({ params }: PageProps<"/ho-so/[id]
             <dt className="text-muted">Người chủ trì</dt><dd>{dossier.assigneeName ?? "Chưa giao"}</dd>
             <dt className="text-muted">Hạn nội bộ</dt><dd className="tabular-nums">{formatDate(dossier.dueOn)}</dd>
             <dt className="text-muted">Vị trí bản giấy</dt>
-            <dd>{dossier.physicalLocation ? <Link href={routes.storage} className="text-primary hover:underline">{dossier.physicalLocation}</Link> : <span className="text-muted">Chưa đặt</span>}</dd>
+            <dd className="flex flex-wrap items-center gap-2">
+              {dossier.physicalLocation ? <Link href={routes.storage} className="text-primary hover:underline">{dossier.physicalLocation}</Link> : <span className="text-muted">Chưa đặt</span>}
+              {canPlace && <PlaceDossierButton dossierId={dossier.id} current={dossier.physicalLocation ?? null} choices={placements} />}
+            </dd>
             {dossier.procedureName && (<><dt className="text-muted">Thủ tục</dt><dd>{dossier.procedureName}</dd></>)}
             {dossier.creatorOrganizationName && (<><dt className="text-muted">Cơ quan hình thành</dt><dd>{dossier.creatorOrganizationName}</dd></>)}
             <dt className="text-muted">Tạo lúc</dt><dd className="tabular-nums">{formatDateTime(dossier.createdAt)}</dd>

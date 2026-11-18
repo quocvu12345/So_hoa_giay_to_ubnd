@@ -34,6 +34,16 @@ public sealed class AdminHandler(IHoSoDb db, ICurrentUser user, IClock clock, II
         return await ToListItemsAsync(rows, ct);
     }
 
+    /// <summary>Các vai trò và quyền của từng vai trò (đọc từ CSDL, không chép tay).</summary>
+    public async Task<IReadOnlyList<RoleInfo>> RolesAsync(CancellationToken ct)
+    {
+        var roles = await db.Read<Role>().OrderBy(r => r.Code).ToListAsync(ct);
+        var descriptions = await db.Read<Permission>().ToDictionaryAsync(p => p.Code, p => p.Description, ct);
+        var granted = (await db.Read<RolePermission>().Select(p => new { p.RoleCode, p.PermissionCode }).ToListAsync(ct)).ToLookup(p => p.RoleCode, p => p.PermissionCode);
+        return roles.Select(r => new RoleInfo(r.Code, r.Name, r.ScopeKind,
+            granted[r.Code].Order().Select(c => new PermissionInfo(c, descriptions.GetValueOrDefault(c, ""))).ToList())).ToList();
+    }
+
     public async Task<AdminUserDetail> GetUserAsync(Guid id, CancellationToken ct)
     {
         var u = await db.Read<User>().SingleOrDefaultAsync(x => x.Id == id, ct) ?? throw AppException.NotFound("người dùng");

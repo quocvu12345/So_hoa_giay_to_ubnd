@@ -17,25 +17,28 @@ export function browserHeaders(assignmentId: string | null): Record<string, stri
 }
 
 export type UploadResult = components["schemas"]["UploadResult"];
+export type ReplacementResult = components["schemas"]["ReplacementResult"];
 
-export type UploadOutcome =
-  | { kind: "done"; result: UploadResult }
+export type UploadOutcome<T = UploadResult> =
+  | { kind: "done"; result: T }
   | { kind: "failed"; problem: Problem }
   | { kind: "cancelled" };
 
+type UploadOptions = { assignmentId: string | null; onProgress?: (fraction: number) => void; signal?: AbortSignal };
+
 /**
- * Tải một PDF lên POST /api/v1/intake/files bằng XHR (fetch chưa có tiến độ tải lên).
- * Không bao giờ ném lỗi: kết quả là done, failed (kèm Problem của API) hoặc cancelled.
+ * Gửi một tệp (multipart) bằng XHR vì fetch chưa có tiến độ tải lên. Không bao giờ ném lỗi: kết quả là done, failed (kèm Problem của API)
+ * hoặc cancelled. `fields` là các ô chữ đi kèm (bỏ qua ô rỗng).
  */
-export function uploadPdf(file: File, options: { assignmentId: string | null; batchId?: string | null; onProgress?: (fraction: number) => void; signal?: AbortSignal }): Promise<UploadOutcome> {
+function uploadMultipart<T>(url: string, file: File, fields: Record<string, string | null | undefined>, options: UploadOptions): Promise<UploadOutcome<T>> {
   return new Promise((resolve) => {
     if (options.signal?.aborted) return resolve({ kind: "cancelled" });
     const form = new FormData();
     form.append("file", file, file.name);
-    if (options.batchId) form.append("batchId", options.batchId);
+    for (const [name, value] of Object.entries(fields)) if (value) form.append(name, value);
 
     const xhr = new XMLHttpRequest();
-    xhr.open("POST", "/api/v1/intake/files");
+    xhr.open("POST", url);
     for (const [name, value] of Object.entries(browserHeaders(options.assignmentId))) xhr.setRequestHeader(name, value);
     xhr.setRequestHeader("Accept", "application/json");
     xhr.responseType = "text";
@@ -51,7 +54,7 @@ export function uploadPdf(file: File, options: { assignmentId: string | null; ba
       } catch {
         body = undefined;
       }
-      if (xhr.status >= 200 && xhr.status < 300) resolve({ kind: "done", result: body as UploadResult });
+      if (xhr.status >= 200 && xhr.status < 300) resolve({ kind: "done", result: body as T });
       else resolve({ kind: "failed", problem: problemFrom(xhr.status, body) });
     };
     xhr.onerror = () =>
@@ -61,4 +64,14 @@ export function uploadPdf(file: File, options: { assignmentId: string | null; ba
     options.signal?.addEventListener("abort", () => xhr.abort(), { once: true });
     xhr.send(form);
   });
+}
+
+/** Tải một PDF lên POST /api/v1/intake/files (giấy tờ mới, xếp job đọc vào hàng đợi). */
+export function uploadPdf(file: File, options: UploadOptions & { batchId?: string | null }): Promise<UploadOutcome> {
+  return uploadMultipart<UploadResult>("/api/v1/intake/files", file, { batchId: options.batchId }, options);
+}
+
+/** Tải bản quét thay thế cho một giấy tờ (BE-126): bản cũ giữ nguyên, bản mới là phiên bản kế tiếp. Lý do bắt buộc (10–500 ký tự). */
+export function replaceScan(documentId: string, file: File, reason: string, options: UploadOptions): Promise<UploadOutcome<ReplacementResult>> {
+  return uploadMultipart<ReplacementResult>(`/api/v1/documents/${encodeURIComponent(documentId)}/files`, file, { reason }, options);
 }

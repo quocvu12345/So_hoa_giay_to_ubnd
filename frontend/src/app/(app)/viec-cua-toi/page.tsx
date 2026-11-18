@@ -86,7 +86,13 @@ export default async function MyWorkPage() {
                   key={section.kind}
                   title={`${section.title} · ${total}`}
                   description={section.hint}
-                  actions={<Link href={section.allHref as Route} className="text-sm font-semibold text-primary hover:underline">Xem tất cả</Link>}
+                  actions={
+                    <span className="flex flex-wrap items-center gap-3">
+                      {/* "Cần bạn làm" gồm cả hồ sơ bị trả lại: lối riêng để xử lý hồ sơ bị trả lại trước (Status nhận nhiều giá trị từ BE-111). */}
+                      {section.kind === "assigned" && <Link href={"/ho-so?cua-toi=1&trang-thai=returned" as Route} className="text-sm font-semibold text-primary hover:underline">Chỉ hồ sơ bị trả lại</Link>}
+                      <Link href={section.allHref as Route} className="text-sm font-semibold text-primary hover:underline">Xem tất cả</Link>
+                    </span>
+                  }
                 >
                   {rows.length === 0 ? (
                     <EmptyState title="Không có việc nào">Khi có hồ sơ cần bạn xử lý, hồ sơ sẽ hiện ở đây.</EmptyState>

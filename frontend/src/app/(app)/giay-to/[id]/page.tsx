@@ -11,7 +11,9 @@ import { DocumentViewer } from "@/features/document/document-viewer";
 import { DownloadButton } from "@/features/document/download-button";
 import { getDocument, getFields, getRelations, getSignatures } from "@/features/document/document-data";
 import { FileVersions, PrintLink } from "@/features/document/file-versions";
-import { FIELD_ORIGIN, INTAKE_STATUS, RELATION_LABELS, REVIEW_STATUS, SIGNATURE_STATUS } from "@/features/document/labels";
+import { RelationsEditor } from "@/features/document/relations-editor";
+import { ReplaceScanDialog } from "@/features/intake/replace-scan-dialog";
+import { FIELD_ORIGIN, INTAKE_STATUS, REVIEW_STATUS, SIGNATURE_STATUS } from "@/features/document/labels";
 import { getReview } from "@/features/review/review-data";
 import { encodeRegionParam, isValidRegion, parseRegionParam } from "@/features/review/source-region";
 import { ApiError } from "@/lib/api/server";
@@ -110,7 +112,11 @@ export default async function DocumentPage({ params, searchParams }: PageProps<"
             </dl>
           </Section>
 
-          <Section title="Phiên bản tệp" description="Bản gốc, bản thay thế và bản dẫn xuất của giấy tờ. Bấm Xem để mở đúng bản đó ở khung bên trái.">
+          <Section
+            title="Phiên bản tệp"
+            description="Bản gốc, bản thay thế và bản dẫn xuất của giấy tờ. Bấm Xem để mở đúng bản đó ở khung bên trái."
+            actions={canEdit && doc.file ? <ReplaceScanDialog documentId={id} label={doc.title} disabledReason={review && !review.canEdit ? (review.lockedReason ?? undefined) : undefined} /> : undefined}
+          >
             <FileVersions documentId={id} files={versions} viewingId={file?.id ?? null} canPrint={canPrint} />
           </Section>
 
@@ -139,6 +145,8 @@ export default async function DocumentPage({ params, searchParams }: PageProps<"
               <dl className="grid gap-2 text-sm">
                 {fields.fields.map((f) => {
                   const ai = suggested.get(f.fieldCode);
+                  // BE-126: vùng nguồn nằm trên bản quét cũ (giấy tờ đã thay bản quét) thì mở đúng bản đó, không dựng khung lên bản hiện hành.
+                  const sourceVersion = f.sourceFileId && f.sourceFileId !== doc.file?.id ? versions.find((v) => v.id === f.sourceFileId && !v.disposed) : undefined;
                   return (
                     <div key={f.fieldCode} className="grid gap-0.5 border-t border-dashed border-line pt-2 first:border-t-0 first:pt-0">
                       <dt className="flex flex-wrap items-center gap-2 text-xs text-muted">
@@ -148,10 +156,10 @@ export default async function DocumentPage({ params, searchParams }: PageProps<"
                         {!f.editedFromAi && f.origin === "manual" && <Chip tone="neutral">{FIELD_ORIGIN.manual}</Chip>}
                         {f.sourcePage && (
                           <Link
-                            href={`${routes.document(id)}?trang=${f.sourceRegion?.page ?? f.sourcePage}${isValidRegion(f.sourceRegion) ? `&vung=${encodeRegionParam(f.sourceRegion)}` : ""}&truong=${encodeURIComponent(f.label)}` as never}
+                            href={`${routes.document(id)}?trang=${f.sourceRegion?.page ?? f.sourcePage}${isValidRegion(f.sourceRegion) ? `&vung=${encodeRegionParam(f.sourceRegion)}` : ""}${sourceVersion ? `&tep=${sourceVersion.id}` : ""}&truong=${encodeURIComponent(f.label)}` as never}
                             className="text-primary hover:underline"
                           >
-                            Trang {f.sourceRegion?.page ?? f.sourcePage}{isValidRegion(f.sourceRegion) ? " · chỉ vùng" : ""}
+                            Trang {f.sourceRegion?.page ?? f.sourcePage}{isValidRegion(f.sourceRegion) ? " · chỉ vùng" : ""}{sourceVersion ? ` (bản quét ${sourceVersion.versionNo})` : ""}
                           </Link>
                         )}
                       </dt>
@@ -192,20 +200,8 @@ export default async function DocumentPage({ params, searchParams }: PageProps<"
           <Section title="Liên kết văn bản">
             {relations === null ? (
               <p className="text-sm text-bad" role="alert">Chưa tải được liên kết văn bản.</p>
-            ) : relations.length === 0 ? (
-              <p className="text-sm text-muted">Chưa có liên kết (phụ lục, thay thế, sửa đổi, trả lời).</p>
             ) : (
-              <ul className="grid gap-1.5 text-sm">
-                {relations.map((r) => {
-                  const label = RELATION_LABELS[r.relation] ?? { out: r.relation, in: r.relation };
-                  return (
-                    <li key={`${r.otherDocumentId}-${r.relation}-${r.direction}`} className="flex flex-wrap gap-1.5">
-                      <span className="text-muted">{r.direction === "out" ? label.out : label.in}:</span>
-                      <Link href={routes.document(r.otherDocumentId)} className="font-semibold text-primary hover:underline">{r.otherNumber ? `${r.otherNumber} · ` : ""}{r.otherTitle}</Link>
-                    </li>
-                  );
-                })}
-              </ul>
+              <RelationsEditor documentId={id} relations={relations} canEdit={canEdit && !(review && !review.canEdit)} />
             )}
           </Section>
         </div>

@@ -129,9 +129,12 @@ cmd_start() {
   if is_up api; then echo "API đang chạy (pid $(cat "$run_dir/api.pid"))"; else
     echo "Chạy API ở cổng ${API_PORT} …"
     # hoso_api: role tối thiểu quyền (migration 020). Storage:Root trùng HOSO_AI_STORAGE_ROOT của worker.
+    # Giới hạn mặc định 300 yêu cầu/phút mỗi người; E2E dùng chung MỘT tài khoản (dev_admin) và mỗi trang gọi nhiều API nên chạm giới hạn (429).
+    # Chỉ nới ở máy dev; sản xuất giữ cấu hình thật (Limits:RequestsPerMinute).
     ASPNETCORE_ENVIRONMENT=Development \
     ConnectionStrings__HoSo="Host=$PG_HOST;Port=$PG_PORT;Database=$PG_DB;Username=hoso_api;Password=$DEV_PASSWORD" \
     Storage__Root="$root/data/blobs" \
+    Limits__RequestsPerMinute="${HOSO_DEV_REQUESTS_PER_MINUTE:-3000}" \
     detach api dotnet run --project "$root/backend/src/HoSoSo.Api" --launch-profile http
   fi
 

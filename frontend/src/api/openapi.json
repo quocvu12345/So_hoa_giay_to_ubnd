@@ -237,6 +237,110 @@
         }
       }
     },
+    "/api/v1/documents/{id}/files": {
+      "post": {
+        "tags": [
+          "Giấy tờ"
+        ],
+        "summary": "Tải bản quét thay thế (phiên bản kế tiếp) kèm lý do 10–500 ký tự; bản cũ giữ nguyên. Trùng bản đã có trả 409 duplicate_file",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "required": [
+                  "file"
+                ],
+                "type": "object",
+                "allOf": [
+                  {
+                    "type": "object",
+                    "properties": {
+                      "file": {
+                        "$ref": "#/components/schemas/IFormFile"
+                      }
+                    }
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "reason": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "201": {
+            "description": "Created",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ReplacementResult"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Chưa đăng nhập hoặc phiên đã hết hạn (unauthenticated).",
+            "content": {
+              "application/problem+json": { }
+            }
+          },
+          "403": {
+            "description": "Phân công đang dùng không có quyền thực hiện (forbidden), hoặc thiếu X-CSRF (csrf_failed).",
+            "content": {
+              "application/problem+json": { }
+            }
+          },
+          "404": {
+            "description": "Không tìm thấy, hoặc bản ghi nằm ngoài phạm vi của người dùng (not_found). Không phân biệt hai trường hợp để không lộ sự tồn tại.",
+            "content": {
+              "application/problem+json": { }
+            }
+          },
+          "400": {
+            "description": "Dữ liệu gửi lên chưa hợp lệ: ProblemDetails kèm errors theo từng trường (validation_failed).",
+            "content": {
+              "application/problem+json": { }
+            }
+          },
+          "409": {
+            "description": "Xung đột: sai bước quy trình (workflow_conflict), dữ liệu vừa bị người khác sửa (concurrency_conflict) hoặc bị trùng (duplicate_value, duplicate_file).",
+            "content": {
+              "application/problem+json": { }
+            }
+          },
+          "422": {
+            "description": "Nghiệp vụ không cho phép: hồ sơ chưa đủ (dossier_incomplete), thiếu ý kiến (note_required), tham chiếu không hợp lệ.",
+            "content": {
+              "application/problem+json": { }
+            }
+          },
+          "429": {
+            "description": "Gọi quá nhiều lần trong một phút; thử lại sau.",
+            "content": {
+              "application/problem+json": { }
+            }
+          }
+        }
+      }
+    },
     "/api/v1/files/{fileId}/pages/{page}/quality": {
       "put": {
         "tags": [
@@ -7744,6 +7848,47 @@
         }
       }
     },
+    "/api/v1/admin/roles": {
+      "get": {
+        "tags": [
+          "Quản trị"
+        ],
+        "summary": "Vai trò và quyền của từng vai trò (cho màn phân công và ủy quyền)",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/RoleInfo"
+                  }
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Chưa đăng nhập hoặc phiên đã hết hạn (unauthenticated).",
+            "content": {
+              "application/problem+json": { }
+            }
+          },
+          "403": {
+            "description": "Phân công đang dùng không có quyền thực hiện (forbidden), hoặc thiếu X-CSRF (csrf_failed).",
+            "content": {
+              "application/problem+json": { }
+            }
+          },
+          "429": {
+            "description": "Gọi quá nhiều lần trong một phút; thử lại sau.",
+            "content": {
+              "application/problem+json": { }
+            }
+          }
+        }
+      }
+    },
     "/api/v1/admin/users/{id}": {
       "get": {
         "tags": [
@@ -12000,6 +12145,13 @@
                 "$ref": "#/components/schemas/SourceRegionDto"
               }
             ]
+          },
+          "sourceFileId": {
+            "type": [
+              "null",
+              "string"
+            ],
+            "format": "uuid"
           }
         }
       },
@@ -12967,6 +13119,19 @@
           },
           "isCurrent": {
             "type": "boolean"
+          },
+          "replacesFileId": {
+            "type": [
+              "null",
+              "string"
+            ],
+            "format": "uuid"
+          },
+          "replacementReason": {
+            "type": [
+              "null",
+              "string"
+            ]
           }
         }
       },
@@ -13836,6 +14001,21 @@
           }
         }
       },
+      "PermissionInfo": {
+        "required": [
+          "code",
+          "description"
+        ],
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          }
+        }
+      },
       "PlaceDossierRequest": {
         "required": [
           "locationId",
@@ -14526,6 +14706,82 @@
           }
         }
       },
+      "ReplacementResult": {
+        "required": [
+          "documentId",
+          "fileId",
+          "replacedFileId",
+          "versionNo",
+          "jobId",
+          "fileName",
+          "byteSize",
+          "pageCount",
+          "classify",
+          "issuesClosed",
+          "reviewReset"
+        ],
+        "type": "object",
+        "properties": {
+          "documentId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "fileId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "replacedFileId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "versionNo": {
+            "pattern": "^-?(?:0|[1-9]\\d*)$",
+            "type": [
+              "integer",
+              "string"
+            ],
+            "format": "int32"
+          },
+          "jobId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "fileName": {
+            "type": "string"
+          },
+          "byteSize": {
+            "pattern": "^-?(?:0|[1-9]\\d*)$",
+            "type": [
+              "integer",
+              "string"
+            ],
+            "format": "int64"
+          },
+          "pageCount": {
+            "pattern": "^-?(?:0|[1-9]\\d*)$",
+            "type": [
+              "null",
+              "integer",
+              "string"
+            ],
+            "format": "int32"
+          },
+          "classify": {
+            "type": "boolean"
+          },
+          "issuesClosed": {
+            "pattern": "^-?(?:0|[1-9]\\d*)$",
+            "type": [
+              "integer",
+              "string"
+            ],
+            "format": "int32"
+          },
+          "reviewReset": {
+            "type": "boolean"
+          }
+        }
+      },
       "RequestDisposalRequest": {
         "required": [
           "dossierId",
@@ -14848,6 +15104,13 @@
               "string"
             ],
             "format": "double"
+          },
+          "sourceFileId": {
+            "type": [
+              "null",
+              "string"
+            ],
+            "format": "uuid"
           }
         }
       },
@@ -15022,6 +15285,32 @@
           },
           "modelKey": {
             "type": "string"
+          }
+        }
+      },
+      "RoleInfo": {
+        "required": [
+          "code",
+          "name",
+          "scopeKind",
+          "permissions"
+        ],
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "scopeKind": {
+            "type": "string"
+          },
+          "permissions": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/PermissionInfo"
+            }
           }
         }
       },
@@ -16110,10 +16399,10 @@
       "name": "Thủ tục hành chính"
     },
     {
-      "name": "Tiếp nhận"
+      "name": "Giấy tờ"
     },
     {
-      "name": "Giấy tờ"
+      "name": "Tiếp nhận"
     },
     {
       "name": "Tra cứu"

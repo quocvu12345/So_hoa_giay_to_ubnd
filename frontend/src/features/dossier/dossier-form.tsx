@@ -12,8 +12,10 @@ import { ACCESS_LEVELS, dueOnForApi, mapApiErrors, validateDossierForm, type Dos
 
 export type GroupChoice = { code: string; title: string; departmentCode: string; departmentName: string };
 
+export type ProcedureChoice = { id: string; name: string; code: string | null };
+
 type Props =
-  | { mode: "create"; groups: GroupChoice[]; initial?: Partial<DossierFormValues> }
+  | { mode: "create"; groups: GroupChoice[]; initial?: Partial<DossierFormValues>; procedure?: ProcedureChoice }
   | { mode: "edit"; dossierId: string; version: number; groups: GroupChoice[]; initial: DossierFormValues; groupLabel: string };
 
 /**
@@ -57,7 +59,7 @@ export function DossierForm(props: Props) {
     }
     const payload = { ...values, internalDueOn: dueOnForApi(values.internalDueOn) };
     if (props.mode === "create") {
-      const outcome = await create.run(payload);
+      const outcome = await create.run(payload, props.procedure?.id);
       if (outcome.ok) {
         toast.success(`Đã tạo hồ sơ ${outcome.data.code}. Thêm giấy tờ vào hồ sơ ở bước này.`);
         router.push(routes.dossierDocuments(outcome.data.id));
