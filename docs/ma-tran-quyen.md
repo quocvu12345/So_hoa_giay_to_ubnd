@@ -5,7 +5,7 @@
 
 Đây là ma trận **quyền**: vai trò có được gọi endpoint hay không. Việc từ chối thật được kiểm ở `PermissionEnforcementTests` (gọi từng endpoint bằng từng vai trò không có quyền, mong 403; chưa đăng nhập mong 401). Việc chỉ thấy hồ sơ, giấy tờ trong **phạm vi phân công** do `IScopeFilter` lọc ở mọi truy vấn, được kiểm riêng ở `ScopeTests`, `AssignmentScopeTests`, `ScopePrefilterTests`; ma trận này không thay cho các test đó.
 
-**144 endpoint**: 119 cần quyền riêng, 20 chỉ cần đăng nhập (phạm vi do use case kiểm tra), 2 dùng khóa máy (script sao lưu), 3 ẩn danh (chỉ dưới `/auth`).
+**145 endpoint**: 119 cần quyền riêng, 21 chỉ cần đăng nhập (phạm vi do use case kiểm tra), 2 dùng khóa máy (script sao lưu), 3 ẩn danh (chỉ dưới `/auth`).
 
 Ký hiệu: ✓ vai trò có quyền cần thiết (một trong các quyền nếu liệt kê nhiều) · — không có. Endpoint "đăng nhập" mọi vai trò đều gọi được.
 
@@ -48,6 +48,12 @@ Ký hiệu: ✓ vai trò có quyền cần thiết (một trong các quyền n�
 | GET | `/api/v1/admin/users/{id:guid}` | `admin.users` | — | — | — | — | — | ✓ |
 | PATCH | `/api/v1/admin/users/{id:guid}` | `admin.users` | — | — | — | — | — | ✓ |
 | POST | `/api/v1/admin/users/{id:guid}/revoke-sessions` | `admin.users` | — | — | — | — | — | ✓ |
+
+## ai
+
+| Phương thức | Đường dẫn | Quyền cần | Chuyên viên | Trưởng phòng/Ban | Văn thư | Chủ tịch UBND | Lãnh đạo HĐND | Quản trị kỹ thuật |
+|---|---|---|:-:|:-:|:-:|:-:|:-:|:-:|
+| GET | `/api/v1/ai/availability` | (đăng nhập) | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 
 ## archive-submissions
 

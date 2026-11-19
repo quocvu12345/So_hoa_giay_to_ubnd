@@ -8,8 +8,10 @@ using HoSoSo.Infrastructure.Persistence;
 using HoSoSo.Infrastructure.Persistence.Interceptors;
 using HoSoSo.Infrastructure.Storage;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Diagnostics;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
 using Npgsql;
 
 namespace HoSoSo.Infrastructure;
@@ -32,6 +34,13 @@ public static class DependencyInjection
         services.AddDbContext<HoSoDbContext>((provider, options) => options
             .UseNpgsql(provider.GetRequiredService<NpgsqlDataSource>())
             .UseSnakeCaseNamingConvention()
+            // EF tự ghi mức Error cho mọi lệnh SQL lỗi, kể cả lỗi nghiệp vụ API đã chuyển thành 409/422 (trùng mã, khóa ngoại, HS00x):
+            // nhật ký đầy Error giả, cảnh báo theo Error kêu oan. GlobalExceptionHandler đã ghi 5xx ở Error (bản đã che giá trị, SEC-07)
+            // và 4xx ở Warning, nên ba sự kiện này hạ xuống Warning: lỗi thật vẫn có một dòng Error, không trùng.
+            .ConfigureWarnings(w => w.Log(
+                (RelationalEventId.CommandError, LogLevel.Warning),
+                (CoreEventId.SaveChangesFailed, LogLevel.Warning),
+                (CoreEventId.QueryIterationFailed, LogLevel.Warning)))
             .AddInterceptors(provider.GetRequiredService<ActorContextInterceptor>()));
         services.AddScoped<IHoSoDb>(provider => provider.GetRequiredService<HoSoDbContext>());
         services.AddScoped<IScopeFilter, ScopeFilter>();

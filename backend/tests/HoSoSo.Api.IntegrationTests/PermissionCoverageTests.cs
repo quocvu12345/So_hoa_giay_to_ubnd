@@ -16,6 +16,8 @@ public sealed class PermissionCoverageTests(ApiFactory factory) : IClassFixture<
     [
         "/api/v1/auth/", "/api/v1/me", "/api/v1/events", "/api/v1/workspace/", "/api/v1/notifications",
         "/api/v1/catalog/", "/api/v1/procedures", "/api/v1/form-templates/", "/api/v1/jobs/",
+        // AI-24, BE-133: máy AI có đang đọc được không. Chỉ trạng thái và thời điểm, không có dữ liệu hồ sơ hay chi tiết kỹ thuật.
+        "/api/v1/ai/availability",
     ];
 
     [Fact]

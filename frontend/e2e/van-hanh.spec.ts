@@ -74,8 +74,9 @@ test("Vận hành: xem máy AI, chạy lại việc lỗi, hủy việc đang ch
   await main.getByRole("button", { name: `Sửa cài đặt ${key}` }).click();
   await dialog.getByLabel("Giá trị").fill(original);
   await dialog.getByRole("button", { name: "Lưu" }).click();
-  await expect(page.getByText(`Đã lưu cài đặt ${key}.`).last()).toBeVisible({ timeout: 30_000 });
-  expect(sql(`SELECT value FROM hoso.system_settings WHERE key = '${key}'`)).toEqual([original]);
+  // Thông báo "Đã lưu" của lần lưu trước có thể còn hiện, nên `.last()` khớp ngay; đợi hộp thoại đóng rồi hỏi lại CSDL tới khi ghi xong.
+  await expect(dialog).toBeHidden({ timeout: 30_000 });
+  await expect.poll(() => sql(`SELECT value FROM hoso.system_settings WHERE key = '${key}'`), { timeout: 15_000 }).toEqual([original]);
 
   // Sao lưu: tình trạng hiện; ghi tay một lần sao lưu cấu hình (loại không bắt buộc nên không đổi cảnh báo của hệ thống).
   await page.goto("/quan-tri/van-hanh?muc=sao-luu");

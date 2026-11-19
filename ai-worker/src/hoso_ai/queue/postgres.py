@@ -10,7 +10,15 @@ import threading
 from contextlib import contextmanager
 
 from ..contracts import Job, JobType, PageResult, Progress, Suggestion
-from .repository import Catalog, DocumentTypeDef, FieldDef, JobCancelled, JobLost
+from .repository import Catalog, DocumentTypeDef, FieldDef, JobCancelled, JobLost, WorkerReport
+
+REPORT_WORKER_SQL = """
+INSERT INTO hoso.ai_workers (worker_id, profile, engine, engine_ok, engine_error, engine_down_since, current_job_id, last_seen_at)
+VALUES (%(worker)s, %(profile)s, %(engine)s, %(ok)s, %(error)s, to_timestamp(%(since)s), %(job)s::uuid, now())
+ON CONFLICT (worker_id) DO UPDATE
+SET profile = EXCLUDED.profile, engine = EXCLUDED.engine, engine_ok = EXCLUDED.engine_ok, engine_error = EXCLUDED.engine_error,
+    engine_down_since = EXCLUDED.engine_down_since, current_job_id = EXCLUDED.current_job_id, last_seen_at = now()
+"""
 
 CLAIM_SQL = """
 WITH next AS (
@@ -215,3 +223,28 @@ class PostgresRepository:
                 self._listening = True
         for _ in self._side.notifies(timeout=timeout_seconds, stop_after=1):
             break
+
+    def report_worker(self, report: WorkerReport, changed: bool = False) -> None:
+        # Kết nối phụ: vòng chính (lúc rảnh) và luồng heartbeat (lúc đang đọc) cùng gọi; vòng chính đang giữ _main cho job.
+        with self._side_lock:
+            with self._side.transaction():
+                self._side.execute(REPORT_WORKER_SQL, {
+                    "worker": report.worker_id, "profile": report.profile, "engine": report.engine, "ok": report.engine_ok,
+                    "error": None if report.engine_error is None else report.engine_error[:1000],
+                    "since": report.engine_down_since, "job": report.current_job_id,
+                })
+                if changed:
+                    # Dòng của worker đã chết từ lâu (tắt không êm, đổi tên máy) không còn ích gì cho trang vận hành.
+                    self._side.execute("DELETE FROM hoso.ai_workers WHERE last_seen_at < now() - interval '7 days'")
+                    self._notify(self._side, "ai_worker_status", json.dumps({"workerId": report.worker_id, "engineOk": report.engine_ok}))
+
+    def remove_worker(self, worker_id: str) -> None:
+        with self._side_lock:
+            self._side.execute("DELETE FROM hoso.ai_workers WHERE worker_id = %s", (worker_id,))
+            self._notify(self._side, "ai_worker_status", json.dumps({"workerId": worker_id, "stopped": True}))
+
+    def worker_ids(self, prefix: str) -> list[str]:
+        with self._side_lock:
+            # left() thay cho LIKE: tên máy có thể chứa '_' (ký tự đại diện của LIKE).
+            rows = self._side.execute("SELECT worker_id FROM hoso.ai_workers WHERE left(worker_id, length(%(p)s)) = %(p)s", {"p": prefix}).fetchall()
+        return [r[0] for r in rows]

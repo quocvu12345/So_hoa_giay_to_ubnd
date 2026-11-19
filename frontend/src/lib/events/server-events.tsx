@@ -22,6 +22,8 @@ export type ServerEventMap = {
   "export.ready": { exportId: string; status: string; processed: number; total: number };
   "export.failed": { exportId: string; status: string; processed: number; total: number };
   "export.expired": { exportId: string; status: string; processed: number; total: number };
+  /** Máy AI vừa không trả lời hoặc vừa trở lại (BE-133). Không kèm chi tiết: màn cần thì hỏi lại GET /api/v1/ai/availability. */
+  "ai.availability": { changed?: boolean };
   /** API báo đã mất kết nối CSDL rồi nối lại, hoặc trình duyệt vừa nối lại sau khi mất mạng: tải lại dữ liệu đã lỡ. */
   resync: { reason?: string };
 };
@@ -29,7 +31,7 @@ export type ServerEventType = keyof ServerEventMap;
 
 export const SERVER_EVENT_TYPES: ServerEventType[] = [
   "job.progress", "job.completed", "job.failed", "job.cancelled", "notification.created", "dossier.changed",
-  "export.progress", "export.ready", "export.failed", "export.expired", "resync",
+  "export.progress", "export.ready", "export.failed", "export.expired", "ai.availability", "resync",
 ];
 
 export type ConnectionStatus = "disabled" | "connecting" | "open" | "offline";

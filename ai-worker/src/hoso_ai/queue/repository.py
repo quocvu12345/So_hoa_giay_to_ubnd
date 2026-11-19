@@ -7,6 +7,19 @@ from typing import Protocol
 from ..contracts import Job, PageResult, Progress, Suggestion
 
 
+@dataclass(frozen=True)
+class WorkerReport:
+    """Trạng thái worker ghi vào hoso.ai_workers (AI-24). engine: máy chạy mô hình ở nơi khác (Ollama), None khi mô hình nằm trong worker.
+    engine_down_since: giây Unix lúc máy đó bắt đầu không trả lời; None khi đang trả lời."""
+    worker_id: str
+    profile: str
+    engine: str | None
+    engine_ok: bool
+    engine_error: str | None
+    engine_down_since: float | None
+    current_job_id: str | None
+
+
 class JobCancelled(Exception):
     """Người dùng hủy job (API đặt status='cancelled'); dừng sau trang đang đọc."""
 
@@ -77,3 +90,13 @@ class JobRepository(Protocol):
 
     def wait_for_work(self, timeout_seconds: float) -> None:
         """Ngủ tới khi có NOTIFY job_queued hoặc hết thời gian."""
+
+    def report_worker(self, report: WorkerReport, changed: bool = False) -> None:
+        """Ghi (upsert) dòng của worker trong ai_workers và đặt last_seen_at = now(). changed=True: máy chạy mô hình vừa đổi trạng thái,
+        NOTIFY ai_worker_status để API báo giao diện ngay."""
+
+    def remove_worker(self, worker_id: str) -> None:
+        """Worker tắt êm: xóa dòng của mình (trang vận hành không còn hiện nó). Cũng dùng để dọn dòng của worker đã chết trên cùng máy."""
+
+    def worker_ids(self, prefix: str) -> list[str]:
+        """Mã các worker trong ai_workers bắt đầu bằng prefix (cùng máy: "<tên máy>-")."""

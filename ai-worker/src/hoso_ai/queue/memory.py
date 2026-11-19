@@ -6,7 +6,7 @@ import time
 from dataclasses import dataclass, field, replace
 
 from ..contracts import Job, JobStatus, PageResult, Progress, Suggestion
-from .repository import Catalog, JobCancelled, JobLost
+from .repository import Catalog, JobCancelled, JobLost, WorkerReport
 
 
 @dataclass
@@ -32,6 +32,8 @@ class InMemoryRepository:
         self._catalog = catalog or Catalog(work_groups={}, document_types={})
         self._lock = threading.Lock()
         self._order: list[str] = []
+        self.workers: dict[str, WorkerReport] = {}          # ai_workers: dòng hiện tại của từng worker
+        self.worker_changes: list[WorkerReport] = []        # các lần báo đổi trạng thái (NOTIFY ai_worker_status)
 
     # --- tiện ích kiểm thử -------------------------------------------------
     def enqueue(self, job: Job) -> None:
@@ -130,3 +132,17 @@ class InMemoryRepository:
 
     def wait_for_work(self, timeout_seconds: float) -> None:
         time.sleep(min(timeout_seconds, 0.01))
+
+    def report_worker(self, report: WorkerReport, changed: bool = False) -> None:
+        with self._lock:
+            self.workers[report.worker_id] = report
+            if changed:
+                self.worker_changes.append(report)
+
+    def remove_worker(self, worker_id: str) -> None:
+        with self._lock:
+            self.workers.pop(worker_id, None)
+
+    def worker_ids(self, prefix: str) -> list[str]:
+        with self._lock:
+            return [w for w in self.workers if w.startswith(prefix)]

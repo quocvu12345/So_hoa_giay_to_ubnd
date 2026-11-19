@@ -91,6 +91,7 @@ export function InboxTable({ status, tabKey, items: initial, nextCursor: initial
   useServerEvent("job.failed", onJobEnd);
   useServerEvent("job.cancelled", onJobEnd);
   useServerEvent("resync", () => scheduleRefresh());
+  useServerEvent("ai.availability", () => scheduleRefresh());       // máy AI tắt/bật lại: băng báo trên trang đổi theo
 
   const more = useServerAction(loadMoreInbox);
   const discard = useServerAction(discardDocument);

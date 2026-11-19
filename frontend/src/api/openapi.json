@@ -6,7 +6,7 @@
   },
   "servers": [
     {
-      "url": "http://127.0.0.1:5198/"
+      "url": "http://127.0.0.1:5099/"
     }
   ],
   "paths": {
@@ -2943,6 +2943,38 @@
           },
           "422": {
             "description": "Nghiệp vụ không cho phép: hồ sơ chưa đủ (dossier_incomplete), thiếu ý kiến (note_required), tham chiếu không hợp lệ.",
+            "content": {
+              "application/problem+json": { }
+            }
+          },
+          "429": {
+            "description": "Gọi quá nhiều lần trong một phút; thử lại sau.",
+            "content": {
+              "application/problem+json": { }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/ai/availability": {
+      "get": {
+        "tags": [
+          "Xử lý AI"
+        ],
+        "summary": "Máy AI có đang đọc được không: ok, engine_down (máy chạy mô hình không trả lời), no_worker (không worker nào hoạt động), từ lúc nào",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AiAvailability"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Chưa đăng nhập hoặc phiên đã hết hạn (unauthenticated).",
             "content": {
               "application/problem+json": { }
             }
@@ -9849,6 +9881,25 @@
           }
         }
       },
+      "AiAvailability": {
+        "required": [
+          "state",
+          "since"
+        ],
+        "type": "object",
+        "properties": {
+          "state": {
+            "type": "string"
+          },
+          "since": {
+            "type": [
+              "null",
+              "string"
+            ],
+            "format": "date-time"
+          }
+        }
+      },
       "AiExtractItem": {
         "required": [
           "documentId",
@@ -9993,6 +10044,78 @@
           }
         }
       },
+      "AiMachine": {
+        "required": [
+          "workerId",
+          "profile",
+          "engine",
+          "engineOk",
+          "engineError",
+          "engineDownSince",
+          "currentJobId",
+          "startedAt",
+          "lastSeenAt",
+          "lastSeenSecondsAgo",
+          "alive"
+        ],
+        "type": "object",
+        "properties": {
+          "workerId": {
+            "type": "string"
+          },
+          "profile": {
+            "type": "string"
+          },
+          "engine": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "engineOk": {
+            "type": "boolean"
+          },
+          "engineError": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "engineDownSince": {
+            "type": [
+              "null",
+              "string"
+            ],
+            "format": "date-time"
+          },
+          "currentJobId": {
+            "type": [
+              "null",
+              "string"
+            ],
+            "format": "uuid"
+          },
+          "startedAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "lastSeenAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "lastSeenSecondsAgo": {
+            "pattern": "^-?(?:0|[1-9]\\d*)$",
+            "type": [
+              "integer",
+              "string"
+            ],
+            "format": "int32"
+          },
+          "alive": {
+            "type": "boolean"
+          }
+        }
+      },
       "AiStatus": {
         "required": [
           "queue",
@@ -10061,6 +10184,25 @@
               "null",
               "string"
             ]
+          },
+          "availability": {
+            "oneOf": [
+              {
+                "type": "null"
+              },
+              {
+                "$ref": "#/components/schemas/AiAvailability"
+              }
+            ]
+          },
+          "machines": {
+            "type": [
+              "null",
+              "array"
+            ],
+            "items": {
+              "$ref": "#/components/schemas/AiMachine"
+            }
           }
         }
       },

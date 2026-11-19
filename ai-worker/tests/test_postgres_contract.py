@@ -393,3 +393,29 @@ def test_thu_hoi_viec_treo_khong_tinh_cac_lan_nhuong_cho_(repo, db_url, tmp_path
         assert [r[0] for r in conn.execute("SELECT new_status FROM hoso.requeue_stale_jobs()").fetchall()] == ["queued"], "chưa quá 3 lần thử thật"
         conn.execute("UPDATE hoso.ocr_jobs SET attempt = 5, status = 'running', locked_by = 'w', heartbeat_at = now() - interval '10 minutes' WHERE id = %s", (ids["job"],))
         assert [r[0] for r in conn.execute("SELECT new_status FROM hoso.requeue_stale_jobs()").fetchall()] == ["failed"], "5 - 2 = 3 lần thử thật thì thất bại"
+
+
+def test_worker_ghi_trang_thai_may_ai_vao_ai_workers_va_bao_doi_trang_thai(repo, db_url):
+    # AI-24 (migration 044): role hoso_ai_worker ghi được dòng của mình; đổi trạng thái thì NOTIFY ai_worker_status cho API.
+    from hoso_ai.queue.repository import WorkerReport
+
+    with psycopg.connect(db_url, autocommit=True) as listener:
+        listener.execute("LISTEN ai_worker_status")
+        repo.report_worker(WorkerReport("w-1", "ollama", "Ollama http://may-ai:11434", True, None, None, None), changed=True)
+        repo.report_worker(WorkerReport("w-1", "ollama", "Ollama http://may-ai:11434", False, "timed out", 1_795_000_000.0, None), changed=True)
+        repo.report_worker(WorkerReport("w-1", "ollama", "Ollama http://may-ai:11434", False, "timed out", 1_795_000_000.0, None))   # định kỳ: không báo
+        payloads = [json.loads(n.payload) for n in listener.notifies(timeout=2, stop_after=2)]
+    assert payloads == [{"workerId": "w-1", "engineOk": True}, {"workerId": "w-1", "engineOk": False}]
+    assert scalar(db_url, "SELECT engine_ok::text || '|' || engine_error || '|' || extract(epoch FROM engine_down_since)::bigint "
+                          "FROM hoso.ai_workers WHERE worker_id = 'w-1'") == "false|timed out|1795000000"
+    with psycopg.connect(db_url) as conn:
+        conn.execute("INSERT INTO hoso.ai_workers (worker_id, profile, last_seen_at) VALUES ('w-cu', 'fake', now() - interval '8 days')")
+    repo.report_worker(WorkerReport("w-1", "ollama", None, True, None, None, None), changed=True)
+    assert scalar(db_url, "SELECT count(*) FROM hoso.ai_workers WHERE worker_id = 'w-cu'") == 0, "dòng im lặng quá 7 ngày được dọn"
+    repo.report_worker(WorkerReport("may_a-2", "fake", None, True, None, None, None))
+    assert sorted(repo.worker_ids("may_a-")) == ["may_a-2"] and repo.worker_ids("may%") == [], "tiền tố so nguyên văn, không phải mẫu LIKE"
+    repo.remove_worker("may_a-2")
+    repo.remove_worker("w-1")
+    assert scalar(db_url, "SELECT count(*) FROM hoso.ai_workers") == 0
+    with pytest.raises(psycopg.errors.CheckViolation):     # đang hỏng thì phải có thời điểm bắt đầu hỏng
+        repo.report_worker(WorkerReport("w-2", "ollama", None, False, "x", None, None))

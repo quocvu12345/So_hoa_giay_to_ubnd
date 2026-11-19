@@ -3,7 +3,7 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Protocol
+from typing import Callable, Protocol
 
 from ..contracts import PageInfo, PageResult, Suggestion
 from ..queue.repository import Catalog
@@ -57,3 +57,7 @@ class Engines:
     ocr: OcrEngine
     classifier: Classifier
     quality: QualityChecker | None
+    # Mô hình chạy ở máy khác (Ollama): tên hiển thị của máy đó và hàm thăm dò nhanh (ném EngineUnavailable khi máy không trả lời
+    # hoặc thiếu mô hình). Worker thăm dò lúc rảnh và không nhận việc khi máy đó đang hỏng (AI-24). Mô hình nằm trong worker: None.
+    engine: str | None = None
+    probe: Callable[[], None] | None = None

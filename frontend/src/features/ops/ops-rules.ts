@@ -43,7 +43,30 @@ export function heartbeatTone(seconds: number): "ok" | "warn" | "bad" {
   return "ok";
 }
 
-export const BACKUP_KIND_LABELS: Record<string, string> = { database: "Cơ sở dữ liệu", files: "Kho tệp", config: "Cấu hình" };
+/** AI-24: một worker như nó tự báo (ai_workers). */
+export type MachineReport = { alive: boolean; engineOk: boolean; engine?: string | null; engineDownSince?: string | null; lastSeenSecondsAgo: number };
+
+/**
+ * Nhãn và màu cho một worker: im lặng quá 2 phút là có thể đã dừng; worker sống mà máy chạy mô hình (Ollama ở máy khác) không trả lời thì nói rõ
+ * và từ bao lâu. `now` truyền vào để kiểm thử.
+ */
+export function machineState(m: MachineReport, now: number = Date.now()): { label: string; tone: "ok" | "warn" | "bad" } {
+  if (!m.alive) return { label: `Im lặng ${ageLabel(m.lastSeenSecondsAgo)}, có thể đã dừng`, tone: "warn" };
+  if (!m.engineOk) {
+    const down = m.engineDownSince ? (now - Date.parse(m.engineDownSince)) / 1000 : null;
+    return { label: `Máy AI không trả lời${down != null && down >= 0 ? ` ${ageLabel(down)}` : ""}`, tone: "bad" };
+  }
+  return { label: m.engine ? "Máy AI trả lời" : "Đang hoạt động", tone: "ok" };
+}
+
+/** Cảnh báo đầu trang vận hành khi PDF không được đọc (availability khác "ok"); null khi bình thường. */
+export function availabilityAlert(state: string | null | undefined): string | null {
+  if (state === "engine_down") return "Máy chạy mô hình AI không trả lời: PDF nằm chờ, chưa được đọc. Kiểm tra máy AI, Tailscale và Ollama (chi tiết ở từng worker bên dưới).";
+  if (state === "no_worker") return "Không có worker AI nào hoạt động: PDF nằm chờ, chưa được đọc. Chạy lại worker (dịch vụ launchd/systemd hoặc scripts/dev-up.sh start).";
+  return null;
+}
+
+export const BACKUP_KIND_LABELS: Record<string, string> ={ database: "Cơ sở dữ liệu", files: "Kho tệp", config: "Cấu hình" };
 export const BACKUP_STATUS_LABELS: Record<string, string> = { running: "Đang chạy", succeeded: "Thành công", failed: "Thất bại" };
 
 export function formatBytes(bytes: number | null | undefined): string {

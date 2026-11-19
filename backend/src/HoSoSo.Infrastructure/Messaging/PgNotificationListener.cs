@@ -13,11 +13,12 @@ namespace HoSoSo.Infrastructure.Messaging;
 ///   notification_created  → notification.created                                        (tới người nhận)
 ///   dossier_changed       → dossier.changed                                              (chỉ tới người có hồ sơ đó trong phạm vi)
 ///   export_progress       → export.progress | export.ready | export.failed                 (tới người yêu cầu gói xuất)
+///   ai_worker_status      → ai.availability                                              (tới mọi người đang mở: máy AI vừa hỏng hoặc trở lại; BE-133)
 /// Mất kết nối thì tự nối lại (1→30 giây); nối lại xong báo "resync" để giao diện tải lại dữ liệu đã lỡ.
 /// </summary>
 internal sealed class PgNotificationListener(NpgsqlDataSource dataSource, IEventBus bus, IMemoryCache cache, ILogger<PgNotificationListener> logger) : BackgroundService
 {
-    private static readonly string[] Channels = ["job_progress", "notification_created", "dossier_changed", "export_progress"];
+    private static readonly string[] Channels = ["job_progress", "notification_created", "dossier_changed", "export_progress", "ai_worker_status"];
 
     protected override async Task ExecuteAsync(CancellationToken stoppingToken)
     {
@@ -72,6 +73,10 @@ internal sealed class PgNotificationListener(NpgsqlDataSource dataSource, IEvent
                     break;
                 case "dossier_changed":
                     await HandleDossierAsync(root, ct);
+                    break;
+                case "ai_worker_status":
+                    // Không gửi chi tiết của worker (địa chỉ máy, lỗi): giao diện tự hỏi lại /ai/availability.
+                    bus.PublishToAll("ai.availability", new { changed = true });
                     break;
                 case "export_progress":
                     if (root.TryGetProperty("userId", out var exporter) && exporter.TryGetGuid(out var exporterId))

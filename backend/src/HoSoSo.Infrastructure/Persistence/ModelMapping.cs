@@ -166,6 +166,7 @@ internal static class ModelMapping
             e.Property(x => x.CreatedAt).HasDefaultValueSql("now()");
         });
         m.Entity<OcrPage>(e => { e.ToTable("ocr_pages"); e.HasKey(x => new { x.JobId, x.PageNo }); });
+        m.Entity<AiWorker>(e => { e.ToTable("ai_workers"); e.HasKey(x => x.WorkerId); });
         m.Entity<AiSuggestion>(e =>
         {
             e.ToTable("ai_suggestions"); e.HasKey(x => x.Id);

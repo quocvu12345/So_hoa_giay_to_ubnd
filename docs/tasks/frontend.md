@@ -414,7 +414,12 @@ Tìm ra khi đối chiếu frontend với `nghiep-vu-vai-tro.html`, docs/05, doc
 
 ### FE-48 · Đi trong danh sách bằng bàn phím ✅ · 0,5 ngày
 - **Đã có (18/11/2026):** `components/ui/row-navigation.tsx` (có test): ↑ ↓ chuyển giữa các dòng, Home/End về đầu/cuối, Enter mở (dòng là liên kết nên Enter có sẵn). Gắn trình nghe phím cho cả trang, chỉ chiếm phím khi trang có liên kết `a[data-row]` đang hiện; nhường phím cho ô nhập, danh sách chọn, hộp thoại và mọi tổ hợp có Ctrl/Alt/⌘/Shift. Dòng đánh dấu bằng `data-row` ở danh sách hồ sơ (bảng và thẻ), tra cứu, hàng việc ở Việc của tôi và hồ sơ trong vị trí kho.
-- **Đã gắn thêm (18/11/2026):** hộp tiếp nhận (liên kết chính của dòng, `ButtonLink row`), danh sách thông báo, lô quét, đợt nộp lưu, thủ tục, người dùng, nhóm danh mục. **Chưa thử bằng trình duyệt thật** ngoài E2E (mới có test jsdom cho `RowNavigation`).## Sau khi xong các màn
+- **Đã gắn thêm (18/11/2026):** hộp tiếp nhận (liên kết chính của dòng, `ButtonLink row`), danh sách thông báo, lô quét, đợt nộp lưu, thủ tục, người dùng, nhóm danh mục. **Chưa thử bằng trình duyệt thật** ngoài E2E (mới có test jsdom cho `RowNavigation`).
+
+### FE-49 · Báo khi máy AI không đọc được ✅ · 0,5 ngày (19/11/2026, AI-24, BE-133)
+- **Vì sao:** máy AI (Ollama trên máy Windows) tắt thì PDF "chờ đọc, vị trí 1" mãi, người dùng không biết vì sao và có thể nạp lại.
+- **Đã có:** hộp tiếp nhận (thẻ Chờ xếp) gọi `GET /api/v1/ai/availability` và hiện băng `AiAvailabilityNotice` khi `engine_down` ("Máy AI tạm thời không trả lời từ …; PDF vẫn nạp được, AI tự đọc tiếp khi máy trở lại, không cần nạp lại") hoặc `no_worker` ("Bộ đọc PDF đang không hoạt động"); lời báo không có chi tiết kỹ thuật (`features/intake/ai-availability.ts`, có test). Bảng nghe SSE `ai.availability` để tự tải lại, băng hiện/tắt mà không cần bấm. Trang vận hành: cảnh báo đầu trang khi PDF không được đọc, mục **Worker AI** liệt kê từng worker với nhãn `machineState` (máy AI trả lời / không trả lời bao lâu kèm lỗi / im lặng quá 2 phút) (`features/ops/ops-rules.ts`, có test).
+- **Kiểm tra:** Vitest; chạy thật với worker trỏ vào cổng chết rồi bật lại: băng hiện đúng giờ bắt đầu hỏng, tự tắt khi máy trở lại.## Sau khi xong các màn
 
 | ID | Task | Ngày |
 |---|---|---|

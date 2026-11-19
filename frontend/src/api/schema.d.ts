@@ -3644,6 +3644,60 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
+    "/api/v1/ai/availability": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        /** Máy AI có đang đọc được không: ok, engine_down (máy chạy mô hình không trả lời), no_worker (không worker nào hoạt động), từ lúc nào */
+        get: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: never;
+            responses: {
+                /** @description OK */
+                200: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/json": components["schemas"]["AiAvailability"];
+                    };
+                };
+                /** @description Chưa đăng nhập hoặc phiên đã hết hạn (unauthenticated). */
+                401: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/problem+json": unknown;
+                    };
+                };
+                /** @description Gọi quá nhiều lần trong một phút; thử lại sau. */
+                429: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/problem+json": unknown;
+                    };
+                };
+            };
+        };
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
     "/api/v1/documents/{id}": {
         parameters: {
             query?: never;
@@ -11766,6 +11820,11 @@ export interface components {
             /** Format: date-time */
             nextAssignmentEndsAt?: null | string;
         };
+        AiAvailability: {
+            state: string;
+            /** Format: date-time */
+            since: null | string;
+        };
         AiExtractItem: {
             /** Format: uuid */
             documentId: string;
@@ -11799,6 +11858,24 @@ export interface components {
             /** Format: int32 */
             skipped: number;
         };
+        AiMachine: {
+            workerId: string;
+            profile: string;
+            engine: null | string;
+            engineOk: boolean;
+            engineError: null | string;
+            /** Format: date-time */
+            engineDownSince: null | string;
+            /** Format: uuid */
+            currentJobId: null | string;
+            /** Format: date-time */
+            startedAt: string;
+            /** Format: date-time */
+            lastSeenAt: string;
+            /** Format: int32 */
+            lastSeenSecondsAgo: number;
+            alive: boolean;
+        };
         AiStatus: {
             queue: components["schemas"]["QueueCounts"];
             /** Format: int32 */
@@ -11810,6 +11887,8 @@ export interface components {
             byKind?: null | components["schemas"]["QueueByKind"];
             runningModels?: null | components["schemas"]["RunningModel"][];
             modelMismatch?: null | string;
+            availability?: null | components["schemas"]["AiAvailability"];
+            machines?: null | components["schemas"]["AiMachine"][];
         };
         AllowedAction: {
             action: string;

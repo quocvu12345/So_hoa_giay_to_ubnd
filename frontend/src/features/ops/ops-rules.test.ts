@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { ageLabel, formatBytes, heartbeatTone, jobStatusParam, parseJobFilter, parseSettingValue, settingPreview } from "./ops-rules";
+import { ageLabel, availabilityAlert, formatBytes, heartbeatTone, jobStatusParam, machineState, parseJobFilter, parseSettingValue, settingPreview } from "./ops-rules";
 
 describe("ageLabel", () => {
   it("chọn đơn vị vừa đọc", () => {
@@ -73,5 +73,31 @@ describe("settingPreview", () => {
   it("cắt khi dài", () => {
     expect(settingPreview(true)).toBe("true");
     expect(settingPreview("x".repeat(200), 20).length).toBe(20);
+  });
+});
+
+describe("machineState, availabilityAlert (AI-24)", () => {
+  const now = Date.parse("2026-11-19T01:00:00Z");
+
+  it("worker sống, máy AI trả lời", () => {
+    expect(machineState({ alive: true, engineOk: true, engine: "Ollama http://100.78.102.53:11434", lastSeenSecondsAgo: 12 }, now)).toEqual({ label: "Máy AI trả lời", tone: "ok" });
+    expect(machineState({ alive: true, engineOk: true, engine: null, lastSeenSecondsAgo: 12 }, now)).toEqual({ label: "Đang hoạt động", tone: "ok" });
+  });
+
+  it("worker sống mà máy AI không trả lời: nói từ bao lâu", () => {
+    expect(machineState({ alive: true, engineOk: false, engineDownSince: "2026-11-19T00:48:00Z", lastSeenSecondsAgo: 5 }, now))
+      .toEqual({ label: "Máy AI không trả lời 12 phút", tone: "bad" });
+    expect(machineState({ alive: true, engineOk: false, engineDownSince: null, lastSeenSecondsAgo: 5 }, now).label).toBe("Máy AI không trả lời");
+  });
+
+  it("im lặng quá 2 phút là có thể đã dừng, kể cả khi lần cuối báo máy AI tốt", () => {
+    expect(machineState({ alive: false, engineOk: true, lastSeenSecondsAgo: 600 }, now)).toEqual({ label: "Im lặng 10 phút, có thể đã dừng", tone: "warn" });
+  });
+
+  it("cảnh báo đầu trang chỉ khi PDF không được đọc", () => {
+    expect(availabilityAlert("ok")).toBeNull();
+    expect(availabilityAlert(undefined)).toBeNull();
+    expect(availabilityAlert("engine_down")).toContain("Tailscale");
+    expect(availabilityAlert("no_worker")).toContain("Chạy lại worker");
   });
 });

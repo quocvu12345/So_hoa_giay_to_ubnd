@@ -15,7 +15,8 @@ public sealed record ModelInfo(string Key, string Repo, string Revision, string 
 public sealed record Throughput(int JobsLastHour, int PagesLastHour, double? AverageSecondsPerOcrPage);
 public sealed record AiStatus(QueueCounts Queue, int? OldestQueuedSeconds, IReadOnlyList<WorkerInfo> Workers, IReadOnlyList<FailureInfo> RecentFailures,
     IReadOnlyList<ModelInfo> Models, Throughput Throughput, QueueByKind? ByKind = null,
-    IReadOnlyList<RunningModel>? RunningModels = null, string? ModelMismatch = null);
+    IReadOnlyList<RunningModel>? RunningModels = null, string? ModelMismatch = null,
+    AiAvailability? Availability = null, IReadOnlyList<AiMachine>? Machines = null);
 
 /// <summary>BE-100. Mô hình mà worker THẬT SỰ đã dùng cho các job hoàn tất trong 24 giờ qua (từ <c>ocr_jobs.model_version</c>), không phải điều bảng <c>ai_models</c> ghi.</summary>
 public sealed record RunningModel(string ModelVersion, int Jobs, DateTimeOffset LastFinishedAt);
@@ -43,7 +44,7 @@ public sealed record FinishBackupRequest(string? Status, DateTimeOffset? Finishe
 public sealed record RestoreTestRequest(DateTimeOffset? TestedAt, string? Note);
 
 /// <summary>BE-88, BE-89: vận hành. Trạng thái hàng đợi AI, tra nhật ký, cài đặt không nhạy cảm, kết quả sao lưu.</summary>
-public sealed partial class AdminOpsHandler(IHoSoDb db, ICurrentUser user, IClock clock, AiQueueEstimator queue)
+public sealed partial class AdminOpsHandler(IHoSoDb db, ICurrentUser user, IClock clock, AiQueueEstimator queue, AiAvailabilityQuery availability)
 {
     private static readonly string[] SecretWords = ["password", "passwd", "secret", "token", "apikey", "api_key", "private", "credential", "mat_khau", "bi_mat"];
 
@@ -91,13 +92,14 @@ public sealed partial class AdminOpsHandler(IHoSoDb db, ICurrentUser user, ICloc
             .Select(j => new { j.ModelVersion, j.FinishedAt }).ToListAsync(ct);
         var modelsInUse = finished.GroupBy(x => x.ModelVersion)
             .Select(g => new RunningModel(g.Key, g.Count(), g.Max(x => x.FinishedAt!.Value))).OrderByDescending(r => r.LastFinishedAt).ToList();
+        var (state, machines) = await availability.LoadAsync(ct);      // AI-24: worker rảnh, máy AI không trả lời hay không còn worker
 
         return new AiStatus(
             new QueueCounts(counts.GetValueOrDefault(JobStatus.Queued), counts.GetValueOrDefault(JobStatus.Running),
                 recent.GetValueOrDefault(JobStatus.Completed), recent.GetValueOrDefault(JobStatus.Failed), recent.GetValueOrDefault(JobStatus.Cancelled)),
             oldest is { } o ? (int)(now - o).TotalSeconds : null, workers, failures, models,
             new Throughput(lastHour.Count, lastHour.Sum(x => x.ProcessedPages), averageSeconds is { } a ? Math.Round(a, 1) : null), byKind,
-            modelsInUse, DetectModelMismatch(modelsInUse, models));
+            modelsInUse, DetectModelMismatch(modelsInUse, models), state, machines);
     }
 
     /// <summary>

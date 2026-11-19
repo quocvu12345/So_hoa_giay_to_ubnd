@@ -297,6 +297,13 @@ def source_version(source: str, model: str) -> str:
     return f"{repo.rsplit('/', 1)[-1]}-{quant}@{commit[:7]}"
 
 
+def probe(client: OllamaClient, *models: str) -> None:
+    """Thăm dò cho worker lúc rảnh (AI-24): máy Ollama trả lời và có đủ mô hình. Ném EngineUnavailable nếu không."""
+    client.ping()
+    for model in models:
+        client.require(model)
+
+
 def readiness(client: OllamaClient, ocr_model: str, classifier_model: str) -> dict:
     """Cho lệnh `status`: máy Ollama có trả lời, có đủ hai mô hình; máy này có mô hình dò bố cục."""
     from document_ai.config import MODELS, model_path

@@ -6,7 +6,7 @@ import { routes } from "@/config/routes";
 import { formatDateTime } from "@/lib/format";
 import { AiQueuePanel, type QueueByKind } from "./ai-queue-panel";
 import type { AiStatus } from "./ops-data";
-import { ageLabel, heartbeatTone } from "./ops-rules";
+import { ageLabel, availabilityAlert, heartbeatTone, machineState } from "./ops-rules";
 
 const n = (v: number | string | null | undefined) => Number(v ?? 0);
 
@@ -21,9 +21,17 @@ export function AiStatusPanel({ status }: { status: AiStatus }) {
     { label: "Đã hủy 24 giờ", value: n(queue.cancelled24h), tone: "neutral" },
   ] as const;
   const activeModels = new Set(models.filter((m) => m.active).map((m) => m.key));
+  const machines = status.machines ?? [];
+  const alert = availabilityAlert(status.availability?.state);
 
   return (
     <div className="grid gap-4">
+      {alert && (
+        <div role="alert" className="flex items-start gap-2 border border-bad bg-bad-soft p-3 text-sm text-bad">
+          <AlertTriangle aria-hidden className="mt-0.5 size-4 flex-none" />
+          <p><b>PDF chưa được đọc.</b> {alert}</p>
+        </div>
+      )}
       {status.modelMismatch && (
         <div role="alert" className="flex items-start gap-2 border border-warn bg-warn-soft p-3 text-sm text-warn">
           <AlertTriangle aria-hidden className="mt-0.5 size-4 flex-none" />
@@ -47,6 +55,32 @@ export function AiStatusPanel({ status }: { status: AiStatus }) {
       </Section>
 
       {status.byKind && <AiQueuePanel data={{ ...status.byKind, priority: n(status.byKind.priority), interactive: n(status.byKind.interactive), background: n(status.byKind.background), preempted24h: n(status.byKind.preempted24h), oldestBackgroundSeconds: status.byKind.oldestBackgroundSeconds == null ? null : n(status.byKind.oldestBackgroundSeconds), secondsPerPage: status.byKind.secondsPerPage == null ? null : n(status.byKind.secondsPerPage) } satisfies QueueByKind} />}
+
+      <Section title={`Worker AI (${machines.length})`} description="Mỗi worker tự báo khoảng 30 giây một lần, kể cả lúc rảnh, kèm trạng thái máy chạy mô hình khi mô hình nằm ở máy khác (Ollama).">
+        {machines.length === 0 ? (
+          <p className="text-sm text-muted">Chưa worker nào báo trạng thái. Worker chưa chạy, hoặc bản cũ chưa có tính năng này (chỉ hiện ở mục bên dưới khi đang đọc).</p>
+        ) : (
+          <ul className="grid divide-y divide-line border border-line" aria-label="Trạng thái từng worker">
+            {machines.map((m) => {
+              const state = machineState({ ...m, lastSeenSecondsAgo: n(m.lastSeenSecondsAgo) });
+              return (
+                <li key={m.workerId} className="grid gap-1 px-3 py-2 text-sm">
+                  <span className="flex flex-wrap items-center gap-2">
+                    <span className="font-semibold break-all">{m.workerId}</span>
+                    <Chip>{m.profile}</Chip>
+                    <Chip tone={state.tone}>{state.label}</Chip>
+                    {m.currentJobId && m.alive && <Chip tone="info">Đang đọc</Chip>}
+                  </span>
+                  <span className="text-xs break-all text-muted">
+                    {m.engine ? `${m.engine} · ` : ""}báo lần cuối {ageLabel(n(m.lastSeenSecondsAgo))} trước · chạy từ {formatDateTime(m.startedAt)}
+                  </span>
+                  {!m.engineOk && m.engineError && <span className="text-xs break-all text-bad">{m.engineError}</span>}
+                </li>
+              );
+            })}
+          </ul>
+        )}
+      </Section>
 
       <Section title={`Máy đang đọc (${workers.length})`} description="Mỗi worker báo nhịp tim; quá 5 phút không báo thì việc bị thu hồi và xếp lại.">
         {workers.length === 0 ? (

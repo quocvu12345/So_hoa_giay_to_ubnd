@@ -48,6 +48,9 @@ def health(state: WorkerState, scheduler: ModelScheduler, settings: Settings) ->
         "currentJob": state.current_job,
         "loadedModels": list(scheduler.loaded),
         "lastLoopSecondsAgo": round(age, 1),
+        # AI-24: máy chạy mô hình (Ollama ở máy khác). Worker vẫn "ok" khi máy đó hỏng: việc chỉ nằm chờ trong hàng.
+        "engine": {"ok": state.engine_ok, "error": state.engine_error,
+                   "downSeconds": None if state.engine_down_since is None else round(time.time() - state.engine_down_since)},
     }
     return (503 if stale else 200), body
 

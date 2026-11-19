@@ -75,8 +75,12 @@ chạy ở máy AI có GPU, ví dụ máy Windows nối bằng Tailscale. Mã: `
   mẫu `User:/Assistant:` của PaddleOCR-VL) rồi gửi `/api/generate` với `raw=true`. **Đừng đổi sang `/v1/chat/completions`:** đường đó
   không bọc đúng mẫu và PaddleOCR-VL sinh thêm chữ rác. Vì vậy, pipeline Paddle gọi một bộ chuyển nhỏ trong worker (chỉ nghe 127.0.0.1)
   thay vì gọi thẳng Ollama.
-- **Máy AI tắt hoặc mất mạng:** worker trả job về hàng đợi (không tính vào số lần thử, không ghi trang lỗi, không mất gợi ý), rồi
-  ngừng lấy việc khoảng 30 giây. `/metrics` đếm ở `hoso_ai_jobs_total{result="engine_unavailable"}`.
+- **Máy AI tắt hoặc mất mạng:** worker trả job đang dở về hàng đợi (không tính vào số lần thử, không ghi trang lỗi, không mất gợi ý).
+  Từ AI-24 worker còn thăm dò máy AI lúc rảnh (`/api/version` và đủ hai mô hình; 60 giây một lần khi máy trả lời, 10 giây khi máy hỏng)
+  và **không nhận việc** khi máy hỏng, nên việc nằm yên ở "chờ đọc" thay vì nhận rồi trả lại; máy trở lại thì nhận việc ngay.
+  Trạng thái ghi vào `hoso.ai_workers` (khởi động, 30 giây một lần, khi đổi trạng thái kèm `NOTIFY ai_worker_status`; tắt êm thì xóa dòng)
+  để API báo ở hộp tiếp nhận, trang vận hành và `/health/ready`. `/health` của worker có `engine` (`ok`, `error`, `downSeconds`);
+  `/metrics` đếm ở `hoso_ai_jobs_total{result="engine_unavailable"}`.
 - **Dữ liệu đi qua mạng:** ảnh vùng cắt và chữ của giấy tờ được gửi tới máy AI. Ollama không có xác thực và nói HTTP thường, nên chỉ
   dùng trong mạng riêng mã hóa (Tailscale/WireGuard), và chặn cổng 11434 với mọi mạng khác trên máy AI (tường lửa Windows).
 - `ocr_jobs.model_version` ghi tên mô hình trên Ollama kèm digest, ví dụ

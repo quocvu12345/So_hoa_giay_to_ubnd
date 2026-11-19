@@ -1,12 +1,22 @@
 import "server-only";
 import type { components } from "@/api/schema";
 import { ok, serverApi } from "@/lib/api/server";
+import type { AiAvailability } from "./ai-availability";
 import { inboxQuery, NO_FILTERS, type InboxFilters } from "./inbox-filter";
 
 export type InboxItem = components["schemas"]["InboxItem"];
 export type InboxPage = components["schemas"]["PageOfInboxItem"];
 export type InboxSummary = components["schemas"]["InboxSummary"];
 export type InboxStatus = "inbox" | "filed" | "discarded";
+
+/** AI-24: máy AI có đang đọc được không. Lỗi thì null: băng báo là phần phụ, không được làm hỏng hộp tiếp nhận. */
+export async function getAiAvailability(): Promise<AiAvailability | null> {
+  try {
+    return ok(await serverApi().GET("/api/v1/ai/availability"));
+  } catch {
+    return null;
+  }
+}
 
 /** Chỉ các PDF đã đọc xong: dùng ở chỗ cần "PDF kế tiếp" hay đếm, thay cho việc tải rồi tự lọc phần đầu hộp. */
 export const READY_ONLY: InboxFilters = { ...NO_FILTERS, doc: "da-doc" };

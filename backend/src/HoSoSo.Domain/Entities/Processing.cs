@@ -67,6 +67,23 @@ public sealed class OcrJob
     public DateTimeOffset CreatedAt { get; set; }
 }
 
+/// <summary>
+/// AI-24, BE-133. Mỗi worker AI một dòng (migration 044) do chính worker ghi khoảng 30 giây một lần và khi máy chạy mô hình đổi trạng thái;
+/// API chỉ đọc. <c>Engine</c>: máy chạy mô hình ở nơi khác (Ollama trên máy Windows qua Tailscale), null khi mô hình nằm trong worker.
+/// </summary>
+public sealed class AiWorker
+{
+    public required string WorkerId { get; init; }
+    public required string Profile { get; init; }
+    public string? Engine { get; init; }
+    public bool EngineOk { get; init; }
+    public string? EngineError { get; init; }
+    public DateTimeOffset? EngineDownSince { get; init; }
+    public Guid? CurrentJobId { get; init; }
+    public DateTimeOffset StartedAt { get; init; }
+    public DateTimeOffset LastSeenAt { get; init; }
+}
+
 public sealed class OcrPage
 {
     public Guid JobId { get; init; }

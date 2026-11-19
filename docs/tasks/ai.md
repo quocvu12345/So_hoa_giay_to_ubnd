@@ -387,6 +387,16 @@ Tình trạng sau đợt làm 17/11/2026: mục 1 và 2 đã sửa (AI-13); mụ
   - `smoke-ai-edge.py`: `text`, `mixed`, `reread`, `force`, `packet`, `handsim`, `cancel`, `crash`, mỗi kịch bản qua ít nhất một lượt. Các lượt chạy trên các phiên bản mã khác nhau trong ngày vì có sửa lỗi giữa chừng (xem bảng "Vấn đề tìm thấy"); chưa chạy lại cả bộ trong một lượt trên bản mã cuối.
   - Dữ liệu thử nằm lại trong `hoso_dev` (giấy tờ ở trạng thái đã bỏ khỏi hộp tiếp nhận, một hồ sơ `UBND-2026-000001` do `--file-to-dossier` tạo).
 
+### AI-24 · Worker báo trạng thái máy AI, không nhận việc khi máy AI hỏng ✅ · 1 ngày (19/11/2026)
+- **Vì sao:** từ khi mô hình chạy ở máy Windows qua Tailscale (AI-22), máy đó tắt thì worker vẫn "khỏe", cứ 30 giây nhận việc rồi trả lại (việc nhảy giữa "đang đọc" và "chờ", `attempt` và `preempted_count` tăng mãi), `/health/ready` bật tắt theo từng lần gọi, còn người dùng chỉ thấy "đang chờ, vị trí 1" không đổi. Trang vận hành chỉ thấy worker khi nó đang giữ việc nên worker rảnh, worker đã chết và máy AI tắt trông như nhau.
+- **Đã làm:**
+  1. `Engines.engine` + `Engines.probe` (`engines/base.py`); hồ sơ `ollama` thăm dò `/api/version` và đủ hai mô hình (`engines/ollama.py: probe`). Mô hình nằm trong worker (MLX, giả) không có hàm thăm dò, chỉ biết qua `EngineUnavailable` của job như trước.
+  2. Worker (`worker.py`): thăm dò khi khởi động và lúc rảnh (60 giây khi máy trả lời, 10 giây khi máy hỏng); máy hỏng thì **không nhận việc**, việc nằm yên trong hàng; máy trở lại thì nhận việc ngay, không đợi hết khoảng chờ. Lỗi lạ khi thăm dò không làm chết worker.
+  3. Ghi `hoso.ai_workers` (migration 044, `queue/postgres.py: report_worker`): khi khởi động, 30 giây một lần (cả lúc đang đọc, qua luồng heartbeat), và ngay khi máy AI đổi trạng thái kèm `NOTIFY ai_worker_status`; tắt êm thì xóa dòng; dòng im lặng quá 7 ngày được dọn. `/health` của worker có thêm `engine`.
+  4. API và giao diện: BE-133 (docs/tasks/backend.md), FE-49 (docs/tasks/frontend.md).
+- **Kiểm tra:** `tests/test_engine_status.py` (6 test), `test_ollama_engine.py` (+2: thăm dò, hồ sơ ollama gắn hàm thăm dò), `test_postgres_contract.py` (+1, chạy bằng role `hoso_ai_worker`: ghi, NOTIFY khi đổi trạng thái, dọn dòng cũ, ràng buộc "đang hỏng phải có thời điểm"; 23/23 qua trên CSDL sạch dựng bằng migration, còn trên bản sao `hoso_dev` hai ca cũ đếm cứng số nhóm và số trang hỏng vì dữ liệu dev). Chạy thật 19/11/2026: worker trỏ vào cổng chết trên máy Windows (tường lửa bỏ gói, giống máy tắt) → báo hỏng ngay khi khởi động; PDF tải lên nằm `queued`, `attempt=0` suốt 140 giây, không lần nhận việc nào; `/health/ready` Degraded; bật lại worker thật → 2 sự kiện SSE `ai.availability`, việc được nhận sau khoảng 3 giây và xong với 1 lần thử.
+- **Còn lại:** độ trễ hủy việc vẫn tới hết trang đang đọc (5–30 giây với Ollama); worker thoát (mã 1) khi PostgreSQL đóng kết nối giữa lúc chờ việc, dịch vụ chạy lại sau 5–30 giây, chưa tự nối lại trong tiến trình.
+
 ---
 
 ## Thứ tự làm

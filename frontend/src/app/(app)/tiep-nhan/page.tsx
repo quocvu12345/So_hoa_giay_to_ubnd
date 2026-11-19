@@ -8,7 +8,8 @@ import { NoAccess } from "@/components/ui/no-access";
 import { PageHeader } from "@/components/ui/page-header";
 import { routes } from "@/config/routes";
 import { getBatches } from "@/features/intake/batch-data";
-import { getInbox, getInboxSummary, INBOX_TABS, inboxTab } from "@/features/intake/inbox-data";
+import { AiAvailabilityNotice } from "@/features/intake/ai-availability-notice";
+import { getAiAvailability, getInbox, getInboxSummary, INBOX_TABS, inboxTab } from "@/features/intake/inbox-data";
 import { InboxFilterBar } from "@/features/intake/inbox-filter-bar";
 import { inboxHref, NO_FILTERS, parseInboxFilters } from "@/features/intake/inbox-filter";
 import { InboxTable } from "@/features/intake/inbox-table";
@@ -31,14 +32,16 @@ export default async function IntakePage({ searchParams }: PageProps<"/tiep-nhan
   // Nút lọc tình trạng đọc chỉ có ở thẻ "Chờ xếp": PDF đã xếp hay đã bỏ không còn việc đọc để theo dõi.
   const parsed = parseInboxFilters(params);
   const filters = tab.status === "inbox" ? parsed : { ...parsed, doc: NO_FILTERS.doc };
-  const [page, summary, batches, groups] = real
+  const [page, summary, batches, groups, ai] = real
     ? await Promise.all([
         getInbox(tab.status, undefined, 50, filters),
         tab.status === "inbox" ? getInboxSummary(tab.status, filters) : null,
         getBatches().catch(() => []),
         getWorkGroups(session.activeAssignment.organizationCode).catch(() => []),
+        // AI-24: PDF "chờ đọc" mãi vì máy AI tắt thì nói rõ, thay vì để người dùng đoán hay nạp lại.
+        tab.status === "inbox" ? getAiAvailability() : null,
       ])
-    : [null, null, [], []];
+    : [null, null, [], [], null];
   // Loại giấy tờ của nhóm đang lọc. Nhóm không có trong danh sách (địa chỉ gõ tay) thì không gọi API, tránh 404 vô ích.
   const types = real && filters.group && groups.some((g) => g.code === filters.group) ? await getDocumentTypes(filters.group).catch(() => []) : [];
 
@@ -76,6 +79,7 @@ export default async function IntakePage({ searchParams }: PageProps<"/tiep-nhan
       <PageBody>
         {page ? (
           <div className="grid gap-3">
+            <AiAvailabilityNotice availability={ai} />
             <InboxFilterBar
               tabKey={tab.key}
               filters={filters}

@@ -40,6 +40,8 @@ DbUp chạy các tệp `*.sql` trong thư mục này theo thứ tự tên, mỗi
 | `040` | `access_events.action` nhận thêm `ai_extract`: ai bấm "Trích xuất ngay" cho giấy tờ nào (BE-128) | |
 | `041` | `audit_events.correlation_id` + trigger `audit_change()` đọc `hoso.correlation_id`: tra một thay đổi dữ liệu về request gây ra nó (LOG-05) | |
 | `042` | `v_ai_accuracy`: độ đúng của AI theo mô hình, loại giấy tờ và trường, đo từ giá trị cán bộ đã đối chiếu (accepted, edited, cleared, missed) (DB-14, AI-10) | |
+| `043` | Dòng `qwen_vl` của `ai_models` thôi ghi là đang bật (phương án Qwen3-VL-8B đã loại, không worker nào nạp; giữ dòng làm lịch sử) | |
+| `044` | `ai_workers`: mỗi worker AI tự ghi trạng thái của mình và của máy chạy mô hình (Ollama ở máy khác) để biết worker rảnh, máy AI không trả lời hay không còn worker nào sống | AI-24, BE-133 |
 
 Số thứ tự giữ nguyên theo `docs/03-thiet-ke-csdl.md` mục 15; `005`, `006` không dùng (dành cho bản gốc ngoài thư mục này).
 

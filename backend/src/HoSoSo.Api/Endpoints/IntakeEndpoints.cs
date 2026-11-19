@@ -85,6 +85,11 @@ internal static class IntakeEndpoints
         jobs.MapPost("/{id:guid}/pages/{page:int}/retry", async (Guid id, int page, JobsHandler h, CancellationToken ct) =>
                 TypedResults.Ok(await h.RetryPageAsync(id, page, ct)))
             .WithSummary("Đọc lại một trang");
+
+        // AI-24, BE-133: chỉ cần đăng nhập; trả trạng thái và thời điểm, không có chi tiết kỹ thuật (chi tiết ở /admin/ai/status).
+        var ai = api.MapGroup("/ai").WithTags("Xử lý AI");
+        ai.MapGet("/availability", async (AiAvailabilityQuery q, CancellationToken ct) => TypedResults.Ok(await q.GetAsync(ct)))
+            .WithSummary("Máy AI có đang đọc được không: ok, engine_down (máy chạy mô hình không trả lời), no_worker (không worker nào hoạt động), từ lúc nào");
         return api;
     }
 }

@@ -231,3 +231,22 @@ def test_nguon_khai_sai_dang_thi_dung_khoi_dong(tmp_path):
     assert Settings.from_env(base).ollama_classifier_source is None
     with pytest.raises(SettingsError, match="repo@commit"):
         Settings.from_env(base | {"HOSO_AI_OLLAMA_CLASSIFIER_SOURCE": "Qwen3-4B-ifstruct"})
+
+
+def test_tham_do_may_ollama_can_ca_may_tra_loi_lan_du_mo_hinh(ollama):
+    from hoso_ai.engines.ollama import probe
+
+    probe(OllamaClient(ollama.url), "hoso-ifstruct:q8_0", "hoso-paddleocr-vl:1.6-q8_0")
+    with pytest.raises(EngineUnavailable, match="chưa có mô hình hoso-khac"):
+        probe(OllamaClient(ollama.url), "hoso-ifstruct:q8_0", "hoso-khac")
+    with pytest.raises(EngineUnavailable, match="Không gọi được Ollama"):
+        probe(OllamaClient(closed_port_url()), "hoso-ifstruct:q8_0")
+
+
+def test_ho_so_ollama_gan_ham_tham_do_va_ten_may(tmp_path, ollama):
+    from hoso_ai.engines.factory import build_engines
+
+    engines = build_engines(Settings.from_env({"HOSO_AI_PROFILE": "ollama", "HOSO_AI_OLLAMA_URL": ollama.url,
+                                               "HOSO_AI_WORK_ROOT": str(tmp_path), "HOSO_AI_STORAGE_ROOT": str(tmp_path)}))
+    assert engines.engine == f"Ollama {ollama.url}"
+    engines.probe()

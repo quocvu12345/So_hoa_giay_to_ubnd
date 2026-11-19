@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import os
+import socket
 import threading
 import time
 from dataclasses import dataclass, field
@@ -12,7 +13,7 @@ from . import logging as log
 from .contracts import Job, Progress, Stage
 from .engines.base import EngineUnavailable, Engines
 from .pipeline import DocumentPipeline, JobTimeout, JobYielded, WorkerStopping
-from .queue.repository import JobCancelled, JobLost, JobRepository
+from .queue.repository import JobCancelled, JobLost, JobRepository, WorkerReport
 from .runtime.scheduler import ModelScheduler
 from .runtime.watchdog import EXIT_STUCK
 from .runtime.windows import BackgroundWindows
@@ -30,6 +31,21 @@ class WorkerState:
                                                           "engine_unavailable": 0})
     pages: dict[str, int] = field(default_factory=lambda: {"pdf_text": 0, "ocr": 0, "failed": 0})
     ocr_seconds_total: float = 0.0
+    # Máy chạy mô hình (Ollama ở máy khác) có đang trả lời không (AI-24). Mô hình nằm trong worker thì chỉ đổi khi job gặp EngineUnavailable.
+    engine_ok: bool = True
+    engine_error: str | None = None
+    engine_down_since: float | None = None
+
+
+def _process_alive(pid: int) -> bool:
+    """Tiến trình pid còn trên máy này không (tín hiệu 0 chỉ kiểm, không gửi gì). Không có quyền gửi tín hiệu nghĩa là vẫn còn."""
+    try:
+        os.kill(pid, 0)
+    except ProcessLookupError:
+        return False
+    except PermissionError:
+        return True
+    return True
 
 
 def should_retry(job: Job, max_attempts: int, error: Exception) -> bool:
@@ -51,6 +67,14 @@ class Worker:
         # Máy chạy mô hình (Ollama ở máy khác) không trả lời: trả job về hàng đợi rồi ngừng lấy việc chừng này giây.
         self.engine_retry_seconds = max(30.0, settings.poll_seconds * 2)
         self._engine_retry_at = 0.0
+        # AI-24. Ghi trạng thái vào ai_workers mỗi chừng này giây (API coi worker im lặng quá 2 phút là đã dừng).
+        # Thăm dò máy chạy mô hình lúc rảnh: thưa khi nó đang trả lời, dày khi nó đang hỏng để nhận việc lại sớm khi nó trở lại.
+        self.report_seconds = 30.0
+        self.probe_ok_seconds = 60.0
+        self.probe_down_seconds = 10.0
+        self._last_report = float("-inf")
+        self._last_probe = float("-inf")
+        self.engines = engines
         self._stop_seen_at: float | None = None
         self.windows = BackgroundWindows.parse(settings.background_windows)
         self.now = now
@@ -86,17 +110,35 @@ class Worker:
         log.info("worker_started", worker=self.settings.worker_id, profile=self.settings.profile,
                  model_budget_gb=self.settings.model_budget_gb)
         threading.Thread(target=self._loop_watchdog, name="loop-watchdog", daemon=True).start()
+        self._probe_engine(force=True)          # biết máy AI có trả lời không trước khi nhận việc đầu tiên
+        self._report(changed=True)              # có mặt trên trang vận hành ngay khi khởi động
+        self._prune_dead_siblings()
         try:
             while not self.stop.is_set():
                 self.state.last_loop_at = time.time()
                 if not self.run_once():
-                    self.repo.wait_for_work(self.settings.poll_seconds)
+                    self.idle_tick()
+                    wait = self.settings.poll_seconds if self.state.engine_ok else min(self.settings.poll_seconds, self.probe_down_seconds)
+                    self.repo.wait_for_work(wait)
         finally:
             self.scheduler.unload_all()
+            try:
+                self.repo.remove_worker(self.settings.worker_id)
+            except Exception:
+                log.warning("worker_remove_failed", exc_info=True, worker=self.settings.worker_id)
             log.info("worker_stopped", worker=self.settings.worker_id)
+
+    def idle_tick(self) -> None:
+        """Lúc rảnh: thăm dò máy chạy mô hình (nếu ở nơi khác) và ghi trạng thái định kỳ vào ai_workers."""
+        self._probe_engine()
+        self._report()
 
     def run_once(self) -> bool:
         """Xử lý tối đa một job. Trả False khi hàng đợi trống hoặc đang đợi máy chạy mô hình trả lời lại."""
+        if self.engines.probe is not None and not self.state.engine_ok:
+            # Máy AI đang hỏng: để việc nằm yên trong hàng (không nhận rồi trả lại mỗi 30 giây làm trạng thái nhảy qua lại),
+            # idle_tick thăm dò tới khi nó trở lại.
+            return False
         if time.monotonic() < self._engine_retry_at:
             return False
         # Ngoài khung giờ khay nền chỉ lấy việc có người đang chờ; việc nền để lại cho lúc được phép.
@@ -120,6 +162,7 @@ class Worker:
             pdf = self.storage.open_verified(job.storage_key, job.sha256)
             outcome = self.pipeline.run(job, pdf)
             self.repo.complete(job, self.settings.worker_id, outcome.warnings, outcome.all_pages_read, outcome.model_version)
+            self._engine_up()       # đọc xong một job là máy chạy mô hình đang trả lời
             self.state.jobs["completed"] += 1
             self.state.pages["pdf_text"] += outcome.pages_text
             self.state.pages["ocr"] += outcome.pages_ocr
@@ -144,6 +187,7 @@ class Worker:
         except EngineUnavailable as error:
             # Không tính là một lần thử (như nhường chỗ): máy AI tắt cả buổi thì job vẫn đợi trong hàng, không thành "lỗi" sau 3 lần.
             self._engine_retry_at = time.monotonic() + self.engine_retry_seconds
+            self._engine_down(str(error))
             try:
                 self.repo.yield_job(job, self.settings.worker_id)
                 self.state.jobs["engine_unavailable"] += 1
@@ -177,9 +221,72 @@ class Worker:
         """Giữ job khỏi bị thu hồi khi một trang OCR chạy lâu hơn chu kỳ heartbeat."""
         while not done.wait(self.settings.heartbeat_seconds):
             progress = self.pipeline.last_progress or Progress(Stage.PREPARING, 0, job.page_count)
+            self._report()      # job dài (nhiều trang) không làm worker trông như đã im lặng trên trang vận hành
             try:
                 self.repo.heartbeat(job, self.settings.worker_id, progress)
             except (JobCancelled, JobLost):
                 return  # pipeline sẽ tự gặp lại ở lần beat tiếp theo
             except Exception:
                 log.warning("heartbeat_failed", job_id=job.id)
+
+    # --- AI-24: trạng thái máy chạy mô hình và dòng ai_workers ---------------------------------
+
+    def _probe_engine(self, force: bool = False) -> None:
+        if self.engines.probe is None:
+            return
+        interval = self.probe_ok_seconds if self.state.engine_ok else self.probe_down_seconds
+        if not force and time.monotonic() - self._last_probe < interval:
+            return
+        self._last_probe = time.monotonic()
+        try:
+            self.engines.probe()
+        except Exception as error:      # EngineUnavailable hay lỗi lạ khi hỏi máy kia: đều là "chưa dùng được", worker không được chết vì nó
+            self._engine_down(str(error) if isinstance(error, EngineUnavailable) else f"{type(error).__name__}: {error}")
+            return
+        self._engine_up()
+
+    def _engine_down(self, error: str) -> None:
+        state, was_ok = self.state, self.state.engine_ok
+        state.engine_ok, state.engine_error = False, error[:1000]
+        if was_ok:
+            state.engine_down_since = time.time()
+            log.warning("engine_down", worker=self.settings.worker_id, engine=self.engines.engine, error=state.engine_error)
+        self._report(changed=was_ok)
+
+    def _engine_up(self) -> None:
+        state = self.state
+        if state.engine_ok:
+            return
+        down_seconds = round(time.time() - (state.engine_down_since or time.time()))
+        state.engine_ok, state.engine_error, state.engine_down_since = True, None, None
+        self._engine_retry_at = 0.0         # nhận việc lại ngay, không đợi hết khoảng chờ
+        log.info("engine_back", worker=self.settings.worker_id, engine=self.engines.engine, down_seconds=down_seconds)
+        self._report(changed=True)
+
+    def _prune_dead_siblings(self) -> None:
+        """Worker bị giết (kill -9, máy treo) không kịp xóa dòng của mình; supervise.sh/launchd chạy lại nó với pid mới, nên trang vận hành
+        đọng thêm một dòng "im lặng". Lúc khởi động, xóa dòng của worker CÙNG MÁY (mã "<tên máy>-<pid>") mà tiến trình pid đó không còn.
+        Mã đặt tay (HOSO_AI_WORKER_ID) thì chạy lại vẫn ghi đè đúng dòng cũ, không cần dọn."""
+        prefix = f"{socket.gethostname()}-"
+        if not self.settings.worker_id.startswith(prefix):
+            return
+        try:
+            for other in self.repo.worker_ids(prefix):
+                pid = other[len(prefix):]
+                if other != self.settings.worker_id and pid.isdigit() and not _process_alive(int(pid)):
+                    self.repo.remove_worker(other)
+                    log.info("dead_worker_pruned", worker=self.settings.worker_id, removed=other)
+        except Exception:
+            log.warning("dead_worker_prune_failed", exc_info=True, worker=self.settings.worker_id)
+
+    def _report(self, changed: bool = False) -> None:
+        now = time.monotonic()
+        if not changed and now - self._last_report < self.report_seconds:
+            return
+        self._last_report = now
+        s = self.state
+        try:
+            self.repo.report_worker(WorkerReport(self.settings.worker_id, self.settings.profile, self.engines.engine, s.engine_ok,
+                                                 s.engine_error, s.engine_down_since, s.current_job), changed)
+        except Exception:      # mất CSDL thì vòng chính cũng sẽ gặp; ở đây chỉ không được làm hỏng việc đang làm
+            log.warning("worker_report_failed", exc_info=True, worker=self.settings.worker_id)
