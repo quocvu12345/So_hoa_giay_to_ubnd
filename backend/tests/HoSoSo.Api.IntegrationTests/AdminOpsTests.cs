@@ -11,7 +11,7 @@ public sealed class AdminOpsTests(DbApiFactory api) : IClassFixture<DbApiFactory
 {
     private sealed record Counts(int Queued, int Running, int Completed24h, int Failed24h, int Cancelled24h);
     private sealed record Worker(string WorkerId, Guid JobId, string? Stage, int HeartbeatAgeSeconds);
-    private sealed record Failure(Guid JobId, string FileName, string? Error);
+    private sealed record Failure(Guid JobId, string FileName, string? Error, int Attempts);
     private sealed record Model(string Key, bool Active);
     private sealed record ByKindDto(int Priority, int Interactive, int Background, int Preempted24h, int? OldestBackgroundSeconds, double? SecondsPerPage);
     private sealed record RunningModelDto(string ModelVersion, int Jobs);
@@ -38,7 +38,7 @@ public sealed class AdminOpsTests(DbApiFactory api) : IClassFixture<DbApiFactory
         var failed = await UploadAsync(cv, "that-bai");
         var queued = await UploadAsync(cv, "dang-cho");
         await api.ExecuteAsync("UPDATE hoso.ocr_jobs SET status='running', locked_by='mac-mini-01', stage='ocr', started_at=now(), heartbeat_at=now() - interval '7 seconds' WHERE id=$1", running.JobId);
-        await api.ExecuteAsync("UPDATE hoso.ocr_jobs SET status='failed', attempt=3, started_at=now(), finished_at=now(), error_message='Mã băm tệp không khớp' WHERE id=$1", failed.JobId);
+        await api.ExecuteAsync("UPDATE hoso.ocr_jobs SET status='failed', attempt=5, preempted_count=2, started_at=now(), finished_at=now(), error_message='Mã băm tệp không khớp' WHERE id=$1", failed.JobId);
         await api.ExecuteAsync("UPDATE hoso.ocr_jobs SET created_at = now() - interval '90 seconds' WHERE id=$1", queued.JobId);
 
         var admin = await api.LoginAsync("demo_admin");
@@ -51,10 +51,12 @@ public sealed class AdminOpsTests(DbApiFactory api) : IClassFixture<DbApiFactory
         (worker.WorkerId, worker.Stage).ShouldBe(("mac-mini-01", "ocr"));
         worker.HeartbeatAgeSeconds.ShouldBeInRange(5, 60);
         status.RecentFailures.Single().Error.ShouldBe("Mã băm tệp không khớp");
+        // 5 lần nhận việc, 2 lần nhường chỗ / máy AI không trả lời: chỉ 3 lần thử thật (cùng cách đếm với danh sách việc AI).
+        status.RecentFailures.Single().Attempts.ShouldBe(3);
         // BE-99: việc đang chờ chia theo khay; PDF tải lên vào khay nền; chưa có số đo thì không đoán giây/trang.
         (status.ByKind.Priority, status.ByKind.Interactive, status.ByKind.Background).ShouldBe((0, 0, 1));
         status.ByKind.OldestBackgroundSeconds.ShouldNotBeNull().ShouldBeGreaterThanOrEqualTo(90);
-        (status.ByKind.Preempted24h, status.ByKind.SecondsPerPage).ShouldBe((0, null));
+        (status.ByKind.Preempted24h, status.ByKind.SecondsPerPage).ShouldBe((2, null));     // 2 lần nhường chỗ của việc thất bại ở trên
         status.Models.Select(m => m.Key).ShouldContain("classifier");
         status.Models.Single(m => m.Key == "fake").Active.ShouldBeFalse("mô hình giả lập luôn tắt");
 

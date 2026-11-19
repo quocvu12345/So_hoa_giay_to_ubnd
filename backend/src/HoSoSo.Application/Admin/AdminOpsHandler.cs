@@ -68,7 +68,8 @@ public sealed partial class AdminOpsHandler(IHoSoDb db, ICurrentUser user, ICloc
                               join f in db.Read<FileRecord>() on j.FileId equals f.Id
                               where j.Status == JobStatus.Failed
                               orderby j.FinishedAt descending
-                              select new FailureInfo(j.Id, f.OriginalName, j.ErrorMessage, j.FinishedAt, j.Attempt)).Take(20).ToListAsync(ct);
+                              // Số lần thử THẬT như AdminJobsHandler: không tính các lần nhường chỗ hay trả về hàng vì máy AI (Ollama) không trả lời.
+                              select new FailureInfo(j.Id, f.OriginalName, j.ErrorMessage, j.FinishedAt, Math.Max(0, j.Attempt - j.PreemptedCount))).Take(20).ToListAsync(ct);
         var models = await db.Read<AiModel>().OrderBy(m => m.Key).Select(m => new ModelInfo(m.Key, m.Repo, m.Revision, m.Purpose, m.Active)).ToListAsync(ct);
 
         var lastHour = await jobs.Where(j => j.Status == JobStatus.Completed && j.FinishedAt >= hour).Select(j => new { j.Id, j.ProcessedPages }).ToListAsync(ct);

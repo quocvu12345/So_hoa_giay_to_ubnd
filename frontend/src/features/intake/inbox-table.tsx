@@ -254,7 +254,7 @@ export function InboxTable({ status, tabKey, items: initial, nextCursor: initial
             <li key={item.documentId} className="grid gap-2 border border-line bg-surface p-3 text-sm">
               <div className="flex items-start gap-3">
                 {status === "inbox" && (
-                  <input type="checkbox" aria-label={`Chọn ${item.fileName}`} checked={selected.has(item.documentId)} onChange={() => setChosen(toggleId(selected, item.documentId))} className="mt-1 size-4 flex-none accent-primary" />
+                  <input type="checkbox" aria-label={`Chọn ${item.fileName}, nạp lúc ${formatTime(item.uploadedAt)}`} checked={selected.has(item.documentId)} onChange={() => setChosen(toggleId(selected, item.documentId))} className="mt-1 size-4 flex-none accent-primary" />
                 )}
                 <div className="grid min-w-0 gap-0.5">
                 <span className="font-semibold break-all">{item.fileName}</span>
@@ -343,7 +343,7 @@ export function InboxTable({ status, tabKey, items: initial, nextCursor: initial
                 <tr key={item.documentId} className="border-t border-line align-top">
                   {status === "inbox" && (
                     <td className="px-3 py-2.5">
-                      <input type="checkbox" aria-label={`Chọn ${item.fileName}`} checked={selected.has(item.documentId)} onChange={() => setChosen(toggleId(selected, item.documentId))} className="size-4 accent-primary" />
+                      <input type="checkbox" aria-label={`Chọn ${item.fileName}, nạp lúc ${formatTime(item.uploadedAt)}`} checked={selected.has(item.documentId)} onChange={() => setChosen(toggleId(selected, item.documentId))} className="size-4 accent-primary" />
                     </td>
                   )}
                   <td className="px-3 py-2.5">

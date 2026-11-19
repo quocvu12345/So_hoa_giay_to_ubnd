@@ -171,7 +171,7 @@ row() {  # tên, đã chạy?, trả lời?
 
 cmd_status() {
   local ok=0
-  echo "AI của worker: $(ai_profile) (đổi: scripts/dev-up.sh ai fake|real)"
+  echo "AI của worker: $(ai_profile) (đổi: scripts/dev-up.sh ai fake|real|ollama)"
   for name in api worker web; do
     local state="không chạy" reply="-"
     if is_up "$name"; then state="đang chạy ($(cat "$run_dir/$name.pid"))"; fi
@@ -183,6 +183,18 @@ cmd_status() {
     if http_ok "$url"; then reply="trả lời $url"; else ok=1; reply="chưa trả lời $url"; fi
     row "$name" "$state" "$reply"
   done
+  # /health của worker không hỏi máy AI: máy Windows tắt hay Tailscale ngắt thì worker vẫn "trả lời", job chỉ quay về hàng đợi. Hỏi thẳng Ollama.
+  if [[ "$(ai_profile)" == ollama ]]; then
+    local url version
+    url="$(sed -n 's/^HOSO_AI_OLLAMA_URL=//p' "$root/ai-worker/.env" | tail -1)"
+    version="$(curl -fsS --max-time 5 "$url/api/version" 2>/dev/null | sed -n 's/.*"version":"\([^"]*\)".*/\1/p')"
+    if [[ -n "$version" ]]; then
+      row ollama "máy AI" "trả lời $url (Ollama $version)"
+    else
+      ok=1
+      row ollama "máy AI" "KHÔNG trả lời $url: máy Windows tắt, Tailscale chưa nối (tailscale status) hoặc Ollama chưa chạy; job đợi trong hàng"
+    fi
+  fi
   return $ok
 }
 

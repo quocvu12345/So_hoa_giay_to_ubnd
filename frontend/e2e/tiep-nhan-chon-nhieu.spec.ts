@@ -66,7 +66,9 @@ test("Hộp tiếp nhận: chọn nhiều PDF đã đọc xong rồi xếp vào 
   const dossierId = ((await created.json()) as { id: string }).id;
 
   await page.goto("/tiep-nhan?doc=da-doc");
-  for (const item of ready) await page.getByRole("checkbox", { name: `Chọn ${item.fileName}` }).check({ timeout: 30_000 });
+  // Khoanh theo mã giấy tờ (liên kết "Đối chiếu" của dòng), không theo tên tệp: hộp tiếp nhận có thể có nhiều PDF trùng tên.
+  const row = (documentId: string) => page.getByRole("row").filter({ has: page.locator(`a[href*="${documentId}"]`) });
+  for (const item of ready) await row(item.documentId).getByRole("checkbox", { name: new RegExp(`^Chọn ${item.fileName.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}, nạp lúc`) }).check({ timeout: 30_000 });
   const bar = page.getByRole("region", { name: "Thao tác với PDF đã chọn" });
   await expect(bar).toContainText("Đã chọn 2 PDF");
   await bar.getByRole("button", { name: "Xếp 2 PDF vào một hồ sơ" }).click();

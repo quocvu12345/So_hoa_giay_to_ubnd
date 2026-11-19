@@ -190,6 +190,25 @@ def scenario_force(api: Api, base: dict):
     check(int(sql(f"SELECT count(*) FROM hoso.ai_suggestions WHERE document_id = '{base['documentId']}'")) == 2, "có thêm một gợi ý mới (gợi ý cũ giữ lại làm lịch sử)")
 
 
+def worker_health() -> dict:
+    """/health của worker; {} khi không trả lời."""
+    out = subprocess.run(["curl", "-s", "--max-time", "3", "http://127.0.0.1:9108/health"], capture_output=True, text=True).stdout
+    try:
+        return json.loads(out)
+    except ValueError:
+        return {}
+
+
+def worker_process() -> int:
+    """PID tiến trình Python của worker. data/dev-run/worker.pid là pid của supervise.sh (dev-up.sh chạy worker qua nó):
+    giết supervise.sh thì worker thật mồ côi sống tiếp và kịch bản crash không thử được gì. Tìm worker trong nhóm tiến trình của supervise.sh."""
+    supervisor = int((ROOT / "data/dev-run/worker.pid").read_text())
+    found = subprocess.run(["pgrep", "-g", str(supervisor), "-f", "hoso_ai run"], capture_output=True, text=True).stdout.split()
+    if len(found) != 1:
+        raise RuntimeError(f"Không xác định được tiến trình worker trong nhóm {supervisor}: {found or 'không thấy'} (chạy bằng scripts/dev-up.sh start chưa?)")
+    return int(found[0])
+
+
 def scenario_cancel(api: Api):
     step("cancel: hủy việc đang chạy và việc đang chờ")
     first, second = upload(api, "citizen-mixed-packet"), upload(api, "citizen-vehicle-hand-sim")
@@ -199,9 +218,15 @@ def scenario_cancel(api: Api):
     check(status == 200 and queued_cancel["status"] == "cancelled", "hủy việc đang chờ", f"HTTP {status}")
     status, run_cancel = api.post(f"/api/v1/jobs/{first['jobId']}/cancel")
     check(status == 200 and run_cancel["status"] == "cancelled", "hủy việc đang chạy", f"HTTP {status} {run_cancel.get('status') if isinstance(run_cancel, dict) else run_cancel}")
-    time.sleep(12)
-    health = json.loads(subprocess.run(["curl", "-s", "http://127.0.0.1:9108/health"], capture_output=True, text=True).stdout)
-    check(health.get("currentJob") is None, "worker dừng việc đã hủy và trở về rảnh", str(health))
+    # Worker thấy lệnh hủy ở mốc kế tiếp của pipeline (xong một trang, trước bước phân loại), không phải ngay lập tức:
+    # với Ollama một trang OCR mất 5–30 giây, nên chờ tới 90 giây và in độ trễ thật thay vì một ngưỡng cứng.
+    cancelled, started = {first["jobId"], second["jobId"]}, time.monotonic()
+    health = worker_health()
+    while time.monotonic() - started < 90 and health.get("currentJob") in cancelled:
+        time.sleep(1)
+        health = worker_health()
+    print(f"  worker bỏ việc đã hủy sau {time.monotonic() - started:.0f} giây")
+    check(bool(health) and health.get("currentJob") not in cancelled, "worker dừng việc đã hủy và trở về rảnh", str(health) or "worker không trả lời /health")
     check(sql(f"SELECT count(*) FROM hoso.ai_suggestions WHERE document_id IN ('{first['documentId']}','{second['documentId']}')") == "0", "việc hủy không để lại gợi ý nào")
     print(f"  trạng thái cuối: việc 1={sql(chr(83)+'ELECT status FROM hoso.ocr_jobs WHERE id = ' + chr(39) + first['jobId'] + chr(39))}, việc 2={sql(chr(83)+'ELECT status FROM hoso.ocr_jobs WHERE id = ' + chr(39) + second['jobId'] + chr(39))}")
 
@@ -214,20 +239,26 @@ def scenario_crash(api: Api):
     while time.monotonic() < deadline and int(sql(f"SELECT count(*) FROM hoso.ocr_pages WHERE job_id = '{up['jobId']}'") or 0) < 2:
         time.sleep(1)
     done_before = int(sql(f"SELECT count(*) FROM hoso.ocr_pages WHERE job_id = '{up['jobId']}'"))
-    pid = int((ROOT / "data/dev-run/worker.pid").read_text())
+    old_worker = worker_health().get("worker")
+    pid = worker_process()
     os.kill(pid, signal.SIGKILL)
     print(f"  đã giết worker (pid {pid}) khi xong {done_before}/7 trang")
     time.sleep(2)
     check(sql(f"SELECT status FROM hoso.ocr_jobs WHERE id = '{up['jobId']}'") == "running", "việc còn ghi là đang chạy (chưa ai biết worker chết)")
+    dead_lock = sql(f"SELECT locked_by FROM hoso.ocr_jobs WHERE id = '{up['jobId']}'")
     sql(f"UPDATE hoso.ocr_jobs SET heartbeat_at = now() - interval '10 minutes' WHERE id = '{up['jobId']}'")     # mô phỏng đã mất nhịp sống quá 5 phút
+    # Thu hồi xong khi việc không còn gắn với worker đã chết: đang chờ, hoặc worker mới (supervise.sh chạy lại sau ~5 giây) đã nhận ngay.
     started = time.monotonic()
-    while time.monotonic() - started < 150 and sql(f"SELECT status FROM hoso.ocr_jobs WHERE id = '{up['jobId']}'") == "running":
-        time.sleep(3)
-    status_now = sql(f"SELECT status || ' attempt=' || attempt FROM hoso.ocr_jobs WHERE id = '{up['jobId']}'")
+    while time.monotonic() - started < 150 and sql(f"SELECT status = 'running' AND locked_by = '{dead_lock}' FROM hoso.ocr_jobs WHERE id = '{up['jobId']}'") == "t":
+        time.sleep(1)
+    status_now = sql(f"SELECT status || ' attempt=' || attempt || ' worker=' || coalesce(locked_by, '-') FROM hoso.ocr_jobs WHERE id = '{up['jobId']}'")
     print(f"  sau {time.monotonic() - started:.0f} giây: {status_now}")
-    check(status_now.startswith("queued"), "API thu hồi việc về hàng đợi (StaleJobReaper chạy mỗi phút)", status_now)
-    subprocess.run([str(ROOT / "scripts/dev-up.sh"), "start"], capture_output=True)
+    check(status_now.startswith("queued") or (status_now.startswith("running") and not status_now.endswith(f"worker={dead_lock}")),
+          "API thu hồi việc của worker đã chết (StaleJobReaper chạy mỗi phút)", status_now)
+    subprocess.run([str(ROOT / "scripts/dev-up.sh"), "start"], capture_output=True)     # supervise.sh thường đã tự chạy lại worker; lệnh này khi đó không làm gì
     job = wait_job(api, up["jobId"], 400)
+    new_worker = worker_health().get("worker")
+    check(new_worker is not None and new_worker != old_worker, "worker mới đã chạy thay worker bị giết", f"trước {old_worker}, sau {new_worker}")
     log = [json.loads(l) for l in (ROOT / "data/dev-run/worker.log").read_text(encoding="utf-8").splitlines() if '"job_completed"' in l and up["jobId"] in l]
     redone = log[-1]["pages_ocr"] if log else None
     print(f"  worker mới đọc {redone} trang (đã có {done_before} trước khi chết) · trạng thái cuối {job['status']}")
