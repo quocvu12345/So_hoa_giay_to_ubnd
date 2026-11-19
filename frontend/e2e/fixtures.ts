@@ -17,13 +17,19 @@ export const ROLES = ["employee", "manager", "clerk", "chair", "council", "techn
 export type Role = (typeof ROLES)[number];
 
 export async function signIn(page: Page, role: Role = "employee", department?: string, username = "dev_admin") {
+  // Đổi người giữa chừng: rời trang đang mở và bỏ cookie phân công của người trước TRƯỚC khi đăng nhập. Nếu không, trang cũ (luồng SSE,
+  // chuông thông báo) có thể gọi máy chủ với phiên mới + phân công cũ; máy chủ xử lý đúng (ghi "assignment_cookie_stale", về phân công
+  // mặc định) nhưng dòng cảnh báo lọt vào console và watchConsole báo lỗi. Người thật đổi tài khoản thì trang được tải lại từ đầu.
+  const origin = page.url().startsWith("http") ? new URL(page.url()).origin : undefined;
+  if (origin) await page.goto("about:blank");
+  await page.context().clearCookies({ name: "hoso_assignment" });
   const login = await page.request.get(`/api/v1/auth/dev-login?username=${encodeURIComponent(username)}&returnUrl=/`);
   expect(login.ok(), `đăng nhập dev ${username} phải thành công`).toBeTruthy();
   const me = (await (await page.request.get("/api/v1/me")).json()) as { assignments: { id: string; role: string; departmentCode: string | null }[] };
   const assignment = me.assignments.find((a) => a.role === role && (department === undefined || a.departmentCode === department));
   expect(assignment, `tài khoản ${username} phải có phân công ${role}${department ? ` ở ${department}` : ""}`).toBeTruthy();
-  const base = new URL(page.url() === "about:blank" ? (process.env.E2E_BASE_URL ?? "http://localhost:3000") : page.url());
-  await page.context().addCookies([{ name: "hoso_assignment", value: assignment!.id, url: base.origin }]);
+  const base = origin ?? new URL(process.env.E2E_BASE_URL ?? "http://localhost:3000").origin;
+  await page.context().addCookies([{ name: "hoso_assignment", value: assignment!.id, url: base }]);
 }
 
 /**

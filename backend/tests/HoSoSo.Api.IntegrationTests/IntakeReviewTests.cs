@@ -162,7 +162,17 @@ public sealed class IntakeReviewTests(DbApiFactory api) : IClassFixture<DbApiFac
         (await http.PostJsonAsync($"/api/v1/intake/documents/{up.DocumentId}/discard")).StatusCode.ShouldBe(HttpStatusCode.NoContent);
         (await (await http.GetAsync("/api/v1/intake/inbox?status=discarded")).ReadAsync<PageDto<InboxDto>>()).Items.ShouldContain(i => i.DocumentId == up.DocumentId);
         (await (await http.GetAsync("/api/v1/intake/inbox")).ReadAsync<PageDto<InboxDto>>()).Items.ShouldNotContain(i => i.DocumentId == up.DocumentId);
+        // BE-134: bỏ khỏi hộp thì hủy việc đọc còn chờ (không phí máy AI); hoàn tác thì xếp đọc lại ở khay nền.
+        (await (await http.GetAsync($"/api/v1/jobs/{up.JobId}")).ReadAsync<JobDto>()).Status.ShouldBe("cancelled");
         (await http.PostJsonAsync($"/api/v1/intake/documents/{up.DocumentId}/restore")).StatusCode.ShouldBe(HttpStatusCode.NoContent);
+        (await api.ScalarAsync<long>("SELECT count(*) FROM hoso.ocr_jobs WHERE file_id = $1 AND status = 'queued' AND job_type = 'read_classify'", up.FileId))
+            .ShouldBe(1, "hoàn tác thì có lại đúng một việc đọc đang chờ");
+
+        // Đã đọc xong thì bỏ/hoàn tác không đọc lại.
+        await api.ExecuteAsync("UPDATE hoso.ocr_jobs SET status = 'completed', started_at = now(), finished_at = now() WHERE file_id = $1 AND status = 'queued'", up.FileId);
+        (await http.PostJsonAsync($"/api/v1/intake/documents/{up.DocumentId}/discard")).StatusCode.ShouldBe(HttpStatusCode.NoContent);
+        (await http.PostJsonAsync($"/api/v1/intake/documents/{up.DocumentId}/restore")).StatusCode.ShouldBe(HttpStatusCode.NoContent);
+        (await api.ScalarAsync<long>("SELECT count(*) FROM hoso.ocr_jobs WHERE file_id = $1", up.FileId)).ShouldBe(2, "không tạo thêm việc đọc khi đã đọc xong");
 
         (await http.PostJsonAsync($"/api/v1/intake/documents/{up.DocumentId}/discard")).StatusCode.ShouldBe(HttpStatusCode.NoContent);
         await api.ExecuteAsync("UPDATE hoso.documents SET discarded_at = now() - interval '31 days' WHERE id = $1", up.DocumentId);

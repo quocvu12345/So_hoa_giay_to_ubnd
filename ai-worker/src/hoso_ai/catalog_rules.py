@@ -1,9 +1,22 @@
 """Quy tắc giữ gợi ý AI khớp danh mục trong DB."""
 from __future__ import annotations
 
+import re
 import unicodedata
 
 from .queue.repository import Catalog
+
+# Cấp của nhóm theo mã, đúng như trường "group" của danh mục thí điểm (assets/danh-muc-ho-so.js): H01–H10 là HĐND, U01–U28 là UBND.
+WORK_GROUP_LEVELS = {"H": "HĐND", "U": "UBND"}
+
+
+def work_group_level(code: str | None) -> str:
+    """Cấp UBND/HĐND của nhóm công việc, suy từ mã vì bảng work_groups không lưu cấp; "" khi mã không theo quy ước.
+
+    Lời nhắc chọn nhóm cần cấp: thiếu cấp, mô hình xếp đơn của dân vào nhóm HĐND có tên gần giống (2/8 tài liệu đo trên máy
+    Windows, nhánh ai-11-cpu-profile của hoso-ai: ai-worker/training/DO-TOC-DO-CPU.md).
+    """
+    return WORK_GROUP_LEVELS[code[0]] if re.fullmatch(r"[HU]\d{2}", code or "") else ""
 
 
 def fold(value: str) -> str:

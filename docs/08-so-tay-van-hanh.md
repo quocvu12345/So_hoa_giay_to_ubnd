@@ -25,7 +25,13 @@ scripts/dev-up.sh restart    # sau khi sửa backend (API chạy bằng dotnet r
 scripts/dev-up.sh logs       # đường dẫn nhật ký
 ```
 
-Lần đầu: `scripts/dev-up.sh init` (cho hai role CSDL đăng nhập bằng mật khẩu dev và tạo `ai-worker/.env`). Tài khoản thử: `dev_admin`, chọn phân công theo vai trò (menu đổi phân công).
+Lần đầu: `scripts/dev-up.sh init` (cho hai role CSDL đăng nhập bằng mật khẩu dev và tạo `ai-worker/.env`).
+
+**Tài khoản thử theo vai trò:** `backend/scripts/seed-dev-accounts.sh --apply` nạp 26 tài khoản giả lập (mỗi phòng/Ban một chuyên viên và một trưởng phòng/ban, văn thư UBND và HĐND, Chủ tịch, lãnh đạo HĐND, quản trị; không kèm hồ sơ giả lập). Trang web › "Đăng nhập bằng tài khoản cơ quan" mở trang Đăng nhập dev nhóm theo vai trò. `dev_admin` có 18 phân công: vào rồi đổi ở ô **Vai trò** trên thanh trên cùng, đầu menu trên màn hẹp, hoặc trang Tài khoản. Thử luồng nhiều bước thì dùng đúng người từng bước (chuyên viên trình → trưởng phòng cùng phòng → Chủ tịch/lãnh đạo HĐND → văn thư).
+
+**Thử nối toàn bộ nghiệp vụ (QA-02):** `python3 scripts/smoke-nghiep-vu.py` (khoảng 4–6 phút: AI đọc 4 PDF) chạy luồng B (kèm giao việc, kho, nộp lưu, mượn trả, xuất gói), trả bổ sung và trình lãnh đạo, luồng A, luồng C HĐND, lô quét, ủy quyền và các trang của từng vai trò, mỗi bước bằng đúng tài khoản; chọn một phần: `… main return digitize council scan delegation pages`. Luật hay vấp khi thử tay: ý kiến trả lại/trình lãnh đạo/cho ý kiến từ 10 ký tự; giấy tờ phải xác nhận **mọi** trường (kể cả để trống) rồi bấm đã đối chiếu thì hồ sơ mới trình được; chuyên viên chỉ thấy hồ sơ mình chủ trì hoặc phối hợp; thông báo tới chậm vài giây (gửi qua outbox).
+
+**Chạy bộ dev không phụ thuộc phiên Claude Code:** tiến trình do Claude khởi động bị giết khi phiên kết thúc; tự chạy `scripts/dev-up.sh start` trong Terminal của mình (hoặc để Claude mở Terminal chạy hộ bằng tệp `.command`).
 
 ## 3. AI
 

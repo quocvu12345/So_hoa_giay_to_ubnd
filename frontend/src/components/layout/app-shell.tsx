@@ -44,7 +44,11 @@ export function AppShell({ session, badges, unread, children }: { session: Sessi
 
       <div className="flex min-w-0 flex-col">
         <header className="sticky top-0 z-20 flex items-center gap-2 border-b border-line bg-surface px-4 py-2 sm:px-6">
-          <MobileNav permissions={session.permissions} badges={badges} />
+          <MobileNav
+            permissions={session.permissions}
+            badges={badges}
+            top={<AssignmentSwitcher assignments={session.assignments} activeId={session.activeAssignment.id} variant="menu" />}
+          />
           {canSearch && (
             <form action={routes.search} role="search" className="flex min-w-0 flex-1 items-center gap-2 border border-line px-3 focus-within:border-primary md:max-w-md">
               <Search aria-hidden className="size-4 flex-none text-muted" />

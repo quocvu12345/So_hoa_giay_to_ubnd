@@ -11,14 +11,16 @@ test("Thông báo: danh sách phân trang, bấm mở đúng nơi và đánh d�
   const tag = `${Date.now()}`;
   const title = (n: number) => `E2E thông báo ${tag} số ${n}`;
   // Dọn dữ liệu của các lần chạy trước (nếu không, thông báo cũ xen vào làm lệch trang), rồi dựng 32 thông báo
-  // (nhiều hơn một trang 30), số 1 mới nhất; thông báo số 1 trỏ tới Tra cứu.
+  // (nhiều hơn một trang 30), số 1 mới nhất; thông báo số 1 trỏ tới Tra cứu. Đặt ở tương lai gần để luôn là 32 thông báo mới nhất:
+  // dev_admin giữ phân công trưởng phòng, Chủ tịch, văn thư nên nhận thông báo thật của mọi luồng đang chạy, chen vào giữa làm lệch trang.
   sql(`DELETE FROM hoso.notifications WHERE title LIKE 'E2E thông báo %'`);
   sql(`
     INSERT INTO hoso.notifications(user_id, kind, title, body, link, created_at)
     SELECT ${OWNER}, 'dossier.due', 'E2E thông báo ${tag} số ' || n, 'Nội dung thử ' || n,
-           CASE WHEN n = 1 THEN '/tra-cuu' END, now() - n * interval '1 minute'
+           CASE WHEN n = 1 THEN '/tra-cuu' END, now() + interval '1 hour' - n * interval '1 minute'
     FROM generate_series(1, 32) n`);
 
+  const total = Number(sql(`SELECT count(*) FROM hoso.notifications WHERE user_id = ${OWNER}`)[0]);
   await signIn(page, "employee");
   await page.goto("/thong-bao");
   const main = page.locator("main");
@@ -30,7 +32,9 @@ test("Thông báo: danh sách phân trang, bấm mở đúng nơi và đánh d�
   await expect(list.getByRole("listitem")).toHaveCount(30);           // trang đầu 30 dòng
   await main.getByRole("button", { name: "Tải thêm" }).click();
   await expect(list.getByText(title(32), { exact: true })).toBeVisible();              // trang sau có dòng cũ nhất
-  await expect(main.getByRole("button", { name: "Tải thêm" })).toHaveCount(0);
+  await expect(list.getByRole("listitem")).toHaveCount(Math.min(60, total));
+  // Hết danh sách thì nút "Tải thêm" biến mất. dev_admin có thể còn thông báo thật của các luồng khác (cũ hơn 32 thông báo thử).
+  await expect(main.getByRole("button", { name: "Tải thêm" })).toHaveCount(total > 60 ? 1 : 0);
 
   // Chuông có số chưa đọc (ít nhất 32 thông báo vừa chèn).
   const bell = page.getByRole("link", { name: /^Thông báo, \d+ chưa đọc$/ });
@@ -39,7 +43,7 @@ test("Thông báo: danh sách phân trang, bấm mở đúng nơi và đánh d�
   expect(before).toBeGreaterThanOrEqual(32);
 
   // SSE: thông báo mới đến thì chuông tăng ngay, không cần tải lại.
-  sql(`INSERT INTO hoso.notifications(user_id, kind, title, body) SELECT ${OWNER}, 'dossier.due', 'E2E thông báo ${tag} mới đến', ''`);
+  sql(`INSERT INTO hoso.notifications(user_id, kind, title, body, created_at) SELECT ${OWNER}, 'dossier.due', 'E2E thông báo ${tag} mới đến', '', now() + interval '2 hours'`);
   await expect(page.getByRole("link", { name: `Thông báo, ${before + 1} chưa đọc` })).toBeVisible({ timeout: 10_000 });
   // Trang cũng tự làm mới: thông báo mới lên đầu danh sách.
   await expect(list.getByText(`E2E thông báo ${tag} mới đến`, { exact: true })).toBeVisible({ timeout: 10_000 });

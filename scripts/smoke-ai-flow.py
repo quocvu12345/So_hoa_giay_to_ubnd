@@ -156,8 +156,9 @@ def main() -> int:
     profile = worker_profile(args.worker)
     fake = profile == "fake"
     if args.expect_model is None:
-        # ollama: tên mô hình là tên tạo trên máy Ollama (HOSO_AI_OLLAMA_CLASSIFIER_MODEL, mặc định hoso-ifstruct:q8_0).
-        args.expect_model = {"fake": "fake-classifier", "ollama": "classifier=hoso-ifstruct"}.get(profile, "Qwen3-4B-Instruct-2507-ifstruct-4bit")
+        # ollama: tên mô hình là tên tạo trên máy Ollama (HOSO_AI_OLLAMA_CLASSIFIER_MODEL, mặc định hoso-ifstruct:q8_0). Đã khai nguồn
+        # (HOSO_AI_OLLAMA_CLASSIFIER_SOURCE) thì tên đó nằm ở "classifier-via=", còn "classifier=" là tên theo nguồn: nhận cả hai.
+        args.expect_model = {"fake": "fake-classifier", "ollama": "hoso-ifstruct:"}.get(profile, "Qwen3-4B-Instruct-2507-ifstruct-4bit")
     if fake:
         print("Worker đang dùng AI GIẢ (HOSO_AI_PROFILE=fake): kiểm luồng, không kiểm độ đúng của loại giấy tờ.")
     api = Api(args.api)

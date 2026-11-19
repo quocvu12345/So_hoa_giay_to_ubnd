@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { switchAssignment } from "@/app/actions/session";
 import { PageBody, Section } from "@/components/ui/blocks";
 import { PageHeader } from "@/components/ui/page-header";
 import { Chip } from "@/components/ui/status-chip";
@@ -44,14 +45,23 @@ export default async function AccountPage() {
           </dl>
         </Section>
 
-        <Section title={`Phân công đang có hiệu lực (${session.assignments.length})`} description="Đổi phân công đang dùng ở thanh trên cùng. Mỗi phân công có quyền và phạm vi hồ sơ riêng.">
+        <Section title={`Phân công đang có hiệu lực (${session.assignments.length})`} description="Mỗi phân công có quyền và phạm vi hồ sơ riêng. Đổi bằng nút bên dưới, ô Vai trò trên thanh trên cùng, hoặc đầu menu trên màn hẹp.">
           <ul className="grid divide-y divide-line border border-line" aria-label="Phân công">
             {session.assignments.map((a) => {
               const chip = a.delegatedUntil ? expiryChip(a.delegatedUntil, now) : null;
               return (
                 <li key={a.id} className="flex flex-wrap items-center gap-2 px-3 py-2.5 text-sm">
                   <b>{scopeLabel(a)}</b>
-                  {a.id === session.activeAssignment.id && <Chip tone="info">Đang dùng</Chip>}
+                  {a.id === session.activeAssignment.id ? (
+                    <Chip tone="info">Đang dùng</Chip>
+                  ) : (
+                    <form action={switchAssignment}>
+                      <input type="hidden" name="assignmentId" value={a.id} />
+                      <button type="submit" className="h-8 border border-line px-2 text-[13px] font-semibold text-primary hover:border-primary" aria-label={`Dùng phân công ${scopeLabel(a)}`}>
+                        Dùng phân công này
+                      </button>
+                    </form>
+                  )}
                   {a.delegatedUntil && <Chip>Ủy quyền đến {formatDateTime(a.delegatedUntil)}</Chip>}
                   {chip && <Chip tone={chip.tone}>{chip.text}</Chip>}
                 </li>

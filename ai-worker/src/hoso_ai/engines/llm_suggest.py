@@ -1,7 +1,7 @@
 """Gợi ý nhóm, loại, trường bằng document_ai.classify với danh mục lấy từ CSDL. Dùng chung cho mọi nơi chạy mô hình (MLX trên máy, Ollama qua mạng)."""
 from __future__ import annotations
 
-from ..catalog_rules import reconcile_type
+from ..catalog_rules import reconcile_type, work_group_level
 from ..contracts import FieldSuggestion, PageResult, Suggestion
 from ..field_values import clean_value
 from ..queue.repository import Catalog
@@ -13,7 +13,8 @@ def suggest_with(llm, key: str, pages: list[PageResult], catalog: Catalog, promp
     from document_ai.config import shortlist_enabled
 
     categories = [
-        {"code": code, "title": title, "group": "", "documentTypes": [
+        # Gửi kèm cấp UBND/HĐND như danh mục thí điểm; trước đây để "" nên đơn của dân hay bị xếp vào nhóm HĐND tên gần giống.
+        {"code": code, "title": title, "group": work_group_level(code), "documentTypes": [
             {"id": t.code, "name": t.name, "fields": [f.label for f in t.fields]}
             for t in catalog.document_types.values() if t.work_group_code == code
         ]}

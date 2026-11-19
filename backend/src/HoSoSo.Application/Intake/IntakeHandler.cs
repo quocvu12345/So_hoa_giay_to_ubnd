@@ -453,9 +453,17 @@ public sealed class IntakeHandler(IHoSoDb db, IScopeFilter scope, ICurrentUser u
     {
         var doc = await OwnInboxDocumentAsync(documentId, ct);
         if (doc.IntakeStatus != IntakeStatus.Inbox) throw AppException.Conflict("Chỉ bỏ được PDF còn trong hộp tiếp nhận. Gỡ khỏi hồ sơ trước.");
+        var now = clock.UtcNow;
         doc.IntakeStatus = IntakeStatus.Discarded;
-        doc.DiscardedAt = clock.UtcNow;
+        doc.DiscardedAt = now;
+        await using var transaction = await db.Database.BeginTransactionAsync(ct);
         await db.SaveChangesAsync(ct);
+        // BE-134. Đọc PDF đã bỏ là phí máy AI (một máy, khoảng một phút mỗi giấy tờ) và làm PDF có người đang chờ phải đợi thêm, như khi thay
+        // bản quét: hủy việc đọc còn chờ hoặc đang chạy của giấy tờ (worker dừng sau trang đang đọc). Hoàn tác thì xếp đọc lại (RestoreAsync).
+        var files = db.Read<FileRecord>().Where(f => f.DocumentId == doc.Id).Select(f => f.Id);
+        await db.Set<OcrJob>().Where(j => files.Contains(j.FileId) && (j.Status == JobStatus.Queued || j.Status == JobStatus.Running))
+            .ExecuteUpdateAsync(u => u.SetProperty(j => j.Status, JobStatus.Cancelled).SetProperty(j => j.StartedAt, j => j.StartedAt ?? now).SetProperty(j => j.FinishedAt, now), ct);
+        await transaction.CommitAsync(ct);
     }
 
     public async Task RestoreAsync(Guid documentId, CancellationToken ct)
@@ -466,7 +474,27 @@ public sealed class IntakeHandler(IHoSoDb db, IScopeFilter scope, ICurrentUser u
             throw AppException.Conflict("Đã quá 30 ngày kể từ khi bỏ, không hoàn tác được nữa. Liên hệ văn thư nếu cần khôi phục.");
         doc.IntakeStatus = IntakeStatus.Inbox;
         doc.DiscardedAt = null;
+        await using var transaction = await db.Database.BeginTransactionAsync(ct);
         await db.SaveChangesAsync(ct);
+        // BE-134. Bỏ khỏi hộp đã hủy việc đọc chưa xong: lần đọc mới nhất của bản quét hiện hành mà bị hủy thì xếp đọc lại ở khay nền,
+        // như PDF vừa nạp. Đã đọc xong (hoặc đang chờ, đang đọc, lỗi) thì giữ nguyên: lỗi thì người dùng tự bấm đọc lại.
+        var file = await DocumentFiles.CurrentScans(db.Read<FileRecord>()).Where(f => f.DocumentId == doc.Id && f.StorageKey != null && f.DisposedAt == null)
+            .OrderByDescending(f => f.UploadedAt).FirstOrDefaultAsync(ct);
+        if (file is not null)
+        {
+            var latest = await db.Read<OcrJob>().Where(j => j.FileId == file.Id && j.JobType == "read_classify")
+                .OrderByDescending(j => j.CreatedAt).Select(j => j.Status).FirstOrDefaultAsync(ct);
+            if (latest == JobStatus.Cancelled)
+            {
+                db.Set<OcrJob>().Add(new OcrJob
+                {
+                    FileId = file.Id, Priority = (short)aiQueue.Value.BackgroundPriority, RequestedBy = user.RequireUserId(), PageCount = file.PageCount,
+                    Options = JsonSerializer.Serialize(new { correlation_id = user.CorrelationId, classify = true }),
+                });
+                await db.SaveChangesAsync(ct);
+            }
+        }
+        await transaction.CommitAsync(ct);
     }
 
     private async Task<Document> OwnInboxDocumentAsync(Guid id, CancellationToken ct)

@@ -1,12 +1,12 @@
 "use client";
 
-import { useRef } from "react";
+import { useRef, type ReactNode } from "react";
 import { Menu, X } from "lucide-react";
 import type { Permission } from "@/lib/auth/permissions";
 import { NavList, type NavBadges } from "./nav-list";
 
-/** Menu dạng ngăn kéo cho màn hẹp (dưới 1024px). Trên màn rộng dùng sidebar cố định. */
-export function MobileNav({ permissions, badges }: { permissions: Permission[]; badges?: NavBadges }) {
+/** Menu dạng ngăn kéo cho màn hẹp (dưới 1024px). Trên màn rộng dùng sidebar cố định. `top`: phần đặt trên menu (ô đổi vai trò). */
+export function MobileNav({ permissions, badges, top }: { permissions: Permission[]; badges?: NavBadges; top?: ReactNode }) {
   const ref = useRef<HTMLDialogElement>(null);
   return (
     <>
@@ -30,6 +30,7 @@ export function MobileNav({ permissions, badges }: { permissions: Permission[]; 
             <X aria-hidden className="size-5" />
           </button>
         </div>
+        {top}
         <div className="p-3">
           <NavList permissions={permissions} badges={badges} onNavigate={() => ref.current?.close()} />
         </div>

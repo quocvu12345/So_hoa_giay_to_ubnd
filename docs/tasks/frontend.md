@@ -419,7 +419,13 @@ Tìm ra khi đối chiếu frontend với `nghiep-vu-vai-tro.html`, docs/05, doc
 ### FE-49 · Báo khi máy AI không đọc được ✅ · 0,5 ngày (19/11/2026, AI-24, BE-133)
 - **Vì sao:** máy AI (Ollama trên máy Windows) tắt thì PDF "chờ đọc, vị trí 1" mãi, người dùng không biết vì sao và có thể nạp lại.
 - **Đã có:** hộp tiếp nhận (thẻ Chờ xếp) gọi `GET /api/v1/ai/availability` và hiện băng `AiAvailabilityNotice` khi `engine_down` ("Máy AI tạm thời không trả lời từ …; PDF vẫn nạp được, AI tự đọc tiếp khi máy trở lại, không cần nạp lại") hoặc `no_worker` ("Bộ đọc PDF đang không hoạt động"); lời báo không có chi tiết kỹ thuật (`features/intake/ai-availability.ts`, có test). Bảng nghe SSE `ai.availability` để tự tải lại, băng hiện/tắt mà không cần bấm. Trang vận hành: cảnh báo đầu trang khi PDF không được đọc, mục **Worker AI** liệt kê từng worker với nhãn `machineState` (máy AI trả lời / không trả lời bao lâu kèm lỗi / im lặng quá 2 phút) (`features/ops/ops-rules.ts`, có test).
-- **Kiểm tra:** Vitest; chạy thật với worker trỏ vào cổng chết rồi bật lại: băng hiện đúng giờ bắt đầu hỏng, tự tắt khi máy trở lại.## Sau khi xong các màn
+- **Kiểm tra:** Vitest; chạy thật với worker trỏ vào cổng chết rồi bật lại: băng hiện đúng giờ bắt đầu hỏng, tự tắt khi máy trở lại.
+
+### FE-50 · Đổi vai trò dễ thấy ở mọi khổ màn hình ✅ · 0,25 ngày (19/11/2026)
+- **Vì sao:** người dùng thử không tìm ra chỗ "làm chuyên viên / làm trưởng phòng": ô đổi phân công ẩn hẳn dưới 640 px (`hidden sm:block`), không có nhãn nhìn thấy, và không có cách nào khác để đổi.
+- **Đã có:** ô đổi phân công có nhãn "Vai trò" (từ 768 px); trên màn hẹp nằm ở đầu ngăn kéo menu (`AssignmentSwitcher variant="menu"`, `MobileNav` thêm `top`); trang Tài khoản có nút "Dùng phân công này" cho từng phân công. Thử nhiều vai trò trên máy dev: tài khoản riêng từng vai trò (BE-135, `backend/scripts/seed-dev-accounts.sh`).
+
+## Sau khi xong các màn
 
 | ID | Task | Ngày |
 |---|---|---|
@@ -427,7 +433,7 @@ Tìm ra khi đối chiếu frontend với `nghiep-vu-vai-tro.html`, docs/05, doc
 | SEC-04 ✅ | (19/11/2026) Quy tắc lint an toàn: cấm `dangerouslySetInnerHTML`, `eval`, import `server-only` vào client; Server Action phải qua `runAction`/`requireSession` (docs/05). Làm bằng plugin `frontend/eslint-rules/hoso.mjs`: `react/no-danger`, `no-eval`, `no-implied-eval`, `no-new-func` cùng hai luật riêng. **`hoso/no-server-only-in-client`**: tệp `"use client"` không được import `server-only`, `next/headers`, `*-data`, `@/lib/api/server`, `@/lib/auth/session`, `@/lib/auth/page-guard`, `@/lib/actions`, `@/lib/log` (import kiểu `import type` vẫn được). **`hoso/server-action-guard`**: mọi hàm async export trong tệp `"use server"` phải gọi `runAction`, `getSession`, `requireSession`, `pageSession` hoặc nhánh `serverEnv().mock`; ngoại lệ phải ghi `eslint-disable` kèm lý do (hiện có hai: `mockSignOut`, `clearAssignment` ở `actions/session.ts`, vì chúng chỉ xóa cookie của chính người gọi). Test `src/lint/hoso-rules.test.ts` (18 ca bằng `RuleTester`). Chạy trong `npm run lint` nên vào CI | 0,5 |
 | LOG-04 | Gửi lỗi máy chủ Next sang GlitchTip (gộp với FE-11) | 1 |
 | LOG-08 ✅ | Màn Nhật ký hệ thống `/quan-tri/nhat-ky` (18/11/2026, BE-88, BE-117): ba cách xem (Mã lỗi, Truy cập, Thay đổi dữ liệu), bộ lọc trên URL (mã lỗi, mã tương quan, đối tượng, khoảng ngày giờ Việt Nam), phân trang theo id. Tra Mã lỗi (không phân biệt hoa thường) ra request, người, mã tương quan và các lần truy cập cùng request; mã sai định dạng hoặc không có đều có thông báo riêng. Nhật ký thay đổi chỉ hiện tên cột, không giá trị. Đã thử với một lỗi thật. Chưa làm: xuất CSV, lọc theo người (cần ô chọn người) | 1,5 |
-| QA-02 | E2E đủ kịch bản theo vai trò trong `nghiep-vu-vai-tro.html` | 3 |
+| QA-02 🟡 | E2E đủ kịch bản theo vai trò trong `nghiep-vu-vai-tro.html`. **19/11/2026: có bản qua API** `scripts/smoke-nghiep-vu.py`, mỗi bước bằng đúng tài khoản thử của vai trò (luồng B chính kèm giao việc, kho, nộp lưu, mượn trả, xuất gói; trả bổ sung và trình lãnh đạo; luồng A; luồng C HĐND; lô quét; ủy quyền; trang theo vai trò) cùng kiểm phạm vi giữa phòng và giữa UBND/HĐND. Còn lại: bản Playwright bấm trên giao diện cho cùng kịch bản (E2E hiện dùng `dev_admin` đổi phân công) | 3 |
 | QA-05 | Kiểm tra tiếp cận (axe + bàn phím) 10 màn chính | 1 |
 | OPS-01 | Docker image `node .next/standalone/server.js` (không dùng `next start` với `output: standalone`), chạy không phải root | 0,5 |
 

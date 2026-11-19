@@ -300,3 +300,45 @@ def test_hinh_thuc_giong_cong_van_nhung_nhom_khong_co_loai_trung_ten_thi_van_cho
     assert [t["id"] for t in type_candidates([group], group, "Công văn, quyết định, thông báo và sổ đăng ký")] == ["U04-D01", "U04-D02"]
     other = {"code": "U02", "documentTypes": [{"id": "U02-D01", "name": "Công văn chỉ đạo"}, {"id": "U02-D02", "name": "Kế hoạch"}]}
     assert [t["id"] for t in type_candidates([group, other], group, "Công văn")] == ["U02-D01"], "có loại trùng tên thì vẫn thu hẹp như cũ"
+
+
+# ---- Cấp UBND/HĐND trong danh sách nhóm gửi mô hình (chuyển từ nhánh ai-11-cpu-profile của hoso-ai, đo trên máy Windows) ---------
+
+def test_cap_nhom_suy_tu_ma_khop_danh_muc_thi_diem():
+    from document_ai.classify import catalog
+    from hoso_ai.catalog_rules import work_group_level
+
+    pilot = catalog()
+    assert len(pilot) == 38
+    assert {c["code"]: work_group_level(c["code"]) for c in pilot} == {c["code"]: c["group"] for c in pilot}
+    assert [work_group_level(code) for code in ("CUSTOM", "UBND", "U1", "H001", "", None)] == [""] * 6
+
+
+def test_danh_sach_nhom_trong_loi_nhac_co_cap_ubnd_hdnd(monkeypatch, fake_models):
+    """Thiếu cấp, mô hình xếp "Giấy đề nghị hoàn trả khoản thu ngân sách" vào nhóm thẩm tra ngân sách của HĐND (DO-TOC-DO-CPU.md)."""
+    mlx = FakeMlx(monkeypatch)
+    catalog = Catalog({"CUSTOM": "Nhóm mới", "H03": "Thẩm tra kinh tế, ngân sách và đầu tư", "U11": "Ngân sách, kế toán và quyết toán"},
+                      CATALOG.document_types)
+    QwenMlxClassifier().suggest(PAGES, catalog)
+    menu = json.loads(mlx.calls[0]["prompt"].split("CATALOG:\n", 1)[1].split("\n<DOCUMENT>", 1)[0])
+    assert {m["code"]: m["group"] for m in menu} == {"CUSTOM": "", "H03": "HĐND", "U11": "UBND"}
+
+
+def test_duong_ollama_cung_gui_cap_nhom():
+    # Worker ở Mac gọi Ollama trên Windows đi qua cùng suggest_with: cấp phải có trong lời nhắc gửi đi.
+    from hoso_ai.engines.llm_suggest import suggest_with
+
+    prompts = []
+
+    class Llm:
+        label = "thu"
+
+        def complete(self, system, prompt, max_tokens):
+            prompts.append(prompt)
+            return json.dumps([{"category_code": "U11", "document_form": "Giấy đề nghị", "title": "Giấy đề nghị", "quote": "Kế hoạch thử"},
+                               {"type_id": None}, {"fields": []}][len(prompts) - 1], ensure_ascii=False)
+
+    catalog = Catalog({"H03": "Thẩm tra kinh tế, ngân sách và đầu tư", "U11": "Ngân sách, kế toán và quyết toán"}, {})
+    suggest_with(Llm(), "classifier", PAGES, catalog, "short")
+    menu = json.loads(prompts[0].split("CATALOG:\n", 1)[1].split("\n<DOCUMENT>", 1)[0])
+    assert {m["code"]: m["group"] for m in menu} == {"H03": "HĐND", "U11": "UBND"}
