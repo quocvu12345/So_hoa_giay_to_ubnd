@@ -12,6 +12,7 @@
 | [tasks/backend.md](tasks/backend.md) | Từng task backend: trạng thái khung, tệp, các bước, cách kiểm tra |
 | [tasks/frontend.md](tasks/frontend.md) | Từng task frontend Next.js: trạng thái khung, tệp, các bước, cách kiểm tra |
 | [tasks/ai.md](tasks/ai.md) | Worker AI: phương án tốc độ trên Mac M4 16 GB, mức ưu tiên và khay nền, task AI-12 trở đi |
+| [tasks/kiem-thu-nhap-vai.md](tasks/kiem-thu-nhap-vai.md) | Kiểm thử nhập vai (QA-08): từng loại người dùng làm việc của mình trên giao diện thật, ghi phát hiện |
 
 Mã nguồn mới:
 - [backend/](../backend/): .NET 10, khung đã viết, chưa build;
